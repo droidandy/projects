@@ -1,0 +1,164 @@
+{
+  "teamSummary": {
+    "id": "b7d60198-57d4-4999-a37d-001e193645d6",
+    "RFGID": "0004",
+    "name": "Monica Van Nest and Troy Weigand Team",
+    "type": "Associate",
+    "websiteURL": "https://www.facebook.com/monica.vannest",
+    "lastUpdateOn": "2018-06-29T17:50:22.810",
+    "office": {
+      "officeId": "253454c1-35b8-11d7-a2c7-00b0d0494558",
+      "RFGOfficeId": "0001",
+      "companyId": "29cf85ea-3115-11d7-a2c7-00b0d0494558",
+      "companyName": "AG-TOWN, REALTORS",
+      "RFGCompanyId": "134055",
+      "brandCode": "CB",
+      "name": "Coldwell Banker AG-TOWN, REALTORS",
+      "type": "Main office",
+      "officeAddress": {
+        "streetAddress": "411 Texas Avenue South",
+        "city": "College Station",
+        "district": "Brazos",
+        "stateProvince": "Texas",
+        "stateProvinceCode": "TX",
+        "postalCode": "77840",
+        "country": "United States",
+        "countryCode": "US",
+        "latitude": 30.62881,
+        "longitude": -96.3355,
+        "formattedAddress": "411 Texas Ave S, College Station, TX 77840"
+      },
+      "phoneNumber": "9798468400",
+      "emailAddress": "toni@agtowncb.com"
+    },
+    "members": [
+      {
+        "id": "4D09DE00-78CA-4B06-8300-7FA3E6CB0D8E",
+        "name": "Troy Weigand",
+        "firstName": "Troy",
+        "lastName": "Weigand",
+        "gender": "Male",
+        "defaultPhotoURL": "http://i.coldwellbanker.com/2i0/1szd2wafmsp5mka4jcy98596t0i",
+        "emailAddress": "troy@troyweigand.com",
+        "leadEmailAddress": "134055.lead.7358532@leads.leadrouter.com",
+        "businessPhone": "9798468400",
+        "mobilePhone": "9795758233",
+        "isRepresentative": false,
+        "office": {
+          "officeId": "253454c1-35b8-11d7-a2c7-00b0d0494558",
+          "RFGOfficeId": "0001",
+          "companyId": "29cf85ea-3115-11d7-a2c7-00b0d0494558",
+          "companyName": "AG-TOWN, REALTORS",
+          "RFGCompanyId": "134055",
+          "brandCode": "CB",
+          "name": "Coldwell Banker AG-TOWN, REALTORS",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "411 Texas Avenue South",
+            "city": "College Station",
+            "district": "Brazos",
+            "stateProvince": "Texas",
+            "stateProvinceCode": "TX",
+            "postalCode": "77840",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 30.62881,
+            "longitude": -96.3355,
+            "formattedAddress": "411 Texas Ave S, College Station, TX 77840"
+          },
+          "phoneNumber": "9798468400",
+          "emailAddress": "toni@agtowncb.com"
+        }
+      },
+      {
+        "id": "7147293B-75B0-4DEE-AEEF-604BFA17450B",
+        "name": "Monica Van Nest",
+        "firstName": "Monica",
+        "lastName": "Van Nest",
+        "gender": "Female",
+        "defaultPhotoURL": "http://i.coldwellbanker.com/2i0/ffebbc6xgsk14g2ztbeht91c17i",
+        "emailAddress": "monica@monicavannest.com",
+        "leadEmailAddress": "134055.lead.7318953@leads.leadrouter.com",
+        "businessPhone": "9798468400",
+        "mobilePhone": "9795744118",
+        "isRepresentative": true,
+        "office": {
+          "officeId": "253454c1-35b8-11d7-a2c7-00b0d0494558",
+          "RFGOfficeId": "0001",
+          "companyId": "29cf85ea-3115-11d7-a2c7-00b0d0494558",
+          "companyName": "AG-TOWN, REALTORS",
+          "RFGCompanyId": "134055",
+          "brandCode": "CB",
+          "name": "Coldwell Banker AG-TOWN, REALTORS",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "411 Texas Avenue South",
+            "city": "College Station",
+            "district": "Brazos",
+            "stateProvince": "Texas",
+            "stateProvinceCode": "TX",
+            "postalCode": "77840",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 30.62881,
+            "longitude": -96.3355,
+            "formattedAddress": "411 Texas Ave S, College Station, TX 77840"
+          },
+          "phoneNumber": "9798468400",
+          "emailAddress": "toni@agtowncb.com"
+        }
+      }
+    ]
+  },
+  "awards": [
+    {
+      "year": 2011,
+      "type": "International Diamond Society Team"
+    },
+    {
+      "year": 2013,
+      "type": "International Diamond Society Team"
+    },
+    {
+      "year": 2016,
+      "type": "International Diamond Society Team"
+    },
+    {
+      "year": 2012,
+      "type": "International President's Circle Team"
+    },
+    {
+      "year": 2014,
+      "type": "International President's Circle Team"
+    },
+    {
+      "year": 2015,
+      "type": "International President's Circle Team"
+    },
+    {
+      "year": 2010,
+      "type": "International Sterling Society Team"
+    },
+    {
+      "year": 2017,
+      "type": "International Sterling Society Team"
+    }
+  ],
+  "addlWebSites": [
+    {
+      "type": "Facebook",
+      "url": "https://www.facebook.com/monica.vannest",
+      "contentLanguageCode": "en"
+    },
+    {
+      "type": "Linkedin",
+      "url": "http://www.linkedin.com/profile/view?id=43324385&trk=nav_responsive_tab_profile_pic",
+      "contentLanguageCode": "en"
+    },
+    {
+      "type": "Pinterest",
+      "url": "http://www.pinterest.com/monicavannest/boards/",
+      "contentLanguageCode": "en"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{% for page in pagination %}
+    <li class="wide-line">
+        {% include 'AppBundle:article/card:featured.html.twig' with {article: page.featured|first} %}
+    </li>
+
+    {% for row in page.teasers|batch(property_row_limit())|slice(0,3) -%}
+        <li class="wide-line">
+            <div class="row">
+                <ul class="small-block-grid-2 medium-block-grid-3">
+                    {% for article in row %}
+                        <li>
+                            {% include 'AppBundle:article/card:small.html.twig' %}
+                        </li>
+                    {% endfor %}
+                </ul>
+                {% if not loop.last %}
+                    <div class="items-collection-separator"></div>
+                {% endif %}
+            </div>
+        </li>
+    {% endfor %}
+
+    {% include 'AppBundle:article/card:jumbo.html.twig' with {cover: page.cover} %}
+
+    {% for row in page.teasers|batch(property_row_limit())|slice(3,2) -%}
+        <li class="wide-line">
+            <div class="row">
+                <ul class="small-block-grid-2 medium-block-grid-3">
+                    {% for article in row %}
+                        <li>
+                            {% include 'AppBundle:article/card:small.html.twig' %}
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                {% if loop.index == 1 %}
+                    <div class="items-collection-separator"></div>
+                {% endif %}
+            </div>
+        </li>
+    {% endfor %}
+
+    {% if page.properties %}
+        <div class="featured-homes">
+            <div class="headline --separator --button">
+                <h1 class="heading">
+                    Featured Homes
+                </h1>
+                <span class="sub-heading --small">
+                    From Sydney to New York, experience the world's most extraordinary properties.<br/>
+                    Click to view all our featured homes.
+                </span>
+
+                <div class="information-centered">
+                    <a href="{{ path('featured_index', {'market': 'for-sale'}) }}"
+                       class="black mdl-button mdl-js-button mdl-js-ripple-effect">
+                        More
+                    </a>
+                </div>
+            </div>
+
+            {% include 'AppBundle:property:featured_properties.html.twig' with {properties: page.properties} %}
+        </div>
+    {% endif %}
+
+{% endfor %}

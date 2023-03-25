@@ -1,0 +1,564 @@
+{
+    "listingSummary": {
+        "listingId": "aff6cb2b-294d-42ab-81b7-83f88434235b",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-05-01",
+        "photoCount": 24,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 449900,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "1600 Prince St #612",
+            "city": "ALEXANDRIA",
+            "district": "ALEXANDRIA CITY",
+            "stateProvince": "Virginia",
+            "stateProvinceCode": "VA",
+            "postalCode": "22314",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 38.80509,
+            "longitude": -77.05742,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "1600 Prince St, Alexandria, VA 22314"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "1600 PRINCE STREET"
+            }
+        ],
+        "mlsNumbers": [
+            "AX10225787"
+        ],
+        "RFGListingId": "GB5MZ9",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/gb5mz9",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Condominium",
+        "propertyStyle": "Traditional",
+        "propertyName": "1600 Prince St #612",
+        "totalBath": 1,
+        "lotSize": "0 SF",
+        "buildingArea": "899 Sq. Ft.",
+        "noOfBedrooms": 1,
+        "squareFootage": 899,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/CC596747-E17C-4922-9F22-C21D5ABD8174",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-08T03:50:22.870",
+        "agents": [
+            {
+                "id": "32e0b3db-8b5c-4090-8387-0ab249cc1ea3",
+                "name": "Dayna Blumel",
+                "firstName": "Dayna",
+                "lastName": "Blumel",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/D0FC797A-3500-4DAE-B0CB-969D90D461F8",
+                "emailAddress": "dblumel@ttrsir.com",
+                "leadEmailAddress": "800107.lead.4030418@leads.leadrouter.com",
+                "businessPhone": "+1 7035972252",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                    "RFGOfficeId": "0007",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "400 South Washington Street",
+                        "city": "Alexandria",
+                        "district": "Alexandria Indep. City",
+                        "stateProvince": "Virginia",
+                        "stateProvinceCode": "VA",
+                        "postalCode": "22314",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.80141,
+                        "longitude": -77.04742,
+                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                    },
+                    "phoneNumber": "7033106800",
+                    "emailAddress": "alexandria@ttrsir.com"
+                }
+            },
+            {
+                "id": "869f9b52-9331-4b7c-87c7-627d1c04f877",
+                "name": "Kaye Cawili",
+                "firstName": "Kaye",
+                "lastName": "Cawili",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/10228F2E-668F-4493-99FF-76B4D4C19D1F",
+                "emailAddress": "kaye.cawili@list-gr.com",
+                "leadEmailAddress": "800107.lead.4030417@leads.leadrouter.com",
+                "businessPhone": "5560554",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "cf12d208-0f34-4860-a230-2553d4c1ac68",
+                    "RFGOfficeId": "0001",
+                    "companyId": "0643479d-13d0-4950-b599-7ced6235387d",
+                    "companyName": "List Sotheby's International Realty ",
+                    "RFGCompanyId": "820102",
+                    "brandCode": "SIR",
+                    "name": "List Sotheby's International Realty ",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "Unit 802 Eco Tower, 32nd Street Corner 9th Avenue",
+                        "city": "Taguig",
+                        "district": "Fourth District NCR",
+                        "postalCode": "1634",
+                        "country": "Philippines",
+                        "countryCode": "PH",
+                        "latitude": 14.55359,
+                        "longitude": 121.05026,
+                        "formattedAddress": "32nd St, Taguig City, Philippines"
+                    },
+                    "phoneNumber": "+632 556 0554"
+                }
+            },
+            {
+                "id": "61227dd7-9d8c-44fc-bc58-b0e893187048",
+                "name": "Dayna Blumel and Kerry Adams ",
+                "firstName": "Dayna Blumel and Kerry",
+                "lastName": "Adams",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/75DDB43B-589D-4CEA-898F-3AFCD6BAB22D",
+                "emailAddress": "blumeladams@ttrsir.com",
+                "businessPhone": "7035972252",
+                "mobilePhone": "7035972252",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                    "RFGOfficeId": "0007",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "400 South Washington Street",
+                        "city": "Alexandria",
+                        "district": "Alexandria Indep. City",
+                        "stateProvince": "Virginia",
+                        "stateProvinceCode": "VA",
+                        "postalCode": "22314",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.80141,
+                        "longitude": -77.04742,
+                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                    },
+                    "phoneNumber": "7033106800",
+                    "emailAddress": "alexandria@ttrsir.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 1,
+    "halfBath": 0,
+    "parkingPlaces": 1,
+    "levels": 1,
+    "yearBuilt": "1982",
+    "providerKey": "aff6cb2b-294d-42ab-81b7-83f88434235b",
+    "propertyFeatures": [
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Wood"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Refrigerator"
+        },
+        {
+            "groupName": "General",
+            "description": "Elevator"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Microwave"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dishwasher"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Range \/ Oven"
+        },
+        {
+            "groupName": "Exterior Description",
+            "description": "Brick"
+        },
+        {
+            "groupName": "Sewer",
+            "description": "Public"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Central A\/C"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dryer"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Balcony \/ Lanai"
+        },
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Electric"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Heating Type",
+            "description": "Forced Air"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Washer"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Garbage Disposal"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Kitchen Facilities"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Welcome to one of the few one bedroom plus den units in desirable 1600 Prince St - located just two blocks from King Street Metro. With 899 square feet, this condo features a bright and open floor plan with separate dining room, spacious living room with wood burning fireplace, updated kitchen and bathroom, washer and dryer, hardwood floors, and crown molding. Park your car in the garage and stroll to Old Town shops, restaurants, and the waterfront.",
+            "htmlRemark": "Welcome to one of the few one bedroom plus den units in desirable 1600 Prince St - located just two blocks from King Street Metro. With 899 square feet, this condo features&amp;nbsp; a bright and open floor plan with separate dining room, spacious living room with wood burning fireplace, updated kitchen and bathroom, washer and dryer, hardwood floors, and crown molding.&amp;nbsp; Park your car in the garage and stroll to Old Town shops, restaurants, and the waterfront."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/gb5mz9",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "BD63905D-EB3C-496B-8FFB-020F81161400",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/BD63905D-EB3C-496B-8FFB-020F81161400",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "3149D452-4DBA-4252-BB32-045986BFCE7D",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/3149D452-4DBA-4252-BB32-045986BFCE7D",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "BF47DEC5-5DBB-4410-B0C8-13019E9AE902",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/BF47DEC5-5DBB-4410-B0C8-13019E9AE902",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "A12274C2-4792-44FD-9DEA-15D048D79257",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/A12274C2-4792-44FD-9DEA-15D048D79257",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "BC0E7ABB-C3D6-40B2-B3C7-19242557F93B",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/BC0E7ABB-C3D6-40B2-B3C7-19242557F93B",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1230,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "3F6C1C1D-97E2-4C34-872C-21464686BEAD",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/3F6C1C1D-97E2-4C34-872C-21464686BEAD",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1126,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "1822044D-27FB-439E-9462-21DE0FA47257",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/1822044D-27FB-439E-9462-21DE0FA47257",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "C81735C5-134B-43BA-84C3-2805403FEAD1",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/C81735C5-134B-43BA-84C3-2805403FEAD1",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "5B5D520B-F00D-4542-9E60-42B555C8351C",
+            "sequenceNumber": 1,
+            "url": "https:\/\/tours.shootandshowcase.com\/1018505?idx=1",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Virtual Tour",
+            "lastUpdateOn": "2018-05-10T02:25:46.530"
+        },
+        {
+            "mediaID": "E5308E1B-CFD4-4791-BB48-48A53A36500E",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/E5308E1B-CFD4-4791-BB48-48A53A36500E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "74003CC8-C785-4BD3-9D03-494D142AEE41",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/74003CC8-C785-4BD3-9D03-494D142AEE41",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "CB6606FE-3065-4FB9-AE47-4A091DD2154E",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/CB6606FE-3065-4FB9-AE47-4A091DD2154E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "594E9D2A-B1C6-4ABF-9E03-53D20409B23F",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/594E9D2A-B1C6-4ABF-9E03-53D20409B23F",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "FDAF288F-C10E-4193-A23A-6A6E2FF48C81",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/FDAF288F-C10E-4193-A23A-6A6E2FF48C81",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "3E4F10FE-17E8-449E-BFB7-6B2594AD622F",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/3E4F10FE-17E8-449E-BFB7-6B2594AD622F",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "96F966D0-20F7-4A18-80AA-A12F79FF63AE",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/96F966D0-20F7-4A18-80AA-A12F79FF63AE",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1267,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "A5364219-FED3-4110-97B4-ABDC5FE4159C",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/A5364219-FED3-4110-97B4-ABDC5FE4159C",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "CC596747-E17C-4922-9F22-C21D5ABD8174",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/CC596747-E17C-4922-9F22-C21D5ABD8174",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1061,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "AD173FF9-2F90-4A30-BCC9-C59083EF2C94",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/AD173FF9-2F90-4A30-BCC9-C59083EF2C94",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1367,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "75D47340-D637-48D9-93A1-C5FC634DE9CA",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/75D47340-D637-48D9-93A1-C5FC634DE9CA",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "6E0F6FA5-1D2C-4EB0-8842-D9ECEE8E2813",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/6E0F6FA5-1D2C-4EB0-8842-D9ECEE8E2813",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "CE77FC46-60D1-43AB-BB9B-DDE146374B1B",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/CE77FC46-60D1-43AB-BB9B-DDE146374B1B",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "1D934149-3DEE-4310-A0F2-E1BCE5FA2614",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/1D934149-3DEE-4310-A0F2-E1BCE5FA2614",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "8D6FA428-6EAD-46F8-ABA7-EC459B74DCD6",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/8D6FA428-6EAD-46F8-ABA7-EC459B74DCD6",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        },
+        {
+            "mediaID": "9C0E2C48-E127-4FF8-BA20-EE23BA84C729",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/9C0E2C48-E127-4FF8-BA20-EE23BA84C729",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1366,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-06T15:10:43.787"
+        }
+    ],
+    "schools": [
+        {
+            "type": "Primary School",
+            "name": "LYLES-CROUCH"
+        },
+        {
+            "type": "High School",
+            "name": "T.C. WILLIAMS"
+        },
+        {
+            "type": "Middle School",
+            "name": "GEORGE WASHINGTON"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "AX10225787",
+            "isPrimary": true
+        }
+    ]
+}

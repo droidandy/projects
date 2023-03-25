@@ -1,0 +1,292 @@
+@import "../../../../styles/tools/mixins.scss";
+.componentQuizResultsProductsList {
+  @include spacingBottom;
+  @include marginXauto;
+  max-width: 1200px;
+
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .productItem {
+    position: relative;
+    margin-top: 40px;
+    border-bottom: dashed 2px #f1f1f2;
+    padding-bottom: 12px;
+    @include media-query($small-up) {
+      padding-left: 268px;
+      padding-bottom: 20px;
+    }
+
+    .item-catalog--top {
+      text-align: center;
+      @include media-query($small-up) {
+        position: relative;
+        text-align: left;
+        padding-bottom: 20px;
+      }
+
+      .item-catalog--name {
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        line-height: 30px;
+        font-family: var(--font-heading);
+        font-size: 24px;
+        color: var(--rosemary);
+      }
+      .item-catalog--info {
+        line-height: 30px;
+        text-transform: uppercase;
+        font-family: var(--font-heading);
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        color: var(--purplish-grey);
+      }
+    }
+
+    .item-catalog--description {
+      color: var(--purplish-grey);
+      font-size: 14px;
+      line-height: 1.57;
+      min-height: 90px;
+      @include media-query($small) {
+        aside {
+          display: none;
+        }
+        &.open {
+          aside {
+            display: block;
+          }
+        }
+      }
+      p {
+        margin: 0 0 14px;
+        color: var(--color-body-text);
+      }
+      h4 {
+        text-transform: uppercase;
+        color: var(--purplish-grey);
+        line-height: 1.41;
+        letter-spacing: 0.9px;
+        font-size: 18px;
+        font-family: var(--font-heading);
+        margin: 20px 0 10px;
+      }
+
+      h2 {
+        @include defaultText();
+      }
+
+      ul {
+        li {
+          padding-left: 20px;
+          margin-bottom: 10px;
+          background-image: url(./video_drop_pin.svg);
+          background-repeat: no-repeat;
+          background-position: 0 4px;
+          background-size: 11px;
+          list-style: none;
+        }
+      }
+
+      .ingredients {
+        span {
+          font-weight: normal;
+        }
+      }
+
+      .ProductFeedback {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        .bubbles .talk-bubble {
+          max-width: 90%;
+          @include media-query($small) {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .checkbox-custom {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 0 auto;
+    @include media-query($small-up) {
+      margin: 0;
+      position: absolute;
+      left: -48px;
+      top: 0;
+    }
+    input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0;
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+      display: none;
+      &:checked {
+        & + span {
+          border: 0;
+          background: url("./checkbox_checked.svg") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    span {
+      display: block;
+      height: 30px;
+      border: solid 1px #b8b7bb;
+    }
+  }
+
+  .item-catalog--image {
+    text-align: center;
+    // padding: 20px 0;
+    padding: 0;
+
+    img {
+      cursor: pointer;
+      max-height: 150px;
+      object-fit: contain;
+      @include media-query($small-up) {
+        max-height: 210px;
+        width: 210px;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .item-catalog--time {
+    position: relative;
+    padding: 1px 0 2px 35px;
+    margin: 8px 0 20px;
+    &:before {
+      content: "";
+      display: block;
+      background: url("./icon_clock.svg");
+      width: 24px;
+      height: 24px;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .btn--show-hide {
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    color: var(--rosemary);
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-heading);
+    justify-content: center;
+    @include media-query($small-up) {
+      justify-content: flex-start;
+    }
+    span {
+      color: var(--rosemary);
+      display: flex;
+      -ms-align-items: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    i {
+      display: inline-block;
+      position: relative;
+      width: 2px;
+      height: 8px;
+      background: #52aea2;
+      margin-left: 8px;
+      transform: rotate(180deg);
+      &:after {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-top: solid 2px #52aea2;
+        border-right: solid 2px #52aea2;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: -1px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .btn--show-hide.active i {
+    transform: rotate(0deg);
+  }
+
+  .demoVideo {
+    max-width: 750px;
+    @include media-query($medium-up) {
+      max-width: 450px;
+      margin-right: auto;
+    }
+
+    h1 {
+      @include defaultText();
+    }
+  }
+
+  .quiz-results {
+    &--videos {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .ComponentProductItemVideo {
+    @include media-query($small) {
+      @include spacingBottom;
+      padding-bottom: 10px;
+      border-bottom: dashed 2px #f1f1f2;
+    }
+
+    .groupDescription {
+      position: relative;
+      margin-top: 25px;
+      max-width: 100%;
+      width: 280px;
+
+      .title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        padding-left: 50px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #52aea2;
+        text-align: left;
+      }
+      .type {
+        padding-left: 50px;
+        text-align: left;
+      }
+      .checkbox-custom {
+        left: 0;
+      }
+    }
+  }
+}

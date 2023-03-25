@@ -1,0 +1,17 @@
+mutation CreateUserStackMutation($createUserStackData: CreateStackInput!) {
+  createUserStack(data: $createUserStackData) {
+    ... on CreateUserStackSuccess {
+      stack {
+        id
+        name
+      }
+    }
+    ... on InstNotFoundError {
+      message
+    }
+    ... on CreateInvalidInputError {
+      message
+      errorCode
+    }
+  }
+}

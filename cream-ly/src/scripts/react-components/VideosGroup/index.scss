@@ -1,0 +1,70 @@
+@import "../../../styles/tools/mixins.scss";
+.componentVideosGroup {
+    @include marginXauto;
+    max-width: 335px;
+
+    .row.video {
+      @include spacingBottomSmall;
+    }
+
+    .row.notSelected {
+        opacity: 0.3;
+        filter: grayscale(100%);
+        }
+
+    .colNumber {
+        max-width: 76px;
+        min-height: 61px;
+        margin-right: 20px;
+       
+
+        div {
+            min-width: 35px;
+            max-width: 76px;
+            text-align: center;
+        }
+    }
+
+    .colCard {
+        max-width: 300px;
+    }
+
+    .checkbox-custom {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 0 auto;
+
+        input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          opacity: 0;
+          cursor: pointer;
+        }
+        input[type="checkbox"] {
+          display: none;
+          &:checked {
+            & + span {
+              border: 0;
+              background: url("./checkbox_checked.svg") no-repeat;
+              background-size: 100% 100%;
+            }
+          }
+        }
+        span {
+          display: block;
+          height: 30px;
+          border: solid 1px #b8b7bb;
+        }
+      }
+
+}

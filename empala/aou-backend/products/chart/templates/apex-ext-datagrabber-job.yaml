@@ -1,0 +1,101 @@
+{{- if .Values.dataGrabbers.apexExtracts.SFTPPrivateKey }}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ include "aou-backend.apex-ext-datagrabber.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+type: Opaque
+stringData:
+  SFTPHost: {{ .Values.dataGrabbers.apexExtracts.SFTPHost | quote }}
+  SFTPPort: {{ .Values.dataGrabbers.apexExtracts.SFTPPort | quote }}
+  SFTPUser: {{ .Values.dataGrabbers.apexExtracts.SFTPUser | quote }}
+  SFTPPrivateKey: {{ .Values.dataGrabbers.apexExtracts.SFTPPrivateKey | quote }}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "aou-backend.apex-ext-datagrabber.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: apex-ext-datagrabber
+spec:
+  {{- if .Values.dataGrabbers.apexExtracts.isScheduleB64Encoded }}
+  schedule: {{ .Values.dataGrabbers.apexExtracts.schedule | b64dec | quote }}
+  {{- else }}
+  schedule: {{ .Values.dataGrabbers.apexExtracts.schedule | quote }}
+  {{- end }}
+  concurrencyPolicy: "Replace"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+        {{- with .Values.imagePullSecrets }}
+          imagePullSecrets:
+            {{- toYaml . | nindent 8 }}
+        {{- end }}
+          serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+          containers:
+          - env:
+            - name: APEX_EXTRACTS_DAYS_BEFORE_CURRENT
+              value: {{ .Values.dataGrabbers.apexExtracts.daysBeforeCurrent | quote }}
+            - name: APEX_EXTRACTS_SFTP_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-ext-datagrabber.fullname" . }}
+                  key: SFTPHost
+            - name: APEX_EXTRACTS_SFTP_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-ext-datagrabber.fullname" . }}
+                  key: SFTPPort
+            - name: APEX_EXTRACTS_SFTP_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-ext-datagrabber.fullname" . }}
+                  key: SFTPUser
+            - name: APEX_EXTRACTS_SFTP_PRIVATE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-ext-datagrabber.fullname" . }}
+                  key: SFTPPrivateKey
+            - name: APOLLO_SERVER_HOST_URI
+              value: "http://{{ include "aou-backend.apollo.fullname" . }}:{{ .Values.services.apollo.port }}" 
+            - name: AWS_COGNITO_USER_POOL_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+                  key: userPoolId
+            - name: AWS_COGNITO_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+                  key: clientId
+            - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.authentication-secret.fullname" . }}
+                  key: marketdataUpdaterUserName
+            - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.authentication-secret.fullname" . }}
+                  key: marketdataUpdaterUserPassword
+            - name: HASURA_GRAPHQL_ENDPOINT
+              value: "http://{{ include "aou-backend.hasura.fullname" . }}:{{ .Values.services.hasura.port }}/v1/graphql" 
+            {{- if .Values.hasura.adminSecret }}
+            - name: HASURA_GRAPHQL_ADMIN_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.hasura-secret.fullname" . }}
+                  key: adminSecret
+            {{- end }}
+            image: "{{ .Values.image.repository }}:apex-ext-datagrabber-{{ .Chart.AppVersion }}"
+            imagePullPolicy: {{ .Values.image.pullPolicy }}
+            name: apex-ext-datagrabber
+          restartPolicy: Never
+      backoffLimit: {{ .Values.dataGrabbers.apexExtracts.backoffLimit }}
+  successfulJobsHistoryLimit: {{ .Values.dataGrabbers.apexExtracts.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.dataGrabbers.apexExtracts.failedJobsHistoryLimit }}
+status: {}
+{{- end }}

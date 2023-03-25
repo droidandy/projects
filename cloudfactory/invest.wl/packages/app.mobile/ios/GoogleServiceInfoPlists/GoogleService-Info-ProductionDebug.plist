@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>811774130999-bc905cm1rjg1jlv3sl19ndvp844kjaho.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.811774130999-bc905cm1rjg1jlv3sl19ndvp844kjaho</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBBuqLBFyY0AM5YO8uBgBr6Er9Xvfe9kEg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>811774130999</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rshbma.invest.mapp</string>
+	<key>PROJECT_ID</key>
+	<string>rshb-am</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rshb-am.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:811774130999:ios:e4f2f7f079b1b9574478b2</string>
+	<key>DATABASE_URL</key>
+	<string>https://rshb-am.firebaseio.com</string>
+</dict>
+</plist>

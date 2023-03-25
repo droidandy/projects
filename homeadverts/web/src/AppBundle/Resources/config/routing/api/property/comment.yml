@@ -1,0 +1,4 @@
+ha_comment_property_new:
+    path:  /comment
+    defaults: { _controller: AppBundle:Api\Property\Comment:new }
+    methods:  [POST]

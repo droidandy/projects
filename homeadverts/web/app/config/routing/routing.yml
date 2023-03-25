@@ -1,0 +1,39 @@
+_api:
+    prefix: /api
+    resource: api/api.yml
+
+article:
+    prefix: /story
+    resource: web/article.yml
+
+property:
+    prefix: /property
+    resource: web/property.yml
+
+user:
+    prefix: /profile
+    resource: web/user.yml
+
+oauth:
+    resource:  web/oauth.yml
+
+messenger:
+    prefix: /room
+    resource: "@AppBundle/Resources/config/routing/messenger/room.yml"
+
+tag:
+    prefix: /tag
+    resource: "@AppBundle/Resources/config/routing/tag.yml"
+
+statistics:
+    prefix: /statistics
+    resource: "@AppBundle/Resources/config/routing/statistics.yml"
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+site:
+    resource: "@AppBundle/Resources/config/routing/site.yml"
+
+_liip_imagine:
+    resource: "@LiipImagineBundle/Resources/config/routing.xml"

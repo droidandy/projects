@@ -1,0 +1,16 @@
+<ul class="dropdowns">
+    <li>
+        <a class="my-selection" href="#">
+            {{ currentLocale().name }}
+        </a>
+        <ul class="nav-menu">
+            {% include 'AppBundle:layout/header/nav:_locale.html.twig' %}
+        </ul>
+    </li>
+    <li>
+        <a class="my-selection" href="#">
+            {{ currentCurrency() }}
+        </a>
+        {% include 'AppBundle:layout/header/nav:_currency.html.twig' %}
+    </li>
+</ul>

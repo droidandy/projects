@@ -1,0 +1,31 @@
+@import "../variables-theme";
+@import "./presentation/compare";
+@import "./presentation/options";
+@import "./presentation/disclosure";
+
+#app #container-center #container-pushable #container-pusher {
+  div.presentation {
+    .presentation-options-header {
+      font-size: 30px;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: $HEADER_SUB_COLOR2;
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
+  }
+}
+
+.presentation-sub-header {
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $HEADER_SUB_COLOR2;
+  text-transform: uppercase;
+}

@@ -1,0 +1,2461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="golovchenkoaa" id="00">
+        <!-- check initial update by any table -->
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="rfp"/>
+            </not>
+        </preConditions>
+        <comment>Initial schema creation</comment>
+        <sqlFile path="../schema_v2.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="01">
+        <preConditions onFail="MARK_RAN">
+            <tableIsEmpty tableName="carrier"/>
+        </preConditions>
+        <comment>Initial data</comment>
+        <sqlFile path="../schema_v2_static_data.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="02">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote_option" columnName="final_selection"/>
+            </not>
+        </preConditions>
+        <comment>Added column rfp_quote_option.final_selection</comment>
+        <addColumn tableName="rfp_quote_option">
+            <column name="final_selection" type="BIT(1)" remarks="Include option in final selected">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+        <sql>update rfp_quote_option set final_selection = false</sql>
+        <addNotNullConstraint tableName="rfp_quote_option" columnName="final_selection" columnDataType="BIT(1)"/>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="03">
+        <preConditions onFail="MARK_RAN">
+            <tableIsEmpty tableName="form"/>
+            <tableIsEmpty tableName="question"/>
+            <tableIsEmpty tableName="variant"/>
+        </preConditions>
+        <comment>Static data for questions, forms, form_questions, variants</comment>
+        <sqlFile path="../schema_v2_questionnaire_static_data.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="af-04052017-1">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="rfp_quote_summary"/>
+            </not>
+        </preConditions>
+        <comment>Added table rfp_quote_summary</comment>
+        <createTable tableName="rfp_quote_summary">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rfp_quote_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="medical_notes" type="text">
+                <constraints nullable="true"/>
+            </column>
+            <column name="dental_notes" type="text">
+                <constraints nullable="true"/>
+            </column>
+            <column name="vision_notes" type="text">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_id"
+                                 baseTableName="rfp_quote_summary"
+                                 constraintName="fk_rfp_quote_id"
+                                 referencedColumnNames="rfp_quote_id"
+                                 referencedTableName="rfp_quote"/>
+        <rollback>
+            <dropTable tableName="rfp_quote_summary"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="af-14052017-1">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote_summary" columnName="client_id"/>
+            </not>
+        </preConditions>
+        <comment>Moving RfpSummary FK to Client instead of RfpQuote</comment>
+        <addColumn tableName="rfp_quote_summary">
+            <column name="client_id" type="bigint" afterColumn="id">
+                <constraints nullable="false" unique="true" foreignKeyName="fk_rfp_summary_client_id"
+                             referencedColumnNames="client_id" referencedTableName="client"/>
+            </column>
+        </addColumn>
+
+        <dropForeignKeyConstraint baseTableName="rfp_quote_summary" constraintName="fk_rfp_quote_id"/>
+        <dropIndex tableName="rfp_quote_summary" indexName="fk_rfp_quote_id"/>
+        <dropColumn tableName="rfp_quote_summary" columnName="rfp_quote_id"/>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="af-14052017-2">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                select count(*) from information_schema.KEY_COLUMN_USAGE
+                where TABLE_NAME = 'rfp' and CONSTRAINT_NAME = 'uc_client_id_product';
+            </sqlCheck>
+        </preConditions>
+        <comment>Added unique constraint on rfp: client_id and product</comment>
+        <addUniqueConstraint constraintName="uc_client_id_product" columnNames="client_id, product" tableName="rfp"/>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="11-05-17 17:05">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote_summary" columnName="client_id"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="rfp_quote_summary">
+            <column name="client_id" type="bigint" afterColumn="id">
+                <constraints unique="true"/>
+            </column>
+        </addColumn>
+        <addForeignKeyConstraint baseColumnNames="client_id"
+                                 baseTableName="rfp_quote_summary"
+                                 constraintName="fk_rfp_summary_client_id"
+                                 referencedColumnNames="client_id"
+                                 referencedTableName="client"/>
+        <dropForeignKeyConstraint baseTableName="rfp_quote_summary" constraintName="fk_rfp_quote_id"/>
+        <dropIndex tableName="rfp_quote_summary" indexName="fk_rfp_quote_id"/>
+        <dropColumn tableName="rfp_quote_summary" columnName="rfp_quote_id"/>
+        <addUniqueConstraint columnNames="client_id, product"
+                             constraintName="uc_client_id_product"
+                             tableName="rfp"/>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="12-05-17 11:48">
+        <addColumn tableName="options">
+            <column name="tier1_census" type="double" remarks="Tier 1 census (Number of people or Enrollment)"/>
+            <column name="tier2_census" type="double" remarks="Tier 2 census (Number of people or Enrollment)"/>
+            <column name="tier3_census" type="double" remarks="Tier 3 census (Number of people or Enrollment)"/>
+            <column name="tier4_census" type="double" remarks="Tier 4 census (Number of people or Enrollment)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="12-05-17 15:45">
+        <addColumn tableName="rfp">
+            <column name="situs_state" type="text"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="15-05-17 15:00">
+        <dropColumn tableName="rfp" columnName="situs_state"/>
+        <addColumn tableName="client">
+            <column name="situs_state" type="text"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="lemdy" id="15-05-17 22:15">
+        <modifyDataType
+                columnName="mime_type"
+                newDataType="varchar(255)"
+                tableName="client_file_upload"/>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="17-05-17 14:00">
+        <addColumn tableName="rfp_quote_option_network">
+            <column name="tier1_ee_fund" type="float"/>
+            <column name="tier2_ee_fund" type="float"/>
+            <column name="tier3_ee_fund" type="float"/>
+            <column name="tier4_ee_fund" type="float"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="ositapara" id="20-05-17 17:30">
+        <addUniqueConstraint tableName="network" columnNames="carrier_id, type, name"
+                             constraintName="uc_carrier_type_name"/>
+        <addUniqueConstraint tableName="benefit" columnNames="plan_id, benefit_name_id, in_out_network"
+                             constraintName="uc_plan_benfitname_inout"/>
+        <addUniqueConstraint tableName="plan_name_by_network" columnNames="network_id, plan_id, plan_type, name"
+                             constraintName="uc_network_plan_type_name"/>
+    </changeSet>
+
+    <changeSet author="ositapara" id="20-05-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM network WHERE carrier_id = 22 AND network_id = 42 AND name = 'Select Network';
+            </sqlCheck>
+        </preConditions>
+        <comment>Update UHC valid networks and clean one benefits name</comment>
+        <sqlFile path="../scripts/db.update-1.0.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="23-05-17 12:00">
+        <addColumn tableName="rfp_quote_option_network">
+            <column name="selected_quote_network_rx_plan_id" type="bigint"
+                    afterColumn="selected_quote_network_plan_id"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="24-05-17 12:47">
+        <sqlFile path="../scripts/db.update_questionaire_static_data_2.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="26-05-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client" columnName="cobra_count"/>
+            </not>
+        </preConditions>
+        <comment>Added new column for question "How many total COBRA enrollees?"</comment>
+        <addColumn tableName="client">
+            <column name="cobra_count" type="int" afterColumn="retirees_count">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="25-05-17 21:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="rider"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider</comment>
+        <createTable tableName="rider">
+            <column name="rider_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_name" type="text">
+                <constraints nullable="true"/>
+            </column>
+            <column name="rider_description" type="text">
+                <constraints nullable="true"/>
+            </column>
+            <column name="rfp_quote_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tier1_rate" type="float">
+                <constraints nullable="true"/>
+            </column>
+            <column name="tier2_rate" type="float">
+                <constraints nullable="true"/>
+            </column>
+            <column name="tier3_rate" type="float">
+                <constraints nullable="true"/>
+            </column>
+            <column name="tier4_rate" type="float">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_id"
+                                 baseTableName="rider"
+                                 constraintName="fk_rfp_quote_id"
+                                 referencedColumnNames="rfp_quote_id"
+                                 referencedTableName="rfp_quote"/>
+        <rollback>
+            <dropTable tableName="rider"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="25-05-17 21:20">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+            <tableExists tableName="rfp_quote_option"/>
+            <not>
+                <tableExists tableName="rider_rfp_quote_option"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider_rfp_quote_option</comment>
+        <createTable tableName="rider_rfp_quote_option">
+            <column name="rider_rfp_quote_option_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rfp_quote_option_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rider_id"
+                                 baseTableName="rider_rfp_quote_option"
+                                 constraintName="fk_rider_id_option_id"
+                                 referencedColumnNames="rider_id"
+                                 referencedTableName="rider"/>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_option_id"
+                                 baseTableName="rider_rfp_quote_option"
+                                 constraintName="fk_rfp_quote_option_id"
+                                 referencedColumnNames="rfp_quote_option_id"
+                                 referencedTableName="rfp_quote_option"/>
+        <rollback>
+            <dropTable tableName="rider_rfp_quote_option"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="25-05-17 21:30">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+            <tableExists tableName="rfp_quote_option_network"/>
+            <not>
+                <tableExists tableName="rider_rfp_quote_option_network"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider_rfp_quote_option_network</comment>
+        <createTable tableName="rider_rfp_quote_option_network">
+            <column name="rider_rfp_quote_option_network_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rfp_quote_option_network_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rider_id"
+                                 baseTableName="rider_rfp_quote_option_network"
+                                 constraintName="fk_rider_id_network_id"
+                                 referencedColumnNames="rider_id"
+                                 referencedTableName="rider"/>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_option_network_id"
+                                 baseTableName="rider_rfp_quote_option_network"
+                                 constraintName="fk_rfp_quote_option_network_id"
+                                 referencedColumnNames="rfp_quote_option_network_id"
+                                 referencedTableName="rfp_quote_option_network"/>
+        <rollback>
+            <dropTable tableName="rider_rfp_quote_option_network"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="28-05-17 20:30">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM network WHERE carrier_id = 6 AND network_id = 47 AND type = 'DEPO';
+            </sqlCheck>
+        </preConditions>
+        <comment>Update UHC valid networks and clean one benefits name</comment>
+        <sqlFile path="../scripts/db.update-1.1.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="hirdziuks" id="29-05-17 9:47">
+        <sqlFile path="../scripts/db.update_questionnaire_static_data_3.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="31-05-17 13:00">
+        <comment>Renamed some benefits</comment>
+        <sql>
+            update benefit_name set display_name = 'OOP Limit' where name = 'INDIVIDUAL_OOP_LIMIT';
+            update benefit_name set display_name = 'Deductible' where name = 'INDIVIDUAL_DEDUCTIBLE';
+        </sql>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="31-05-17 15:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="benefit_name" columnName="ordinal"/>
+            </not>
+        </preConditions>
+        <comment>Added new column for benefit name ordering</comment>
+        <addColumn tableName="benefit_name">
+            <column name="ordinal" type="int" afterColumn="name">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+        <sqlFile path="../scripts/db.update-31-05-17_15-00-update_benefit_name_ordinal.sql"
+                 relativeToChangelogFile="true" encoding="UTF-8"/>
+        <addNotNullConstraint tableName="benefit_name" columnName="ordinal" columnDataType="int"/>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="30-05-17 19:00">
+        <addColumn tableName="rfp_quote">
+            <column name="latest" type="bit(1)"/>
+        </addColumn>
+        <update tableName="rfp_quote">
+            <column name="latest" valueBoolean="1"/>
+        </update>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="31-05-17 20:00">
+        <comment>Set order for RX_MAIL_ORDER benefit</comment>
+        <sql>
+            update benefit_name set ordinal = 208 where name = 'RX_MAIL_ORDER';
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="31-05-17 11:43">
+        <addColumn tableName="client_plan">
+            <column name="rx_pnn_id" type="bigint">
+                <constraints foreignKeyName="fk_plan_name_by_network_pnn_id" referencedTableName="plan_name_by_network"
+                             referencedColumnNames="pnn_id"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="01-06-17 11:00">
+        <sql>
+            update rfp_quote set latest = 1;
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="01-06-17 10:45">
+        <dropColumn tableName="form_question" columnName="index_number"/>
+        <sqlFile path="../scripts/db.update_questionnaire_static_data_4.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="01-06-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+        </preConditions>
+        <dropForeignKeyConstraint baseTableName="rider" constraintName="fk_rfp_quote_id"/>
+        <dropColumn tableName="rider" columnName="rfp_quote_id"/>
+        <renameColumn newColumnName="rider_code" oldColumnName="rider_name" columnDataType="text" tableName="rider"/>
+        <addColumn tableName="rider">
+            <column name="category" type="text"/>
+        </addColumn>
+        <addColumn tableName="rider">
+            <column name="type" type="text" remarks="HMO/PPO"/>
+        </addColumn>
+        <addColumn tableName="rider">
+            <column name="included" type="bit(1)"/>
+        </addColumn>
+        <addColumn tableName="rider">
+            <column name="selectable" type="bit(1)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="01-06-17 18:10">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider_rfp_quote_option"/>
+        </preConditions>
+        <dropTable tableName="rider_rfp_quote_option"/>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="01-06-17 18:20">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+            <tableExists tableName="rfp_quote_network"/>
+            <not>
+                <tableExists tableName="rider_rfp_quote_network"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider_rfp_quote_network</comment>
+        <createTable tableName="rider_rfp_quote_network">
+            <column name="rider_rfp_quote_network_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rfp_quote_network_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rider_id"
+                                 baseTableName="rider_rfp_quote_network"
+                                 constraintName="fk1_rider_id"
+                                 referencedColumnNames="rider_id"
+                                 referencedTableName="rider"/>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_network_id"
+                                 baseTableName="rider_rfp_quote_network"
+                                 constraintName="fk_rfp_quote_network_id"
+                                 referencedColumnNames="rfp_quote_network_id"
+                                 referencedTableName="rfp_quote_network"/>
+        <rollback>
+            <dropTable tableName="rider_rfp_quote_network"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="02-06-17 13:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="rider_meta"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider_meta</comment>
+        <createTable tableName="rider_meta">
+            <column name="rider_meta_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_code" type="text"/>
+            <column name="rider_description" type="text"/>
+            <column name="category" type="text"/>
+            <column name="type" type="text" remarks="HMO/PPO"/>
+            <column name="selectable" type="bit(1)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="02-06-17 13:10">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+        </preConditions>
+        <addColumn tableName="rider">
+            <column name="rider_meta_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <dropColumn tableName="rider" columnName="rider_code"/>
+        <dropColumn tableName="rider" columnName="rider_description"/>
+        <dropColumn tableName="rider" columnName="category"/>
+        <dropColumn tableName="rider" columnName="type"/>
+        <dropColumn tableName="rider" columnName="included"/>
+        <dropColumn tableName="rider" columnName="selectable"/>
+        <addForeignKeyConstraint baseColumnNames="rider_meta_id"
+                                 baseTableName="rider"
+                                 constraintName="fk_rider_meta_id"
+                                 referencedColumnNames="rider_meta_id"
+                                 referencedTableName="rider_meta"/>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="02-06-17 13:20">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+            <tableExists tableName="rfp_quote"/>
+            <not>
+                <tableExists tableName="rider_rfp_quote"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider_rfp_quote</comment>
+        <createTable tableName="rider_rfp_quote">
+            <column name="rider_rfp_quote_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rfp_quote_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rider_id"
+                                 baseTableName="rider_rfp_quote"
+                                 constraintName="fk2_rider_id"
+                                 referencedColumnNames="rider_id"
+                                 referencedTableName="rider"/>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_id"
+                                 baseTableName="rider_rfp_quote"
+                                 constraintName="fk_rfp_quote_id"
+                                 referencedColumnNames="rfp_quote_id"
+                                 referencedTableName="rfp_quote"/>
+        <rollback>
+            <dropTable tableName="rider_rfp_quote"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="02-06-17 13:30">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="rider"/>
+            <tableExists tableName="rfp_quote_option"/>
+            <not>
+                <tableExists tableName="rider_rfp_quote_option"/>
+            </not>
+        </preConditions>
+        <comment>Added table rider_rfp_quote_option</comment>
+        <createTable tableName="rider_rfp_quote_option">
+            <column name="rider_rfp_quote_option_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rider_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rfp_quote_option_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rider_id"
+                                 baseTableName="rider_rfp_quote_option"
+                                 constraintName="fk3_rider_id"
+                                 referencedColumnNames="rider_id"
+                                 referencedTableName="rider"/>
+        <addForeignKeyConstraint baseColumnNames="rfp_quote_option_id"
+                                 baseTableName="rider_rfp_quote_option"
+                                 constraintName="fk_rfp_quote_option_id"
+                                 referencedColumnNames="rfp_quote_option_id"
+                                 referencedTableName="rfp_quote_option"/>
+        <rollback>
+            <dropTable tableName="rider_rfp_quote_option"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="noah.kauhane" id="04-06-17 19:06">
+        <addColumn tableName="plan_name_by_network">
+            <column name="custom_plan" type="bit(1)">
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="05-06-17 18:19">
+        <sql>update plan_name_by_network set custom_plan = false where custom_plan is null</sql>
+        <addNotNullConstraint tableName="plan_name_by_network" columnName="custom_plan" columnDataType="bit(1)"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="06-06-17 10:00">
+        <sqlFile path="../scripts/db.update_questionnaire_static_data_5.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="06-06-17 11:33">
+        <comment>Increase the character length of section column as the UI will start passing it in</comment>
+        <modifyDataType
+                columnName="section"
+                newDataType="varchar(255)"
+                tableName="client_file_upload"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="06-06-17 12:05">
+        <addColumn tableName="client_file_upload">
+            <column name="size" type="BIGINT(20)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="09-06-17 15:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="medical_group"/>
+            </not>
+        </preConditions>
+        <comment>Added table medical_group</comment>
+        <createTable tableName="medical_group">
+            <column name="medical_group_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="dec_number" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="county" type="text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="region" type="text">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+            <dropTable tableName="medical_group"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="09-06-17 17:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="network_medical_group"/>
+            </not>
+        </preConditions>
+        <comment>Added table network_medical_group</comment>
+        <createTable tableName="network_medical_group">
+            <column name="network_medical_group_id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="network_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="medical_group_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="network_id"
+                                 baseTableName="network_medical_group"
+                                 constraintName="fk_network_id_to_network_network_id"
+                                 referencedColumnNames="network_id"
+                                 referencedTableName="network"/>
+        <addForeignKeyConstraint baseColumnNames="medical_group_id"
+                                 baseTableName="network_medical_group"
+                                 constraintName="fk_medical_group_id_to_medical_group_medical_group_id"
+                                 referencedColumnNames="medical_group_id"
+                                 referencedTableName="medical_group"/>
+        <rollback>
+            <dropTable tableName="network_medical_group"/>
+        </rollback>
+    </changeSet>
+
+	<changeSet author="artur.fenko" id="09-06-17 17:00">
+		<sqlFile path="../scripts/db.medical_groups.sql" relativeToChangelogFile="true" encoding="UTF-8" />
+	</changeSet>
+	
+	<!-- https://app.asana.com/0/308554828644777/363710075130226 -->
+	<changeSet author="golovchenkoaa" id="16-06-17 12:00"> 
+        <comment>Renamed some benefits</comment>
+		<sql>
+		update benefit_name set display_name = 'Family Deductible' where name = 'DENTAL_FAMILY';
+		update benefit_name set display_name = 'Individual Deductible' where name = 'DENTAL_INDIVIDUAL';
+		update benefit_name set display_name = 'Class I - Preventive' where name = 'CLASS_1_PREVENTIVE';
+		</sql>
+	</changeSet>
+
+	<changeSet author="ebrandell" id="06-14-17 16:21">
+		<comment>Add disclaimer column into RfpQuote</comment>
+		<addColumn tableName="rfp_quote">
+			<column name="disclaimer" type="TEXT()"/>
+		</addColumn>
+	</changeSet>
+
+    <changeSet author="ebrandell" id="06-14-17 00:50">
+        <comment>Required in order for encryption of these columns to work</comment>
+        <modifyDataType tableName="rfp_quote_network_plan" columnName="tier1_rate" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="rfp_quote_network_plan" columnName="tier2_rate" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="rfp_quote_network_plan" columnName="tier3_rate" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="rfp_quote_network_plan" columnName="tier4_rate" newDataType="VARCHAR(1000)"/>
+    </changeSet>
+
+    <changeSet author="" id="06-17-17 00:28">
+        <preConditions onFail="MARK_RAN">
+            <indexExists tableName="plan_name_by_network" indexName="uc_network_plan_type_name"/>
+            <not>
+                <indexExists tableName="plan_name_by_network" indexName="uc_network_plan"/>
+            </not>
+        </preConditions>
+        <dropUniqueConstraint tableName="plan_name_by_network" constraintName="uc_network_plan_type_name"/>
+        <addUniqueConstraint tableName="plan_name_by_network" columnNames="network_id, plan_id" constraintName="uc_network_plan"/>
+    </changeSet>
+
+    <changeSet author="" id="06-17-17 00:29">
+        <preConditions onFail="MARK_RAN">
+            <indexExists tableName="rfp" indexName="uc_client_id_product"/>
+        </preConditions>
+        <dropUniqueConstraint tableName="rfp" constraintName="uc_client_id_product"/>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="06-17-17 00:30">
+        <comment>Modifying other encrypted String fields to be VARCHAR(1000) instead of VARCHAR(255)</comment>
+        <modifyDataType tableName="benefit" columnName="value" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="plan" columnName="plan_type" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="plan" columnName="name" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="plan_name_by_network" columnName="name" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="plan_name_by_network" columnName="plan_type" newDataType="VARCHAR(1000)"/>
+        <modifyDataType tableName="rfp" columnName="product" newDataType="VARCHAR(1000)"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="16-06-17 18:30">
+        <comment>Added notification table</comment>
+        <sql>
+            CREATE TABLE `notification` (
+            `notification_id` bigint(20) NOT NULL AUTO_INCREMENT,
+            `channel` varchar(255) NOT NULL,
+            `name` varchar(255) DEFAULT NULL,
+            `client_id` bigint(20) NOT NULL,
+            `date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+            PRIMARY KEY (`notification_id`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+        </sql>
+    </changeSet>
+    <changeSet author="lemdy" id="16-06-17 18:31">
+        <sql>
+            ALTER TABLE `rfp_quote_summary`
+            ADD COLUMN `updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+        </sql>
+    </changeSet>
+    <changeSet author="lemdy" id="16-06-17 18:32">
+        <sql>
+            ALTER TABLE `rfp_quote`
+            ADD COLUMN `updated` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="19-06-17 12:00">
+        <addColumn tableName="rfp_quote_summary">
+            <column name="medical_with_kaiser_notes" type="TEXT"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="lemdy" id="19-06-17 20:25">
+        <comment>Increase the character length of waiting_period column in rfp table</comment>
+        <modifyDataType
+                columnName="waiting_period"
+                newDataType="varchar(75)"
+                tableName="rfp"/>
+    </changeSet>
+    <changeSet author="lemdy" id="20-06-17 12:59">
+        <addColumn tableName="client">
+            <column name="eligible_employee_count" type="BIGINT(20)"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="21-06-17 15:00">
+        <comment>Update employer application form</comment>
+        <addUniqueConstraint columnNames="code"
+                             tableName="question"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="21-06-17 17:00">
+        <sqlFile path="../scripts/db.update_questionnaire_static_data_6.sql" relativeToChangelogFile="true" encoding="UTF-8" />
+    </changeSet>
+	
+	<changeSet author="golovchenkoaa" id="22-06-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="plan_version"/>
+            </not>
+        </preConditions>
+        <comment>Added plan version table</comment>
+        <createTable tableName="plan_version">
+        	<column name="plan_version_id" type="BIGINT" autoIncrement="true">
+        		<constraints primaryKey="true" nullable="false"/>
+        	</column>
+        	<column name="created" type="DATETIME">
+        		<constraints primaryKey="true" nullable="false"/>
+        	</column>
+        	<column name="latest" type="BIT" >
+        		<constraints nullable="false"/>
+        	</column>
+        </createTable>
+        <sql>
+        	insert into plan_version (plan_version_id, created, latest) values (0, NOW(), 1);
+        </sql>
+      	<rollback>
+      		<dropTable tableName="plan_version"/>
+      	</rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="22-06-17 15:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="plan" columnName="plan_version_id"/>
+            </not>
+        </preConditions>
+        <comment>Set plans version</comment>
+        <addColumn tableName="plan">
+        	<column name="plan_version_id" type="BIGINT"/>
+        </addColumn>
+        <sql>
+        	update plan set plan_version_id = (select plan_version_id from plan_version where latest = 1);
+        </sql>
+        <addNotNullConstraint tableName="plan" columnName="plan_version_id" columnDataType="BIGINT"/>
+        <addForeignKeyConstraint baseColumnNames="plan_version_id"
+                                 baseTableName="plan"
+                                 constraintName="fk_plan_version_id"
+                                 referencedColumnNames="plan_version_id"
+                                 referencedTableName="plan_version"/>
+        <rollback>
+        	<dropForeignKeyConstraint baseTableName="plan" constraintName="fk_plan_version_id"/>
+      		<dropColumn tableName="plan" columnName="plan_version_id"/>
+      	</rollback>
+    </changeSet>
+ 
+    <changeSet author="golovchenkoaa" id="22-06-17 15:10">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="benefit" columnName="plan_version_id"/>
+            </not>
+        </preConditions>
+        <comment>Set benefits version</comment>
+        <addColumn tableName="benefit">
+        	<column name="plan_version_id" type="BIGINT"/>
+        </addColumn>
+        <sql>
+        	update benefit set plan_version_id = (select plan_version_id from plan_version where latest = 1);
+        </sql>
+        <addNotNullConstraint tableName="benefit" columnName="plan_version_id" columnDataType="BIGINT"/>
+        <addForeignKeyConstraint baseColumnNames="plan_version_id"
+                                 baseTableName="benefit"
+                                 constraintName="fk_benefit_version_id"
+                                 referencedColumnNames="plan_version_id"
+                                 referencedTableName="plan_version"/>
+        <rollback>
+        	<dropForeignKeyConstraint baseTableName="benefit" constraintName="fk_benefit_version_id"/>
+      		<dropColumn tableName="benefit" columnName="plan_version_id"/>
+      	</rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="22-06-17 15:20">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="plan_name_by_network" columnName="plan_version_id"/>
+            </not>
+        </preConditions>
+        <comment>Set plan_name_by_networks version</comment>
+        <addColumn tableName="plan_name_by_network">
+        	<column name="plan_version_id" type="BIGINT"/>
+        </addColumn>
+        <sql>
+        	update plan_name_by_network set plan_version_id = (select plan_version_id from plan_version where latest = 1);
+        </sql>
+        <addNotNullConstraint tableName="plan_name_by_network" columnName="plan_version_id" columnDataType="BIGINT"/>
+        <addForeignKeyConstraint baseColumnNames="plan_version_id"
+                                 baseTableName="plan_name_by_network"
+                                 constraintName="fk_pnn_version_id"
+                                 referencedColumnNames="plan_version_id"
+                                 referencedTableName="plan_version"/>
+        <rollback>
+        	<dropForeignKeyConstraint baseTableName="plan_name_by_network" constraintName="fk_pnn_version_id"/>
+      		<dropColumn tableName="plan_name_by_network" columnName="plan_version_id"/>
+      	</rollback>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="27-06-17 19:00">
+        <dropNotNullConstraint columnDataType="BIGINT"
+                               columnName="pnn_id"
+                               tableName="client_plan"/>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="06-27-17 11:11">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="broker" columnName="specialty_broker_email"/>
+            </not>
+        </preConditions>
+        <comment>Add specialty broker email to broker table: https://app.asana.com/0/308554828644777/373197480793351</comment>
+        <addColumn tableName="broker">
+            <column name="specialty_broker_email" type="VARCHAR(255)"/>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="broker" columnName="specialty_broker_email"/>
+        </rollback>
+    </changeSet> 
+
+    <changeSet author="artur.fenko" id="26-06-17 10:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="form_question" columnName="invisible"/>
+            </not>
+        </preConditions>
+        <comment>Added column form_question.invisible</comment>
+        <addColumn tableName="form_question">
+            <column name="invisible" type="bit(1)">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <addDefaultValue columnDataType="bit(1)"
+                         columnName="invisible"
+                         defaultValueBoolean="0"
+                         tableName="form_question"/>
+        <rollback>
+            <dropColumn columnName="invisible"
+                        tableName="form_question"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-06-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM question q
+                INNER JOIN form_question fq
+                ON q.question_id = fq.question_id
+                WHERE q.code  = 'disclosure_persons';
+            </sqlCheck>
+        </preConditions>
+        <sql>
+            INSERT INTO `question` (`code`, `title`, `multiselectable`) VALUES ('disclosure_persons', 'Disclosure Persons', FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE CODE = 'disclosure_persons'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), TRUE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE `question_id` = (SELECT `question_id` FROM `question` WHERE `code` = 'disclosure_persons') AND `form_id` = (SELECT `form_id` FROM `form` WHERE `name` = 'group-application');
+            DELETE FROM `question` WHERE `code` = 'disclosure_persons';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="28-06-17 11:30">
+        <preConditions onFail="MARK_RAN">
+            <columnExists tableName="form_question" columnName="invisible"/>
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM question q
+                INNER JOIN form_question fq
+                ON q.question_id = fq.question_id
+                WHERE q.code = 'aids' AND fq.form_id = (SELECT form_id FROM form WHERE name = 'group-application');
+            </sqlCheck>
+        </preConditions>
+        <sql>
+            UPDATE form_question SET invisible = true
+            WHERE question_id = (SELECT question_id FROM question WHERE code = 'aids') AND form_id = (SELECT form_id FROM form WHERE name = 'group-application');
+        </sql>
+        <rollback>
+            UPDATE form_question SET invisible = false
+            WHERE question_id = (SELECT question_id FROM question WHERE code = 'aids') AND form_id = (SELECT form_id FROM form WHERE name = 'group-application');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="28-06-17 13:20">
+        <preConditions onFail="HALT">
+            <not>
+                <columnExists tableName="rfp_quote" columnName="quote_type"/>
+            </not>
+        </preConditions>
+        <comment>Added new column rfp_quote.quote_type</comment>
+        <addColumn tableName="rfp_quote">
+        	<column name="quote_type" type="VARCHAR(30)" afterColumn="kaiser"/>
+        </addColumn>
+        <sql>
+        	update rfp_quote set quote_type = (case kaiser when 1 then 'KAISER' else 'STANDARD' end);
+        </sql>
+        <addNotNullConstraint tableName="rfp_quote" columnName="quote_type" columnDataType="VARCHAR(30)"/>
+        <rollback>
+      		<dropColumn tableName="rfp_quote" columnName="quote_type"/>
+      	</rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="29-06-17 15:38">
+        <comment>Updating all null values in notification table to have values</comment>
+        <sql>
+            update `notification` set `date` = now() where `date` is null;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="29-06-17 15:39">
+        <comment>Updating all null values in rfp_quote table to have values</comment>
+        <sql>
+            update `rfp_quote` set `updated` = now() where `updated` is null;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="29-06-17 15:40">
+        <comment>Updating all null values in rfp_quote_summary table to have values</comment>
+        <sql>
+            update `rfp_quote_summary` set `updated` = now() where `updated` is null;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="29-06-17 15:36">
+        <comment>Removing default expression on date column of the notification table</comment>
+        <sql>
+            alter table notification modify date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+            alter table notification alter column date drop default;
+        </sql>
+    </changeSet>
+
+
+    <changeSet author="lemdy" id="29-06-17 15:37">
+        <comment>Removing default expression on date column of the rfp_quote table</comment>
+        <sql>
+            alter table rfp_quote modify updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+            alter table rfp_quote alter column updated drop default;
+
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="29-06-17 15:41">
+        <comment>Removing default expression on updated column of the rfp_quote_summary table</comment>
+        <sql>
+            alter table rfp_quote_summary modify updated TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+            alter table rfp_quote_summary alter column updated drop default;
+        </sql>
+    </changeSet>
+
+    <!--  comment out after testing on production env
+    <changeSet author="golovchenkoaa" id="28-06-17 13:30">
+        <preConditions onFail="HALT">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from rfp_quote where kaiser = 1 and quote_type != 'KAISER';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Remove deprecated column rfp_quote.kaiser</comment>
+        <dropColumn tableName="rfp_quote" columnName="kaiser"/>
+        <rollback>
+        	<addColumn tableName="rfp_quote">
+        		<column name="kaiser" type="BIT(1)"/>
+        	</addColumn>
+        	<sql>
+        		update rfp_quote set kaiser = (case quote_type when 'KAISER' then 1 else 0 end);
+        	</sql>
+        </rollback>
+    </changeSet>
+   	-->
+  
+   	<changeSet author="golovchenkoaa" id="30-06-17 15:00" runInTransaction="true">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+	            select (case when count(*) > 0 then 1 else 0 end)
+				  from (select count(*) from rfp_submission sub 
+					  group by sub.client_id, sub.rfp_carrier_id 
+					    having count(*) > 1) v
+            </sqlCheck>
+        </preConditions>
+        <comment>Removing duplicates from rfp_submission</comment>
+        <!-- find first rfp_submission having duplicates and change link from rfp_quote to it (from dulicate) 
+        	rfp_quote1 ->  rfp_submission1
+        	rfp_quote2 ->  rfp_submission2 (duplicate)
+        	after script we should have:
+        	rfp_quote1 ->  rfp_submission1
+        	rfp_quote2 ->  rfp_submission1
+        -->
+        <sql>
+			update rfp_quote q 
+			   set q.rfp_submission_id = (select uniqSub.rfp_submission_id 
+			                                from rfp_submission uniqSub 
+			                          inner join rfp_submission sub 
+			                                  on sub.client_id = uniqSub.client_id 
+			                                 and sub.rfp_carrier_id = uniqSub.rfp_carrier_id
+			                               where sub.rfp_submission_id = q.rfp_submission_id 
+			                               limit 1)
+			 where (select count(*) 
+			          from rfp_submission sub1 
+			    inner join rfp_submission sub 
+			            on sub.client_id = sub1.client_id 
+			           and sub.rfp_carrier_id = sub1.rfp_carrier_id
+			         where sub.rfp_submission_id = q.rfp_submission_id) > 1
+        </sql>
+         <!-- remove rfp_submissions for which there are no links from rfp_quotes -->
+        <sql>
+        	delete from rfp_submission 
+			where not exists (select 1 from rfp_quote q where q.rfp_submission_id = rfp_submission.rfp_submission_id)
+        </sql>
+    </changeSet>
+    
+    <!-- Note: described below scenario is unlikely :)
+    If precondition failed we got fatal problem: privious changeSet could not remove
+    broken rfp_submissions (having rfp_carrier_id = null) and these rfp_submissions have FK from rfp_quote.
+    So, we need to manually resolve this problem. For example, set correct rfp_carrier_id 
+    and run liquibase again -->
+    <changeSet author="golovchenkoaa" id="30-06-17 15:30">
+        <preConditions onFail="HALT">
+            <sqlCheck expectedResult="0">
+            	select count(*) from rfp_submission where rfp_carrier_id is null
+            </sqlCheck>
+        </preConditions>
+        <comment>Set rfp_carrier_id columnt as not null</comment>
+        <addNotNullConstraint tableName="rfp_submission" columnName="rfp_carrier_id" columnDataType="bigint"/>
+    </changeSet>
+    
+    <!-- If precondition failed, we manually added duplicates in the previous step -->
+    <changeSet author="golovchenkoaa" id="30-06-17 15:40">
+        <preConditions onFail="HALT">
+            <sqlCheck expectedResult="0">
+            	select count(*) from (select count(*) 
+            							from rfp_submission sub 
+            						group by sub.client_id, sub.rfp_carrier_id 
+            						  having count(*) > 1) v
+            </sqlCheck>
+        </preConditions>
+        <comment>Add unique constraint to rfp_carrier_id and client_id</comment>
+        <addUniqueConstraint constraintName="uc_rfp_carrier_client" columnNames="rfp_carrier_id, client_id" tableName="rfp_submission"/>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="03-07-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client_plan" columnName="plan_type"/>
+            </not>
+        </preConditions>
+        <comment>Added column client_plan.plan_type</comment>
+        <addColumn tableName="client_plan">
+            <column name="plan_type" type="VARCHAR(1000)"> <!-- Will this column be encrypted? -->
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="07-07-17 17:00">
+        <comment>Set default value to benefit.in_out_network</comment>
+        <sql>
+        update benefit set in_out_network = 'IN' where in_out_network is null;
+        </sql>
+    </changeSet>
+  
+    <changeSet author="artur.fenko" id="07-07-17 17:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <sqlCheck expectedResult="11">
+                    SELECT COUNT(DISTINCT question_id) FROM form_question
+                        WHERE question_id IN (SELECT question_id FROM question WHERE CODE IN (
+                        'company_federal_tax_id',
+                        'customer_name_on_id_cards',
+                        'billing_contact_name',
+                        'billing_contact_office_telephone_number',
+                        'billing_contact_fax_number',
+                        'billing_contact_email_address',
+                        'day_to_day_contact_name',
+                        'office_telephone_number',
+                        'fax_number',
+                        'email_address',
+                        'type_of_business')
+                    ) AND form_id = (SELECT form_id FROM form WHERE NAME = 'group-application');
+                </sqlCheck>
+            </not>
+        </preConditions>
+        <comment>Update UHC form questions</comment>
+        <sqlFile path="../scripts/db.update_questionnaire_static_data_7.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="07-07-17 18:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <sqlCheck expectedResult="6">
+                    SELECT COUNT(DISTINCT question_id) FROM form_question
+                    WHERE question_id IN (SELECT question_id FROM question WHERE CODE IN (
+                        'effective_date',
+                        'groups_legal_name',
+                        'situs_state',
+                        'waiting_period_for_new_hires',
+                        'employees_terminate_on',
+                        'subject_to_erisa_regulation')
+                    ) AND form_id = (SELECT form_id FROM form WHERE NAME = 'questionnaire');
+                </sqlCheck>
+            </not>
+        </preConditions>
+        <comment>Update UHC form questions for questionnaire</comment>
+        <sqlFile path="../scripts/db.update_questionnaire_static_data_8.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-07-17 18:00">
+        <comment>Updating UHC carrier display name</comment>
+        <sql>
+            update carrier set display_name="United Healthcare" where carrier_id=22;
+        </sql>
+        <rollback>
+            update carrier set display_name="United Health Care" where carrier_id=22;
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-08-17 12:12">
+        <preConditions onFail="MARK_RAN">
+            <columnExists tableName="plan" columnName="plan_version_id"/>
+        </preConditions>
+        <comment>Remove plan version column from plan table</comment>
+        <dropForeignKeyConstraint baseTableName="plan" constraintName="fk_plan_version_id"/>
+        <dropColumn tableName="plan" columnName="plan_version_id"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-08-17 12:13">
+        <preConditions onFail="MARK_RAN">
+            <columnExists tableName="benefit" columnName="plan_version_id"/>
+        </preConditions>
+        <comment>Remove plan version column from benefit table</comment>
+        <dropForeignKeyConstraint baseTableName="benefit" constraintName="fk_benefit_version_id"/>
+        <dropColumn tableName="benefit" columnName="plan_version_id"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-08-17 12:14">
+        <preConditions onFail="MARK_RAN">
+            <columnExists tableName="plan_name_by_network" columnName="plan_version_id"/>
+        </preConditions>
+        <comment>Remove plan version column from pnn table</comment>
+        <dropForeignKeyConstraint baseTableName="plan_name_by_network" constraintName="fk_pnn_version_id"/>
+        <dropColumn tableName="plan_name_by_network" columnName="plan_version_id"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-08-17 12:18">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="plan_version"/>
+        </preConditions>
+        <comment>Removing plan version table</comment>
+        <dropTable tableName="plan_version"/>
+    </changeSet>
+    
+    <changeSet author="ositapara" id="05-07-17 16:10">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network WHERE name='Kaiser HMO' AND tier ='TIER_1_FULL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name='KAISER');
+            </sqlCheck>
+        </preConditions>
+        <sql>
+            INSERT INTO network (carrier_id,name, type, tier) VALUES (
+            (SELECT carrier_id FROM carrier WHERE name='KAISER'), 'Kaiser HMO', 'HMO', 'TIER_1_FULL');
+        </sql>
+        <rollback>
+            DELETE FROM network WHERE name='Kaiser HMO' AND tier ='TIER_1_FULL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name='KAISER');
+        </rollback>
+    </changeSet>
+  
+    <changeSet author="ositapara" id="05-07-17 16:15">
+        <sqlFile path="../scripts/db.update-hmo_networks.sql" relativeToChangelogFile="true" encoding="UTF-8" />
+    </changeSet>
+
+    <changeSet author="ositapara" id="05-07-17 16:20">
+        <sqlFile path="../scripts/db.update-ppo_hsa_networks.sql" relativeToChangelogFile="true" encoding="UTF-8" />
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="10-07-17 19:00">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="rfp_to_pnn"/></not>
+        </preConditions>
+        <createTable tableName="rfp_to_pnn">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="rfp_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pnn_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="plan_type" type="text">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="rfp_id"
+                                 baseTableName="rfp_to_pnn"
+                                 constraintName="fk_rfp_to_pnn_rfp"
+                                 referencedColumnNames="rfp_id"
+                                 referencedTableName="rfp"/>
+        <addForeignKeyConstraint baseColumnNames="pnn_id"
+                                 baseTableName="rfp_to_pnn"
+                                 constraintName="fk_rfp_to_pnn_plan_name_by_network"
+                                 referencedColumnNames="pnn_id"
+                                 referencedTableName="plan_name_by_network"/>
+        <rollback>
+            <dropTable tableName="rfp_to_pnn"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-11-17 13:10">
+        <comment>Delete benefits associated with empty plans</comment>
+        <sql>
+            DELETE FROM benefit WHERE plan_id IN (SELECT p.plan_id FROM plan p WHERE  p.name = "");
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-11-17 13:20">
+        <comment>Delete PNN associated with empty plans</comment>
+        <sql>
+            DELETE FROM plan_name_by_network WHERE plan_id IN (SELECT p.plan_id FROM plan p WHERE  p.name = "");
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-11-17 13:30">
+        <comment>Delete plans empty plan names</comment>
+        <sql>
+            DELETE FROM plan WHERE plan.name = "";
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-11-17 14:58">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <tableExists tableName="plan_history"/>
+            </not>
+        </preConditions>
+        <comment>Adding plan history table</comment>
+        <createTable tableName="plan_history">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="pnn_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="plan_name" type="VARCHAR(1000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="benefit_from" type="TEXT">
+            </column>
+            <column name="benefit_to" type="TEXT">
+            </column>
+            <column name="batch_number" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="pnn_id"
+                                 baseTableName="plan_history"
+                                 constraintName="fk_plan_history_to_pnn_plan_name_by_network"
+                                 referencedColumnNames="pnn_id"
+                                 referencedTableName="plan_name_by_network"/>
+    </changeSet>
+
+
+    <changeSet author="artur.fenko" id="12-07-17 10:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'authorized_signer_email');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Authorized signer email address' question</comment>
+        <sql>
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('authorized_signer_email', 'Authorized signer email address', FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'authorized_signer_email'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), TRUE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'authorized_signer_email'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), TRUE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'authorized_signer_email');
+            DELETE FROM `question` WHERE code = 'authorized_signer_email';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="12-07-17 11:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(DISTINCT question_id) FROM form_question
+                WHERE question_id IN (
+                    SELECT question_id FROM question WHERE code IN (
+                        'writing_agent_address',
+                        'writing_agent_city_state',
+                        'writing_agent_zip_code',
+                        'writing_agent_telephone',
+                        'writing_agent_fax',
+                        'writing_agent_email')
+                ) AND form_id = (SELECT form_id FROM form WHERE name = 'group-application');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add writing agent additional questions</comment>
+        <sql>
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_address', 'Writing agent address', FALSE);
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_city_state', 'Writing agent city, State', FALSE);
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_zip_code', 'Writing agent zip Code', FALSE);
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_telephone', 'Writing agent telephone number', FALSE);
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_fax', 'Writing agent fax number', FALSE);
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_email', 'Writing agent e-mail address', FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_address'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_city_state'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_zip_code'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_telephone'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_fax'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_email'), (SELECT `form_id` FROM `form` WHERE name = 'group-application'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM form_question WHERE question_id IN (
+                SELECT question_id FROM question WHERE code IN (
+                    'writing_agent_address',
+                    'writing_agent_city_state',
+                    'writing_agent_zip_code',
+                    'writing_agent_telephone',
+                    'writing_agent_fax',
+                    'writing_agent_email')
+            ) AND form_id = (SELECT form_id FROM form WHERE name = 'group-application');
+            DELETE FROM question WHERE CODE IN ('writing_agent_address', 'writing_agent_city_state', 'writing_agent_zip_code', 'writing_agent_telephone', 'writing_agent_fax', 'writing_agent_email');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="12-07-17 19:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM network WHERE type ='HSA' AND name='Healthy Support HSA Traditional' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+            </sqlCheck>
+        </preConditions>
+        <comment>Remove Healthy Support HSA Traditional network from Anthem, Update PPO type for EPO network</comment>
+        <sql>
+            UPDATE plan_name_by_network SET network_id = (select network_id FROM network WHERE type ='HSA' AND name='Lumenos HSA' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS') )
+                WHERE network_id = (select network_id FROM network WHERE type ='HSA' AND name='Healthy Support HSA Traditional' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS') );
+            UPDATE rfp_quote_network SET network_id = (select network_id FROM network WHERE type ='HSA' AND name='Lumenos HSA' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS') )
+                WHERE network_id = (select network_id FROM network WHERE type ='HSA' AND name='Healthy Support HSA Traditional' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS') );
+            DELETE FROM network WHERE type ='HSA' AND name='Healthy Support HSA Traditional' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+
+            UPDATE network SET type='PPO' WHERE name='EPO - Prudent Buyer Exclusive' AND tier ='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+        </sql>
+        <rollback>
+            UPDATE network SET type='' WHERE type ='PPO' AND name='EPO - Prudent Buyer Exclusive' AND tier ='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+            INSERT INTO network SET type ='HSA', name='Healthy Support HSA Traditional', tier='TIER_1_FULL', carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="12-07-17 20:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM network WHERE type ='Vision' AND name='Blue View Vision Voluntary' AND tier='TIER_1_FULL' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+            </sqlCheck>
+        </preConditions>
+        <comment>Update DHMO, DPPO, Vision network names for all non UHC network</comment>
+        <sql>
+            UPDATE plan_name_by_network SET network_id = (select network_id FROM network WHERE name='Entire Network' AND tier='TIER_1_FULL' AND type ='VISION' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'))
+            WHERE network_id = (SELECT network_id FROM network WHERE name='Blue View Vision Voluntary' AND tier ='TIER_1_FULL' AND type ='Vision' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'));
+            UPDATE rfp_quote_network SET network_id = (select network_id FROM network WHERE name='Entire Network' AND tier='TIER_1_FULL' AND type ='VISION' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'))
+            WHERE network_id = (SELECT network_id FROM network WHERE name='Blue View Vision Voluntary' AND tier ='TIER_1_FULL' AND type ='Vision' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'));
+            DELETE FROM network WHERE name='Blue View Vision Voluntary' AND tier ='TIER_1_FULL' AND type ='Vision' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+
+            UPDATE plan_name_by_network SET network_id = (select network_id FROM network WHERE name='Entire Network' AND tier='TIER_1_FULL' AND type ='VISION' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'))
+            WHERE network_id = (SELECT network_id FROM network WHERE name='Blue View Vision Employer Paid' AND tier ='TIER_1_FULL' AND type ='Vision' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'));
+            UPDATE rfp_quote_network SET network_id = (select network_id FROM network WHERE name='Entire Network' AND tier='TIER_1_FULL' AND type ='VISION' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'))
+            WHERE network_id = (SELECT network_id FROM network WHERE name='Blue View Vision Employer Paid' AND tier ='TIER_1_FULL' AND type ='Vision' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS'));
+            DELETE FROM network WHERE name='Blue View Vision Employer Paid' AND tier ='TIER_1_FULL' AND type ='Vision' AND carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+
+            UPDATE network SET name="VPPO Network" WHERE type='VISION' and carrier_id != (select carrier_id FROM carrier where name='UHC');
+            UPDATE network SET name="DPPO Network" WHERE type='DPPO' and carrier_id != (select carrier_id FROM carrier where name='UHC');
+            UPDATE network SET name="DHMO Network" WHERE type='DHMO' and carrier_id != (select carrier_id FROM carrier where name='UHC');
+        </sql>
+        <rollback>
+            UPDATE network SET name="Entire Network" WHERE type='DPPO' and carrier_id != (select carrier_id FROM carrier where name='UHC');
+            UPDATE network SET name="Entire Network" WHERE type='DHMO' and carrier_id != (select carrier_id FROM carrier where name='UHC');
+            UPDATE network SET name="Entire Network" WHERE type='VISION' and carrier_id != (select carrier_id FROM carrier where name='UHC');
+
+            INSERT INTO network SET name='Blue View Vision Voluntary', tier ='TIER_1_FULL', type ='Vision', carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+            INSERT INTO network SET name='Blue View Vision Employer Paid', tier ='TIER_1_FULL', type ='Vision', carrier_id = (select carrier_id FROM carrier where name='ANTHEM_BLUE_CROSS');
+        </rollback>
+    </changeSet>
+    <changeSet author="lemdy" id="07-14-17 09:28">
+        <comment>Adding email column to client team table</comment>
+
+        <sql>
+            ALTER TABLE `client_team` ADD COLUMN `email` VARCHAR(255) DEFAULT NULL;
+        </sql>
+        <rollback>
+            ALTER TABLE `client_team` DROP COLUMN `email`;
+        </rollback>
+    </changeSet>
+
+
+    <changeSet author="lemdy" id="07-14-17 10:44">
+        <comment>Adding broker of record column to RFP table</comment>
+
+        <sql>
+            ALTER TABLE `rfp` ADD COLUMN `brokerOfRecord` bit(1) DEFAULT NULL;
+        </sql>
+        <rollback>
+            ALTER TABLE `rfp` DROP COLUMN `brokerOfRecord`;
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-14-17 10:50">
+        <comment>Rename broker of record column in the RFP table</comment>
+
+        <sql>
+            ALTER TABLE `rfp` CHANGE `brokerOfRecord` `broker_of_record` bit(1);
+        </sql>
+        <rollback>
+            ALTER TABLE `rfp` CHANGE `broker_of_record` `brokerOfRecord` bit(1);
+        </rollback>
+    </changeSet>
+    <changeSet author="lemdy" id="07-14-17 10:52">
+        <comment>Change broker of record column default value in the RFP table</comment>
+
+        <sql>
+            ALTER TABLE `rfp` CHANGE `broker_of_record` `broker_of_record` bit(1) DEFAULT 0;
+        </sql>
+    </changeSet>
+    <changeSet author="lemdy" id="07-14-17 10:59">
+        <comment>Change broker of record column default value to true(I was wrong) in the RFP table</comment>
+
+        <sql>
+            ALTER TABLE `rfp` CHANGE `broker_of_record` `broker_of_record` bit(1) DEFAULT 1;
+        </sql>
+    </changeSet>
+    <changeSet author="lemdy" id="07-14-17 12:59">
+        <comment>Updating previous rfp entries' broker of record column to true</comment>
+
+        <sql>
+            UPDATE rfp SET broker_of_record=true;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-14-17 06:55">
+        <comment>Adding OOS census</comment>
+
+        <sql>
+            ALTER TABLE `options` ADD COLUMN `out_of_state_census` bit(1) DEFAULT NULL;
+            ALTER TABLE `options` ADD COLUMN `tier1_oos_census` double DEFAULT NULL;
+            ALTER TABLE `options` ADD COLUMN `tier2_oos_census` double DEFAULT NULL;
+            ALTER TABLE `options` ADD COLUMN `tier3_oos_census` double DEFAULT NULL;
+            ALTER TABLE `options` ADD COLUMN `tier4_oos_census` double DEFAULT NULL;
+        </sql>
+        <rollback>
+            ALTER TABLE `options` DROP COLUMN `out_of_state_census`;
+            ALTER TABLE `options` DROP COLUMN `tier1_oos_census`;
+            ALTER TABLE `options` DROP COLUMN `tier2_oos_census`;
+            ALTER TABLE `options` DROP COLUMN `tier3_oos_census`;
+            ALTER TABLE `options` DROP COLUMN `tier4_oos_census`;
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-14-17 16:36">
+        <comment>Updating existing outOfStateCensus values in Option table </comment>
+
+        <sql>
+            UPDATE options SET out_of_state_census = false;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-14-17 16:37">
+        <comment>Setting default value for outOfStateCensus in Option table </comment>
+
+        <addDefaultValue columnDataType="bit(1)"
+                         columnName="out_of_state_census"
+                         defaultValueBoolean="false"
+                         tableName="options"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-14-17 16:40">
+        <comment>Removing default values for outOfStateCensus in Option and  broker_of_record table </comment>
+
+        <dropDefaultValue columnDataType="bit(1)"
+                          columnName="out_of_state_census"
+                          tableName="options"/>
+
+        <dropDefaultValue columnDataType="bit(1)"
+                          columnName="broker_of_record"
+                          tableName="rfp"/>
+    </changeSet>
+  
+    <changeSet author="ositapara" id="15-07-17 11:55">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM carrier WHERE name ='CALIFORNIA_DENTAL_NETWORK';
+            </sqlCheck>
+        </preConditions>
+        <comment>Add remaining carriers to database</comment>
+        <addUniqueConstraint constraintName="uc_carrier_name" columnNames="name" tableName="carrier"/>
+        <sql>
+            INSERT INTO carrier (display_name, name) VALUES ('California Dental Network','CALIFORNIA_DENTAL_NETWORK');
+            INSERT INTO carrier (display_name, name) VALUES ('Dental Health Services','DENTAL_HEALTH_SERVICES');
+            INSERT INTO carrier (display_name, name) VALUES ('EyeMed','EYEMED');
+            INSERT INTO carrier (display_name, name) VALUES ('Humana','HUMANA');
+            INSERT INTO carrier (display_name, name) VALUES ('Liberty Mutual','LIBERTY_MUTUAL');
+            INSERT INTO carrier (display_name, name) VALUES ('MediExcel','MEDIEXCEL');
+            INSERT INTO carrier (display_name, name) VALUES ('MESVision','MES_VISION');
+            INSERT INTO carrier (display_name, name) VALUES ('Mutual of Omaha','MUTUAL_OF_OMAHA');
+            INSERT INTO carrier (display_name, name) VALUES ('Premier Access','PREMIER_ACCESS');
+            INSERT INTO carrier (display_name, name) VALUES ('Scripps Health Plan','SCRIPPS');
+            INSERT INTO carrier (display_name, name) VALUES ('SIMNSA','SIMNSA');
+            INSERT INTO carrier (display_name, name) VALUES ('Voya','VOYA');
+            INSERT INTO carrier (display_name, name) VALUES ('VSP','VSP');
+            UPDATE carrier SET display_name='The Standard' WHERE name='STANDARD';
+        </sql>
+        <rollback>
+            UPDATE carrier SET display_name='Standard' WHERE name='STANDARD';
+            DELETE FROM carrier where name IN ('CALIFORNIA_DENTAL_NETWORK','DENTAL_HEALTH_SERVICES','EYEMED','HUMANA','LIBERTY_MUTUAL','MEDIEXCEL','MES_VISION','MUTUAL_OF_OMAHA','PREMIER_ACCESS','SCRIPPS','SIMNSA', 'VOYA','VSP');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="15-07-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network WHERE name='DHMO Network' AND tier='TIER_1_FULL' AND type='DHMO' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name ='AETNA');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add missing DHMO network current and new carriers</comment>
+        <sql>
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='AETNA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='AMERITAS'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='ASSURANT'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='BLUE_SHIELD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='CALIFORNIA_DENTAL_NETWORK'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='DENTAL_HEALTH_SERVICES'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='HEALTHNET'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='HUMANA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='LINCOLN_FINANCIAL'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='MEDIEXCEL'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='MUTUAL_OF_OMAHA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='PREMIER_ACCESS'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='RELIANCE_STANDARD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='SIMNSA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='SUN_LIFE'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='STANDARD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DHMO Network', 'TIER_1_FULL', 'DHMO', (SELECT carrier_id FROM carrier WHERE name ='UNUM'));
+        </sql>
+        <rollback>
+            DELETE FROM network WHERE name='DHMO Network' AND tier='TIER_1_FULL' AND type='DHMO' AND carrier_id IN (
+            (SELECT carrier_id FROM carrier WHERE name ='AETNA'),
+            (SELECT carrier_id FROM carrier WHERE name ='AMERITAS'),
+            (SELECT carrier_id FROM carrier WHERE name ='ASSURANT'),
+            (SELECT carrier_id FROM carrier WHERE name ='BLUE_SHIELD'),
+            (SELECT carrier_id FROM carrier WHERE name ='CALIFORNIA_DENTAL_NETWORK'),
+            (SELECT carrier_id FROM carrier WHERE name ='DENTAL_HEALTH_SERVICES'),
+            (SELECT carrier_id FROM carrier WHERE name ='HEALTHNET'),
+            (SELECT carrier_id FROM carrier WHERE name ='HUMANA'),
+            (SELECT carrier_id FROM carrier WHERE name ='LINCOLN_FINANCIAL'),
+            (SELECT carrier_id FROM carrier WHERE name ='MEDIEXCEL'),
+            (SELECT carrier_id FROM carrier WHERE name ='MUTUAL_OF_OMAHA'),
+            (SELECT carrier_id FROM carrier WHERE name ='PREMIER_ACCESS'),
+            (SELECT carrier_id FROM carrier WHERE name ='RELIANCE_STANDARD'),
+            (SELECT carrier_id FROM carrier WHERE name ='SIMNSA'),
+            (SELECT carrier_id FROM carrier WHERE name ='SUN_LIFE'),
+            (SELECT carrier_id FROM carrier WHERE name ='STANDARD'),
+            (SELECT carrier_id FROM carrier WHERE name ='UNUM')
+            );
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="15-07-17 12:05">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network WHERE name='DPPO Network' AND tier='TIER_1_FULL' AND type='DPPO' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name ='AETNA');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add missing DPPO network current and new carriers</comment>
+        <sql>
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='AETNA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='AMERITAS'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='ASSURANT'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='BLUE_SHIELD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='CALIFORNIA_DENTAL_NETWORK'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='DENTAL_HEALTH_SERVICES'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='HEALTHNET'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='HUMANA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='LINCOLN_FINANCIAL'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='MEDIEXCEL'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='MUTUAL_OF_OMAHA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='PREMIER_ACCESS'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='RELIANCE_STANDARD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='SIMNSA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='SUN_LIFE'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='STANDARD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('DPPO Network', 'TIER_1_FULL', 'DPPO', (SELECT carrier_id FROM carrier WHERE name ='UNUM'));
+        </sql>
+        <rollback>
+            DELETE FROM network WHERE name='DPPO Network' AND tier='TIER_1_FULL' AND type='DPPO' AND carrier_id IN (
+            (SELECT carrier_id FROM carrier WHERE name ='AETNA'),
+            (SELECT carrier_id FROM carrier WHERE name ='AMERITAS'),
+            (SELECT carrier_id FROM carrier WHERE name ='ASSURANT'),
+            (SELECT carrier_id FROM carrier WHERE name ='BLUE_SHIELD'),
+            (SELECT carrier_id FROM carrier WHERE name ='CALIFORNIA_DENTAL_NETWORK'),
+            (SELECT carrier_id FROM carrier WHERE name ='DENTAL_HEALTH_SERVICES'),
+            (SELECT carrier_id FROM carrier WHERE name ='HEALTHNET'),
+            (SELECT carrier_id FROM carrier WHERE name ='HUMANA'),
+            (SELECT carrier_id FROM carrier WHERE name ='LINCOLN_FINANCIAL'),
+            (SELECT carrier_id FROM carrier WHERE name ='MEDIEXCEL'),
+            (SELECT carrier_id FROM carrier WHERE name ='MUTUAL_OF_OMAHA'),
+            (SELECT carrier_id FROM carrier WHERE name ='PREMIER_ACCESS'),
+            (SELECT carrier_id FROM carrier WHERE name ='RELIANCE_STANDARD'),
+            (SELECT carrier_id FROM carrier WHERE name ='SIMNSA'),
+            (SELECT carrier_id FROM carrier WHERE name ='SUN_LIFE'),
+            (SELECT carrier_id FROM carrier WHERE name ='STANDARD'),
+            (SELECT carrier_id FROM carrier WHERE name ='UNUM')
+            );
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="15-07-17 12:10">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network WHERE name='VPPO Network' AND tier='TIER_1_FULL' AND type='DPPO' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name ='AETNA');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add missing Vision network current and new carriers</comment>
+        <sql>
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='AETNA'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='AMERITAS'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='BLUE_SHIELD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='EYEMED'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='HEALTHNET'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='MES_VISION'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='PREMIER_ACCESS'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='RELIANCE_STANDARD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='SUN_LIFE'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='STANDARD'));
+            INSERT INTO network (name, tier, type, carrier_id) VALUES ('VPPO Network', 'TIER_1_FULL', 'VISION', (SELECT carrier_id FROM carrier WHERE name ='VSP'));
+        </sql>
+        <rollback>
+            DELETE FROM network WHERE name='VPPO Network' AND tier='TIER_1_FULL' AND type='VISION' AND carrier_id IN (
+                (SELECT carrier_id FROM carrier WHERE name ='AETNA'),
+                (SELECT carrier_id FROM carrier WHERE name ='AMERITAS'),
+                (SELECT carrier_id FROM carrier WHERE name ='BLUE_SHIELD'),
+                (SELECT carrier_id FROM carrier WHERE name ='EYEMED'),
+                (SELECT carrier_id FROM carrier WHERE name ='HEALTHNET'),
+                (SELECT carrier_id FROM carrier WHERE name ='MES_VISION'),
+                (SELECT carrier_id FROM carrier WHERE name ='PREMIER_ACCESS'),
+                (SELECT carrier_id FROM carrier WHERE name ='RELIANCE_STANDARD'),
+                (SELECT carrier_id FROM carrier WHERE name ='SUN_LIFE'),
+                (SELECT carrier_id FROM carrier WHERE name ='STANDARD'),
+                (SELECT carrier_id FROM carrier WHERE name ='VSP')
+            );
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 14:30">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_name')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Name' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_name'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_name');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 14:35">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_contact_name')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker Contact Name' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_contact_name') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_contact_name'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 14:40">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_title');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Title' question</comment>
+        <sql>
+            INSERT IGNORE INTO `question` (`code`, `title`, `multiselectable`) VALUES ('writing_agent_title', 'Writing agent title', FALSE);
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_title'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_title');
+            DELETE FROM `question` WHERE code = 'writing_agent_title';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 14:45">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_title')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker Title' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_title') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_title'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 14:50">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_address')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Address' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_address'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_address');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 14:55">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_address_po_box')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker Address PO Box' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = ( SELECT question_id FROM question WHERE code = 'consultant_broker_address_po_box') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_address_po_box'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_city_state')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent City, State' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_city_state'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_city_state');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:05">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_city_state_zip')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker City, State, Zip' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = ( SELECT question_id FROM question WHERE code = 'consultant_broker_city_state_zip') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_city_state_zip'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:10">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_zip_code')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Zip Code' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_zip_code'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_zip_code');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:20">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_telephone')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Telephone' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_telephone'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_telephone');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:25">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_office_telephone')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker Office Telephone' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = ( SELECT question_id FROM question WHERE code = 'consultant_broker_office_telephone') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_office_telephone'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:30">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_fax')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Fax' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_fax'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_fax');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:35">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_fax_number')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker Fax Number' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = ( SELECT question_id FROM question WHERE code = 'consultant_broker_fax_number') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_fax_number'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:40">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_email')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the 'Writing Agent Email' question to 'Questionnaire' form</comment>
+        <sql>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'writing_agent_email'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question WHERE code = 'writing_agent_email');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="17-07-17 15:45">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE code = 'consultant_broker_email')
+                AND form_id = (SELECT form_id FROM form WHERE name = 'questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>Delete the 'Consultant Broker Email' question from 'Questionnaire' form</comment>
+        <sql>
+            DELETE FROM `form_question` WHERE question_id = ( SELECT question_id FROM question WHERE code = 'consultant_broker_email') AND form_id = (SELECT form_id FROM `form` WHERE name = 'questionnaire')
+        </sql>
+        <rollback>
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE code = 'consultant_broker_email'), (SELECT `form_id` FROM `form` WHERE name = 'questionnaire'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-18-17 02:45">
+        <comment>Adding more rfpCarriers for current plan image</comment>
+        <sql>
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Aetna'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Scripps Health Plan'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Healthnet'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Sharp Health Plans'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='SIMNSA'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='MediExcel'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Blue Shield'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Aetna'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Ameritas'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='California Dental Network'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Delta Dental'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Dental Health Services'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Guardian'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Healthnet'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Humana'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Lincoln Financial'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='MetLife'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Mutual of Omaha'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Premier Access'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Principal Financial Group'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Reliance Standard'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='SIMNSA'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='MediExcel'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Blue Shield'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Sun Life'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='The Standard'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='United Concordia'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Unum'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Aetna'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Ameritas'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Blue Shield'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='EyeMed'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Guardian'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Healthnet'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='MESVision'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='MetLife'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Premier Access'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Principal Financial Group'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Reliance Standard'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Sun Life'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='The Standard'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Unum'),'VISION');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='VSP'),'VISION');
+        </sql>
+    </changeSet>
+
+    <changeSet author="etrishechkin" id="21-07-2017 1:10">
+        <addColumn tableName="client">
+            <column name="predominant_county" type="TEXT">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+        <addColumn tableName="client">
+            <column name="average_age" type="float">
+                <constraints nullable="true"/>
+            </column>
+        </addColumn>
+    </changeSet>
+    <changeSet author="lemdy" id="07-20-17 13:07">
+        <comment>Adding Other carrier</comment>
+        <sql>
+            INSERT INTO carrier (display_name, name) VALUES ("Other", "OTHER");
+        </sql>
+        <rollback>
+            DELETE FROM `carrier` WHERE name = "OTHER";
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-20-17 13:08">
+        <comment>Adding more rfpCarriers for current plan image</comment>
+        <sql>
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Other'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Other'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='Other'),'VISION');
+        </sql>
+        <rollback>
+            DELETE FROM `rfp_carrier` WHERE carrier_id=(SELECT carrier_id FROM carrier WHERE display_name='Other') AND category="MEDICAL";
+            DELETE FROM `rfp_carrier` WHERE carrier_id=(SELECT carrier_id FROM carrier WHERE display_name='Other') AND category="DENTAL";
+            DELETE FROM `rfp_carrier` WHERE carrier_id=(SELECT carrier_id FROM carrier WHERE display_name='Other') AND category="VISION";
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-20-17 13:09">
+        <comment>Adding Other carrier network</comment>
+        <sql>
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='OTHER'), 'HMO - Other', 'HMO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='OTHER'), 'PPO - Other', 'PPO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='OTHER'), 'HSA - Other', 'HSA', 'TIER_1_FULL');
+            
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='OTHER'), 'DHMO Network', 'DHMO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='OTHER'), 'DPPO Network', 'DPPO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='OTHER'), 'VPPO Network', 'VISION', 'TIER_1_FULL');
+        </sql>
+        <rollback>
+            DELETE FROM `network` WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='OTHER') AND type="HMO";
+            DELETE FROM `network` WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='OTHER') AND type="PPO";
+            DELETE FROM `network` WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='OTHER') AND type="HSA";
+            DELETE FROM `network` WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='OTHER') AND type="DHMO";
+            DELETE FROM `network` WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='OTHER') AND type="DPPO";
+            DELETE FROM `network` WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='OTHER') AND type="VISION";
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-22-17 9:19">
+        <comment>Update UHC display name</comment>
+        <sql>
+            update carrier set display_name = 'UnitedHealthcare' where name = 'UHC';
+        </sql>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="24-07-17 17:00">
+        <comment>Fixed duplicate benefit ordinal</comment>
+        <sql>
+			update benefit_name set ordinal = 57 where name = 'PERIO_MAINTAINANCE';
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-24-17 11:43">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_to_pnn" columnName="option_id"/>
+            </not>
+        </preConditions>
+        <comment>Added column option_id to rfp_to_pnn table</comment>
+        <addColumn tableName="rfp_to_pnn">
+            <column name="option_id" type="bigint(20)" >
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="rfp_to_pnn" columnName="option_id"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="07-24-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM carrier WHERE name = 'ANTHEM_CLEAR_VALUE';
+            </sqlCheck>
+        </preConditions>
+        <comment>Adding New Carrier and Networks, Anthem Clear Value</comment>
+        <sql>
+            INSERT INTO carrier (display_name, name) VALUES ('Anthem Clear Value', 'ANTHEM_CLEAR_VALUE');
+
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'), 'CV HMO Network', 'HMO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'), 'CV PPO Network', 'PPO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'), 'CV HSA Network', 'HSA', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'), 'CV DHMO Network', 'DHMO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'), 'CV DPPO Network', 'DPPO', 'TIER_1_FULL');
+            INSERT INTO network (carrier_id, name, type, tier) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'), 'CV Vision Network', 'VISION', 'TIER_1_FULL');
+
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'),'MEDICAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'),'DENTAL');
+            INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE'),'VISION');
+        </sql>
+        <rollback>
+            DELETE FROM rfp_carrier WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE');
+            DELETE FROM network WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name='ANTHEM_CLEAR_VALUE');
+            DELETE FROM carrier WHERE name='ANTHEM_CLEAR_VALUE';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="07-25-17 19:12">
+        <comment>Drop pnn constraint in plan_history table</comment>
+        <dropForeignKeyConstraint baseTableName="plan_history" constraintName="fk_plan_history_to_pnn_plan_name_by_network"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-07-17 11:30">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE form_id IN (SELECT form_id FROM form WHERE NAME IN ('anthem-blue-cross-questionnaire', 'anthem-blue-cross-employer-application'));
+            </sqlCheck>
+        </preConditions>
+        <comment>Add "Anthem Blue Cross Questionnaire" and "Anthem Blue Cross Employer Application" form and questions</comment>
+        <sqlFile path="../scripts/db.anthem_questionnaire_static_data.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-07-17 12:30">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form WHERE NAME = 'group-application';
+            </sqlCheck>
+        </preConditions>
+        <comment>Rename "group-application" form to "employer-application"</comment>
+        <sql>
+            UPDATE form SET name = 'employer-application' WHERE name = 'group-application';
+        </sql>
+        <rollback>
+            <sql>
+                UPDATE form SET name = 'group-application' WHERE name = 'employer-application';
+            </sql>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-07-17 13:30">
+        <comment>Add column alias to variant table</comment>
+        <sql>
+            ALTER TABLE `variant` ADD COLUMN `alias` VARCHAR(50) NULL;
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-07-17 13:40">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM question WHERE code = 'payment_information_type';
+            </sqlCheck>
+        </preConditions>
+        <comment>Set variant alias values for payment_information_type question</comment>
+        <sql>
+            UPDATE variant SET alias = 'payment_information_type_init_prem'
+            WHERE number = 1 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+
+            UPDATE variant SET alias = 'payment_information_type_init_prem_reccur'
+            WHERE number = 2 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+
+            UPDATE variant SET alias = 'payment_information_type_other_chek'
+            WHERE number = 3 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+        </sql>
+        <rollback>
+            UPDATE variant SET alias = NULL
+            WHERE number = 1 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+
+            UPDATE variant SET alias = NULL
+            WHERE number = 2 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+
+            UPDATE variant SET alias = NULL
+            WHERE number = 3 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-07-17 13:50">
+        <preConditions>
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM question WHERE code = 'eoc_will_be_sent_out_to';
+            </sqlCheck>
+        </preConditions>
+        <comment>Set variant alias values for eoc_will_be_sent_out_to question</comment>
+        <sql>
+            UPDATE variant SET alias = 'eoc_will_be_sent_out_to_grop_admin'
+            WHERE number = 1 AND question_id = (SELECT question_id FROM question WHERE code = 'eoc_will_be_sent_out_to');
+
+            UPDATE variant SET alias = 'eoc_will_be_sent_out_to_decision_maker'
+            WHERE number = 2 AND question_id = (SELECT question_id FROM question WHERE code = 'eoc_will_be_sent_out_to');
+        </sql>
+        <rollback>
+            UPDATE variant SET alias = NULL
+            WHERE number = 1 AND question_id = (SELECT question_id FROM question WHERE code = 'eoc_will_be_sent_out_to');
+
+            UPDATE variant SET alias = NULL
+            WHERE number = 2 AND question_id = (SELECT question_id FROM question WHERE code = 'eoc_will_be_sent_out_to');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="26-07-17 17:00">
+        <preConditions>
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM question WHERE code = 'all_products_waiting_period';
+            </sqlCheck>
+        </preConditions>
+        <comment>Add all_products_waiting_period question</comment>
+        <sql>
+            INSERT INTO question (`code`, `title`, `multiselectable`) VALUES ('all_products_waiting_period', 'Waiting period for', FALSE);
+            INSERT INTO variant (`number`, `option`, `question_id`) VALUES (1, 'ALL products sold (medical and specialty)', (SELECT `question_id` FROM `question` WHERE CODE = 'all_products_waiting_period'));
+            INSERT INTO variant (`number`, `option`, `question_id`) VALUES (2, 'Medical products ONLY', (SELECT `question_id` FROM `question` WHERE CODE = 'all_products_waiting_period'));
+            INSERT INTO `form_question` (`required`, `question_id`, `form_id`, `invisible`) VALUES (FALSE, (SELECT `question_id` FROM `question` WHERE CODE = 'all_products_waiting_period'), (SELECT `form_id` FROM `form` WHERE name = 'anthem-blue-cross-employer-application'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM `form_question` WHERE question_id = (SELECT question_id FROM question  WHERE code = 'all_products_waiting_period') AND form_id = (SELECT `form_id` FROM `form` WHERE name = 'anthem-blue-cross-employer-application');
+            DELETE FROM `variant` WHERE question_id = ( SELECT question_id FROM question WHERE code = 'all_products_waiting_period');
+            DELETE FROM `question` WHERE code = 'all_products_waiting_period';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="27-07-17 13:00">
+        <comment>Update multiselectable answers for "Anthem" and "UHC"</comment>
+        <sqlFile path="../scripts/db.update_multi_answers_static_data.sql" relativeToChangelogFile="true"
+                 encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="31-08-17 13:00">
+        <preConditions>
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(DISTINCT question_id) FROM form_question WHERE question_id IN (
+                SELECT question_id FROM question WHERE CODE IN (
+                'type_of_elligible_employees') AND multiselectable = FALSE
+                ) AND form_id = (SELECT form_id FROM form WHERE NAME = 'anthem-blue-cross-employer-application');
+            </sqlCheck>
+        </preConditions>
+        <comment>Update the Eligible section in Anthem Employer Application form</comment>
+        <sql>
+            UPDATE question SET multiselectable = TRUE WHERE code = 'type_of_elligible_employees';
+
+            UPDATE variant SET alias = 'type_of_elligible_employees_full_time' WHERE question_id = (SELECT question_id FROM question WHERE code = 'type_of_elligible_employees') and `option` = 'Active full-time';
+            UPDATE variant SET alias = 'type_of_elligible_employees_part_time' WHERE question_id = (SELECT question_id FROM question WHERE code = 'type_of_elligible_employees') and `option` = 'Active part-time';
+            UPDATE variant SET alias = 'type_of_elligible_employees_retirees' WHERE question_id = (SELECT question_id FROM question WHERE code = 'type_of_elligible_employees') and `option` = 'Retirees';
+        </sql>
+        <rollback>
+            UPDATE question SET multiselectable = FALSE WHERE code = 'type_of_elligible_employees';
+
+            UPDATE variant SET alias = null WHERE question_id = (SELECT question_id FROM question WHERE code = 'type_of_elligible_employees') and `option` = 'Active full-time';
+            UPDATE variant SET alias = null WHERE question_id = (SELECT question_id FROM question WHERE code = 'type_of_elligible_employees') and `option` = 'Active part-time';
+            UPDATE variant SET alias = null WHERE question_id = (SELECT question_id FROM question WHERE code = 'type_of_elligible_employees') and `option` = 'Retirees';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="02-08-17 14:00">
+        <preConditions onFail="HALT">
+            <sqlCheck expectedResult="1">
+                select count(*) from carrier where name = 'ANTHEM_BLUE_CROSS';
+            </sqlCheck>
+        </preConditions>
+        <comment>Insert Anthem rfp carriers If they don't exist</comment>
+        <sql>
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'MEDICAL' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'ANTHEM_BLUE_CROSS') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+                SELECT category, carrier_id FROM rfp_carrier WHERE category = 'MEDICAL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'ANTHEM_BLUE_CROSS')
+            ) LIMIT 1;
+
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'DENTAL' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'ANTHEM_BLUE_CROSS') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+                SELECT category, carrier_id FROM rfp_carrier WHERE category = 'DENTAL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'ANTHEM_BLUE_CROSS')
+            ) LIMIT 1;
+
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'VISION' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'ANTHEM_BLUE_CROSS') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+                SELECT category, carrier_id FROM rfp_carrier WHERE category = 'VISION' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'ANTHEM_BLUE_CROSS')
+            ) LIMIT 1;
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="02-08-17 17:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network WHERE name="SIMNSA" AND type="HMO" AND tier="TIER_4_OTHER" AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'SIMNSA');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add name="SIMNSA" type="HMO" tier="TIER_4_OTHER" for the Medical Network in table "network" If it doesn't exist</comment>
+        <sql>
+            INSERT INTO network (name, type, tier, carrier_id)
+            SELECT * FROM (SELECT 'SIMNSA' AS name, 'HMO' as type, 'TIER_4_OTHER' as tier, (SELECT carrier_id FROM carrier WHERE NAME = 'SIMNSA') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+                SELECT name, type, tier, carrier_id FROM network WHERE name="SIMNSA" AND type="HMO" AND tier="TIER_4_OTHER" AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'SIMNSA')
+            ) LIMIT 1;
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="03-08-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT count(*) FROM network WHERE name = 'VPPO Network' AND type="VISION" AND tier="TIER_1_FULL" AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME='UNUM');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add name="VPPO Network" type="VISION" tier="TIER_1_FULL" for the Vision Network in table "network" (UNUM carrier), If it doesn't exist</comment>
+        <sql>
+            INSERT INTO network (name, type, tier, carrier_id)
+            SELECT * FROM (SELECT 'VPPO Network' AS name, 'VISION' as type, 'TIER_1_FULL' as tier, (SELECT carrier_id FROM carrier WHERE NAME = 'UNUM') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT name, type, tier, carrier_id FROM network WHERE name="VPPO Network" AND type="VISION" AND tier="TIER_1_FULL" AND carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'UNUM')
+            ) LIMIT 1;
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-08-17 15:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'firm_name')
+                AND form_id = (SELECT form_id FROM form WHERE NAME = 'employer-application');
+            </sqlCheck>
+        </preConditions>
+        <comment>Add the firm_name code to the Employer Application form</comment>
+        <sql>
+            INSERT IGNORE INTO question (code, title, multiselectable) VALUES ('firm_name', 'Firm Name', FALSE);
+            INSERT INTO form_question (required, question_id, form_id, invisible) VALUES (FALSE, (SELECT question_id FROM question WHERE code = 'firm_name'), (SELECT form_id FROM form WHERE name = 'employer-application'), FALSE);
+        </sql>
+        <rollback>
+            DELETE FROM form_question WHERE question_id = (SELECT question_id FROM question WHERE code = 'firm_name') AND form_id = (SELECT form_id FROM form WHERE name = 'employer-application');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-08-17 16:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'more_than_1_writing_agent_name_1')
+                AND form_id = (SELECT form_id FROM form WHERE NAME = 'employer-application');
+            </sqlCheck>
+        </preConditions>
+        <comment>Remove more_than_1_writing_agent_name_1 key from Employer Application form</comment>
+        <sql>
+            DELETE FROM answer where question_id = (SELECT question_id FROM question WHERE CODE = 'more_than_1_writing_agent_name_1');
+            DELETE FROM form_question WHERE question_id = (SELECT question_id FROM question WHERE code = 'more_than_1_writing_agent_name_1') AND form_id = (SELECT form_id FROM form WHERE name = 'employer-application');
+            DELETE FROM question WHERE code = 'more_than_1_writing_agent_name_1';
+        </sql>
+        <rollback>
+            INSERT IGNORE INTO question (code, title, multiselectable) VALUES ('more_than_1_writing_agent_name_1', 'Name of the first agent', FALSE);
+            INSERT INTO form_question (required, question_id, form_id, invisible) VALUES (FALSE, (SELECT question_id FROM question WHERE code = 'more_than_1_writing_agent_name_1'), (SELECT form_id FROM form WHERE name = 'employer-application'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-08-17 17:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'more_than_1_writing_agent_name_2')
+                AND form_id = (SELECT form_id FROM form WHERE NAME = 'employer-application');
+            </sqlCheck>
+        </preConditions>
+        <comment>Remove more_than_1_writing_agent_name_2 key from Employer Application form</comment>
+        <sql>
+            DELETE FROM answer where question_id = (SELECT question_id FROM question WHERE CODE = 'more_than_1_writing_agent_name_2');
+            DELETE FROM form_question WHERE question_id = (SELECT question_id FROM question WHERE code = 'more_than_1_writing_agent_name_2') AND form_id = (SELECT form_id FROM form WHERE name = 'employer-application');
+            DELETE FROM question WHERE code = 'more_than_1_writing_agent_name_2';
+        </sql>
+        <rollback>
+            INSERT IGNORE INTO question (code, title, multiselectable) VALUES ('more_than_1_writing_agent_name_2', 'Name of the second agent', FALSE);
+            INSERT INTO form_question (required, question_id, form_id, invisible) VALUES (FALSE, (SELECT question_id FROM question WHERE code = 'more_than_1_writing_agent_name_2'), (SELECT form_id FROM form WHERE name = 'employer-application'), FALSE);
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-08-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="4">
+                SELECT COUNT(*) FROM variant
+                WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+                AND `option` IN ('1 Tier', '2 Tier', '3 Tier', '4 Tier')
+            </sqlCheck>
+        </preConditions>
+        <comment>Rename option values for tier_structure_requested question</comment>
+        <sql>
+            UPDATE variant SET `option` = '1' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '1 Tier';
+
+            UPDATE variant SET `option` = '2' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '2 Tier';
+
+            UPDATE variant SET `option` = '3' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '3 Tier';
+
+            UPDATE variant SET `option` = '4' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '4 Tier';
+        </sql>
+        <rollback>
+            UPDATE variant SET `option` = '1 Tier' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '1';
+
+            UPDATE variant SET `option` = '2 Tier' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '2';
+
+            UPDATE variant SET `option` = '3 Tier' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '3';
+
+            UPDATE variant SET `option` = '4 Tier' WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'tier_structure_requested')
+            AND `option` = '4';
+        </rollback>
+    </changeSet>
+
+</databaseChangeLog>

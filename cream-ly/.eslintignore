@@ -1,0 +1,4 @@
+src/assets/static/
+src/scripts/vendors/
+dist/
+node_modules/

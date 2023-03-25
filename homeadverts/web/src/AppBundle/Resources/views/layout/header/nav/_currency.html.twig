@@ -1,0 +1,9 @@
+<ul class="nav-menu currency-selector" data-url="{{ path('ha_change_currency') }}">
+    {% for currency in availableCurrencies() %}
+        <li class="{{ currency.status }}">
+            <a href="#" data-currency="{{ currency.id }}">
+                {{ currency.id }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

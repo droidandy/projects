@@ -1,0 +1,88 @@
+page-register {
+
+
+    ion-item
+    {
+      padding-left: 0!important;
+          margin-bottom: 10px!important;
+    }
+
+    ion-item .label
+    {
+      color:#929292;
+      font-size: 10px!important;
+    }
+
+    .loginbtn
+    {
+      background-color: #f66565;
+          margin: 50px;
+          letter-spacing: 2px;
+          font-weight: 400;
+          font-size: 14px;
+          width: calc(100% - 100px);
+    }
+
+    .forgotbtn
+    {
+      color: #f66565;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .text-input
+    {
+      margin: 0!important;
+      font-size: 14px;
+    }
+
+    .back-button-text
+    {
+      display:none;
+    }
+
+    .back-button-icon
+    {
+          color: #f66565;
+    }
+
+    .terms
+    {
+      margin-bottom: 40px;
+      float: left;
+      width: 100%;
+    }
+
+    .terms p,.terms .checkbox
+    {
+      float: left;
+    }
+
+    .terms p
+    {
+      color: #000;
+    }
+
+    .terms p span
+    {
+      color: #0052ff;
+    }
+
+    .terms .checkbox
+    {
+          margin: 12px;
+    }
+
+    .header
+    {
+      box-shadow: none!important;
+    }
+
+    h2
+    {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+    }
+}

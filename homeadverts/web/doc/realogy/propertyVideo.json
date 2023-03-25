@@ -1,0 +1,830 @@
+{
+  "listingSummary": {
+    "listingId": "3825c93d-a508-4397-8fbd-42adf1ef65f7",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2019-05-30",
+    "photoCount": 35,
+    "videoCount": 1,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 574000,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "4 Stanford Place",
+      "city": "Princeton",
+      "district": "Somerset County",
+      "stateProvince": "New Jersey",
+      "stateProvinceCode": "NJ",
+      "postalCode": "08540",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 40.39248,
+      "longitude": -74.65999,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "4 Stanford Pl, Princeton, NJ 08540"
+    },
+    "geographicRegions": [
+      {
+        "type": "Neighbourhood",
+        "name": "Woods Edge"
+      }
+    ],
+    "mlsNumbers": [
+      "NJSO111680",
+      "3561326"
+    ],
+    "RFGListingId": "8B8S3H",
+    "isNewConstruction": false,
+    "listingURL": "https:\/\/www.sothebysrealty.com\/id\/8b8s3h",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Colonial",
+    "propertyName": "Neat-as-a-Pin Woods Edge Colonial",
+    "totalBath": 3,
+    "lotSize": "0.18 AC",
+    "noOfBedrooms": 3,
+    "defaultPhotoURL": "\/\/imgs.azureedge.net\/A12AFF9C-949A-4328-9FC5-83E1FA47CBAD",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2019-06-13T18:24:26.090",
+    "agents": [
+      {
+        "id": "34e5179e-d122-4655-842f-18b4545f86f4",
+        "name": "Janet Stefandl",
+        "firstName": "Janet",
+        "lastName": "Stefandl",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/imgs.azureedge.net\/2FC2F076-2CF1-4FF4-BB9F-4686DBCA0DAC",
+        "emailAddress": "jstefandl@callawayhenderson.com",
+        "leadEmailAddress": "800092.lead.4003389@leads.leadrouter.com",
+        "businessPhone": "+1 6099211050",
+        "isPrimary": false,
+        "office": {
+          "officeId": "6ce08919-381f-43b7-886e-1db67f3ad3c7",
+          "RFGOfficeId": "0006",
+          "companyId": "50d3739c-8b1b-4688-92be-c110ff7562e7",
+          "companyName": "Callaway Henderson",
+          "RFGCompanyId": "800092",
+          "brandCode": "SIR",
+          "name": "Callaway Henderson Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "4 Nassau Street",
+            "city": "Princeton",
+            "district": "Mercer",
+            "stateProvince": "New Jersey",
+            "stateProvinceCode": "NJ",
+            "postalCode": "08542",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 40.348862,
+            "longitude": -74.663518,
+            "formattedAddress": "4 Nassau St, Princeton, NJ 08542"
+          },
+          "serviceRegion": "Central",
+          "phoneNumber": "6099211050",
+          "emailAddress": "jhenderson@callawayhenderson.com",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "10052"
+      },
+      {
+        "id": "3cab3867-c748-42a7-8667-e9d28cf3c342",
+        "name": "Oliver Dennison",
+        "firstName": "Oliver",
+        "lastName": "Dennison",
+        "middleName": "A.",
+        "defaultPhotoURL": "\/\/imgs.azureedge.net\/42003F1B-EE76-4C79-AF95-F6EE7CF4F3C1",
+        "emailAddress": "odennison@callawayhenderson.com",
+        "leadEmailAddress": "800092.lead.4023739@leads.leadrouter.com",
+        "businessPhone": "6099211050",
+        "isPrimary": true,
+        "office": {
+          "officeId": "6ce08919-381f-43b7-886e-1db67f3ad3c7",
+          "RFGOfficeId": "0006",
+          "companyId": "50d3739c-8b1b-4688-92be-c110ff7562e7",
+          "companyName": "Callaway Henderson",
+          "RFGCompanyId": "800092",
+          "brandCode": "SIR",
+          "name": "Callaway Henderson Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "4 Nassau Street",
+            "city": "Princeton",
+            "district": "Mercer",
+            "stateProvince": "New Jersey",
+            "stateProvinceCode": "NJ",
+            "postalCode": "08542",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 40.348862,
+            "longitude": -74.663518,
+            "formattedAddress": "4 Nassau St, Princeton, NJ 08542"
+          },
+          "serviceRegion": "Central",
+          "phoneNumber": "6099211050",
+          "emailAddress": "jhenderson@callawayhenderson.com",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "10271"
+      }
+    ],
+    "isShowAddressOnInternet": true,
+    "expiresOn": "2019-11-30"
+  },
+  "fullBath": 2,
+  "halfBath": 1,
+  "providerKey": "3825c93d-a508-4397-8fbd-42adf1ef65f7",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Double Pane \/ Storm Windows"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "2 Car Garage"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Refrigerator"
+    },
+    {
+      "groupName": "Fencing",
+      "description": "Wood Fence"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Vaulted Ceilings"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "Fencing",
+      "description": "Fenced Yard"
+    },
+    {
+      "groupName": "General",
+      "description": "Security System"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Level"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Microwave"
+    },
+    {
+      "groupName": "General",
+      "description": "Laundry Facilities"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Walk-in Closet"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range \/ Oven"
+    },
+    {
+      "groupName": "General",
+      "description": "Ceiling Fan(s)"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Stone"
+    },
+    {
+      "groupName": "General",
+      "description": "Storage Area"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Granite Countertops"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Jogging \/ Biking Path"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Designer Kitchen"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Wood Burning"
+    },
+    {
+      "groupName": "General",
+      "description": "Energy-saving Features"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Security System"
+    },
+    {
+      "groupName": "Age",
+      "description": "11-20 Years Old"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Eat-in Kitchen"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Stall Shower and Tub"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Sidewalk"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Blinds"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "1 Fireplace"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Ceramic"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "Under 1\/2 Acre"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "Central A\/C"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Generator"
+    },
+    {
+      "groupName": "Roof",
+      "description": "Asphalt \/ Fiberglass"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Thermal Windows \/ Doors"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Cathedral Ceilings"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dryer"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Garage Door"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "City"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Cable"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Washer"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Tennis"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Jetted Tub"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Vinyl Siding"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Phone Jacks"
+    },
+    {
+      "groupName": "Water",
+      "description": "City Water"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Stall Shower"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "Video QC Approved Listing"
+    }
+  ],
+  "openHouse": [
+    {
+      "startOn": "2019-06-15T12:00:00.000",
+      "endOn": "2019-06-15T14:00:00.000",
+      "isByAppointment": false,
+      "isShowOnInternet": true
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Welcome home to this neat-as-a-pin Woods Edge Colonial in the sought-after Montgomery school system with a Princeton mailing address. The living room with 2 stories of windows features sparkling wood floors that flow to the dining room. The updated kitchen sits adjacent a fireside family room offering the home cook granite counters, a marble backsplash, and newer GE and Kitchen Aid stainless appliances for creating that masterpiece. Large enough for a table, dine here or take the party out to the paver patio in the low maintenance fenced yard with river stone landscaping. A powder room is in the foyer for guest use. Upstairs, find 3 well-proportioned bedrooms, all with new wood floors. A peaked ceiling gives definition to the master suite with its own bathroom and walk-in. Second-floor laundry and a hall bath round out this level. The finished basement is the ideal play space as is the cul-de-sac location. Four-year-young HVAC, a Ring video security system and wiring in place for a generator are home automation that will be appreciated. Minutes from Montgomery schools, shopping, and downtown Princeton. Come see!",
+      "htmlRemark": "<table class=\"d77m11\" cellspacing=\"0\" cellpadding=\"0\" style=\"border-collapse: separate; background-color: rgb(255, 255, 255); table-layout: fixed; width: 810px; color: rgb(95, 95, 95); font-family: verdana, sans-serif; white-space: nowrap;\"><tbody><tr class=\"d77m19\" style=\"vertical-align: top;\"><td class=\"d77m53\" style=\"margin: 0px; overflow: hidden; width: 660px; overflow-wrap: normal !important;\"><span class=\"wrapped-field\" style=\"white-space: normal; color: rgb(0, 0, 0);\">Welcome home to this neat-as-a-pin Woods Edge Colonial in the sought-after Montgomery school system with a Princeton mailing address. The living room with 2 stories of windows features sparkling wood floors that flow to the dining room. The updated kitchen sits adjacent a fireside family room offering the home cook granite counters, a marble backsplash, and newer GE and Kitchen Aid stainless appliances for creating that masterpiece. Large enough for a table, dine here or take the party out to the paver patio in the low maintenance fenced yard with river stone landscaping. A powder room is in the foyer for guest use. Upstairs, find 3 well-proportioned bedrooms, all with new wood floors. A peaked ceiling gives definition to the master suite with its own bathroom and walk-in. Second-floor laundry and a hall bath round out this level. The finished basement is the ideal play space as is the cul-de-sac location. Four-year-young HVAC, a Ring video security system and wiring in place for a generator are home automation that will be appreciated. Minutes from Montgomery schools, shopping, and downtown Princeton. Come see!<\/span><\/td><\/tr><tr><td class=\"d77m38\" style=\"margin: 0px; overflow: hidden; width: 150px; overflow-wrap: normal !important;\"><\/td><\/tr><\/tbody><\/table>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https:\/\/www.sothebysrealty.com\/id\/8b8s3h",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "0F40590B-C301-455D-BE7E-0587BA86AEFE",
+      "sequenceNumber": 17,
+      "url": "\/\/imgs.azureedge.net\/0F40590B-C301-455D-BE7E-0587BA86AEFE",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 017",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1948,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "12B45429-B012-4D59-A551-0779BD8D9AFA",
+      "sequenceNumber": 12,
+      "url": "\/\/imgs.azureedge.net\/12B45429-B012-4D59-A551-0779BD8D9AFA",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 012",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "15399D20-253E-49E6-8A03-247C00491E03",
+      "sequenceNumber": 21,
+      "url": "\/\/imgs.azureedge.net\/15399D20-253E-49E6-8A03-247C00491E03",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 021",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "06D93E19-80E1-4DA1-A9A9-47CD7C494BCE",
+      "sequenceNumber": 13,
+      "url": "\/\/imgs.azureedge.net\/06D93E19-80E1-4DA1-A9A9-47CD7C494BCE",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 013",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "F87D261E-A2B5-44F2-A75E-4AAADEFC3D5B",
+      "sequenceNumber": 11,
+      "url": "\/\/imgs.azureedge.net\/F87D261E-A2B5-44F2-A75E-4AAADEFC3D5B",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 011",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "7AFA5982-88C0-4849-BF18-4CEE555B6449",
+      "sequenceNumber": 22,
+      "url": "\/\/imgs.azureedge.net\/7AFA5982-88C0-4849-BF18-4CEE555B6449",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 022",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "7BC1B61D-4EE9-42D5-8765-50233BAFA9B1",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/7BC1B61D-4EE9-42D5-8765-50233BAFA9B1",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 002",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "5A27B880-FDF5-4FB0-B27F-59EB2B9D99B5",
+      "sequenceNumber": 31,
+      "url": "\/\/imgs.azureedge.net\/5A27B880-FDF5-4FB0-B27F-59EB2B9D99B5",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 031",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "A2610ADF-81A3-4819-919F-61CBEF06F355",
+      "sequenceNumber": 15,
+      "url": "\/\/imgs.azureedge.net\/A2610ADF-81A3-4819-919F-61CBEF06F355",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 015",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "8C8C5513-3501-4C9D-984A-621C5201D1B4",
+      "sequenceNumber": 25,
+      "url": "\/\/imgs.azureedge.net\/8C8C5513-3501-4C9D-984A-621C5201D1B4",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 025",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "73C97FFE-3BF0-4541-A524-6727A7CF4D39",
+      "sequenceNumber": 24,
+      "url": "\/\/imgs.azureedge.net\/73C97FFE-3BF0-4541-A524-6727A7CF4D39",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 024",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "4591EF96-908B-4087-80C7-75D369FE2450",
+      "sequenceNumber": 29,
+      "url": "\/\/imgs.azureedge.net\/4591EF96-908B-4087-80C7-75D369FE2450",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 029",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "5551A164-F449-4242-BF7A-7F38F5D638FC",
+      "sequenceNumber": 26,
+      "url": "\/\/imgs.azureedge.net\/5551A164-F449-4242-BF7A-7F38F5D638FC",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 026",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "A12AFF9C-949A-4328-9FC5-83E1FA47CBAD",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/A12AFF9C-949A-4328-9FC5-83E1FA47CBAD",
+      "isDefault": true,
+      "caption": "Standford Place 4 Princeton 2019 001",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "7B65B853-4E1E-4DF3-82E6-84930557F6BD",
+      "sequenceNumber": 28,
+      "url": "\/\/imgs.azureedge.net\/7B65B853-4E1E-4DF3-82E6-84930557F6BD",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 028",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "842D6AAE-EB02-4188-BDCA-8BD47A4A4BAA",
+      "sequenceNumber": 10,
+      "url": "\/\/imgs.azureedge.net\/842D6AAE-EB02-4188-BDCA-8BD47A4A4BAA",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 010",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "22215A48-6240-49BC-BBE7-8F0400D68490",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/22215A48-6240-49BC-BBE7-8F0400D68490",
+      "isDefault": false,
+      "caption": "Second Level",
+      "format": "Image",
+      "category": "Floor Plan",
+      "height": 2730,
+      "width": 3300,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "720E8070-6F52-4E6E-A820-9415DA44FD6A",
+      "sequenceNumber": 20,
+      "url": "\/\/imgs.azureedge.net\/720E8070-6F52-4E6E-A820-9415DA44FD6A",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 020",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "9870941F-82C7-4B90-9E1B-98B8F5AAD9C6",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/9870941F-82C7-4B90-9E1B-98B8F5AAD9C6",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 003",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "E752AD41-7200-4112-ACF5-9F3F9237A0B2",
+      "sequenceNumber": 8,
+      "url": "\/\/imgs.azureedge.net\/E752AD41-7200-4112-ACF5-9F3F9237A0B2",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 008",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "AEC53CC5-81C9-49DD-BBD2-A3A71709186D",
+      "sequenceNumber": 19,
+      "url": "\/\/imgs.azureedge.net\/AEC53CC5-81C9-49DD-BBD2-A3A71709186D",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 019",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "324E000F-D329-40CC-9C0E-A5720C898045",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/324E000F-D329-40CC-9C0E-A5720C898045",
+      "isDefault": false,
+      "caption": "Lower Level",
+      "format": "Image",
+      "category": "Floor Plan",
+      "height": 2730,
+      "width": 3300,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "62DFADB2-F997-4F8F-91DE-AA00F1E8987F",
+      "sequenceNumber": 14,
+      "url": "\/\/imgs.azureedge.net\/62DFADB2-F997-4F8F-91DE-AA00F1E8987F",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 014",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "3C7E1AD9-1D05-42A9-904D-B9847A3A6D7A",
+      "sequenceNumber": 9,
+      "url": "\/\/imgs.azureedge.net\/3C7E1AD9-1D05-42A9-904D-B9847A3A6D7A",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 009",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "739152A8-6836-4FA5-B7D2-C58CBC50C059",
+      "sequenceNumber": 1,
+      "url": "https:\/\/www.planomatic.com\/mls275762",
+      "isDefault": true,
+      "caption": "4 Stanford Place",
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "D11246CA-08AF-4212-93A1-C8C2C5EA4137",
+      "sequenceNumber": 4,
+      "url": "\/\/imgs.azureedge.net\/D11246CA-08AF-4212-93A1-C8C2C5EA4137",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 004",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "97FE73CD-A26F-485B-B4B8-D26DBE62176B",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/97FE73CD-A26F-485B-B4B8-D26DBE62176B",
+      "isDefault": true,
+      "caption": "Main Level",
+      "format": "Image",
+      "category": "Floor Plan",
+      "height": 2730,
+      "width": 3300,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "AE44ED57-A9E9-47DF-9568-D5AD29757DF0",
+      "sequenceNumber": 7,
+      "url": "\/\/imgs.azureedge.net\/AE44ED57-A9E9-47DF-9568-D5AD29757DF0",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 007",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "D4A819D0-D82A-4D28-89D3-D7E1C1E6AF13",
+      "sequenceNumber": 16,
+      "url": "\/\/imgs.azureedge.net\/D4A819D0-D82A-4D28-89D3-D7E1C1E6AF13",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 016",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1948,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "01DD15EE-E049-485B-8B09-DB3E05DEF3CA",
+      "sequenceNumber": 27,
+      "url": "\/\/imgs.azureedge.net\/01DD15EE-E049-485B-8B09-DB3E05DEF3CA",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 027",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "E746E90E-8014-45A0-91E5-DFE51D6914A5",
+      "sequenceNumber": 32,
+      "url": "\/\/imgs.azureedge.net\/E746E90E-8014-45A0-91E5-DFE51D6914A5",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 032",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "EA552EFC-6783-409F-999D-E19595CDFD45",
+      "sequenceNumber": 1,
+      "url": "https:\/\/players.brightcove.net\/5699924528001\/default_default\/index.html?videoId=6047582004001",
+      "isDefault": true,
+      "format": "Video",
+      "category": "Property Video",
+      "lastUpdateOn": "2019-06-12T21:50:23.820"
+    },
+    {
+      "mediaID": "9C09B69C-D538-44A1-B589-E1B82CAB39DD",
+      "sequenceNumber": 6,
+      "url": "\/\/imgs.azureedge.net\/9C09B69C-D538-44A1-B589-E1B82CAB39DD",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 006",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "096697F5-E1B0-4AC5-9570-EBD2EFBF5DC0",
+      "sequenceNumber": 5,
+      "url": "\/\/imgs.azureedge.net\/096697F5-E1B0-4AC5-9570-EBD2EFBF5DC0",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 005",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "6266D94D-A2F2-4AC3-AC94-F0CFA3A4BF1C",
+      "sequenceNumber": 23,
+      "url": "\/\/imgs.azureedge.net\/6266D94D-A2F2-4AC3-AC94-F0CFA3A4BF1C",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 023",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1908,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "D6687D6C-8797-44E4-81CC-F1974A9F845D",
+      "sequenceNumber": 30,
+      "url": "\/\/imgs.azureedge.net\/D6687D6C-8797-44E4-81CC-F1974A9F845D",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 030",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1949,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    },
+    {
+      "mediaID": "223047E9-3B5A-494F-B44C-F562E840E214",
+      "sequenceNumber": 18,
+      "url": "\/\/imgs.azureedge.net\/223047E9-3B5A-494F-B44C-F562E840E214",
+      "isDefault": false,
+      "caption": "Standford Place 4 Princeton 2019 018",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1299,
+      "width": 1948,
+      "lastUpdateOn": "2019-05-31T15:41:15.400"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "NJSO111680",
+      "isPrimary": true
+    },
+    {
+      "number": "3561326",
+      "isPrimary": false
+    }
+  ]
+}

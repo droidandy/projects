@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://awsuat.one-transport.co.uk/OTWS/OTWebservice.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.one-transport.co.uk/OTWebservice"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:ClientLookup><tns:Request><tns:Header><tns:Version>4</tns:Version><tns:Key>Demo123456</tns:Key><tns:Username>Demo_admin</tns:Username><tns:ClientNumber>D25</tns:ClientNumber><tns:Password>Demo4dmin</tns:Password><tns:MaxReply>100</tns:MaxReply></tns:Header><tns:ClientNumber>D25</tns:ClientNumber><tns:ClientName>Demo_admin</tns:ClientName></tns:Request></tns:ClientLookup></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://www.one-transport.co.uk/OTWebservice/ClientLookup"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '675'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0,no-store,no-cache
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 17 Aug 2018 16:53:21 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '7935'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><ClientLookupResponse
+        xmlns="http://www.one-transport.co.uk/OTWebservice"><ClientLookupResult><Header><Version>3</Version><SoftwareVersion>One
+        Transport General Webservices version 2.13.0.0</SoftwareVersion><Time>2018-08-17T16:53:21.6863145Z</Time><Result><Message
+        /><Code>0</Code></Result></Header><General><ClientNumber>D25</ClientNumber><ClientName>DEMONSTRATIONS</ClientName><References
+        /><Requirements><RequirementsStructure><OTRequirementID>001</OTRequirementID><Description>Wheelchair
+        User (Ramps Required)</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>002</OTRequirementID><Description>Ambulant
+        Wheelchair User</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>003</OTRequirementID><Description>Passenger
+        Needs Assistance</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>004</OTRequirementID><Description>Passenger
+        With Guidedog</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>005</OTRequirementID><Description>Disability
+        Trained Driver</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>006</OTRequirementID><Description>Extra
+        Luggage or Equipment</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>007</OTRequirementID><Description>Environmentally
+        Friendly Vehicle</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>008</OTRequirementID><Description>Baby
+        Seat Requested</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>009</OTRequirementID><Description>Child
+        Seat Requested</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>010</OTRequirementID><Description>Passenger
+        Has Baby/Child Seat</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>011</OTRequirementID><Description>VIP</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>012</OTRequirementID><Description>Executive</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>013</OTRequirementID><Description>Production
+        Critical</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>014</OTRequirementID><Description>Order
+        is Part of an Event</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>015</OTRequirementID><Description>Display
+        Nameboard</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>016</OTRequirementID><Description>Meet
+        &amp; Greet</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>017</OTRequirementID><Description>Do
+        Not Knock or Ring Door Bell</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>018</OTRequirementID><Description>Do
+        Not Converse With Passenger</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>019</OTRequirementID><Description>Driver
+        Must Know Route</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>020</OTRequirementID><Description>Driver
+        Only</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>021</OTRequirementID><Description>Female
+        Driver</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>022</OTRequirementID><Description>Male
+        Driver</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>023</OTRequirementID><Description>Experienced
+        Driver</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>024</OTRequirementID><Description>Reading
+        Light</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>025</OTRequirementID><Description>Wait
+        On Arrival</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>026</OTRequirementID><Description>Tabloid
+        Newspapers Required</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>027</OTRequirementID><Description>Broadsheet
+        Newspapers Required</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>028</OTRequirementID><Description>Motorways
+        Preferred</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>029</OTRequirementID><Description>A-Roads
+        Preferred</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>ST</OTRequirementID><Description>Suz
+        Tst Special Req</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>030</OTRequirementID><Description>Please
+        do not horn on arrival at home addresses</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>031</OTRequirementID><Description>Come
+        into Reception</Description></RequirementsStructure><RequirementsStructure><OTRequirementID>113</OTRequirementID><Description>Specialised
+        Vendor Required</Description></RequirementsStructure></Requirements><JourneyReasons><JourneyReasonStructure><Label>Work
+        to Home</Label><JourneyReasonType>WorkToHome</JourneyReasonType></JourneyReasonStructure><JourneyReasonStructure><Label>Home
+        to Work</Label><JourneyReasonType>HomeToWork</JourneyReasonType></JourneyReasonStructure><JourneyReasonStructure><Label>Other</Label><JourneyReasonType>Other</JourneyReasonType></JourneyReasonStructure></JourneyReasons><PassengerTypes><PassengerTypeStructure><Name>Guest</Name><Type>Guest</Type></PassengerTypeStructure></PassengerTypes><VehicleTypes><VehicleClassTypeStructure><OTInternal_Type_Id>0</OTInternal_Type_Id><V_Class>Standard</V_Class><V_Type>Taxi</V_Type><MaxNumPassengers>5</MaxNumPassengers><MaxNumLuggage>3</MaxNumLuggage><ClientCarLabel>Black
+        Taxi</ClientCarLabel></VehicleClassTypeStructure><VehicleClassTypeStructure><OTInternal_Type_Id>0</OTInternal_Type_Id><V_Class>Standard</V_Class><V_Type>Saloon</V_Type><MaxNumPassengers>3</MaxNumPassengers><MaxNumLuggage>3</MaxNumLuggage><ClientCarLabel>Standard
+        Saloon</ClientCarLabel></VehicleClassTypeStructure><VehicleClassTypeStructure><OTInternal_Type_Id>0</OTInternal_Type_Id><V_Class>Corporate</V_Class><V_Type>Saloon</V_Type><MaxNumPassengers>3</MaxNumPassengers><MaxNumLuggage>3</MaxNumLuggage><ClientCarLabel>Business
+        Saloon</ClientCarLabel></VehicleClassTypeStructure><VehicleClassTypeStructure><OTInternal_Type_Id>0</OTInternal_Type_Id><V_Class>Standard</V_Class><V_Type>MPV</V_Type><MaxNumPassengers>6</MaxNumPassengers><MaxNumLuggage>3</MaxNumLuggage><ClientCarLabel>Standard
+        MPV</ClientCarLabel></VehicleClassTypeStructure></VehicleTypes><PreferredVendorReasons><PreferredVendorReasonStructure><ID>3</ID><Reason>Previous
+        bad experience with other vendor(s)</Reason></PreferredVendorReasonStructure><PreferredVendorReasonStructure><ID>4</ID><Reason>Previous
+        excellent service received from this vendor</Reason></PreferredVendorReasonStructure><PreferredVendorReasonStructure><ID>5</ID><Reason>Travelling
+        with client</Reason></PreferredVendorReasonStructure><PreferredVendorReasonStructure><ID>6</ID><Reason>Personal</Reason></PreferredVendorReasonStructure><PreferredVendorReasonStructure><ID>8</ID><Reason>Booking
+        for a Guest</Reason></PreferredVendorReasonStructure></PreferredVendorReasons><JobChargeTypes
+        /><OutOfPolicyReasons><OutOfPolicyReasonStructure><ID>180</ID><Reason>No.
+        of Passengers</Reason></OutOfPolicyReasonStructure><OutOfPolicyReasonStructure><ID>181</ID><Reason>Bus
+        Lane Required</Reason></OutOfPolicyReasonStructure><OutOfPolicyReasonStructure><ID>182</ID><Reason>Client</Reason></OutOfPolicyReasonStructure><OutOfPolicyReasonStructure><ID>183</ID><Reason>Guest</Reason></OutOfPolicyReasonStructure><OutOfPolicyReasonStructure><ID>475</ID><Reason>Luggage</Reason></OutOfPolicyReasonStructure></OutOfPolicyReasons><DisclaimerNames
+        /></General></ClientLookupResult></ClientLookupResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Aug 2018 16:53:33 GMT
+recorded_with: VCR 4.0.0

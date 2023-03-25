@@ -1,0 +1,157 @@
+!!!
+%html
+  %head
+    %title Timeline
+    %meta(content="text/html; charset=utf-8" http-equiv="Content-Type")
+    %meta(content="IE=edge" http-equiv="X-UA-Compatible")
+    %meta(content="width=device-width, initial-scale=1" name="viewport")
+    %link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet")
+    :css
+      *, *:before, *:after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+      }
+
+      .layout.horizontal {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+      }
+
+      .layout.start {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+      }
+
+      .point {
+        width: 80px;
+        text-align: center;
+      }
+
+      .customer_care,
+      .order_received,
+      .locating,
+      .on_the_way,
+      .in_progress,
+      .cancelled,
+      .rejected {
+        width: 110px;
+      }
+
+      .arrived {
+        width: 30%;
+        min-width: 100px;
+      }
+
+      .completed {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        min-width: 100px;
+      }
+
+      .marker {
+        border-left: 1px solid #989898;
+        height: 60px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .marker:before,
+      .marker:after {
+        content: '';
+        position: absolute;
+        left: -5px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #989898;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+
+      .marker:before {
+        top: -1px;
+        left: -12px;
+        width: 22px;
+        height: 22px;
+      }
+
+      .marker:after {
+        bottom: 0;
+      }
+
+      .creating .marker:before,
+      .creating .marker:after {
+        background-color: #989898;
+        border: 1px solid #989898;
+      }
+
+      .completed .marker:before,
+      .completed .marker:after {
+        background-color: #489a3e;
+        border: 1px solid #489a3e;
+      }
+
+      .passed:before,
+      .passed:after {
+        border: 1px solid #6bbae6;
+        background-color: #6bbae6;
+      }
+
+      .outside:before {
+        top: -4px;
+        left: -14px;
+        display: block;
+        width: 28px;
+        height: 28px;
+      }
+
+      .interrupted:before,
+      .interrupted:after {
+        background-color: #f55656;
+        border-color: #f55656;
+      }
+
+      .text-10 {
+        font-size: 10px;
+      }
+
+      .text-9 {
+        font-size: 9px;
+      }
+
+      .point-line {
+        width: 100%;
+        height: 15px;
+        border-bottom: 2px solid #989898;
+        margin: -4px -40px 0;
+        line-height: 12px;
+        font-size: 12px;
+        padding-bottom: 2px;
+        text-align: center;
+      }
+
+  %body
+    .layout.horizontal
+      - @booking_data[:events].each do |event|
+        .layout.horizontal.start{class: event[:status]}
+          - if !event[:is_first]
+            .point-line
+              = event[:interval_and_distance]
+          .point
+            .marker{class: "#{event[:time].presence && 'passed'} #{event[:is_edge].presence && 'outside'} #{event[:is_interrupted].presence && 'interrupted'}"}
+            .text-10= t("booking.status.#{event[:status]}")
+            - if event[:cancelled_by]
+              .text-10 by #{event[:cancelled_by]}
+            .text-9= event[:time]

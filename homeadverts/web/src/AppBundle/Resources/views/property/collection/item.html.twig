@@ -1,0 +1,58 @@
+{% set propertyUrl = path('property_details', { 'id': property.id, 'slug': property.slug }) %}
+{% set primaryVideo = property.primaryVideo %}
+{% set primaryVideo3d = property.primaryVideo3d %}
+{% set currency = search.currency is defined ? search.currency : currentCurrency() %}
+
+{% set carousel_view %}
+    {% include 'AppBundle:property/carousel:modal.html.twig' %}
+{% endset %}
+
+{% block property_list_item %}
+    <div class="list-description" id="property-{{ property.id }}">
+        {% include 'AppBundle:property:edit.html.twig' %}
+        <div class="preloader-collection">
+            <div class="spinner"></div>
+        </div>
+        <div class="list-image cover"
+             style="background-image: url({{ property|property_thumbnail('property_medium') }});"
+        >
+            <span class="fullscreen show-carousel">
+                <i class="material-icons">photo_library</i>
+            </span>
+
+            {% if primaryVideo %}
+                <span class="play-video"
+                      data-type="{{ primaryVideo.getType() }}"
+                      data-url="{{ primaryVideo.getVideoUrl() }}">
+                    <i class="material-icons">videocam</i>
+                </span>
+            {% endif %}
+            {% if primaryVideo3d %}
+                <span class="play-3d {% if primaryVideo %}__bottom{% endif %}"
+                      data-url="{{ primaryVideo3d.url }}">
+                    <i class="material-icons">3d_rotation</i>
+                </span>
+            {% endif %}
+        </div>
+        <header>
+            <div class="tag">
+                {{ property|property_subtitle }}
+            </div>
+            <a href="{{ path('property_details', { 'id': property.id, 'slug': property.slug }) }}"
+               class="heading">
+                {{ property.getTitle() }}
+            </a>
+            <p class="short-details">
+                {{ property.getIntro() }}
+            </p>
+            <div class="user-info --footer">
+                {% include 'AppBundle:user/profile:info.html.twig' with {user: property.user} %}
+            </div>
+        </header>
+        <div class="item-navigation">
+            {% include 'AppBundle:property/card:navigation.html.twig' %}
+        </div>
+    </div>
+{% endblock %}
+
+<div style="display: none;" data-gallery-content=""><!-- {{ carousel_view }} --></div>

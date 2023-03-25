@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://publicapi.scrum27.gett.io/v1/business/rides/585/cancel?business_id=UK-3950
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 9c10254fb4a0ff8b161d2dfea37f55659a970216c1ec87ce938295ae1d5c8fe9
+      Content-Length:
+      - '2'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin,Accept,Content-Type,Authorization
+      Access-Control-Allow-Origin:
+      - ''
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Aug 2018 14:25:21 GMT
+      X-Rate-Limit-Limit:
+      - '1000000'
+      X-Rate-Limit-Remaining:
+      - '999987'
+      X-Rate-Limit-Reset:
+      - '2018-08-21T14:25:21Z'
+      X-Request-Id:
+      - 450556daaf629e159947a9900a55cea2
+      - 450556daaf629e159947a9900a55cea2
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{}"
+    http_version: 
+  recorded_at: Tue, 21 Aug 2018 14:25:21 GMT
+recorded_with: VCR 4.0.0

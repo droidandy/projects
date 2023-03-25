@@ -1,0 +1,60 @@
+FROM docker:20.10.7
+
+# https://github.com/hypnoglow/helm-s3
+ENV HELM_S3_PLUGIN_VERSION "0.10.0"
+
+# https://github.com/sgerrand/alpine-pkg-glibc/releases
+ENV GLIBC_VER=2.33-r0
+
+RUN apk --no-cache upgrade && apk add --update bash ca-certificates git python3 jq py3-pip curl make openssl groff wget
+
+RUN apk --no-cache add \
+        binutils \
+        curl \
+    && curl -sL https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub -o /etc/apk/keys/sgerrand.rsa.pub \
+    && curl -sLO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VER}/glibc-${GLIBC_VER}.apk \
+    && curl -sLO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VER}/glibc-bin-${GLIBC_VER}.apk \
+    && apk add --no-cache \
+        glibc-${GLIBC_VER}.apk \
+        glibc-bin-${GLIBC_VER}.apk \
+    && curl -sL https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip -o awscliv2.zip \
+    && unzip awscliv2.zip \
+    && aws/install \
+    && rm -rf \
+        awscliv2.zip \
+        aws \
+        /usr/local/aws-cli/v2/*/dist/aws_completer \
+        /usr/local/aws-cli/v2/*/dist/awscli/data/ac.index \
+        /usr/local/aws-cli/v2/*/dist/awscli/examples \
+    && apk --no-cache del binutils \
+    && rm glibc-${GLIBC_VER}.apk \
+    && rm glibc-bin-${GLIBC_VER}.apk
+
+# install kubectl
+RUN curl -sL https://dl.k8s.io/release/stable.txt | xargs -I{} curl -L https://dl.k8s.io/release/{}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
+    && chmod +x /usr/local/bin/kubectl \
+    && kubectl version --client
+
+# install Helm
+# https://helm.sh/docs/intro/install/#from-script
+RUN curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | sh
+
+# install S3 plugin for Helm
+RUN helm plugin install https://github.com/hypnoglow/helm-s3.git --version $HELM_S3_PLUGIN_VERSION
+
+# aws-iam-authenticator
+# https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html
+RUN curl -o aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/aws-iam-authenticator \
+    && curl -o aws-iam-authenticator.sha256 https://amazon-eks.s3-us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/aws-iam-authenticator.sha256 \
+    && openssl sha1 -sha256 aws-iam-authenticator \
+    && chmod +x ./aws-iam-authenticator \
+    && mv aws-iam-authenticator /usr/local/bin/aws-iam-authenticator \
+    && aws-iam-authenticator help
+
+# install YAML tools
+RUN pip install yamllint yq
+
+# cleanup
+RUN apk --no-cache del curl && rm /var/cache/apk/* && rm -rf /tmp/*
+
+CMD bash

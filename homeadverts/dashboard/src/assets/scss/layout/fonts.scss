@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('/font/icomoon/icomoon.eot');
+  src: url('/font/icomoon/icomoon.eot') format('embedded-opentype'),
+  url('/font/icomoon/icomoon.woff') format('woff'),
+  url('/font/icomoon/icomoon.ttf') format('truetype'),
+  url('/font/icomoon/icomoon.svg') format('svg');
+}
+
+%font {
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  .ie8 & {
+    -ms-zoom: 1;
+  }
+}
+
+%icomoon {
+  @extend %font;
+  font-family: 'icomoon';
+}
+
+.editor-image-crop:before {
+  @extend %icomoon;
+  content: "\e900";
+}
+
+.editor-image-wide:before {
+  @extend %icomoon;
+  content: "\e901";
+}
+
+.editor-image-fullpage:before {
+  @extend %icomoon;
+  content: "\e903";
+}
+
+.editor-image-right:before {
+  @extend %icomoon;
+  content: "\e902";
+}
+
+.editor-image-left:before {
+  @extend %icomoon;
+  content: "\e904";
+}
+
+.icon-heart:before {
+  @extend %icomoon;
+  content: "\e9da";
+}
+.icon-heart-broken:before {
+  @extend %icomoon;
+  content: "\e9db";
+}
+.icon-facebook:before {
+  @extend %icomoon;
+  content: "\ea90";
+}
+.icon-twitter:before {
+  @extend %icomoon;
+  content: "\ea96";
+}
+

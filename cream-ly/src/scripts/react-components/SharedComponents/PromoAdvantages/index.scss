@@ -1,0 +1,46 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.componentPromoAdvantages {
+    @include spacingBottom;
+    @include maxWidthPage;
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    &__item {
+        @include spacingBottomMedium;
+    }
+    
+    .icon_img {
+        @include spacingBottomSmall;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height:100px;
+        width: 100px;
+        background-size:cover;
+        background-repeat: no-repeat;
+
+        &.animal_love {background-image: url("./icons_other_animal_love.svg")}
+        &.certificate {background-image: url("./icons_other_certificate.svg")}
+        &.effectiveness {background-image: url("./icons_other_effectiveness.svg")}
+        &.handmade {background-image: url("./icons_other_handmade.svg")}
+        &.minimal {background-image: url("./icons_other_minimal.svg")}
+        &.natural {background-image: url("./icons_other_natural.svg")}
+        
+    }
+
+    h4 {
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        line-height: 1.67;
+        font-size: 18px;
+        font-family: var(--font-heading);
+    }
+
+    p {
+        @include defaultText;
+    }
+}

@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://awsuat.one-transport.co.uk/OTWS/OTWebservice.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.one-transport.co.uk/OTWebservice"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:JobCancel><tns:Request><tns:Header><tns:Version>4</tns:Version><tns:Key>Demo123456</tns:Key><tns:Username>Demo_admin</tns:Username><tns:ClientNumber>D25</tns:ClientNumber><tns:Password>Demo4dmin</tns:Password><tns:MaxReply>1</tns:MaxReply></tns:Header><tns:OTConfirmationNumber>1000314920</tns:OTConfirmationNumber><tns:PersonID>D250122642</tns:PersonID><tns:CancelReason>Cancel</tns:CancelReason></tns:Request></tns:JobCancel></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://www.one-transport.co.uk/OTWebservice/JobCancel"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '729'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0,no-store,no-cache
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 17 Aug 2018 15:31:51 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '613'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><JobCancelResponse
+        xmlns="http://www.one-transport.co.uk/OTWebservice"><JobCancelResult><Header><Version>3</Version><SoftwareVersion>One
+        Transport General Webservices version 2.13.0.0</SoftwareVersion><Time>2018-08-17T15:31:52.3623113Z</Time><Result><Message
+        /><Code>0</Code></Result></Header><Notification>Success</Notification></JobCancelResult></JobCancelResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 17 Aug 2018 15:32:03 GMT
+recorded_with: VCR 4.0.0

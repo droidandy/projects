@@ -1,0 +1,67 @@
+node_modules/
+packages/*/node_modules/
+npm-debug.*
+temp.*
+build
+
+.idea/**/*
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+!.idea/fileColors.xml
+
+**/.DS_Store
+
+.temp
+
+# CMake
+cmake-build-*/
+
+# IntelliJ
+out/
+.idea_modules/
+.idea
+
+_doc
+.gradle
+packages/*/lib
+packages/*/android/**/*.iml
+packages/*/node_modules.private/**/*.iml
+packages/*/android/.gradle
+packages/*/android/local.properties
+packages/*/android/build
+packages/*/android/app/build
+packages/*/android/.idea/
+packages/*/android/app/src/main/assets/fonts/
+
+xcuserdata
+packages/*/ios/build
+packages/*/ios/fastlane/report.xml
+packages/*/ios/GoogleService-Info.plist
+
+# CocoaPods
+packages/*/ios/Pods/
+
+installAndroid.sh
+
+yarn-error.log
+
+packages/*/node_modules.private/*/android/bin
+
+# File-based project format
+*.iws
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# react-native-config codegen
+packages/*/ios/tmp.xcconfig
+packages/*/node_modules.private/react-native-config/ios/ReactNativeConfig/GeneratedDotEnv.m
+
+depsGraph.svg
+depsCircular.svg

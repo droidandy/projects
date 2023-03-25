@@ -1,0 +1,8 @@
+- name: Configure nginx for the app
+  template: src=nginx.conf.j2 dest=/etc/nginx/sites-available/{{application_name}} group=root owner=root
+
+- name: Enable the app
+  command: ln -nfs /etc/nginx/sites-available/{{application_name}} /etc/nginx/sites-enabled
+
+- name: Restart nginx
+  action: service name=nginx state=restarted

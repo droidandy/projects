@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+.DS_Store
+
+npm-debug.log*
+
+# Dependency directory
+node_modules
+
+# Optional npm cache directory
+.npm
+
+#IDEs
+.idea
+.vscode
+
+#config files
+ormconfig.json
+ormconfig.js
+.env
+
+# code testing coverage
+coverage
+junit.xml
+
+# build
+dist
+<<<<<<< HEAD
+
+.env
+
+=======
+.env
+>>>>>>> a9b0db6516e62ea88f0213be08b55a6c24751984

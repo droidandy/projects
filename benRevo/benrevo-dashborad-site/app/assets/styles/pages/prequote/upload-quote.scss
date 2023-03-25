@@ -1,0 +1,257 @@
+.ui.card>.content.upload-quote__content {
+    padding: 36px 32px 123px;
+}
+.upload-quote__title {
+  font-family: "Open Sans";
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+  color: #3a444d;
+  margin-bottom: 5px;
+}
+
+.upload-quote__text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.line {
+  margin-bottom: 14px;
+  height: 2px;
+  border: solid 2px;
+}
+.line--first {
+  border-color: #0099cc;
+}
+.line--secondary {
+  border-color: #21bdc3;
+}
+
+.upload-quote__zone {
+  height: 291px;
+  border: dashed 1px #aaafb2;
+  border-radius: 4px;
+}
+
+.upload-quote__subtitle {
+  font: 14px "Open Sans";
+  color: #3a444d;
+  font-weight: 600;
+}
+
+//Upload zone
+.upload-zone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 10px 15px;
+}
+.upload-zone__title {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a444d;
+}
+.upload-zone__icon {
+  transform: rotate(90deg);
+  color: #6e7880;
+  &.icon {
+      font-size: 3em;
+  }
+}
+.upload-zone__caption {
+  font: 14px "Open Sans";
+  color: #6e7881;
+}
+.upload-zone__button {
+  cursor: pointer;
+  width: 230px;
+  height: 28px;
+  background-color: #0099cc;
+  border-radius: 4px;
+  margin: 7px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-zone__button--light {
+background-color: #21bdc3;
+}
+
+//Upload Table
+.ui.table.upload-table {
+  margin-bottom: 49px;
+  position: relative;
+  background-color: #f8f8f8;
+  color: #3a444d;
+  font-size: 14px;
+  th {
+      color: #6e7880;
+  }
+  td {
+      color: #3a444d;
+
+  }
+  button {
+      color: #6e7880;
+      display: flex;
+      vertical-align: center;
+  }
+  &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -25px;
+      content: '';
+      display: block;
+      height: 1px;
+      background-color:#6e7881;
+      width: 100%;
+  }
+}
+
+.upload-table td {
+  height: 38px;
+}
+.ui.structured.table {
+    border-collapse: inherit;
+}
+.upload-table__product {
+  width: 17%;
+}
+.upload-table__updated {
+  width: 25%;
+}
+.upload-table__name {
+  width: 53%;
+}
+
+//Upload continue button
+
+.upload-quote__continue {
+  background-color: #0099cc;
+  width: 305px;
+  height: 50px;
+  border-radius: 4px;
+  float: right;
+  color: white;
+  font-size: 16px;
+}
+
+//Spinner
+.upload-quote__spinner.ui.inline.loader  {
+  margin: 5px;
+}
+
+// modals
+
+.quote-modal {
+max-width: 460px;
+}
+
+.ui.modal>.content.quote-modal__content {
+padding: 40px 30px;
+}
+
+.quote-modal__heading {
+  font-weight: normal;
+  text-align: center;
+  color: #3a444d;
+  font-size: 30px;
+}
+
+.quote-modal__icon {
+  text-align: center;
+  margin: 20px 0 31px;
+  color: #c9cbcc;
+  font-size: 20px;
+}
+
+.quote-modal__btn {
+  flex: 1 1;
+  margin: 0 8px !important;
+  color: #6e7880;
+}
+
+.ui.basic.buttons .button {
+    color: #aaafb2 !important;
+}
+
+.quote-modal__btn-holder {
+  padding: 30px;
+  flex: 1;
+  display: flex;
+}
+
+.quote-modal__form {
+  padding-bottom: 10px 0;
+  color: #3a444d;
+}
+
+.ui.checkbox {
+    margin-left: 20px;
+
+}
+.ui.radio.checkbox {
+    input:checked~label:after{
+        background-color: #26bbf0;
+    }
+    input:focus:checked~label:after{
+        background-color: #26bbf0;
+    }
+    input~label:after{
+        opacity: 100;
+        background-color: #eaeaea;
+    }
+}
+
+.quote-modal__error-list {
+  margin: 0;
+  padding: 0 30px;
+  list-style: none;
+  li {
+      margin: 12px 0;
+      padding: 8px 0;
+      border-bottom: 1px solid #d8d8d8;
+      h4 {
+          margin: 8px 0;
+      }
+      span {
+          color: #6e7881;
+          margin: 8px 0;
+          padding-left: 15px;
+          display: block;
+          position: relative;
+          &:before {
+              content: '';
+              position: absolute;
+              left: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 3px;
+              height: 3px;
+              border-radius: 10px;
+              background-color: #6e7881;
+          }
+      }
+  }
+}
+.upload-zone__center {
+  display: flex;
+  justify-content: center;
+}
+
+.ui.grid .error-modal {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+}

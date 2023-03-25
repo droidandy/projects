@@ -1,0 +1,1 @@
+export { ValidationBadges } from './ValidationBadges';

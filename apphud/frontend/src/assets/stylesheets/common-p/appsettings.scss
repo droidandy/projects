@@ -1,0 +1,172 @@
+.container-header-menu__item {
+  padding: 11px 10px;
+
+  background: $brand-disabled-blue;
+  svg {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  span {
+    vertical-align: middle;
+  }
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 8px 8px 0px 0px;
+  min-width: 160px;
+  text-decoration: none;
+  color: white;
+}
+
+.container-header-menu__item_120 {
+  min-width: 120px;
+}
+
+.container-header-menu__item_active {
+  background: $brand-blue;
+}
+
+.appsettings-container__form {
+  max-width: 445px;
+}
+
+.container-content__notification {
+  padding: 17px 15px;
+  background: #FFF4E7;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+
+  .container-content__learn-more-btn {
+    margin-left: 5px;
+    color: $brand-blue;
+    text-decoration: none;
+  }
+}
+
+.container-content__appsettings {
+  .container-content__blue-header {
+    padding-bottom: 0;
+  }
+  .container-content__blue-content {
+    padding-top: 0;
+  }
+  background: white;
+}
+
+.container-content__appsettings-text {
+  color: $brand-silver;
+  margin-top: 15px;
+}
+
+.container-content__appsettings-uploader__title {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.container-content__appsettings-uploader__button {
+  margin-top: 5px;
+}
+
+.container-content__appsettings-uploader__file-name {
+  color: $brand-silver;
+  font-size: 15px;
+  line-height: 17px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container-content__appsettings-uploader__input-wrapper {
+  width: 350px;
+  margin-right: 29px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container-content__appsettings-uploader__input-wrapper-button {
+  vertical-align: bottom;
+  padding: 10px 17px;
+}
+
+.popup-button {
+  margin-bottom: 20px;
+  width: 160px;
+  svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.appsettings-localization__item {
+  margin-top: 10px;
+}
+
+.appsettings-localization__item-language {
+  padding: 6px 11px;
+  background: $brand-light-blue;
+  border-radius: 8px;
+  width: 255px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.appsettings-localization__item-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 9px;
+}
+
+.appsettings-localization__item-label_default {
+  color: $brand-silver;
+}
+
+.appsettings-localization__item-button {
+  margin-left: 9px;
+}
+
+.appsettings-localization__select {
+  width: 255px;
+  margin-top: 10px;
+  .input-select__option {
+    img {
+      margin-right: 5px;
+    }
+  }
+}
+
+.team-table {
+  margin-top: 15px;
+  tbody tr:hover {
+    background-color: white;
+    cursor: default;
+  }
+  th {
+    padding-right: 15px;
+  }
+}
+
+.team-table__user-avatar {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.team-table__user-name {
+  font-size: 15px;
+  color: $brand-black;
+  vertical-align: middle;
+}
+
+.warning {
+  margin-top: 5px;
+  font-size: 13px;
+  color: $brand-red;
+}

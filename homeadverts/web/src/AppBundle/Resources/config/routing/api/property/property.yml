@@ -1,0 +1,4 @@
+ha_property_get:
+    path:  /{id}
+    defaults: { _controller: AppBundle:Api\Property\Property:get }
+    methods:  [GET]

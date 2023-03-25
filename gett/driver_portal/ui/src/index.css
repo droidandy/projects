@@ -1,0 +1,26 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.editorImage {
+  outline: 3px dashed #f6b530;
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  resize: both;
+  overflow: auto;
+}
+
+.bookingjs {
+  box-shadow: none;
+  border: 1px solid rgba(0,0,0,.15);
+}

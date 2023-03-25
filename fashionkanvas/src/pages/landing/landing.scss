@@ -1,0 +1,84 @@
+page-landing {
+  .scroll-content
+  {
+    padding: 40px!important;
+    text-align: center;
+    padding-top: 80px!important;
+  }
+
+  h2
+  {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 20px;
+  }
+
+  .loginbtn
+  {
+    background-color: #f66565;
+    margin: 0px 0;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .facebook{
+    background-color: #3b5998;
+    margin: 40px 0 13px 0;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .terms
+  {
+    margin-bottom: 25px;
+    float: left;
+    width: 100%;
+  }
+
+  .terms p
+  {
+    color: #000;
+  }
+
+  .terms p span
+  {
+    color: #0052ff;
+  }
+
+  .checkbox-ios .checkbox-checked
+  {
+    border-color: #4264a2;
+    background-color: #4264a2;
+  }
+
+  .terms p,.terms .checkbox
+  {
+    float: left;
+  }
+
+  .terms .checkbox
+  {
+        margin: 12px;
+  }
+
+  .item-inner
+  {
+    border:none!important;
+  }
+
+  .footer p
+  {
+    text-align: center;
+    color: #656565;
+  }
+
+  .footer span
+  {
+    text-align: center;
+    color: #f66565!important;
+  }
+}

@@ -1,0 +1,110 @@
+/* RESTS
+============================================================*/
+
+%reset-box-model {
+  -moz-background-clip: border;
+  -webkit-background-clip: border;
+  background-clip: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  -moz-background-clip: content;
+  -webkit-background-clip: content;
+  background-clip: content-box;
+}
+
+/* TRANSITIONS
+============================================================*/
+%hover-transition {
+  @include transition-duration(0.1s);
+  @include transition-timing-function(ease-in);
+  @include transition-property(all);
+}
+
+/* TRANSPARENT OVERLAYS
+============================================================*/
+
+%transparent-bg {
+  // background-color: rgba(89,89,89,.9);
+  background-color: rgba(0, 0, 0, .8);
+  .ie8 & {
+    // background-color: #4f4f4f;
+    background-color: #000;
+  }
+}
+
+%transparent-bg-dark {
+  background-color: rgba(0, 0, 0, .6);
+  .ie8 & {
+    background-color: #000;
+  }
+}
+
+%transparent-hover {
+  @extend %transparent-bg;
+  @extend %hover-transition;
+  &:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .ie8 & {
+    &:hover {
+      background-color: #595959;
+    }
+  }
+}
+
+/* BACKGROUND COVER
+============================================================*/
+
+%background-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include background-size(cover);
+  @include backface-visibility(hidden);
+}
+
+%background-contain {
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include background-size(contain);
+  @include backface-visibility(hidden);
+}
+
+%background-initial {
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include background-size(initial);
+  @include backface-visibility(hidden);
+}
+
+/* FORM
+============================================================*/
+%input-style {
+  background-color: #fff;
+}
+
+%textarea-style {
+  @include box-shadow(rgba(182, 182, 182, .5) 0px 1px 5px -1px inset);
+  border: 1px solid #d3d3d3;
+  line-height: 24px;
+  padding: 5px 10px;
+  background-color: #fff;
+  .ie8 &,
+  .ie9 & {
+    padding-top: 8px;
+  }
+  .firefox & {
+    padding: 8px 10px;
+  }
+
+  &:hover {
+    border-color: #808080;
+  }
+}
+
+%input-error {
+  border-color: #d34836;
+  &:hover {
+    border-color: #d34836;
+  }
+}

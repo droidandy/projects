@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title >{{ 'FILTER' | translate }}</ion-title>
+    <ion-buttons end (click)="jobFilter()">
+      <button ion-button>{{ 'SAVE' | translate }}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div class="job_create">
+
+    <ion-row class="profile_top_img">
+      <h2>{{ 'GENERAL' | translate }}</h2>
+      <ion-item *ngFor="let data of roleList">
+        <ion-label>{{data.name}}</ion-label>
+        <ion-checkbox [(ngModel)]="data.checked"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'LOCATION' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="location"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="role">
+      <h2>{{ 'TYPE' | translate }}</h2>
+      <ion-item (click)="selectTypeJob('permanent')">
+        <span class="selectbox" [ngClass]="{'selectbox_active': jobType=='permanent'}"></span>
+        <span>{{ 'PERMANENT' | translate }}</span>
+      </ion-item>
+      <ion-item (click)="selectTypeJob('fixedterm')">
+        <span class="selectbox" [ngClass]="{'selectbox_active': jobType=='fixedterm'}"></span>
+        <span>{{ 'FIXEDTERM' | translate }}</span>
+      </ion-item>
+    </ion-row>
+
+
+    <ion-row class="date">
+      <h2>{{ 'RATE' | translate }}</h2>
+      <ion-item>
+        <ion-label floating>{{ 'MINIMUMRATE' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="minPrice"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'MAXIMUMRATE' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="maxPrice"></ion-input>
+      </ion-item>
+
+    </ion-row>
+
+
+
+
+      <!-- <div style="margin-top:20px;">
+        <button ion-button class="save_btn" block tappable>SAVE</button>
+      </div> -->
+
+    </div>
+
+</ion-content>

@@ -1,0 +1,11 @@
+{% if (property.grossLivingArea > 0) %}
+    {% trans %}search.list.interior{% endtrans %} {{ property.grossLivingArea|format_area }},
+{% endif %}
+
+{% if (property.plotArea > 0) %}
+    {% trans %}search.list.exterior{% endtrans %} {{ property.plotArea|format_area }},
+{% endif %}
+
+{% if (property.yearBuilt) %}
+    {% trans %}listing.yearbuilt{% endtrans %} {{ property.yearBuilt }}
+{% endif %}

@@ -1,0 +1,181 @@
+{
+ "request": {
+  "airline": {
+   "requestedCode": "NAX",
+   "fsCode": "DY"
+  },
+  "flight": {
+   "requested": "7013",
+   "interpreted": "7013"
+  },
+  "date": {
+   "year": "2017",
+   "month": "9",
+   "day": "8",
+   "interpreted": "2017-09-08"
+  },
+  "utc": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "airport": {},
+  "codeType": {},
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/NAX/7013/arr/2017/9/8"
+ },
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "DY",
+    "iata": "DY",
+    "icao": "NAX",
+    "name": "Norwegian Air Shuttle",
+    "phoneNumber": "+ 47 21 49 00 15",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "JFK",
+    "iata": "JFK",
+    "icao": "KJFK",
+    "faa": "JFK",
+    "name": "John F. Kennedy International Airport",
+    "street1": "JFK Airport",
+    "city": "New York",
+    "cityCode": "NYC",
+    "stateCode": "NY",
+    "postalCode": "11430",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "NYZ178",
+    "localTime": "2017-09-08T06:43:38.138",
+    "utcOffsetHours": -4,
+    "latitude": 40.642335,
+    "longitude": -73.78817,
+    "elevationFeet": 13,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/JFK?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/JFK?codeType=fs"
+   },
+   {
+    "fs": "LGW",
+    "iata": "LGW",
+    "icao": "EGKK",
+    "name": "London Gatwick Airport",
+    "city": "London",
+    "cityCode": "LON",
+    "stateCode": "EN",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "regionName": "Europe",
+    "timeZoneRegionName": "Europe/London",
+    "localTime": "2017-09-08T11:43:38.138",
+    "utcOffsetHours": 1,
+    "latitude": 51.150836,
+    "longitude": -0.177416,
+    "elevationFeet": 194,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/LGW?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/LGW?codeType=fs"
+   }
+  ],
+  "equipments": [
+   {
+    "iata": "789",
+    "name": "Boeing 787-9",
+    "turboProp": false,
+    "jet": true,
+    "widebody": true,
+    "regional": false
+   }
+  ]
+ },
+ "flightStatuses": [
+  {
+   "flightId": 932785569,
+   "carrierFsCode": "DY",
+   "flightNumber": "7013",
+   "departureAirportFsCode": "LGW",
+   "arrivalAirportFsCode": "JFK",
+   "departureDate": {
+    "dateLocal": "2017-09-08T05:50:00.000",
+    "dateUtc": "2017-09-08T04:50:00.000Z"
+   },
+   "arrivalDate": {
+    "dateLocal": "2017-09-08T08:50:00.000",
+    "dateUtc": "2017-09-08T12:50:00.000Z"
+   },
+   "status": "A",
+   "schedule": {
+    "flightType": "J",
+    "serviceClasses": "RFJY",
+    "restrictions": ""
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateLocal": "2017-09-08T05:50:00.000",
+     "dateUtc": "2017-09-08T04:50:00.000Z"
+    },
+    "publishedArrival": {
+     "dateLocal": "2017-09-08T08:50:00.000",
+     "dateUtc": "2017-09-08T12:50:00.000Z"
+    },
+    "scheduledGateDeparture": {
+     "dateLocal": "2017-09-08T05:50:00.000",
+     "dateUtc": "2017-09-08T04:50:00.000Z"
+    },
+    "estimatedGateDeparture": {
+     "dateLocal": "2017-09-08T07:24:00.000",
+     "dateUtc": "2017-09-08T06:24:00.000Z"
+    },
+    "actualGateDeparture": {
+     "dateLocal": "2017-09-08T07:24:00.000",
+     "dateUtc": "2017-09-08T06:24:00.000Z"
+    },
+    "estimatedRunwayDeparture": {
+     "dateLocal": "2017-09-08T07:47:00.000",
+     "dateUtc": "2017-09-08T06:47:00.000Z"
+    },
+    "actualRunwayDeparture": {
+     "dateLocal": "2017-09-08T07:47:00.000",
+     "dateUtc": "2017-09-08T06:47:00.000Z"
+    },
+    "scheduledGateArrival": {
+     "dateLocal": "2017-09-08T08:50:00.000",
+     "dateUtc": "2017-09-08T12:50:00.000Z"
+    },
+    "estimatedGateArrival": {
+     "dateLocal": "2017-09-08T09:53:00.000",
+     "dateUtc": "2017-09-08T13:53:00.000Z"
+    },
+    "estimatedRunwayArrival": {
+     "dateLocal": "2017-09-08T09:48:00.000",
+     "dateUtc": "2017-09-08T13:48:00.000Z"
+    }
+   },
+   "delays": {
+    "departureGateDelayMinutes": 94,
+    "arrivalGateDelayMinutes": 63
+   },
+   "flightDurations": {
+    "scheduledBlockMinutes": 480,
+    "taxiOutMinutes": 23
+   },
+   "airportResources": {
+    "departureTerminal": "S",
+    "departureGate": "15",
+    "arrivalTerminal": "1"
+   },
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "789",
+    "actualEquipmentIataCode": "789",
+    "tailNumber": "G-CKHL"
+   }
+  }
+ ]
+}

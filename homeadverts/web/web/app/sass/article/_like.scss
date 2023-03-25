@@ -1,0 +1,35 @@
+.likes {
+  .like {
+    overflow: visible !important;
+    .unset-like {
+      display: none;
+    }
+    .set-like {
+      display: block;
+    }
+  }
+
+  &.\--story {
+    position: relative;
+    .counter {
+      position: absolute;
+      top: 5px;
+      left: 35px;
+    }
+  }
+  &.\--hidden {
+    .counter {
+      display: none;
+    }
+  }
+  &.\--is-liked {
+    .like {
+      .unset-like {
+        display: block;
+      }
+      .set-like {
+        display: none;
+      }
+    }
+  }
+}

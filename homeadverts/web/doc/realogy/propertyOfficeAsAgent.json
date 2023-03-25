@@ -1,0 +1,662 @@
+{
+  "listingSummary": {
+    "listingId": "4d3e3aa7-fbac-4719-ae9c-746cd765b14a",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2017-08-03",
+    "photoCount": 38,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "BRL",
+      "amount": 30000000,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 7739500
+    },
+    "propertyAddress": {
+      "city": "S\u00e3o Paulo",
+      "stateProvince": "S\u00e3o Paulo",
+      "stateProvinceCode": "SP",
+      "postalCode": "01232-011",
+      "country": "Brazil",
+      "countryCode": "BR"
+    },
+    "geographicRegions": [
+      {
+        "type": "Neighbourhood",
+        "name": "Higien\u00f3polis"
+      }
+    ],
+    "mlsNumbers": [
+      "33104"
+    ],
+    "RFGListingId": "F58NXF",
+    "isNewConstruction": false,
+    "listingURL": "https:\/\/www.sothebysrealty.com\/id\/f58nxf",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Post-War",
+    "propertyName": "Spectacular Views",
+    "totalBath": 8,
+    "lotSize": "1200 SM",
+    "buildingArea": "1200 Sq. M",
+    "noOfBedrooms": 5,
+    "squareFootage": 12916.68,
+    "defaultPhotoURL": "\/\/imgs.azureedge.net\/71F1646F-B18C-4D5D-9DCC-45C00A7F870E",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2019-06-18T05:28:12.390",
+    "agents": [
+      {
+        "office": {
+          "officeId": "af75e6c7-cf11-4abb-987f-49d01087f019",
+          "RFGOfficeId": "0001 ",
+          "companyId": "7827f9eb-d82e-4de4-bee5-ce255205a7d5",
+          "companyName": "Bossa Nova Sotheby's International Realty",
+          "RFGCompanyId": "819002",
+          "brandCode": "SIR",
+          "name": "Bossa Nova Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Al. Gabriel Monteiro da Silva 2027-Jardins",
+            "city": "Sao Paulo",
+            "stateProvince": "S\u00e3o Paulo",
+            "stateProvinceCode": "SP",
+            "postalCode": "01441-001",
+            "country": "Brazil",
+            "countryCode": "BR",
+            "latitude": -23.573830250351,
+            "longitude": -46.68627455947
+          },
+          "phoneNumber": "+55 11 3061 0000",
+          "emailAddress": "vendas@bossanovasir.com.br",
+          "canDoCommercialBusiness": false
+        }
+      }
+    ],
+    "isShowAddressOnInternet": false,
+    "expiresOn": "2032-02-01"
+  },
+  "fullBath": 8,
+  "parkingPlaces": 8,
+  "providerKey": "4d3e3aa7-fbac-4719-ae9c-746cd765b14a",
+  "propertyFeatures": [
+    {
+      "groupName": "General",
+      "description": "Elevator"
+    },
+    {
+      "groupName": "Views",
+      "description": "City \/ Strip"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "Rooms",
+      "description": "Media Room \/ Home Theater"
+    },
+    {
+      "groupName": "Road Type",
+      "description": "City \/ Town Street"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Metropolitan"
+    },
+    {
+      "groupName": "Rooms",
+      "description": "Staff Quarters"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Eat-in Kitchen"
+    },
+    {
+      "groupName": "Pool Description",
+      "description": "Pool"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Wall to Wall Carpet"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Entertainment System"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "A\/C"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Balcony \/ Lanai"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Garage"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Fireplace"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Intercom System"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Terrace"
+    },
+    {
+      "groupName": "General",
+      "description": "Doorman"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Marble"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Metropolitan"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "This exceptional triplex penthouse has a 360\u00ba view of S\u00e3o Paulo\u2019s skyline. It has a six-meter-high double height ceiling overall the social area, giving a mansion feel for the property, which is at the traditional Higien\u00f3polis neighborhood.\r\nCalm and silent, it offers a sensation of a big, classic style house with its columns, wide spaces and plenty of natural lightning thanks to the windows that allow views from everywhere.\r\nThe first floor holds a hall, a toilet and a staircase with arabesque carved in marble, a dining room for 14 people, a china cabinet, silverware, a fireplace room, a kitchen and a lunch room. The balcony is covered by glass and allows a view of Pacaembu and the sunset.\r\nThe second floor has an intimate area with a parlor, three wide offices with bathrooms, a toy library, four lofty suites with closets, and the master suite holds a living area, a glass covered balcony, an office, a closet and two bathrooms.\r\nThe third floor holds a SPA surrounded by big glass windows offering views to S\u00e3o Paulo downtown and Paulista Avenue region. The lightning, silence and massage area with lounge chairs, a steam room and a shower create a relaxing atmosphere. The service area holds a new laundry room with Kitchens brand cabinets and the staff apartment, having three bedrooms, a TV room and a small kitchen.",
+      "htmlRemark": "<p><style type=\"text\/css\"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--><\/style><span style=\"font-size: 10pt; font-family: Arial;\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This exceptional triplex penthouse has a 360\u00ba view of S\u00e3o Paulo\u2019s skyline. It has a six-meter-high double height ceiling overall the social area, giving a mansion feel for the property, which is at the traditional Higien\u00f3polis neighborhood. \\nCalm and silent, it offers a sensation of a big, classic style house with its columns, wide spaces and plenty of natural lightning thanks to the windows that allow views from everywhere. \\nThe first floor holds a hall, a toilet and a staircase with arabesque carved in marble, a dining room for 14 people, a china cabinet, silverware, a fireplace room, a kitchen and a lunch room. The balcony is covered by glass and allows a view of Pacaembu and the sunset. \\nThe second floor has an intimate area with a parlor, three wide offices with bathrooms, a toy library, four lofty suites with closets, and the master suite holds a living area, a glass covered balcony, an office, a closet and two bathrooms. \\nThe third floor holds a SPA surrounded by big glass windows offering views to S\u00e3o Paulo downtown and Paulista Avenue region. The lightning, silence and massage area with lounge chairs, a steam room and a shower create a relaxing atmosphere. The service area holds a new laundry room with Kitchens brand cabinets and the staff apartment, having three bedrooms, a TV room and a small kitchen. \\n&quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:[null,0],&quot;11&quot;:4,&quot;12&quot;:0}\">This exceptional triplex penthouse has a 360\u00ba view of S\u00e3o Paulo\u2019s skyline. It has a six-meter-high double height ceiling overall the social area, giving a mansion feel for the property, which is at the traditional Higien\u00f3polis neighborhood. <br>Calm and silent, it offers a sensation of a big, classic style house with its columns, wide spaces and plenty of natural lightning thanks to the windows that allow views from everywhere. <br>The first floor holds a hall, a toilet and a staircase with arabesque carved in marble, a dining room for 14 people, a china cabinet, silverware, a fireplace room, a kitchen and a lunch room. The balcony is covered by glass and allows a view of Pacaembu and the sunset. <br>The second floor has an intimate area with a parlor, three wide offices with bathrooms, a toy library, four lofty suites with closets, and the master suite holds a living area, a glass covered balcony, an office, a closet and two bathrooms. <br>The third floor holds a SPA surrounded by big glass windows offering views to S\u00e3o Paulo downtown and Paulista Avenue region. The lightning, silence and massage area with lounge chairs, a steam room and a shower create a relaxing atmosphere. The service area holds a new laundry room with Kitchens brand cabinets and the staff apartment, having three bedrooms, a TV room and a small kitchen.&nbsp;<br><\/span><\/p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https:\/\/www.sothebysrealty.com\/id\/f58nxf",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "2FE82037-768F-4757-874F-0291978F1444",
+      "sequenceNumber": 22,
+      "url": "\/\/imgs.azureedge.net\/2FE82037-768F-4757-874F-0291978F1444",
+      "isDefault": false,
+      "caption": "_MG_1525 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "31D2CBF1-3ED2-4CED-886E-04EC8A19F7CA",
+      "sequenceNumber": 36,
+      "url": "\/\/imgs.azureedge.net\/31D2CBF1-3ED2-4CED-886E-04EC8A19F7CA",
+      "isDefault": false,
+      "caption": "_MG_1582 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "A5FFE37D-8C77-46CA-9904-08CA0EC9BBE9",
+      "sequenceNumber": 27,
+      "url": "\/\/imgs.azureedge.net\/A5FFE37D-8C77-46CA-9904-08CA0EC9BBE9",
+      "isDefault": false,
+      "caption": "_MG_1549 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "B191D584-4FCA-496C-B11A-110A11E32FBD",
+      "sequenceNumber": 6,
+      "url": "\/\/imgs.azureedge.net\/B191D584-4FCA-496C-B11A-110A11E32FBD",
+      "isDefault": false,
+      "caption": "_MG_1463 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "F22D1E3A-08D7-4495-947E-1997DE790885",
+      "sequenceNumber": 17,
+      "url": "\/\/imgs.azureedge.net\/F22D1E3A-08D7-4495-947E-1997DE790885",
+      "isDefault": false,
+      "caption": "_MG_1498 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "9DAFA1C5-3C0A-4BE5-925E-1AE36096DD74",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/9DAFA1C5-3C0A-4BE5-925E-1AE36096DD74",
+      "isDefault": false,
+      "caption": "_MG_1453 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1330,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "F92A77FF-DAE4-40CB-9DBE-24534F44CEF2",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/F92A77FF-DAE4-40CB-9DBE-24534F44CEF2",
+      "isDefault": false,
+      "caption": "_MG_1448 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "38DE8558-4BC2-4892-A7C8-25B015DF0178",
+      "sequenceNumber": 10,
+      "url": "\/\/imgs.azureedge.net\/38DE8558-4BC2-4892-A7C8-25B015DF0178",
+      "isDefault": false,
+      "caption": "_MG_1475 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "06941A5A-7AC8-42AA-A500-25C8D77264F0",
+      "sequenceNumber": 20,
+      "url": "\/\/imgs.azureedge.net\/06941A5A-7AC8-42AA-A500-25C8D77264F0",
+      "isDefault": false,
+      "caption": "_MG_1518 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "895C9CD7-9036-4815-9E78-2C98F647945A",
+      "sequenceNumber": 28,
+      "url": "\/\/imgs.azureedge.net\/895C9CD7-9036-4815-9E78-2C98F647945A",
+      "isDefault": false,
+      "caption": "_MG_1552 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "C4CCCE84-F7FE-4ADB-A4A8-2FF357E254B8",
+      "sequenceNumber": 5,
+      "url": "\/\/imgs.azureedge.net\/C4CCCE84-F7FE-4ADB-A4A8-2FF357E254B8",
+      "isDefault": false,
+      "caption": "_MG_1460 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "2D663B82-F3FB-49A3-B7C6-4032F4C820A9",
+      "sequenceNumber": 26,
+      "url": "\/\/imgs.azureedge.net\/2D663B82-F3FB-49A3-B7C6-4032F4C820A9",
+      "isDefault": false,
+      "caption": "_MG_1542 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "99619F58-2331-4647-A3A3-41E56B864DA1",
+      "sequenceNumber": 1,
+      "url": "http:\/\/www.bossanovasir.com.br\/nossos-imoveis\/terceiros\/sao-paulo\/higienopolis\/mansao-suspensa-com-espetaculares-vistas\/4500",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Local Listing Link",
+      "lastUpdateOn": "2017-08-03T21:00:09.140"
+    },
+    {
+      "mediaID": "71F1646F-B18C-4D5D-9DCC-45C00A7F870E",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/71F1646F-B18C-4D5D-9DCC-45C00A7F870E",
+      "isDefault": true,
+      "caption": "_MG_1443 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1567,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "C03B503C-E4D7-410C-98CC-465800C13FF9",
+      "sequenceNumber": 31,
+      "url": "\/\/imgs.azureedge.net\/C03B503C-E4D7-410C-98CC-465800C13FF9",
+      "isDefault": false,
+      "caption": "_MG_1564 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "E37EB811-E5C6-4458-BD7D-4BAACCAE5498",
+      "sequenceNumber": 29,
+      "url": "\/\/imgs.azureedge.net\/E37EB811-E5C6-4458-BD7D-4BAACCAE5498",
+      "isDefault": false,
+      "caption": "_MG_1559 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "FC2B1535-902C-4BAE-9BEC-4F2ED65B67FA",
+      "sequenceNumber": 8,
+      "url": "\/\/imgs.azureedge.net\/FC2B1535-902C-4BAE-9BEC-4F2ED65B67FA",
+      "isDefault": false,
+      "caption": "_MG_1587 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "A01C85DD-CF5E-486C-BAB8-5C77A4BD40C7",
+      "sequenceNumber": 30,
+      "url": "\/\/imgs.azureedge.net\/A01C85DD-CF5E-486C-BAB8-5C77A4BD40C7",
+      "isDefault": false,
+      "caption": "_MG_1561 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "408C506F-C4A5-4602-9BB2-629B22343266",
+      "sequenceNumber": 15,
+      "url": "\/\/imgs.azureedge.net\/408C506F-C4A5-4602-9BB2-629B22343266",
+      "isDefault": false,
+      "caption": "_MG_1493 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "CBE807FC-74EE-4FEB-9B64-72B666485BFF",
+      "sequenceNumber": 24,
+      "url": "\/\/imgs.azureedge.net\/CBE807FC-74EE-4FEB-9B64-72B666485BFF",
+      "isDefault": false,
+      "caption": "_MG_1533 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "C6059D30-2151-41FA-AFD8-77DED42545D9",
+      "sequenceNumber": 37,
+      "url": "\/\/imgs.azureedge.net\/C6059D30-2151-41FA-AFD8-77DED42545D9",
+      "isDefault": false,
+      "caption": "_MG_1592 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "1591B53D-9401-4EBF-9B80-7C5A30538D55",
+      "sequenceNumber": 4,
+      "url": "\/\/imgs.azureedge.net\/1591B53D-9401-4EBF-9B80-7C5A30538D55",
+      "isDefault": false,
+      "caption": "_MG_1469 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "4331D7DF-87E7-40B4-826B-80A0E06219D9",
+      "sequenceNumber": 18,
+      "url": "\/\/imgs.azureedge.net\/4331D7DF-87E7-40B4-826B-80A0E06219D9",
+      "isDefault": false,
+      "caption": "_MG_1509 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "16A84848-5E29-4429-90A6-8D2A6C91CEE5",
+      "sequenceNumber": 16,
+      "url": "\/\/imgs.azureedge.net\/16A84848-5E29-4429-90A6-8D2A6C91CEE5",
+      "isDefault": false,
+      "caption": "_MG_1494 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "8DEFEC69-8AEB-44E9-AA7C-A4AA73B61F76",
+      "sequenceNumber": 32,
+      "url": "\/\/imgs.azureedge.net\/8DEFEC69-8AEB-44E9-AA7C-A4AA73B61F76",
+      "isDefault": false,
+      "caption": "_MG_1569 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "2F79D37C-68D5-4F8F-B257-AC11DA332B0E",
+      "sequenceNumber": 35,
+      "url": "\/\/imgs.azureedge.net\/2F79D37C-68D5-4F8F-B257-AC11DA332B0E",
+      "isDefault": false,
+      "caption": "_MG_1578 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "1FCCDFCD-A8E9-448E-BA71-AE05206CECDF",
+      "sequenceNumber": 12,
+      "url": "\/\/imgs.azureedge.net\/1FCCDFCD-A8E9-448E-BA71-AE05206CECDF",
+      "isDefault": false,
+      "caption": "_MG_1481 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1432,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "585EFD9E-EF72-431B-B2B8-AF849C8A6914",
+      "sequenceNumber": 33,
+      "url": "\/\/imgs.azureedge.net\/585EFD9E-EF72-431B-B2B8-AF849C8A6914",
+      "isDefault": false,
+      "caption": "_MG_1571 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "7AA47946-2642-4CB6-8E6E-B169E0CEE33D",
+      "sequenceNumber": 23,
+      "url": "\/\/imgs.azureedge.net\/7AA47946-2642-4CB6-8E6E-B169E0CEE33D",
+      "isDefault": false,
+      "caption": "_MG_1529 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "66CF1757-8446-4287-BB39-B34099A7712C",
+      "sequenceNumber": 21,
+      "url": "\/\/imgs.azureedge.net\/66CF1757-8446-4287-BB39-B34099A7712C",
+      "isDefault": false,
+      "caption": "_MG_1521 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "BB5E2D1B-708A-4BE1-A3BB-B4B4986F09A9",
+      "sequenceNumber": 38,
+      "url": "\/\/imgs.azureedge.net\/BB5E2D1B-708A-4BE1-A3BB-B4B4986F09A9",
+      "isDefault": false,
+      "caption": "_MG_1597 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "53640077-CCB6-46A8-9EB9-D5D0A3839790",
+      "sequenceNumber": 13,
+      "url": "\/\/imgs.azureedge.net\/53640077-CCB6-46A8-9EB9-D5D0A3839790",
+      "isDefault": false,
+      "caption": "_MG_1486 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "8C8EDB32-A566-45C0-87B4-E0A70BF5989B",
+      "sequenceNumber": 19,
+      "url": "\/\/imgs.azureedge.net\/8C8EDB32-A566-45C0-87B4-E0A70BF5989B",
+      "isDefault": false,
+      "caption": "_MG_1514 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "5FF2EF72-D105-40D4-A57A-E3A868ED1E75",
+      "sequenceNumber": 7,
+      "url": "\/\/imgs.azureedge.net\/5FF2EF72-D105-40D4-A57A-E3A868ED1E75",
+      "isDefault": false,
+      "caption": "_MG_1470 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "BDEE482A-E7BD-4814-AB1A-E45AAECB7498",
+      "sequenceNumber": 14,
+      "url": "\/\/imgs.azureedge.net\/BDEE482A-E7BD-4814-AB1A-E45AAECB7498",
+      "isDefault": false,
+      "caption": "_MG_1490 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "0127C937-D5F3-43B0-B420-E71B68903F66",
+      "sequenceNumber": 25,
+      "url": "\/\/imgs.azureedge.net\/0127C937-D5F3-43B0-B420-E71B68903F66",
+      "isDefault": false,
+      "caption": "_MG_1536 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "E1BDE115-F03A-451A-AFF8-E91AE018D7EA",
+      "sequenceNumber": 11,
+      "url": "\/\/imgs.azureedge.net\/E1BDE115-F03A-451A-AFF8-E91AE018D7EA",
+      "isDefault": false,
+      "caption": "_MG_1477 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "BFD60A78-D9FB-425B-B9ED-E9D085D783EA",
+      "sequenceNumber": 9,
+      "url": "\/\/imgs.azureedge.net\/BFD60A78-D9FB-425B-B9ED-E9D085D783EA",
+      "isDefault": false,
+      "caption": "_MG_1456 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2852,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    },
+    {
+      "mediaID": "20D2CCFB-EFE6-4982-A4A5-EF0F0287354E",
+      "sequenceNumber": 34,
+      "url": "\/\/imgs.azureedge.net\/20D2CCFB-EFE6-4982-A4A5-EF0F0287354E",
+      "isDefault": false,
+      "caption": "_MG_1574 (Copy)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1901,
+      "lastUpdateOn": "2017-12-18T05:54:01.233"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "33104",
+      "isPrimary": true
+    }
+  ]
+}

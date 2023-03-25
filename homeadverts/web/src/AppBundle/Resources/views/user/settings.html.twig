@@ -1,0 +1,25 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+	<div class="one-column user-settings --margin-bottom"
+		 data-url="{{ path("ha_user_settings_post") }}">
+
+	<div class="headline --separator">
+			<h1 class="heading">
+				Settings
+			</h1>
+			<span class="sub-heading --small">
+				Please make sure that your user data is updated and accurate. If you are an estate agent
+				your user data is maintained as source only.<br/>
+				We recommend you to connect all your social
+				networks for automatic listing updates and stories distribution.
+			</span>
+		</div>
+
+		{% include 'AppBundle:user/settings:contact.html.twig' %}
+		{% include 'AppBundle:user/settings:social.html.twig' %}
+		{% include 'AppBundle:user/settings:notifications.html.twig' %}
+		{% include 'AppBundle:user/settings:password.html.twig' %}
+		{% include 'AppBundle:user/settings:account_removal.html.twig' %}
+	</div>
+{% endblock %}

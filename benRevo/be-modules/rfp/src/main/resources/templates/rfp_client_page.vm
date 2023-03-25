@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>BenRevo</title>
+      <style type="text/css">
+        @page { size: A4; }
+          table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          .maintble {
+              max-width: 800px;
+              width:100%;
+              margin:0 auto;
+              border:none;
+          }
+          a {
+            text-decoration: none !important;
+            color: #000;
+          }
+          td {
+            padding: 8px 0;
+          }
+          #rfp {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 0.1px;
+            color: #fff;
+            text-align: center;
+          }
+
+          #logo {
+            width: 200px;
+            height: 47px;
+          }
+
+          .main-table td {
+            font-size: 16px;
+            color: #000;
+            width: 146px;
+          }
+          .main-table td:first-child {
+            padding-top: 0;
+          }
+          tr.trBorder td{
+            border-bottom: 1px solid #ccc;
+          }
+          .header-text {
+            font-size: 16px !important;
+            font-weight: bold;
+            letter-spacing: 0.1px;
+            color: #333;
+          }
+
+          #company {
+            font-size: 14px;
+            font-weight: 600;
+            color: #21bdc3;
+          }
+          ul {
+            padding-left: 0;
+            margin: 0;
+            list-style-position: inside;
+          }
+          li {
+            padding-left: 5px;
+          }
+
+          .footer-table {
+            font-size: 8px;
+            color: #000;
+            margin-top: 130px;
+          }
+      </style>
+  </head>
+
+  <body>
+  <table class="maintble" border="0">
+      <tr>
+          <td>
+            <table style="width: 100%; table-layout: fixed;">
+              <tr>
+                <td width="120" height="74" style="background-color: #21bdc3;">
+                  <div id="rfp"><span class="rfpText">RFP</span></div>
+                </td>
+                <td></td>
+                <td></td>
+                #if($StringUtils.isNotBlank($!brokerage_logo))
+                  <td><img id="logo" src="$!{brokerage_logo}"/></td>
+                #end
+              </tr>
+            </table>
+
+          </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="main-table">
+            <tr class="trBorder">
+              <td class="header-text" style="border-bottom: 1px solid #333;">BROKERAGE DETAILS</td>
+              <td style="border-bottom: 1px solid #333;"></td>
+            </tr>
+
+            <tr class="trBorder">
+              <td width="35%">Name</td>
+              <td id="company" width="65%">$!{broker_firm}</td>
+            </tr>
+
+            <tr class="trBorder">
+              <td width="35%">Address</td>
+              <td width="65%"><a href="#">#if(${broker_address}) $!{broker_address}<br/>#end#if(${broker_city}) ${broker_city}#end#if(${broker_state}), ${broker_state}#end#if(${broker_zip}), $!{broker_zip}#end</a></td>
+            </tr>
+
+            <tr class="trBorder">
+              <td width="35%">RFP Contacts</td>
+              <td width="65%">
+                <ul>
+                  #foreach($contact in ${broker_contacts})
+                    <li>#if($contact.fullName != $contact.email)$contact.fullName - #end $!{contact.email}</li>
+                  #end
+                </ul>
+              </td>
+            </tr>
+
+            <tr><td><p>&nbsp;</p></td></tr>
+            <tr class="trBorder">
+              <td class="header-text" style="border-bottom: 1px solid #333;">GROUP DETAILS</td>
+              <td style="border-bottom: 1px solid #333;"></td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Name</td>
+              <td width="65%">$!{client_name}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Address</td>
+              <td width="65%"><a href="#">#if(${client_address}) $!{client_address}<br/>#end#if(${client_city}) ${client_city}#end#if(${client_state}), ${client_state}#end#if(${client_zip}), $!{client_zip}#end</a></td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">SIC Code</td>
+              <td width="65%">$!{sic_code}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Effective Date</td>
+              <td width="65%">$!{effective_date}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Proposal Due Date</td>
+              <td width="65%">$!{due_date}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Eligible Employees</td>
+              <td width="65%">$!{eligible_employees}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Participating Employees</td>
+              <td width="65%">$!{participating_employees}</td>
+            </tr>
+            #if( $!{total_members} )
+              <tr class="trBorder">
+                  <td width="35%">Total Members</td>
+                  <td width="65%">$!{total_members}</td>
+              </tr>
+            #end
+            <tr class="trBorder">
+              <td width="35%">Retirees</td>
+              <td width="65%">$!{retirees}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">COBRA Enrollees</td>
+              <td width="65%">$!{cobra_enrollees}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Waiting Period</td>
+              <td width="65%">$!{waiting_period}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Domestic Partner Definition</td>
+              <td width="65%">$!{domestic_partner}</td>
+            </tr>
+            <tr class="trBorder">
+              <td width="35%">Reason for RFP</td>
+              <td width="65%">$!{out_to_bid}</td>
+            </tr>
+            <tr><td><p></p></td></tr>
+          </table>
+        </td>
+      </tr>
+  </table>
+  </body>
+</html>

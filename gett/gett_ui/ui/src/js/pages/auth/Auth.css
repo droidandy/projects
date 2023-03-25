@@ -1,0 +1,99 @@
+.wrapper {
+  height: 100vh;
+  min-height: 530px;
+
+  :global {
+    .ant-carousel {
+      width: 50%;
+
+      .slick-slide {
+        height: 100vh;
+      }
+
+      .slick-dots {
+        height: 9px;
+        bottom: 60px;
+        overflow: hidden;
+        text-align: center;
+
+        li {
+          margin: 0 5px;
+        }
+
+        button, li.slick-active button {
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          border: solid 1px #c2c2c2;
+          background: transparent;
+          opacity: 1;
+        }
+
+        li.slick-active button {
+          background: #c2c2c2;
+        }
+      }
+    }
+  }
+}
+
+.formWrapper {
+  padding: 50px 50px 30px;
+}
+
+.form {
+  width: 360px;
+}
+
+.slide {
+  height: 100vh;
+  overflow: hidden;
+  background: url('/assets/images/slide.png') no-repeat top/cover;
+}
+
+.text {
+  padding-bottom: 115px;
+  height: 100%;
+}
+
+.title {
+  max-width: 540px;
+}
+
+.secondTitle {
+  max-width: 335px;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 6px;
+  background: #1875f0;
+}
+
+.loginBtn {
+  width: 50%;
+}
+
+
+.error {
+  color: #f04134;
+  border: 1px solid #f04134;
+  border-radius: 4px;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  background: #d8d8d8;
+}
+
+@media (max-width: 460px) {
+  .formWrapper {
+    padding: 30px 25px 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}

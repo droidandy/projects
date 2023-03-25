@@ -1,0 +1,15 @@
+.frame {
+  max-width: 100%;
+}
+
+.followBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, .3) 0 1px 4px -1px;
+  color: #666;
+  &:hover {
+    color: #333;
+  }
+}

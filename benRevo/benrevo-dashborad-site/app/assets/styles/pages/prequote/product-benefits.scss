@@ -1,0 +1,79 @@
+@import "../../variables-theme";
+
+.prequote-benefits {
+
+  .labelColumn {
+    font-size: 13px;
+    color: $HEADER_SUB_COLOR2;
+    text-transform: uppercase;
+  }
+
+  .infoColumn {
+    color: $HEADER_SUB_COLOR2;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .labelColumn {
+    text-align: right;
+    &.network {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .adaTable {
+    margin-top: 238px;
+  }
+
+  .planInputRow {
+    height: 58px;
+
+    .title-form {
+      text-align: right;
+    }
+  }
+
+  .carrier-dropdown {
+    .ui.selection.dropdown {
+      min-width: 0;
+    }
+  }
+
+  .plan-name {
+    font-weight: bold;
+  }
+
+  .rx-header-block {
+    margin-top: 40px;
+  }
+
+  .select-option {
+    margin-bottom: 10px;
+
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: $HEADER_SUB_COLOR2;
+    }
+  }
+
+  .benefits-part:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .ui.input {
+      max-width: 100% !important;
+    }
+
+    .ui.dropdown {
+      max-width: 100% !important;
+    }
+  }
+}

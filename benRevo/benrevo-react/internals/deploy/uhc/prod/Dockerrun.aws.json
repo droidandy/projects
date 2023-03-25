@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "252508284068.dkr.ecr.us-west-2.amazonaws.com/prd-benrevo-react-web:latest",
+    "Update": "true"
+    },
+  "Ports": [{
+    "ContainerPort": "3000"
+  }],
+  "Volumes": [{
+    "HostDirectory": "/var/log/benrevo-react",
+    "ContainerDirectory": "/var/log/benrevo-react"
+  }]
+}

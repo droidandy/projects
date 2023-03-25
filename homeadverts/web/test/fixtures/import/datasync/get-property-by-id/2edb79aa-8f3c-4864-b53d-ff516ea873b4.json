@@ -1,0 +1,529 @@
+{
+    "listingSummary": {
+        "listingId": "2edb79aa-8f3c-4864-b53d-ff516ea873b4",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-04-13",
+        "photoCount": 18,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 6495000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "2660 Connecticut Ave Nw #7c",
+            "city": "WASHINGTON",
+            "district": "Washington",
+            "stateProvince": "District of Columbia",
+            "stateProvinceCode": "DC",
+            "postalCode": "20008",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 38.92499,
+            "longitude": -77.05334,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "2660 Connecticut Ave NW, Washington, DC 20008"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Woodley Park"
+            }
+        ],
+        "mlsNumbers": [
+            "DC10208979"
+        ],
+        "RFGListingId": "P4JHFX",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/p4jhfx",
+        "development": "83637",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Condominium",
+        "propertyStyle": "Other Style",
+        "propertyName": "2660 Connecticut Ave Nw #7c",
+        "totalBath": 4,
+        "lotSize": "0 SF",
+        "buildingArea": "4648 Sq. Ft.",
+        "noOfBedrooms": 3,
+        "squareFootage": 4648,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/3DB69ADD-1E09-411A-BBDC-5120C7F967C5",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-10T09:09:33.393",
+        "agents": [
+            {
+                "id": "e8815bbf-c668-41ef-8dfb-5de19b305252",
+                "name": "Ritzert Weiss Partners",
+                "firstName": "Ritzert",
+                "lastName": "Weiss Partners",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/2EB4D0C1-329D-43F5-90D2-6B4E03794112",
+                "emailAddress": "RitzertWeiss@ttrsir.com",
+                "leadEmailAddress": "800107.lead.4027119@leads.leadrouter.com",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "c90ebeb4-bd97-4317-9102-318b1ff74daf",
+                    "RFGOfficeId": "0001",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "1206 30th Street NW",
+                        "city": "Washington",
+                        "district": "District of Columbia",
+                        "stateProvince": "District of Columbia",
+                        "stateProvinceCode": "DC",
+                        "postalCode": "20007",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.9055,
+                        "longitude": -77.05938,
+                        "formattedAddress": "1206 30th St NW, Washington, DC 20007"
+                    },
+                    "phoneNumber": "2023331212",
+                    "emailAddress": "mrankin@ttrsir.com"
+                }
+            },
+            {
+                "id": "1d75bcfc-c4aa-45b1-98e9-bcf3ddefb807",
+                "name": "Christie-Anne Weiss",
+                "firstName": "Christie-Anne",
+                "lastName": "Weiss",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/46DAC94B-49EF-48F3-A67F-C81E57E032F1",
+                "emailAddress": "cweiss@ttrsir.com",
+                "leadEmailAddress": "800107.lead.4024393@leads.leadrouter.com",
+                "businessPhone": "+1 2022560105",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "c90ebeb4-bd97-4317-9102-318b1ff74daf",
+                    "RFGOfficeId": "0001",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "1206 30th Street NW",
+                        "city": "Washington",
+                        "district": "District of Columbia",
+                        "stateProvince": "District of Columbia",
+                        "stateProvinceCode": "DC",
+                        "postalCode": "20007",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.9055,
+                        "longitude": -77.05938,
+                        "formattedAddress": "1206 30th St NW, Washington, DC 20007"
+                    },
+                    "phoneNumber": "2023331212",
+                    "emailAddress": "mrankin@ttrsir.com"
+                }
+            },
+            {
+                "id": "57240e5d-0f10-4bc1-a54a-ec9a7c008933",
+                "name": "Christopher Ritzert",
+                "firstName": "Christopher",
+                "lastName": "Ritzert",
+                "middleName": "D.",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/E63C1D47-ED4D-4BD0-B040-2232F76F7125",
+                "emailAddress": "critzert@ttrsir.com",
+                "leadEmailAddress": "800107.lead.4024392@leads.leadrouter.com",
+                "businessPhone": "+1 2022569241",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "c90ebeb4-bd97-4317-9102-318b1ff74daf",
+                    "RFGOfficeId": "0001",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "1206 30th Street NW",
+                        "city": "Washington",
+                        "district": "District of Columbia",
+                        "stateProvince": "District of Columbia",
+                        "stateProvinceCode": "DC",
+                        "postalCode": "20007",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.9055,
+                        "longitude": -77.05938,
+                        "formattedAddress": "1206 30th St NW, Washington, DC 20007"
+                    },
+                    "phoneNumber": "2023331212",
+                    "emailAddress": "mrankin@ttrsir.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 3,
+    "halfBath": 1,
+    "parkingPlaces": 0,
+    "levels": 1,
+    "yearBuilt": "1928",
+    "yearRenovated": "2015",
+    "providerKey": "2edb79aa-8f3c-4864-b53d-ff516ea873b4",
+    "propertyFeatures": [
+        {
+            "groupName": "Appliances",
+            "description": "Dishwasher"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dryer"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Garbage Disposal"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Refrigerator"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Washer"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Pool"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Central A\/C"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Zoned A\/C"
+        },
+        {
+            "groupName": "Exterior Description",
+            "description": "Brick"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Garage Description",
+            "description": "Garage"
+        },
+        {
+            "groupName": "General",
+            "description": "Concierge Services"
+        },
+        {
+            "groupName": "General",
+            "description": "Elevator"
+        },
+        {
+            "groupName": "General",
+            "description": "Laundry Facilities"
+        },
+        {
+            "groupName": "General",
+            "description": "Security System"
+        },
+        {
+            "groupName": "General",
+            "description": "Smoke Detector"
+        },
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Electric"
+        },
+        {
+            "groupName": "Heating Type",
+            "description": "Heat Pump"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Walk-in Closet"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Breakfast Bar"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Eat-in Kitchen"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Gourmet Kitchen"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Kitchen Facilities"
+        },
+        {
+            "groupName": "Rooms",
+            "description": "Library"
+        },
+        {
+            "groupName": "Sewer",
+            "description": "Public"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Views",
+            "description": "City \/ Strip"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "Historic Property"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "This spectacular residence was designed by Darryl Carter and is offered fully furnished and accessorized! Iconic Wardman Tower features 32 newly renovated luxury condominiums and offers a wide variety of top drawer amenities such as valet parking for residents and guests, concierge, an unrivaled fitness center and a beautiful rooftop terrace.",
+            "htmlRemark": "This spectacular residence was designed by Darryl Carter and is offered fully furnished and accessorized! Iconic Wardman Tower features 32 newly renovated luxury condominiums and offers a wide variety of top drawer amenities such as valet parking for residents and guests, concierge, an unrivaled fitness center and a beautiful rooftop terrace."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/p4jhfx",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "7075F53F-80F0-46D5-B8DE-0A624F712606",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/7075F53F-80F0-46D5-B8DE-0A624F712606",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "994305B5-41D9-49D4-9EEF-0E0D6892441E",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/994305B5-41D9-49D4-9EEF-0E0D6892441E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "0109ED0E-7954-4123-BB7F-16C3105B1335",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/0109ED0E-7954-4123-BB7F-16C3105B1335",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "2A02D0D6-7624-40B0-A825-37F4E9D107ED",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/2A02D0D6-7624-40B0-A825-37F4E9D107ED",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "73484309-9F69-4891-9DFE-40D940665AA5",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/73484309-9F69-4891-9DFE-40D940665AA5",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "75E73E3E-F6A6-47D4-B0FB-4A3EE8515C05",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/75E73E3E-F6A6-47D4-B0FB-4A3EE8515C05",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "AFE9A219-A2DD-4FC6-B589-4A5431D50FC4",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/AFE9A219-A2DD-4FC6-B589-4A5431D50FC4",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "3DB69ADD-1E09-411A-BBDC-5120C7F967C5",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/3DB69ADD-1E09-411A-BBDC-5120C7F967C5",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "83A44C9F-3CF5-4315-B088-5ABDEEFC7391",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/83A44C9F-3CF5-4315-B088-5ABDEEFC7391",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "A0DBFA25-20B7-44B0-95A6-78D8773A7174",
+            "sequenceNumber": 1,
+            "url": "http:\/\/spws.homevisit.com\/mls\/224379\/2660-CONNECTICUT-AVE-NW-7C-WASHINGTON-DC-20008",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Virtual Tour",
+            "lastUpdateOn": "2018-04-14T21:25:30.030"
+        },
+        {
+            "mediaID": "6A0F0764-073E-4DF3-B081-797570669B44",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/6A0F0764-073E-4DF3-B081-797570669B44",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "DF099842-4311-428A-AB48-9643A96094C2",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/DF099842-4311-428A-AB48-9643A96094C2",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "3BF0A97F-03FC-447F-B9FF-9A6044CE615A",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/3BF0A97F-03FC-447F-B9FF-9A6044CE615A",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "909241FA-46C8-4537-A4F8-B203DD575017",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/909241FA-46C8-4537-A4F8-B203DD575017",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "D1404D62-9BC0-47F4-A02A-B4863C6431F8",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/D1404D62-9BC0-47F4-A02A-B4863C6431F8",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "8E008BA3-3188-4CFB-9E4E-E43170AE4B34",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/8E008BA3-3188-4CFB-9E4E-E43170AE4B34",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "B5E4FDEF-8915-4FEB-9197-EABE842E2094",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/B5E4FDEF-8915-4FEB-9197-EABE842E2094",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "E9F271E7-679F-4027-9084-F430101AE236",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/E9F271E7-679F-4027-9084-F430101AE236",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        },
+        {
+            "mediaID": "957C8685-715B-4E8D-8607-FB31C33B3AC8",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/957C8685-715B-4E8D-8607-FB31C33B3AC8",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-08-10T09:09:33.410"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "DC10208979",
+            "isPrimary": true
+        }
+    ]
+}

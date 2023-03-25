@@ -1,0 +1,31 @@
+services:
+    ha.article.image_validator:
+        class: AppBundle\Validation\ArticleImageValidator
+        arguments:
+            - %media_upload_domains%
+        tags:
+            - { name: validator.constraint_validator, alias: article_image_validator }
+    
+    ha.validator.unique_user_email:
+        class: AppBundle\Validation\UniqueUserEmailValidator
+        arguments:
+            - '@ha.user_manager'
+        tags:
+            - { name: validator.constraint_validator, alias: unique_user_email_validator }
+    
+    validator.user_settings:
+        class: AppBundle\Validation\UserSettingsValidator
+        arguments:
+            - %user_settings%
+        tags:
+            - { name: validator.constraint_validator, alias: user_settings_validator }
+    
+    validator.file_origin:
+        class: AppBundle\Validation\FileOriginValidator
+        tags:
+            - { name: validator.constraint_validator, alias: file_origin_validator }
+            
+    validator.message_onwership:
+        class: AppBundle\Validation\MessageOwnershipValidator
+        tags:
+            - { name: validator.constraint_validator, alias: message_ownership_validator }

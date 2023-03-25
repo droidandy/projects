@@ -1,0 +1,27 @@
+.wrapper {
+  max-width: 780px;
+  > div + div {
+    margin-left: 20px;
+  }
+}
+
+.verified {
+  background: #89c587 !important;
+  border-color: #89c587 !important;
+  color: #fff !important;
+}
+
+.w360 {
+  width: 360px;
+  max-width: 100%;
+}
+
+.indent {
+  margin-left: 220px;
+}
+
+@media(max-width: 480px) {
+  .wrapper > div + div {
+    margin-left: 10px;
+  }
+}

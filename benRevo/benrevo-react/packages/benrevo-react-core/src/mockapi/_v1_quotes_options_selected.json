@@ -1,0 +1,21 @@
+{
+  "medicalPlans": [
+    {
+      "name": "ZF9",
+      "type": "HMO",
+      "employer": 24600.0,
+      "employee": 247514.31,
+      "total": 272114.3
+    }
+  ],
+  "medicalTotal": 272114.3,
+  "medicalQuoteOptionId": 1915,
+  "medicalQuoteOptionName": "Option 1",
+  "dentalPlans": [],
+  "dentalTotal": 0.0,
+  "visionPlans": [],
+  "visionTotal": 0.0,
+  "total": 272114.3,
+  "externalProducts": [],
+  "submittedDate": ""
+}

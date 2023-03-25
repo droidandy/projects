@@ -1,0 +1,19 @@
+parameters:
+    taxamo_public_key: public_test_zgDY63C0BAx3uC-XiK_ZX04OhkaXYeKYoaiX2Va27ys
+    taxamo_private_key: priv_test_udX1JXd2uIFryzyceNjtFaHaA6S9S_tsIouRPVZ7E3g
+
+    billing:
+        base_currency: USD
+        base_price: 99
+        country: GB
+
+    braintree:
+        environment: sandbox
+
+        merchant_id: fhydf444h9stpgfv
+        public_key: 6bc9dfcsdkjb384z
+        private_key: 44ae6a4b627d362cf62fb65014ebbc8a
+
+        # Default "merchant_id" is in USD
+        plan_id: premiumUSD
+        braintree_merchant_id: b9xzgk54vdgppb4y

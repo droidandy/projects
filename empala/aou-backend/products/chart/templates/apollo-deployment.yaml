@@ -1,0 +1,207 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "aou-backend.apollo.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: apollo
+  annotations:
+    app.gitlab.com/env: {{ .Values.annotations.CIEnvironmentSlug }}
+    app.gitlab.com/app: {{ .Values.annotations.CIProjectPathSlug }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "aou-backend.selectorLabels" . | nindent 6 }}
+      component: apollo
+  template:
+    metadata:
+      labels:
+        {{- include "aou-backend.selectorLabels" . | nindent 8 }}
+        component: apollo
+      annotations:
+        app.gitlab.com/env: {{ .Values.annotations.CIEnvironmentSlug }}
+        app.gitlab.com/app: {{ .Values.annotations.CIProjectPathSlug }}
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+      containers:
+      - env:
+        - name: DB_HOST
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: host
+        - name: DB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: name
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: user
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: password
+        - name: DB_PORT
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: port
+        {{- if .Values.database.sslCACert }}
+        - name: DB_CA_CERT
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-ca-cert-secret.fullname" . }}
+              key: .ca.pem
+        {{- end }}
+        - name: NODE_ENV
+          value: {{ .Values.environment }}
+        - name: AWS_COGNITO_JWKS_CLIENT
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+              key: JWKSClient
+        - name: AWS_COGNITO_AUDIENCE_CLAIM
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+              key: audienceClaim
+        - name: AWS_COGNITO_ISSUER_CLAIM
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+              key: issuerClaim
+        - name: AWS_COGNITO_READONLY_ADMIN_USER_NAME
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.authentication-secret.fullname" . }}
+              key: readonlyAdminUserName
+        - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.authentication-secret.fullname" . }}
+              key: marketdataUpdaterUserName
+        - name: APEX_EXTEND_LOGOS_API_URL
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-logos-secret.fullname" . }}
+              key: logosApiUrl
+        - name: APEX_EXTEND_LOGOS_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-logos-secret.fullname" . }}
+              key: logosApiKey
+        - name: APEX_EXTEND_LOGOS_API_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-logos-secret.fullname" . }}
+              key: logosApiSecret
+        - name: INSTRUMENT_CACHE_LOADING_BATCH_SIZE
+          value: {{ .Values.instrumentCache.loadingBatchSize | quote }}
+        - name: INSTRUMENT_CACHE_RELOAD_UTC_TIME
+          value: {{ .Values.instrumentCache.reloadUTCTime | quote }}
+        - name: APEX_EXTEND_TRADE_API_URL
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: tradeApiUrl
+        - name: APEX_EXTEND_TRADE_API_ENTITY
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: tradeApiEntity
+        - name: APEX_EXTEND_TRADE_API_GROUP
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: tradeApiGroup
+        - name: APEX_EXTEND_TRADE_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: tradeApiKey
+        - name: APEX_EXTEND_APPLICATIONS_URL
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: applicationsUrl
+        - name: APEX_EXTEND_TRADE_ACCOUNT_ID
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: tradeAccountId
+        - name: APEX_EXTEND_APPLICATIONS_USER_ID
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: userId
+        - name: APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: adminApiKey
+        - name: APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.apex-extend-secret.fullname" . }}
+              key: adminApiSecret
+        name: apollo
+        image: "{{ .Values.image.repository }}:apollo-{{ .Chart.AppVersion }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+          - name: http
+            containerPort: 3000
+            protocol: TCP
+        livenessProbe:
+          initialDelaySeconds: 15
+          periodSeconds: 20
+          httpGet:
+            path: /.well-known/apollo/server-health
+            port: 3000
+        readinessProbe:
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          httpGet:
+            path: /.well-known/apollo/server-health
+            port: 3000
+        resources:
+          {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "aou-backend.apollo.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: apollo
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: "/.well-known/apollo/server-health"
+spec:
+  type: {{ .Values.services.type }}
+  ports:
+    - port: {{ .Values.services.apollo.port }}
+      targetPort: 3000
+      protocol: TCP
+  selector:
+    {{- include "aou-backend.selectorLabels" . | nindent 4 }}
+    component: apollo

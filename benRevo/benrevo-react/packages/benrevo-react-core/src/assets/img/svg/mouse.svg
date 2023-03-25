@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.69 68.64">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#13b2da;stroke-miterlimit:10;}</style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_28" data-name="Layer 28">
+      <g id="Mouse">
+        <path class="cls-1"
+              d="M19.35,68.14h0A18.85,18.85,0,0,1,.5,49.29V24.23s7.25-5.38,18.85-5.38,18.85,5.38,18.85,5.38V49.29A18.85,18.85,0,0,1,19.35,68.14Z"/>
+        <path class="cls-1" d="M19.35,37.69V14.51A5.88,5.88,0,0,1,25.24,8.7H32.3a5.81,5.81,0,0,0,5.9-5.8V0"/>
+      </g>
+    </g>
+  </g>
+</svg>

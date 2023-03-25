@@ -1,0 +1,545 @@
+{
+	"translation": {
+		"appName": "Crumbiz",
+		"global": {
+			"nextActionButton": "next",
+			"ok": "Ok",
+			"cancel": "Cancel",
+			"delete": "Delete",
+			"connector": "connector",
+			"owner": "initiator",
+			"target": "contributor",
+			"introStatus": {
+				"intro": "Intro",
+				"goodToGo": "I'm Interested",
+				"doneDeal": "We're on!",
+				"pending": "Pending",
+				"declined": "Declined",
+				"myPartIsDone": "My Part Is Done"
+			},
+			"allSet": "All Set"
+		},
+		"login": {
+			"intro": "Hi,",
+			"welcome": "Welcome back!",
+			"continueWithLinkedIn": "Continue with LinkedIn",
+			"or": "Or",
+			"email": "Email address",
+			"password": "Password",
+			"forgotYourPassword": "Forgot your password?",
+			"login": "login",
+			"dontHaveCrumbizAccount": "Don't have a Crumbiz account?",
+			"createLink": "Create an account",
+			"failedAuthModal": {
+				"headerText": "Whoops...",
+				"message": "We didn't find the email and password you entered, please try signing up."
+			}
+		},
+		"register": {
+			"fullNameStep": {
+				"stepHeader": "What's your name?",
+				"fieldsDescription": "The name you enter here will appear on your profile and any opportunity you'll post in the future.",
+				"firstName": "First Name",
+				"lastName": "Last Name",
+				"actionButtonText": "Continue"
+			},
+			"emailStep": {
+				"stepHeader": "And your email?",
+				"fieldsDescription": "This email address is the one you’ll use, if you ever need to recover your password.",
+				"email": "Email address",
+				"actionButtonText": "Continue"
+			},
+			"passwordStep": {
+				"stepHeader": "Create a password",
+				"fieldsDescription": "Just make sure your password has at least one symbol in it.",
+				"password": "Password",
+				"actionButtonText": "JOIN CRUMBIZ",
+				"byJoining": "By joining crumbiz, you agree to our ",
+				"terms": "Terms ",
+				"of": " of ",
+				"service": "Service",
+				"and": " and ",
+				"privacyPolicy": "Privacy Policy"
+			},
+			"failedAuthModal": {
+				"headerText": "Whoops...",
+				"message": "We couldn't register you in"
+			}
+		},
+		"restorePassword": {
+			"headerText": "Forgot your password?",
+			"fieldsDescription": "No problem! Just enter your email address, and we’ll send you a link to reset your password right away!",
+			"actionButtonText": "RESET PASSWORD",
+			"typeYourEmail": "Type your email",
+			"checkYourInbox": "Check your inbox",
+			"weSentYouALinkToReset": "We just sent you a link to reset your password.",
+			"error": {
+				"errorHeader": "Email not found",
+				"errorText": "Please check again the email you typed"
+			},
+			"success": {
+				"successHeader": "Password changed",
+				"successText": "Your password has been changed, please log in with your new password.",
+				"successButton": "Go to Login"
+			}
+		},
+		"onboarding": {
+			"firstScreen": {
+				"headerText": "Lorem ipsum dolor sit amet",
+				"descriptionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+			},
+			"secondScreen": {
+				"headerText": "Lorem ipsum dolor sit amet",
+				"descriptionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+			},
+			"thirdScreen": {
+				"headerText": "Lorem ipsum dolor sit amet",
+				"descriptionText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
+			},
+			"next": "NEXT",
+			"getStarted": "GET STARTED CRUMBIZ"
+		},
+		"createNewPassword": {
+			"createStep": {
+				"headerText": "Create a new password",
+				"fieldsDescription": "Just make sure your password has at least 8 characters that include 1 capital letter, 1 number and 1 special character.",
+				"actionButtonText": "Change My Password"
+			},
+			"doneStep": {
+				"headerText": "All set!",
+				"fieldsDescription": "You've got yourself a new password.",
+				"fieldsDescription2": "You can login now.",
+				"actionButtonText": "Back To Login"
+			},
+			"password": "New Password",
+			"confirmPassword": "Confirm New Password"
+		},
+		"modal": {
+			"actionButtonText": "Ok"
+		},
+		"opps": {
+			"chooseOp": {
+				"chooseThe": "Choose the",
+				"opType": "Opportunity type",
+				"createOpportunity": "Choose the opportunity you’d like to create",
+				"categories": {
+					"forStaff": "for staff",
+					"fundraising": "Fundraising"
+				}
+			},
+			"setOpTitle": {
+				"setThe": "Set your",
+				"opTitle": "Opportunity title",
+				"inputPlaceholder": "Describe in a few words...",
+				"buttonActionText": "Next"
+			},
+			"businessType": {
+				"what": "What",
+				"typeOfBusiness": "Type of business",
+				"areYouSeeking": "are you seeking?",
+				"setThe": "Set the",
+				"businessType": "Type of business",
+				"inputPlaceholder": "Type or select",
+				"buttonActionText": "Next",
+				"buttonInActionText": "Skip"
+			},
+			"vertical": {
+				"chooseYour": "Choose your",
+				"vertical": "Vertical"
+			},
+			"serviceProvider": {
+				"which": "Which",
+				"areYouSeeking": "are you seeking?",
+				"choose": "Choose the type of",
+				"serviceProvider": "Service Provider"
+			},
+			"selectBudget": {
+				"selectThe": "Select your",
+				"budget": "Estimated budget"
+			},
+			"selectRole": {
+				"selectYour": "Select your",
+				"role": "Role",
+				"intro": "I'm the",
+				"Initiator": "Initiator",
+				"Connector": "Connector"
+			},
+			"selectConnector": {
+				"chooseThe": "Choose the",
+				"Connector": "Connector",
+				"Initiator": "Initiator",
+				"inputPlaceholder": "Search contact",
+				"categories": {
+					"fromContact": "Contacts",
+					"fromCrumbiz": "Crumbiz",
+					"fromLinkedin": "Linkedin"
+				},
+				"newContact": "New Contact"
+			},
+			"sendMessageToEntity": {
+				"typeAMessage": "Send a message to"
+			},
+			"opDetails": {
+				"title": "Your opportunity details:",
+				"owner": "Owner",
+				"connector": "Connector",
+				"typeOfBusiness": "Type of business",
+				"vertical": "vertical",
+				"serviceProvider": "Service Provider",
+				"budget": "budget"
+			},
+			"done": {
+				"nowWereTalking": "Now we're talking!",
+				"text": "From now you can see here all the happenings and people related to the opportunity",
+				"buttonText": "OK"
+			}
+		},
+		"connectEntities": {
+			"emptyOppList": {
+				"theListIsEmpty": "You don't have any Opportunities as a Connector."
+			},
+			"chooseEntity": {
+				"choose": "Choose the",
+				"theTarget": "Contributor",
+				"letsChoose": "Let's choose",
+				"yourConnector": "Your Connector",
+				"chooseTheInitiator": "Choose the initiator",
+				"ofThisOpportunity": "of this opportunity",
+				"theContributor": "Contributor"
+			},
+			"sendIntro": {
+				"sendIntroTo": "Send an intro. to:",
+				"chooseIntroType": "Choose an Intro. type",
+				"newIntro": "New intro",
+				"recordIntro": "Record Intro",
+				"confirmationTooltip": {
+					"sendTo": "Send to {{entity}} approval",
+					"target": "target",
+					"owner": "owner"
+				},
+				"preDefinedCategories": {
+					"polite": "Polite",
+					"friendly": "Friendly",
+					"executive": "executive"
+				}
+			},
+			"record": {
+				"tapTo": "Tap to {{action}} your intro.",
+				"record": "record",
+				"pause": "pause"
+			},
+			"createTemplate": {
+				"save": "Save to template ",
+				"placeholder": "Write your intro. here...",
+				"plusButtonDescription": "Click the plus button to combine an attribute in the text",
+				"saveTemplateModal": {
+					"headerText": "Name your template",
+					"placeholder": "Template name",
+					"actionButtonText": "Save"
+				}
+			},
+			"allSet": {
+				"readyToGo": "Ready to go...",
+				"clickToConnect": "Click to Connect!",
+				"madeAConnection": "You just made a new connection!",
+				"actionButtonText": "Back to Opp.",
+				"connectionFailed": {
+					"header": "Something went wrong",
+					"text": "We couldnt connect the target, please try again in few minutes",
+					"actionButtonText": "BACK to Main screen"
+				}
+			},
+			"modals": {
+				"attachLink": {
+					"headerText": "Attach a link",
+					"pastAnyLink": "Paste any link here...",
+					"linkName": "Link name (optional)"
+				},
+				"entityFullName": {
+					"headerText": "Name please...",
+					"firstName": "First name",
+					"lastName": "Last name"
+				},
+				"oopsy": {
+					"headerText": "Oopsy...",
+					"subHeaderText": "We need {{name}}'s email to send {{gender}} an invite for an opportunity, but we couldn't find {{gender}} email on your device.",
+					"email": "please enter {{name}}'s email"
+				},
+				"contactWays": {
+					"headerText": "Contact ways",
+					"text": "We found some ways to contact {{entityName}}, please select at least one",
+					"emailAddress": "Email address",
+					"phone": "Phone",
+					"userExistsHeader": "User exists",
+					"userExistsText": "The user already exist in this opporunity, try adding another one",
+					"userExistsButton": "OK"
+				}
+			}
+		},
+		"oppOverview": {
+			"oppOverview": {
+				"statusButtonOptions": {
+					"progress": "In Progress"
+				},
+				"tabs": {
+					"targets": {
+						"tabName": "Contributors",
+						"active": "Active",
+						"allTargets": "All Contributors"
+					},
+					"newsFeed": {
+						"tabName": "News feed",
+						"notifications": {
+							"newOpp": "You just created a new opp!",
+							"newIntro": "You got a new intro!",
+							"fromUser": "From {{username}}"
+						}
+					},
+					"connectors": {
+						"tabName": "Connectors",
+						"active": "Active",
+						"inactive": "Inactive"
+					}
+				},
+				"introStatus": {
+					"approved": "Approved",
+					"pending": "Pending Approval",
+					"declined": "Declined"
+				},
+				"targets": "Contributors",
+				"inactive": "inactive",
+				"noDataView": {
+					"forTargets": {
+						"headerText": "Add your Contributor",
+						"text": "Once you add your contributors, they will show up on this page."
+					},
+					"forConnectors": {
+						"headerText": "You don't have Targets yet...",
+						"text": "We are waiting for a Connector to connect you to the people you are looking for..."
+					}
+				}
+			},
+			"targetProfile": {
+				"placeholder": "Type your message to {{username}}",
+				"sendMessage": "Send your message",
+				"ccTheConnector": "Cc The Connector",
+				"threeDotsMenu": {
+					"notifications": "Notifications",
+					"delete": "Delete",
+					"stepBack": "Step back"
+				},
+				"ohYes": "Great!",
+				"newStage": "Let's move forward",
+				"fullScreenOHYesMsg": "You’re on your way"
+			},
+			"connectedBy": "Connected By",
+			"createdBy": "Opp. Initiator",
+			"modals": {
+				"oppComplete": {
+					"headerText": "Is your Opp. complete?",
+					"text": "Once you define this Opp. as \"complete\", it will no longer be active. But don't worry, you can reactivate it whenever you want.",
+					"setOppAsComplete": "Set this Opp. as completed",
+					"leaveOppAsProgress": "No, leave the opp. in progress"
+				},
+				"deleteTarget": {
+					"headerText": "Delete {{username}}?",
+					"text": "Deleting {{username}} will erase them from your list of Contributors. Are you sure you want to?",
+					"cancel": "Cancel",
+					"delete": "Delete"
+				},
+				"backToPrevStep": {
+					"headerText": "Back to your previous step?",
+					"text": "This will take you back to square one. Are you positive you want to go back?",
+					"cancel": "Cancel",
+					"yes": "Yes"
+				},
+				"declineOpp": {
+					"asConnector": {
+						"headerText": "Are you sure you want out?",
+						"text": "Declining this request will leave you out of this opportunity. It's up to you, what do you say?",
+						"deleteAndForget": "Sorry, I'm out",
+						"wellWell": "All right, you talked me into it!"
+					},
+					"asContributer": {
+						"headerText": "Are you sure you want out?",
+						"text": "Declining this request will leave you out of this opportunity.",
+						"deleteAndForget": "Sorry, I'm out",
+						"wellWell": "All right, you talked me into it!"
+					}
+				},
+				"nowYouCanAddTargets": {
+					"headerText": "Great! It's time to seek contributors.",
+					"text": "Go ahead and reach out to prospective contributors for this Opp.",
+					"ok": "OK. Let's go!"
+				},
+				"nowYouCanInteractWithTheOwner": {
+					"headerText": "Great! Talk to each other directly",
+					"text": "Accepting your role as a contributor in this Opp. has opened up a conversation between you and the initiator.",
+					"ok": "Got it!"
+				},
+				"deleteCreateOppInfo": {
+					"headerText": "Delete everything you did?",
+					"text": "This will delete all of the work you've done until this point.",
+					"pressDelete": "Delete",
+					"pressCancel": "Cancel"
+				},
+				"tryAgainOrSignUp": {
+					"headerText": "Are you sure?",
+					"text": "We couldn't find the email and password you had entered. Let's sign you up first.",
+					"pressSignUp": "Sign Up",
+					"pressTryAgain": "Try again"
+				},
+				"MyPartIsDoneModal": {
+					"headerText": "Great!",
+					"text": "Your reply has been sent to {{ownerName}}, and they will be so happy! we'll let you know as soon as she responds.",
+					"ok": "OK"
+				}
+			},
+			"dropdowns": {
+				"oppOnHold": {
+					"headerText": "The Opp. is on hold",
+					"text": "Can't take any actions when Opp. is set on the -On hold- mode",
+					"ok": "OK, I get it",
+					"bringItBackToLife": "Reactivate Opp."
+				},
+				"acceptBeingAnEntity": {
+					"text": "Would you like to be a {{entityName}} in this Opp?",
+					"yes": "Yes",
+					"no": "No"
+				}
+			}
+		},
+		"myProfile": {
+			"mainPage": {
+				"viewProfile": "View Profile",
+				"completeYourProfile": "Complete your profile, it's at 50%",
+				"actionButton": "Save Changes"
+			},
+			"profileSideMenu": {
+				"introductions": {
+					"header": "Introductions",
+					"text": "Please check with me before introducing me to other people"
+				},
+				"opportunities": {
+					"header": "Opportunities",
+					"text": "Keep me in the loop for any business opportunity"
+				},
+				"notifications": {
+					"header": "Notifications",
+					"text": "Send me push notifications"
+				}
+			},
+			"personalInfo": {
+				"header": "Personal Info",
+				"firstName": "First Name",
+				"lastName": "Last Name",
+				"city": "City",
+				"state": "State",
+				"country": "Country",
+				"email": "Email"
+			},
+			"socialNetworks": {
+				"header": "Social Networks",
+				"linkedin": "Linkedin",
+				"twitter": "Twitter",
+				"facebook": "Facebook",
+				"inputPlaceholder": "Type your account URL here...",
+				"addButton": "+ Add"
+			},
+			"workExperience": {
+				"header": "Work Experience",
+				"companyName": "Company Name",
+				"position": "Position",
+				"addButton": "Add",
+				"addMoreButton": "+ Add More"
+			},
+			"aboutMe": {
+				"header": "About Me",
+				"placeHolder": "Tell us a little about yourself..."
+			}
+		},
+		"relationships": {
+			"noRelationships": {
+				"headerText": "No Relationships yet",
+				"text": "Once you become involved in an Opp. your relationships with the other Opp participants will be automatically established"
+			},
+			"sideMenu": {
+				"sorting": {
+					"header": "Sorting",
+					"mostRecommended": "Most Recommended",
+					"mostPopular": "Most popular",
+					"theNewest": "The newest"
+				},
+				"filtering": {
+					"header": "Filtering",
+					"placeholder": "Search...",
+					"oppType": "Opp. Type",
+					"location": "Location",
+					"verticals": "Verticals"
+				},
+				"viewContacts": "View Contacts"
+			}
+		},
+		"myOpps": {
+			"title": "My Opps",
+			"numberOppsFound": "{{number}} Opportunities found",
+			"noOpps": {
+				"headerText": "Hmm...",
+				"text": "You don't seem to have any Opps. going on at the moment"
+			},
+			"sideMenu": {
+				"filtering": {
+					"header": "Filtering",
+					"all": "All",
+					"status": "Status",
+					"typeServiceProvider": "Type of Service Provider",
+					"placeholder": "Search...",
+					"oppType": "Opp. Type",
+					"budget": "Budget",
+					"verticals": "Verticals",
+					"companyAge": "Company age"
+				},
+
+				"viewOpps": "View Opps",
+				"viewContacts": "View Contacts",
+				"oppTypes": {
+					"header": "Opp type",
+					"personal": "On a personal level",
+					"hiring": "Hiring",
+					"fundRaising": "Fundraising",
+					"serviceProvider": "Service Provider",
+					"businessDev": "Business Development"
+				}
+			},
+			"oppItems": {
+				"entityType": "I am the {{type}}"
+			}
+		},
+		"userProfile": {
+			"dropMenu": {
+				"askBeforeIntro": "Ask before intro",
+				"createOpp": "Create Opp"
+			},
+			"noDataProvided": {
+				"header": "No info to share yet..."
+			},
+			"tabs": {
+				"bioTab": {
+					"header": "Bio",
+					"socialNetworks": "Social Networks",
+					"workExperience": "Work Experience",
+					"aboutMe": "About Me"
+				},
+				"oppsTab": {
+					"header": "Opps in Common"
+				}
+			}
+		},
+		"chooseProfileImage": {
+			"title": "Profile photo",
+			"gallery": "Gallery",
+			"camera": "Camera",
+			"removePhoto": "Remove Photo"
+		}
+	}
+}

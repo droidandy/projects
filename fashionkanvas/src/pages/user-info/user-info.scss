@@ -1,0 +1,394 @@
+page-user-info {
+    .top{
+      background: $primary;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #fff;
+  }
+  img{
+      height: 80px;
+      width: 80px;
+  }
+
+  .plus{
+    color: #f66565;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .top
+  {
+    background: #ccc!important;
+  }
+
+  .profile_pic{
+    height: 100px;
+    margin: 0 0 20px 0;
+  }
+
+  .profile_pic img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
+
+  .profile_top_img h2
+  {
+    text-align: center;
+    margin: 6px 0;
+    width:100%;
+    float: left;
+    font-size: 22px;
+  }
+
+  .profile_top_img p
+  {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 2px 0;
+    color: #717171;
+  }
+
+  .profile_top_img
+  {
+    margin: 0 0 20px 0;
+  }
+
+  .profile_top_img,.experience
+  {
+    float: left;
+    width: 100%;
+  }
+
+  .experience
+  {
+    border-top: solid 1px #F5F3F3;
+  }
+
+  ion-item
+  {
+    padding-left: 0!important;
+        margin-bottom: 0px!important;
+  }
+
+  ion-item .label
+  {
+    color:#929292;
+    font-size: 12px!important;
+  }
+
+  .updatebtn{
+
+      background-color: #009688;
+      margin: 20px 0;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 14px;
+  }
+
+  .loginbtn
+  {
+    background-color: #f66565;
+    margin: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    float: left;
+    width: calc(100% - 40px);
+  }
+
+  .scroll-content
+  {
+    padding: 45px 0px 0px 0px;
+  }
+
+  .add_images
+  {
+    margin-top: 15px;
+  }
+
+  .add_images img
+  {
+    margin: auto;
+  }
+
+  .add_images .icon
+  {
+    font-size: 30px;
+    color: #969696;
+  }
+
+  .add_images .col{
+    text-align: right;
+  }
+
+  .profile_pic span
+  {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    color: #f66565;
+    font-size: 30px;
+  }
+
+  .profile_pic span .icon{
+    background: #fff;
+    position: absolute;
+    top: 8px;
+    font-size: 19px;
+    right: 10px;
+    border-radius: 100%;
+    height: 17px;
+    width: 10px;
+    line-height: 0px;
+  }
+
+  .blocklists
+  {
+    margin-bottom: 0;
+  }
+
+  .blocklists .item
+  {
+    padding-left: 0;
+  }
+
+  .blocklists .item-inner
+  {
+    color: #929292;
+    font-size: 12px !important;
+  }
+
+  .add_images img
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .big_img
+  {
+    width: 100%;
+  }
+
+  .row{
+    text-align: center;
+  }
+
+  .select-text
+  {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .experience
+  {
+    padding: 20px;
+  }
+
+  .experience_head
+  {
+    width:100%;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .experience_left_head
+  {
+    float: left;
+    color: #686868;
+  }
+
+  .experience_right_head
+  {
+    float: right;
+  }
+
+  .experience_right_head .icon
+  {
+    color: #f66565;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .experience_body
+  {
+    float: left;
+    width: 100%;
+    border-left: solid 1px #ccc;
+  }
+
+  .experience_body_left span
+  {
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    float: left;
+    border-radius: 20px;
+    margin-left: -11px;
+  }
+
+  .experience_body_right
+  {
+    width:93%;
+    float: right;
+    padding: 0 0 30px 0;
+  }
+
+  .experience_left_head
+  {
+    padding: 4px 0;
+  }
+
+  .experience_body_right h2,.experience_body_right p
+  {
+      margin: 5px 0;
+      text-align: left;
+  }
+
+  .experience_body_right h2
+  {
+    color: #f66565;
+    font-size: 19px;
+    margin-top: 0!important;
+  }
+
+  .experience_body_right .legacy
+  {
+    font-size: 14px;
+  }
+
+  .experience_body_right .location
+  {
+    font-size: 14px;
+    color:#7d7d7d;
+  }
+
+  .experience_body_right  .description
+  {
+    font-size: 16px;
+  }
+
+  .experience_body:nth-last-child(1)
+  {
+    border-left: none;
+  }
+
+  .pick_photos
+  {
+    width:80%;
+  }
+
+  .pick_images
+  {
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: #000;
+    margin-right: 10px;
+  }
+
+  .wide-as-needed {
+    white-space: nowrap;
+    height: 70px;
+    width: 92%;
+    float: right;
+    margin-top: 0;
+  }
+  .scroll {
+    min-width: 100%;
+  }
+
+  .wide-as-needed .scroll-content
+  {
+    padding: 0!important;
+    overflow: auto;
+  }
+
+  .wide-as-needed img
+  {
+    width: 50px;
+    height: 50px;
+    float: left;
+
+    border-radius: 5px;
+  }
+
+  .linkedaccount
+  {
+    width:100%;
+    float: left;
+  }
+
+  .linkedaccount .experience_head
+  {
+    margin: 0;
+    padding: 10px 25px;
+  }
+
+  .linkedaccount .experience_body_right
+  {
+    padding-bottom:10px;
+  }
+
+  .wide-as-needed .button
+  {
+    margin-right: 7px;
+    position: relative;
+  }
+
+  .wide-as-needed .button span
+  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 20px;
+  }
+
+  .wide-as-needed .button span .icon
+  {
+    color:#fff;
+  }
+
+  .instabtn
+  {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f08251+0,e24f58+49,d31a5f+100 */
+    background: #f08251; /* Old browsers */
+    background: -moz-linear-gradient(left, #f08251 0%, #e24f58 49%, #d31a5f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f08251 0%,#e24f58 49%,#d31a5f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f08251 0%,#e24f58 49%,#d31a5f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f08251', endColorstr='#d31a5f',GradientType=1 ); /* IE6-9 */
+    }
+
+    .side_edit
+    {
+      float: right;
+      color: #686868;
+    }
+
+    .addexperience
+    {
+      border:none!important;
+    }
+
+    h1
+    {
+      color: #ccc;
+    }
+
+    .read_more
+    {
+      padding: 10px;
+      color: #fff;
+    }
+
+}

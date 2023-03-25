@@ -1,0 +1,36 @@
+{% from 'AppBundle:layout/filter:_select.html.twig' import ha_sidebar_select, ha_sidebar_price %}
+{% set filters_form = search.form.createView() %}
+
+<nav id="sidebar-menu" class="mp-overlap">
+    <div id="sidebar-filters" class="mp-level root-level">
+        <form method="get" action="{{ action }}">
+            <h2>Filter By</h2>
+            <ul class="separator">
+                <li class="filter-mobile">
+                    {{ ha_sidebar_select(filters_form.type) }}
+                </li>
+                <li class="filter-mobile">
+                    {{ ha_sidebar_select(filters_form.bedrooms) }}
+                </li>
+                <li class="filter-mobile">
+                    {{ ha_sidebar_select(filters_form.bathrooms) }}
+                </li>
+                {{ ha_sidebar_price(filters_form.price) }}
+                <li class="filter-mobile">
+                    {{ ha_sidebar_select(filters_form.sort) }}
+                </li>
+                <li class="filter-mobile">
+                    {{ ha_sidebar_select(filters_form.media) }}
+                </li>
+                {% if json_url is defined and json_url is not empty %}
+                    <li class="filter-mobile">
+                        {% include "AppBundle:layout/filter:_map.html.twig" %}
+                    </li>
+                {% endif %}
+            </ul>
+            <button class="reset-and-close mdl-button mdl-js-button mdl-js-ripple-effect">
+                Reset
+            </button>
+        </form>
+    </div>
+</nav>

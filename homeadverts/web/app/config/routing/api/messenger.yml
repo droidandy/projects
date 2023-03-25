@@ -1,0 +1,7 @@
+_api_messenger_room:
+  prefix: /room
+  resource: "@AppBundle/Resources/config/routing/api/messenger/room.yml"
+
+_api_messenger_message:
+  prefix: /message
+  resource: "@AppBundle/Resources/config/routing/api/messenger/message.yml"

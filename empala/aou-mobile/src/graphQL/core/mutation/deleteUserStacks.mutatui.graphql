@@ -1,0 +1,11 @@
+mutation deleteUserStacks($deleteUserStacksStackIds: [ID!]!) {
+    deleteUserStacks(stackIds: $deleteUserStacksStackIds) {
+        ... on DeleteSuccess {
+            deleteIds
+        }
+        ... on DeleteInvalidInputError {
+            message
+            errorCode
+        }
+    }
+}

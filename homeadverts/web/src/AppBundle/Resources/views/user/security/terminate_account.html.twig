@@ -1,0 +1,22 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="column">
+            <h1 class="headline --property-details --separator">
+                <span class="heading">
+                    Account cancellation
+                </span>
+                <span class="sub-heading">
+                    Please click on the button below to remove your user user
+                </span>
+            </h1>
+
+            <div class="terminate-user">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock body %}

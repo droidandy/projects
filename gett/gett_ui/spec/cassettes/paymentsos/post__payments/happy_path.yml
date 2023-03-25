@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.paymentsos.com/payments
+    body:
+      encoding: UTF-8
+      string: '{"amount":39.87,"currency":"GBP","statement_soft_descriptor":"OT taxi
+        order: 102717","order":{"id":"booking_AD13109"},"additional_details":{"description":"Durgan,
+        Lemke and Nitzsche: Deangelo Zemlak: 102717"}}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      X-Payments-Os-Env:
+      - test
+      App-Id:
+      - com.gett.ot
+      Private-Key:
+      - 177aec50-6ad1-48c2-99cc-0abcf64a5fa6
+      Api-Version:
+      - 1.0.0
+      Public-Key:
+      - 23e7748c-dd38-46db-b3cb-a24167db670a
+      Content-Length:
+      - '209'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      L5d-Success-Class:
+      - '1.0'
+      X-Zooz-Request-Id:
+      - dd5354b8-a74e-480c-8901-967d883da1f0
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 06 Nov 2018 15:38:53 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - close
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, x-payments-os-env, content-type, idempotency_key,
+        app_id, x-client-user-agent, x-client-ip-address, public_key, private_key,
+        x-zooz-account-id, authorization, api-version
+      Access-Control-Max-Age:
+      - '86400'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"more_info":"Unauthorized, please check that your private key, app_id
+        and environment are match","category":"api_authentication_error","description":"We
+        were unable to authenticate your request."}'
+    http_version:
+  recorded_at: Tue, 06 Nov 2018 15:38:53 GMT
+recorded_with: VCR 4.0.0

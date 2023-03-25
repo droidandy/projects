@@ -1,0 +1,71 @@
+<!DOCTYPE html
+PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+        <style type="text/css">
+        a {text-decoration: none; color:#277AC2; }
+        td,th {border:none}
+        </style>
+    </head>
+    <body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial;">
+        <br><br><br><br>
+        <table bgcolor="#fff" style="margin:auto; border:1px solid #d3d3d3;" width="800" cellspacing='0' cellpadding='0'>
+            <tr>
+                <td style="padding-right:30px;"><br/>
+                    <table bgcolor="#fff" style="margin:auto;border-spacing: 10px 0;padding:0px 0px;" width="600" >
+                        <tr>
+                            <td>
+                                <h4>NOTICE:</h4>
+                                <p>An admin tool user has created a new brokerage. Please see below information and action items, and take the necessary steps to confirm if this brokerage already exists.</p>
+
+                                <ul>
+                                    <li>Brokerage Name: $!brokerage_name</li>
+                                    <li>Brokerage Address: $!brokerage_address</li>
+                                    <li>SAE: $!brokerage_sae</li>
+                                    <li>SAR: $!brokerage_sar</li>
+                                    <li>Created By: $!created_by</li>
+                                </ul>
+                            </td>
+                            <br/>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <h4>Action Items:</h4>
+
+                                <ul>
+                                    <li>
+                                        Confirm if this brokerage already exists:
+                                        <ul>
+                                            <li>Review brokerages in Anthem &amp; UHC admin sites;</li>
+                                            <li>Check list of brokerages within the Google Prod Accounts spreadsheet. Search by brokerage name and address;</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>If you confirm the brokerage <u>DOES NOT</u> exist, then verify the broker’s address via the admin tool.</li>
+                                    <li>If you confirm the brokerage <u>DOES exist</u>:  
+                                        <ol>
+                                            <li>Move the created client into existing brokerage; </li>
+                                            <li>Move any newly created users into existing brokerage;</li>
+                                            <li>Work with develop team to delete newly created brokerage.</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </td>
+                            <br/>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+            <td align='center'>
+                <div class="poweredByBenrevoLogoImage"></div>
+                <br/><br/>
+            </td>
+        </tr>
+    </table>
+    <br/><br/>
+</body>
+</html>

@@ -1,0 +1,119 @@
+{{- if .Values.dataGrabbers.apexExtendLogos.AWSCloudFrontUrl }}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ include "aou-backend.ae-logos-datagrabber.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+type: Opaque
+stringData:
+  AWSAccessKeyId: {{ .Values.dataGrabbers.apexExtendLogos.AWSAccessKeyId | quote }}
+  AWSSecretAccessKey: {{ .Values.dataGrabbers.apexExtendLogos.AWSSecretAccessKey | quote }}
+  AWSRegion: {{ .Values.dataGrabbers.apexExtendLogos.AWSRegion | quote }}
+  AWSS3BucketName: {{ .Values.dataGrabbers.apexExtendLogos.AWSS3BucketName | quote }}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "aou-backend.ae-logos-datagrabber.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: ae-logos-datagrabber
+spec:
+  {{- if .Values.dataGrabbers.apexExtendLogos.isScheduleB64Encoded }}
+  schedule: {{ .Values.dataGrabbers.apexExtendLogos.schedule | b64dec | quote }}
+  {{- else }}
+  schedule: {{ .Values.dataGrabbers.apexExtendLogos.schedule | quote }}
+  {{- end }}
+  concurrencyPolicy: "Replace"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+        {{- with .Values.imagePullSecrets }}
+          imagePullSecrets:
+            {{- toYaml . | nindent 8 }}
+        {{- end }}
+          serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+          containers:
+          - name: redis-bullmq
+            image: redis:6.2.6-alpine
+            imagePullPolicy: IfNotPresent
+            ports:
+            - name: client
+              containerPort: 6379
+          - name: ae-logos-datagrabber
+            image: "{{ .Values.image.repository }}:ae-logos-datagrabber-{{ .Chart.AppVersion }}"
+            imagePullPolicy: {{ .Values.image.pullPolicy }}
+            env:
+            - name: BULLMQ_REDIS_HOST
+              value: "127.0.0.1"
+            - name: BULLMQ_REDIS_PORT
+              value: "6379"
+            - name: BULLMQ_REDIS_MAX_PING_ATTEMPTS
+              value: "30"
+            - name: APEX_EXTEND_LOGOS_API_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-extend-logos-secret.fullname" . }}
+                  key: logosApiUrl
+            - name: APEX_EXTEND_LOGOS_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-extend-logos-secret.fullname" . }}
+                  key: logosApiKey
+            - name: APEX_EXTEND_LOGOS_API_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.apex-extend-logos-secret.fullname" . }}
+                  key: logosApiSecret
+            - name: APEX_EXTEND_LOGOS_AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.ae-logos-datagrabber.fullname" . }}
+                  key: AWSAccessKeyId
+            - name: APEX_EXTEND_LOGOS_AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.ae-logos-datagrabber.fullname" . }}
+                  key: AWSSecretAccessKey
+            - name: APEX_EXTEND_LOGOS_AWS_REGION
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.ae-logos-datagrabber.fullname" . }}
+                  key: AWSRegion
+            - name: APEX_EXTEND_LOGOS_AWS_S3_BUCKET_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.ae-logos-datagrabber.fullname" . }}
+                  key: AWSS3BucketName
+            - name: APEX_EXTEND_LOGOS_AWS_CLOUDFRONT_URL
+              value: {{ .Values.dataGrabbers.apexExtendLogos.AWSCloudFrontUrl | quote }}
+            - name: APOLLO_SERVER_HOST_URI
+              value: "http://{{ include "aou-backend.apollo.fullname" . }}:{{ .Values.services.apollo.port }}" 
+            - name: AWS_COGNITO_USER_POOL_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+                  key: userPoolId
+            - name: AWS_COGNITO_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+                  key: clientId
+            - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.authentication-secret.fullname" . }}
+                  key: marketdataUpdaterUserName
+            - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.authentication-secret.fullname" . }}
+                  key: marketdataUpdaterUserPassword
+          restartPolicy: Never
+      backoffLimit: {{ .Values.dataGrabbers.apexExtendLogos.backoffLimit }}
+  successfulJobsHistoryLimit: {{ .Values.dataGrabbers.apexExtendLogos.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.dataGrabbers.apexExtendLogos.failedJobsHistoryLimit }}
+status: {}
+{{- end }}

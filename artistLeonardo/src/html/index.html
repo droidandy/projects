@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Arte Divierte</title>
+    <link rel="stylesheet" href="libs/css/framework7.ios.css">
+    <link rel="stylesheet" href="libs/css/framework7.ios.colors.css">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.pAsyncInit = function() {
+            PDK.init({
+                appId: "4803466922492445596",
+                cookie: true
+            });
+        };
+
+        (function(d, s, id){
+            var js, pjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://assets.pinterest.com/sdk/sdk.js";
+            pjs.parentNode.insertBefore(js, pjs);
+        }(document, 'script', 'pinterest-jssdk'));
+    </script>
+    <script src="https://www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+</head>
+<body>
+<!-- Splash screen -->
+<div class="splashScreen" id="splash">
+    <div class="wrapper">
+        <div class="img" id="diff-img"></div>
+        <img src="img/logo-splash.png" alt="" width="215"/>
+        <br/> <!-- this br is needed here -->
+    </div>
+</div>
+<div class="chooseLangPanel" id="lang-panel">
+    <div class="wrapper">
+        <div class="desc">
+            <span>Please choose language</span>
+            <span>Por favor elige tu idioma</span>
+            <div class="arrow"></div>
+        </div>
+        <div class="lang">
+            <div class="lang--flag es" data-lang="es">
+                <div class="title">Español</div>
+            </div>
+            <div class="lang--flag en" data-lang="en">
+                <div class="title">English</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-right panel-cover" id="side-menu">
+
+</div>
+
+<div class="views">
+    <div class="view view-main">
+        <div class="navbar">
+
+            <div class="navbar-inner" data-page="index">
+                <div class="center sliding appName">
+                    <img src="img/logo-splash.png" alt="" width="160"/>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="videoTutorials-themes">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_video">Videos tutoriales</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="videoTutorials-tutorials">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding" id="videoTutorial-title">al la la</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="photoGallery-albums">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_gallery">Galerías de fotos</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="photoGallery-photos">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding" id="photoGallery-photos-title">blah blah</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="blog">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_blog">Blog</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="materials">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_materials">Materiales</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="books">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_books">Libros</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="courses">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_courses">Cursos</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="about">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_leo">Leonardo</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="fan-art">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center translate" data-word="menu_fanart">Fan Art</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="fan-art-details">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center translate" data-word="menu_fanart">Fan Art</div>
+                <div class="right">
+                    <a href="#" class="open-panel link icon-only">
+                        <i class="icon icon-menu"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="fan-art-upload">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="upload_image">Cargar imagen</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="fan-art-signup">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="fanArt_signUp">Regístrate</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="fan-art-signin">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="fanArt_signIn">Iniciar sesión</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="subscribe">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_subscribe">Únete a mi lista de correo</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="other">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center sliding translate" data-word="menu_other">Apps</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="vip-zone">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center translate" data-word="menu_vip">Área VIP</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="vip-list">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center translate" data-word="menu_vip">Área VIP</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="media">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center translate" data-word="media">Área VIP</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="contact">
+                <div class="left">
+                    <a href="#" class="back link">
+                        <i class="icon icon-back"></i>
+                        <span class="translate" data-word="back">Volver</span>
+                    </a>
+                </div>
+                <div class="center translate" data-word="menu_contact">Área VIP</div>
+            </div>
+
+            <div class="navbar-inner cached" data-page="warning">
+                <div class="center sliding appName">
+                    <img src="img/logo-splash.png" alt="" width="160"/>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pages navbar-through">
+
+            <div data-page="index" class="page white no-swipeback" id="index-page"></div>
+
+            <div data-page="photoGallery-albums" class="page cached" id="photoGallery-albums"></div>
+
+            <div data-page="photoGallery-photos" class="page cached" id="photoGallery-photos"></div>
+
+            <div data-page="blog" class="page cached" id="blog"></div>
+
+            <div data-page="materials" class="page cached" id="materials"></div>
+
+            <div data-page="books" class="page cached" id="books"></div>
+
+            <div data-page="about" class="page cached" id="about"></div>
+
+            <div data-page="subscribe" class="page cached" id="subscribe"></div>
+
+            <div data-page="other" class="page cached" id="other"></div>
+
+            <div data-page="media" class="page cached" id="media"></div>
+
+            <div data-page="contact" class="page cached" id="contact"></div>
+
+            <div data-page="warning" class="page cached no-swipeback white" id="warning">
+                <div class="page-content warning-page">
+                    <div class="content-block-warning">
+                        <p class="message translate" data-word="adultWarning">This app contains mild artistic nudity.</p>
+                        <p><a href="#" class="button color-white translate" id="get-access" data-word="getAccess">Get access</a></p>
+                    </div>
+                    <div class="bg2"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="cordova.js"></script>
+<script src="libs/framework7.min.js"></script>
+<script src="bundle.js"></script>
+</body>
+</html>

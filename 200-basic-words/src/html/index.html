@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <title>200 basic words</title>
+    <link rel="stylesheet" href="libs/framework7.material.min.css">
+    <link rel="stylesheet" href="libs/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="splashscreen">
+      <div class="logo-loading">Loading <span id="loading-dots">...</span></div>
+      <div class="logo-copyright">Soria Moria App &copy; 2016</div>
+    </div>
+    <div id="offline" class="offline-mode" style="display: none;">
+      <div class="offline-info">Ooops... Sorry! No internet connection. Upgrade to be able to use app without internet.</div>
+    </div>
+    <div class="views">
+      <div class="view view-main">
+
+
+        <div class="pages navbar-fixed">
+          <div data-page="main" class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="main-header" id="main-header"></div>
+                <div class="menu-link right">
+                  <a href="#" class="link icon-only open-popover" data-popover=".popover-links"><i class="icon icon-bars"></i></a>
+                </div>
+              </div>
+            </div>
+            <form class="searchbar main-searchbar"></form>
+            <div class="page-content banner-space">
+              <div class="list-block list-block-search searchbar-found" id="words-list">
+              </div>
+            </div>
+          </div>
+
+          <div data-page="favorites" class="page cached">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="back link icon-only"><i class="icon icon-back"></i></a>
+                </div>
+                <div class="center">Favorites</div>
+                <div class="right"></div>
+              </div>
+            </div>
+            <form class="searchbar favorites-searchbar"></form>
+            <div class="page-content banner-space">
+              <div class="list-block list-block-search searchbar-found" id="favorites-list"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="in-app-purchase" style="display: none;">
+        <div class="close-in-app cross-icon"></div>
+        <div class="card purchase-item">
+            <div class="card-content">
+                <div class="card-content-inner purchase-content" id="offline-title"></div>
+            </div>
+        </div>
+        <div class="card purchase-item">
+            <div class="card-content">
+                <div class="card-content-inner purchase-content" id="swear-words-title"></div>
+            </div>
+        </div>
+        <div class="card purchase-item">
+            <div class="card-content">
+                <div class="card-content-inner purchase-content" id="pickup-title"></div>
+            </div>
+        </div>
+    </div>
+    <div class="popover popover-links">
+      <div class="popover-angle"></div>
+      <div class="popover-inner">
+        <div class="list-block">
+          <ul>
+            <li><a href="#" class="list-button item-link favorites-link close-popover">Favorites</a></li>
+            <li><a href="#" class="list-button item-link share-link close-popover">Share</a></li>
+            <li><a href="#" class="list-button item-link close-popover" id="upgrade-app">Upgrade</a></li>
+            <li><a href="#" class="list-button item-link close-popover" id="rate-app">Rate it</a></li>
+            <li><a href="#" class="list-button item-link" data-popover=".popover-about" id="about-app">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="popover popover-about">
+      <div class="popover-angle"></div>
+      <div class="popover-inner">
+          <div style="padding: 10px">
+              <a id="close-about" class="cross-icon close-popover"></a>
+              <h2 style="text-align: center;">About</h2>
+              <p>Learning a language is
+                  fun and easy. 80% of the words used
+                  daily can be listed in 200 words. By
+                  learning those key words you will be
+                  able to make a conversations and
+                  communicate with ease.
+              </p>
+              <p>
+                  With Maxi’s 200 method I learned 7
+                  languages. It’s very efficient and I
+                  would like to share it to the world
+              </p>
+              <p>
+                  Don’t forget that learning a
+                  language is about adventure and
+                  openness. Don’t be shy and always
+                  talk with a smile, 99% of people like
+                  when someone try to learn their
+                  language...
+                  Go out there and have fun!
+              </p>
+              <p>Max</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popover popover-lang-from"></div>
+    <div class="popover popover-lang-to"></div>
+    <script type="text/javascript" src="libs/framework7.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/bundle/bundle.js"></script>
+  </body>
+</html>

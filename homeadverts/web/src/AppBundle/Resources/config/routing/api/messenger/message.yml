@@ -1,0 +1,14 @@
+ha_message_new:
+    path:  /room/{id}
+    defaults: { _controller: AppBundle:Api\Messenger\Message:new }
+    methods:  [POST]
+
+ha_message_get:
+    path:  /{id}
+    defaults: { _controller: AppBundle:Api\Messenger\Message:get }
+    methods:  [GET]
+
+ha_message_id_read:
+    path:  /{id}/read
+    defaults: { _controller: AppBundle:Api\Messenger\Message:read }
+    methods:  [POST]

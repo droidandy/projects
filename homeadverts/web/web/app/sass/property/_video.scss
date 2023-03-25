@@ -1,0 +1,130 @@
+.video-wrapper {
+  *,
+  *:after,
+  *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  visibility: hidden;
+
+  &.\--open {
+    visibility: visible;
+    #video-overlay {
+      height: 100%;
+      border-width: 60px;
+      -webkit-transition: border-width 0.5s, background-color 0.5s;
+      transition: border-width 0.5s, background-color 0.5s;
+      background: #000;
+      .video-close {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+
+        span:before,
+        span:after {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #fff;
+          content: '';
+          @include transition(0.5s);
+        }
+        span:before {
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+        span:after {
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+
+        &:hover {
+          span:before,
+          span:after {
+            background: #aaa;
+          }
+        }
+
+        @media screen and (max-width: $tablet_width) {
+          span:before,
+          span:after {
+            background: #666;
+          }
+        }
+      }
+    }
+  }
+
+  &:not(.\--open) {
+    pointer-events: none;
+  }
+
+  #video-overlay {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #000;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: border-width 0.5s, background-color 0.5s, height 0s 0.5s;
+    transition: border-width 0.5s, background-color 0.5s, height 0s 0.5s;
+    video {
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background: #000;
+    }
+    .powered-by-wellcomemat {
+      display: none;
+      color: #aaa;
+      text-align: center;
+      margin-top: -10px;
+      font-size: 12px;
+      font-style: italic;
+      a {
+        color: #cc0606;
+        font-size: 14px;
+        font-style: normal;
+      }
+    }
+    #property-video-wellcomemat,
+    #property-video-youtube {
+      padding: 30px;
+      background: #000;
+    }
+    .video-close {
+      position: fixed;
+      display: block;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 200;
+
+      span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        font-size: 0px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+  }
+}

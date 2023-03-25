@@ -1,0 +1,29 @@
+<div class="nav-header">
+    <div class="container">
+        <div class="nav-row">
+            <div class="row">
+
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="{{ path('ha_homepage') }}">
+                                <img class="logo" src="{{ asset('assets/images/logo/logo_black.png') }}"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                {% if is_phone or is_tablet %}
+                    <div class="actions --mobile">
+                        {% include 'AppBundle:layout/header/nav:mobile.html.twig' %}
+                    </div>
+                {% else %}
+                    <div class="actions">
+                        {% include 'AppBundle:layout/header/nav:editor_desktop.html.twig' %}
+                        {% include 'AppBundle:layout/header/nav:profile_desktop.html.twig' %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

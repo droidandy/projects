@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "name": "Medical",
+      "note": {
+        "entry": "You may choose from the following quotes options (Option 1 closely matches current):",
+        "options": [
+          "OPTION 1 - Stand Alone: Select Plus HMO or Select HMO",
+          "OPTION 2 - Select Plus HMO/PPO",
+          "OPTION 3 - HMO/Priority Select HMO/PPO"
+        ],
+        "description": "",
+        "commission": "Medical rates include 5% commission"
+      }
+    },
+    {
+      "name": "Dental",
+      "note": {
+        "entry": "",
+        "options": [
+          "DHMO rates are included",
+          "DPPO rates are included"
+        ],
+        "description": "Dental rates are guaranteed 12 months and can be extended to 24 months by loading the rates 3.5% for November / December 2016 effective date) and 5% (for 2017 effective dates).",
+        "commission": "DHMO rates include 10% commission, DPPO rates include X% commission"
+      }
+    },
+    {
+      "name": "Vision",
+      "note": {
+        "entry": "Both employer payd and voluntary rates are included",
+        "options": [],
+        "description": "Rates are guaranteed 36 months",
+        "commission": "Vision rates iclude a down grade 10% comission"
+      }
+    }
+  ]
+}

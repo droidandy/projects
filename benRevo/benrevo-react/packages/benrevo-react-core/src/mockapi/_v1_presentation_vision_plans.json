@@ -1,0 +1,508 @@
+{
+  "optionName": "Option 1",
+  "plans": [
+    {
+      "name": "Vision",
+      "type": "current",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Exams",
+          "value": "Every 12 months",
+          "type": "STRING"
+        },
+        {
+          "name": "Lenses",
+          "value": "Every 12 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frames",
+          "value": "Every 24 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Exam Copay",
+          "value": "20",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Materials Copay",
+          "value": "N/A",
+          "type": "STRING"
+        },
+        {
+          "name": "Contacts Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frame Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "UHC Vision 10",
+      "type": "matchPlan",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Exams",
+          "value": "Every 12 months",
+          "type": "STRING"
+        },
+        {
+          "name": "Lenses",
+          "value": "Every 12 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frames",
+          "value": "Every 24 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Exam Copay",
+          "value": "20",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Materials Copay",
+          "value": "N/A",
+          "type": "STRING"
+        },
+        {
+          "name": "Contacts Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frame Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "UHC Vision 20",
+      "type": "alternative",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Exams",
+          "value": "Every 12 months",
+          "type": "STRING"
+        },
+        {
+          "name": "Lenses",
+          "value": "Every 12 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frames",
+          "value": "Every 24 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Exam Copay",
+          "value": "20",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Materials Copay",
+          "value": "N/A",
+          "type": "STRING"
+        },
+        {
+          "name": "Contacts Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frame Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "UHC Vision 30",
+      "type": "alternative",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Exams",
+          "value": "Every 12 months",
+          "type": "STRING"
+        },
+        {
+          "name": "Lenses",
+          "value": "Every 12 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frames",
+          "value": "Every 24 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Exam Copay",
+          "value": "20",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Materials Copay",
+          "value": "N/A",
+          "type": "STRING"
+        },
+        {
+          "name": "Contacts Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frame Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "UHC Vision 40",
+      "type": "alternative",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Exams",
+          "value": "Every 12 months",
+          "type": "STRING"
+        },
+        {
+          "name": "Lenses",
+          "value": "Every 12 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frames",
+          "value": "Every 24 months",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Exam Copay",
+          "value": "20",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Materials Copay",
+          "value": "N/A",
+          "type": "STRING"
+        },
+        {
+          "name": "Contacts Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Frame Allowance",
+          "value": "130",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    }
+  ],
+  "rx":[
+    {
+      "name":"BLUE SHIELD HMO PLAN (Access + HMO) RX",
+      "type":"current",
+      "carrier":"Blue Shield",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"100",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"101",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"102",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"103",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"104",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"105",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"106",
+          "type":"STRING"
+        }
+      ]
+    },{
+      "name":"T-Premier HMO 10/100% RX",
+      "type":"matchPlan",
+      "carrier":"Anthem Blue Cross",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"3",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"4",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"5",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"6",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"7",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"8",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"9",
+          "type":"STRING"
+        }
+      ]
+    },{
+      "name":"T-Premier HMO 15/100% RX",
+      "type":"alternative",
+      "carrier":"Anthem Blue Cross",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"4",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"5",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"6",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"7",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"8",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"9",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"10",
+          "type":"STRING"
+        }
+      ]
+    },{
+      "name":"T-Clsc HMO 20/250A/125OP RX",
+      "type":"alternative",
+      "carrier":"Anthem Blue Cross",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"5",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"6",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"7",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"8",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"9",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"10",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"11",
+          "type":"STRING"
+        }
+      ]
+    }
+  ]
+}

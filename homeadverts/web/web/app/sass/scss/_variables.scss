@@ -1,0 +1,46 @@
+$mobile_small_width: 380px;
+$mobile_width: 450px;
+$tablet_width: 768px;
+$desktop_width: 1024px;
+$desktop_big_width: 1200px;
+
+$color_1: #212121; // General story/listing text, headings, logo.
+$color_2: #9e9e9e; // Sub text, icons, seperators.
+$color_3: #424242; // Buttons, links, backgrounds.
+$color_4: #b1c1cd; // Various.
+$color_5: #ecf0f2; // Sub text, various.
+$color_6: #fafafa; // Overall backgrounds.
+$color_7: #212121; // Notifications.
+
+$color_1_darken: darken( $color_1, 20 );
+$color_1_lighten: lighten( $color_1, 20 );
+$color_2_darken: darken( $color_2, 20 );
+$color_2_lighten: lighten( $color_2, 20 );
+$color_3_darken: darken( $color_3, 20 );
+$color_3_lighten: lighten( $color_3, 20 );
+$color_4_darken: darken( $color_4, 20 );
+$color_4_lighten: lighten( $color_4, 20 );
+
+$heading_paragraph_weight: 400;
+$heading_weight: 400;
+
+$font_size_l: 36px;
+$font_size_m: 28px;
+$font_size_s2: 16px;
+$font_size_s1: 14px;
+
+$color_request_form: #cd3f2f;
+$color_request_form_forbes: #E8AE03;
+
+$editor_width: 710px;
+$float_width: 992px;
+$float_size: 75%;
+$float_offset: 150px;
+$grid_width: 1000px;
+$active_hover_color: #f55555;
+$active_select_color: #b00909;
+$background_color: white;
+
+$header_height: 130px;
+$mobile_header_height: 110px;
+$filter_height: 48px;

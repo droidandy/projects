@@ -1,0 +1,105 @@
+{%- assign quantity = 1 -%}
+{%- capture euroExchangeRate %}{%- include 'currency-exchange' -%}{%- endcapture -%}
+
+{%-comment%}
+{%- if product -%}
+{%- if price>0 -%}
+{%- else -%}
+{%- assign price = product.price -%}
+{%- endif -%}
+{%- endif -%}
+{%endcomment-%}
+
+{%- if cart.attributes.currency -%}
+{%- assign currency = cart.attributes.currency -%}
+{%- else -%}
+{%- assign currency = cart.currency.iso_code -%}
+{%- endif -%}
+
+
+{%- if currency == 'BYN' -%}
+{%comment%}
+{%- if product.metafields.price.BYN -%}
+{%- assign currencyPrice = product.metafields.price.BYN | times: quantity -%}
+{%- else -%}
+{%- if priceEUR -%}{%- assign price = priceEUR -%}{%-endif-%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- endif -%}
+{%endcomment%}
+
+{%- if priceEUR -%}{%- assign price = priceEUR -%}{%-endif-%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | append: ' р.' -%}
+{%- elsif currency == 'RUB' -%}
+{%- if priceEUR -%}{%- assign price = priceEUR -%}{%-endif-%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | append: ' <i class="fas fa-xs fa-ruble-sign"></i>' -%}
+{%- elsif currency == 'USD' or currency == 'GBP' or currency == 'CAD' or currency == 'DKK' -%}
+
+{%- assign euroExchangeRate = all_products['rate-exchanger'].price | divided_by: 100 -%}
+
+{%- if priceEUR -%}{%- assign price = priceEUR | times: euroExchangeRate | divided_by: 100 -%}{%-endif-%}
+{%- assign currencyFormat = price | times: quantity | money_without_trailing_zeros -%}
+
+{%comment%}
+{%- elsif currency == 'CHF' -%}
+{%- assign euroExchangeRate = 1.09 -%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | prepend: 'CHF ' -%}
+{%- assign currencyFormat = currencyFormat | append: '.00' -%}
+{%- assign custom_currency_format = "CHF {{ amount }}" -%}
+{%- elsif currency == 'RUB' -%}
+{%- assign euroExchangeRate = 73.92 -%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | append: ' ₽' -%}
+{%- assign custom_currency_format = "{{amount_no_decimals}} ₽" -%}
+{%- elsif currency == 'UAH' -%}
+{%- assign euroExchangeRate = 27.94 -%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | append: ' грн' -%}
+{%- assign custom_currency_format = "{{amount_no_decimals}} грн" -%}
+{%- elsif currency == 'USD' -%}
+{%- assign euroExchangeRate = 1.11 -%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | prepend: '$' -%}
+{%- assign custom_currency_format = "${{amount_no_decimals}}" -%}
+{%- elsif currency == 'GBP' -%}
+{%- assign euroExchangeRate = 0.91 -%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | prepend: '£' -%}
+{%- assign custom_currency_format = "£{{amount_no_decimals}}" -%}
+{%- elsif currency == 'KZT' -%}
+{%- assign euroExchangeRate = 429.71 -%}
+{%- assign currencyPrice = price | divided_by: 100 | times: euroExchangeRate | ceil -%}
+{%- assign currencyPrice = currencyPrice | times: quantity -%}
+{%- assign currencyFormat = currencyPrice | append: ' тг' -%}
+{%- assign custom_currency_format = "{{amount_no_decimals}} тг" -%}
+{%endcomment%}
+{%- else -%}
+{%- assign euroExchangeRate = 1 -%}
+
+{%- if priceEUR -%}{%- assign price = priceEUR | times: euroExchangeRate -%}{%-endif-%}
+{%- assign currencyFormat = price | times: quantity | money_with_currency -%}
+
+{%- endif -%}
+
+{%- if layout == "number" -%}
+{%- if currencyPrice -%}
+{{- currencyPrice | times: 100 -}}
+{%- else -%}
+{{- price | times: quantity -}}
+{%- endif -%}
+{%- elsif layout == "exchange" -%}
+{{- euroExchangeRate -}}
+{%- else -%}
+{%- if price == 0 %} {%- assign currencyFormat = "бесплатно" -%}{%-endif-%}
+<span class="currencyPrice {{currency}}">{{-currencyFormat-}}</span>
+{%- endif -%}

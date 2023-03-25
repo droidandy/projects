@@ -1,0 +1,26 @@
+{
+  "request": {
+    "flightId": {
+      "requested": "9868480213244",
+      "interpreted": 9868480213244
+    },
+    "includeFlightPlan": {
+      "requested": "false",
+      "interpreted": false
+    },
+    "maxPositions": {
+      "requested": "1",
+      "interpreted": 1
+    },
+    "maxPositionAgeMinutes": {},
+    "extendedOptions": {},
+    "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/track/9868480213244"
+  },
+  "appendix": {},
+  "error": {
+    "httpStatusCode": 404,
+    "errorCode": "UNKNOWN_FID",
+    "errorId": "f709e350-3065-4bf1-8d29-f1540fa4258c",
+    "errorMessage": "Unable to find a flight with the ID given"
+  }
+}

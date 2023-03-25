@@ -1,0 +1,30 @@
+replicaCount: 1
+
+containers:
+  - image: registry.rgsbank.ru/cde107/marketplace/bff
+    name: node
+    resources:
+      memory: '256Mi'
+      cpu: '125m'
+    ports:
+      - containerPort: 5000
+        name: web
+    env:
+      - name: USER_URL
+        value: http://users-def
+      - name: DIR_URL
+        value: http://catalog-def:9000
+      - name: APPLICATION_URL
+        value: http://application-def
+      - name: BILLING_URL
+        value: http://billing-def
+      - name: DADATA_URL
+        value: https://suggestions.dadata.ru/suggestions/api/4_1/rs
+      - name: MARKETPLACE_URL
+        value: '*.marketplace.stg.bankauto.lo'
+      - name: DEALER_OFFICE_URL
+        value: '*.marketplace.stg.bankauto.lo'
+      - name: BLOG_URL
+        value: '*.marketplace.stg.bankauto.lo'
+      - name: OKP_URL
+        value: '*.omnychannel.stg.bankauto.lo'

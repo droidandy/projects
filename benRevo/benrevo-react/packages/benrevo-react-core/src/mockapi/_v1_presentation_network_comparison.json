@@ -1,0 +1,101 @@
+{
+  "medicalGroup":"Southern California",
+  "rows": [
+    {
+      "dec":"4209",
+      "medicalGroupName":"BAKERSFIELD FAMILY MEDICAL CENTER",
+      "country":"Kern",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"true",
+      "focus":"false",
+      "flexNetwork1":"true",
+      "flexNetwork2":"false",
+      "flexNetwork3":"false"
+    },
+    {
+      "dec":"25188",
+      "medicalGroupName":"GOLDEN EMPIRE MANAGED CARE II A MEDICAL GROUP INC/DELANO",
+      "country":"Kern",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"false",
+      "focus":"false",
+      "flexNetwork1":"true",
+      "flexNetwork2":"false",
+      "flexNetwork3":"false"
+    },
+    {
+      "dec":"25190",
+      "medicalGroupName":"GOLDEN EMPIRE MANAGED CARE II A MEDICAL GROUP INC/BAKERSFIELD",
+      "country":"Kern",
+      "signature":"true",
+      "advantage":"false",
+      "alliance":"false",
+      "focus":"false",
+      "flexNetwork1":"false",
+      "flexNetwork2":"true",
+      "flexNetwork3":"true"
+    },
+    {
+      "dec":"7665",
+      "medicalGroupName":"HERITAGE PHYSICIAN NETWORK",
+      "country":"Kern",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"true",
+      "focus":"false",
+      "flexNetwork1":"true",
+      "flexNetwork2":"true",
+      "flexNetwork3":"true"
+    },
+    {
+      "dec":"10246",
+      "medicalGroupName":"ACCESS MEDICAL GROUP INC",
+      "country":"Los Angeles",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"false",
+      "focus":"true",
+      "flexNetwork1":"false",
+      "flexNetwork2":"true",
+      "flexNetwork3":"true"
+    },
+    {
+      "dec":"25517",
+      "medicalGroupName":"ACCESS SANTA MONICA INDEPENDENT PHYSICIANS ASSOCIATION INC",
+      "country":"Los Angeles",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"false",
+      "focus":"false",
+      "flexNetwork1":"false",
+      "flexNetwork2":"true",
+      "flexNetwork3":"false"
+    },
+    {
+      "dec":"10217",
+      "medicalGroupName":"ALAMITOS IPA",
+      "country":"Los Angeles",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"false",
+      "focus":"false",
+      "flexNetwork1":"true",
+      "flexNetwork2":"false",
+      "flexNetwork3":"false"
+    },
+    {
+      "dec":"12244",
+      "medicalGroupName":"ALLIED PACIFIC OF CALIFORNIA IPA (FORMERLY ALLIED PHYSICIANS OF CALIFORNIA)",
+      "country":"Los Angeles",
+      "signature":"true",
+      "advantage":"true",
+      "alliance":"false",
+      "focus":"true",
+      "flexNetwork1":"false",
+      "flexNetwork2":"true",
+      "flexNetwork3":"false"
+    }
+  ]
+}

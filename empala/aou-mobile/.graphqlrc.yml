@@ -1,0 +1,23 @@
+schema: "https://stg-o3ts73bp1g559prr.launchpad-saas.net/"
+documents: "./src/graphQL/**/*.graphql"
+extensions:
+  codegen:
+    hooks:
+      afterAllFileWrite:
+        - ./node_modules/.bin/prettier --write
+    generates:
+      ./src/graphQL/generated-types.tsx:
+        config:
+          withHooks: true
+          withHOC: true
+          withComponent: true
+        plugins:
+          - "typescript"
+          - "typescript-operations"
+          - "typescript-react-apollo"
+      ./src/graphQL/graphql.schema.json:
+        plugins:
+          - "introspection"
+      ./src/graphQL/schema.graphql:
+        plugins:
+          - schema-ast

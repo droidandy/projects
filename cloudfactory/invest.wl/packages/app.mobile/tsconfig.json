@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "jsx": "react-native",
+    "lib": ["dom", "es2015", "es2016"],
+    "baseUrl": ".",
+    "paths": {
+      "_boot": ["src/boot"],
+      "_common/*": ["src/common/*"],
+      "_system/*": ["src/system/*"],
+      "_domain/*": ["src/domain/*"],
+      "_view/*": ["src/view/*"]
+    }
+  }
+}

@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BenRevo</title>
+    <style type="text/css">
+      @page { size: A4; }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .maintble {
+          max-width: 800px;
+          width:100%;
+          margin:0 auto;
+          border:none;
+      }
+      a {
+        text-decoration: none !important;
+        color: #000;
+      }
+      td {
+        padding: 5px 0;
+      }
+      .icon {
+        width: 54px;
+        height: 42px;
+      }
+      #section-text {
+        margin-top: 18.3px;
+        padding-left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        color: #333;
+        width: 230px;
+      }
+      #logo {
+        width: 200px;
+        height: 47px;
+      }
+
+      .main-table td {
+        font-size: 16px;
+        color: #000;
+        width: 146px;
+      }
+      tr.trBorder td{
+        border-bottom: 1px solid #ccc;
+      }
+
+      .fullBorder{
+        border: 1px solid #ccc;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+
+      .centered {
+        text-align: center;
+      }
+
+      .centered td:first-child {
+        text-align: left;
+        padding-left: 20px;
+      }
+
+      .centered td {
+        text-align: center;
+      }
+
+      .header-text {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        color: #333;
+        border-bottom: 1px solid #999;
+      }
+      tr .table-header {
+        background-color: #e1f1f8;
+        height: 18px;
+        border-bottom: none !important;
+        color: #898680;
+      }
+
+      .table-header > td {
+        padding: 0;
+      }
+
+      .footer-table {
+        font-size: 8px;
+        color: #000;
+        margin-top: 130px;
+      }
+      .greyColor{
+        color: #666666;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="maintble" border="0">
+      <tr>
+          <td>
+              <table style="width: 100%; table-layout: fixed;">
+                <tr>
+                  <td style="width: 54px;"><img src="$!{product_logo}" class="icon"></img></td>
+                  <td id="section-text">$!{product}</td>
+                  <td></td>
+                  #if($StringUtils.isNotBlank($!brokerage_logo))<td><img id="logo" src="$!{brokerage_logo}"/></td>#end
+                </tr>
+              </table>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="main-table">
+            <tr>
+              <td class="header-text" colspan="4">PLANS</td>
+            </tr>
+            <tr class="table-header">
+              <td class="greyColor"><div style="background: #e1f1f8 !important;">NAME</div></td>
+              <td class="centered greyColor"><div style="background: #e1f1f8 !important;">TYPE</div></td>
+              <td class="centered greyColor"><div style="background: #e1f1f8 !important;">CARRIER</div></td>
+              <td><div style="background: #e1f1f8 !important;">&nbsp;</div></td>
+            </tr>
+            #foreach($c in ${optionList} )
+              <tr class="trBorder">
+                <td>$!{c.label}</td>
+                <td class="centered">$!{c.planType}</td>
+                <td class="centered">#if($!optionToCarrier.get($c.id)) $!optionToCarrier.get($c.id) #else - #end</td>
+                <td></td>
+              </tr>
+            #end
+          </table>
+        </td>
+      </tr>
+
+      <tr><td><p></p></td></tr>
+      <tr>
+        <td>
+          <table class="main-table">
+            <tr>
+              <td class="header-text" colspan="4">Rates &amp; Contribution</td>
+            </tr>
+            <tr class="table-header">
+              <td class="greyColor"><div style="background: #e1f1f8 !important;">NAME/TIER</div></td>
+              <td class="centered greyColor"><div style="background: #e1f1f8 !important;">CURRENT RATES</div></td>
+              <td class="centered greyColor"><div style="background: #e1f1f8 !important;">RENEWAL RATES</div></td>
+              <td class="centered greyColor"><div style="background: #e1f1f8 !important;">CONTRIBUTION</div></td>
+            </tr>
+            #foreach($c in ${optionList} )
+              #if($isVoluntary)
+                  #set($f1 = "Voluntary")
+                  #set($f2 = "Voluntary")
+                  #set($f3 = "Voluntary")
+                  #set($f4 = "Voluntary")
+              #else
+                  #if(${c.tier1Contribution})
+                      #set($f1 = "$dol$!{c.tier1Contribution}$per")
+                  #end
+                  #if(${c.tier2Contribution})
+                      #set($f2 = "$dol$!{c.tier2Contribution}$per")
+                  #end
+                  #if(${c.tier3Contribution})
+                      #set($f3 = "$dol$!{c.tier3Contribution}$per")
+                  #end
+                  #if(${c.tier4Contribution})
+                      #set($f4 = "$dol$!{c.tier4Contribution}$per")
+                  #end
+              #end
+              <tr class="trBorder">
+                <td class="name" colspan="4">$!{c.label}  #if($!rate_type == 'BANDED')(Age-Banded)#end</td>
+              </tr>
+
+              #if(${numOfTiers} >= 1)
+                <tr class="centered trBorder">
+                  <td>Employee Only</td>
+                  #if($!rate_type == 'COMPOSITE')
+                    <td>#if(${c.tier1Rate}) $$DecimalFormat.format($c.tier1Rate) #else - #end</td>
+                    <td>#if(${c.tier1Renewal}) $$DecimalFormat.format($c.tier1Renewal) #else - #end</td>
+                  #elseif($!rate_type == 'BANDED')
+                    <td rowspan="4" class="fullBorder"> #if(${c.monthlyBandedPremium}) $$DecimalFormat.format($c.monthlyBandedPremium) #else - #end<br/>(Monthly Cost)</td>
+                    <td rowspan="4" class="fullBorder">#if(${c.monthlyBandedPremiumRenewal}) $$DecimalFormat.format($c.monthlyBandedPremiumRenewal) #else - #end <br/>(Monthly Cost)</td>
+                  #end
+                  <td>$f1</td>
+                </tr>
+              #end
+
+              #if(${numOfTiers} >= 2)
+                <tr class="centered trBorder">
+                  <td>#if(${numOfTiers} == 2)Employee + Family #elseif(${numOfTiers} == 3) Employee + 1 #else Employee + Spouse#end</td>
+                  #if($!rate_type == 'COMPOSITE')
+                    <td>#if(${c.tier2Rate}) $$DecimalFormat.format($c.tier2Rate) #else - #end</td>
+                    <td>#if(${c.tier2Renewal}) $$DecimalFormat.format($c.tier2Renewal) #else - #end</td>
+                  #end
+                  <td>$f2</td>
+                </tr>
+              #end
+
+              #if(${numOfTiers} >= 3)
+                <tr class="centered trBorder">
+                  <td>#if(${numOfTiers} == 3)Employee + 2 or more #else Employee + Child(ren)#end</td>
+                  #if($!rate_type == 'COMPOSITE')
+                    <td>#if(${c.tier3Rate}) $$DecimalFormat.format($c.tier3Rate) #else - #end</td>
+                    <td>#if(${c.tier3Renewal}) $$DecimalFormat.format($c.tier3Renewal) #else - #end</td>
+                  #end
+                  <td>$f3</td>
+                </tr>
+              #end
+
+              #if(${numOfTiers} >= 4)
+                <tr class="centered trBorder">
+                  <td>Employee + Family</td>
+                  #if($!rate_type == 'COMPOSITE')
+                    <td>#if(${c.tier4Rate}) $$DecimalFormat.format($c.tier4Rate) #else - #end</td>
+                    <td>#if(${c.tier4Renewal}) $$DecimalFormat.format($c.tier4Renewal) #else - #end</td>
+                  #end
+                  <td>$f4</td>
+                </tr>
+              #end
+
+              #if(${c.outOfStateRate} || ${c.outOfStateContribution} || ${c.outOfStateRenewal})
+                #if($isVoluntary)
+                    #set($f6 = "Voluntary")
+                    #set($f7 = "Voluntary")
+                    #set($f8 = "Voluntary")
+                    #set($f9 = "Voluntary")
+                #else
+                    #if(${c.tier1OosContribution} && ${c.outOfStateContribution})
+                        #set($f6 = "$dol$!{c.tier1OosContribution}$per")
+                    #else
+                      #set($f6 = "-")
+                    #end
+                    #if(${c.tier2OosContribution} && ${c.outOfStateContribution})
+                        #set($f7 = "$dol$!{c.tier2OosContribution}$per")
+                    #else
+                        #set($f7 = "-")
+                    #end
+                    #if(${c.tier3OosContribution} && ${c.outOfStateContribution})
+                        #set($f8 = "$dol$!{c.tier3OosContribution}$per")
+                    #else
+                        #set($f8 = "-")
+                    #end
+                    #if(${c.tier4OosContribution} && ${c.outOfStateContribution})
+                        #set($f9 = "$dol$!{c.tier4OosContribution}$per")
+                    #else
+                        #set($f9 = "-")
+                    #end
+                #end
+
+                #if(${c.outOfStateRate})
+                  #if($!rate_type == 'COMPOSITE')
+                    #if(${c.tier1OosRate})
+                        #set($f10 = "$$DecimalFormat.format($!{c.tier1OosRate})")
+                    #else
+                      #set($f10 = "-")
+                    #end
+                    #if(${c.tier2OosRate} )
+                        #set($f11 = "$$DecimalFormat.format($!{c.tier2OosRate})")
+                    #else
+                      #set($f11 = "-")
+                    #end
+                    #if(${c.tier3OosRate} )
+                        #set($f12 = "$$DecimalFormat.format($!{c.tier3OosRate})")
+                    #else
+                      #set($f12 = "-")
+                    #end
+                    #if(${c.tier4OosRate} )
+                        #set($f13 = "$$DecimalFormat.format($!{c.tier4OosRate})")
+                    #else
+                      #set($f13 = "-")
+                    #end
+                  #elseif($!rate_type == 'BANDED')
+                      #if(${c.oufOfStateMonthlyBandedPremium}) #set($f10 = "$$DecimalFormat.format($!{c.oufOfStateMonthlyBandedPremium})") #else #set($f10 = "-") #end
+                  #end
+                #end
+
+                #if(${c.outOfStateRenewal})
+                  #if($!rate_type == 'COMPOSITE')
+                    #if(${c.tier1OosRenewal} )
+                        #set($f14 = "$$DecimalFormat.format($!{c.tier1OosRenewal})")
+                    #else
+                      #set($f14 = "-")
+                    #end
+                    #if(${c.tier2OosRenewal} )
+                        #set($f15 = "$$DecimalFormat.format($!{c.tier2OosRenewal})")
+                    #else
+                      #set($f15 = "-")
+                    #end
+                    #if(${c.tier3OosRenewal} )
+                        #set($f16 = "$$DecimalFormat.format($!{c.tier3OosRenewal})")
+                    #else
+                      #set($f16 = "-")
+                    #end
+                    #if(${c.tier4OosRenewal} )
+                        #set($f17 = "$$DecimalFormat.format($!{c.tier4OosRenewal})")
+                    #else
+                      #set($f17 = "-")
+                    #end
+                  #elseif($!rate_type == 'BANDED')
+                      #if(${c.oufOfStateMonthlyBandedPremiumRenewal}) #set($f14 = "$$DecimalFormat.format($!{c.oufOfStateMonthlyBandedPremiumRenewal})") #else #set($f14 = "-") #end
+                  #end
+                #end
+
+                <tr class="trBorder">
+                  <td class="name" colspan="4">$!{c.label}(Out-of-State Plan)#if($!rate_type == 'BANDED')(Age-Banded)#end</td>
+                </tr>
+
+                #if(${numOfTiers} >= 1)
+                  <tr class="centered trBorder">
+                    <td>Employee Only</td>
+                    #if($!rate_type == 'COMPOSITE')
+                      <td>$f10</td>
+                      <td>$f14</td>
+                    #elseif($!rate_type == 'BANDED')
+                      <td rowspan="4" class="fullBorder">$f10 <br/> (Monthly Cost)</td>
+                      <td rowspan="4" class="fullBorder">$f14 <br/> (Monthly Cost)</td>
+                    #end
+                    <td>$f6</td>
+                  </tr>
+                #end
+
+                #if(${numOfTiers} >= 2)
+                  <tr class="centered trBorder">
+                    <td>#if(${numOfTiers} == 2)Employee + Family #elseif(${numOfTiers} == 3) Employee + 1 #else Employee + Spouse#end</td>
+                    #if($!rate_type == 'COMPOSITE')
+                      <td>$f11</td>
+                      <td>$f15</td>
+                    #end
+                    <td>$f7</td>
+                  </tr>
+                #end
+
+                #if(${numOfTiers} >= 3)
+                  <tr class="centered trBorder">
+                    <td>#if(${numOfTiers} == 3)Employee + 2 or more #else Employee + Child(ren)#end</td>
+                    #if($!rate_type == 'COMPOSITE')
+                      <td>$f12</td>
+                      <td>$f16</td>
+                    #end
+                    <td>$f8</td>
+                  </tr>
+                #end
+
+                #if(${numOfTiers} >= 4)
+                  <tr class="centered trBorder">
+                    <td>Employee + Family</td>
+                    #if($!rate_type == 'COMPOSITE')
+                      <td>$f13</td>
+                      <td>$f17</td>
+                    #end
+                    <td>$f9</td>
+                  </tr>
+                #end
+              #end
+            #end
+          </table>
+        </td>
+      </tr>
+
+      <tr><td><p></p></td></tr>
+      <tr>
+        <td>
+          <table class="main-table">
+            <tr>
+              <td class="header-text">CARRIER HISTORY</td>
+              <td class="header-text"></td>
+              <td class="header-text"></td>
+            </tr>
+            <tr class="table-header">
+              <td class="greyColor"><div style="background: #e1f1f8 !important;">CARRIER</div></td>
+              <td class="greyColor"><div style="background: #e1f1f8 !important;">YEARS</div></td>
+              <td class="greyColor"><div style="background: #e1f1f8 !important;">&nbsp;</div></td>
+            </tr>
+            #if(${carrier_history.size()} == 0)
+               <tr>
+                  <td class="centered" colspan="3">No carrier history</td>
+               </tr>
+            #else
+              #foreach($history in ${carrier_history})
+                  <tr class="trBorder">
+                      <td>$history.name (#if($history.current)Current#{else}Previous#end)</td>
+                      <td>$history.years</td>
+                      <td></td>
+                  </tr>
+              #end
+            #end
+          </table>
+        </td>
+      </tr>
+
+      <tr><td><p></p></td></tr>
+      <tr>
+        <td>
+          <table class="main-table">
+            <tr>
+              <td class="header-text">ADDITIONAL INFO</td>
+              <td class="header-text"></td>
+              <td class="header-text"></td>
+            </tr>
+            <tr class="trBorder">
+              <td>Broker of Record</td>
+              <td>$!{broker_of_record}</td>
+              <td></td>
+            </tr>
+            <tr class="trBorder">
+              <td>Commissions</td>
+              <td>$!{commissions}</td>
+              <td></td>
+            </tr>
+            #if($!product == 'MEDICAL')
+              <tr class="trBorder">
+                <td>Large Claims Data</td>
+                <td>$!{large_claim}</td>
+                <td></td>
+              </tr>
+              <tr class="trBorder">
+                <td>Include Self-Funding</td>
+                <td>$!{self_funding}</td>
+                <td></td>
+              </tr>
+              <tr class="trBorder">
+                <td>Quote Kaiser</td>
+                <td>$!{kaiser}</td>
+                <td></td>
+              </tr>
+            #end
+            <tr class="trBorder">
+              <td>Additional Requests</td>
+              <td>$!{additional_requests}</td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<div id="menu" data-heading="Menu">
+    {% if is_mobile() %}
+        <a href="{{ path('featured_index', {'market': 'for-sale'}) }}" class="mdl-navigation__link">
+            <i class="material-icons">
+                star
+            </i> Real Estate
+        </a>
+    {% endif %}
+
+    <a href="#" class="mdl-navigation__link sidenav-show" data-type="categories-internal">
+        <i class="material-icons">
+            book
+        </i> Popular
+    </a>
+    <a href="#" class="mdl-navigation__link sidenav-show" data-type="countries-internal">
+        <i class="material-icons">
+            location_on
+        </i> Locations
+    </a>
+    <div class="separator"></div>
+
+    <a href="#" class="mdl-navigation__link auth-show">
+        <i class="material-icons">
+            account_circle
+        </i> Sign In
+    </a>
+    <a href="#" class="mdl-navigation__link auth-show">
+        <i class="material-icons">
+            person_add
+        </i> Register
+    </a>
+
+
+    <div class="separator"></div>
+    <a href="{{ path('ha_help', {'token':'z78'}) }}" class="mdl-navigation__link">
+        <i class="material-icons">
+            help
+        </i> Help
+    </a>
+    <a href="{{ path('ha_help', {'token':'DyJ'}) }}" class="mdl-navigation__link">
+        <i class="material-icons">
+            help
+        </i> Privacy policy
+    </a>
+    <a href="{{ path('ha_help', {'token':'z78'}) }}" class="mdl-navigation__link">
+        <i class="material-icons">
+            help
+        </i> Terms of use
+    </a>
+
+</div>

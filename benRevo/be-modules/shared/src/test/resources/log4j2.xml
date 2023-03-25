@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+    <Properties>
+        <Property name="console_pattern">[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%c] (%t) (%X) - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    ${console_pattern}
+                </pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="ch.vorburger" level="WARN"/>
+        <Logger name="org.springframework.aop.framework.CglibAopProxy" level="ERROR"/>
+        <Logger name="uk.co.jemos.podam" level="ERROR"/>
+        <Root level="WARN">
+            <AppenderRef ref="Console-Appender"/>
+        </Root>
+    </Loggers>
+</Configuration>

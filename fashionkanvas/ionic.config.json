@@ -1,0 +1,14 @@
+{
+  "name": "fashionkanvas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "39eaf3da",
+  "proxies": [
+    {
+      "path": "/v0",
+      "proxyUrl": "https://firebasestorage.googleapis.com/v0"
+    }
+  ]
+}

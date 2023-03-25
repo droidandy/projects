@@ -1,0 +1,462 @@
+<style>
+  .gm-content, body {
+    /*background: #FFFFFF;*/
+  }
+  /* new css 9 December */
+  .user-step {
+    text-align: center;
+  }
+
+  .user-welcome { text-align:center; color:#424242; padding-top:40px; min-height:420px; margin:0}
+
+  .user-welcome h5{ font-size:38px;font-weight:400; padding-top:40px; margin:0 0 10px 0; padding-bottom:10px; color:#373737}
+
+  .user-welcome p.info{ font-size:20px;}
+   .user-welcome .tut-info{ min-height:150px}
+   .user-welcome p{ font-size:12px; padding:2px 0; margin:0; color:#d3d3d3}
+  .user-welcome .pager li a{ text-indent:-9999px; width:10px; height:10px; padding:0; background-color:#919398; border:0; margin:0 3px}
+  .user-welcome .pager li a.active{  background-color:#fd3257; }
+  .tutorial{text-align:center}
+
+  .form-detail-block .info-form-field{padding:10px 0}
+
+
+ .arrow-nxt-icon{background:url(images/arrow-done.png) no-repeat; width:13px; height:21px; background-size:100%; display:inline-block; position:relative; margin:2px 0 0 7px; top:3px}
+
+ .user-welcome  .tutotial-icon{line-height:135px; height:135px; margin-top:50px}
+
+
+   .user-welcome  .tutotial-icon img{ display:inline-block}
+
+  .tutorial .bx-wrapper{ overflow:hidden}
+
+
+
+  .tutorial .bx-wrapper .bx-pager,  .tutorial  .bx-wrapper .bx-controls-auto{ bottom:0}
+
+
+   .tutorial .bx-wrapper .bx-pager.bx-default-pager a, .tutorial .bx-wrapper .bx-pager.bx-default-pager a{ background:#81838a; margin:0 8px}
+ .tutorial .bx-wrapper .bx-pager.bx-default-pager a:hover, .tutorial .bx-wrapper .bx-pager.bx-default-pager a.active{ background:#fd1640}
+
+
+
+  ul.tut-pager{ padding:20px 0; margin:0; list-style:none; text-align:center}
+
+  ul.tut-pager li{ display: inline-block; margin:0 5px}
+    ul.tut-pager li span{ border: 2px solid #fff;
+    padding: 0;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.3);
+  display:block;border-radius:70px
+  }
+
+  ul.tut-pager li  img{border-radius:70px; width:54px}
+
+
+ .tutorial .flip-info{ text-align:left; color:#000}
+
+
+   .back .flip-info p{
+     text-align: left;
+     font-size: 6vw;
+     line-height: 8vw;
+     color: #000;}
+
+
+
+
+
+
+
+    .tutorial  .bx-has-controls-direction{position: absolute; left: 0px; width: 100%; bottom: 70px;}
+
+   .tutorial  .bx-wrapper{ position:static}
+  .skip-block{position:absolute; bottom:25px; left:0; width:100%; text-align:center;}
+
+
+
+
+
+   .user-step h5{ font-size:25px;font-weight:400; margin:0 0 10px 0;  color:#424242}
+
+  /*.user-step p.info{ font-size:17px;}*/
+   .user-step .tut-info{ min-height:150px}
+   /*.user-step p{ font-size:12px; padding:2px 0; margin:0; color:#424242}*/
+
+
+  .form-control::-moz-placeholder{color:#b6b8bc;opacity:1; font-size:17px}
+  .form-control:-ms-input-placeholder{color:#b6b8bc}
+  .form-control::-webkit-input-placeholder{color:#b6b8bc}
+
+
+  .slide-pic  {
+
+    box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.25);
+    border: 5px solid #fff;
+    background-color:#fff; margin:5px;
+    position:relative
+}
+
+   .user-step  .tut-pinfo{margin-top:50px}
+
+
+   .user-step h3 {
+    /*border-bottom: 1px solid #efeeee;*/
+    /*color: #2f2f2f;*/
+    /*font-size: 20px;*/
+    /*margin: 0;*/
+    /*padding: 0 0 5px;*/
+  text-align:left
+}
+
+
+
+/*.user-step  .age {*/
+    /*color: #fb3256;*/
+    /*float: right;*/
+    /*font-size: 20px;*/
+    /*line-height: 1.1;*/
+    /*padding: 0 0 5px;*/
+/*}*/
+
+
+/*.user-step p {*/
+    /*color: #919398;*/
+    /*font-size: 17px;*/
+    /*padding-top: 10px;*/
+
+/*}*/
+
+
+/*.user-step p strong {*/
+    /*color: #fd294f;*/
+    /*font-weight: 400;*/
+/*}*/
+  /**/
+  .flip-info-screen {
+    left: 0;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  text-align:left
+}
+
+
+
+  .user-step.step1  p {
+    color: #424242;
+  font-size:12px
+}
+
+
+
+/*
+ * Migrate this code
+ */
+.user-step .ice-pic{padding: 4em 0 2em}
+
+
+.user-step.step1 p.info {
+    color: #424242;
+    font-weight: 400;
+    font-size:18px;
+    margin-bottom: 5px;
+}
+.form-detail-block {
+  padding: 1em 15%;
+}
+.form-detail-block .info-form-field {
+  padding: 10px 40px;
+}
+a.next-link{
+  font-size:25px; color:#fd3257; margin-top:15px; text-align:center; display:inline-block;
+}
+.tutorial2 .user-step.padded {
+  padding-top: 70px;
+}
+.user-step .tut-pinfo {
+  margin-top: 103px;
+}
+.user-step .tut-pinfo p {
+  color: #919398;
+}
+.swipe-block {
+  color: #424242;
+}
+.givme .slider-thumb ul li .active {
+  border-color: transparent;
+}
+.swipe-block {
+  bottom: 25px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size:17px;
+  display:none
+}
+.swipe-block.active {
+  display: block;
+}
+.padded {
+  padding: 15px;
+}
+/*End: Migrate this code */
+/*End: new css 4  November*/
+
+
+
+ @media (min-width: 320px) and (max-width: 359px) {
+.slider-thumb ul li {
+  margin: 0
+}
+.slider-thumb img {
+  width: 50px;
+}
+.caption-conainer-view ul {
+  padding: 3px 0 0 0;
+}
+.caption-conainer-view ul li {
+  font-size: 13px
+}
+.modal-full {
+  margin: 0 20px
+}
+ul.chat-info-type li a {
+  padding: 10px 0 10px 45px;
+}
+.modal-full {
+  top: 20px
+}
+.pocket-close-icon {
+  top: 30%
+}
+}
+ @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+.sprite {
+  background-image: url(/images/pickcontact-card@2x.png);
+}
+}
+
+
+
+
+input.form-control{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow: none;
+-webkit-appearance: none;-webkit-transition:border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s}
+
+
+.slider-pager {
+  bottom: 92px;
+}
+.slider-pager .slider-pager-page {
+  font-size: 10px;
+  width: 16px;
+  margin: 0 2px;
+  color: #919398;
+}
+.swipe {
+  bottom: 0;
+  position: static;
+}
+.skip-block {
+  bottom: 15px;
+  font-family: "HelveticaNeueLTStd-Roman";
+}
+.icon {
+  width: 8px;
+  margin-right: 0;
+}
+.tut-2{
+  padding-top: 76%;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+</style>
+<ion-view>
+  <!-- <ion-content class="gm-content givme tutorial2"> -->
+    <div class="page page-slider">
+      <ion-slide-box on-slide-changed="activateTabs($index)">
+        <ion-slide>
+          <ion-content class="gm-content givme" scroll="">
+            <div class="user-step step1">
+              <div class="ice-pic"><img src="images/ice-pic.png" class="center-block" width="48" height="85" alt=""></div>
+              <h5>Hi {{profileData.first_name}}!</h5>
+              <p class="info">Enter <strong>3</strong> things you like to talk about.</p>
+              <p>(you will be able to change them later)</p>
+              <form>
+                <div class="form-detail-block">
+                  <div class="info-form-field">
+                    <input name="" class="form-control" type="text" placeholder="Star Wars" ng-model="profileData.tags[0]">
+                  </div>
+                  <div class="info-form-field">
+                    <input name=""  class="form-control" type="text" placeholder="Mona Lisa" ng-model="profileData.tags[1]">
+                  </div>
+                  <div class="info-form-field">
+                    <input name="" class="form-control" type="text" placeholder="Apple" ng-model="profileData.tags[2]">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </ion-content>
+        </ion-slide>
+
+        <ion-slide>
+        <ion-content class="gm-content givme tutorial2" scroll="false">
+          <div class="user-step padded">
+            <div id="bx-pager" class="slider-thumb clearfix" id="topPersonPager">
+              <ul>
+                <!-- Thumbnails for Top Person photos -->
+                <li ng-repeat="photo in topPerson.photos track by $index">
+                  <a href="" ng-click="topPerson.selectPhoto(photo)" ng-class="{ 'active': photo.active }">
+                    <img ng-src="{{photo.thumb}}" class="img-responsive">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bxslider slider-pic">
+              <div class="slide" play-drag-animate person="top"
+                   on-swipe-up="topPerson.showInformation()"
+                   on-swipe-down="topPerson.showInformation()" id="topPerson">
+                   <div class="slide-flip-block" style="height: 200px">
+                    <div class="front">
+                      <img class="img-responsive animate-show photo-image" ng-src="http://52.18.229.105{{topPerson.selectedPhoto()}}" fade="topPerson.animateChange"
+                           ng-class="{ 'remove-slide': topPerson.rejected,
+                               'selected-slide': topPerson.accepted }"/>
+                      <img class="img-responsive animate-hide prev-photo" ng-src="http://52.18.229.105{{topPerson.prevPhoto}}" />
+                    </div>
+                    <div class="back">
+                      <img src="images/img-me-blank.png" class="img-responsive photo-image"  alt="">
+                      <!-- Selected state-->
+                      <!-- End Rejected state-->
+                      <div class="flip-info"><span class="age">{{topPerson.age}}</span>
+                        <h3>{{topPerson.name}}</h3>
+                        <p> Is <strong>{{profileData.height / 100}} m</strong> tall, {{getPronoun(profileData.gender)}} speaks <strong>{{topPerson.languagesString}}</strong> and {{getPronoun(profileData.gender)}} likes <strong>{{topPerson.tagsString}}</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <span class="icon-selected" id="topPersonAccept"></span>
+              <!-- Rejected state -->
+              <span class="icon-remove" id="topPersonReject"></span>
+            </div>
+          <div class="tut-pinfo">
+            <h5>This is a card</h5>
+            <p>It can be swiped left and right. </p>
+          </div>
+        </div>
+      </ion-content>
+        </ion-slide>
+
+        <ion-slide>
+        <ion-content class="gm-content givme tutorial2" scroll="false">
+          <div class="user-step padded">
+          <div id="bx-pager" class="slider-thumb clearfix" id="topPersonPager">
+              <ul>
+                <!-- Thumbnails for Top Person photos -->
+                <li ng-repeat="photo in bottomPerson.photos track by $index">
+                  <a href="" ng-click="bottomPerson.selectPhoto(photo)" ng-class="{ 'active': photo.active }">
+                    <img ng-src="{{photo.thumb}}" class="img-responsive">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bxslider1 slider-pic" id="bottomPerson">
+              <div class="slide" play-drag-animate person="bottom"
+                   on-swipe-up="bottomPerson.showInformation()"
+                   on-swipe-down="bottomPerson.showInformation()">
+                   <div class="slide-flip-block" style="height: 200px">
+                    <div class="front">
+                      <img class="img-responsive animate-show photo-image" ng-src="http://52.18.229.105{{bottomPerson.selectedPhoto()}}" fade="bottomPerson.animateChange"
+                           ng-class="{ 'remove-slide': bottomPerson.rejected,
+                               'selected-slide': bottomPerson.accepted }"/>
+                      <img class="img-responsive animate-hide prev-photo" ng-src="http://52.18.229.105{{bottomPerson.prevPhoto}}" />
+                    </div>
+                    <div class="back">
+                      <img src="images/img-me-blank.png" class="img-responsive photo-image"  alt="">
+                      <!-- Selected state-->
+                      <!-- End Rejected state-->
+                      <div class="flip-info"><span class="age">{{profileData.age}}</span>
+                        <h3>{{bottomPerson.name}}</h3>
+                        <p> Is <strong>{{profileData.height / 100}} m</strong> tall, {{getPronoun(profileData.gender)}} speaks <strong>{{topPerson.languagesString}}</strong> and {{getPronoun(profileData.gender)}} likes <strong>{{topPerson.tagsString}}</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <span class="icon-selected" id="bottomPersonAccept"></span>
+              <!-- Rejected state -->
+              <span class="icon-remove" id="bottomPersonReject"></span>
+            </div>
+          <div class="tut-pinfo">
+            <h5>It can also be tapped</h5>
+            <p>to get all the information.</p>
+          </div>
+        </div>
+      </ion-content>
+        </ion-slide>
+
+        <ion-slide>
+        <ion-content class="gm-content givme tutorial2" scroll="false">
+          <div class="user-step padded">
+          <div id="bx-pager" class="slider-thumb clearfix" id="topPersonPager">
+              <ul>
+                <!-- Thumbnails for Top Person photos -->
+                <li ng-repeat="photo in bottomPerson1.photos track by $index">
+                  <a href="" ng-click="bottomPerson1.selectPhoto(photo)" ng-class="{ 'active': photo.active }">
+                    <img ng-src="{{photo.thumb}}" class="img-responsive">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bxslider slider-pic" id="bottomPerson1">
+              <div class="slide" play-drag-animate person="top"
+                   on-swipe-up="bottomPerson1.showInformation()"
+                   on-swipe-down="bottomPerson1.showInformation()">
+                   <div class="slide-flip-block" style="height: 200px">
+                    <div class="front">
+                      <img class="img-responsive animate-show photo-image" ng-src="http://52.18.229.105{{bottomPerson1.selectedPhoto()}}" fade="bottomPerson1.animateChange"
+                           ng-class="{ 'remove-slide': bottomPerson1.rejected,
+                               'selected-slide': bottomPerson1.accepted }"/>
+                      <img class="img-responsive animate-hide prev-photo" ng-src="http://52.18.229.105{{bottomPerson1.prevPhoto}}" />
+                    </div>
+                    <div class="back">
+                      <img src="images/img-me-blank.png" class="img-responsive photo-image"  alt="">
+                      <!-- Selected state-->
+                      <!-- End Rejected state-->
+                      <div class="flip-info"><span class="age">{{bottomPerson.age}}</span>
+                        <h3>{{bottomPerson.name}}</h3>
+                        <p> Is <strong>{{profileData.height / 100}} m</strong> tall, {{getPronoun(profileData.gender)}} speaks <strong>{{topPerson.languagesString}}</strong> and {{getPronoun(profileData.gender)}} likes <strong>{{topPerson.tagsString}}</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <span class="icon-selected" id="bottomPerson1Accept"></span>
+              <!-- Rejected state -->
+              <span class="icon-remove" id="bottomPerson1Reject"></span>
+            </div>
+          <div class="tut-pinfo">
+            <h5>You are ready to go!</h5>
+            <p>Tip: solo pictures work the best! </p>
+          </div>
+        </div>
+        </ion-content>
+        </ion-slide>
+
+      </ion-slide-box>
+      <!--<div class="tut-2"  on-swipe-left="nextSlide()" ></div>-->
+      <div class="swipe" ng-click="done()">
+        <div ng-bind-html="swipe"></div>
+      </div>
+    </div>
+  <!-- </ion-content> -->
+</ion-view>

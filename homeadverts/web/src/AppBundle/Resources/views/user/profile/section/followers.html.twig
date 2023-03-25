@@ -1,0 +1,26 @@
+{% extends 'AppBundle:user/profile:root.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:user/profile:user_profile_head.html.twig' with {'user' : user} %}
+
+    <div class="container">
+        <div class="row">
+            <div class="headline --line-separator">
+                <h3 class="heading">
+                    Followers
+                </h3>
+            </div>
+
+            {% if is_current_user(user) %}
+                <div class="information-centered">
+                    Your followers are members of our community who follows your activities such as like,
+                    share or comment on any of your story’s and listings.
+                    The more followers you have, the greater visibility your content will get.
+                    This may in turn influence your contents overall ranking position and visibility.
+                </div>
+            {% endif %}
+
+            {% include 'AppBundle:user/profile/section:user_collection.html.twig' %}
+        </div>
+    </div>
+{% endblock %}

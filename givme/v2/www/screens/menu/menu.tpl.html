@@ -1,0 +1,32 @@
+<ion-view>
+  <ion-content class="gm-content" ng-class="displayBG()" scroll="false">
+    <div class="page home-gevme">
+      <div class="row">
+          <div id="LogoState" class="pic visible"><img src="img/givme-logo.png" width="186" height="42" alt=""></div>
+      </div>
+      <ion-list can-swipe="true">
+        <ion-item href="#/pocket" class="item-thumbnail-left main-menu-text" transitiontype="slide" direction="up" go-native>
+          <div class="menu-row-holder">
+                Pocket
+            </div>
+      </ion-item>
+        <ion-item href="#/room/1" class="item-thumbnail-left main-menu-text" transitiontype="slide" direction="up" go-native>
+            <div class="menu-row-holder">
+              Add-on
+            </div>
+          </ion-item>
+        <ion-item href="#/settings" class="item-thumbnail-left main-menu-text" transitiontype="slide" direction="up" go-native>
+            <div class="menu-row-holder">
+                Settings
+            </div></ion-item>
+      </ion-list>
+      <div class="rounded-rectangle-container">
+        <div class="rounded-rectangle" ng-class="confirmValidConnection()">
+          <span class="slide-to-play-text" ng-class="sliderClass">{{sliderText}}</span>
+          <img src="img/givme-slider.png" width="83.5" height="83.5" button-drag-animate class="img-btn" ng-if="validConnection" />
+          <img src="img/givme-slider.png" width="83.5" height="83.5" class="img-btn" ng-if="!validConnection" />
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

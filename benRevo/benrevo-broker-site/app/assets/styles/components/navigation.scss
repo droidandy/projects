@@ -1,0 +1,266 @@
+@import "../variables-theme";
+
+@mixin triangle() {
+  content: '';
+  display: block;
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+@mixin title($left) {
+  height: 40px;
+  line-height: 40px;
+  left: $left;
+  top: 0;
+  padding-right: 10px;
+  min-width: 50px;
+  float: left;
+  position: relative;
+}
+
+.navigation {
+  height: 40px;
+  background-color: #dadcdd;
+  width: 100%;
+  margin-bottom: -40px;
+  position: relative;
+
+  .ui.container {
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 0;
+    display: block;
+    overflow: hidden;
+    @media only screen and (min-width: 1200px) {
+      & {
+        width: $MAX_WIDTH !important;
+      }
+    }
+
+    .column {
+      padding-top: 0;
+      padding-bottom: 0;
+      position: relative;
+      top: 0;
+      display: block;
+    }
+  }
+
+  .navigation-title {
+    @include title(20px);
+    z-index: 1111;
+    cursor: pointer;
+
+    &:after {
+      @include triangle();
+    }
+
+    &.grey {
+      background-color: $BUTTON_SECONDARY_COLOR;
+      color: #ffffff;
+      &:after {
+        border-color: transparent transparent transparent $BUTTON_SECONDARY_COLOR;
+      }
+    }
+
+    &.green {
+      background-color: $NAVIGATION_GREEN_DARK;
+      color: #ffffff;
+      &:after {
+        border-color: transparent transparent transparent $NAVIGATION_GREEN_DARK;
+      }
+    }
+  }
+
+  .navigation-title-sub {
+    text-transform: uppercase;
+    float: left;
+    padding-left: 70px;
+    @include title(-20px);
+    z-index: 1;
+
+    &:after {
+      @include triangle();
+    }
+
+    &.green {
+      background-color: $NAVIGATION_GREEN_LIGHT;
+      color: #ffffff;
+      &:after {
+        border-color: transparent transparent transparent $NAVIGATION_GREEN_LIGHT;
+      }
+    }
+  }
+
+  .navigation-title-bg {
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &.grey {
+      background-color: $BUTTON_SECONDARY_COLOR;
+    }
+
+    &.green {
+      background-color: $NAVIGATION_GREEN_DARK;
+    }
+  }
+
+  .ui.menu {
+    z-index: 22;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+    -webkit-overflow-scrolling: touch;
+    // overflow-x: auto;
+    position: absolute;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    align-items: center;
+
+    &.secondary.pointing{
+      border-bottom: 0;
+      min-height: 1rem;
+
+      .active.item {
+        font-weight: 400;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+    a.item {
+      color: $FONT_COLOR;
+      height: 40px;
+      display: block;
+      background: none;
+      padding-top: 14px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 0;
+
+      &:before {
+        content: none;
+      }
+
+      &.active, &:not(:last-child):not(.button):not(:first-child):hover {
+        border-bottom-width: 2px !important;
+        border-bottom-style: solid !important;
+        background: none;
+      }
+
+      &.button,
+      &:last-child {
+        background-color: $CARD_GRAY_COLOR;
+        border-radius: 20px;
+        color: #ffffff;
+        height: 25px;
+        line-height: 25px;
+        margin: 0;
+        padding-right: 3%;
+        padding-left: 3%;
+
+        span {
+          position: relative;
+          bottom: 14px;
+        }
+
+        i {
+          font-size: 30px;
+          position: relative;
+          top: -7px;
+        }
+
+        &:hover {
+          background-color: $BUTTON_GREY_HOVER_COLOR;
+        }
+      }
+      // &:last-child {
+      //   position: absolute;
+      //   right: 3%;
+      //   bottom: 0;
+      //   top: 7px;
+      // }
+    }
+
+    .button-group {
+      display: flex;
+      position: absolute;
+      right: 3%;
+      bottom: 0;
+      top: 7px;
+      a.item {
+        white-space: nowrap;
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-left: 4px;
+      }
+    }
+
+    &.green {
+      &.secondary.pointing {
+        .active.item {
+          color: $NAVIGATION_GREEN_DARK !important;
+        }
+      }
+
+      a.item {
+        &.active, &:not(:last-child):not(.button):not(:first-child):hover {
+          border-bottom-color: $NAVIGATION_GREEN_DARK !important;
+          color: $NAVIGATION_GREEN_DARK !important;
+        }
+        &.active:hover {
+          color: $NAVIGATION_GREEN_DARK !important;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    & {
+      height: auto;
+
+      .ui.container {
+        margin-top: 0;
+
+        .wide.column {
+          padding: 0 !important;
+        }
+      }
+
+      .ui.menu {
+        position: relative;
+        justify-content: inherit;
+
+        a.item {
+          border-bottom: 2px solid $BORDER_LIGHT_GRAY_COLOR;
+          margin-left: 0;
+
+          &:first-child {
+            position: static;
+          }
+
+          &:last-child {
+            position: static;
+            border: none;
+            line-height: 25px;
+            max-width: 200px;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.select :global(.ant-select-selection) {
+  max-height: 180px;
+  overflow: auto;
+}
+
+:global(.ant-btn.actionButton) {
+  min-width: 70px;
+  padding: 0 11px;
+  height: 28px;
+  font-size: 12px;
+}
+
+.detailsItem {
+  margin-bottom: 5px;
+  display: flex;
+  align-content: center;
+}
+
+.detailsName {
+  display: inline-flex;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 12px;
+  min-width: 122px;
+}
+
+.dropdownButton {
+  min-width: 40px;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 15px;
+  color: #d2dadc;
+}
+
+.h70 {
+  height: 70px;
+}
+
+.actionButtons {
+  margin-top: -146px;
+  margin-bottom: 110px;
+
+  @media(max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+@media(min-width: 1025px) {
+  .chartContainer {
+    min-width: 260px;
+  }
+}
+
+@media(max-width: 480px) {
+  :global(.ant-btn.mobileButton) {
+    min-width: 40px;
+  }
+  .editInfoButtons {
+    margin-top: -143px;
+    margin-bottom: 106px;
+  }
+}
+
+.addressValue {
+  :global(.ant-select-selection-selected-value) {
+    width: calc(100% - 70px);
+  }
+}

@@ -1,0 +1,52 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">Discovery</ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <!--<ion-content scroll="false">-->
+  <ion-content class="gm-content" on-scroll="gotScrolled()" delegate-handle="mainScroll">
+            <div class="settings">
+              <div class="label-title label-title--first">I'm interested in meeting:</div>
+              <ul class="left-list looking">
+                <li>Boys
+                  <span class="pull-right">
+                    <label class="toggle toggle-assertive">
+                      <input type="checkbox" ng-model="discoveryData.men">
+                      <div class="track">
+                        <div class="handle"></div>
+                      </div>
+                    </label>
+                  </span>
+                <li>Girls
+                  <span class="pull-right">
+                    <label class="toggle toggle-assertive">
+                      <input type="checkbox" ng-model="discoveryData.women">
+                      <div class="track">
+                        <div class="handle"></div>
+                      </div>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+              <div class="label-title">
+                <div class="pull-left">Show me people aged between: </div>
+                <div class="pull-right">{{discoveryData.min_age}}-{{discoveryData.max_age}} </div>
+              </div>
+              <ul>
+                <div range-slider min="18" max="65" model-min="discoveryData.min_age" model-max="discoveryData.max_age"></div>
+              </ul>
+              <div class="label-title clearfix">
+                <div class="pull-left">They have to be close to me: </div>
+                <div class="pull-right">{{discoveryData.radius}} Km</div>
+              </div>
+              <ul>
+                <div range-slider min="0" max="100" model-max="discoveryData.radius" pin-handle="min"></div>
+              </ul>
+            </div>
+  </ion-content>
+</ion-view>

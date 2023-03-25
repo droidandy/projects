@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>UnitedHealthcare</title>
+    </head>
+    <body style="background:#f8f9fb;margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;">
+        <table width="600" bgcolor="#f8f9fb" style="margin:auto;">
+            <tr>
+                <td style="width:100%;text-align:right;float:left;"><img src="https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/logo.jpg" alt="UnitedHealthcare" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="600" bgcolor="#fff" style="margin:auto;padding:0 30px;">
+                        <tr>
+                            <td><h3 style="font-family:Arial,Helvetica,sans-serif;color:#2d67b2;font-weight:bold;font-size:24px;">Hello#if($StringUtils.isNotEmpty($presale_name)) $presale_name#end#if($StringUtils.isNoneEmpty($presale_name, $sales_name)) and#end#if($StringUtils.isNotEmpty($sales_name)) $sales_name#end,</h3></td>
+                        </tr>
+                        <tr>
+                            <td><p style="color:#000;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;margin-top:0px;">Congratulations on your new business success! We are pleased you were awarded the business in partnership with BenRevo. Below is an overview of your new client details.</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" border="0" style="color:#7f7e7e;font-family:Arial,Helvetica,sans-serif;line-height:25px;margin:0 0 15px 25px;width:540px;">
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Client Company Name:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!company_name</td>
+                                    </tr>
+                                    #if($!submittedByGA)
+                                        <tr>
+                                            <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                            <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">GA Brokerage Name:</td>
+                                            <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!ga_broker_name</td>
+                                        </tr>
+                                    #end
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Brokerage Name:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!brokerage_name</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Effective Date:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!effective_date</td>
+                                    </tr>
+                                    #if($!members)
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;"># of Members:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!members</td>
+                                    </tr>
+                                    #end
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">NBC Name:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!nbc_name</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Company Address City:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!address_city</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Company Address State:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!address_state</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;"># of Eligible Employees:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!eligible_employees</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;"># of Expected Subscribers:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!expected_subscribers</td>
+                                    </tr>
+                                    #if($!members)
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;"># of Expected Members:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!members</td>
+                                    </tr>
+                                    #end
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Carrier(s) Replaced:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!carriers_replaced</td>
+                                    </tr>
+                                    #if($StringUtils.isNotEmpty($bundle))
+                                    <tr>
+                                        <td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+                                        <td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Bundled:</td>
+                                        <td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!bundle</td>
+                                    </tr>
+                                    #end
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">The following table outlines the monthly premiums by plan, based on your proposal and the information entered into BenRevo by the broker, subject to change.</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:0;padding:10px 15px;">
+                                #foreach($planEntry in ${selected_plans_by_tiers.entrySet()})
+                                    #foreach($planEntry2 in ${planEntry.value.entrySet()})
+                                        #set($selected_plans = ${planEntry2.value})
+                                        <tr style="border:0;padding:8px 10px;">
+                                             <td style="border:0;padding:8px 10px;" colspan=2 > </td>
+                                        </tr>
+                                        #if($planEntry2.key == 1)
+                                            #parse("new-sale-notification_tier1_plans.vm")
+                                        #elseif($planEntry2.key == 2)
+                                            #parse("new-sale-notification_tier2_plans.vm")
+                                        #elseif($planEntry2.key == 3)
+                                            #parse("new-sale-notification_tier3_plans.vm")
+                                        #else
+                                            #parse("new-sale-notification_tier4_plans.vm")
+                                        #end
+                                    #end
+                                #end
+                                </table>
+                                #if($bundle_discounts.size() > 0)
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:0;padding:10px 15px;">
+                                    <tr style="border:0;padding:8px 10px;">
+                                         <td style="border:0;padding:8px 10px;" colspan=2 > Applied discounts to medical rates: </td>
+                                    </tr>
+                                    #foreach($discount in ${bundle_discounts})
+                                        <tr style="border:0;padding:8px 10px;">
+                                            <td style="border:1px solid #ddd;padding:8px 10px;" align="right" >$!discount.left</td>
+                                            <td style="border:1px solid #ddd;padding:8px 10px;" align="left" >
+                                                    $!discount.right %
+                                            </td>
+                                        </tr>
+                                    #end
+                                </table>
+                                #end
+                                #if($renewal_discounts.size() > 0)
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:0;padding:10px 15px;">
+                                    #foreach($discount in ${renewal_discounts})
+                                    <tr style="border:0;padding:8px 10px;">
+                                         <td style="border:0;padding:8px 10px;" colspan=2>${discount.right}% was added to the medical rates due to removing ${discount.left} coverage</td>
+                                    </tr>
+                                    #end
+                                </table>
+                                #end
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p style="height:10px;float:left;width:100%;border-bottom:1px solid #d7d7d7;">&nbsp;</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="color:#989898;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:25px;margin-top:0px;">We appreciate your partnership during this marketing process and look forward to your continued success!
+                                    <br/><span style="color:#2E67B1;text-decoration:none;font-weight:bold;">Team BenRevo</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

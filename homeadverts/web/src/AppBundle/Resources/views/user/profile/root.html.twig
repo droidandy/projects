@@ -1,0 +1,29 @@
+{% set hasAffiliates = actions.affiliate is defined and actions.affiliate.total > 0 %}
+{% set hasAgents = actions.agent is defined and actions.agent.total > 1 %}
+
+{% set hasFollowings = user.getFollowingsCount() > 0 %}
+{% set hasFollowers = user.getFollowersCount() > 0 %}
+{% set hasSale = actions.property.for_sale.total > 0 %}
+{% set hasRent = actions.property.to_rent.total > 0 %}
+{% set hasArticles = actions.article.total > 0 %}
+
+{% set isActionsVisible =
+    hasFollowings|number_format +
+    hasFollowers|number_format +
+    hasSale|number_format +
+    hasRent|number_format +
+    hasArticles|number_format +
+    hasAgents|number_format +
+    hasAffiliates|number_format %}
+
+{% set og_title = user.getMetaTitle() %}
+{% set og_description = user.getBio() %}
+
+{% set meta_title = user.getMetaTitle() %}
+{% set profileImage = user.getProfileImage() %}
+
+{% if profileImage %}
+    {% set og_image = profileImage %}
+{% endif %}
+
+{% extends 'AppBundle:layout:root.html.twig' %}

@@ -1,0 +1,27 @@
+.root {
+  position: relative;
+  .results {
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    max-height: 148px;
+    width: 100%;
+    z-index: 3;
+    overflow: auto;
+    .item {
+      padding: 8px 10px;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 23px;
+      display: flex;
+      cursor: pointer;
+      color: #1A344B;
+      &:hover {
+        background: #EDF3F8;
+      }
+    }
+  }
+}

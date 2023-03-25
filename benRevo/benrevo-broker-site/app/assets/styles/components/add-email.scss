@@ -1,0 +1,63 @@
+@import "../variables-theme";
+
+.ui.modal.add-email-modal {
+  padding: 30px;
+  min-height: 350px;
+
+  .invalid-email-text {
+    font-size: 10px;
+    color: red;
+    margin: 3px 4px;
+    text-align: center;
+  }
+
+  .page-heading-top {
+    overflow: hidden;
+  }
+
+  .one.wide.column.remove {
+    padding-top: 11px;
+  }
+
+  .remove {
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .center {
+    min-height: 220px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+    .ui.grid {
+      .row {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .round-blue-button {
+    margin-top: 10px;
+  }
+
+  .buttons {
+    width: 100%;
+
+    .ui.button:first-child {
+      float: left;
+    }
+
+    .ui.button:last-child {
+      float: right;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    & {
+      width: 400px;
+      margin: 0 0 0 -200px;
+    }
+  }
+}

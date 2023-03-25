@@ -1,0 +1,22 @@
+overwrite: true
+schema:
+#  - "https://aptstore.ru/mobile/graphql"
+  - "http://localhost:4444/mobile/graphql"
+  - "src/apollo/local.graphql"
+documents:
+  - "src/apollo/documents/**/*.graphql"
+generates:
+  ./src/apollo/requests.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-resolvers"
+      - "typescript-react-apollo"
+    config:
+      withHooks: true
+      withHOC: false
+      withComponents: false
+      contextType: ./ResolverCtx#ResolverCtx
+  ./src/apollo/schema.json:
+    plugins:
+      - "introspection"

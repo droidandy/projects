@@ -1,0 +1,13 @@
+jms_serializer:
+  metadata:
+    auto_detection: true
+    directories:
+        - { path: '%kernel.root_dir%/Resources/FOSUserBundle/serializer', namespace_prefix: 'FOS\UserBundle' }
+
+jms_di_extra:
+    locations:
+        all_bundles: false
+        directories: ["%kernel.root_dir%/../src"]
+
+parameters:
+    jms_serializer.camel_case_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy

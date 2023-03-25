@@ -1,0 +1,736 @@
+[
+    {
+        "data": [
+            {
+                "action": "Delete",
+                "id": "085AA63C-6277-4230-BDFF-A63F3F78A7CF",
+                "lastUpdateOn": "2018-08-03T23:00:12.943"
+            },
+            {
+                "action": "Delete",
+                "id": "E801DA2B-32EB-4ED2-A084-6BC9C7B61643",
+                "lastUpdateOn": "2018-08-07T18:00:11.150"
+            },
+            {
+                "action": "Delete",
+                "id": "97D33896-2864-4F81-983B-0DF964562C12",
+                "lastUpdateOn": "2018-08-06T20:00:09.110"
+            },
+            {
+                "action": "Delete",
+                "id": "9C9A3611-2D02-4FE3-9F67-5940048EDEDA",
+                "lastUpdateOn": "2018-08-07T16:30:11.690"
+            },
+            {
+                "action": "Delete",
+                "id": "824017EE-00AC-4EDA-B13F-DDE957E8AEF2",
+                "lastUpdateOn": "2018-08-03T23:00:12.863"
+            },
+            {
+                "action": "Upsert",
+                "id": "F33F24B8-FB34-46A6-AC77-09A80A296362",
+                "lastUpdateOn": "2018-08-03T17:00:12.120",
+                "entityDetail": {
+                    "agentSummary": {
+                        "id": "f33f24b8-fb34-46a6-ac77-09a80a296362",
+                        "isAgent": true,
+                        "name": "Melvin Swain ",
+                        "firstName": "Melvin",
+                        "lastName": "Swain",
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/EA7921BD-B0E0-4C65-968E-54CE08E10057",
+                        "emailAddress": "mswain@signaturesothebys.com",
+                        "leadEmailAddress": "800115.lead.100137352@leads.leadrouter.com",
+                        "mobilePhone": "248-789-0172",
+                        "specialty": "Residential",
+                        "office": {
+                            "officeId": "42497839-1703-4199-9768-828cc9f2bb27",
+                            "RFGOfficeId": "0004",
+                            "companyId": "311788a3-f7f8-4230-91cd-c4aa04ebb8af",
+                            "companyName": "Signature",
+                            "RFGCompanyId": "800115",
+                            "brandCode": "SIR",
+                            "name": "Signature Sotheby's International Realty",
+                            "type": "Branch office",
+                            "officeAddress": {
+                                "streetAddress": "6755 Telegraph",
+                                "city": "Bloomfield Hills",
+                                "district": "OAKLAND",
+                                "stateProvince": "Michigan",
+                                "stateProvinceCode": "MI",
+                                "postalCode": "48301",
+                                "country": "United States",
+                                "countryCode": "US",
+                                "latitude": 42.5468635559082,
+                                "longitude": -83.2866363525391,
+                                "formattedAddress": "6755 Telegraph Rd, Bloomfield Hills, MI 48301"
+                            },
+                            "phoneNumber": "2486478888",
+                            "emailAddress": "info@signaturesothebys.com"
+                        }
+                    },
+                    "personId": "2a8290b6-9c25-411f-a3e8-4c1cf6a92e7c",
+                    "lastUpdateOn": "2018-08-03T17:00:12.120",
+                    "roles": [
+                        {
+                            "office": {
+                                "officeId": "42497839-1703-4199-9768-828cc9f2bb27",
+                                "RFGOfficeId": "0004",
+                                "companyId": "311788a3-f7f8-4230-91cd-c4aa04ebb8af",
+                                "companyName": "Signature",
+                                "RFGCompanyId": "800115",
+                                "brandCode": "SIR",
+                                "name": "Signature Sotheby's International Realty",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "6755 Telegraph",
+                                    "city": "Bloomfield Hills",
+                                    "district": "OAKLAND",
+                                    "stateProvince": "Michigan",
+                                    "stateProvinceCode": "MI",
+                                    "postalCode": "48301",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 42.5468635559082,
+                                    "longitude": -83.2866363525391,
+                                    "formattedAddress": "6755 Telegraph Rd, Bloomfield Hills, MI 48301"
+                                },
+                                "phoneNumber": "2486478888",
+                                "emailAddress": "info@signaturesothebys.com"
+                            },
+                            "role": "Sales Associate",
+                            "isFullTime": true,
+                            "isProducingRole": true
+                        }
+                    ],
+                    "addlEmails": [
+                        {
+                            "type": "Vanity",
+                            "address": "melvin.swain@sothebysrealty.com"
+                        }
+                    ],
+                    "languagesSpoken": [
+                        {
+                            "code": "eng",
+                            "name": "English"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "EA7921BD-B0E0-4C65-968E-54CE08E10057",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/EA7921BD-B0E0-4C65-968E-54CE08E10057",
+                            "isDefault": true,
+                            "caption": "Melvin Swain",
+                            "format": "Image",
+                            "category": "Person Photo",
+                            "lastUpdateOn": "2017-12-09T14:49:38.380"
+                        }
+                    ],
+                    "isTeamMember": false
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "DA2DF6FE-4F4C-4D7C-A0DB-EF2F714619AF",
+                "lastUpdateOn": "2018-08-06T17:30:11.793",
+                "entityDetail": {
+                    "agentSummary": {
+                        "id": "da2df6fe-4f4c-4d7c-a0db-ef2f714619af",
+                        "isAgent": true,
+                        "name": "Jill Gibson",
+                        "firstName": "Jill",
+                        "lastName": "Gibson",
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/3DF4DF87-2E58-49FF-9FAE-90A27BCA9AA5",
+                        "emailAddress": "jgibson@wpsir.com",
+                        "leadEmailAddress": "800024.lead.4010775@leads.leadrouter.com",
+                        "office": {
+                            "officeId": "56a22cae-b5a1-40a6-b177-52c13f52b5cc",
+                            "RFGOfficeId": "0032",
+                            "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+                            "companyName": "William Pitt",
+                            "RFGCompanyId": "800024",
+                            "brandCode": "SIR",
+                            "name": "William Pitt Sotheby's International Realty",
+                            "type": "Branch office",
+                            "officeAddress": {
+                                "streetAddress": "13 Main Street",
+                                "city": "Essex",
+                                "district": "Middlesex",
+                                "stateProvince": "Connecticut",
+                                "stateProvinceCode": "CT",
+                                "postalCode": "06426",
+                                "country": "United States",
+                                "countryCode": "US",
+                                "latitude": 41.353161,
+                                "longitude": -72.390322,
+                                "formattedAddress": "13 Main St, Essex, CT 06426"
+                            },
+                            "phoneNumber": "8607677488",
+                            "emailAddress": "wps.leads@mrtsystems.com"
+                        }
+                    },
+                    "personId": "1c7ccd90-e73b-49c4-a399-8045373f21fd",
+                    "lastUpdateOn": "2018-08-06T17:30:11.793",
+                    "roles": [
+                        {
+                            "office": {
+                                "officeId": "56a22cae-b5a1-40a6-b177-52c13f52b5cc",
+                                "RFGOfficeId": "0032",
+                                "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+                                "companyName": "William Pitt",
+                                "RFGCompanyId": "800024",
+                                "brandCode": "SIR",
+                                "name": "William Pitt Sotheby's International Realty",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "13 Main Street",
+                                    "city": "Essex",
+                                    "district": "Middlesex",
+                                    "stateProvince": "Connecticut",
+                                    "stateProvinceCode": "CT",
+                                    "postalCode": "06426",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 41.353161,
+                                    "longitude": -72.390322,
+                                    "formattedAddress": "13 Main St, Essex, CT 06426"
+                                },
+                                "phoneNumber": "8607677488",
+                                "emailAddress": "wps.leads@mrtsystems.com"
+                            },
+                            "role": "Sales Associate",
+                            "isFullTime": true,
+                            "isProducingRole": true
+                        }
+                    ],
+                    "addlEmails": [
+                        {
+                            "type": "Vanity",
+                            "address": "jill.gibson@sothebysrealty.com"
+                        }
+                    ],
+                    "languagesSpoken": [
+                        {
+                            "code": "eng",
+                            "name": "English"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "3DF4DF87-2E58-49FF-9FAE-90A27BCA9AA5",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/3DF4DF87-2E58-49FF-9FAE-90A27BCA9AA5",
+                            "isDefault": true,
+                            "caption": "Jill Gibson",
+                            "htmlDescription": "Jill Gibson",
+                            "format": "Image",
+                            "category": "Person Photo",
+                            "lastUpdateOn": "2018-08-06T17:30:11.780"
+                        }
+                    ],
+                    "addlPhones": [
+                        {
+                            "type": "Sothebysrealty.com 800",
+                            "number": "8602352209"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Personal Profile",
+                            "languageCode": "en",
+                            "remark": "Jill believes in \"Customer Satisfaction\". The future belongs to the buyer and seller that has been well informed. Buying and selling a home is one of the biggest financial decisions of your life. Jill is a lifelong resident of the Connecticut shoreline and has a degree in management. Recipient of 2004 Independent Realty Network Gold Award, member of the Eastern Connecticut Association of Realtors, the National Association of Realtors and the creator of historical homes \"Doorways of Guilford\" poster.",
+                            "htmlRemark": "Jill believes in \"Customer Satisfaction\". The future belongs to the buyer and seller that has been well informed. Buying and selling a home is one of the biggest financial decisions of your life.&lt;BR\/&gt;&lt;BR\/&gt;Jill is a lifelong resident of the Connecticut shoreline and has a degree in management.&lt;BR\/&gt;&lt;BR\/&gt;Recipient of 2004 Independent Realty Network Gold Award, member of the Eastern Connecticut Association of Realtors, the National Association of Realtors and the creator of historical homes \"Doorways of Guilford\" poster.&lt;BR\/&gt;&lt;BR\/&gt;"
+                        }
+                    ],
+                    "isTeamMember": false,
+                    "licenseInfo": [
+                        {
+                            "type": "SA",
+                            "stateCode": "CT",
+                            "number": "RES.076698",
+                            "issuedOn": "2015-01-01"
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "7D436CE8-D262-40C7-A4D2-FC6F2CEB72F9",
+                "lastUpdateOn": "2018-08-06T21:00:30.103",
+                "entityDetail": {
+                    "agentSummary": {
+                        "id": "7d436ce8-d262-40c7-a4d2-fc6f2ceb72f9",
+                        "isAgent": true,
+                        "name": "Kim Ouellette - Manager",
+                        "firstName": "Kim",
+                        "lastName": "Ouellette - Manager",
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/22D903B7-DA07-4831-83AB-3EEF151E18B8",
+                        "emailAddress": "kim.ouellette@premiersir.com",
+                        "leadEmailAddress": "800307.lead.4039402@leads.leadrouter.com",
+                        "specialty": "Residential",
+                        "office": {
+                            "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                            "RFGOfficeId": "0003",
+                            "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                            "companyName": "Premier",
+                            "RFGCompanyId": "800307",
+                            "brandCode": "SIR",
+                            "name": "Premier Sotheby's International Realty",
+                            "type": "Branch office",
+                            "officeAddress": {
+                                "streetAddress": "325 Vanderbilt Beach Road",
+                                "city": "Naples",
+                                "district": "Collier",
+                                "stateProvince": "Florida",
+                                "stateProvinceCode": "FL",
+                                "postalCode": "34108",
+                                "country": "United States",
+                                "countryCode": "US",
+                                "latitude": 26.25358,
+                                "longitude": -81.81984,
+                                "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                            },
+                            "phoneNumber": "2395949494",
+                            "emailAddress": "accounting@premiersir.com"
+                        }
+                    },
+                    "personId": "90eb7a88-c988-4131-bc57-f1d336c3a3ff",
+                    "lastUpdateOn": "2018-08-06T21:00:30.103",
+                    "roles": [
+                        {
+                            "office": {
+                                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                                "RFGOfficeId": "0003",
+                                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                                "companyName": "Premier",
+                                "RFGCompanyId": "800307",
+                                "brandCode": "SIR",
+                                "name": "Premier Sotheby's International Realty",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "325 Vanderbilt Beach Road",
+                                    "city": "Naples",
+                                    "district": "Collier",
+                                    "stateProvince": "Florida",
+                                    "stateProvinceCode": "FL",
+                                    "postalCode": "34108",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 26.25358,
+                                    "longitude": -81.81984,
+                                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                                },
+                                "phoneNumber": "2395949494",
+                                "emailAddress": "accounting@premiersir.com"
+                            },
+                            "role": "List Hub Manager",
+                            "isFullTime": true,
+                            "isProducingRole": false
+                        },
+                        {
+                            "office": {
+                                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                                "RFGOfficeId": "0003",
+                                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                                "companyName": "Premier",
+                                "RFGCompanyId": "800307",
+                                "brandCode": "SIR",
+                                "name": "Premier Sotheby's International Realty",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "325 Vanderbilt Beach Road",
+                                    "city": "Naples",
+                                    "district": "Collier",
+                                    "stateProvince": "Florida",
+                                    "stateProvinceCode": "FL",
+                                    "postalCode": "34108",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 26.25358,
+                                    "longitude": -81.81984,
+                                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                                },
+                                "phoneNumber": "2395949494",
+                                "emailAddress": "accounting@premiersir.com"
+                            },
+                            "role": "ListTrac Contact",
+                            "isFullTime": true,
+                            "isProducingRole": false
+                        },
+                        {
+                            "office": {
+                                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                                "RFGOfficeId": "0003",
+                                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                                "companyName": "Premier",
+                                "RFGCompanyId": "800307",
+                                "brandCode": "SIR",
+                                "name": "Premier Sotheby's International Realty",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "325 Vanderbilt Beach Road",
+                                    "city": "Naples",
+                                    "district": "Collier",
+                                    "stateProvince": "Florida",
+                                    "stateProvinceCode": "FL",
+                                    "postalCode": "34108",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 26.25358,
+                                    "longitude": -81.81984,
+                                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                                },
+                                "phoneNumber": "2395949494",
+                                "emailAddress": "accounting@premiersir.com"
+                            },
+                            "role": "Office Manager",
+                            "isFullTime": true,
+                            "isProducingRole": false
+                        },
+                        {
+                            "office": {
+                                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                                "RFGOfficeId": "0003",
+                                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                                "companyName": "Premier",
+                                "RFGCompanyId": "800307",
+                                "brandCode": "SIR",
+                                "name": "Premier Sotheby's International Realty",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "325 Vanderbilt Beach Road",
+                                    "city": "Naples",
+                                    "district": "Collier",
+                                    "stateProvince": "Florida",
+                                    "stateProvinceCode": "FL",
+                                    "postalCode": "34108",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 26.25358,
+                                    "longitude": -81.81984,
+                                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                                },
+                                "phoneNumber": "2395949494",
+                                "emailAddress": "accounting@premiersir.com"
+                            },
+                            "role": "Sales Associate",
+                            "isFullTime": true,
+                            "isProducingRole": true
+                        }
+                    ],
+                    "addlEmails": [
+                        {
+                            "type": "Vanity",
+                            "address": "kim.ouellette@sothebysrealty.com"
+                        }
+                    ],
+                    "languagesSpoken": [
+                        {
+                            "code": "eng",
+                            "name": "English"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "22D903B7-DA07-4831-83AB-3EEF151E18B8",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/22D903B7-DA07-4831-83AB-3EEF151E18B8",
+                            "isDefault": true,
+                            "caption": "Kim Ouellette",
+                            "format": "Image",
+                            "category": "Person Photo",
+                            "lastUpdateOn": "2017-12-09T14:17:09.100"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Personal Profile",
+                            "languageCode": "en",
+                            "remark": "Kim Ouellette\u2019s distinguished career in real estate, which she began in Shelby Township, Michigan, in residential sales, spans over 20 years. She joins Premier Sotheby\u2019s International Realty as the Managing Broker of the Vanderbilt office, having worked for several other prominent brokerages and having earned prestigious awards, such as Century 21\u2019s Centurion award for the highest standard of performance and service, time and time again.\r\n\r\nUpon coming to Naples in 2004, she joined Coldwell Banker, where she quickly earned the title of sales manager overseeing, training and coaching 100 associates. After moving to Prudential Florida WCI Realty, now Berkshire Hathaway HomeServices, in 2006 to become a managing broker of their Naples Park Shore and The Ritz-Carlton offices, she led her team to be the top-producing office out of over 40 offices for the brokerage statewide in 2015. She was also instrumental in being able to secure a second Ritz-Carlton location at The Ritz-Carlton Tibur\u00f3n.\r\n\r\nCurrently, she is serving a second year as both a director for Florida REALTORS\u00ae and the Naples Area Board of REALTORS\u00ae. Having also held positions on the local board\u2019s professional standards and function committees, Kim is currently on their legal resources committee. She holds her GRI, ABR and CRB designations and belongs to several boards, including the Women\u2019s Council of REALTORS\u00ae.\r\n\r\nOutside of real estate, Kim is passionate about helping and dedicating her time to others, having chaired and co-chaired for Sunshine Kids for the past 10 years, a charity that has raised several million dollars for children with cancer. As a director for her hometown college, Macomb Community College, where she earned a degree as a legal assistant, Kim proudly hosts the school\u2019s president and his distinguished guests each year in Naples. She is married to her best friend, Ken, and they have two beautiful daughters.",
+                            "htmlRemark": "Kim Ouellette\u2019s distinguished career in real estate, which she began in Shelby Township, Michigan, in residential sales, spans over 20 years. She joins Premier Sotheby\u2019s International Realty as the Managing Broker of the Vanderbilt office, having worked for several other prominent brokerages and having earned prestigious awards, such as Century 21\u2019s Centurion award for the highest standard of performance and service, time and time again.<br><br>Upon coming to Naples in 2004, she joined Coldwell Banker, where she quickly earned the title of sales manager overseeing, training and coaching 100 associates. After moving to Prudential Florida WCI Realty, now Berkshire Hathaway HomeServices, in 2006 to become a managing broker of their Naples Park Shore and The Ritz-Carlton offices, she led her team to be the top-producing office out of over 40 offices for the brokerage statewide in 2015. She was also instrumental in being able to secure a second Ritz-Carlton location at The Ritz-Carlton Tibur\u00f3n.<br><br>Currently, she is serving a second year as both a director for Florida REALTORS\u00ae and the Naples Area Board of REALTORS\u00ae. Having also held positions on the local board\u2019s professional standards and function committees, Kim is currently on their legal resources committee. She holds her GRI, ABR and CRB designations and belongs to several boards, including the Women\u2019s Council of REALTORS\u00ae.<br><br>Outside of real estate, Kim is passionate about helping and dedicating her time to others, having chaired and co-chaired for Sunshine Kids for the past 10 years, a charity that has raised several million dollars for children with cancer. As a director for her hometown college, Macomb Community College, where she earned a degree as a legal assistant, Kim proudly hosts the school\u2019s president and his distinguished guests each year in Naples. She is married to her best friend, Ken, and they have two beautiful daughters."
+                        }
+                    ],
+                    "isTeamMember": false,
+                    "licenseInfo": [
+                        {
+                            "type": "BR",
+                            "stateCode": "FL",
+                            "number": "BK3099786",
+                            "issuedOn": "2004-10-20"
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "B5E59077-6655-445F-AECB-AFCA43545A8C",
+                "lastUpdateOn": "2018-08-07T22:30:05.907",
+                "entityDetail": {
+                    "agentSummary": {
+                        "id": "b5e59077-6655-445f-aecb-afca43545a8c",
+                        "isAgent": true,
+                        "name": "Rosemary   Low",
+                        "firstName": "Rosemary",
+                        "lastName": "Low",
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+                        "emailAddress": "Rosemary.Low@sothebyshomes.com",
+                        "businessPhone": "3236605885",
+                        "mobilePhone": "3233630381",
+                        "specialty": "Residential",
+                        "office": {
+                            "officeId": "0a8a7a76-3c6d-43b9-b5d2-b572ed9a2c3a",
+                            "RFGOfficeId": "0015",
+                            "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+                            "companyName": "NRT Sotheby's International Realty",
+                            "RFGCompanyId": "901195",
+                            "brandCode": "SIR",
+                            "name": "Sotheby's International Realty - Los Feliz Brokerage",
+                            "type": "Branch office",
+                            "officeAddress": {
+                                "streetAddress": "1801  North Hillhurst Avenue ",
+                                "city": "Los Angeles",
+                                "district": "Los Angeles County",
+                                "stateProvince": "California",
+                                "stateProvinceCode": "CA",
+                                "postalCode": "90027",
+                                "country": "United States",
+                                "countryCode": "US",
+                                "latitude": 34.104058,
+                                "longitude": -118.287781,
+                                "formattedAddress": "1801 Hillhurst Ave, Los Angeles, CA 90027"
+                            },
+                            "phoneNumber": "323.665.1700",
+                            "emailAddress": "ALLSIRLosFelizEmployees@sothebyshomes.com"
+                        }
+                    },
+                    "personId": "da7c2066-5502-45f5-a04a-2faf3d3869be",
+                    "lastUpdateOn": "2018-08-07T22:30:05.907",
+                    "roles": [
+                        {
+                            "office": {
+                                "officeId": "0a8a7a76-3c6d-43b9-b5d2-b572ed9a2c3a",
+                                "RFGOfficeId": "0015",
+                                "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+                                "companyName": "NRT Sotheby's International Realty",
+                                "RFGCompanyId": "901195",
+                                "brandCode": "SIR",
+                                "name": "Sotheby's International Realty - Los Feliz Brokerage",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "1801  North Hillhurst Avenue ",
+                                    "city": "Los Angeles",
+                                    "district": "Los Angeles County",
+                                    "stateProvince": "California",
+                                    "stateProvinceCode": "CA",
+                                    "postalCode": "90027",
+                                    "country": "United States",
+                                    "countryCode": "US",
+                                    "latitude": 34.104058,
+                                    "longitude": -118.287781,
+                                    "formattedAddress": "1801 Hillhurst Ave, Los Angeles, CA 90027"
+                                },
+                                "phoneNumber": "323.665.1700",
+                                "emailAddress": "ALLSIRLosFelizEmployees@sothebyshomes.com"
+                            },
+                            "role": "Sales Associate",
+                            "isFullTime": false,
+                            "isProducingRole": true
+                        }
+                    ],
+                    "addlEmails": [
+                        {
+                            "type": "Vanity",
+                            "address": "Rosemary.Low@sothebyshomes.com"
+                        }
+                    ],
+                    "languagesSpoken": [
+                        {
+                            "code": "eng",
+                            "name": "English"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+                            "isDefault": true,
+                            "format": "Image",
+                            "category": "Person Photo",
+                            "lastUpdateOn": "2018-08-07T22:30:05.797"
+                        }
+                    ],
+                    "addlPhones": [
+                        {
+                            "type": "Fax",
+                            "number": "3236651780"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Personal Profile",
+                            "languageCode": "en",
+                            "remark": "Rosemary Low is a top listing\/selling agent in Sotheby's International Realty's Los Feliz office as well as one of the top listing\/selling agents in California companywide. She's been selling real estate for over 30 years in the Los Feliz\/Silverlake\/Hollywood Hills area. She has two assistants that work just for her. These assistants follow through on some of the details so that she can provide the kind of care that her clients need. <br><br>\r\nShe takes personal pride in providing the best service and cutting-edge marketing in the area. These include expert evaluation of properties, redecorating homes using the existing furniture and items that are on hand if needed, color brochures with the very best designs, strategizing the best plan for listing and selling a property, blitzing advertisements in many publications potential buyers will be reading, having an open house every weekend at the seller's convenience, her own personal real estate web site with an impressive array of listings in all price categories, virtual tours and slide shows, and years of experience in negotiating the best price. <br><br>\r\nRosemary believes in personal care from start to finish and a continual real estate relationship."
+                        }
+                    ],
+                    "webSites": [
+                        {
+                            "type": "Facebook",
+                            "url": "http:\/\/www.facebook.com\/rosemary.low.50",
+                            "contentLanguageCode": "en"
+                        }
+                    ],
+                    "isTeamMember": false,
+                    "licenseInfo": [
+                        {
+                            "type": "SA",
+                            "stateCode": "CA",
+                            "number": "492534"
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "7C3C2251-F0DB-4AE4-8E87-A5C7CA2355F6",
+                "lastUpdateOn": "2018-08-03T14:30:17.630",
+                "entityDetail": {
+                    "agentSummary": {
+                        "id": "7c3c2251-f0db-4ae4-8e87-a5c7ca2355f6",
+                        "isAgent": true,
+                        "name": "Megan  McLeod",
+                        "firstName": "Megan ",
+                        "lastName": "McLeod",
+                        "gender": "Female",
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+                        "emailAddress": "mmcleod@sothebysrealty.ca",
+                        "businessPhone": "4169609995",
+                        "specialty": "Residential",
+                        "office": {
+                            "officeId": "a01dfd06-adae-4e7e-9979-475a52e0f955",
+                            "RFGOfficeId": "0024 ",
+                            "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+                            "companyName": "Sotheby's International Realty Canada",
+                            "RFGCompanyId": "810043",
+                            "brandCode": "SIR",
+                            "name": "Sotheby's International Realty Canada",
+                            "type": "Branch office",
+                            "officeAddress": {
+                                "streetAddress": "113 Medora Street",
+                                "city": "Port Carling",
+                                "district": "Muskoka",
+                                "stateProvince": "Ontario",
+                                "stateProvinceCode": "ON",
+                                "postalCode": "P0B 1J0",
+                                "country": "Canada",
+                                "countryCode": "CA",
+                                "latitude": 45.1212,
+                                "longitude": -79.5793,
+                                "formattedAddress": "113 Medora St, Muskoka Lakes, ON P0B, Canada"
+                            },
+                            "phoneNumber": "1.877.960.9995",
+                            "emailAddress": "dusher@sothebysrealty.ca"
+                        }
+                    },
+                    "personId": "e81b5b71-1a4c-492a-b15c-85a3dabf1c29",
+                    "lastUpdateOn": "2018-08-03T14:30:17.630",
+                    "roles": [
+                        {
+                            "office": {
+                                "officeId": "7f7b3aee-ac58-4e2a-af0f-07d17f24deb0",
+                                "RFGOfficeId": "0007 ",
+                                "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+                                "companyName": "Sotheby's International Realty Canada",
+                                "RFGCompanyId": "810043",
+                                "brandCode": "SIR",
+                                "name": "Sotheby's International Realty Canada",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "1867 Yonge Street, Suite 100",
+                                    "city": "Toronto",
+                                    "district": "Toronto",
+                                    "stateProvince": "Ontario",
+                                    "stateProvinceCode": "ON",
+                                    "postalCode": "M4S 1Y5",
+                                    "country": "Canada",
+                                    "countryCode": "CA",
+                                    "latitude": 43.6972,
+                                    "longitude": -79.3959,
+                                    "formattedAddress": "1867 Yonge St, Toronto, ON M4S 1Y5, Canada"
+                                },
+                                "phoneNumber": "416.960.9995",
+                                "emailAddress": "dusher@sothebysrealty.ca"
+                            },
+                            "role": "Broker",
+                            "isFullTime": true,
+                            "isProducingRole": true
+                        },
+                        {
+                            "office": {
+                                "officeId": "a01dfd06-adae-4e7e-9979-475a52e0f955",
+                                "RFGOfficeId": "0024 ",
+                                "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+                                "companyName": "Sotheby's International Realty Canada",
+                                "RFGCompanyId": "810043",
+                                "brandCode": "SIR",
+                                "name": "Sotheby's International Realty Canada",
+                                "type": "Branch office",
+                                "officeAddress": {
+                                    "streetAddress": "113 Medora Street",
+                                    "city": "Port Carling",
+                                    "district": "Muskoka",
+                                    "stateProvince": "Ontario",
+                                    "stateProvinceCode": "ON",
+                                    "postalCode": "P0B 1J0",
+                                    "country": "Canada",
+                                    "countryCode": "CA",
+                                    "latitude": 45.1212,
+                                    "longitude": -79.5793,
+                                    "formattedAddress": "113 Medora St, Muskoka Lakes, ON P0B, Canada"
+                                },
+                                "phoneNumber": "1.877.960.9995",
+                                "emailAddress": "dusher@sothebysrealty.ca"
+                            },
+                            "role": "Broker",
+                            "isFullTime": true,
+                            "isProducingRole": true
+                        }
+                    ],
+                    "addlEmails": [
+                        {
+                            "type": "Vanity",
+                            "address": "megan.mcleod@sothebysrealty.com"
+                        }
+                    ],
+                    "languagesSpoken": [
+                        {
+                            "code": "eng",
+                            "name": "English"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+                            "isDefault": true,
+                            "caption": "new_bw",
+                            "format": "Image",
+                            "category": "Person Photo",
+                            "lastUpdateOn": "2018-08-03T14:30:17.613"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Personal Profile",
+                            "languageCode": "en",
+                            "remark": "As a Real Estate Broker living year round in Muskoka, Megan brings a rare insight into the unique demands associated with waterfront living. This understanding has helped her become one of the top producing Brokers for waterfront sales in the Lake of Bays, Huntsville & Muskoka Lakes areas. Even though Oakville was home to Megan, she fell in love with the Muskoka area and was looking for a profession that would enable her to live and play here permanently. In 1996 she left her sales position with Xerox to indulge her passion for interior design and Muskoka Living. In 2000, Megan entered the real estate profession where she was able to develop her exceptional sales ability and her creative side into an award-winning career as a top-producing Real Estate Broker. With her vast knowledge of the industry and area, it made sense that she would then take her experience to the next level and co-found a Real Estate Brokerage in Muskoka. The last few years have been rewarding as she ran and built a successful Brokerage. But her savvy sales and marketing experience was leading her back to where her heart was \u2013 back into sales. Megan is now focusing on selling and staging Muskoka properties and loving it! She spends her free time enjoying her life with her son, pets and friends. Megan brings passion, dedication and integrity to her work, typically going above and beyond by providing superior service to ensure her clients' complete happiness and satisfaction. She consistently achieves the highest internal sales awards. Forward thinking, with a designer's eye for detail and strong grounding in practicality, Megan is exceptionally qualified to assist both Buyers and Sellers achieve their goals in a timely and professional manner. Since 2011, Megan\u2019s Licensed Assistant Dawn Corbett has worked taking care of all the fine details while Megan can concentrate on the sale or purchase of your perfect Muskoka property! You can reach Dawn anytime and she will deal with your needs promptly with care. Your Muskoka lifestyle dream starts with a realtor who has a keen understanding of the area, who knows the specifics of waterfront living and who is committed to providing their clients with the very best one-on-one service. To learn more about Megan\u2019s new selling strategies please contact her directly.",
+                            "htmlRemark": "As a Real Estate Broker living year round in Muskoka, Megan brings a rare insight into the unique demands associated with waterfront living. This understanding has helped her become one of the top producing Brokers for waterfront sales in the Lake of Bays, Huntsville & Muskoka Lakes areas.\n\nEven though Oakville was home to Megan, she fell in love with the Muskoka area and was looking for a profession that would enable her to live and play here permanently.   In 1996 she left her sales position with Xerox to indulge her passion for interior design and Muskoka Living.  In 2000, Megan entered the real estate profession where she was able to develop her exceptional sales ability and her creative side into an award-winning career as a top-producing Real Estate Broker.\n\nWith her vast knowledge of the industry and area, it made sense that she would then take her experience to the next level and co-found a Real Estate Brokerage in Muskoka.  The last few years have been rewarding as she ran and built a successful Brokerage.  But her savvy sales and marketing experience was leading her back to where her heart was \u2013 back into sales.  Megan is now focusing on selling and staging Muskoka properties and loving it! She spends her free time enjoying her life with her son, pets and friends.\n\nMegan brings passion, dedication and integrity to her work, typically going above and beyond by providing superior service to ensure her clients' complete happiness and satisfaction.  She consistently achieves the highest internal sales awards. Forward thinking, with a designer's eye for detail and strong grounding in practicality, Megan is exceptionally qualified to assist both Buyers and Sellers achieve their goals in a timely and professional manner.\n\nSince 2011, Megan\u2019s Licensed Assistant Dawn Corbett has worked taking care of all the fine details while Megan can concentrate on the sale or purchase of your perfect Muskoka property!  You can reach Dawn anytime and she will deal with your needs promptly with care.\n\nYour Muskoka lifestyle dream starts with a realtor who has a keen understanding of the area, who knows the specifics of waterfront living and who is committed to providing their clients with the very best one-on-one service.\n\nTo learn more about Megan\u2019s new selling strategies please contact her directly."
+                        }
+                    ],
+                    "isTeamMember": false
+                }
+            }
+        ]
+    }
+]

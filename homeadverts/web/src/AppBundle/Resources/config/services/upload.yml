@@ -1,0 +1,84 @@
+services:
+    ha.import.hasher:
+        class: AppBundle\Service\File\Hasher
+        
+    # FileManagers
+    ha.file_storage:
+        class: AppBundle\Service\File\Storage\S3FileStorage
+        arguments:
+            - @ha.s3_client
+            - %s3.bucket.name%
+    
+    ha.file_manager:
+        class: AppBundle\Service\File\FileManager
+        arguments:
+            - @file_repo
+            - @ha.file_storage
+            - @em
+            - @ha_article.media
+    
+    ha.file_manager_virtal:
+        class: AppBundle\Service\File\FileManagerVirtual
+        arguments:
+            - @file_repo
+            - @em
+            - @security.token_storage
+    
+    # Import
+    ha.import.photo_storage:
+        class: AppBundle\Service\File\Storage\S3PhotoStorage
+        arguments:
+            - @ha.resizer_uploader
+            - @filesystem
+            - @monolog.logger.import
+    
+    ha.import.avatar_storage:
+        class: AppBundle\Service\File\Storage\S3PhotoStorage
+        arguments:
+            - @ha.resizer_uploader_profile
+            - @filesystem
+            - @monolog.logger.import
+            
+    # Uploader
+    ha.resizer_uploader_profile:
+        class: AppBundle\Service\File\ResizerUploader
+        arguments:
+            - @ha.s3_client_profile
+            - 'user'
+            - @ha.imagine
+            - %s3.profile_bucket.name%
+            - %kernel.cache_dir%/images
+            - '@=parameter("kernel.environment") == "test"'
+
+    ha.resizer_uploader:
+        class: AppBundle\Service\File\ResizerUploader
+        arguments:
+            - @ha.s3_client
+            - 'property'
+            - @ha.imagine
+            - %s3.bucket.name%
+            - %kernel.cache_dir%/images
+            - '@=parameter("kernel.environment") == "test"'
+    
+    # Helpers
+    ha.s3_client:
+        class: Aws\S3\S3Client
+        arguments:
+            -   bucket_endpoint: true
+                endpoint: %s3.bucket.endpoint%
+                region: %s3.bucket.region%
+                version: %s3.api_version%
+                credentials:
+                    key: %s3.access.key%
+                    secret: %s3.access.secret%
+    
+    ha.s3_client_profile:
+        class: Aws\S3\S3Client
+        arguments:
+            -   bucket_endpoint: true
+                endpoint: %s3.bucket.profile.endpoint%
+                region: %s3.profile_bucket.region%
+                version: %s3.api_version%
+                credentials:
+                    key: %s3.access.key%
+                    secret: %s3.access.secret%

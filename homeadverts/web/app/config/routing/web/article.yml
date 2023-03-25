@@ -1,0 +1,7 @@
+article_search:
+  prefix: /search
+  resource: "@AppBundle/Resources/config/routing/article/article_search.yml"
+
+article:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/article/article.yml"

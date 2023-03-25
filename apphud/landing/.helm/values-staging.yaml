@@ -1,0 +1,63 @@
+image:
+  name: registry.gitlab.apphud.com/apphud/landing
+  tag: latest
+  imagepullpolicy: IfNotPresent
+imagePullSecret: apphud-read-registry
+
+replicaCount: 1
+
+environment: production
+
+service:
+  type: ClusterIP
+  port: 3000
+  external_port: 3000
+  target_port: 8080
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 128Mi
+  requests:
+    cpu: 30m
+    memory: 32Mi
+
+livenessProbe:
+  initialDelaySeconds: 20
+  periodSeconds: 60
+  timeoutSeconds: 30
+  successThreshold: 1
+  failureThreshold: 3
+
+readinessProbe:
+  initialDelaySeconds: 0
+  periodSeconds: 10
+  timeoutSeconds: 2
+  successThreshold: 1
+  failureThreshold: 3
+
+# annotations for pods
+annotations: {}
+
+configMap: {}
+
+secret: {}
+
+customConfigMap: ""
+
+customSecret: ""
+
+ingress:
+  enabled: true
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    nginx.ingress.kubernetes.io/proxy-body-size: 256m
+  hosts:
+    - host: appfist.com
+      paths: [/]
+  tls:
+    - secretName: landing-appfist-tls
+      hosts:
+        - appfist.com
+
+affinity: {}

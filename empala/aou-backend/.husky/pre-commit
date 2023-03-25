@@ -1,0 +1,14 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+full_path=$(realpath $0)
+dir_path=$(dirname $full_path)
+
+git diff --quiet HEAD -- $dir_path/../products/core-be/src || ( \
+  cd $dir_path/../products/core-be && \
+  npm run generate-schema && \
+  git add ./current-schema.graphql )
+
+# In automatic mode, before the commit, we perform ONLY the CHECK (without formatting)
+# Formatting is done in manual mode with the command  `npm run format`
+# npm run lint

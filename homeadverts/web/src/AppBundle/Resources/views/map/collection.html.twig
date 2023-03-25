@@ -1,0 +1,50 @@
+{% set carousel_video_template %}
+{% spaceless %}
+    <li class="play-video"
+        data-type="%PROPERTY_VIDEO_TYPE%"
+        data-url="%PROPERTY_VIDEO_URL%">
+        <i class="material-icons">videocam</i>
+    </li>
+{% endspaceless %}
+{% endset %}
+
+{% set carousel_template %}
+{% spaceless %}
+    <div id="map-%PROPERTY_ID%" class="modal-carousel">
+        <div class="gallery-wrapper">
+            <div class="carousel">%PHOTO_CELLS%</div>
+        </div>
+        {% include "AppBundle:map:_toolbar.html.twig" %}
+    </div>
+{% endspaceless %}
+{% endset %}
+
+{% set carousel_cell_template %}
+{% spaceless %}
+    <div class="gallery-cell">
+        <img class="gallery-cell-image"
+             src="%PHOTO_URL%"
+             data-flickity-lazyload="%PHOTO_LAZYLOAD%"
+             data-index="%PHOTO_INDEX%"
+        />
+        {% include "AppBundle:map:_toolbar.html.twig" %}
+    </div>
+{% endspaceless %}
+{% endset %}
+
+<div class="map --collection --property-collection"
+     data-carousel-template="{{ carousel_template|e('html_attr') }}"
+     data-carousel-cell-template="{{ carousel_cell_template|e('html_attr') }}"
+     data-carousel-video-template="{{ carousel_video_template|e('html_attr') }}">
+
+    <div class="map-canvas">
+    </div>
+
+    <div id="map-carousel"
+         style="display: none;"
+         data-property-id=""
+         data-listhub-sourceRef=""
+    >
+        <div data-gallery-content=""></div>
+    </div>
+</div>

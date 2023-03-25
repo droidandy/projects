@@ -1,0 +1,30 @@
+{
+  "name": "homeadverts",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "jquery.transit": "^0.9.12",
+    "momentjs": "~2.5.1",
+    "flickity": "^2.1.2",
+    "modernizr": "^3.3.1",
+    "medium-editor": "5.23.1",
+    "blueimp-file-upload": "^9.17.0",
+    "blueimp-canvas-to-blob": "^3.8.0",
+    "blueimp-load-image": "^2.12.2",
+    "blueimp-tmpl": "^3.8.0",
+    "cropperjs": "^0.8.1",
+    "material-design-lite": "^1.3.0",
+    "material-design-icons": "^3.0.1",
+    "jquery.cookie": "^1.4.1",
+    "autosize": "^4.0.0",
+    "velocity": "^1.5.0",
+    "dialog-polyfill": "^0.4.9",
+    "selectize": "^0.12.4",
+    "getmdl-select": "^1.1.0",
+    "amcharts3": "^3.21.13",
+    "waypoints": "^4.0.1",
+    "tablesort": "tristen/tablesort#^5.0.2",
+    "vue": "^2.5.17",
+    "pusher-js": "^4.4.0"
+  }
+}

@@ -1,0 +1,173 @@
+.prequoted-bank {
+  .top-divider {
+    width: 100%;
+    height: 8px;
+    background-color: $FONT_COLOR;
+    margin-bottom: 15px;
+  }
+  .cost {
+    padding-bottom: 30px;
+  }
+  .empty-quote {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+  }
+  .plan-names {
+    font-size: 13px;
+  }
+  .rate-bank-true {
+    color: #0099cc;
+    font-weight: 600;
+  }
+  .nums {
+    top: 0;
+    padding-top: 16px;
+    & .totals{
+      padding: 0 20px 0 60px ;
+    }
+    & .totals-true {
+      display: block;
+      padding: 0 20px 0 20px;
+    }
+    & .totals-true-percentage {
+      padding-top: 10px;
+      display: block;
+    }
+  }
+
+  .rate-bank__preheader {
+    padding: 0;
+  } //not finished
+  .ui.unstackable.table.stripped {
+    border: solid 1px transparent;
+    padding-bottom: 50px;
+  }
+  .ui.unstackable.table.stripped.edit {
+    border-color: #979797;
+    padding-bottom: 0;
+  }
+  .plan-title{
+    color: #164d8d;
+  }
+  .preheader__line {
+    width: 80px;
+    border: solid 1px #979797;
+    margin: 7px 7px 0px 7px;
+    float: right;
+    &.firstLine {
+      margin-right: 20%;
+    }
+    &.secondLine {
+      overflow: hidden;
+    }
+  }
+  .preheader__text {
+    color: #6e7881;
+    font-size: 11px;
+    display: block;
+    float: right;
+  }
+  .rate-bank__editButton {
+    width: 168px;
+  }
+
+  .ui.input.rate-bank__input {
+    width: 100px;
+    max-width: 100px;
+    background-color: #fff;
+    & input {
+      font-size: 14px;
+      color: #0099cc;
+      text-align: right;
+    }
+  }
+  .budget {
+    position: absolute !important;
+    right: 10px;
+    bottom: 7px;
+  }
+
+  .rate-bank__editLink, .budget__editLink {
+    height: 28px;
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #3a444d;
+    margin-right: 20px;
+    display: block;
+  }
+  .budget__editLink {
+    margin-left: 100px;
+    overflow: hidden;
+  }
+  .share.icon {
+    margin-left: 10px;
+    transform: rotate(90deg);
+  }
+  .prequoted-bank__zone-holder {
+    margin: 45px 0 30px;
+  }
+  .prequoted-bank__zone  {
+    border: dashed 1px #aaafb2;
+    border-radius: 4px;
+    flex-direction: row;
+    padding: 15px;
+    margin-bottom: 30px;
+    & > * {
+      flex-grow: 1;
+      flex-basis: 50%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .upload-zone__caption {
+      text-align: center;
+    }
+  }
+
+  .ui.form .thirteen.wide.field {
+    width: 100% !important;
+  }
+
+  .button-line {
+    overflow: hidden;
+    margin: 40px 0;
+
+    .send-button {
+      max-width: 300px;
+      float: left;
+    }
+
+    .ui.loader {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  }
+
+  .ui.input {
+    max-width: 80px !important;
+  }
+
+  .main-card.ui.card {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .ui.input input,
+  .ui.input input[type=text] {
+    background-color: #fff !important;
+  }
+}
+.prequote-page ul.leaders li .title.budget__editButton {
+  padding-right: 0;
+}
+.prequote-page ul.leaders li .nums  .nums-black {
+  color: #3c4649;
+  font-weight: normal;
+  font-size: 14px;
+}

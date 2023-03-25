@@ -1,0 +1,251 @@
+{
+  "listingSummary": {
+    "listingId": "000fef9e-7388-427a-b80c-564d717e833a",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-04-12",
+    "photoCount": 10,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 595000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "General Silva",
+      "city": "Miraflores",
+      "stateProvince": "Liberec",
+      "stateProvinceCode": "LIM",
+      "postalCode": "18",
+      "country": "Peru",
+      "countryCode": "PE",
+      "latitude": -12.1238226307915,
+      "longitude": -77.0202089425934
+    },
+    "RFGListingId": "Z8Y2EC",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/z8y2ec",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Multi-Family Home",
+    "propertyStyle": "Antique",
+    "propertyName": "Beautiful house completely refurnished in San Antonio, Miraflores close to parks",
+    "lotSize": "243 SM",
+    "buildingArea": "260 Sq. M",
+    "noOfBedrooms": 3,
+    "squareFootage": 2798.614,
+    "defaultPhotoURL": "//openapi.azureedge.net/43F0DB09-FEC4-4DEB-8667-362650F15F65",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-04-12T19:05:45.710",
+    "agents": [
+      {
+        "id": "b01ad567-5edd-47ca-a299-b90c140a45bb",
+        "name": "Nella Ponce",
+        "firstName": "Nella",
+        "lastName": "Ponce",
+        "defaultPhotoURL": "//openapi.azureedge.net/0B7D1C6C-710D-4021-8436-FE6A83CB251F",
+        "emailAddress": "nella.ponce@sothebysrealty.com",
+        "businessPhone": "5114172420",
+        "isPrimary": true,
+        "office": {
+          "officeId": "66392d26-a16c-4a65-ad17-ad8e630d2869",
+          "RFGOfficeId": "0001 ",
+          "companyId": "03e283f6-cdc7-4c9b-8376-8d6b20f9612e",
+          "companyName": "Peru Sotheby's International Realty",
+          "RFGCompanyId": "870132",
+          "brandCode": "SIR",
+          "name": "Perú Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Calle Los Libertadores 237",
+            "city": "San Isidro",
+            "stateProvince": "Municipalidad Metropolitana de Lima",
+            "stateProvinceCode": "LMA",
+            "postalCode": "15073",
+            "country": "Peru",
+            "countryCode": "PE",
+            "latitude": -12.100167,
+            "longitude": -77.037213
+          },
+          "phoneNumber": "+511-417-24200",
+          "emailAddress": "info@perusir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 3,
+  "halfBath": 1,
+  "providerKey": "000fef9e-7388-427a-b80c-564d717e833a",
+  "propertyFeatures": [
+    {
+      "groupName": "Garage Count",
+      "description": "3 Car Garage"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Highlight 1",
+      "languageCode": "en",
+      "remark": "Beautiful house completely refurnished in San Antonio, Miraflores close to parks",
+      "htmlRemark": "<p>Beautiful house completely refurnished in San Antonio, Miraflores close to parks<br></p>"
+    },
+    {
+      "type": "Highlight 1",
+      "languageCode": "es-US",
+      "remark": "Linda casa totalmente remodelada cerca a parque en San Antonio, Miraflores",
+      "htmlRemark": "<p>Linda casa totalmente remodelada cerca a parque en San Antonio, Miraflores<br></p>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Beautiful house completely refurnished in San Antonio, Miraflores close to parks. This three story house was completely refurnished by its owners using modern finishings and very good taste. The access is through a frontal yard where one comes into the main living room and dining room area with view to the back yard and terrace. In the first floor one also finds the TV room and kitchen with access to the back yard. On the second level are the three bedrooms. The main bedroom comes with walk in closet and the main bathroom has separate jacuzzi and shower. The secondary bedrooms share an ample bathroom with modern finishings. All of the house has a lot of natural light and has wooden floors. On the third level one finds the 2 maid´s bedrooms and a storage room, plus a big patio. The area is very peaceful and close to parks. The house is connected to Mapfre through sensors all around the property. The block has 24 hour surveillance. Appointments one day in advance.",
+      "htmlRemark": "<p>Beautiful house completely refurnished in San Antonio, Miraflores close to parks. This three story house was completely refurnished by its owners using modern finishings and very good taste. The access is through a frontal yard where one comes into the main living room and dining room area with view to the back yard and terrace. In the first floor one also finds the TV room and kitchen with access to the back yard. On the second level are the three bedrooms. The main bedroom comes with walk in closet and the main bathroom has separate jacuzzi and shower. The secondary bedrooms share an ample bathroom with modern finishings. All of the house has a lot of natural light and has wooden floors. On the third level one finds the 2 maid´s bedrooms and a storage room, plus a big patio. The area is very peaceful and close to parks. The house is connected to Mapfre through sensors all around the property. The block has 24 hour surveillance. Appointments one day in advance.&nbsp;<br></p>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "es-US",
+      "remark": "Linda casa totalmente remodelada en San Antonio, Miraflores cerca a parque en Calle General Silva. Esta casa de tres pisos fue totalmente remodelada por sus dueñas hace algunos años utilizando buenos acabados y un estilo moderno. Se ingresa por el jardín frontal a la sala/comedor con pisos de madera que dan al jardín y a la terraza. En el primer piso también se encuentran la sala de estar y la cocina con comedor de diario y salida al jadrín. En el segundo piso donde se llega por una escalera de madera se encuentran los tres dormitorios. El principal con amplio walk in closet y baño con ducha y jacuzzi por separados. Los dos dormitorios secundarios de muy buen tamaño comparten un cómodo baño con muy buenos y modernos acabados. En el tercer piso encontramos la zona de servicio con dos dormitorios de servicio más baño además de un cuarto de planchado o depósito, y un patio que puede usarse de varias maneras. La zona es residencial y muy tranquila rodeada de casas en su mayoría remodeladas. Toda la casa cuenta con sensores y está conectada a un sistema de seguridad con cámaras de Mapfre. La cuadra cuenta con un vigilante permanente. Citas fáciles.",
+      "htmlRemark": "<p>Linda casa totalmente remodelada en San Antonio, Miraflores cerca a parque en Calle General Silva. Esta casa de tres pisos fue totalmente remodelada por sus dueñas hace algunos años utilizando buenos acabados y un estilo moderno. Se ingresa por el jardín frontal a la sala/comedor con pisos de madera que dan al jardín y a la terraza. En el primer piso también se encuentran la sala de estar y la cocina con comedor de diario y salida al jadrín. En el segundo piso donde se llega por una escalera de madera se encuentran los tres dormitorios. El principal con amplio walk in closet y baño con ducha y jacuzzi por separados. Los dos dormitorios secundarios de muy buen tamaño comparten un cómodo baño con muy buenos y modernos acabados. En el tercer piso encontramos la zona de servicio con dos dormitorios de servicio más baño además de un cuarto de planchado o depósito, y un patio que puede usarse de varias maneras. La zona es residencial y muy tranquila rodeada de casas en su mayoría remodeladas. Toda la casa cuenta con sensores y está conectada a un sistema de seguridad con cámaras de Mapfre. La cuadra cuenta con un vigilante permanente. Citas fáciles.<br></p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/z8y2ec",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "541110BE-61B0-42B2-808C-0A76E199D326",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/541110BE-61B0-42B2-808C-0A76E199D326",
+      "isDefault": false,
+      "caption": "9",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "43F0DB09-FEC4-4DEB-8667-362650F15F65",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/43F0DB09-FEC4-4DEB-8667-362650F15F65",
+      "isDefault": true,
+      "caption": "4",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "F9EB61E9-EF77-485D-A7EA-364E70A1F894",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/F9EB61E9-EF77-485D-A7EA-364E70A1F894",
+      "isDefault": false,
+      "caption": "7",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "3DB84A46-969A-4C82-84BB-59A93CD5ACA5",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/3DB84A46-969A-4C82-84BB-59A93CD5ACA5",
+      "isDefault": false,
+      "caption": "3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "B2FA9965-B183-4A90-985C-7992D497EBE9",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/B2FA9965-B183-4A90-985C-7992D497EBE9",
+      "isDefault": false,
+      "caption": "11",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "F92A6965-2E94-4CD0-BE05-85D897E0FE10",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/F92A6965-2E94-4CD0-BE05-85D897E0FE10",
+      "isDefault": false,
+      "caption": "1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "FABFA049-5452-4290-93F7-B1772ECF68E7",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/FABFA049-5452-4290-93F7-B1772ECF68E7",
+      "isDefault": false,
+      "caption": "2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "864D85E1-6C15-411A-ACDA-CE6641AC7B4E",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/864D85E1-6C15-411A-ACDA-CE6641AC7B4E",
+      "isDefault": false,
+      "caption": "10",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "C18577FA-DBFE-4E64-B64C-F2F8E2A31EF3",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/C18577FA-DBFE-4E64-B64C-F2F8E2A31EF3",
+      "isDefault": false,
+      "caption": "6",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    },
+    {
+      "mediaID": "8DCBECEB-02C8-4C9C-847D-FF48E479931A",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/8DCBECEB-02C8-4C9C-847D-FF48E479931A",
+      "isDefault": false,
+      "caption": "5",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-12T19:05:45.727"
+    }
+  ]
+}

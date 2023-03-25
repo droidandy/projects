@@ -1,0 +1,478 @@
+{
+  "connection": {
+    "text": {
+      "serviceFailure": "Sorry, we are having hard time connecting to Gett Business Solutions.",
+      "checkYourConnection": "Please check your internet connection."
+    }
+  },
+  "modal": {
+    "label": {
+      "close": "Close",
+      "cancel": "Cancel"
+    }
+  },
+  "tip": {
+    "text": {
+      "removeCard": "Swipe left to remove payment card",
+      "removeAddress": "Swipe left to remove address"
+    }
+  },
+  "information": {
+    "contactUs": "Contact Us",
+    "noVehicles": "Vehicles are not available in this area or not allowed by Travel Policy",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "watchTutorial": "Watch Tutorial",
+    "notifications": "Notification History",
+    "statistics": "Statistics"
+  },
+  "popup": {
+    "locationService": {
+      "title": "Location services are disable, go to settings to switch them on",
+      "button": {
+        "сancel": "Dismiss",
+        "сonfirm": "Ok"
+      }
+    },
+    "gpsService": {
+      "title": "<h2>Use Location ?</h2>This app wants to change your device settings:<br/><br/>Use GPS, Wi-Fi, and cell network for location<br/>",
+      "button": {
+        "no": "No",
+        "ok": "Ok"
+      }
+    },
+    "serviceSuspended": {
+      "title": "Service Suspended",
+      "greeting": "Dear Customer,",
+      "description": "Due to unpaid invoices the service has been suspended.\nPlease contact OT Billing Department to resolve this issue.",
+      "sign": "Thank you,\nOT Team"
+    },
+    "companyRequest": {
+      "title": "Thank you!",
+      "description": "We will be in contact with you shortly"
+    },
+    "cards": {
+      "title": "Sorry",
+      "description": "You have no Credit/Debit cards added in your profile"
+    },
+    "orderCreating": {
+      "inProgress": "Your order is being processed",
+      "description": "We've noticed you are travelling to %{code}, shall we arrange a taxi to meet you on arrival at %{name}?",
+      "success": "Order was created!",
+      "button": {
+        "сonfirm": "OK",
+        "seeDetails": "See details",
+        "accept": "Yes, please",
+        "decline": "No, thanks"
+      }
+    },
+    "touchId": {
+      "touchId": "Touch ID",
+      "faceId": "Face ID",
+      "logInWith": "Log in with %{type}",
+      "useYour": "Use your %{type} for faster and easier access to your account.",
+      "caution": "Remember, if someone else has saved their %{type} on this device, they’ll also have access to your account.",
+      "fingerprint": "fingerprint",
+      "isReadyToGo": "%{type} is ready to go",
+      "buttons": {
+        "notNow": "Not Now",
+        "yes": "Yes"
+      }
+    }
+  },
+  "alert": {
+    "status": {
+      "success": "Success",
+      "info": "Information",
+      "warning": "Warning",
+      "failed": "Failed"
+    },
+    "title": {
+      "cancelOrderCreation": "Cancel Order Creation",
+      "doYouWantToCancelOrder": "Do you really want to cancel your order?",
+      "goBack": "Go Back"
+    },
+    "message": {
+      "areYouSure": "Are you sure?",
+      "dataWillNotBeSaved": "The data you entered will not be saved.",
+      "doYouWantToDelete": "Do you want to delete?",
+      "doYouWantToDeleteTheAddress": "Do you want to delete the address?",
+      "doYouWantToDeactivateTheCard": "Do you want to deactivate the card?",
+      "enterValidCreditCard": "Please enter a valid credit card",
+      "cancelOrderDescription": "Сancellations charges may apply when you cancel this order",
+      "goBackWithReferenceErrors": "Are you sure you want to go back, you have some errors in references values?",
+      "pathDuplication": "Path contains duplications of points. Please, check all addresses.",
+
+      "youCanNotRegisterCompany": "You can't register a company now",
+      "userCanNotBeLogged": "User can't be logged in now",
+      "notReceivedCoordinates": "GPS coordinates aren`t received",
+      "notSupportedAddress": "Sorry, this address is not supported",
+      "scheduledAt": "Wrong pick-up time",
+      "referenceErrors": "References are invalid. Please, check marked fields",
+      "paymentMethod": "Sorry, you have no Credit/Debit cards added in your profile",
+      "touchIdCredentials": "Sorry, your credentials are outdated. Please, login via your email and password",
+      "notRepeatRevertOrder": "Something went wrong. We can not %{type} the order."
+    },
+    "button": {
+      "no": "No",
+      "yes": "Yes",
+      "ok": "Ok",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "deactivate": "Deactivate"
+    }
+  },
+  "header": {
+    "title": {
+      "selectCountry": "Select country",
+      "yourEnquiry": "Your enquiry",
+      "settings": "Settings",
+      "editProfile": "Edit Profile",
+      "newAddress": "New Addresses",
+      "editAddress": "Edit Address",
+      "myAddresses": "My Addresses",
+      "defaultCarType": "Default Car Type",
+      "cardType": "Card type",
+      "addCreditCard": "Add Credit Card",
+      "paymentCards": "Payment Cards",
+      "cardDetails": "Card Details",
+      "email": "Email",
+      "phone": "Phone",
+      "defaultPhone": "Default Phone",
+      "search": "Search",
+      "dateRange": "Date range",
+      "notifications": "Notification History",
+      "statistics": "Statistics",
+      "flightTracking": "Flight Tracking"
+    },
+    "button": {
+      "add": "Add",
+      "back": "Back",
+      "save": "Save",
+      "send": "Send",
+      "done": "Done",
+      "clear": "Clear"
+    }
+  },
+  "app": {
+    "label": {
+      "home": "Home",
+      "work": "Work",
+      "none": "None",
+      "emptyResult": "No Results",
+      "byMeter": "By meter",
+      "startTyping": "Start typing…",
+      "startTypeMessage": "Start type your message",
+      "min": "min"
+    }
+  },
+  "emptyPageResults": {
+    "label": {
+      "noCards": "No Cards",
+      "noNotifications": "No Notifications",
+      "noOrders": "No Orders",
+      "noSearchResults": "No Search Results",
+      "noFavourites": "No Favourite Addresses"
+    },
+    "text": {
+      "noCards": "You do not have any cards yet",
+      "noNotifications": "You do not have any notifications yet",
+      "noOrders": "You do not have any orders yet",
+      "noFavourites": "You do not have any favourite addresses yet"
+    },
+    "button": {
+      "noFavourites": "Add Favourite Address"
+    }
+  },
+  "booking": {
+    "label": {
+      "addStopPoint": "Add stop point",
+      "stopPoint": "Stop Point",
+      "usePassengerCostCentre": "Use passenger's Cost Centre",
+      "selectDestination": "Select Destination",
+      "other": "Other",
+      "departing": "Departure",
+      "arriving": "Arrival"
+    }
+  },
+  "flight": {
+    "label": {
+      "actual": "Actual",
+      "arrival": "ARRIVAL",
+      "estimated": "Estimated",
+      "baggage": "Baggage",
+      "departure": "DEPARTURE",
+      "flightNumber": "Flight №",
+      "from": "From",
+      "gate": "Gate",
+      "scheduled": "Scheduled",
+      "terminal": "Terminal",
+      "to": "To"
+    },
+    "text": {
+      "enterTheFlightNumber": "Please enter the flight number",
+      "notFoundFlightNumber": "Flight number not found or you were mistaken with the date, please double check"
+    },
+    "button": {
+      "noThanks": "No Thanks",
+      "ok": "OK",
+      "verify": "Verify",
+      "save": "Save"
+    }
+  },
+  "messageToDriver": {
+    "text": {
+      "callOnArrival": "Call on arrival",
+      "doNotCall": "Do not call",
+      "meetAtArrivals": "Meet at arrivals",
+      "ringDoorOnArrival": "Ring door on arrival",
+      "parkAndWait": "Park and wait",
+      "ifLateCallMe": "If late call me"
+    }
+  },
+  "order": {
+    "type": {
+      "asDirected": "As directed",
+      "preBook": "Pre-book",
+      "recurring": "Recurring order"
+    },
+    "journeyType": {
+      "repeat": "repeat",
+      "reverse": "return"
+    },
+    "status": {
+      "connected": "Creating...",
+      "creating": "Creating...",
+      "order_received": "Order Accepted",
+      "processing": "Processing",
+      "locating": "Locating a Car",
+      "on_the_way": "Driver on the way",
+      "arrived": "Driver is waiting for you",
+      "in_progress": "Enjoy Your Journey",
+      "completed": "Ride has been completed",
+      "billed": "Billed",
+      "cancelled": "Ride has been cancelled",
+      "customer_care": "Customer Care",
+      "rejected": "Ride has been rejected"
+    },
+    "cancellationReason": {
+      "mistaken_order": "Ordered by mistake",
+      "driver_asked_to": "Driver asked me to",
+      "hailed_another_car": "Hailed another car",
+      "too_long_eta": "ETA was too long"
+    },
+    "ratingReason": {
+      "driver_professionalism": "Driver professionalism",
+      "vehicle_condition": "Vehicle condition",
+      "driving_style": "Driving style",
+      "car_model": "Car model",
+      "pickup": "Pickup",
+      "route": "Route",
+      "app": "App",
+      "traffic": "Traffic"
+    },
+    "label": {
+      "carReg": "Car Reg",
+      "eta": "ETA",
+      "onDemand": "On-Demand",
+      "journeyTime": "Journey Time",
+      "distance": "Distance",
+      "period": "Period",
+      "pickupTime": "Pickup Time",
+      "every": "Every",
+      "workdaysOnly": "Workdays Only",
+      "everyDays": "day(s), on",
+      "time": "Time",
+      "serviceId": "Service ID:",
+      "journey": "%{type} Journey"
+    },
+    "text": {
+      "yourRideWasCancelled": "Your Ride Was Cancelled",
+      "seeYouNextTime": "See you next time!",
+      "whyDidYouCancel": "Why did you cancel?",
+      "youRated": "You Rated",
+      "rateYourDriver": "Rate your driver",
+      "howCanImprove": "How can we improve?",
+      "yourFeedback": "Your feedback will be kept anonymous",
+      "selectIssues": "Please select one or more issues",
+      "orderDetails": "Order Details",
+      "billed": "Billed",
+      "serviceID": "Service ID",
+      "noDriverInfo": "Unfortunately this order can't be tracked due to technical limitations",
+      "bookingReferences": "BOOKING REFERENCES",
+      "setBookingSchedule": "Set your bookings daily schedule",
+      "excludeDaysFromSchedule": "Exclude following days from orders"
+    },
+    "button": {
+      "actions": "Actions",
+      "cancelOrder": "Cancel Order",
+      "cancelRecurringOrder": "Cancel Order and Schedule",
+      "editOrder": "Edit Order",
+      "myLocation": "My Location",
+      "walker": "I'm on my way",
+      "createNew": "Create New",
+      "dots": "Actions",
+      "orders": "Orders",
+      "receipt": "Receipt",
+      "save": "Save",
+      "callDispatcher": "Call Fleet",
+      "callDispatcherFull": "Call the fleet dispatcher",
+      "onDemand": "On-Demand",
+      "set": "Set",
+      "update": "Update",
+      "orderRide": "Order Ride",
+      "done": "Done"
+    }
+  },
+  "auth": {
+    "label": {
+      "email": "Email",
+      "password": "Password",
+      "accept": "Accept",
+      "logIn": "Log in",
+      "yourName": "Your name",
+      "phoneNumber": "Phone number",
+      "workEmail": "Work email",
+      "company": "Company",
+      "comments": "Comments",
+      "selectPrimaryCountry": "Select Primary country"
+    },
+    "text": {
+      "passwordWasReset": "Password was reset. Please, check your email",
+      "forgotPassword": "Forgot password?",
+      "openAccountToday": "Enquire or open an account today",
+      "oneTransportForYourBusiness": "Gett Business Solutions, powered by One Transport, for all your business taxi and private hire needs across the globe."
+    },
+    "button": {
+      "resetPassword": "Reset Password",
+      "send": "Send"
+    }
+  },
+  "notifications": {
+    "period": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "lastWeek": "Last week",
+      "lastMonth": "Last month",
+      "lastYear": "Last year",
+      "longTimeAgo": "Long time ago"
+    }
+  },
+  "settings": {
+    "label": {
+      "defaultPhone": "Default Phone",
+      "email": "Email",
+      "cartype": "Default Car Type",
+      "addresses": "My addresses",
+      "sms": "SMS",
+      "notification": "Push Notifications",
+      "touchId": "Log in with Touch ID",
+      "faceId": "Log in with Face ID",
+      "events": "Calendar Events",
+      "auto": "Auto",
+      "day": "Day",
+      "night": "Night",
+      "theme": "Color Theme",
+      "wheelchair": "Wheelchair Access",
+      "payments": "Payment Cards",
+      "orders": "Orders",
+      "carAnimations": "Car animations",
+      "locatingCarAnimation": "Locating a car animation",
+      "splashScreen": "Splash screen animation",
+      "version": "VERSION",
+      "guideByOrdersList": "Guide by Orders list",
+      "guideByMakingOrder": "Guide by Making order",
+      "guideByUserSettings": "Guide by User settings",
+      "flightTracking": "Flight Tracking"
+    },
+    "themeTitle": {
+      "auto": "Auto theme",
+      "day": "Day theme",
+      "night": "Night theme"
+    },
+    "themeText": {
+      "auto": "The color theme of the application will change automatically depending on the time of the day.\n\nDay theme - from 5 am to 9 pm\nNight theme - from 9 pm to 5 am",
+      "day": "The color theme will not change automatically depending on the time of the day and will be set as Day theme.",
+      "night": "The color theme will not change automatically depending on the time of the day and will be set as Night theme."
+    },
+    "button": {
+      "logout": "Log Out"
+    }
+  },
+  "paymentCard": {
+    "label": {
+      "cvv": "CVV",
+      "expirationDate": "Expiration date",
+      "cardHolder":"Cardholder",
+      "cardNumber": "Card number",
+      "cardType": "Card type"
+    },
+    "text": {
+      "cvv": "A three- or four-digit code on your credit card, you can find this on the back of your card.",
+      "expirationDate": "You should be able to find this date on the front of your card, under the card number"
+    },
+    "placeholder": {
+      "expirationDateFormat": "MM / YYYY"
+    },
+    "button": {
+      "deactivate": "Deactivate"
+    }
+  },
+  "phones": {
+    "label": {
+      "addAnotherPhone": "Add Another Phone"
+    }
+  },
+  "addresses": {
+    "button": {
+      "addStopPoint": "Add stop point",
+      "delete": "Delete"
+    }
+  },
+  "fieldValidation": {
+    "common": "is invalid",
+    "cardNumber": {
+      "length": "must be 13-19 numbers"
+    },
+    "expirationYear": {
+      "length": "must be 4 numbers"
+    },
+    "cvv": {
+      "length": "^CVV must be 3-4 numbers",
+      "presence": "^CVV is invalid"
+    },
+    "cardHolder": {
+      "format": "must be only characters"
+    },
+    "password": {
+      "length": "must be at least 6 characters"
+    },
+    "phone": {
+      "length": "^Phone number is too short",
+      "invalid": "^Phone number is invalid"
+    },
+    "name": {
+      "length": "must be 30 characters"
+    },
+    "email": {
+      "format": "is invalid"
+    }
+  },
+  "userGuide": {
+    "tapToSet": "Tap to set",
+    "tapToSelect": "Tap to select",
+    "tapToSee": "Tap to see",
+    "addYour": "Add Your",
+    "yourPickupAndDestination": "your pickup and destination",
+    "allYourOrders": "all your orders",
+    "fullMenu": "Full Menu",
+    "moreInformations": "More Informations",
+    "ordersType": "Orders Type",
+    "defaultCarType": "Default Car Type",
+    "favoriteAddresses": "Favorite addresses",
+    "notificationsHistory": "Notification History",
+    "skip": "Skip",
+    "next": "Next",
+    "finish": "Finish"
+  }
+}

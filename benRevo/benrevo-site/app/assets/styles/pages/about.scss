@@ -1,0 +1,100 @@
+@import "../variables-theme";
+
+.app-about {
+  & > .top {
+    width: 100%;
+    background: $BACKGROUND_BLUE_COLOR url(../img/about-main-bg.svg) no-repeat center 80px;
+    background-size: 80px auto;
+    color: #ffffff;
+
+    .page-header {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 400px) {
+      & {
+        background-position: center 95px;
+        background-size: 60px auto;
+      }
+    }
+
+    .ui.grid {
+      padding-top: 90px;
+
+      .row {
+        padding: 0;
+
+        .ui.image {
+          max-width: 160% !important;
+          margin-top: 51px;
+        }
+      }
+    }
+  }
+
+  & > .bottom {
+    padding-left:20px;
+    padding-right:20px;
+    margin: 15px 0 0;
+
+    @media only screen and (min-width: 767px) {
+      & {
+        padding-bottom: 100px;
+      }
+    }
+
+    .team {
+      position: relative;
+      .person {
+        width: 145px;
+        text-align: center;
+        margin: 0 auto;
+
+        &.computer {
+          position: absolute;
+
+          &.jimson {
+            top: 10px;
+            left: 50px;
+          }
+
+          &.ojas {
+            top: 30px;
+            right: -140px;
+            left: 0;
+
+            @media only screen and (max-width: 1200px) {
+              & {
+                right: -200px;
+              }
+            }
+          }
+
+          &.jason {
+            top: 210px;
+            right: 100px;
+            left: 0;
+          }
+        }
+
+
+        .person-name {
+          font-size: 16px;
+          font-weight: 600;
+          color: $LINK_COLOR;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        .person-title {
+          font-weight: 600;
+          font-size: 12px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+    }
+  }
+}

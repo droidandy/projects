@@ -1,0 +1,34 @@
+@import "../../../../../styles/tools/mixins.scss";
+.componentProductsSummary {
+  @include spacingBottom;
+  @include marginXauto;
+
+  p {
+    color: var(--color-body-text);
+    font-size: 14px;
+  }
+
+  .personal-treatment {
+    margin-bottom: 60px;
+  }
+  .order-detail {
+    .products-cost {
+      margin-bottom: 20px;
+
+      .selected-products-price {
+        font-weight: bold;
+      }
+
+      @include media-query($small) {
+        display: block;
+        .selected-products-price {
+          display: block;
+        }
+      }
+    }
+    .medium {
+      color: var(--color-body-text);
+      font-weight: 500;
+    }
+  }
+}

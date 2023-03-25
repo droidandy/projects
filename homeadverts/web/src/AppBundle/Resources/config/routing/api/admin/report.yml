@@ -1,0 +1,9 @@
+ha_admin_report_summary:
+    path:  /summary
+    defaults: { _controller: AppBundle:Api/Admin/Report:summary }
+    methods:  [GET]
+
+ha_admin_report_missing:
+    path:  /missing/{type}
+    defaults: { _controller: AppBundle:Api/Admin/Report:missing }
+    methods:  [GET]

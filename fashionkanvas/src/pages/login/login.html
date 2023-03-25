@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+
+    </ion-buttons>
+    <ion-title>{{ 'SIGNIN' | translate }}</ion-title>
+    <ion-buttons end>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content class="no-scroll">
+  <div padding>
+    <div style="padding-top:10%">
+      <!-- <div class="app-icon">
+        <ion-icon name="ios-chatbubbles-outline"></ion-icon>
+        <h3>Chat App</h3>
+      </div> -->
+      <ion-list inset>
+        <form [formGroup]="emailPasswordForm">
+          <ion-item>
+            <ion-label stacked>{{ 'EMAIL' | translate }}</ion-label>
+            <ion-input type="text" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label stacked>{{ 'PASSWORD' | translate }}</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+          <div>
+            <button ion-button class="loginbtn" block tappable (click)="login()">{{ 'LOGIN' | translate }}</button>
+            <button item-right ion-button clear block class="forgotbtn" (click)="openForgot()" >{{ 'FORGOTPASSWORD' | translate }}</button>
+          </div>
+        </form>
+      </ion-list>
+    </div>
+
+
+    <!-- <div style="text-align:center">
+        <p>CONTINUE WITH</p>
+        <button *ngIf="facebookLoginEnabled==true" ion-button color="facebook" tappable (click)="loginProvider.facebookLogin()">
+          <ion-icon name="logo-facebook"></ion-icon></button>
+        <button *ngIf="googleLoginEnabled==true" ion-button color="google" tappable (click)="loginProvider.googleLogin()">
+          <ion-icon name="logo-google"></ion-icon></button>
+        <button ion-button color="dark" tappable (click)="registerModel()"><ion-icon name="ios-mail-outline"></ion-icon></button>
+        <button *ngIf="phoneLoginEnabled==true" ion-button color="dark" tappable (click)="loginProvider.phoneLogin()"><ion-icon name="phone-portrait"></ion-icon></button>
+    </div> -->
+
+
+  </div>
+
+
+</ion-content>

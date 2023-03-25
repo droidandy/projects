@@ -1,0 +1,69 @@
+ion-navbar.home.toolbar.show-navbar {
+  border-bottom: none;
+}
+.home {
+}
+.app-feed {
+  position: relative;
+  &:nth-child(odd) {
+    background-color: #BDC3C7;
+  }
+  &:nth-child(even) {
+    background-color: #ECF0F1;
+  }
+  .feed-image {
+    width: 100%;
+    height: 100vw;
+    display: block;
+  }
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 100%; min-height: 100%;
+    background: transparentize(#434343, 0.7);
+    content: ''
+  }
+  .app-feed-category {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    width: calc(100%);
+    left: -43%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 6px;
+    &:before {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  .app-feed-title {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    font-size: 3.0rem;
+		@include breakpoint($iphone6) {
+			font-size: 4.0rem;
+		}
+    line-height: 1.0;
+  }
+  .app-feed-button {
+    position: absolute;
+    right: 10px;
+    color: white;
+    bottom: 10px;
+    span.button-inner ion-icon {
+      &.ion-ios-more {
+      }
+
+      &.ion-md-more {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

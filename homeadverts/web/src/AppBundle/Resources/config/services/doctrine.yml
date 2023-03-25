@@ -1,0 +1,88 @@
+services:
+    em:
+        alias: doctrine.orm.default_entity_manager
+
+    base_repo:
+        abstract: true
+        class: Doctrine\ORM\EntityRepository
+        factory_service: doctrine.orm.entity_manager
+        factory_method: getRepository
+
+    location_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Location\Location ]
+
+    google_location_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Location\GoogleLocation ]
+
+    notification_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Communication\Notification ]
+
+    user_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\User\User ]
+
+    relation_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\User\Relation ]
+
+    property_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Property\Property ]
+
+    statistics_repo:
+        class: AppBundle\Entity\Statistics\StatisticsRepository
+        arguments:
+            - @em
+
+    property_photo_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Property\PropertyPhoto ]
+
+    import_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Import\Import ]
+
+    import_job_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Import\ImportJob ]
+
+    file_repo:
+        parent: base_repo
+        arguments:
+            -   'AppBundle\Entity\Storage\File'
+
+    article_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Social\Article ]
+        calls:
+            - method: setAdjacencyRegistry
+              arguments: ['@ha.user.adjacency_registry']
+
+    article_repo_recommended:
+        class: AppBundle\Entity\Social\Article\ArticleRecommendedRepository
+        arguments:
+            - @em
+            - @article_repo
+
+    article_repo_tag:
+        class: AppBundle\Entity\Social\Article\ArticleTagRepository
+        arguments:
+            - @em
+            - @article_repo
+
+    article_repo_stream:
+        class: AppBundle\Entity\Social\Article\ArticleStreamRepository
+        arguments:
+            - @em
+            - @article_repo
+
+    tag_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Social\Tag ]
+
+    comment_repo:
+        parent: base_repo
+        arguments: [ AppBundle\Entity\Social\Comment ]

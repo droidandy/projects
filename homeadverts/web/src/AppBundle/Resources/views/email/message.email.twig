@@ -1,0 +1,11 @@
+{% extends 'AppBundle:email/layout:base.email.twig' %}
+
+{% block html_content %}
+    From: {{ message.user.name }}
+    <br/>
+    Message: {{ message.text|nl2br }}
+    <br/>
+    <br/>
+
+    <a href="{{ link }}">Open Messenger</a>
+{% endblock %}

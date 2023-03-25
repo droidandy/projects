@@ -1,0 +1,40 @@
+{
+    "index": "properties",
+    "type": "property",
+    "body": {
+        "from": 0,
+        "size": 1,
+        "query": {
+            "constant_score": {
+                "filter": {
+                    "bool": {
+                        "must": [
+                            {
+                                "wildcard": {
+                                    "zip": "*San*"
+                                }
+                            }
+                        ],
+                        "filter": [
+                            {
+                                "term": {
+                                    "status": 1
+                                }
+                            },
+                            {
+                                "range": {
+                                    "propertyCount": {
+                                        "gt": 0
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "sort": {
+            "zip": "asc"
+        }
+    }
+}

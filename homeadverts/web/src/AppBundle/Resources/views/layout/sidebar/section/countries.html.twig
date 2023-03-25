@@ -1,0 +1,22 @@
+<div id="countries" data-heading="Locations">
+    <div class="content">
+        {% for column in availableCountries() %}
+            {% for area, places in column %}
+                <p class="section-heading">{{ area }}</p>
+
+                {% for place, name in places %}
+                    <a href="{{ path('search_term', {
+                            market: 'for-sale',
+                            term: place,
+                            isCountry: 1
+                        }) }}" class="mdl-navigation__link">
+                        {{ name }}
+                    </a>
+                {% endfor %}
+                {% if not loop.parent.loop.last %}
+                    <div class="separator"></div>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+</div>

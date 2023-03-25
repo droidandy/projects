@@ -1,0 +1,147 @@
+<script type="text/javascript"
+        src="//maps.googleapis.com/maps/api/js?key=AIzaSyDZDTaSKWSyGjMa-bVjYG5UdMmGURC9n7E&amp;libraries=places&amp;sensor=false&amp;language={{ currentLocale().iso_code }}&amp;v=3.34"></script>
+<script src="//tracking.listhub.net/scripts/la.js" type="text/javascript"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src='https://static.matterport.com/showcase-sdk/1.2.0-0-g1d0799d/sdk.js'></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127836882-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-127836882-1');
+</script>
+
+
+<script type="text/javascript">
+    try {
+        var _lh = new ListHubTracker({
+            provider: '{{ listhub.metrics.provider }}',
+            test:{{ listhub.metrics.test_mode ? 'true' : 'false' }}
+        });
+    } catch (err) {
+    }
+</script>
+
+<script type="text/javascript">
+    {% if is_granted('ROLE_USER') %}
+        window.user = {
+            id: {{ app.user.id }},
+            name: "{{ app.user.name }}",
+            slug: "{{ app.user.slug }}"
+        };
+    {% else %}
+        window.user = false;
+    {% endif %}
+</script>
+
+
+{% javascripts
+    'bower_components/vue/dist/vue.min.js'
+
+    'bower_components/material-design-lite/material.js'
+    'bower_components/getmdl-select/getmdl-select.min.js'
+    'bower_components/dialog-polyfill/dialog-polyfill.js'
+    'bower_components/tablesort/dist/tablesort.min.js'
+    'bower_components/tablesort/dist/sorts/tablesort.number.min.js'
+    'bower_components/jquery/dist/jquery.js'
+    'bower_components/jquery.cookie/jquery.cookie.js'
+    'bower_components/jquery.transit/jquery.transit.js'
+
+    'bower_components/velocity/velocity.min.js'
+    'bower_components/momentjs/moment.js'
+    'bower_components/flickity/dist/flickity.pkgd.js'
+    'bower_components/autosize/dist/autosize.min.js'
+    'bower_components/cropperjs/dist/cropper.min.js'
+    'bower_components/waypoints/lib/jquery.waypoints.min.js'
+    'bower_components/pusher-js/dist/web/pusher.min.js'
+
+    'app/js/libraries/lazyloader.js'
+    'app/js/libraries/modernizr.js'
+    'app/js/libraries/materialOverrided.js'
+
+    'app/js/article/article.js'
+    'app/js/article/covers.js'
+
+    'app/js/common/errorInterceptor.js'
+    'app/js/common/cms.js'
+    'app/js/common/modals.js'
+    'app/js/common/infinitePagination.js'
+    'app/js/common/scroll.js'
+    'app/js/common/vhfix.js'
+    'app/js/common/dispatchEventFix.js'
+    'app/js/common/objectfitfix.js'
+
+    'app/js/carousel/carousel.js'
+    'app/js/carousel/counter.js'
+    'app/js/carousel/modal.js'
+    'app/js/carousel/inline.js'
+    'app/js/carousel/slider.js'
+
+    'app/js/user/authDialog.js'
+    'app/js/user/notification.js'
+    'app/js/user/userBio.js'
+    'app/js/user/profilePopup.js'
+    'app/js/user/onlinePresence.js'
+
+    'app/js/map/style.js'
+    'app/js/map/markerclusterer.js'
+    'app/js/map/map.js'
+    'app/js/map/item.js'
+    'app/js/map/collection.js'
+    'app/js/map/agentCollection.js'
+    'app/js/map/propertyCollection.js'
+
+    'app/js/property/common.js'
+    'app/js/property/video.js'
+    'app/js/property/video3d.js'
+
+    'app/js/social/shareDialog.js'
+    'app/js/social/share.js'
+    'app/js/social/like.js'
+    'app/js/social/follow.js'
+    'app/js/social/message.js'
+
+    'app/js/libraries/polyfills.js'
+    'app/js/layout/dialog.js'
+    'app/js/layout/sidebar.js'
+    'app/js/layout/sidenav.js'
+    'app/js/layout/help.js'
+    'app/js/layout/loadingScreen.js'
+    'app/js/layout/footer.js'
+    'app/js/layout/currency.js'
+
+    'app/js/statistics/eventTracking.js'
+
+    'app/js/layout/header/filters.js'
+    'app/js/layout/header/menus.js'
+    'app/js/layout/header/autocomplete.js'
+
+    output='build/app.js'
+    filter='?uglifyjs2' %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+{% if is_granted('ROLE_USER') %}
+    <script src="{{ asset('app/js/user/billing.js') }}"></script>
+    <script src="{{ asset('app/js/user/imageCropper.js') }}"></script>
+    <script src="{{ asset('app/js/user/userProfile.js') }}"></script>
+    <script src="{{ asset('app/js/user/userSettings.js') }}"></script>
+
+    <script src="{{ asset('app/js/tag/tagSelection.js') }}"></script>
+{% endif %}
+
+{% if is_granted('ROLE_AGENT') or is_granted('ROLE_ADMIN') %}
+    <script src="{{ asset('app/js/admin/propertyStoryConverter.js') }}"></script>
+{% endif %}
+
+{% if is_granted('ROLE_ADMIN') %}
+    <script src="{{ asset('app/js/admin/article.js') }}"></script>
+    <script src="{{ asset('app/js/admin/propertyFeatured.js') }}"></script>
+    <script src="{{ asset('app/js/admin/propertyPrimaryPhoto.js') }}"></script>
+{% endif %}

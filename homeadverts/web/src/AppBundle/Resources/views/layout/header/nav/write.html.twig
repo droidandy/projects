@@ -1,0 +1,18 @@
+{% if is_granted('ROLE_WRITER') and not is_article_edit %}
+    <div class="action">
+        {% if is_article_details and article.isWrittenByUser(app.user) %}
+            <a
+                href="{{ path('ha_article_edit', {token: article.token}) }}"
+                class="
+                --write
+                black
+                action-title
+                mdl-button
+                mdl-js-button
+                mdl-js-ripple-effect"
+                >
+                <span>Edit Story</span>
+            </a>
+        {% endif %}
+    </div>
+{% endif %}

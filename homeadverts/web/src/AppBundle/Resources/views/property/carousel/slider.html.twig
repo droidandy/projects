@@ -1,0 +1,15 @@
+{% spaceless %}
+    {% if property.uniquePhotos|length > 0 %}
+        <div class="slider is-loaded">
+            <div class="carousel">
+                {% for photo in property.getPhotosOrdered %}
+                    {% set preload = (loop.index0 == 0) or (loop.index0 == 1) or (loop.index0 == 2) %}
+
+                    {% include "AppBundle:property/carousel:_cell.html.twig" with {"photo":photo, "preload":preload} %}
+                {% endfor %}
+            </div>
+        </div>
+    {% else %}
+        <img src="{{ asset_url('/images/placeholder/coming-soon-xlg.jpg') }}"/>
+    {% endif %}
+{% endspaceless %}

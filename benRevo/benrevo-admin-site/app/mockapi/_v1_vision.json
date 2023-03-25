@@ -1,0 +1,56 @@
+[
+  {
+    "planType": "VISION",
+    "planName": "",
+    "benefits": [
+      {
+        "sysName": "EXAMS_FREQUENCY",
+        "name": "Exams Frequency",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "LENSES_FREQUENCY",
+        "name": "Lenses Frequency",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "FRAMES_FREQUENCY",
+        "name": "Frames Frequency",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "CONTACTS_FREQUENCY",
+        "name": "Contacts Frequency",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "EXAM_COPAY",
+        "name": "Exam Copay",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "MATERIALS_COPAY",
+        "name": "Materials Copay",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "CONTACTS_ALLOWANCE",
+        "name": "Contacts Allowance",
+        "value": "",
+        "type": "STRING"
+      },
+      {
+        "sysName": "FRAME_ALLOWANCE",
+        "name": "Frame Allowance",
+        "value": "",
+        "type": "STRING"
+      }
+    ]
+  }
+]

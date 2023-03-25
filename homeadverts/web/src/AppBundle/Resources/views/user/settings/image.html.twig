@@ -1,0 +1,35 @@
+{% from 'AppBundle::user/forms.html.twig' import ha_form_messages %}
+{% set form = form_profile_image %}
+
+<div class="user-profile-upload">
+    <form action="{{ path('ha_account_photo') }}"
+          {{ form_enctype(form) }}
+          method="POST">
+
+        {% include 'AppBundle:user/profile:image.html.twig' with {'user': app.user} %}
+
+        <div class="upload-image">
+            {{ form_widget(form.profileImageManual) }}
+            <i class="material-icons">photo_camera</i>
+        </div>
+        {{ form_rest(form) }}
+    </form>
+    {{ ha_form_messages(form, true) }}
+</div>
+
+<dialog class="image-cropping-dialog mdl-dialog">
+    <div class="mdl-dialog__content">
+        <div class="cropping-box">
+            <img class="cropping-preview"/>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="cropping-result">
+            Upload
+        </button>
+        <button type="button" class="cropping-cancel">
+            Cancel
+        </button>
+    </div>
+</dialog>

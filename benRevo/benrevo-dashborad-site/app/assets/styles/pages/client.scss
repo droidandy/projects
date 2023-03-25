@@ -1,0 +1,211 @@
+@import "../variables-theme";
+
+/*
+ * Client page styles
+ *
+ */
+
+.client {
+  .message-box {
+    margin-top: 100px;
+
+    .message-box-top {
+      border-top: 1px solid $BORDER_COLOR;
+      padding-top: 40px;
+    }
+
+    .message-box-bottom {
+      border-bottom: 1px solid $BORDER_COLOR;
+      padding-bottom: 40px;
+    }
+
+    .ui.image {
+      margin-bottom: 20px;
+    }
+
+    .message-text {
+      font-size: 21px;
+      line-height: 40px;
+    }
+
+    .ui.button {
+      padding-top: 11px;
+
+      &.primary {
+        min-width: 200px;
+      }
+
+      &.basic {
+        min-width: 90px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .top-navigation {
+    background: transparent;
+    border-bottom: 1px solid $BORDER_COLOR;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+
+    .ui.stackable.grid {
+      margin-top: 0;
+      & > .column{
+        padding: 0 !important;
+      }
+    }
+
+    .ui.menu {
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+      text-align: center;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: auto;
+      position: relative;
+      justify-content: center;
+      margin-top: 0;
+
+      &.secondary.pointing{
+        border-bottom: 0;
+        min-height: 1rem;
+
+        .active.item {
+          border-color: $ELEM_ACTIVE_COLOR;
+          font-weight: 400;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+      }
+
+      a.item {
+        color: #000000;
+        text-transform: uppercase;
+        height: 45px;
+        display: block;
+        background: none;
+        padding-top: 14px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 12px;
+        font-family: $MAIN_FONT;
+        font-weight: 600;
+
+        &:before {
+          content: none;
+        }
+
+        &.active {
+          border-bottom: 4px solid $ELEM_ACTIVE_COLOR;
+          background: none;
+          color: #000000;
+        }
+        &.active:hover {
+          color: #000000;
+        }
+
+        &:last-child {
+          position: absolute;
+          right: 20px;
+          bottom: 0;
+          margin-right: 0;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      .ui.menu a.item:first-child {
+        position: static !important;
+      }
+      .ui.menu {
+        justify-content: inherit !important;
+      }
+
+      .ui.menu a.item {
+        border-bottom: 2px solid #ddd;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .ui.stackable.menu {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+      .ui.menu a.item:last-child {
+        position: static !important;
+      }
+      .ui.grid.container {
+        width: 100% !important;
+      }
+    }
+
+  }
+
+  .presentation-alternatives {
+    @media only screen and (max-width: 725px) {
+      .discounts-applied {
+        margin-top: 20px;
+      }
+    }
+
+    .alternatives-block {
+      .counter {
+        .right-block {
+          @media only screen and (max-width: 715px) {
+            & {
+              float: none;
+              text-align: right;
+            }
+          }
+        }
+
+        @media only screen and (max-width: 990px) {
+          .card-filters .filter-button-toggle {
+            display: block;
+            width: 181px !important;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .alternatives-scrollbar {
+        @media only screen and (min-width: 1080px) {
+          .ps__scrollbar-x-rail {
+            display: none;
+          }
+        }
+
+        @media only screen and (max-width: 1080px) {
+          .ps__scrollbar-x-rail {
+            display: block !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1285px) {
+    .presentationMainContainer {
+      .presentation-alternatives .alternatives-block .alternatives-table-next {
+        .fixed-block {
+          width: 600px;
+        }
+
+        &.without-current {
+          .fixed-block {
+            width: 800px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "carrierId": 1,
+    "name": "AETNA",
+    "displayName": "Aetna"
+  },
+  {
+    "carrierId": 2,
+    "name": "AMERITAS",
+    "displayName": "Ameritas"
+  },
+  {
+    "carrierId": 3,
+    "name": "ANTHEM_BLUE_CROSS",
+    "displayName": "Anthem Blue Cross"
+  },
+  {
+    "carrierId": 4,
+    "name": "ASSURANT",
+    "displayName": "Assurant"
+  },
+  {
+    "carrierId": 5,
+    "name": "BLUE_SHIELD",
+    "displayName": "Blue Shield"
+  },
+  {
+    "carrierId": 6,
+    "name": "CIGNA",
+    "displayName": "Cigna"
+  },
+  {
+    "carrierId": 7,
+    "name": "COLONIAL_LIFE",
+    "displayName": "Colonial life"
+  },
+  {
+    "carrierId": 8,
+    "name": "DEARBORN_NATIONAL",
+    "displayName": "Dearborn National"
+  },
+  {
+    "carrierId": 9,
+    "name": "DELTA_DENTAL",
+    "displayName": "Delta Dental"
+  },
+  {
+    "carrierId": 10,
+    "name": "GUARDIAN",
+    "displayName": "Guardian"
+  },
+  {
+    "carrierId": 11,
+    "name": "HARTFORD",
+    "displayName": "Hartford"
+  },
+  {
+    "carrierId": 12,
+    "name": "HEALTHNET",
+    "displayName": "Healthnet"
+  },
+  {
+    "carrierId": 13,
+    "name": "KAISER",
+    "displayName": "Kaiser"
+  },
+  {
+    "carrierId": 14,
+    "name": "LINCOLN_FINANCIAL",
+    "displayName": "Lincoln Financial"
+  },
+  {
+    "carrierId": 15,
+    "name": "METLIFE",
+    "displayName": "MetLife"
+  },
+  {
+    "carrierId": 16,
+    "name": "PRINCIPAL_FINANCIAL_GROUP",
+    "displayName": "Principal Financial Group"
+  },
+  {
+    "carrierId": 17,
+    "name": "PRUDENTIAL",
+    "displayName": "Prudential"
+  },
+  {
+    "carrierId": 18,
+    "name": "RELIANCE_STANDARD",
+    "displayName": "Reliance Standard"
+  },
+  {
+    "carrierId": 19,
+    "name": "SHARP_HEALTH_PLANS",
+    "displayName": "Sharp Health Plans"
+  },
+  {
+    "carrierId": 20,
+    "name": "STANDARD",
+    "displayName": "Standard"
+  },
+  {
+    "carrierId": 21,
+    "name": "SUN_LIFE",
+    "displayName": "Sun Life"
+  },
+  {
+    "carrierId": 22,
+    "name": "UHC",
+    "displayName": "United Health Care"
+  },
+  {
+    "carrierId": 23,
+    "name": "UNITED_CONCORDIA",
+    "displayName": "United Concordia"
+  },
+  {
+    "carrierId": 24,
+    "name": "UNUM",
+    "displayName": "Unum"
+  }
+]

@@ -1,0 +1,120 @@
+{
+    "agentSummary": {
+        "id": "5f7b4ae3-5a29-4bc8-acd8-a63f54ba17f4",
+        "isAgent": true,
+        "name": "Ken Ipox",
+        "firstName": "Ken",
+        "lastName": "Ipox",
+        "gender": "Male",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/0A096FE7-8CB5-472C-AD69-5F4464C26ACA",
+        "emailAddress": "ken.ipox@premiersir.com",
+        "leadEmailAddress": "800256.lead.4022429@leads.leadrouter.com",
+        "businessPhone": "+1 9419937279",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "434edc3d-d21e-4efb-a1d5-5ffaf95c3c80",
+            "RFGOfficeId": "0005",
+            "companyId": "c8987fde-4bde-4864-a1e4-47d3c183ddea",
+            "companyName": "Premier",
+            "RFGCompanyId": "800256",
+            "brandCode": "SIR",
+            "name": "Premier Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "540 John Ringling Blvd",
+                "city": "Sarasota",
+                "district": "Sarasota",
+                "stateProvince": "Florida",
+                "stateProvinceCode": "FL",
+                "postalCode": "34236",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 27.31916,
+                "longitude": -82.575,
+                "formattedAddress": "540 John Ringling Blvd, Sarasota, FL 34236"
+            },
+            "phoneNumber": "9413832500",
+            "emailAddress": "REFERRALS@PREMIERSIR.COM"
+        }
+    },
+    "personId": "6bb3702a-0eae-45de-b8e5-ecdef3262d9b",
+    "lastUpdateOn": "2018-04-10T09:50:06.063",
+    "designations": [
+        "e-Pro, Internet Professional",
+        "Graduate, REALTOR Institute",
+        "Transnational Referral Certification"
+    ],
+    "roles": [
+        {
+            "office": {
+                "officeId": "434edc3d-d21e-4efb-a1d5-5ffaf95c3c80",
+                "RFGOfficeId": "0005",
+                "companyId": "c8987fde-4bde-4864-a1e4-47d3c183ddea",
+                "companyName": "Premier",
+                "RFGCompanyId": "800256",
+                "brandCode": "SIR",
+                "name": "Premier Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "540 John Ringling Blvd",
+                    "city": "Sarasota",
+                    "district": "Sarasota",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "34236",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 27.31916,
+                    "longitude": -82.575,
+                    "formattedAddress": "540 John Ringling Blvd, Sarasota, FL 34236"
+                },
+                "phoneNumber": "9413832500",
+                "emailAddress": "REFERRALS@PREMIERSIR.COM"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "ken.ipox@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "0A096FE7-8CB5-472C-AD69-5F4464C26ACA",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/0A096FE7-8CB5-472C-AD69-5F4464C26ACA",
+            "isDefault": true,
+            "caption": "Ken Ipox ",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:10:02.127"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "A Resort Lifestyle and Luxury Real Estate Specialist, Ken Ipox, has the enthusiasm, integrity and advanced marketing skills to meet the demands in this ever changing real estate market. Ken has proven his dedicated, award-winning service for Longboat Key, Siesta Key, Palmer Ranch and the Sarasota area. Ken is a graduate of the Realtor\u00ae Institute, E-Pro Certified by the National Association of Realtors\u00ae and has completed the Transnational Referral Certification by the International Consortium of Real Estate Associations. Ken holds a Bachelor of Science from Southern Illinois University and has an advanced Accountancy education from the University of South Florida for Certified Public Accounting.\r\n\r\nWith over $50 Million in career transactions, Ken is one of the Top Producers in the Longboat Key\/St. Armands office and is consistently one of the top 50 agents with Premier Sotheby\u2019s International Realty in the Sarasota Region. Ken is in the top 5 percent of the Sarasota Manatee Board of Realtors\u00ae selling in Sarasota. All this hard work pays off for his clients!\r\n\r\nAs a member of Stoneybrook Country Club of Sarasota, Ken is an avid golfer and tennis player. In the spare time he finds away from working with clients, Ken enjoys beach volleyball and biking the Legacy Trail. A proven and accomplished real estate professional such as Ken is a great asset when considering a second home along the West Coast of Florida or a permanent relocation.",
+            "htmlRemark": "A Resort Lifestyle and Luxury Real Estate Specialist, Ken Ipox, has the enthusiasm, integrity and advanced marketing skills to meet the demands in this ever changing real estate market. Ken has proven his dedicated, award-winning service for Longboat Key, Siesta Key, Palmer Ranch and the Sarasota area. Ken is a graduate of the Realtor\u00ae Institute, E-Pro Certified by the National Association of Realtors\u00ae and has completed the Transnational Referral Certification by the International Consortium of Real Estate Associations. Ken holds a Bachelor of Science from Southern Illinois University and has an advanced Accountancy education from the University of South Florida for Certified Public Accounting.<br><br>With over $50 Million in career transactions, Ken is one of the Top Producers in the Longboat Key\/St. Armands office and is consistently one of the top 50 agents with Premier Sotheby\u2019s International Realty in the Sarasota Region. Ken is in the top 5 percent of the Sarasota Manatee Board of Realtors\u00ae selling in Sarasota. All this hard work pays off for his clients!<br><br>As a member of Stoneybrook Country Club of Sarasota, Ken is an avid golfer and tennis player. In the spare time he finds away from working with clients, Ken enjoys beach volleyball and biking the Legacy Trail. A proven and accomplished real estate professional such as Ken is a great asset when considering a second home along the West Coast of Florida or a permanent relocation."
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "FL",
+            "number": "SL3208264",
+            "issuedOn": "2008-02-11"
+        }
+    ]
+}

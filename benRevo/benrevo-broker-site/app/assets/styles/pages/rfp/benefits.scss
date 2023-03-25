@@ -1,0 +1,42 @@
+.rfp-benefits {
+  & > .row {
+    overflow: hidden;
+  }
+
+  h3.ui.header.rfpPageSectionHeading {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 24px;
+  }
+
+  .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .labelColumn {
+    text-align: right;
+    &.network {
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .adaTable {
+    margin-top: 215px;
+  }
+
+  .planInputRow {
+    height: 58px;
+  }
+
+  .carrier-dropdown {
+    .ui.selection.dropdown {
+      min-width: 0;
+    }
+  }
+
+  .plan-name {
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Icon / Menu / Group-off</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-Menu-/-Group-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <circle id="Oval" stroke="#767676" stroke-width="1.5" cx="10" cy="7" r="5"></circle>
+        <path d="M20,22 C20,16.4771525 15.5228475,12 10,12 C4.4771525,12 0,16.4771525 0,22" id="Oval-2" stroke="#767676" stroke-width="1.5"></path>
+        <path d="M18.2625209,10.7890378 C19.3264509,9.87211993 20,8.51471788 20,7 C20,5.14294401 18.9875915,3.52234869 17.484599,2.66003853" id="Path" stroke="#767676" stroke-width="1.5"></path>
+        <path d="M25,22 C25,18.7535819 23.45302,15.8684803 21.0560121,14.0416472" id="Path" stroke="#767676" stroke-width="1.5"></path>
+    </g>
+</svg>

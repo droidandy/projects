@@ -1,0 +1,8 @@
+Email,Status,First name,Last name,Phone,Other phone,Department,User Role,Work Role,Payroll ID,Cost Centre,Division
+dshimmin0@blogs.com,Inactive,Armstrong,Shimmin,+44 7123 45678,+44 7111 22222,dept2,passenger,wr2,NewPayrollID,NewCostCentre,NewDivision
+pinsley7@nsw.gov.au,Active,Price,Insley,+359-189-2521,+881-124-0595,dept3,passenger,wr1,Payroll_ID_Imported,Cost_Centre_Imported,Division_Imported
+invalid_email,Active,Martguerita,Eldin,+950-886-0670,+126-606-3903,,,,,,
+phoodlass4@businessinsider.com,Active,,Hoodlass,+974-186-8988,+235-781-9091,,,,,,
+sdyter5@webmd.com,Active,Silvana,,+390-663-1049,+205-277-7535,,,,,,
+elvon@mail.io,Active,Elith,McVon,,+505-840-2910,,,,,,
+emcbeth6@soup.io,Active,Evangelin,McBeth,1i2n3valid_phone,,,,,,,

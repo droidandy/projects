@@ -1,0 +1,13 @@
+sync_drivers:
+  sample_pages: 1
+sync_statements:
+  sample_pages: 1
+
+default_url_options:
+  host: http://localhost:3001
+
+generate_avatars: false
+
+onboarding:
+  min_rating: 4.5
+  max_vehicle_age: 5

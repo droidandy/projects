@@ -1,0 +1,45 @@
+.banner {
+  :global {
+    .ant-modal-body {
+      padding: 0;
+    }
+    .ant-modal-content {
+      border-radius: 8px;
+      color: #1e1e1e;
+    }
+    .ant-btn {
+      min-width: 140px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .w470 {
+    width: 470px;
+  }
+
+  .w535 {
+    width: 535px;
+  }
+}
+
+.button {
+  background: #fab638;
+  border: none;
+  border-radius: 4px;
+
+  &:hover {
+    background: #e7aa23;
+  }
+}
+
+.link {
+  color: #fab638;
+  cursor: pointer;
+
+  &:hover {
+    color: #e7aa23;
+  }
+}

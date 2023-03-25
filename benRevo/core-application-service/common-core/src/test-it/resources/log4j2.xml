@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+  <Appenders>
+    <Console name="Console-Appender" target="SYSTEM_OUT">
+      <ThresholdFilter level="FATAL" onMatch="ACCEPT" onMismatch="DENY"/>
+      <PatternLayout>
+        <pattern>
+          [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%c] (%t) (%X) - %m%ex{none}%n
+        </pattern>
+      </PatternLayout>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="liquibase" level="WARN"/>
+    <Logger name="ch.vorburger" level="WARN"/>
+    <Logger name="org.hibernate" level="ERROR"/>
+    <Logger name="org.springframework.aop.framework.CglibAopProxy" level="ERROR"/>
+    <Logger name="uk.co.jemos.podam" level="ERROR"/>
+    <Logger name="com.benrevo" level="FATAL"/>
+    <Root level="FATAL">
+      <AppenderRef ref="Console-Appender"/>
+    </Root>
+  </Loggers>
+</Configuration>

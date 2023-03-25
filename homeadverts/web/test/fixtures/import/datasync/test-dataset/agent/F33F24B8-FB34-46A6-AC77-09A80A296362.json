@@ -1,0 +1,98 @@
+{
+    "agentSummary": {
+        "id": "f33f24b8-fb34-46a6-ac77-09a80a296362",
+        "isAgent": true,
+        "name": "Melvin Swain ",
+        "firstName": "Melvin",
+        "lastName": "Swain",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/EA7921BD-B0E0-4C65-968E-54CE08E10057",
+        "emailAddress": "mswain@signaturesothebys.com",
+        "leadEmailAddress": "800115.lead.100137352@leads.leadrouter.com",
+        "mobilePhone": "248-789-0172",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "42497839-1703-4199-9768-828cc9f2bb27",
+            "RFGOfficeId": "0004",
+            "companyId": "311788a3-f7f8-4230-91cd-c4aa04ebb8af",
+            "companyName": "Signature",
+            "RFGCompanyId": "800115",
+            "brandCode": "SIR",
+            "name": "Signature Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "6755 Telegraph",
+                "city": "Bloomfield Hills",
+                "district": "OAKLAND",
+                "stateProvince": "Michigan",
+                "stateProvinceCode": "MI",
+                "postalCode": "48301",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 42.5468635559082,
+                "longitude": -83.2866363525391,
+                "formattedAddress": "6755 Telegraph Rd, Bloomfield Hills, MI 48301"
+            },
+            "phoneNumber": "2486478888",
+            "emailAddress": "info@signaturesothebys.com"
+        }
+    },
+    "personId": "2a8290b6-9c25-411f-a3e8-4c1cf6a92e7c",
+    "lastUpdateOn": "2018-08-03T17:00:12.120",
+    "roles": [
+        {
+            "office": {
+                "officeId": "42497839-1703-4199-9768-828cc9f2bb27",
+                "RFGOfficeId": "0004",
+                "companyId": "311788a3-f7f8-4230-91cd-c4aa04ebb8af",
+                "companyName": "Signature",
+                "RFGCompanyId": "800115",
+                "brandCode": "SIR",
+                "name": "Signature Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "6755 Telegraph",
+                    "city": "Bloomfield Hills",
+                    "district": "OAKLAND",
+                    "stateProvince": "Michigan",
+                    "stateProvinceCode": "MI",
+                    "postalCode": "48301",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 42.5468635559082,
+                    "longitude": -83.2866363525391,
+                    "formattedAddress": "6755 Telegraph Rd, Bloomfield Hills, MI 48301"
+                },
+                "phoneNumber": "2486478888",
+                "emailAddress": "info@signaturesothebys.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "melvin.swain@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "EA7921BD-B0E0-4C65-968E-54CE08E10057",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/EA7921BD-B0E0-4C65-968E-54CE08E10057",
+            "isDefault": true,
+            "caption": "Melvin Swain",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:49:38.380"
+        }
+    ],
+    "isTeamMember": false
+}

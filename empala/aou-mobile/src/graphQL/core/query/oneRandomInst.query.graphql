@@ -1,0 +1,20 @@
+query oneRandomInst($oneRandomInstInstIds: [ID!]!) {
+  oneRandomInst(instIds: $oneRandomInstInstIds) {
+    ... on Instrument {
+      id
+      symbol
+      description
+      name
+      themes {
+        id
+        name
+      }
+      stacks {
+        id
+      }
+      hunches {
+        id
+      }
+    }
+  }
+}

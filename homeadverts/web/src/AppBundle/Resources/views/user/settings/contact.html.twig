@@ -1,0 +1,55 @@
+{% from 'AppBundle::user/forms.html.twig' import ha_form, ha_form_input, ha_form_messages, ha_form_checkbox, ha_form_row, ha_form_select %}
+{% set form = form_contact %}
+
+<div class="grouped-fields">
+    <form class="ajax-validate-form" {{ form_enctype(form) }}
+          action="{{ path('ha_account_settings', {type: form.vars.name}) }}"
+          method="post">
+
+        {{ form_errors(form) }}
+
+
+        <div class="settings-form">
+            <div class="data --left">
+                {{ ha_form_input(form.username) }}
+                {{ ha_form_input(form.email) }}
+                {{ ha_form_input(form.phone) }}
+                {{ ha_form_input(form.mobilePhone) }}
+                {% if app.user.parentUser %}
+                    {{ ha_form_input(form.companyName, {
+                        value: app.user.parentUser.username,
+                        disabled: true
+                    }) }}
+                    {{ ha_form_input(form.companyPhone, {
+                        value: app.user.parentUser.companyPhone,
+                        disabled: true
+                    }) }}
+                {% else %}
+                    {{ ha_form_input(form.companyName) }}
+                    {{ ha_form_input(form.companyPhone) }}
+                {% endif %}
+                {{ ha_form_input(form.homePageUrl) }}
+            </div>
+            <div class="data">
+                {{ ha_form_input(form.address.country) }}
+                {{ ha_form_input(form.address.street) }}
+                {{ ha_form_input(form.address.aptBldg) }}
+                {{ ha_form_input(form.address.townCity) }}
+                {{ ha_form_input(form.address.stateCounty) }}
+                {{ ha_form_input(form.address.zip) }}
+            </div>
+        </div>
+        {% do form.address.hidden.setRendered %}
+        {% do form.address.latitude.setRendered %}
+        {% do form.address.longitude.setRendered %}
+
+
+        {{ form_rest(form) }}
+
+        <div class="field-footer">
+            <button type="submit" class="black --right mdl-button mdl-js-button mdl-js-ripple-effect">
+                Update
+            </button>
+        </div>
+    </form>
+</div>

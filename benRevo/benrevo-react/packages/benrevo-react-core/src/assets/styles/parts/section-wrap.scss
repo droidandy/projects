@@ -1,0 +1,19 @@
+@import '../variables';
+@import '../../../assets/styles/variables-theme';
+
+.section-wrap {
+  margin-top: 30px !important;
+
+  .ui.stackable.grid.gridSegment {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0;
+    padding: 25px 40px 90px;
+    margin-bottom: 100px;
+
+    .row.noPaddedRow {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+    }
+  }
+}

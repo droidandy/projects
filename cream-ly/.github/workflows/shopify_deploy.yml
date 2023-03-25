@@ -1,0 +1,88 @@
+name: "Shopify Theme Deploy"
+on:
+  workflow_call:
+    inputs:
+      SHOPIFY_THEME_ID:
+        description: 'A Shopify Theme ID to deploy to'
+        default: 80832299062 # pre-master theme id is 80832299062
+        required: false
+        type: number
+      SHOPIFY_THEME_ASSETS_URL:
+        description: 'A Shopify Theme assets URL'
+        default: 'https://cdn.shopify.com/s/files/1/2367/5871/t/23/assets/' # pre-master theme assets url
+        required: false
+        type: string
+    secrets:
+      SHOPIFY_API_PASSWORD:
+        description: 'A shopify private app API password with themes scope permissions'
+        required: true
+
+jobs:
+  all_in_one:
+    runs-on: ubuntu-latest
+    env:
+      SHOPIFY_STORE_URL: creamly.myshopify.com
+      SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_API_PASSWORD }}
+      SHOPIFY_THEME_ID: ${{ inputs.SHOPIFY_THEME_ID }}
+      SHOPIFY_THEME_ASSETS_URL: ${{ inputs.SHOPIFY_THEME_ASSETS_URL }}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+
+      - name: Cache dependencies
+        id: cache
+        uses: actions/cache@v2
+        with:
+          # reuse cache tricks from https://www.voorhoede.nl/en/blog/super-fast-npm-install-on-github-actions/
+          #  path: ./node_modules
+          #  key: modules-${{ hashFiles('package-lock.json') }}
+          path: |
+            ~/.npm
+            ./node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        # if: steps.cache.outputs.cache-hit != 'true'
+        #run: npm ci --ignore-scripts
+        #run npm install --prefer-offline --no-audit --quiet
+        run: npm ci
+
+
+       # Static HTML preparation start
+      - name: Update Products Info from Shopify
+        run: npm run build-products
+
+      - name: Update Inventory Info from Shopify
+        run: npm run build-inventory
+
+      - name: Update Blog Articles from Shopify
+        run: npm run build-blog
+
+      - name: Update Translations from Locize
+        run: npm run build-translations
+
+      - name: Generate Static pages for SEO
+        run: npm run build-html-pages-for-seo
+
+      - name: Generate SEO TAGS
+        run: npm run build-seo-tags
+      # Static HTML preparation end
+
+      - name: Copy relevant files to ./dist directory
+        run: npm run build-dist-copy
+
+      - name: Build JS and CSS bundle
+        run: npm run build-webpack
+
+      - name: Add JS and CSS entries to shopify
+        run: npm run build-dist-changeJsEntry
+
+      - name: Shopify Deploy Theme
+        uses: pgrimaud/action-shopify@master
+        env:
+          THEME_PATH: ./dist/

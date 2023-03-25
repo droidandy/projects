@@ -1,0 +1,66 @@
+{% import 'AppBundle:layout/share:text.html.twig' as txt %}
+
+<dialog class="share-dialog mdl-dialog">
+    <div class="mdl-dialog__content">
+        <div class="media">
+            <div class="image cover"></div>
+            <div class="spinner"></div>
+        </div>
+        <div class="content">
+            <div class="heading">
+                <span>Social Share</span>
+                <button class="close mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+
+            <ul class="share-options">
+                <li>
+                    <a href="#" data-href="http://www.facebook.com/sharer/sharer.php?u=" target="_blank">
+                        <span class="fa fa-facebook"></span>
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-href="http://plus.google.com/share?url=" target="_blank">
+                        <span class="fa fa-google-plus"></span>
+                        Google+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-href="http://www.twitter.com/intent/tweet?url=" target="_blank">
+                        <span class="fa fa-twitter"></span>
+                        Twitter
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-href="https://www.linkedin.com/shareArticle?mini=true&url=" target="_blank">
+                        <span class="fa fa-linkedin"></span>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-href="http://pinterest.com/pin/create/button/?url=">
+                        <span class="fa fa-pinterest"></span>
+                        Pinterest
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-href="mailto:?subject={{ txt.mail_to_subject("forbes.com") }}&body=">
+                        <span class="fa fa-envelope"></span>
+                        Email
+                    </a>
+                </li>
+            </ul>
+            <div class="link">
+                <span>Click to copy link</span>
+                <input class="link-to-share"
+                       type="text"
+                       id="share-item"
+                       readonly
+                       value=""
+                >
+            </div>
+        </div>
+    </div>
+</dialog>

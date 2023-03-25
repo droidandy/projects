@@ -1,0 +1,48 @@
+database:
+  image: mysql
+  restart: always
+  ports: 
+    - 3306:3306
+  environment: 
+    MYSQL_ROOT_PASSWORD: "root"
+
+db_setup:
+  image: dev-dpl
+  restart: always
+  links: 
+    - database
+
+be_cdl:
+  image: be_cdl
+  restart: always
+  # Mount the hosts maven repo into the container so we 
+  # dont download the internet every time
+  volumes:
+    - ~/.m2:/root/.m2
+
+backend: 
+  image: dev-core-application-service
+  restart: always
+  ports: 
+    - 5000:5000 
+  environment: 
+    AWS_ACCESS_KEY_ID: "AKIAIYVRSBAYQ2TGYOLA"
+    AWS_SECRET_ACCESS_KEY: "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"
+    AWS_DEFAULT_REGION: "us-east-1"
+    db_username: "root"
+    db_password: "b3nr3v0!"
+    db_url: "jdbc:mysql://rds-unittest.cbogremexott.us-east-1.rds.amazonaws.com:3306/br_dev"
+    db_data_encryption_enabled: "false"
+    db_data_encryption_password: "test"
+  links: 
+    - db_setup
+
+frontend: 
+  image: 434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-uhc-dev 
+  restart: always
+  ports: 
+    - 3000:3000
+  environment:
+    BENREVO_API_PATH: "http://localhost:5000/v1"
+  
+

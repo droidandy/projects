@@ -1,0 +1,55 @@
+<div class="login-form">
+    <div class="introduction">
+        <h2>Welcome back.</h2>
+        <p>
+            Sign in to access your personalized homepage,
+            follow authors and categories you love,
+            and like stories that matter to you.
+        </p>
+    </div>
+    <div class="form-block">
+
+        <div class="sign-up-social">
+            <a href="{{ path("hwi_oauth_service_redirect",{"service":"facebook"}) }}"
+               class="mdl-button
+               mdl-js-button
+               --facebook
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               --wide" type="submit">
+                <span class="fa-facebook"></span> Sign in with Facebook
+            </a>
+            <a href="{{ path("hwi_oauth_service_redirect",{"service":"google"}) }}"
+               class="mdl-button
+               mdl-js-button
+               --google
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               --wide"
+               type="submit">
+               <img src="{{ asset('assets/images/google-oauth.png') }}"> Sign in with Google
+            </a>
+            <button
+               class="mdl-button
+               mdl-js-button
+               --email
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               button-switch-view-to-manual
+               --wide"
+               type="submit">
+                <i class="material-icons">mail_outline</i> Sign in with Email
+            </button>
+        </div>
+
+        <p class="auth-information">
+            New user? <a class="button-switch-view" href="#">Register Now.</a>
+        </p>
+    </div>
+</div>

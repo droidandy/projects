@@ -1,0 +1,21 @@
+services:
+    ha.publisher.channel.facebook:
+        class: AppBundle\Service\Article\Publisher\Channel\FacebookChannel
+        arguments:
+            - %facebook_app_id%
+            - %facebook_app_secret%
+            - @router.default
+
+    ha.publisher.channel.twitter:
+        class: AppBundle\Service\Article\Publisher\Channel\TwitterChannel
+        arguments:
+            - %twitter_app_id%
+            - %twitter_app_secret%
+            - @router.default
+
+    ha.publisher.channel.linkedin:
+        class: AppBundle\Service\Article\Publisher\Channel\LinkedInChannel
+        arguments:
+            - %facebook_app_id%
+            - %facebook_app_secret%
+            - @router.default

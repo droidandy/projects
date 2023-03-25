@@ -1,0 +1,91 @@
+@import "../variables-theme";
+
+.plans-anthem {
+  .button-group {
+    margin-bottom: 20px;
+  }
+
+  .ui.input:not(.fluid) input[type=text], .ui.dropdown, .datepicker {
+    min-width: 260px;
+  }
+
+  .ui.message {
+    width: 100%;
+  }
+
+  .ui.form {
+    margin-left: 10px;
+  }
+}
+
+.optimizer-anthem {
+  .ui.table.data-table {
+    .data-table-body td {
+      height: 100px;
+      padding: 20px;
+      .ui.radio {
+        float: left;
+        margin-right: 25px;
+        margin-left: 5px;
+
+        @media only screen and (max-width: 767px) {
+          margin-top: 10px;
+        }
+
+        label {
+          &:before {
+            width: 25px;
+            height: 25px;
+          }
+
+          &:after {
+            width: 37px;
+            height: 37px;
+            left: -6px;
+            top: -6px;
+          }
+        }
+      }
+      .radio-label {
+        white-space: nowrap;
+        padding-right: 25px;
+      }
+
+      .ui.form {
+        .ui.dropdown, .ui.input:not(.small) {
+          width: 324px;
+
+          &.small {
+            width: 155px;
+            min-width: 0;
+          }
+        }
+      }
+
+      .ui.loader {
+        float: right;
+        margin-right: 20px;
+        margin-top: 8px;
+      }
+
+      .buttons-list {
+        float: right;
+        .ui.button.big {
+          width: 200px;
+          float: right;
+        }
+      }
+    }
+  }
+
+  .optimizer-info .ui.table.data-table {
+    margin: -10px 0 10px;
+  }
+
+  a.change-client {
+    cursor: pointer;
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+}

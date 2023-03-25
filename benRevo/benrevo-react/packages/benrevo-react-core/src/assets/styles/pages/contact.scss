@@ -1,0 +1,40 @@
+.contact {
+  .ui.message {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ui.loader {
+    margin-top: 14px;
+  }
+
+  .ui.header.form-header {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      left: 50%;
+      margin-left: -30px;
+      top: 10px;
+      height: 3px;
+      background-color: rgba(0,0,0,.87);
+    }
+  }
+
+  .ui.form.home {
+    .button-field {
+      padding: 0 7px;
+
+      .ui.button {
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,161 @@
+@-webkit-keyframes slideOutToBottom {
+  from {
+    -webkit-transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+  }
+}
+
+@keyframes slideOutToBottom {
+  from {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}
+
+@-webkit-keyframes slideInFromTop {
+  from {
+    -webkit-transform: translateY(-50%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.covers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  .cover-slide {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    &.\--active {
+      opacity: 1;
+      z-index: 2;
+    }
+    &.\--animate-in {
+      opacity: 1;
+      -webkit-animation: slideInFromTop .7s forwards ease-in-out;
+      animation: slideInFromTop .7s forwards ease-in-out;
+    }
+    &.\--animate-out {
+      opacity: 1;
+      z-index: 3;
+      -webkit-animation: slideOutToBottom .7s forwards ease-in-out;
+      animation: slideOutToBottom .7s forwards ease-in-out;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+      background: black;
+      opacity: .2;
+    }
+
+    .fullscreen {
+      right: 10%;
+      left: initial;
+      top: 75%;
+    }
+    &:hover {
+      .fullscreen {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .nav {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-30%);
+    z-index: 11;
+    right: 15px;
+    bottom: 10px;
+    top: initial;
+    left: 15px;
+
+    .nav-dot {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      z-index: 12;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin: 8px;
+        background: white;
+        border-radius: 50%;
+        opacity: 0.6;
+        transition: opacity .15s;
+      }
+
+      &:hover {
+        &:before {
+          opacity: 0.8;
+        }
+      }
+
+      &.\--active {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet_width - 1px) {
+  .covers {
+    .nav {
+      text-align: right;
+      bottom: 0;
+      .nav-dot {
+        width: 25px;
+        height: 25px;
+
+        &:before {
+          width: 14px;
+          height: 14px;
+          margin: 4px;
+        }
+      }
+    }
+  }
+}
+

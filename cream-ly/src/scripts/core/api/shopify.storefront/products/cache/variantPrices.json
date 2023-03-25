@@ -1,0 +1,795 @@
+{
+  "data": {
+    "products": {
+      "edges": [
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-cream-sensitive",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5000.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-cream-normal-mixed-oily",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5000.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-cream-acne",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5000.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-cream-antioxidant",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5000.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-exfoliate",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "3500.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-flower-powder",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2500.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-oil-normal-mixed-oily",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "3400.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-oil-dry-aged",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "3400.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "individual-consultation-with-alena",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "11800.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-gift-card-30",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2800.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-gift-card-50",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "4600.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-gift-card-70",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "6400.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-gift-card-100",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "9100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-gift-card-120",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "10900.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "SKU-gift-card-150",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "13600.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-cream-peptides",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5000.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-cream-my-body",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5300.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-FaceMassage-Level1",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-FaceMassage-Level1-Trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "SKU-exercises-100",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "7300.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "9100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Limfa-Level2",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Limfa-Level2-Trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Osanka-Level3",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Osanka-Level3-Trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Level4-buccal-massage",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Level4--buccal-massage-trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Level5-guasha-massage",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Level5-guasha-massage-trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "brush-my-body",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2700.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Level6-cellulite-massage",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Level6-cellulite-massage-trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "sku-video-aging",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Level7-mewing",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Level7-mewing-massage-trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "individual-skincare-consultation",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "5000.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "node": {
+            "variants": {
+              "edges": [
+                {
+                  "node": {
+                    "sku": "Video-Level8-taping",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": {
+                              "amount": "2100.0",
+                              "currencyCode": "RUB"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "node": {
+                    "sku": "Video-Level8-taping-trial",
+                    "presentmentPrices": {
+                      "edges": [
+                        {
+                          "node": {
+                            "price": { "amount": "0.0", "currencyCode": "RUB" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

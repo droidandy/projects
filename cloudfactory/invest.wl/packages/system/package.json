@@ -1,0 +1,25 @@
+{
+  "name": "@invest.wl/system",
+  "version": "0.1.41",
+  "description": "Invest.wl system module",
+  "repository": {
+    "type": "git",
+    "url": "https://git.effectivetrade.ru/EFTR.Frontend/invest.wl.git",
+    "directory": "packages/system"
+  },
+  "main": "src/index.ts",
+  "author": "skripko.andrey@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "peerDependencies": {
+    "@invest.wl/core": "*",
+    "@invest.wl/common": "*",
+    "@invest.wl/domain": "*",
+    "lodash": ">=4.17.11",
+    "axios": "^0.22.0",
+    "react-native-cancelable-fetch": "^0.1.1",
+    "url-join": "^4.0.1"
+  }
+}

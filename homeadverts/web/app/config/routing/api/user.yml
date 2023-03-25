@@ -1,0 +1,15 @@
+_api_user:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/api/user/user.yml"
+
+_api_user_setings:
+  prefix: /settings
+  resource: "@AppBundle/Resources/config/routing/api/user/settings.yml"
+
+_api_user_billing:
+  prefix: /billing
+  resource: "@AppBundle/Resources/config/routing/api/user/billing.yml"
+  
+_api_user_pusher:
+  prefix: /pusher
+  resource: "@AppBundle/Resources/config/routing/api/user/pusher.yml"

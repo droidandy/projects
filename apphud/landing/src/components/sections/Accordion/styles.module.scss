@@ -1,0 +1,139 @@
+@import "~styles/variables";
+
+.accordion {
+  & .item {
+    overflow: hidden;
+    height: auto;
+    max-height: 0px;
+  }
+
+  & .title,
+  & .content {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  & .title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.32;
+    border-top: 1px solid #dfe5eb;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+      background-color: $black;
+    }
+
+    &:before {
+      top: 36px;
+      right: 100px;
+      width: 16px;
+      height: 4px;
+    }
+
+    &:after {
+      top: 30px;
+      right: 106px;
+      width: 4px;
+      height: 16px;
+    }
+
+    &:global(.open) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  & .content {
+    padding-bottom: 16px;
+    padding-right: 160px;
+    line-height: 30px;
+    font-size: 20px;
+    color: $black;
+
+    a {
+      color: $blue;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 0;
+      padding-left: 16px;
+    }
+
+    i {
+      font-style: italic;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    & .title,
+    & .content {
+      padding-left: 60px;
+    }
+
+    & .title {
+      &:before {
+        right: 60px;
+      }
+
+      &:after {
+        right: 66px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &:first-child {
+      & .title {
+        border-top: 0;
+      }
+    }
+
+    & .title,
+    & .content {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    & .title {
+      min-height: 76px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      padding-right: 40px;
+
+      &:before {
+        top: 36px;
+        right: 16px;
+        height: 2px;
+        width: 10px;
+      }
+
+      &:after {
+        top: 32px;
+        right: 20px;
+        width: 2px;
+        height: 10px;
+      }
+    }
+
+    & .content {
+      font-size: 14px;
+    }
+  }
+}

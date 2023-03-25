@@ -1,0 +1,22 @@
+ote:
+  company_name: "Gett Business Solutions"
+  company_address: "1 Plough Place, London EC4A 1DE"
+  company_address_old: "3rd Floor, Seal House, 1 Swan Lane, London, EC4R 3TN"
+  company_number: "04254912"
+  account_number: "414 017 81"
+  sort_code: "609242"
+  vat_number: "810311885"
+  bank_address: "Chaseside, Bournemouth, UK, BH77DA"
+  bank_name: "JPMorgan Bank N.A"
+support:
+  landing_url: "https://gett.com/uk/one-transport/"
+  finance_email: "finance@one-transport.co.uk"
+time_zone: 'Europe/London'
+vat_rate: 0.2
+get_e:
+  vendor_phone: "+442038568655"
+gett_ru:
+  vendor_phone: "+74951377115"
+gett_il:
+  vendor_phone: "+443451550804"
+

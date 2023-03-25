@@ -1,0 +1,20 @@
+{% if not is_current_user(user) %}
+    {% set mode = mode is defined ? mode : 'small-button' %}
+    <button
+            data-id="{{ user.id }}"
+            data-name="{{ user.name }}"
+            data-follow-url="{{ path("ha_user_follow", {id:user.id}) }}"
+            data-unfollow-url="{{ path("ha_user_unfollow", {id:user.id}) }}"
+            class="white
+                   {{ mode }}
+                   follow-button
+                   mdl-button
+                   mdl-js-button
+                   mdl-js-ripple-effect
+                   {% if (app.user) and (app.user.isUserFollowing(user)) %} --following {% endif %}
+                ">
+        <span class="follow">Follow</span>
+        <span class="following">Following</span>
+        <span class="unfollow">Unfollow</span>
+    </button>
+{% endif %}

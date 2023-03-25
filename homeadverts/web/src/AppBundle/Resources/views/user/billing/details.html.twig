@@ -1,0 +1,33 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+
+<div id="billing"
+     class="one-column --margin-bottom"
+     data-card-update="{{ path('ha_billing_card_update') }}"
+     data-user-downgrade="{{ path('ha_billing_user_downgrade') }}"
+    >
+
+    <p class="headline --separator --user-settings">
+        <span class="heading">
+            Billing
+        </span>
+        <span class="sub-heading --small">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+            Phasellus sapien magna, aliquet vel posuere nec.
+        </span>
+    </p>
+
+    <div class="row">
+        <div class="column">
+            {% include 'AppBundle:user/billing/details:overview.html.twig' %}
+            {% include 'AppBundle:user/billing/details:payments.html.twig' %}
+
+            {% if is_granted('ROLE_WRITER') %}
+                {% include 'AppBundle:user/billing/details:downgrade.html.twig' %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

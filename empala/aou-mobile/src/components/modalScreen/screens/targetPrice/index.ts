@@ -1,0 +1,1 @@
+export { TargetPriceModal } from './TargetPrice';

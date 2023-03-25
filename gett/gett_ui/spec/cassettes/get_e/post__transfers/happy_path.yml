@@ -1,0 +1,165 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://test.api.get-e.com/api/v2/transfers
+    body:
+      encoding: UTF-8
+      string: Passengers[1][FirstName]=Royal&Passengers[1][LastName]=Cruickshank&Passengers[1][Email]=zoey%40ullrichkeler.io&Passengers[1][PhoneNumber]=%2B44+7725+28965&Passengers[1][Primary]=1&Option[Uuid]=7e6c531c-8b0e-300e-86e7-04c82d7daa9a&Occupancy[Passengers]=3&Occupancy[Bags]=3&Info[CustomerRequest]=&Info[ConnectionDetails]
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin16.7.0 x86_64) ruby/2.4.0p0
+      Authorization:
+      - X-Api-Key 8197323302846fe8ad92aab1fda5f71c045476bd6d5f9f8254191c5ad7e96b95
+      Content-Length:
+      - '318'
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Booking-Session, Authorization
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 26 Sep 2018 19:07:54 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6IjhrQ1lBc0lSNk1ZUE9MTTBJV3hjU3c9PSIsInZhbHVlIjoiaGx2cktudUx3XC96KzRWMUFKWE1aMTRvWnhzK2FFRVphVkpOaW9DVDh6eG9HTFA4dEdQcWRyQ2FLXC9cL3NjM3QzVCIsIm1hYyI6IjYzZjljZmNhODZjZDA0MmUyNDFlMDZhZDFiNmRkNThmZGE5YzZiNTRmNWYzNjRlNzlkNDQ0YTdkYjIwN2FmZWUifQ%3D%3D;
+        expires=Wed, 26-Sep-2018 21:07:55 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '3364'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "status": 200,
+            "href": "https://test.api.get-e.com/api/v2/transfers",
+            "meta": {
+                "method": "POST",
+                "ip": "178.151.244.9"
+            },
+            "data": {
+                "Unid": 3079797560,
+                "Status": "Booked",
+                "StatusCode": "BOOKED",
+                "Pickup": {
+                    "Time": "2018-09-26T21:04:05+0200",
+                    "Address": "48 Rue Ernest Renan, 33000 Bordeaux, France",
+                    "Name": "48 Rue Ernest Renan",
+                    "Location": {
+                        "Latitude": 44.8482509,
+                        "Longitude": -0.5917695
+                    }
+                },
+                "DropOff": {
+                    "Time": "2018-09-27T09:06:23+0200",
+                    "Address": "221B Baker St, Marylebone, London NW1 6XE, UK",
+                    "Name": "221B Baker St",
+                    "Location": {
+                        "Latitude": 51.523767,
+                        "Longitude": -0.1585557
+                    }
+                },
+                "CarOption": {
+                    "Uuid": "7e6c531c-8b0e-300e-86e7-04c82d7daa9a",
+                    "Details": {
+                        "Name": "Comfort Sedan",
+                        "Class": "Comfort",
+                        "Type": "Sedan",
+                        "CarThumbnail": "//d2jp0wcxc8urv0.cloudfront.net/images/vehicles/comfort.png",
+                        "Attributes": [],
+                        "Capacity": {
+                            "Passengers": 3,
+                            "Bags": 3
+                        },
+                        "FreeWaitingTime": 0,
+                        "PickupDescription": "In case of any delay in meeting the driver please call +31 858 884 450 immediately."
+                    },
+                    "Pricing": {
+                        "Price": {
+                            "Amount": 12.73,
+                            "IsoCurrency": "GBP"
+                        },
+                        "CancellationFee": [
+                            {
+                                "ValidAfter": "2018-09-25T21:04:05+0200",
+                                "Price": {
+                                    "Amount": 12.73,
+                                    "IsoCurrency": "GBP"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "Predictions": {
+                    "Duration": 43338,
+                    "Distance": 1039137
+                },
+                "Passengers": [
+                    {
+                        "Uuid": "1e5b603c-fa39-39b8-8827-82e312d204cf",
+                        "FirstName": "Royal",
+                        "LastName": "Cruickshank",
+                        "Email": "zoey@ullrichkeler.io",
+                        "PhoneNumber": "+44 7725 28965",
+                        "Primary": true
+                    }
+                ],
+                "Occupancy": {
+                    "Passengers": 3,
+                    "Bags": 3
+                },
+                "Driver": {
+                    "Name": null,
+                    "Phone": null
+                },
+                "Info": {
+                    "AgentReference": "",
+                    "CustomerRequest": "",
+                    "ConnectionDetails": {
+                        "Name": "",
+                        "Number": "",
+                        "Type": ""
+                    }
+                },
+                "Pricing": {
+                    "Price": {
+                        "Amount": 12.73,
+                        "IsoCurrency": "GBP"
+                    },
+                    "Breakdown": [
+                        {
+                            "CostType": "Base",
+                            "Description": "Cost of service",
+                            "Price": {
+                                "Amount": 12.73,
+                                "IsoCurrency": "GBP"
+                            }
+                        }
+                    ]
+                },
+                "Features": {
+                    "Modules": []
+                }
+            }
+        }
+    http_version: 
+  recorded_at: Wed, 26 Sep 2018 19:07:56 GMT
+recorded_with: VCR 4.0.0

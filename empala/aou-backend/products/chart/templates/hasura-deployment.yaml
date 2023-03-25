@@ -1,0 +1,130 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "aou-backend.hasura.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: hasura
+    hasuraService: custom
+  annotations:
+    app.gitlab.com/env: {{ .Values.annotations.CIEnvironmentSlug }}
+    app.gitlab.com/app: {{ .Values.annotations.CIProjectPathSlug }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "aou-backend.selectorLabels" . | nindent 6 }}
+      component: hasura
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        {{- include "aou-backend.selectorLabels" . | nindent 8 }}
+        component: hasura
+      annotations:
+        app.gitlab.com/env: {{ .Values.annotations.CIEnvironmentSlug }}
+        app.gitlab.com/app: {{ .Values.annotations.CIProjectPathSlug }}
+    spec:
+      {{- if .Values.database.sslCACert }}
+      volumes:
+      - name: db-ca-cert-secret-volume
+        secret:
+          secretName: {{ include "aou-backend.db-ca-cert-secret.fullname" . }}
+      {{- end }}
+      containers:
+      - image: "{{ .Values.image.repository }}:hasura-{{ .Chart.AppVersion }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: hasura
+        env:
+        - name: DB_HOST
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: host
+        - name: DB_PORT
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: port
+        - name: DB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: name
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: user
+        - name: HASURA_GRAPHQL_DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: url
+        - name: HASURA_GRAPHQL_METADATA_DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+              key: url
+        {{- if .Values.database.sslCACert }}
+        - name: PGSSLMODE       
+          value: require
+        - name: PGSSLROOTCERT
+          value: "/certs/.ca.pem"
+        {{- end }}
+        ## enable the console served by server
+        - name: HASURA_GRAPHQL_ENABLE_CONSOLE
+          value: "{{ .Values.hasura.enableConsole }}"
+        ## enable debugging mode. It is recommended to disable this in production
+        - name: HASURA_GRAPHQL_ENABLED_LOG_TYPES
+          value: "startup, http-log, webhook-log, websocket-log, query-log"
+        - name: HASURA_GRAPHQL_DEV_MODE
+          value: "{{ if eq .Values.environment "development" }}true{{ else }}false{{ end }}"
+        {{- if .Values.hasura.adminSecret }}
+        - name: HASURA_GRAPHQL_ADMIN_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.hasura-secret.fullname" . }}
+              key: adminSecret
+        {{- end }}
+        {{- if .Values.database.sslCACert }}
+        volumeMounts:
+        - name: db-ca-cert-secret-volume
+          readOnly: true
+          mountPath: "/certs"
+        {{- end }}
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        livenessProbe:
+          initialDelaySeconds: 15
+          periodSeconds: 30
+          httpGet:
+            path: /healthz
+            port: 8080
+        readinessProbe:
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          httpGet:
+            path: /healthz
+            port: 8080
+        resources: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "aou-backend.hasura.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: hasura
+  annotations:
+    alb.ingress.kubernetes.io/healthcheck-path: "/healthz"
+spec:
+  type: {{ .Values.services.type }}
+  ports:
+  - protocol: TCP
+    port: {{ .Values.services.hasura.port }}
+    targetPort: 8080
+  selector:
+    {{- include "aou-backend.selectorLabels" . | nindent 4 }}
+    component: hasura

@@ -1,0 +1,273 @@
+.home {
+  g[id=hl1] {
+    animation: hv2 3000ms ease-in-out infinite normal forwards
+  }
+  g[id=hl2] {
+    animation: hv1 3000ms ease-in-out infinite normal forwards
+  }
+  g[id=hl4] {
+    animation: hv4 3000ms ease-in-out infinite normal forwards
+  }
+  g[id=hl3] {
+    animation: hv3 3000ms ease-in-out infinite normal forwards
+  }
+  @keyframes hv1 {
+    0% {
+      transform: translate(0px, 0px)
+    }
+    50% {
+      transform: translate(0px, 10px)
+    }
+    100% {
+      transform: translate(0px, 0px)
+    }
+  }
+  @keyframes hv2 {
+    0% {
+      transform: translate(0px, 0px)
+    }
+    50% {
+      transform: translate(10px, 0px)
+    }
+    100% {
+      transform: translate(0px, 0px)
+    }
+  }
+  @keyframes hv3 {
+    0% {
+      transform: translate(0px, 0px)
+    }
+    50% {
+      transform: translate(-10px, 0px)
+    }
+    100% {
+      transform: translate(0px, 0px)
+    }
+  }
+  @keyframes hv4 {
+    0% {
+      transform: translate(0px, 0px)
+    }
+    50% {
+      transform: translate(0px, -10px)
+    }
+    100% {
+      transform: translate(0px, 0px)
+    }
+  }
+}
+
+.metrics {
+  rect[id=ml1] {
+    animation: l1__sz 6000ms linear infinite normal forwards
+  }
+  g[id=ml1_to] {
+    animation: l1_to__to 6000ms linear infinite normal forwards
+  }
+  @keyframes l1__sz {
+    0% {width: 9px;height: 69px}
+    30% {width: 9px;height: 50px}
+    50% {width: 9px;height: 50px}
+    70% {width: 9px;height: 17px}
+    80% {width: 9px;height: 17px}
+    100% {width: 9px;height: 69px}
+  }
+  @keyframes l1_to__to {
+    0% {transform: translate(249.500000px,238.500000px)}
+    30% {transform: translate(249.500000px,257.500000px)}
+    50% {transform: translate(249.500000px,257.500000px)}
+    70% {transform: translate(249.500000px,290.500000px)}
+    80% {transform: translate(249.500000px,290.500000px)}
+    100% {transform: translate(249.500000px,238.500000px)}
+  }
+
+  rect[id=ml2] {
+    animation: l2__sz 6000ms linear infinite normal forwards
+  }
+  g[id=ml2_to] {
+    animation: l2_to__to 6000ms linear infinite normal forwards
+  }
+  @keyframes l2__sz {
+    0% {width: 9px;height: 40.3247px}
+    30% {width: 9px;height: 59.14px}
+    50% {width: 9px;height: 59.14px}
+    70% {width: 9px;height: 25px}
+    80% {width: 9px;height: 25px}
+    100% {width: 9px;height: 40.3247px}
+  }
+  @keyframes l2_to__to {
+    0% {transform: translate(283px,232.675px)}
+    30% {transform: translate(283px,213.859px)}
+    50% {transform: translate(283px,213.859px)}
+    70% {transform: translate(283px,247.675px)}
+    80% {transform: translate(283px,247.675px)}
+    100% {transform: translate(283px,232.675px)}
+  }
+
+  rect[id=ml3] {
+    animation: l3__sz 6000ms linear infinite normal forwards
+  }
+  g[id=ml3_to] {
+    animation: l3_to__to 6000ms linear infinite normal forwards
+  }
+  @keyframes l3__sz {
+    0% {width: 9px;height: 50px}
+    30% {width: 9px;height: 69px}
+    80% {width: 9px;height: 69px}
+    100% {width: 9px;height: 50px}
+  }
+  @keyframes l3_to__to {
+    0% {transform: translate(321px,223px)}
+    30% {transform: translate(321px,204px)}
+    80% {transform: translate(321px,204px)}
+    100% {transform: translate(321px,223px)}
+  }
+
+  rect[id=ml6] {
+    animation: l6__sz 6000ms linear infinite normal forwards
+  }
+  g[id=ml6_to] {
+    animation: l6_to__to 6000ms linear infinite normal forwards
+  }
+  @keyframes l6__sz {
+    0% {width: 9px;height: 59.1429px}
+    30% {width: 9px;height: 72px}
+    50% {width: 9px;height: 72px}
+    70% {width: 9px;height: 25px}
+    80% {width: 9px;height: 25px}
+    100% {width: 9px;height: 59.1429px}
+  }
+  @keyframes l6_to__to {
+    0% {transform: translate(359px, 213.675px)}
+    30% {transform: translate(359px, 200.675px)}
+    50% {transform: translate(359px, 200.675px)}
+    70% {transform: translate(359px, 247.675px)}
+    80% {transform: translate(359px, 247.675px)}
+    100% {transform: translate(359px, 213.675px)}
+  }
+
+  rect[id=ml5] {
+    animation: l5__sz 6000ms linear infinite normal forwards
+  }
+  g[id=ml5_to] {
+    animation: l5_to__to 6000ms linear infinite normal forwards
+  }
+  @keyframes l5__sz {
+    0% {width: 9px;height: 40.3247px}
+    30% {width: 9px;height: 17px}
+    50% {width: 9px;height: 17px}
+    70% {width: 9px;height: 50px}
+    80% {width: 9px;height: 50px}
+    100% {width: 9px;height: 40.3247px}
+  }
+  @keyframes l5_to__to {
+    0% {transform: translate(397px, 232.675px)}
+    30% {transform: translate(397px, 255.675px)}
+    50% {transform: translate(397px, 255.675px)}
+    70% {transform: translate(397px, 222.675px)}
+    80% {transform: translate(397px, 222.675px)}
+    100% {transform: translate(397px, 232.675px)}
+  }
+
+  rect[id=ml4] {
+    animation: l4__sz 6000ms linear infinite normal forwards
+  }
+  g[id=ml4_to] {
+    animation: l4_to__to 6000ms linear infinite normal forwards
+  }
+  @keyframes l4__sz {
+    0% {width: 9px;height: 17.026px}
+    30% {width: 9px;height: 25px}
+    50% {width: 9px;height: 25px}
+    70% {width: 9px;height: 30px}
+    80% {width: 9px;height: 30px}
+    100% {width: 9px;height: 17.026px}
+  }
+  @keyframes l4_to__to {
+    0% {transform: translate(435px,255.974px)}
+    30% {transform: translate(435px,247.974px)}
+    50% {transform: translate(435px,247.974px)}
+    70% {transform: translate(435px,242.974px)}
+    80% {transform: translate(435px,242.974px)}
+    100% {transform: translate(435px,255.974px)}
+  }
+}
+
+.subscribers {
+  g[id=sl1] {
+    animation: sl1_to 3000ms ease-in-out infinite normal forwards
+  }
+  @keyframes sl1_to {
+    0% {transform: translate(0px,0px)}
+    50% {transform: translate(-20px,0px)}
+    100% {transform: translate(0px,0px)}
+  }
+}
+
+.makingInApp {
+  g[id=mal1] {
+    animation: mal1_to 3000ms ease-in-out infinite normal forwards
+  }
+  @keyframes mal1_to {
+    0% {transform: translate(0px,0px)}
+    50% {transform: translate(0px,-30px)}
+    100% {transform: translate(0px,0px)}
+  }
+}
+
+.charts {
+  path[id=cl1] {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 25s linear forwards;
+    animation-delay: 0s;
+  }
+  path[id=cl2] {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 25s linear forwards;
+    animation-delay: 3s;
+  }
+  path[id=cl3] {
+    stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 25s linear forwards;
+    animation-delay: 6s;
+  }
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+
+.inHouse {
+  g[id=ihl1] {
+    animation: v2 3000ms ease-in-out infinite normal forwards
+  }
+
+  g[id=ihl2] {
+    animation: v1 3000ms ease-in-out infinite normal forwards
+  }
+
+  g[id=ihl3] {
+    animation: v3 3000ms ease-in-out infinite normal forwards
+  }
+
+  @keyframes v1 {
+    0% {transform: translate(0px,0px)}
+    50% {transform: translate(0px, 10px)}
+    100% {transform: translate(0px,0px)}
+  }
+
+  @keyframes v2 {
+    0% {transform: translate(0px,0px)}
+    50% {transform: translate(10px, 0px)}
+    100% {transform: translate(0px,0px)}
+  }
+  @keyframes v3 {
+    0% {transform: translate(0px,0px)}
+    50% {transform: translate(-10px, 0px)}
+    100% {transform: translate(0px,0px)}
+  }
+}

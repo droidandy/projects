@@ -1,0 +1,110 @@
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.HomePromoMain.default {
+  background: url("./home-top-section-background.png") no-repeat #efefef;
+  padding: 67px 0 33px;
+  background-size: 60% auto;
+  background-position: 100% -50px;
+
+  text-align: center;
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--purplish-grey);
+  h1 {
+    font-size: 27px;
+    line-height: 1.17;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    max-width: 180px;
+    margin: 0;
+  }
+  .content {
+    max-width: 400px;
+  }
+  .subtitle {
+    max-width: 180px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+  }
+}
+@media screen and (min-width: 735px) {
+  .HomePromoMain {
+    padding: 50px 0 46px;
+    background-position: 400px -30px;
+    h1 {
+      max-width: 350px;
+    }
+    .subtitle {
+      max-width: 350px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePromoMain {
+    background-size: 50% auto;
+    background-position: 100% -50px;
+    padding: 50px 0 46px;
+    .content {
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 36px;
+      line-height: 1.11;
+      letter-spacing: 1.8px;
+      max-width: 100%;
+    }
+    .subtitle {
+      font-size: 18px;
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    .item {
+      margin-top: 52px;
+      .step_img {
+        min-height: 100px;
+        img {
+          width: 92px;
+          height: 90px;
+        }
+      }
+      .number {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 115px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .btn_style {
+      margin-top: 47px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePromoMain {
+    background-position: 100% 50%;
+    background-size: 42% auto;
+    padding: 96px 0 60px;
+    .content {
+      max-width: 690px;
+    }
+    .item {
+      .step_img {
+        min-height: 110px;
+        img {
+          width: 104px;
+          height: 90px;
+        }
+      }
+    }
+  }
+}

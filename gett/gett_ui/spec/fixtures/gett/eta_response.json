@@ -1,0 +1,24 @@
+{
+  "etas": [
+    {
+      "product_id": "ca1bcd35-c427-4fa0-be0a-54ca5e956276",
+      "display_name": "Gett Express",
+      "eta": 265
+    },
+    {
+      "product_id": "08d4801f-452d-49e7-9b96-944d7c2ca722",
+      "display_name": "Gett Kids",
+      "eta": 1800
+    },
+    {
+      "product_id": "b64ca6d1-d5e8-4054-8dd8-ab858db82091",
+      "display_name": "Gett Premium",
+      "eta": 275
+    },
+    {
+      "product_id": "93b83484-98c8-4b6b-8103-81a046bdd85a",
+      "display_name": "Gett Mehadrin",
+      "eta": 275
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "module": "commonjs",
+    "lib": ["ES6", "DOM"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "strict": false,
+    "types": ["node", "jest"],
+    "baseUrl": ".",
+    "paths": {
+      "reduxShape": ["src/scripts/core/redux/shape.ts"],
+      "@Core/*": ["src/scripts/core/*"],
+      "@Components/*": ["src/scripts/react-components/*"]
+    }
+  },
+  "typeAcquisition": { "include": ["jest"] },
+  "include": ["src/scripts/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"]
+}

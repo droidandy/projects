@@ -1,0 +1,41 @@
+.label {
+  width: 140px;
+}
+
+.vehicleType {
+  margin: 10px 5px !important;
+
+  :global(.ant-checkbox) {
+    position: absolute;
+    bottom: 56px;
+    right: 0;
+  }
+}
+
+.row {
+  min-height: 40px;
+}
+
+.w360 {
+  width: 360px;
+  max-width: 100%;
+}
+
+.constrainedBox {
+  width: 320px;
+}
+
+.select :global(.ant-select-selection) {
+  max-height: 180px;
+  overflow: auto;
+}
+
+.wrapper {
+  min-height: calc(100vh - 185px);
+}
+
+@media(min-width: 1025px) {
+  .chartContainer {
+    min-width: 260px;
+  }
+}

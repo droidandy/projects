@@ -1,0 +1,133 @@
+[
+  {
+    "planType": "DHMO",
+    "planName": "",
+    "benefits": [
+      {
+        "name": "Oral Examination",
+        "sysName": "ORAL_EXAMINATION",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Adult Prophy",
+        "sysName": "ADULT_PROPHY",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Child Prophy",
+        "sysName": "CHILD_PROPHY",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Silver Filling 1 Surface",
+        "sysName": "SILVER_FILL_1_SURFACE",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "White Filling 1 Surface Anterior",
+        "sysName": "WHITE_FILL_1_SURFACE_ANTERIOR",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Molar Root Canal",
+        "sysName": "MOLAR_ROOT_CANAL",
+        "typeIn": "STRING",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Perio Maintenance",
+        "sysName": "PERIO_MAINTAINANCE",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Simple Extraction Erupted Tooth",
+        "sysName": "SIMPLE_EXTRACTION_ERUPTED_TOOTH",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Ortho Services Adult",
+        "sysName": "ORTHO_SERVICES_ADULTS",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Ortho Services Children",
+        "sysName": "ORTHO_SERVICES_CHILDREN",
+        "type": "STRING",
+        "value": ""
+      }
+    ]
+  }, {
+    "planType": "DPPO",
+    "planName": "",
+    "benefits": [
+      {
+        "name": "Calendar Year Maximum",
+        "sysName": "CALENDAR_YEAR_MAXIMUM",
+        "typeIn": "DOLLAR",
+        "typeOut": "DOLLAR",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Individual",
+        "sysName": "DENTAL_INDIVIDUAL",
+        "typeIn": "DOLLAR",
+        "typeOut": "DOLLAR",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Family",
+        "sysName": "DENTAL_FAMILY",
+        "typeIn": "DOLLAR",
+        "typeOut": "DOLLAR",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Waived for Preventive",
+        "sysName": "WAIVED_FOR_PREVENTIVE",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Class 1 - Preventive",
+        "sysName": "CLASS_1_PREVENTIVE",
+        "type": "PERCENT",
+        "value": ""
+      }, {
+        "name": "Class II - Basic",
+        "sysName": "CLASS_2_BASIC",
+        "typeIn": "STRING",
+        "type": "PERCENT",
+        "value": ""
+      }, {
+        "name": "Class III - Major",
+        "sysName": "CLASS_3_MAJOR",
+        "type": "PERCENT",
+        "value": ""
+      }, {
+        "name": "Class IV - Orthodontia",
+        "sysName": "CLASS_4_ORTHODONTIA",
+        "type": "PERCENT",
+        "value": ""
+      }, {
+        "name": "Orthodontia Lifetime Max",
+        "sysName": "ORTHODONTIA_LIFETIME_MAX",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Ortho Eligibility",
+        "sysName": "ORTHO_ELIGIBILITY",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Dental Reimbursement Schedule",
+        "sysName": "REIMBURSEMENT_SCHEDULE",
+        "type": "PERCENT",
+        "value": ""
+      }, {
+        "name": "Implant Coverage",
+        "sysName": "IMPLANT_COVERAGE",
+        "type": "PERCENT",
+        "value": ""
+      }
+    ]
+  }
+]

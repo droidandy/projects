@@ -1,0 +1,105 @@
+{{- if .Values.dataGrabbers.morningStar.password }}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ include "aou-backend.morningstar-datagrabber.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+type: Opaque
+stringData:
+  host: {{ .Values.dataGrabbers.morningStar.host | quote }}
+  user: {{ .Values.dataGrabbers.morningStar.user | quote }}
+  password: {{ .Values.dataGrabbers.morningStar.password | quote }}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "aou-backend.morningstar-datagrabber.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: morningstar-datagrabber
+spec:
+  {{- if .Values.dataGrabbers.morningStar.isScheduleB64Encoded }}
+  schedule: {{ .Values.dataGrabbers.morningStar.schedule | b64dec | quote }}
+  {{- else }}
+  schedule: {{ .Values.dataGrabbers.morningStar.schedule | quote }}
+  {{- end }}
+  concurrencyPolicy: "Replace"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+        {{- with .Values.imagePullSecrets }}
+          imagePullSecrets:
+            {{- toYaml . | nindent 8 }}
+        {{- end }}
+          serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+          containers:
+          - name: redis-bullmq
+            image: redis:6.2.6-alpine
+            imagePullPolicy: IfNotPresent
+            ports:
+            - name: client
+              containerPort: 6379
+          - name: morningstar-datagrabber
+            image: "{{ .Values.image.repository }}:morningstar-datagrabber-{{ .Chart.AppVersion }}"
+            imagePullPolicy: {{ .Values.image.pullPolicy }}
+            env:
+            - name: BULLMQ_REDIS_HOST
+              value: "127.0.0.1"
+            - name: BULLMQ_REDIS_PORT
+              value: "6379"
+            - name: BULLMQ_REDIS_MAX_PING_ATTEMPTS
+              value: "30"
+            - name: MORNING_STAR_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.morningstar-datagrabber.fullname" . }}
+                  key: host
+            - name: MORNING_STAR_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.morningstar-datagrabber.fullname" . }}
+                  key: user
+            - name: MORNING_STAR_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.morningstar-datagrabber.fullname" . }}
+                  key: password
+            - name: APOLLO_SERVER_HOST_URI
+              value: "http://{{ include "aou-backend.apollo.fullname" . }}:{{ .Values.services.apollo.port }}" 
+            - name: AWS_COGNITO_USER_POOL_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+                  key: userPoolId
+            - name: AWS_COGNITO_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.aws-cognito-secret.fullname" . }}
+                  key: clientId
+            - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.authentication-secret.fullname" . }}
+                  key: marketdataUpdaterUserName
+            - name: AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.authentication-secret.fullname" . }}
+                  key: marketdataUpdaterUserPassword
+            - name: HASURA_GRAPHQL_ENDPOINT
+              value: "http://{{ include "aou-backend.hasura.fullname" . }}:{{ .Values.services.hasura.port }}/v1/graphql" 
+            {{- if .Values.hasura.adminSecret }}
+            - name: HASURA_GRAPHQL_ADMIN_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "aou-backend.hasura-secret.fullname" . }}
+                  key: adminSecret
+            {{- end }}
+          restartPolicy: Never
+      backoffLimit: {{ .Values.dataGrabbers.morningStar.backoffLimit }}
+  successfulJobsHistoryLimit: {{ .Values.dataGrabbers.morningStar.successfulJobsHistoryLimit }}
+  failedJobsHistoryLimit: {{ .Values.dataGrabbers.morningStar.failedJobsHistoryLimit }}
+status: {}
+{{- end }}

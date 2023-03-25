@@ -1,0 +1,15 @@
+.creditNote {
+  :global {
+    .ant-table {
+      overflow: auto;
+      overflow-y: auto;
+    }
+    .ant-table-tbody > tr > td {
+      padding: 5px;
+    }
+  }
+}
+
+.w425 {
+  width: 425px;
+}

@@ -1,0 +1,93 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="down" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">Settings</ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <!--<ion-content scroll="false" >-->
+  <ion-content class="gm-content page--settings" on-scroll="gotScrolled()" delegate-handle="mainScroll">
+            <div class="row">
+                <div class="col-xs-12 selection selection--top">
+                  <ion-list can-swipe="false">
+                    <ion-item href="#/settings/general" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-2 selection__img" align="center"><img src="img/settings.png" alt=""></div>
+                          <div class="col-xs-10 selection__content selection__content__last">General
+                          <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span>
+                          </div>
+                      </div>
+                    </ion-item>
+                    <!-- <ion-item href="#/settings/security" class="item-thumbnail-left" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-2 selection__img" align="center" ><img src="img/lock.png" alt=""></div>
+                          <div class="col-xs-10 selection__content selection__content__last">Security
+                          <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span>
+                          </div>
+                      </div>
+                    </ion-item> -->
+                  </ion-list>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 selection">
+                  <ion-list can-swipe="false">
+                    <ion-item href="#/settings/discovery" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                        <div class="col-xs-2 selection__img" align="center"><img src="img/binoculars.png" alt=""></div>
+                        <div class="col-xs-10 selection__content">Discovery
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                    </div>
+                    </ion-item>
+                  <ion-item href="#/settings/profile" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+
+                    <div class="row">
+                        <div class="col-xs-2 selection__img" align="center" ><img src="img/person.png" alt=""></div>
+                        <div class="col-xs-10 selection__content">Profile
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span>
+                        </div>
+                    </div>
+                    </ion-item>
+                  <ion-item href="#/settings/contact" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                    <div class="row">
+                        <div class="col-xs-2 selection__img" align="center" ><img src="img/contact-card.png" alt=""></div>
+                        <div class="col-xs-10 selection__content selection__content__last">Contact Card
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span>
+                        </div>
+                    </div>
+                  </ion-item>
+                  </ion-list>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12 selection">
+                  <ion-list can-swipe="false">
+                  <ion-item class="item-thumbnail-left item-share settings-bg">
+                    <div class="row" ng-click="shareNative()">
+                        <div class="col-xs-2 selection__img" align="center"><img src="img/heart.png" alt=""></div>
+                        <div class="col-xs-10 selection__content">Share
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+
+                    </div>
+                  </ion-item>
+                  <ion-item href="#/settings/legal" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                    <div class="row">
+                        <div class="col-xs-2 selection__img" align="center" ><img src="img/legal.png" alt=""></div>
+                        <div class="col-xs-10 selection__content selection__content__last">Legal Stuff
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span>
+                        </div>
+                    </div>
+                  </ion-item>
+                  </ion-list>
+                </div>
+            </div>
+            <div class="settings__footer" align="center">
+                <img src="img/logo.png" alt="">
+                Copyright 2016
+            </div>
+  </ion-content>
+</ion-view>

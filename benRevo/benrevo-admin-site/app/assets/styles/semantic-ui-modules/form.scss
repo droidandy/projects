@@ -1,0 +1,13 @@
+@import '../variables-theme';
+
+/* Form */
+
+.ui.form {
+  .field {
+    label {
+      font-weight: normal;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  }
+}

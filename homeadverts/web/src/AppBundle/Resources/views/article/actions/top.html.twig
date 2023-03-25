@@ -1,0 +1,68 @@
+{% set likesTotal = article.getLikesCount() %}
+{% set commentsTotal = article.getMessagesCount() %}
+
+{% if app.user and is_liked_by_user(app.user, article) %}
+    {% set isLikedClass = '--is-liked' %}
+{% else %}
+    {% set isLikedClass = '' %}
+{% endif %}
+
+<div class="details-sliding-panel">
+    <div class="details-navigation one-column">
+        {% include 'AppBundle:user/profile:image.html.twig' with {user: article.author } %}
+        <div class="details">
+            <div class="titles">
+                <div class="title">{{ article.title|raw }}</div>
+            </div>
+            <div class="item-navigation">
+                <div class="article-likes-{{ article.id }} like-button like-counter {{ isLikedClass }}"
+                     data-id="{{ article.id }}"
+                     data-type="article"
+                     data-title="{{ article.getTitle() }}"
+                     data-add-url="{{ path('ha_article_like_add',{id:article.token}) }}"
+                     data-remove-url="{{ path('ha_article_like_remove',{id:article.token}) }}"
+                >
+                    <i class="material-icons plus">favorite</i>
+                    <i class="material-icons minus">favorite</i>
+
+                    {% if likesTotal %}
+                        Likes (<span>{{ likesTotal }}</span>)
+                    {% else %}
+                        Like <span></span>
+                    {% endif %}
+                </div>
+
+                <a href="{{ path('ha_room_article_redirect', {id: article.id}) }}"
+                   class="comments-counter message-button"
+                >
+                    <i class="material-icons">comment</i>
+                    {% if commentsTotal %}
+                        <span>
+                            {{ commentsTotal }}
+                        </span> comments
+                    {% else %}
+                        <span></span>
+                        {% if not is_mobile() %}
+                            Open Discussion
+                        {% else %}
+                            Discussion
+                        {% endif %}
+                    {% endif %}
+                </a>
+
+                <div class="article-share-{{ article.id }} share-button"
+                     data-title="Share this story"
+                     data-image="{{ article|article_image('article_medium') }}"
+                     data-url="{{ absolute_url(path('ha_article_details', {token: article.token, slug: article.slug})) }}"
+                >
+                    <i class="material-icons">reply</i>
+                    {% if not is_mobile() %}
+                        Share Story
+                    {% else %}
+                        Share
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

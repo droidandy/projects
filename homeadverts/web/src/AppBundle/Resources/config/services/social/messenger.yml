@@ -1,0 +1,33 @@
+services:
+    app.message_sender:
+        class: AppBundle\Service\Messenger\MessageSender
+        arguments:
+            - @em
+            - @app.pusher
+            
+    app.room_finder:
+        class: AppBundle\Service\Messenger\RoomFinder
+        arguments:
+            - @em
+            - @app.message_sender
+            - @ha.user_manager
+            
+    app.message_notificator:
+        class: AppBundle\Service\Messenger\MessageNotificator
+        arguments:
+            - @em
+            - @ha.mailer
+    
+    
+    app.pusher:
+        class: AppBundle\Service\Messenger\PusherService
+        arguments:
+            - "@app.pusher.library"
+    
+    app.pusher.library:
+        class: Pusher\Pusher
+        arguments:
+            - "%pusher.key%"
+            - "%pusher.secret%"
+            - "%pusher.app_id%"
+            - "%pusher.options%"

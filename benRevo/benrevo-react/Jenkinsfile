@@ -1,0 +1,391 @@
+#!groovy
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+  }
+  agent {
+    node {
+      label 'buildfarm'
+    }
+  }
+  tools {
+    nodejs 'NodeJs'
+  }
+  environment {
+    DEV_TOKEN_SECRET = credentials('AWS_DEV_ACCESS_SECRET')
+    DEV_MIXPANEL_KEY = credentials('DEV_MIXPANEL_KEY')
+
+    PROD_MIXPANEL_KEY = credentials('PROD_MIXPANEL_KEY')
+    PROD_UHC_TOKEN_SECRET = credentials('PROD_UHC_AWS_ACCESS_SECRET')
+    PROD_ANT_TOKEN_SECRET = credentials('PROD_ANT_AWS_ACCESS_SECRET')
+
+    AUTH0_UHC_CLIENT_ID = 'sgHcHFge9CWD48Asz77uM7YsmbHRUzWQ'
+    AUTH0_UHC_DOMAIN = 'login-uhc.benrevo.com'
+    AUTH0_UHC_DOMAIN_LOGIN = 'https://login.auth0.com/api/v2'
+
+    AUTH0_ANT_CLIENT_ID = 'jB2UXiRvZcdIz6AuwcCGdErJLBcalaSX'
+    AUTH0_ANT_DOMAIN = 'login-anthem.benrevo.com'
+    AUTH0_ANT_DOMAIN_LOGIN = 'https://login.auth0.com/api/v2'
+
+    DEV_UHC_BENREVO_API_PATH = 'https://devapi.benrevo.com'
+    DEV_ANT_BENREVO_API_PATH = 'https://devapiant.benrevo.com'
+
+    STAGE_UHC_BENREVO_API_PATH = 'https://stageapi.benrevo.com'
+    STAGE_ANT_BENREVO_API_PATH = 'https://stageapiant.benrevo.com'
+
+    PROD_UHC_BENREVO_API_PATH = 'https://api.benrevo.com'
+    PROD_ANT_BENREVO_API_PATH = 'https://apiant.benrevo.com'
+
+    DEV_TOKEN_ID = 'AKIAIEV2Q2CEUNPABDKA'
+    PROD_UHC_TOKEN_ID = 'AKIAJMGGUG3HSUXCOGBA'
+    PROD_ANT_TOKEN_ID = 'AKIAILFFQT66VOH6U4YA'
+
+    COVERALLS_REPO_TOKEN = credentials('BENREVO_REACT_COVERALLS_REPO_TOKEN')
+    COVERALLS_SERVICE_NAME = 'Jenkins'
+    NODE_OPTIONS = "--max-old-space-size=2048"
+  }
+  stages {
+    stage('Setup') {
+      parallel {
+        stage('UHC') {
+          steps {
+            ws("${BUILD_TAG}uhc") {
+              wrap([$class: 'BuildUser']) {
+                slackSend message: "Starting build: ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME} caused by ${env.BUILD_USER_ID}."
+              }
+              checkout(
+                [
+                  $class: 'GitSCM',
+                  branches: [[name: '${BRANCH_NAME}']],
+                  doGenerateSubmoduleConfigurations: false,
+                  extensions: [],
+                  submoduleCfg: [],
+                  userRemoteConfigs: [[
+                    credentialsId: '81e0269c-8b0b-4eeb-97f2-03da4cb75100',
+                    url: 'https://github.com/BenRevo/benrevo-react/'
+                  ]]
+                ]
+              )
+              sh '''
+npm run bootstrap
+              '''
+            }
+          }
+        }
+        stage('Anthem') {
+          steps {
+            ws("${BUILD_TAG}ant") {
+              wrap([$class: 'BuildUser']) {
+                slackSend message: "Starting build: ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME} caused by ${env.BUILD_USER_ID}."
+              }
+              checkout(
+                [
+                  $class: 'GitSCM',
+                  branches: [[name: '${BRANCH_NAME}']],
+                  doGenerateSubmoduleConfigurations: false,
+                  extensions: [],
+                  submoduleCfg: [],
+                  userRemoteConfigs: [[
+                    credentialsId: '81e0269c-8b0b-4eeb-97f2-03da4cb75100',
+                    url: 'https://github.com/BenRevo/benrevo-react/'
+                  ]]
+                ]
+              )
+              sh '''
+npm run bootstrap
+              '''
+            }
+          }
+        }
+      }
+    }
+    stage('Test') {
+      parallel {
+        stage('UHC') {
+          steps {
+            ws("${BUILD_TAG}uhc") {
+              sh '''
+export CARRIER="UHC"
+npm test
+              '''
+            }
+          }
+        }
+        stage('Anthem') {
+          steps {
+            ws("${BUILD_TAG}ant") {
+              sh '''
+export CARRIER="ANTHEM"
+npm test
+              '''
+            }
+          }
+        }
+      }
+    }
+    stage('Build/Dockerize') {
+      parallel {
+        stage('UHC') {
+          steps {
+            ws("${BUILD_TAG}uhc") {
+              sh '''
+#!/bin/bash -xe
+
+export PACKAGE="benrevo-react-uhc"
+export BENREVO_PATH="/uhc/"
+export AUTH0_CLIENT_ID=$AUTH0_UHC_CLIENT_ID
+export AUTH0_DOMAIN=$AUTH0_UHC_DOMAIN
+export AUTH0_DOMAIN_LOGIN=$AUTH0_UHC_DOMAIN_LOGIN
+export CARRIER_PLACEHOLDER="uhc"
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export MIXPANEL_KEY=$DEV_MIXPANEL_KEY
+    export BENREVO_API_PATH=$DEV_UHC_BENREVO_API_PATH
+    export DOCKER_BUILD_NAME="benrevo/fe-$CARRIER_PLACEHOLDER-dev"
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-$CARRIER_PLACEHOLDER-dev:latest"
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-dev"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="dev"
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export MIXPANEL_KEY=$DEV_MIXPANEL_KEY
+    export BENREVO_API_PATH=$STAGE_UHC_BENREVO_API_PATH
+    export DOCKER_BUILD_NAME="benrevo/fe-$CARRIER_PLACEHOLDER-stage"
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-$CARRIER_PLACEHOLDER-stage:latest"
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-stage"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="stage"
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export MIXPANEL_KEY=$PROD_MIXPANEL_KEY
+    export BENREVO_API_PATH=$PROD_UHC_BENREVO_API_PATH
+    export DEPLOY_FILE_PATH="prod"
+    export DOCKER_BUILD_NAME="prd-benrevo-react-web"
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_ACCESS_KEY_ID=$PROD_UHC_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$PROD_UHC_TOKEN_SECRET
+    export DOCKER_TAG_NAME="252508284068.dkr.ecr.us-west-2.amazonaws.com/prd-benrevo-react-web:latest"
+    export AWS_DEPLOY_NAME="PRD-BR-FRONTEND"
+fi
+
+export PATH=$PATH:$HOME/.local/bin
+
+if [ "$(aws sts get-caller-identity | grep -c 'UserId')" -eq 1 ]
+then
+    echo "##### Successful authorization from AWS"
+fi
+
+npm run build:$CARRIER_PLACEHOLDER
+
+mkdir -p ./.elasticbeanstalk/
+mkdir -p ./.ebextensions/
+
+cp ./internals/deploy/01_nginx.config ./.ebextensions/01_nginx.config
+cp ./internals/deploy/$CARRIER_PLACEHOLDER/$DEPLOY_FILE_PATH/config.yml ./.elasticbeanstalk/config.yml
+cp ./internals/deploy/$CARRIER_PLACEHOLDER/$DEPLOY_FILE_PATH/Dockerrun.aws.json ./Dockerrun.aws.json
+
+docker build --tag $DOCKER_BUILD_NAME --build-arg PACKAGE .
+
+docker tag $DOCKER_BUILD_NAME:latest $DOCKER_TAG_NAME
+eval $(aws ecr get-login --no-include-email --region "${AWS_REGION_NAME}")
+docker push $DOCKER_TAG_NAME
+              '''
+            }
+          }
+        }
+        stage('Anthem') {
+          steps {
+            ws("${BUILD_TAG}ant") {
+              sh '''
+#!/bin/bash -xe
+
+export PACKAGE="benrevo-react-anthem"
+export BENREVO_PATH="/anthem/"
+export AUTH0_CLIENT_ID=$AUTH0_ANT_CLIENT_ID
+export AUTH0_DOMAIN=$AUTH0_ANT_DOMAIN
+export AUTH0_DOMAIN_LOGIN=$AUTH0_ANT_DOMAIN_LOGIN
+export CARRIER_PLACEHOLDER="anthem"
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export MIXPANEL_KEY=$DEV_MIXPANEL_KEY
+    export BENREVO_API_PATH=$DEV_ANT_BENREVO_API_PATH
+    export DOCKER_BUILD_NAME="benrevo/fe-$CARRIER_PLACEHOLDER-dev"
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-$CARRIER_PLACEHOLDER-dev:latest"
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-dev"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="dev"
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export MIXPANEL_KEY=$DEV_MIXPANEL_KEY
+    export BENREVO_API_PATH=$STAGE_ANT_BENREVO_API_PATH
+    export DOCKER_BUILD_NAME="benrevo/fe-$CARRIER_PLACEHOLDER-stage"
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-$CARRIER_PLACEHOLDER-stage:latest"
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-stage"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="stage"
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export MIXPANEL_KEY=$PROD_MIXPANEL_KEY
+    export BENREVO_API_PATH=$PROD_ANT_BENREVO_API_PATH
+    export DEPLOY_FILE_PATH="prod"
+    export DOCKER_BUILD_NAME="prd-benrevo-react-web"
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_ACCESS_KEY_ID=$PROD_ANT_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$PROD_ANT_TOKEN_SECRET
+    export DOCKER_TAG_NAME="218450561239.dkr.ecr.us-west-2.amazonaws.com/prd-benrevo-react-web:latest"
+    export AWS_DEPLOY_NAME="PRD-ANT-FrontendEnv"
+fi
+
+export PATH=$PATH:$HOME/.local/bin
+
+if [ "$(aws sts get-caller-identity | grep -c 'UserId')" -eq 1 ]
+then
+    echo "##### Successful authorization from AWS"
+fi
+
+npm run build:$CARRIER_PLACEHOLDER
+
+mkdir -p ./.elasticbeanstalk/
+mkdir -p ./.ebextensions/
+
+cp ./internals/deploy/01_nginx.config ./.ebextensions/01_nginx.config
+cp ./internals/deploy/$CARRIER_PLACEHOLDER/$DEPLOY_FILE_PATH/config.yml ./.elasticbeanstalk/config.yml
+cp ./internals/deploy/$CARRIER_PLACEHOLDER/$DEPLOY_FILE_PATH/Dockerrun.aws.json ./Dockerrun.aws.json
+
+docker build --tag $DOCKER_BUILD_NAME --build-arg PACKAGE .
+
+docker tag $DOCKER_BUILD_NAME:latest $DOCKER_TAG_NAME
+eval $(aws ecr get-login --no-include-email --region "${AWS_REGION_NAME}")
+if [ "$GIT_BRANCH" = "develop" ]; then
+  docker push $DOCKER_TAG_NAME
+fi
+              '''
+            }
+          }
+        }
+      }
+    }
+    stage('Deploy') {
+      parallel {
+        stage('UHC') {
+          steps {
+            ws("${BUILD_TAG}uhc") {
+              sh '''
+#!/bin/bash -xe
+
+export CARRIER_PLACEHOLDER="uhc"
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-dev"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-stage"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_ACCESS_KEY_ID=$PROD_UHC_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$PROD_UHC_TOKEN_SECRET
+    export AWS_DEPLOY_NAME="PRD-BR-FRONTEND"
+fi
+
+if [ "$(aws sts get-caller-identity | grep -c 'UserId')" -eq 1 ]
+then
+    echo "##### Successful authorization from AWS"
+fi
+
+eb deploy $AWS_DEPLOY_NAME --label "$BUILD_TAG:$CARRIER_PLACEHOLDER" --verbose --staged
+              '''
+            }
+          }
+        }
+        stage('Anthem') {
+          steps {
+            ws("${BUILD_TAG}ant") {
+              sh '''
+#!/bin/bash -xe
+
+export CARRIER_PLACEHOLDER="anthem"
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-dev"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-$CARRIER_PLACEHOLDER-stage"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_ACCESS_KEY_ID=$PROD_ANT_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$PROD_ANT_TOKEN_SECRET
+    export AWS_DEPLOY_NAME="PRD-ANT-FrontendEnv"
+fi
+
+if [ "$(aws sts get-caller-identity | grep -c 'UserId')" -eq 1 ]
+then
+    echo "##### Successful authorization from AWS"
+fi
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    eb deploy $AWS_DEPLOY_NAME --label "$BUILD_TAG:$CARRIER_PLACEHOLDER" --verbose --staged
+fi
+              '''
+            }
+          }
+        }
+      }
+    }
+  }
+  post {
+    failure {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "danger", message: "Build failed:  ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME} caused by ${env.BUILD_USER_ID}.  Build results: ${env.RUN_DISPLAY_URL}"
+      }
+    }
+    success {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "good", message: "Build success:  ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME} caused by ${env.BUILD_USER_ID}.  Build results: ${env.RUN_DISPLAY_URL}"
+      }
+    }
+  }
+}

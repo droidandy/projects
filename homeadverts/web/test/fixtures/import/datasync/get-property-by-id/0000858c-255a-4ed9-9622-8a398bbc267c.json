@@ -1,0 +1,541 @@
+{
+  "listingSummary": {
+    "listingId": "0000858c-255a-4ed9-9622-8a398bbc267c",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2017-09-13",
+    "photoCount": 22,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 1300000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "316 West Lake Rd",
+      "city": "Tuxedo Park",
+      "district": "Orange County",
+      "stateProvince": "New York",
+      "stateProvinceCode": "NY",
+      "postalCode": "10987",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 41.19473,
+      "longitude": -74.21379,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "316 W Lake Rd, Tuxedo Park, NY 10987"
+    },
+    "mlsNumbers": [
+      "4739849"
+    ],
+    "RFGListingId": "5M8P8W",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/5m8p8w",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Cottage",
+    "propertyName": "Piccolo Cottage sul Lago",
+    "totalBath": 2,
+    "lotSize": "1.2 AC",
+    "buildingArea": "1280 Sq. Ft.",
+    "noOfBedrooms": 2,
+    "squareFootage": 1280.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/BCC33115-FBC3-4536-8994-55B3221E827B",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-17T22:15:48.927",
+    "agents": [
+      {
+        "id": "6cda8f40-fa92-42d8-9acc-d5902a6231e0",
+        "name": "Barbara F. du Pont",
+        "firstName": "Barbara",
+        "lastName": "du Pont",
+        "middleName": "F",
+        "defaultPhotoURL": "//openapi.azureedge.net/7E1DDBAE-7F88-4435-A08A-EB320ED20557",
+        "emailAddress": "bfdupont@gmail.com",
+        "leadEmailAddress": "800056.lead.4029241@leads.leadrouter.com",
+        "businessPhone": "+1 9174689653",
+        "isPrimary": true,
+        "office": {
+          "officeId": "ee8ead13-1b31-4240-a7f9-3862464bea57",
+          "RFGOfficeId": "0001",
+          "companyId": "764e385b-a330-4cce-993d-5a05bcfa1893",
+          "companyName": "Ellis",
+          "RFGCompanyId": "800056",
+          "brandCode": "SIR",
+          "name": "Ellis Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "76 North Broadway",
+            "city": "Nyack",
+            "district": "Rockland",
+            "stateProvince": "New York",
+            "stateProvinceCode": "NY",
+            "postalCode": "10960",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 41.0930275812835,
+            "longitude": -73.9178861819218,
+            "formattedAddress": "76 N Broadway, Nyack, NY 10960"
+          },
+          "phoneNumber": "8453534250",
+          "emailAddress": "info@ellissir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 2,
+  "halfBath": 0,
+  "totalRooms": 5,
+  "providerKey": "0000858c-255a-4ed9-9622-8a398bbc267c",
+  "propertyFeatures": [
+    {
+      "groupName": "Views",
+      "description": "Scenic"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "Water",
+      "description": "Municipal Water"
+    },
+    {
+      "groupName": "General",
+      "description": "Security System"
+    },
+    {
+      "groupName": "Views",
+      "description": "Water"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Luxury Properties"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "1-2 Acres"
+    },
+    {
+      "groupName": "Community Type",
+      "description": "Gated"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "1 Car Garage"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Fishing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Body of Water",
+      "description": "Lake"
+    },
+    {
+      "groupName": "General",
+      "description": "Lake Privileges"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Dock"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Stucco"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Boating"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Security System"
+    },
+    {
+      "groupName": "Views",
+      "description": "Lake & Stream"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Vacation / Second Home"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "1 Fireplace"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "Central A/C"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Oil"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Fishing"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Wooded"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "City"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Fireplace"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Attached Garage"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Forced Air"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Privacy"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Historic / Antique"
+    },
+    {
+      "groupName": "Basement",
+      "description": "Partial"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Location",
+      "description": "Waterfront"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Patio"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Privacy"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Boating"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Historic"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Fishing"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Waterfront"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Ever dream about a pied-à-terre in the country? With nearly 250 feet of lakefront property on Tuxedo Lake? And the perfect little cottage, built in 1910 and completely renovated in 2005 and still in meticulous condition, surrounded by lush vegetation, stone walls and bluestone patio overlooking the lake. Sound irresistible? It is! The cottage is a perfect size with just enough space with a master suite, guest bedroom, living room, dining room and kitchen, all on one level. French doors facing the lake open to the spacious patio, a beautiful setting for entertaining. Tucked away off a quiet road, this is the epitome of a country retreat with just what you need, and nothing more. It has all the amenities, seclusion, private dock on Tuxedo Lake, all in a fairly tale setting. An easy hop from Manhattan in under an hour makes it the most accessible escape you’ll ever find.",
+      "htmlRemark": "<p><span style=\"font-family: verdana, sans-serif; font-size: 11px; font-weight: bold; background-color: rgb(214, 227, 255);\">Ever dream about a pied-à-terre in the country? With nearly 250 feet of lakefront property on Tuxedo Lake? And the perfect little cottage, built in 1910 and completely renovated in 2005 and still in meticulous condition, surrounded by lush vegetation, stone walls and bluestone patio overlooking the lake. Sound irresistible? It is! The cottage is a perfect size with just enough space with a master suite, guest bedroom, living room, dining room and kitchen, all on one level. French doors facing the lake open to the spacious patio, a beautiful setting for entertaining. Tucked away off a quiet road, this is the epitome of a country retreat with just what you need, and nothing more. It has all the amenities, seclusion, private dock on Tuxedo Lake, all in a fairly tale setting. An easy hop from Manhattan in under an hour makes it the most accessible escape you’ll ever find.</span><br></p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/5m8p8w",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "234AF846-0448-4B1B-B1A6-0096FB4616C2",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/234AF846-0448-4B1B-B1A6-0096FB4616C2",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "FD419F67-2F32-4AD4-97E9-08CC2C20E23B",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/FD419F67-2F32-4AD4-97E9-08CC2C20E23B",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "849480FE-ED88-4A2F-A60B-18BD546DF951",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/849480FE-ED88-4A2F-A60B-18BD546DF951",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "E0C4C511-C904-4E44-8F87-1C034F410A0E",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/E0C4C511-C904-4E44-8F87-1C034F410A0E",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "674B0852-4558-45BB-BBEC-2140E9E9639A",
+      "sequenceNumber": 20,
+      "url": "//openapi.azureedge.net/674B0852-4558-45BB-BBEC-2140E9E9639A",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "2AE3DA49-9EF1-4D50-8284-3365E22E6FC2",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/2AE3DA49-9EF1-4D50-8284-3365E22E6FC2",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-15T05:40:29.040"
+    },
+    {
+      "mediaID": "B484A5C6-9B14-4C1F-8418-4DB7711359B6",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/B484A5C6-9B14-4C1F-8418-4DB7711359B6",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "754FD940-97E6-4766-BD76-4E866C8B8108",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/754FD940-97E6-4766-BD76-4E866C8B8108",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-15T05:40:29.040"
+    },
+    {
+      "mediaID": "9B601A20-E148-4A5F-9E12-527A794F6076",
+      "sequenceNumber": 19,
+      "url": "//openapi.azureedge.net/9B601A20-E148-4A5F-9E12-527A794F6076",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "BCC33115-FBC3-4536-8994-55B3221E827B",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/BCC33115-FBC3-4536-8994-55B3221E827B",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "D4A3EADE-6057-46AE-90D6-58BAAE089F79",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/D4A3EADE-6057-46AE-90D6-58BAAE089F79",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "4868EDE5-0DC0-4763-9B64-59B4A00108A9",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/4868EDE5-0DC0-4763-9B64-59B4A00108A9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "46C7EC5B-0D01-4CC8-BE0E-6B79947A90B3",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/46C7EC5B-0D01-4CC8-BE0E-6B79947A90B3",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "3027AB9C-F717-43A5-8D35-7EC4FA11793F",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/3027AB9C-F717-43A5-8D35-7EC4FA11793F",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "35411C4A-76D6-4DF2-BE2F-93912F1E2B82",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/35411C4A-76D6-4DF2-BE2F-93912F1E2B82",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "D209E212-C6BF-423A-9DC1-955EB887D26D",
+      "sequenceNumber": 21,
+      "url": "//openapi.azureedge.net/D209E212-C6BF-423A-9DC1-955EB887D26D",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "81C4FDB0-4F8A-4EF9-97B7-990DECFB433C",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/81C4FDB0-4F8A-4EF9-97B7-990DECFB433C",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "A0188001-E5CF-402D-90C2-AAEC473EB950",
+      "sequenceNumber": 22,
+      "url": "//openapi.azureedge.net/A0188001-E5CF-402D-90C2-AAEC473EB950",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "DB5CFF6F-F3A5-4AEE-B105-BC1C66685E79",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/DB5CFF6F-F3A5-4AEE-B105-BC1C66685E79",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "C959CB29-45D2-47A9-A798-D7C361CCFA31",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/C959CB29-45D2-47A9-A798-D7C361CCFA31",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "FF11BC1C-5139-4AD8-B290-D9248A9465F1",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/FF11BC1C-5139-4AD8-B290-D9248A9465F1",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    },
+    {
+      "mediaID": "F4B46110-759A-4FDD-9547-F755E501AD8F",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/F4B46110-759A-4FDD-9547-F755E501AD8F",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-09-13T16:47:14.503"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "4739849",
+      "isPrimary": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "content": {
+    "type": "string"
+  },
+  "likes_count": {
+    "type": "integer"
+  },
+  "dislikes_count": {
+    "type": "integer"
+  },
+  "current_user_value": {
+    "type": "string",
+    "enum": [1, -1],
+    "description": "1 for like, -1 for dislike."
+  },
+  "created_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "user": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  },
+  "comments": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/comment"
+    }
+  }
+}

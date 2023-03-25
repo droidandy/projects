@@ -1,0 +1,6 @@
+{% assign handle = article.handle | replace: 'beauty/', '' -%}
+{% assign staticFileName = "staticHTML-"| append: handle | append: "-" | append: request.locale.iso_code %}
+
+<div data-react-component-placeholder="BlogPost">
+  {% include staticFileName %}
+</div>

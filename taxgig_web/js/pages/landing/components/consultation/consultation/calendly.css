@@ -1,0 +1,7 @@
+.calendly-inline-widget {
+    height: 850px !important;
+} 
+.calendly-mobile {
+    height: 700px !important;
+    margin: 0 -15px;
+}

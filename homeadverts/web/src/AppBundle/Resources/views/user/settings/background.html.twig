@@ -1,0 +1,35 @@
+{% set form = form_background_image %}
+
+<div class="user-background-upload background cover"
+     style="background-image: url({{ user.getBackgroundImage() }})">
+    <form action="{{ path('ha_account_background') }}"
+          {{ form_enctype(form) }}
+          method="POST">
+
+        {{ form_widget(form.backgroundImage, {attr: {style: 'display:none'}}) }}
+
+        <button type="button"
+                class="upload-image black mdl-button mdl-js-button mdl-js-ripple-effect">
+            Upload
+        </button>
+
+        {{ form_rest(form) }}
+    </form>
+</div>
+
+<dialog class="background-cropping-dialog mdl-dialog">
+    <div class="mdl-dialog__content">
+        <div class="cropping-box">
+            <img class="cropping-preview"/>
+        </div>
+        <div id="result"></div>
+    </div>
+    <div class="mdl-dialog__actions">
+        <button type="button" class="cropping-result">
+            Upload
+        </button>
+        <button type="button" class="cropping-cancel">
+            Cancel
+        </button>
+    </div>
+</dialog>

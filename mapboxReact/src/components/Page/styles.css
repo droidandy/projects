@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /*align-items: stretch;*/
+    background: #dee0e2;
+}
+.nav_header {
+    background: #dee0e2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+.header {
+    background: rgb(255, 255, 255);
+    border-radius: 0;
+    border-color: #dee0e2;
+    margin-bottom: 0;
+}
+.fotter{
+    background: #0c3c37;
+    border-radius: 0;
+    border-color: #dee0e2;
+    margin-bottom: 0;
+
+}
+.fotter_brand_right{
+    float: right;
+}
+
+.nav {
+    // flex: 0 0 200px;
+    margin: -20px 0 0;
+}
+
+.children {
+    /*flex: 1 1 auto;*/
+    /*width: 0; !* it fix MKP-427 *!*/
+}

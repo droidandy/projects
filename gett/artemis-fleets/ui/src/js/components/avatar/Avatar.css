@@ -1,0 +1,7 @@
+.avatar {
+  overflow: hidden;
+}
+
+.rounded {
+  border-radius: 50%;
+}

@@ -1,0 +1,105 @@
+<div class="grid-pagination">
+    <a href="#" class="show-prev">Previous</a> | <a href="#" class="show-next --active">Next</a>
+</div>
+
+<table class="grid --stories"
+       {% if collection|length %}
+           data-statistics-get="{{ path('ha_statistics_article_get', {id:collection|first.id}) }}"
+       {% endif %}>
+
+    <thead>
+        <tr>
+            <th class="--articles">
+                Stories
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--impressions">
+                Impressions
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--views">
+                Views
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--likes">
+                Likes
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--shares">
+                Shares
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for article in collection %}
+            <tr class="{% if loop.index0 == 0 %}--active{% endif %}"
+                {% if loop.index0 >= tablePageLength %}
+                    style="display: none;"
+                {% endif %}
+                data-statistics-get="{{ path('ha_statistics_article_get', {id:article.id}) }}">
+                <td class="--article"
+                    data-sort="{{ article.publishedAt|date("U") }}">
+                    <div class="image cover">
+                        {% if article.primaryImage %}
+                            <div class="cover-image cover"
+                                 data-background-image="{{ article|article_image('article_small') }}">
+                            </div>
+                        {% else %}
+                            <div class="cover-image --missing">
+                                <span>No Image available</span>
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <div class="title">
+                            {{ article.title }}
+                        </div>
+                        <div class="meta-summary">
+                            <span>
+                                {{ article.publishedAt|date("F j, Y") }}
+                            </span>
+                            -
+                            <span>
+                                {{ article.wordCount }} words,
+                                {{ article.estimatedReadingTime }} min reading
+                            </span>
+                            -
+                            <a href="{{ path('ha_article_details', {token: article.token, slug: article.slug}) }}">
+                                View Story
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="--impressions">
+                    {{ article.impressionCount }}
+                </td>
+
+                <td class="--views">
+                    {{ article.viewCount }}
+                </td>
+
+                <td class="--likes">
+                    {{ article.getLikesCount() }}
+                </td>
+
+                <td class="--shares">
+                    0
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+<div class="grid-pagination">
+    <a href="#" class="show-prev">Previous</a> | <a href="#" class="show-next --active">Next</a>
+</div>

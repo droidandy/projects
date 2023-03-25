@@ -1,0 +1,1 @@
+export { VehicleNumberChecker } from './VehicleNumberChecker';

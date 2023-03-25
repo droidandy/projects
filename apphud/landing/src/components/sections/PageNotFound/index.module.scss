@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  .label {
+    color: #181818;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 112%;
+    margin: 3rem 0;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+  }
+  .actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .img {
+    max-width: 505px;
+    width: 100%;
+    height: auto;
+  }
+}

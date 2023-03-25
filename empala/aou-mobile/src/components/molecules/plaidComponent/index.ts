@@ -1,0 +1,1 @@
+export { PlaidComponent } from './PlaidComponent';

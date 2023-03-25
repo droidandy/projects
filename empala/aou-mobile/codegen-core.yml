@@ -1,0 +1,25 @@
+overwrite: true
+schema:
+  - https://core.stg-gkme3m3ydvepkkp4.launchpad-saas.net/v1/graphql:
+      headers:
+        Authorization: "Bearer ${API_TOKEN}"
+documents: "./src/graphQL/core/**/*.graphql"
+hooks:
+  afterAllFileWrite:
+    - ./node_modules/.bin/prettier --write
+generates:
+  ./src/graphQL/core/generated-types.tsx:
+    config:
+      withHooks: true
+      withHOC: true
+      withComponent: true
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  ./src/graphQL/core/graphql.schema.json:
+    plugins:
+      - "introspection"
+  ./src/graphQL/core/schema.graphql:
+    plugins:
+      - schema-ast

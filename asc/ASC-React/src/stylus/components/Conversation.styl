@@ -1,0 +1,37 @@
+.conversation__phraseBox
+  float: left
+  width: auto
+  max-width: 80%
+  position: relative
+  clear: both
+  background: #95c2fd
+  padding: 0.5em 1em
+  // background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 00%, rgba(255, 255, 255, 0.35) 100%)
+  background: $text-color
+  border-radius: 15px
+  box-shadow: 0 5px 30px rgba(255, 255, 255, 0.1)
+  color: $popover-background-color
+  word-wrap: break-word
+  font-size: 1em
+  margin: 15px 0px 10px 0px
+  /* &:after
+    // border-radius: 20px / 5px
+    content: ''
+    display: block
+    position: absolute
+    border: 8px solid transparent
+    border-bottom-color: $text-color
+    bottom: 4px
+    transform: rotateZ(-90deg)
+    left: -16px */
+
+.conversation__phraseBox-alt
+  float: right
+  background: $notification-background-color
+  box-shadow: 0 5px 30px rgba($notification-background-color, 0.1);
+  color: $text-color
+  /*&:after
+    left: auto
+    border-bottom-color: $notification-background-color
+    transform: rotateZ(90deg)
+    right: -16px*/

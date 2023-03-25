@@ -1,0 +1,20 @@
+mutation CreateUser($createUserData: CreateUserInput!) {
+  createUser(data: $createUserData) {
+    ... on CreateUserSuccess {
+      user {
+        id
+      }
+    }
+
+    ... on CreateUserAlreadyExistsError {
+      message
+    }
+    ... on CreateInvalidInputError {
+      message
+      errorCode
+    }
+    ... on InstNotFoundError {
+      message
+    }
+  }
+}

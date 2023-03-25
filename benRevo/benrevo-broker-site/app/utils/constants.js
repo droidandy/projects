@@ -1,0 +1,23 @@
+export const ON_BOARDING_STATE = 'ON_BOARDING';
+export const SOLD_STATE = 'SOLD';
+export const PENDING_APPROVAL_STATE = 'PENDING_APPROVAL';
+export const QUOTED_STATE = 'QUOTED';
+export const RFP_SUBMITTED_STATE = 'RFP_SUBMITTED';
+export const RFP_STARTED_STATE = 'RFP_STARTED';
+export const SUBMITTED_FOR_APPROVAL_STATE = 'SUBMITTED_FOR_APPROVAL';
+export const COMPLETED_STATE = 'COMPLETED';
+export const POLICY_FINALIZED_STATE = 'POLICY_FINALIZED';
+export const CLOSED_STATE = 'CLOSED';
+export const WON_STATE = 'WON';
+
+export const RFP_SUBMITTED_NORMAL = 'RFP Submitted';
+export const RFP_STARTED_NORMAL = 'RFP Started';
+export const QUOTED_NORMAL = 'Quoted';
+export const SUBMITTED_FOR_APPROVAL_NORMAL = 'Submitted';
+export const PENDING_APPROVAL_NORMAL = 'Pending ';
+export const ON_BOARDING_NORMAL = 'OnBoarding';
+export const COMPLETED_NORMAL = 'Completed';
+export const POLICY_FINALIZED_NORMAL = 'Policy';
+export const SOLD_NORMAL = 'Sold';
+export const CLOSED_NORMAL = 'Closed';
+export const WON_NORMAL = 'Won';

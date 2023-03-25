@@ -1,0 +1,115 @@
+{
+    "agentSummary": {
+        "id": "54eb3792-86de-4700-9650-4ce993699443",
+        "isAgent": true,
+        "name": "Wendy Murray",
+        "firstName": "Wendy",
+        "lastName": "Murray",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/569CC766-6C04-4E4B-9164-5AC5485E059F",
+        "emailAddress": "wmurray@tcsir.com",
+        "businessPhone": "3212433595",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "3985db2f-188e-4ebe-b010-172dbbc4fe49",
+            "RFGOfficeId": "0003",
+            "companyId": "a7f557c9-6264-4404-a4de-b12fd2e7b447",
+            "companyName": "Treasure Coast",
+            "RFGCompanyId": "800207",
+            "brandCode": "SIR",
+            "name": "Treasure Coast Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "301 Ocean Avenue",
+                "city": "Melbourne Beach",
+                "district": "Brevard",
+                "stateProvince": "Florida",
+                "stateProvinceCode": "FL",
+                "postalCode": "32951",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 28.0636119842529,
+                "longitude": -80.5585632324219,
+                "formattedAddress": "301 Ocean Ave, Melbourne Beach, FL 32951"
+            },
+            "phoneNumber": "3219843135"
+        }
+    },
+    "personId": "624cf10f-d55d-4c1d-a5b0-c81fb11e64c9",
+    "lastUpdateOn": "2018-07-16T21:07:18.913",
+    "designations": [
+        "Certified International Property Specialist",
+        "Certified Residential Specialist"
+    ],
+    "roles": [
+        {
+            "office": {
+                "officeId": "3985db2f-188e-4ebe-b010-172dbbc4fe49",
+                "RFGOfficeId": "0003",
+                "companyId": "a7f557c9-6264-4404-a4de-b12fd2e7b447",
+                "companyName": "Treasure Coast",
+                "RFGCompanyId": "800207",
+                "brandCode": "SIR",
+                "name": "Treasure Coast Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "301 Ocean Avenue",
+                    "city": "Melbourne Beach",
+                    "district": "Brevard",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "32951",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 28.0636119842529,
+                    "longitude": -80.5585632324219,
+                    "formattedAddress": "301 Ocean Ave, Melbourne Beach, FL 32951"
+                },
+                "phoneNumber": "3219843135"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "wendy.murray@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "569CC766-6C04-4E4B-9164-5AC5485E059F",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/569CC766-6C04-4E4B-9164-5AC5485E059F",
+            "isDefault": true,
+            "caption": "Wendy",
+            "shortDescription": "Wendy",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:50:06.537"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Wendy Murray is originally from Stamford, Connecticut. She moved to Fort Lauderdale, Florida with family, where she finished school.  In 1980,  Wendy discovered Melbourne Beach and Brevard County while visiting for scuba diving and fishing. She has lived here and enjoyed it ever since!\r\n<p> Wendy's favorite aspect of her 30+ year real estate career has been meeting and helping people from all over the world. She enjoys marketing properties for sale and guiding her clients through the process of purchasing a new home, investment property, or vacation home.  She has a passion for counseling and helping people start a new chapter in their lives.\r\n<p> Whether you are looking to relocate to our ocean-to-river paradise or sell or replace the property you have; Wendy would be privileged if given the opportunity to help you as well.\r\n<p> Wendy can be reached at 321.243.3595 or wmurray@tcsir.com.\r\n",
+            "htmlRemark": "Wendy Murray is originally from Stamford, Connecticut. She moved to Fort Lauderdale, Florida with family, where she finished school.  In 1980,  Wendy discovered Melbourne Beach and Brevard County while visiting for scuba diving and fishing. She has lived here and enjoyed it ever since!\r\n<p> Wendy's favorite aspect of her 30+ year real estate career has been meeting and helping people from all over the world. She enjoys marketing properties for sale and guiding her clients through the process of purchasing a new home, investment property, or vacation home.  She has a passion for counseling and helping people start a new chapter in their lives.\r\n<p> Whether you are looking to relocate to our ocean-to-river paradise or sell or replace the property you have; Wendy would be privileged if given the opportunity to help you as well.\r\n<p> Wendy can be reached at 321.243.3595 or wmurray@tcsir.com.\r\n"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "AB",
+            "stateCode": "FL",
+            "number": "BK202679"
+        }
+    ]
+}

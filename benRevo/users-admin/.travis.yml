@@ -1,0 +1,60 @@
+branches:
+  only:
+  - master
+  - develop
+language: node_js
+node_js:
+- 6
+sudo: required
+services:
+- docker
+install: npm install
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script:
+- npm run test
+before_install:
+- if [ "$TRAVIS_BRANCH" == "master" ]; then
+    export DEPLOY_FILE_PATH="prod" ;
+    export DOCKER_BUILD_NAME="user-admin-prod" ;
+    export AWS_REGION_NAME="us-east-1" ;
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-east-1.amazonaws.com/user-admin-prod:latest" ;
+    export AWS_ACCESS_KEY_ID=$PROD_TOKEN_ID ;
+    export AWS_SECRET_ACCESS_KEY=$PROD_TOKEN_SECRET ;
+    if [ "$CARRIER" == "UHC" ]; then
+      export AWS_DEPLOY_NAME="user-admin-prod" ;
+    fi ;
+    if [ "$CARRIER" == "ANTHEM" ]; then
+      export AWS_DEPLOY_NAME="prod-ant-user-admin" ;
+  fi ;
+  fi ;
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- pip install --user awscli
+- pip install --user awsebcli
+- export PATH=$PATH:$HOME/.local/bin
+notifications:
+  email:
+    on_failure: change
+  slack: benrevo-team:fQkU7SnAJCCt8OQZaNF8hWtR
+after_success:
+- npm run coveralls
+- npm run build
+- if [ "$TRAVIS_BRANCH" == "master" ]; then 
+    mkdir -p ./.elasticbeanstalk/ ;
+    mkdir -p ./.ebextensions/ ;
+    cp ./internals/deploy/$CARRIER_PLACEHOLDER/$DEPLOY_FILE_PATH/config.yml ./.elasticbeanstalk/config.yml ;
+    cp ./internals/deploy/$CARRIER_PLACEHOLDER/$DEPLOY_FILE_PATH/Dockerrun.aws.json ./Dockerrun.aws.json ;
+    docker build -t $DOCKER_BUILD_NAME . ;
+    docker tag $DOCKER_BUILD_NAME:latest $DOCKER_TAG_NAME ;
+    eval $(aws ecr get-login --region $AWS_REGION_NAME) ;
+    docker push $DOCKER_TAG_NAME ;
+    eb deploy $AWS_DEPLOY_NAME  --verbose --staged ;
+  fi ;
+env:
+  matrix:
+  - CARRIER="UHC" CARRIER_PLACEHOLDER="uhc"
+  - CARRIER="ANTHEM" CARRIER_PLACEHOLDER="anthem"

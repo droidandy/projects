@@ -1,0 +1,846 @@
+{
+  "listingSummary": {
+    "listingId": "c0ddb990-5d3a-45d7-921b-e126f72841ac",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-07-18",
+    "photoCount": 49,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "EUR",
+      "amount": 3900000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 4366800.0
+    },
+    "propertyAddress": {
+      "streetAddress": "Lia Dahlia",
+      "city": "Mykonos",
+      "stateProvince": "Southern Aegean",
+      "stateProvinceCode": "L",
+      "country": "Greece",
+      "countryCode": "GR",
+      "latitude": 37.997745513916,
+      "longitude": 23.7249698638916
+    },
+    "geographicRegions": [
+      {
+        "type": "CityRegion",
+        "name": "Lia"
+      },
+      {
+        "type": "ContinentRegion",
+        "name": "Greece"
+      },
+      {
+        "type": "CountryRegion",
+        "name": "Southern Aegean"
+      },
+      {
+        "type": "StateRegion",
+        "name": "Mykonos"
+      }
+    ],
+    "mlsNumbers": [
+      "Dahlia"
+    ],
+    "RFGListingId": "ZW7ZQX",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/zw7zqx",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Spanish/Mediterranean",
+    "propertyName": "Dahlia",
+    "totalBath": 13,
+    "lotSize": "4338 SM",
+    "buildingArea": "880 Sq. M",
+    "noOfBedrooms": 13,
+    "squareFootage": 9472.232,
+    "defaultPhotoURL": "//openapi.azureedge.net/2749DF63-1B44-435C-A304-6D6AF7642026",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2019-05-30T07:51:02.067",
+    "agents": [
+      {
+        "id": "b142daac-c4e7-46b9-b502-1031e4b333c8",
+        "name": "Maria Goumas",
+        "firstName": "Maria",
+        "lastName": "Goumas",
+        "defaultPhotoURL": "//openapi.azureedge.net/5688058D-37D5-4B0F-84E0-9A79BE1EB47D",
+        "emailAddress": "maria.goumas@sothebysrealty.gr",
+        "isPrimary": true,
+        "office": {
+          "officeId": "c81f764d-eeec-4377-8069-b644aea03399",
+          "RFGOfficeId": "0001",
+          "companyId": "3b3fde41-5b50-477f-b414-e52bd8395ee1",
+          "companyName": "Greece Sotheby's International Realty",
+          "RFGCompanyId": "820302",
+          "brandCode": "SIR",
+          "name": "Greece Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Voukourestiou 11 st - Panepistimiou st",
+            "city": "Athens",
+            "stateProvince": "Attiki",
+            "stateProvinceCode": "A1",
+            "postalCode": "10671",
+            "country": "Greece",
+            "countryCode": "GR",
+            "latitude": 37.97745,
+            "longitude": 23.73579
+          },
+          "phoneNumber": "+30.210.968.1070",
+          "emailAddress": "info@sothebysrealty.gr",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "0011"
+      }
+    ],
+    "isShowAddressOnInternet": true,
+    "expiresOn": "2020-03-08"
+  },
+  "fullBath": 13,
+  "providerKey": "c0ddb990-5d3a-45d7-921b-e126f72841ac",
+  "propertyFeatures": [
+    {
+      "groupName": "Body of Water",
+      "description": "Bay"
+    },
+    {
+      "groupName": "Views",
+      "description": "Water"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Microwave"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range / Oven"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Luxury Properties"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Pool"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Breakfast Bar"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Double Oven"
+    },
+    {
+      "groupName": "Views",
+      "description": "Ocean"
+    },
+    {
+      "groupName": "Fencing",
+      "description": "Privacy Fence"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Eat-in Kitchen"
+    },
+    {
+      "groupName": "Pool Description",
+      "description": "Pool"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Vacation / Second Home"
+    },
+    {
+      "groupName": "General",
+      "description": "Concierge Services"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Privacy"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Covered Terraces"
+    },
+    {
+      "groupName": "Views",
+      "description": "Sound"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "A/C"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Resort"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Balcony / Lanai"
+    },
+    {
+      "groupName": "Body of Water",
+      "description": "Ocean"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "International Properties"
+    },
+    {
+      "groupName": "Pool Description",
+      "description": "Outdoor"
+    },
+    {
+      "groupName": "Body of Water",
+      "description": "Gulf"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Terrace"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Privacy"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Kitchen Facilities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Resort"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Patio"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Stall Shower"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Located on the windy island of Mykonos sits the beautiful Dahlia estate. This grand property is housed on a 4500m2 land with an interior of 720m2. Elegantly designed to procure the most demanding of visitors, Dahlia is definitely a sight for sore eyes.\r\nUpon entering, one notices the vast seven meter ceilings, with floor to ceiling windows and a grand living room for next-level evening entertainment.\r\n\r\n\r\nDahlia houses seven bedrooms with ensuite bathrooms and a plethora of amenities such as a private terrace, in-home gym and grand infinity pool measured at 15x6meters. The kitchen is fully equipped with state of the art appliances as well as a central bar with a covered terrace that can dine up to sixteen people.\r\n\r\n\r\nOnly 300meters away from the beach of Lia, and fifteen minutes away from downtown Mykonos, Dahlia can be your secluded haven for ultimate relaxation, or your social paradise for sea-side entertainment with friends or family.",
+      "htmlRemark": "<p class=\"p1\"><span class=\"s1\">Located on the windy island of Mykonos sits the beautiful Dahlia estate.&nbsp; This grand property is housed on a 4500m2 land with an interior of 720m2.&nbsp; Elegantly designed to procure the most demanding of visitors, Dahlia is definitely a sight for sore eyes.&nbsp;</span></p><p class=\"p1\"><span style=\"-webkit-text-stroke-width: initial;\">Upon entering, one notices the vast seven meter ceilings, with floor to ceiling windows and a grand living room for next-level evening entertainment.&nbsp;</span></p><p class=\"p1\"><span style=\"-webkit-text-stroke-width: initial;\"><br></span></p><p class=\"p1\"><span style=\"-webkit-text-stroke-width: initial;\">Dahlia houses seven bedrooms with ensuite bathrooms and a plethora of amenities such as a private terrace, in-home gym and grand infinity pool measured at 15x6meters.&nbsp; The kitchen is fully equipped with state of the art appliances </span><span style=\"-webkit-text-stroke-width: initial;\">as well as a central bar with a covered terrace that can dine up to sixteen people.</span></p><p class=\"p1\"><br></p><p class=\"p2\"><span style=\"-webkit-text-stroke-width: initial;\">Only 300meters away from the beach of Lia, and fifteen minutes away from downtown Mykonos, Dahlia can be your secluded haven for ultimate relaxation, or your social paradise for sea-side entertainment with friends or family.</span><span class=\"s1\"></span></p><style type=\"text/css\">\np.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}\np.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 13.0px}\nspan.s1 {font-kerning: none}\nspan.Apple-tab-span {white-space:pre}\n</style>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/zw7zqx",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "4C566415-4840-487E-BF3E-07320A299A39",
+      "sequenceNumber": 38,
+      "url": "//openapi.azureedge.net/4C566415-4840-487E-BF3E-07320A299A39",
+      "isDefault": false,
+      "caption": "65_131",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2800,
+      "width": 4210,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "EB347438-F8BA-46A7-BF51-0D6328D3868B",
+      "sequenceNumber": 42,
+      "url": "//openapi.azureedge.net/EB347438-F8BA-46A7-BF51-0D6328D3868B",
+      "isDefault": false,
+      "caption": "69_304",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2722,
+      "width": 4092,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "AC427BFD-B8E6-4936-812B-11ACC58D3C74",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/AC427BFD-B8E6-4936-812B-11ACC58D3C74",
+      "isDefault": false,
+      "caption": "41_356",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2704,
+      "width": 4068,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "906598E1-51C1-42DB-97F4-18F04235E72D",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/906598E1-51C1-42DB-97F4-18F04235E72D",
+      "isDefault": false,
+      "caption": "39_312",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2778,
+      "width": 4174,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "487EDF98-B8F1-4E91-92F6-19B203EEC848",
+      "sequenceNumber": 47,
+      "url": "//openapi.azureedge.net/487EDF98-B8F1-4E91-92F6-19B203EEC848",
+      "isDefault": false,
+      "caption": "74_242",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2814,
+      "width": 4230,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "92CCE27F-F5FD-465D-90F7-1AA8EF6AF361",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/92CCE27F-F5FD-465D-90F7-1AA8EF6AF361",
+      "isDefault": false,
+      "caption": "09_384",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2664,
+      "width": 4004,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "028E6DF4-0453-4F9C-B2FB-20E473AA2F6A",
+      "sequenceNumber": 46,
+      "url": "//openapi.azureedge.net/028E6DF4-0453-4F9C-B2FB-20E473AA2F6A",
+      "isDefault": false,
+      "caption": "73_335",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2622,
+      "width": 3942,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "FA4D6674-C868-4DAC-897C-2470F1754E0D",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/FA4D6674-C868-4DAC-897C-2470F1754E0D",
+      "isDefault": false,
+      "caption": "40_351",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2786,
+      "width": 4186,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "6C7E2D0A-EA2E-4A09-A192-273AE6AB118F",
+      "sequenceNumber": 33,
+      "url": "//openapi.azureedge.net/6C7E2D0A-EA2E-4A09-A192-273AE6AB118F",
+      "isDefault": false,
+      "caption": "60_152",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2638,
+      "width": 3966,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "90318BE9-98D2-4031-B58D-38DED4DFC37E",
+      "sequenceNumber": 20,
+      "url": "//openapi.azureedge.net/90318BE9-98D2-4031-B58D-38DED4DFC37E",
+      "isDefault": false,
+      "caption": "46_292",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2786,
+      "width": 4186,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "EC9952D7-52BF-494B-AD3E-3A43AC80FD95",
+      "sequenceNumber": 48,
+      "url": "//openapi.azureedge.net/EC9952D7-52BF-494B-AD3E-3A43AC80FD95",
+      "isDefault": false,
+      "caption": "75_248",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2778,
+      "width": 4174,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "9D97A4F1-AFD7-4820-A7D5-3D7DC9DD1E7B",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/9D97A4F1-AFD7-4820-A7D5-3D7DC9DD1E7B",
+      "isDefault": false,
+      "caption": "35_185",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2792,
+      "width": 4198,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "821C60C3-A668-4988-ABCB-453D11D181AA",
+      "sequenceNumber": 25,
+      "url": "//openapi.azureedge.net/821C60C3-A668-4988-ABCB-453D11D181AA",
+      "isDefault": false,
+      "caption": "52_138",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2822,
+      "width": 4242,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "11BACEAF-C123-49D7-A4DA-46C132F4A5D4",
+      "sequenceNumber": 45,
+      "url": "//openapi.azureedge.net/11BACEAF-C123-49D7-A4DA-46C132F4A5D4",
+      "isDefault": false,
+      "caption": "72_300",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2814,
+      "width": 4230,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "40B65ECC-0C74-4257-B32D-480CF4DF42F6",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/40B65ECC-0C74-4257-B32D-480CF4DF42F6",
+      "isDefault": false,
+      "caption": "34_183",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2786,
+      "width": 4186,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "19BF110D-5308-4D39-B0BF-4A9DA0087168",
+      "sequenceNumber": 22,
+      "url": "//openapi.azureedge.net/19BF110D-5308-4D39-B0BF-4A9DA0087168",
+      "isDefault": false,
+      "caption": "49_318",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2718,
+      "width": 4088,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "EE2F73D6-DD1A-4522-A4EF-4F5286681B49",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/EE2F73D6-DD1A-4522-A4EF-4F5286681B49",
+      "isDefault": false,
+      "caption": "43_228",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2702,
+      "width": 4062,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "4DFC435E-72AF-414A-B2AC-4FFF4E9EA9C0",
+      "sequenceNumber": 24,
+      "url": "//openapi.azureedge.net/4DFC435E-72AF-414A-B2AC-4FFF4E9EA9C0",
+      "isDefault": false,
+      "caption": "51_090",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2782,
+      "width": 4184,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "C2D7E0A0-C960-4635-A3F7-515551CFB205",
+      "sequenceNumber": 32,
+      "url": "//openapi.azureedge.net/C2D7E0A0-C960-4635-A3F7-515551CFB205",
+      "isDefault": false,
+      "caption": "59_151",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2756,
+      "width": 4144,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "F9439B75-298D-4BE1-922B-5234D4A3D24D",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/F9439B75-298D-4BE1-922B-5234D4A3D24D",
+      "isDefault": false,
+      "caption": "31_167",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2772,
+      "width": 4166,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "CB5C1FAD-03A0-4131-8E1F-5330267152ED",
+      "sequenceNumber": 26,
+      "url": "//openapi.azureedge.net/CB5C1FAD-03A0-4131-8E1F-5330267152ED",
+      "isDefault": false,
+      "caption": "53_140",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2732,
+      "width": 4110,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "E8380760-6272-432F-A0C0-58F78A5F2E04",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/E8380760-6272-432F-A0C0-58F78A5F2E04",
+      "isDefault": false,
+      "caption": "23_362",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2786,
+      "width": 4186,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "A0D8E8EB-33F9-4CD5-9A82-5E9D41411DC1",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/A0D8E8EB-33F9-4CD5-9A82-5E9D41411DC1",
+      "isDefault": false,
+      "caption": "37_187",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2822,
+      "width": 4242,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "9D5C891D-D179-4AE3-AB38-629821B4C1FA",
+      "sequenceNumber": 36,
+      "url": "//openapi.azureedge.net/9D5C891D-D179-4AE3-AB38-629821B4C1FA",
+      "isDefault": false,
+      "caption": "63_126",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2800,
+      "width": 4210,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "2749DF63-1B44-435C-A304-6D6AF7642026",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/2749DF63-1B44-435C-A304-6D6AF7642026",
+      "isDefault": true,
+      "caption": "11_085",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2592,
+      "width": 3898,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "6462FC76-1D79-4D3A-8AF5-6DF932CC585F",
+      "sequenceNumber": 28,
+      "url": "//openapi.azureedge.net/6462FC76-1D79-4D3A-8AF5-6DF932CC585F",
+      "isDefault": false,
+      "caption": "55_143",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2764,
+      "width": 4156,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "F0433DF5-A53A-492A-ACB1-7D4968BF03AF",
+      "sequenceNumber": 37,
+      "url": "//openapi.azureedge.net/F0433DF5-A53A-492A-ACB1-7D4968BF03AF",
+      "isDefault": false,
+      "caption": "64_127",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2688,
+      "width": 4042,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "E32F84E4-5CA8-443D-A0A0-7EE72D2F4575",
+      "sequenceNumber": 31,
+      "url": "//openapi.azureedge.net/E32F84E4-5CA8-443D-A0A0-7EE72D2F4575",
+      "isDefault": false,
+      "caption": "58_148",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2684,
+      "width": 4034,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "72E405E2-C455-4314-979E-80F7BB8C5A0A",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/72E405E2-C455-4314-979E-80F7BB8C5A0A",
+      "isDefault": false,
+      "caption": "32_179",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2806,
+      "width": 4218,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "2F0EA970-203B-48A0-BF9D-830B97DB7F9E",
+      "sequenceNumber": 27,
+      "url": "//openapi.azureedge.net/2F0EA970-203B-48A0-BF9D-830B97DB7F9E",
+      "isDefault": false,
+      "caption": "54_141",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2792,
+      "width": 4198,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "F6769AD9-CCAF-4E4B-B9A5-854D2C480E27",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/F6769AD9-CCAF-4E4B-B9A5-854D2C480E27",
+      "isDefault": false,
+      "caption": "27_258",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2814,
+      "width": 4230,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "B3BA3AEE-A8CB-4E7A-A5EB-85A78ED145AC",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/B3BA3AEE-A8CB-4E7A-A5EB-85A78ED145AC",
+      "isDefault": false,
+      "caption": "44_238",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2778,
+      "width": 4174,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "5CC88ECB-1537-41EA-BA2A-89AC7720B284",
+      "sequenceNumber": 41,
+      "url": "//openapi.azureedge.net/5CC88ECB-1537-41EA-BA2A-89AC7720B284",
+      "isDefault": false,
+      "caption": "68_323",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2670,
+      "width": 4014,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "14DA8E16-3F2B-49F4-9071-9251110A7E10",
+      "sequenceNumber": 30,
+      "url": "//openapi.azureedge.net/14DA8E16-3F2B-49F4-9071-9251110A7E10",
+      "isDefault": false,
+      "caption": "57_146",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2778,
+      "width": 4174,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "A1FCB09C-D2BC-4FA1-9468-9575EFC1C1D6",
+      "sequenceNumber": 23,
+      "url": "//openapi.azureedge.net/A1FCB09C-D2BC-4FA1-9468-9575EFC1C1D6",
+      "isDefault": false,
+      "caption": "50_320",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2698,
+      "width": 4056,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "931B324E-64B6-4047-8689-9599AD48CF0C",
+      "sequenceNumber": 40,
+      "url": "//openapi.azureedge.net/931B324E-64B6-4047-8689-9599AD48CF0C",
+      "isDefault": false,
+      "caption": "67_329",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2584,
+      "width": 3884,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "5233A4D0-C9C6-4F1E-B786-9B7F4FC6C27E",
+      "sequenceNumber": 43,
+      "url": "//openapi.azureedge.net/5233A4D0-C9C6-4F1E-B786-9B7F4FC6C27E",
+      "isDefault": false,
+      "caption": "70_303",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2800,
+      "width": 4210,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "C73C11A6-54BB-4AC3-A70C-9FBDC2A35091",
+      "sequenceNumber": 39,
+      "url": "//openapi.azureedge.net/C73C11A6-54BB-4AC3-A70C-9FBDC2A35091",
+      "isDefault": false,
+      "caption": "66_322",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2776,
+      "width": 4172,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "035C973C-8AA5-4D34-97C6-AF9C0035107E",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/035C973C-8AA5-4D34-97C6-AF9C0035107E",
+      "isDefault": false,
+      "caption": "33_181",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2806,
+      "width": 4218,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "7E8389CF-8C91-4156-82EF-B0C144BFFEFC",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/7E8389CF-8C91-4156-82EF-B0C144BFFEFC",
+      "isDefault": false,
+      "caption": "36_186",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2800,
+      "width": 4210,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "FE9A5ACB-3CEC-48E0-8A65-BD5FFEC4A7F6",
+      "sequenceNumber": 34,
+      "url": "//openapi.azureedge.net/FE9A5ACB-3CEC-48E0-8A65-BD5FFEC4A7F6",
+      "isDefault": false,
+      "caption": "61_154",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2744,
+      "width": 4124,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "2769E73F-4372-4416-87D9-C0526B02D938",
+      "sequenceNumber": 44,
+      "url": "//openapi.azureedge.net/2769E73F-4372-4416-87D9-C0526B02D938",
+      "isDefault": false,
+      "caption": "71_332",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2772,
+      "width": 4166,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "A13FBE30-A29A-4D0C-B50B-C36147DFDFBB",
+      "sequenceNumber": 29,
+      "url": "//openapi.azureedge.net/A13FBE30-A29A-4D0C-B50B-C36147DFDFBB",
+      "isDefault": false,
+      "caption": "56_145",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2744,
+      "width": 4124,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "29243DE2-458D-4A0A-8CB3-C8C452E41BBF",
+      "sequenceNumber": 19,
+      "url": "//openapi.azureedge.net/29243DE2-458D-4A0A-8CB3-C8C452E41BBF",
+      "isDefault": false,
+      "caption": "45_294",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2806,
+      "width": 4218,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "FC962DDF-DF0B-412C-8D66-CE022DCE5EF3",
+      "sequenceNumber": 35,
+      "url": "//openapi.azureedge.net/FC962DDF-DF0B-412C-8D66-CE022DCE5EF3",
+      "isDefault": false,
+      "caption": "62_156",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2786,
+      "width": 4186,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "18C7BF1D-3C72-4529-B904-E3067D583C5E",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/18C7BF1D-3C72-4529-B904-E3067D583C5E",
+      "isDefault": false,
+      "caption": "42_222",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2778,
+      "width": 4174,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "54568FFA-BC08-4C66-8C4D-EE77CC3EAC93",
+      "sequenceNumber": 49,
+      "url": "//openapi.azureedge.net/54568FFA-BC08-4C66-8C4D-EE77CC3EAC93",
+      "isDefault": false,
+      "caption": "76_244",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2800,
+      "width": 4210,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "60B129DC-5DD6-45C7-A7B0-FCE92E215A5E",
+      "sequenceNumber": 21,
+      "url": "//openapi.azureedge.net/60B129DC-5DD6-45C7-A7B0-FCE92E215A5E",
+      "isDefault": false,
+      "caption": "48_315",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2730,
+      "width": 4102,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    },
+    {
+      "mediaID": "82385236-7CD3-4E20-A64D-FEF73D6EFFF4",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/82385236-7CD3-4E20-A64D-FEF73D6EFFF4",
+      "isDefault": false,
+      "caption": "12_094",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2768,
+      "width": 4160,
+      "lastUpdateOn": "2018-07-19T05:38:10.493"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "Dahlia",
+      "isPrimary": true
+    }
+  ]
+}

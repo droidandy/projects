@@ -1,0 +1,108 @@
+{
+  "companySummary": {
+    "id": "0643479d-13d0-4950-b599-7ced6235387d",
+    "name": "List Sotheby's International Realty ",
+    "RFGID": "820102",
+    "brandCode": "SIR",
+    "isNrt": false,
+    "lastUpdateOn": "2018-07-20T03:51:56.287",
+    "canDoCommercialBusiness": false
+  },
+  "preferences": [
+    {
+      "preferenceType": "Allow consumers to send email to Sales Associate",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Allow consumers to send email to Teams",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Direct Email",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Display Open\/Pending Listings on web",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Display Sales Associate and Team Names on Listings",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Display Sales Associates on Website",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Display Team Web Profile",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "IGrantAccessToAgent",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Lead Agent Direct Email",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "LegalSuspended",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Office  Mailing",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "PaperInvoiceSince",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Route Leads for Agent Profile Page",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Route Listing Leads to Agent",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Route Listing Leads to Teams",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Sales Associate Marketing",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Share Listings",
+      "preferenceValue": "False"
+    }
+  ],
+  "customAttributes": [
+    {
+      "attributeName": "BrightCoveAccountID",
+      "attributeValue": "5781043314001"
+    }
+  ],
+  "office": [
+    {
+      "officeId": "cf12d208-0f34-4860-a230-2553d4c1ac68",
+      "RFGOfficeId": "0001",
+      "isOpen": true,
+      "name": "List Sotheby's International Realty ",
+      "type": "Main office",
+      "officeAddress": {
+        "streetAddress": "Unit 802 Eco Tower, 32nd Street Corner 9th Avenue",
+        "city": "Taguig",
+        "district": "Fourth District NCR",
+        "postalCode": "1634",
+        "country": "Philippines",
+        "countryCode": "PH",
+        "latitude": 14.55359,
+        "longitude": 121.05026
+      },
+      "phoneNumber": "+632 556 0554",
+      "websiteURL": "http:\/\/www.listsothebysrealty.ph\/eng"
+    }
+  ]
+}

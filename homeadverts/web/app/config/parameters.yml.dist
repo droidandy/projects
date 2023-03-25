@@ -1,0 +1,27 @@
+parameters:
+  #Database
+  database_driver:   pdo_mysql
+  database_host:     127.0.0.1
+  database_port:     3306
+  database_name:     la_app
+  database_user:     root
+  database_password: null
+
+  database_driver_geonames:   pdo_mysql
+  database_host_geonames: 127.0.0.1
+  database_port_geonames: 3306
+  database_name_geonames: la_geo
+  database_user_geonames: root
+  database_password_geonames: null
+
+  database_driver_sothebys: pdo_mysql
+  database_host_sothebys: 127.0.0.1
+  database_port_sothebys: 3306
+  database_name_sothebys: la_sothebys
+  database_user_sothebys: root
+  database_password_sothebys: null
+
+  #Storage
+  secret:            ThisTokenIsNotSoSecretChangeIt
+  es_hosts: ['127.0.0.1:9200']
+  redis_host: localhost

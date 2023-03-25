@@ -1,0 +1,1 @@
+export { StaticCustomerFlowHow } from './StaticCustomerFlowHow';

@@ -1,0 +1,46 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "nl.x-services.plugins.insomnia": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "com.tokbox.cordova.opentok": {
+            "PACKAGE_NAME": "com.integral.test1"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.integral.test1"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.integral.test1"
+        }
+    }
+}

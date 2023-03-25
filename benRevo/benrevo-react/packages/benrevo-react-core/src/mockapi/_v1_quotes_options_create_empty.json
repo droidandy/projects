@@ -1,0 +1,62 @@
+{
+  "id": 1,
+  "name": "Option 1111",
+  "totalAnnualPremium": 0,
+  "percentDifference": 0,
+  "dollarDifference": 0,
+  "overviewPlans": [
+    {
+      "carrier": "Blue Shield",
+      "label": "(current plan)",
+      "employer": 4220.0,
+      "employee": 37980.0,
+      "total": 42200.0
+    },
+    {
+      "carrier": "",
+      "employer": 0,
+      "employee": 0,
+      "total": 0
+    }
+  ],
+  "detailedPlans": [
+    {
+      "rfpQuoteOptionNetworkId": 621,
+      "carrier": "Aetna",
+      "type": "HMO",
+      "currentPlan": {
+        "name": "Aetna HMO 20",
+        "type": "HMO",
+        "employer": 0,
+        "employee": 0,
+        "total": 0
+      },
+      "newPlan": {
+        "name": "Kaiser HMO",
+        "type": "",
+        "employer": 0.0,
+        "employee": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "rfpQuoteOptionNetworkId": 1160,
+      "carrier": "Aetna",
+      "type": "PPO",
+      "currentPlan": {
+        "name": "Aetna PPO 20",
+        "type": "PPO",
+        "employer": 0,
+        "employee": 0,
+        "total": 0
+      },
+      "newPlan": {
+        "name": "Kaiser PPO",
+        "type": "",
+        "employer": 0.0,
+        "employee": 0.0,
+        "total": 0.0
+      }
+    }
+  ]
+}

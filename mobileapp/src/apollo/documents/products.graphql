@@ -1,0 +1,85 @@
+fragment ProductInBasket on ProductModel {
+    isInBasket @client
+}
+
+fragment ProductIsFavorite on ProductModel {
+    isFavourite @client
+}
+
+fragment ListProduct on ProductModel {
+    id
+    name
+    preview
+    picture
+    oldPrice
+    price
+    quantity
+    needReceipt
+    promotional
+    detailPageUrl
+    inWishlist
+    isInBasket @client
+    isFavourite @client
+}
+
+fragment ProductData on ProductModel {
+    id
+    name
+    picture
+    oldPrice
+    price
+    quantity
+    vendorCode
+    activeIngredients
+    form
+    manufacturer
+    description
+    needReceipt
+    promotional
+    detailPageUrl
+    inWishlist
+    expirationDate
+    isInBasket @client
+    isFavourite @client
+}
+
+
+mutation EditFavouriteProduct($action: EditFavoritesProductsActions!, $id: Int) {
+    editFavoritesProducts(action: $action, productId: $id)
+}
+
+mutation ToggleProductInWishlist($id: Int!) {
+    toggleProductInWishlist(id: $id) {
+        id
+        inWishlist
+    }
+}
+
+
+query GetFavouriteProducts {
+    user {
+        id
+        favoriteProducts {
+            ...ListProduct
+        }
+    }
+}
+
+query GetProduct($id: Int!) {
+    product(id: $id) {
+        ...ProductData
+    }
+}
+query GetProducts($categoryId: Int!) {
+    products(categoryId: $categoryId) {
+        ...ListProduct
+    }
+}
+query GetSearchProducts($query: String, $page: Int!, $limit: Int!) {
+    search(query: $query, page: $page, limit: $limit) {
+        products {
+            ...ListProduct
+        }
+        allPage
+    }
+}

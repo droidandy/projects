@@ -1,0 +1,10 @@
+.container {
+  max-width: 320px;
+  margin-bottom: 1rem;
+  .wrapper {
+    input {
+      padding-left: 2rem;
+      background: url("./magnifier-16.svg") 8px 50% no-repeat #edf3f8;
+    }
+  }
+}

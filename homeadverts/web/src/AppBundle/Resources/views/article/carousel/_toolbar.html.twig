@@ -1,0 +1,33 @@
+{% set url = path('ha_article_details', { 'token': article.token, 'slug': article.slug }) %}
+{% set isLiked = app.user and is_liked_by_user(app.user, article) %}
+
+<div class="gallery-toolbar">
+    <ul>
+        <li class="details">
+            <a target="_blank" href="{{ url }}">
+                <i class="material-icons">subject</i>
+                <span>Details</span>
+            </a>
+        </li>
+
+        <li class='counter-wrapper'>
+        </li>
+
+        <li class="share"
+            data-title="Share this story"
+            data-image="{{ article|article_image('article_medium') }}"
+            data-url="{{ absolute_url(url) }}">
+            <i class="material-icons">reply</i>
+        </li>
+
+        <li class="like {{ isLiked ? '--is-liked' : '' }}"
+            data-title="{{ article.getTitle }}"
+            data-id="{{ article.id }}"
+            data-type="article"
+            data-add-url="{{ path('ha_article_like_add', { id: article.token }) }}"
+            data-remove-url="{{ path('ha_article_like_remove', { id: article.token }) }}">
+            <i class="material-icons unliked">favorite_bordered</i>
+            <i class="material-icons liked">favorite</i>
+        </li>
+    </ul>
+</div>

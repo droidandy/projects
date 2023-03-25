@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://publicapi.scrum27.gett.io/v1/business/rides/593/receipt?business_id=UK-3950
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 6b9cfa1b2c5e9f3dbd180af5bef9c05ed74d6f62753a971a5386a73dfe323cef
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin,Accept,Content-Type,Authorization
+      Access-Control-Allow-Origin:
+      - ''
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Aug 2018 17:02:27 GMT
+      X-Rate-Limit-Limit:
+      - '1000000'
+      X-Rate-Limit-Remaining:
+      - '999998'
+      X-Rate-Limit-Reset:
+      - '2018-08-21T17:03:23Z'
+      X-Request-Id:
+      - 21d5233ecc65d888c9c01c675b106c11
+      - 21d5233ecc65d888c9c01c675b106c11
+      Content-Length:
+      - '109'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error_description":"You can view the receipt after the ride is completed
+        or cancelled","error":"Not Found"}'
+    http_version: 
+  recorded_at: Tue, 21 Aug 2018 17:02:27 GMT
+recorded_with: VCR 4.0.0

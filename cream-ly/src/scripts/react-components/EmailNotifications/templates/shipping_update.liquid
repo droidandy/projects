@@ -1,0 +1,299 @@
+{% assign lang = "ru" %}
+{%if attributes.lang%}{% assign lang = attributes.language %}{%endif%}
+
+{% comment %} -------------------- translations_begin --------------------{% endcomment %}
+
+{% capture email_title %}Обновление статуса доставки для заказа {{ name }}{% endcapture %}
+{%if lang == "en"%}
+{% capture email_title %}Shipping update for order {{ name }}{% endcapture %}
+{%endif%}
+
+{% capture email_body %}Следующие товары были обновлены с новой информацией о доставке.{% endcapture %}
+{%if lang == "en"%}
+{% capture email_body %}The following items have been updated with new shipping information.{% endcapture %}
+{%endif%}
+
+
+{% capture translation_order %} Заказ {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_order %} Order  {% endcapture %}
+{%endif%}
+
+
+{% capture translation_view %} Посмотреть статус вашего заказа {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_view %} View your order {% endcapture %}
+{%endif%}
+
+{% capture translation_visit %} Перейти на сайт {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_visit %} Visit our store {% endcapture %}
+{%endif%}
+
+{% capture translation_or %} или {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_or %} or {% endcapture %}
+{%endif%}
+
+{% capture translation_shipment %} Товары в доставке {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_shipment %} Items in this shipment {% endcapture %}
+{%endif%}
+
+{% capture translation_of %} из {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_of %} of {% endcapture %}
+{%endif%}
+
+{% capture translation_refunded %} Возмещено {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_refunded %} Refunded {% endcapture %}
+{%endif%}
+
+{% capture translation_questions %}Если у вас есть вопросы, просто ответьте на этой имэйл или напишите на <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>{% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_questions %}If you have any questions, reply to this email or contact us at <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>{% endcapture %}
+{%endif%}
+
+{% capture translation_trackingNumber1 %} номер для отслеживания {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_trackingNumber1 %} tracking number {% endcapture %}
+{%endif%}
+
+{% capture translation_trackingNumber2 %} Номер для отслеживания {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_trackingNumber2 %} Tracking number {% endcapture %}
+{%endif%}
+
+{% capture translation_trackingNumbers %} Номера для отслеживания {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_trackingNumbers %} Tracking numbers {% endcapture %}
+{%endif%}
+
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <title>{{ email_title }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/notifications/styles.css">
+  <style>
+    .button__cell { background: {{ shop.email_accent_color }}; }
+    a, a:hover, a:active, a:visited { color: {{ shop.email_accent_color }}; }
+  </style>
+</head>
+
+  <body>
+    <table class="body">
+      <tr>
+        <td>
+          <table class="header row">
+  <tr>
+    <td class="header__cell">
+      <center>
+
+        <table class="container">
+          <tr>
+            <td>
+
+              <table class="row">
+                <tr>
+                  <td class="shop-name__cell">
+                    {%- if shop.email_logo_url %}
+                      <img src="{{shop.email_logo_url}}" alt="{{ shop.name }}" width="{{ shop.email_logo_width }}">
+                    {%- else %}
+                      <h1 class="shop-name__text">
+                        <a href="{{shop.url}}">{{ shop.name }}</a>
+                      </h1>
+                    {%- endif %}
+                  </td>
+
+                    <td class="order-number__cell">
+                      <span class="order-number__text">
+                        {{translation_order}} {{ order_name }}
+                      </span>
+                    </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+      </center>
+    </td>
+  </tr>
+</table>
+
+          <table class="row content">
+  <tr>
+    <td class="content__cell">
+      <center>
+        <table class="container">
+          <tr>
+            <td>
+              
+            <h2>{{ email_title }}</h2>
+            <p>{{ email_body }}</p>
+            <p>{{ email_emphasis }}</p>
+            {% if order_status_url %}
+              <table class="row actions">
+  <tr>
+    <td class="empty-line"> </td>
+  </tr>
+  <tr>
+    <td class="actions__cell">
+      <table class="button main-action-cell">
+        <tr>
+          <td class="button__cell"><a href="{{ order_status_url }}" class="button__text">{{translation_view}}</a></td>
+        </tr>
+      </table>
+      {% if shop.url %}
+    <table class="link secondary-action-cell">
+      <tr>
+        <td class="link__cell">{{translation_or}} <a href="{{ shop.url }}">{{translation_visit}}</a></td>
+      </tr>
+    </table>
+{% endif %}
+
+    </td>
+  </tr>
+</table>
+
+            {% else %}
+              {% if shop.url %}
+    <table class="row actions">
+      <tr>
+        <td class="actions__cell">
+          <table class="button main-action-cell">
+            <tr>
+              <td class="button__cell"><a href="{{ shop.url }}" class="button__text">{{translation_visit}}</a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+{% endif %}
+
+            {% endif %}
+            {% if fulfillment.tracking_numbers.size > 0 %}
+  <p class="disclaimer__subtext">
+    <br/>
+    {% if fulfillment.tracking_numbers.size == 1 and fulfillment.tracking_company and fulfillment.tracking_url %}
+      {{ fulfillment.tracking_company }} {{translation_trackingNumber1}}: <a href="{{ fulfillment.tracking_url }}">{{ fulfillment.tracking_numbers.first }}</a>
+    {% elsif fulfillment.tracking_numbers.size == 1 %}
+    {{translation_trackingNumber2}}: {{ fulfillment.tracking_numbers.first }}
+    {% else %}
+    {{translation_trackingNumbers}}:<br />
+      {% for tracking_number in fulfillment.tracking_numbers %}
+        {{ tracking_number }}<br />
+      {% endfor %}
+    {% endif %}
+  </p>
+{% endif %}
+
+
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+
+          <table class="row section">
+  <tr>
+    <td class="section__cell">
+      <center>
+        <table class="container">
+          <tr>
+            <td>
+              <h3>{{translation_shipment}}</h3>
+            </td>
+          </tr>
+        </table>
+        <table class="container">
+          <tr>
+            <td>
+              
+            
+<table class="row">
+  {% for line in fulfillment.fulfillment_line_items %}
+  <tr class="order-list__item">
+    <td class="order-list__item__cell">
+      <table>
+        <td>
+          {% if line.line_item.image %}
+            <img src="{{ line.line_item | img_url: 'compact_cropped' }}" align="left" width="60" height="60" class="order-list__product-image"/>
+          {% endif %}
+        </td>
+        <td class="order-list__product-description-cell">
+          {% if line.quantity < line.line_item.quantity %}
+            {% capture line_display %} {{ line.quantity }} {{translation_of}} {{ line.line_item.quantity }} {% endcapture %}
+          {% else %}
+            {% assign line_display = line.line_item.quantity  %}
+          {% endif %}
+
+          <span class="order-list__item-title">{{ line.line_item.title }} × {{ line_display }}</span><br/>
+
+          {% if line.line_item.variant_title != 'Default Title' %}
+            <span class="order-list__item-variant">{{ line.line_item.variant_title }}</span><br/>
+          {% endif %}
+
+          {% if line.line_item.refunded_quantity > 0 %}
+            <span class="order-list__item-refunded">{{translation_refunded}}</span>
+          {% endif %}
+
+          {% if line.line_item.discount_allocations %}
+            {% for discount_allocation in line.line_item.discount_allocations %}
+              {% if discount_allocation.discount_application.target_selection != 'all' %}
+                <span class="order-list__item-discount-allocation">
+                  <img src="{{ 'notifications/discounttag.png' | shopify_asset_url }}" width="18" height="18" class="discount-tag-icon" />
+                  <span>
+                    {{ discount_allocation.discount_application.title | upcase }}
+                    (-{{ discount_allocation.amount | money }})
+                  </span>
+                </span>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        </td>
+      </table>
+    </td>
+  </tr>{% endfor %}
+</table>
+
+
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+
+          <table class="row footer">
+  <tr>
+    <td class="footer__cell">
+      <center>
+        <table class="container">
+          <tr>
+            <td>
+              
+              <p class="disclaimer__subtext">{{translation_questions}}</p>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+
+<img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1" />
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

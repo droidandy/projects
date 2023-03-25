@@ -1,0 +1,253 @@
+.invoice-main-table, .invoice-content {
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-break {
+  display: block;
+  clear: both;
+  page-break-after: always;
+}
+
+.invoice-main-table {
+  position: relative;
+  width: 1280px;
+  height: 668px;
+}
+
+.invoice-url, .invoice-url a {
+  color: #1875f0;
+}
+
+.invoice-header-container {
+  width: 1280px;
+  padding: 40px 0 20px 150px;
+
+  .header {
+    display: table;
+    width: 855px;
+
+    & > div {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    img {
+      width: 180px;
+      height: 70px;
+    }
+
+    .right {
+      width: 288px;
+
+      p {
+        font-size: 14px;
+        font-weight: normal;
+        color: #373737;
+      }
+
+      p.company {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.invoice-body-container, .invoice-body-container-first {
+  width: 1280px;
+  padding: 0 0 20px 150px;
+
+  .border {
+    width: 385px;
+    height: 1px;
+    background: #d8d8d8;
+  }
+
+  .content {
+    width: 560px;
+    font-size: 14px;
+    padding: 20px 0 20px;
+
+    table {
+      border-collapse: separate;
+      border-spacing: 0 10px;
+    }
+
+    .label, .text, .val {
+      font-size: 14px;
+    }
+
+    .label {
+      line-height: 1.5;
+      color: #727272;
+      width: 130px;
+    }
+
+    .val {
+      line-height: 1.5;
+      font-weight: bold;
+      margin-left: 20px;
+      width: 260px;
+      color: #373737;
+    }
+  }
+}
+
+.invoice-body-container-first {
+  height: 160px;
+  margin-bottom: 20px;
+
+  .text {
+    width: 300px;
+    line-height: 1.64;
+  }
+
+  .mt-20 {
+    margin-top: 20px;
+  }
+}
+
+.invoice-title-footer {
+  position: absolute;
+  bottom: 10px;
+
+  img {
+    position: absolute;
+    top: 52px;
+    display: block;
+    width: 100%;
+    height: 203px;
+  }
+
+  p {
+    position: absolute;
+    top: 175px;
+    left: 140px;
+    right: 0;
+    margin: auto;
+    color: #373737;
+    width: 1000px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .numbers {
+    position: absolute;
+    display: block;
+    width: 1000px;
+    top: -20px;
+    left: 140px;
+    right: 0;
+    margin: auto;
+    height: 150px;
+    padding-left: 30px;
+    background-size: 1000px 150px;
+
+    table {
+      border-spacing: 20px 0;
+    }
+
+    .number {
+      width: 1%;
+      height: 150px;
+
+      .val {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.17;
+        color: #373737;
+      }
+
+      .label {
+        font-size: 14px;
+        color: #808080;
+        margin-top: 10px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.invoice-content {
+  .content-container {
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      padding: 0 20px 0 20px;
+      page-break-inside: auto;
+
+      thead {
+        display: table-header-group;
+        margin-top: 20px;
+      }
+
+      tr {
+        height: 76px;
+        font-size: 12px;
+        page-break-inside: avoid;
+        page-break-after: auto;
+
+        &:nth-of-type(2n) {
+          background: #f5f5f5;
+        }
+      }
+
+      tr.tableHeadRow {
+        background: #f3f3f3;
+        height: 50px;
+        color: #808080;
+      }
+
+      tr.tableHeadTop {
+        background: #fff;
+        height: 20px;
+        th {
+          padding: 0;
+          color: #808080;
+        }
+      }
+
+      td, th {
+        padding: 6px 0 6px 20px;
+        vertical-align: middle;
+        line-height: 1.46;
+        text-align: left;
+
+        .notice {
+          font-size: 10px;
+          line-height: 1.5;
+          color: #808080;
+          font-weight: 300;
+        }
+      }
+
+      td.addr {
+        max-width: 250px;
+      }
+
+      td.ref {
+        max-width: 100px;
+      }
+
+      td.last {
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .notes {
+    width: 100%;
+    min-width: 1200px;
+    padding: 55px 0 0 20px;
+    page-break-inside: avoid;
+
+    table {
+      width: 100%;
+    }
+
+    .note {
+      line-height: 1.46;
+      font-size: 13px;
+    }
+  }
+}

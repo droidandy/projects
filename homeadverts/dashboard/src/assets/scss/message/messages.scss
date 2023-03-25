@@ -1,0 +1,108 @@
+.heading {
+  position: absolute;
+  padding: 12px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.selfActions {
+  min-height: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 15px 15px 20px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.conversation {
+  width: 0;
+  flex: 1;
+  order: 2;
+  background: #fff;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  .actions {
+    display: flex;
+    flex-direction: row;
+  }
+  .messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: auto auto;
+
+    .items::-webkit-scrollbar { width: 0 !important }
+    .items {
+      overflow: -moz-scrollbars-none;
+      -ms-overflow-style: none;
+      overflow: auto auto;
+      padding: 0 20px;
+    }
+    .messageWrite {
+      padding: 27px 20px 40px 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .messageContainer {
+        position: relative;
+        display: flex;
+        flex: 1;
+        align-items: center;
+
+        textarea::-webkit-scrollbar { width: 0 !important }
+        textarea {
+          overflow: -moz-scrollbars-none;
+          -ms-overflow-style: none;
+          background: #F5F5F5;
+          width: 100%;
+          max-height: 200px;
+          min-height: 60px;
+          box-sizing: border-box;
+          border: none;
+          resize: none;
+          overflow: auto;
+          height: auto;
+          border-radius: 5px;
+          padding: 20px;
+          padding-right: 110px;
+          line-height: 16px;
+          color: #00000054;
+          font-family: 'Roboto Regular', sans-serif;
+          font-size: 14px;
+        }
+        .buttons {
+          position: absolute;
+          right: 10px;
+
+          .button {
+            float: left;
+            color: #757575;
+            margin: 0 5px 0 5px;
+            &:hover {
+              cursor: pointer;
+              color: #00000054;
+            }
+          }
+          #buttonEmoji {
+            margin: 0;
+          }
+        }
+      }
+      .detailsButton {
+        color: #757575;
+        margin: 0 8px 0 5px;
+        font-size: 30px;
+        &:hover {
+          cursor: pointer;
+          color: #00000054;
+        }
+      }
+    }
+  }
+
+}

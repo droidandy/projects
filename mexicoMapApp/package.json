@@ -1,0 +1,48 @@
+{
+  "name": "allmaxcrosstemp",
+  "version": "1.0.0",
+  "description": "App template based on F7 and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yakuhsin K. E.",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-syntax-decorators": "^6.3.13",
+    "babel-plugin-syntax-object-rest-spread": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "react-hot-loader": "^1.3.0",
+    "svg-react-loader": "^0.3.2",
+    "webpack-stream": "^2.3.0"
+  },
+  "dependencies": {
+    "es6-promise": "^3.0.2",
+    "exports-loader": "^0.6.2",
+    "framework7": "^1.4.0",
+    "immutable": "^3.7.5",
+    "imports-loader": "^0.6.5",
+    "radium": "^0.15.3",
+    "react": "^0.14.3",
+    "react-dnd": "^2.0.2",
+    "react-dnd-touch-backend": "^0.2.4",
+    "react-dom": "^0.14.3",
+    "react-redux": "^4.0.0",
+    "react-tappable": "^0.8.0",
+    "redux": "^3.0.4",
+    "svg-to-react": "^0.1.0",
+    "whatwg-fetch": "^0.10.1"
+  }
+}

@@ -1,0 +1,13 @@
+directive @client(always: Boolean) on FIELD
+
+extend type ProductModel {
+    "Находится ли товар в списке избранных"
+    isFavourite: Boolean!
+    "Находится ли товар в корзине"
+    isInBasket: Boolean!
+}
+
+extend type PharmacyModel {
+    "Находится ли аптека в списке избранных"
+    isFavourite: Boolean!
+}

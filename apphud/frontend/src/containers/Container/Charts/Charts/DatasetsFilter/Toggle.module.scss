@@ -1,0 +1,37 @@
+.root {
+  border-radius: 4px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #0085FF;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  &.checked {
+    background: #0085FF;
+  }
+  &.default {
+    background: #FFF;
+  }
+  .half {
+    background: #FFF;
+    width: 10px;
+    height: 2px;
+  }
+  .checked {
+    width: 9px;
+    height: 5px;
+    top: -2px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    transform: rotate(-45deg);
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}

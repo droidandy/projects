@@ -1,0 +1,244 @@
+.user-info.\--full-details {
+  display: inline-block;
+  width: 100%;
+
+  .photo {
+    width: 115px;
+    height: 115px;
+    float: initial;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .details {
+    text-align: center;
+    margin: 0 auto;
+
+    .follow-button {
+      margin-left: 0;
+      margin-top: 0;
+      line-height: 32px;
+    }
+    .username {
+      cursor: pointer;
+      font-size: 26px;
+      font-weight: 700;
+      color: $color_1;
+      margin-top: 10px;
+      padding: 15px 20px;
+      width: 100%;
+      margin-bottom: 0;
+
+      .data-input {
+        font-size: 26px;
+        font-weight: 700;
+        color: $color_1;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .company {
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      color: $color_1;
+    }
+    .address {
+      display: block;
+      font-size: 15px;
+      color: #616161;
+    }
+    .actions {
+      padding: 10px;
+      margin-top: 15px;
+      //margin-bottom: 40px;
+
+      button {
+        margin: 0 5px;
+      }
+    }
+    .about {
+      max-width: 700px;
+      color: #616161;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding: 0;
+      padding-bottom: 10px;
+      height: auto;
+      font-size: 16px;
+
+      span {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .empty {
+        display: none;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #aaa;
+        cursor: pointer;
+      }
+      .data-input {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+        @include transition(all 0.5s);
+      }
+      .trigger {
+        cursor: pointer;
+        font-weight: 700;
+        display: block;
+        margin: 0 auto;
+        @include transition(all 0.5s);
+      }
+
+      &.\--folded {
+        span {
+          height: 75px !important;
+          overflow: hidden !important;
+        }
+
+        .data-input {
+          height: 95px !important;
+          overflow: hidden !important;
+        }
+
+        .trigger {
+          @include rotate(180deg);
+        }
+      }
+      &.\--empty {
+        .data-input,
+        .trigger {
+          display: none;
+        }
+
+        .empty {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &.\--directory {
+    margin-top: 20px !important;
+    margin-bottom: 50px !important;
+    width: 33%;
+
+    .photo {
+      width: 85px;
+      height: 85px;
+    }
+    .details {
+      .username {
+        font-size: 24px;
+        padding: 5px 20px 5px;
+      }
+      .company {
+        font-size: 14px;
+        font-weight: 600;
+        color: #212121;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .address {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &.\--background {
+    .background {
+      height: 200px;
+      position: relative;
+      z-index: 1;
+      background: $color_6;
+    }
+
+    .photo {
+      margin-top: -60px !important;
+      border: 2px solid #fff;
+      z-index: 1;
+    }
+  }
+  &.\--edit-profile {
+    .background {
+      .upload-image {
+        opacity: 0;
+        z-index: 9;
+        margin: 30px;
+        background: #555;
+        color: #fff;
+      }
+      &:before {
+        opacity: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        position: absolute;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+          overflow: hidden;
+        }
+
+        .upload-image {
+          opacity: 1;
+        }
+      }
+    }
+
+    .photo {
+      margin-top: -60px !important;
+      border: 2px solid #fff;
+    }
+  }
+  .user-counters {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: 700;
+    line-height: 1;
+    width: 100%;
+    font-size: 12px;
+
+    ul {
+      li {
+        display: inline-block;
+        margin-right: 5px;
+
+        a {
+          color: #757575;
+          &:hover {
+            color: #424242;
+          }
+        }
+
+        &:after {
+          content: "\00b7";
+          font-weight: 700;
+          font-size: 20px;
+          color: #919191;
+          margin-left: 5px;
+          vertical-align: sub;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

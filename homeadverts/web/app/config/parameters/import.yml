@@ -1,0 +1,21 @@
+parameters:
+    ha.import.wellcomemat_key: thahomeadvertscom
+    ha.import.wellcomemat_secret: 94ac398ed9bb8fae468441ddf733144a
+    ha.import.wellcomemat_enabled: true
+    ha.import.debug_dir: %kernel.root_dir%/logs
+
+#    Staging
+#    datasync.api_endpoint: https://stg.api.realogyfg.com/datasync/
+#    datasync.signature: 0eec9a370ece47b99beec54360251ee1
+#    datasync.okta.token_url: 'https://realogy.oktapreview.com/oauth2/ausdtpyw647fbrcPi0h7/v1/token'
+#    datasync.okta.client_id: 0oafmzbhi4rdG4sbe0h7
+#    datasync.okta.client_secret: pHAJvsPlTjhqfR6BJS-pwgs-_GbCJN2FIWhWGUnr
+#    datasync.okta.scope: 'https://btt.realogyfg.com/datasyncapi'
+
+#    Live
+    datasync.api_endpoint: 'https://api.realogyfg.com/datasync/'
+    datasync.signature: 27f12d3b8f66456aaecc84e41679769a
+    datasync.okta.token_url: 'https://realogy.okta.com/oauth2/aus7i8b1taFyPOEGc1t7/v1/token'
+    datasync.okta.client_id: 0oa7yvbobtGc1LUEO1t7
+    datasync.okta.client_secret: kiCGzSGPxTsC1ULJ950E8Ct-EcNqZPts2mKsBCQm
+    datasync.okta.scope: 'https://btt.realogyfg.com/datasyncapi'

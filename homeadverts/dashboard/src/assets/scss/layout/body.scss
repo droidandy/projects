@@ -1,0 +1,98 @@
+textarea, select, input, button {
+  outline: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  background: #fff !important;
+
+  .container {
+    max-height: 100vh;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    background: #fafafa;
+    max-height: 100vh;
+    height: 100vh;
+  }
+
+  .columns {
+    display: flex;
+    flex: 1;
+    max-height: 100%;
+    height: 100vh;
+  }
+
+  .conversations {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    &.default {
+        width: 340px;
+        min-width: 340px;
+      }
+
+    &.flex {
+      width: 0;
+      flex: 1;
+    }
+    .searchBar {
+      &.tablet {
+        background: #f5f5f5;
+      }
+    }
+  }
+
+  .header, .footer{
+    height: 50px;
+    background: #fff;
+    color: #666;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    .contentLeft {
+      position: absolute;
+      left: 0;
+    }
+    .contentRight {
+      position: absolute;
+      right: 0;
+    }
+    .contentBar {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .cover {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+  }
+}

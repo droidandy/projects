@@ -1,0 +1,22 @@
+{% for page in pagination %}
+    {% for usersRow in page|batch(property_row_limit()) %}
+        <ul class="medium-block-grid-3">
+            {% for user in usersRow %}
+                <li class="user-info --full-details --directory">
+                    {% include 'AppBundle:user/profile:image.html.twig' %}
+                    <div class="details">
+                        {% include 'AppBundle:user/profile:username.html.twig' %}
+                        {% include 'AppBundle:user/profile:company.html.twig' %}
+
+                        {% if (user.address.country) %}
+                            <span class="address">
+                                {{ user.address.getFullAddress(',') }}
+                            </span>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="items-collection-separator"></div>
+    {% endfor %}
+{% endfor %}

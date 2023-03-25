@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://publicapi.scrum27.gett.io/v1/oauth/token?client_id=ad7509a401c5b33fe0eb4932233adfedea4e30b8d7906095139a00ac35f844e5&client_secret=9a55b702418f01bd03c6d2a712c190801e9a459c442af1d46e1fcf8c9e60215c&grant_type=client_credentials&scope=business
+    body:
+      encoding: UTF-8
+      string: '{"grant_type":"client_credentials","client_id":"ad7509a401c5b33fe0eb4932233adfedea4e30b8d7906095139a00ac35f844e5","client_secret":"9a55b702418f01bd03c6d2a712c190801e9a459c442af1d46e1fcf8c9e60215c","scope":"business"}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 17612220fde7fc97ef32da9a3dd5d3c37705eeaa47a0b01037dc606b86f53f82
+      Content-Length:
+      - '216'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 06 Aug 2018 18:58:15 GMT
+      X-Request-Id:
+      - ca1fd5ccbc67a778f1531fe398ceaa9f
+      Content-Length:
+      - '166'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"d2bcf731cdf929aa735a622f3e5e08a35f9edc3efd6bf9419288b6114e22b97a","created_at":1533581895,"expires_in":7200,"scope":"business","token_type":"bearer"}'
+    http_version: 
+  recorded_at: Mon, 06 Aug 2018 18:58:15 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,1 @@
+export { PolicyItemMobile } from './PolicyItemMobile';

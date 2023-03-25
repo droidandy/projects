@@ -1,0 +1,164 @@
+@import "../../../styles/tools/mixins.scss";
+.ComponentFAQ {
+  @include maxWidthPage;
+  .root {
+    width: "100%";
+  }
+
+  .heading {
+    font-family: var(--font-heading);
+    //font-weight: $font-heading-weight;
+    font-size: $font-size-base;
+
+    &--question {
+      font-family: var(--font-body);
+      //font-weight: $font-body-bold-weight;
+    }
+  }
+
+  .search {
+    margin: auto;
+    position: relative;
+    width: 700px;
+    height: 35px;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+
+    &:focus-within {
+      border: 1px solid var(--purplish-grey);
+
+      .searchIcon {
+        color: var(--purplish-grey);
+      }
+    }
+
+    @include spacingBottomMedium();
+    @include media-query($medium-down) {
+      width: 100%;
+      @include spacingBottom();
+    }
+
+    .searchIcon {
+      position: absolute;
+      right: 5px;
+      z-index: 5;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .searchInputRoot {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px 0 10px;
+      input {
+        @include defaultText;
+      }
+    }
+  }
+
+  // ACCORDION
+  .category-container {
+    @include spacingBottomMedium();
+    @include media-query($small) {
+      @include spacingBottom();
+    }
+
+    .category-title {
+      height: 100%;
+      margin-bottom: 12px;
+      align-items: center;
+
+      .icon {
+        height: 100%;
+        max-width: 32px;
+        color: var(--purplish-grey);
+
+        svg {
+          width: 26px;
+          height: 26px;
+        }
+      }
+
+      h4 {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        margin: 0;
+      }
+    }
+
+    .category-wrapper {
+      border: 1px solid var(--silver);
+      border-radius: 6px;
+      overflow: hidden;
+
+      div.accordion-root {
+        border-bottom: 1px solid var(--silver);
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      .accordion-root {
+        box-shadow: none;
+        background-color: rgb(250, 250, 250);
+
+        &:before {
+          height: 0;
+        }
+
+        &:hover {
+          svg.MuiSvgIcon-root {
+            color: black;
+            transition: color 0.25s ease-in-out;
+          }
+        }
+      }
+
+      .accordion-summary-root {
+        p {
+          font-size: 1em;
+        }
+      }
+
+      .accordion-expanded.accordion-root {
+        margin: 0;
+        background-color: white;
+      }
+
+      .accordion-details-root {
+        display: block;
+
+        p,
+        li {
+          @include defaultText;
+        }
+
+        ul {
+          margin-left: 15px;
+          padding: 5px 0;
+        }
+
+        .related-link {
+          margin-top: 5px;
+          display: flex;
+          align-items: center;
+
+          &--instagram {
+            color: var(--rose);
+          }
+
+          &__label {
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .typography-root {
+        font-family: $font-body;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../variables-theme";
+
+.blocker-modal {
+  text-align: center !important;
+  .close-btn {
+    position: relative;
+    left: 47%;
+    top: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: unset;
+    font-weight: 400;
+    font-size: 20px;
+    color: #3a444d;
+    &:hover {
+      background-color: unset;
+      box-shadow: unset;
+      color: #3a444d;
+    }
+  }
+  .blocker-modal-header {
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    color: #3a444d !important;
+    border: none !important;
+  }
+  .image-holder {
+    position: relative;
+    width: 165px;
+    height: 73px;
+    background: url('../img/svg/blocker-modal.svg') no-repeat;
+    margin: 0 auto 25px auto;
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 53px;
+      left: 59px;
+      top: 20px;
+      height: 64px;
+      background: url('../img/svg/blocker-modal1.svg') no-repeat;
+    }
+  }
+  .blocker-modal-description {
+    font-size: 14px;
+    color: #3a444d;
+  }
+  .blocker-modal-button {
+    width: 270px;
+    margin: 60px 0;
+    border-radius: 4px;
+    background-color: $BUTTON_PRIMARY_BG_COLOR;
+    color: #fff;
+  }
+}

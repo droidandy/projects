@@ -1,0 +1,1 @@
+export { SeoTitleTemp } from './SeoTitleTemp';

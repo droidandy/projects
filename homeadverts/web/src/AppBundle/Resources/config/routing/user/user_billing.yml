@@ -1,0 +1,4 @@
+ha_billing:
+    path: /
+    defaults:
+        _controller: AppBundle:User\Billing:details

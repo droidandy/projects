@@ -1,0 +1,92 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+
+<style>
+@page { 
+    size: A4 landscape;
+}
+td {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+}
+tr.border-top td {
+    border-top: solid 2px white;                                              
+}
+td.left {
+    text-align: left;
+    padding-left: 20px;
+}
+td.right {
+    padding-right: 60px;
+}
+tr.bottom td {
+    padding-bottom: 20px;
+}
+td.center {
+    text-align: center;
+}
+tr.header td {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+tr.header td.capture {
+    font-size: 18px;
+}
+
+td.img {
+    padding-left: 0px;
+    text-align: center;
+}
+tr.bar, td.bar {
+    background-color: #f1f2f2;
+}
+tr.border-top2 td {
+    border-top: solid 2px #3ac0da;
+    padding-top: 20px;
+
+}
+
+</style>
+
+</head>
+<body style="background-color: white; margin:0px; padding:0px; font-family: Helvetica; color: #6e7881; font-size: 18px;">
+<table width ="100%" cellspacing="0" border="0">
+    <tr><td class="left" style="padding: 0px;"> <span style="font-size: 36px;font-weight: bold;" > Financial Summary </span><br/> <b>Current vs. Anthem Blue Cross</b> </td><td><img src="https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/anthemlogo1x_02.png" /></td></tr>
+</table>
+<br/>
+<table width ="100%" cellspacing="0" border="0">
+    <tr class="header bar"><td class="img" rowspan="4" width="100px" bgcolor="#3ac0da" style="padding: 0px;"><img width="45px" height="54px" src="https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/medical_icon_white2x.png" /></td>
+        <td class="left capture"> Medical                         </td><td> ENROLLMENT </td><td> Bundling Discounts </td><td> TOTAL       </td><td> $&nbsp;CHANGE </td><td style="padding-right: 60px;"> %&nbsp;CHANGE </td></tr>
+    <tr class="bar"><td class="left"> Current ($!medical_carrier) </td><td> $!m_enroll </td><td>     &nbsp;         </td><td> $!c_m_total </td><td> -             </td><td class="right">     -         </td></tr>
+    <tr class="bar"><td class="left"> Renewal                     </td><td>   &nbsp;   </td><td>     &nbsp;         </td><td> $!r_m_total </td><td><b> $!r_m_dollar </b></td><td class="right"><b> $!r_m_percent </b></td></tr>
+    <tr class="bottom bar"><td class="left"> Anthem Blue Cross           </td><td>   &nbsp;   </td><td>     &nbsp;         </td><td> $!a_m_total </td><td><b> $!a_m_dollar </b></td><td class="right"><b> $!a_m_percent </b></td></tr>
+
+    <tr class="header border-top bar"><td class="img" bgcolor="#1891c3" rowspan="4" width="100px" style="padding: 0px;"><img width="45px" height="54px" src="https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/dental_icon_white2x.png" /></td>
+        <td class="left capture"> Dental                          </td><td>   &nbsp;   </td><td>     &nbsp;         </td><td>   &nbsp;    </td><td>  &nbsp;       </td><td class="right">  &nbsp;       </td></tr>
+    <tr class="bar"><td class="left"> Current ($!dental_carrier)  </td><td> $!d_enroll </td><td>     -              </td><td> $!c_d_total </td><td> -             </td><td class="right">     -         </td></tr>
+    <tr class="bar"><td class="left"> Renewal                     </td><td>   &nbsp;   </td><td>     -              </td><td> $!r_d_total </td><td><b> $!r_d_dollar </b></td><td class="right"><b> $!r_d_percent </b></td></tr>
+    <tr class="bottom bar"><td class="left"> Anthem Blue Cross           </td><td>   &nbsp;   </td><td>   $!a_d_discount   </td><td> $!a_d_total </td><td><b> $!a_d_dollar </b></td><td class="right"><b> $!a_d_percent </b></td></tr>
+
+    <tr class="header border-top bar"><td class="img" bgcolor="#00589c" rowspan="4" width="100px" style="padding: 0px;"><img width="63px" height="43px" src="https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/vision_icon_white2x.png" /></td>
+        <td class="left capture"> Vision                          </td><td>   &nbsp;   </td><td>     &nbsp;         </td><td>   &nbsp;    </td><td>  &nbsp;       </td><td class="right">  &nbsp;       </td></tr>
+    <tr class="bar"><td class="left"> Current ($!vision_carrier)  </td><td> $!v_enroll </td><td>     -              </td><td> $!c_v_total </td><td> -             </td><td class="right">     -         </td></tr>
+    <tr class="bar"><td class="left"> Renewal                     </td><td>   &nbsp;   </td><td>     -              </td><td> $!r_v_total </td><td><b> $!r_v_dollar </b></td><td class="right"><b> $!r_v_percent </b></td></tr>
+    <tr class="bottom bar"><td class="left"> Anthem Blue Cross           </td><td>   &nbsp;   </td><td>   $!a_v_discount   </td><td> $!a_v_total </td><td><b> $!a_v_dollar </b></td><td class="right"><b> $!a_v_percent </b></td></tr>
+
+
+    <tr class="header2 border-top2"><td></td><td class="left"> <b>Current</b> Total Program Costs - All Plans    </td><td>            </td><td>     -              </td><td> $!c_t_total </td><td class="bar"> -             </td><td class="right bar">     -         </td></tr>
+    <tr><td></td><td class="left"> Renewal Total Program Costs - All Plans           </td><td>   &nbsp;   </td><td>     -              </td><td> $!r_t_total </td><td class="bar"><b> $!r_t_dollar </b></td><td class="right bar"><b> $!r_t_percent </b></td></tr>
+    <tr class="bottom"><td></td><td class="left"> Anthem Blue Cross Total Program Costs - All Plans </td><td>   &nbsp;   </td><td>   $!a_t_discount   </td><td> $!a_t_total </td><td class="bar"><b> $!a_t_dollar </b></td><td class="right bar"><b> $!a_t_percent </b></td></tr>
+
+</table>
+</body>
+</html>

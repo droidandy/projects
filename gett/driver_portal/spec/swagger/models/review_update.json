@@ -1,0 +1,46 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "created_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "comment": {
+    "type": "string"
+  },
+  "completed": {
+    "type": "boolean"
+  },
+  "current": {
+    "type": "boolean"
+  },
+  "requirement": {
+    "type": "string",
+    "enum": [
+      "base",
+      "language",
+      "training",
+      "attitude_competence",
+      "vehicle",
+      "phone_contract"
+    ]
+  },
+  "review_id": {
+    "type": "integer"
+  },
+  "reviewer": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "first_name": {
+        "type": "string"
+      },
+      "last_name": {
+        "type": "string"
+      }
+    }
+  }
+}

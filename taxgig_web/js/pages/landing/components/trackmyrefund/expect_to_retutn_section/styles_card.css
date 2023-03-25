@@ -1,0 +1,16 @@
+.item-enter {
+  opacity: 0;
+  filter: grayscale(1)
+}
+.item-enter-active {
+  opacity: 1;
+  transition: all 5500ms ease-in;
+  filter: grayscale(0)
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 5500ms ease-in;
+}

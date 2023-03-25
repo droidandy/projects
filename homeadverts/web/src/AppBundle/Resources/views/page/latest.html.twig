@@ -1,0 +1,36 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="headline --separator --collection">
+            <h1 class="heading">
+                Latest
+            </h1>
+            <span class="sub-heading --small">
+                In publishing and graphic design, lorem ipsum is a filler text or greeking
+                commonly used to demonstrate the textual elements of a graphic document or visual
+            </span>
+        </div>
+
+        {% if articles|length %}
+            <div class="items-collection">
+                <div class="blog">
+                    <ul class="list small-block-grid-2 medium-block-grid-3"
+                        data-page-total="{{ pageTotal }}"
+                        data-page-current="{{ page }}"
+                    >
+                        {% for article in articles %}
+                            <li>
+                                {% include 'AppBundle:article/card:small.html.twig' %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        {% else %}
+            <div class="information-centered">
+                {{ "search.noresults"|trans }}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

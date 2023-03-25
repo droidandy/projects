@@ -1,0 +1,25 @@
+overwrite: true
+schema:
+  - https://hasura.stg-gkme3m3ydvepkkp4.launchpad-saas.net/v1/graphql:
+      headers:
+        x-hasura-admin-secret: "${HASURA_ADMIN_SECRET}"
+documents: "./src/graphQL/hasura/**/*.graphql"
+hooks:
+  afterAllFileWrite:
+    - ./node_modules/.bin/prettier --write
+generates:
+  ./src/graphQL/hasura/generated-types.tsx:
+    config:
+      withHooks: true
+      withHOC: true
+      withComponent: true
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+  ./src/graphQL/hasura/graphql.schema.json:
+    plugins:
+      - "introspection"
+  ./src/graphQL/hasura/schema.graphql:
+    plugins:
+      - schema-ast

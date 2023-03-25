@@ -1,0 +1,1922 @@
+module.exports = [
+  {
+    "id": "1",
+    "English": "the",
+    "French": "la",
+    "English_phonetics": "zeu",
+    "French_phonetics": "la",
+    "mode": ""
+  },
+  {
+    "id": "2",
+    "English": "of",
+    "French": "de",
+    "English_phonetics": "auffe",
+    "French_phonetics": "d\u0259",
+    "mode": ""
+  },
+  {
+    "id": "3",
+    "English": "to",
+    "French": "\u00e0",
+    "English_phonetics": "tou",
+    "French_phonetics": "a",
+    "mode": ""
+  },
+  {
+    "id": "4",
+    "English": "in",
+    "French": "dans",
+    "English_phonetics": "in",
+    "French_phonetics": "d\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "5",
+    "English": "that",
+    "French": "cette",
+    "English_phonetics": "zhat",
+    "French_phonetics": "s\u025bt",
+    "mode": ""
+  },
+  {
+    "id": "6",
+    "English": "as",
+    "French": "comme",
+    "English_phonetics": "aze",
+    "French_phonetics": "k\u0254m",
+    "mode": ""
+  },
+  {
+    "id": "7",
+    "English": "on",
+    "French": "sur",
+    "English_phonetics": "aune",
+    "French_phonetics": "sy\u0281",
+    "mode": ""
+  },
+  {
+    "id": "8",
+    "English": "this",
+    "French": "ce",
+    "English_phonetics": "zis",
+    "French_phonetics": "s\u0259",
+    "mode": ""
+  },
+  {
+    "id": "9",
+    "English": "by",
+    "French": "par",
+    "English_phonetics": "by",
+    "French_phonetics": "pa\u0281",
+    "mode": ""
+  },
+  {
+    "id": "10",
+    "English": "not",
+    "French": "ne pas",
+    "English_phonetics": "note",
+    "French_phonetics": "n\u0259\u00a0pa",
+    "mode": ""
+  },
+  {
+    "id": "11",
+    "English": "but",
+    "French": "mais",
+    "English_phonetics": "beute",
+    "French_phonetics": "m\u025b",
+    "mode": ""
+  },
+  {
+    "id": "12",
+    "English": "more",
+    "French": "plus",
+    "English_phonetics": "maure",
+    "French_phonetics": "ply",
+    "mode": ""
+  },
+  {
+    "id": "13",
+    "English": "some",
+    "French": "certains",
+    "English_phonetics": "saume",
+    "French_phonetics": "s\u025b\u0281t\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "14",
+    "English": "there",
+    "French": "l\u00e0",
+    "English_phonetics": "zere",
+    "French_phonetics": "la",
+    "mode": ""
+  },
+  {
+    "id": "15",
+    "English": "what",
+    "French": "quoi",
+    "English_phonetics": "what",
+    "French_phonetics": "kwa",
+    "mode": ""
+  },
+  {
+    "id": "16",
+    "English": "about",
+    "French": "sur",
+    "English_phonetics": "euboat",
+    "French_phonetics": "sy\u0281",
+    "mode": ""
+  },
+  {
+    "id": "17",
+    "English": "when",
+    "French": "quand",
+    "English_phonetics": "wen",
+    "French_phonetics": "k\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "18",
+    "English": "all",
+    "French": "tous",
+    "English_phonetics": "aulle",
+    "French_phonetics": "tu",
+    "mode": ""
+  },
+  {
+    "id": "19",
+    "English": "also",
+    "French": "aussi",
+    "English_phonetics": "alzo",
+    "French_phonetics": "osi",
+    "mode": ""
+  },
+  {
+    "id": "20",
+    "English": "how",
+    "French": "comment",
+    "English_phonetics": "auw",
+    "French_phonetics": "k\u0254m\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "21",
+    "English": "most",
+    "French": "les plus",
+    "English_phonetics": "maust",
+    "French_phonetics": "le\u00a0ply",
+    "mode": ""
+  },
+  {
+    "id": "22",
+    "English": "other",
+    "French": "autre",
+    "English_phonetics": "auzer",
+    "French_phonetics": "ot\u0281",
+    "mode": ""
+  },
+  {
+    "id": "23",
+    "English": "time",
+    "French": "temps",
+    "English_phonetics": "time",
+    "French_phonetics": "t\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "24",
+    "English": "so",
+    "French": "ainsi",
+    "English_phonetics": "sau",
+    "French_phonetics": "\u025b\u0303si",
+    "mode": ""
+  },
+  {
+    "id": "25",
+    "English": "like",
+    "French": "comme",
+    "English_phonetics": "laique",
+    "French_phonetics": "k\u0254m",
+    "mode": ""
+  },
+  {
+    "id": "26",
+    "English": "up",
+    "French": "en haut",
+    "English_phonetics": "eup",
+    "French_phonetics": "\u0251\u0303\u00a0o",
+    "mode": ""
+  },
+  {
+    "id": "27",
+    "English": "out",
+    "French": "dehors",
+    "English_phonetics": "awteu",
+    "French_phonetics": "d\u0259\u0254\u0281",
+    "mode": ""
+  },
+  {
+    "id": "28",
+    "English": "such",
+    "French": "tel",
+    "English_phonetics": "seutch",
+    "French_phonetics": "t\u025bl",
+    "mode": ""
+  },
+  {
+    "id": "29",
+    "English": "through",
+    "French": "par",
+    "English_phonetics": "s-rou",
+    "French_phonetics": "pa\u0281",
+    "mode": ""
+  },
+  {
+    "id": "30",
+    "English": "work",
+    "French": "travail",
+    "English_phonetics": "weurque",
+    "French_phonetics": "t\u0281avaj",
+    "mode": ""
+  },
+  {
+    "id": "31",
+    "English": "even",
+    "French": "m\u00eame",
+    "English_phonetics": "iven",
+    "French_phonetics": "m\u025bm",
+    "mode": ""
+  },
+  {
+    "id": "32",
+    "English": "no",
+    "French": "non",
+    "English_phonetics": "nau",
+    "French_phonetics": "n\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "33",
+    "English": "new",
+    "French": "neuf",
+    "English_phonetics": "neuw",
+    "French_phonetics": "n\u0153f",
+    "mode": ""
+  },
+  {
+    "id": "34",
+    "English": "film",
+    "French": "film",
+    "English_phonetics": "filme",
+    "French_phonetics": "film",
+    "mode": ""
+  },
+  {
+    "id": "35",
+    "English": "just",
+    "French": "juste",
+    "English_phonetics": "jeust",
+    "French_phonetics": "\u0292yst",
+    "mode": ""
+  },
+  {
+    "id": "36",
+    "English": "only",
+    "French": "seulement",
+    "English_phonetics": "aunli",
+    "French_phonetics": "s\u0153lm\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "37",
+    "English": "good",
+    "French": "bien",
+    "English_phonetics": "goude",
+    "French_phonetics": "bj\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "38",
+    "English": "water",
+    "French": "eau",
+    "English_phonetics": "watere",
+    "French_phonetics": "o",
+    "mode": ""
+  },
+  {
+    "id": "39",
+    "English": "very",
+    "French": "tr\u00e8s",
+    "English_phonetics": "veri",
+    "French_phonetics": "t\u0281\u025b",
+    "mode": ""
+  },
+  {
+    "id": "40",
+    "English": "any",
+    "French": "quelconque",
+    "English_phonetics": "\u00e9ni",
+    "French_phonetics": "k\u025blk\u0254\u0303k",
+    "mode": ""
+  },
+  {
+    "id": "41",
+    "English": "often",
+    "French": "souvent",
+    "English_phonetics": "auftaine",
+    "French_phonetics": "suv\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "42",
+    "English": "well",
+    "French": "bien",
+    "English_phonetics": "w\u00e9lle",
+    "French_phonetics": "bj\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "43",
+    "English": "then",
+    "French": "puis",
+    "English_phonetics": "zen",
+    "French_phonetics": "p\u0265i",
+    "mode": ""
+  },
+  {
+    "id": "44",
+    "English": "first",
+    "French": "premier",
+    "English_phonetics": "feurst",
+    "French_phonetics": "p\u0281\u0259mje",
+    "mode": ""
+  },
+  {
+    "id": "45",
+    "English": "each",
+    "French": "chaque",
+    "English_phonetics": "ich",
+    "French_phonetics": "\u0283ak",
+    "mode": ""
+  },
+  {
+    "id": "46",
+    "English": "where",
+    "French": "o\u00f9",
+    "English_phonetics": "w\u00e9re",
+    "French_phonetics": "u",
+    "mode": ""
+  },
+  {
+    "id": "47",
+    "English": "much",
+    "French": "beaucoup",
+    "English_phonetics": "meuch",
+    "French_phonetics": "boku",
+    "mode": ""
+  },
+  {
+    "id": "48",
+    "English": "example",
+    "French": "exemple",
+    "English_phonetics": "ex-\u00e9mpel",
+    "French_phonetics": "\u025b\u0261z\u0251\u0303pl",
+    "mode": ""
+  },
+  {
+    "id": "49",
+    "English": "while",
+    "French": "tandis que",
+    "English_phonetics": "wail",
+    "French_phonetics": "t\u0251\u0303di\u00a0k\u0259",
+    "mode": ""
+  },
+  {
+    "id": "50",
+    "English": "before",
+    "French": "avant",
+    "English_phonetics": "bifore",
+    "French_phonetics": "av\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "51",
+    "English": "between",
+    "French": "compris entre",
+    "English_phonetics": "bitwin",
+    "French_phonetics": "k\u0254\u0303p\u0281i\u00a0\u0251\u0303t\u0281",
+    "mode": ""
+  },
+  {
+    "id": "52",
+    "English": "however",
+    "French": "toutefois",
+    "English_phonetics": "aw-\u00e9ver",
+    "French_phonetics": "tutfwa",
+    "mode": ""
+  },
+  {
+    "id": "53",
+    "English": "great",
+    "French": "g\u00e9nial",
+    "English_phonetics": "gu-r-hey-te",
+    "French_phonetics": "\u0292enjal",
+    "mode": ""
+  },
+  {
+    "id": "54",
+    "English": "same",
+    "French": "m\u00eame",
+    "English_phonetics": "s-ain-me",
+    "French_phonetics": "m\u025bm",
+    "mode": ""
+  },
+  {
+    "id": "55",
+    "English": "study",
+    "French": "\u00e9tude",
+    "English_phonetics": "steudi",
+    "French_phonetics": "\u0259tyd",
+    "mode": ""
+  },
+  {
+    "id": "56",
+    "English": "why",
+    "French": "pourquoi",
+    "English_phonetics": "wh-aie",
+    "French_phonetics": "pu\u0281kwa",
+    "mode": ""
+  },
+  {
+    "id": "57",
+    "English": "game",
+    "French": "Jeu",
+    "English_phonetics": "gu-aime",
+    "French_phonetics": "\u0292\u00f8",
+    "mode": ""
+  },
+  {
+    "id": "58",
+    "English": "free",
+    "French": "gratuit",
+    "English_phonetics": "fri",
+    "French_phonetics": "\u0261\u0281at\u0265i",
+    "mode": ""
+  },
+  {
+    "id": "59",
+    "English": "too",
+    "French": "aussi",
+    "English_phonetics": "tou",
+    "French_phonetics": "osi",
+    "mode": ""
+  },
+  {
+    "id": "60",
+    "English": "had",
+    "French": "avait",
+    "English_phonetics": "ad",
+    "French_phonetics": "av\u025b",
+    "mode": ""
+  },
+  {
+    "id": "61",
+    "English": "right",
+    "French": "droit",
+    "English_phonetics": "wr-aille-t",
+    "French_phonetics": "d\u0281wa",
+    "mode": ""
+  },
+  {
+    "id": "62",
+    "English": "still",
+    "French": "encore",
+    "English_phonetics": "stil",
+    "French_phonetics": "\u0251\u0303k\u0254\u0281",
+    "mode": ""
+  },
+  {
+    "id": "63",
+    "English": "after",
+    "French": "apr\u00e8s",
+    "English_phonetics": "aphterre",
+    "French_phonetics": "ap\u0281\u025b",
+    "mode": ""
+  },
+  {
+    "id": "64",
+    "English": "best",
+    "French": "meilleur",
+    "English_phonetics": "baist",
+    "French_phonetics": "m\u025bj\u0153\u0281",
+    "mode": ""
+  },
+  {
+    "id": "65",
+    "English": "since",
+    "French": "depuis",
+    "English_phonetics": "sinse",
+    "French_phonetics": "d\u0259p\u0265i",
+    "mode": ""
+  },
+  {
+    "id": "66",
+    "English": "now",
+    "French": "maintenant",
+    "English_phonetics": "nauw",
+    "French_phonetics": "m\u025b\u0303tn\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "67",
+    "English": "around",
+    "French": "autour",
+    "English_phonetics": "euraund",
+    "French_phonetics": "otu\u0281",
+    "mode": ""
+  },
+  {
+    "id": "68",
+    "English": "usually",
+    "French": "habituellement",
+    "English_phonetics": "yu-jus-alli",
+    "French_phonetics": "dabityd",
+    "mode": ""
+  },
+  {
+    "id": "69",
+    "English": "form",
+    "French": "forme",
+    "English_phonetics": "faurme",
+    "French_phonetics": "f\u0254\u0281m",
+    "mode": ""
+  },
+  {
+    "id": "70",
+    "English": "air",
+    "French": "air",
+    "English_phonetics": "\u00e9rre",
+    "French_phonetics": "\u025b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "71",
+    "English": "place",
+    "French": "endroit",
+    "English_phonetics": "play-se",
+    "French_phonetics": "\u0251\u0303d\u0281wa",
+    "mode": ""
+  },
+  {
+    "id": "72",
+    "English": "number",
+    "French": "nombre",
+    "English_phonetics": "n\u0153mbeure",
+    "French_phonetics": "n\u0254\u0303b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "73",
+    "English": "part",
+    "French": "partie",
+    "English_phonetics": "parte",
+    "French_phonetics": "pa\u0281ti",
+    "mode": ""
+  },
+  {
+    "id": "74",
+    "English": "field",
+    "French": "champ",
+    "English_phonetics": "fillde",
+    "French_phonetics": "\u0283\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "75",
+    "English": "once",
+    "French": "une seul fois",
+    "English_phonetics": "wouance",
+    "French_phonetics": "yn\u00a0s\u0153l\u00a0fwa",
+    "mode": ""
+  },
+  {
+    "id": "76",
+    "English": "down",
+    "French": "vers le bas",
+    "English_phonetics": "dauwne",
+    "French_phonetics": "v\u025b\u0281\u00a0l\u0259\u00a0ba",
+    "mode": ""
+  },
+  {
+    "id": "77",
+    "English": "fish",
+    "French": "poisson",
+    "English_phonetics": "fich",
+    "French_phonetics": "pwas\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "78",
+    "English": "both",
+    "French": "les deux",
+    "English_phonetics": "bause",
+    "French_phonetics": "le\u00a0d\u00f8",
+    "mode": ""
+  },
+  {
+    "id": "79",
+    "English": "sure",
+    "French": "bien sur",
+    "English_phonetics": "churre",
+    "French_phonetics": "bj\u025b\u0303\u00a0sy\u0281",
+    "mode": ""
+  },
+  {
+    "id": "80",
+    "English": "without",
+    "French": "sans",
+    "English_phonetics": "wiz-awt",
+    "French_phonetics": "s\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "81",
+    "English": "back",
+    "French": "arri\u00e8re",
+    "English_phonetics": "baque",
+    "French_phonetics": "a\u0281j\u025b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "82",
+    "English": "better",
+    "French": "mieux",
+    "English_phonetics": "b\u00e9taire",
+    "French_phonetics": "mj\u00f8",
+    "mode": ""
+  },
+  {
+    "id": "83",
+    "English": "process",
+    "French": "processus",
+    "English_phonetics": "processe",
+    "French_phonetics": "p\u0281\u0254sesys",
+    "mode": ""
+  },
+  {
+    "id": "84",
+    "English": "heat",
+    "French": "chaleur",
+    "English_phonetics": "hit",
+    "French_phonetics": "\u0283al\u0153\u0281",
+    "mode": ""
+  },
+  {
+    "id": "85",
+    "English": "enough",
+    "French": "assez",
+    "English_phonetics": "\u00e9nauwf",
+    "French_phonetics": "ase",
+    "mode": ""
+  },
+  {
+    "id": "86",
+    "English": "long",
+    "French": "long",
+    "English_phonetics": "longue",
+    "French_phonetics": "l\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "87",
+    "English": "a lot",
+    "French": "beaucoup",
+    "English_phonetics": "eu laute",
+    "French_phonetics": "boku",
+    "mode": ""
+  },
+  {
+    "id": "88",
+    "English": "hand",
+    "French": "main",
+    "English_phonetics": "h-und",
+    "French_phonetics": "m\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "89",
+    "English": "small",
+    "French": "petit",
+    "English_phonetics": "smaule",
+    "French_phonetics": "p\u0259ti",
+    "mode": ""
+  },
+  {
+    "id": "90",
+    "English": "though",
+    "French": "bien que",
+    "English_phonetics": "zauw",
+    "French_phonetics": "bj\u025b\u0303\u00a0k\u0259",
+    "mode": ""
+  },
+  {
+    "id": "91",
+    "English": "experience",
+    "French": "de l'exp\u00e9rience",
+    "English_phonetics": "experience",
+    "French_phonetics": "d\u0259\u00a0l\u025bkspe\u0281j\u0251\u0303s",
+    "mode": ""
+  },
+  {
+    "id": "92",
+    "English": "job",
+    "French": "emploi",
+    "English_phonetics": "djobe",
+    "French_phonetics": "\u0251\u0303plwa",
+    "mode": ""
+  },
+  {
+    "id": "93",
+    "English": "really",
+    "French": "vraiment",
+    "English_phonetics": "relli",
+    "French_phonetics": "v\u0281\u025bm\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "94",
+    "English": "book",
+    "French": "livre",
+    "English_phonetics": "bouque",
+    "French_phonetics": "liv\u0281",
+    "mode": ""
+  },
+  {
+    "id": "95",
+    "English": "early",
+    "French": "t\u00f4t",
+    "English_phonetics": "eurli",
+    "French_phonetics": "to",
+    "mode": ""
+  },
+  {
+    "id": "96",
+    "English": "end",
+    "French": "fin",
+    "English_phonetics": "\u00e9nde",
+    "French_phonetics": "f\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "97",
+    "English": "never",
+    "French": "jamais",
+    "English_phonetics": "n\u00e9v\u00e9rre",
+    "French_phonetics": "\u0292am\u025b",
+    "mode": ""
+  },
+  {
+    "id": "98",
+    "English": "less",
+    "French": "moins",
+    "English_phonetics": "laisse",
+    "French_phonetics": "mw\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "99",
+    "English": "high",
+    "French": "haut",
+    "English_phonetics": "aille",
+    "French_phonetics": "o",
+    "mode": ""
+  },
+  {
+    "id": "100",
+    "English": "off",
+    "French": "de",
+    "English_phonetics": "ofe",
+    "French_phonetics": "d\u0259",
+    "mode": ""
+  },
+  {
+    "id": "101",
+    "English": "point",
+    "French": "point",
+    "English_phonetics": "poynt",
+    "French_phonetics": "pw\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "102",
+    "English": "type",
+    "French": "type",
+    "English_phonetics": "taillpe",
+    "French_phonetics": "tip",
+    "mode": ""
+  },
+  {
+    "id": "103",
+    "English": "here",
+    "French": "Ici",
+    "English_phonetics": "ire",
+    "French_phonetics": "isi",
+    "mode": ""
+  },
+  {
+    "id": "104",
+    "English": "home",
+    "French": "domicile",
+    "English_phonetics": "aume",
+    "French_phonetics": "d\u0254misil",
+    "mode": ""
+  },
+  {
+    "id": "105",
+    "English": "little",
+    "French": "petit",
+    "English_phonetics": "liteule",
+    "French_phonetics": "p\u0259ti",
+    "mode": ""
+  },
+  {
+    "id": "106",
+    "English": "tonight",
+    "French": "ce soir",
+    "English_phonetics": "tounaillte",
+    "French_phonetics": "s\u0259\u00a0swa\u0281",
+    "mode": ""
+  },
+  {
+    "id": "107",
+    "English": "under",
+    "French": "en dessous de",
+    "English_phonetics": "\u0153ndeure",
+    "French_phonetics": "\u0251\u0303\u00a0d\u0259su\u00a0d\u0259",
+    "mode": ""
+  },
+  {
+    "id": "108",
+    "English": "value",
+    "French": "valeur",
+    "English_phonetics": "valiu",
+    "French_phonetics": "val\u0153\u0281",
+    "mode": ""
+  },
+  {
+    "id": "109",
+    "English": "always",
+    "French": "toujours",
+    "English_phonetics": "aulw\u00e8s",
+    "French_phonetics": "tu\u0292u\u0281",
+    "mode": ""
+  },
+  {
+    "id": "110",
+    "English": "body",
+    "French": "corps",
+    "English_phonetics": "baudi",
+    "French_phonetics": "k\u0254\u0281",
+    "mode": ""
+  },
+  {
+    "id": "111",
+    "English": "market",
+    "French": "march\u00e9",
+    "English_phonetics": "marquette",
+    "French_phonetics": "ma\u0281\u0283e",
+    "mode": ""
+  },
+  {
+    "id": "112",
+    "English": "guide",
+    "French": "guide",
+    "English_phonetics": "guaillde",
+    "French_phonetics": "\u0261ide",
+    "mode": ""
+  },
+  {
+    "id": "113",
+    "English": "interest",
+    "French": "int\u00e9r\u00eat",
+    "English_phonetics": "int\u00e9r\u00e9ste",
+    "French_phonetics": "\u025b\u0303te\u0281\u025b",
+    "mode": ""
+  },
+  {
+    "id": "114",
+    "English": "sometimes",
+    "French": "parfois",
+    "English_phonetics": "saumetaille-sme",
+    "French_phonetics": "pa\u0281fwa",
+    "mode": ""
+  },
+  {
+    "id": "115",
+    "English": "next",
+    "French": "suivant",
+    "English_phonetics": "n\u00e9qu-ste",
+    "French_phonetics": "s\u0265iv\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "116",
+    "English": "state",
+    "French": "Etat",
+    "English_phonetics": "st-hey-te",
+    "French_phonetics": "\u0259ta",
+    "mode": ""
+  },
+  {
+    "id": "117",
+    "English": "together",
+    "French": "ensemble",
+    "English_phonetics": "tougu\u00e9ser",
+    "French_phonetics": "\u0251\u0303s\u0251\u0303bl",
+    "mode": ""
+  },
+  {
+    "id": "118",
+    "English": "radio",
+    "French": "radio",
+    "English_phonetics": "radio",
+    "French_phonetics": "\u0281adjo",
+    "mode": ""
+  },
+  {
+    "id": "119",
+    "English": "course",
+    "French": "cours",
+    "English_phonetics": "course",
+    "French_phonetics": "ku\u0281",
+    "mode": ""
+  },
+  {
+    "id": "120",
+    "English": "hard",
+    "French": "difficile",
+    "English_phonetics": "arde",
+    "French_phonetics": "difisil",
+    "mode": ""
+  },
+  {
+    "id": "121",
+    "English": "company",
+    "French": "compagnie",
+    "English_phonetics": "compani",
+    "French_phonetics": "k\u0254\u0303pa\u0272i",
+    "mode": ""
+  },
+  {
+    "id": "122",
+    "English": "past",
+    "French": "pass\u00e9",
+    "English_phonetics": "paste",
+    "French_phonetics": "pase",
+    "mode": ""
+  },
+  {
+    "id": "123",
+    "English": "price",
+    "French": "prix",
+    "English_phonetics": "praillse",
+    "French_phonetics": "p\u0281i",
+    "mode": ""
+  },
+  {
+    "id": "124",
+    "English": "size",
+    "French": "Taille",
+    "English_phonetics": "saille-ze",
+    "French_phonetics": "taj",
+    "mode": ""
+  },
+  {
+    "id": "125",
+    "English": "away",
+    "French": "absent",
+    "English_phonetics": "euw-hey",
+    "French_phonetics": "aps\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "126",
+    "English": "card",
+    "French": "carte",
+    "English_phonetics": "carde",
+    "French_phonetics": "ka\u0281t",
+    "mode": ""
+  },
+  {
+    "id": "127",
+    "English": "list",
+    "French": "liste",
+    "English_phonetics": "liste",
+    "French_phonetics": "list",
+    "mode": ""
+  },
+  {
+    "id": "128",
+    "English": "mind",
+    "French": "esprit",
+    "English_phonetics": "maille-nde",
+    "French_phonetics": "\u025bsp\u0281i",
+    "mode": ""
+  },
+  {
+    "id": "129",
+    "English": "real",
+    "French": "vrai",
+    "English_phonetics": "ril",
+    "French_phonetics": "v\u0281\u025b",
+    "mode": ""
+  },
+  {
+    "id": "130",
+    "English": "trade",
+    "French": "commerce",
+    "English_phonetics": "traiyde",
+    "French_phonetics": "k\u0254m\u025b\u0281s",
+    "mode": ""
+  },
+  {
+    "id": "131",
+    "English": "likely",
+    "French": "probable",
+    "English_phonetics": "laillequeli",
+    "French_phonetics": "p\u0281\u0254babl",
+    "mode": ""
+  },
+  {
+    "id": "132",
+    "English": "line",
+    "French": "ligne",
+    "English_phonetics": "l'aille-gne",
+    "French_phonetics": "li\u0272",
+    "mode": ""
+  },
+  {
+    "id": "133",
+    "English": "group",
+    "French": "groupe",
+    "English_phonetics": "groupe",
+    "French_phonetics": "\u0261\u0281up",
+    "mode": ""
+  },
+  {
+    "id": "134",
+    "English": "risk",
+    "French": "risque",
+    "English_phonetics": "risque",
+    "French_phonetics": "\u0281isk",
+    "mode": ""
+  },
+  {
+    "id": "135",
+    "English": "word",
+    "French": "mot",
+    "English_phonetics": "waurd",
+    "French_phonetics": "mo",
+    "mode": ""
+  },
+  {
+    "id": "136",
+    "English": "fat",
+    "French": "gros",
+    "English_phonetics": "fatte",
+    "French_phonetics": "\u0261\u0281o",
+    "mode": ""
+  },
+  {
+    "id": "137",
+    "English": "force",
+    "French": "force",
+    "English_phonetics": "force",
+    "French_phonetics": "f\u0254\u0281s",
+    "mode": ""
+  },
+  {
+    "id": "138",
+    "English": "key",
+    "French": "cl\u00e9",
+    "English_phonetics": "qui",
+    "French_phonetics": "kle",
+    "mode": ""
+  },
+  {
+    "id": "139",
+    "English": "light",
+    "French": "lumi\u00e8re",
+    "English_phonetics": "l'aille-te",
+    "French_phonetics": "lymj\u025b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "140",
+    "English": "simply",
+    "French": "simplement",
+    "English_phonetics": "simpli",
+    "French_phonetics": "s\u025b\u0303pl\u0259m\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "141",
+    "English": "today",
+    "French": "aujourd'hui",
+    "English_phonetics": "toud-ai",
+    "French_phonetics": "o\u0292u\u0281d\u0265i",
+    "mode": ""
+  },
+  {
+    "id": "142",
+    "English": "major",
+    "French": "majeur",
+    "English_phonetics": "mai-gore",
+    "French_phonetics": "ma\u0292\u0153\u0281",
+    "mode": ""
+  },
+  {
+    "id": "143",
+    "English": "name",
+    "French": "nom",
+    "English_phonetics": "naimme",
+    "French_phonetics": "n\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "144",
+    "English": "school",
+    "French": "l'\u00e9cole",
+    "English_phonetics": "squ-houle",
+    "French_phonetics": "lek\u0254l",
+    "mode": ""
+  },
+  {
+    "id": "145",
+    "English": "top",
+    "French": "haut",
+    "English_phonetics": "taupe",
+    "French_phonetics": "o",
+    "mode": ""
+  },
+  {
+    "id": "146",
+    "English": "generally",
+    "French": "g\u00e9n\u00e9ralement",
+    "English_phonetics": "g\u00e9n\u00e9rali",
+    "French_phonetics": "\u0292ene\u0281alm\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "147",
+    "English": "left",
+    "French": "gauche",
+    "English_phonetics": "laifte",
+    "French_phonetics": "\u0261o\u0283",
+    "mode": ""
+  },
+  {
+    "id": "148",
+    "English": "amount",
+    "French": "montant",
+    "English_phonetics": "\u0153-mauwnt",
+    "French_phonetics": "m\u0254\u0303t\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "149",
+    "English": "level",
+    "French": "niveau",
+    "English_phonetics": "l\u00e9v\u00e9l",
+    "French_phonetics": "nivo",
+    "mode": ""
+  },
+  {
+    "id": "150",
+    "English": "order",
+    "French": "commande",
+    "English_phonetics": "ord\u0153r",
+    "French_phonetics": "k\u0254m\u0251\u0303d",
+    "mode": ""
+  },
+  {
+    "id": "151",
+    "English": "research",
+    "French": "recherche",
+    "English_phonetics": "ris\u0153rch",
+    "French_phonetics": "\u0281\u0259\u0283\u025b\u0281\u0283",
+    "mode": ""
+  },
+  {
+    "id": "152",
+    "English": "sense",
+    "French": "sens",
+    "English_phonetics": "s\u00e9nsse",
+    "French_phonetics": "s\u0251\u0303s",
+    "mode": ""
+  },
+  {
+    "id": "153",
+    "English": "service",
+    "French": "service",
+    "English_phonetics": "service",
+    "French_phonetics": "s\u025b\u0281vis",
+    "mode": ""
+  },
+  {
+    "id": "154",
+    "English": "instead",
+    "French": "au lieu",
+    "English_phonetics": "in-st\u00e9de",
+    "French_phonetics": "o\u00a0lj\u00f8",
+    "mode": ""
+  },
+  {
+    "id": "155",
+    "English": "least",
+    "French": "au moins",
+    "English_phonetics": "liste",
+    "French_phonetics": "o\u00a0mw\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "156",
+    "English": "natural",
+    "French": "naturel",
+    "English_phonetics": "naturale",
+    "French_phonetics": "naty\u0281\u025bl",
+    "mode": ""
+  },
+  {
+    "id": "157",
+    "English": "piece",
+    "French": "morceau",
+    "English_phonetics": "pisse",
+    "French_phonetics": "m\u0254\u0281so",
+    "mode": ""
+  },
+  {
+    "id": "158",
+    "English": "web",
+    "French": "toile",
+    "English_phonetics": "w\u00e9be",
+    "French_phonetics": "twal",
+    "mode": ""
+  },
+  {
+    "id": "159",
+    "English": "boss",
+    "French": "patron",
+    "English_phonetics": "boss",
+    "French_phonetics": "pat\u0281\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "160",
+    "English": "short",
+    "French": "court",
+    "English_phonetics": "chaurt",
+    "French_phonetics": "ku\u0281",
+    "mode": ""
+  },
+  {
+    "id": "161",
+    "English": "last",
+    "French": "dernier",
+    "English_phonetics": "laste",
+    "French_phonetics": "d\u025b\u0281nje",
+    "mode": ""
+  },
+  {
+    "id": "162",
+    "English": "actually",
+    "French": "r\u00e9ellement",
+    "English_phonetics": "a-cju-alli",
+    "French_phonetics": "\u0281e\u025blm\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "163",
+    "English": "far",
+    "French": "loin",
+    "English_phonetics": "far",
+    "French_phonetics": "lw\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "164",
+    "English": "fun",
+    "French": "amusant",
+    "English_phonetics": "feune",
+    "French_phonetics": "amyz\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "165",
+    "English": "house",
+    "French": "maison",
+    "English_phonetics": "awsse",
+    "French_phonetics": "m\u025bz\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "166",
+    "English": "page",
+    "French": "page",
+    "English_phonetics": "paie-ge",
+    "French_phonetics": "pa\u0292",
+    "mode": ""
+  },
+  {
+    "id": "167",
+    "English": "term",
+    "French": "terme",
+    "English_phonetics": "term",
+    "French_phonetics": "t\u025b\u0281m",
+    "mode": ""
+  },
+  {
+    "id": "168",
+    "English": "within",
+    "French": "dans",
+    "English_phonetics": "wizin",
+    "French_phonetics": "d\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "169",
+    "English": "along",
+    "French": "le long de",
+    "English_phonetics": "alongue",
+    "French_phonetics": "l\u0259\u00a0l\u0254\u0303\u00a0d\u0259",
+    "mode": ""
+  },
+  {
+    "id": "170",
+    "English": "answer",
+    "French": "r\u00e9ponce",
+    "English_phonetics": "answaire",
+    "French_phonetics": "\u0281ep\u0254\u0303s",
+    "mode": ""
+  },
+  {
+    "id": "171",
+    "English": "quite",
+    "French": "assez",
+    "English_phonetics": "quwaite",
+    "French_phonetics": "ase",
+    "mode": ""
+  },
+  {
+    "id": "172",
+    "English": "single",
+    "French": "unique",
+    "English_phonetics": "singueule",
+    "French_phonetics": "ynik",
+    "mode": ""
+  },
+  {
+    "id": "173",
+    "English": "sound",
+    "French": "du son",
+    "English_phonetics": "sauwnde",
+    "French_phonetics": "dy\u00a0s\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "174",
+    "English": "again",
+    "French": "encore",
+    "English_phonetics": "euguaillne",
+    "French_phonetics": "\u0251\u0303k\u0254\u0281",
+    "mode": ""
+  },
+  {
+    "id": "175",
+    "English": "focus",
+    "French": "centre",
+    "English_phonetics": "sentaire",
+    "French_phonetics": "s\u0251\u0303t\u0281",
+    "mode": ""
+  },
+  {
+    "id": "176",
+    "English": "matter",
+    "French": "affaire",
+    "English_phonetics": "mattaire",
+    "French_phonetics": "af\u025b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "177",
+    "English": "soil",
+    "French": "terre",
+    "English_phonetics": "sauille",
+    "French_phonetics": "t\u025b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "178",
+    "English": "board",
+    "French": "planche",
+    "English_phonetics": "baurde",
+    "French_phonetics": "pl\u0251\u0303\u0283",
+    "mode": ""
+  },
+  {
+    "id": "179",
+    "English": "later",
+    "French": "plus tard",
+    "English_phonetics": "laillteur",
+    "French_phonetics": "ply\u00a0ta\u0281",
+    "mode": ""
+  },
+  {
+    "id": "180",
+    "English": "oil",
+    "French": "huile",
+    "English_phonetics": "auille",
+    "French_phonetics": "\u0265il",
+    "mode": ""
+  },
+  {
+    "id": "181",
+    "English": "picture",
+    "French": "image",
+    "English_phonetics": "piquture",
+    "French_phonetics": "ima\u0292",
+    "mode": ""
+  },
+  {
+    "id": "182",
+    "English": "rather",
+    "French": "plut\u00f4t",
+    "English_phonetics": "razer",
+    "French_phonetics": "plyto",
+    "mode": ""
+  },
+  {
+    "id": "183",
+    "English": "access",
+    "French": "acc\u00e8s",
+    "English_phonetics": "acc\u00e8sse",
+    "French_phonetics": "aks\u025b",
+    "mode": ""
+  },
+  {
+    "id": "184",
+    "English": "almost",
+    "French": "presque",
+    "English_phonetics": "aulmauste",
+    "French_phonetics": "p\u0281\u025bsk\u0259",
+    "mode": ""
+  },
+  {
+    "id": "185",
+    "English": "especially",
+    "French": "sp\u00e9cialement",
+    "English_phonetics": "\u00e9spechialli",
+    "French_phonetics": "spesjalm\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "186",
+    "English": "garden",
+    "French": "jardin",
+    "English_phonetics": "garden",
+    "French_phonetics": "\u0292a\u0281d\u025b\u0303",
+    "mode": ""
+  },
+  {
+    "id": "187",
+    "English": "lower",
+    "French": "inf\u00e9rieur",
+    "English_phonetics": "lauwer",
+    "French_phonetics": "\u025b\u0303fe\u0281j\u0153\u0281",
+    "mode": ""
+  },
+  {
+    "id": "188",
+    "English": "quickly",
+    "French": "rapidement",
+    "English_phonetics": "quiqueli",
+    "French_phonetics": "\u0281apidm\u0251\u0303",
+    "mode": ""
+  },
+  {
+    "id": "189",
+    "English": "open",
+    "French": "ouvert",
+    "English_phonetics": "aupaine",
+    "French_phonetics": "uv\u025b\u0281",
+    "mode": ""
+  },
+  {
+    "id": "190",
+    "English": "range",
+    "French": "intervalle",
+    "English_phonetics": "range",
+    "French_phonetics": "\u025b\u0303t\u025b\u0281val",
+    "mode": ""
+  },
+  {
+    "id": "191",
+    "English": "rate",
+    "French": "taux",
+    "English_phonetics": "reille-tte",
+    "French_phonetics": "to",
+    "mode": ""
+  },
+  {
+    "id": "192",
+    "English": "reason",
+    "French": "raison",
+    "English_phonetics": "risaune",
+    "French_phonetics": "\u0281\u025bz\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "193",
+    "English": "above",
+    "French": "au dessus de",
+    "English_phonetics": "\u0153ubauve",
+    "French_phonetics": "o\u00a0d\u0259sy\u00a0d\u0259",
+    "mode": ""
+  },
+  {
+    "id": "194",
+    "English": "according",
+    "French": "selon",
+    "English_phonetics": "aquaurd-ingue",
+    "French_phonetics": "s\u0259l\u0254\u0303",
+    "mode": ""
+  },
+  {
+    "id": "195",
+    "English": "site",
+    "French": "site",
+    "English_phonetics": "saille-te",
+    "French_phonetics": "sit",
+    "mode": ""
+  },
+  {
+    "id": "196",
+    "English": "demand",
+    "French": "demande",
+    "English_phonetics": "diminde",
+    "French_phonetics": "d\u0259m\u0251\u0303d",
+    "mode": ""
+  },
+  {
+    "id": "197",
+    "English": "ever",
+    "French": "toujours",
+    "English_phonetics": "aiv\u00e8re",
+    "French_phonetics": "tu\u0292u\u0281",
+    "mode": ""
+  },
+  {
+    "id": "198",
+    "English": "exercise",
+    "French": "exercice",
+    "English_phonetics": "aix\u00e8re-saille-ze",
+    "French_phonetics": "\u025b\u0261z\u025b\u0281sis",
+    "mode": ""
+  },
+  {
+    "id": "199",
+    "English": "image",
+    "French": "image",
+    "English_phonetics": "im-hey-ge",
+    "French_phonetics": "ima\u0292",
+    "mode": ""
+  },
+  {
+    "id": "200",
+    "English": "Swear words",
+    "French": "Gros mots",
+    "English_phonetics": "swaire words",
+    "French_phonetics": "\u0261\u0281o mo",
+    "mode": "swear_words"
+  },
+  {
+    "id": "201",
+    "English": "shit",
+    "French": "merde",
+    "English_phonetics": "chite",
+    "French_phonetics": "m\u025b\u0281d",
+    "mode": "swear_words"
+  },
+  {
+    "id": "202",
+    "English": "ass hole",
+    "French": "trou du cul",
+    "English_phonetics": "as ole",
+    "French_phonetics": "t\u0281u\u00a0dy\u00a0ky",
+    "mode": "swear_words"
+  },
+  {
+    "id": "203",
+    "English": "fuck",
+    "French": "putain",
+    "English_phonetics": "feuque",
+    "French_phonetics": "pyt\u025b\u0303",
+    "mode": "swear_words"
+  },
+  {
+    "id": "204",
+    "English": "that piss me off",
+    "French": "ca me fait chier",
+    "English_phonetics": "zat piss mi of",
+    "French_phonetics": "ka\u00a0m\u0259\u00a0f\u025b\u00a0\u0283je",
+    "mode": "swear_words"
+  },
+  {
+    "id": "205",
+    "English": "bitch",
+    "French": "salope",
+    "English_phonetics": "bitch",
+    "French_phonetics": "sal\u0254p",
+    "mode": "swear_words"
+  },
+  {
+    "id": "206",
+    "English": "shut up",
+    "French": "ta gueule",
+    "English_phonetics": "sheut eup",
+    "French_phonetics": "ta\u00a0\u0261\u0153l",
+    "mode": "swear_words"
+  },
+  {
+    "id": "207",
+    "English": "bug off",
+    "French": "casse toi",
+    "English_phonetics": "beug of",
+    "French_phonetics": "kas\u00a0twa",
+    "mode": "swear_words"
+  },
+  {
+    "id": "208",
+    "English": "go and fuck yourself",
+    "French": "va te faire foutre",
+    "English_phonetics": "go n feuque yourself",
+    "French_phonetics": "va\u00a0t\u0259\u00a0f\u025b\u0281\u00a0fut\u0281",
+    "mode": "swear_words"
+  },
+  {
+    "id": "209",
+    "English": "fool",
+    "French": "imbecile",
+    "English_phonetics": "foule",
+    "French_phonetics": "\u025b\u0303psil",
+    "mode": "swear_words"
+  },
+  {
+    "id": "210",
+    "English": "fucker",
+    "French": "connard",
+    "English_phonetics": "feuqueur",
+    "French_phonetics": "k\u0254na\u0281",
+    "mode": "swear_words"
+  },
+  {
+    "id": "211",
+    "English": "garbage",
+    "French": "ordure",
+    "English_phonetics": "garbaidge",
+    "French_phonetics": "\u0254\u0281dy\u0281",
+    "mode": "swear_words"
+  },
+  {
+    "id": "212",
+    "English": "big shit",
+    "French": "grosse merde",
+    "English_phonetics": "big chite",
+    "French_phonetics": "\u0261\u0281os\u00a0m\u025b\u0281d",
+    "mode": "swear_words"
+  },
+  {
+    "id": "213",
+    "English": "harse hole",
+    "French": "gros con",
+    "English_phonetics": "as ole",
+    "French_phonetics": "\u0261\u0281o\u00a0k\u0254\u0303",
+    "mode": "swear_words"
+  },
+  {
+    "id": "214",
+    "English": "slut",
+    "French": "salope",
+    "English_phonetics": "sleute",
+    "French_phonetics": "sal\u0254p",
+    "mode": "swear_words"
+  },
+  {
+    "id": "215",
+    "English": "go and fuck your mother",
+    "French": "va niquer ta mere",
+    "English_phonetics": "go n feuque your mozer",
+    "French_phonetics": "va\u00a0nike\u00a0ta\u00a0m\u025b\u0281",
+    "mode": "swear_words"
+  },
+  {
+    "id": "216",
+    "English": "bastard",
+    "French": "batard",
+    "English_phonetics": "bastard",
+    "French_phonetics": "bata\u0281",
+    "mode": "swear_words"
+  },
+  {
+    "id": "217",
+    "English": "wanker",
+    "French": "branleur",
+    "English_phonetics": "wanker",
+    "French_phonetics": "b\u0281\u0251\u0303l\u0153\u0281",
+    "mode": "swear_words"
+  },
+  {
+    "id": "218",
+    "English": "ball-breaker",
+    "French": "casse-couille",
+    "English_phonetics": "baule-braiqueur",
+    "French_phonetics": "kaskuj",
+    "mode": "swear_words"
+  },
+  {
+    "id": "219",
+    "English": "son of a bitch",
+    "French": "fils de pute",
+    "English_phonetics": "sonne aufe eu bitch",
+    "French_phonetics": "fis \u00a0d\u0259\u00a0pyt",
+    "mode": "swear_words"
+  },
+  {
+    "id": "220",
+    "English": "dickhead",
+    "French": "tete-de-noeud",
+    "English_phonetics": "dique \u00e9de",
+    "French_phonetics": "t\u0259tdn\u0254\u00f8",
+    "mode": "swear_words"
+  },
+  {
+    "id": "221",
+    "English": "Pick up and sex",
+    "French": "Romance et sexe",
+    "English_phonetics": "pique up n sexe",
+    "French_phonetics": "\u0281\u0254m\u0251\u0303s\u00a0e\u00a0s\u025bks",
+    "mode": "pickup"
+  },
+  {
+    "id": "222",
+    "English": "single",
+    "French": "c\u00e9libataire",
+    "English_phonetics": "singueule",
+    "French_phonetics": "s\u0259libat\u025b\u0281",
+    "mode": "pickup"
+  },
+  {
+    "id": "223",
+    "English": "beautiful eyes",
+    "French": "beaux yeux",
+    "English_phonetics": "bioutiful ailles",
+    "French_phonetics": "boz-\u00a0j\u00f8",
+    "mode": "pickup"
+  },
+  {
+    "id": "224",
+    "English": "a kiss",
+    "French": "un baiser",
+    "English_phonetics": "\u0153 kiss",
+    "French_phonetics": "\u025b\u0303\u00a0beze",
+    "mode": "pickup"
+  },
+  {
+    "id": "225",
+    "English": "massage",
+    "French": "massage",
+    "English_phonetics": "massage",
+    "French_phonetics": "masa\u0292",
+    "mode": "pickup"
+  },
+  {
+    "id": "226",
+    "English": "he is hot",
+    "French": "il est charmant",
+    "English_phonetics": "i is ot",
+    "French_phonetics": "il\u00a0\u025b\u00a0\u0283a\u0281m\u0251\u0303",
+    "mode": "pickup"
+  },
+  {
+    "id": "227",
+    "English": "let's go home",
+    "French": "on rentre",
+    "English_phonetics": "lait's og homme",
+    "French_phonetics": "\u0254\u0303\u00a0\u0281\u0251\u0303t\u0281",
+    "mode": "pickup"
+  },
+  {
+    "id": "228",
+    "English": "let's jiggy jiggy",
+    "French": "faire crac crac",
+    "English_phonetics": "lait's jiggy jiggy",
+    "French_phonetics": "f\u025b\u0281\u00a0k\u0281ak\u00a0k\u0281ak",
+    "mode": "pickup"
+  },
+  {
+    "id": "229",
+    "English": "touch me here",
+    "French": "touche moi ici",
+    "English_phonetics": "teuch me \u00e9re",
+    "French_phonetics": "tu\u0283\u00a0mwa\u00a0isi",
+    "mode": "pickup"
+  },
+  {
+    "id": "230",
+    "English": "you smell good",
+    "French": "tu sens bon",
+    "English_phonetics": "you sm\u00e8lle goude",
+    "French_phonetics": "ty\u00a0s\u0251\u0303s b\u0254\u0303",
+    "mode": "pickup"
+  },
+  {
+    "id": "231",
+    "English": "let's have sex",
+    "French": "baisons",
+    "English_phonetics": "lait's ave sexe",
+    "French_phonetics": "b\u025bz\u0254\u0303",
+    "mode": "pickup"
+  },
+  {
+    "id": "232",
+    "English": "your skin is so soft",
+    "French": "ta peau est si douce",
+    "English_phonetics": "your skin is sau soft",
+    "French_phonetics": "ta\u00a0po\u00a0\u025b si\u00a0dus",
+    "mode": "pickup"
+  },
+  {
+    "id": "233",
+    "English": "that feels nice",
+    "French": "c'est bon",
+    "English_phonetics": "zat filse naille-se",
+    "French_phonetics": "s\u025b\u00a0b\u0254\u0303",
+    "mode": "pickup"
+  },
+  {
+    "id": "234",
+    "English": "incredible",
+    "French": "incroyable",
+    "English_phonetics": "incredibelle",
+    "French_phonetics": "\u025b\u0303k\u0281wajabl",
+    "mode": "pickup"
+  },
+  {
+    "id": "235",
+    "English": "horrible",
+    "French": "affreux",
+    "English_phonetics": "horribelle",
+    "French_phonetics": "af\u0281\u00f8",
+    "mode": "pickup"
+  },
+  {
+    "id": "236",
+    "English": "slower",
+    "French": "moins vite",
+    "English_phonetics": "slauwer",
+    "French_phonetics": "mw\u025b\u0303\u00a0vit",
+    "mode": "pickup"
+  },
+  {
+    "id": "237",
+    "English": "faster",
+    "French": "plus rapide",
+    "English_phonetics": "fastaire",
+    "French_phonetics": "ply\u00a0\u0281apid",
+    "mode": "pickup"
+  },
+  {
+    "id": "238",
+    "English": "stronger",
+    "French": "plus fort",
+    "English_phonetics": "strongueur",
+    "French_phonetics": "ply\u00a0f\u0254\u0281",
+    "mode": "pickup"
+  },
+  {
+    "id": "239",
+    "English": "let's sleep",
+    "French": "on dort",
+    "English_phonetics": "lait's slip",
+    "French_phonetics": "\u0254\u0303\u00a0d\u0254\u0281",
+    "mode": "pickup"
+  },
+  {
+    "id": "240",
+    "English": "let's stop",
+    "French": "on arr\u00eate",
+    "English_phonetics": "lait's stop",
+    "French_phonetics": "\u0254\u0303n-\u00a0a\u0281\u025bt",
+    "mode": "pickup"
+  }
+]

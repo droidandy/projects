@@ -1,0 +1,48 @@
+fragment ListPharmacy on PharmacyModel {
+    id
+    xmlId
+    title
+    address
+    metro
+    latitude
+    longitude
+    schedule
+    store
+    workSunday
+    workMonday
+    workTuesday
+    workWednesda
+    workThursday
+    workFriday
+    workSaturday
+    phone
+    city
+    isFavourite @client
+    coordinate {
+        id
+        latitude
+        longitude
+    }
+}
+
+mutation EditFavouritePharmacy($action: EditFavoritesProductsActions!, $id: Int) {
+    editFavoritesPharmacy(action: $action, pharmacyId: $id)
+}
+#
+#mutation UpdateFavouritePharmacies($ids: [Int]!) {
+#    updateFavouritePharmacies(ids: $ids) @client
+#}
+#
+#query GetFavouritePharmacies {
+#    favoritesPharmacy {
+#        ...ListPharmacy
+#    }
+#}
+#query GetIdsFavoritesPharmacy {
+#    idsFavoritesPharmacy
+#}
+query GetPharmacies {
+    pharmacies {
+        ...ListPharmacy
+    }
+}

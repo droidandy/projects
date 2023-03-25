@@ -1,0 +1,1 @@
+export const ReportsPageSymbol = Symbol('reports-page');

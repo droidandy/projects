@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://publicapi.scrum27.gett.io/v1/business/rides?business_id=UK-3950
+    body:
+      encoding: UTF-8
+      string: '{"pickup":{"latitude":51.5242536,"longitude":-0.1403077,"address":"339
+        Euston Rd, Kings Cross, London NW1 3AD, UK"},"rider":{"name":"Adriel Schmitt","phone_number":"(347)
+        084-2153"},"note_to_driver":"","product_id":"5178cd83-20bf-4991-b559-c1128dfae662","reference":"100031","destination":{"latitude":51.517297,"longitude":-0.0823724,"address":"23
+        Liverpool St, London EC2M, UK"},"payment_type":"voucher"}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 9d0578f2504e530ec4a26f5563c124b257ef2f80e363aec9b50663142235b89c
+      Content-Length:
+      - '405'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin,Accept,Content-Type,Authorization
+      Access-Control-Allow-Origin:
+      - ''
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Aug 2018 14:24:00 GMT
+      X-Rate-Limit-Limit:
+      - '1000000'
+      X-Rate-Limit-Remaining:
+      - '999991'
+      X-Rate-Limit-Reset:
+      - '2018-08-21T14:24:09Z'
+      X-Request-Id:
+      - 970022b6f9b4d494851d8f0c9fb68077
+      - 970022b6f9b4d494851d8f0c9fb68077
+      Content-Length:
+      - '475'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ride_id":"585","status":"Pending","product_id":"5178cd83-20bf-4991-b559-c1128dfae662","pickup":{"latitude":51.524254,"longitude":-0.140308,"address":"339
+        Euston Rd, Kings Cross, London NW1 3AD, UK"},"destination":{"latitude":51.517297,"longitude":-0.082372,"address":"23
+        Liverpool St, London EC2M, UK"},"rider":{"name":"Adriel Schmitt","phone_number":"+3470842153"},"reference":"100031","requested_at":"2018-08-21T15:23:59+01:00","scheduled_at":"2018-08-21T15:23:59+01:00"}'
+    http_version: 
+  recorded_at: Tue, 21 Aug 2018 14:24:00 GMT
+recorded_with: VCR 4.0.0

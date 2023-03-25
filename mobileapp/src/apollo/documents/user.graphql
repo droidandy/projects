@@ -1,0 +1,92 @@
+fragment User on UserModel {
+    id
+    login
+    email
+    name
+    secondName
+    lastName
+    personalPhoto
+    personalBirthday
+    personalGender
+    personalPhone
+
+    favoritePharmaciesIds
+    favoriteProductsIds
+
+    city {
+        ...City
+    }
+    citySelected
+}
+
+query GetUser {
+    user {
+        ...User
+    }
+}
+
+mutation UpdateUser(
+    $login: String!
+    $email: String!
+    $name: String
+    $second_name: String
+    $last_name: String
+    $personal_phone: String
+    $personal_birthday: DateTime
+    $personal_gender: Sex
+    $password: String
+) {
+    updateUserData(
+        data: {
+            login: $login
+            email: $email
+            name: $name
+            second_name: $second_name
+            last_name: $last_name
+            personal_phone: $personal_phone
+            personal_birthday: $personal_birthday
+            personal_gender: $personal_gender
+            password: $password
+        }
+    )
+}
+
+mutation Register($name: String!, $email: String!, $personalPhone: String!, $password: String!) {
+    register(data: {
+        name: $name
+        email: $email
+        personal_phone: $personalPhone
+        password: $password
+    })
+}
+
+mutation Login($emailOrPhone: String!, $password: String!) {
+    login(data: { emailOrPhone: $emailOrPhone, password: $password })
+}
+
+mutation CreateForgotToken ($login: String!) {
+    createForgotToken(data: { login: $login })
+}
+
+mutation ResetPassword($login: String!, $token: String!, $password: String!) {
+    resetPassword(data: {
+        login: $login,
+        token: $token,
+        password: $password
+    })
+}
+
+mutation UpdateCityByLocation($latitude: Float!, $longitude: Float!) {
+    updateCityByLocation(latitude: $latitude, longitude: $longitude) {
+        id
+        city {
+            ...City
+        }
+        citySelected
+    }
+}
+
+
+mutation UpdateUserPhoto($photo: String) {
+    setUserPhoto(photo: $photo)
+}

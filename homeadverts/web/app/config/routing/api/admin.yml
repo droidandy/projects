@@ -1,0 +1,11 @@
+_api_admin_article:
+    prefix: /article
+    resource: "@AppBundle/Resources/config/routing/api/admin/article.yml"
+
+_api_admin_property:
+    prefix: /property
+    resource: "@AppBundle/Resources/config/routing/api/admin/property.yml"
+
+_api_admin_report:
+    prefix: /report
+    resource: "@AppBundle/Resources/config/routing/api/admin/report.yml"

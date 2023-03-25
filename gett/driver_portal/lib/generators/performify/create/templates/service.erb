@@ -1,0 +1,23 @@
+class <%= class_name %> < ApplicationService
+  attr_reader :record
+
+  schema do
+    required(:foo).filled(:bar?)
+  end
+
+  def execute!
+    @record = Record.new(attributes)
+
+    authorize! @record
+
+    super do
+      @record.save
+    end
+  end
+
+  on_fail { errors!(record.errors.to_h) if record.present? }
+
+  private def attributes
+    {}
+  end
+end

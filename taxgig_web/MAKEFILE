@@ -1,0 +1,48 @@
+V ?= @
+SHELL := /usr/bin/env bash
+ERLSERVICE := $(shell pgrep beam.smp)
+
+ELIXIR = elixir
+
+VERSION = $(shell git describe --tags --abbrev=0 | sed 's/^v//')
+
+NO_COLOR=\033[0;0m
+INFO_COLOR=\033[2;32m
+SHOW_COLOR=\033[1;5;31m
+STAT_COLOR=\033[2;33m
+
+# ------------------------------------------------------------------------------
+
+help:
+			$(V)echo Please use \'make help\' or \'make ..any_parameters..\'
+
+git-%:
+			$(V)git add .
+			$(V)git commit -m "$(@:git-%=%)"
+			$(V)git push -u origin master
+
+pull:
+			$(V)git pull
+
+log:
+			$(V)clear
+			$(V)echo -e "\n"
+			$(V)echo -e "\t$(SHOW_COLOR) These are commits:$(NO_COLOR) \n"
+			$(V)git log --pretty="format:%ae|%an|%s"
+			$(V)echo -e "\n"
+
+
+clean:
+			$(V)rm -fr _build/ node_modules/ phoenix/ phoenix.js
+
+setup:
+			$(V)git clone https://github.com/phoenixframework/phoenix.git
+			$(V)cd phoenix/assets && npm install
+			$(V)cd ../../
+			$(V)npm install
+			$(V)npm audit fix
+
+test:
+			$(V)clear
+			$(V)echo -en "\n\t$(INFO_COLOR)Run server tests:$(NO_COLOR)\n\n"
+

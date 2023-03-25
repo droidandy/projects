@@ -1,0 +1,18 @@
+.vote-section {
+  padding: 0 20px;
+}
+.post-social-stats {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  ion-icon {
+    padding-right: 3px;
+    font-size: 2.1rem;
+    color: #747474;
+  }
+  span.post-stat {
+    font-size: 2.0rem;
+    @extend .secondary-font.semi-bold;
+    color: #747474;
+  }
+}

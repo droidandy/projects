@@ -1,0 +1,57 @@
+@import "~styles/variables";
+
+.integrations {
+  margin-bottom: 100px;
+
+  .container {
+    margin-bottom: 80px;
+  }
+
+  label {
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  p {
+    text-align: center;
+    padding-bottom: 40px;
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  & .image1Big,
+  & .image2Big {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  & .image1Small,
+  & .image2Small {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+
+    .container {
+      margin-bottom: 0;
+    }
+
+    label {
+      padding-bottom: 24px;
+    }
+
+    & .image1Big,
+    & .image2Big {
+      display: none;
+    }
+
+    & .image1Small,
+    & .image2Small {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+}

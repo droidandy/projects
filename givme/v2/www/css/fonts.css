@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'gotham-medium';
+  src: url('../fonts/gotham-rounded-medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gotham-rounded-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('../fonts/gotham-rounded-medium.woff2') format('woff2'), /!* Super Modern Browsers *!/*/
+       url('../fonts/gotham-rounded-medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/gotham-rounded-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gotham-rounded-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../fonts/gotham-rounded-bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gotham-rounded-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('../fonts/gotham-rounded-bold.woff2') format('woff2'), /!* Super Modern Browsers *!/*/
+       url('../fonts/gotham-rounded-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/gotham-rounded-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gotham-rounded-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+  font-family: 'gotham-book';
+  src: url('../fonts/gotham-rounded-book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gotham-rounded-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('../fonts/gotham-rounded-book.woff2') format('woff2'), /!* Super Modern Browsers *!/*/
+       url('../fonts/gotham-rounded-book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/gotham-rounded-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gotham-rounded-book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'gotham-light';
+  src: url('../fonts/gotham-rounded-light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/gotham-rounded-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       /*url('../fonts/gotham-rounded-light.woff2') format('woff2'), /!* Super Modern Browsers *!/*/
+       url('../fonts/gotham-rounded-light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/gotham-rounded-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/gotham-rounded-light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+

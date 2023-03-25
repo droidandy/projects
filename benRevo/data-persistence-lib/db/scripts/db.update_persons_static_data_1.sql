@@ -1,0 +1,60 @@
+INSERT INTO person (first_name, last_name, email, `type`, carrier_id) VALUES 
+('Ashlee', 'Johnson', 'ashlee.johnson3@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Cynthia', 'Khan', 'cynthia.khan@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Jeff', 'Koprivetz', 'jeff.koprivetz@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Steve', 'Cleeland', 'steven.cleeland@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Yanet', 'Galindo', 'yanet.galindo@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Kristine', 'Eagan', 'kristine.eagan@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Kristyn', 'Nelms', 'kristyn.nelms@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Kristin', 'Fortney', 'kristin.fortney@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Debra', 'Feuerman', 'debra.feuerman@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Asuncion', 'Sanchez', 'asuncion.sanchez@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Jerry', 'Connolly', 'jerry.connolly@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Tanya', 'Coty', 'tanya.coty@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Anita', 'Vincent', 'anita.vincent@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Eric', 'Windsor', 'eric.windsor@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Nicholas', 'Shuck', 'nicholas.shuck@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Kerri', 'DiCicco', 'kerri.dicicco@anthem.com', 'SALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'));
+
+INSERT INTO person (first_name, last_name, email, `type`, carrier_id) VALUES 
+('Jenn', 'Scott',	'jennifer.scott@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Nicole', 'Kharrat',	'nicole.kharrat@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Susan', 'Ellman', 'susan.ellman@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Vanessa', 'Rabay', 'vanessa.rabay@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Kellie', 'Hoomalu', 'kellie.hoomalu@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Crystal', 'Shepard', 'crystal.shepard2@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Olaf', 'Pacheco', 'olaf.pacheco@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Alejandra', 'Lam', 'alejandra.lam@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Nick', 'Ralph',	'nicholas.ralph@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Jillian', 'Young', 'jillian.young@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Sam', 'Williams', 'samuel.williams@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Stacie', 'Thomason', 'stacie.thomason@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Christine', 'Mouanoutoua', 'christine.mouanoutoua@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Blake', 'Billinger', 'blake.billinger@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Jennifer', 'Avalos', 'jennifer.avalos@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Jessie', 'Gonzalez', 'jessie.gonzalez@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')),
+('Marco', 'Flores', 'marco.flores@anthem.com', 'PRESALES', (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'));
+
+INSERT INTO person (first_name, last_name, email, `type`, carrier_id) VALUES 
+('Lisa', 'Espinosa', 'lisa.espinosa@uhc.com','SALES', (select carrier_id from carrier where name = 'UHC')),
+('Monique', 'Galvin', 'monique.galvin@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Kurt', 'Hall', 'kurt.hall@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Marisa', 'Hodges', 'marisa.hodges@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Jason', 'Jurgill', 'jason.jurgill@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Dustin', 'Haala', 'dustin_haala@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Chris', 'Newman', 'chris.newman@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Kristen', 'Rivers', 'kristen.rivers@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Dean', 'Schmieder', 'dean.schmieder@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC')),
+('Kevin', 'Stayner', 'kevin.stayner@uhc.com', 'SALES', (select carrier_id from carrier where name = 'UHC'));
+
+INSERT INTO person (first_name, last_name, email, `type`, carrier_id) VALUES     
+('Suzanne', 'Trujillo', 'suzanne.trujillo@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Taylor', 'Garner', 'taylor.garner@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Nicole', 'Farley', 'nicole_r_farley@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Caitlin', 'Loonan', 'caitlin_loonan@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Aimee', 'Chen', 'aimee.chen@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Carol', 'Scaccia', 'carol.scaccia@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Nhean', 'Keo', 'nhean.keo@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Sue', 'Arias', 'suseli.arias@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Janae', 'Ayon', 'janae.ayon@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC')),
+('Toni', 'Cloonan', 'toni.cloonan@uhc.com', 'PRESALES', (select carrier_id from carrier where name = 'UHC'));

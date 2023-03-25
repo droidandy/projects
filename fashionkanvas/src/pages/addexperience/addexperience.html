@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title>{{ 'EXPERIENCE' | translate }}</ion-title>
+    <ion-buttons end (click)="saveExpereince()">
+      <button ion-button>{{ 'SAVE' | translate }}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+
+
+  <ion-list>
+    <h2>{{ 'OVERVIEW' | translate }}</h2>
+    <ion-item>
+      <ion-label floating>{{ 'ROLE' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="expereince.role" autocomplete="true" autocorrect="on" spellcheck="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'AGENCY' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="expereince.agency" autocomplete="true" autocorrect="on" spellcheck="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'EVENTNAME' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="expereince.event" autocomplete="true" autocorrect="on" spellcheck="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'CITY' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="expereince.location" autocomplete="true" autocorrect="on" spellcheck="true"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <h2>Dates</h2>
+    <ion-item>
+      <ion-label floating>{{ 'STARTDATE' | translate }}</ion-label>
+      <ion-datetime [(ngModel)]="expereince.startDate" (ionChange)="changedDate($event)"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="lasted_date">
+      <ion-label>{{ 'LASTEDDAY' | translate }}</ion-label>
+      <ion-toggle checked="false" [(ngModel)]="expereince.isLast"></ion-toggle>
+    </ion-item>
+
+    <ion-item *ngIf="!expereince.isLast">
+      <ion-label floating>{{ 'ENDDATE' | translate }}</ion-label>
+      <ion-datetime  [disabled]="expereince.startDate==undefined" [(ngModel)]="expereince.endDate" min="{{expereince.startDate}}"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <h2>{{ 'DESCRIPTION' | translate }}</h2>
+    <ion-item>
+      <ion-label floating>{{ 'SHORTDESCRIPTION' | translate }}</ion-label>
+      <ion-textarea type="text" rows="5" [(ngModel)]="expereince.description" autocorrect="on" autocomplete="true" spellcheck="true"></ion-textarea>
+    </ion-item>
+    <!-- <p class="max">{{ '220CHARMAX' | translate }}</p> -->
+  </ion-list>
+
+  <ion-list *ngIf="isEdit">
+    <button ion-button class="loginbtn" block tappable (click)="deleteExperience()">Delete</button>
+  </ion-list>
+
+</ion-content>

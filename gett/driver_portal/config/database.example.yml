@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: driver_portal_development
+
+test:
+  <<: *default
+  database: driver_portal_test
+
+production:
+  <<: *default
+  host: <%= ENV.fetch("DB_HOST") { nil } %>
+  database: <%= ENV.fetch("DB_NAME") { nil } %>
+  username: <%= ENV.fetch("DB_USER") { nil } %>
+  password: <%= ENV.fetch("DB_PASSWORD") { nil } %>

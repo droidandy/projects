@@ -1,0 +1,103 @@
+<!DOCTYPE html
+        PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+        'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <style type="text/css">
+        a {text-decoration: none; color:#277AC2; }
+        td,th {border:none}
+        .backgroundImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/icon_confirm_1x.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 144px;
+            height: 146px;
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            .backgroundImage {
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/icon_confirm_2x.png);
+                background-size: 144px 146px;
+            }
+        }
+        .verifyButton {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 auto;
+            cursor: pointer;
+            background-color: #09c;
+            border-radius: 4px;
+            box-shadow: none;
+            border: none;
+        }
+	</style>
+</head>
+<body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial;">
+<table style="margin:auto;" width="800" cellspacing='0'>
+    <tr>
+        <td style='width:100%;text-align:right;float:left;'>
+            <img alt="UnitedHealthcare" src="https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/logo.jpg" />
+        </td>
+    </tr>
+</table>
+<table bgcolor="#fff" style="margin:auto; border:1px solid #d3d3d3;" width="800" cellspacing='0' cellpadding='0'>
+    <tr>
+        <td align='center' >
+            <p style="font-size:18pt;  color:#515151;" >
+                <strong>Please verify your email</strong>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td align='center'>
+            <div class="backgroundImage"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table bgcolor="#fff" style="margin:auto;border-spacing: 10px 0;padding:0px 0px; color:#666666;" width="670">
+                <tr>
+                    <td style="font-size: 16px;">
+                        <p>$!agent_name,</p>
+                        <p>You have received this message because your email address was registered with <a href="https://quote.benrevo.com/uhc/" target="_blank">https://quote.benrevo.com/uhc/</a>. Please confirm your email below so we know it's really you!</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center">
+                        <a class="verifyButton" href="https://quote.benrevo.com/uhc/ga/email-verification?verificationCode=${verification_code}" target="_blank">Verify Email Address</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br/>
+                        <p style="font-size: 11pt;">If it wasn't you who submitted your email address in the first place, simply ignore this email and don't click above. You will not receive any more emails from us. </p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Thank you,<br/>UnitedHealthcare</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align='center'>
+            <img alt="Benrevo" src="https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo1x_20.png"/><br/><br/>
+        </td>
+    </tr>
+</table>
+<br/><br/>
+
+</body>
+</html>

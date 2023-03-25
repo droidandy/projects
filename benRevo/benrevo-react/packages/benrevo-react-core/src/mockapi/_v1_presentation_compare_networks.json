@@ -1,0 +1,67 @@
+{
+  "networks": [
+    {
+      "name": "Aetna",
+      "types": [
+        {
+          "name": "Aetna HMO",
+          "network": "full"
+        }, {
+          "name": "Aetna Value HMO",
+          "network": "narrow"
+        }, {
+          "name": "Aetna Basic HMO",
+          "network": "superNarrow"
+        }, {
+          "name": "Aetna HMO Deductible Plan CA Only",
+          "network": "other"
+        }
+      ]
+    }, {
+      "name": "Anthem Blue Cross",
+      "types": [
+        {
+          "name": "Blue Cross CA CaliforniaCare HMO",
+          "network": "full"
+        }, {
+          "name": "Blue Cross CA Select HMO",
+          "network": "narrow"
+        }, {
+          "name": "Blue Cross CA Priority Select HMO",
+          "network": "superNarrow"
+        }
+      ]
+    }, {
+      "name": "Cigna",
+      "types": [
+        {
+          "name": "Cigna HMO",
+          "network": "full"
+        }, {
+          "name": "Cigna Southern CA Select HMO",
+          "network": "other"
+        }, {
+          "name": "Cigna Southern CA Value HMO",
+          "network": "other"
+        }
+      ]
+    }, {
+      "name": "UnitedHealthcare",
+      "types": [
+        {
+          "name": "UHC Signature Value",
+          "network": "full"
+        }, {
+          "name": "UHC Signature Value Advantage",
+          "network": "narrow"
+        }, {
+          "name": "UHC Signature Value Alliance",
+          "network": "superNarrow"
+        }, {
+          "name": "UHC Signature Value Focus HMO",
+          "network": "superNarrow"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Općina Rogoznica",
+          "short_name" : "Općina Rogoznica",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "Šibensko-kninska županija",
+          "short_name" : "Šibensko-kninska županija",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "Croatia",
+          "short_name" : "HR",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Općina Rogoznica, Croatia",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 43.5775554,
+            "lng" : 16.0912688
+          },
+          "southwest" : {
+            "lat" : 43.316464,
+            "lng" : 15.7415116
+          }
+        },
+        "location" : {
+          "lat" : 43.4522838,
+          "lng" : 15.8994956
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.5775554,
+            "lng" : 16.0912688
+          },
+          "southwest" : {
+            "lat" : 43.316464,
+            "lng" : 15.7415116
+          }
+        }
+      },
+      "place_id" : "ChIJb0uanREbNRMR3O-Y8l4R8F0",
+      "types" : [ "administrative_area_level_2", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

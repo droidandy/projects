@@ -1,0 +1,343 @@
+{
+  "listingSummary": {
+    "listingId": "000551fb-2d0b-47ba-8510-b8774402f158",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2017-08-18",
+    "photoCount": 12,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "CLP",
+      "amount": 400000000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 605100.0
+    },
+    "propertyAddress": {
+      "streetAddress": "Berna Valle la Dehesa",
+      "city": "Santiago",
+      "stateProvince": "Santiago",
+      "stateProvinceCode": "RM",
+      "country": "Chile",
+      "countryCode": "CL",
+      "latitude": -33.3282789,
+      "longitude": -70.516719
+    },
+    "geographicRegions": [
+      {
+        "type": "Neighbourhood",
+        "name": "lo barnechea"
+      }
+    ],
+    "RFGListingId": "FYHFTE",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/fyhfte",
+    "isCallToShow": true,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Estate",
+    "propertyName": "Excellent House in Condominium with gardens",
+    "totalBath": 4,
+    "lotSize": "386 SM",
+    "buildingArea": "170 Sq. M",
+    "noOfBedrooms": 4,
+    "squareFootage": 1829.863,
+    "defaultPhotoURL": "//openapi.azureedge.net/E6138BC3-B5C8-4154-8E28-75F1735B0440",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-04T14:16:14.377",
+    "agents": [
+      {
+        "id": "71ae8f1c-648a-47e5-9919-3cd8ea255912",
+        "name": "Yolanda Tejeda",
+        "firstName": "Yolanda",
+        "lastName": "Tejeda",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/B307E0CD-D504-44A4-BD29-89C7F71BD901",
+        "emailAddress": "ytejeda@chilesir.com",
+        "businessPhone": "+56974094405",
+        "isPrimary": true,
+        "office": {
+          "officeId": "bb2e28a9-dec9-4b80-9343-a19807b6d71a",
+          "RFGOfficeId": "0001",
+          "companyId": "9ecf1627-0d8f-411c-ae3b-721487afddba",
+          "companyName": "Chile Sotheby's International Realty",
+          "RFGCompanyId": "820402",
+          "brandCode": "SIR",
+          "name": "Chile Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Alonso de Córdova 2467",
+            "city": "Vitacura",
+            "stateProvince": "Santiago",
+            "stateProvinceCode": "RM",
+            "postalCode": "",
+            "country": "Chile",
+            "countryCode": "CL",
+            "latitude": -33.40129,
+            "longitude": -70.59562
+          },
+          "phoneNumber": "+56.97.697.2700",
+          "emailAddress": "contacto@chilesir.com"
+        }
+      },
+      {
+        "id": "d0f6147d-d161-4e3e-8141-8c6a6e8cb84c",
+        "name": "Patricio Leon",
+        "firstName": "Patricio",
+        "lastName": "Leon",
+        "gender": "Male",
+        "defaultPhotoURL": "//openapi.azureedge.net/EC72B71F-ED61-48D8-96A2-4BA40581058B",
+        "emailAddress": "pleon@chilesir.com",
+        "businessPhone": "+56976972700",
+        "isPrimary": false,
+        "office": {
+          "officeId": "bb2e28a9-dec9-4b80-9343-a19807b6d71a",
+          "RFGOfficeId": "0001",
+          "companyId": "9ecf1627-0d8f-411c-ae3b-721487afddba",
+          "companyName": "Chile Sotheby's International Realty",
+          "RFGCompanyId": "820402",
+          "brandCode": "SIR",
+          "name": "Chile Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Alonso de Córdova 2467",
+            "city": "Vitacura",
+            "stateProvince": "Santiago",
+            "stateProvinceCode": "RM",
+            "postalCode": "",
+            "country": "Chile",
+            "countryCode": "CL",
+            "latitude": -33.40129,
+            "longitude": -70.59562
+          },
+          "phoneNumber": "+56.97.697.2700",
+          "emailAddress": "contacto@chilesir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 3,
+  "halfBath": 1,
+  "providerKey": "000551fb-2d0b-47ba-8510-b8774402f158",
+  "propertyFeatures": [
+    {
+      "groupName": "General",
+      "description": "Guard Gated"
+    },
+    {
+      "groupName": "General",
+      "description": "Laundry Facilities"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Walk-in Closet"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Metropolitan"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Ceramic"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Wall to Wall Carpet"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Radiator"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Pool Description",
+      "description": "Outdoor"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Terrace"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Metropolitan"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Excellent house in condominium with gardens and playground for children. Walking distance to public transportation and shops. Near schools El Huinganal and Mayflower. Also close to a kindergarten.\r\nEnaco style house in good condition, very bright, oriented to the east, entrance hall made with ceramic floor, spacious living and dining room with wooden floor with exit to nice well-formed garden with swimming pool and cozy covered terrace with a barbecue area.\r\nIlluminated kitchen with dining room, ceramic floor, in very good condition. Outdoor utility room with a roof.\r\nFirst floor, guest bathroom, office or a room for a baby, spacious bedroom. Suite master bedroom, carpet floor, Walk-in-closet, full bathroom with bright natural light.\r\nSecond floor, large living room, 3 bedrooms, 1 suite, and a full bathroom.",
+      "htmlRemark": "<p>Excellent house in condominium with gardens and playground for children. Walking distance to public transportation and shops. Near schools El Huinganal and Mayflower. Also close to a kindergarten.</p><p>Enaco style house in good condition, very bright, oriented to the east, entrance hall made with ceramic floor, spacious living and dining room with wooden floor with exit to nice well-formed garden with swimming pool and cozy covered terrace with a barbecue area.</p><p>Illuminated kitchen with dining room, ceramic floor, in very good condition. Outdoor utility room with a roof.</p><p>First floor, guest bathroom, office or a room for a baby, spacious bedroom. Suite master bedroom, carpet floor, Walk-in-closet, full bathroom with bright natural light.</p><p>Second floor, large living room, 3 bedrooms, 1 suite, and a full bathroom.</p>"
+    }
+  ],
+  "propertyFees": [
+    {
+      "type": "Utilities",
+      "amount": 130.0,
+      "frequency": "Monthly"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/fyhfte",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "E6CA500E-2EFD-40E3-A7F2-1DFE317248AD",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/E6CA500E-2EFD-40E3-A7F2-1DFE317248AD",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 703,
+      "width": 954,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "CF138C63-F7E9-4FA0-B43B-22242C6F5E03",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/CF138C63-F7E9-4FA0-B43B-22242C6F5E03",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 823,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "E74BF0FC-D349-40D6-94A6-388F750FBC8B",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/E74BF0FC-D349-40D6-94A6-388F750FBC8B",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 901,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "16417483-5FFC-48F4-9ADA-44BCA8CCCD58",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/16417483-5FFC-48F4-9ADA-44BCA8CCCD58",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 709,
+      "width": 922,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "14CD437B-DC74-4510-BF98-458A4C262E02",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/14CD437B-DC74-4510-BF98-458A4C262E02",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 819,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "98C15FDB-6B32-463C-B343-4DF5616892FA",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/98C15FDB-6B32-463C-B343-4DF5616892FA",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 931,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "E6138BC3-B5C8-4154-8E28-75F1735B0440",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/E6138BC3-B5C8-4154-8E28-75F1735B0440",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 717,
+      "width": 974,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "A55D2B16-7894-4A3A-AF49-78D50ED64CC9",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/A55D2B16-7894-4A3A-AF49-78D50ED64CC9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 924,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "840539A4-3029-4850-A3CE-817CE2274D48",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/840539A4-3029-4850-A3CE-817CE2274D48",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 953,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "FFABCB18-F0AB-441B-8352-87794B9D6F49",
+      "sequenceNumber": 1,
+      "url": "www.chilesir.com/159808",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Local Listing Link",
+      "lastUpdateOn": "2018-07-04T14:16:14.390"
+    },
+    {
+      "mediaID": "74EC05E4-D1D9-4957-A916-D3A2E294439C",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/74EC05E4-D1D9-4957-A916-D3A2E294439C",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 710,
+      "width": 941,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "F2889B53-3A61-4A76-908F-E1B8E19AE6DA",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/F2889B53-3A61-4A76-908F-E1B8E19AE6DA",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 920,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    },
+    {
+      "mediaID": "BA4CAE50-45A7-4A98-817F-EE05946FC9C9",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/BA4CAE50-45A7-4A98-817F-EE05946FC9C9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 881,
+      "width": 1280,
+      "lastUpdateOn": "2017-11-06T17:56:00.070"
+    }
+  ]
+}

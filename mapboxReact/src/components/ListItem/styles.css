@@ -1,0 +1,98 @@
+.report_row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+.report_block {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    width: 170px;
+}
+.report_left {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    display: flex;
+    align-self: center;
+}
+.inline_items{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+}
+.list_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.list_row_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.list_item_number_center {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f47423;
+    text-align: center;
+}
+.list_item_number {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f47423;
+    text-align: right;
+}
+.list_item_numberMargin {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f47423;
+    margin-right: 15px;
+    text-align: right;
+}
+.list_columnItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.report_columnItemStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list_columnItemStart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+}
+.list_column_item {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.list_column_itemSmall {
+    font-size: 8px;
+    font-weight: 300;
+}
+.legend_item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.legend_title {
+    font-size: 12px;
+    font-weight: 300;
+}
+.legend_dot {
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    background-color: #ccc;
+}

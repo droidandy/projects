@@ -1,0 +1,81 @@
+.paywall {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    width: 280px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    .head {
+      display: flex;
+      margin-bottom: 1rem;
+      .headCol {
+        &:first-child {
+          flex: 1;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .label {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 23px;
+      color: #1A344B;
+      & > span {
+        background: #F6921D;
+        border-radius: 8px;
+        padding: 4px 6px;
+        font-size: 13px;
+        line-height: 21px;
+        color: #fff;
+      }
+    }
+    .description {
+      font-size: 15px;
+      line-height: 23px;
+      color: #1A344B;
+    }
+    .list {
+      display: block;
+      border: 1px solid #D9E3EB;
+      box-sizing: border-box;
+      border-radius: 8px;
+      padding: 16px 8px;
+      ul {
+        max-height: 320px;
+        overflow-y: auto;
+        &::-webkit-scrollbar-thumb {
+          background: #0085FF;
+          border-radius: 15px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #F9F9F9;
+          border-radius: 15px;
+        }
+        &::-webkit-scrollbar {
+          width: 3px;
+          height: 3px;
+        }
+      }
+      li {
+        padding: 8px;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+      & > .actions {
+        padding: 0px 8px 0 8px;
+      }
+    }
+  }
+}
+
+.emptyDraggableItem {
+  border: 1px dashed #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  min-height: 49px;
+  background: #fff;
+  padding: 10px;
+}

@@ -1,0 +1,1 @@
+"use strict";function LoginCtrl(o,n,t,r,c,l,e){o.facebookLogin=function(){e.loginViaFacebook().then(function(o){o===!0&&(l.load(),t.localStorage.secondStart?n.go("menu"):(t.localStorage.secondStart="true",r(function(){n.go("tutorial2")},200)))})["catch"](function(o){console.error(o)})}}angular.module("givmeApp.controllers").controller("LoginCtrl",LoginCtrl);

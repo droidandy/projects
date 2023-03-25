@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "839561158123",
+    "firebase_url": "https://spheric-gearing-217516.firebaseio.com",
+    "project_id": "spheric-gearing-217516",
+    "storage_bucket": "spheric-gearing-217516.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839561158123:android:bf3af6790780fec7",
+        "android_client_info": {
+          "package_name": "com.fashion.kanvas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839561158123-acrt6i2p45qgraeaqipf8jhqqass20v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashion.kanvas",
+            "certificate_hash": "c9cff2db3af83b69129924247e41ac86fbb99049"
+          }
+        },
+        {
+          "client_id": "839561158123-q66l77kk7k81p8mmp4g0f3p4e9anjm8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fashion.kanvas",
+            "certificate_hash": "e57cca8e3fa55b29ca31f585c02ad73cbccd9c76"
+          }
+        },
+        {
+          "client_id": "839561158123-0j8n5aoehfrhrgvdcm6dte27ra78eg0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGpVDtjO3aJI6I9yhJzRsawh9NwTr0Zr4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839561158123-0j8n5aoehfrhrgvdcm6dte27ra78eg0k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "839561158123-ff2i8h0rorj4mfgl5lcvjvlaic4l8i7i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fashion.kanvas"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

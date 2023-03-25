@@ -1,0 +1,56 @@
+/* RETINA
+============================================================*/
+@mixin parallax_index($index: 2, $color: #fff) {
+  z-index: $index;
+  position: relative;
+  background: $color;
+}
+
+@mixin transition_all($time: 0.3s) {
+  -webkit-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+  transition: all $time ease-in-out;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+%clearfix {
+  &:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+  }
+}
+/* RETINA
+============================================================*/
+
+@mixin retina {
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (min-device-pixel-ratio: 1.5), (min-resolution: 144dppx) {
+    @content;
+  }
+}
+
+/* REPLACEMENT
+============================================================*/
+
+%replacement {
+  display: block;
+  overflow: hidden;
+  // text-indent: -15000px;
+  // font-size:0;
+  // line-height:0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}

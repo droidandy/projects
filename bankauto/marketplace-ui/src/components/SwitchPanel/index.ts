@@ -1,0 +1,1 @@
+export { SwitchPanel } from './SwitchPanel';

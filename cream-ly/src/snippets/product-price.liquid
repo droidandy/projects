@@ -1,0 +1,81 @@
+<!-- snippet/product-price.liquid -->
+{% if product.title %}
+  {%- assign compare_at_price = product.compare_at_price -%}
+  {%- assign price = product.price -%}
+  {%- assign price_varies = product.price_varies -%}
+  {%- assign available = product.available -%}
+{% endif %}
+
+{% capture money_price %}{%include 'product-price-multicurrency'%}{% endcapture %}
+
+{% if product.tags contains 'videoProduct' %}
+
+    {%- assign year_price = product.price_max -%}
+    {% capture year_price %}{%include 'product-price-multicurrency', price:year_price%}{% endcapture %}
+
+    {%- assign month_price = product.price_max | divided_by: 12  -%}
+    {% capture money_price %}{%include 'product-price-multicurrency', price:month_price %}{% endcapture %}
+
+    {%if onPage == 'product' %}
+
+		
+ 		<span class="product-price__price">
+          {% if product.compare_at_price>0 and compare_at_price %}
+
+          {% if product.metafields.discount.endDate %}
+            {%- assign discount_till = product.metafields.discount.endDate -%}
+          {% else %}
+            {%- assign discount_till = "до 1 мая цена" -%}
+          {% endif %}
+
+          {% capture compare_at_price %}{%include 'product-price-multicurrency', price:compare_at_price%}{% endcapture %}
+
+            <s class="product-price__price">{{compare_at_price}}</s><br>
+            <span class="product-price__sale-label">{{discount_till}}</span> 
+           {% endif %} 
+          {{ year_price }}
+		</span>
+		
+       {% comment %}
+        <br>
+        <span class="product-price__price">{{ month_price }}</span> в месяц при оплате за год
+        {% endcomment %}
+        {% else %}
+        <span class="product-price__price">{{ year_price }}</span>
+    {% endif %}
+
+{% else %}
+    {% if compare_at_price > price %}
+    
+        {% capture compare_at_price %}{%include 'product-price-multicurrency', price:compare_at_price %}{% endcapture %}
+
+        {% if price_varies %}
+          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+          <s class="product-price__price">{{ compare_at_price }}</s>
+          <span class="product-price__price product-price__sale">
+            {{ money_price }}
+            <span class="product-price__sale-label">{{ 'products.product.on_sale' | t }}</span>
+          </span>
+        {% else %}
+          <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+          <s class="product-price__price">{{ compare_at_price }}</s><br>
+          <span class="product-price__price product-price__sale">
+            {%comment%}
+            <span class="product-price__sale-label">{{ 'products.product.on_sale' | t }}</span>
+            
+            <span class="product-price__sale-label">до 15 сентября цена</span>
+            {%endcomment%}
+            {{ money_price }}
+          </span>
+        {% endif %}
+    {% else %}
+        {% if price_varies %}
+          {% capture price_max %}{%include 'product-price-multicurrency', price:product.price_max%}{% endcapture %}
+
+          <span class="product-price__price">{{ money_price }} - {{price_max}}</span>
+        {% else %}
+          {%comment%}<span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>{%endcomment%}
+          <span class="product-price__price">{{ money_price }}</span>
+        {% endif %}
+    {% endif %}
+{% endif %}

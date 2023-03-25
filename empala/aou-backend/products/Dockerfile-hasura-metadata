@@ -1,0 +1,26 @@
+ARG HASURA_CLI_IMAGE_TAG=hasura-cli:latest
+FROM $HASURA_CLI_IMAGE_TAG
+
+COPY ./hasura /hasura
+COPY ./utils/wait-for-hasura.sh /utils/
+
+WORKDIR /
+
+ENV HASURA_ENDPOINT=http://localhost:8080
+ENV HASURA_GRAPHQL_ADMIN_SECRET=myadminsecretkey
+ENV HASURA_MAX_PING_ATTEMPTS=30
+ENV HASURA_MAX_METADATA_APPLY_ATTEMPTS=30
+
+CMD /utils/wait-for-hasura.sh $HASURA_ENDPOINT $HASURA_MAX_PING_ATTEMPTS && \
+    for metadata_apply_attempt in $(seq 1 $HASURA_MAX_METADATA_APPLY_ATTEMPTS); do \
+      hasura-cli metadata apply --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura; \
+      if hasura-cli metadata inconsistency status --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura > /dev/null 2> /dev/null; then \
+        exit 0; \
+      fi; \
+      sleep 1; \
+      hasura-cli metadata clear --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura; \
+    done; \
+    echo "Exhausted attempts to apply metadata for Hasura at endpoint $HASURA_ENDPOINT"; \
+    exit 1
+
+

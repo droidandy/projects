@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+
+    </ion-buttons>
+    <!-- <ion-title>{{ 'CREATEANACCOUNT' | translate }}</ion-title> -->
+    <ion-buttons end>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div padding>
+    <div style="padding-top:10%">
+      <h2>{{ 'CREATEACCOUNT' | translate }}</h2>
+    <ion-list inset>
+      <form [formGroup]="emailPasswordForm" padding>
+        <ion-item>
+          <ion-input type="text" formControlName="firstname" placeholder="{{ 'FIRSTNAME' | translate }}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" formControlName="lastname" placeholder="{{ 'LASTNAME' | translate }}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="text" formControlName="email" placeholder="{{ 'EMAIL' | translate }}"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" formControlName="password" placeholder="{{ 'PASSWORD' | translate }}"></ion-input>
+        </ion-item>
+        <!-- <ion-item>
+          <ion-input type="password" formControlName="confirmpassword" placeholder="{{ 'CONFIRMPASSWORD' | translate }}"></ion-input>
+        </ion-item> -->
+        <!-- <span class="terms" >
+          <ion-checkbox color="dark" formControlName="isTerms"></ion-checkbox>
+          <p>I agree to <span (click)="openTerms()">terms and conditions.</span></p>
+        </span> -->
+
+
+        <!-- <button ion-button block clear color="dark" (click)="closeModel()">cancel</button> -->
+    </form>
+    </ion-list>
+
+</div>
+</div>
+</ion-content>
+<ion-footer>
+  <div >
+      <button ion-button class="loginbtn" block  (click)="register()" >{{ 'Next' | translate }}</button>
+  </div>
+</ion-footer>

@@ -1,0 +1,22 @@
+---
+# Rename this file to local-test-mock-sftp.yaml and specify privateKey
+# When you run the test with the value of the environment variable NODE_ENV=test-mock-sftp, 
+# these configuration settings will be used.
+# !Attention! If environment variables are set, for example APEX_EXTRACTS_SFTP_PRIVATE_KEY, 
+# their values will be used. If there is a file <aou-backand root>/.env or .../apex-ext-datagrabber/.env 
+# then environment variables will be loaded from them and override the settings from this file.
+# For a complete list of environment variables used by the microservice, see custom-environment-variables.yaml
+log:
+  level: error
+apexExtracts:
+  daysBeforeCurrent: 4
+  sftp:
+    host: localhost
+    port: 2222
+    username: test
+    # specify base64 encoded private key here for local mock sftp (docker container)
+    privateKey: "***"
+    retriesOptions:
+      retries: 2
+      minTimeout: 4000 # Milliseconds
+      maxTimeout: 5000 # Milliseconds

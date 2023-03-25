@@ -1,0 +1,28 @@
+@import "../../../../styles/tools/mixins.scss";
+.componentVideosFilter {
+    @include spacingBottom;
+    @include defaultText;
+   
+
+    .description {
+        text-align: center;
+        @include spacingBottomMedium;
+    }
+
+    .spacingSmall {
+        @include spacingBottomMedium;
+    }
+
+
+
+    .total {
+        text-align: center;
+        @include defaultText;
+    }
+    .price {
+        text-align: center;
+        font-weight: 600;
+        @include spacingBottomSmall;
+    }
+
+}

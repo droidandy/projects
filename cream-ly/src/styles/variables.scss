@@ -1,0 +1,111 @@
+// Text colors
+$color-body-text: var(--color-body-text);
+$color-text-shadow: rgba(0, 0, 0, 0.1);
+$color-sale-text: #fb6ea4;
+$color-body-text-field: $color-body-text;
+$color-body-text-field-text: $color-body-text;
+$color-navigation-text: $color-body-text;
+
+// Link buttons and secondary cta
+$color-link: $color-body-text;
+$opacity-link-hover: 0.6;
+$transition-link-hover: 0.1s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+
+// Background colors
+$color-body: var(--color-main-background);
+$extra-light-bg: var(--light-grey);
+
+// Placeholders
+$placeholder-color-foreground: #161d25;
+$placeholder-color-background: #f9fafb;
+
+// Other colors
+$color-accent: var(--color-accent);
+$color-border: #e8e9eb; //var(--color-border);
+
+// Helper colors for form error states
+$color-disabled: #000000;
+$color-disabled-border: #000000;
+$color-error: #ff6d6d;
+$color-error-bg: #ffffff;
+$color-success: #000000;
+$color-success-bg: #000000;
+
+// Button colors
+$color-btn-primary: #52aea2;
+$color-btn-primary-text: #fff;
+$color-btn-secondary: $color-btn-primary-text;
+$color-btn-secondary-text: $color-btn-primary;
+
+// Typography
+$font-heading: "Pathway Gothic One", "Yanone Kaffeesatz";
+$font-body: "Raleway", "Open Sans", "arial", sans-serif;
+
+$font-size-base: 14px;
+$font-size-mobile-input: 16px; // min 16px to prevent zooming
+$font-heading-weight: var(--font-body-weight);
+$font-heading-size: 24px; ////em(floor($font-size-header * 1.35));
+$font-body-size: 1em;
+$font-body-weight: var(--font-body-weight);
+$font-body-style: var(--font-body-style);
+$font-body-bold-weight: var(--font-body-bold-weight);
+
+// Transitions
+$transition-duration: 250ms;
+$transition-timing: ease-in-out;
+
+// Overlays
+$opacity-image-overlay: 0.25;
+
+// Grid
+$grid-extra-small: 350px;
+$grid-small: 576px;
+$grid-medium: 46.85em;
+$grid-large: 61.85em;
+$grid-widescreen: 87.5em;
+$grid-max-width: 73.75em;
+$grid-gutter: 30px;
+
+// Breakpoints used with the media-query mixin
+$extra-small: "extra-small";
+$small: "small";
+$small-up: "small-up";
+$medium: "medium";
+$medium-down: "medium-down";
+$medium-up: "medium-up";
+$large: "large";
+$large-down: "large-down";
+$large-up: "large-up";
+$widescreen: "widescreen";
+
+$breakpoints: (
+  $extra-small "(max-width: #{$grid-extra-small})",
+  $small "(max-width: #{$grid-small})",
+  $small-up "(min-width: #{$grid-small})",
+  $medium "(min-width: #{$grid-small+1}) and (max-width: #{$grid-large - 1})",
+  $medium-down "(max-width: #{$grid-large - 1})",
+  $medium-up "(min-width: #{$grid-medium})",
+  $large "(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})",
+  $large-down "(max-width: #{$grid-widescreen - 1})",
+  $large-up "(min-width: #{$grid-large})",
+  $widescreen "(min-width: #{$grid-widescreen})"
+);
+
+// Forms
+$color-form-text: #333;
+$color-error-input-text: $color-error;
+$input-padding-top-bottom: 10px;
+$input-padding-left-right: 18px;
+$input-padding-top-bottom-small: 8px;
+$input-padding-left-right-small: 15px;
+$input-group-height: 46px;
+$input-group-height-small: 42px;
+
+/*================ Sizing Variables ================*/
+$width-site: 1200px;
+$gutter-site: 55px;
+$gutter-site-mobile: 22px;
+
+$section-spacing: 35px;
+$section-spacing-small: 25px;
+$border-radius: 2px;

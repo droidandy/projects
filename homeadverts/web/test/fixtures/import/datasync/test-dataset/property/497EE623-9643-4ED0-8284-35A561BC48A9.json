@@ -1,0 +1,437 @@
+{
+    "listingSummary": {
+        "listingId": "497ee623-9643-4ed0-8284-35a561bc48a9",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-03-17",
+        "photoCount": 24,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 1750000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "908 W Bay Road",
+            "city": "Two Harbors",
+            "district": "Lake County",
+            "stateProvince": "Minnesota",
+            "stateProvinceCode": "MN",
+            "postalCode": "55616",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 47.00276,
+            "longitude": -91.70839,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "908 W Bay Rd, Two Harbors, MN 55616"
+        },
+        "mlsNumbers": [
+            "4805497"
+        ],
+        "RFGListingId": "MBWQ36",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/mbwq36",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Craftsman",
+        "propertyName": "908 W Bay Road",
+        "lotSize": "3.74 AC",
+        "buildingArea": "9215 Sq. Ft.",
+        "noOfBedrooms": 5,
+        "squareFootage": 9215,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/89975AEE-CB70-4955-A8C8-D1F9109C770B",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-05-14T19:31:00.063",
+        "agents": [
+            {
+                "id": "65ba34dc-552d-4e3f-8791-da9cc9d7f004",
+                "name": "Yungsook Kim",
+                "firstName": "Yungsook",
+                "lastName": "Kim",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/7B0B7DE2-02D2-4125-848F-91444F1B952E",
+                "emailAddress": "yungsookkim@danielgale.com",
+                "businessPhone": "5165105020",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "a8245699-3c4d-4f78-8056-73a2ddf4b179",
+                    "RFGOfficeId": "0012",
+                    "companyId": "4ed91d01-c53e-4eab-bae0-636dc2f092cd",
+                    "companyName": "Daniel Gale",
+                    "RFGCompanyId": "800065",
+                    "brandCode": "SIR",
+                    "name": "Daniel Gale Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "342 Wheatley Plaza",
+                        "city": "Greenvale",
+                        "district": "Nassau",
+                        "stateProvince": "New York",
+                        "stateProvinceCode": "NY",
+                        "postalCode": "11548",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 40.8096855875114,
+                        "longitude": -73.6266530306996,
+                        "formattedAddress": "342 Wheatley Plaza, Greenvale, NY 11548"
+                    },
+                    "phoneNumber": "5166267600",
+                    "emailAddress": "internet@danielgale.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 2,
+    "halfBath": 2,
+    "quarterBath": 0,
+    "threeQuarterBath": 2,
+    "providerKey": "497ee623-9643-4ed0-8284-35a561bc48a9",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Sewer",
+            "description": "Private"
+        },
+        {
+            "groupName": "Garage Count",
+            "description": "5 + Car Garage"
+        },
+        {
+            "groupName": "Lot Size",
+            "description": "2-5 Acres"
+        },
+        {
+            "groupName": "Fireplace Count",
+            "description": "4+ Fireplaces"
+        },
+        {
+            "groupName": "Water",
+            "description": "Well"
+        },
+        {
+            "groupName": "Basement",
+            "description": "Walk-out"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Stately Hamptons Shingle Style Lake Superior beach home. Once is a lifetime opportunity just 30 minutes north of Duluth, MN",
+            "htmlRemark": "<p><br><\/p><table class=\"fields\" cellspacing=\"0\" border=\"0\" style=\"font-family: verdana, arial, sans-serif; font-size: 0.9em; width: 814px; margin-bottom: 0px;\"><tbody><tr class=\"even\"><td valign=\"top\" class=\"field-value\" width=\"258.5px\" style=\"padding-top: 5px; padding-bottom: 5px; margin: 0px; width: 296px;\"><div id=\"PublicRemarks\">Stately Hamptons Shingle Style Lake Superior beach home. Once is a lifetime opportunity just 30 minutes north of Duluth, MN<\/div><\/td><\/tr><\/tbody><\/table>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/mbwq36",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "2EDA1AA3-EFE6-4A34-A75C-00E952FD4158",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/2EDA1AA3-EFE6-4A34-A75C-00E952FD4158",
+            "isDefault": false,
+            "caption": "11",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "293264E8-5A13-4595-AAF5-16838E74D090",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/293264E8-5A13-4595-AAF5-16838E74D090",
+            "isDefault": false,
+            "caption": "20",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "B478DE13-754F-47DE-8507-2FAE0A86AB7C",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/B478DE13-754F-47DE-8507-2FAE0A86AB7C",
+            "isDefault": false,
+            "caption": "15",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "CC3E0A65-7E06-4DA1-A708-31A20976E674",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/CC3E0A65-7E06-4DA1-A708-31A20976E674",
+            "isDefault": false,
+            "caption": "2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "2DE7A153-C426-4C66-9544-512F28FB8641",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/2DE7A153-C426-4C66-9544-512F28FB8641",
+            "isDefault": false,
+            "caption": "10",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "E883DD69-CF3F-4E1D-A84C-645132295B2E",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/E883DD69-CF3F-4E1D-A84C-645132295B2E",
+            "isDefault": false,
+            "caption": "13",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "4D466BBC-A424-4E35-9B1F-6CC86392E4D3",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/4D466BBC-A424-4E35-9B1F-6CC86392E4D3",
+            "isDefault": false,
+            "caption": "4",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "D0BA2401-DBFB-41B6-A919-905D7333A2D5",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/D0BA2401-DBFB-41B6-A919-905D7333A2D5",
+            "isDefault": false,
+            "caption": "24",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "6AE9B594-0720-4FB3-9E69-9B0E91D8C629",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/6AE9B594-0720-4FB3-9E69-9B0E91D8C629",
+            "isDefault": false,
+            "caption": "21",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "B33B4150-EC52-4E91-86B2-9F065E6D7DCB",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/B33B4150-EC52-4E91-86B2-9F065E6D7DCB",
+            "isDefault": false,
+            "caption": "17",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "884C4282-2A9F-4668-A527-A636F0E49945",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/884C4282-2A9F-4668-A527-A636F0E49945",
+            "isDefault": false,
+            "caption": "6",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "89624A50-71D3-4FED-9B31-B0C4E3DA407F",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/89624A50-71D3-4FED-9B31-B0C4E3DA407F",
+            "isDefault": false,
+            "caption": "3",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "E5A4AE31-9C44-450A-8ACB-C6BBBB945AED",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/E5A4AE31-9C44-450A-8ACB-C6BBBB945AED",
+            "isDefault": false,
+            "caption": "22",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "4196BB7E-8F5D-42E7-BE0F-CC42F58D970C",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/4196BB7E-8F5D-42E7-BE0F-CC42F58D970C",
+            "isDefault": false,
+            "caption": "19",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "DA893195-2697-404C-AF2C-CD25DB79B01C",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/DA893195-2697-404C-AF2C-CD25DB79B01C",
+            "isDefault": false,
+            "caption": "16",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "1AA99178-5A33-4C44-834D-CE22B31A380A",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/1AA99178-5A33-4C44-834D-CE22B31A380A",
+            "isDefault": false,
+            "caption": "12",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2000,
+            "width": 1500,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "0AA83D45-FB9E-49D4-A17B-D08CF865E9E0",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/0AA83D45-FB9E-49D4-A17B-D08CF865E9E0",
+            "isDefault": false,
+            "caption": "7",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "89975AEE-CB70-4955-A8C8-D1F9109C770B",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/89975AEE-CB70-4955-A8C8-D1F9109C770B",
+            "isDefault": true,
+            "caption": "1",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "F2EADFCB-3B7C-466F-904B-D4C497E3819E",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/F2EADFCB-3B7C-466F-904B-D4C497E3819E",
+            "isDefault": false,
+            "caption": "5",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "709F9248-C997-4A45-A19D-DD60700BC57E",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/709F9248-C997-4A45-A19D-DD60700BC57E",
+            "isDefault": false,
+            "caption": "14",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "C4A1C84D-1045-4EA2-8DC7-E3950C8FB801",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/C4A1C84D-1045-4EA2-8DC7-E3950C8FB801",
+            "isDefault": false,
+            "caption": "18",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2000,
+            "width": 1500,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "2CF00952-7622-4E30-A8AA-F26AE01CF5C9",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/2CF00952-7622-4E30-A8AA-F26AE01CF5C9",
+            "isDefault": false,
+            "caption": "8",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "40943ADC-EA75-489D-8D21-F2D376FD7CD5",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/40943ADC-EA75-489D-8D21-F2D376FD7CD5",
+            "isDefault": false,
+            "caption": "23",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        },
+        {
+            "mediaID": "8ADCC7A2-20BE-4571-A688-F9E383242BA6",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/8ADCC7A2-20BE-4571-A688-F9E383242BA6",
+            "isDefault": false,
+            "caption": "9",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1500,
+            "width": 2000,
+            "lastUpdateOn": "2018-02-28T22:10:44.307"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "4805497",
+            "isPrimary": true
+        }
+    ]
+}

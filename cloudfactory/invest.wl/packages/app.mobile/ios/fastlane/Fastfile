@@ -1,0 +1,135 @@
+app_name_prefix = "EXPOInvestMapp" # Пример: "VTBInvest" - префикс названия провижена
+app_identifier_prefix = "expo.invest.mapp" # Пример: "ru.vtb.invest2" - production AppID
+
+username = "tishinov@effectivetrade.ru"
+team_name = "Sergey Tishinov" # team_id = "W6XDNFYTYF"
+itc_team_name = team_name
+cert_id_distrib = "G3W6XQL76Q"
+cert_id_develop = "2698GVC7KZ"
+cert_owner_name = team_name
+push_p12_password = "123456"
+
+# Установка: brew install fastlane
+# Обновление: brew reinstall fastlane && brew unlink fastlane && brew link fastlane
+# fastlane fastlane-credentials add --username tishinov@effectivetrade.ru
+# fastlane fastlane-credentials remove --username tishinov@effectivetrade.ru
+
+lane :certificates do
+    # development: true - Development сертификат
+    # development: false - Distribution сертификат
+    development = true
+    # force: true - создаёт новый сертификат, который потом нужно импортировать из связки ключей как p12
+    # Если превышено допустимое число сертификатов (сейчас 2), одному самому старому надо слеоать Revoke
+    get_certificates(
+        platform: 'ios',
+        development: development,
+        username: username,
+        team_name: team_name,
+        filename: 'development' + (if development then '-debug' else '' end),
+        output_path: 'sign/',
+        force: true, # создаёт новый
+        generate_apple_certs: false # TYPE: iOS Distribution
+    )
+end
+
+lane :register_app_ids do
+    array = ['development', 'staging', 'preview', 'preproduction']
+    array.each do |env|
+        app_identifier = app_identifier_prefix + "." + env
+        app_name = app_name_prefix + env.capitalize
+
+        produce(
+            username: username,
+            app_identifier: app_identifier,
+            app_name: app_name,
+            sku: app_identifier,
+            team_name: team_name,
+            itc_team_name: itc_team_name
+        )
+    end
+end
+
+def print (*args)
+    puts args
+end
+
+lane :provisioning_profiles do
+    # array = ['development', 'staging', 'preview', 'preproduction']
+    array = [
+        {name:'development', type:'AdHoc'},
+        {name:'development', type:'Debug'},
+        {name:'staging', type:'AdHoc'},
+        {name:'staging', type:'Debug'},
+        {name:'preview', type:'TestFlight'},
+        {name:'preview', type:'Debug'},
+        {name:'preproduction', type:'TestFlight'},
+        {name:'preproduction', type:'Debug'}
+    ]
+
+    array.each do |config|
+        env = config[:name]
+
+        app_identifier = app_identifier_prefix + "." + env
+        app_name = app_name_prefix + env.capitalize
+        provisioning_name = app_name + config[:type]
+        output_path = "sign/"
+        filename = env + (if config[:type] == 'Debug' then '-debug' else '' end) + ".mobileprovision"
+
+        # puts provisioning_name + '  ' +filename
+
+        # sigh
+        sigh(
+            development: if config[:type] == 'Debug' then true else nil end,
+            adhoc: if config[:type] == 'AdHoc' then true else nil end,
+            skip_install: true,
+            # force: false, # При добавлении устройств вручную, не будет пересоздвать провижены, только скачает
+            # force: true, # Добавить новые UDID устройств (добавит все, закомментировать readonly)
+            readonly: true, # true - Only fetch existing profile, don't generate new ones
+            app_identifier: app_identifier,
+            username: username,
+            team_name: team_name,
+            provisioning_name: provisioning_name,
+            output_path: output_path,
+            filename: filename,
+            cert_id: if config[:type] == 'Debug' then cert_id_develop else cert_id_distrib end,
+            # cert_owner_name: cert_owner_name,
+            skip_certificate_verification: true,
+            platform: "ios",
+        )
+    end
+end
+
+lane :ios_devices do
+
+    register_devices(
+        team_name: team_name,
+        username: username,
+        devices_file: './fastlane/multiple-device-upload-ios.txt'
+    )
+
+end
+
+lane :push_certificates do
+    types = ['development', 'production']
+    envs = ['development', 'staging', 'preview', 'preproduction']
+
+    envs.each do |env|
+        app_identifier = app_identifier_prefix + "." + env
+
+        types.each do |type|
+            pem_name = "push-" + env + "-" + type
+
+            get_push_certificate(
+                force: true,
+                development: type == 'development',
+                team_name: team_name,
+                username: username,
+                app_identifier: app_identifier,
+                save_private_key: true,
+                p12_password: push_p12_password,
+                pem_name: pem_name,
+                output_path: 'sign/'
+            )
+        end
+    end
+end

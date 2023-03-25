@@ -1,0 +1,61 @@
+@import "../variables-theme";
+
+.app-contact {
+  & > .top {
+    width: 100%;
+    background-color: $BACKGROUND_GRAY_COLOR;
+    .ui.grid {
+      padding-top: 90px;
+
+      .row {
+        padding: 0;
+
+        .ui.image {
+          max-width: 1051px !important;
+          width: 100%;
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+
+  & > .bottom {
+    @include panelShadow();
+    padding-left:20px;
+    padding-right:20px;
+    margin: 15px 0 0;
+
+    .ui.form {
+      .field {
+        .ui.input, textarea {
+          border-radius: 5px;
+          max-width: 100%;
+          margin-bottom: 15px;
+          display: block;
+          input {
+            width: 100% !important;
+            max-width: 100%;
+            border: 1px solid $INPUT_BORDER_COLOR;
+          }
+        }
+
+        textarea {
+          height: 115px;
+          border: 1px solid $INPUT_BORDER_COLOR;
+        }
+
+        .ui.button {
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 2px;
+        }
+        &.loader {
+          text-align: center;
+          .ui.loader {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../../../styles/tools/mixins.scss';
+
+//<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
+.ProductEmailSubscribe {
+
+    @include spacingTopSmall;
+    @include defaultText;
+
+    max-width: 800px;
+
+    text-align: center;
+    
+    .invalid-error {
+        color:#fb6ea4; margin:10px 0;
+    }
+    input {
+        min-width: 50%;
+        @include media-query($small) {
+            min-width: 80%;
+        }
+    }
+    
+    .sent {
+        h2 {color:#52aea2}
+        .sentIcon {
+            background-image: url("./contact_us.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 350px;
+            background-position-x: center;
+            background-position-y: bottom;
+            @include media-query($small) {
+                height: 250px;
+                
+            }
+        }
+    }
+  
+}

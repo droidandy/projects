@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://awsuat.one-transport.co.uk/OTWS/OTWebservice.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.one-transport.co.uk/OTWebservice"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:ProfileLookup><tns:Request><tns:Header><tns:Version>4</tns:Version><tns:Key>Demo123456</tns:Key><tns:Username>Demo_admin</tns:Username><tns:ClientNumber>D25</tns:ClientNumber><tns:Password>Demo4dmin</tns:Password><tns:MaxReply>1</tns:MaxReply></tns:Header><tns:Username>Demo_admin</tns:Username><tns:ClientNumber>D25</tns:ClientNumber></tns:Request></tns:ProfileLookup></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://www.one-transport.co.uk/OTWebservice/ProfileLookup"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '671'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0,no-store,no-cache
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Fri, 03 Aug 2018 18:09:52 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '11180'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><ProfileLookupResponse
+        xmlns="http://www.one-transport.co.uk/OTWebservice"><ProfileLookupResult><Header><Version>3</Version><SoftwareVersion>One
+        Transport General Webservices version 2.13.0.0</SoftwareVersion><Time>2018-08-03T18:09:52.4838212Z</Time><Result><Message
+        /><Code>0</Code></Result></Header><Profile><General><PersonID>D250122642</PersonID><Username>Demo_admin</Username><PassengerType><Name
+        /><Type>None</Type></PassengerType><Title>Mrs</Title><FirstName>Demo</FirstName><LastName>Admin</LastName><MobilePhone>0000000000</MobilePhone><HomePhone>0000000000</HomePhone><WorkPhone>0000000000</WorkPhone><Email>otdemo@one-transport.co.uk</Email><ClientNumber>D25</ClientNumber><StaffNumber
+        /><Notification /><SpecialRequirements /><Flags><FlagsStructure><Label>active_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>active_date</Label><Value>30/10/2013
+        10:21:08</Value></FlagsStructure><FlagsStructure><Label>allow_travel_arranger</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>allow_view_home</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>area_group</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>car_type</Label><Value /></FlagsStructure><FlagsStructure><Label>comments</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>complete_flag</Label><Value> </Value></FlagsStructure><FlagsStructure><Label>dept_code</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>email_address_1</Label><Value /></FlagsStructure><FlagsStructure><Label>email_address_2</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>employee_id</Label><Value /></FlagsStructure><FlagsStructure><Label>exemption_flag</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>exemption_time</Label><Value /></FlagsStructure><FlagsStructure><Label>inter_phone</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>pu_index</Label><Value /></FlagsStructure><FlagsStructure><Label>share</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>sub_acct_id</Label><Value>0000000000</Value></FlagsStructure><FlagsStructure><Label>term_date</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>vendor_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>vendor_id</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>vendor_preference_id</Label><Value>-1</Value></FlagsStructure><FlagsStructure><Label>vendor_preference_reason_other</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>web_id</Label><Value>0122642   </Value></FlagsStructure><FlagsStructure><Label>allow_receive_invoice</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>cabshare_opt_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>call_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>dept_name</Label><Value>00000000                                          </Value></FlagsStructure><FlagsStructure><Label>disclaimer_ack_date</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>disclaimer_ack_version</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>division_code</Label><Value /></FlagsStructure><FlagsStructure><Label>division_name</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>employee_title</Label><Value>Mrs</Value></FlagsStructure><FlagsStructure><Label>excess_mile</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>expiring_date</Label><Value>30/10/2013
+        00:00:00</Value></FlagsStructure><FlagsStructure><Label>fax</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>job_type</Label><Value /></FlagsStructure><FlagsStructure><Label>lock_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>Option_1</Label><Value>151</Value></FlagsStructure><FlagsStructure><Label>Option_2</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>Option_3</Label><Value /></FlagsStructure><FlagsStructure><Label>Option_4</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>Option_5</Label><Value /></FlagsStructure><FlagsStructure><Label>Option_6</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>pin_no</Label><Value /></FlagsStructure><FlagsStructure><Label>reveice_invoice_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>sms</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>sms_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>home_post_code</Label><Value>                    </Value></FlagsStructure><FlagsStructure><Label>default_payment_type</Label><Value>Client</Value></FlagsStructure><FlagsStructure><Label>office_post_code</Label><Value>E14
+        4QJ             </Value></FlagsStructure><FlagsStructure><Label>ubs_business_area</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>ubs_cost_centre</Label><Value /></FlagsStructure><FlagsStructure><Label>ubs_contract_type</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>ASK_OPPORTUNITY_CODE</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>ASK_OPPORTUNITY_CODE_FOR_PERSONAL_CARDS</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_id</Label><Value>D25       </Value></FlagsStructure><FlagsStructure><Label>account_name</Label><Value>DEMONSTRATIONS</Value></FlagsStructure><FlagsStructure><Label>account_amend_time</Label><Value>-60</Value></FlagsStructure><FlagsStructure><Label>account_dispute_time</Label><Value>-120</Value></FlagsStructure><FlagsStructure><Label>account_company_reference_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_journey_reason_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_add_profile_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_sms_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_call_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_passenger_type_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_diff_acct_flag</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>account_active_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_allocate_per_type</Label><Value>A</Value></FlagsStructure><FlagsStructure><Label>account_area_vendorratio_type</Label><Value>D</Value></FlagsStructure><FlagsStructure><Label>account_programme_name</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>account_programme_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_Special_Client_Type_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_Special_Client_Type_Name</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>account_client_asdirect_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_client_area_code_required_with_asdirect_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_journey_reason_default</Label><Value>221</Value></FlagsStructure><FlagsStructure><Label>account_profile_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_freq_flag</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>account_opportunity_code_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_HomeNeeded_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_fixed_fare</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_cancel_reason_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_vehicle_class_businessarea_flag</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>account_client_ref_override</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>account_passenger_type_flag_orderform</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>account_credit_card_enabled</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_division_flag</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_preferred_vendor</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>CHECK_IN_POLICY_VEHICLE</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>SUMMARY_SCREEN_CHARGE_TO_REFERENCE_SHOW</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>SHOW_STAFF_NUMBER_SEARCH</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>account_login_rememberme_expiry_days</Label><Value>10</Value></FlagsStructure><FlagsStructure><Label>access_wait_and_return</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_additional_stops</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_select_w2h_h2w_office</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_railway_stations</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_override_inpolicy_vehicle</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_guest_adhoc_orders</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_show_journey_cost_detail</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_show_journey_cost_information</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_vendor_preference</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>access_show_mileage</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>REFERENCE_CODE_NO_PRELOAD</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>CHECK_PASS_DEC</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>CHECK_PASS_DEC_40_MILES</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>CHECK_HOME_ZIP</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>CHECK_BOOKING_FOR_H2W_W2H</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>DEFAULT_VEHICLE_TYPE</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>DEFAULT_VEHICLE_CLASS</Label><Value
+        /></FlagsStructure><FlagsStructure><Label>VIA_ON_HOME_TO_WORK_ALLOWED</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>VIA_ON_WORK_TO_HOME_ALLOWED</Label><Value>N</Value></FlagsStructure><FlagsStructure><Label>ALLOWED_TO_SET_PREFERRED_VENDOR</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>ASK_PREFERRED_VENDOR_REASON</Label><Value>Y</Value></FlagsStructure><FlagsStructure><Label>WORK_PICKUP_ALWAYS_OFFICE</Label><Value>Y</Value></FlagsStructure></Flags></General><PaymentMethods><PaymentMethodStructure><PaymentName
+        /><PaymentID>0</PaymentID><PaymentType>Client</PaymentType><ChargeType>Account</ChargeType><Client><ClientNumber>D25       </ClientNumber><ClientName>DEMONSTRATIONS</ClientName><References
+        /><Requirements /><JourneyReasons /><PassengerTypes /><VehicleTypes /><PreferredVendorReasons
+        /><JobChargeTypes /><OutOfPolicyReasons /><DisclaimerNames /></Client><PaymentToken
+        /><PaymentTokenExpiryDate>01/01/1900 00:00:00</PaymentTokenExpiryDate><CreditCardDigits
+        /><CreditCardExpiry>01/01/1900 00:00:00</CreditCardExpiry><CardHolderName
+        /><Notes /></PaymentMethodStructure></PaymentMethods></Profile></ProfileLookupResult></ProfileLookupResponse></soap:Body></soap:Envelope>
+    http_version: 
+  recorded_at: Fri, 03 Aug 2018 18:10:23 GMT
+recorded_with: VCR 4.0.0

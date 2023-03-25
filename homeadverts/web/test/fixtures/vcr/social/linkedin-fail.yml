@@ -1,0 +1,193 @@
+
+-
+    request:
+        method: POST
+        url: 'https://api.linkedin.com/v1/people/~/shares?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer AQUa64oa9KiIdmHzd_foIfLW6Of9zw4anc-ZaZop5W_VJQc0SdXZauzHbDM45lAd2-awp34MMkI07_E4ytzoSAUaBUF2HRvVXnlISQQd9qVqJcbC6pYun3pQbKdS95Cf3ps1hLUt1d1GyuQ8gdb-B_IlNaVk9sj-jkihe81I-ok3xv562yBP0uPYEHYbaP1ukEHaC2ngu6Z8cFyQ1CAT5of7XlgP-9SltryApFsScCy3qGM-42lfUVbo6CxwpGIQTVJjRJ5o7DOgpwihKx3wHzPcW5Q47av8fETVMwUAp4pa4sbsWaOTeKValiqtKnyg4ubYb7BKLoE6ppNbLN9nnbkgJQY5IA'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+        body: '{"comment":"Hello World\n...\nhttp:\/\/dev.homeadverts.com\/story\/00000","visibility":{"code":"anyone"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: IL7A2ENT0Y
+            Date: 'Sun, 13 Jan 2019 21:13:30 GMT'
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Content-Length: '155'
+            X-Li-Fabric: prod-lor1
+            Connection: keep-alive
+            X-Li-Pop: prod-tln1
+            X-LI-Proto: http/1.1
+            X-LI-UUID: BXuOEtiEeRXAF0FFJisAAA==
+            Set-Cookie: 'lidc="b=OB22:g=1578:u=425:i=1547414010:t=1547466901:s=AQHrWyq7IAH-PtGLuF0IDxV_ViT3icOh"'
+            X-LI-Route-Key: '"b=OB22:g=1578:u=425:i=1547414010:t=1547466901:s=AQHrWyq7IAH-PtGLuF0IDxV_ViT3icOh"'
+        body: "{\n  \"errorCode\": 0,\n  \"message\": \"The token used in the request has expired.\",\n  \"requestId\": \"IL7A2ENT0Y\",\n  \"status\": 401,\n  \"timestamp\": 1547414010747\n}"
+-
+    request:
+        method: POST
+        url: 'https://api.linkedin.com/v1/people/~/shares?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer AQV18xakRLl0ffcjHf7LP_EXYZEyPTy_7-NPT1HVB5rK0PS3u9Kdv2_luRQ30-GjK6KSKBQCrxrqLIIzDAKcpILpISe2kFM8pJ-PcETL9ESuYlDTTpirFLZIbMws575hkuSm2saeke7gOuHprTJX3KtzURCqWqOaZBS0DJ2wZ7DJqjJUO_1ft5K1Cf1hjdTxcKhlRa1jVQRhsvzQFCsY8ByiEDf56gbZMBxNRSqGZZVOMumLN2ZfF2M9N9usmcMSY0GRx6JqlC7zrdEeBXSkFC0kDkX5ElVtnalc3-qEbrlVIGJFNvbcKnNAcUAsnbp807F_OR2MAXEP5WjNEjuFluMD5Gpjo8A'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+        body: '{"comment":"Hello World\n...\nhttp:\/\/dev.homeadverts.com\/story\/00000","visibility":{"code":"anyone"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: RXCNGIH41W
+            Date: 'Sun, 13 Jan 2019 21:14:11 GMT'
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Content-Length: '134'
+            X-Li-Fabric: prod-lor1
+            Connection: keep-alive
+            X-Li-Pop: prod-tln1
+            X-LI-Proto: http/1.1
+            X-LI-UUID: 0LGkmuGEeRUgZ+nUJSsAAA==
+            Set-Cookie: 'lidc="b=OB59:g=1207:u=1:i=1547414051:t=1547500451:s=AQGw8rvl8MU786myIzxleGc3PqA_07eh"'
+            X-LI-Route-Key: '"b=OB59:g=1207:u=1:i=1547414051:t=1547500451:s=AQGw8rvl8MU786myIzxleGc3PqA_07eh"'
+        body: "{\n  \"errorCode\": 0,\n  \"message\": \"Invalid access token.\",\n  \"requestId\": \"RXCNGIH41W\",\n  \"status\": 401,\n  \"timestamp\": 1547414051665\n}"
+-
+    request:
+        method: POST
+        url: 'https://api.linkedin.com/v1/people/~/shares?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer AQUa64oa9KiIdmHzd_foIfLW6Of9zw4anc-ZaZop5W_VJQc0SdXZauzHbDM45lAd2-awp34MMkI07_E4ytzoSAUaBUF2HRvVXnlISQQd9qVqJcbC6pYun3pQbKdS95Cf3ps1hLUt1d1GyuQ8gdb-B_IlNaVk9sj-jkihe81I-ok3xv562yBP0uPYEHYbaP1ukEHaC2ngu6Z8cFyQ1CAT5of7XlgP-9SltryApFsScCy3qGM-42lfUVbo6CxwpGIQTVJjRJ5o7DOgpwihKx3wHzPcW5Q47av8fETVMwUAp4pa4sbsWaOTeKValiqtKnyg4ubYb7BKLoE6ppNbLN9nnbkgJQY5IA'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+        body: '{"comment":"Hello World\nPlaceat id ex tenetur at. Unde maxime eius eum itaque repellat.\nhttp:\/\/dev.homeadverts.com\/story\/00000","visibility":{"code":"anyone"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: R5VP64R0NI
+            Date: 'Fri, 19 Apr 2019 08:43:19 GMT'
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Content-Length: '155'
+            X-Li-Fabric: prod-lor1
+            Connection: keep-alive
+            X-Li-Pop: PROD-IDB2
+            X-LI-Proto: http/1.1
+            X-LI-UUID: BljBjZ7TlhUgWAa2xioAAA==
+            Set-Cookie: 'lidc="b=OB22:g=1842:u=480:i=1555663399:t=1555749309:s=AQHSZ5DYwWK_mSm7PPOaRqnk9Dc0JJ_4"'
+            X-LI-Route-Key: '"b=OB22:g=1842:u=480:i=1555663399:t=1555749309:s=AQHSZ5DYwWK_mSm7PPOaRqnk9Dc0JJ_4"'
+        body: "{\n  \"errorCode\": 0,\n  \"message\": \"The token used in the request has expired.\",\n  \"requestId\": \"R5VP64R0NI\",\n  \"status\": 401,\n  \"timestamp\": 1555663399460\n}"
+-
+    request:
+        method: POST
+        url: 'https://api.linkedin.com/v1/people/~/shares?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer AQV18xakRLl0ffcjHf7LP_EXYZEyPTy_7-NPT1HVB5rK0PS3u9Kdv2_luRQ30-GjK6KSKBQCrxrqLIIzDAKcpILpISe2kFM8pJ-PcETL9ESuYlDTTpirFLZIbMws575hkuSm2saeke7gOuHprTJX3KtzURCqWqOaZBS0DJ2wZ7DJqjJUO_1ft5K1Cf1hjdTxcKhlRa1jVQRhsvzQFCsY8ByiEDf56gbZMBxNRSqGZZVOMumLN2ZfF2M9N9usmcMSY0GRx6JqlC7zrdEeBXSkFC0kDkX5ElVtnalc3-qEbrlVIGJFNvbcKnNAcUAsnbp807F_OR2MAXEP5WjNEjuFluMD5Gpjo8A'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+        body: '{"comment":"Hello World\nEst amet quam autem inventore error iure. Error id deserunt quod dicta quia eum eveniet sunt.\nhttp:\/\/dev.homeadverts.com\/story\/00000","visibility":{"code":"anyone"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: 1PG5WLW5PQ
+            Date: 'Fri, 19 Apr 2019 08:43:19 GMT'
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Content-Length: '134'
+            X-Li-Fabric: prod-ltx1
+            Connection: keep-alive
+            X-Li-Pop: PROD-IDB2
+            X-LI-Proto: http/1.1
+            X-LI-UUID: sQqvvZ7TlhVAW8atyCoAAA==
+            Set-Cookie: 'lidc="b=TB86:g=1569:u=1:i=1555663400:t=1555749800:s=AQHTOsvbgkVbmWv8_x9s0jqF-Y_qVnax"'
+            X-LI-Route-Key: '"b=TB86:g=1569:u=1:i=1555663400:t=1555749800:s=AQHTOsvbgkVbmWv8_x9s0jqF-Y_qVnax"'
+        body: "{\n  \"errorCode\": 0,\n  \"message\": \"Invalid access token.\",\n  \"requestId\": \"1PG5WLW5PQ\",\n  \"status\": 401,\n  \"timestamp\": 1555663400231\n}"
+-
+    request:
+        method: POST
+        url: 'https://api.linkedin.com/v1/people/~/shares?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer AQUa64oa9KiIdmHzd_foIfLW6Of9zw4anc-ZaZop5W_VJQc0SdXZauzHbDM45lAd2-awp34MMkI07_E4ytzoSAUaBUF2HRvVXnlISQQd9qVqJcbC6pYun3pQbKdS95Cf3ps1hLUt1d1GyuQ8gdb-B_IlNaVk9sj-jkihe81I-ok3xv562yBP0uPYEHYbaP1ukEHaC2ngu6Z8cFyQ1CAT5of7XlgP-9SltryApFsScCy3qGM-42lfUVbo6CxwpGIQTVJjRJ5o7DOgpwihKx3wHzPcW5Q47av8fETVMwUAp4pa4sbsWaOTeKValiqtKnyg4ubYb7BKLoE6ppNbLN9nnbkgJQY5IA'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+        body: '{"comment":"Hello World\nIn qui beatae et est. Consequatur et quis quibusdam molestias quasi id eos aut.\nhttp:\/\/dev.homeadverts.com\/story\/00000","visibility":{"code":"anyone"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: 1512N6YPFE
+            Date: 'Fri, 19 Apr 2019 09:16:59 GMT'
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Content-Length: '155'
+            X-Li-Fabric: prod-lor1
+            Connection: keep-alive
+            X-Li-Pop: prod-efr5
+            X-LI-Proto: http/1.1
+            X-LI-UUID: hUhLqGzVlhXAIPWhUysAAA==
+            Set-Cookie: 'lidc="b=OB22:g=1842:u=480:i=1555665419:t=1555749309:s=AQGGj-vzY5uqw99htrnSLhWSZTxPV_Yk"'
+            X-LI-Route-Key: '"b=OB22:g=1842:u=480:i=1555665419:t=1555749309:s=AQGGj-vzY5uqw99htrnSLhWSZTxPV_Yk"'
+        body: "{\n  \"errorCode\": 0,\n  \"message\": \"The token used in the request has expired.\",\n  \"requestId\": \"1512N6YPFE\",\n  \"status\": 401,\n  \"timestamp\": 1555665420013\n}"
+-
+    request:
+        method: POST
+        url: 'https://api.linkedin.com/v1/people/~/shares?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer AQV18xakRLl0ffcjHf7LP_EXYZEyPTy_7-NPT1HVB5rK0PS3u9Kdv2_luRQ30-GjK6KSKBQCrxrqLIIzDAKcpILpISe2kFM8pJ-PcETL9ESuYlDTTpirFLZIbMws575hkuSm2saeke7gOuHprTJX3KtzURCqWqOaZBS0DJ2wZ7DJqjJUO_1ft5K1Cf1hjdTxcKhlRa1jVQRhsvzQFCsY8ByiEDf56gbZMBxNRSqGZZVOMumLN2ZfF2M9N9usmcMSY0GRx6JqlC7zrdEeBXSkFC0kDkX5ElVtnalc3-qEbrlVIGJFNvbcKnNAcUAsnbp807F_OR2MAXEP5WjNEjuFluMD5Gpjo8A'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+        body: '{"comment":"Hello World\nEst aut consequuntur nisi dolor. Nihil numquam facilis eos porro non.\nhttp:\/\/dev.homeadverts.com\/story\/00000","visibility":{"code":"anyone"}}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '401'
+            message: Unauthorized
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: 7VWX67ZW3Z
+            Date: 'Fri, 19 Apr 2019 09:16:59 GMT'
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Content-Length: '134'
+            X-Li-Fabric: prod-lva1
+            Connection: keep-alive
+            X-Li-Pop: prod-efr5
+            X-LI-Proto: http/1.1
+            X-LI-UUID: GbxL5GzVlhVgYG2oUysAAA==
+            Set-Cookie: 'lidc="b=VB86:g=1739:u=1:i=1555665385:t=1555751785:s=AQFHYlFMFUMYEP7ThJxAhHu7iyLTWTC1"'
+            X-LI-Route-Key: '"b=VB86:g=1739:u=1:i=1555665385:t=1555751785:s=AQFHYlFMFUMYEP7ThJxAhHu7iyLTWTC1"'
+        body: "{\n  \"errorCode\": 0,\n  \"message\": \"Invalid access token.\",\n  \"requestId\": \"7VWX67ZW3Z\",\n  \"status\": 401,\n  \"timestamp\": 1555665420963\n}"

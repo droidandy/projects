@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title>{{ 'EDUCATION' | translate }}</ion-title>
+    <ion-buttons end (click)="saveEducation()">
+      <button ion-button>{{ 'SAVE' | translate }}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content>
+
+
+  <ion-list>
+    <h2>{{ 'OVERVIEW' | translate }}</h2>
+    <ion-item>
+      <ion-label floating>{{ 'FIELDOFSTUDY' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="education.study"  autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'SCHOOLNAME' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="education.schoolName" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'LOCATION' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="education.location" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'DEGREE' | translate }}</ion-label>
+      <ion-input type="text" [(ngModel)]="education.degree" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <h2>{{ 'DURATION' | translate }}</h2>
+    <ion-item>
+      <ion-label floating>{{ 'FROM' | translate }}</ion-label>
+       <ion-datetime [(ngModel)]="education.startDate"  (ionChange)="changedDate($event)"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>{{ 'TO' | translate }}</ion-label>
+      <ion-datetime [disabled]="education.startDate==undefined" [(ngModel)]="education.endDate" min="{{education.startDate}}"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <h2>{{ 'DESCRIPTION' | translate }}</h2>
+    <ion-item>
+      <ion-label floating>{{ 'SHORTDESCRIPTION' | translate }}</ion-label>
+      <ion-textarea type="text" rows="5" [(ngModel)]="education.description"  autocorrect="on" autocomplete="true" spellcheck="true"></ion-textarea>
+    </ion-item>
+    <!-- <p class="max">{{ '220CHARMAX' | translate }}</p> -->
+  </ion-list>
+
+  <ion-list  *ngIf="isEdit">
+    <button ion-button class="loginbtn" (click)="deleteEducation()" block tappable>Delete</button>
+  </ion-list>
+
+</ion-content>

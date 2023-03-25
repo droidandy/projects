@@ -1,0 +1,309 @@
+{
+    "listingSummary": {
+        "listingId": "99eb9c79-35fc-4168-a646-24dc5537c6e5",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-05-24",
+        "photoCount": 12,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "EUR",
+            "amount": 10000000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 11691800
+        },
+        "propertyAddress": {
+            "city": "Andratx",
+            "stateProvince": "Balearic Islands",
+            "stateProvinceCode": "IB",
+            "country": "Spain",
+            "countryCode": "ES"
+        },
+        "mlsNumbers": [
+            "4671"
+        ],
+        "RFGListingId": "V3ZZ65",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/v3zz65",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Other Style",
+        "propertyName": "Majestic Finca in Camp de Mar with sea views",
+        "lotSize": "210000 SM",
+        "buildingArea": "800 Sq. M",
+        "noOfBedrooms": 5,
+        "squareFootage": 8611.12,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/395462EC-4136-481E-89F7-78F467D20F6D",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-05-24T10:55:10.127",
+        "agents": [
+            {
+                "id": "745a4bb4-297d-477b-b094-40cdb5d487a6",
+                "name": "Maria Vega",
+                "firstName": "Maria",
+                "lastName": "Vega",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/8351FCB4-F687-4BA0-B7EF-C3A63A9DBF97",
+                "emailAddress": "palma@mallorcasir.com",
+                "businessPhone": "0034971721000",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "d1cfe1e8-f76f-4afe-a403-ef6b58a85daf",
+                    "RFGOfficeId": "0005 ",
+                    "companyId": "a5567283-5316-4171-a2f6-9840da243850",
+                    "companyName": "Mallorca Sotheby's International Realty",
+                    "RFGCompanyId": "810013",
+                    "brandCode": "SIR",
+                    "name": "Mallorca Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "Can Serra de Marina, 4",
+                        "city": "Palma",
+                        "stateProvince": "Balearic Islands",
+                        "stateProvinceCode": "IB",
+                        "postalCode": " 07012",
+                        "country": "Spain",
+                        "countryCode": "ES",
+                        "latitude": 39.570359,
+                        "longitude": 2.640543
+                    },
+                    "phoneNumber": "+34 971 721 000",
+                    "emailAddress": "palma@mallorcasir.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 5,
+    "providerKey": "99eb9c79-35fc-4168-a646-24dc5537c6e5",
+    "propertyFeatures": [
+        {
+            "groupName": "Views",
+            "description": "Water"
+        },
+        {
+            "groupName": "Location",
+            "description": "Island"
+        },
+        {
+            "groupName": "Location",
+            "description": "Marina"
+        },
+        {
+            "groupName": "Body of Water",
+            "description": "Ocean"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Views",
+            "description": "Mountain"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "de",
+            "remark": "Diese prachtvolle Luxus-Finca im mallorquinischen Stil befindet sich in einer privilegierten Wohngegend von Camp de Mar auf einem Grundst\u00fcck von 210.000 m\u00b2 auf dem Gel\u00e4nde des Golf de Andratx und mit Panoramablick auf das Meer und die Berge .\r\n\r\n\r\nDas Haus besteht aus f\u00fcnf Schlafzimmern mit jeweils eigenem Badezimmer en Suite, und zwei G\u00e4ste-B\u00e4dern, einem lichtdurchfluteten Wohn-\/Essbereich im Herrenhaus-Stil und einem zum ger\u00e4umigen Esszimmer hin offenen Kamin. Ausserdem, eine Komplett eingerichtige K\u00fcche sowie ein separates Apartment f\u00fcr G\u00e4ste oder Personal.Die Villa ist mit Fu\u00dfbodenheizung und Klimaanlage ausgestattet und bietet zahlreiche Terrassen (von denen einige \u00fcberdacht sind), mediterrane G\u00e4rten, einen Pool-Bereich und eine Garage f\u00fcr 2-4 PKW. Den Privatweg, der zum Haus f\u00fchrt, teilen sich zwei weitere Anwesen des selben Bautr\u00e4gers, von denen jedes \u00fcber ebenfalls 21 Hektar Land verf\u00fcgt und Wohnsitz dreier gl\u00fccklicher Eigent\u00fcmer ist. Der gesamte H\u00fcgel verf\u00fcgt \u00fcber viel Gr\u00fcnfl\u00e4che (drei gro\u00dfe Villen auf 65 Hektar Land) und grenzt zudem an eine gesch\u00fctzte Gr\u00fcnzone an.",
+            "htmlRemark": "<p><br><\/p><p>Diese prachtvolle <b>Luxus-Finca<\/b> im <b>mallorquinischen Stil<\/b> befindet sich in einer privilegierten Wohngegend von <b>Camp de Mar<\/b> auf einem Grundst\u00fcck von 210.000 m\u00b2 auf dem Gel\u00e4nde des <b>Golf de Andratx<\/b> und mit <b>Panoramablick<\/b> <b>auf das Meer und die Berge<\/b>.<\/p><p>\n<br><\/p><p>Das Haus besteht aus f\u00fcnf Schlafzimmern mit jeweils eigenem \nBadezimmer en Suite, und zwei G\u00e4ste-B\u00e4dern, einem lichtdurchfluteten \nWohn-\/Essbereich im Herrenhaus-Stil und einem zum ger\u00e4umigen Esszimmer \nhin offenen Kamin. Ausserdem, eine Komplett eingerichtige K\u00fcche sowie \nein separates Apartment f\u00fcr G\u00e4ste oder Personal.Die Villa ist mit \nFu\u00dfbodenheizung und Klimaanlage ausgestattet und bietet zahlreiche \nTerrassen (von denen einige \u00fcberdacht sind), mediterrane G\u00e4rten, einen \nPool-Bereich und eine Garage f\u00fcr 2-4 PKW. Den Privatweg, der zum Haus \nf\u00fchrt, teilen sich zwei weitere Anwesen des selben Bautr\u00e4gers, von denen\n jedes \u00fcber ebenfalls 21 Hektar Land verf\u00fcgt und Wohnsitz dreier \ngl\u00fccklicher Eigent\u00fcmer ist. Der gesamte H\u00fcgel verf\u00fcgt \u00fcber viel \nGr\u00fcnfl\u00e4che (drei gro\u00dfe Villen auf 65 Hektar Land) und grenzt zudem an \neine gesch\u00fctzte Gr\u00fcnzone an.<\/p><p><br><\/p>"
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "This magnificent luxury villa of Majorcan style is situated in a privileged area of Camp de Mar on a plot of 210.000 m\u00b2 above the golf course of Andratx and providing panoramic views of the mar and the mountains .\r\n\r\n\r\nThe property consists of five bedrooms with own en suite bathroom each, two bathrooms, central aspiration system and an intelligent domotic system. A light-flooded living-\/dining area of manor house style and an open fireplace, completely fitted and Kitchen, independent apartment for Guest or Staff. The villa is equipped with underfloor heating and air conditioning providing various terraces (some of which covered), Mediterranean gardens, a pool area and a garage for 2-4 cars. Another two properties of the same building promoter, each with 21 hectares of land as well, share the private road that leads to the house, being the residence of three fortunate owners. Furthermore, the hill boasts plenty of park area (three large villas on 65 hectares) being situated next to a protected green area.",
+            "htmlRemark": "<p><br><\/p><p>This magnificent <b>luxury villa<\/b> of <b>Majorcan style<\/b> is situated in a privileged area of <b>Camp de Mar<\/b> on a plot of 210.000 m\u00b2 above the <b>golf<\/b> course of <b>Andratx<\/b> and providing <b>panoramic views of the mar and the mountains<\/b>.<\/p><p>\n<br><\/p><p>The property consists of five bedrooms with own en suite bathroom \neach, two bathrooms, central aspiration system and an intelligent \ndomotic system. A light-flooded living-\/dining area of manor house style\n and an open fireplace, completely fitted and Kitchen, independent \napartment for Guest or Staff. The villa is equipped with underfloor \nheating and air conditioning providing various terraces (some of which \ncovered), Mediterranean gardens, a pool area and a garage for 2-4 cars. \nAnother two properties of the same building promoter, each with 21 \nhectares of land as well, share the private road that leads to the \nhouse, being the residence of three fortunate owners. Furthermore, the \nhill boasts plenty of park area (three large villas on 65 hectares) \nbeing situated next to a protected green area.<\/p><p>\n<br><\/p><p><br><\/p><p><br><\/p>"
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "es-ES",
+            "remark": "Esta magn\u00edfica finca de lujo de estilo mallorqu\u00edn est\u00e1 situada en una zona privilegiada de Camp de Mar en un solar de 210.000 m\u00b2 sobre el campo de Golf de Andratx y con panor\u00e1micas vistas al mar y a la monta\u00f1a .\r\n\r\n\r\nLa casa se compone de cinco dormitorios con su propio cuarto de ba\u00f1o en suite, dos aseos, un sal\u00f3n-comedor di\u00e1fano de estilo se\u00f1orial y una chimenea abierta a un amplio comedor, cocina totalmente equipada. En el amplio sotano, a parte de tres grandes plazas de garaje, hay un apartamento independiente para invitados o personal, varios trasteros y sala de maquinas.La villa est\u00e1 equipada con suelo radiante y aire acondicionado, aspiracion central un sistema inteligente de domotica y ofrece varias terrazas (algunas de ellas cubiertas), jardines mediterr\u00e1neos, una zona de piscina y un garaje para 2-4 coches. El camino privado que conduce hasta la casa, lo comparten otras dos propiedades del mismo promotor, tambi\u00e9n con 21 hectareas de terreno cada una, siendo este camino privado el feliz domicilio de tres afortunados propietarios. Tambi\u00e9n dota a toda la colina de mucha zona verde (tres grandes villas en 65 hectareas) lindando, adem\u00e1s, a zonas ANEI.",
+            "htmlRemark": "<p><br><\/p><p>Esta magn\u00edfica <b>finca de lujo<\/b> de <b>estilo mallorqu\u00edn<\/b> est\u00e1 situada en una zona privilegiada de <b>Camp de Mar<\/b> en un solar de 210.000 m\u00b2 sobre el campo <b>de Golf de Andratx<\/b> y con <b>panor\u00e1micas vistas al mar y a la monta\u00f1a<\/b>.<\/p><p>\n<br><\/p><p>La casa se compone de cinco dormitorios con su propio cuarto de ba\u00f1o \nen suite, dos aseos, un sal\u00f3n-comedor di\u00e1fano de estilo se\u00f1orial y una \nchimenea abierta a un amplio comedor, cocina totalmente equipada. En el \namplio sotano, a parte de tres grandes plazas de garaje, hay un \napartamento independiente para invitados o personal, varios trasteros y \nsala de maquinas.La villa est\u00e1 equipada con suelo radiante y aire \nacondicionado, aspiracion central un sistema inteligente de domotica y \nofrece varias terrazas (algunas de ellas cubiertas), jardines \nmediterr\u00e1neos, una zona de piscina y un garaje para 2-4 coches. El \ncamino privado que conduce hasta la casa, lo comparten otras dos \npropiedades del mismo promotor, tambi\u00e9n con 21 hectareas de terreno cada\n una, siendo este camino privado el feliz domicilio de tres afortunados \npropietarios. Tambi\u00e9n dota a toda la colina de mucha zona verde (tres \ngrandes villas en 65 hectareas) lindando, adem\u00e1s, a zonas ANEI.<\/p><p><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/v3zz65",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "0563BDA9-0083-4D48-BDE2-15E562647E82",
+            "sequenceNumber": 1,
+            "url": "https:\/\/www.mallorca-sothebysrealty.com\/en\/property\/majestic-finca-in-camp-mar-with-sea-views\/rental\/no\/origen\/search",
+            "isDefault": true,
+            "caption": "Majestic Finca in Camp de Mar with sea views",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "A0623B15-98DD-4852-BDFB-1B69C12D1C68",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/A0623B15-98DD-4852-BDFB-1B69C12D1C68",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1361,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "C645E24D-F9BE-4672-8136-2EA2825EE99C",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/C645E24D-F9BE-4672-8136-2EA2825EE99C",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1361,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "DEBBA58E-5763-47E3-BE04-409C3DE4D2DA",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/DEBBA58E-5763-47E3-BE04-409C3DE4D2DA",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "BBFE4254-2256-47FE-8239-45A97128CC60",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/BBFE4254-2256-47FE-8239-45A97128CC60",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1536,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "8E80454B-D980-4C97-9948-6E0BFC34FE38",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/8E80454B-D980-4C97-9948-6E0BFC34FE38",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "3A91179D-654E-4C23-9457-76F958B3ED99",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/3A91179D-654E-4C23-9457-76F958B3ED99",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1361,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "395462EC-4136-481E-89F7-78F467D20F6D",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/395462EC-4136-481E-89F7-78F467D20F6D",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1361,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "C0476688-9A9A-4B30-B8E6-7B16EDF664B9",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/C0476688-9A9A-4B30-B8E6-7B16EDF664B9",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "C8266D40-2052-4BBD-A486-93A8F5F59000",
+            "sequenceNumber": 2,
+            "url": "https:\/\/www.mallorca-sothebysrealty.com\/es\/propiedad\/majestuosa-finca-con-vistas-al-mar\/rental\/no\/origen\/search",
+            "isDefault": false,
+            "caption": "Majestuosa Finca con vistas al mar",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "BCCFDB21-8CFD-4FD5-929C-ACD5EF53362A",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/BCCFDB21-8CFD-4FD5-929C-ACD5EF53362A",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "12912577-E1C7-4303-A7ED-B7A8449185AF",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/12912577-E1C7-4303-A7ED-B7A8449185AF",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1361,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "A3A6C679-45A2-47D3-B761-BAB623430AB6",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/A3A6C679-45A2-47D3-B761-BAB623430AB6",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1364,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "7B77E4D3-A53E-4791-9DAD-C5123A4D3F87",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/7B77E4D3-A53E-4791-9DAD-C5123A4D3F87",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1361,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        },
+        {
+            "mediaID": "DBA466C8-E440-40A3-8447-FD9504C76217",
+            "sequenceNumber": 3,
+            "url": "https:\/\/www.mallorca-sothebysrealty.com\/de\/liegenschaft\/majestatische-finca-in-camp-mar-mit-meerblick\/rental\/no\/origen\/search",
+            "isDefault": false,
+            "caption": "Majest\u00e4tische Finca in Camp de Mar mit Meerblick",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-05-24T10:55:10.220"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "4671",
+            "isPrimary": true
+        }
+    ]
+}

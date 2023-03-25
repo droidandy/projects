@@ -1,0 +1,46 @@
+source 'https://rubygems.org'
+
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+gem 'rails', '~> 5.1.0'
+gem 'pg', '~> 0.18'
+gem 'mysql2'
+gem 'puma', '~> 3.7'
+gem 'bcrypt'
+gem 'haml-rails'
+gem 'carrierwave'
+gem 'carrierwave-base64'
+gem 'fog-aws'
+gem 'whenever', require: false
+gem 'excon'
+gem 'active_model_serializers'
+gem 'rest-client'
+
+gem 'jwt'
+
+gem 'config'
+gem 'foreman'
+
+group :development, :test do
+  gem 'pry-rails'
+end
+
+group :development do
+  gem 'letter_opener'
+
+  gem 'capistrano'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano3-puma'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'rspec-its'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+end

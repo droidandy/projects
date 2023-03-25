@@ -1,0 +1,89 @@
+.chart {
+  & .chart-container {
+    height: 462px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  & .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+
+    span {
+      font-size: 13px;
+      line-height: 21px;
+      color: #1a344b;
+      margin-right: 10px;
+    }
+
+    button {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      background: none;
+      transform: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #abd7ff;
+
+      &:global(._active) {
+        color: #0085ff;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  & .pagination-table {
+    margin-top: 30px;
+    & .btns-pagination {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background: #0085ff;
+        width: 160px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        line-height: 23px;
+        color: #ffffff;
+        transition: all 0.2s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+  & > .item {
+    flex: 1
+  }
+}

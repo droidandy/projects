@@ -1,0 +1,71 @@
+@import '../variables-theme';
+
+/* Checkbox */
+
+.ui.radio.checkbox {
+  height: 20px;
+
+  input.hidden+label {
+    padding-left: 35px;
+  }
+
+  .box:before, label:before {
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+  }
+
+  .box:after, label:after {
+    width: 26px;
+    height: 26px;
+    left: -4px;
+    top: -4px;
+    opacity: 1;
+    background-color: #eaeaea;
+  }
+
+  input:checked~.box:after, input:checked~label:after, input:focus:checked~.box:after, input:focus:checked~label:after {
+    background-color: $ELEM_ACTIVE_COLOR !important;
+  }
+
+  input:indeterminate~.box:after, input:indeterminate~label:after {
+    opacity: 1;
+  }
+}
+
+.ui.checkbox {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  label {
+    font-size: 14px;
+    padding-left: 40px;
+    color: #404040;
+    height: 22px;
+  }
+
+  .box:before, label:before {
+    background: $INPUT_BACKGROUND;
+    width: 20px;
+    height: 20px;
+    border: 1px $SECOND_COLOR solid;
+  }
+
+  &:not(.radio) input:checked~.box:after, &:not(.radio) input:checked~label:after {
+    color: $ELEM_ACTIVE_COLOR;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    font-size: 16px;
+  }
+
+  input:checked~.box:before, input:checked~label:before {
+    background: $INPUT_BACKGROUND;
+    border-color: $SECOND_COLOR;
+  }
+
+  .box:hover::before, label:hover::before {
+    background: #fff;
+    border-color: $SECOND_COLOR
+  }
+}

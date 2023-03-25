@@ -1,0 +1,135 @@
+{
+    "agentSummary": {
+        "id": "8e4e9172-1dc0-47a8-942d-d9ee6ebab137",
+        "isAgent": true,
+        "name": "Robin Stieff Knisley",
+        "firstName": "Robin",
+        "lastName": "Knisley",
+        "middleName": "Stieff",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/E9A804C8-45E8-4B17-A6D6-C4F1A51A32E8",
+        "emailAddress": "robin@mottandchace.com",
+        "leadEmailAddress": "800354.lead.4028281@leads.leadrouter.com",
+        "businessPhone": "+1 4013150808",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "b5d00604-44c7-4bf4-aba1-97ae488b1350",
+            "RFGOfficeId": "0002",
+            "companyId": "82901fad-97fd-4a18-9284-bc48636e5d39",
+            "companyName": "Mott & Chace",
+            "RFGCompanyId": "800354",
+            "brandCode": "SIR",
+            "name": "Mott & Chace Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "27 Bay Street",
+                "city": "Watch Hill",
+                "district": "Washington",
+                "stateProvince": "Rhode Island",
+                "stateProvinceCode": "RI",
+                "postalCode": "02891",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 41.31225,
+                "longitude": -71.85614,
+                "formattedAddress": "27 Bay St, Westerly, RI 02891"
+            },
+            "phoneNumber": "4013150808",
+            "emailAddress": "geer.messinger@mottandchace.com"
+        }
+    },
+    "personId": "78d15871-b59c-4b0e-9530-6bfcaabe94aa",
+    "lastUpdateOn": "2017-12-09T14:32:51.200",
+    "designations": [
+        "Accredited Buyer Representative",
+        "Certified Luxury Home Marketing Specialist",
+        "Certified Negotiation Expert",
+        "Certified Residential Specialist",
+        "e-Pro, Internet Professional",
+        "Green Designated"
+    ],
+    "roles": [
+        {
+            "office": {
+                "officeId": "b5d00604-44c7-4bf4-aba1-97ae488b1350",
+                "RFGOfficeId": "0002",
+                "companyId": "82901fad-97fd-4a18-9284-bc48636e5d39",
+                "companyName": "Mott & Chace",
+                "RFGCompanyId": "800354",
+                "brandCode": "SIR",
+                "name": "Mott & Chace Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "27 Bay Street",
+                    "city": "Watch Hill",
+                    "district": "Washington",
+                    "stateProvince": "Rhode Island",
+                    "stateProvinceCode": "RI",
+                    "postalCode": "02891",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 41.31225,
+                    "longitude": -71.85614,
+                    "formattedAddress": "27 Bay St, Westerly, RI 02891"
+                },
+                "phoneNumber": "4013150808",
+                "emailAddress": "geer.messinger@mottandchace.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "robin.knisley@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "E9A804C8-45E8-4B17-A6D6-C4F1A51A32E8",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/E9A804C8-45E8-4B17-A6D6-C4F1A51A32E8",
+            "isDefault": true,
+            "caption": "Robin Knisley",
+            "shortDescription": "Robin Knisley",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:32:51.200"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Fax",
+            "number": "+1 4013150411"
+        },
+        {
+            "type": "Sothebysrealty.com 800",
+            "number": "+1 4012079187"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Robin has been helping buyers and sellers since 2002 in the wonderful State of Rhode Island.  Having grown up in Baltimore, Robin spent every summer in Weekapaug, enjoying the beach, tennis, sailing, and making lifelong friends. Working for a local periodical when she was eighteen years of age, Robin met her husband, who was a year round resident of Watch Hill.  They lived on the East Side of Providence for ten years before moving to Wakefield.  Over the past ten years, Robin has become familiar with all the shoreline communities of Rhode Island and enjoys matching her clients to the area that suits them best.  She has achieved her Resort and Second Home Property Specialist designation, Accredited Buyers Representative, and in March 2015 was awarded the prestigious Certified Luxury Home Marketing Specialist (CLHMS) designation in addition to her having earned membership within the Million Dollar Guild (GUILD) in recognition of her knowledge, experience and expertise in the luxury home arena. Members of the GUILD are specialists whom have proven success in the million dollar and above market .  Robin has three adult children who keep her laughing, the best dog and cat, and a 200 year old farm house. When not selling houses or helping renters, she can be found paddle boarding the various water ways in Rhode Island, roller-blading the bike path, or biking the beautiful back roads.\n",
+            "htmlRemark": "Robin has been helping buyers and sellers since 2002 in the wonderful State of Rhode Island.  Having grown up in Baltimore, Robin spent every summer in Weekapaug, enjoying the beach, tennis, sailing, and making lifelong friends. Working for a local periodical when she was eighteen years of age, Robin met her husband, who was a year round resident of Watch Hill.  They lived on the East Side of Providence for ten years before moving to Wakefield.  Over the past ten years, Robin has become familiar with all the shoreline communities of Rhode Island and enjoys matching her clients to the area that suits them best.  She has achieved her Resort and Second Home Property Specialist designation, Accredited Buyers Representative, and in March 2015 was awarded the prestigious Certified Luxury Home Marketing Specialist (CLHMS) designation in addition to her having earned membership within the Million Dollar Guild (GUILD) in recognition of her knowledge, experience and expertise in the luxury home arena. Members of the GUILD are specialists whom have proven success in the million dollar and above market .  Robin has three adult children who keep her laughing, the best dog and cat, and a 200 year old farm house. When not selling houses or helping renters, she can be found paddle boarding the various water ways in Rhode Island, roller-blading the bike path, or biking the beautiful back roads.\n"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "BR",
+            "stateCode": "RI",
+            "number": "B16958",
+            "issuedOn": "2014-05-01"
+        }
+    ]
+}

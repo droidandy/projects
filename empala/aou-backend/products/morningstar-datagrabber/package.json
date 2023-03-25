@@ -1,0 +1,59 @@
+{
+  "name": "@products/morningstar-datagrabber",
+  "version": "1.0.0",
+  "description": "morningstar-datagrabber",
+  "main": "dist/morningstar-datagrabber/start.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build-watch": "tsc --watch",
+    "lint": "eslint --ext .js,.ts --config ../../.eslintrc.js .",
+    "format": "eslint --fix --ext .js,.ts --config ../../.eslintrc.js .",
+    "start": "node dist/morningstar-datagrabber/start.js",
+    "generate-types": "ts-node ./src/util/gql-types-codegen.ts",
+    "test:all": "cross-env NODE_ENV=test jest --testPathPattern=/src/__tests__/.+\\.test\\.ts --runInBand --config jest.config.js --detectOpenHandles --forceExit",
+    "test:morningstar": "cross-env NODE_ENV=test jest --testPathPattern=/src/__tests__/.+morningstar\\.test\\.ts --runInBand --config jest.config.js --forceExit",
+    "test:morningstar-api": "cross-env NODE_ENV=test jest --testPathPattern=/src/__tests__/morningstar-api\\.test\\.ts --runInBand --config jest.config.js --detectOpenHandles --forceExit"
+  },
+  "keywords": [
+    "morningstar",
+    "api",
+    "instruments",
+    "ohlc",
+    "market data",
+    "historical price"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.3.0",
+    "@graphql-codegen/typescript": "^2.4.1",
+    "@types/bull-arena": "^3.0.4",
+    "cross-env": "^7.0.3",
+    "jest": "^27.3.1",
+    "jest-cli": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typeorm": "^0.2.40"
+  },
+  "dependencies": {
+    "@types/config": "0.0.40",
+    "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.176",
+    "@types/node": "^16.11.10",
+    "amazon-cognito-identity-js": "^5.2.3",
+    "axios": "^0.24.0",
+    "bull-arena": "^3.29.3",
+    "bullmq": "^1.54.4",
+    "config": "^3.3.6",
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.7.2",
+    "graphql-request": "^3.6.1",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "tslog": "^3.2.2",
+    "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">= 10.x.x"
+  }
+}

@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  host: postgresql
+  port: 5432
+  encoding: unicode
+  schema_search_path: public
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: billing_service_dev
+  min_messages: log # debug5, debug4, debug3, debug2, debug1, log, notice, warning, error, fatal, and panic
+
+test:
+  <<: *default
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  database: billing_service_test
+
+production:
+  <<: *default
+  host: <%= ENV['DB_HOST'] %>
+  port: <%= ENV['DB_PORT'] %>
+  database: <%= ENV['DB_NAME'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>

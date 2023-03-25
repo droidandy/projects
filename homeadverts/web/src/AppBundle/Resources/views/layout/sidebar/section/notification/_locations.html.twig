@@ -1,0 +1,21 @@
+{% set followedLocations = app.user.getFollowedLocations() %}
+
+{% if followedLocations|length %}
+    <p class="section-heading">Followed Locations</p>
+
+    {% for followedLocation in followedLocations.slice(0, 5) %}
+        <div class="item-location mdl-navigation__link">
+            <a class="name" href="{{ path('search_results', {
+                market: 'for-sale',
+                id: followedLocation.location.id,
+                slug: followedLocation.location.slug
+            }) }}">
+                {{ followedLocation.location.name }}
+
+                <span class="counter">
+                    0
+                </span>
+            </a>
+        </div>
+    {% endfor %}
+{% endif %}

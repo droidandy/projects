@@ -1,0 +1,376 @@
+{
+  "listingSummary": {
+    "listingId": "961b50ca-4cfc-4584-89f7-2524d8680874",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForRent",
+    "listedOn": "2018-06-25",
+    "photoCount": 23,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "isPriceUponRequest": true,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "261 60th Street",
+      "city": "Avalon",
+      "district": "Cape May County",
+      "stateProvince": "New Jersey",
+      "stateProvinceCode": "NJ",
+      "postalCode": "08202",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 39.07738,
+      "longitude": -74.74032,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "261 60th St, Avalon, NJ 08202"
+    },
+    "mlsNumbers": [
+      "173090"
+    ],
+    "RFGListingId": "C5FCS9",
+    "isNewConstruction": false,
+    "listingURL": "https:\/\/www.sothebysrealty.com\/id\/c5fcs9",
+    "rentalFrequency": "Other",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "2 Story",
+    "propertyName": "261 60th Street",
+    "totalBath": 4,
+    "noOfBedrooms": 5,
+    "defaultPhotoURL": "\/\/imgs.azureedge.net\/F0EE265F-4FFD-4213-A425-F37F9F95BC7F",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-03T09:39:39.867",
+    "agents": [
+      {
+        "id": "57410a7f-c872-4b50-abe9-bf8c6de78386",
+        "name": "Susan Heenan ",
+        "firstName": "Susan",
+        "lastName": "Heenan",
+        "defaultPhotoURL": "\/\/imgs.azureedge.net\/F5161EB9-0C7B-4B0E-AC07-EA70162BF577",
+        "emailAddress": "sue.heenan@timkerrsir.com",
+        "mobilePhone": "609.425.7940",
+        "isPrimary": true,
+        "office": {
+          "officeId": "24b1f50f-601b-4caf-b5cf-62cf95f35bfc",
+          "RFGOfficeId": "0001",
+          "companyId": "df87baad-0d3f-44a6-8316-ca18ab9d902b",
+          "companyName": "Tim Kerr",
+          "RFGCompanyId": "800409",
+          "brandCode": "SIR",
+          "name": "Tim Kerr Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "2821 Dune Drive",
+            "city": "Avalon",
+            "district": "CAPE MAY",
+            "stateProvince": "New Jersey",
+            "stateProvinceCode": "NJ",
+            "postalCode": "08202",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 39.09663,
+            "longitude": -74.72174,
+            "formattedAddress": "2821 Dune Dr, Avalon, NJ 08202"
+          },
+          "serviceRegion": "Central",
+          "phoneNumber": "6099677950",
+          "emailAddress": "info@timkerrsir.com",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "0007"
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 4,
+  "providerKey": "961b50ca-4cfc-4584-89f7-2524d8680874",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "261 60th Street is a spacious two story upside down style home located in the middle of the block with both ocean and bay views. An easy walk to pristine southend beaches. Located three blocks from public dock on 57th Street, and easy kayak access. The first floor consists of three bedrooms. One being junior master suite with a queen bed and private bathroom, as well as another full bathroom and a family room, wet bar and entertainment center overlooking the rear yard. The first floor is rounded out by the laundry room which offers a full-size refrigerator and full-size oven and sink for extra cooking needs, and a spacious covered deck at front entry. The second floor has the master bedroom suite and the fifth bedroom with a full bathroom in the hallway. A large great room with a modern kitchen and L-shaped island are featured on this floor along with a front deck with partial overhead coverage. A very spacious and comfortable home for large family.",
+      "htmlRemark": "<p>\n\n\n\n\n<style type=\"text\/css\">\np.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #454545}\n<\/style>\n\n\n<\/p><p class=\"p1\">261 60th Street is a spacious two story upside down style home located in the middle of the block with both ocean and bay views.&nbsp; An easy walk to pristine southend beaches.&nbsp;Located three blocks from public dock on 57th Street, and easy kayak access.&nbsp; The first floor consists of three bedrooms. One being junior master suite with a queen bed and private bathroom, as well as another full bathroom and a family room, wet bar and entertainment center overlooking the rear yard.&nbsp; The first floor is rounded out by the laundry room which offers a<span class=\"Apple-converted-space\">&nbsp; <\/span>full-size refrigerator and full-size oven and sink for extra cooking needs, and a spacious covered deck at front entry.&nbsp; The second floor has the master bedroom suite and the fifth bedroom with a full bathroom in the hallway.&nbsp;A large great room with a modern kitchen and L-shaped island are featured on this floor along with a front deck with partial overhead coverage.&nbsp;A very spacious and comfortable home for large family.<\/p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https:\/\/www.sothebysrealty.com\/id\/c5fcs9",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "63E288A1-A231-4FB0-92B7-0953333D5B6F",
+      "sequenceNumber": 22,
+      "url": "\/\/imgs.azureedge.net\/63E288A1-A231-4FB0-92B7-0953333D5B6F",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "B58742BD-93D2-44A6-B525-0EF78122F1BC",
+      "sequenceNumber": 14,
+      "url": "\/\/imgs.azureedge.net\/B58742BD-93D2-44A6-B525-0EF78122F1BC",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2949,
+      "width": 4436,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "4A144B40-6309-4E3F-AADA-216BC5D52A14",
+      "sequenceNumber": 23,
+      "url": "\/\/imgs.azureedge.net\/4A144B40-6309-4E3F-AADA-216BC5D52A14",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "9309F55D-722E-4E18-9DD8-267F2E77F5E0",
+      "sequenceNumber": 4,
+      "url": "\/\/imgs.azureedge.net\/9309F55D-722E-4E18-9DD8-267F2E77F5E0",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "209A241E-AC81-456E-B5AD-3C5B628E9924",
+      "sequenceNumber": 9,
+      "url": "\/\/imgs.azureedge.net\/209A241E-AC81-456E-B5AD-3C5B628E9924",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "5728D18A-D623-4FA2-B016-3F16F1CF4A96",
+      "sequenceNumber": 6,
+      "url": "\/\/imgs.azureedge.net\/5728D18A-D623-4FA2-B016-3F16F1CF4A96",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "7FF21014-59B4-4A5B-B889-5DF6BCF7F0CE",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/7FF21014-59B4-4A5B-B889-5DF6BCF7F0CE",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "4F5F4EB7-FAB0-4EC7-A398-698A3BC3CCFB",
+      "sequenceNumber": 18,
+      "url": "\/\/imgs.azureedge.net\/4F5F4EB7-FAB0-4EC7-A398-698A3BC3CCFB",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "4E760D26-C0CD-4337-ACDB-847AB1F91C84",
+      "sequenceNumber": 5,
+      "url": "\/\/imgs.azureedge.net\/4E760D26-C0CD-4337-ACDB-847AB1F91C84",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2946,
+      "width": 4432,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "2D85ED9A-77BA-495D-BF98-8680F23CB162",
+      "sequenceNumber": 17,
+      "url": "\/\/imgs.azureedge.net\/2D85ED9A-77BA-495D-BF98-8680F23CB162",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2768,
+      "width": 4164,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "5259B272-E989-40C7-A110-8949B08C7720",
+      "sequenceNumber": 8,
+      "url": "\/\/imgs.azureedge.net\/5259B272-E989-40C7-A110-8949B08C7720",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2922,
+      "width": 4396,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "08BBDDB6-70B1-4175-A804-9AB3EB36ECC9",
+      "sequenceNumber": 20,
+      "url": "\/\/imgs.azureedge.net\/08BBDDB6-70B1-4175-A804-9AB3EB36ECC9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2922,
+      "width": 4396,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "F79BA487-6BB1-4DBF-8776-B73A2618AAB1",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/F79BA487-6BB1-4DBF-8776-B73A2618AAB1",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "A12FF245-7AF7-42BF-B5A2-BCD64E19C3BD",
+      "sequenceNumber": 15,
+      "url": "\/\/imgs.azureedge.net\/A12FF245-7AF7-42BF-B5A2-BCD64E19C3BD",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2906,
+      "width": 4374,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "DD4C22B7-6EED-4DC4-85D7-C293DD7C1B78",
+      "sequenceNumber": 7,
+      "url": "\/\/imgs.azureedge.net\/DD4C22B7-6EED-4DC4-85D7-C293DD7C1B78",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2916,
+      "width": 4386,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "13CCD318-968C-4C56-B696-C2BBF8FE70C9",
+      "sequenceNumber": 13,
+      "url": "\/\/imgs.azureedge.net\/13CCD318-968C-4C56-B696-C2BBF8FE70C9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2898,
+      "width": 4359,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "E8FE0E3E-D0F8-410E-958B-C5409614A7AF",
+      "sequenceNumber": 19,
+      "url": "\/\/imgs.azureedge.net\/E8FE0E3E-D0F8-410E-958B-C5409614A7AF",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "E5080CF7-B760-443E-85E9-CFFB899509CD",
+      "sequenceNumber": 21,
+      "url": "\/\/imgs.azureedge.net\/E5080CF7-B760-443E-85E9-CFFB899509CD",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2964,
+      "width": 4459,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "1789D59E-834E-499C-AA27-D596D4FD19DD",
+      "sequenceNumber": 11,
+      "url": "\/\/imgs.azureedge.net\/1789D59E-834E-499C-AA27-D596D4FD19DD",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "595EE4DE-B75A-4467-B382-D7287736CA1D",
+      "sequenceNumber": 10,
+      "url": "\/\/imgs.azureedge.net\/595EE4DE-B75A-4467-B382-D7287736CA1D",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "045D41D8-197D-4A1A-9A18-DFFDCD27D0E9",
+      "sequenceNumber": 12,
+      "url": "\/\/imgs.azureedge.net\/045D41D8-197D-4A1A-9A18-DFFDCD27D0E9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "C5650AC5-9390-4C9F-9211-E64E1AAC14F6",
+      "sequenceNumber": 16,
+      "url": "\/\/imgs.azureedge.net\/C5650AC5-9390-4C9F-9211-E64E1AAC14F6",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    },
+    {
+      "mediaID": "F0EE265F-4FFD-4213-A425-F37F9F95BC7F",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/F0EE265F-4FFD-4213-A425-F37F9F95BC7F",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4512,
+      "lastUpdateOn": "2018-06-26T06:55:09.100"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "173090",
+      "isPrimary": true
+    }
+  ]
+}

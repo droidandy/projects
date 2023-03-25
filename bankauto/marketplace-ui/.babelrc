@@ -1,0 +1,25 @@
+{
+  "presets": [["next/babel"]],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "components": "./src/components",
+          "containers": "./src/containers",
+          "types": "./src/types",
+          "api": "./src/api",
+          "constants": "./src/constants",
+          "store": "./src/store",
+          "hooks": "./src/hooks",
+          "helpers": "./src/helpers",
+          "icons": "./src/icons",
+          "guards": "./src/guards",
+          "layouts": "./src/layouts"
+        }
+      }
+    ],
+    "inline-react-svg"
+  ]
+}

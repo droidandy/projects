@@ -1,0 +1,14 @@
+ha_file_post:
+    path:  /upload
+    defaults: { _controller: AppBundle:Api\File:upload }
+    methods: [POST]
+
+ha_file_upload_article:
+    path:  /upload/article
+    defaults: { _controller: AppBundle:Api\File:uploadArticleOrigin }
+    methods: [POST]
+
+ha_file_get:
+    path:  /{id}
+    defaults: { _controller: AppBundle:Api\File:get }
+    methods: [GET]

@@ -1,0 +1,41 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.Ingredients {
+  @include spacingBottom;
+
+  .ingredients-option {
+    color: var(--purplish-grey);
+    font-size: 14px;
+    line-height: 1.57;
+    min-height: 130px;
+    p {
+      margin: 0 0 14px;
+      color: var(--color-body-text);
+    }
+    h4 {
+      text-transform: uppercase;
+      color: var(--purplish-grey);
+      line-height: 1.41;
+      letter-spacing: 0.9px;
+      font-size: 18px;
+      font-family: var(--font-heading);
+      margin: 20px 0 10px;
+    }
+  }
+  .item-catalog--time {
+    position: relative;
+    padding: 1px 0 2px 35px;
+    margin: 8px 0 20px;
+    &:before {
+      content: "";
+      display: block;
+      background: url("./icon_clock.svg");
+      width: 24px;
+      height: 24px;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}

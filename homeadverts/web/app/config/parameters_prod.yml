@@ -1,0 +1,17 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: la_app
+    database_user: root
+    database_password: 1234qwer
+
+    database_driver_geonames: pdo_mysql
+    database_host_geonames: 127.0.0.1
+    database_port_geonames: ~
+    database_name_geonames: la_geo
+    database_user_geonames: root
+    database_password_geonames: 1234qwer
+
+    secret: nwzFrHJMBMHPxTqRyWQ3tfXZLYDY9M
+    es_hosts: ['127.0.0.1:9200']

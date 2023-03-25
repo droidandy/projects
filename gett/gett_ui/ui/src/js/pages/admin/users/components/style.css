@@ -1,0 +1,14 @@
+.w360 {
+  width: 360px;
+  max-width: 100%;
+}
+
+.verify {
+  min-width: auto !important;
+}
+
+.verified {
+  background: #89c587 !important;
+  border-color: #89c587 !important;
+  color: #fff !important;
+}

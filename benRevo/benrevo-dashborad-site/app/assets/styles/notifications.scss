@@ -1,0 +1,22 @@
+.notifications-tc {
+  margin: 60px auto 0 !important;
+  padding: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+
+  @media only screen and (min-width: 1200px) {
+    width: calc(1127px)!important;
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 992px) {
+    width: calc(933px)!important;
+  }
+
+  @media only screen and (max-width: 991px) {
+    width: 97vw !important;
+  }
+
+  .notification-dismiss {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+# Property
+_api_property:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/api/property/property.yml"
+
+_api_property_like:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/api/property/property_like.yml"
+
+_api_property_comment:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/api/property/comment.yml"

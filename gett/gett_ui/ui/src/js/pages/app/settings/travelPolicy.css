@@ -1,0 +1,31 @@
+.sortableHandle {
+  cursor: move;
+}
+
+.editColumn {
+  min-width: 170px;
+
+  @media(max-width: 1023px) {
+    min-width: 230px;
+  }
+
+  @media(max-width: 767px) {
+    min-width: 40px;
+    max-width: 120px;
+  }
+}
+
+.sortableItem {
+  border-bottom: 1px solid #d8d8d8;
+  background-color: #fff;
+  color: #000;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.sortableList {
+  background-color: #f3f3f3;
+  color: #808080;
+}

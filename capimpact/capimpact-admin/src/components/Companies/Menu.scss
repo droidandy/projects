@@ -1,0 +1,22 @@
+.companies-menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .companies-menu-group {
+    min-width: 350px;
+    margin: 0 10px 10px 0;
+    .companies-menu-group-title {
+      font-size: 130%;
+      font-weight: bold;
+      margin: 0;
+    }
+    .nav {
+      .nav-item {
+        .nav-link {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

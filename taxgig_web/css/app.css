@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, sans-serif !important;
+  overflow: hidden;
+}
+
+html {
+  background-color: #fafafa;
+  -webkit-tap-highlight-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Disable IOS grey wrapper on focus */
+}
+
+body {
+  position: fixed;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+/* Disabled orange highlight on focus */
+span:focus {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+
+/* Disables arrows for input type="number"*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+p {
+  line-height: 25px;
+  color: #5D606B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333848;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+#root_container {
+  width: 100%;
+  height: 100%;
+}
+
+.h100per {
+  height: 100%;
+}
+
+.w100per {
+  width: 100%;
+}

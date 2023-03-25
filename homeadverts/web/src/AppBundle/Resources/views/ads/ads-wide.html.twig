@@ -1,0 +1,64 @@
+<div class="row">
+    <div class="ads-wide">
+        <div class="banner-wrapper">
+            <div class="left">
+                <p class="title">Personalize Your Experience</p>
+                <div class="separator"></div>
+
+                <p class="sub-title">
+                    Follow Extraordinary Homes, Brands and<br/>
+                    categories that interests you.
+                </p>
+
+                {% if app.user %}
+                    <a href="#"
+                       class="
+                       sidenav-show
+                       black-transparent
+                       mdl-button
+                       mdl-js-button
+                       mdl-js-ripple-effect
+                    "
+                       data-type="navigation"
+                    >
+                        Choose Your Interests
+                    </a>
+                {% else %}
+                    <a href="#"
+                       class="
+                       auth-show
+                       black-transparent
+                       mdl-button
+                       mdl-js-button
+                       mdl-js-ripple-effect
+                    ">
+                        Sign Up
+                    </a>
+                {% endif %}
+            </div>
+            <div class="right cover" style="background: url({{ asset('assets/images/ads/ads-1.jpg') }})">
+            </div>
+            <div class="frame">
+            </div>
+
+            <div class="info-text">
+                <a href="{{ path('ha_article_details', {
+                    token: 'Ao2',
+                    slug: 'the-d-flawless-collection-flawless-mesmerising-superlative'
+                }) }}"
+                   class="title">
+                    JEWELERY & COLLECTIBLES
+                </a>
+                <p class="description">
+                    The D Flawless Collection<br/>
+                    - Flawless. Mesmerising.<br/>
+                    Superlative.
+                </p>
+                <a href="https://luxuryaffairs.co.uk/en/story/dpp/sotheby-s-diamonds-the-largest-d-flawless-round-brilliant-in-the-world"
+                   class="by">
+                    By Sotheby's Diamons
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

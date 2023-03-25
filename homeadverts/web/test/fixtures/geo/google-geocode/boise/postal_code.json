@@ -1,0 +1,60 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "83714",
+          "short_name" : "83714",
+          "types" : [ "postal_code" ]
+        },
+        {
+          "long_name" : "Garden City",
+          "short_name" : "Garden City",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Idaho",
+          "short_name" : "ID",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Garden City, ID 83714, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 43.8234579,
+            "lng" : -116.1224761
+          },
+          "southwest" : {
+            "lat" : 43.618656,
+            "lng" : -116.360711
+          }
+        },
+        "location" : {
+          "lat" : 43.7235259,
+          "lng" : -116.2692976
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.8234579,
+            "lng" : -116.1224761
+          },
+          "southwest" : {
+            "lat" : 43.618656,
+            "lng" : -116.360711
+          }
+        }
+      },
+      "place_id" : "ChIJsZoUgWT_rlQR8trPsgqpPqA",
+      "postcode_localities" : [ "Boise", "Garden City", "Hidden Springs" ],
+      "types" : [ "postal_code" ]
+    }
+  ],
+  "status" : "OK"
+}

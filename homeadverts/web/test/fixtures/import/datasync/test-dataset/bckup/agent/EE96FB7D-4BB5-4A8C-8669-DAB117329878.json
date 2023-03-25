@@ -1,0 +1,117 @@
+{
+    "agentSummary": {
+        "id": "ee96fb7d-4bb5-4a8c-8669-dab117329878",
+        "isAgent": true,
+        "name": "Delmar Fincher",
+        "firstName": "Delmar",
+        "lastName": "Fincher",
+        "gender": "Male",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/31EDEC62-204C-4DCC-AC43-254B9B5BB36E",
+        "emailAddress": "delmar.fincher@russlyon.com",
+        "leadEmailAddress": "800201.lead.4011610@leads.leadrouter.com",
+        "businessPhone": "4809912929",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "3e2068da-9ee2-4418-83d0-e5825c02bdda",
+            "RFGOfficeId": "0020",
+            "companyId": "ccf3b688-6771-4135-bf38-ab35ffa85a27",
+            "companyName": "Russ Lyon",
+            "RFGCompanyId": "800201",
+            "brandCode": "SIR",
+            "name": "Russ Lyon Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "7669 E. Pinnacle Peak Road Suite 110",
+                "city": "Scottsdale",
+                "district": "Maricopa",
+                "stateProvince": "Arizona",
+                "stateProvinceCode": "AZ",
+                "postalCode": "85255",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 33.69598,
+                "longitude": -111.91516,
+                "formattedAddress": "7669 E Pinnacle Peak Rd, Scottsdale, AZ 85255"
+            },
+            "phoneNumber": "4805857070",
+            "emailAddress": "contact@russlyon.com"
+        }
+    },
+    "personId": "b7fa9587-36e4-4436-97f2-749135946b91",
+    "lastUpdateOn": "2018-04-03T22:15:15.147",
+    "roles": [
+        {
+            "office": {
+                "officeId": "3e2068da-9ee2-4418-83d0-e5825c02bdda",
+                "RFGOfficeId": "0020",
+                "companyId": "ccf3b688-6771-4135-bf38-ab35ffa85a27",
+                "companyName": "Russ Lyon",
+                "RFGCompanyId": "800201",
+                "brandCode": "SIR",
+                "name": "Russ Lyon Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "7669 E. Pinnacle Peak Road Suite 110",
+                    "city": "Scottsdale",
+                    "district": "Maricopa",
+                    "stateProvince": "Arizona",
+                    "stateProvinceCode": "AZ",
+                    "postalCode": "85255",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 33.69598,
+                    "longitude": -111.91516,
+                    "formattedAddress": "7669 E Pinnacle Peak Rd, Scottsdale, AZ 85255"
+                },
+                "phoneNumber": "4805857070",
+                "emailAddress": "contact@russlyon.com"
+            },
+            "role": "Associate Broker",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "delmar.fincher@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "31EDEC62-204C-4DCC-AC43-254B9B5BB36E",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/31EDEC62-204C-4DCC-AC43-254B9B5BB36E",
+            "isDefault": true,
+            "caption": "Delmar Fincher",
+            "shortDescription": "Delmar Fincher",
+            "htmlDescription": "Delmar Fincher",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-04-03T22:15:15.117"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Russ Lyon Sotheby's International Realty has gathered realty craftsmen dedicated to the ideals of integrity and professionalism. From the ownership, management, agents and affiliate services, every person involved in the company utilizes innovative skills, programs and technologies to create the finest real estate services company to be found. The mission of Russ Lyon Sotheby's International Realty is to provide its clients with the most responsive personalized service attainable - nothing less will do. The environment within Russ Lyon Sotheby's International Realty is unique in the industry. Seasoned management innovatively supports the efforts of the Company's members to create a dynamic and inspiring atmosphere that invigorates and hones the skills of everyone involved. Collaboration and networking are fostered to create a synergy that puts the whole company to work for every client. The artistic blending of proven traditions and state-of-the-art innovation is unsurpassed. These assets are positioned on a base of financial stability and corporate staying power.",
+            "htmlRemark": "<p><span style=\"font-size: 12px;\">Russ Lyon Sotheby's International Realty has gathered realty craftsmen dedicated to the ideals of integrity and professionalism. From the ownership, management, agents and affiliate services, every person involved in the company utilizes innovative skills, programs and technologies to create the finest real estate services company to be found. The mission of Russ Lyon Sotheby's International Realty is to provide its clients with the most responsive personalized service attainable - nothing less will do. The environment within Russ Lyon Sotheby's International Realty is unique in the industry. Seasoned management innovatively supports the efforts of the Company's members to create a dynamic and inspiring atmosphere that invigorates and hones the skills of everyone involved. Collaboration and networking are fostered to create a synergy that puts the whole company to work for every client. The artistic blending of proven traditions and state-of-the-art innovation is unsurpassed. These assets are positioned on a base of financial stability and corporate staying power.<\/span><br><\/p>"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "BR",
+            "stateCode": "AZ",
+            "number": "BR525241000",
+            "issuedOn": "2008-05-19"
+        }
+    ]
+}

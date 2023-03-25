@@ -1,0 +1,214 @@
+%table(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-bottom:40px; border-bottom: 1px solid #d8d8d8;" valign="top")
+        %table(width="100%")
+          %tbody
+            %tr
+              %td(align="left" valign="middle")
+                = image_tag "gett-logo.png", :class => "mcnImage", :align => "center", :alt => "", :style => "padding-bottom: 0; display: inline !important; vertical-align: bottom; height:70px"
+              %td(align="right" valign="middle" style="text-align: right; font-family: 'Roboto', Helvetica;")
+                %span.boldText(style="font-size: 22px; vertical-align:middle; padding-bottom: 10px; display:block;")
+                  = @total
+                %span(style="vertical-align: middle; height: 20px; padding-right: 15px; font-size: 14px; color: #808080;")
+                  = @booking.payment_card&.personal ? 'Personal' : 'Business'
+                = image_tag "card_receipt_credit_card.png", :valign => "middle"
+                %span(style="vertical-align: middle; font-size: 14px; color: #808080; padding-left: 10px;")
+                  **** #{@booking.payment_card&.last_4}
+%table(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:40px; padding-bottom:40px; border-bottom: 1px solid #d8d8d8;" valign="top")
+        %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(style="width:900px;" valign="top" width="900")
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td(valign="top" width="50%" style="padding-right:40px;")
+                      %span(style="padding-bottom: 20px; display: block; font-family: 'Roboto', Helvetica; font-size: 22px; font-weight: 300;")
+                        Order ID:
+                        %span(style="padding-bottom:20px;")
+                          \##{@booking.order_id}
+                      %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%; margin-left:10px;" width="100%")
+                        %tbody
+                          %tr
+                            %td(valign="middle" style="padding-right:20px;")
+                              %span.iconHolder(style="display:block;")
+                                = image_tag("card_receipt_start_marker_small.png", size: "20x20")
+                            %td(valign="middle" align="left")
+                              %span(style="font-size:16px; display:block; font-family: 'Roboto', Helvetica;")
+                                Pick Up
+                          %tr
+                            %td(style="padding-left: 10px; height: 0;")
+                              %div(style="height:100%; border-left:1px solid #d8d8d8;")
+                            %td(style="padding-top:10px; padding-bottom:20px;")
+                              %span(style="display: block; font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                                = @started_at
+                              %span(style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                                = @pickup_address_line
+                          - @stop_address_lines.each_with_index do |line, i|
+                            %tr
+                              %td(valign="middle")
+                                %span.iconHolder(style="display:block;")
+                                  = image_tag("mailer/card_receipt_stop_point_marker_small.png", size: "20x20")
+                              %td(valign="middle" align="left")
+                                %span(style="font-size:16px; display:block;")
+                                  Stop Point #{i+1}
+                            %tr
+                              %td(style="border-left:1px solid #d8d8d8; padding-bottom:20px; padding-top:10px;")
+                              %td(style="padding-bottom:20px; padding-top:10px;")
+                                %span(style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                                  = line
+                          %tr
+                            %td(valign="middle")
+                              %span.iconHolder(style="display:block;")
+                                = image_tag("card_receipt_finish_marker_small.png", size: "20x20")
+                            %td(align="left" valign="middle")
+                              %span(style="font-size:16px; display:block;")
+                                Drop Off
+                          %tr
+                            %td
+                            %td(style="padding-bottom:20px;")
+                              %span(style="padding-top: 10px; display:block; font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                                = @ended_at
+                              %span(style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                                = @destination_address_line
+                    %td(valign="top" width="50%"  style="padding-left:40px;")
+                      %table.mcnImageBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+                        %tbody.mcnImageBlockOuter
+                          %tr
+                            %td.mcnImageBlockInner(valign="top")
+                              %table.mcnImageContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" width="100%")
+                                %tbody
+                                  %tr
+                                    %td.mcnImageContent(style="text-align:center;" valign="top" tyle="")
+                                      = image_tag @map_image_url, :class => "mcnImage", :align => "center", :alt => "", :style => "max-width:100%; padding-bottom: 0; display: inline !important; vertical-align: bottom;"
+%table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:40px; padding-bottom:40px; border-bottom: 1px solid #d8d8d8;" valign="top")
+        %table.textContentTable(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(valign="top" width="50%" style="padding-right:40px;")
+              %span(align="left" style="font-family: 'Roboto', Helvetica; font-size: 22px; font-weight: 300; padding-bottom:25px; display:block;")
+                Transaction Information
+              %table(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      Fare
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      %span
+                        = @fare
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      Fee
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      %span
+                        = @fee
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      VAT (20%)
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      %span
+                        = @vat
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      Tips
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      %span
+                        = @tips
+                  %tr(style="border-top: 1px solid #d8d8d8;")
+                    %td
+                    %td
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      Charged to
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      = image_tag "card_receipt_credit_card.png", :valign => "middle"
+                      %span(style="vertical-align: middle; padding-left: 15px;")
+                        **** #{@booking.payment_card&.last_4}
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      Total
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      %span
+                        = @total
+                  %tr
+                    %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                      VAT Reg No
+                    %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                      %span= Settings.ote.vat_number
+            %td(valign="top" width="50%" style="padding-left:40px;")
+              %span(align="left" style="font-family: 'Roboto', Helvetica; font-size: 22px; font-weight: 300; padding-bottom:25px; display:block;")
+                Driver Information
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;" width="100%")
+                %tbody
+                  %tr(style="padding-bottom:10px;")
+                    - if @booking.driver&.image_url.present?
+                      %td(align="center" valign="middle" width="30%" style="padding-right:10px;")
+                        = image_tag @booking.driver.image_url, :class => "avatarHolder", :align => "center", :alt => "", :style => "padding-bottom: 0; display: inline !important; vertical-align: middle;", :width => "80"
+                    %td(width="70%")
+                      %table.textContentTable(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                        %tbody
+                          %tr
+                            %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                              Name
+                            %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                              %span
+                                = @booking.driver&.name || 'N/A'
+                          %tr
+                            %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                              Miles
+                            %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                              %span
+                                #{@booking.travel_distance || 0} miles
+                          %tr
+                            %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                              Waiting time
+                            %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                              %span
+                                = @waiting_time
+                          %tr
+                            %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                              Trip Time
+                            %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                              %span
+                                = @ride_duration
+                          %tr
+                            %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                              Car Type
+                            %td(align="right" valign="top" style="text-align: right; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                              %span
+                                #{@formatted_vehicle_type}
+- if @references.present? || @travel_reason.present?
+  %table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+    %tbody.mcnTextBlockOuter
+      %tr
+        %td.mcnTextBlockInner(style="padding-top:40px;" valign="top")
+          %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+            %tr
+              - if @travel_reason.present?
+                %td(valign="top" width="50%")
+                  %span(align="left" style="font-family: 'Roboto', Helvetica; font-size: 22px; font-weight: 300; padding-bottom:25px; display:block;")
+                    Travel Reason
+                  %table(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;" width="100%")
+                    %tbody
+                      %tr
+                        %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #808080")
+                          #{@travel_reason}
+              - if @references.present? && @travel_reason.present?
+                %td(valign="top" width="80px" style="display:block;")
+              - if @references.present?
+                %td(valign="top" width="50%")
+                  %span(align="left" style="font-family: 'Roboto', Helvetica; font-size: 22px; font-weight: 300; padding-bottom:25px; display:block;")
+                    References
+                  %table.textContentTable(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%;" width="100%")
+                    %tbody
+                      - @references.each do |item|
+                        %tr
+                          %td(align="left" valign="top" style="font-family: 'Roboto', Helvetica; font-size: 14px; color: #727272")
+                            = item[:name]
+                          %td(align="right" valign="top" style="padding-right: 10px; font-family: 'Roboto', Helvetica; font-size: 14px;")
+                            = item[:value]

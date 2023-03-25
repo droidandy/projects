@@ -1,0 +1,232 @@
+/*
+    App wide styling for generic components/elements
+*/
+
+ion-title .toolbar-title{
+  font-size: 1.5rem;
+}
+// Sidebar menu
+.app-sidemenu.show-menu .menu-inner ion-content {
+  background: #1c1b1b;
+  .profile-button {
+    padding: 0 10px;
+    text-align: right;
+    button {
+      color: white;
+    }
+  }
+  ion-list {
+    padding: 12px;
+    border-top: 1px solid transparentize(white, 0.9);
+    button.item .item-inner, .item .item-inner{
+      border:none;
+      .input-wrapper ion-label {
+        margin-bottom: 8px;
+        margin-top: 8px;
+      }
+    }
+  }
+  ion-list, ion-list .item {
+    background: transparent;
+    color: white;
+    @extend .secondary-font; // app/theme/app.fonts.scss
+  }
+  ion-list .item {
+    border: none;
+    ion-badge {
+      margin : 0 5px;
+    }
+  }
+  .profile-details {
+    padding:0 30px 23px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img.profile-picture {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: -3px;
+    border: 2px solid white;
+  }
+  .profile-salutation {
+    margin: 0;
+    color: transparentize(white, 0.5);
+    @extend .secondary-font.light-weight; // app/theme/app.fonts.scss
+  }
+  .profile-title {
+    margin: 10px 0 10px -3px;
+    font-size: 5rem;
+    color: white;
+    @extend .primary-font.bold-weight; // app/theme/app.fonts.scss
+    line-height: 1;
+  }
+}
+
+// Addition to buttons to have far left or far right icons
+button span.button-inner ion-icon {
+  &.far-left:first-child {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  &.far-right:last-child {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+// Extra Padding to account for the statusbar in iOS
+ion-toast .toast-wrapper.toast-top {
+  top: 10px !important;
+}
+
+// styling for error messages in toast
+.toast-message-error .toast-wrapper {
+  background: red;
+  color: white;
+  .toast-button span {
+    color: white;
+  }
+}
+
+// Error Dialog box (for pages whose content does not load)
+.mg-error-box {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background: #eee;
+  border-radius: 10px
+}
+
+// Font size for Text in tabs
+ion-tabs ion-tabbar a.tab-button span.tab-button-text {
+  font-size: 18px !important;
+}
+
+// App wide divider. Super versatile I tell ya!
+.divider, .app-divider {
+        margin:10px auto;
+        overflow:hidden;
+        text-align:center;
+        line-height:1.2em;
+
+        &:before,&:after{
+        	content:"";
+	        vertical-align:top;
+	        display:inline-block;
+	        width:50%;
+	        height:0.65em;
+	        border-bottom:1px solid #ccc;
+	        margin:0 2% 0 -55%;
+        }
+        &:after {
+        	margin:0 -55% 0 2%;
+        }
+
+        &.divider-text-left {
+        	position: relative;
+        	text-align: left;
+        	&:after {
+        		width: 74%;
+        	}
+        	&:before {
+        		display: none;
+        	}
+        }
+
+        &.divider-text-right {
+        	position: relative;
+        	text-align: right;
+        	&:before {
+        		width: 74%;
+        	}
+        	&:after {
+        		display: none;
+        	}
+        }
+    }
+    // Padding (Old habit from ionic v1)
+    .padding {padding:10px;}
+    .padding-horizontal {padding-left: 10px; padding-right: 10px;}
+    .padding-vertical {padding-top: 10px; padding-bottom: 10px;}
+
+    .padding-double {padding: 20px;}
+    .padding-double-horizontal {padding-left: 20px; padding-right: 20px;}
+    .padding-double-vertical {padding-top: 20px; padding-bottom: 20px;}
+
+    .block {display: block;}
+
+    // Animation modifications for CSSAnimate plugin. Self explanator
+    .delay-1-second {
+      -webkit-animation-delay: 1s;
+    }
+    .duration-3-seconds {
+      -webkit-animation-duration: 3s;
+    }
+
+    // CSS Loader Animation
+
+    .app-spinner {
+      width: 40px;
+      height: 40px;
+      background-color: #00BCD4;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+
+      -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+      animation: sk-rotateplane 1.2s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes sk-rotateplane {
+      0% { -webkit-transform: perspective(120px) }
+      50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+      100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+    }
+
+    @keyframes sk-rotateplane {
+      0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+      }
+      50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      }
+      100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+    }
+ion-spinner svg{
+  // display: none;
+}
+
+// App wide style overide for LoadingController
+
+ion-loading {
+  .loading-spinner + .loading-content{
+    margin:0;
+  }
+
+  ion-spinner {
+    // we're hiding the default ion-spinner so our fancier spinner can take the spotlight
+    display: none;
+  }
+  .loading-wrapper {
+    //display: none;
+    background-color: white;
+    height: 90px;
+    width: 90px;
+    .loading-content {
+      width: 100%;
+      .app-spinner {
+        background-color: #00BCD4;
+      }
+    }
+  }
+}

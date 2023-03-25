@@ -1,0 +1,68 @@
+!!!
+%html
+  %head
+    %link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    :css
+      .footer {
+        height: 50px;
+        font-size: 14px;
+        width: 100%;
+        margin: 0 -10px;
+      }
+
+      .footer > img {
+        margin: 0;
+        width: 1280px;
+      }
+
+      .block {
+        display: inline-block;
+        text-align: center;
+        float: left;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .block.url {
+        float: right;
+        line-height: 3.85;
+        padding-right: 20px;
+      }
+
+      .block.url a {
+        color: #1875f0;
+      }
+
+      .page-number {
+        color: #373737;
+        background-color: #fdb924;
+        line-height: 3.85;
+        width: 50px;
+        font-weight: bold;
+      }
+
+      .invoice-number {
+        color: #9a9a9a;
+        line-height: 3.85;
+        width: 300px;
+        padding-left: 20px;
+      }
+    :javascript
+      function pdf() {
+        var vars = {};
+        var params = document.location.search.substring(1).split('&');
+
+        for (var i in params) {
+          var keyValue = params[i].split('=', 2);
+          vars[keyValue[0]] = decodeURIComponent(keyValue[1]);
+        }
+
+        document.getElementsByClassName('page-number')[0].textContent = vars['page'];
+      }
+  %body{onload: 'pdf()'}
+    .footer
+      .block.url
+        = link_to('https://gett.com/uk/one-transport/', 'https://gett.com/uk/one-transport/')
+      .block
+        .page-number
+      .block
+        .invoice-number One Transport invoice #{@invoice_number}, #{@invoice_date}

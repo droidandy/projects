@@ -1,0 +1,20 @@
+branch-defaults:
+  develop:
+    environment: fe-anthem-stage
+environment-defaults:
+  benrevo-react-stage:
+    branch: null
+    repository: null
+global:
+  application_name: fe-anthem
+  default_ec2_keyname: aws-misc
+  default_platform: arn:aws:elasticbeanstalk:us-east-1::platform/Docker running on 64bit Amazon Linux/2.5.0
+  default_region: us-east-1
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: git
+  workspace_type: Application
+deploy:
+  artifact: Dockerrun.aws.json

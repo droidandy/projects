@@ -1,0 +1,61 @@
+@import "./variables-theme";
+@import 'semantic-ui-modules/menu';
+@import 'semantic-ui-modules/form';
+
+.ui.container {
+  @media only screen and (min-width: 1250px) {
+    width: 1260px;
+  }
+}
+
+.ui.header {
+  font-family: $MAIN_FONT;
+  color: $HEADER_COLOR;
+  font-weight: 200;
+}
+
+.ui.grid {
+  -webkit-box-orient: vertical;
+}
+
+.ui.grid > .row {
+  -webkit-box-orient: vertical;
+}
+
+.ui.form .fields {
+  @media only screen and (max-width: 767px) {
+    & {
+      -webkit-box-orient: vertical;
+      .field {
+        -webkit-box-pack: center;
+      }
+    }
+  }
+}
+
+.ui.button {
+  width: 260px;
+  height: 45px;
+  background-color: $MAIN_BUTTON_COLOR;
+  border-radius: 30px;
+  font-family: $MAIN_FONT;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+
+  &:hover, &:active, &:focus {
+    background-color: $MAIN_BUTTON_HOVER;
+    color: #ffffff;
+  }
+
+  &.inverted {
+    background-color: $INVERTED_BUTTON_COLOR;
+    box-shadow: none !important;
+
+    &:hover, &:active, &:focus {
+      background-color: $INVERTED_BUTTON_HOVER;
+      color: #ffffff;
+      box-shadow: none !important;
+    }
+  }
+}

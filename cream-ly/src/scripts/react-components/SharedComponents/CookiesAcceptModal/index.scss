@@ -1,0 +1,86 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.CookiesAcceptModal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #66636C;
+    z-index: 100000;
+    opacity: 0;
+    transform: translateY(250px);
+    transition: opacity 1s ease, transform 1s ease;
+
+    .container {
+        padding: 0 20px;
+        .content {
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+
+
+            @include media-query($large-up) {
+                padding: 25px 0;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .text {
+                text-align: center;
+                color: $color-btn-primary-text;
+                margin-bottom: 20px;
+                font-size: 14px;
+
+                @include media-query($large-up) {
+                    font-size: 15px;
+                    text-align: left;
+                    margin-right: 80px;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: $color-btn-primary-text;
+                    text-decoration: underline;
+                }
+            }
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @include media-query($medium) {
+                    flex-direction: row;
+                }
+
+                .btn_style {
+                    @include media-query($small) {
+                        width: 100%;
+                        span {
+                            width: 100%;
+                        }
+                    }
+
+                    &.white {
+                        color: $color-btn-primary-text;
+                        a, span {
+                          box-sizing: border-box;
+                          background-color: transparent;
+                          border: 1px solid $color-btn-primary-text;
+                          color: $color-btn-primary-text;
+                          &:hover {
+                            color: $color-btn-primary-text;
+                          }
+                        }
+                      }
+                }
+            }
+        }
+    }
+}

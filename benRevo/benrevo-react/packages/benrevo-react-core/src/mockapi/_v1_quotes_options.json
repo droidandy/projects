@@ -1,0 +1,87 @@
+{
+  "category": "MEDICAL",
+  "currentOption": {
+    "name": "Current",
+    "carrier": "Blue Shield",
+    "totalAnnualPremium": 161200.0,
+    "percentDifference": 0.0,
+    "planTypes": [
+      "HMO",
+      "PPO"
+    ],
+    "selected": false
+  },
+  "options": [
+    {
+      "id": 1,
+      "name": "Option 1",
+      "carrier": "Blue Shield",
+      "totalAnnualPremium": 76103.12,
+      "percentDifference": -52.8,
+      "planTypes": [
+        "HMO",
+        "HMO",
+        "PPO",
+        "PPO",
+        "PPO"
+      ],
+      "selected": true
+    },
+    {
+      "id": 1646,
+      "name": "Option 5",
+      "carrier": "Blue Shield",
+      "totalAnnualPremium": 44088.297,
+      "percentDifference": -72.6,
+      "planTypes": [
+        "HMO",
+        "PPO",
+        "PPO",
+        "PPO"
+      ],
+      "selected": false
+    },
+    {
+      "id": 1647,
+      "name": "Option 6",
+      "carrier": "Blue Shield",
+      "totalAnnualPremium": 44088.297,
+      "percentDifference": -72.6,
+      "planTypes": [
+        "HMO",
+        "PPO",
+        "PPO",
+        "PPO"
+      ],
+      "selected": false
+    },
+    {
+      "id": 1660,
+      "name": "Option 4",
+      "carrier": "Blue Shield",
+      "totalAnnualPremium": 76103.12,
+      "percentDifference": -52.8,
+      "planTypes": [
+        "HMO",
+        "PPO",
+        "PPO",
+        "PPO"
+      ],
+      "selected": false
+    },
+    {
+      "id": 1662,
+      "name": "Option 5",
+      "carrier": "Blue Shield",
+      "totalAnnualPremium": 76103.12,
+      "percentDifference": -52.8,
+      "planTypes": [
+        "HMO",
+        "PPO",
+        "PPO",
+        "PPO"
+      ],
+      "selected": false
+    }
+  ]
+}

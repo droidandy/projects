@@ -1,0 +1,17 @@
+
+.header_daterangepicker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_daterangepicker_label {
+    text-align: left;
+    font-weight: 300;
+}
+.header_daterangepicker_subLabel_status {
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

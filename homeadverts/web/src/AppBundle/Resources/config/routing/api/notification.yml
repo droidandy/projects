@@ -1,0 +1,4 @@
+ha_notification_read_all:
+    path: /read/all/
+    defaults: { _controller: AppBundle:Api\Notification:readAll }
+    methods:  [POST]

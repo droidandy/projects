@@ -1,0 +1,47 @@
+@import 'setup.scss';
+@import 'fonts.scss';
+@import 'reset.scss';
+@import 'mixins.scss';
+@import 'layout.scss';
+
+// blocks
+
+@import 'common-b/input.scss';
+@import 'common-b/link.scss';
+@import 'common-b/button.scss';
+@import 'common-b/slick-carousel.scss';
+@import 'common-b/custom-select.scss';
+@import 'common-b/notification.scss';
+@import 'common-b/table.scss';
+@import 'common-b/tag.scss';
+@import 'common-b/switcher.scss';
+@import 'common-b/alert.scss';
+@import 'common-b/loader.scss';
+@import 'common-b/checkbox.scss';
+@import 'common-b/tip.scss';
+@import 'common-b/empty-label.scss';
+@import 'common-b/input-select.scss';
+@import 'common-b/highlight-textarea.scss';
+@import 'common-b/colorpicker.scss';
+@import 'common-b/analyzebar.scss';
+@import 'common-b/radio.scss';
+@import 'common-b/language-select.scss';
+@import 'common-b/push-preview.scss';
+@import 'common-b/datepicker.scss';
+@import 'common-b/tabs.scss';
+
+// pages
+
+@import 'common-p/public-pages.scss';
+@import 'common-p/cabinet.scss';
+@import 'common-p/newapp.scss';
+@import 'common-p/users.scss';
+@import 'common-p/integrations.scss';
+@import 'common-p/appsettings.scss';
+@import 'common-p/profile.scss';
+@import 'common-p/dashboard.scss';
+@import 'common-p/pushrules.scss';
+@import 'common-p/purchase-screens.scss';
+@import 'common-p/charts.scss';
+@import 'common-p/events.scss';
+@import 'common-p/notFound.scss'

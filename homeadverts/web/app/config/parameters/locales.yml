@@ -1,0 +1,26 @@
+parameters:
+  locales:
+    en:
+      iso_code: en
+      language: English
+    es:
+      iso_code: es
+      language: Español
+    de:
+      iso_code: de
+      language: Deutsch
+    pt:
+      iso_code: pt
+      language: Português
+    fr:
+      iso_code: fr
+      language: Français
+    it:
+      iso_code: it
+      language: Italiano
+    ru:
+      iso_code: ru
+      language: Русский
+    zh:
+      iso_code: zh
+      language: 漢語

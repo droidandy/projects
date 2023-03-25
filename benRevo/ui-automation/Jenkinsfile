@@ -1,0 +1,28 @@
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+  }
+  agent {
+    node {
+      label 'buildfarm'
+    }
+  }
+  tools {
+    nodejs 'NodeJs'
+  }
+  environment {
+    DISPLAY = ':99.0'
+  }
+  stages {
+    stage('Build/Test') {
+      steps {
+        sh '''
+npm install
+npm install testcafe
+npm run test
+        '''
+      }
+    }
+  }
+}

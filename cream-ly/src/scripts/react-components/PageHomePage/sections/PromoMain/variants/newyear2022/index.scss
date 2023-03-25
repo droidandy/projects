@@ -1,0 +1,56 @@
+
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.HomePromoMain.newyear2022 {
+  .container {
+		background: url('./vertical-2.png') no-repeat;
+		// background-size: contain;
+		background-size: 50%;
+
+		background-position: right bottom;
+		padding-top: 25px;
+		padding-bottom:25px;
+
+		.content {
+			max-width: 50%;
+			margin-right: auto;
+		}
+
+		@media screen and (max-width: 576px) {
+      background: url('./horizontal-2.png') no-repeat;
+      background-size: 80%;
+      background-position: center 160px;
+
+      &--ru {
+        background-position: center 180px;
+      }
+
+			.content {
+				margin-left: auto;
+				max-width: 90%;
+
+        .subtitle {
+          margin-bottom:170px;
+        }
+
+        h1, .subtitle {
+          max-width: 280px !important;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &--en, &--lv {
+          .title h1 {
+            margin: auto;
+            max-width: 175px !important;
+            min-width: 175px;
+          }
+        }
+			}
+		}
+
+    @media screen and (max-width: 350px) {
+      background-position: center 200px;
+    }
+	}
+}

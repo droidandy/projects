@@ -1,0 +1,15 @@
+services:
+    ha.article.page_importer:
+        class: AppBundle\Service\Article\Import\PageImporter
+        arguments:
+            - @ha.file_manager
+            - @ha.article.contents_reader
+
+    ha.article.contents_reader:
+        class: AppBundle\Service\Article\Import\ContentsReader
+
+    ha_article.property_importer:
+        class: AppBundle\Service\Article\Import\PropertyImporter
+        arguments:
+            - @ha.file_manager_virtal
+            - @router.default

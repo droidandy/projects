@@ -1,0 +1,40 @@
+imports:
+    - { resource: config.yml }
+
+monolog:
+    handlers:
+        main:
+            type:         fingers_crossed
+            action_level: error
+            handler:      nested
+            channels: ["!import", "!geo"]
+        sentry:
+            type:  raven
+            dsn:   'https://8ec71a3226cb4794af9e6c9fe4a19277:3de3ccdf5c0f443ea47acf51ef1c4fd5@sentry.io/1306055'
+            level: critical
+        nested:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: debug
+        grouped_main:
+            type:    group
+            members: [sentry, streamed_main]
+        streamed_main:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: error
+        import:
+            type:  stream
+            path:  php://stdout
+            level: debug
+            channels: [import, geo]
+        geo:
+            type:  stream
+            path:  %kernel.logs_dir%/geo_%kernel.environment%.log
+            level: debug
+            channels: [geo]
+parameters:
+    listhub:
+      metrics:
+        provider: M-2076
+        test_mode: false

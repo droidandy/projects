@@ -1,0 +1,16 @@
+swiftmailer:
+    transport: %mailer_transport%
+    host:      %mailer_host%
+    username:  %mailer_user%
+    password:  %mailer_password%
+    port:      %mailer_port%
+    encryption: tls
+    spool:
+        type: memory
+
+parameters:
+    mailer_transport: smtp
+    mailer_host: smtp.mailgun.org
+    mailer_port: 587
+    mailer_user: postmaster@mg.homeadverts.com
+    mailer_password: c6df922bd1b94ef65831ebf1a8d5c8e8

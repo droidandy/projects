@@ -1,0 +1,710 @@
+{% assign lang = "ru" %}
+{%if attributes.language%}{% assign lang = attributes.language %}{%endif%}
+
+{% comment %} -------------------- translations_begin --------------------{% endcomment %}
+
+{% capture translation_order_name %}Заказ {{ order_name }}{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_order_name %}Order {{ order_name }}{% endcapture %}
+{%endif%}
+
+{% capture translation_header %}Спасибо за покупку!{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_header %}Thanks for your CREAM.LY order!{% endcapture %}
+{%endif%}
+{% capture translation_or %} или {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_or %} or {% endcapture %}
+{%endif%}
+
+{% capture translation_announcement_tracking %}Мы сообщим когда заказ будет отправлен и пришлем номер трекинга.{%
+endcapture %}
+{%if lang == "en"%}
+{% capture translation_announcement_tracking %}Once the order is shipped we will send you package tracking number{%
+endcapture %}
+{%endif%}
+
+{% capture translation_announcement_video_no_account %}Доступ к видео будет отправлен отдельным письмом.{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_announcement_video_no_account %}Access to the video will be sent in a separate email{% endcapture
+%}
+{%endif%}
+
+{% capture translation_information %} Информация о клиенте {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_information %} Customer information {% endcapture %}
+{%endif%}
+
+
+{% capture translation_shipping_address %} Адрес доставки {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_shipping_address %} Shipping address {% endcapture %}
+{%endif%}
+
+{% capture translation_billing_address %} Адрес оплаты {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_billing_address %} Billing address {% endcapture %}
+{%endif%}
+
+{% capture translation_method %} Способ доставки {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_method %} Shipping method {% endcapture %}
+{%endif%}
+
+
+{% capture translation_show_status %} Посмотреть статус вашего заказа {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_show_status %} View your order status {% endcapture %}
+{%endif%}
+
+{% capture translation_refunded %} Возмещено {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_refunded %} Refunded {% endcapture %}
+{%endif%}
+
+{% capture translation_back %} вернуться в CREAM.LY {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_back %} back to CREAM.LY {% endcapture %}
+{%endif%}
+
+{% capture translation_details %} Детали заказа {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_details %} Order details {% endcapture %}
+{%endif%}
+
+{% capture translation_back %} вернуться в CREAM.LY {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_back %} back to CREAM.LY {% endcapture %}
+{%endif%}
+
+{% capture translations_total %} Всего {% endcapture %}
+{%if lang == "en"%}
+{% capture translations_total %} Total {% endcapture %}
+{%endif%}
+
+{% capture translations_tip %} Чаевые {% endcapture %}
+{%if lang == "en"%}
+{% capture translations_tip %} Tip {% endcapture %}
+{%endif%}
+{% capture translation_discount %}Скидка{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_discount %}Discount{% endcapture %}
+{%endif%}
+
+{% capture translation_subtotal %}Сумма товаров{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_subtotal %}Subtotal {% endcapture %}
+{%endif%}
+{% capture translation_of %} из {% endcapture %}
+{%if lang == "en"%}
+{% capture translation_of %} of {% endcapture %}
+{%endif%}
+
+{% capture translation_pickup %}Pickup{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_pickup %}Pickup{% endcapture %}
+{%endif%}
+
+{% capture translation_shipping %}Доставка{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_shipping %}Shipping {% endcapture %}
+{%endif%}
+
+{% capture translation_duties %}Пошлина{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_duties %}Duties {% endcapture %}
+{%endif%}
+
+{% capture translation_taxes %}Налоги{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_taxes %}Taxes {% endcapture %}
+{%endif%}
+
+
+{% capture translation_announcement_video_with_account %}Доступ к видео будет доступен по вашему аккаунту на странице{%
+endcapture %}
+{%if lang == "en"%}
+{% capture translation_announcement_video_with_account %}Access to the video will be available for your account on the
+page{% endcapture %}
+{%endif%}
+
+{% capture translation_questions %}Если у вас есть вопросы, просто ответьте на этой имэйл или напишите на <a
+  href="mailto:{{ shop.email }}">{{ shop.email }}</a>{% endcapture %}
+{%if lang == "en"%}
+{% capture translation_questions %}If you have any questions, reply to this email or contact us at <a
+  href="mailto:{{ shop.email }}">{{ shop.email }}</a>{% endcapture %}
+{%endif%}
+
+{% comment %} -------------------- translations_end --------------------{% endcomment %}
+
+{% assign hasVideo = false %}
+{%if attributes.currency == 'BYN' }
+{% assign hasAltenativeCurrency = true %}
+{%else%}
+{% assign hasAltenativeCurrency = false %}
+{%endif}
+{% assign hasIndividualFaceMassageConsultation = false %}
+{% for line in subtotal_line_items %}
+{% if line.product.tags contains 'videoProduct' %}
+{% assign hasVideo = true %}
+{% endif %}
+{% if line.product.id == 4168063451190 %}
+{% assign hasIndividualFaceMassageConsultation = true %}
+{% endif %}
+{% endfor %}
+
+{% capture announcement %}
+{% if requires_shipping %}
+<p>{{translation_announcement_tracking}}</p>
+{% endif %}
+{% if hasVideo %}
+<p>
+  {% if {{customer.has_account}} %}
+  {{translation_announcement_video_with_account}} <a href="{{shop.url}}/pages/video">{{shop.url}}/pages/video<a>
+      {% else %}
+      {{translation_announcement_video_no_account}}
+      {% endif %}
+</p>
+{% endif %}
+{% if hasIndividualFaceMassageConsultation %}
+<p>Ваша консультация с Натальей Чичук оплачена, ура!</p>
+<p>Отправьте, пожалуйста, ваше фото в профиль и анфас на электронную почту Натальи. Укажите ваш номер заказа: {{
+  order_name }}: natalliachichuk@yandex.by</p>
+<p>В течение нескольких дней вы получите ответ с согласованием времени и места звонка – вам потребуется около 20-30
+  минут на звонок, а после звонка в течение недели вы получите обучающее видео с индивидуальным комплексом, состоящим из
+  приемов массажа, гимнастики для лица и других техник.</p>
+<p>В течение 2 недель вы сможете задавать появившиеся вопросы – если они будут ☺</p>
+<p>В добрые перемены <br>Алена CREAM.LY</p>
+{% endif %}
+{% endcapture %}
+{%if lang == "en"%}
+{% capture announcement %}
+{% if requires_shipping %}
+<p>{{translation_announcement_tracking}}</p>
+{% endif %}
+{% if hasVideo %}
+<p>
+  {% if {{customer.has_account}} %}
+  {{translation_announcement_video_with_account}} <a href="{{shop.url}}/pages/video">{{shop.url}}/pages/video<a>
+      {% else %}
+      {{translation_announcement_video_no_account}}
+      {% endif %}
+</p>
+{% endif %}
+{% if hasIndividualFaceMassageConsultation %}
+<p>Your consultation with Natalia Chichuk has been paid for, hurray!</p>
+<p>Please send your profile photo and full face to Natalias email. Enter your order number: {{ order_name }}:
+  natalliachichuk@yandex.by</p>
+<p>Within a few days you will receive an answer with the agreement of the time and place of the call - it will take you
+  about 20-30 minutes to call, and after the call within a week you will receive a training video with an individual
+  complex, consisting of massage techniques, facial gymnastics and other techniques</p>
+<p>Within 2 weeks you will be able to ask the questions that appear - if they will ☺</p>
+<p>Into good changes <br>Alyona CREAM.LY</p>
+{% endif %}
+{% endcapture %}
+{%endif%}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>{{ translation_header }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/notifications/styles.css">
+  <style>
+    .button__cell {
+      background: {
+          {
+          shop.email_accent_color
+        }
+      }
+
+      ;
+    }
+
+    a,
+    a:hover,
+    a:active,
+    a:visited {
+      color: {
+          {
+          shop.email_accent_color
+        }
+      }
+
+      ;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="body">
+    <tr>
+      <td>
+        <table class="header row">
+          <tr>
+            <td class="header__cell">
+              <center>
+
+                <table class="container">
+                  <tr>
+                    <td>
+
+                      <table class="row">
+                        <tr>
+                          <td class="shop-name__cell">
+                            {%- if shop.email_logo_url %}
+                            <img src="{{shop.email_logo_url}}" alt="{{ shop.name }}"
+                              width="{{ shop.email_logo_width }}">
+                            {%- else %}
+                            <h1 class="shop-name__text">
+                              <a href="{{shop.url}}">{{ shop.name }}</a>
+                            </h1>
+                            {%- endif %}
+                          </td>
+
+                          <td class="order-number__cell">
+                            <span class="order-number__text">
+                              {{translation_order_name}}
+                            </span>
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+              </center>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row content">
+          <tr>
+            <td class="content__cell">
+              <center>
+                <table class="container">
+                  <tr>
+                    <td>
+
+                      <h2>{{ translation_header }}</h2>
+                      <p>{{ announcement }}</p>
+                      {% if order_status_url and requires_shipping %}
+                      <table class="row actions">
+                        <tr>
+                          <td class="actions__cell">
+                            <table class="button main-action-cell">
+                              <tr>
+                                <td class="button__cell">
+                                  <a href="{{ order_status_url }}" class="button__text">{{translation_show_status}}</a>
+                                </td>
+                              </tr>
+                            </table>
+                            {% if shop.url %}
+                            <table class="link secondary-action-cell">
+                              <tr>
+                                <td class="link__cell">{{translation_or}} <a
+                                    href="{{ shop.url }}">{{translation_back}}</a></td>
+                              </tr>
+                            </table>
+                            {% endif %}
+                          </td>
+                        </tr>
+                      </table>
+
+                      {% endif %}
+
+                    </td>
+                  </tr>
+                </table>
+              </center>
+            </td>
+          </tr>
+        </table>
+
+        <table class="row section">
+          <tr>
+            <td class="section__cell">
+              <center>
+                <table class="container">
+                  <tr>
+                    <td>
+                      <h3>{{translation_details}}</h3>
+                    </td>
+                  </tr>
+                </table>
+                <table class="container">
+                  <tr>
+                    <td>
+
+
+                      <table class="row">
+                        {% for line in subtotal_line_items %}
+                        <tr class="order-list__item">
+                          <td class="order-list__item__cell">
+                            <table>
+                              <td>
+                                {% if line.image %}
+                                <img src="{{ line | img_url: 'compact_cropped' }}" align="left" width="60" height="60"
+                                  class="order-list__product-image" />
+                                {% endif %}
+                              </td>
+                              <td class="order-list__product-description-cell">
+                                {% if line.product.title %}
+                                {% assign line_title = line.product.title %}
+                                {% else %}
+                                {% assign line_title = line.title %}
+                                {% endif %}
+
+                                {% if line.quantity < line.quantity %} {% capture line_display %} {{ line.quantity }}
+                                  {{translation_of}} {{ line.quantity }} {% endcapture %} {% else %} {% assign
+                                  line_display=line.quantity %} {% endif %} <span class="order-list__item-title">{{
+                                  line_title }} × {{ line_display }}</span><br />
+
+                                  {% if line.variant.title != 'Default Title' %}
+                                  <span class="order-list__item-variant">{{ line.variant.title }}</span><br />
+                                  {% endif %}
+
+                                  {% if line.refunded_quantity > 0 %}
+                                  <span class="order-list__item-refunded">{{translation_refunded}}</span>
+                                  {% endif %}
+
+                                  {% if line.discount_allocations %}
+                                  {% for discount_allocation in line.discount_allocations %}
+                                  {% if discount_allocation.discount_application.target_selection != 'all' %}
+                                  <span class="order-list__item-discount-allocation">
+                                    <img src="{{ 'notifications/discounttag.png' | shopify_asset_url }}" width="18"
+                                      height="18" class="discount-tag-icon" />
+                                    <span>
+                                      {{ discount_allocation.discount_application.title | upcase }}
+                                      (-{{ discount_allocation.amount | money_with_currency }})
+                                    </span>
+                                  </span>
+                                  {% endif %}
+                                  {% endfor %}
+                                  {% endif %}
+                              </td>
+                              {% if hasAltenativeCurrency %}
+                              <td class="order-list__price-cell">
+                                {% if line.original_line_price != line.final_line_price %}
+                                <del class="order-list__item-original-price">{{ line.original_line_price |
+                                  money_with_currency }}</del>
+                                {% endif %}
+                                <p class="order-list__item-price">
+                                  {% if line.final_line_price > 0 %}
+                                  {{ line.final_line_price | money_with_currency }}
+                                  {% else %}
+                                  Бесплатно
+                                  {% endif %}
+                                </p>
+                              </td>
+                              {% endif %}
+                            </table>
+                          </td>
+                        </tr>{% endfor %}
+                      </table>
+
+                      <table class="row subtotal-lines">
+                        <tr>
+                          <td class="subtotal-spacer"></td>
+                          <td>
+                            <table class="row subtotal-table">
+                              {% for discount_application in discount_applications %}
+                              {% if discount_application.target_selection == 'all' %}
+                              {% capture discount_title %}
+                              {% if discount_application.title %}
+                              {{ discount_application.title | upcase }}
+                              {% else %}
+                              Discount
+                              {% endif %}
+                              {% endcapture %}
+
+                              <tr class="subtotal-line">
+                                <td class="subtotal-line__title">
+                                  <p>
+                                    <span>{{translation_discount}}</span>
+                                    <span class="subtotal-line__discount">
+                                      <img src="{{ 'notifications/discounttag.png' | shopify_asset_url }}" width="18"
+                                        height="18" class="discount-tag-icon" />
+                                      <span class="subtotal-line__discount-title">{{ discount_title }}</span>
+                                    </span>
+                                  </p>
+                                </td>
+                                <td class="subtotal-line__value">
+                                  <strong>-{{ discount_application.total_allocated_amount | money_with_currency
+                                    }}</strong>
+                                </td>
+                              </tr>
+
+                              {% endif %}
+                              {% endfor %}
+
+                              {% if !hasAltenativeCurrency %}
+                              <tr class="subtotal-line">
+                                <td class="subtotal-line__title">
+                                  <p>
+                                    <span>{{translation_subtotal}}</span>
+                                  </p>
+                                </td>
+                                <td class="subtotal-line__value">
+                                  <strong>{{ subtotal_price | money_with_currency }}</strong>
+                                </td>
+                              </tr>
+
+
+                              <tr class="subtotal-line">
+                                <td class="subtotal-line__title">
+                                  <p>
+                                    <span>{{translation_shipping}}</span>
+                                  </p>
+                                </td>
+                                {% if shipping_address.countryCode != "UA" %}
+                                <td class="subtotal-line__value">
+                                  <strong>{{ shipping_price | money_with_currency }}</strong>
+                                </td>
+                                {% endif %}
+                              </tr>
+
+
+                              {% for line in tax_lines %}
+
+                              <tr class="subtotal-line">
+                                <td class="subtotal-line__title">
+                                  <p>
+                                    <span>{{ line.title }}</span>
+                                  </p>
+                                </td>
+                                <td class="subtotal-line__value">
+                                  <strong>{{ line.price | money_with_currency }}</strong>
+                                </td>
+                              </tr>
+
+                              {% endfor %}
+
+                              {% if total_tip and total_tip > 0 %}
+
+                              <tr class="subtotal-line">
+                                <td class="subtotal-line__title">
+                                  <p>
+                                    <span>{{translations_tip}}</span>
+                                  </p>
+                                </td>
+                                <td class="subtotal-line__value">
+                                  <strong>{{ total_tip | money }}</strong>
+                                </td>
+                              </tr>
+
+                              {% endif %}
+                              {% endif %}
+                            </table>
+
+                            {% if !hasAltenativeCurrency %}
+                            <table class="row subtotal-table subtotal-table--total">
+                              <tr class="subtotal-line">
+                                <td class="subtotal-line__title">
+                                  <p>
+                                    <span>{{translations_total}}</span>
+                                  </p>
+                                </td>
+                                <td class="subtotal-line__value">
+                                  <strong>{{ total_price | money_with_currency }}</strong>
+                                </td>
+                              </tr>
+                            </table>
+
+
+                            {% if total_discounts > 0 %}
+                            <p class="total-discount">
+                              Вы сэкономили <span class="total-discount--amount">{{ total_discounts |
+                                money_with_currency }}</span>
+                            </p>
+                            {% endif %}
+
+                            {% assign transaction_size = 0 %}
+                            {% assign transaction_amount = 0 %}
+                            {% for transaction in transactions %}
+                            {% unless transaction.kind == "capture" or transaction.kind == "void" %}
+                            {% assign transaction_size = transaction_size | plus: 1 %}
+                            {% assign transaction_amount = transaction_amount | plus: transaction.amount %}
+                            {% endunless %}
+                            {% endfor %}
+
+                            {% if transaction_size > 1 or transaction_amount < total_price %} <table
+                              class="row subtotal-table">
+                        <tr>
+                          <td colspan="2" class="subtotal-table__line"></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2" class="subtotal-table__small-space"></td>
+                        </tr>
+
+                        {% for transaction in transactions %}
+                        {% if transaction.status == "success" and transaction.kind == "authorization" or
+                        transaction.kind == "sale" %}
+                        {% if transaction.payment_details.credit_card_company %}
+                        {% capture transaction_name %}{{ transaction.payment_details.credit_card_company }} (ending in
+                        {{ transaction.payment_details.credit_card_last_four_digits }}){% endcapture %}
+                        {% else %}
+                        {% capture transaction_name %}{{ transaction.gateway | replace: "_", " " | capitalize }}{%
+                        endcapture %}
+                        {% endif %}
+
+
+                        <tr class="subtotal-line">
+                          <td class="subtotal-line__title">
+                            <p>
+                              <span>{{transaction_name}}</span>
+                            </p>
+                          </td>
+                          <td class="subtotal-line__value">
+                            <strong>{{ transaction.amount | money }}</strong>
+                          </td>
+                        </tr>
+
+                        {% endif %}
+                        {% if transaction.kind == 'refund' %}
+                        {% if transaction.payment_details.credit_card_company %}
+                        {% assign refund_method_title = transaction.payment_details.credit_card_company %}
+                        {% else %}
+                        {% assign refund_method_title = transaction.gateway %}
+                        {% endif %}
+
+
+                        <tr class="subtotal-line">
+                          <td class="subtotal-line__title">
+                            <p>
+                              <span>{{translation_refunded}}</span>
+                              <br>
+                              <small>{{ refund_method_title | capitalize }}</small>
+                            </p>
+                          </td>
+                          <td class="subtotal-line__value">
+                            <strong>- {{ transaction.amount | money }}</strong>
+                          </td>
+                        </tr>
+
+                        {% endif %}
+                        {% endfor %}
+                      </table>
+                      {% endif %}
+                    </td>
+                  </tr>
+                </table>
+                {% endif %}
+
+            </td>
+          </tr>
+        </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+
+  {% if requires_shipping and shipping_address %}
+  <table class="row section">
+    <tr>
+      <td class="section__cell">
+        <center>
+          <table class="container">
+            <tr>
+              <td>
+                <h3>{{translation_information}}</h3>
+              </td>
+            </tr>
+          </table>
+          <table class="container">
+            <tr>
+              <td>
+
+                <table class="row">
+                  <tr>
+                    {% if requires_shipping and shipping_address %}
+                    <td class="customer-info__item">
+                      <h4>{{translation_shipping_address}}</h4>
+                      {{ shipping_address | format_address }}
+                    </td>
+                    {% endif %}
+                    {% comment %}
+                    {% if billing_address %}
+                    <td class="customer-info__item">
+                      <h4>Адрес оплаты</h4>
+                      {{ billing_address | format_address }}
+                    </td>
+                    {% endif %}
+                    {% endcomment %}
+                  </tr>
+                </table>
+                <table class="row">
+                  <tr>
+                    {% if requires_shipping and shipping_address %}
+                    <td class="customer-info__item">
+                      <h4>{{translation_method}}</h4>
+                      <p>{{ shipping_method.title }}</p>
+                    </td>
+                    {% endif %}
+                    {% comment %}
+                    {% assign transaction_count = transactions | size %}
+                    {% if transaction_count > 0 %}
+                    <td class="customer-info__item">
+                      <h4>Способ оплаты</h4>
+                      {% for transaction in transactions %}
+                      {% if transaction.status == "success" or transaction.status == "pending" %}
+                      {% if transaction.kind == "authorization" or transaction.kind == "sale" %}
+                      <p class="customer-info__item-content">
+                        {% if transaction.payment_details.credit_card_company %}
+                        {% capture credit_card_url %}notifications/{{ transaction.payment_details.credit_card_company |
+                        downcase | replace: " ", "_" }}.png{% endcapture %}
+                        <img src="{{ credit_card_url | shopify_asset_url }}" class="customer-info__item-credit"
+                          height="24">
+                        <span>Payment method — <strong>{{ transaction.amount | money }}</strong></span>
+                        {% else %}
+                        {{ transaction.gateway | replace: "_", " " | capitalize }} — <strong>{{ transaction.amount |
+                          money }}</strong>
+                        {% endif %}
+                      </p>
+                      {% endif %}
+                      {% endif %}
+                      {% endfor %}
+                    </td>
+                    {% endif %}
+                    {% endcomment %}
+                  </tr>
+                </table>
+
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+  {%endif%}
+
+
+  <table class="row footer">
+    <tr>
+      <td class="footer__cell">
+        <center>
+          <table class="container">
+            <tr>
+              <td>
+
+                <p class="disclaimer__subtext">{{translation_questions}}</a></p>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </td>
+    </tr>
+  </table>
+
+  <img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1" />
+
+  </td>
+  </tr>
+  </table>
+</body>
+
+</html>

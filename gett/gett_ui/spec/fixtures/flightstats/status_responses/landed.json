@@ -1,0 +1,240 @@
+{
+ "request": {
+  "airline": {
+   "requestedCode": "VA",
+   "fsCode": "VA"
+  },
+  "flight": {
+   "requested": "875",
+   "interpreted": "875"
+  },
+  "date": {
+   "year": "2017",
+   "month": "9",
+   "day": "4",
+   "interpreted": "2017-09-04"
+  },
+  "utc": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "airport": {},
+  "codeType": {},
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/VA/875/arr/2017/9/4"
+ },
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "VA",
+    "iata": "VA",
+    "icao": "VOZ",
+    "name": "Virgin Australia",
+    "active": true
+   },
+   {
+    "fs": "NZ",
+    "iata": "NZ",
+    "icao": "ANZ",
+    "name": "Air New Zealand",
+    "phoneNumber": "1-800-262-1234",
+    "active": true
+   },
+   {
+    "fs": "HX",
+    "iata": "HX",
+    "icao": "CRK",
+    "name": "Hong Kong Airlines",
+    "active": true
+   },
+   {
+    "fs": "EY",
+    "iata": "EY",
+    "icao": "ETD",
+    "name": "Etihad Airways",
+    "active": true
+   },
+   {
+    "fs": "SQ",
+    "iata": "SQ",
+    "icao": "SIA",
+    "name": "Singapore Airlines",
+    "phoneNumber": "+1 800 7423333",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "MEL",
+    "iata": "MEL",
+    "icao": "YMML",
+    "name": "Melbourne Tullamarine Airport",
+    "city": "Melbourne",
+    "cityCode": "MEL",
+    "stateCode": "VIC",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "regionName": "Oceania",
+    "timeZoneRegionName": "Australia/Sydney",
+    "localTime": "2017-09-08T20:40:20.431",
+    "utcOffsetHours": 10,
+    "latitude": -37.673295,
+    "longitude": 144.843013,
+    "elevationFeet": 370,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MEL?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MEL?codeType=fs"
+   },
+   {
+    "fs": "SYD",
+    "iata": "SYD",
+    "icao": "YSSY",
+    "name": "Sydney (Kingsford Smith) Airport",
+    "city": "Sydney",
+    "cityCode": "SYD",
+    "stateCode": "NSW",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "regionName": "Oceania",
+    "timeZoneRegionName": "Australia/Sydney",
+    "localTime": "2017-09-08T20:40:20.431",
+    "utcOffsetHours": 10,
+    "latitude": -33.932922,
+    "longitude": 151.179898,
+    "elevationFeet": 21,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/SYD?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/SYD?codeType=fs"
+   }
+  ],
+  "equipments": [
+   {
+    "iata": "73H",
+    "name": "Boeing 737-800 (winglets) Passenger/BBJ2",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": false
+   }
+  ]
+ },
+ "flightStatuses": [
+  {
+   "flightId": 932400851,
+   "carrierFsCode": "VA",
+   "flightNumber": "875",
+   "departureAirportFsCode": "MEL",
+   "arrivalAirportFsCode": "SYD",
+   "departureDate": {
+    "dateLocal": "2017-09-04T18:00:00.000",
+    "dateUtc": "2017-09-04T08:00:00.000Z"
+   },
+   "arrivalDate": {
+    "dateLocal": "2017-09-04T19:25:00.000",
+    "dateUtc": "2017-09-04T09:25:00.000Z"
+   },
+   "status": "L",
+   "schedule": {
+    "flightType": "J",
+    "serviceClasses": "JY",
+    "restrictions": ""
+   },
+   "operationalTimes": {
+    "publishedDeparture": {
+     "dateLocal": "2017-09-04T18:00:00.000",
+     "dateUtc": "2017-09-04T08:00:00.000Z"
+    },
+    "publishedArrival": {
+     "dateLocal": "2017-09-04T19:25:00.000",
+     "dateUtc": "2017-09-04T09:25:00.000Z"
+    },
+    "scheduledGateDeparture": {
+     "dateLocal": "2017-09-04T18:00:00.000",
+     "dateUtc": "2017-09-04T08:00:00.000Z"
+    },
+    "estimatedGateDeparture": {
+     "dateLocal": "2017-09-04T18:04:00.000",
+     "dateUtc": "2017-09-04T08:04:00.000Z"
+    },
+    "actualGateDeparture": {
+     "dateLocal": "2017-09-04T18:04:00.000",
+     "dateUtc": "2017-09-04T08:04:00.000Z"
+    },
+    "estimatedRunwayDeparture": {
+     "dateLocal": "2017-09-04T18:18:00.000",
+     "dateUtc": "2017-09-04T08:18:00.000Z"
+    },
+    "actualRunwayDeparture": {
+     "dateLocal": "2017-09-04T18:18:00.000",
+     "dateUtc": "2017-09-04T08:18:00.000Z"
+    },
+    "scheduledGateArrival": {
+     "dateLocal": "2017-09-04T19:25:00.000",
+     "dateUtc": "2017-09-04T09:25:00.000Z"
+    },
+    "estimatedGateArrival": {
+     "dateLocal": "2017-09-04T19:28:00.000",
+     "dateUtc": "2017-09-04T09:28:00.000Z"
+    },
+    "actualGateArrival": {
+     "dateLocal": "2017-09-04T19:28:00.000",
+     "dateUtc": "2017-09-04T09:28:00.000Z"
+    },
+    "estimatedRunwayArrival": {
+     "dateLocal": "2017-09-04T19:24:00.000",
+     "dateUtc": "2017-09-04T09:24:00.000Z"
+    },
+    "actualRunwayArrival": {
+     "dateLocal": "2017-09-04T19:24:00.000",
+     "dateUtc": "2017-09-04T09:24:00.000Z"
+    }
+   },
+   "codeshares": [
+    {
+     "fsCode": "EY",
+     "flightNumber": "6939",
+     "relationship": "L"
+    },
+    {
+     "fsCode": "NZ",
+     "flightNumber": "7650",
+     "relationship": "L"
+    },
+    {
+     "fsCode": "HX",
+     "flightNumber": "3371",
+     "relationship": "L"
+    },
+    {
+     "fsCode": "SQ",
+     "flightNumber": "6831",
+     "relationship": "L"
+    }
+   ],
+   "delays": {
+    "departureGateDelayMinutes": 4,
+    "arrivalGateDelayMinutes": 3
+   },
+   "flightDurations": {
+    "scheduledBlockMinutes": 85,
+    "blockMinutes": 84,
+    "airMinutes": 66,
+    "taxiOutMinutes": 14,
+    "taxiInMinutes": 4
+   },
+   "airportResources": {
+    "departureTerminal": "3",
+    "departureGate": "4",
+    "arrivalTerminal": "2",
+    "arrivalGate": "39"
+   },
+   "flightEquipment": {
+    "scheduledEquipmentIataCode": "73H",
+    "actualEquipmentIataCode": "73H",
+    "tailNumber": "VH-YVD"
+   }
+  }
+ ]
+}

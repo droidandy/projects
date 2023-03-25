@@ -1,0 +1,13 @@
+header.dashboard-header {
+  background-color: #cee7ff !important;
+  border-bottom-color: #00519e !important;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #000 !important;
+}
+
+header.dashboard-header nav #header {
+  background-size: 80px 80px !important;
+  background-image: url("https://users.benrevo.com/assets-external/img/uhc-square.png") !important;
+}

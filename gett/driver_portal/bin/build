@@ -1,0 +1,6 @@
+#!/bin/bash
+
+bin/rspec && bin/rubocop && docker build --build-arg DB_HOST=$DB_HOST --build-arg DB_NAME=$DB_NAME --build-arg DB_USER=$DB_USER \
+  --build-arg DB_PASSWORD=$DB_PASSWORD --build-arg SECRET_KEY_BASE=$SECRET_KEY_BASE \
+  --build-arg JWT_SECRET=$JWT_SECRET --build-arg PORT=$PORT --build-arg ROLLBAR_ACCESS_TOKEN=$ROLLBAR_ACCESS_TOKEN \
+  --tag gett_uk/driver_portal .

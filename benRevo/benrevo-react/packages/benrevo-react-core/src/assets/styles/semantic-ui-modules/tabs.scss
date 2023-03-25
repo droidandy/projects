@@ -1,0 +1,68 @@
+@import '../variables-theme';
+
+/* Count */
+
+.tab-menu {
+  .ui.tabular.menu {
+    border-bottom: 1px solid #6e7881 !important;
+
+    .item {
+      display: block;
+      min-width: 124px;
+      height: 40px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      font-weight: 600;
+      font-size: 16px;
+      border-left: 1px solid #6e7881 !important;
+      border-top: 1px solid #6e7881 !important;
+      border-right: 1px solid #6e7881 !important;
+      padding-top: 10px;
+      background-color: transparent !important;
+      position: relative;
+      text-align: center;
+      margin-right: 5px;
+      color: #6E7881;
+
+      &.active {
+        border-bottom: 4px solid $LINK_COLOR;
+        color: $LINK_COLOR;
+      }
+
+      a {
+        text-align: center;
+      }
+    }
+
+    .add-new-tab {
+      text-transform: uppercase;
+      color: #0099cc;
+      font-size: 12px;
+      img {
+        float: left;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+      span {
+        float: left;
+        margin-left: 10px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  &.small {
+    .ui.tabular.menu {
+      border-bottom: none !important;
+
+      .item {
+        height: 28px;
+        font-size: 12px;
+        padding: 5px;
+        min-width: 80px;
+        margin-top: 11px;
+        margin-right: 2px;
+      }
+    }
+  }
+}

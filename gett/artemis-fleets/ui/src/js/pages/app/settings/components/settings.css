@@ -1,0 +1,13 @@
+.label {
+  width: 140px;
+}
+
+.vehicleType {
+  margin: 10px 5px !important;
+
+  :global(.ant-checkbox) {
+    position: absolute;
+    bottom: 56px;
+    right: 0;
+  }
+}

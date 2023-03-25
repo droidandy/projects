@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="84" viewBox="0 0 190 84">
+    <g fill="none" fill-rule="evenodd">
+        <g font-family="OpenSans, Open Sans">
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -7)">
+                <tspan x="182.498" y="64.226">+</tspan>
+            </text>
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -7)">
+                <tspan x="130.498" y="15.037">+</tspan>
+            </text>
+            <text fill="#09C" font-size="18" opacity=".57" transform="translate(0 -7)">
+                <tspan x=".354" y="62.212">+</tspan>
+            </text>
+            <text fill="#21BDC3" font-size="16" opacity=".292" transform="translate(0 -7)">
+                <tspan x="155.926" y="38.124">+</tspan>
+            </text>
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -7)">
+                <tspan x="49.498" y="26.079">+</tspan>
+            </text>
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -7)">
+                <tspan x="28.498" y="91.33">+</tspan>
+            </text>
+        </g>
+        <path stroke="#6E7880" d="M116.865 37.577L96.147 63.296 74 37.576h14.288C88.288 25.433 83.505 14.717 74 9h.673c15.406 0 27.904 12.86 27.904 28.577h14.288z"/>
+    </g>
+</svg>

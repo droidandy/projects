@@ -1,0 +1,27 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+
+<div class="alt">
+	<div class="row">
+		<div class="column">
+			<div class="main-search">
+				<div class="search-container">
+					{% include 'AppBundle:layout/search:form.html.twig' %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="title" style="margin-bottom: 40px;">
+			    <h3><span>{{ 'property.missing_error'|trans|nl2br }}</span></h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

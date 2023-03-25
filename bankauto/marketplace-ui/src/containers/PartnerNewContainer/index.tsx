@@ -1,0 +1,1 @@
+export { PartnerNewContainer } from './PartnerNewContainer';

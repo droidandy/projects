@@ -1,0 +1,20 @@
+branch-defaults:
+  develop:
+    environment: dev-benrevo-admin-be
+environment-defaults:
+  dev-benrevo-admin-be:
+    branch: null
+    repository: null
+global:
+  application_name: dev-benrevo-admin-be
+  default_ec2_keyname: benrevo-dev-us-west-2
+  default_platform: arn:aws:elasticbeanstalk:us-west-2::platform/64bit Amazon Linux 2018.03 v2.7.1 running Java 8
+  default_region: us-west-2
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: git
+  workspace_type: Application
+deploy:
+  artifact: carriers/benrevo/target/benrevo-admin-service.zip

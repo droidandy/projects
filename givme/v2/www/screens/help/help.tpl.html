@@ -1,0 +1,139 @@
+<style>
+  .gm-content, body {
+    background: #FFFFFF;
+  }
+</style>
+<ion-view>
+  <ion-content class="gm-content">
+    <div class="page page-slider">
+      <ion-slide-box on-slide-changed="activateTabs($index)">
+        <ion-slide>
+          <div class="content help-content">
+            <div class="help-title">Discover two people online at the same time as you.</div>
+            <div>
+              <img src="images/img-01.png" class="img-responsive">
+            </div>
+            <div class="help-footer">
+              <img src="images/img-07.png" class="img-responsive">
+            </div>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="content">
+            <div class="help-title">You will get 15 seconds to view their profile...</div>
+            <div class="carousel-discover1 help-footer">
+              <div id="bx-pager" class="slider-thumb clearfix">
+                <ul>
+                  <li>
+                    <a href="" class="active">
+                      <img src="images/img-thumb-06.png" class="img-responsive" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="images/img-thumb-07.png" class="img-responsive" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img src="images/img-thumb-08.png" class="img-responsive" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="bxslider slider-pic">
+                <div class="help-content">
+                  <div>
+                    <img class="img-responsive help-slider-image" src="images/img-01.png"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="content help-content">
+            <div class="help-title">And make a decision.</div>
+            <div>
+              <img src="images/img-01.png" class="img-responsive">
+            </div>
+            <div>
+              <img src="images/img-07.png" class="img-responsive">
+            </div>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="content">
+            <div class="help-title">
+              If there is a match, you have 5 minutes to talk, but in the first minute the screen will be blurred.
+            </div>
+            <div class="relative help-video">
+              <div class="imgbg">
+                <img src="img/video-chat-pic.png" class="img-responsive" alt="">
+              </div>
+              <a href="#" class="info-icon help-info-icon">info</a>
+              <div class="chat-thumb">
+                <img src="img/chat-with-pic.png"  class="img-responsive" alt="">
+              </div>
+              <!--<span  class="bg no-radius"></span>-->
+              <ul class="call-opt">
+                <li class="call-icon help-call-icon"><a href="#">Drop</a></li>
+              </ul>
+            </div>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <div class="content">
+            <div class="container-fluid">
+              <div class="help-title">
+                At the and of call you will be given the option to send your contact card and talk again.
+              </div>
+              <div class="help-modal-footer" style="display:block">
+                <div class="modal-dialog" >
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="icon-head help-modal-body">
+                        <div class="send-card-block">
+                          <img src="img/rec-card-pic.png" class="img-responsive" alt="">
+                        </div>
+                      </div>
+                      <div class="chat-mess-age-block help-chat-mess-age-block">
+                        <span class="quote">&ldquo;</span>Write her something here<span  class="quote">&rdquo;</span>
+                      </div>
+                      <div class="send-card-opt help-modal-body">
+                        <span class="help-info">PICK 1 OR MORE NETWORKS TO SEND</span>
+                        <ul>
+                          <li><a href="#" class="twitter-icon">twitter</a></li>
+                          <li><a href="#" class="fb-icon">facebook</a></li>
+                          <li><a href="#" class="call-icon active">call</a></li>
+                          <li><a href="#" class="bell-icon">bell</a></li>
+                          <li><a href="#" class="save-icon">save</a></li>
+                          <li><a href="#" class="pin-icon  active">loc pin</a></li>
+                          <li><a href="#" class="whatsapp-icon">whatsapp</a></li>
+                          <li><a href="#" class="email-icon">email</a></li>
+                        </ul>
+                      </div>
+                      <div class="text-center btn-in-block help-modal-body" >
+                        <ul>
+                          <li> <a class="btn btn-default">CANCEL</a> </li>
+                          <li> <a class="btn btn-primary">SEND</a> </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+      <div class="swipe" ng-click="done()">
+        <div ng-bind-html="swipe"></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

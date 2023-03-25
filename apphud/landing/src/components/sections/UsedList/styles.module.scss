@@ -1,0 +1,131 @@
+@import "~styles/variables";
+
+.used {
+  padding-top: 120px;
+  padding-bottom: 200px;
+
+  h2 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 40px;
+    color: $black;
+    text-align: center;
+
+    div {
+      position: relative;
+      padding-left: 4px;
+      display: inline-block;
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+
+      &:after {
+        content: "";
+        background: #ffd12d;
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        width: 98%;
+        height: 22px;
+        transform: skew(0, -3deg);
+        z-index: 1;
+      }
+    }
+  }
+
+  & .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-top: 80px;
+
+    & .card {
+      display: flex;
+      align-items: center;
+
+      img {
+        object-fit: cover;
+        width: 92px;
+        height: 92px;
+      }
+
+      .content {
+        margin-left: 16px;
+
+        strong {
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 700;
+        }
+
+        div {
+          margin-top: 6px;
+          display: grid;
+          grid-auto-flow: column;
+          grid-gap: 0 4px;
+          justify-content: flex-start;
+          align-items: center;
+          span {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & .cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    & .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    & .cards {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px;
+      margin-top: 32px;
+
+      & .card {
+        display: block;
+        text-align: center;
+
+        img {
+          width: 52px;
+          height: 52px;
+        }
+
+        & .content {
+          margin-left: 0;
+          margin-top: 12px;
+
+          strong {
+            min-height: 43px;
+            display: block;
+            font-size: 14px;
+            line-height: 22px;
+          }
+
+          div {
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

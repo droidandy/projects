@@ -1,0 +1,1 @@
+export { SignUpNavigator } from './navigator';

@@ -1,0 +1,17 @@
+#iconBtn {
+  margin: 0;
+  margin-right: 3px;
+  padding: 7px;
+  svg {
+    font-size: 24px;
+  }
+  &.icon {
+    svg {
+      font-size: 22px;
+    }
+    padding: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #F3F3F3;
+  }
+}

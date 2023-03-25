@@ -1,0 +1,48 @@
+.empty-label {
+  margin: 0 auto;
+  color: $brand-black;
+  width: 540px;
+  position: relative;
+}
+
+.empty-label_dashboard {
+  margin-top: -70px;
+}
+
+.empty-label__image {
+  width: 540px;
+}
+
+.empty-label__title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.empty-label__description {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.empty-label__link {
+  position: absolute;
+  font-size: 10px;
+  line-height: 11px;
+  color: $brand-silver;
+  text-decoration: none;
+  bottom: 79px;
+  right: 0;
+}
+
+.empty-label__button {
+  margin-top: 20px;
+}

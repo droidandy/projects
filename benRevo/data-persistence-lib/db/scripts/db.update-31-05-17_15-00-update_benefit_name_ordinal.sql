@@ -1,0 +1,61 @@
+-- MEDICAL
+update benefit_name set ordinal = 0; 
+update benefit_name set ordinal = 1 where name = 'INDIVIDUAL_DEDUCTIBLE';
+update benefit_name set ordinal = 2 where name = 'FAMILY_DEDUCTIBLE';
+update benefit_name set ordinal = 3 where name = 'CO_INSURANCE';
+update benefit_name set ordinal = 4 where name = 'INDIVIDUAL_OOP_LIMIT';
+update benefit_name set ordinal = 5 where name = 'FAMILY_OOP_LIMIT';
+update benefit_name set ordinal = 6 where name = 'PCP';
+update benefit_name set ordinal = 7 where name = 'SPECIALIST';
+update benefit_name set ordinal = 8 where name = 'INPATIENT_HOSPITAL';
+update benefit_name set ordinal = 9 where name = 'IP_COPAY_MAX';
+update benefit_name set ordinal = 10 where name = 'IP_COPAY_TYPE';
+update benefit_name set ordinal = 11 where name = 'IP_PER_OCCURENCE_DEDUCTIBLE';
+update benefit_name set ordinal = 12 where name = 'OUTPATIENT_FACILITY';
+update benefit_name set ordinal = 13 where name = 'OUTPATIENT_SURGERY';
+update benefit_name set ordinal = 14 where name = 'EMERGENCY_ROOM';
+update benefit_name set ordinal = 15 where name = 'DEDUCTIBLE_TYPE';
+update benefit_name set ordinal = 16 where name = 'COMBINE_MED_RX_DEDUCTIBLE';
+update benefit_name set ordinal = 17 where name = 'URGENT_CARE';
+-- DENTAL HMO
+update benefit_name set ordinal = 51 where name = 'ORAL_EXAMINATION';
+update benefit_name set ordinal = 52 where name = 'ADULT_PROPHY';
+update benefit_name set ordinal = 53 where name = 'CHILD_PROPHY';
+update benefit_name set ordinal = 54 where name = 'SILVER_FILL_1_SURFACE';
+update benefit_name set ordinal = 55 where name = 'WHITE_FILL_1_SURFACE_ANTERIOR';
+update benefit_name set ordinal = 56 where name = 'MOLAR_ROOT_CANAL';
+update benefit_name set ordinal = 56 where name = 'PERIO_MAINTAINANCE';
+update benefit_name set ordinal = 58 where name = 'SIMPLE_EXTRACTION_ERUPTED_TOOTH';
+update benefit_name set ordinal = 59 where name = 'ORTHO_SERVICES_ADULTS';
+update benefit_name set ordinal = 60 where name = 'ORTHO_SERVICES_CHILDREN';
+-- DENTAL PPO
+update benefit_name set ordinal = 71 where name = 'CALENDAR_YEAR_MAXIMUM';
+update benefit_name set ordinal = 72 where name = 'CALENDAR_YEAR_DEDUCTIBLE';
+update benefit_name set ordinal = 73 where name = 'DENTAL_INDIVIDUAL';
+update benefit_name set ordinal = 74 where name = 'DENTAL_FAMILY';
+update benefit_name set ordinal = 75 where name = 'WAIVED_FOR_PREVENTIVE';
+update benefit_name set ordinal = 76 where name = 'CLASS_1_PREVENTIVE';
+update benefit_name set ordinal = 77 where name = 'CLASS_2_BASIC';
+update benefit_name set ordinal = 78 where name = 'CLASS_3_MAJOR';
+update benefit_name set ordinal = 79 where name = 'CLASS_4_ORTHODONTIA';
+update benefit_name set ordinal = 80 where name = 'ORTHODONTIA_LIFETIME_MAX';
+update benefit_name set ordinal = 81 where name = 'ORTHO_ELIGIBILITY';
+update benefit_name set ordinal = 82 where name = 'REIMBURSEMENT_SCHEDULE';
+update benefit_name set ordinal = 83 where name = 'IMPLANT_COVERAGE';
+-- VISION 
+update benefit_name set ordinal = 101 where name = 'EXAMS_FREQUENCY';
+update benefit_name set ordinal = 102 where name = 'LENSES_FREQUENCY';
+update benefit_name set ordinal = 103 where name = 'FRAMES_FREQUENCY';
+update benefit_name set ordinal = 104 where name = 'CONTACTS_FREQUENCY';
+update benefit_name set ordinal = 105 where name = 'EXAM_COPAY';
+update benefit_name set ordinal = 106 where name = 'MATERIALS_COPAY';
+update benefit_name set ordinal = 107 where name = 'CONTACTS_ALLOWANCE';
+update benefit_name set ordinal = 108 where name = 'FRAME_ALLOWANCE';
+-- RX 
+update benefit_name set ordinal = 201 where name = 'RX_INDIVIDUAL_DEDUCTIBLE';
+update benefit_name set ordinal = 202 where name = 'RX_FAMILY_DEDUCTIBLE';
+update benefit_name set ordinal = 203 where name = 'MEMBER_COPAY_TIER_1';
+update benefit_name set ordinal = 204 where name = 'MEMBER_COPAY_TIER_2';
+update benefit_name set ordinal = 205 where name = 'MEMBER_COPAY_TIER_3';
+update benefit_name set ordinal = 206 where name = 'MEMBER_COPAY_TIER_4';
+update benefit_name set ordinal = 207 where name = 'MAIL_ORDER';

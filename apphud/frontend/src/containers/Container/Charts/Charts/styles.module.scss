@@ -1,0 +1,76 @@
+.charts {
+  margin-top: 30px;
+
+  & .chart-container {
+    height: 462px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  & .badge {
+    height: 51px;
+    background: #fff4e7;
+    padding: 0 15px;
+    font-size: 13px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  & .wrapper {
+    display: grid;
+    grid-template-columns: 190px minmax(1050px, 1200px);
+  }
+
+  & .container-content {
+    padding-left: 30px;
+    padding-right: 19px;
+    padding-bottom: 60px;
+
+    & .header {
+      margin-bottom: 30px;
+
+      & .header-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        & > div {
+          display: flex;
+          align-items: center;
+
+          // &:last-child {
+          //   cursor: pointer;
+          //   transition: all 0.2s ease;
+
+          //   &:hover {
+          //     opacity: 0.8;
+          //   }
+          // }
+
+          &:first-child {
+            display: flex;
+            align-items: baseline;
+
+            h2 {
+              margin: 0;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 28px;
+              line-height: 38px;
+              color: #1a344b;
+              margin-right: 5px;
+            }
+
+            svg {
+              height: 16px;
+              width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

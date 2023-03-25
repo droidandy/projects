@@ -1,0 +1,20 @@
+{% set marker_template %}
+    <div class="listing-banner">
+        <a rel="nofollow" href="#" class="fa fa-times"></a>
+        <a rel="nofollow" href="URL" class="map-image" style="background-image: url(PHOTO);"></a>
+        <span>
+            <a rel="nofollow" href="#" style="cursor: default; text-decoration:none;" onclick="return false;" class="author"></a>
+            <a rel="nofollow" href="#" class="location" style="cursor: default; text-decoration:none;" onclick="return false;">LOCATION</a></span>
+        <span>TYPE, CURRENCY PRICE <a rel="nofollow" href="URL">View</a></span>
+    </div>
+{% endset %}
+
+{% set json_url = path('ha_user_search_map', {
+    'user_type': user_type,
+    'id': search.location.id,
+    'slug': search.location.slug
+}) %}
+
+<div class="map --collection --agent-collection" data-json-target="{{ json_url }}">
+    <div class="map-canvas"></div>
+</div>

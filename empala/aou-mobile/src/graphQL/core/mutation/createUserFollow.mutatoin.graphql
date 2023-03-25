@@ -1,0 +1,16 @@
+mutation CreateUserFollowMutation($createUserFollowFollowedUserId: ID!) {
+  createUserFollow(followedUserId: $createUserFollowFollowedUserId) {
+    ... on CreateUserFollowSuccess {
+      userFollow {
+        id
+      }
+    }
+    ... on CreateInvalidInputError {
+      message
+      errorCode
+    }
+    ... on NotAllowedError {
+      message
+    }
+  }
+}

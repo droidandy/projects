@@ -1,0 +1,22 @@
+@import '../variables-theme';
+
+/* Form */
+
+.ui.form {
+  .field {
+    & > label {
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.DraftEditor-root {
+  background-color: $INPUT_BACKGROUND;
+  font-size: 12px;
+  color: $INPUT_COLOR;
+  border: $INPUT_BORDER;
+  border-radius: 3px;
+  padding: 0 10px;
+}

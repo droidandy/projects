@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.soriamoriaapp.basicwords" version="0.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>200 Basic Words</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="www/img/app-icon-android.png" />
+        <preference name="disallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <icon src="www/img/app-icon-ios.png" />
+        <preference name="SplashScreen" value="splash.png" />
+        <preference name="SplashScreenDelay" value="30" />
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+    </platform>
+    <plugin name="cordova-plugin-flurryanalytics" spec="https://github.com/blakgeek/cordova-plugin-flurryanalytics" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~1.1.0" />
+    <plugin name="cordova-plugin-network-information" spec="~1.1.0" />
+    <plugin name="cordova-plugin-tts" spec="~0.2.3" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="~5.0.7" />
+    <plugin name="cordova-plugin-console" spec="~1.0.2" />
+    <plugin name="cc.fovea.cordova.purchase" spec="~4.0.0">
+        <variable name="BILLING_KEY" value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmH8g77RKVQ67KN1MbD8/DRNVEhWDDDRHrKIPCs7Lk8gRyGZ4BEJlNlCDQdh8pxUynQOQNteIYv+BrW4OF6xeAYnERNcDrjHxULBUY/SMkR4bwVHqib3+n5+w/RsYREtatNtUMgjneD0DE3ANe+ndsJJlpuHHUfB9WYu/0ndBtoBFnpLLP0PY+NO38YiwhM+ByRzMYy6lVgNsYJl7a1VqwaHH0IKfI3laEhlKrkAgXYjC4HGtkphuKdH4Hk/sKJDlPPzrz3W+4EEGInAGZ6kTFGhOf0Cn5CMIoH2y/CsBu6vY8dIEopyjSjWhARRXHpL0RMiY8WWneodeyPztYf8d7QIDAQAB" />
+    </plugin>
+    <plugin name="org.pushandplay.cordova.apprate" spec="~1.1.7" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <engine name="ios" spec="~3.9.2" />
+    <preference name="xwalkVersion" value="15+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+</widget>

@@ -1,0 +1,566 @@
+{
+  "medical": [
+    {
+      "carrierId": 1,
+      "name": "AETNA",
+      "displayName": "Aetna",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 3,
+      "name": "ANTHEM_BLUE_CROSS",
+      "displayName": "Anthem Blue Cross",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 39,
+      "name": "ANTHEM_CLEAR_VALUE",
+      "displayName": "Anthem Clear Value",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 5,
+      "name": "BLUE_SHIELD",
+      "displayName": "Blue Shield",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 6,
+      "name": "CIGNA",
+      "displayName": "Cigna",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 12,
+      "name": "HEALTHNET",
+      "displayName": "Health Net",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 13,
+      "name": "KAISER",
+      "displayName": "Kaiser",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 30,
+      "name": "MEDIEXCEL",
+      "displayName": "MediExcel",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 38,
+      "name": "OTHER",
+      "displayName": "Other",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 34,
+      "name": "SCRIPPS",
+      "displayName": "Scripps Health Plan",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 19,
+      "name": "SHARP_HEALTH_PLANS",
+      "displayName": "Sharp Health Plans",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 35,
+      "name": "SIMNSA",
+      "displayName": "SIMNSA",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 22,
+      "name": "UHC",
+      "displayName": "UnitedHealthcare",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    }
+  ],
+  "vision": [
+    {
+      "carrierId": 1,
+      "name": "AETNA",
+      "displayName": "Aetna",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 2,
+      "name": "AMERITAS",
+      "displayName": "Ameritas",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 3,
+      "name": "ANTHEM_BLUE_CROSS",
+      "displayName": "Anthem Blue Cross",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 39,
+      "name": "ANTHEM_CLEAR_VALUE",
+      "displayName": "Anthem Clear Value",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 5,
+      "name": "BLUE_SHIELD",
+      "displayName": "Blue Shield",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 6,
+      "name": "CIGNA",
+      "displayName": "Cigna",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 27,
+      "name": "EYEMED",
+      "displayName": "EyeMed",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 10,
+      "name": "GUARDIAN",
+      "displayName": "Guardian",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 12,
+      "name": "HEALTHNET",
+      "displayName": "Health Net",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 13,
+      "name": "KAISER",
+      "displayName": "Kaiser",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 31,
+      "name": "MES_VISION",
+      "displayName": "MESVision",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 15,
+      "name": "METLIFE",
+      "displayName": "MetLife",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 38,
+      "name": "OTHER",
+      "displayName": "Other",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 33,
+      "name": "PREMIER_ACCESS",
+      "displayName": "Premier Access",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 16,
+      "name": "PRINCIPAL_FINANCIAL_GROUP",
+      "displayName": "Principal Financial Group",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 18,
+      "name": "RELIANCE_STANDARD",
+      "displayName": "Reliance Standard",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 21,
+      "name": "SUN_LIFE",
+      "displayName": "Sun Life",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 20,
+      "name": "STANDARD",
+      "displayName": "The Standard",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 22,
+      "name": "UHC",
+      "displayName": "UnitedHealthcare",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 24,
+      "name": "UNUM",
+      "displayName": "Unum",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 37,
+      "name": "VSP",
+      "displayName": "VSP",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    }
+  ],
+  "dental": [
+    {
+      "carrierId": 1,
+      "name": "AETNA",
+      "displayName": "Aetna",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 2,
+      "name": "AMERITAS",
+      "displayName": "Ameritas",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 3,
+      "name": "ANTHEM_BLUE_CROSS",
+      "displayName": "Anthem Blue Cross",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 39,
+      "name": "ANTHEM_CLEAR_VALUE",
+      "displayName": "Anthem Clear Value",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 4,
+      "name": "ASSURANT",
+      "displayName": "Assurant",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 5,
+      "name": "BLUE_SHIELD",
+      "displayName": "Blue Shield",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 25,
+      "name": "CALIFORNIA_DENTAL_NETWORK",
+      "displayName": "California Dental Network",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 6,
+      "name": "CIGNA",
+      "displayName": "Cigna",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 9,
+      "name": "DELTA_DENTAL",
+      "displayName": "Delta Dental",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 26,
+      "name": "DENTAL_HEALTH_SERVICES",
+      "displayName": "Dental Health Services",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 10,
+      "name": "GUARDIAN",
+      "displayName": "Guardian",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 12,
+      "name": "HEALTHNET",
+      "displayName": "Health Net",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 28,
+      "name": "HUMANA",
+      "displayName": "Humana",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 13,
+      "name": "KAISER",
+      "displayName": "Kaiser",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 14,
+      "name": "LINCOLN_FINANCIAL",
+      "displayName": "Lincoln Financial",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 30,
+      "name": "MEDIEXCEL",
+      "displayName": "MediExcel",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 15,
+      "name": "METLIFE",
+      "displayName": "MetLife",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 32,
+      "name": "MUTUAL_OF_OMAHA",
+      "displayName": "Mutual of Omaha",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 38,
+      "name": "OTHER",
+      "displayName": "Other",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 33,
+      "name": "PREMIER_ACCESS",
+      "displayName": "Premier Access",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 16,
+      "name": "PRINCIPAL_FINANCIAL_GROUP",
+      "displayName": "Principal Financial Group",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 18,
+      "name": "RELIANCE_STANDARD",
+      "displayName": "Reliance Standard",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 35,
+      "name": "SIMNSA",
+      "displayName": "SIMNSA",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 21,
+      "name": "SUN_LIFE",
+      "displayName": "Sun Life",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 20,
+      "name": "STANDARD",
+      "displayName": "The Standard",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 23,
+      "name": "UNITED_CONCORDIA",
+      "displayName": "United Concordia",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 22,
+      "name": "UHC",
+      "displayName": "UnitedHealthcare",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    },
+    {
+      "carrierId": 24,
+      "name": "UNUM",
+      "displayName": "Unum",
+      "logoUrl": null,
+      "logoWKaiserUrl": null,
+      "originalImageUrl": null,
+      "originalImageKaiserUrl": null
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+@import '../variables';
+@import '../_variables';
+@import '../variables-theme';
+
+.clients {
+  .ui.dimmer {
+    background-color: transparent;
+    margin-top: 100px;
+  }
+
+  h1.ui.header.page-heading {
+    margin-top: 0;
+    text-align: left;
+    float:left;
+  }
+  .ui.info.message {margin-bottom: 25px;}
+
+  .import-client-button {
+    margin-top: 40px;
+  }
+
+  .ui.table.loading {
+    margin-bottom: 100px;
+  }
+
+  .new-client-button {
+    float:right;
+    margin-left: 20px;
+  }
+
+  .search-client-form {
+    float:right;
+    margin-left: 20px;
+    width: 300px;
+  }
+
+  .clear-value-banner {
+    position: relative;
+    height: 110px;
+    display: inline-block;
+    padding: 10px 30px 15px 11px;
+    color: white;
+    width: 500px;
+    margin-left: -65px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    background: url(../img/svg/clear-value-banner.svg);
+    background-size: 100%;
+
+    .clear-value-left {
+      width: 220px;
+      height: 100%;
+      box-shadow: 1px 0 2px 1px rgba(0,0,0,0.10);
+      display: inline-block;
+
+      background: #ffffff url(../img/svg/clear_value.svg) no-repeat center;
+      background-size: 135px;
+    }
+
+    .clear-value-right {
+      display: inline-block;
+      height: 100%;
+      padding: 10px 0;
+      float: right;
+      width: 220px;
+      font-weight: 200;
+      span {
+        float: left;
+        width: 160px;
+        margin-right: 5px;
+        font-size: 16px;
+        padding-top: 5px;
+      }
+
+      img {
+        width: 30px;
+        margin-top: -5px;
+      }
+
+      div {
+        clear: both;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .clients-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .clients-button {
+    width: 210px;
+
+    img {
+      width: 22px;
+      height: 22px;
+      display: inline-block;
+      position: relative;
+      left: -15px;
+    }
+  }
+
+  &.clients-eximp {
+    h1.ui.header {
+      float: none;
+    }
+
+    .drop-zone {
+      float: left;
+    }
+
+    .ui.loader {
+      margin-left: 10px;
+    }
+
+    .clients-eximp-action {
+      margin: 20px 0 40px;
+    }
+
+    .divider{
+      @include divider();
+    }
+
+    .clients-eximp-subheader {
+      font-weight: bold;
+      font-size: 16px;
+      &:last-child, & + div {
+        margin-bottom: -10px;
+      }
+    }
+
+    .clients-eximp-item {
+      .clients-eximp-text {
+        margin-bottom: 10px;
+      }
+
+      img {
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &.manager-clients {
+    .ui.basic.table td.client-name {
+      background: url(../img/svg/manager-client-avatar.svg) no-repeat;
+      background-position: 10px center;
+      padding-left: 45px;
+    }
+
+    .client-progress {
+      height: 7px;
+      width: 100%;
+      position: relative;
+      background-color: #F4F4F4;
+      border-radius: 10px;
+
+      .client-progress-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: $ELEM_ACTIVE_COLOR;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+.ui.modal.client-ga-modal {
+  padding: 20px 35px 55px;
+
+  .close {
+    @include lineCloseButton();
+    font-size: 28px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.client-override-modal {
+  .close-modal {
+    @include lineCloseButton();
+  }
+
+  .content {
+    .client-override-modal-inner {
+      background: url('../img/svg/import-client-icon.svg') no-repeat center top;
+      background-size: 100px 46px;
+      text-align: center;
+      padding-top: 45px;
+      padding-bottom: 25px;
+      margin-top: 30px;
+
+      .divider{
+        @include divider();
+        margin: 0;
+      }
+
+      h1.ui.header {
+        font-size: 21px;
+        margin-top: 20px;
+      }
+
+
+      .client-override-modal-buttons {
+        margin-top: 10px;
+
+        .ui.button {
+          width: 100%;
+          height: 46px;
+
+          &.primary {
+            min-width: 240px;
+          }
+        }
+      }
+
+      .client-override-modal-actions {
+        .ui.button {
+          width: 100%;
+          height: 46px;
+        }
+      }
+
+      .client-override-modal-form {
+        .ui.input {
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

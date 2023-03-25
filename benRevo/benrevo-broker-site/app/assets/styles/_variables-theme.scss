@@ -1,0 +1,100 @@
+$MAIN_FONT: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+$SECOND_FONT: 'Montserrat' !important;
+
+$MAX_WIDTH: 1250px;
+
+$FONT_COLOR: #3A444D;
+
+$LINK_COLOR: #0099CC;
+$LINK_COLOR_HOVER: #6cc0e5;
+
+$HEADER_COLOR: #3B454E;
+
+$BACKGROUND_COLOR: #F2F2F2;
+
+$PRESENTATION_MODAL_DIVIDER_COLOD: #d6d9db;
+
+$MESSAGE_BG_COLOR: #FCF7D9;
+
+$BUTTON_GREY_COLOR: #748287;
+$BUTTON_GREY_HOVER_COLOR: #94a3a8;
+
+$BUTTON_TEAL_COLOR: #21bdc3;
+$BUTTON_TEAL_HOVER_COLOR: #26d6dc;
+
+$POPUB_DARK_COLOR: #3b444c;
+
+$HEADER_SUB_COLOR: #89949B;
+$HEADER_SUB_COLOR2: #6E7881;
+$HEADER_SUB_COLOR3: #c9cbcc;
+
+$DIVIDER_COLOR: #d8d8d8;
+
+$LIGHT_GREY_COLOR: #6F7980;
+
+$RED_COLOR: #cb6156;
+
+$TABLE_BORDER_COLOR: #CDD5D8;
+
+$CARD_GRAY_COLOR: #6e7880;
+$CARD_GREEN_COLOR: #3b9a91;
+$CARD_BLUE_COLOR: #217eb0;
+$CARD_FINE_COLOR: #66758b;
+
+$BUTTON_SECONDARY_COLOR: #6e787f;
+
+$BORDER_LIGHT_GRAY_COLOR: #bbbec0;
+$CARD_BACKGROUND_COLOR: #f1f4f4;
+$CARD_ACTIVE_COLOR: #2dadd1;
+$CARD_INDICATOR_COLOR: #23855E;
+
+$MAX_WIDTH: 1210px;
+
+$NAVIGATION_GREEN_DARK: #24a8a8;
+$NAVIGATION_GREEN_LIGHT: #49b2b3;
+
+$NAVIGATION_LIGHT_BLUE_COLOR: #65748e;
+$NAVIGATION_DARK_BLUE_COLOR: #47597a;
+
+$CARD_BACKGROUND_HEADER: #333;
+
+$DIVIDER_COLOR: #A3A3A3;
+$SUB_HEADER_COLOR: #9E9E9E;
+
+$INPUT_BACKGROUND_GRAY_COLOR: #f7f7f7;
+
+$PRESENTATION_NAVIGATION_COLOR: #aaafb2;
+$PRESENTATION_NAVIGATION_BG_COLOR: #2b343c;
+
+$PRESENTATION_NEXT_MATCH_CORNER_COLOR: #21bdc3;
+
+@mixin clientInitials() {
+  width: 63px;
+  height: 63px;
+  display: inline-block;
+  background-color: $HEADER_SUB_COLOR;
+  border-radius: 100px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 63px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+@mixin lineCloseButton() {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: $FONT_COLOR;
+
+  &:hover {
+    color: $FONT_COLOR;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

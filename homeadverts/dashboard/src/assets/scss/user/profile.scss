@@ -1,0 +1,195 @@
+.userProfile {
+  .userPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .data {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 6px;
+      .name {
+        font-family: 'Roboto Medium', sans-serif;
+        color: #000000;
+        line-height: 24px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .company {
+        font-family: 'Roboto Medium', sans-serif;
+        color: #00000053;
+        line-height: 20px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .actions {
+        margin-top: 15px;
+        margin-bottom: 23px;
+
+        .follow {
+          min-height: 30px;
+          padding: 0 20px;
+          font-family: 'Roboto Regular', sans-serif;
+          font-size: 15px;
+          line-height: 24px;
+          color: #fff;
+          background: #1E1E1E;
+          font-weight: 500;
+          text-transform: capitalize;
+          border-radius: 16px;
+
+          &:hover {
+            background: #1E1E1E87;
+          }
+        }
+      }
+    }
+  }
+  .contactDetails {
+
+    .intro {
+      text-align: justify;
+      margin-top: 0;
+      font-weight: 400;
+      margin-bottom: 3px;
+      color: #43444f;
+      line-height: 1.3;
+      font-size: 14px;
+    }
+  }
+
+  .section {
+    margin-bottom: 12px;
+
+    .title {
+      font-family: 'Roboto Medium', sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #1E1E1E;
+      margin-bottom: 10px;
+    }
+    .counters {
+      display: flex;
+      flex-direction: row;
+      padding-top: 4px;
+      padding-bottom: 4px;
+
+      .verticalDevider {
+        margin: 0 20px;
+        background-color: #D8D8D8;
+        width: 1px;
+      }
+      .data {
+        .value {
+          font-family: 'Roboto Medium', sans-serif;
+          font-size: 20px;
+          line-height: 20px;
+          font-weight: 500;
+          color: #6A6A6A;
+          margin-bottom: 4px;
+        }
+        .label {
+          font-family: 'Roboto Regular', sans-serif;
+          font-size: 15px;
+          line-height: 20px;
+          font-weight: 500;
+          color: #1E1E1E;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+
+      .details {
+        display: flex;
+        flex-direction: row;
+
+        .icon {
+          color: #949394;
+        }
+
+        .items {
+          display: flex;
+          flex-direction: column;
+          margin-left: 25px;
+
+          .item {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            &:nth-child(1) {
+              margin-top: 0;
+            }
+
+            .subLabel {
+              font-family: 'Roboto Regular', sans-serif;
+              font-size: 13px;
+              line-height: 15px;
+              font-weight: 500;
+              color: #6A6A6A;
+            }
+
+            .label {
+              font-family: 'Roboto Regular', sans-serif;
+              font-size: 15px;
+              line-height: 18px;
+              font-weight: 500;
+              color: #1E1E1E;
+              margin-bottom: 4px;
+            }
+          }
+        }
+      }
+    }
+    .collection {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .picture {
+        width: 93px;
+        height: 75px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+        margin-right: 10px;
+        margin-bottom: 6px;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        &:hover {
+          .fullscreen {
+            opacity: 1;
+          }
+        }
+        .fullscreen {
+          opacity: 0;
+          cursor: pointer;
+          z-index: 2;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          @include transition_opacity();
+          .icon {
+            display: flex;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            align-self: center;
+            border-radius: 50%;
+            background: #00000087;
+            svg {
+              align-self: center;
+              color: #eee;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

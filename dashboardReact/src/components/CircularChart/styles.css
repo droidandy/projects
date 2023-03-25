@@ -1,0 +1,83 @@
+.new-installation-antenna, .new-installations-antenna {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-antenna.svg") no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+}
+.new-installation-other, .new-installations-other {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-other.svg") no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+}
+.new-installation-decoder, .new-installations-decoder {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-decoder.svg") no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+}
+.repair-antenna, .repair-installations-antenna {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-antenna.svg") no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+}
+.repair-decoder, .repair-installations-decoder {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-decoder.svg") no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+}
+.repair-other, .repair-installations-other {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-other.svg") no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+}
+.reparate_item_col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    backgroundColor: #58585a;
+}
+.under_spinner {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.outer {
+    width: 140px;
+    height:140px;
+    background:inherit;
+    position:relative;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.inner-wrap-children {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inner {
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    background:inherit;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    margin-right: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small_text {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+.small_text_panel {
+    margin: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+}

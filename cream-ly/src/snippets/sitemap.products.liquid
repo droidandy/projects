@@ -1,0 +1,14 @@
+{%- liquid
+
+for product in collections["seo"].products 
+	render 'sitemap.url', url: product.url, host:host, lang:lang
+endfor 
+
+if lang == "ru"
+	for product in collections["video-products"].products
+    	render 'sitemap.url', url: product.url, host:host, lang:lang
+	endfor
+endif
+
+
+-%}

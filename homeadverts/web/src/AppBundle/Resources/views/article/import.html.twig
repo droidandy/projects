@@ -1,0 +1,45 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    <div class="one-column">
+
+        <div class="headline --user-settings">
+            <h1 class="heading">
+                Import Story
+            </h1>
+            <span class="sub-heading --small">
+				Import a story from anywhere on the internet to publish on your user.<br/>
+                Enter a link to your blog post/article/story/manifesto to import and share it on Forbes.<br/>
+                You will have a chance to edit it before making it public.
+			</span>
+        </div>
+
+        <div id="import-article" data-url="{{ path('ha_article_import') }}">
+            <div class="inline-and-save">
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input"
+                           type="url"
+                           id="url">
+                    <label class="mdl-textfield__label"
+                           for="url">
+                        Link to the story
+                    </label>
+                </div>
+
+                <button type="submit" class="black --right mdl-button mdl-js-button mdl-js-ripple-effect">
+                    Import
+                </button>
+                <div id="importing-spinner" class="mdl-spinner mdl-js-spinner"></div>
+			</div>
+
+            <div class="note">
+                Please only import content that you own.
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body_before_close %}
+    <script src="{{ asset('app/js/article/articleImport.js') }}"></script>
+{% endblock %}

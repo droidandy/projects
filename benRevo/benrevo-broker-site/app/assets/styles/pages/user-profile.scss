@@ -1,0 +1,108 @@
+.user-profile-page {
+  .broker-data-container {
+    margin-right: 35px;
+    padding-left: 35px;
+    position: relative;
+    width: 380px;
+    .header-text {
+      font-size: 22px;
+      line-height: 1.27;
+      font-weight: bold;
+      color: #3a444d;
+      &::before {
+        content: ' ';
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border-color: transparent;
+        border-style: solid;
+        width: 5px;
+        height: 5px;
+        border-radius: 3px;
+        border-width: 10px;
+        border-left-color: #22bdc2;
+        border-top-color: #22bdc2;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      float: right;
+    }
+  }
+
+  padding: 100px 0;
+  background: linear-gradient(135deg, #fcfcfc 0, #fcfcfc 15%, rgba(0, 0, 0, 0) 15%),
+                linear-gradient(135deg, #f5f6f7  15%, rgba(241, 240, 240, 0.84) 42%, rgba(189, 190, 190, 1));
+  height: 100%;
+  min-height: 100vh;
+
+  .image-column {
+    height: 333px;
+  }
+  @media only screen and (max-width: 991px) {
+    .sixteen.wide.column.image-column {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .ui.image {
+    max-width: 1340px;
+    height: 333px;
+    position: absolute;
+  }
+
+  .ui.form.home {
+    max-width: 450px;
+  }
+
+  .ui.form .field > label {
+    font-weight: 540;
+  }
+
+  .ui.input {
+    input[type="text"] {
+      height: 50px;
+    }
+    margin-bottom: 35px;
+  }
+
+  .profile-header {
+    h1 {
+      font-size: 34px;
+      font-weight: bold;
+      color: #0099cc
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .ui.checkbox+label {
+    padding-left: 10px;
+  }
+
+  .ui.checkbox {
+    margin-left: 10px;
+  }
+
+  .equal.width.fields.sign-up-policy {
+    margin-bottom: 70px;
+  }
+
+  .form-home-button {
+    height: 50px;
+    max-width: 450px;
+    font-size: 16px;
+  }
+}
+
+.right-grid {
+  position: absolute;
+  right: 0;
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 10px;
+    position: relative;
+  }
+}

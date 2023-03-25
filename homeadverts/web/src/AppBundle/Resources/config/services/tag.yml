@@ -1,0 +1,6 @@
+services:
+    ha_tag.follower:
+        class: AppBundle\Service\TagFollower
+        arguments:
+            - "@em"
+            - "@tag_repo"

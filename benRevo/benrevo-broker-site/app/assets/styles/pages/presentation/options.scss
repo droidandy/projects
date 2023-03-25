@@ -1,0 +1,352 @@
+.presentation-options {
+  min-height: 500px;
+
+  .ui.loader {
+    margin-top: 150px;
+  }
+  .ui.three.cards {
+    margin-left: 0;
+
+    .ui.card {
+      padding-bottom: 70px;
+      height: 280px;
+      margin-left: 9px;
+      margin-right: 9px;
+      border-radius: 0;
+      -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+      -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);
+      position: relative;
+
+      .warning-icon {
+        position: absolute;
+        background-color: transparent;
+        left: 10px;
+        top: 10px;
+      }
+
+      .card-price-value span {
+        font-weight: 200;
+      }
+
+      a:focus {
+        outline: none;
+      }
+
+      & > .remove-card {
+        @include lineCloseButton();
+        font-size: 18px;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        z-index: 2;
+      }
+
+      .card-link {
+        position: relative;
+
+        .plan-list {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 18px;
+          background-color: rgba(255, 255, 255, 0.9);
+          border: solid 3px #979797;
+          padding: 30px 15px 30px 15px;
+          display: none;
+
+          .plan-item {
+            margin-bottom: 10px;
+            position: relative;
+
+            .plan-item-title {
+              font-weight: 600;
+              display: inline-block;
+              width: 50px;
+            }
+
+            .plan-item-name {
+              white-space: nowrap;
+              display: inline-block;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              position: absolute;
+              left: 50px;
+              right: 0;
+            }
+          }
+        }
+
+        &:hover {
+          .plan-list {
+            display: block;
+          }
+        }
+      }
+
+      .content {
+        padding: 10px 13px;
+
+        &.content-top {
+          text-align: center;
+          margin-top: 25px;
+          margin-bottom: 25px;
+          height: 189px;
+
+          & > img {
+            width: 175px;
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            margin: 15px 0 0 -87px;
+
+            &.kaiser-logo, &.clear-value-logo {
+              margin-left: -130px;
+              width: 260px;
+              top: 40px;
+            }
+
+            &.clear-value-logo {
+              top: 47px
+            }
+          }
+
+          & > .description {
+            font-size: 30px;
+            color: $FONT_COLOR;
+            margin-top: 100px;
+            position: relative;
+
+            .ui.grid {
+              margin-top: 5px;
+              .row {
+                .column + .column {
+                  border-left: 2px solid #DBE3E6;
+                }
+              }
+            }
+
+            .percent {
+              font-size: 30px;
+              margin-left: 5px;
+            }
+
+            .sub-description {
+              font-size: 8px;
+              text-transform: uppercase;
+              margin-top: 15px;
+              font-weight: bold;
+              color: $HEADER_SUB_COLOR2;
+              line-height: 12px;
+            }
+          }
+
+          @media only screen and (max-width: 990px) and (min-width: 767px) {
+            & > .description {
+              font-size: 22px;
+
+              .percent {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        & > div.header {
+          font-size: 29px;
+          color: $LINK_COLOR;
+          font-weight: 200;
+        }
+      }
+
+      &.card-option, &.card-current {
+        border: 1px solid transparent;
+        cursor: default;
+
+        .content-top, .content-bottom {
+          cursor: default;
+        }
+      }
+
+      .ui.button {
+        position: absolute;
+        bottom: 10px;
+        left: 13px;
+        right: 13px;
+        width: auto;
+      }
+    }
+
+    .ui.card.card-add {
+      background-color: transparent;
+      margin-top: 12px;
+      margin-left: 5px;
+      color: #ffffff;
+      cursor: pointer;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+
+      .topbottom, .leftright {
+        position:absolute;
+        width:100%;
+        height:100%;
+      }
+
+      .leftright {
+        &:after {
+          content:'';
+          position:absolute;
+          bottom:0;
+          left:0;
+          top:0;
+          right:2px;
+          height:100%;
+          width:2px;
+          background-image: url(../img/svg/dashed-border-vertical.svg);
+          background-position: 0 -1px;
+          background-size: 1px auto;
+          background-repeat: repeat-y;
+          /*background-color:red;*/
+        }
+        &:before {
+          content:'';
+          position:absolute;
+          bottom:0;
+          top:0;
+          right: -1px;
+          height:100%;
+          width:2px;
+          background-image: url(../img/svg/dashed-border-vertical.svg);
+          background-position: 0 -1px;
+          background-size: 1px auto;
+          background-repeat: repeat-y;
+          /*background-color:red;*/
+        }
+      }
+      .topbottom {
+        &:before {
+          content:'';
+          position:absolute;
+          bottom:0;
+          left:0;
+          right:0;
+          height:2px;
+          width:100%;
+          background-image: url(../img/svg/dashed-border-horizontal.svg);
+          background-position: 0 bottom;
+          background-size: auto 1px;
+          background-repeat: repeat-x;
+          /* background-color:red; */
+        }
+
+        &:after {
+          content:'';
+          position:absolute;
+          top:0;
+          left:0;
+          right:0;
+          height:2px;
+          width:100%;
+          background-image: url(../img/svg/dashed-border-horizontal.svg);
+          background-position: 0 top;
+          background-size: auto 1px;
+          background-repeat: repeat-x;
+          /* background-color:red; */
+        }
+      }
+
+      .card-add-inner {
+        text-align: center;
+        position: absolute;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+        height: 100%;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: $HEADER_SUB_COLOR2;
+
+        .plus {
+          font-size: 80px;
+          font-weight: 400;
+          margin-bottom: 40px;
+          margin-top: 15px;
+        }
+
+        .title {
+          font-size: 11px;
+          text-transform: uppercase;
+          margin-top: -10px;
+          font-weight: 600;
+        }
+      }
+
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .ui.card, .card-add {
+      min-height: 280px;
+
+      &.card-current {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.ui.modal.delete-option-modal {
+  text-align: center;
+  padding: 50px 30px;
+
+  .close {
+    @include lineCloseButton();
+    font-size: 28px;
+    top: 12px;
+    right: 10px;
+  }
+
+  .ui.header.page-heading {
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .buttons {
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .ui.button.primary {
+      width: 168px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.ui.modal.choose-quote-modal {
+  text-align: center;
+  border-radius: 10px;
+
+  .close {
+    top: 5px !important;
+    right: 2px !important;
+    color: black !important;
+  }
+
+  .choose-quote-modal__header {
+    font-size: 18px;
+    color: #3a444d;
+    margin: 60px;
+  }
+  .choose-quote-modal__btn {
+    width: 220px;
+    height: 35px;
+    font-size: 15px;
+    margin: 0 10px 20px 10px;
+  }
+}

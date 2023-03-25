@@ -1,0 +1,43 @@
+_api_admin:
+  prefix: /admin
+  resource: admin.yml
+
+_api_article:
+  prefix: /article
+  resource: article.yml
+
+_api_user:
+  prefix: /user
+  resource: user.yml
+
+_api_property:
+  prefix: /property
+  resource: property.yml
+
+_api_messenger:
+  prefix: /messenger
+  resource: messenger.yml
+
+_api_file:
+    prefix: /
+    resource: "@AppBundle/Resources/config/routing/api/file.yml"
+
+_api_autocomplete:
+    prefix: /
+    resource: "@AppBundle/Resources/config/routing/api/autocomplete.yml"
+
+_api_location:
+    prefix: /location
+    resource: "@AppBundle/Resources/config/routing/api/location.yml"
+
+_api_tag:
+    prefix: /tag
+    resource: "@AppBundle/Resources/config/routing/api/tag.yml"
+
+_api_notification:
+    prefix: /notification
+    resource: "@AppBundle/Resources/config/routing/api/notification.yml"
+
+_api_statistics:
+    prefix: /statistics
+    resource: "@AppBundle/Resources/config/routing/api/statistics.yml"

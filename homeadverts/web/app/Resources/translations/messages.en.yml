@@ -1,0 +1,1107 @@
+# Loco yaml export: Simple YAML object
+# Project: Homeadverts Website
+# Release: Working copy
+# Locale: en_US, English (USA)
+# Exported by: James Moss
+---
+#Titles
+title.suffix: Luxury Vacation Rentals - Homeadverts.com
+title.luxury-homes: Luxury Homes
+title.listing.for-sale: for Sale
+title.listing.to-rent: to Rent
+for-sale: For Sale
+to-rent: To Rent
+
+#Autocomplete
+search.note: Note
+search.note.by-id: By ID
+search.note.by-mls: By MLS
+search.note.by-city: By City
+search.note.by-zip: By ZIP/POST Code
+search.note.by-address: By Street or Address
+search.note.by-beighborhood: By Neighborhood
+
+search.hint.not-found.line1: We did not found any results for:
+search.hint.not-found.line2: Check your spelling and use formats listed below.
+
+#General
+site.or: or
+site.in: in
+site.location: Locations
+site.mls: MLS
+site.ref: REF
+site.guid: GUID
+site.zip: ZIP
+site.agent: Agent
+site.agents: "{1}Agent|[0,Inf]Agents"
+site.businesses: "{1}Business|[0,Inf]Businesses"
+site.properties: Properties
+site.articles: "{1}Article|[0,Inf]Articles"
+site.properties.for-sale: for sale
+site.properties.to-rent: to rent
+site.translation.unavailable: Translation unavailable, please try again later.
+
+#Common
+site.pixels: Pixels
+
+#Filters
+dir.language.all: All languages
+
+#Homepage
+homepage.intro.ha.heading: Simply Extraordinary
+homepage.intro.ha.paragraph: Welcome to Homeadverts, your global, multilingual luxury home listing service that offers you only the finest selection of the real estate from anywhere fin world. From the customary to the extraordinary, your next home is right here.
+homepage.intro.forbes.heading: The World of Luxury Real Estate
+homepage.intro.forbes.paragraph: Welcome to Forbes, your global luxury home listing service that offers you only the finest selection of the real estate, anywhere!
+homepage.blog.ha.heading: Luxury Blog Magazine
+homepage.blog.ha.paragraph: To Homeadverts Blog Magazine brings you the world's most luxurious homes, real estate market insights from those in the know and the latest home design trends, Interior inspirations and must have accessories.
+homepage.blog.forbes.heading: Forbes Luxury Homes & Lifestyles
+homepage.blog.forbes.paragraph: Indulge yourself in the Forbes Luxury Homes & Lifestyles magazine where our members are highlighted, home interior trends revealed and some of the world's most amazing properties are featured.
+
+homepage.signin.ha.heading: Made For Your Convenience
+homepage.signin.ha.paragraph: Want to be the first to know when your dream home becomes available? Passionate about home decor, interiors and architecture, or maybe you simply would like to receive our newsletter with the latest article. Sign In for your free Homeadverts account.
+homepage.signin.forbes.heading: Made For Your Convenience
+homepage.signin.forbes.paragraph: This section is made to encourage users to register with Forbes, to save their favourite listings, set new listing email alerts and subscribe to the Forbes newsletter. Visitors will be able to sign up/log in with their email address or social profile via Forbes (Gigya/Open Auth).
+
+homepage.signin.favourites.heading: Save Your Favourites
+homepage.signin.favourites.paragraph: Conveniently save all your favourite homes to your profile for easy access and tracking.
+homepage.signin.alerts.heading: New Listing Alerts
+homepage.signin.alerts.paragraph: Create alerts for multiple searches and receive emails as soon as new listings hit the market.
+homepage.signin.newsletter.heading: Weekly Newsletter
+homepage.signin.newsletter.paragraph: Get an insight in to our world, read our stories or lose yourself in some of the greatest homes in the world.
+text.by: By
+site.footer.ha.heading: Your Next Home, Anywhere
+site.footer.ha.paragraph: At Homeadverts you will find homes from all major residental as we all second home markets from around corners of the world.
+site.footer.forbes.heading: Around The World With Forbes
+site.footer.forbes.paragraph: This section dynamically displays continents and countries where Forbes listing members have property listings, brokerages and/or agents present.
+
+#Blog
+blog.search.placeholder: Search any topic
+blog.sectiontitle.general: blog.intro.general
+blog.intro.general: blog.intro.general
+blog.sectiontitle.member-spotlight: blog.sectiontitle.member-spotlight
+blog.intro.member-spotlight: blog.intro.member-spotlight
+blog.sectiontitle.featured-homes: blog.sectiontitle.featured-homes
+blog.intro.featured-homes: blog.intro.featured-homes
+blog.sectiontitle.places: blog.sectiontitle.places
+blog.intro.places: blog.intro.places
+blog.sectiontitle.home-garden: blog.sectiontitle.home-garden
+blog.intro.home-garden: blog.intro.home-garden
+blog.intro.reading-time: min read
+
+blog.property.view: View This Listing
+blog.property.view-near: View All Listings in
+blog.agent.profile: View Profile
+blog.agent.website: Website
+blog.agent.inquiry: Request More Information
+
+#Email
+email.emailto.subject: Your really have to see this!
+email.emailto.body.hello: Hi there
+email.emailto.body.found-on: I found this extraordinary home on %domain% that I wanted to share with you.
+email.inquiry.body.hello: Dear Sir/Madam,
+email.inquiry.body.found-on: I found this property on %domain%. Can you please send me more information?
+email.inquiry.body.thank-you: Thank you.
+email.inquiry.window.terms.text: By sending a request you agree to our
+email.inquiry.window.terms.link: Privacy Policy
+
+#Property
+property.about.heading: About This Luxury Home
+search.list.bathrooms.partial: Partial
+
+#Inquiry
+inquiry.contact.subject: Information request
+inquiry.success.heading: Thank You
+inquiry.success.paragraph: We will be in contact with you shortly
+
+#Advertise
+advertisement.heading: China's Most Extraordinary Private Residence, Suzhou, Beijing - $152,378,630
+advertisement.paragraph: The Recreation of Five Years of Chinese Civilization
+
+advertisement.introduction.one.heading: All inclusive
+advertisement.introduction.one.paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac venenatis enim. Praesent suscipit eget quam quis rhoncus. Nullam blandit tristique sollicitudin. Praesent fringilla dapibus risus vel cursus. In porttitor arcu arcu, at bibendum nunc malesuada non. Vestibulum mi tellus,
+advertisement.introduction.two.heading: Authenticity is the new black
+advertisement.introduction.two.paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac venenatis enim. Praesent suscipit eget quam quis rhoncus. Nullam blandit tristique sollicitudin. Praesent fringilla dapibus risus vel cursus. In porttitor arcu arcu, at bibendum nunc malesuada non. Vestibulum mi tellus,
+advertisement.introduction.three.heading: You are who you hang out with
+advertisement.introduction.three.paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac venenatis enim. Praesent suscipit eget quam quis rhoncus. Nullam blandit tristique sollicitudin. Praesent fringilla dapibus risus vel cursus. In porttitor arcu arcu, at bibendum nunc malesuada non. Vestibulum mi tellus,
+advertisement.introduction.four.heading: You pay for what you get, period!
+advertisement.introduction.four.paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac venenatis enim. Praesent suscipit eget quam quis rhoncus. Nullam blandit tristique sollicitudin. Praesent fringilla dapibus risus vel cursus. In porttitor arcu arcu, at bibendum nunc malesuada non. Vestibulum mi tellus,
+
+
+advertisement.tema.one.heading: Tema 1
+advertisement.tema.one.top: advertisement.tema.one.top
+advertisement.tema.one.middle: advertisement.tema.one.middle
+advertisement.tema.one.bottom: advertisement.tema.one.bottom
+
+advertisement.tema.two.heading: Tema 2
+advertisement.tema.two.top: advertisement.tema.two.top
+advertisement.tema.two.middle: advertisement.tema.two.middle
+advertisement.tema.two.bottom: advertisement.tema.two.bottom
+
+advertisement.tema.three.heading: Tema 3
+advertisement.tema.two.top: advertisement.tema.two.top
+advertisement.tema.two.middle: advertisement.tema.two.middle
+advertisement.tema.two.bottom: advertisement.tema.two.bottom
+
+advertisement.explanation.image.title: Don Kincaid, President and CEO
+advertisement.explanation.heading: This is a heading
+
+advertisement.explanation.1.heading: No Limits to listing content
+advertisement.explanation.1.text: advertisement.explanation.1.text
+advertisement.explanation.2.heading: No 3rd party advertising
+advertisement.explanation.2.text: advertisement.explanation.2.text
+advertisement.explanation.3.heading: No priority memberships
+advertisement.explanation.3.text: advertisement.explanation.3.text
+advertisement.explanation.4.heading: No paid featured placement
+advertisement.explanation.4.text: advertisement.explanation.4.text
+advertisement.explanation.5.heading: No minimum member fees
+advertisement.explanation.5.text: advertisement.explanation.5.text
+advertisement.explanation.6.heading: No profile limits
+advertisement.explanation.6.text: advertisement.explanation.6.text
+
+#Advertisement
+advertise.contact.action: Like to see your luxury homes on Homeadverts?
+
+#Related
+related.properties.heading: Within Close Proximity
+related.properties.paragraph: This section displays 6 related listings within, or close to the same area as current listing. Priority is given listing agent, if non available, other agents selected.
+related.blog.heading: From Our Blog Magazine
+related.blog.paragraph: To Homeadverts Blog Magazine brings you the world's most luxurious homes, real estate market insights from those in the know and the latest home design trends, Interior inspirations and must have accessories.
+
+
+#Filters
+search.filter.media.all: All Media
+search.filter.media.video: Video Only
+search.filter.media.3d: 3D Only
+site.contact-us: Contact Us
+site.about-us: About Us
+
+#Profile
+profile.about: About This Office
+profile.intro: Want to talk about it?
+profile.request.information: Email Agent
+profile.request.phones: Call Agent
+
+#Site links
+site.homepage: Homepage
+site.terms-of-service: Terms Of Service
+site.contact-us: Contact Us
+site.about-us: About Us
+site.property.show-less: Show Less
+site.property.show-more: Show More
+site.property.mail: Mail
+site.property.website: Web Site
+
+#Buttons
+site.button.cancel: Cancel
+site.button.close: Close
+
+#Directory
+dir.ha.heading: Agents and Brokers.
+dir.ha.paragraph: Find international luxury real estate brokers, agents and offices.
+dir.forbes.heading: Agents and Brokers
+dir.forbes.paragraph: Search for international luxury real estate brokers, agents and offices.
+dir.search.expand: Would you like to expand your search to:
+dir.search.refine: Or refine your search and try again.
+
+#Account
+account.profile.photo.upload: Change Image
+account.profile.photo.size: Image Size
+account.listings.pending.title: You have no property listings
+account.listings.pending.description: Your property data feed is currently being processed, please check back later.
+account.settings.social.networks: Social Connections
+account.settings.social.networks.paragraph: Help visitors find you on your social channels by adding your favourite networks to your Homeadverts profile. <br>Simply provide your username or profile URL in all relevant fields and press save.
+account.profile.image.desc: Your profile image may be automatically attached from source via data feed or social sign In.<br/>To change your profile picture, please click the upload button bellow.
+
+#Original HA ---------------------------------------------------------------------------------------
+alerts.modal.loggedin.heading: Create an alert for this search and receive updates as they happen.
+alerts.modal.loggedin.button: Save
+alerts.modal.loggedout.heading: To create an email alert for this search, please sign in or register.
+alerts.modal.loggedout.button: Go
+alerts.modal.existing.heading: Your current search has already been saved
+alerts.modal.existing.text: To view/edit your alerts, please go to My Alerts or Close this window.
+alerts.modal.existing.button: My Alerts
+alerts.modal.button.cancel: Close
+alerts.modal.goto: Go to my Alerts
+alerts.millions: m
+alerts.thousands: k
+social.share.property.in: property in
+social.share.bedroom: bedroom
+billing.confirm_cancel: Delete account
+billing.confirm_cancel.desc: To permanently delete your account please click Confirm. Alternatively click Cancel to return to the previous page.
+billing.confirm: Confirm
+billing.cancel.desc: Your properties will be removed from the website and you will no longer be able to login. You will be required to confirm the cancellation on the next screen.
+billing.cancel: Cancel
+billing.cancel.success: Your account has been successfully removed. We are really sorry to see you go, if at any time you would like to reactivate your account please contact us at info@homeadverts.com
+billing.cancel.email.desc: We have removed your account from Homeadverts. We are really sorry to see you go, if you ever want to come back please contact info@homeadverts.com
+billing.cancel.subject: Account cancelation
+billing.cancel.from: info@homeadverts.com
+billing.cancel.subject-0eaff6696e885a92e0de6cca5a693761: Account cancelation
+billing.expired.subject: Account Card Expired
+billing.expired.email.desc: The card on used to register your Homeadverts account has expired. Please login and update the card.
+billing.downgrade.success: Your Homeadverts account has been successfully downgraded.
+billing.downgrade.email.desc: We have successfully downgraded your account from Premium to Basic.
+billing.downgrade.subject: Account downgrade
+billing.deactivate: Deactivate Account
+billing.activate: Activate Account
+billing.acceptance: By clicking Pay Now you confirm that you have read and agreed to the %link_start%Payment Terms%link_end%.
+billing.payment.thankyou: Thank you - your payment has been successfully processed.
+billing.payment.nextsteps: Your account is now active and any listings are now publically visible.
+billing.payment.nextsubscription: Your next subscription payment will be billed to the credit card shown below.
+billing.pro.pending.title: You are on a Pro account plan
+billing.pro.pending.desc: Your account is pending and will be automatically activated upon payment. Please check your profile and listings for accuracy and click Pay Now to confirm. Subscriptions are automatically reoccurring on a 30 day basis.
+billing.pro.active.title: You are on a Pro account plan
+billing.pro.active.desc: <p>Your Homeadverts Pro subscription plan will automatically renewed on %date% and charged %price% (ex. VAT).&nbsp;<br /><br /> Should you wish to disable your account and suspend all further payments, click the Deactivate Account button. Please note, your account can be fully restored at any time. To permanently delete your account go to %link%.</p>
+billing.franchise.title: You are on a PMP account plan.
+billing.franchise.desc: This account is part of the <b>PMP</b> (Privileged Membership Programme). No Charges are or will be made for your listing membership. If you need to temporarily activate or deactivate your account at any time you can do so here. To permanently delete your account, please visit %link%.
+account.franchise.price: Free Subscription
+account.franchise.price-8734fb16d06442b51f386940b30a5bbe: Free Subscription
+billing.franchise_membership: Priviledged Membership
+billing.franchise.confirm_downgrade: Confirm
+billing.confirm-005148de0ef89cc1e687cdb2b37f8cc0: Confirm
+billing.subscribe.now: Subscribe Now
+plan.success.downgrade.title: Your account is now inactive
+plan.success.downgrade.desc: Your profile and listings are no longer visible to the public and your credit card will no longer be charged. To fully restore your account at any time simply login and visit "My Subscription Plan"
+billing.paynow: Pay Now
+account.profile.status.desc.active: Your account is currently active. If however, you wish to permanently delete your account with us for any reason, please click the button below.
+account.profile.status.desc.pending: Your account is now ready. Please complete your payment information in the Billing section to automatically activate your account and make it visible to the public.
+account.profile.status.pending: Pending
+account.profile.cancel.button.text: Delete My Account
+account.profile.status.free: Free
+account.profile.status.pro: Pro
+account.status.active: Active
+account.address.street: Street Address
+account.address.aptBldg: Apt, Bldg
+account.address.address1: Line 1
+account.address.address2: Line 2
+account.address.country: Country
+account.address.county: County / State / Province
+account.address.postcode: Zip / Postcode
+account.address.townCity: Town / City
+account.save_alert: Save
+account.alerts: Alerts
+account.billing: Billing
+account.billing.history: Payment History
+account.billing.payment: Payment
+account.billing.plan: Subscription Plan
+account.billing.vat: VAT Validation
+account.contact.broker_license: Broker license
+account.contact.broker_license.help: Display your professional credentials on your profile
+account.contact.company_name: Company Name
+account.contact.email: Email address
+account.contact.homepage_url: Homepage URL
+account.contact.homepage_url.help: Your company's own website
+account.contact.mobile_phone: Mobile phone
+account.contact.mobile_phone.help: Add a mobile phone number
+account.contact.name: Full name
+account.contact.name.help: Add a contact name to appear on your profile page
+account.contact.phone: Phone
+account.contact.phone.help: Add a phone number
+account.dashboard: Dashboard
+account.enquiries.forward_enquiries: 'Forward To:'
+account.enquiries.forward_enquiries.help: Separate multiple addresses with a comma.
+account.favourites: Favourites
+account.favourites.agents: Agents
+account.favourites.listings: Listings
+account.form_error: There was a problem while submitting this form. See below for details.
+account.listings: My Listings
+account.locale.preferred_currency: Preferred Currency
+account.locale.preferred_currency.help: Preferred currency conversion
+account.locale.primary_language: Primary Language
+account.locale.spoken_languages: Spoken Languages
+account.mail.enquiries: Enquiries
+account.mail.newsletter_frequency: Newsletter
+account.please_select: Please Select
+account.profile: Profile
+account.profile.address: Address
+account.profile.address.success: Successfully updated address.
+account.profile.contact: Contact
+account.profile.contact.success: Successfully updated contact details.
+account.profile.contact_details: Contact Details
+account.profile.delete: Delete
+account.profile.id_format: ID %1$08d
+account.profile.image: Image
+account.profile.image.cover: Cover Photo
+account.profile.address.desc: Please complete your address in full. This information will be publicly visible on your profile page.
+account.profile.contact.desc: Please complete your contact details in full. This information will be publicly visible on your profile page.
+account.profile.locale.desc: Your primary and spoken languages will appear on your profile information. Listings will by default display in your preferred currency.
+account.profile.image.profile: Profile Photo
+account.profile.image.success: Successfully updated profile photo.
+account.profile.images: Profile Images
+account.profile.imagesize: Size %width% x %height%
+account.profile.locale: Locale Settings
+account.profile.locale.success: Successfully updated locale details.
+account.profile.save: Save
+account.profile.status: Account Status
+account.required: Required
+account.settings: Settings
+account.settings.about_enquiries: General client enquiries and requests for further listing information.
+account.settings.about_newsletter: A weekly roundup of interior trends, member news and amazing homes.
+account.settings.enquiries: Shared enquiry's
+account.settings.enquiries.desc: You may want to add multiple receipients on property inquiries. Please as many as you like below.
+account.settings.enquiries.success: Thank you. Client enquiries will be copied to the email addresses provided.
+account.settings.mail: Email Settings
+account.settings.mail.success: Successfully updated email settings.
+account.settings.mail.desc: Set your preferences to choose which email communications you'd like to receive. You can change your settings at any time.
+account.settings.password: Password
+account.settings.password.title: Change password
+account.settings.password.button: Update Password
+account.settings.password.confirm: Confirm Password
+account.settings.password.desc: You may change your password at any time.
+account.settings.password.new: New Password
+account.settings.password.old: Old Password
+account.settings.password.success: Your password was successfully changed.
+account.settings.social: Social Sharing
+account.settings.social.connect: Connect
+account.settings.social.disconnect: Disconnect
+account.settings.social.connected: Connected
+account.settings.social.desc1: Connect your Facebook and/or Twitter yo your Homeadverts account to conveniently share individual listings directly from your own portfolio.
+account.settings.social.facebook: Facebook
+account.settings.social.facebook_desc: Connect to share your listings to your Facebook time line
+account.settings.social.google: Google+
+account.settings.social.google_desc: Share this listing on Google+
+account.settings.social.linkedin: Linkedin
+account.settings.social.linkedin_desc: Linkedin
+account.settings.social.twitter: Twitter
+account.settings.social.twitter_desc: Tweet a link to this listing on Twitter
+account.welcome_back: Welcome back %name%
+alerts.bath: Bath
+alerts.bed: Bed
+alerts.delete: Delete
+alerts.deleteselected: Delete selected
+alerts.email.title: Homeadverts - Your alert results
+alerts.email.viewall: View all
+alerts.email.viewthis: View this
+alerts.list.intro: Create new alerts from any search within our listing sections. Simply specify your location, set your required filters and create the alert. You will receive a daily email notifying you of any new listings matching your requirements.
+alerts.name: Location
+alerts.noserches: You haven't saved any alerts yet
+alerts.noresults.title: You haven’t saved any alerts yet.
+alerts.noresults.description: Create new alerts from any search within our listings sections and we’ll let you know when relevant properties hit the market.
+alerts.price: Price
+alerts.saved: My Saved Alerts
+alerts.search.notsaved: Your search could not be saved, please try again later
+alerts.search.saved: Your search has been saved
+alerts.selectall: Select All
+alerts.startsearch: Create new alerts from any search within our listing sections.
+alerts.type: Type
+alerts.view: View
+alter.title: Alerts
+billing.add_card: Add a new card
+billing.address: Billing Address
+billing.address.country: Country
+billing.address.county: County / State / Province
+billing.address.line1: Line 1
+billing.address.line2: Line 2
+billing.address.townCity: Town / City
+billing.billed_to: 'Billed To:'
+billing.card.desc: <p>Please complete your credit card details and click Continue to add your card to your account.</p>
+billing.card.expiry_date: Expiry Date
+billing.card.loading: Loading...
+billing.card.month: Month
+billing.card.name: Name on Card
+billing.card.number: Card Number
+billing.card.save_card: Save Card
+billing.card.security: Security Code
+billing.card.success: Successfully added your card.
+billing.card.year: Year
+billing.card_details: Card Details
+billing.confirm_downgrade: Confirm Downgrade
+billing.confirm_downgrade.desc: You are about to deactivate your account please click Confirm. Alternatively click Cancel to return to the previous page.
+billing.confirm_payment: Confirm Payment
+billing.pay_now: Pay Now
+billing.confirm_payment.desc: You are about to upgrade to a premium membership using the card shown below.
+billing.confirm_remove: Confirm Card Removal
+billing.confirm_remove.desc: You are about to remove the card from your account. This will result in your premium membership being canceled immediately.
+billing.continue: Continue
+billing.downgrade.success-d7a738d41368efc90b5b7cb77989c3f9: Successfully downgraded to basic.
+billing.downgrade_to_basic: Downgrade to Basic
+billing.free: Free
+billing.history.date: Date
+billing.history.description: Description
+billing.history.detail_date: 'Date:'
+billing.history.detail_invoice_no: 'Invoice Number:'
+billing.history.invoice_no: Invoice No.
+billing.history.item: Item
+billing.history.method: 'Payment method:'
+billing.history.none: You haven't made any payments yet.
+billing.history.order_total: 'Order total:'
+billing.history.period: Period
+billing.history.price: Price
+billing.history.quantity: Quantity
+billing.history.rate: Rate
+billing.history.total: Total
+billing.my_plan: My Plan
+billing.na: n/a
+billing.no_card: You do not have a card stored on file.
+billing.payment: Payment
+billing.payment_history: Payment History
+billing.payment_history.desc: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, rerum, nulla, maxime cupiditate ipsam adipisci reprehenderit error quas aliquam eveniet corporis quis dicta recusandae suscipit iusto aspernatur tenetur sit ipsum.
+billing.per_month: '%price% per month'
+billing.per_month_vat: '%price% per month (ex. VAT)'
+billing.premium_membership: Bespoke Membership
+billing.premium_membership.desc: If you would like to downgrade to a free, Basic Listing account you may do so at any time. Your Premium account privileges will remain active until your next scheduled payment date. Of course, you can re-upgrade at any moment to restore your Premium account.
+billing.premium_membership.title: <p>You are currently on a <strong>Bespoke&nbsp;membership plan</strong> with full benefits.</p>
+billing.remove_card: Remove Card
+billing.update_card: Update Card
+billing.subscription: Subscription
+billing.subscription.desc: Subscription Premium
+billing.subscription_plan: Subscription Plan
+billing.total_purchases: Total Purchases
+billing.upgrade.success: Successfully upgraded to premium.
+billing.vat: VAT (%rate%%)
+billing.vat.help: Display validation information on invoices
+billing.vat_country: VAT Country
+billing.vat_no: VAT No.
+billing.vat_validation: VAT Validation
+billing.vat_validation.desc: Your VAT number will automatically appear for future invoices. If you do not have a VAT number or the one you have provided cannot be validated, you will be charged applicable VAT at the standard United Kingdom rate.
+billing.vatnumber: 'VAT Number:'
+billing.view: View
+blog.attachment.video: Video Attachment
+blog.by: By
+blog.bylower: by
+blog.clicktoread: Click to read article
+blog.cta.listing: Unlimited listings and global exposure in 8 world languages. How's that for something.
+blog.facebookcomment: Leave your comment using Facebook
+blog.intro: Indulge yourself in our blog magazine where our members are highlighted, home interior trends revealed and some of the world’s most amazing properties are featured
+blog.map: Map Attachment
+blog.newsletter: Newsletter
+blog.noresults: No results found for
+blog.prof.intro: Advertise with us
+blog.readmore: Read more like this
+blog.reference: Reference
+blog.searchfor: Search Results for
+blog.sectiontitle: The Homeadverts blog magazine
+blog.share: Share this article
+blog.signup: Sign Up Now
+blog.tags: Tags
+blog.uptodate: Stay up to date with
+blog.view.profile: View Profile
+blog.weeklynewsletter: our free weekly newsletter
+dir.agent: Agent
+dir.agent.nomatch: Sorry we couldn’t find any agents to match your search
+dir.bylocation: By Location
+dir.byname: By Name
+dir.category: Category
+dir.clickhere: Click here
+dir.contact: Contact
+dir.contact.address: Address
+dir.contact.email: Your E-Mail
+dir.contact.emailmessage: Email Message
+dir.contact.message: Your message
+dir.contact.name: Your Name
+dir.contact.phone: Phone
+dir.contact.send: Send
+dir.contact.status: Status
+dir.contact.subject: 'Subject: Ref./MLS'
+dir.country: Country
+dir.image.change: Edit Profile
+dir.details.more: More details
+dir.email.from: Email from
+dir.email.message: Email message
+dir.email.subject: Email Subject
+dir.error.occured: An error occurred
+dir.forsale: For sale
+dir.fromblog: From the blog
+dir.google.view: View on Google Map
+dir.hello: Hello
+dir.helper.emailsubject: Email from Homeadverts user
+dir.home: Home
+dir.homepage: Homepage
+dir.languages: Languages
+dir.listing.active: Active listings
+dir.menu.about: About
+dir.menu.listing: Listings
+dir.menu.profile: Profile
+dir.menu.social: Social Stream
+dir.page.visit: Website
+dir.properties: Properties
+dir.properties.latest: Latest Properties
+dir.return.global: to return to global search
+dir.search.noresults: No search results
+dir.search.nofilters: Please change your filters and try again.
+dir.search.filters_alternatives: Alternatively you may create an alert to receive new listings in your inbox matching your selection.
+dir.search.placeholder: Search for Agents/Brokers by location
+dir.search.placeholder.name: Search for Agents/Brokers by name
+dir.search.refine: Please refine and try again
+dir.searching.portfolio: You are searching within the portfolio of
+dir.sent.email: you have been sent an email
+dir.site.visit: Visit Site
+dir.social.all: All
+dir.social.facebook: Facebook
+dir.social.follow: Follow
+dir.social.google: Google+
+dir.social.linkedin: Linkedin
+dir.social.networks: on these social networks
+dir.social.pinterest: Pinterest
+dir.social.select: Select your social network
+dir.social.twitter: Twitter
+dir.social.via: shared via
+dir.title.contactdetails: Contact Details
+dir.torent: To Rent
+dir.user.messagesent: Your message was sent. Thank you for getting in contact.
+dir.user.messnotsend: Your message could not be sent at this time, please try again.
+dir.user.notfound: Sorry, the user you requested could not be found. Please check the URL and try again.
+favourites.add_from_results: Add them from your search results.
+favourites.agents: Agents
+favourites.delete: Remove
+favourites.delete_desc: Select one or multiple elements to remove.
+listing.square.meters: sq.m
+listing.square.feet: sq.ft
+listing.square.acres: acres
+favourites.listings.delete_desc: Select one or multiple listings to remove from favourites
+favourites.agents.delete_desc: Select one or multiple agents to remove from favourites
+favourites.listings: Listings
+favourites.my_favs: My Favourites
+favourites.noresults.title: You haven’t saved any favourites yet.
+favourites.noresults.description: Why not add your favourite listings, agents and brokers to your account for easy access at any time. Simply click the Save to favourites button on any relevant pages.
+favourites.remove: Remove from favourites
+favourites.remove.short: Unlike
+favourites.save: Save to favourites
+favourites.save.short: Like
+favourites.select_all: Select all
+listing.acceptedformat: Accepted Formats
+listing.accepting.feeds: Homeadverts is currently accepting feeds from the following companies
+listing.action: Select action
+listing.activate: Activate
+listing.activate.listing: Publish
+listing.active.selected: Activate Selected
+listing.add.additional: Additional data inclusion
+listing.add.video: Add Video
+listing.add.video.section.title: Add videos to your listing
+listing.add.video.title: Add a video to your listing
+listing.add.video.url: Add Video URL
+listing.addnew: Add New Listing
+listing.address.hide: Hide address from listing
+listing.address.suggest: Complete your address with as much information as possible.
+listing.address.movepin: Please check your location and move the map to adjust the pin position if necessary.
+listing.back: Back to My Listings
+listing.period.daily: Daily
+listing.period.monthly: Monthly
+listing.period.weekly: Weekly
+listing.bath: Bath
+listing.bathroom: Bathrooms
+listing.bed: Bed
+listing.bedroom: Bedrooms
+listing.before: Before you start
+listing.bespoke: Bespoke listings management software systems
+listing.bold: Bold
+listing.built: Interior (size)
+listing.bullet: Bullets
+listing.cancel: Cancel
+listing.chooseoption: Choose an option
+listing.confirm: Confirm
+listing.save_and_continue: Save and continue
+listing.continue: Continue
+listing.data.import: Import Listing Data
+listing.data.min: Minimum data required
+listing.dataslots: The following data slots are available and is included and synced if made available from source.
+listing.date: Date
+listing.deactivate: Deactivate
+listing.deactivate.listing: Unpublish
+listing.deactivate.selected: Deactivate Selected
+listing.delete: Delete
+listing.delete.error: You cannot delete a property that you did not create
+listing.delete.selected: Delete Selected
+listing.description.suggest: Provide a description for your home in as many languages as you want. Missing languages will be auto translated.
+listing.description.title: Describe your home
+listing.dnd.title: Drag and Drop your Photos Here
+listing.downloading: Downloading
+listing.edit: Edit
+listing-edit-listings: listing.edit listings
+listing.edit.listing: Edit listings
+listing.error: An error occurred
+listing.errors: Errors
+listing.externalxml: If you have your own listings management system using XML see our XML integration guidelines here to see how it is still possible to advertise all your properties on homeadverts.com just by making some minor tweaks to your existing system.
+listing.feed.listhub: ListHub
+listing.feed.propertyportal: Property Portal Feeder
+listing.feed.url: Feed/URL
+listing.feed.vebra: Vebra
+listing.feed.xml2you: XML2YOU
+listing.about: About
+listing.forsale: For Sale
+listing.forsale.active: For Sale - Active
+listing.go.settings: Go to my settings
+listing.id: ID
+listing.image: Image
+listing.imperial: Imperial
+listing.import: Import
+listing.import.disclamier: The Homeadverts import section is prepared for those of our members having relevant knowledge about data import procedures and should therefore not be used if such knowledge.
+listing.import.download_failed: We could not download a feed from the URL you provided.
+listing.import.feed_already_exists: The feed URL you provided is already in use.
+listing.import.sniff_failed: The feed you provided is invalid or we do not support it at this time.
+listing.import.warning: 'Important: If any of the above data fields are missing or not validated by our system the relevant listings will be placeed as "Invalid" until data is repaired at source. All listings at Homeadverts are synchronized every 12 hours and will automatically include any updates provided from source.'
+listing.import_date: 'Date:'
+listing.import_id: 'Import ID:'
+listing.import_missing_bedrooms: Listings missing bedrooms
+listing.import_missing_location: Listings missing or invalid location data
+listing.import_missing_photos: Listings missing photos
+listing.import_missing_price: Listings missing price information
+listing.import_missing_type: Listings have invalid or missing property type
+listing.import_rejected: Rejected, correct from source
+listing.import_report: Import Error Report
+listing.import_successful: Listings successfully imported
+listing.intrustions.title: Just follow the simple instructions given to you when you import your listings.
+listing.invalid: Invalid Listings
+listing.italic: italic
+listing.landsize: Size of Land
+listing.language: Language
+listing.listing.address: Provide an address for your listing
+listing.listing.publish: Publish your listing
+listing.listing.publish_pay: Please complete your billing details in order to publish your listing. %link_start%Pay now%link_end%
+listing.listingtype: Status
+listing.location: Location
+listing.measurement: Measurements
+listing.measurement.desc: Provide essential measurements for your listing.
+listing.metric: Metric
+listing.mlsid: MLS#
+listing.nomatch: Sorry we couldn’t find any listings to match your search. Please refine and try again.
+listing.notpublished: Your listing is ready to be published
+listing.num.bath: Number of bathrooms
+listing.num.bed: Number of Bedrooms
+listing.num.property: Number of properties
+listing.numbers: Numbers
+listing.photo.upload: Upload Photos
+listing.photo.uploadmore: Upload More Photos
+listing.photos: Photos
+listing.photos.organise: Reorganise your images by dragging them in to the preferred order. Delete any by clicking on the trash symbol.
+listing.plotsize: Exterior (size)
+listing.price: Price
+listing.price.hide: Hide price from listing and display as Price upon Request.
+listing.price.hide.title: Price upon Request
+listing.price.application.title: Price On Application
+listing.price.disclaimer: Price shown as "Price Upon Request (P.O.R)" if not stated
+listing.processed: Processed
+listing.processing: Processing
+listing.progress: Progress
+listing.property.deleted: The property was deleted successfully
+listing.property.notdeleted: The property could not be deleted
+listing.property.type: Property Type
+listing.published: Your listing is published
+listing.ready: Listings processed
+listing.referenceid: Reference ID
+listing.rejects: Rejects
+listing.select: Select
+listing.share.label: Share listing on your social networks?
+listing.selectall: Select All
+listing.share: Share
+listing.share.cta: Share your listing to your favourite social networks for maximum exposure and engagement. Tick for multiple selections.
+listing.share.cta2: You can quickly and easily share your listings to your favourite social networks at any time. Connect your accounts with Homeadverts via your Social Sharing settings under My Account.
+listing.share.facebook.timeline: Share this listing to your Facebook timeline
+listing.share.googleplus: Share this listing on Google+
+listing.share.linkedin: Share this listing on LinkedIn
+listing.share.title: Share your listing to your social networks
+listing.sharing: Sharing
+listing.social.googleplus: Google+
+listing.social.linkedin: LinkedIn
+listing.source: References
+listing.source.desc: Here you may add your own internal and external references.
+listing.spec.suggest: Please complete your basic particulars with as much detail as possible.
+listing.spec.title: Property details
+listing.specify: Specify your listing
+listing.specifyhome: Please specify your home
+listing.start: Start
+listing.status: Status
+listing.steps.left: Steps left to list
+listing.step.specification: Specification
+listing.step.address: Address
+listing.step.photos: Photos
+listing.step.videos: Videos
+listing.step.description: Description
+listing.step.status: Status
+listing.status.incomplete: 'Please complete required fields for:'
+listing.stepslist: Steps to list
+listing.text.desc: Free Text Description
+listing.torent: To Rent
+listing.totalbuilt: Total Built
+listing.type: Type
+listing.unitconv: Unit Conversion
+listing.validation: Validation
+listing.validlisting: Valid Listings
+listing.video.error: 'Error: We only accept YouTube and Vimeo formats, sorry for the inconvenience.'
+listing.video.reorganise: Reorganise your videos by dragging them in to the preferred order. Delete any by clicking on the trash symbol.
+listing.videoonly: YouTube and Vimeo formats only
+listing.yearbuilt: Year Built
+listing.mine.noresults.title: You haven't created any listings yet!
+listing.mine.noresults.description: To create your first listing, please click the button below and simply follow the instructions.
+listing.mine.no_types: You have no %type% properties.
+metric.social_sharing: Social Sharing
+metrics.added: Added
+metrics.changed: Changed
+metrics.country: Country
+metrics.facebook: Facebook
+metrics.favourites: Favourites
+metrics.filter.1: Last 24 Hours
+metrics.filter.30: Last 30 Days
+metrics.filter.60: Last 60 Days
+metrics.filter.90: Last 90 Days
+metrics.for_rent: For Rent
+metrics.for_sale: For Sale
+metrics.google: Google+
+metrics.leads: Leads
+metrics.linkedin: LinkedIn
+metrics.lisiting_status: 'Listing Status: <time>%date%</time>'
+metrics.lisiting_views: Lisiting Views
+metrics.market_activity: Market Activity
+metrics.overall_performance: Overall Performance
+metrics.pinterest: Pinterest
+metrics.profile_views: Profile Views
+metrics.removed: Removed
+metrics.sync_status: 'Sync Status:'
+metrics.total_lisitings: Total Listings
+metrics.total_performance: Total Performance
+metrics.twitter: Twitter
+metrics.unknown: Unknown
+metrics.views: Views
+metrics.visitors: Visitors
+metrics.visitors_by_country: Visitors By Country
+newsletter.email: Email
+newsletter.newsletter_signup: Newsletter Signup
+newsletter.placeholder: Email address to subscribe
+newsletter.subscribe: Subscribe
+newsletter.success: You have successfully subscribed to our newsletter.
+of: of
+resetting.request.invalid_username: resetting.request.invalid_username
+search.advert.agent: Broker/Agent
+search.details.contact_agent: Contact Agent
+search.advert.cta.signup: Simply sign up and start advertising today
+search.advert.cta1: Try us now, list 5 properties, absolutly Free for as long as you like!
+search.advert.signup: Sign Up
+search.album: From the Album
+search.article.share: Share this
+search.bar.error: The requested search could not be performed
+search.bar.previous: Previous
+search.bar.rent: Search To Rent
+search.bar.sale: Search For Sale
+search.bar.tophit: Top Hit
+search.country.random: Random Properties in
+search.description: Description
+search.details.original: View original text
+search.details.save: Save your favourite home to compare later
+search.details.streetview: Street View
+search.details.video: Watch the video
+search.details.weather: Local Weather
+search.detais.album.more: More From the Album
+search.dis.dimensions: All dimensions are approximate and have not been verified by the selling party and cannot be verified by Homeadverts Ltd. It is recommended that you hire a professional in the business of determining dimensions, such as an appraiser, architect or civil engineer, to determine such information.
+search.dis.info: The listing information set forth on this site is based upon information which Homeadverts consider reliable, but because it has been supplied by third parties to our Agents (who in turn supplied it to Homeadverts), Homeadverts cannot represent that it is accurate or complete, and it should not be relied upon as such. The offerings are subject to errors, omissions, changes, including price, or withdrawal without notice.
+search.dis.title: Important Notice
+search.error: An error occurred
+search.filter.added.any: Added
+search.filter.added.foreteen: 14 Days
+search.filter.added.one: 24 Hours
+search.filter.added.seven: 7 Days
+search.filter.added.thirty: 30 Days
+search.filter.added.three: 3 Days
+search.filter.alert.create: Create Alert
+search.filter.alert.error: There was an error, please try again...
+search.filter.alert.remove: Remove Alert
+search.filter.alert.searching: Saving...
+search.filter.bathroom.any: Any Bathrooms
+search.filter.bathroom.five: 5+ Bathrooms
+search.filter.bathroom.four: 4+ Bathrooms
+search.filter.bathroom.one: 1+ Bathroom
+search.filter.bathroom.six: 6+ Bathrooms
+search.filter.bathroom.three: 3+ Bathrooms
+search.filter.bathroom.two: 2+ Bathrooms
+search.filter.bedroom.any: Any Bedrooms
+search.filter.bedroom.five: 5+ Bedrooms
+search.filter.bedroom.four: 4+ Bedrooms
+search.filter.bedroom.one: 1+ Bedroom
+search.filter.bedroom.six: 6+ Bedrooms
+search.filter.bedroom.three: 3+ Bedrooms
+search.filter.bedroom.two: 2+ Bedrooms
+search.filter.distance.any: Radius
+search.filter.distance.fifteen: 15 Miles
+search.filter.distance.five: 5 Miles
+search.filter.distance.one: 1 Mile
+search.filter.distance.quarter: 1/4 Mile
+search.filter.distance.ten: 10 Miles
+search.filter.distance.three: 3 Miles
+search.filter.distance.twentyfive: 25 Miles
+search.filter.title.added: Added
+search.filter.title.currency: Currency
+search.filter.title.radius: Radius
+search.filter.title.sortby: Sort By
+search.filter.type.any: Any Type
+search.filter.type.character: Character
+search.filter.type.commercial: Commercial
+search.filter.type.detatched: Detached
+search.filter.type.farm: Ranch
+search.filter.type.flat: Flat/Apartment
+search.filter.type.land: Land
+search.filter.type.movable: Movable
+search.filter.type.island: Island
+search.filter.type.other: Other
+search.filter.type.semi: Semi - detached
+search.filter.type.town: Townhouse
+
+search.filters.article.sort.published_at.asc: Sort A-Z
+search.filters.article.sort.published_at.desc: Sort Z-A
+
+search.filters.alert.removing: Removing...
+search.filters.market.all: All Markets
+search.filters.market.rent: To Rent
+search.filters.market.sale: For Sale
+search.filters.more: Search Tools
+search.filters.period.day: Day
+search.filters.period.month: Month
+search.filters.period.week: Week
+search.filters.sort.id.desc: Newest
+search.filters.sort.bath.asc: Bathrooms low - high
+search.filters.sort.bath.desc: Bathrooms high - low
+search.filters.sort.bed.asc: Bedrooms low - high
+search.filters.sort.bed.desc: Bedrooms high - low
+search.filters.sort.price.asc: Low to High
+search.filters.sort.price.desc: High to Low
+search.filters.sort.random: Sort - Any
+search.filters.sort.sortby: Sort By
+search.filters.status.any: Any Status
+search.filters.status.active: Active
+search.filters.status.inactive: Inactive
+search.filters.status.incomplete: Incomplete
+search.filters.status.invalid: Invalid
+search.filters.directory.sort.name.asc: Sort A-Z
+search.filters.directory.sort.name.desc: Sort Z-A
+search.filters.directory.type.agent: Agent
+search.filters.directory.type.brokerage: Brokerage
+search.list.area: Constructed Area
+search.list.bathrooms: Bathrooms
+search.list.bedrooms: Bedrooms
+search.list.buildsize: Built Size
+search.list.built: Built
+search.list.listingid: Listing ID
+search.list.interior: Interior
+search.list.exterior: Exterior
+search.list.price: Price
+search.list.ref: MLS/Ref.
+search.list.type: Type
+search.list.website: Homepage
+search.list.year: Year
+search.listedby: Listed By
+search.map: Map
+search.map.location: Location
+search.map.view: View
+search.moredetails: More details
+search.noresults: No results found
+search.propertiesin: Properties in
+search.randomprops: Random Properties
+search.results.noresult: Sorry, no results found.
+search.results.nonewresult: Sorry, no new results could be found to match your search.
+search.results.noresult.description: Please check your spelling or refine your search and try again.
+search.results.expand: 'Would you like to expand your search to:'
+search.results.tryrefine: Or refine your search and try again.
+search.results.total.matching: '%total% listings match your search in %term%'
+search.among.world.agents: Search among our %total% listings from all around the world
+search.results.placeholder: Search homeadverts
+search.results.placeholder.torent: Search homeadverts
+search.sidebar.newsletter: Newsletter
+search.sidebar.relatedblog: From the blog
+search.sidebar.weeklymail: Stay up to date with our free weekly newsletter
+site.nodescrition: Description coming soon.
+site.advertise: Advertise
+site.advertise_with_us: Advertise with us
+site.showme: Show Me
+site.alerts: Alerts
+site.billing: Billing
+site.blog: Blog
+site.article: Stories
+site.topic: Topics
+site.tag: Tags
+site.blog_by: By %author%
+site.copyright: Copyright &copy; %date% Homeadverts Ltd. All rights reserved.
+site.dashboard: Dashboard
+site.directory: Directory
+site.facebook: Facebook
+site.favourites: Favourites
+site.featured_properties: Featured Properties
+site.for_sale: Sale
+site.google: Google+
+site.home: Home
+site.linkedin: Linked In
+site.log_in: Log In
+site.logout: Logout
+site.meta_desc: Connect with homeowners, buyers and industry professionals from all around the world - all in your own language!
+site.my_account: My Account
+site.my_listings: My Listings
+site.period.daily: / day
+site.period.monthly: / month
+site.period.weekly: / week
+site.pinterest: Pinterest
+site.popular_locations: Search among our %properties% properties from %locations% different countries
+site.profile: Profile
+site.read_article: Click to read article
+site.rss_feed: RSS Feed
+site.settings: Settings
+site.sign_up: Sign Up
+site.subscribe: Subscribe
+site.to_rent: Rent
+site.twitter: Twitter
+site.view: View
+user.account.activate: To finish activating your account - please visit
+user.account.active: Your account is now active
+user.additional.thing: Just one more thing
+user.and: and
+user.checkinbox: Check your inbox
+user.checkinbox.again: Check your inbox again
+user.email.address: E-mail Address
+user.email.instructions: We've just sent you an e-mail with instructions for resetting your password. Click the link within and we'll see you soon.
+user.email.reset.access: You can reset your email by accessing
+user.email.reset.already: We've already sent out a password reset email
+user.email.something.great: You've just become part of something great
+user.email.verify: We've just sent an e-mail to your registered address. Please click the Verify Account link and you're ready to go.
+user.goto.account: Go to My Account
+user.hello: Hello
+user.listing.agent: I'm a listing agent/broker
+user.login: Log in
+user.login.title: Log in to Homeadverts
+user.member.question: Already a member?
+user.name: Name
+user.password: Password
+user.password.forgot: Forgot password?
+user.password.forgotten: Forgotten your Password?
+user.password.new: New password
+user.password.reset: Reset your password
+user.password.reset.new: Simply choose a new password, click reset and you'll be logged in, ready to go.
+user.password.reset.sentence: For security reasons, to reset your password we need to send a link to your e-mail address.
+user.password.reset.title: Password Reset
+user.password.retype: Retype new password
+user.privacy: Privacy Policy
+user.regards: Regards
+user.rememberme: Remember me
+user.resetnow: Reset Now
+user.sentence.password.reset: Simply choose a new password, click reset and you'll be logged in, ready to go.
+user.signup: Sign Up
+user.signup.account: Create your free user account!
+user.signup.statement: By signing up you indicate that you have read and agreed to the terms and conditions.
+user.signup.upsell: Sign up to start using our great range of features absolutely free.
+user.signup.upsell_agent: 'Note: If you''re an agent wanting to list properties on Homeadverts please use our %link_start%agent signup form%link_end%.'
+user.site.greeting: Welcome to Homeadverts
+user.site.title: Homeadverts
+user.terms: Terms of Use
+user.title.noaccount: Don’t have an account?
+user.uhoh: Uh oh!
+user.welcome: Welcome
+user.welcome.back: Welcome back
+user.agent.register.title: Agent Listing Application
+user.agent.register.note: Important Note
+user.agent.register.disclaimer1: To be eligible for a Homeadverts membership you must be a licensed real estate professional with expertise within the quality segment of your marketplace.
+user.agent.register.disclaimer2: With this in place we will provide you with a personal handler in order to ensure that your profile and listings are published according to your expectations.
+user.agent.register.disclaimer3: Please complete the form to your left and we will be in contact with you as soon as possible.
+user.agent.register.button_label: Submit
+user.agent.confirm.sub_title: Please check your inbox.
+user.agent.confirm.thanks: Thank you for submitting your application!
+account.profile.info_warning: If you contact an agent via Homeadverts, this is the information they will receive.
+email.signoff: The Homeadverts Team
+email.alert.header: You’re receiving emails for new listings that match your alert criteria. %link_start%Unsubscribe%link_end%
+email.verify.body: Welcome to Homeadverts, home to the finest selection of real estate from around the world. Use your account to create new listing alerts and save your favourite homes and agents. Please click the button below to verify your account and get started.
+email.agent.verify.body: Thank you for your interest in Homeadverts. Your agent listing application has been received and is under review.
+email.agent.verify.secondary: Your personal handler will be in touch as soon as possible.
+email.confirmation.subject: Your Homeadverts Pro account is now ready
+email.confirmation.intro: Hello %name%
+email.confirmation.body: Great news, your Homeadverts account is now ready! To start showing off your listings to the world, you simply need to choose a password and provide your payment details. Please click the button below to get started.
+email.confirmation.disclaimer: Please do not reply to this mail. For support or questions, please email %email%
+email.reset.subject: Reset your Homeadverts Password
+email.reset.body: We’ve received a request to reset your password. If this wasn’t you, please ignore this email and your password will not be changed.
+email.reset.secondary: To reset your password, click the button below.
+email.reset.button: Reset Password
+email.delete.subject: Sorry to see you go
+email.delete.body: Your Homeadverts account has been successfully deleted. We’re sorry to see you go but please come back and visit us again soon.
+email.enquiry.subject: You’ve received a new enquiry
+email.enquiry.body: Great news, you’ve received a new enquiry.
+email.alert.subject: '%num% new properties in %place%.'
+email.alert.body: '%num% new properties have been added that match your search.'
+email.alert.secondary: 'Here is a selection:'
+email.alert.button: View all listings
+email.intro: Hello %name%
+favourites.agents.title: Favourite Agents
+favourites.listings.title: Favourite Properties
+email.agent.import: "As part of %franchise%, a Homeadverts account has been created on your behalf and your portfolio has been imported via %service%.\r\n\r\nListing on Homeadverts is completely free of charge for %franchise% associates.\r\n\r\nHomeadverts is a global, multi lingual, quality listing service dedicated to serious real estate professionals. Your listings are available in eight languages and published around the world and accessible in over 160 countries.\r\n\r\nPlease click the button below to set your password and review your account."
+email.agent.import.subject: Your (%franchise%) Homeadverts account.
+email.alert.more_listings: There are %num% more listings matching your criteria. %link_start%View all%link_end%.
+email.alert.new_listings_count: You have %num% new listings
+site.read_more: Read More
+site.contact_us: Contact Us
+search.filter.price.any: Any Price
+search.filters.map: Map
+user.agent.confirm.message: We've just sent an e-mail to your registered address. Your Homeadverts handler will be in contact with you as soon as possible.
+dir.email.directory_contact_message: "Hi, I found your listing on Homeadverts. \r\n\r\nPlease send me more information about %address% priced at %currency% %price%.\r\n\r\nReference number %id% %ref%\r\n\r\nThank you!"
+This value should be the user current password.: Your old password is incorrect. Please check your spelling and try again or click the Forgotten your Password link.
+fos_user.password.mismatch: Your new passwords do not match. Please try again
+email.or.phone: Please enter either a phone number or an email address
+not.blank.name: Name field must not be blank
+not.blank.message: Message must not be blank
+min.length.message: Message must contain at least {{ limit }} characters
+account.contact.company_phone: Company Phone
+dir.contact.agent: Agent
+dir.contact.broker: Brokerage
+blog.social.title: Social
+blog.social.intro: Follow us for all the latest home interior trends, member news and insights in to some of the world’s most amazing homes.
+billing.address.help: Please complete the fields below using the address held by your bank or card provider.
+billing.card.security_help: The three or four digit credit card security number.
+billing.confirm_payment.desc2: By clicking Pay Now you agree that you have read and accept our %link_start%Payment Terms%link_end%.
+billing.payment.viewprofile: View Profile
+billing.payment.desc: Your subscription payment is billed to the credit card shown below. You can update these details at any time by clicking Edit.
+billing.card.edit: Edit
+billing.card.confirm_update: Your next subscription payment will be billed to the credit card you have provided. Please confirm this change by clicking Update Card.
+billing.card.changed_success: Successfully updated your card.
+billing.upgrade_prompt: Upgrade to %link_start%Premium%link_end% for only $198 per month.
+billing.upgrade: Upgrade
+billing.not_now: Not Now
+billing.activate_prompt: Please provide payment information to activate your account.
+billing.lets_go: Let's Go
+agent_application.email.subject: Your agent application has been accepted
+agent_application.email.body_new: Your agent listing application has been accepted. Use the link below to set your password and log in to Homeadverts.
+agent_application.email.body_existing: Your agent listing application has been accepted. You can continue to use the same email and password as before - you should now see "My Listings" in your account section.
+agent_application.email.button_set_password: Set password
+metrics.youtube: YouTube
+register.email.duplicate: The email address is already in use
+billing.vat.invalid: The VAT number given is not valid
+alerts.view_new: View new
+alerts.view_all: View all
+error_page.title: An Error Has Occurred
+error_page.desc: We could not fetch the page you requested.
+error_page.denied_title: Access denied
+error_page.denied_desc: We could not fetch the page you requested.
+error_page.notfound_title: Page not found
+error_page.notfound_subtitle: Sorry, the page you are looking for is unavailable.
+error_page.notfound_desc: Try going back or %link_start%return to our homepage%link_end% to start again.
+billing.vat.exemption: Please provide a VAT number to avoid being charged VAT.
+site-title: Homeadverts - Luxury Real Estate For Sale And Rent - Worldwide
+property.missing_error: "Sorry, the property you are looking for is no longer available.\r\nPlease have a look at some of our other listings."
+billing.premium_desc: Bespoke description here....
+billing.premium_name: Bespoke
+billing.intro: Here is some intro text about billing plans
+listings.bulk.activate: '%num% listings have been activated successfully.'
+listings.bulk.deactivate: '%num% listings have been deactivated successfully.'
+listings.bulk.delete: '%num% listings have been deleted successfully.'
+site.title: Homeadverts - Luxury Real Estate For Sale And Rent - Worldwide
+billing.cancel_button: Cancel Subscription
+billing.plus_vat: +VAT where applicable
+billing.page_title: Your Bespoke Premium Membership
+billing.bespoke_intro: |-
+  Transform your listings into luxury magazine style Feature Home editorials and impress your clients, buyers and sellers by showcasing their fine home with a bespoke presentation.
+
+  Originally produced in English, your bi-monthly editorial will be SEO optimised, translated, published, and then promoted according to an eight week multilingual marketing cycle. On week nine, a new article is produced and the cycle restarts.
+
+  This provides your business with 52 dedicated articles per year which are visible throughout the world’s most significant market places.
+billing.bespoke_heading: 'Your content strategy taken care of:'
+billing.bespoke_footer: ' Membership may be canceled any time (3 month minimum subscription period).'
+billing.bespoke_points: |-
+  Bi-monthly original Featured Home editorials (6 per year)
+  Weekly multilingual distribution (52 editorials/year)
+  Global social media promotion on 30 different networks. (1,560 posts/year)
+billing.basic_points: |-
+  Free unlimited listings
+  Free profile page and editorial display
+billing.basic_intro: You are currently on a Bespoke membership plan with full editorial marketing benefits. Should you no longer which to subscribe to these services, please downgrade your account option.
+billing.basic_heading: 'A basic account includes:'
+billing.basic_footer: |-
+  Please click "Cancel Subscription" to revert back to your FREE basic membership.
+  To cancel your account entirely, please go to your %link_start%Account Settings%link_end%.
+directory.listing_title_sale: '%count% Luxury Properties For Sale'
+directory.listing_title_rent: '%count% Luxury Properties To Rent'
+directory.search_title: '%total% agents match your search in %term%'
+email.password_reset_success.subject: Your password has been successfully reset
+email.password_reset_success.body: |-
+  Your account password has now been changed.
+
+  If you did not initiate this please get in contact with us to secure your account.
+...

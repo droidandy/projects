@@ -1,0 +1,141 @@
+<?php
+
+return array(
+  'id' => '19743',
+  'source_guid' => '08ead264-f922-4458-8c6a-c347a1053463',
+  'source' => 'sothebys',
+  'photos' => array(
+    0 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-caef1b3a8c5b63ebc75fe7a9b45ad6841ae60cf2.jpeg',
+      'hash' => '1412b285a72392f026385e47d04a95ee',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/pfnctmawjk98mpat8rc0jmzvt4i',
+      'sort' => '0',
+    ),
+    1 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-67bc568847f81f9b5d1c8cc9a44d6895a95328ae.jpeg',
+      'hash' => 'dc1357209ce5978237b45669b1f0766a',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/932zr6szf9d04ge0xe8c31s0s3i',
+      'sort' => '1',
+    ),
+    2 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-62bbd3cac79b968257891a2a2d5b7a203e53a065.jpeg',
+      'hash' => '0f82ee24bb25696dac1744bf77216039',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/pe9bdsay8ec84atwnxk19q4af0i',
+      'sort' => '2',
+    ),
+    3 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-e3ac2209a2de080303ae68d7c9735c200bef7715.jpeg',
+      'hash' => 'e6e0cd404df6e5e84dadf52dfe8704d4',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/hg5fhevs3d294p2p5g9xvsa1w1i',
+      'sort' => '3',
+    ),
+    4 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-62cecab4c2dc739fc485f76b0098fb912c21b57a.jpeg',
+      'hash' => '57b11b7f9ed9f0780294369a91121f82',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/b3m582mxq8jk4hymn51tw9e887i',
+      'sort' => '4',
+    ),
+    5 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-6420a4779bbec1a5787eac1d0642ca1d7f42b36d.jpeg',
+      'hash' => 'fa8d849cbccbad2f513866b66c455c58',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/qg48pa2b8244412e02xxere2e6i',
+      'sort' => '5',
+    ),
+    6 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-63237716040b1bf11a8cb557da5da579d19f24f2.jpeg',
+      'hash' => '03b6916b8855f7852cb2ac913f6fb2be',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/jtcqzjzfe9gt40y16qtnevjxx5i',
+      'sort' => '6',
+    ),
+    7 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-8aa32c7ba96d8b2e77720bdb5c283cd38936d8a4.jpeg',
+      'hash' => 'f76c18fdc5db1a93817591e00b002fce',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/54xkrnrmnm5jmvted7rx3hxzh5i',
+      'sort' => '7',
+    ),
+    8 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-447a87a493561dc1e964ccc37221e96a183001fa.jpeg',
+      'hash' => '5fde15937493afb2ebe8ecc59cd4cff9',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/qxjrgxxc0jrdmsee51c1x12t92i',
+      'sort' => '8',
+    ),
+    9 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-ff305d40e5ee601ac7ea6f5e9c307084e31a75ce.jpeg',
+      'hash' => 'b6b0e1af9f60e067492b43b4a867ada5',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/bdv5zftxcnqd43jqa7jf2k3k31i',
+      'sort' => '9',
+    ),
+    10 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-afb80263de279897c1523002a2ed5bb6a9cae536.jpeg',
+      'hash' => '77760a3ececde5381f19ce70f742dd10',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/kkp2m9n1k26y442bxpsqdb5gx7i',
+      'sort' => '10',
+    ),
+    11 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-e671d16e53e7f2536a2413d4b36f8b9b967a726d.jpeg',
+      'hash' => '6824a62676149101a5e062d641e13644',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/gb0g62kakhxd42t8vqa298y006i',
+      'sort' => '11',
+    ),
+    12 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-3fdd48732ed868c8db9febc5ada742af20cd1675.jpeg',
+      'hash' => 'be27486ceef7e5367291609bcee95653',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/95ast1td1s1441a02rsrtqjbb2i',
+      'sort' => '12',
+    ),
+    13 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-2cd40cab88f6e6e25e965c22224f10dd510aeed8.jpeg',
+      'hash' => 'a4cc2cd6e2cea66b3ec3b4c732eb3ef5',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/8kdbz6kz1ca6myt2wrc0dhkxy4i',
+      'sort' => '13',
+    ),
+    14 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-7975749cba0b25791dbd7e6404fa83176ff84e2a.jpeg',
+      'hash' => '955b03871c9e0e17a44c393b1a21a504',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/h8sg41nwk0wkm26x15htyvkkp0i',
+      'sort' => '14',
+    ),
+    15 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-5cd7c2646a85de967baa7c1f48fb22f7bc8cc67c.jpeg',
+      'hash' => 'e631cb1a37af4a0705f7b8a64d5f51ac',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/vnf4kra4htcwmb2mgk00rsamv4i',
+      'sort' => '15',
+    ),
+    16 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-15bb1dedc4b57391e22cada92405d9b00fb5138c.jpeg',
+      'hash' => '22fb5e1ac2c669c85dfbd8f07fa6acb9',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/fwttce67p0b949t45xbkj6atv2i',
+      'sort' => '16',
+    ),
+    17 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-d15a1d56a819d63ef39cefa131bb9a8e6c962304.jpeg',
+      'hash' => 'd949d9f02dab4e5260267de976fce4b5',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/96tv4v3veqah4kybz7xvkmbmr5i',
+      'sort' => '17',
+    ),
+    18 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-5bbea7b3eb828e07352543dcfb23fa7f7de7d1b5.jpeg',
+      'hash' => '7b899b860d39c6dc473250a8b1e26558',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/yj55arva6kmm4p6fqyv7tbach6i',
+      'sort' => '18',
+    ),
+    19 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-3eef73e681248561a4471c345bd76928125f1bfc.jpeg',
+      'hash' => 'cf31cacfc080a9e427a0338999146cae',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/gpqwzbacfqz7mbp2tb0cc57c65i',
+      'sort' => '19',
+    ),
+    20 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-15d18db36c29f0f50b28f7f8d0ede6aea80fe2a0.jpeg',
+      'hash' => '2a6942b837ef921ca2e8ec8c6c88437f',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/5w0rjyswrv6nmda25yk1bjvwj1i',
+      'sort' => '20',
+    ),
+    21 => array(
+      'url' => 'https://properties-homeadverts-com.s3.amazonaws.com/properties/19743/19743-2df988abbe1a3167419a24492611ccfa9c7ebf9d.jpeg',
+      'hash' => '5b176ddcaee006b62eb4a0bc61703e46',
+      'source_url' => 'http://m.sothebysrealty.com/236i0/s2zd9889bzqg442dt82h5abh97i',
+      'sort' => '21',
+    ),
+  ),
+);

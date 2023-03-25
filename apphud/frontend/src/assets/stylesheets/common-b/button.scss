@@ -1,0 +1,145 @@
+.button {
+  margin: 0;
+  border-radius: 8px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  border: 0px;
+  text-align: center;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 0;
+  text-decoration: none;
+  // -webkit-transition: all 0.15s;
+  font-size: 15px;
+  line-height: 16px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
+  &:focus {
+    outline: none;
+  }
+  box-sizing: border-box;
+}
+
+.button_34 {
+  padding: 9px;
+}
+
+.button_green {
+  color: $brand-white;
+  background: $brand-green;
+}
+
+.button_grey {
+  color: $brand-white;
+  background: $brand-silver;
+}
+
+.button_orange {
+  color: $brand-white;
+  background: $brand-orange;
+}
+
+.button_blue {
+  color: $brand-white;
+  background: $brand-blue;
+}
+
+.button_inactive-blue {
+  color: $brand-white;
+  background: $brand-disabled-blue;
+  cursor: default;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.button_red {
+  color: $brand-white;
+  background: $brand-red;
+}
+
+.button-purple {
+  background-color: $brand-purple;
+  color: $brand-white;
+}
+
+.button_white {
+  color: $brand-black;
+  background: $brand-white;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.button_icon {
+  svg {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.button_icon-right {
+  svg {
+    right: 11px;
+    left: auto;
+  }
+}
+
+.button_160 {
+  width: 160px;
+}
+
+.button_255 {
+  width: 255px;
+}
+
+.button_225 {
+  width: 225px;
+}
+
+.button_stretch {
+  width: 100%;
+}
+
+.button_160mt20 {
+  margin-top: 20px;
+  width: 160px;
+}
+
+.button_block {
+  display: block;
+}
+
+.button_inline {
+  display: inline-block;
+}
+
+.button_inline-block {
+  display: inline-block;
+}
+
+.button[disabled] {
+  // background-color: $brand-light-blue;
+  // color: hsl(0,0%,60%);
+  // svg {
+  //   path {
+  //     fill: hsl(0,0%,60%);
+  //   }
+  // }
+  opacity: 0.5;
+  cursor: default;
+  &:hover {
+    opacity: 0.5;
+  }
+}

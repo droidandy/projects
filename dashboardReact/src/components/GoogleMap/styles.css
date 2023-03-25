@@ -1,0 +1,19 @@
+.google_map {
+    height: 450px
+}
+.google_map__pin {
+    position: relative;
+    bottom: 50px;
+    right: 17px;
+        &:after{
+             content: '';
+             display: block;
+             position: absolute;
+             border: 6px solid transparent;
+             border-width: 9px 5px;
+             border-top-color: inherit;
+             top: 39px;
+             left: 13px;
+         }
+
+}

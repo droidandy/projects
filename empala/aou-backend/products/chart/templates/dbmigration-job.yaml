@@ -1,0 +1,64 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "aou-backend.dbmigration.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: dbmigration
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    "helm.sh/hook-weight": "0"
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        {{- include "aou-backend.selectorLabels" . | nindent 8 }}
+        component: dbmigration
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+      containers:
+        - env:
+          - name: DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+                key: host
+          - name: DB_NAME
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+                key: name
+          - name: DB_USER
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+                key: user
+          - name: DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+                key: password
+          - name: DB_PORT
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "aou-backend.db-creds-secret.fullname" . }}
+                key: port
+          {{- if .Values.database.sslCACert }}
+          - name: DB_CA_CERT
+            valueFrom:
+              secretKeyRef:
+                name: {{ include "aou-backend.db-ca-cert-secret.fullname" . }}
+                key: .ca.pem
+          {{- end }}
+          - name: NODE_ENV
+            value: {{ .Values.environment }}
+          name: dbmigration
+          image: "{{ .Values.image.repository }}:dbmigration-{{ .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+      restartPolicy: Never

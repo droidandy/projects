@@ -1,0 +1,107 @@
+{% set popular = autocomplete_popular() %}
+
+<div class="search-popular">
+    <div class="search-results-location">
+        <ul>
+            {% for location in popular.locations %}
+                <li class="result-item {% if loop.last %}--separator{% endif %}">
+                    <div class="link" data-type="location" data-location="New York, NY, USA">
+                        <a href="{{ location.url }}">
+                            {{ location.title }}
+                        </a>
+                        <i class="material-icons">location_on</i>
+                        <span class="details">
+                            <a href="{{ location.properties.sale.url }}">
+                                {{ location.properties.sale.total }} Listings
+                            </a>
+                            <a href="{{ location.agents.url }}">
+                                by {{ location.agents.total }} Agents
+                            </a>
+                        </span>
+                        {% if loop.first %}
+                            <span class="search-kind">
+                                Locations
+                            </span>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="search-results-article">
+        <ul>
+            {% for article in popular.articles %}
+                <li class="result-item {% if loop.last %}--separator{% endif %}">
+                    <div class="link"
+                         data-type="article"
+                         data-location="{{ article.title }}"
+                    >
+                        <a href="{{ path("ha_article_details", {token: article.token, slug: article.slug}) }}">
+                            {{ article.title }}
+                        </a>
+                        <i class="material-icons">library_books</i>
+                        <span class="details">{{ article.intro('autocomplete') }}</span>
+
+                        {% if loop.first %}
+                            <span class="search-kind">
+                                Stories
+                            </span>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="search-results-agent">
+        <ul>
+            {% for user in popular.users %}
+                <li class="result-item
+                        {% if not user.companyName %}--small{% endif %}
+                        {% if loop.last %}--separator{% endif %}
+                    ">
+                    <div class="link"
+                         data-type="article"
+                         data-location="{{ user.id }}"
+                    >
+                        <a href="{{ path("ha_user_profile", {id: user.id, slug: user|slug}) }}">
+                            {{ user.name }}
+                        </a>
+                        <i class="material-icons">person</i>
+
+                        <span class="details">
+                            {% if user.companyName %}
+                                {{ user.companyName }}
+                            {% endif %}
+                        </span>
+
+                        {% if loop.first %}
+                            <span class="search-kind">
+                                Profiles
+                            </span>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="search-results-tag">
+        <ul>
+            {% for tag in popular.tags %}
+                <li class="result-item --small">
+                    <div class="link" data-type="article" data-location="19  Plymouth Rd , Port Washington, NY 11050">
+                        <a href="{{ path('ha_tag_details', {name: tag.name}) }}">
+                            {{ tag.displayName }}
+                        </a>
+                        <i class="material-icons">label</i>
+
+                        {% if loop.first %}
+                            <span class="search-kind">
+                                Tags
+                            </span>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

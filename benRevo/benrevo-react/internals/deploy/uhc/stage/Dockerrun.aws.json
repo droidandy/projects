@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-uhc-stage:latest",
+    "Update": "true"
+    },
+  "Ports": [{
+    "ContainerPort": "3000"
+  }],
+  "Volumes": [{
+    "HostDirectory": "/var/log/fe-uhc-stage",
+    "ContainerDirectory": "/var/log/fe-uhc-stage"
+  }]
+}

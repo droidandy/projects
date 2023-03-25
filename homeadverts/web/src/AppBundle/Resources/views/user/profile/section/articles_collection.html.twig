@@ -1,0 +1,7 @@
+{% for page in pagination %}
+    {% for article in page %}
+        <li>
+            {% include 'AppBundle:article/card:small.html.twig' %}
+        </li>
+    {% endfor %}
+{% endfor %}

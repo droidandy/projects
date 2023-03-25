@@ -1,0 +1,102 @@
+
+@import "../../../styles/tools/mixins.scss";
+.componentQuiz {
+
+    margin: auto;
+    max-width: 1100px;
+
+    .section-header {
+        margin: auto;
+        padding:0;
+        margin-bottom: 40px;
+        @include media-query($small) {
+            margin-bottom: 24px;
+            max-width:80%;
+        }
+
+        
+
+        :first-child:before, :first-child:after {
+            content: "";
+        }
+        
+        :first-child {
+           
+
+            margin: 0;
+            padding:0;
+        }
+    }
+
+    
+    
+
+    .questionText {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--black-pearl);
+        @include media-query($small) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        max-width: 90%;
+        margin:auto;
+
+        margin-bottom: 64px;
+        @include media-query($medium) {
+            margin-bottom: 40px;
+        }
+        @include media-query($small) {
+            margin-bottom: 32px;
+        }
+
+    }
+
+    .componentQuizQuestion, .componentQuizComment {
+        margin:auto;
+        margin-bottom: 56px;
+        @include media-query($medium) {
+            margin-bottom: 16px;
+        }
+        @include media-query($small) {
+            margin-bottom: 44px;
+        }
+
+    }
+
+    .componentQuizQuestion[data-group=skinGoals1], .componentQuizQuestion[data-group=skinType] {
+        
+        max-width: 880px;
+        @include media-query($medium) {
+            max-width: 760px;
+        }
+        @include media-query($small) {
+            max-width: 300px;
+        }
+
+        .option {
+            margin-bottom: 64px;
+            @include media-query($medium) {
+                margin-buttom: 40px;
+            }
+            @include media-query($small) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    
+
+    .componentQuizQuestion[data-group=skinGoals2],.componentQuizQuestion[data-group=skinGoals1] {
+        .componentQuizOption[data-selected=true] {
+            .bubble{
+                background-color: var(--lavender);
+            }
+            .label {
+                color:var(--lavender);
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{% set is_property_sale = "search/for-sale" in app.request.uri %}
+{% set is_property_rent = "search/to-rent" in app.request.uri %}
+{% set is_user_search = "ha_user_search" in app.request.get('_route') and 'agent' == app.request.get('user_type') %}
+{% set is_company_search = "ha_user_search" in app.request.get('_route') and 'brokerage' == app.request.get('user_type') %}
+{% set is_article_search = "ha_article_search" in app.request.get('_route') %}
+
+{% if summary.location.items[0].properties.sale.total %}
+    <a href="{{ summary.location.items[0].properties.sale.url }}"
+       class="{% if is_property_sale %}--inactive{% endif %}"
+    >
+        {{ summary.location.items[0].properties.sale.total }} {{ "site.for_sale"|trans }}
+    </a>
+{% endif %}
+
+{% if summary.location.items[0].properties.rent.total %}
+    <a href="{{ summary.location.items[0].properties.rent.url }}"
+       class="{% if is_property_rent %}--inactive{% endif %}">
+        {{ summary.location.items[0].properties.rent.total }} {{ "site.to_rent"|trans }}
+    </a>
+{% else %}
+    <span class="--inactive">
+        {{ summary.location.items[0].properties.rent.total }} {{ "site.to_rent"|trans }}
+    </span>
+{% endif %}

@@ -1,0 +1,31 @@
+.userDetails {
+  display: flex;
+  align-items: flex-start;
+  &.centered {
+    align-items: center;
+  }
+  overflow: hidden;
+  .info {
+    margin-left: 10px;
+    overflow: hidden;
+    .name {
+      font-family: 'Roboto Medium', sans-serif;
+      color: #000000;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .subTitle {
+      font-family: 'Roboto Regular', sans-serif;
+      color: #00000054;
+      font-size: 12px;
+      line-height: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

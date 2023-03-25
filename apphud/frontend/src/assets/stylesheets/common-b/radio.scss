@@ -1,0 +1,33 @@
+.radio {
+  display: none;
+  &:checked + label {
+    &:before {
+      background-color: $brand-blue;
+      box-shadow: inset 0px 0px 0px 2px #fff;
+    }
+  }
+}
+
+.radio-label {
+  &:before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid $brand-blue;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.radio-label_tip {
+  margin-right: 5px;
+}
+
+.radio-wrapper {
+  margin-top: 11px;
+}
+
+.radio_disabled {
+  opacity: 0.5;
+}

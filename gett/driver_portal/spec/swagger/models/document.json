@@ -1,0 +1,82 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "expiry_date": {
+    "type": "string",
+    "format": "date"
+  },
+  "file_url": {
+    "type": "string",
+    "format": "uri"
+  },
+  "content_type": {
+    "type": "string"
+  },
+  "file_name": {
+    "type": "string"
+  },
+  "approval_status": {
+    "type": "string",
+    "enum": [
+      "pending",
+      "rejected",
+      "approved",
+      "missing"
+    ]
+  },
+  "expiration_warning": {
+    "type": "boolean"
+  },
+  "kind": {
+    "$ref": "#/definitions/documents_kind"
+  },
+  "last_change": {
+    "$ref": "#/definitions/documents_status_change"
+  },
+  "user": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "approval_status": {
+        "type": "string",
+        "enum": [
+          "documents_missing",
+          "pending",
+          "rejected",
+          "approved"
+        ]
+      }
+    }
+  },
+  "agent": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  },
+  "vehicle": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "approval_status": {
+        "type": "string",
+        "enum": [
+          "documents_missing",
+          "pending",
+          "rejected",
+          "approved"
+        ]
+      }
+    }
+  }
+}

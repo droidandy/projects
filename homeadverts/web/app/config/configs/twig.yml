@@ -1,0 +1,16 @@
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+    cache:            "%kernel.cache_dir%/twig"
+    auto_reload:      true
+    globals:
+        listhub: %listhub%
+        cdn_url: %cdn.url%
+        import_job_repo: @import_job_repo
+        facebook_app_id: %facebook_app_id%
+        iframely_key: %iframely_key%
+        billing: %billing%
+
+        email_noreply: %email_noreply%
+        app_name: %app_name%
+        messenger_url: %messenger_url%

@@ -1,0 +1,440 @@
+{
+  "optionName": "Option 1",
+  "plans": [
+    {
+      "name": "DHMO 20",
+      "type": "current",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Periodic Oral Eval",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Adult Prophy",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Child Prophy",
+          "value": "25",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Silver Filling 1 Surface",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "White Filling 1 Surface Anterior",
+          "value": "15",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Molar Root Canal",
+          "value": "250",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Perio Maintenance",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Simple Extraction Erupted Tooth",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adult",
+          "value": "200",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adolescent",
+          "value": "150",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "DHMO 30",
+      "type": "current",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Periodic Oral Eval",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Adult Prophy",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Child Prophy",
+          "value": "25",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Silver Filling 1 Surface",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "White Filling 1 Surface Anterior",
+          "value": "15",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Molar Root Canal",
+          "value": "250",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Perio Maintenance",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Simple Extraction Erupted Tooth",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adult",
+          "value": "200",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adolescent",
+          "value": "150",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "DHMO 30 Select",
+      "type": "current",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Periodic Oral Eval",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Adult Prophy",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Child Prophy",
+          "value": "25",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Silver Filling 1 Surface",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "White Filling 1 Surface Anterior",
+          "value": "15",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Molar Root Canal",
+          "value": "250",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Perio Maintenance",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Simple Extraction Erupted Tooth",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adult",
+          "value": "200",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adolescent",
+          "value": "150",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "DHMO 40",
+      "type": "current",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Periodic Oral Eval",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Adult Prophy",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Child Prophy",
+          "value": "25",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Silver Filling 1 Surface",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "White Filling 1 Surface Anterior",
+          "value": "15",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Molar Root Canal",
+          "value": "250",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Perio Maintenance",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Simple Extraction Erupted Tooth",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adult",
+          "value": "200",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adolescent",
+          "value": "150",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    },
+    {
+      "name": "DHMO 50",
+      "type": "current",
+      "selected": false,
+      "carrier": "Blue Shield",
+      "benefits": [
+        {
+          "name": "Periodic Oral Eval",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Adult Prophy",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Child Prophy",
+          "value": "25",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Silver Filling 1 Surface",
+          "value": "10",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "White Filling 1 Surface Anterior",
+          "value": "15",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Molar Root Canal",
+          "value": "250",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Perio Maintenance",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Simple Extraction Erupted Tooth",
+          "value": "150",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adult",
+          "value": "200",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Ortho Treatment Adolescent",
+          "value": "150",
+          "type": "DOLLAR"
+        }
+      ],
+      "cost": [
+        {
+          "name": "% change from current",
+          "value": "",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee",
+          "value": "45",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Spouse",
+          "value": "65",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Child",
+          "value": "55",
+          "type": "DOLLAR"
+        },
+        {
+          "name": "Employee + Family",
+          "value": "112",
+          "type": "DOLLAR"
+        }
+      ],
+      "total": 42200.0,
+      "percentDifference": 0.0
+    }
+  ]
+}

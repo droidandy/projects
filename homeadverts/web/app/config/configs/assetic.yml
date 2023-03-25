@@ -1,0 +1,14 @@
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    bundles:        [ AppBundle ]
+    #java: /usr/bin/java
+    filters:
+        cssrewrite: ~
+        cssimport: ~
+        uglifyjs2:
+            # the path to the uglifyjs executable
+            bin: %kernel.root_dir%/../node_modules/uglify-js/bin/uglifyjs
+        uglifycss:
+            # the path to the uglifyjs executable
+            bin: %kernel.root_dir%/../node_modules/uglifycss/uglifycss

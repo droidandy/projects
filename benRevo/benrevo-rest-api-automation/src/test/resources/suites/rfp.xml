@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RFP">
+
+  <test name="Rfp Controller Get Tests">
+    <classes>
+       <class name="com.benrevo.test.api.rfp.RfpControllerGetTests" />
+    </classes>
+  </test>
+  <test name="Rfp Controller Post Tests">
+    <classes>
+       <class name="com.benrevo.test.api.rfp.RfpControllerPostTests" />
+    </classes>
+  </test>
+  <test name="Rfp Controller Update Tests">
+    <classes>
+       <class name="com.benrevo.test.api.rfp.RfpControllerUpdateTests" />
+    </classes>
+  </test>
+  
+</suite>  	

@@ -1,0 +1,64 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "West Long Meadow Drive",
+          "short_name" : "W Long Meadow Dr",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Ada County",
+          "short_name" : "Ada County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "Idaho",
+          "short_name" : "ID",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "83714",
+          "short_name" : "83714",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "formatted_address" : "W Long Meadow Dr, Idaho 83714, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 43.7224309,
+            "lng" : -116.236647
+          },
+          "southwest" : {
+            "lat" : 43.717573,
+            "lng" : -116.2458684
+          }
+        },
+        "location" : {
+          "lat" : 43.7191819,
+          "lng" : -116.2419016
+        },
+        "location_type" : "GEOMETRIC_CENTER",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.7224309,
+            "lng" : -116.236647
+          },
+          "southwest" : {
+            "lat" : 43.717573,
+            "lng" : -116.2458684
+          }
+        }
+      },
+      "place_id" : "ChIJd5qIKfEBr1QRr6zNxVdLnvI",
+      "types" : [ "route" ]
+    }
+  ],
+  "status" : "OK"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "rfpQuoteOptionNetworkId": 1,
+    "carrier": "Anthem Blue Cross",
+    "planNameByNetwork": "T-Premier HMO 10/100%",
+    "currentContrFormat": "PERCENT",
+    "proposedContrFormat": "PERCENT",
+    "currentERTotal": 90.0,
+    "proposedERTotal": 90.0,
+    "proposedEETotal": 10.0,
+    "currentERTotalCost": 37980.0,
+    "proposedERTotalCost": 40642.02,
+    "changeProposedERCost": 7.01,
+    "changeProposedEECost": 7.01,
+    "contributions": [
+      {
+        "planName": "Employee only",
+        "currentER": 90.0,
+        "proposedER": 0.0,
+        "proposedEE": 347.37,
+        "diffEE": 27.369995,
+        "currentEnrollment": 10,
+        "proposedEnrollment": 10
+      },
+      {
+        "planName": "Employee + spouse",
+        "currentER": 90.0,
+        "proposedER": -1.8310547E-4,
+        "proposedEE": 764.2102,
+        "diffEE": 64.210205,
+        "currentEnrollment": 10,
+        "proposedEnrollment": 10
+      },
+      {
+        "planName": "Employee + child",
+        "currentER": 90.0,
+        "proposedER": -625.26,
+        "proposedEE": 1250.52,
+        "diffEE": 50.52002,
+        "currentEnrollment": 20,
+        "proposedEnrollment": 20
+      },
+      {
+        "planName": "Employee + family",
+        "currentER": 90.0,
+        "proposedER": -1076.8405,
+        "proposedEE": 2153.6804,
+        "diffEE": 153.68042,
+        "currentEnrollment": 20,
+        "proposedEnrollment": 20
+      }
+    ]
+  }
+]

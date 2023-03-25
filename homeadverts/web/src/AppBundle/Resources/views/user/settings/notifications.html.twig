@@ -1,0 +1,99 @@
+{% from 'AppBundle::user/forms.html.twig' import ha_form, ha_form_row, ha_form_messages %}
+{% set form = form_enquiries %}
+
+<div class="profile-section">
+	<h2>
+		Emails and notifications
+	</h2>
+	<p class="info">
+		Please make a selections best suited for your busy schedule.
+	</p>
+	<div class="grouped-fields">
+		<h3>Notifications</h3>
+		<div class="field-content">
+			<p>We'll email you when your network interacts with you.</p>
+		</div>
+		<div class="settings-action">
+			<span class="onoff">On</span>
+			<div class="switch">
+				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="notification-network-switch">
+					<input type="checkbox"
+						   id="notification-network-switch"
+						   name="notificationNetwork"
+							{% if (app.user.settings['notificationNetwork'] is defined) and (app.user.settings['notificationNetwork'] == "true") %}
+								checked
+							{% endif %}
+						   class="mdl-switch__input">
+					<span class="mdl-switch__label"></span>
+				</label>
+			</div>
+			<span class="onoff">Off</span>
+		</div>
+	</div>
+	<div class="grouped-fields --separator-top">
+		<h3>Members digests</h3>
+		<div class="field-content">
+			<p>We'll email you with new stories and listing updates by people you follow.</p>
+		</div>
+		<div class="settings-action">
+			<span class="onoff">On</span>
+			<div class="switch">
+				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="notification-stories-switch">
+					<input type="checkbox"
+						   id="notification-stories-switch"
+						   name="notificationStories"
+							{% if (app.user.settings['notificationStories'] is defined) and (app.user.settings['notificationStories'] == "true") %}
+								checked
+							{% endif %}
+						   class="mdl-switch__input">
+					<span class="mdl-switch__label"></span>
+				</label>
+			</div>
+			<span class="onoff">Off</span>
+		</div>
+	</div>
+	<div class="grouped-fields --separator-top">
+		<h3>All email</h3>
+		<div class="field-content">
+			<p>Turn off all non-administrative emails from our service.</p>
+		</div>
+		<div class="settings-action">
+			<span class="onoff">On</span>
+			<div class="switch">
+				<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="notification-all-switch">
+					<input type="checkbox"
+						   id="notification-all-switch"
+						   name="notificationsAll"
+							{% if (app.user.settings['notificationsAll'] is defined) and (app.user.settings['notificationsAll'] == "true") %}
+								checked
+							{% endif %}
+						   class="mdl-switch__input">
+					<span class="mdl-switch__label"></span>
+				</label>
+			</div>
+			<span class="onoff">Off</span>
+		</div>
+	</div>
+
+	<div class="grouped-fields --separator-top --enquiry">
+		<h3>Enquiries</h3>
+		{{ ha_form_messages(form) }}
+		<form action="{{ path('ha_account_settings', {type: form.vars.name}) }}"
+			  {{ form_enctype(form) }}
+			  method="POST">
+			<div class="field-content">
+				<p>Separate multiple addresses with a comma.</p>
+			</div>
+			<div class="inline-and-save">
+				<div class="input-line">
+					{{ ha_form_row(form.forwardEnquiries) }}
+				</div>
+				<button type="submit" class="black --right mdl-button mdl-js-button mdl-js-ripple-effect">
+					Update
+				</button>
+			</div>
+
+			{{ form_rest(form) }}
+		</form>
+	</div>
+</div>

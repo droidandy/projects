@@ -1,0 +1,6 @@
+<ion-content>
+  <div class="content" (click)="close()" tappable>
+    <img-loader *ngIf="image!='http://placehold.it/80X80'&&image!=''" src="{{image}}" useImg  ></img-loader>
+    <img-loader *ngIf="image=='http://placehold.it/80X80'||image==''" src="assets/images/default-image.png" useImg  ></img-loader>
+  </div>
+</ion-content>

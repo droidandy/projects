@@ -1,0 +1,12 @@
+/.bundle
+/log/*
+/tmp/*
+/storage/*
+!/log/.keep
+!/tmp/.keep
+!/storage/.keep
+/config/master.key
+/config/database.yml
+/config/settings.yml
+/.env
+/.idea/

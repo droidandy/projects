@@ -1,0 +1,70 @@
+@startuml
+allowmixing
+package "Colors description" {
+  () container #red
+  () withChildren #Yellow
+}
+
+package "Global Interfaces" {
+  interface IPropsWithChildren {
+    ==props==
+    children
+  }
+}
+
+package "Types" {
+  interface IItem {}
+}
+
+cloud "Data Api" {
+  class GetItems
+}
+
+object Item
+  Item ..|> IItem
+
+object List {
+  items: item[]
+}
+List *-- Item
+
+package "Components" {
+  interface IComponent {
+    ==props==
+    list: Item[]
+  }
+    IComponent ..> IItem
+
+  component Component
+    Component ..|> IComponent
+
+  component Loading
+  component NextError
+}
+
+interface IWrapper {
+==props==
+loading: boolean
+error: NextErrorProps
+}
+IWrapper --|> IPropsWithChildren
+
+component Wrapper #Yellow
+Wrapper .left.|> IWrapper
+Component .right.> Wrapper : throw Error
+state isError <<choice>>
+Wrapper <-- isError
+isError <-- Loading: true
+state isLoading <<choice>>
+isError <-- isLoading : false
+isLoading <-- NextError : true
+isLoading <-- Component : false
+
+component Container #Red
+Container ..> GetItems
+Container ..> Wrapper : loading
+Container <-- Wrapper
+Container ..> Component : List
+Container <-- List
+GetItems --> List
+@enduml

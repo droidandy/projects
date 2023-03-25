@@ -1,0 +1,15 @@
+
+@import "../../../styles/tools/mixins.scss";
+.componentPageVideos {
+    @include maxWidthPage;
+    @include defaultText;
+
+    .intro {
+        margin: auto;
+        max-width: 1200px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align:left;
+        @include spacingBottom;
+    }
+}

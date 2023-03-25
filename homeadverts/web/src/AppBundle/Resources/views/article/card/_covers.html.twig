@@ -1,0 +1,49 @@
+<div class="covers">
+    {% for article in cover %}
+        <div class="
+                                cover-slide
+                                cover
+                                {% if loop.index0 == 0 %}--active{% endif %}"
+             style="background-image: url('{{ article|article_image('article_large') }}')">
+
+            <div class="row">
+                <div class="column">
+                    {% include 'AppBundle:article/actions:admin.html.twig' %}
+
+                    <article class="story-card" data-id="{{ article.id }}">
+                        <a class="title" href="{{ path('ha_article_details', {token: article.token, slug: article.slug}) }}">
+                            {{ article.title|raw }}
+                        </a>
+
+                        <header>
+                            <div class="user-info --white">
+                                {% include 'AppBundle:user/profile:info.html.twig' with {user: article.author} %}
+                            </div>
+                        </header>
+                        <div class="item-navigation">
+                            {% include 'AppBundle:article/actions:navigation.html.twig' %}
+                        </div>
+                    </article>
+
+                    <span class="fullscreen">
+                        <i class="material-icons">photo_library</i>
+                    </span>
+                </div>
+            </div>
+
+            {% include 'AppBundle:article/carousel:modal.html.twig' %}
+        </div>
+    {% endfor %}
+
+    {% if cover|length > 1 %}
+        <div class="nav">
+            {% for article in cover %}
+                <div class="nav-dot
+                    {% if loop.index0 == 0 %}
+                        --active
+                    {% endif %}
+                "></div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

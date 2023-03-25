@@ -1,0 +1,72 @@
+@import "~styles/variables";
+
+.links {
+  &:global(.alignLeft) {
+    & .text {
+      text-align: left;
+    }
+  }
+  & .text {
+    text-align: center;
+    line-height: 30px;
+  }
+  & .list {
+    display: flex;
+    margin: 0 -40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    & > * {
+      display: block;
+      margin: 33px 40px;
+
+      img {
+        width: 64px;
+        margin: 0 auto 16px;
+        display: block;
+      }
+
+      div {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 154%;
+        text-align: center;
+        color: $blue;
+        transition: opacity 0.3s;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &:global(.alignLeft) {
+      & .text {
+        text-align: center;
+      }
+    }
+
+    & .text {
+      padding-top: 10px;
+    }
+
+    & .list {
+      display: flex;
+      margin: 0 -20px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      & > * {
+        display: block;
+        margin: 10px 20px;
+
+        img {
+          width: 48px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+ha_room_join_user:
+    path:  /user/{id}
+    defaults: { _controller: AppBundle:Api\Messenger\Room:joinUserRoom }
+    methods:  [POST]
+    
+ha_room_get:
+    path:  /{id}
+    defaults: { _controller: AppBundle:Api\Messenger\Room:get }
+    methods:  [GET]
+    
+ha_room_messages:
+    path:  /{id}/messages
+    defaults: { _controller: AppBundle:Api\Messenger\Room:messages }
+    methods:  [GET]
+
+ha_room_get_my:
+    path:  /
+    defaults: { _controller: AppBundle:Api\Messenger\Room:getMy }
+    methods:  [GET]
+
+ha_room_get_my_users:
+    path:  /users/
+    defaults: { _controller: AppBundle:Api\Messenger\Room:getMyUsers }
+    methods:  [GET]

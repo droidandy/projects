@@ -1,0 +1,22 @@
+parameters:
+  pagination:
+    default:
+      mobile:
+        per_row: 2
+        per_page: 6
+      tablet:
+        per_row: 3
+        per_page: 12
+      full:
+        per_row: 3
+        per_page: 15
+    directory:
+      mobile:
+        per_row: 2
+        per_page: 6
+      tablet:
+        per_row: 3
+        per_page: 15
+      full:
+        per_row: 3
+        per_page: 21

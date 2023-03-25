@@ -1,0 +1,82 @@
+.landing-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+    font-family: 'SF Pro Display';
+    box-sizing: border-box;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 76px;
+    color: $black;
+    letter-spacing: 1.5px;
+}
+
+.section-title {
+    font-size: 40px;
+    line-height: 58px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    @media (max-width: 650px) {
+        font-size: 26px;
+    }
+}
+
+.block-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+}
+
+.regular-title {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0.3px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+
+.secondary-text {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+.help-text {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.page {
+    background-color: #F9FBFF;
+
+    @media (max-width: 1025px) {
+        padding-top: 83px;
+    }
+}
+
+.pro-page {
+    background-color: $black;
+}
+
+.bold {
+    font-weight: bold;
+}

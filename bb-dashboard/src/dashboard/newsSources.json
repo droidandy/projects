@@ -1,0 +1,37 @@
+[
+  {
+    "id": "CoinDesk",
+    "name": "CoinDesk",
+    "url": "https://www.coindesk.com/"
+  },
+  {
+    "id": "CoinTelegraph",
+    "name": "CoinTelegraph",
+    "url": "https://www.cointelegraph.com/"
+  },
+  {
+    "id": "News.bitcoin.com",
+    "name": "News.bitcoin.com",
+    "url": "https://news.bitcoin.com/"
+  },
+  {
+    "id": "CryptoCoinsNews",
+    "name": "Crypto Coins News",
+    "url": "https://www.cryptocoinsnews.com/"
+  },
+  {
+    "id": "NewsBTC",
+    "name": "NewsBTC",
+    "url": "http://www.newsbtc.com/"
+  },
+  {
+    "id": "Bitcoinist",
+    "name": "Bitcoinist",
+    "url": "http://bitcoinist.com/"
+  },
+  {
+    "id": "themerkle",
+    "name": "TheMerkle",
+    "url": "http://themerkle.com/"
+  }
+]

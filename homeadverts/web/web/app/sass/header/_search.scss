@@ -1,0 +1,365 @@
+.main-search {
+  display: block;
+  width: 100%;
+  left: 50%;
+  margin-left: -126px;
+  position: relative;
+  transition: width .15s ease-out;
+
+  .material-icons {
+    position: absolute;
+    z-index: 9;
+    top: 2px;
+    left: 22px;
+    color: #9e9e9e;
+    font-weight: 600;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    pointer-events: none;
+  }
+  input[type=text] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 4px;
+    padding-left: 55px;
+    color: #212121;
+    background: #fff;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    z-index: 2;
+
+    &:-moz-placeholder {
+      color: #9e9e9e;
+      font-weight: 700;
+      -moz-transition: color .15s;
+      transition: color .15s;
+    }
+    &::-moz-placeholder {
+      color: #9e9e9e;
+      font-weight: 700;
+      -moz-transition: color .15s;
+      transition: color .15s;
+    }
+    &:-ms-input-placeholder {
+      color: #9e9e9e;
+      font-weight: 700;
+      transition: color .15s;
+    }
+    &::-webkit-input-placeholder {
+      color: #9e9e9e;
+      font-weight: 700;
+      -webkit-transition: color .15s;
+      transition: color .15s;
+    }
+
+    &:focus {
+      &:-moz-placeholder {
+        color: transparent;
+      }
+      &::-moz-placeholder {
+        color: transparent;
+      }
+      &:-ms-input-placeholder {
+        color: transparent;
+      }
+      &::-webkit-input-placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  .search-progress {
+    position: absolute;
+    left: 50%;
+    margin-left: -50vw;
+    bottom: -14px;
+    width: 100vw;
+    max-width: 100vw;
+    opacity: 0;
+    z-index: 10;
+    @include transition(opacity .8s);
+
+    &.\--shown {
+      opacity: 1;
+    }
+
+    .bar1 {
+      background: #616161 !important;
+    }
+
+    .bar2,
+    .bar3 {
+      background: #eee !important;
+    }
+  }
+}
+
+.search-wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 0;
+  padding-top: $header_height - 4px;
+  margin: 0 auto;
+  background: #fff;
+  opacity: 0;
+  overflow: scroll;
+  text-align: left;
+  z-index: 7;
+  -webkit-overflow-scrolling: touch;
+  @include transition(opacity .3s, max-height .2s);
+
+  .search-popular {
+    display: none;
+    &.\--show {
+      display: block;
+    }
+  }
+
+  .result-item {
+    cursor: default;
+    @extend %hover-transition;
+
+    &.active {
+      background-color: $color_5;
+    }
+
+    &.\--separator {
+      border-bottom: 1px solid #eee;
+    }
+
+    .link {
+      left: 50%;
+      width: calc(50% + 155px);
+      margin-left: -170px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+
+      > a {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      i {
+        display: none;
+        position: absolute;
+        left: 66px;
+        top: 11px;
+        color: #424242;
+        pointer-events: none;
+      }
+      .showall {
+        color: #316ac3;
+        font-size: 13px;
+      }
+      .details {
+        margin-top: 2px;
+
+        a {
+          color: #757575;
+        }
+      }
+      &.\--view-more {
+        color: #424242;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: -2px;
+        margin-bottom: 7px;
+        cursor: pointer;
+        @include transition(0.3s);
+
+        &:hover {
+          color: #212121;
+        }
+      }
+    }
+    &.\--small {
+      .link {
+        i {
+          top: 8px;
+        }
+        .search-kind {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  .link {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    color: #777;
+    font-weight: 500;
+    padding-left: 100px;
+    width: 775px;
+    cursor: default;
+    a {
+      color: #424242;
+    }
+  }
+  .search-kind {
+    position: absolute;
+    top: 8px;
+    left: -113px;
+    width: 200px;
+    font-weight: 600;
+    color: #616161;
+    display: block;
+    text-align: right;
+    font-size: 13px;
+  }
+  .details {
+    display: block;
+    font-size: 11px;
+    line-height: 1;
+    margin: -5px 0 6px;
+    color: #616161;
+    font-weight: 600;
+  }
+  .google-credit {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .data-poweredby {
+      color: #777;
+      font-size: 10px;
+      text-align: right;
+      padding-right: 20px;
+
+      a {
+        &.google {
+          color: #212121;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.touch {
+  .nav-header {
+    &.\--show-search {
+      > .container {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktop_width - 1) {
+  .search-wrapper {
+    .hint,
+    .result-item {
+      text-transform: capitalize;
+
+      .link {
+        left: 0;
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 16px;
+        margin-left: 0;
+
+        i {
+          left: 25px;
+        }
+
+        .search-kind {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_width - 1) {
+  .search-wrapper {
+    padding-top: $mobile_header_height - 4px;
+
+    .details {
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile_width - 1) {
+  .search-wrapper {
+    .hint,
+    .result-item {
+      .link {
+        padding-left: 16px;
+
+        a {
+          font-size: 13px;
+        }
+
+        > a {
+          display: inline-block;
+          line-height: 1.5;
+        }
+
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.nav-header {
+  &.\--show-search {
+    .search-wrapper {
+      max-height: 100vh;
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: $desktop_width - 1px) {
+    &.\--show-search,
+    &.\--focus-search {
+      .main-search {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+
+        i,
+        form {
+          margin-left: 0;
+        }
+
+        i {
+          left: 15px;
+        }
+
+        input[type=text] {
+          padding-left: 45px;
+        }
+      }
+    }
+  }
+}
+
+// Fix for ios safari
+.touch {
+  .nav-header {
+    &.\--show-search {
+      .search-wrapper {
+        @media only screen and (max-height: 799px) and (orientation: portrait) {
+          padding-bottom: 80px;
+        }
+
+        @media only screen and (min-height: 800px) and (orientation: portrait) {
+          padding-bottom: 120px;
+        }
+      }
+    }
+  }
+}

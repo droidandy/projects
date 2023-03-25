@@ -1,0 +1,63 @@
+node_modules/
+.expo/
+npm-debug.*
+temp.*
+build
+
+.idea/**/*
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+!.idea/fileColors.xml
+
+android/**/*.iml
+node_modules.private/**/*.iml
+android/.gradle
+android/local.properties
+android/build
+android/app/build
+android/.gradle
+android/.idea/
+android/app/src/main/assets/fonts/
+
+**/.DS_Store
+xcuserdata
+ios/build
+ios/fastlane/report.xml
+ios/GoogleService-Info.plist
+
+# CocoaPods
+/ios/Pods/
+
+installAndroid.sh
+
+yarn-error.log
+
+node_modules.private/*/android/bin
+.temp
+
+# https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# CMake
+cmake-build-*/
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# react-native-config codegen
+ios/tmp.xcconfig
+node_modules.private/react-native-config/ios/ReactNativeConfig/GeneratedDotEnv.m

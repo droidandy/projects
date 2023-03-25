@@ -1,0 +1,177 @@
+[
+  {
+    "rfpQuoteId": 121,
+    "quoteType": "STANDARD",
+    "category": "MEDICAL",
+    "currentPlans": [
+      {
+        "planType": "HMO",
+        "planId": 12401,
+        "clientPlanId": 195,
+        "rfpQuoteNetwork": "Signature__Rx:42F",
+        "isKaiser": false
+      },
+      {
+        "planType": "PPO",
+        "planId": 10398,
+        "clientPlanId": 196,
+        "rfpQuoteNetwork": "Select Plus__Rx:246",
+        "isKaiser": false
+      }
+    ],
+    "rfpQuoteNetworks": [
+      {
+        "rfpQuoteNetwork": "Signature__Rx:42F",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "U8M",
+            "planType": "HMO",
+            "matchPlan": true
+          },
+          {
+            "planName": "42F",
+            "planType": "RX_HMO",
+            "matchPlan": true
+          }
+        ]
+      },
+      {
+        "rfpQuoteNetwork": "Select Plus__Rx:246",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "PR-F",
+            "planType": "PPO",
+            "matchPlan": true
+          },
+          {
+            "planName": "246",
+            "planType": "RX_PPO",
+            "matchPlan": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rfpQuoteId": 2057,
+    "quoteType": "KAISER",
+    "category": "MEDICAL",
+    "currentPlans": [
+      {
+        "planType": "HMO",
+        "planId": 12401,
+        "clientPlanId": 1923,
+        "rfpQuoteNetwork": "Signature__Rx:42F",
+        "isKaiser": false
+      },
+      {
+        "planType": "PPO",
+        "planId": 10398,
+        "clientPlanId": 1924,
+        "rfpQuoteNetwork": "Select Plus__Rx:246",
+        "isKaiser": false
+      }
+    ],
+    "rfpQuoteNetworks": [
+      {
+        "rfpQuoteNetwork": "Signature__Rx:42F",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "U8M",
+            "planType": "HMO",
+            "matchPlan": true
+          },
+          {
+            "planName": "42F",
+            "planType": "RX_HMO",
+            "matchPlan": true
+          }
+        ]
+      },
+      {
+        "rfpQuoteNetwork": "Select Plus__Rx:246",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "PR-F",
+            "planType": "PPO",
+            "matchPlan": true
+          },
+          {
+            "planName": "246",
+            "planType": "RX_PPO",
+            "matchPlan": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rfpQuoteId": 122,
+    "quoteType": "STANDARD",
+    "category": "DENTAL",
+    "currentPlans": [
+      {
+        "planType": "DPPO",
+        "planId": 15386,
+        "clientPlanId": 197,
+        "rfpQuoteNetwork": "Options PPO 20__Plan:2P351",
+        "isKaiser": false
+      },
+      {
+        "planType": "DPPO",
+        "planId": 15387,
+        "clientPlanId": 198,
+        "rfpQuoteNetwork": "Options PPO 20__Plan:P9332",
+        "isKaiser": false
+      }
+    ],
+    "rfpQuoteNetworks": [
+      {
+        "rfpQuoteNetwork": "Options PPO 20__Plan:2P351",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "2P351",
+            "planType": "DPPO",
+            "matchPlan": true
+          }
+        ]
+      },
+      {
+        "rfpQuoteNetwork": "Options PPO 20__Plan:P9332",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "P9332",
+            "planType": "DPPO",
+            "matchPlan": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "rfpQuoteId": 123,
+    "quoteType": "STANDARD",
+    "category": "VISION",
+    "currentPlans": [
+      {
+        "planType": "VISION",
+        "planId": 19822,
+        "clientPlanId": 199,
+        "rfpQuoteNetwork": "Full Network__Plan:VL049",
+        "isKaiser": false
+      }
+    ],
+    "rfpQuoteNetworks": [
+      {
+        "rfpQuoteNetwork": "Full Network__Plan:VL049",
+        "matchQuoteNetworkPlans": [
+          {
+            "planName": "VL049",
+            "planType": "VISION",
+            "matchPlan": true
+          }
+        ]
+      }
+    ]
+  }
+]

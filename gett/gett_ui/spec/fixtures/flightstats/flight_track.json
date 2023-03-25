@@ -1,0 +1,102 @@
+{
+  "request": {
+    "flightId": {
+      "requested": "986682279",
+      "interpreted": 986682279
+    },
+    "includeFlightPlan": {
+      "requested": "false",
+      "interpreted": false
+    },
+    "maxPositions": {
+      "requested": "1",
+      "interpreted": 0
+    },
+    "maxPositionAgeMinutes": {},
+    "extendedOptions": {},
+    "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/track/986682279"
+  },
+  "appendix": {
+    "airlines": [
+      {
+        "fs": "AZ",
+        "iata": "AZ",
+        "icao": "AZA",
+        "name": "Alitalia",
+        "phoneNumber": "1-800-223-5730",
+        "active": true
+      }
+    ],
+    "airports": [
+      {
+        "fs": "FCO",
+        "iata": "FCO",
+        "icao": "LIRF",
+        "name": "Leonardo da Vinci-Fiumicino Airport",
+        "city": "Rome",
+        "cityCode": "ROM",
+        "countryCode": "IT",
+        "countryName": "Italy",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/Rome",
+        "localTime": "2019-01-15T22:08:57.322",
+        "utcOffsetHours": 1,
+        "latitude": 41.794594,
+        "longitude": 12.250346,
+        "elevationFeet": 14,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/FCO?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/FCO?codeType=fs"
+      },
+      {
+        "fs": "LHR",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "name": "London Heathrow Airport",
+        "city": "London",
+        "cityCode": "LON",
+        "stateCode": "EN",
+        "countryCode": "GB",
+        "countryName": "United Kingdom",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/London",
+        "localTime": "2019-01-15T21:08:57.322",
+        "utcOffsetHours": 0,
+        "latitude": 51.469603,
+        "longitude": -0.453566,
+        "elevationFeet": 80,
+        "classification": 1,
+        "active": true,
+        "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/LHR?codeType=fs",
+        "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/LHR?codeType=fs"
+      }
+    ]
+  },
+  "flightTrack": {
+    "flightId": 986682279,
+    "carrierFsCode": "AZ",
+    "flightNumber": "210",
+    "tailNumber": "I-BIXR",
+    "callsign": "AZA78M",
+    "departureAirportFsCode": "FCO",
+    "arrivalAirportFsCode": "LHR",
+    "departureDate": {
+      "dateLocal": "2019-01-15T21:25:00.000",
+      "dateUtc": "2019-01-15T20:25:00.000Z"
+    },
+    "equipment": "321",
+    "bearing": 322.61370866639993,
+    "heading": 322.8253920859927,
+    "positions": [
+      {
+        "lon": 10.1389,
+        "lat": 43.2731,
+        "speedMph": 456,
+        "altitudeFt": 36002,
+        "source": "derived",
+        "date": "2019-01-15T21:03:37.000Z"
+      }
+    ]
+  }
+}

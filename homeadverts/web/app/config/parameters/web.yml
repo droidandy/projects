@@ -1,0 +1,5 @@
+parameters:
+    router.request_context.host: luxuryaffairs.co.uk
+    router.request_context.scheme: https
+    ha.geo_endpoint: 'http://geo.staging3.homeadverts.com'
+    messenger_url: 'http://messenger.luxuryaffairs.co.uk'

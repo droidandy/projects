@@ -1,0 +1,26 @@
+.app-notfound {
+  & > .top {
+    width: 100%;
+    background-color: $BACKGROUND_GRAY_COLOR;
+    .ui.grid {
+      padding-top: 90px;
+
+      .row {
+        padding: 0;
+
+        .ui.image {
+          max-width: 1051px !important;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  & > .bottom {
+    @include panelShadow();
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px 0 0;
+    height: 400px;
+  }
+}

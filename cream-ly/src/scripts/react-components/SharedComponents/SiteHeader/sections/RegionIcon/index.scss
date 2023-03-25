@@ -1,0 +1,41 @@
+@import "../../../../../../styles/tools/mixins.scss";
+
+.ComponentRegionIcon {
+  color: var(--purplish-grey);
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+
+  svg {
+    position: relative;
+    top: -2px;
+
+    @include media-query($medium-down) {
+      height: 17px;
+    }
+
+
+    text {
+      font-size: 18px;
+      font-weight: 100;
+      font-family: "Raleway";
+    }
+  }
+
+  span {
+    font-size: 17px;
+    margin-left: 5px;
+
+    @include media-query($small) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    span {
+      text-decoration: underline;
+    }
+
+    opacity: 0.9;
+  }
+}

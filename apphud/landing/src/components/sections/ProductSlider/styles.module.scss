@@ -1,0 +1,133 @@
+@import "~styles/variables";
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  & .wrapper {
+    margin-top: 40px;
+    padding-top: 40px;
+    width: 100%;
+    background-image: url(./bg.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    padding-bottom: 200px;
+  }
+
+  & .slick {
+    margin-bottom: 42px;
+
+    :global(.slick-dots) {
+      li {
+        display: inline-flex;
+        width: 10px;
+        height: 10px;
+        align-items: center;
+        justify-content: center;
+
+        &:global(.slick-active) {
+          button {
+            background-color: $blue;
+          }
+        }
+
+        button {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: $blue-grey;
+          padding: 4px;
+          margin: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    :global(.slick-slide) {
+      &:nth-child(2n) {
+        & .slide {
+          padding-top: 60px;
+        }
+      }
+    }
+  }
+
+  & .slide {
+    outline: none;
+
+    img,
+    p {
+      display: block;
+      margin: 0 auto;
+      width: 220px;
+    }
+
+    img {
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 154%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    & .wrapper {
+      background: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & .text {
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    & .wrapper {
+      order: 1;
+      padding-bottom: 20px;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    & .slick {
+      :global(.slick-slide) {
+        &:nth-child(2n) {
+          & .slide {
+            padding-top: 0px;
+          }
+        }
+      }
+    }
+
+    & .slide {
+      img {
+        width: auto;
+      }
+    }
+
+    label {
+      margin-bottom: 8px;
+    }
+  }
+}

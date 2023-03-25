@@ -1,0 +1,39 @@
+/* Color Scheme */
+
+$navy-blue: #485975;
+$navy-blue-text: #434c56;
+$alt-navy-blue: #444c57;
+$dark-navy-blue: #2b3238;
+$blue: #2a99f5;
+$orange: #fbb73c;
+$yellow: #ffb71a;
+$dark-grey-brown: #484d49;
+$deep-cyan: #2d5f6d;
+$dusty-grey-brown: #555;
+$dark-grey: #989898;
+$grey: #c1c1c1;
+$light-grey: #e0e5eb;
+$light-grey-text: #9096a6;
+$sand: #f5f5f5;
+$green: #89c587;
+$lilac: #a889dc;
+$red: #f04134;
+
+/*button colors*/
+
+$btn-primary-bg-hover: #00629c;
+$btn-primary-outline: #003555;
+
+$btn-secondary-bg: #5b6572;
+$btn-secondary-bg-hover: #464e59;
+$btn-secondary-bg-outline: #121518;
+
+$btn-danger-bg: #f55656;
+$btn-danger-bg-outline: #a10303;
+
+$tablet: 1025px;
+$phone: 480px;
+
+@custom-media --phone (max-width: #{$phone});
+@custom-media --tablet (max-width: #{$tablet - 1});
+@custom-media --desktop (min-width: #{$tablet});

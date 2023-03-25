@@ -1,0 +1,351 @@
+//colors
+$white: #fff;
+$color_alto_approx: #ddd;
+$color_mine_shaft_approx: #333;
+
+//fonts
+$font_0: Helvetica Neue;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: sans-serif;
+$font_4: Consolas;
+$font_5: Liberation Mono;
+$font_6: Menlo;
+$font_7: Courier;
+$font_8: monospace;
+
+@-webkit-keyframes medium-editor-image-loading {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes medium-editor-image-loading {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes medium-editor-pop-upwards {
+  0% {
+    opacity: 0;
+    transform: matrix(0.97, 0, 0, 1, 0, 12);
+  }
+  20% {
+    opacity: .7;
+    transform: matrix(0.99, 0, 0, 1, 0, 2);
+  }
+  40% {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, -1);
+  }
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+@keyframes medium-editor-pop-upwards {
+  0% {
+    opacity: 0;
+    transform: matrix(0.97, 0, 0, 1, 0, 12);
+  }
+  20% {
+    opacity: .7;
+    transform: matrix(0.99, 0, 0, 1, 0, 2);
+  }
+  40% {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, -1);
+  }
+  100% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+
+.medium-editor-anchor-preview {
+  font-family: $font_0, $font_1, $font_2, $font_3;
+  font-size: 14px;
+  left: 0;
+  line-height: 1.4;
+  max-width: 400px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+  visibility: hidden;
+  z-index: 900;
+
+  a {
+    color: $white;
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+.medium-editor-anchor-preview-active {
+  visibility: visible;
+}
+
+.medium-editor-image-loading {
+  animation: medium-editor-image-loading 1s infinite ease-in-out;
+  background-color: $color_mine_shaft_approx;
+  border-radius: 100%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.medium-editor-placeholder {
+  &:before {
+    content: attr(data-placeholder) !important;
+    width: 100%;
+    max-width: $editor_width;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    white-space: pre;
+    color: #aaa;
+    cursor: text;
+  }
+
+  &.media-insert-visible {
+    &:after {
+      visibility: hidden;
+    }
+  }
+}
+
+.editable {
+  &.media-insert-visible {
+    .medium-insert-active {
+      color : transparent;
+      text-shadow : 0 0 0 #000;
+    }
+  }
+}
+
+.medium-editor-placeholder-relative {
+  position: relative;
+
+  &:after {
+    content: attr(data-placeholder) !important;
+    position: relative;
+    white-space: pre;
+    padding: inherit;
+    margin: 0;
+  }
+}
+
+.medium-editor-toolbar {
+  font-family: $font_0, $font_1, $font_2, $font_3;
+  font-size: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  z-index: 900;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    button {
+      box-sizing: border-box;
+      cursor: pointer;
+      display: block;
+      font-size: 14px;
+      line-height: 1.33;
+      margin: 0;
+      padding: 15px;
+      text-decoration: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .medium-editor-action-underline {
+      text-decoration: underline;
+    }
+
+    .medium-editor-action-pre {
+      font-family: $font_4, $font_5, $font_6, $font_7, $font_8;
+      font-size: 12px;
+      font-weight: 100;
+      padding: 15px 0;
+    }
+  }
+}
+
+.medium-editor-toolbar-active {
+  visibility: visible;
+
+  &.medium-editor-stalker-toolbar {
+    animation: medium-editor-pop-upwards 160ms forwards linear;
+  }
+}
+
+.medium-editor-sticky-toolbar {
+  position: fixed;
+  top: 1px;
+}
+
+.medium-editor-relative-toolbar {
+  position: relative;
+}
+
+.medium-editor-action-bold {
+  font-weight: bolder;
+}
+
+.medium-editor-action-italic {
+  font-style: italic;
+}
+
+.medium-editor-toolbar-form {
+  display: none;
+
+  input {
+    font-family: $font_0, $font_1, $font_2, $font_3;
+  }
+
+  a {
+    font-family: $font_0, $font_1, $font_2, $font_3;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .medium-editor-toolbar-form-row {
+    line-height: 14px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+  }
+
+  .medium-editor-toolbar-input {
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 6px;
+    width: 316px;
+    display: inline-block;
+
+    &:focus {
+      appearance: none;
+      border: none;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+
+  label {
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 6px;
+    width: 316px;
+    display: inline-block;
+
+    &:focus {
+      appearance: none;
+      border: none;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+}
+
+.medium-editor-toolbar-form-active {
+  display: block;
+}
+
+.medium-editor-element {
+  word-wrap: break-word;
+  min-height: 30px;
+
+  img {
+    max-width: 100%;
+  }
+
+  sub {
+    vertical-align: sub;
+  }
+
+  sup {
+    vertical-align: super;
+  }
+}
+
+.medium-editor-hidden {
+  display: none;
+}
+
+.medium-toolbar-arrow-under:after {
+  border-style: solid;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -8px;
+  position: absolute;
+  width: 0;
+  border-width: 8px 8px 0 8px;
+}
+
+.medium-toolbar-arrow-over:before {
+  border-style: solid;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -8px;
+  position: absolute;
+  width: 0;
+  border-width: 0 8px 8px 8px;
+  top: -8px;
+}
+
+.medium-editor-toolbar-actions:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@media screen and (max-width: $tablet_width) {
+  .medium-editor-toolbar.static-toolbar {
+    position: fixed;
+    top: unset !important;
+    left: 0 !important;
+    right: 0;
+    bottom: 0;
+    visibility: visible;
+    border-radius: 0;
+    overflow-x: overlay;
+
+    ul {
+      display: flex !important;
+    }
+  }
+
+  .medium-insert-buttons {
+    display: none !important;
+  }
+}

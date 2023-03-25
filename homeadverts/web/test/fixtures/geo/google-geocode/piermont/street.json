@@ -1,0 +1,65 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "131",
+          "short_name" : "131",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "New Hampshire 10",
+          "short_name" : "NH-10",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Piermont",
+          "short_name" : "Piermont",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Grafton County",
+          "short_name" : "Grafton County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New Hampshire",
+          "short_name" : "NH",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "03779",
+          "short_name" : "03779",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "formatted_address" : "131 NH-10, Piermont, NH 03779, USA",
+      "geometry" : {
+        "location" : {
+          "lat" : 43.9684003,
+          "lng" : -72.08175539999999
+        },
+        "location_type" : "ROOFTOP",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.9697492802915,
+            "lng" : -72.08040641970848
+          },
+          "southwest" : {
+            "lat" : 43.9670513197085,
+            "lng" : -72.0831043802915
+          }
+        }
+      },
+      "partial_match" : true,
+      "place_id" : "ChIJPSkUkj-TtEwRe8V1p9B3COU",
+      "types" : [ "establishment", "point_of_interest", "school", "street_address" ]
+    }
+  ],
+  "status" : "OK"
+}

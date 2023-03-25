@@ -1,0 +1,49 @@
+<div class="post-import-dialog">
+    <button class="close mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">close</i>
+    </button>
+
+    <div class="container">
+        <div class="heading">
+            <h4>
+                {{ article.title }}
+            </h4>
+            <p>
+                Imported Story
+            </p>
+        </div>
+
+        <div class="intro">
+            <div class="step">
+                <p class="step-heading">1.</p>
+                <p>
+                    Change your story as needed by selecting text and choosing different formatting options.
+                </p>
+                <img style="width: 200px; margin-top: 40px;"
+                     src="{{ asset('assets/images/editor/text.png') }}"/>
+            </div>
+            <div class="step">
+                <p class="step-heading">2.</p>
+                <p>
+                    Reformat images as needed by selecting them and choosing different layout options.
+                </p>
+                <img style="width: 150px; margin-top: 13px;"
+                     src="{{ asset('assets/images/editor/image.png') }}"/>
+            </div>
+            <div class="step">
+                <p class="step-heading">3.</p>
+                <p>
+                    Click Publish to share your story with the world (or just your friends).
+                </p>
+                <img style="width: 180px; margin-top: 40px;"
+                     src="{{ asset('assets/images/editor/publish.png') }}"/>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="white mdl-button mdl-js-button mdl-js-ripple-effect">
+                See your story
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.preview {
+  @include defaultText;
+  transition: all ease 0.3s;
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #383441;
+    margin-top: 24px;
+
+    @include media-query($medium-down) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .summary {
+    font-size: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 12px 0 24px 0;
+
+    @include media-query($medium-down) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .preview-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    cursor: pointer;
+    text-decoration: none;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  .preview-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    @include defaultText;
+  }
+}

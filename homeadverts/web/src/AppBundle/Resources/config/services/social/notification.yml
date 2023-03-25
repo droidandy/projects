@@ -1,0 +1,6 @@
+services:
+    ha_notificator:
+        class: AppBundle\Service\Notificator
+        arguments:
+            - "@em"
+            - %notification_messages%

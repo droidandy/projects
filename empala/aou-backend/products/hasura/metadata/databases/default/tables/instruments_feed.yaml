@@ -1,0 +1,4 @@
+table:
+  name: feed
+  schema: instruments
+is_enum: true

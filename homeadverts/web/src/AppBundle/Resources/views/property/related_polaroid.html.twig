@@ -1,0 +1,37 @@
+{% if relatedProperties|length > 0 %}
+    <div class="related-properties">
+
+        <div class="headline --separator">
+            <p class="heading">
+                Nearby
+            </p>
+            <span class="sub-heading --small">
+                From Sydney to New York, experience the world's most extraordinary properties.<br/>
+                Click to view all our featured homes.
+            </span>
+
+            <div class="information-centered">
+                <a href="{{ path('featured_index', {'market': 'for-sale'}) }}"
+                   class="black mdl-button mdl-js-button">
+                    More
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <ul class="medium-block-grid-3 list">
+                    {% set total = 0 %}
+                    {% for relatedProperty in relatedProperties %}
+                        {% if (property.id != relatedProperty.id) and (total < totalRelated) %}
+                        {% set total = total + 1 %}
+                            <li class="property-list-item" data-property-id="{{ property.id }}">
+                                {% include 'AppBundle:property/collection:item.html.twig' with {'property': relatedProperty} %}
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endif %}

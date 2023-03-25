@@ -1,0 +1,232 @@
+$label_color: #565a5c;
+$input_color: #424242;
+$normal_border_color: rgba(0, 0, 0, 0.12);
+
+body {
+  .mdl-layout__container {
+    position: static;
+    width: unset;
+    height: unset;
+  }
+  .mdl-layout__content {
+    position: static;
+    display: block;
+    overflow: unset;
+  }
+  .mdl-layout__drawer-button {
+    display: none;
+  }
+  .mdl-button:not(.mdl-button--icon) {
+    line-height: 33px;
+    height: 32px;
+    padding: 0 25px;
+    font-size: 13px;
+
+    &.__small {
+      line-height: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+    &.black {
+      border-radius: 3px;
+      background: #212121;
+      color: #fff !important;
+      font-weight: 600;
+      @include transition(background 0.3s);
+
+      &:hover {
+        background: #424242;
+      }
+    }
+    &.black-transparent {
+      border-radius: 2px;
+      color: #e0e0e0 !important;
+      font-weight: 500;
+      line-height: 32px;
+      border: 1px solid #f1f1f1;
+      padding: 0 35px;
+      @include transition(background 0.3s);
+    }
+    &.white {
+      border-radius: 3px;
+      background: #fff;
+      color: #424242;
+      font-weight: 600;
+      border: 1px solid #757575;
+
+      &:hover {
+        color: #111 !important;
+      }
+    }
+    &.\--right {
+      float: right;
+    }
+  }
+  .mdl-checkbox {
+    &.is-checked {
+      .mdl-checkbox__tick-outline {
+        background: rgb(63, 81, 181) url('/bower_components/material-design-lite/src/images/tick.svg?embed');
+      }
+    }
+  }
+  .mdl-textfield {
+    margin-bottom: -6px;
+    width: 100% !important;
+
+    .mdl-textfield__label {
+      top: 25px;
+      color: $label_color !important;
+      font-size: 16px !important;
+
+      &:after {
+        color: #9e9e9e !important;
+        background-color: #777 !important;
+      }
+    }
+
+    &.is-focused,
+    &.is-dirty {
+      .mdl-textfield__label {
+        top: 4px;
+        font-size: 12px !important;
+      }
+    }
+
+    .mdl-textfield__input {
+      color: #212121 !important;
+      padding: 6px 0;
+      border-color: $normal_border_color;
+      border-radius: 0;
+      font-family: inherit;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    select.mdl-textfield__input {
+      background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%230%22%20fill-rule%3D%22evenodd%22%20opacity%3D%220.54%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E);
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+
+    &.is-invalid {
+      .mdl-textfield__input {
+        border-color: rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+
+  .mdl-button {
+    i {
+      margin-right: 5px;
+    }
+
+    &.\--wide {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+    }
+  }
+
+  .mdl-button--raised {
+    &.\--primary {
+      color: #fff;
+      background: #c91500;
+    }
+  }
+
+  .mdl-menu {
+    li {
+      min-width: 180px;
+      height: 38px;
+      line-height: 38px;
+
+      a {
+        display: block;
+        width: 100%;
+      }
+      i {
+        opacity: 0;
+      }
+
+      &.checked {
+        i {
+          opacity: 1;
+          line-height: 1;
+          font-size: 17px;
+          float: right;
+          margin: 0;
+          margin-top: 10px;
+          margin-left: 10px;
+        }
+      }
+
+      a {
+        color: #212121;
+      }
+    }
+  }
+  .small-button {
+    height: 22px;
+    line-height: 22px;
+    min-height: 22px;
+    vertical-align: top;
+    font-size: 12px;
+    box-shadow: none;
+    padding: 0 10px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+
+    &.follow-button {
+      .unfollow {
+        display: none;
+      }
+      .following {
+        display: none;
+      }
+      .follow {
+        display: block;
+      }
+
+      &.\--following {
+        .unfollow {
+          display: none;
+        }
+        .following {
+          display: block;
+        }
+        .follow {
+          display: none;
+        }
+        &:hover {
+          .unfollow {
+            display: block;
+          }
+          .following {
+            display: none;
+          }
+          .follow {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.black {
+      background: #444;
+      color: #fff;
+    }
+    &.grey {
+      background: #888;
+      color: #fff;
+    }
+    &.outline {
+      height: 26px;
+      min-height: 26px;
+      line-height: 26px;
+      padding: 0 10px;
+      font-size: 11px;
+    }
+  }
+}

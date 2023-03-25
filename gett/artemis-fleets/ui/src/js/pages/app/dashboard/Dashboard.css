@@ -1,0 +1,39 @@
+.widgetContainer, .mapWrapper {
+  max-width: calc(50% - 10px);
+
+  :global(.recharts-responsive-container) {
+    top: 5px;
+  }
+}
+
+.map {
+  min-width: 100%;
+}
+
+.infoContainer {
+  max-width: 200px;
+}
+
+.statsCountValue {
+  height: 150px;
+}
+
+.twitterWidget {
+  min-width: 260px;
+  border-bottom: none;
+}
+
+@media (max-width: 1280px) {
+  .widgetContainer {
+    min-width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mapWrapper {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}

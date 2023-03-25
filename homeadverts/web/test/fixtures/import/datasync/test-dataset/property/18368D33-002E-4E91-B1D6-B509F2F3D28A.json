@@ -1,0 +1,509 @@
+{
+    "listingSummary": {
+        "listingId": "18368d33-002e-4e91-b1d6-b509f2f3d28a",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-04-10",
+        "photoCount": 26,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "BRL",
+            "amount": 4000000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 1077600
+        },
+        "propertyAddress": {
+            "city": "S\u00e3o Paulo",
+            "stateProvince": "S\u00e3o Paulo",
+            "stateProvinceCode": "SP",
+            "postalCode": "05679-160",
+            "country": "Brazil",
+            "countryCode": "BR"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Cidade Jardim"
+            }
+        ],
+        "mlsNumbers": [
+            "29800"
+        ],
+        "RFGListingId": "FVDNLK",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/fvdnlk",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Post-War",
+        "propertyName": "Duplex garden apartment",
+        "lotSize": "282 SM",
+        "buildingArea": "282 Sq. M",
+        "noOfBedrooms": 4,
+        "squareFootage": 3035.4198,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/F044D96C-0923-4B65-B357-3948290D20E1",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-05-10T05:29:51.613",
+        "agents": [
+            {
+                "id": "0ea8fd3f-9c99-48b4-b55a-d6bd98dfe845",
+                "name": "Pamela Dalton",
+                "firstName": "Pamela",
+                "lastName": "Dalton",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/9146984B-4A02-48ED-9F8B-79FEAA726ECE",
+                "emailAddress": "pdalton@briggsfreeman.com",
+                "businessPhone": "+1 2147297636",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "36afe41a-58ae-449c-8616-00be89584092",
+                    "RFGOfficeId": "0001",
+                    "companyId": "42f7c2c9-0409-4dd0-b18b-d3fb994bce34",
+                    "companyName": "Briggs Freeman",
+                    "RFGCompanyId": "800306",
+                    "brandCode": "SIR",
+                    "name": "Briggs Freeman Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "5600 W. Lovers Lane, Suite 224,",
+                        "city": "Dallas",
+                        "district": "Dallas",
+                        "stateProvince": "Texas",
+                        "stateProvinceCode": "TX",
+                        "postalCode": "75209",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 32.85064,
+                        "longitude": -96.81632,
+                        "formattedAddress": "5600 W Lovers Ln, Dallas, TX 75209"
+                    },
+                    "phoneNumber": "2143500400",
+                    "emailAddress": "briggsfreeman@briggsfreeman.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 6,
+    "parkingPlaces": 4,
+    "providerKey": "18368d33-002e-4e91-b1d6-b509f2f3d28a",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "General",
+            "description": "Elevator"
+        },
+        {
+            "groupName": "Views",
+            "description": "City \/ Strip"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "General",
+            "description": "Laundry Facilities"
+        },
+        {
+            "groupName": "General",
+            "description": "Storage Area"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "BBQ"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Gardens"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Marble Countertop"
+        },
+        {
+            "groupName": "Road Type",
+            "description": "City \/ Town Street"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Metropolitan"
+        },
+        {
+            "groupName": "Rooms",
+            "description": "Staff Quarters"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Eat-in Kitchen"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "A\/C"
+        },
+        {
+            "groupName": "Garage Description",
+            "description": "Garage"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Intercom System"
+        },
+        {
+            "groupName": "General",
+            "description": "Doorman"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Metropolitan"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "This duplex garden apartment is near Cidade Jardim Shopping Mall and has an excellent gourmet area with a barbecue pit, a pizza oven and a 160 m\u00b2 garden, also having a complete leisure and security area offered by the condominium.",
+            "htmlRemark": "<p><style type=\"text\/css\"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--><\/style><span style=\"font-size:13px;font-family:arial,sans,sans-serif;\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;This duplex garden apartment is near Cidade Jardim Shopping Mall and has an excellent gourmet area with a barbecue pit, a pizza oven and a 160 m\\u00b2 garden, also having a complete leisure and security area offered by the condominium. &quot;}\" data-sheets-userformat=\"{&quot;2&quot;:769,&quot;3&quot;:{&quot;1&quot;:0},&quot;11&quot;:4,&quot;12&quot;:0}\">This duplex garden apartment is near Cidade Jardim Shopping Mall and has an excellent gourmet area with a barbecue pit, a pizza oven and a 160 m\u00b2 garden, also having a complete leisure and security area offered by the condominium.&nbsp;<\/span><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/fvdnlk",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "93E548EA-BCE1-401A-8E8E-009E188CC666",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/93E548EA-BCE1-401A-8E8E-009E188CC666",
+            "isDefault": false,
+            "caption": "_MG_2061",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "F24CC823-A010-42D0-A1EF-0171E538F96C",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/F24CC823-A010-42D0-A1EF-0171E538F96C",
+            "isDefault": false,
+            "caption": "_MG_2114",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "5AED663E-232C-4FB6-86C2-197D2C10CA4A",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/5AED663E-232C-4FB6-86C2-197D2C10CA4A",
+            "isDefault": false,
+            "caption": "_MG_2045",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "037B5062-0ACC-42E8-AEB5-1BAEFB110AD9",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/037B5062-0ACC-42E8-AEB5-1BAEFB110AD9",
+            "isDefault": false,
+            "caption": "_MG_2086",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "18F4F3B3-FF2F-4FD4-B754-38639C09A2F7",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/18F4F3B3-FF2F-4FD4-B754-38639C09A2F7",
+            "isDefault": false,
+            "caption": "_MG_2096",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "F044D96C-0923-4B65-B357-3948290D20E1",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/F044D96C-0923-4B65-B357-3948290D20E1",
+            "isDefault": true,
+            "caption": "_MG_2034",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "68F13A71-6ABB-4A2C-8E67-3BF989EC5950",
+            "sequenceNumber": 26,
+            "url": "\/\/openapi.azureedge.net\/68F13A71-6ABB-4A2C-8E67-3BF989EC5950",
+            "isDefault": false,
+            "caption": "_MG_2079",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "0A6A82C3-FFE7-4891-920C-3E5F3C593ABB",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/0A6A82C3-FFE7-4891-920C-3E5F3C593ABB",
+            "isDefault": false,
+            "caption": "_MG_2055",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1407,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "E9339278-F034-4269-8797-47175968F583",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/E9339278-F034-4269-8797-47175968F583",
+            "isDefault": false,
+            "caption": "_MG_2111",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "D9CCCC64-8FA5-457D-8DDC-4C825ED49B47",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/D9CCCC64-8FA5-457D-8DDC-4C825ED49B47",
+            "isDefault": false,
+            "caption": "_MG_2082",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "DE4109F6-8716-4A41-A194-53E0EACEC187",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/DE4109F6-8716-4A41-A194-53E0EACEC187",
+            "isDefault": false,
+            "caption": "_MG_2031",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "DE1F0C1C-8BF9-4929-82CE-59AE6618AB68",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/DE1F0C1C-8BF9-4929-82CE-59AE6618AB68",
+            "isDefault": false,
+            "caption": "_MG_2049",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "17D8EC80-5805-452D-B49F-605C3F61B989",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/17D8EC80-5805-452D-B49F-605C3F61B989",
+            "isDefault": false,
+            "caption": "_MG_2118",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "6290A4E2-D148-46E5-9E84-623D7DE92FC5",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/6290A4E2-D148-46E5-9E84-623D7DE92FC5",
+            "isDefault": false,
+            "caption": "_MG_2092",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "CE339F07-1207-4FB6-8E75-93F07A2FF149",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/CE339F07-1207-4FB6-8E75-93F07A2FF149",
+            "isDefault": false,
+            "caption": "_MG_2037",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "631D3EDE-3CC5-4A4E-A875-97820637CEC6",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/631D3EDE-3CC5-4A4E-A875-97820637CEC6",
+            "isDefault": false,
+            "caption": "_MG_2072",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "1848AFA4-D6EB-461A-83CD-9CCC0628807F",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/1848AFA4-D6EB-461A-83CD-9CCC0628807F",
+            "isDefault": false,
+            "caption": "_MG_2042",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "5125135D-D92A-4619-B1A1-9D7597E47C3E",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/5125135D-D92A-4619-B1A1-9D7597E47C3E",
+            "isDefault": false,
+            "caption": "_MG_2107",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "AF80AEB1-BE82-4ADB-B351-B4DF648F17CF",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/AF80AEB1-BE82-4ADB-B351-B4DF648F17CF",
+            "isDefault": false,
+            "caption": "_MG_2068",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "15CB4B37-1776-4C58-938A-BD251168FC72",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/15CB4B37-1776-4C58-938A-BD251168FC72",
+            "isDefault": false,
+            "caption": "_MG_2076",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "2E7A4C6D-9514-49DB-8877-C35338060B7D",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/2E7A4C6D-9514-49DB-8877-C35338060B7D",
+            "isDefault": false,
+            "caption": "_MG_2099",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "C804DB65-45F8-44F4-9FD4-D62D4B4BC2FA",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/C804DB65-45F8-44F4-9FD4-D62D4B4BC2FA",
+            "isDefault": false,
+            "caption": "_MG_2103",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "2482C900-6E8C-4E15-9E2D-DDC6A20C1877",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/2482C900-6E8C-4E15-9E2D-DDC6A20C1877",
+            "isDefault": false,
+            "caption": "_MG_2064",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "8105F205-E7C7-45BD-AA0B-EC39DB8612BE",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/8105F205-E7C7-45BD-AA0B-EC39DB8612BE",
+            "isDefault": false,
+            "caption": "_MG_2025",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "6926C1F8-EC81-4EE0-BEEC-F7CC2F1DDCF0",
+            "sequenceNumber": 25,
+            "url": "\/\/openapi.azureedge.net\/6926C1F8-EC81-4EE0-BEEC-F7CC2F1DDCF0",
+            "isDefault": false,
+            "caption": "_MG_2052",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        },
+        {
+            "mediaID": "267CEFFB-FAE9-474F-8CE3-FEDE03F92E14",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/267CEFFB-FAE9-474F-8CE3-FEDE03F92E14",
+            "isDefault": false,
+            "caption": "_MG_2028",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1378,
+            "width": 2067,
+            "lastUpdateOn": "2017-12-11T05:28:41.260"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "29800",
+            "isPrimary": true
+        }
+    ]
+}

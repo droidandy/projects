@@ -1,0 +1,1 @@
+"use strict";angular.module("givmeApp.services").constant("FacebookAppID","898908930181474");

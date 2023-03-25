@@ -1,0 +1,197 @@
+#main
+  %table.invoice-line.border-bottom
+    %tbody
+      %tr
+        %td{:style => "padding-bottom:40px; vertical-align:top; text-align:left;"}
+          .logo
+            = document_image_tag('gett-logo.png')
+        %td{:style => "padding-bottom:40px; vertical-align:top; text-align:right;"}
+          %span{:style => "font-size: 22px; vertical-align:middle; padding-bottom:10px; display:block;"}
+            = @total
+          %span.light-gray-text.text-14{:style => "margin-right:10px; vertical-align:middle; height:20px; padding-right:10px;"}
+            = @booking.payment_card&.personal ? 'Personal' : 'Business'
+          %span.card-holder
+            = document_image_tag("card_receipt_credit_card.png")
+          %span.light-gray-text.text-14.ml-10
+            **** #{@booking.payment_card&.last_4}
+  %table.border-bottom
+    %tbody
+      %tr
+        %td{:style => "width:50%; padding-bottom:40px; padding-rigth:40px; vertical-align:top;"}
+          .receipt-title
+            Order ID: ##{@booking.order_id}
+          %table{:style => "max-width:100%; min-width:100%; width:100%; text-align:left; margin-left:10px;"}(cellpadding="0" cellspacing="0")
+            %thead
+              %tr
+                %th
+            %tfoot
+              %tr
+                %td
+            %tbody
+              %tr
+                %td
+                  %table(cellpadding="0" cellspacing="0")
+                    %tbody
+                      %tr
+                        %td{:style => "vertical-align:middle; padding-right:20px;"}
+                          %span.card-holder{:style => "display:block; margin-left:-9px;"}
+                            = document_image_tag("card_receipt_start_marker.png", size: "20x20")
+                        %td{:style => "vertical-align:middle; text-align:left; width:100%;"}
+                          %span{:style => "font-size:16px; display:block;"}
+                            Pick Up
+                      %tr{:style => "font-size:14px;"}
+                        %td{:style => "border-left:1px solid #d8d8d8; padding-bottom:20px;"}
+                        %td.light-gray-text.text-14{:style => "padding-top:10px; padding-bottom:20px;"}
+                          %span{:style => "padding-bottom:5px; display:block;"}
+                            = @started_at
+                          %span
+                            = @pickup_address_line
+              - @stop_address_lines.each_with_index do |line, i|
+                %tr.page-break-avoid.route-point
+                  %td
+                    %table(cellpadding="0" cellspacing="0")
+                      %tbody
+                        %tr
+                          %td{:style => "vertical-align:middle; padding-right:20px;"}
+                            %span.card-holder{:style => "display:block; margin-left:-9px;"}
+                              = document_image_tag("mailer/card_receipt_stop_point_marker.png", size: "20x20")
+                          %td{:style => "text-align:left; vertical-align:middle; width:100%;"}
+                            %span{:style => "font-size:16px; display:block;"}
+                              Stop Point #{i+1}
+                        %tr{:style => "font-size:14px;"}
+                          %td{:style => "border-left:1px solid #d8d8d8;"}
+                          %td.light-gray-text.text-14{:style => "padding-top:10px; padding-bottom:20px;"}
+                            %span
+                              = line
+              %tr.page-break-avoid.route-point
+                %td
+                  %table(cellpadding="0" cellspacing="0")
+                    %tbody
+                      %tr
+                        %td{:style => "vertical-align:middle; padding-right:20px;"}
+                          %span.card-holder{:style => "display:block; margin-left:-9px;"}
+                            = document_image_tag("card_receipt_finish_marker.png", size: "20x20")
+                        %td{:style => "text-align:left; vertical-align:middle; width:100%;"}
+                          %span{:style => "font-size:16px; display:block;"}
+                            Drop Off
+                      %tr{:style => "font-size:14px;"}
+                        %td
+                        %td.light-gray-text.text-14{:style => "padding-top:10px;"}
+                          %span{:style => "padding-bottom:5px; display:block;"}
+                            = @ended_at
+                          %span
+                            = @destination_address_line
+        %td{:style => "width:50%; text-align:right; padding-bottom:40px; padding-left:40px; vertical-align:top;"}
+          = image_tag(@map_image_url, size: "300x300")
+  %table.border-bottom.page-break-avoid
+    %tbody
+      %tr
+        %td{:style => "width:50%; padding-right:40px; padding-top:40px; padding-bottom:40px;"}
+          .receipt-title
+            Transaction Information
+          %table(cellpadding="0" cellspacing="0")
+            %tbody.text-14
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                  Fare
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  = @fare
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                  Fee
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  = @fee
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                  VAT (20%)
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  = @vat
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                  Tips
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  = @tips
+              %tr
+                %td{:style => "border-top: 1px solid #d8d8d8; padding-bottom:10px;"}
+                %td{:style => "border-top: 1px solid #d8d8d8;"}
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                  Charged to
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  %span.card-holder
+                    = document_image_tag("card_receipt_credit_card.png")
+                  %span.ml-10{:style => "vertical-align: top;"}
+                    **** #{@booking.payment_card&.last_4}
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top;"}
+                  Total
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  = @total
+              %tr
+                %td.light-gray-text{:style => "text-align:left; vertical-align:top;"}
+                  VAT Reg No
+                %td{:style => "text-align:right; vertical-align:top;"}
+                  = Settings.ote.vat_number
+        %td{:style => "vertical-align:top; width:50%; padding-left:40px; padding-bottom:40px; padding-top:40px;"}
+          .receipt-title
+            Driver Information
+          %table{:style => "text-align:left; width:100%; max-width:100%;"}(cellpadding="0" cellspacing="0")
+            %tbody
+              %tr{:style => "padding-bottom:10px;"}
+                - if @booking.driver&.image_url.present?
+                  %td{:style => "vertical-align:middle; width:30%; text-align:center; padding-right:10px;"}
+                    = image_tag @booking.driver.image_url, :class => "avatar-holder", :align => "center", :alt => "", :style => "padding-bottom: 0; display: inline !important; vertical-align: middle;", :width => "80"
+                %td{:style => "width:70%"}
+                  %table{:style => "text-align:left; width:100%; max-width:100%; min-width:100%;"}(cellpadding="0" cellspacing="0")
+                    %tbody.text-14
+                      %tr
+                        %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                          Name
+                        %td{:style => "text-align:right; vertical-align:top;"}
+                          = @booking.driver&.name
+                      %tr
+                        %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                          Miles
+                        %td{:style => "text-align:right; vertical-align:top;"}
+                          #{@booking.travel_distance || 0} miles
+                      %tr
+                        %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                          Waiting time
+                        %td{:style => "text-align:right; vertical-align:top;"}
+                          = @waiting_time
+                      %tr
+                        %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                          Trip Time
+                        %td{:style => "text-align:right; vertical-align:top;"}
+                          = @ride_duration
+                      %tr
+                        %td.light-gray-text{:style => "text-align:left; vertical-align:top; padding-bottom:10px;"}
+                          Car Type
+                        %td{:style => "text-align:right; vertical-align:top;"}
+                          #{@formatted_vehicle_type}
+  - if @references.present? || @travel_reason.present?
+    %table.page-break-avoid{:style => "text-align:left; width:100%;"}
+      %tr
+        - if @travel_reason.present?
+          %td{:style => "vertical-align:top; width:50%; padding-top:40px;"}
+            .receipt-title
+              Travel Reason
+            %table{:style => "text-align:left; width:100%; max-width:100%;"}
+              %tbody
+                %tr
+                  %td.light-gray-text{:style => "text-align:left; vertical-align:top;"}
+                    #{@travel_reason}
+        - if @references.present? && @travel_reason.present?
+          %td{:style => "width:80px; vertical-align:top; display:block; padding-top:40px;"}
+        - if @references.present?
+          %td{:style => "vertical-align:top; width:50%; padding-top:40px;"}
+            .receipt-title
+              References
+            %table{:style => "text-align:left; width:100%; max-width:100%;"}
+              %tbody.text-14
+                - @references.each do |item|
+                  %tr
+                    %td.light-gray-text{:style => "vertical-align: top;"}
+                      = item[:name]
+                    %td{:style => "vertical-align: top; padding-left:10px;"}
+                      = item[:value]

@@ -1,0 +1,28 @@
+name: "Shopify Deploy to Production"
+on: [workflow_dispatch]
+jobs:
+  trigger-deploy-workflow:
+    uses: cream-ly/shopify_theme/.github/workflows/shopify_deploy.yml@master
+    with:
+      SHOPIFY_THEME_ID: 80557244470
+      SHOPIFY_THEME_ASSETS_URL: 'https://cdn.shopify.com/s/files/1/2367/5871/t/19/assets/'
+    secrets:
+      SHOPIFY_API_PASSWORD: ${{ secrets.SHOPIFY_PRODUCTION_PASSWORD }} 
+  create-tag-and-release:
+    needs: trigger-deploy-workflow
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bump version and push tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v5.6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          release_branches: master
+          default_bump: major
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.tag_version.outputs.new_tag }}
+          name: Release ${{ steps.tag_version.outputs.new_tag }}
+          body: ${{ steps.tag_version.outputs.changelog }}

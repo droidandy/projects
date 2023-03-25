@@ -1,0 +1,244 @@
+@import './variables-theme';
+
+$SEND_TO_CARIER_BACKGROUND: #f5feff;
+$SEND_TO_CARIER_BORDER: 1px solid #baeaf9;
+$SEND_TO_CARIER_BOX_SHADOW: 0 0 0 1px #baeaf9 inset, 0 0 0 0 transparent;
+
+$RFP_HEADING_COLOR: #333333;
+$RFP_NAVIGATION_ITEM_COLOR: #3A444E;
+//$RFP_NAVIGATION_BORDER_COLOR: #c3dddd;
+$RFP_NAVIGATION_BORDER_COLOR: #ddd;
+$RFP_SUB_NAVIGATION_BOLD_COLOR: $RFP_HEADING_COLOR;
+$RFP_CLEAR_VALUE_STRIPPER_COLOR: #FAFDFF;
+$PRESENTATION_DEVIDER_COLOR: #e3e8e8;
+$PRESENTATION_GREEN_BUTTON_COLOR: #25b79f;
+$PRESENTATION_OVERVIEW_BOTTOM_DIVIDER_COLOR: #aaaaaa;
+$PRESENTATION_OPTIONS_HEADER_COLOR: #515151;
+$PRESENTATION_OPTIONS_DESCRIPTION_COLOR: #989898;
+$PRESENTATION_TABLE_STRIPEDBACK_COLOR: #FAFCFD;
+$PRESENTATION_TABLE_STRIPEDBACK_BORDER_BORDER: 1px solid $PRESENTATION_DEVIDER_COLOR !important;
+$PRESENTATION_COMPARISON_BORDER: 1px solid #2185D0 !important;
+$PRESENTATION_TABLE_ALTERNATIVE_BORDER: 1px solid #d8e1ee;
+
+$PRESENTATION_TABLE_COMPARISON_BORDER: 1px solid #b7b9ba;
+
+$PRESENTATION_BACKGROUND_COLOR: #f4f4f4;
+$PRESENTATION_TABLE_SELECTED_COLUMN_BACKGROUND: #f2f9f1;
+$PRESENTATION_TABLE_SELECTED_STRIPED_COLUMN_BACKGROUND: #eaefe9;
+$PRESENTATION_SCROLL_TRACK_COLOR: #c2c2c2;
+$PRESENTATION_TABLE_STRIPPED_ROW_BACKGROUND: #e4e9ed;
+$PRESENTATION_TABLE_NEW_PLAN_BACKGROUND_COLOR: #bce2e1;
+$PRESENTATION_TABLE_NEW_PLAN_BUTTON_BORDER_COLOR: #a4b2b2;
+
+$PRESENTATION_TABLE_FOOTER_BACKGROUND: #f2f9f1;
+$PRESENTATION_TABLE_FOOTER_ST_BACKGROUND: #e9f0e9;
+
+$PRESENTATION_MODAL_HEADER_COLOR: #fff;
+$PRESENTATION_MODAL_BG_COLOR: #39C0C4;
+$PRESENTATION_MODAL_BORDER_COLOR: #39C0C4;
+$PRESENTATION_MODAL_LN_COLOR: #666766;
+$PRESENTATION_MODAL_TX_COLOR: #64408E;
+$PRESENTATION_MODAL_TX2_COLOR: #1867A6;
+$PRESENTATION_MODAL_BOX_COLOR: #9f8abd;
+$PRESENTATION_MODAL_MN_COLOR: #835ea8;
+$PRESENTATION_MODAL_DYR_COLOR: #1a67a7;
+$PRESENTATION_MODAL_MN2_COLOR: #2d7dc1;
+$PRESENTATION_MODAL_BOX2_COLOR: #5d9fd3;
+$PRESENTATION_MODAL_BLK_COLOR: #333;
+$PRESENTATION_ADD_COLUMN_COLOR: #bbe2e1;
+$PRESENTATION_PLAN_NAME_COLOR: #1761ab;
+$PRESENTATION_PLAN_BUTTON_BACKGROUND_COLOR: #2185D0;
+$PRESENTATION_PLAN_BUTTON_COLOR: white;
+$PRESENTATION_TEXT_COLOR: #586166;
+$PRESENTATION_FINAL_RED: #CF6356;
+$ORANGE_COLOR: #f7981d;
+$GRAY_COLOR: #6c6c6c;
+$LIGHT_GRAY_COLOR: #cccccc;
+
+$PRESENTATION_ALTERNATIVES_TITLE_COLOR: #6E7881;
+$PRESENTATION_ALTERNATIVES_VALUE_COLOR: #333333;
+
+$PRESENTATION_MOTION_BLUE: #005DAB;
+$PRESENTATION_MOTION_GREEN: #00AA49;
+$PRESENTATION_MOTION_GREY: #C3C8CD;
+
+$PRESENTATION_FIRST_ROW_COLOR: #f8f8f8;
+$PRESENTATION_FULL_ROW_COLOR: #ecf7fb;
+$PRESENTATION_NARROW_ROW_COLOR: #f3f9ea;
+$PRESENTATION_SNARROW_ROW_COLOR: #f4f2e1;
+$PRESENTATION_OTHER_ROW_COLOR: #f5f0f7;
+
+$PRESENTATION_FULL_ROUND_COLOR: #34c0c3;
+$PRESENTATION_NARROW_ROUND_COLOR: #8cc63f;
+$PRESENTATION_SNARROW_ROUND_COLOR: #b39a31;
+
+$MENU_BORDER_COLOR: #42c2c5;
+$MENU_BORDER_COLOR_NON_ACTIVE: #d6d8d9;
+
+$MAIN_TABLE_ROW_SELECTED_COLOR: #edf1f5;
+$MAIN_TABLE_ROW_SELECTED_BORDER: 2px solid #becae0;
+
+$TIMELINE_HEADER_COLOR: #e9e8e7;
+$TIMELINE_DIVIDER_ROW_COLOR: #fafafa;
+$TIMELINE_BACKGROUND_COLOR: #0099cc;
+$TIMELINE_BORDER_COLOR: #52565e;
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+.animate-flicker {
+  -webkit-animation: flickerAnimation 1s;
+  -moz-animation: flickerAnimation 1s;
+  -o-animation: flickerAnimation 1s;
+  animation: flickerAnimation 1s;
+}
+
+@mixin inputPlaceholder() {
+  color:#7d7f84;
+  opacity: 0.5;
+}
+
+@mixin disableSelect() {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+@mixin sectionHeading($color, $weight) {
+  font-size:12px;
+  color:$color;
+  font-weight: $weight;
+  text-transform: uppercase;
+}
+
+@mixin divider() {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid $PRESENTATION_DEVIDER_COLOR;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@mixin lineCloseButton() {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  color: $PRESENTATION_OPTIONS_HEADER_COLOR;
+
+  &:hover {
+    color: $PRESENTATION_OPTIONS_HEADER_COLOR;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin clearValueEmptyOption($imgW, $imgH, $title1, $imgMargin) {
+  .card-empty-layer {
+    border-radius: 4px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(245, 251, 253, 0.7);
+    border: 1px solid $ELEM_ACTIVE_COLOR;
+
+    .card-empty-bottom {
+      height: 53%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 20px;
+      border-top: 1px solid $ELEM_ACTIVE_COLOR;
+      text-align: center;
+
+      .card-empty-img {
+        width: $imgW;
+        height: $imgH;
+        background: url('../../img/svg/plane.svg') no-repeat center;
+        margin: $imgMargin auto;
+      }
+
+      .card-empty-title1 {
+        font-size: $title1;
+        margin-bottom: 10px;
+        white-space: nowrap;
+      }
+
+      .card-empty-title2 {
+        font-size: 13px;
+        font-style: italic;
+        font-weight: 600;
+        width: 140px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.error-flash, .error-flash + input, .error-flash + label:before, .error-flash .Select-control {
+  -webkit-animation-name: flash-animation;
+  -webkit-animation-duration: 5s;
+
+  animation-name: flash-animation;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes flash-animation {
+  from { background: $ELEM_ORANGE_COLOR; }
+  to   { background: default; }
+}
+
+@keyframes flash-animation {
+  from { background: $ELEM_ORANGE_COLOR; }
+  to   { background: default; }
+}
+
+$PRESENTATION_NEXT_BORDER_COLOR: #c4c5c5;
+$PRESENTATION_NEXT_BORDER_DIVIDER_COLOR: #aaaaaa;
+$PRESENTATION_NEXT_BORDER_DIVIDER_DARK_COLOR: #777777;
+$PRESENTATION_NEXT_BORDER_DIVIDER_LIGHT_COLOR: #dddddd;
+$PRESENTATION_NEXT_SELECTED_BORDER_COLOR: #0099cc;
+$PRESENTATION_NEXT_MATCH_CORNER_COLOR: #21bdc3;
+$PRESENTATION_NEXT_SELECTED_BORDER: 2px solid $PRESENTATION_NEXT_SELECTED_BORDER_COLOR;
+$PRESENTATION_NEXT_SELECTED_MATCH_BORDER: 2px solid $PRESENTATION_NEXT_MATCH_CORNER_COLOR;
+$PRESENTATION_NEXT_BLUE_BACKGROUND_COLOR: #f2f6f7;
+$PRESENTATION_NEXT_COST_COLOR: #096c79;
+$PRESENTATION_NEXT_CURRENT_CORNER_COLOR: #3a444d;
+$PRESENTATION_NEXT_HEADER_ROW_HEIGHT: 240px;
+$PRESENTATION_NEXT_UHC_HEADER_ROW_HEIGHT: 170px;
+$PRESENTATION_NEXT_HEADER_LOGO_ROW_HEIGHT: 75px;
+$PRESENTATION_NEXT_SELECTED_INDENT_TOP: 10px;
+$PRESENTATION_NEXT_SELECTED_INDENT_BOTTOM: 20px;
+$PRESENTATION_NEXT_TOTAL_LAST_ROW_HEIGHT: 70px;
+$PRESENTATION_NEXT_COLUMN_BORDER_RADIUS: 5px;
+$PRESENTATION_NEXT_TEXT_COLOR_DARK: #3f4951;
+$PRESENTATION_NEXT_TEXT_COLOR_LIGHT: #999999;
+$PRESENTATION_NEXT_NEW_ROW_BACKGROUND: #3a444d;
+$PRESENTATION_NEXT_FIRST_COLUMN_WIDTH: 127px;

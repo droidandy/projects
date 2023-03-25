@@ -1,0 +1,36 @@
+{% from 'AppBundle:filters:filter_elements.html.twig' import ha_filter_select, ha_filter_price %}
+{% set filters_form = search.form.createView() %}
+
+<div class="container filters-wrapper">
+    <form method="get" action="{{ action }}">
+        <div class="filters">
+            <div id="primary-filter" class="primary-filters">
+                <ul>
+                    <li class="filter">
+                        {{ ha_filter_select(filters_form.type) }}
+                    </li>
+                    <li class="filter">
+                        {{ ha_filter_select(filters_form.bedrooms) }}
+                    </li>
+                    {{ ha_filter_price(filters_form.price) }}
+                    <li class="filter --separator">
+                        {{ ha_filter_select(filters_form.sort) }}
+                    </li>
+                    <li class="filter">
+                        {{ ha_filter_select(filters_form.media) }}
+                    </li>
+                    {% if pagination[0]|length > 0 %}
+                        {% if json_url is defined and json_url is not empty %}
+                            <li class="filter">
+                                <a href="#"
+                                   class="main-filter button-map {% if map_view %}selected{% endif %}">
+                                    {% trans %}search.filters.map{% endtrans %}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>

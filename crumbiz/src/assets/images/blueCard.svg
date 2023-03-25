@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" viewBox="0 0 310.001 199">
+    <defs>
+        <style>
+            .a{fill:url(#a);}.b{opacity:0.6;}.aa,.c,.d,.e,.f,.g,.h,.i,.j,.k,.l,.m,.n,.o,.p,.q,.r,.s,.t,.u,.v,.w,.x,.y,.z{fill:#3c56f0;}.c{opacity:0.835;}.d{opacity:0.7;}.e{opacity:0.98;}.f{opacity:0.317;}.g{opacity:0.651;}.h{opacity:0.895;}.i{opacity:0.854;}.j{opacity:0.936;}.k{opacity:0.463;}.l{opacity:0.736;}.m{opacity:0.486;}.n{opacity:0.339;}.o{opacity:0.943;}.p{opacity:0.915;}.q{opacity:0.546;}.r{opacity:0.918;}.s{opacity:0.679;}.t{opacity:0.254;}.u{opacity:0.948;}.v{opacity:0.954;}.w{opacity:0.389;}.x{opacity:0.984;}.y{opacity:0.245;}.z{opacity:0.425;}.aa{opacity:0.299;}
+        </style>
+        <linearGradient id="a" x1="-0.292" y1="-0.285" x2="0.916" y2="0.893" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#3c56f0"/>
+            <stop offset="1" stop-color="#6d82ff"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-301 -3790.47)">
+        <g transform="translate(301 3790.47)">
+            <rect class="a" width="310" height="199" rx="10"/>
+        </g>
+        <g class="b" transform="translate(276 1103.939)">
+            <g transform="translate(25 2686.531)">
+                <rect class="c" width="3.839" height="8.062"
+                      transform="matrix(0.883, 0.469, -0.469, 0.883, 67.608, 24.008)"/>
+                <rect class="d" width="6.444" height="13.533" transform="translate(19.371 41.399) rotate(101)"/>
+                <rect class="e" width="5.159" height="10.833" transform="translate(24.873 156.32) rotate(68)"/>
+                <rect class="f" width="4.085" height="8.578"
+                      transform="matrix(0.454, -0.891, 0.891, 0.454, 66.597, 71.194)"/>
+                <rect class="g" width="9.506" height="19.964" transform="translate(200.867 137.638) rotate(-103)"/>
+                <rect class="h" width="5.589" height="11.737" transform="translate(206.378 93.349) rotate(-16)"/>
+                <rect class="i" width="6.874" height="14.435" transform="translate(189.24 164.514) rotate(-74)"/>
+                <path class="j" d="M0,9.415V0H16.4V9.415Z" transform="translate(293.604 25.131)"/>
+                <rect class="k" width="6.009" height="12.62" transform="translate(267.447 156.633) rotate(169)"/>
+                <path class="l" d="M0,4.439,1.528,0,5.616,1.408V6.372Z" transform="translate(304.384 55.038)"/>
+                <rect class="m" width="7.752" height="16.279"
+                      transform="matrix(-0.809, 0.588, -0.588, -0.809, 196.023, 189.699)"/>
+                <rect class="n" width="9.091" height="19.092" transform="translate(221.206 78.207) rotate(77)"/>
+                <rect class="o" width="5.328" height="11.189" transform="translate(153.338 98.348) rotate(-25)"/>
+                <rect class="p" width="7.913" height="16.616"
+                      transform="matrix(-0.438, -0.899, 0.899, -0.438, 139.258, 17.42)"/>
+                <rect class="q" width="5.993" height="12.585"
+                      transform="matrix(0.588, -0.809, 0.809, 0.588, 65.419, 191.603)"/>
+                <path class="r" d="M0,6.282V5.813a23.2,23.2,0,0,1,.191-2.98L6.554,0l7.3,16.387-7.8,3.474Z"
+                      transform="translate(0 18.656)"/>
+                <rect class="s" width="6.21" height="13.042"
+                      transform="matrix(0.848, -0.53, 0.53, 0.848, 72.54, 74.314)"/>
+                <rect class="t" width="4.427" height="9.297"
+                      transform="matrix(-0.07, -0.998, 0.998, -0.07, 60.427, 5.065)"/>
+                <path class="u" d="M0,6.248V0L6.281.11,6.172,6.356Z" transform="translate(0 120.587)"/>
+                <rect class="v" width="8.956" height="18.807"
+                      transform="matrix(-0.995, -0.105, 0.105, -0.995, 102.867, 113.403)"/>
+                <rect class="w" width="9.434" height="19.812" transform="translate(101.616 37.819) rotate(71)"/>
+                <rect class="x" width="4.397" height="9.234" transform="translate(146.629 24.76) rotate(-103)"/>
+                <rect class="y" width="3.325" height="6.982"
+                      transform="matrix(-0.469, -0.883, 0.883, -0.469, 249.168, 135.03)"/>
+                <rect class="z" width="3.261" height="6.848"
+                      transform="matrix(-0.891, -0.454, 0.454, -0.891, 305.002, 162.991)"/>
+                <rect class="aa" width="4.501" height="9.452"
+                      transform="matrix(-0.848, -0.53, 0.53, -0.848, 290.798, 38.923)"/>
+            </g>
+        </g>
+    </g>
+</svg>

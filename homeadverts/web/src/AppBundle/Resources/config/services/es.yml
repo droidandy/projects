@@ -1,0 +1,213 @@
+services:
+    ha.es.seed_generator:
+        class: AppBundle\Elastic\Integration\SessionSeedGenerator
+    ha.es.string_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\StringType
+    ha.es.integer_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\IntegerType
+    ha.es.array_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\ArrayType
+    ha.es.option_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\OptionType
+    ha.es.fromto_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\FromtoType
+    ha.es.pagination_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\PaginationType
+    ha.es.boolean_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\BooleanType
+    ha.es.date_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\DateType
+    ha.es.sort_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\SortType
+        arguments: [@ha.es.seed_generator]
+    ha.es.sort_bc_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\SortBCType
+        arguments: [@ha.es.seed_generator]
+    ha.es.language_type:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\LanguageType
+    ha.es.property_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\PropertyType
+        arguments: [@property_repo]
+    ha.es.location_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\LocationType
+        arguments: [@location_repo, @ha.geometry_service]
+    ha.es.location_simple_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\LocationSimpleType
+        arguments: [@location_repo]
+    ha.es.locations_type:
+        class: AppBundle\Elastic\Location\Query\Criteria\Type\LocationsType
+        arguments: [@ha.geometry_service]
+    ha.es.locations_simple_type:
+        class: AppBundle\Elastic\Location\Query\Criteria\Type\LocationsSimpleType
+    ha.es.distance_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\DistanceType
+    ha.es.market_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\MarketType
+    ha.es.price_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\PriceType
+        arguments: [@currency_manager]
+    ha.es.property_type_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\TypeType
+    ha.es.property_status_type:
+        class: AppBundle\Elastic\Property\Query\Criteria\Type\StatusType
+    ha.es.type_registry:
+        class: AppBundle\Elastic\Integration\Query\Criteria\Type\TypeRegistry
+        arguments:
+            -   string: @ha.es.string_type
+                integer: @ha.es.integer_type
+                array: @ha.es.array_type
+                option: @ha.es.option_type
+                fromto: @ha.es.fromto_type
+                pagination: @ha.es.pagination_type
+                boolean: @ha.es.boolean_type
+                date: @ha.es.date_type
+                sort: @ha.es.sort_type
+                sort_bc: @ha.es.sort_bc_type
+                language: @ha.es.language_type
+                property: @ha.es.property_type
+                location: @ha.es.location_type
+                location_simple: @ha.es.location_simple_type
+                locations: @ha.es.locations_type
+                locations_simple: @ha.es.locations_simple_type
+                distance: @ha.es.distance_type
+                market: @ha.es.market_type
+                price: @ha.es.price_type
+                property_type: @ha.es.property_type_type
+                property_status: @ha.es.property_status_type
+    ha.es.raw_view:
+        class: AppBundle\Elastic\Integration\View\RawCollectionView
+    ha.es.property_simple_search:
+        class: AppBundle\Elastic\Property\View\PropertySimpleSearchView
+        arguments:
+            -   @router
+            
+    ha.es.user_simple_search:
+        class: AppBundle\Elastic\User\View\UserSimpleSearchView
+        arguments: [@router]
+    ha.es.article_autocomplete:
+        class: AppBundle\Elastic\Article\View\ArticleAutocompleteView
+        arguments: [@router]
+    ha.es.tag_autocomplete:
+        class: AppBundle\Elastic\Tag\View\TagAutocompleteView
+    ha.es.location_aggregate:
+        class: AppBundle\Elastic\Location\View\LocationAggregateView
+        arguments: [@router]
+    ha.es.view_registry:
+        class: AppBundle\Elastic\Integration\View\ViewRegistry
+        arguments:
+            -   raw: @ha.es.raw_view
+                property_simple_search: @ha.es.property_simple_search
+                user_simple_search: @ha.es.user_simple_search
+                article_autocomplete: @ha.es.article_autocomplete
+                tag_autocomplete: @ha.es.tag_autocomplete
+                location_aggregate: @ha.es.location_aggregate
+    ha.es.criteria_builder:
+        class: AppBundle\Elastic\Integration\Query\Criteria\CriteriaBuilder
+        arguments: [@ha.es.type_registry]
+    ha.property.property_es_mapping:
+        class: AppBundle\Elastic\Property\Mapping\PropertyMapping
+        factory: [@ha.es.mapping_factory, 'get']
+        arguments: [ 'property' ]
+        public: false
+    ha.es.property_document_parser:
+        class: AppBundle\Elastic\Property\Mapping\PropertyDocumentParser
+        factory: [@ha.property.property_es_mapping, 'getDocumentParser']
+    ha.es.user_document_parser:
+        class: AppBundle\Elastic\User\Mapping\UserDocumentParser
+        factory: [@ha.user.user_es_mapping, 'getDocumentParser']
+    ha.es.article_document_parser:
+        class: AppBundle\Elastic\Article\Mapping\ArticleDocumentParser
+        factory: [@ha.article.article_es_mapping, 'getDocumentParser']
+    ha.es.tag_document_parser:
+        class: AppBundle\Elastic\Tag\Mapping\TagDocumentParser
+        factory: [@ha.tags.tag_es_mapping, 'getDocumentParser']
+    ha.es.document_parser:
+        class: AppBundle\Elastic\Integration\Mapping\DocumentParserChain
+        arguments:
+            -
+                - @ha.es.property_document_parser
+                - @ha.es.article_document_parser
+                - @ha.es.user_document_parser
+                - @ha.es.tag_document_parser
+    ha.es.request_factory:
+        class: AppBundle\Elastic\Integration\Query\RequestFactory
+        arguments: [@ha.es.document_parser, @?debug.stopwatch]
+    
+    ha.es.mapping_factory:
+        class: AppBundle\Elastic\Integration\Mapping\MappingFactory
+        arguments:
+            -   user:
+                    class: AppBundle\Elastic\User\Mapping\UserMapping
+                    index: agents
+                    mapping: agent
+                    db_repo: @user_repo
+                property:
+                    class: AppBundle\Elastic\Property\Mapping\PropertyMapping
+                    index: properties
+                    mapping: property
+                    db_repo: @property_repo
+                tag:
+                    class: AppBundle\Elastic\Tag\Mapping\TagMapping
+                    index: tags
+                    mapping: tag
+                    db_repo: @tag_repo
+                article:
+                    class: AppBundle\Elastic\Article\Mapping\ArticleMapping
+                    index: articles
+                    mapping: article
+                    db_repo: @article_repo
+            - @es_client
+            - @doctrine.orm.entity_manager
+            - @logger
+            - '%ha.es.index_prefix%'
+            - '@=parameter("kernel.environment") == "test"'
+    ha.es.search_handler:
+        class: AppBundle\Elastic\Integration\SearchHandler
+        arguments:
+            - @ha.es.mapping_factory
+            - @ha.es.criteria_builder
+            - @ha.es.view_registry
+            - @ha.es.request_factory
+            - @?debug.stopwatch
+
+    ha.search.location_repo:
+        class: AppBundle\Elastic\Location\LocationRepo
+        arguments:
+            - @ha.es.view_registry
+            - @ha.es.search_handler
+            - @location_factory
+            - @ha.geometry_service
+            - @ha.user.adjacency_registry
+
+    ha.property.property_search_repo:
+        class: AppBundle\Elastic\Property\PropertySearchRepo
+        arguments:
+            - '@property_repo'
+            - '@ha.es.search_handler'
+            - '@filter_factory'
+            - '@redis_cache'
+            - '@ha.user.adjacency_registry'
+
+    ha.user.user_search_repo:
+        class: AppBundle\Elastic\User\UserSearchRepo
+        arguments:
+            - '@ha.es.search_handler'
+            - '@ha.user.adjacency_registry'
+
+    ha.article.article_search_repo:
+        class: AppBundle\Elastic\Article\ArticleSearchRepo
+        arguments:
+            - '@article_repo'
+            - '@ha.es.search_handler'
+            - '@form.factory'
+            - '@ha.user.adjacency_registry'
+
+    ha.tags.tag_es_mapping:
+        class: AppBundle\Elastic\Tag\Mapping\TagMapping
+        factory: [@ha.es.mapping_factory, 'get']
+        arguments: [ 'tag' ]
+        public: false
+
+    ha.tag.search_repo:
+        class: AppBundle\Elastic\Tag\TagSearchRepository
+        arguments: [ @ha.es.search_handler ]

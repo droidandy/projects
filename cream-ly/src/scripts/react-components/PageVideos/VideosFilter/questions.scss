@@ -1,0 +1,14 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.componentQuizQuestion[data-group=videoGoals] {
+    max-width: 1120px;
+    margin: 0 auto;
+    @include media-query($medium) {
+        max-width: 560px;
+    }
+    @include media-query($small) {
+       // max-width: 235px;
+    }
+
+    
+}

@@ -1,0 +1,96 @@
+.help-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.help-content div img {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: 10% 0;
+  background-image: linear-gradient(to top, #515151 0%, white 47%, white 100%);
+  box-shadow: 0.5px 0.9px 7.3px 0.7px rgba(0, 0, 0, 0.35);
+}
+.help-content div .help-slider-image {
+  margin: 0;
+}
+.help-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5vh;
+  color: #2e2e31;
+  font-family: 'gotham-book';
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.help-video {
+  margin: 15% 15% 0 15%;
+}
+.help-footer {
+  margin-bottom: 10vh;
+}
+.help-modal-body {
+  padding: 5px 0;
+}
+.help-modal-footer {
+  margin-top: 15%;
+  max-width: 320px;
+}
+.slider-slide {
+  display: table;
+}
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.help-info {
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 90%;
+}
+.help-info-icon {
+  top: 10px;
+}
+.help-call-icon {
+  top: 30px;
+}
+.slider-pager .slider-pager-page {
+  color: #e2e0e0;
+  width: 8px;
+  height: 8px;
+  color: #d2d2d4;
+  margin: 0 5px;
+  opacity: 1;
+  font-size: 8px;
+}
+.slider-pager .slider-pager-page.active {
+  color: #f36;
+}
+.scroll,
+.page-slider,
+.slider,
+.facebook-page-slider {
+  height: 100%;
+}
+.page--settings .page,
+.page--settings .slider {
+  height: auto;
+}
+.swipe {
+  position: absolute;
+  bottom: 7%;
+  text-align: center;
+  width: 100%;
+  color: #b4b4b4;
+  font-family: 'gotham-book';
+  font-size: 13.5px;
+  font-weight: 300;
+  line-height: 45px;
+}

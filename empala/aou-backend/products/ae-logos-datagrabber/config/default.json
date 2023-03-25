@@ -1,0 +1,24 @@
+{
+  "log": {
+    "level": "debug"
+  },
+  "idleTimeLimitSec": 350,
+  "requestsPerSecond": 1,
+  "bullmq": {
+    "concurrency": 50,
+    "attempts": 3,
+    "backoff": {
+      "type": "exponential",
+      "delay": 5000
+    },
+    "cleanOnStart": true,
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379
+    },
+    "arena": {
+      "host": "127.0.0.1",
+      "port": 9119
+    }
+  }
+}

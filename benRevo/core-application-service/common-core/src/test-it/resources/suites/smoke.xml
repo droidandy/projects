@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Tests [API Docs: https://devapi.benrevo.com/swagger-ui.html#/]" parallel="instances" thread-count="1" data-provider-thread-count="1" verbose="2">
+    <test name="account-controller : Account Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.account.GetAccountsUsersTest"/>
+            <class name="com.benrevo.core.itest.account.AddingClientAccountTest"/>
+            <class name="com.benrevo.core.itest.account.UpdatingAuth0ClientTest"/>
+        </classes>
+    </test>
+    <test name="answer-controller : Answer Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.answer.GetAnswerTest"/>
+            <class name="com.benrevo.core.itest.answer.UpdatingAnswerTest"/>
+        </classes>
+    </test>
+    <test name="basic-error-controller : Basic Error Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.basicerror.BasicErrorTest"/>
+        </classes>
+    </test>
+    <test name="carrier-controller : Carrier Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.carrier.GetCarrierTest"/>
+        </classes>
+    </test>
+    <test name="client-controller : Client Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.client.user.CreateClientTest"/>
+            <class name="com.benrevo.core.itest.client.user.GetClientTest"/>
+            <class name="com.benrevo.core.itest.client.user.UpdateClientTest"/>
+        </classes>
+    </test>
+    <test name="client-plan-controller : Client Plan Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.client.user.CreateClientTest"/>
+            <class name="com.benrevo.core.itest.client.user.GetClientTest"/>
+            <class name="com.benrevo.core.itest.client.user.UpdateClientTest"/>
+        </classes>
+    </test>
+    <test name="client-team-controller : Client Team Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.client.team.CreateClientTeamMemberApiTest"/>
+            <class name="com.benrevo.core.itest.client.team.DeleteClientTeamMemberApiTest"/>
+            <class name="com.benrevo.core.itest.client.team.GetClientTeamApiTests"/>
+        </classes>
+    </test>
+    <test name="contact-us-controller : Contact Us Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.contact.SendContactTest"/>
+        </classes>
+    </test>
+    <test name="file-controller : File Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.file.UploadFileTest"/>
+            <class name="com.benrevo.core.itest.file.GetFileTest"/>
+        </classes>
+    </test>
+    <test name="form-controller : Form Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.form.CreateFormTest"/>
+            <class name="com.benrevo.core.itest.form.DeleteFormTest"/>
+            <class name="com.benrevo.core.itest.form.GetFormTest"/>
+            <class name="com.benrevo.core.itest.form.UpdateFormTest"/>
+        </classes>
+    </test>
+    <test name="instant-quote-controller : Instant Quote Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.instantquote.GetInstantQuoteTest"/>
+        </classes>
+    </test>
+    <test name="medical-group-controller : Medical Group Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.medicalgroup.GetMedicalGroupTest"/>
+        </classes>
+    </test>
+    <test name="network-controller : Network Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.network.GetNetworkTest"/>
+        </classes>
+    </test>
+    <test name="option-controller : Option Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.option.GetOptionTest"/>
+        </classes>
+    </test>
+    <test name="plan-controller : Plan Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.plan.CreatePlanTest"/>
+            <class name="com.benrevo.core.itest.plan.CreateUpdatePlanTest"/>
+            <class name="com.benrevo.core.itest.plan.DeletePlanTest"/>
+            <class name="com.benrevo.core.itest.plan.UpdatePlanTest"/>
+            <class name="com.benrevo.core.itest.plan.CreateUpdatePlanTest"/>
+        </classes>
+    </test>
+    <test name="post-sales-controller : Post Sales Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.postsales.GetPostSalesTest"/>
+        </classes>
+    </test>
+    <test name="question-controller : Question Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.question.GetQuestionTest"/>
+            <class name="com.benrevo.core.itest.question.CreateQuestionTest"/>
+            <class name="com.benrevo.core.itest.question.UpdateQuestionTest"/>
+            <class name="com.benrevo.core.itest.question.DeleteQuestionTest"/>
+        </classes>
+    </test>
+    <test name="rfp-carrier-controller : Rfp Carrier Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.rfp.carrier.RfpCarrierTests"/>
+        </classes>
+    </test>
+    <test name="rfp-controller : Rfp Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.rfp.CreateRfpApiTests"/>
+            <class name="com.benrevo.core.itest.rfp.GetRfpApiTest"/>
+            <class name="com.benrevo.core.itest.rfp.UpdateRfpApiTest"/>
+        </classes>
+    </test>
+    <test name="rfp-quote-controller : Rfp Quote Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.rfp.quote.client.CreateQuotesSummaryTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.client.GetQuotesSummaryTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.client.UpdateQuotesSummaryTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.client.DeleteQuotesSummaryTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.options.GetQuotesOptionsTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.options.GetRfpQuoteTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.options.DeleteRfpQuoteTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.options.CreateRfpQuoteTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.options.PutQuotesOptionsTest"/>
+            <class name="com.benrevo.core.itest.rfp.quote.options.AddNetworkTest"/>
+        </classes>
+    </test>
+    <test name="sign-up-controller : Sign Up Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.signup.SingUpTest"/>
+        </classes>
+    </test>
+    <test name="timeline-controller : Timeline Controller">
+        <classes>
+            <class name="com.benrevo.core.itest.timeline.CreateTimelinesTest"/>
+            <class name="com.benrevo.core.itest.timeline.GetTimelinesTest"/>
+            <class name="com.benrevo.core.itest.timeline.UpdateTimelineTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,10 @@
+- include: packages.yml tags=app,app_packages
+- include: user.yml tags=app,app_user
+- include: database.yml tags=app,app_database
+  when: install_postgres
+- include: nginx.yml tags=app,app_nginx
+- include: rbenv.yml tags=app,app_rbenv
+- include: nvm.yml tags=app,app_nvm
+- include: yarn.yml tags=app,app_yarn
+- include: logrotate.yml tags=app,app_logrotate
+- include: ssh_keys.yml tags=app,app_ssh_keys

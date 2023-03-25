@@ -1,0 +1,28 @@
+{% if relatedArticles and article.getPublicTags %}
+    <div class="headline --separator">
+        <p class="heading">
+            Related
+        </p>
+        <span class="sub-heading --small">
+            From Sydney to New York, experience the world's relevant stories.<br/>
+            Click to view more information from {{ article.getPublicTags[0].displayName }}.
+        </span>
+
+        <div class="information-centered">
+            <a href="{{ path('ha_tag_details', {name: article.getPublicTags[0].name}) }}"
+               class="mdl-button mdl-js-button black">
+                More
+            </a>
+        </div>
+    </div>
+
+    <div class="row related-articles">
+        <ul class="small-block-grid-2 medium-block-grid-3">
+            {% for article in relatedArticles %}
+                <li>
+                    {% include 'AppBundle:article/card:small.html.twig' %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

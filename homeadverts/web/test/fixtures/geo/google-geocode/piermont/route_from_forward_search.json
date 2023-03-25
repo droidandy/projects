@@ -1,0 +1,79 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "New Hampshire 10",
+          "short_name": "NH-10",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Piermont",
+          "short_name": "Piermont",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New Hampshire",
+          "short_name": "NH",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "03779",
+          "short_name": "03779",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "formatted_address": "NH-10, Piermont, NH 03779, USA",
+      "geometry": {
+        "bounds": {
+          "northeast": {
+            "lat": 44.0299413,
+            "lng": -72.0664975
+          },
+          "southwest": {
+            "lat": 43.91758249999999,
+            "lng": -72.1174976
+          }
+        },
+        "location": {
+          "lat": 43.969504,
+          "lng": -72.0798306
+        },
+        "location_type": "GEOMETRIC_CENTER",
+        "viewport": {
+          "northeast": {
+            "lat": 44.01357489999999,
+            "lng": -72.0357597
+          },
+          "southwest": {
+            "lat": 43.9254331,
+            "lng": -72.1239015
+          }
+        }
+      },
+      "place_id": "Eh5OSC0xMCwgUGllcm1vbnQsIE5IIDAzNzc5LCBVU0EiLiosChQKEgk_7JqWBf_hiRFegm5xG5gl3BIUChIJb3iTZ7GTtEwRpclNjdjYLLU",
+      "types": [
+        "route"
+      ]
+    }
+  ],
+  "status" : "OK"
+}

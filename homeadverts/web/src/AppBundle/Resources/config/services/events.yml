@@ -1,0 +1,79 @@
+services:
+    ha.property.description_save_handler:
+        class: AppBundle\Event\Listener\DescriptionSaveListener
+        arguments: [ @exercise_html_purifier.default ]
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            - { name: doctrine.event_listener, event: preUpdate }
+
+    app.import.ledger_subscriber:
+        class: AppBundle\Event\Subscriber\RealogyLedgerEvent
+        arguments:
+            -   '@app.ledger_service'
+            
+    ha.import.execution_time_listener:
+        class: AppBundle\Event\Listener\ExecutionTimeListener
+        arguments: ['@ha.import.execution_time_tracker']
+
+    ha.import.email_notificator_listener:
+        class: AppBundle\Event\Subscriber\EmailNotificatorSubscriber
+        arguments: ['@ha.import.import_reporter']
+
+    ha.api_exception_listener:
+        class: AppBundle\Event\Listener\ApiExceptionListener
+        arguments:
+        tags:
+            - { name: "kernel.event_listener", event: "kernel.exception", method: "onKernelException" }
+
+    ha.user.security.encoder.bcrypt:
+        class: Symfony\Component\Security\Core\Encoder\BCryptPasswordEncoder
+        arguments:
+            - 12 # bcrypt cost
+
+    ha.user_listener:
+        class: AppBundle\Event\Listener\UserListener
+        arguments:
+            - '@service_container'
+            - '@=parameter("kernel.environment") == "test"'
+        tags:
+            - { name: doctrine.event_listener, event: postPersist}
+            
+
+    app_serialization_user:
+        class: AppBundle\Event\Listener\UserSerializationListener
+        arguments:
+            - @router.default
+            - @security.token_storage
+            - @ha.image_helper
+        tags:
+            - { name: jms_serializer.event_subscriber}
+
+    app_serialization_property:
+        class: AppBundle\Event\Listener\PropertySerializationListener
+        arguments:
+            - @ha.property.service
+            - @router.default
+            - @user_repo
+            - @security.token_storage
+        tags:
+            - { name: jms_serializer.event_subscriber}
+
+    app_serialization_article:
+        class: AppBundle\Event\Listener\ArticleSerializationListener
+        arguments:
+            - @ha_article.media
+            - @router.default
+            - @user_repo
+            - @security.token_storage
+            - '@=parameter("kernel.environment") == "test"'
+        tags:
+            - { name: jms_serializer.event_subscriber}
+
+
+    app_.es.entity_to_doc_doctrine_subscriber:
+        class: AppBundle\Event\Subscriber\EntityToDocDoctrineSubscriber
+        arguments:
+            - @service_container
+            - '@=parameter("kernel.environment") == "test"'
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }

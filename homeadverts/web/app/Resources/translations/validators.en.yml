@@ -1,0 +1,14 @@
+# Loco yaml export: Simple YAML object
+# Project: Homeadverts Website
+# Release: Working copy
+# Locale: en_US, English (USA)
+# Tagged: validation
+# Exported by: James Moss
+---
+This value should be the user current password.: Your old password is incorrect. Please check your spelling and try again or click the Forgotten your Password link.
+fos_user.password.mismatch: Your new passwords do not match. Please try again
+email.or.phone: Please enter either a phone number or an email address
+not.blank.name: Name field must not be blank
+not.blank.message: Message must not be blank
+min.length.message: Message must contain at least {{ limit }} characters
+...

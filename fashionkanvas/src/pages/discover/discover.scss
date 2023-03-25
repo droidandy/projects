@@ -1,0 +1,282 @@
+page-discover {
+  .plus{
+    color: #f66565;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .top
+  {
+    background: #ccc!important;
+  }
+
+  .profile_pic{
+    height: 100px;
+    margin: 0 0 30px 0;
+  }
+
+  .profile_pic img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
+
+  ion-item
+  {
+    padding-left: 0!important;
+        margin-bottom: 0px!important;
+  }
+
+  ion-item .label
+  {
+    color:#929292;
+    font-size: 12px!important;
+  }
+
+  .loginbtn
+  {
+    background-color: #f66565;
+    margin: 40px 0;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .scroll-content
+  {
+    padding: 45px 0px 0px 0px;
+  }
+
+  .add_images
+  {
+    margin-top: 30px;
+  }
+
+  .add_images img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .add_images .icon
+  {
+    font-size: 30px;
+    color: #969696;
+  }
+
+  .add_images .col{
+    text-align: right;
+  }
+
+  .profile_pic span
+  {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    color: #f66565;
+    font-size: 30px;
+  }
+
+  .profile_pic span .icon{
+    background: #fff;
+    position: absolute;
+    bottom: 8px;
+    font-size: 19px;
+    right: 10px;
+    border-radius: 100%;
+    height: 17px;
+    width: 10px;
+    line-height: 0px;
+  }
+
+  .text-input
+  {
+    margin-top: 0px!important;
+    margin-bottom: 5px!important;
+  }
+
+  .back-button-text
+  {
+    display:none;
+  }
+
+  .back-button-icon
+  {
+        color: #f66565;
+  }
+  .big_img
+  {
+    width: 100%;
+  }
+
+  .row{
+    text-align: center;
+  }
+
+  .profile_pic img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+  }
+
+  .profile_top_img h2
+  {
+    text-align: center;
+    margin: 6px 0;
+    width:100%;
+    float: left;
+    font-size: 22px;
+  }
+
+  .profile_top_img p
+  {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 2px 0;
+    color: #717171;
+  }
+
+  .profile_top_img
+  {
+    margin: 0 0 20px 0;
+  }
+
+  .profile_top_img,.experience
+  {
+    float: left;
+    width: 100%;
+  }
+
+  .experience
+  {
+    border-top:solid 1px #ccc;
+    border-bottom:solid 1px #ccc;
+  }
+
+
+  .experience
+  {
+    padding: 20px;
+  }
+
+  .experience_head
+  {
+    width:100%;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .experience_left_head
+  {
+    float: left;
+    color: #686868;
+  }
+
+  .experience_right_head
+  {
+    float: right;
+  }
+
+  .experience_right_head .icon
+  {
+    color: #f66565;
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  .experience_body
+  {
+    float: left;
+    width: 100%;
+    border-left: solid 1px #ccc;
+  }
+
+  .experience_body_left span
+  {
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    float: left;
+    border-radius: 20px;
+    margin-left: -11px;
+  }
+
+  .experience_body_right
+  {
+    width:93%;
+    float: right;
+    padding: 0 0 30px 0;
+  }
+
+  .experience_left_head
+  {
+    padding: 4px 0;
+  }
+
+  .experience_body_right h2,.experience_body_right p
+  {
+      margin: 5px 0;
+      text-align: left;
+  }
+
+  .experience_body_right h2
+  {
+    color: #f66565;
+    font-size: 19px;
+    margin-top: 0!important;
+  }
+
+  .experience_body_right .legacy
+  {
+    font-size: 14px;
+  }
+
+  .experience_body_right .location
+  {
+    font-size: 14px;
+    color:#7d7d7d;
+  }
+
+  .experience_body_right  .description
+  {
+    font-size: 16px;
+  }
+
+  .experience_body:nth-last-child(1)
+  {
+    border-left: none;
+  }
+
+  .danger
+  {
+    width: calc(100% - 60px);
+    margin: 20px 30px;
+  }
+
+  .big_img
+  {
+    width: 100%;
+  }
+
+  .portfolio
+  {
+    float: left;
+    padding: 25px;
+    margin-top: 0!important;
+  }
+
+  .block_user_active
+  {
+    background: transparent;
+    color: #f66565;
+    border: solid 2px #f66565;
+  }
+
+}

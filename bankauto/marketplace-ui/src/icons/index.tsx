@@ -1,0 +1,17 @@
+export { ReactComponent as BtnArrowRightBlack } from './btnArrowRightBlack.svg';
+export * from './homeStepsBlock';
+export { ReactComponent as IconOnline } from './iconOnlineColor.svg';
+export { ReactComponent as IconCalendar } from './iconCalendarPayColor.svg';
+export { ReactComponent as IconChartDark } from './iconChartDark.svg';
+export { ReactComponent as IconFormDark } from './iconFormDark.svg';
+export { ReactComponent as IconPriceDark } from './iconPriceDark.svg';
+export { ReactComponent as IconDealDark } from './iconDealDark.svg';
+export { ReactComponent as IconPublishDark } from './iconPublishDark.svg';
+export { ReactComponent as iconCalendarForForm } from './iconCalendarForForm.svg';
+export { ReactComponent as IconCalculatorColor } from './iconCalculatorColor.svg';
+export { ReactComponent as IconLaptopOnline } from './iconLaptopOnline.svg';
+export { ReactComponent as IconSuccess } from './iconSuccess.svg';
+export { ReactComponent as IconUserAB } from './iconUserAB.svg';
+export { ReactComponent as IconHeadset } from './iconHeadset.svg';
+export { ReactComponent as IconArrowUUpLeft } from './iconArrowUUpLeft.svg';
+export { ReactComponent as IconCircleWavyCheck } from './iconCircleWavyCheck.svg';

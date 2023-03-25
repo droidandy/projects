@@ -1,0 +1,79 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "4531",
+          "short_name" : "4531",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "West Long Meadow Drive",
+          "short_name" : "W Long Meadow Dr",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Boise",
+          "short_name" : "Boise",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Ada County",
+          "short_name" : "Ada County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "Idaho",
+          "short_name" : "ID",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "83714",
+          "short_name" : "83714",
+          "types" : [ "postal_code" ]
+        },
+        {
+          "long_name" : "5047",
+          "short_name" : "5047",
+          "types" : [ "postal_code_suffix" ]
+        }
+      ],
+      "formatted_address" : "4531 W Long Meadow Dr, Boise, ID 83714, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 43.7214248,
+            "lng" : -116.2445906
+          },
+          "southwest" : {
+            "lat" : 43.7212381,
+            "lng" : -116.2448349
+          }
+        },
+        "location" : {
+          "lat" : 43.7213407,
+          "lng" : -116.2447195
+        },
+        "location_type" : "ROOFTOP",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.7226804302915,
+            "lng" : -116.2433637697085
+          },
+          "southwest" : {
+            "lat" : 43.7199824697085,
+            "lng" : -116.2460617302915
+          }
+        }
+      },
+      "place_id" : "ChIJFdE9yfABr1QR5G70s4PSag8",
+      "types" : [ "premise" ]
+    }
+  ],
+  "status" : "OK"
+}

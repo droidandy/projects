@@ -1,0 +1,54 @@
+page-discoverfilter {
+  .checkbox-inner
+  {
+    border-color: #f66565!important;
+  }
+
+  .checkbox-icon
+  {
+        border-radius: 4px!important;
+  }
+
+  h2,.item-inner,ion-item
+  {
+    border:none!important;
+  }
+
+  .item-block
+  {
+    padding: 4px 0;
+    padding-left: 0!important;
+  }
+
+  .scroll-content
+  {
+    padding: 50px!important;
+  }
+
+  h2
+  {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .checkbox-icon
+  {
+    border-color: #f66565!important;
+  }
+
+  .role{
+    border-bottom: solid 1px #ccc;
+  }
+
+  .bar-button-default-ios, .bar-button-default.bar-button-ios-default, .bar-button-clear-ios-default
+  {
+    color:#f66565!important;
+  }
+
+  .back-button-text
+  {
+    display: none;
+  }
+
+
+}

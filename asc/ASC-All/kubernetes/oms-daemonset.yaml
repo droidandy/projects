@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: omsagent
+spec:
+  template:
+    metadata:
+      labels:
+        app: omsagent
+    spec:
+      containers:
+      - env:
+        - name: WSID
+          value: 11a3f44a-8e89-40e4-9a7e-7f145d8b2c68
+        - name: KEY
+          value: OMS_SECRET
+        image: microsoft/oms
+        name: omsagent
+        ports:
+        - containerPort: 25225
+          protocol: TCP
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: docker-sock
+      volumes:
+      - name: docker-sock
+        hostPath:
+          path: /var/run/docker.sock

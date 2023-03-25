@@ -1,0 +1,51 @@
+page-addeducation {
+  .scroll-content
+  {
+    padding: 40px;
+  }
+  h2
+  {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+
+  .list
+  {
+    margin-bottom: 50px;
+  }
+
+  .list .item
+  {
+    padding: 0!important;
+    margin-bottom: 10px!important;
+  }
+
+  .label,.item-input-has-focus .label-ios[floating], .input-has-focus .label-ios[floating], .item-input-has-value .label-ios[floating], .input-has-value .label-ios[floating]
+  {
+    color: #909090;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .lasted_date .item-inner
+  {
+    border: none;
+    margin-top: 25px;
+  }
+
+  .max{
+    color:#7d7d7d;
+  }
+
+  .back-button-icon,.bar-button .button-inner
+  {
+    color:#f66565;
+  }
+
+  .back-button-text
+  {
+    display: none;
+  }
+}

@@ -1,0 +1,9 @@
+<div class="row featured-listing">
+    <ul class="medium-block-grid-3 list">
+        {% for property in properties %}
+            <li class="property-list-item" data-property-id="{{ property.id }}">
+                {% include 'AppBundle:property/collection:item.html.twig' %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+{
+  "log": {
+    "level": "LOG_LEVEL"
+  },
+  "idleTimeLimitSec": "IDLE_TIME_LIMIT_SEC",
+  "requestsPerSecond": "REQUESTS_PER_SECOND",
+  "bullmq": {
+    "attempts": "BULLMQ_ATTEMPTS",
+    "backoff": {
+      "type": "BULLMQ_BACKOFF_TYPE",
+      "delay": "BULLMQ_BACKOFF_DELAY"
+    },
+    "concurrency": "BULLMQ_CONCURRENCY",
+    "cleanOnStart": "BULLMQ_CLEAN_ON_START",
+    "redis": {
+      "host": "BULLMQ_REDIS_HOST",
+      "port": "BULLMQ_REDIS_PGPORT"
+    },
+    "arena": {
+      "host": "BULLMQ_ARENA_HOST",
+      "port": "BULLMQ_ARENA_PORT"
+    }
+  }
+}
+
+

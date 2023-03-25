@@ -1,0 +1,119 @@
+{
+    "agentSummary": {
+        "id": "da2df6fe-4f4c-4d7c-a0db-ef2f714619af",
+        "isAgent": true,
+        "name": "Jill Gibson",
+        "firstName": "Jill",
+        "lastName": "Gibson",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/3DF4DF87-2E58-49FF-9FAE-90A27BCA9AA5",
+        "emailAddress": "jgibson@wpsir.com",
+        "leadEmailAddress": "800024.lead.4010775@leads.leadrouter.com",
+        "office": {
+            "officeId": "56a22cae-b5a1-40a6-b177-52c13f52b5cc",
+            "RFGOfficeId": "0032",
+            "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+            "companyName": "William Pitt",
+            "RFGCompanyId": "800024",
+            "brandCode": "SIR",
+            "name": "William Pitt Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "13 Main Street",
+                "city": "Essex",
+                "district": "Middlesex",
+                "stateProvince": "Connecticut",
+                "stateProvinceCode": "CT",
+                "postalCode": "06426",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 41.353161,
+                "longitude": -72.390322,
+                "formattedAddress": "13 Main St, Essex, CT 06426"
+            },
+            "phoneNumber": "8607677488",
+            "emailAddress": "wps.leads@mrtsystems.com"
+        }
+    },
+    "personId": "1c7ccd90-e73b-49c4-a399-8045373f21fd",
+    "lastUpdateOn": "2018-08-06T17:30:11.793",
+    "roles": [
+        {
+            "office": {
+                "officeId": "56a22cae-b5a1-40a6-b177-52c13f52b5cc",
+                "RFGOfficeId": "0032",
+                "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+                "companyName": "William Pitt",
+                "RFGCompanyId": "800024",
+                "brandCode": "SIR",
+                "name": "William Pitt Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "13 Main Street",
+                    "city": "Essex",
+                    "district": "Middlesex",
+                    "stateProvince": "Connecticut",
+                    "stateProvinceCode": "CT",
+                    "postalCode": "06426",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 41.353161,
+                    "longitude": -72.390322,
+                    "formattedAddress": "13 Main St, Essex, CT 06426"
+                },
+                "phoneNumber": "8607677488",
+                "emailAddress": "wps.leads@mrtsystems.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "jill.gibson@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "3DF4DF87-2E58-49FF-9FAE-90A27BCA9AA5",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/3DF4DF87-2E58-49FF-9FAE-90A27BCA9AA5",
+            "isDefault": true,
+            "caption": "Jill Gibson",
+            "htmlDescription": "Jill Gibson",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-08-06T17:30:11.780"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Sothebysrealty.com 800",
+            "number": "8602352209"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Jill believes in \"Customer Satisfaction\". The future belongs to the buyer and seller that has been well informed. Buying and selling a home is one of the biggest financial decisions of your life. Jill is a lifelong resident of the Connecticut shoreline and has a degree in management. Recipient of 2004 Independent Realty Network Gold Award, member of the Eastern Connecticut Association of Realtors, the National Association of Realtors and the creator of historical homes \"Doorways of Guilford\" poster.",
+            "htmlRemark": "Jill believes in \"Customer Satisfaction\". The future belongs to the buyer and seller that has been well informed. Buying and selling a home is one of the biggest financial decisions of your life.&lt;BR\/&gt;&lt;BR\/&gt;Jill is a lifelong resident of the Connecticut shoreline and has a degree in management.&lt;BR\/&gt;&lt;BR\/&gt;Recipient of 2004 Independent Realty Network Gold Award, member of the Eastern Connecticut Association of Realtors, the National Association of Realtors and the creator of historical homes \"Doorways of Guilford\" poster.&lt;BR\/&gt;&lt;BR\/&gt;"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "CT",
+            "number": "RES.076698",
+            "issuedOn": "2015-01-01"
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+services:
+    twig.text_extension:
+        class: Twig_Extensions_Extension_Text
+        tags:
+            - name: twig.extension
+
+    ha.twig.meta_manager:
+        class: AppBundle\Twig\MetaExtension
+        arguments:
+            - @ha.meta_manager
+        tags:
+            - { name: twig.extension }
+
+    ha.twig.social_extension:
+        class: AppBundle\Twig\SocialExtension
+        arguments:
+            - @article_repo
+            - @user_repo
+            - @ha.popular
+        tags:
+            - { name: twig.extension }
+
+    ha.twig.notification:
+        class: AppBundle\Twig\NotificationExtension
+        arguments:
+            - @ha_notificator
+            - @notification_repo
+        tags:
+            - { name: twig.extension }
+
+    ha.twig.user_extension:
+        class: AppBundle\Twig\UserExtension
+        arguments:
+            - @security.token_storage
+        tags:
+            - { name: twig.extension }
+
+    ha.twig.property_extension:
+        class: AppBundle\Twig\PropertyExtension
+        arguments:
+            - @request_stack
+            - @currency_manager
+            - @ha.property.service
+            - @ha_location.service
+            - @ha.paginator
+        tags:
+            - { name: twig.extension }
+
+    ha.twig.currency_extension:
+      class: AppBundle\Twig\LayoutExtension
+      arguments:
+          - @ha.currency.manager
+          - @ha.results.helper
+      tags:
+          - { name: twig.extension }
+
+    ha.twig.locale_extension:
+      class: AppBundle\Twig\LocaleExtension
+      arguments:
+          - @locale_factory
+      tags:
+          - { name: twig.extension }
+
+    ha.twig.image_extension:
+        class: AppBundle\Twig\ImageExtension
+        arguments:
+            - @ha.file_storage
+            - @ha.image_helper
+            - @ha_article.media
+        tags:
+            - { name: twig.extension }
+
+    ha.twig.custom_extension:
+      class: AppBundle\Twig\CustomExtension
+      arguments:
+          - @service_container
+          - @router
+      tags:
+          - { name: twig.extension }
+
+    twig.extension.intl:
+      class: Twig_Extensions_Extension_Intl
+      tags:
+          - { name: twig.extension }

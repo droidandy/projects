@@ -1,0 +1,117 @@
+.dropdown_content {
+    margin-top: 50px;
+    padding: 6px 12px;
+}
+.dropdown_content_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.header_category {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.header_category_label {
+    text-align: left;
+    font-weight: 300;
+}
+.header_category_subLabel_status {
+    white-space: nowrap;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.header_category_element {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+}
+.header_category_element_none {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.3);
+}
+.inline_items_all {
+    display: flex;
+    flex-direction: row;
+    align-self: auto;
+    margin-left: 10px;
+}
+.inline_items_category {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.inline_items {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+}
+.label_small {
+    font-size: 8px;
+    font-weight: 300;
+    text-align: center;
+}
+.inner_column {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.sub_panel_row {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sub_panel_title {
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.sub_panel_filter {
+    display: none;
+}
+.new-installation-antenna, .new-installations-antenna {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-antenna.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.new-installation-other, .new-installations-other {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-other.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.new-installation-decoder, .new-installations-decoder {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-decoder.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.repair-antenna, .repair-installations-antenna {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-antenna.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.repair-decoder, .repair-installations-decoder {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-decoder.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.repair-other, .repair-installations-other {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-other.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}

@@ -1,0 +1,18 @@
+.rte {
+  [class*="EditorToolbar"] {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.swatch {
+  margin: 3px;
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  background-color: currentColor;
+  transition: .1s box-shadow;
+  &.active, &:hover {
+    box-shadow: 0 0 0 2px currentColor;
+  }
+}

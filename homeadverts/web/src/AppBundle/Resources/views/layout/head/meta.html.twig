@@ -1,0 +1,46 @@
+{% set meta_title_default = "Luxury Real Estate - LuxuryAffair's.co.uk" %}
+
+{% if meta_title is not defined %}
+    {% set meta_title = meta_title_default %}
+{% else %}
+    {% set meta_title = meta_title ~ " - " ~ meta_title_default %}
+{% endif %}
+{% if og_image is not defined %}
+    {% set og_image = asset('assets/images/logo/placeholder.png') %}
+{% endif %}
+{% if og_title is not defined %}
+    {% set og_title = meta_title %}
+{% endif %}
+{% if og_url is not defined %}
+    {% set og_url = app.request.uri  %}
+{% endif %}
+{% if og_description is not defined %}
+    {% set og_description = block('meta_desc') %}
+{% endif %}
+
+<title>{{ meta_title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{% block og_site %}LuxuryAffairs{% endblock %}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="{{ og_title }}"/>
+<meta property="og:url" content="{{ og_url }}"/>
+<meta property="og:description" content="{{ og_description }}"/>
+<meta property="og:image" content="{{ og_image }}"/>
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ og_title }}">
+<meta name="twitter:url" content="{{ og_url }}">
+<meta name="twitter:description" content="{{ og_description }}">
+<meta name="twitter:image" content="{{ og_image }}">
+
+<meta itemprop="name" content="{{ og_url }}">
+<meta itemprop="description" content="{{ og_description }}">
+<meta itemprop="image" content="{{ og_image }}">
+
+<!-- Social Analytics -->
+<meta property="fb:app_id" content="{{ facebook_app_id }}"/>

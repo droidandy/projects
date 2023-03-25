@@ -1,0 +1,40 @@
+@charset 'UTF-8';
+
+/**
+ * [Cream.ly Theme] | Built with Slate
+ */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+// Settings
+@import "./variables";
+@import "./root-variables";
+
+// Tools
+@import "./tools/mixins";
+@import "./tools/functions";
+
+// Spacing
+@import "./tools/spacing";
+
+// Core
+@import "./core/forms";
+@import "./core/helpers";
+@import "./core/layout";
+@import "./core/media";
+@import "./core/responsive-tables";
+@import "./core/rte";
+@import "./core/typography";
+
+// Components
+@import "./components/buttons";
+@import "./components/icons";
+@import "./components/placeholders";
+@import "./components/address-forms";
+
+//Creamly migration
+@import "./theme_creamly.scss";
+@import "./style_creamly.css";
+
+//webpack issue issue with pop undefined
+@import "../scripts/react-components/Structure/Button/index.scss";

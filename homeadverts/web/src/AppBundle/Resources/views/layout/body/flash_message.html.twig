@@ -1,0 +1,22 @@
+{% if app.session.flashbag.peekAll|length > 0 %}
+    <div class="flash-message">
+        {% if app.session.flashbag.has('success') %}
+            <div class="field-content success">
+                {% for message in app.session.flashbag.get('success') %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% if app.session.flashbag.has('error') %}
+            <div class="field-content error">
+                {% for message in app.session.flashbag.get('error') %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <button class="close mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">close</i>
+        </button>
+    </div>
+{% endif %}

@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>UnitedHealthcare</title>
+	</head>
+	<body style="background:#f8f9fb;margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;">
+		<table width="600" bgcolor="#f8f9fb" style="margin:auto;">
+			<tr>
+				<td style="width:100%;text-align:right;float:left;"><img src="https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/logo.jpg" alt="UnitedHealthcare" /></td>
+			</tr>
+			<tr>
+				<td>
+					<table width="600" bgcolor="#fff" style="margin:auto;padding:0 30px;">
+						<tr>
+							<td><h3 style="font-family:Arial,Helvetica,sans-serif;color:#2d67b2;font-weight:bold;font-size:24px;">Hello $!broker_name,</h3></td>
+						</tr>
+						<tr>
+							<td><p style="color:#000;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;margin-top:0px;">Thank you for partnering with UnitedHealthcare, utilizing BenRevo. Below is an overview of your client details.</p></td>
+						</tr>
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" border="0" style="color:#7f7e7e;font-family:Arial,Helvetica,sans-serif;line-height:25px;margin:0 0 15px 25px;width:540px;">
+									<tr>
+										<td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+										<td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Client Company Name:</td>
+										<td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!company_name</td>
+									</tr>
+									<tr>
+										<td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+										<td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Effective Date:</td>
+										<td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!effective_date</td>
+									</tr>
+									<tr>
+										<td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+										<td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Company Address City:</td>
+										<td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!address_city</td>
+									</tr>
+									<tr>
+										<td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+										<td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Company Address State:</td>
+										<td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!address_state</td>
+									</tr>
+									<tr>
+										<td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+										<td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;"># of Eligible Employees:</td>
+										<td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!eligible_employees</td>
+									</tr>
+									<tr>
+										<td valign="top" style="width:2%;text-align:right;vertical-align:text-top;font-size:16px;font-weight:bold;">&bull;&nbsp;&nbsp;</td>
+										<td valign="top" style="width:40%;vertical-align:text-top;font-size:15px;">Carrier(s) Replaced:</td>
+										<td valign="top" style="width:58%;vertical-align:text-top;font-size:15px;">$!carriers_replaced</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">The following table outlines the monthly premiums by plan, based on your proposal and the information entered into BenRevo by the broker, subject to change.</p></td>
+						</tr>
+						<tr>
+							<td>
+								<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:0;padding:10px 15px;">
+									<tr style="border:0;padding:8px 10px;">
+										<td style="border:1px solid #ddd;padding:8px 10px;" width="14%">Plan name</td>
+										<td style="border:1px solid #ddd;padding:8px 10px;" width="14%">Plan type</td>
+										<td style="border:1px solid #ddd;padding:8px 10px;" width="18%">Employee Only</td>
+										<td style="border:1px solid #ddd;padding:8px 10px;" width="18%">Employee + Spouse</td>
+										<td style="border:1px solid #ddd;padding:8px 10px;" width="18%">Employee + Child(ren)</td>
+										<td style="border:1px solid #ddd;padding:8px 10px;" width="18%">Employee + Family</td>
+									</tr>
+									#foreach($plan in ${selected_plans})
+										<tr style="border:0;padding:8px 10px;">
+											<td style="border:1px solid #ddd;padding:8px 10px;">$!plan.name</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">$!plan.type</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier1Rate)
+													$$DecimalFormat.format($!plan.tier1Rate)
+												#end
+											</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier2Rate)
+													$$DecimalFormat.format($!plan.tier2Rate)
+												#end
+											</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier3Rate)
+													$$DecimalFormat.format($!plan.tier3Rate)
+												#end
+											</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier4Rate)
+													$$DecimalFormat.format($!plan.tier4Rate)
+												#end
+											</td>
+										</tr>
+									#end
+									#foreach($plan in ${additional_plans})
+										<tr style="border:0;padding:8px 10px;">
+											<td style="border:1px solid #ddd;padding:8px 10px;">$!plan.name</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">$!plan.type</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier1Rate)
+													$!plan.tier1Rate
+												#else
+													-
+												#end
+											</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier2Rate)
+													$!plan.tier2Rate
+												#else
+													-
+												#end
+											</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier3Rate)
+													$!plan.tier3Rate
+												#else
+													-
+												#end
+											</td>
+											<td style="border:1px solid #ddd;padding:8px 10px;">
+												#if($!plan.tier4Rate)
+													$!plan.tier4Rate
+												#else
+													-
+												#end
+											</td>
+										</tr>
+									#end
+								</table>
+							</td>
+						</tr>
+						 <tr>
+							<td><p style="height:10px;float:left;width:100%;border-bottom:1px solid #d7d7d7;">&nbsp;</p></td>
+						</tr>
+						<tr>
+							<td>
+                                <p style="color:#989898;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:25px;margin-top:0px;">We appreciate your partnership during this marketing process.</p>
+                                <p style="color:#989898;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:25px;margin-top:0px;">Thank you,
+                                    <br/><span style="color:#2E67B1;text-decoration:none;font-weight:bold;">UnitedHealthcare</span>
+                                </p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+@import '../variables-theme';
+
+/* Toggle Button */
+
+.ui.buttons .button, .ui.buttons .or {
+  color: $INPUT_COLOR;
+  font-size: 14px;
+  font-family: $MAIN_FONT;
+  font-weight: 600;
+
+  &.toggle.massive {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+  &:first-child {
+    border-left: 1px solid #d6d8d9;
+  }
+
+  &.toggle.active, &.active.button {
+    background-color: $ELEM_ACTIVE_COLOR !important;
+  }
+
+  &:hover {
+    color: $INPUT_COLOR;
+  }
+
+  &.toggle:not(.basic):not(.inverted)>.button, &.toggle:not(.basic):not(.inverted) {
+    margin-left: -1px;
+  }
+
+  &.large {
+    padding: 13px 24px;
+  }
+
+  &.toggle.medium {
+    padding: 14px 42px 20px;
+    font-weight: 400;
+  }
+}

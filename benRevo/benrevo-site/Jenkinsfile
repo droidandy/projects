@@ -1,0 +1,59 @@
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+  }
+  agent {
+    node {
+      label 'buildfarm'
+    }
+  }
+  tools {
+    nodejs 'NodeJs'
+  }
+  environment {
+    DEV_TOKEN_ID = 'AKIAIEV2Q2CEUNPABDKA'
+    DEV_TOKEN_SECRET = credentials('AWS_DEV_ACCESS_SECRET')
+  }
+  stages {
+    stage('Setup') {
+      steps {
+        checkout([
+          $class: 'GitSCM',
+          branches: [[name: '${BRANCH_NAME}']],
+          doGenerateSubmoduleConfigurations: false,
+          extensions: [],
+          submoduleCfg: [],
+          userRemoteConfigs: [[
+            credentialsId: '81e0269c-8b0b-4eeb-97f2-03da4cb75100',
+            url: 'https://github.com/BenRevo/benrevo-site.git'
+          ]]
+        ])
+      }
+    }
+    stage('Build') {
+      steps {
+        sh '''
+export BENREVO_API_PATH="https://devapiant.benrevo.com/v1"
+npm install
+npm run build
+        '''
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh '''
+if [ "${GIT_BRANCH}" = "master" ]
+then
+  export AWS_REGION_NAME="us-east-1"
+  export AWS_DEPLOY_NAME="full-marketing-react"
+  export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+  export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+  ./build_docker.sh
+  eb deploy $AWS_DEPLOY_NAME  --verbose --staged
+fi
+        '''
+      }
+    }
+  }
+}

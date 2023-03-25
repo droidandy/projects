@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">Legal Stuff</ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <!--<ion-content scroll="false">-->
+  <ion-content class="gm-content" on-scroll="gotScrolled()" delegate-handle="mainScroll">
+            <div class="settings">
+              <ion-list can-swipe="false" class="left-list left-list-security">
+                    <ion-item href="#/settings/legal/privacy" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-12 selection__content settings-bg-section">Privacy Policy<span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                      </div>
+                    </ion-item>
+                    <ion-item href="#/settings/legal/terms" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-12 selection__content settings-bg-section">Terms of Service<span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                      </div>
+                    </ion-item>
+                    <ion-item href="#/settings/legal/contact-us settings-bg-section" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-12 selection__content settings-bg-section">Contact Us<span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                      </div>
+                    </ion-item>
+              </ion-list>
+            </div>
+  </ion-content>
+</ion-view>

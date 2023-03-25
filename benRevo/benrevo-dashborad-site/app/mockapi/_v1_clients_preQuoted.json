@@ -1,0 +1,31 @@
+{
+  "NewRfps": [{
+    "clientId": 222693,
+    "clientName": "PreQuotedClientsTestClient1",
+    "presalesName": "presalesFirstName presalesLastName",
+    "brokerName": "PreQuotedClientsTestBroker",
+    "effectiveDate": 1588420322845,
+    "clientState": "RATES_ISSUED",
+    "new": true
+  }],
+
+  "InProgress": [{
+      "clientId": 222695,
+      "clientName": "PreQuotedClientsTestClient3",
+      "presalesName": "presalesFirstName presalesLastName",
+      "brokerName": "PreQuotedClientsTestBroker",
+      "effectiveDate": 1525175522884,
+      "clientState": "SENT_TO_RATER",
+      "new": false
+    },
+    {
+      "clientId": 222694,
+      "clientName": "PreQuotedClientsTestClient2",
+      "presalesName": "presalesFirstName presalesLastName",
+      "brokerName": "PreQuotedClientsTestBroker",
+      "effectiveDate": 1588420322878,
+      "clientState": "OPPORTUNITY_IN_PROGRESS",
+      "new": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{% if property is defined and property is not null %}
+    <div class="blog-property one-column">
+        <div class="row">
+            <div class="medium-12 column">
+                <div class="related-property">
+                    <div class="price">
+                        {{ "listing.price"|trans }} {{ property.price|property_price(display_currency, property.period, property.currency) }}
+                    </div>
+                    {% set propertyUrl = path('property_details', { 'id': property.id, 'slug': property.slug }) %}
+                    {% set searchUrl = path('search_term', {market: 'for-sale', term: property.address.townCity ~","~property.address.country}) %}
+
+                    <ul class="links">
+                        <li>
+                            <a href="{{ propertyUrl }}">
+                                {{ "blog.property.view"|trans }}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ searchUrl }}">
+                                {{ "blog.property.view-near"|trans }}
+                                {{ property.address.townCity }}, {{ property.address.country }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}

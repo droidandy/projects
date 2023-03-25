@@ -1,0 +1,130 @@
+{
+    "agentSummary": {
+        "id": "65ba34dc-552d-4e3f-8791-da9cc9d7f004",
+        "isAgent": true,
+        "name": "Yungsook Kim",
+        "firstName": "Yungsook",
+        "lastName": "Kim",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/7B0B7DE2-02D2-4125-848F-91444F1B952E",
+        "emailAddress": "yungsookkim@danielgale.com",
+        "leadEmailAddress": "800065.lead.4002865@leads.leadrouter.com",
+        "businessPhone": "5165105020",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "a8245699-3c4d-4f78-8056-73a2ddf4b179",
+            "RFGOfficeId": "0012",
+            "companyId": "4ed91d01-c53e-4eab-bae0-636dc2f092cd",
+            "companyName": "Daniel Gale",
+            "RFGCompanyId": "800065",
+            "brandCode": "SIR",
+            "name": "Daniel Gale Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "342 Wheatley Plaza",
+                "city": "Greenvale",
+                "district": "Nassau",
+                "stateProvince": "New York",
+                "stateProvinceCode": "NY",
+                "postalCode": "11548",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 40.8096855875114,
+                "longitude": -73.6266530306996,
+                "formattedAddress": "342 Wheatley Plaza, Greenvale, NY 11548"
+            },
+            "phoneNumber": "5166267600",
+            "emailAddress": "internet@danielgale.com"
+        }
+    },
+    "personId": "bf604787-24b9-4bb4-86d0-e0a00bd4123e",
+    "lastUpdateOn": "2018-01-11T19:31:31.913",
+    "roles": [
+        {
+            "office": {
+                "officeId": "a8245699-3c4d-4f78-8056-73a2ddf4b179",
+                "RFGOfficeId": "0012",
+                "companyId": "4ed91d01-c53e-4eab-bae0-636dc2f092cd",
+                "companyName": "Daniel Gale",
+                "RFGCompanyId": "800065",
+                "brandCode": "SIR",
+                "name": "Daniel Gale Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "342 Wheatley Plaza",
+                    "city": "Greenvale",
+                    "district": "Nassau",
+                    "stateProvince": "New York",
+                    "stateProvinceCode": "NY",
+                    "postalCode": "11548",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 40.8096855875114,
+                    "longitude": -73.6266530306996,
+                    "formattedAddress": "342 Wheatley Plaza, Greenvale, NY 11548"
+                },
+                "phoneNumber": "5166267600",
+                "emailAddress": "internet@danielgale.com"
+            },
+            "role": "Real Estate Salesperson",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "yungsook.kim@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        },
+        {
+            "code": "kor",
+            "name": "Korean"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "7B0B7DE2-02D2-4125-848F-91444F1B952E",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/7B0B7DE2-02D2-4125-848F-91444F1B952E",
+            "isDefault": true,
+            "caption": "Yungsook Kim ",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:11:14.457"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Business Secondary",
+            "number": "5166267600"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Other Awards & Recognition",
+            "languageCode": "en",
+            "remark": "Yungsook \u201c Yung\u201d Kim has been a resident of Roslyn for 24 years and currently resides in Harbor View, Port Washington where she serves on the Architectural committee & Social committee. Yung emigrated from South Korea in 1964, married, and raised three children in Roslyn. She has worked as a real estate salesperson for 15 years and has listed and sold numerous houses, condominiums and apartments in Flushing, Bayside, Douglaston, little Neck, Great Neck, New Hyde Park, Manhasset, Manhasset Hills, Roslyn, Roslyn Heights, Glen Cove, Glen Head ,Brookville, Sands Point, and Port Washington.",
+            "htmlRemark": "Yungsook \u201c Yung\u201d Kim has been a resident of Roslyn for 24 years and currently resides in Harbor View, Port Washington where she serves on the Architectural committee &amp; Social committee. Yung emigrated from South Korea in 1964, married, and raised three children in Roslyn. She has worked as a real estate salesperson for 15 years and has listed and sold numerous houses, condominiums and apartments in Flushing, Bayside, Douglaston, little Neck, Great Neck, New Hyde Park, Manhasset, Manhasset Hills, Roslyn, Roslyn Heights, Glen Cove, Glen Head ,Brookville, Sands Point, and Port Washington."
+        },
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Yungsook \u201c Yung\u201d Kim has been a resident of Roslyn for 24 years and currently resides in Harbor View, Port Washington where she serves on the Architectural committee & Social committee. Yung emigrated from South Korea in 1964, married, and raised three children in Roslyn. She has worked as a real estate salesperson for 15 years and has listed and sold numerous houses, condominiums and apartments in Flushing, Bayside, Douglaston, little Neck, Great Neck, New Hyde Park, Manhasset, Manhasset Hills, Roslyn, Roslyn Heights, Glen Cove, Glen Head ,Brookville, Sands Point, and Port Washington. Customers and clients always comment on her warm personality, knowledge, and personal commitment to making their real estate transaction a pleasant experience. Yung is a member of the Korean Catholic Church in Great Neck and speaks both Korean and English fluently.",
+            "htmlRemark": "Yungsook \u201c Yung\u201d Kim has been a resident of Roslyn for 24 years and currently resides in Harbor View, Port Washington where she serves on the Architectural committee &amp; Social committee. Yung emigrated from South Korea in 1964, married, and raised three children in Roslyn. She has worked as a real estate salesperson for 15 years and has listed and sold numerous houses, condominiums and apartments in Flushing, Bayside, Douglaston, little Neck, Great Neck, New Hyde Park, Manhasset, Manhasset Hills, Roslyn, Roslyn Heights, Glen Cove, Glen Head ,Brookville, Sands Point, and Port Washington.\n Customers and clients always comment on her warm personality, knowledge, and personal commitment to making their real estate transaction a pleasant experience. Yung is a member of the Korean Catholic Church in Great Neck and speaks both Korean and English fluently."
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "NY",
+            "number": "40KI0877122",
+            "issuedOn": "2004-01-13"
+        }
+    ]
+}

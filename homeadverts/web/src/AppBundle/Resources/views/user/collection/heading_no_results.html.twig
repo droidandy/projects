@@ -1,0 +1,30 @@
+<div class="one-column --margin-bottom">
+
+    <div class="headline --separator --collection --margin-bottom-no">
+        <h1 class="heading">
+            We're Sorry!
+        </h1>
+        <span class="sub-heading --small">
+            it seems that we do not have any agents in:
+        </span>
+    </div>
+
+    <div class="information-centered">
+        <p class="focused-title --nothing-found">
+            "{{ search.location.searchTerm }}"
+        </p>
+
+        {% if search.location.fallback %}
+            You may want to expand your search to:<br/>
+
+            <a class="focused-title"
+               href="{{ path('ha_user_search_term', {
+                   market: 'for-sale',
+                   term: search.location.fallback.term })
+               }}">
+                "{{ search.location.fallback.label }}"
+            </a>
+        {% endif %}
+    </div>
+
+</div>

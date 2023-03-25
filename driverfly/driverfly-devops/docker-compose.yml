@@ -1,0 +1,61 @@
+version: "3.2"
+
+services:
+  aws:
+    image: localstack/localstack-full
+    # command: aws --endpoint-url=http://localhost:${LOCALSTACK_S3_PORT} s3api put-bucket-acl --bucket driverfly-data --acl public-read
+    ports:
+      - "${LOCALSTACK_S3_PORT}:4566"
+    environment:
+      - SERVICES=s3
+      - PORT_WEB_UI=8080
+      #- DEBUG=1
+      - DATA_DIR=/tmp/localstack/data
+      - S3_PORT_EXTERNAL=${LOCALSTACK_S3_PORT}
+    volumes:
+      - localstack-data:/tmp/localstack
+  msg:
+    image: library/rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_VHOST=${RABBIT_VHOST}
+      - RABBITMQ_DEFAULT_USER=${RABBIT_USER}
+      - RABBITMQ_DEFAULT_PASS=${RABBIT_PASS}
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq/
+    ports:
+      - "${RABBIT_PORT}:5672"
+      - "${RABBIT_MANAGEMENT_PORT}:15672"
+  db:
+    image: library/mysql:8
+    environment:
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASS=${MYSQL_PASS}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASS}
+      - MYSQL_DATABASE=${MYSQL_DB_NAME}
+    volumes:
+      - mysql-data:/var/lib/mysql/
+    healthcheck:
+      test: mysqladmin ping -h 127.0.0.1 -u ${MYSQL_USER} --password=${MYSQL_PASS}
+      interval: 2s
+      timeout: 20s
+      retries: 10
+    ports:
+      - "${MYSQL_PORT}:3306"
+
+  phpmyadmin:
+    image: library/phpmyadmin:latest
+    environment:
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASS=${MYSQL_PASS}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASS}
+      - PMA_HOST=db
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${PHP_ADMIN_PORT}:80"
+
+volumes:
+  rabbitmq-data:
+  mysql-data:
+  localstack-data:

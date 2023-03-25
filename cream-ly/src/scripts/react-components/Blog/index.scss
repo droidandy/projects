@@ -1,0 +1,53 @@
+@import "../../../styles/tools/mixins.scss";
+
+.BlogPage {
+  width:95%;
+  @include marginXauto;
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+
+    @include media-query($extra-small) {
+      grid-template-columns: 1fr;
+    }
+
+    @include media-query($medium) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    @include media-query($large-up) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 32px;
+      row-gap: 32px;
+    }
+  }
+
+  .paginationRoot {
+    margin: 20px 0;
+
+    .paginationUl {
+      justify-content: center;
+    }
+
+    button {
+      border-radius: 0;
+    }
+  }
+
+  .tag {
+    margin: 2px 4px;
+    border-radius: 0;
+    font-size: 12px;
+    transition: opacity ease 0.25s;
+
+
+    &:first-child, &:last-child {
+      margin-left: 0;
+    }
+  }
+}

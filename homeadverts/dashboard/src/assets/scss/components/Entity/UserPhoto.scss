@@ -1,0 +1,26 @@
+.userPhoto {
+  position: relative;
+  .avatar {
+
+  }
+  .status {
+    background: #fff;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    border: 2px solid #fff;
+
+    &.active {
+      background: #00d235;
+    }
+    &.inactive {
+      background: #FF9D23;
+    }
+    &.invisible {
+      background: #D32F2F;
+    }
+  }
+}

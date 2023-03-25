@@ -1,0 +1,46 @@
+.container-content__events-settings__content-inputs__checkbox {
+  .label-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: normal;
+  }
+
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.container-content__events-popup__checkboxes {
+  padding: 13px;
+  padding-bottom: 9px;
+}
+
+.container-content__events-popup__footer {
+  overflow: hidden;
+  padding: 10px;
+  font-size: 15px;
+  background: $brand-light-blue;
+
+  span:last-child {
+    margin-top: 2px;
+  }
+}
+
+.events-tooltip {
+  position: absolute;
+  z-index: 2;
+  right: 12px;
+  top: 12px;
+}
+
+.container-table_events {
+  padding-top: 13px;
+}
+
+.container-table_events-table {
+  position: relative;
+}

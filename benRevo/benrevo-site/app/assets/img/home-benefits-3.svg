@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="46px" viewBox="0 0 52 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>699F172C-43FE-4608-85C7-3F2A3EDD68D3</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.4212 51.0998 0.4212 51.0998 1 0 1"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets_homepage" transform="translate(-111.000000, -198.000000)">
+            <g id="Group-10-Copy-2" transform="translate(111.000000, 199.000000)">
+                <g id="Group-3" transform="translate(0.000000, 43.592700)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M-0.0002,0.4212 L51.0998,0.4212" id="Stroke-1" stroke="#298499" stroke-width="1.158" mask="url(#mask-2)"></path>
+                </g>
+                <polyline id="Stroke-4" stroke="#298499" stroke-width="1.158" points="29.887 43.661 29.887 17 21 17 21 43.661"></polyline>
+                <polyline id="Stroke-6" stroke="#298499" stroke-width="1.158" points="45.887 44.435 45.887 0 37 0 37 44.435"></polyline>
+                <polyline id="Stroke-8" stroke="#298499" stroke-width="1.158" points="14.887 43.774 14.887 26 6 26 6 43.774"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

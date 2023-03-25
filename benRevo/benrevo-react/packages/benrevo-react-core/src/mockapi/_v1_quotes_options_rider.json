@@ -1,0 +1,70 @@
+[
+  {
+    "carrier": "UHC",
+    "planNameByNetwork": "UHC KMO KB3",
+    "selectable": true,
+    "networkType": "HMO",
+    "riders": [
+      {
+        "riderName": "Chrio only",
+        "costFrom": 20,
+        "costTo": 25
+      },
+      {
+        "riderName": "Chrio and Acupuncture",
+        "costFrom": 20,
+        "costTo": 25
+      }
+    ]
+  },
+  {
+    "carrier": "UHC",
+    "planNameByNetwork": "UHC PPO 83",
+    "selectable": false,
+    "networkType": "PPO",
+    "riders": [
+      {
+        "riderName": "Chrio only",
+        "costFrom": 20,
+        "costTo": 25
+      },
+      {
+        "riderName": "Chrio and Acupuncture",
+        "costFrom": 20,
+        "costTo": 25
+      }
+    ]
+  },
+  {
+    "carrier": "UHC",
+    "planNameByNetwork": "UHC HSA",
+    "selectable": true,
+    "networkType": "HSA",
+    "riders": [
+      {
+        "riderName": "Chrio only",
+        "costFrom": 20,
+        "costTo": 25
+      },
+      {
+        "riderName": "Chrio and Acupuncture",
+        "costFrom": 20,
+        "costTo": 25
+      }
+    ],
+    "administrativeFee": [
+      {
+        "id": 1,
+        "name": "UHC HSA (Recommended) - PCPM FEE $2.25"
+      },
+      {
+        "id": 2,
+        "name": "UHC HSA (Recommended) - PCPM FEE $2.25"
+      },
+      {
+        "id": 3,
+        "name": "UHC HSA (Recommended) - PCPM FEE $2.25"
+      }
+    ]
+  }
+]

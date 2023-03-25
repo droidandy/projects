@@ -1,0 +1,112 @@
+.charts {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+
+  .header {
+    height: 130px;
+
+    .item {
+      float: left;
+      width: 25%;
+      height: 100%;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 30px 20px;
+      color: $color_2_lighten;
+      cursor: pointer;
+
+      .number {
+        display: block;
+        font-size: 50px;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      .date,
+      .title {
+        font-size: 18px;
+      }
+      .title {
+        font-weight: 700;
+      }
+      &.\--active {
+        color: $color_3;
+        cursor: default;
+        border-bottom: 0;
+      }
+      &.\--last {
+        border-right: 0;
+      }
+    }
+  }
+
+  #chart {
+    width: 100%;
+    height: 35vh;
+    margin-top: 15px;
+    background: url("/assets/images/preloader.gif") 50% 50% no-repeat;
+
+    .amcharts-main-div {
+      background: #fff;
+
+      a {
+        top: -5px !important;
+        left: unset !important;
+        right: 23px;
+      }
+    }
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+      text-align: center;
+      color: $color_3_lighten;
+      font-weight: 600;
+      margin-top: 20px;
+
+      &.\--active {
+        color: $color_3;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $desktop_width) {
+  .charts {
+    .header {
+      height: 90px;
+
+      .item {
+        padding: 10px;
+
+        .number {
+          font-size: 32px;
+          margin-bottom: 16px;
+        }
+
+        .title {
+          font-size: 16px;
+        }
+
+        .date {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_width) {
+  .headline.\--user-settings .sub-heading,
+  .stats-title,
+  .charts {
+    display: none;
+  }
+}

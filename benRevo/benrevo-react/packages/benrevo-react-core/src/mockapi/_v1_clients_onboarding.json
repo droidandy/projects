@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "clientName": "Atom Biotech New",
+    "effectiveDate": "05/01/2017",
+    "clientState": "ON_BOARDING",
+    "progressPercent": 50,
+    "salesRepName": "Test"
+  },
+  {
+    "id": 1,
+    "clientName": "Atom Biotech 2",
+    "effectiveDate": "05/01/2017",
+    "clientState": "ON_BOARDING",
+    "progressPercent": 2,
+    "salesRepName": "Test"
+  }
+]

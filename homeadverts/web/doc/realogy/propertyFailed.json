@@ -1,0 +1,343 @@
+{
+  "listingSummary": {
+    "listingId": "2b47626b-743d-48ff-9bf7-6ce331d81f15",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForRent",
+    "listedOn": "2018-10-29",
+    "photoCount": 10,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "INR",
+      "amount": 150000,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 2200
+    },
+    "propertyAddress": {
+      "streetAddress": "Condominium in Central Park Resorts",
+      "city": "Gurgaon",
+      "stateProvince": "Haryana",
+      "stateProvinceCode": "HR",
+      "postalCode": "122001",
+      "country": "India",
+      "countryCode": "IN",
+      "latitude": 28.4662895202637,
+      "longitude": 77.0506286621094
+    },
+    "RFGListingId": "S2W26B",
+    "isNewConstruction": true,
+    "listingURL": "https:\/\/www.sothebysrealty.com\/id\/s2w26b",
+    "rentalFrequency": "Monthly",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Condominium",
+    "propertyStyle": "High-Rise",
+    "propertyUse": "Vacant",
+    "propertyName": "Condominium in Central Park Resorts",
+    "totalBath": 5,
+    "buildingArea": "3880 Sq. Ft.",
+    "noOfBedrooms": 4,
+    "squareFootage": 3880,
+    "defaultPhotoURL": "\/\/imgs.azureedge.net\/D685920F-0E7C-4F43-B1BB-5964F94FD278",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2019-02-12T07:55:04.390",
+    "agents": [
+      {
+        "id": "b8391751-8040-4a13-b820-069693dad09d",
+        "name": "Daman Juneja ",
+        "firstName": "Daman",
+        "lastName": "Juneja",
+        "gender": "Male",
+        "defaultPhotoURL": "\/\/imgs.azureedge.net\/72089C75-A101-4D5A-9C26-DB12539C2D3A",
+        "emailAddress": "daman.juneja@indiasir.com",
+        "businessPhone": "+91 9654455000",
+        "isPrimary": true,
+        "office": {
+          "officeId": "17150fc2-aaa3-4ad6-b798-523de3de1437",
+          "RFGOfficeId": "0001 ",
+          "companyId": "3667a6bc-ece6-48b4-b4aa-5d95011e9eda",
+          "companyName": "India Sotheby's International Realty",
+          "RFGCompanyId": "818501",
+          "brandCode": "SIR",
+          "name": "India Sotheby\u2019s International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "401, 4th Floor, Eros Corporate Tower Nehru Place",
+            "city": "New Delhi",
+            "stateProvince": "Delhi",
+            "stateProvinceCode": "DL",
+            "postalCode": "110019",
+            "country": "India",
+            "countryCode": "IN",
+            "latitude": 28.5502903,
+            "longitude": 77.2488262
+          },
+          "phoneNumber": "+91 11 40565477",
+          "emailAddress": "marketing@indiasir.com",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "0075"
+      }
+    ],
+    "isShowAddressOnInternet": true,
+    "expiresOn": "2019-04-29"
+  },
+  "fullBath": 4,
+  "halfBath": 1,
+  "parkingPlaces": 2,
+  "yearBuilt": "2018",
+  "totalRooms": 7,
+  "providerKey": "2b47626b-743d-48ff-9bf7-6ce331d81f15",
+  "propertyFeatures": [
+    {
+      "groupName": "Views",
+      "description": "Scenic"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "2 Car Garage"
+    },
+    {
+      "groupName": "General",
+      "description": "Guard Gated"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Tub and Shower"
+    },
+    {
+      "groupName": "General",
+      "description": "Elevator"
+    },
+    {
+      "groupName": "Age",
+      "description": "New Construction"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Tennis Courts"
+    },
+    {
+      "groupName": "General",
+      "description": "Ceiling Fan(s)"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Courtyard"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Granite Countertops"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Gardens"
+    },
+    {
+      "groupName": "Community Type",
+      "description": "Gated"
+    },
+    {
+      "groupName": "General",
+      "description": "Clubhouse"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Green Living"
+    },
+    {
+      "groupName": "Rooms",
+      "description": "Staff Quarters"
+    },
+    {
+      "groupName": "General",
+      "description": "Smoke Detector"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Jacuzzi Tub"
+    },
+    {
+      "groupName": "Basement",
+      "description": "None"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "A\/C"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Balcony \/ Lanai"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Deck"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Playground"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "5-10 Acres"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "NewHomes"
+    },
+    {
+      "groupName": "Location",
+      "description": "Waterfront"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Marble"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "This stunning four bedroom apartment in Gurgaon offers its residents a unique proposition of living in a resort. These are not just just luxury apartments, they are 'homes in the sky' where residents can enjoy enormous living areas, exceptional leisure facilities and a stunning view of green landscaped gardens. All the residents of this development have access to a plethora of amenities including a club house, swimming pool, tennis court and playground.\r\nOn the 12th floor, this magnificent home echoes the true spirit of vertical living, built on a heightened level of comfort, security and privacy. The bathrooms are equipped with state of the art fixtures including a Jacuzzi. A staff quarter has been incorporated in the layout to ensure round the clock help.\r\nThis area of Sohna Road, Gurgaon is surrounded by the best schools and hospitals like G D Goenka Public School, Vega School, Park Hospital and Medanta Hospital. Raheja Mall and Omaxe Celebration Mall are other popular shopping centers in the vicinity.\r\n\r\n\r\nHARYANA RERA NO.: HRERA-PKL-REA-2-2018",
+      "htmlRemark": "<p><span style=\"font-size: 12px;\">This stunning four bedroom apartment in Gurgaon offers its residents a unique proposition of living in a resort. These are not just just luxury apartments, they are 'homes in the sky' where residents can enjoy enormous&nbsp;<\/span>living areas, exceptional leisure facilities and a stunning view of green landscaped gardens. All the residents of this development have access to a plethora of amenities including a club house, swimming pool, tennis court and playground.&nbsp;<\/p><p>On the 12th floor, this magnificent home echoes the true spirit of vertical living, built on a heightened level of comfort, security and privacy. The bathrooms are equipped with state of the art fixtures including a Jacuzzi. A staff quarter has been incorporated in the layout to ensure round the clock help.&nbsp;<\/p><p>This area of Sohna Road, Gurgaon is surrounded by the best schools and hospitals like G D Goenka Public School, Vega School, Park Hospital and Medanta Hospital. Raheja Mall and Omaxe Celebration Mall are other popular shopping centers in the vicinity.&nbsp;<\/p><p><br><\/p><p><span style=\"font-size: 12px;\">HARYANA RERA NO.: HRERA-PKL-REA-2-2018<\/span><br><\/p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https:\/\/www.sothebysrealty.com\/id\/s2w26b",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "471144ED-1618-44AD-9AA1-02178A6AEE3B",
+      "sequenceNumber": 4,
+      "url": "\/\/imgs.azureedge.net\/471144ED-1618-44AD-9AA1-02178A6AEE3B",
+      "isDefault": false,
+      "caption": "_MG_6991",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "A0A1CBF3-4383-40AE-B161-055D1FFF21DC",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/A0A1CBF3-4383-40AE-B161-055D1FFF21DC",
+      "isDefault": false,
+      "caption": "_MG_7002",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "CC654D7D-2020-45E8-90D0-26381FBDC419",
+      "sequenceNumber": 6,
+      "url": "\/\/imgs.azureedge.net\/CC654D7D-2020-45E8-90D0-26381FBDC419",
+      "isDefault": false,
+      "caption": "_MG_6986",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "EC4D0425-3C7E-4FB0-8C93-4088DE1B61DD",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/EC4D0425-3C7E-4FB0-8C93-4088DE1B61DD",
+      "isDefault": false,
+      "caption": "_MG_6988",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "D685920F-0E7C-4F43-B1BB-5964F94FD278",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/D685920F-0E7C-4F43-B1BB-5964F94FD278",
+      "isDefault": true,
+      "caption": "_MG_6967",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "5A9BB946-B16D-462B-923D-7013E3E3B308",
+      "sequenceNumber": 9,
+      "url": "\/\/imgs.azureedge.net\/5A9BB946-B16D-462B-923D-7013E3E3B308",
+      "isDefault": false,
+      "caption": "_MG_6966",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "ECCE91BC-7762-42BE-9CA4-7B404F40C6F0",
+      "sequenceNumber": 10,
+      "url": "\/\/imgs.azureedge.net\/ECCE91BC-7762-42BE-9CA4-7B404F40C6F0",
+      "isDefault": false,
+      "caption": "_MG_6996",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "5DF9B1A5-BC92-47C4-9466-91BACEDCEBC7",
+      "sequenceNumber": 5,
+      "url": "\/\/imgs.azureedge.net\/5DF9B1A5-BC92-47C4-9466-91BACEDCEBC7",
+      "isDefault": false,
+      "caption": "_MG_7008",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "552DF790-F1C8-4956-94D0-98B36C3BD94E",
+      "sequenceNumber": 8,
+      "url": "\/\/imgs.azureedge.net\/552DF790-F1C8-4956-94D0-98B36C3BD94E",
+      "isDefault": false,
+      "caption": "_MG_6983",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    },
+    {
+      "mediaID": "BE79B291-0645-4869-B3F4-CE398E567C4B",
+      "sequenceNumber": 7,
+      "url": "\/\/imgs.azureedge.net\/BE79B291-0645-4869-B3F4-CE398E567C4B",
+      "isDefault": false,
+      "caption": "_MG_7016",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1333,
+      "width": 2000,
+      "lastUpdateOn": "2018-10-29T08:35:03.130"
+    }
+  ]
+}

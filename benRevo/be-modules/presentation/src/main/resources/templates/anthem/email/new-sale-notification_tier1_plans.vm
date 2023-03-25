@@ -1,0 +1,30 @@
+<tr style="border:0;padding:8px 10px;">
+    <td style="border:1px solid #ddd;padding:8px 10px;" width="14%">Plan name</td>
+    <td style="border:1px solid #ddd;padding:8px 10px;" width="14%">Plan type</td>
+    <td style="border:1px solid #ddd;padding:8px 10px;" width="18%">Employee Only</td>
+    <td style="border:1px solid #ddd;padding:8px 10px;" width="18%"> </td>
+    <td style="border:1px solid #ddd;padding:8px 10px;" width="18%"> </td>
+    <td style="border:1px solid #ddd;padding:8px 10px;" width="18%"> </td>
+</tr>
+#foreach($plan in ${selected_plans})
+    <tr style="border:0;padding:8px 10px;">
+        <td style="border:1px solid #ddd;padding:8px 10px;">$!plan.name</td>
+        <td style="border:1px solid #ddd;padding:8px 10px;">$!plan.type</td>
+        <td style="border:1px solid #ddd;padding:8px 10px;">
+            #if($!plan.tier1Rate)
+                $$DecimalFormat.format($!plan.tier1Rate)
+            #end
+        </td>
+        <td style="border:1px solid #ddd;padding:8px 10px;">
+           
+        </td>
+        <td style="border:1px solid #ddd;padding:8px 10px;">
+            
+        </td>
+        <td style="border:1px solid #ddd;padding:8px 10px;">
+             
+        </td>
+    </tr>
+#end  
+
+                        

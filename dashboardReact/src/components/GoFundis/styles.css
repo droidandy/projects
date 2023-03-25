@@ -1,0 +1,141 @@
+.root {
+    display: block;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    line-height: 1.4;
+    max-width: 1100px;
+    margin: auto;
+&_compact {
+     composes: root;
+ }
+}
+.container-chart {
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+}
+.wrapper-legend-chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.wrapper-legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.container-statuses {
+    text-align: center;
+    background-color: #fff;
+}
+.live-status-label {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 8px;
+    font-weight: 300;
+}
+.live-status-dot {
+    margin-left: 4px;
+    width: 5px;
+    height: 5px;
+    background-color: #6ebe46;
+    border-radius: 50%;
+}
+.live-dot {
+    margin-left: 7px;
+    width: 10px;
+    height: 10px;
+    background-color: #6ebe46;
+    border-radius: 50%;
+}
+.container-content {
+    background-color: #fff;
+    padding: 10px;
+}
+.users_container_empty {
+    padding: 0;
+    margin-bottom: 25px;
+}
+.returning_subscribers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.list_column_highcharts_large {
+    width: 100%;
+    height: 200px;
+    margin: 5px;
+}
+.sub_container_header {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.reparate_item {
+    display: flex;
+    flex-direction: row;
+}
+.list_column {
+    display: flex;
+    flex-direction: column;
+}
+.list_column_highcharts_fundi {
+    width: 200px;
+    margin: 5px;
+}
+.inline_items {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+}
+.row_items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.gofundis_inner {
+    -webkit-mask-image: url("../__assets__/user.svg");
+    mask-image: url("../__assets__/user.svg");
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250, 250, 250);
+}
+.gofundis_offline_block {
+    width: 30px;
+    height: 30px;
+    background-color: #f2ec2b;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.gofundis_online_block {
+    width: 30px;
+    height: 30px;
+    background-color: #f5ab33;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.list_column_highcharts {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+.list_column_itemSmall {
+
+}

@@ -1,0 +1,80 @@
+<script>
+    var locale = {
+      root:{{ request.locale.root_url |json}},
+      iso_code: {{ request.locale.iso_code  |json}}
+    }
+    var theme = {
+      quiz : {
+        {% if cart.attributes %}
+        skinType : "{{cart.attributes["skinType"]}}",
+        skinCareGoals : {{cart.attributes["skinCareGoals"]  | json}},
+        selectedSKU: [],
+        {% endif %}
+      },
+      name : '{{theme.name}}',
+      assetURL: "{{ 'footer.png' | asset_url | split: 'footer.png?v=' | first}}",
+      shopify_locale: {{shop_locale.iso_code|json}},
+      currency : {
+        format: '{{-shop.money_with_currency_format-}}',
+      
+        code:'{% include 'currency-iso-code' %}',
+        rateExchange:{
+          EUR:{{all_products['rate-exchanger'].price | divided_by: 100}},
+          BYN: {{all_products['rate-exchanger'].metafields.forex['BYN-EUR']}}
+        } 
+      },
+      host: {{ request.host | json }},
+      checkout: {
+        cart: {
+            count: {{ cart.item_count }},
+            note : {{cart.note|json}},
+        },
+        storefrontCheckoutId: {{cart.attributes["storefrontCheckoutId"]  | json}},
+        checkoutId:{{cart.attributes["checkoutId"]  | json}},
+      },
+        
+      customer: {
+        id: "{{customer.id}}",
+        email: "{{customer.email}}",
+        name: "{{customer.name}}",
+        phone: "{{customer.phone}}", 
+        orders: [
+        {% for order in customer.orders %}
+          {
+          id:{{order.id|json}},
+          name:{{order.name|json}},
+          created_at: "{{order.created_at | date: "%Y-%m-%d"}}",
+          note:{{order.note|json}},
+          note_attributes:{{order.attributes|json}},
+          financial_status :{{order.financial_status|json}},
+          fulfillment_status :{{order.fulfillment_status|json}},
+          items:{{order.line_items|json}},
+          shipping_address:{{order.shipping_address|json}},
+          },
+        {% endfor %}
+        ],
+        lastOrderId: {{customer.last_order.id|json}},
+        defaultAddressId:{{customer.default_address.id|json}},
+        tags:{{customer.tags|json}},
+        addresses: {{customer.addresses|json}},
+      }
+    }    
+    {%if cart.attributes["selectedSKU"] %}
+    try {
+      var selectedSKU = JSON.parse({{cart.attributes["selectedSKU"]  | json}}.replace(/\u0026quot;/g, '"')) 
+      theme.quiz.selectedSKU = selectedSKU;
+    } catch (e) {
+      throw e
+    }
+    {% endif %}
+    
+    {%if cart.attributes["videoGoals"] %}
+    try {
+      var videoGoals = JSON.parse({{cart.attributes["videoGoals"]  | json}}.replace(/\u0026quot;/g, '"'));
+      theme.quiz.videoGoals = videoGoals;
+    } catch (e) {
+      throw e;
+    }
+    {% endif %}
+    
+    </script>

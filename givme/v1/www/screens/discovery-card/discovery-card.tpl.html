@@ -1,0 +1,56 @@
+<ion-view>
+  <ion-content class="gm-content">
+    <div class="page">
+      <div class="pocket-container">
+        <div class="pocket-head" on-swipe-left="nextSettingsPage()" on-swipe-right="prevSettingsPage()">
+          <div class="text-head" ui-sref="menu">Done</div>
+          <div class="settings-icon"></div>
+          <div class="head-title">DISCOVERY</div>
+          <div class="head-title-next" ng-click="nextSettingsPage()">CONTACT</div>
+          <div class="head-title-prev" ng-click="prevSettingsPage()">GENERAL</div>
+        </div>
+        <div class="settings">
+          <div class="label-title">Gender:</div>
+          <ul>
+            <li>Men
+              <span class="pull-right">
+                <label class="toggle toggle-assertive">
+                  <input type="checkbox" ng-model="gender.man">
+                  <div class="track">
+                    <div class="handle"></div>
+                  </div>
+                </label>
+              </span>
+            </li>
+            <li>Women
+              <span class="pull-right">
+                <label class="toggle toggle-assertive">
+                  <input type="checkbox" ng-model="gender.women">
+                  <div class="track">
+                    <div class="handle"></div>
+                  </div>
+                </label>
+              </span>
+            </li>
+          </ul>
+          <div class="label-title clearfix">
+            <div class="pull-left">Age: </div>
+            <div class="pull-right">23-40 </div>
+          </div>
+          <ul>
+            <li><img src="img/age-bar.png" class="img-responsive" alt=""> </li>
+          </ul>
+          <div class="label-title clearfix">
+            <div class="pull-left">Radius: </div>
+            <div class="pull-right">{{range}}KM</div>
+          </div>
+          <ul>
+            <div class="item range">
+              <input type="range" name="radius" ng-model="range" min="1" max="100">
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

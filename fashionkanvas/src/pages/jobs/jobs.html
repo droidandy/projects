@@ -1,0 +1,58 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons start >
+      <button *ngIf="jobType=='searchjob'" ion-button (click)="openAppliedjob()"> <ion-icon name="checkmark" class="plus" style="font-size:50px!important;"></ion-icon></button>
+    </ion-buttons>
+    <ion-title>
+      <span *ngIf="jobType=='myjob'">{{ 'MYJOBOFFERS' | translate }}</span>
+      <span *ngIf="jobType=='searchjob'">{{ 'JOBSEARCH' | translate }}</span>
+      <ion-icon name="arrow-down" class="plus" (click)='presentActionSheet()'></ion-icon>
+    </ion-title>
+    <ion-buttons end >
+      <button ion-button *ngIf="jobType=='myjob'" (click)="openJobcreateedit()"> <ion-icon name="ios-create-outline" class="plus"></ion-icon></button>
+      <button ion-button *ngIf="jobType=='searchjob'" (click)="openJobfilter()">
+        <ion-icon name="custom-filter"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+    <ion-row *ngIf="jobList.length>0&&!isJobLoading&&jobType=='myjob'">
+      <p class="joboffers_head">{{ 'JOBOFFERSHEADTITLE' | translate }}</p>
+    </ion-row>
+    <ion-row *ngIf="jobList.length==0&&!isJobLoading&&jobType=='myjob'" (click)="openJobcreateedit()">
+      <p class="joboffers_head">{{ 'CREATENEWJOB' | translate }}</p>
+    </ion-row>
+    <ion-row *ngIf="jobList.length==0&&!isJobLoading&&jobType=='searchjob'" (click)="openJobcreateedit()">
+      <p class="joboffers_head">{{ 'NOJOBS' | translate }}</p>
+    </ion-row>
+    <ion-list>
+      <ion-item (click)="openJoboffer(job)" *ngFor="let job of jobList">
+        <!-- <ion-row>
+          <span class="days">{{job.dateCreated | DateFormat}}</span>
+        </ion-row> -->
+        <span class="left_list">
+          <img-loader src="{{job.img}}" *ngIf="job.img != ''" tappable useImg  ></img-loader>
+          <img-loader src="assets/images/set.png" *ngIf="job.img == ''" tappable useImg  ></img-loader>
+        </span>
+        <span class="left_list_total">
+          <span class="middle_list">
+            <h3>{{job.title|CapitalizeFirstLetter}}</h3>
+            <p>{{job.hiring|CapitalizeFirstLetter}} . {{job.typeJob|CapitalizeFirstLetter}} . {{job.currency|CurrencySymbol}}{{job.amount}}/{{job.periodical}} </p>
+            <p *ngIf="job.isPost==false">{{ 'DRAFT' | translate }}</p>
+            <p *ngIf="job.isPost">{{job.applicationCount ? job.applicationCount : 0 }} {{ 'APPLICATIONS' | translate }}</p>
+          </span>
+          <span class="right_list">
+             <ion-icon name="arrow-forward" class="plus"></ion-icon>
+             <span>{{job.dateCreated | DateFormat}}</span>
+          </span>
+        </span>
+      </ion-item>
+    </ion-list>
+
+</ion-content>

@@ -1,0 +1,189 @@
+{
+  "success": 1,
+  "error": "",
+  "warnings": "",
+  "medias": [
+    {
+      "hash": "g10e1e8081erg",
+      "created": "2011-05-11 12:00:30 EST",
+      "replaced": "2012-11-16 12:16:50 EST",
+      "status_code": "400",
+      "status_message": "Active",
+      "title": "William Pitt",
+      "description": "Meet Our Ceo Series\\n\\nPaul Breunich talks about how William Pitt was his mentor and how he gave him the biggest opportunity of his life.  William Pitt did a lot for his community and Paul considers him his role model.\\n",
+      "keywords": "CEO, Paul Breunich, Leadership",
+      "customid": "",
+      "original_http_url": "http:\/\/82465a8c6019cbd03786-7b33788af20eb16deff7769bccdf782b.r23.cf1.rackcdn.com\/",
+      "original": "wm_v52729Zc958b.mov",
+      "source": "site",
+      "traffic_url": null,
+      "slideshow": "0",
+      "video_type": "11",
+      "wm1_id": "58FAE83ED4",
+      "location": {
+        "address": "901 Main Ave, Suite 100",
+        "city": "Norwalk",
+        "state_province": "Connecticut",
+        "postal_code": "06850",
+        "latitude": "41.144988000000",
+        "longitude": "-73.428669000000"
+      },
+      "image": {
+        "hash": "ergbe2dbaab2mp7",
+        "http_url": "https:\/\/0f09f3dc97720fdbfce6-edffc6cf84a1214568eae26dc2113f20.ssl.cf1.rackcdn.com\/",
+        "icon": null,
+        "square": null,
+        "thumbnail": "52729_1305142953_wm1_thumb.jpg",
+        "thumbnail_16x9": "52729_1305142953_wm1_thumb.jpg",
+        "small": "52729_1305142953.jpg",
+        "medium": "52729_1305142953.jpg",
+        "large": "52729_1305142953.jpg",
+        "play": null
+      },
+      "video": {
+        "http_url": "http:\/\/0f837d73c52260b6ff9d-eaef829eae7c04fd12005cc3ad780db0.r48.cf1.rackcdn.com\/",
+        "v270p": "501c2d55940_3c6234c0_270p.mp4",
+        "v360p": "501c2d55940_6d73d855_360p.mp4",
+        "v480p": "501c2d55940_d4af1a8c_480p.mp4",
+        "v720p": "501c2d55940_c8446dc0_720p.mp4",
+        "v1080p": null
+      }
+    },
+    {
+      "hash": "g1cff29143ers",
+      "created": "2011-10-12 08:32:31 EST",
+      "replaced": "2014-11-04 14:54:41 EST",
+      "status_code": "400",
+      "status_message": "Active",
+      "title": "Bethel, CT",
+      "description": "Bethel is a small yet vibrant New England town in northern Fairfield County, on the Metro-North train line. Its charming village center is a designated historic district. Bethels excellent school system features a convenient centralized campus.",
+      "keywords": "Bethel,Connecticut,Community Tour,Fairfield County",
+      "customid": "",
+      "original_http_url": "http:\/\/82465a8c6019cbd03786-7b33788af20eb16deff7769bccdf782b.r23.cf1.rackcdn.com\/",
+      "original": "original_g1cff29143ers_nej5z5.mov",
+      "source": "site",
+      "traffic_url": null,
+      "slideshow": "0",
+      "video_type": "3",
+      "wm1_id": "239C69A05F",
+      "location": {
+        "address": "",
+        "city": "Bethel",
+        "state_province": "CT",
+        "postal_code": "06801",
+        "latitude": "41.371228300000",
+        "longitude": "-73.413962100000"
+      },
+      "image": {
+        "hash": "ers4eb5257fkj7s",
+        "http_url": "https:\/\/0f09f3dc97720fdbfce6-edffc6cf84a1214568eae26dc2113f20.ssl.cf1.rackcdn.com\/",
+        "icon": "g1cff29143ers_ers4eb5257fkj7s_icon.jpg",
+        "square": "g1cff29143ers_ers4eb5257fkj7s_square.jpg",
+        "thumbnail": "g1cff29143ers_ers4eb5257fkj7s_thumbnail.jpg",
+        "thumbnail_16x9": "g1cff29143ers_ers4eb5257fkj7s_thumbnail16x9.jpg",
+        "small": "g1cff29143ers_ers4eb5257fkj7s_small.jpg",
+        "medium": "g1cff29143ers_ers4eb5257fkj7s_medium.jpg",
+        "large": "g1cff29143ers_ers4eb5257fkj7s_large.jpg",
+        "play": "g1cff29143ers_ers4eb5257fkj7s_play.jpg"
+      },
+      "video": {
+        "http_url": "http:\/\/0f837d73c52260b6ff9d-eaef829eae7c04fd12005cc3ad780db0.r48.cf1.rackcdn.com\/",
+        "v270p": "g1cff29143ers_fb3e48dc_270p.mp4",
+        "v360p": "g1cff29143ers_a7f69ba8_360p.mp4",
+        "v480p": "g1cff29143ers_b6f1bb8a_480p.mp4",
+        "v720p": "g1cff29143ers_ba80fdb0_720p.mp4",
+        "v1080p": null
+      }
+    },
+    {
+      "hash": "hdpba4bca2c5nu0",
+      "created": "2016-07-05 16:46:23 EST",
+      "replaced": "2016-07-05 16:47:46 EST",
+      "status_code": "400",
+      "status_message": "Active",
+      "title": "Sierra Sunset 15 sec",
+      "description": "",
+      "keywords": "",
+      "customid": "",
+      "original_http_url": "http:\/\/82465a8c6019cbd03786-7b33788af20eb16deff7769bccdf782b.r23.cf1.rackcdn.com\/",
+      "original": "original_hdpba4bca2c5nu0_o9v0db.mp4",
+      "source": "site",
+      "traffic_url": null,
+      "slideshow": "0",
+      "video_type": "11",
+      "location": {
+        "address": "",
+        "city": "",
+        "state_province": "",
+        "postal_code": "",
+        "latitude": "0.000000000000",
+        "longitude": "0.000000000000"
+      },
+      "image": {
+        "hash": "5nu0f87cb422r3nn",
+        "http_url": "https:\/\/0f09f3dc97720fdbfce6-edffc6cf84a1214568eae26dc2113f20.ssl.cf1.rackcdn.com\/",
+        "icon": null,
+        "square": null,
+        "thumbnail": "hdpba4bca2c5nu0_5nu033ec08c4r3nn_thumbnail.jpg",
+        "thumbnail_16x9": "hdpba4bca2c5nu0_5nu033ec08c4r3nn_thumbnail16x9.jpg",
+        "small": "hdpba4bca2c5nu0_5nu0740e8482r3nn_small.jpg",
+        "medium": "hdpba4bca2c5nu0_5nu0740e8482r3nn_medium.jpg",
+        "large": "hdpba4bca2c5nu0_5nu0e6ecd091r3nn_large.jpg",
+        "play": "hdpba4bca2c5nu0_5nu0e6ecd091r3nn_play.jpg"
+      },
+      "video": {
+        "http_url": "http:\/\/0f837d73c52260b6ff9d-eaef829eae7c04fd12005cc3ad780db0.r48.cf1.rackcdn.com\/",
+        "v270p": "hdpba4bca2c5nu0_e4d6afc5_360p.mp4",
+        "v360p": "hdpba4bca2c5nu0_e4d6afc5_360p.mp4",
+        "v480p": "hdpba4bca2c5nu0_d72f620e_480p.mp4",
+        "v720p": "hdpba4bca2c5nu0_9f83326f_720p.mp4",
+        "v1080p": "hdpba4bca2c5nu0_c16af72f_1080p.mp4"
+      }
+    },
+    {
+      "hash": "hdpa8dbf3ae5nu4",
+      "created": "2016-07-05 17:05:54 EST",
+      "replaced": "2016-07-05 17:08:05 EST",
+      "status_code": "400",
+      "status_message": "Active",
+      "title": "Rabbit Brush 40 sec",
+      "description": "",
+      "keywords": "",
+      "customid": "",
+      "original_http_url": "http:\/\/82465a8c6019cbd03786-7b33788af20eb16deff7769bccdf782b.r23.cf1.rackcdn.com\/",
+      "original": "original_hdpa8dbf3ae5nu4_o9v19u.mp4",
+      "source": "site",
+      "traffic_url": null,
+      "slideshow": "0",
+      "video_type": "11",
+      "location": {
+        "address": "",
+        "city": "",
+        "state_province": "",
+        "postal_code": "",
+        "latitude": "0.000000000000",
+        "longitude": "0.000000000000"
+      },
+      "image": {
+        "hash": "5nu47973aa26r3o8",
+        "http_url": "https:\/\/0f09f3dc97720fdbfce6-edffc6cf84a1214568eae26dc2113f20.ssl.cf1.rackcdn.com\/",
+        "icon": null,
+        "square": null,
+        "thumbnail": "hdpa8dbf3ae5nu4_5nu4aea41313r3o8_thumbnail.jpg",
+        "thumbnail_16x9": "hdpa8dbf3ae5nu4_5nu4438764fcr3o8_thumbnail16x9.jpg",
+        "small": "hdpa8dbf3ae5nu4_5nu4438764fcr3o8_small.jpg",
+        "medium": "hdpa8dbf3ae5nu4_5nu4438764fcr3o8_medium.jpg",
+        "large": "hdpa8dbf3ae5nu4_5nu46bf2fc21r3o8_large.jpg",
+        "play": "hdpa8dbf3ae5nu4_5nu46bf2fc21r3o8_play.jpg"
+      },
+      "video": {
+        "http_url": "http:\/\/0f837d73c52260b6ff9d-eaef829eae7c04fd12005cc3ad780db0.r48.cf1.rackcdn.com\/",
+        "v270p": "hdpa8dbf3ae5nu4_af50550e_360p.mp4",
+        "v360p": "hdpa8dbf3ae5nu4_af50550e_360p.mp4",
+        "v480p": "hdpa8dbf3ae5nu4_ecea3fea_480p.mp4",
+        "v720p": "hdpa8dbf3ae5nu4_60f28266_720p.mp4",
+        "v1080p": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,748 @@
+{
+    "listingSummary": {
+        "listingId": "34a70f56-98f9-4a16-abd7-9cd32e4fb953",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-04-17",
+        "photoCount": 30,
+        "videoCount": 1,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 5750000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "7615 Southdown Rd",
+            "city": "ALEXANDRIA",
+            "district": "Fairfax",
+            "stateProvince": "Virginia",
+            "stateProvinceCode": "VA",
+            "postalCode": "22308",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 38.74957,
+            "longitude": -77.04806,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "7615 Southdown Rd, Alexandria, VA 22308"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Wellington Villa"
+            }
+        ],
+        "mlsNumbers": [
+            "FX10211995"
+        ],
+        "RFGListingId": "WPBWXN",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/wpbwxn",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Other Style",
+        "propertyName": "7615 Southdown Rd",
+        "totalBath": 9,
+        "lotSize": "25474 SF",
+        "buildingArea": "11300 Sq. Ft.",
+        "noOfBedrooms": 6,
+        "totalAcres": 0.58,
+        "squareFootage": 11300,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/170649B5-E649-4DB8-AC05-DB7E42C01767",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-08T03:45:34.857",
+        "agents": [
+            {
+                "id": "5f7b4ae3-5a29-4bc8-acd8-a63f54ba17f4",
+                "name": "Ken Ipox",
+                "firstName": "Ken",
+                "lastName": "Ipox",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/0A096FE7-8CB5-472C-AD69-5F4464C26ACA",
+                "emailAddress": "ken.ipox@premiersir.com",
+                "leadEmailAddress": "800256.lead.4022429@leads.leadrouter.com",
+                "businessPhone": "+1 9419937279",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "434edc3d-d21e-4efb-a1d5-5ffaf95c3c80",
+                    "RFGOfficeId": "0005",
+                    "companyId": "c8987fde-4bde-4864-a1e4-47d3c183ddea",
+                    "companyName": "Premier",
+                    "RFGCompanyId": "800256",
+                    "brandCode": "SIR",
+                    "name": "Premier Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "540 John Ringling Blvd",
+                        "city": "Sarasota",
+                        "district": "Sarasota",
+                        "stateProvince": "Florida",
+                        "stateProvinceCode": "FL",
+                        "postalCode": "34236",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 27.31916,
+                        "longitude": -82.575,
+                        "formattedAddress": "540 John Ringling Blvd, Sarasota, FL 34236"
+                    },
+                    "phoneNumber": "9413832500",
+                    "emailAddress": "REFERRALS@PREMIERSIR.COM"
+                }
+            },
+            {
+                "id": "ced03e35-72a8-4adf-a3b1-c2625cce4e6d",
+                "name": "The Patterson Group ",
+                "firstName": "The Patterson",
+                "lastName": "Group",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/2366F36E-E966-4D35-891E-061FF195C69E",
+                "emailAddress": "pattersongroup@ttrsir.com",
+                "leadEmailAddress": "800107.lead.4042522@leads.leadrouter.com",
+                "businessPhone": "+1 7033106201",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                    "RFGOfficeId": "0007",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "400 South Washington Street",
+                        "city": "Alexandria",
+                        "district": "Alexandria Indep. City",
+                        "stateProvince": "Virginia",
+                        "stateProvinceCode": "VA",
+                        "postalCode": "22314",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.80141,
+                        "longitude": -77.04742,
+                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                    },
+                    "phoneNumber": "7033106800",
+                    "emailAddress": "alexandria@ttrsir.com"
+                }
+            },
+            {
+                "id": "3edf47d3-ebaa-433c-9000-f8869decec67",
+                "name": "Brittany Patterson",
+                "firstName": "Brittany",
+                "lastName": "Patterson",
+                "middleName": "Ann",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/C4DA192E-8122-452D-8F8B-8CAA775A28BF",
+                "emailAddress": "bpatterson@ttrsir.com",
+                "leadEmailAddress": "800107.lead.4029990@leads.leadrouter.com",
+                "businessPhone": "+1 7033106201",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                    "RFGOfficeId": "0007",
+                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                    "companyName": "TTR",
+                    "RFGCompanyId": "800107",
+                    "brandCode": "SIR",
+                    "name": "TTR Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "400 South Washington Street",
+                        "city": "Alexandria",
+                        "district": "Alexandria Indep. City",
+                        "stateProvince": "Virginia",
+                        "stateProvinceCode": "VA",
+                        "postalCode": "22314",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 38.80141,
+                        "longitude": -77.04742,
+                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                    },
+                    "phoneNumber": "7033106800",
+                    "emailAddress": "alexandria@ttrsir.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 7,
+    "halfBath": 2,
+    "parkingPlaces": 0,
+    "levels": 3,
+    "yearBuilt": "2003",
+    "providerKey": "34a70f56-98f9-4a16-abd7-9cd32e4fb953",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "Video QC Approved Listing"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Refrigerator"
+        },
+        {
+            "groupName": "General",
+            "description": "Elevator"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Wet Bar"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Gourmet Kitchen"
+        },
+        {
+            "groupName": "General",
+            "description": "Security System"
+        },
+        {
+            "groupName": "Views",
+            "description": "Water"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Microwave"
+        },
+        {
+            "groupName": "General",
+            "description": "Laundry Facilities"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dishwasher"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Underground Lawn Sprinkler"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Outdoor Activities"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Walk-in Closet"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Range \/ Oven"
+        },
+        {
+            "groupName": "Exterior Description",
+            "description": "Stone"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Screened Porch"
+        },
+        {
+            "groupName": "Location",
+            "description": "Riverfront"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Breakfast Bar"
+        },
+        {
+            "groupName": "Sewer",
+            "description": "Public"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Eat-in Kitchen"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Pool"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Inground"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Blinds"
+        },
+        {
+            "groupName": "Lot Description",
+            "description": "Access Type - Water"
+        },
+        {
+            "groupName": "General",
+            "description": "Workshop"
+        },
+        {
+            "groupName": "Rooms",
+            "description": "Library"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Central A\/C"
+        },
+        {
+            "groupName": "Interior",
+            "description": "In-law Suite"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dryer"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Balcony \/ Lanai"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Porch"
+        },
+        {
+            "groupName": "Location",
+            "description": "Cul-de-sac"
+        },
+        {
+            "groupName": "Garage Description",
+            "description": "Garage"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Heating Type",
+            "description": "Forced Air"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Washer"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Garbage Disposal"
+        },
+        {
+            "groupName": "Road Type",
+            "description": "Private Road"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Kitchen Facilities"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Butlers Pantry"
+        },
+        {
+            "groupName": "Location",
+            "description": "Waterfront"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        },
+        {
+            "groupName": "Body of Water",
+            "description": "River"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Magnificent Nantucket shingle style home on the Potomac River. Escape from DC to your vacation paradise-just 20 minutes away. Set sail from your 300 ft dock (w\/ lifts) to Old Town, Nats games, Wharf and National Harbor. Custom built with reclaimed floors, two screened porches,pool, elevator and 5 bedrooms with sweeping panoramic views. Watch the eagles soar and the sun rise. Truly incomparable.",
+            "htmlRemark": "Magnificent Nantucket shingle style home on the Potomac River.  Escape from DC to your vacation paradise-just 20 minutes away.  Set sail from your 300 ft dock (w\/ lifts) to Old Town, Nats games, Wharf and National Harbor. Custom built with reclaimed floors, two screened porches,pool, elevator and 5 bedrooms with sweeping panoramic views. Watch the eagles soar and the sun rise. Truly incomparable."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/wpbwxn",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "1A670E64-FB50-4010-89B9-06D1BBE2D9A6",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/1A670E64-FB50-4010-89B9-06D1BBE2D9A6",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "14763017-00BA-461C-9834-07B0F1D6AC5D",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/14763017-00BA-461C-9834-07B0F1D6AC5D",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "193554F2-CD43-4853-9D30-1C8BC9505B73",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/193554F2-CD43-4853-9D30-1C8BC9505B73",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "1B9E433B-8CD2-46CC-BA0A-433486F0CE73",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/1B9E433B-8CD2-46CC-BA0A-433486F0CE73",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "B9D5B69F-22C7-4DC9-A8D9-4AF0D82CBCBA",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/B9D5B69F-22C7-4DC9-A8D9-4AF0D82CBCBA",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "284AC4A4-DB77-4884-8C72-5D83D42499A9",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/284AC4A4-DB77-4884-8C72-5D83D42499A9",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "F9E47E44-420D-4A2B-A9CD-6309A046E5D6",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/F9E47E44-420D-4A2B-A9CD-6309A046E5D6",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "1ADFB5A9-3022-495B-9362-682A72D3505E",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/1ADFB5A9-3022-495B-9362-682A72D3505E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "1F204283-AB60-4A05-B3C6-7597BB81A784",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/1F204283-AB60-4A05-B3C6-7597BB81A784",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "F77BE410-04F4-4346-9962-77FFA38F9E0A",
+            "sequenceNumber": 28,
+            "url": "\/\/openapi.azureedge.net\/F77BE410-04F4-4346-9962-77FFA38F9E0A",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "8CD57930-0B69-4A6F-A949-830B1F7E0375",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/8CD57930-0B69-4A6F-A949-830B1F7E0375",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "C8EDF0CE-47E1-40FC-A692-866814FD0854",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/C8EDF0CE-47E1-40FC-A692-866814FD0854",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "E5BF08B6-FD11-4617-8C64-866E41F9BAC8",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/E5BF08B6-FD11-4617-8C64-866E41F9BAC8",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "6D5F26C5-378C-4730-A077-87F9B97B16C4",
+            "sequenceNumber": 27,
+            "url": "\/\/openapi.azureedge.net\/6D5F26C5-378C-4730-A077-87F9B97B16C4",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "944527CC-6537-42C3-B0B2-9039F2E726E5",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/944527CC-6537-42C3-B0B2-9039F2E726E5",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "453AAADC-B9C4-4F7A-B085-97E7B2809FB5",
+            "sequenceNumber": 25,
+            "url": "\/\/openapi.azureedge.net\/453AAADC-B9C4-4F7A-B085-97E7B2809FB5",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "383D64BE-7525-487E-B8FC-9858F845AAFD",
+            "sequenceNumber": 26,
+            "url": "\/\/openapi.azureedge.net\/383D64BE-7525-487E-B8FC-9858F845AAFD",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "ED1EC25A-9519-40D5-AED6-98A8204A2089",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/ED1EC25A-9519-40D5-AED6-98A8204A2089",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "BB13E502-57DF-4B6B-857E-9A16C3EB89BD",
+            "sequenceNumber": 29,
+            "url": "\/\/openapi.azureedge.net\/BB13E502-57DF-4B6B-857E-9A16C3EB89BD",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "4D8F8AEC-3E22-420E-928E-9D8011F04B7D",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/4D8F8AEC-3E22-420E-928E-9D8011F04B7D",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "AC796DFA-3D53-4DB4-A3A2-A41D26253F8A",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/AC796DFA-3D53-4DB4-A3A2-A41D26253F8A",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "66603F4D-2A07-4A10-B3B8-B88742564475",
+            "sequenceNumber": 1,
+            "url": "https:\/\/players.brightcove.net\/5699924528001\/default_default\/index.html?videoId=5786809706001",
+            "isDefault": true,
+            "format": "Video",
+            "category": "Property Video",
+            "lastUpdateOn": "2018-05-22T03:54:34.380"
+        },
+        {
+            "mediaID": "CD74BAED-0744-4609-9318-C94F387DA6EC",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/CD74BAED-0744-4609-9318-C94F387DA6EC",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "EF99444E-8BDF-4CB4-BA9C-CD496E0D3049",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/EF99444E-8BDF-4CB4-BA9C-CD496E0D3049",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "ABA50F5D-D2C4-4BB2-84DF-D0C1919B2AFA",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/ABA50F5D-D2C4-4BB2-84DF-D0C1919B2AFA",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "F13CE2B4-188E-4EEF-8571-D4DC485C25A3",
+            "sequenceNumber": 30,
+            "url": "\/\/openapi.azureedge.net\/F13CE2B4-188E-4EEF-8571-D4DC485C25A3",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "EACF1930-027D-483F-B8D9-D8B75CE36D9B",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/EACF1930-027D-483F-B8D9-D8B75CE36D9B",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "170649B5-E649-4DB8-AC05-DB7E42C01767",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/170649B5-E649-4DB8-AC05-DB7E42C01767",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "A3B357EE-C0BC-4842-8C80-E914C8E87F14",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/A3B357EE-C0BC-4842-8C80-E914C8E87F14",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "4BDF5A6A-ACBB-446C-8F01-ED8AE7870AA1",
+            "sequenceNumber": 1,
+            "url": "http:\/\/slideshow.mris.com\/slideshow\/slideshow.htm?ListingKey=300362502274",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Virtual Tour",
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "E3B4AA47-EEEC-40C4-A134-F45222B1B5FF",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/E3B4AA47-EEEC-40C4-A134-F45222B1B5FF",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        },
+        {
+            "mediaID": "063991CF-E164-47D6-A18E-FAF59955B03C",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/063991CF-E164-47D6-A18E-FAF59955B03C",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1365,
+            "width": 2048,
+            "lastUpdateOn": "2018-05-09T20:41:19.180"
+        }
+    ],
+    "schools": [
+        {
+            "type": "Primary School",
+            "name": "WAYNEWOOD"
+        },
+        {
+            "type": "High School",
+            "name": "WEST POTOMAC"
+        },
+        {
+            "type": "Middle School",
+            "name": "CARL SANDBURG"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "FX10211995",
+            "isPrimary": true
+        }
+    ]
+}

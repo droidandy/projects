@@ -1,0 +1,86 @@
+{
+  "id":389,
+  "name":"Option 1",
+  "totalAnnualPremium":397768.22,
+  "currentPlanAnnual":1332.0,
+  "newPlanAnnual":397606.2,
+  "percentDifference":26524.4,
+  "dollarDifference":396274.22,
+  "overviewPlans":[
+    {
+      "planId":null,
+      "carrier":"Anthem Clear Value",
+      "label":null,
+      "name":null,
+      "type":null,
+      "employer":677.63,
+      "employee":32469.72,
+      "total":33147.35,
+      "tier1Rate":null,
+      "tier2Rate":null,
+      "tier3Rate":null,
+      "tier4Rate":null,
+      "quoteType":null
+    },{
+      "planId":null,
+      "carrier":"Anthem Clear Value",
+      "label":"(current plan)",
+      "name":null,
+      "type":null,
+      "employer":15.5,
+      "employee":109.0,
+      "total":124.5,
+      "tier1Rate":null,
+      "tier2Rate":null,
+      "tier3Rate":null,
+      "tier4Rate":null,
+      "quoteType":"STANDARD"
+    }
+  ],
+  "detailedPlans":[
+    {
+      "rfpQuoteOptionNetworkId":579,
+      "rfpQuoteNetworkId":1642,
+      "kaiserNetwork":false,
+      "outOfState":false,
+      "carrier":"Anthem Clear Value",
+      "rfpCarrierId":50,
+      "type":"HMO",
+      "networkName":"CV HMO Network",
+      "dollarDifference":6695.43,
+      "percentDifference":55795.3,
+      "employerFund":0.0,
+      "administrativeFee":0.0,
+      "discountType":null,
+      "currentPlan":{
+        "planId":378,
+        "carrier":null,
+        "label":null,
+        "name":"11",
+        "type":"HMO",
+        "employer":0.28,
+        "employee":11.72,
+        "total":12.0,
+        "tier1Rate":null,
+        "tier2Rate":null,
+        "tier3Rate":null,
+        "tier4Rate":null,
+        "quoteType":null
+      },
+      "newPlan":{
+        "planId":25269,
+        "carrier":"Anthem Clear Value",
+        "label":null,
+        "name":"T-Anthem Clear Value HMO 30/60/30% 5500 OOP Rx:Essential $5/$20/$50/$70/30%",
+        "type":"HMO",
+        "employer":168.82,
+        "employee":6538.6104,
+        "total":6707.43,
+        "tier1Rate":274.89487,
+        "tier2Rate":577.2791,
+        "tier3Rate":824.6846,
+        "tier4Rate":0.0,
+        "quoteType":"CLEAR_VALUE"
+      }
+    },{
+      "rfpQuoteOptionNetworkId":580,"rfpQuoteNetworkId":1642,"kaiserNetwork":false,"outOfState":true,"carrier":"Anthem Clear Value","rfpCarrierId":50,"type":"HMO","networkName":"CV HMO Network","dollarDifference":6675.43,"percentDifference":20860.7,"employerFund":0.0,"administrativeFee":0.0,"discountType":null,"currentPlan":{"planId":379,"carrier":null,"label":null,"name":"11","type":"HMO","employer":0.68,"employee":31.32,"total":32.0,"tier1Rate":null,"tier2Rate":null,"tier3Rate":null,"tier4Rate":null,"quoteType":null},"newPlan":{"planId":25269,"carrier":"Anthem Clear Value","label":null,"name":"T-Anthem Clear Value HMO 30/60/30% 5500 OOP Rx:Essential $5/$20/$50/$70/30%","type":"HMO","employer":177.03,"employee":6530.4004,"total":6707.43,"tier1Rate":274.89487,"tier2Rate":577.2791,"tier3Rate":824.6846,"tier4Rate":0.0,"quoteType":"CLEAR_VALUE"}},{"rfpQuoteOptionNetworkId":581,"rfpQuoteNetworkId":1642,"kaiserNetwork":false,"outOfState":false,"carrier":"Anthem Clear Value","rfpCarrierId":50,"type":"HMO","networkName":"CV HMO Network","dollarDifference":2522.03,"percentDifference":36029.0,"employerFund":0.0,"administrativeFee":0.0,"discountType":null,"currentPlan":{"planId":380,"carrier":null,"label":null,"name":"123","type":"HMO","employer":0.12,"employee":6.88,"total":7.0,"tier1Rate":null,"tier2Rate":null,"tier3Rate":null,"tier4Rate":null,"quoteType":null},"newPlan":{"planId":25269,"carrier":"Anthem Clear Value","label":null,"name":"T-Anthem Clear Value HMO 30/60/30% 5500 OOP Rx:Essential $5/$20/$50/$70/30%","type":"HMO","employer":45.08,"employee":2483.95,"total":2529.03,"tier1Rate":274.89487,"tier2Rate":577.2791,"tier3Rate":824.6846,"tier4Rate":0.0,"quoteType":"CLEAR_VALUE"}},{"rfpQuoteOptionNetworkId":582,"rfpQuoteNetworkId":1642,"kaiserNetwork":false,"outOfState":true,"carrier":"Anthem Clear Value","rfpCarrierId":50,"type":"HMO","networkName":"CV HMO Network","dollarDifference":3095.31,"percentDifference":28139.2,"employerFund":0.0,"administrativeFee":0.0,"discountType":null,"currentPlan":{"planId":381,"carrier":null,"label":null,"name":"123","type":"HMO","employer":0.27,"employee":10.73,"total":11.0,"tier1Rate":null,"tier2Rate":null,"tier3Rate":null,"tier4Rate":null,"quoteType":null},"newPlan":{"planId":25269,"carrier":"Anthem Clear Value","label":null,"name":"T-Anthem Clear Value HMO 30/60/30% 5500 OOP Rx:Essential $5/$20/$50/$70/30%","type":"HMO","employer":76.7,"employee":3029.61,"total":3106.31,"tier1Rate":274.89487,"tier2Rate":577.2791,"tier3Rate":824.6846,"tier4Rate":0.0,"quoteType":"CLEAR_VALUE"}},{"rfpQuoteOptionNetworkId":583,"rfpQuoteNetworkId":1640,"kaiserNetwork":false,"outOfState":false,"carrier":"Anthem Clear Value","rfpCarrierId":50,"type":"PPO","networkName":"CV PPO Network","dollarDifference":11032.27,"percentDifference":29032.3,"employerFund":0.0,"administrativeFee":0.0,"discountType":null,"currentPlan":{"planId":382,"carrier":null,"label":null,"name":"2313","type":"PPO","employer":0.38,"employee":37.62,"total":38.0,"tier1Rate":null,"tier2Rate":null,"tier3Rate":null,"tier4Rate":null,"quoteType":null},"newPlan":{"planId":25242,"carrier":"Anthem Clear Value","label":null,"name":"T-Anthem Clear Value PPO 3500 Rx:Essential $5/$20/$50/$70/30%","type":"PPO","employer":110.7,"employee":10959.569,"total":11070.27,"tier1Rate":289.79755,"tier2Rate":608.5748,"tier3Rate":869.3927,"tier4Rate":0.0,"quoteType":"CLEAR_VALUE"}},{"rfpQuoteOptionNetworkId":584,"rfpQuoteNetworkId":1641,"kaiserNetwork":false,"outOfState":false,"carrier":"Anthem Clear Value","rfpCarrierId":50,"type":"HSA","networkName":"CV HSA Network","dollarDifference":3002.38,"percentDifference":27294.4,"employerFund":0.0,"administrativeFee":13.5,"discountType":null,"currentPlan":{"planId":383,"carrier":null,"label":null,"name":"22","type":"HSA","employer":0.27,"employee":10.73,"total":11.0,"tier1Rate":null,"tier2Rate":null,"tier3Rate":null,"tier4Rate":null,"quoteType":null},"newPlan":{"planId":25257,"carrier":"Anthem Clear Value","label":null,"name":"T-Anthem Clear Value PPO HSA 4500/30/50 Rx:Essential $5/$20/$50/$70/30%","type":"HSA","employer":85.8,"employee":2927.5798,"total":3013.38,"tier1Rate":230.0293,"tier2Rate":483.06152,"tier3Rate":690.0879,"tier4Rate":0.0,"quoteType":"CLEAR_VALUE"}}],"quoteType":"CLEAR_VALUE","quoteId":482,"maxBundleDiscount":8035.7}

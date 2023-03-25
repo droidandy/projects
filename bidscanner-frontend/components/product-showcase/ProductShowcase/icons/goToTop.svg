@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="103" height="57" viewBox="0 0 103 57">
+  <g fill="none" fill-rule="evenodd" transform="translate(0 .375)">
+    <g transform="translate(31)">
+      <rect width="15.522" height="15.522" x="1.09" y=".742" stroke="#74BBE7" rx="3"/>
+      <rect width="16.522" height="16.522" x=".59" y="19.837" fill="#BCBEC0" rx="3"/>
+      <rect width="16.522" height="16.522" x=".59" y="39.431" fill="#BCBEC0" rx="3"/>
+      <rect width="48.675" height="15.522" x="22.085" y="20.337" stroke="#BCBEC0" rx="3"/>
+      <rect width="48.675" height="15.522" x="22.085" y="39.931" stroke="#BCBEC0" rx="3"/>
+      <rect width="16.522" height="16.522" x=".59" y=".242" fill="#FF2929" rx="3"/>
+      <rect width="48.675" height="15.522" x="22.085" y=".742" stroke="#FF2929" rx="3"/>
+    </g>
+    <g transform="translate(0 9)">
+      <polygon fill="#BCBEC0" points=".5 12.876 5.911 12.876 5.911 19.064 17.089 19.064 17.089 12.876 22.5 12.876 11.5 .5"/>
+      <polygon points="22.5 12.876 11.5 .5 .5 12.876 5.911 12.876 5.911 19.064 17.089 19.064 17.089 12.876"/>
+      <polygon fill="#BCBEC0" points="5.911 25.301 17.089 25.301 17.089 20.938 5.911 20.938"/>
+      <polygon points="5.911 25.301 17.089 25.301 17.089 20.938 5.911 20.938"/>
+      <polygon fill="#BCBEC0" points="5.911 30.86 17.089 30.86 17.089 27.174 5.911 27.174"/>
+      <polygon points="5.911 30.86 17.089 30.86 17.089 27.174 5.911 27.174"/>
+      <polygon fill="#BCBEC0" points="5.911 34.844 17.089 34.844 17.089 32.356 5.911 32.356"/>
+      <polygon points="5.911 34.844 17.089 34.844 17.089 32.356 5.911 32.356"/>
+      <polygon fill="#BCBEC0" points="5.911 38.062 17.089 38.062 17.089 36.356 5.911 36.356"/>
+      <polygon points="5.911 38.062 17.089 38.062 17.089 36.356 5.911 36.356"/>
+    </g>
+  </g>
+</svg>

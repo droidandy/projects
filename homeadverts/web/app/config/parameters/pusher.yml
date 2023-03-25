@@ -1,0 +1,6 @@
+parameters:
+    pusher.key: 8694afcdaba2044a05c8
+    pusher.secret: 747c0d7b13b0230d69ff
+    pusher.app_id: 693803
+    pusher.options:
+        cluster: eu

@@ -1,0 +1,44 @@
+{% set notifications = app.user.notifications %}
+
+<p class="section-heading">From Your Network</p>
+
+{% if notifications|length %}
+    {% for notification in app.user.notifications %}
+
+        <div class="item-notification mdl-navigation__link">
+        <div class="profile-block-image cover"
+             style="background-image:url('{{ notification.user|user_profile_image }}');
+                    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{ notification.user|user_profile_image }}',
+                    sizingMethod='scale');">
+        </div>
+        <div class="details">
+            {% include 'AppBundle:user/profile:username.html.twig' with {user: notification.user} %}
+            <span class="sep"> - </span>
+            <span class="type">{{ notification|notification_text }}</span>
+
+            {% if notification.article %}
+                <a class="title"
+                   href="{{ path('ha_article_details', {
+                       token: notification.article.token,
+                       slug: notification.article.slug
+                   }) }}">
+                    {{ notification.article.title }}
+                </a>
+            {% endif %}
+            {% if notification.property %}
+                <a class="title"
+                   href="{{ path('property_details', {id: notification.property.id}) }}">
+                    {{ notification.property|property_title }}
+                </a>
+            {% endif %}
+
+            <footer>
+                <span class="date">{{ notification.createdAt|date }}</span>
+            </footer>
+        </div>
+        </div>
+
+    {% endfor %}
+{% else %}
+    <p class="empty">No updates, yet.</p>
+{% endif %}

@@ -1,0 +1,135 @@
+.mdl-layout__drawer {
+  position: fixed;
+  left: 100%;
+  transform: translateX(0);
+  width: 400px;
+  max-height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 999;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+  background: #fafafa;
+
+  &:not(.is-visible) {
+    box-shadow: none;
+  }
+
+  &.is-visible {
+    transform: translateX(-99%);
+  }
+
+  .heading {
+    height: 80px;
+    font-size: 20px;
+    padding-left: 30px;
+    font-weight: 600;
+    line-height: 80px;
+  }
+  .mdl-navigation {
+    padding-top: 0;
+
+    .separator {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .mdl-navigation__link {
+      width: 100%;
+      text-align: left;
+      opacity: 1;
+      padding: 10px 25px 10px 30px;
+      font-weight: 600;
+      color: #616161;
+      font-size: 13px;
+
+      i {
+        margin-right: 5px;
+        color: #616161;
+        margin-top: -3px;
+        font-size: 23px;
+      }
+      .counter {
+        float: right;
+        border-radius: 50%;
+        background: #eee;
+        width: 30px;
+        height: 30px;
+        margin-top: -3px;
+        text-align: center;
+        line-height: 30px;
+        color: #777;
+      }
+      &.\--unread {
+        .counter {
+          background: rgba(204, 33, 0, 1);
+          color: #fff;
+        }
+      }
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+
+    #editor-publish,
+    #comments,
+    #notifications,
+    #tags-to-follow,
+    #countries,
+    #menu {
+      &.\--hidden {
+        display: none;
+      }
+    }
+  }
+}
+
+#menu.__user {
+  padding-bottom: 15px;
+  margin-top: -60px;
+  background: #FFF;
+  .profile {
+    padding: 15px 18px;
+    height: 75px;
+    display: flex;
+
+    .photo {
+      width: 45px;
+      height: 45px;
+      margin: 0;
+    }
+    a {
+      display: block;
+      line-height: 45px;
+      margin-left: 15px;
+      font-weight: 700;
+      color: #616161;
+    }
+  }
+}
+
+.mdl-layout__obfuscator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 998;
+}
+
+@media only screen and (max-width: $mobile_width) {
+  .mdl-layout__drawer {
+    width: 280px;
+
+    .heading {
+      height: 60px;
+      font-size: 20px;
+      line-height: 60px;
+    }
+    .close {
+      top: 15px;
+    }
+  }
+}

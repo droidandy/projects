@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+require 'fileutils'
+include FileUtils
+
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+system! 'docker pull swaggerapi/swagger-ui'
+system! "docker run -p 8080:8080 -e SWAGGER_JSON=/swagger/swagger.json -v #{APP_ROOT}/swagger/v1:/swagger swaggerapi/swagger-ui"

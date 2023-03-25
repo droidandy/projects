@@ -1,0 +1,3 @@
+export default {
+  STORY_COLLECTION_LOAD: 'STORY_COLLECTION_LOAD',
+};

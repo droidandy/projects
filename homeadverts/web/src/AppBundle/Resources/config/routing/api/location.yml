@@ -1,0 +1,9 @@
+ha_location_follow:
+    path: /{id}/follow
+    defaults: { _controller: AppBundle:Api/Location:follow }
+    methods:  [POST]
+
+ha_location_unfollow:
+    path: /{id}/follow
+    defaults: { _controller: AppBundle:Api/Location:unFollow }
+    methods:  [DELETE]

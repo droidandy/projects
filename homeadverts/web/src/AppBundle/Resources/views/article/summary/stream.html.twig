@@ -1,0 +1,23 @@
+<div id="stream" class="row content-wrapper">
+    <div class="headline --line-separator --big">
+        <a href="{{ path('ha_stream') }}" class="heading">
+            From Your Network
+        </a>
+    </div>
+    <a href="{{ path('ha_stream') }}" class="collection-more">
+        More Stories
+    </a>
+    {% if articles %}
+        <ul class="row small-block-grid-2 medium-block-grid-3">
+            {% for article in articles %}
+                <li>
+                    {% include 'AppBundle:article/card:small.html.twig' %}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="information-centered">
+            This sections is empty, since you aren't following anyone or there are no updates from your network.
+        </p>
+    {% endif %}
+</div>

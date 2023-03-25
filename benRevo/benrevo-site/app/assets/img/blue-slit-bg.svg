@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1446px" height="600px" viewBox="0 0 1446 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>DFE67BAE-3F8E-4BC4-A87E-9D0391F78474</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-2.52685547%" y1="0%" x2="98.1341075%" y2="95.4980388%" id="linearGradient-1">
+            <stop stop-color="#B2DCEA" offset="0%"></stop>
+            <stop stop-color="#3DACD1" offset="40.0895687%"></stop>
+            <stop stop-color="#0099CC" offset="68.6662776%"></stop>
+            <stop stop-color="#0099CC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="LandingPage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-176.000000, -5239.000000)">
+            <g id="Group-11" transform="translate(176.000000, 5239.000000)">
+                <rect id="Rectangle-5-Copy-3" fill="url(#linearGradient-1)" x="2" y="0" width="1444" height="600"></rect>
+                <g id="Group-3-Copy-2" fill="#0099CC">
+                    <polygon id="Rectangle-11" points="0 0 600 0 0 600"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

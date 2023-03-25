@@ -1,0 +1,24 @@
+@import '../../../styles/tools/mixins.scss';
+
+.ComponentContactUs {
+
+    @include maxWidthPage();
+
+    form {
+        max-width: 900px;
+        margin:auto
+    }
+
+    .sentIcon {
+        background-image: url("./contact_us.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 350px;
+        background-position-x: center;
+        background-position-y: bottom;
+        @include media-query($small) {
+            height: 250px;
+            
+        }
+    }
+}

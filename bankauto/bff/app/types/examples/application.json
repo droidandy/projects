@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "id": 267,
+      "uuid": "543c3457-f675-41e9-9d02-a0cfae2f4395",
+      "owner_uuid": "f22177fd-5bcf-463b-bfbd-aa2aef5ab894",
+      "manager_uuid": null,
+      "status": 0,
+      "created_at": 1599810209,
+      "updated_at": 1599810209,
+      "discount": null,
+      "vehicle": {
+        "id": 267,
+        "application_id": 267,
+        "vehicle_id": 1979,
+        "sales_office_id": 894,
+        "price": 1132739,
+        "status": 0,
+        "discount": 36427,
+        "type": "new"
+      },
+      "credit": {
+        "id": 26,
+        "application_id": 267,
+        "vehicle_id": 1979,
+        "initial_payment": 819431,
+        "amount": 276881,
+        "term": 30,
+        "passport_uuid": null,
+        "status": 0,
+        "discount": 12524,
+        "request_application_id": null,
+        "sales_office_id": null,
+        "request_retry": null,
+        "request_basic_data": null,
+        "request_additional_data": null,
+        "request_job_data": null,
+        "request_step": null,
+        "request_last_step": null
+      },
+      "trade_in": {
+        "id": 265,
+        "application_id": 267,
+        "vehicle_id": 1979,
+        "status": 0,
+        "discount": 23494
+      },
+      "insurance": [
+        {
+          "id": 266,
+          "application_id": 267,
+          "vehicle_id": 1979,
+          "type": "casco",
+          "driver_license_uuid": null,
+          "drivers_number": null,
+          "status": 0,
+          "discount": 409
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "uuid": "4754a240-f487-4ad5-9e8b-a3f4f3c0fc13",
+      "owner_uuid": "fb4a375e-e575-4527-82da-f51ff2e23931",
+      "manager_uuid": null,
+      "status": 0,
+      "created_at": 1599664593,
+      "updated_at": 1599664593,
+      "discount": null,
+      "vehicle": {
+        "id": 243,
+        "application_id": 243,
+        "vehicle_id": 1808,
+        "sales_office_id": 894,
+        "price": 924644,
+        "status": 0,
+        "discount": 32020,
+        "type": "new"
+      },
+      "credit": null,
+      "trade_in": {
+        "id": 233,
+        "application_id": 243,
+        "vehicle_id": 1808,
+        "status": 0,
+        "discount": 13164
+      },
+      "insurance": [
+        {
+          "id": 236,
+          "application_id": 243,
+          "vehicle_id": 1808,
+          "type": "casco",
+          "driver_license_uuid": null,
+          "drivers_number": null,
+          "status": 0,
+          "discount": 8132
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "uuid": "ac42ce22-ddc3-4a1e-9a59-e36365e09ed6",
+      "owner_uuid": "0e5c4bab-8e5d-45d6-9f0b-7d04a6ad26bb",
+      "manager_uuid": null,
+      "status": 0,
+      "created_at": 1599659234,
+      "updated_at": 1599659234,
+      "discount": null,
+      "vehicle": {
+        "id": 242,
+        "application_id": 242,
+        "vehicle_id": 1979,
+        "sales_office_id": 894,
+        "price": 1132739,
+        "status": 0,
+        "discount": 23494,
+        "type": "new"
+      },
+      "credit": null,
+      "trade_in": {
+        "id": 232,
+        "application_id": 242,
+        "vehicle_id": 1979,
+        "status": 0,
+        "discount": 23494
+      },
+      "insurance": []
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "http://34.90.250.128/applications?filter%5Btype%5D=vehicle&filter%5Bvehicle_type%5D=new&page=1&per-page=25"
+    }
+  },
+  "_meta": {
+    "totalCount": 3,
+    "pageCount": 1,
+    "currentPage": 1,
+    "perPage": 25
+  }
+}

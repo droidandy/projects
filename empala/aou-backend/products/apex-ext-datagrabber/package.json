@@ -1,0 +1,59 @@
+{
+  "name": "@products/apex-ext-datagrabber",
+  "version": "1.0.0",
+  "description": "apex-ext-datagrabber",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "build-watch": "tsc --watch",
+    "test:apex:mock:sftp": "jest src/* --runInBand --config jest.mock-sftp.config.js",
+    "coverage:apex:mock:sftp": "npm run test:apex:mock:sftp -- --coverage --colors --detectOpenHandles --forceExit",
+    "test:apex:real:sftp": "jest src/* --runInBand --config jest.real-sftp.config.js --detectOpenHandles --forceExit",
+    "start": "node dist/apex-ext-datagrabber/start.js",
+    "lint": "eslint --ext .js,.ts --config ../../.eslintrc.js .",
+    "format": "eslint --fix --ext .js,.ts --config ../../.eslintrc.js .",
+    "generate-types": "ts-node ./src/util/gql-types-codegen.ts",
+    "get-idtoken:md-updater": "ts-node -e 'require(\"../utils/src/get-idtoken\").printIdTokenForMarketdataUpdaterUser()'"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.3.0",
+    "@graphql-codegen/typescript": "^2.4.1",
+    "jest": "^27.3.1",
+    "jest-cli": "^27.3.1",
+    "mockdate": "^3.0.5",
+    "pg": "^8.7.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typeorm": "^0.2.41"
+  },
+  "dependencies": {
+    "@fast-csv/parse": "^4.3.6",
+    "@types/config": "^0.0.40",
+    "@types/humanize-duration": "^3.27.0",
+    "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.14.177",
+    "@types/luxon": "^2.0.7",
+    "@types/node": "^16.11.10",
+    "@types/ssh2": "^0.5.48",
+    "amazon-cognito-identity-js": "^5.2.3",
+    "axios": "^0.24.0",
+    "business-days-js": "^2.1.2",
+    "class-validator": "^0.13.2",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.7.1",
+    "graphql-request": "^3.6.1",
+    "humanize-duration": "^3.27.0",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "luxon": "^2.1.1",
+    "p-retry": "^4.6.1",
+    "ssh2": "^1.5.0",
+    "tslog": "^3.2.2",
+    "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">= 10.x.x"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "170",
+          "short_name" : "170",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "New Hampshire 25",
+          "short_name" : "NH-25",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Piermont",
+          "short_name" : "Piermont",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Grafton County",
+          "short_name" : "Grafton County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New Hampshire",
+          "short_name" : "NH",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "03779",
+          "short_name" : "03779",
+          "types" : [ "postal_code" ]
+        },
+        {
+          "long_name" : "3208",
+          "short_name" : "3208",
+          "types" : [ "postal_code_suffix" ]
+        }
+      ],
+      "formatted_address" : "170 NH-25, Piermont, NH 03779, USA",
+      "geometry" : {
+        "location" : {
+          "lat" : 43.9699825,
+          "lng" : -72.08077779999999
+        },
+        "location_type" : "ROOFTOP",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.9713314802915,
+            "lng" : -72.0794288197085
+          },
+          "southwest" : {
+            "lat" : 43.9686335197085,
+            "lng" : -72.0821267802915
+          }
+        }
+      },
+      "place_id" : "ChIJE9sPnj-TtEwRLbBUIyNV5jI",
+      "types" : [ "street_address" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "03779",
+          "short_name" : "03779",
+          "types" : [ "postal_code" ]
+        },
+        {
+          "long_name" : "Piermont",
+          "short_name" : "Piermont",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Grafton County",
+          "short_name" : "Grafton County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New Hampshire",
+          "short_name" : "NH",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Piermont, NH 03779, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 44.0295921,
+            "lng" : -71.95500699999999
+          },
+          "southwest" : {
+            "lat" : 43.897427,
+            "lng" : -72.117012
+          }
+        },
+        "location" : {
+          "lat" : 43.9713738,
+          "lng" : -72.0369338
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 44.0295921,
+            "lng" : -71.95500699999999
+          },
+          "southwest" : {
+            "lat" : 43.897427,
+            "lng" : -72.117012
+          }
+        }
+      },
+      "place_id" : "ChIJb3iTZ7GTtEwRpclNjdjYLLU",
+      "types" : [ "postal_code" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "Lebanon, NH-VT",
+          "short_name" : "Lebanon, NH-VT",
+          "types" : [ "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Lebanon, NH-VT, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 44.02992099999999,
+            "lng" : -71.864053
+          },
+          "southwest" : {
+            "lat" : 43.423786,
+            "lng" : -72.6451599
+          }
+        },
+        "location" : {
+          "lat" : 43.6687082,
+          "lng" : -72.1929461
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 44.02992099999999,
+            "lng" : -71.864053
+          },
+          "southwest" : {
+            "lat" : 43.423786,
+            "lng" : -72.6451599
+          }
+        }
+      },
+      "place_id" : "ChIJfbdvuEy2tEwRL92SqAnWXPQ",
+      "types" : [ "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "Grafton County",
+          "short_name" : "Grafton County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New Hampshire",
+          "short_name" : "NH",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Grafton County, NH, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 44.406635,
+            "lng" : -71.346863
+          },
+          "southwest" : {
+            "lat" : 43.5284489,
+            "lng" : -72.334903
+          }
+        },
+        "location" : {
+          "lat" : 43.9087929,
+          "lng" : -71.82599399999999
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 44.406635,
+            "lng" : -71.346863
+          },
+          "southwest" : {
+            "lat" : 43.5284489,
+            "lng" : -72.334903
+          }
+        }
+      },
+      "place_id" : "ChIJzThguhF_s0wRPG8XeyZNifk",
+      "types" : [ "administrative_area_level_2", "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "Lebanon, NH-VT",
+          "short_name" : "Lebanon, NH-VT",
+          "types" : [ "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Lebanon, NH-VT, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 44.4066224,
+            "lng" : -71.346863
+          },
+          "southwest" : {
+            "lat" : 43.22246,
+            "lng" : -72.97180109999999
+          }
+        },
+        "location" : {
+          "lat" : 43.7210621,
+          "lng" : -72.0541819
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 44.4066224,
+            "lng" : -71.346863
+          },
+          "southwest" : {
+            "lat" : 43.22246,
+            "lng" : -72.97180109999999
+          }
+        }
+      },
+      "place_id" : "ChIJcQMTR6C_tEwR1_07BdQuYWU",
+      "types" : [ "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "United States",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 71.5388001,
+            "lng" : -66.885417
+          },
+          "southwest" : {
+            "lat" : 18.7763,
+            "lng" : 170.5957
+          }
+        },
+        "location" : {
+          "lat" : 37.09024,
+          "lng" : -95.712891
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 49.38,
+            "lng" : -66.94
+          },
+          "southwest" : {
+            "lat" : 25.82,
+            "lng" : -124.39
+          }
+        }
+      },
+      "place_id" : "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+      "types" : [ "country", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

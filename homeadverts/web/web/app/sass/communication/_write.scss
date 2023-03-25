@@ -1,0 +1,40 @@
+.write {
+  width: 100% !important;
+  padding: 20px;
+  min-height: 75px;
+  display: inline-block;
+  background: #fff;
+
+  border-radius: 3px;
+  border: 1px solid #e5e6e9;
+  margin-bottom: 20px;
+
+  .response {
+    color: $color_1;
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5 !important;
+
+    &::placeholder {
+      color: $color_2;
+    }
+  }
+
+  .actions {
+    position: static;
+
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  &.\--content {
+    .actions {
+      display: inline-block;
+    }
+  }
+}

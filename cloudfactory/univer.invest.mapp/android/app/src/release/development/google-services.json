@@ -1,0 +1,190 @@
+{
+  "project_info": {
+    "project_number": "696977193937",
+    "project_id": "univer-invest",
+    "storage_bucket": "univer-invest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696977193937:android:23e6ca4164e044e7203ef0",
+        "android_client_info": {
+          "package_name": "univer.invest.mapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlY4w424COrcHqys4AYGQWoGBXrliOdkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696977193937-27u0mm2iceuqtdln4s1iphe1qkhpsj31.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "univer.invest.mapp.preview"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696977193937:android:73c22216a81bc90a203ef0",
+        "android_client_info": {
+          "package_name": "univer.invest.mapp.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlY4w424COrcHqys4AYGQWoGBXrliOdkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696977193937-27u0mm2iceuqtdln4s1iphe1qkhpsj31.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "univer.invest.mapp.preview"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696977193937:android:99ad1feec623fda1203ef0",
+        "android_client_info": {
+          "package_name": "univer.invest.mapp.preproduction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlY4w424COrcHqys4AYGQWoGBXrliOdkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696977193937-27u0mm2iceuqtdln4s1iphe1qkhpsj31.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "univer.invest.mapp.preview"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696977193937:android:d61299d0f3f9f313203ef0",
+        "android_client_info": {
+          "package_name": "univer.invest.mapp.preview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlY4w424COrcHqys4AYGQWoGBXrliOdkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696977193937-27u0mm2iceuqtdln4s1iphe1qkhpsj31.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "univer.invest.mapp.preview"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696977193937:android:1c7de516b9c2915b203ef0",
+        "android_client_info": {
+          "package_name": "univer.invest.mapp.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlY4w424COrcHqys4AYGQWoGBXrliOdkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696977193937-1865nq8uim5pv5p7mjfoo3lg3q2a5s6j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "696977193937-27u0mm2iceuqtdln4s1iphe1qkhpsj31.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "univer.invest.mapp.preview"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

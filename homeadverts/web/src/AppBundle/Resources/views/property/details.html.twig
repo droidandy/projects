@@ -1,0 +1,115 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% set meta_title = property|property_title ~ ' - ' ~ property.user.getMetaTitle() %}
+{% set og_title = property|property_title %}
+{% set og_image = image_path((property.photos|first).url)|imagine_filter('property_large') %}
+
+{% if property.descriptionForLocale(currentLocale().iso_code) %}
+    {% set og_description = property.descriptionForLocale(currentLocale().iso_code).description|nl2br %}
+{% else %}
+    {% set og_description = property.originalDescription().description|nl2br %}
+{% endif %}
+
+{% set carousel_view %}
+    {% include 'AppBundle:property/carousel:modal.html.twig' %}
+{% endset %}
+
+{% block body %}
+    <article class="blog read-story">
+        <div class="one-column">
+            {% include 'AppBundle:property:user.html.twig' with {'user': property.user} %}
+            {% include 'AppBundle:property:top.html.twig' %}
+
+            <span class="tag">
+                {% if not address.hidden %}
+                    <a href="{{ path('search_term', {
+                        market: property.rental ? 'to-rent' : 'for-sale',
+                        term: property.address.aptBldgAndStreet
+                    }) }}">{{ property.address.aptBldgAndStreet }}</a>,
+                {% endif %}
+
+                {% for k,item in property.address.getHierarchyTerms() %}
+                    <a href="{{ path('search_term', {
+                        market: property.rental ? 'to-rent' : 'for-sale',
+                        term: item.term
+                    }) }}">{{ item.name }}</a>
+                    {%- if (loop.last == false) %}, {% endif -%}
+                {% endfor %}
+            </span>
+            <h1 class="heading story-title">
+                <span id="story-title">
+                    {{ property.getTitle() }}
+                </span>
+            </h1>
+
+            <div class="story item">
+                <p>
+                    {{ property.getDescriptionBlocks()[0]|raw }}
+                </p>
+                <div class="medium-insert-images medium-insert-images-full" contenteditable="false">
+                    <figure>
+                        <img src="{{ image_path(property.getPrimaryPhoto().url)|imagine_filter('property_extra_large') }}"
+                             class="primary-media">
+                    </figure>
+                    <figcaption>
+                        {{ property.price|property_price(display_currency, property.period, property.currency) }} -
+
+                        {% if (property.type) %}
+                            {{ property.type|format_property_type }},
+                        {% endif %}
+
+                        {% if ((property.bathrooms != 0) and (property.bathrooms != null)) %}
+                            {{ property.bathrooms }} {% trans %}search.list.bathrooms{% endtrans %}
+
+                            {% if ((property.halfBathrooms != null)) %}
+                                + {{ property.halfBathrooms }} {% trans %}search.list.bathrooms.partial{% endtrans %}
+                            {% endif %}
+                            {% if ((property.threeQuarterBathrooms != null)) %}
+                                + {{ property.threeQuarterBathrooms }} (3/4)
+                            {% endif %}
+                        {% endif %}
+                    </figcaption>
+                </div>
+                <p>
+                    {{ property.getDescriptionBlocks()[1]|raw }}
+                </p>
+
+                {{ property|property_build_gallery|raw }}
+
+                <p>
+                    {{ property.getDescriptionBlocks()[2]|raw }}
+                </p>
+                <div class="medium-insert-images medium-insert-images-full" contenteditable="false">
+                    <figure>
+                        <img src="{{ image_path(property.photos.last.url)|imagine_filter('property_extra_large') }}"
+                             class="primary-media">
+                    </figure>
+                    <figcaption>
+                        {% include 'AppBundle:property/details:info.html.twig' %}
+                    </figcaption>
+                </div>
+                <p>
+                    {{ property.getDescriptionBlocks()[3]|raw }}
+                </p>
+
+                {{ property|property_build_gallery(6,5)|raw }}
+
+                <p>
+                    {{ property.getDescriptionBlocks()[4]|raw }}
+                </p>
+
+                <div style="display: none;" data-gallery-content=""><!-- {{ carousel_view }} --></div>
+            </div>
+        </div>
+
+        <div class="property-map">
+            {% include 'AppBundle:map:item.html.twig' %}
+        </div>
+    </article>
+
+
+    {% include 'AppBundle:property:related_polaroid.html.twig' with {'totalRelated' : 3} %}
+    {#{% include 'AppBundle:article:related.html.twig' %}#}
+    {% include 'AppBundle:ads:ads-wide.html.twig' %}
+{% endblock %}
+

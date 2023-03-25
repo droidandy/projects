@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "218450561239.dkr.ecr.us-west-2.amazonaws.com/prod-br-anthem-dashboard:latest",
+    "Update": "true"
+    },
+  "Ports": [{
+    "ContainerPort": "3000"
+  }],
+  "Volumes": [{
+    "HostDirectory": "/var/log/benrevo-dashboard",
+    "ContainerDirectory": "/var/log/benrevo-dashboard"
+  }]
+}

@@ -1,0 +1,891 @@
+{
+    "listingSummary": {
+        "listingId": "7b31512f-4fb5-4f11-a6ed-b2f86bf762e7",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-04-04",
+        "photoCount": 45,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "isPriceUponRequest": true,
+            "isHideListPrice": true
+        },
+        "propertyAddress": {
+            "streetAddress": "off Ruta 58 km 27 Sarand\u00ed Grande",
+            "city": "Sarandi Grande",
+            "stateProvince": "Florida",
+            "stateProvinceCode": "FD",
+            "country": "Uruguay",
+            "countryCode": "UY",
+            "latitude": -33.74422,
+            "longitude": -56.32154
+        },
+        "geographicRegions": [
+            {
+                "type": "CityRegion",
+                "name": "Sarandi Grande"
+            },
+            {
+                "type": "ContinentRegion",
+                "name": "South America"
+            },
+            {
+                "type": "CountryRegion",
+                "name": "Uruguay"
+            },
+            {
+                "type": "StateRegion",
+                "name": "Florida"
+            }
+        ],
+        "RFGListingId": "M93Z59",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/m93z59",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Farm and Agriculture",
+        "propertyType": "Farm\/Ranch\/Plantation",
+        "propertyStyle": "1 Level Ranch",
+        "propertyUse": "Other Residential",
+        "propertyName": "LOS GURISES",
+        "totalBath": 13,
+        "lotSize": "606 HA",
+        "buildingArea": "600 Sq. M",
+        "noOfBedrooms": 12,
+        "squareFootage": 6458.34,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/07291D47-FF02-434E-A4D2-788B6F322FF5",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-06-21T14:46:26.067",
+        "agents": [
+            {
+                "id": "38b69803-6d89-4aa0-920d-eb1f8c8bca4c",
+                "name": "Carlos Garcia Arocena Sr",
+                "firstName": "Carlos",
+                "lastName": "Garcia Arocena",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/EB1774FB-24A3-48EA-AF1C-CE5902E4EABA",
+                "emailAddress": "cgas@badoperazzo.com",
+                "businessPhone": "+59826046463",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "31077df0-54fe-4dfc-b78c-52c0e8e3077e",
+                    "RFGOfficeId": "0006 ",
+                    "companyId": "56b92138-2981-4ab0-85ad-a2a3aee0a655",
+                    "companyName": "Perazzo Inmobiliara Sotheby's International Realty",
+                    "RFGCompanyId": "810023",
+                    "brandCode": "SIR",
+                    "name": "Bado & Perazzo Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "Divina Comedia 1666 ",
+                        "city": "Montevideo",
+                        "stateProvince": "Montevideo",
+                        "stateProvinceCode": "MO",
+                        "postalCode": "",
+                        "country": "Uruguay",
+                        "countryCode": "UY",
+                        "latitude": -34.8877,
+                        "longitude": -56.0592
+                    },
+                    "phoneNumber": "598 2604 6463",
+                    "emailAddress": "cgas@badoperazzo.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 12,
+    "halfBath": 1,
+    "parkingPlaces": 3,
+    "yearBuilt": "1970",
+    "yearRenovated": "2009",
+    "providerKey": "7b31512f-4fb5-4f11-a6ed-b2f86bf762e7",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Views",
+            "description": "Scenic"
+        },
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Wood"
+        },
+        {
+            "groupName": "Age",
+            "description": "41-50 Years Old"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Wood Burning Stove"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Guest House"
+        },
+        {
+            "groupName": "Body of Water",
+            "description": "Reservoir"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Fencing",
+            "description": "Fenced Yard"
+        },
+        {
+            "groupName": "Rooms",
+            "description": "Guest Suite"
+        },
+        {
+            "groupName": "Water",
+            "description": "Other Water Source"
+        },
+        {
+            "groupName": "Property Description",
+            "description": "Fenced Farm Acreage"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Outdoor Activities"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Walk-in Closet"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Out Building"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Fireplace in Master BR"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "BBQ"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Gardens"
+        },
+        {
+            "groupName": "Property Description",
+            "description": "Farm \/ Ranch"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Wood Burning"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Green Living"
+        },
+        {
+            "groupName": "General",
+            "description": "Energy-saving Features"
+        },
+        {
+            "groupName": "Body of Water",
+            "description": "Pond"
+        },
+        {
+            "groupName": "Property Description",
+            "description": "Acreage"
+        },
+        {
+            "groupName": "Rooms",
+            "description": "Staff Quarters"
+        },
+        {
+            "groupName": "Garage Count",
+            "description": "3 Car Garage"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Eat-in Kitchen"
+        },
+        {
+            "groupName": "Special Market",
+            "description": "Vacation \/ Second Home"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Hunting"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Covered Terraces"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Ceramic"
+        },
+        {
+            "groupName": "Special Market",
+            "description": "Hospitality"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Hunting"
+        },
+        {
+            "groupName": "Fireplace Count",
+            "description": "4+ Fireplaces"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Enclosed Porch"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Barn\/Stable"
+        },
+        {
+            "groupName": "Views",
+            "description": "Pond"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Porch"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Fishing"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Country Kitchen"
+        },
+        {
+            "groupName": "Special Market",
+            "description": "International Properties"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Fencing",
+            "description": "Partially Fenced"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Hiking"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Terrace"
+        },
+        {
+            "groupName": "Lot Size",
+            "description": "100+ Acres"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Horse Riding\/Stables"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Cedar Closets"
+        },
+        {
+            "groupName": "Body of Water",
+            "description": "River"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Storage Shed"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Outdoor Activities"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Hiking"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Hunting"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Fishing"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Eco-Friendly"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Fabulous property in the heart of the country. Estancia Los Gurises is a 606 hectare spread currently operated as a hunting lodge by its Italian owner. The land is apt for agriculture and cattle growing, with numerous waterways and well maintained fences and infrastructure.\r\nThe main house has two different areas: the original ranch house that has been transformed into a lodge to receive international visitors and hunters, with 8 bedrooms with their own bathroom each. A comfy kitchen\/dining room featuring a large fireplace is the center of activity during hunting season. Adjacent half bathroom .\r\nA comfortable corridor leads to bedrooms and a card room \/ den with fireplace.\r\nThe whole building is surrounded by a wide gallery and careful flowerbeds. A roofed walkway leads to the new part of the house where the family has its living quarters. Two guest suites, one of them very large and luminous with fireplace and large bathroom and hardwood floors. Master suite with sitting area, walk in closet, very large bathroom and fireplace as well. Spacious office\/study. The best SouthAmerican hardwoods have been used all along the construction for beams, closets and floors.\r\nOutdoor barbecue in front porch and outdoor dinging area. Brick oven.\r\nThatched roof outdoor living\/dining area on front lawn provides al fresco dining space with views of wonderful park.\r\nBuildings and outbuildings are located in the center of a 30.000 square meter park with wonderful trees and plants species planted by current owner more than 23 years ago.\r\nStorage sheds, a large barn, machinery sheds, pantry , are very well maintained. Foreman and employees quarters and kitchen in adjacent building to main house.\r\nAn orchard with dozens of different species lies only a few feet from main house as well as herb garden and vegetable garden. The ranch produces 100% of food for owners, employees and visitors.\r\nLand has areas apt for cattle growing, divided into pastures where the cattle is rotated around during the year. Natural creeks and ponds provide drinking water for animals all year round. Man made ponds provide habitats for ducks and other feathered animals. Across the land, several forests provide shade and shelter to animals. Agricultural land is currently planted and operated by neighboring rancher.",
+            "htmlRemark": "<p>Fabulous property in the heart of the country. Estancia Los Gurises is a 606 hectare spread currently operated as a hunting lodge by its Italian owner. The land is apt for agriculture and cattle growing, with numerous waterways and well maintained fences and infrastructure.&nbsp;<\/p><p>The main house has two different areas: the original ranch house that has been transformed into a lodge to receive international visitors and hunters, with 8 bedrooms with their own bathroom each. A comfy kitchen\/dining room featuring a large fireplace is the center of activity during hunting season. Adjacent half bathroom .<\/p><p>A comfortable corridor leads to bedrooms and a card room \/ den with fireplace.&nbsp;<\/p><p>The whole building is surrounded by a wide gallery and careful flowerbeds. A roofed walkway leads to the new part of the house where the family has its living quarters. Two guest &nbsp;suites, one of them very large and luminous with fireplace and large bathroom and hardwood floors. Master suite with sitting area, walk in closet, very large bathroom and fireplace as well. Spacious office\/study. The best SouthAmerican hardwoods have been used all along the construction for beams, closets and floors.&nbsp;<\/p><p>Outdoor barbecue in front porch and outdoor dinging area. Brick oven.<\/p><p>Thatched roof outdoor living\/dining area on front lawn provides al fresco dining space with views of wonderful park.<\/p><p>Buildings and outbuildings are located in the center of a 30.000 square meter park with wonderful trees and plants species planted by current owner more than 23 years ago.&nbsp;<\/p><p>Storage sheds, a large barn, machinery sheds, pantry , are very well maintained. Foreman and employees quarters and kitchen in adjacent building to main house.<\/p><p>An orchard with dozens of different species lies only a few feet from main house as well as herb garden and vegetable garden. The ranch produces 100% of food for owners, employees and visitors.&nbsp;<\/p><p>Land has areas apt for cattle growing, divided into pastures where the cattle is rotated around during the year. Natural creeks and ponds provide drinking water for animals all year round. Man made ponds provide habitats for ducks and other feathered animals. Across the land, several forests provide shade and shelter to animals. Agricultural land is currently planted and operated by neighboring rancher.<\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/m93z59",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "F6260127-7E0F-4357-82CB-03993008E88A",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/F6260127-7E0F-4357-82CB-03993008E88A",
+            "isDefault": false,
+            "caption": "IMG_2487",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "ECE97B54-A313-4560-B893-1C9490DB9456",
+            "sequenceNumber": 39,
+            "url": "\/\/openapi.azureedge.net\/ECE97B54-A313-4560-B893-1C9490DB9456",
+            "isDefault": false,
+            "caption": "IMG_2552",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "3197F6FE-30DD-4A0E-9B19-1DD67BB50628",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/3197F6FE-30DD-4A0E-9B19-1DD67BB50628",
+            "isDefault": false,
+            "caption": "Front Entrante to main house",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "C54D39A5-51A8-44E9-AFDB-2028641D2025",
+            "sequenceNumber": 38,
+            "url": "\/\/openapi.azureedge.net\/C54D39A5-51A8-44E9-AFDB-2028641D2025",
+            "isDefault": false,
+            "caption": "IMG_2551",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "72D9C403-46F1-4AF1-8B06-22E4D78B84E4",
+            "sequenceNumber": 40,
+            "url": "\/\/openapi.azureedge.net\/72D9C403-46F1-4AF1-8B06-22E4D78B84E4",
+            "isDefault": false,
+            "caption": "IMG_2554",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "8DA76930-4CCF-4D51-99E3-233D217F3B75",
+            "sequenceNumber": 44,
+            "url": "\/\/openapi.azureedge.net\/8DA76930-4CCF-4D51-99E3-233D217F3B75",
+            "isDefault": false,
+            "caption": "IMG_2564",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "1D47203E-7DCD-49EE-B9BB-255C95C522A4",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/1D47203E-7DCD-49EE-B9BB-255C95C522A4",
+            "isDefault": false,
+            "caption": "Entrance",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "137AC849-43F7-4F5A-BFDC-2614AC32561C",
+            "sequenceNumber": 27,
+            "url": "\/\/openapi.azureedge.net\/137AC849-43F7-4F5A-BFDC-2614AC32561C",
+            "isDefault": false,
+            "caption": "IMG_2520",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "428E5B0C-3357-4323-A037-2637E0566BD3",
+            "sequenceNumber": 30,
+            "url": "\/\/openapi.azureedge.net\/428E5B0C-3357-4323-A037-2637E0566BD3",
+            "isDefault": false,
+            "caption": "IMG_2528",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "3F14265E-58C3-4AFC-926C-369E1390C287",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/3F14265E-58C3-4AFC-926C-369E1390C287",
+            "isDefault": false,
+            "caption": "IMG_2469",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "55155299-570D-4001-9208-3B85FE9BF041",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/55155299-570D-4001-9208-3B85FE9BF041",
+            "isDefault": false,
+            "caption": "IMG_2461",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "259685B1-DD02-4EF2-A990-3FD8EEB76DF1",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/259685B1-DD02-4EF2-A990-3FD8EEB76DF1",
+            "isDefault": false,
+            "caption": "Backyard",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "CC041E95-2F50-4623-B510-4015D962A310",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/CC041E95-2F50-4623-B510-4015D962A310",
+            "isDefault": false,
+            "caption": "Corrals",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "758A656C-D87A-4E89-A6D2-426F5D802DAC",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/758A656C-D87A-4E89-A6D2-426F5D802DAC",
+            "isDefault": false,
+            "caption": "IMG_2498",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "563E7022-5F69-47C6-9877-44DF341FECFD",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/563E7022-5F69-47C6-9877-44DF341FECFD",
+            "isDefault": false,
+            "caption": "IMG_2495",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "C2F84E0E-DA19-42C5-A0C7-496411FF0FE4",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/C2F84E0E-DA19-42C5-A0C7-496411FF0FE4",
+            "isDefault": false,
+            "caption": "IMG_2482",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "A13A05A3-1969-483C-ADC2-4C3421E831F4",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/A13A05A3-1969-483C-ADC2-4C3421E831F4",
+            "isDefault": false,
+            "caption": "IMG_2468",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "BD882F38-9D1B-40D8-ABC4-56F08B54ADC4",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/BD882F38-9D1B-40D8-ABC4-56F08B54ADC4",
+            "isDefault": false,
+            "caption": "IMG_2512",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "8DD3D03A-8029-490C-A2A3-574C60FB007A",
+            "sequenceNumber": 34,
+            "url": "\/\/openapi.azureedge.net\/8DD3D03A-8029-490C-A2A3-574C60FB007A",
+            "isDefault": false,
+            "caption": "IMG_2535",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "159D3145-98DB-4420-A864-5A51E2AAA35A",
+            "sequenceNumber": 41,
+            "url": "\/\/openapi.azureedge.net\/159D3145-98DB-4420-A864-5A51E2AAA35A",
+            "isDefault": false,
+            "caption": "IMG_2556",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "10F3DA0A-725D-4851-B4CA-5CE42F0E646F",
+            "sequenceNumber": 29,
+            "url": "\/\/openapi.azureedge.net\/10F3DA0A-725D-4851-B4CA-5CE42F0E646F",
+            "isDefault": false,
+            "caption": "IMG_2522",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "A2166213-0135-4AA7-BFE5-6B85AF0B85B6",
+            "sequenceNumber": 35,
+            "url": "\/\/openapi.azureedge.net\/A2166213-0135-4AA7-BFE5-6B85AF0B85B6",
+            "isDefault": false,
+            "caption": "IMG_2544",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "FB3C12D8-CD49-4372-A6CF-7537818F211C",
+            "sequenceNumber": 25,
+            "url": "\/\/openapi.azureedge.net\/FB3C12D8-CD49-4372-A6CF-7537818F211C",
+            "isDefault": false,
+            "caption": "IMG_2506",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "07291D47-FF02-434E-A4D2-788B6F322FF5",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/07291D47-FF02-434E-A4D2-788B6F322FF5",
+            "isDefault": true,
+            "caption": "IMG_2507",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "827E2C34-C657-4223-A8C5-896C5695986E",
+            "sequenceNumber": 32,
+            "url": "\/\/openapi.azureedge.net\/827E2C34-C657-4223-A8C5-896C5695986E",
+            "isDefault": false,
+            "caption": "IMG_2533",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "274F1A75-9E13-4FC1-86A2-8C76F0AF8B6E",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/274F1A75-9E13-4FC1-86A2-8C76F0AF8B6E",
+            "isDefault": false,
+            "caption": "IMG_2475",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "5479160E-7249-46AE-A35C-909DD83A251B",
+            "sequenceNumber": 26,
+            "url": "\/\/openapi.azureedge.net\/5479160E-7249-46AE-A35C-909DD83A251B",
+            "isDefault": false,
+            "caption": "IMG_2518",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "9390DC1C-F1D1-469B-97F8-90D8D878B6F2",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/9390DC1C-F1D1-469B-97F8-90D8D878B6F2",
+            "isDefault": false,
+            "caption": "Outdoor dining area",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "A656E08A-D5BC-41CE-8F43-99ECF4EBB1F8",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/A656E08A-D5BC-41CE-8F43-99ECF4EBB1F8",
+            "isDefault": false,
+            "caption": "Front Gardens",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "B00329A2-CF00-4A58-8751-A6853017F853",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/B00329A2-CF00-4A58-8751-A6853017F853",
+            "isDefault": false,
+            "caption": "IMG_2470",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "30315708-393F-41F7-8E4D-B5542E1849B6",
+            "sequenceNumber": 42,
+            "url": "\/\/openapi.azureedge.net\/30315708-393F-41F7-8E4D-B5542E1849B6",
+            "isDefault": false,
+            "caption": "IMG_2557",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "018A6BA2-D22F-4758-8B23-B8F47A5C5A88",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/018A6BA2-D22F-4758-8B23-B8F47A5C5A88",
+            "isDefault": false,
+            "caption": "Orchard",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "DDC098BA-EF33-49D4-9909-BDD9FF2AF1C7",
+            "sequenceNumber": 33,
+            "url": "\/\/openapi.azureedge.net\/DDC098BA-EF33-49D4-9909-BDD9FF2AF1C7",
+            "isDefault": false,
+            "caption": "IMG_2534",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "E97F93E7-2C04-4819-9C40-BF3EC82BA284",
+            "sequenceNumber": 37,
+            "url": "\/\/openapi.azureedge.net\/E97F93E7-2C04-4819-9C40-BF3EC82BA284",
+            "isDefault": false,
+            "caption": "IMG_2549",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "6B7B90CC-E211-447E-87F3-C3E340CC8D85",
+            "sequenceNumber": 28,
+            "url": "\/\/openapi.azureedge.net\/6B7B90CC-E211-447E-87F3-C3E340CC8D85",
+            "isDefault": false,
+            "caption": "IMG_2521",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "56EF7256-603C-4932-8E32-CF2D4723F1BC",
+            "sequenceNumber": 31,
+            "url": "\/\/openapi.azureedge.net\/56EF7256-603C-4932-8E32-CF2D4723F1BC",
+            "isDefault": false,
+            "caption": "IMG_2530",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "68324BDB-D097-46E8-AA56-DFE71A13D4CC",
+            "sequenceNumber": 43,
+            "url": "\/\/openapi.azureedge.net\/68324BDB-D097-46E8-AA56-DFE71A13D4CC",
+            "isDefault": false,
+            "caption": "IMG_2563",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "8AC46320-0DB8-413A-B916-E35A0AEE7160",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/8AC46320-0DB8-413A-B916-E35A0AEE7160",
+            "isDefault": false,
+            "caption": "Orchard",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "BD2A07E9-B47C-40FB-ACFD-E601F05F545F",
+            "sequenceNumber": 36,
+            "url": "\/\/openapi.azureedge.net\/BD2A07E9-B47C-40FB-ACFD-E601F05F545F",
+            "isDefault": false,
+            "caption": "IMG_2546",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "E993638B-2B5B-463D-9F92-E64985CFCCBE",
+            "sequenceNumber": 45,
+            "url": "\/\/openapi.azureedge.net\/E993638B-2B5B-463D-9F92-E64985CFCCBE",
+            "isDefault": false,
+            "caption": "IMG_2566",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "268FAC02-1A0A-4FCD-B6E5-E7DCD868EEC7",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/268FAC02-1A0A-4FCD-B6E5-E7DCD868EEC7",
+            "isDefault": false,
+            "caption": "IMG_2490",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "6C6F2360-1077-496E-8261-E97C5A339082",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/6C6F2360-1077-496E-8261-E97C5A339082",
+            "isDefault": false,
+            "caption": "Cooling shed \/ smoking shed",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "2620D9CE-E6D7-42A1-8090-EADAF016284B",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/2620D9CE-E6D7-42A1-8090-EADAF016284B",
+            "isDefault": false,
+            "caption": "Brick Oven",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "62B9C674-34CE-4663-A4ED-F9DB5C840CEC",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/62B9C674-34CE-4663-A4ED-F9DB5C840CEC",
+            "isDefault": false,
+            "caption": "IMG_2486",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        },
+        {
+            "mediaID": "9BE1A75E-4352-4902-9A3F-FDFED524E141",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/9BE1A75E-4352-4902-9A3F-FDFED524E141",
+            "isDefault": false,
+            "caption": "IMG_2492",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3456,
+            "width": 5184,
+            "lastUpdateOn": "2017-12-20T06:01:06.450"
+        }
+    ]
+}

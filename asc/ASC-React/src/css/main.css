@@ -1,0 +1,186 @@
+@media screen and (min-width: 0px) and (max-width: 600px) {
+.login-form{
+    text-align: center;
+    width: 90%;
+    margin: 30px auto 0;
+}
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+.login-form{
+    text-align: center;
+    width: 60%;
+    margin: 30px auto 0;
+}
+}
+@media screen and (min-width: 1001px) {
+.login-form{
+    text-align: center;
+    width: 40%;
+    margin: 30px auto 0;
+}
+}
+
+.facebookButtonClass{
+    font-family: Helvetica,sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*font-size: calc(.27548vw + 12.71074px);*/
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s,border-color .3s;
+    background-color: #9e1c26;
+    border: calc(.06887vw + .67769px) solid #9e1c26;
+    margin: 10px 0;
+}
+
+body {
+    font-family: "Roboto", Arial;
+    font-weight: 200;
+}
+
+h1, h2, h3 {
+    font-weight: 100;
+}
+
+a {
+    color: hsl(200, 50%, 50%);
+}
+
+a.active {
+    color: hsl(20, 50%, 50%);
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+form {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='number'],
+.form-group input[type='password'],
+.form-group select {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group.error input[type='text'],
+.form-group.error input[type='email'],
+.form-group.error input[type='number'],
+.form-group.error input[type='password'],
+.form-group.error select {
+    border-color: red;
+    color: red;
+}
+
+.form-group.required input[type='text'],
+.form-group.required input[type='email'],
+.form-group.required input[type='number'],
+.form-group.required input[type='password'],
+.form-group.required select {
+    border-color: #FF9696;
+}
+
+.validation-error {
+    color: red;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.buttons button {
+    margin-left: 10px;
+}
+.buttons button:first-child {
+    margin-left: 0;
+}
+.actionButtonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 20px;
+}
+.actionButton{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 56px;
+    height: 56px;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 56px;
+    letter-spacing: 0;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(158, 28, 38);
+    border: 0px solid currentColor;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 999;
+    transform: scale(1);
+}
+.actionButton:active{
+    background-color: #333333;
+}
+.actionButton:hover{
+    box-shadow: 0px 3px 5px 4px rgba(0,0,0,0.5);
+}

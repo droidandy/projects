@@ -1,0 +1,33 @@
+{
+    "index": "agents",
+    "type": "agent",
+    "body": {
+        "from": 0,
+        "size": 1,
+        "query": {
+            "constant_score": {
+                "filter": {
+                    "bool": {
+                        "must": [
+                            {
+                                "wildcard": {
+                                    "name.autocomplete": "*San*"
+                                }
+                            }
+                        ],
+                        "filter": [
+                            {
+                                "term": {
+                                    "status": 100
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "sort": {
+            "name.autocomplete": "asc"
+        }
+    }
+}

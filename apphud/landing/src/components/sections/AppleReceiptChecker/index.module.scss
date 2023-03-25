@@ -1,0 +1,111 @@
+$primary-color: #0084FF;
+$dark-color: #181818;
+$warning-color: #FC5050;
+
+.grid {
+  padding-left: 100px;
+  padding-right: 100px;
+  @media all and (max-width: 767px){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.root {
+  position: relative;
+  .row {
+    margin-bottom: 3rem;
+    .input {
+      box-sizing: border-box;
+      border-radius: 22px;
+      border: 3px solid $dark-color;
+      min-height: 86px;
+      width: 100%;
+      padding: 1rem 2rem;
+      resize: vertical;
+      font-family: 'JetBrains Mono', monospace;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      &:focus, &:active {
+        outline: 0;
+      }
+      &::placeholder {
+        color: #97ADC6;
+      }
+      box-shadow: -8px 8px 0 0 $dark-color;
+      @media all and (max-width: 767px){
+        min-height: 48px;
+        padding: 18px !important;
+      }
+    }
+    textarea.input {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      min-height: 218px;
+      resize: none;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    & > p {
+      padding: 2rem;
+    }
+    @media all and (max-width: 767px){
+      flex-flow: column-reverse;
+      & > p {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.label {
+  margin-bottom: 1.5rem;
+  display: block;
+  color: $dark-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 26px;
+  @media all and (max-width: 767px){
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 132%;
+  }
+}
+
+.response {
+  max-width: 100%;
+  .error{
+    margin-bottom: 1.5rem;
+  }
+  .copy {
+    font-size: 16px;
+    line-height: 154%;
+    color: #0084FF;
+    cursor: pointer;
+  }
+  .result {
+    font-family: 'Menlo Regular', sans-serif;
+    border-radius: 22px;
+    border: 3px solid $dark-color;
+    box-shadow: -8px 8px 0 0 $dark-color;
+    width: 100%;
+    &.success {
+      border: 3px solid $primary-color;
+      box-shadow: -8px 8px 0 0 $primary-color;
+    }
+    &.warning {
+      border: 3px solid $warning-color;
+      box-shadow: -8px 8px 0 0 $warning-color;
+    }
+    code {
+      display: block;
+      margin: 1.5rem 2rem;
+      overflow: auto;
+    }
+  }
+}

@@ -1,0 +1,168 @@
+//------------------------------------
+// Common-Blocks.Common.Checkbox
+//------------------------------------
+
+.label-text {
+  line-height: 10px;
+  display: inline-block;
+
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.radio-label-wrapper {
+  vertical-align: middle;
+  color: #464d52;
+  font-weight: 500;
+}
+
+.radio-label-wrapper_normal {
+  font-weight: normal;
+}
+
+.checkbox-wrapper_list-item {
+  overflow: hidden;
+  position: relative;
+  padding: 4px 20px 4px 20px;
+  .checkbox {
+    width: 20px;
+    height: 20px;
+    left: 20px;
+  }
+  &:hover {
+    background-color: $brand-blue;
+    .card-settings__icon {
+      display: block;
+    }
+  }
+}
+
+.checkbox-wrapper_list-title {
+  padding: 4px 20px 4px 20px;
+}
+
+.checkbox-wrapper_inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.checkbox-wrapper_inlist {
+  margin-top: 15px;
+}
+
+.checkbox-wrapper_small {
+  box-sizing: content-box;
+  width: 22px;
+  margin-top: 12px;
+  margin-right: 10px;
+  margin-left: 1px;
+}
+.checkbox-label-wrapper {
+  display: inline-block;
+  overflow: hidden;
+
+  cursor: pointer;
+}
+
+.checkbox-label {
+  display: block;
+  display: inline-block;
+  vertical-align: middle;
+
+  text-align: center;
+
+  border-radius: 4px;
+  border: 2px solid $brand-blue;
+
+  @include square(14px);
+}
+
+.checkbox-label_popup {
+  background-color: $brand-white;
+  border-radius: 2px;
+  border: 1px solid #e6e3df;
+}
+
+.checkbox-label_small {
+  @include square(14px);
+  .icon-check {
+    margin-bottom: 3px;
+  }
+}
+.checkbox-label_all {
+  margin: 5px;
+  .icon-check {
+    display: none;
+  }
+}
+
+.icon-check {
+  display: none;
+}
+
+.checkbox {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  margin: 0;
+
+  opacity: 0;
+
+  @include square(100%);
+  &:checked + .checkbox-label-wrapper {
+    .checkbox-label {
+      border-color: $brand-blue;
+      background: $brand-blue;
+    }
+    .checkbox-label_popup {
+      border-color: #e6e3df;
+      background: $brand-white;
+      .icon-check {
+        margin-top: 3px;
+        g {
+          stroke: #464d52;
+        }
+      }
+    }
+    .icon-check {
+      display: inline-block;
+    }
+    .p-plan__checkbox {
+      &.active {
+        border-color: $brand-white;
+        background-color: $brand-white;
+        .icon-check__rect {
+          fill: $brand-blue;
+        }
+      }
+    }
+  }
+  &:checked + .checkbox-label_all {
+    .icon-check-all {
+      display: none;
+    }
+    .icon-check {
+      display: inline-block;
+    }
+  }
+}
+.checkbox-label_all-select {
+  .icon-check {
+    display: inline-block;
+  }
+}
+
+.checkbox_cke {
+  padding: 9px 10px 12px 11px;
+  font-weight: 500;
+  line-height: normal;
+  .input-wrapper__setting-label {
+    font-size: 12px;
+  }
+}

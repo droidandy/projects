@@ -1,0 +1,76 @@
+.tag {
+  font-size: 15px;
+  line-height: 17px;
+  border-radius: 8px;
+  color: $brand-white;
+  padding: 5px;
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tag_count {
+  padding-left: 0;
+}
+
+.tag_orange {
+  background: $brand-orange;
+}
+
+.tag_inactiveorange {
+  color: $brand-black;
+  background: $brand-inactive-orange;
+}
+
+.tag_black {
+  background: $brand-black;
+}
+
+.tag_green {
+  background: $brand-green;
+}
+
+.tag_red {
+  background: $brand-red;
+}
+
+.tag_silver {
+  background: $brand-silver;
+  color: white;
+}
+
+.tag_blue {
+  background: $brand-blue;
+}
+
+.tag_integration {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.tag_more {
+  font-size: 15px;
+  color: $brand-blue;
+  user-select: none;
+}
+
+.tag_no-more {
+  font-size: 15px;
+  color: $brand-silver;
+  user-select: none;
+}
+
+.tag-count {
+  font-size: 15px;
+  background: $brand-silver;
+  border-radius: 5px 0px 0 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.tag-pro {
+  color: $brand-purple;
+  background-color: $brand-light-purple;
+  font-size: 13px;
+  margin-left: auto;
+}

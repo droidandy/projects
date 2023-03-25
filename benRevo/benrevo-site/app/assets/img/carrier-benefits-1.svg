@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.58 39.58" width="48" height="40" preserveAspectRatio="xMinYMid">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#298499;stroke-miterlimit:10;stroke-width:1.16px;}</style>
+  </defs>
+  <title>Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="features2">
+      <g id="Line_Chart" data-name="Line Chart">
+        <polyline class="cls-1" points="7.58 28.5 18.58 14.5 30.58 24.5 45.58 4"/>
+        <polyline class="cls-1" points="0.58 0 0.58 39 47.58 39"/>
+      </g>
+    </g>
+  </g>
+</svg>

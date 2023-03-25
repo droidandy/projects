@@ -1,0 +1,180 @@
+    <style type="text/css">
+
+	@page { size: A4; }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Calibri, Arial, Helvetica, sans-serif;
+            background: #fff;
+        }
+        .bodyNoBg {
+            background: none;
+        }
+        /* headings */
+        h1, h2, h3, h4, h5, h6 {
+            color: #090b3c;
+            margin-top: 15pt;
+            margin-bottom: 8pt;
+        }
+        h1 {
+            font-size: 28pt;
+        }
+        h2 {
+            font-size: 14pt;
+        }
+        h3 {
+            font-size: 12pt;
+        }
+        h4 {
+            font-size: 11pt;
+        }
+        h5 {
+            font-size: 10pt;
+        }
+        h6 {
+            font-size: 9pt;
+        }
+        p {
+            font-size: 12pt;
+            color: #676767;
+            margin-bottom: 8pt;
+        }
+        div {
+            font-size: 9pt;
+            color: #333;
+        }
+        .clearfix:after {
+            /*content: ".";
+            display: block;*/
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: auto;
+        }
+        .clearfix {
+            /*	display: inline-block;
+            */}
+        html[xmlns] .clearfix {
+            display: block;
+        }
+        * html .clearfix {
+            height: 1%;
+        }
+        .floatRt {
+        }
+        .floatLft {
+        }
+        .clearBoth {
+            clear: both !important;
+        }
+        .noBorder {
+            border: 0px !important;
+        }
+        .noMargin {
+            margin: 0px !important;
+        }
+        /*********** custom *************/
+
+        .pageleft {
+            width: 15%;
+        }
+        .pageRt {
+
+            width: 77%;
+        }
+        .logo {
+
+            margin: 24pt 0 69pt;
+        }
+        .hdrRt {
+            width: 77%;
+            margin: 67pt 0 0px 0;
+        }
+        /*****************  *************/
+
+
+        table tr td {
+            border-collapse: collapse;
+        }
+        .maintble {
+            max-width: 600pt;
+            width:100%;
+            margin:0 auto;
+            border:none;
+        }
+        .maintble tr td {
+            color: #676766;
+            font-size: 11pt;
+        }
+        .hdtxtleft {
+            width:100%;
+        }
+        .maintble .hdrRt {
+            width:100%;
+            text-align:left;
+            margin:97pt 0 0;
+        }
+        .rtmaintble {
+            border:none;
+        }
+        .rtmaintble tr td {
+            padding:8pt 12pt;
+            border:0;
+            border-bottom:1px solid #afb0af;
+        }
+        .tblbdr {
+            width:100%;
+        }
+        .tblbdrmain {
+            width:100% !important;
+        }
+        
+        .rtmaintble tr.tblbdrmain {
+            width:100%;
+        }
+        .rtmaintble tr.tblbdrmain > td.tblbdr  {
+            width:100%;
+        }
+        .tablebordered tr {
+            border:0;
+        }
+        .tablebordered tr td {
+            border: 1px solid #ddd;
+            padding: 6pt 8pt;
+        }
+        .tablebordered {
+            border:0;
+            border-bottom:1px solid #9fa09f;
+            padding-bottom:15pt;
+            margin:0 0 8pt 0;
+        }
+        .hdrRt h1 {
+            font-size: 26pt;
+            color: #11b4dd;
+            letter-spacing: 3pt;
+        }
+        
+        .productMed {
+            width: 100%;
+            border-bottom: 3pt solid #7d7e7e;
+        }
+        .productMed h2 {
+            font-size: 14pt;
+            color: #999a99;
+            letter-spacing: 1px;
+            margin-bottom: 9pt;
+            text-align: left;
+            border-bottom: 3pt solid #7d7e7e;
+            padding-bottom: 8pt;
+        }
+        .productMed h2 span {
+            color: #676766;
+        }
+
+        .rightpannel {
+            width:77%;
+            margin-left:5%;
+        }
+
+    </style>

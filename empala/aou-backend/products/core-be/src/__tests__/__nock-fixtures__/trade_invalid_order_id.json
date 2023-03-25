@@ -1,0 +1,51 @@
+[
+    {
+        "scope": "https://trade-api-uat.extend.apexclearing.com:443",
+        "method": "GET",
+        "path": "/c2c/jws.action",
+        "body": "",
+        "status": 200,
+        "response": {
+            "success": true,
+            "token": "token"
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 13:22:55 GMT",
+            "Server",
+            "Orb",
+            "Strict-Transport-Security",
+            "max-age=63072000; includeSubDomains; preload",
+            "Content-Type",
+            "application/json;charset=UTF-8",
+            "Content-Language",
+            "en-US",
+            "Content-Length",
+            "355",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://trade-api-uat.extend.apexclearing.com:443",
+        "method": "GET",
+        "path": "/api/orders/status/INVALIDDD",
+        "body": "",
+        "status": 204,
+        "response": "",
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 13:22:55 GMT",
+            "Server",
+            "Orb",
+            "Strict-Transport-Security",
+            "max-age=63072000; includeSubDomains; preload",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

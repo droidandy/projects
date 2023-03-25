@@ -1,0 +1,42 @@
+@import "../../variables";
+@import "../../variables-theme";
+
+.presentation-documents {
+  .page-heading-top {
+    margin-bottom: 20px;
+  }
+
+  .empty {
+    border-top: 1px solid $PRESENTATION_DEVIDER_COLOR;
+    margin-top: -1px;
+    margin-left: 1rem;
+  }
+
+  .row.document-item {
+    border-bottom: 1px solid $PRESENTATION_DEVIDER_COLOR;
+    border-top: 1px solid $PRESENTATION_DEVIDER_COLOR;
+    margin-top: -1px;
+    margin-left: 1rem;
+    background: url(../../img/svg/one-document-icon.svg) no-repeat center left;
+    background-position: 10px center;
+    padding-left: 25px;
+
+    &.last {
+      margin-bottom: 40px;
+    }
+
+    a {
+      cursor: pointer;
+    }
+  }
+
+  .document-title {
+    background-color: #F4F4F6;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-left: 14px;
+    width: 100%;
+    border-top: 1px solid $PRESENTATION_DEVIDER_COLOR;
+  }
+}

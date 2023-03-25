@@ -1,0 +1,58 @@
+{% extends 'AppBundle:user/profile:root.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:user/profile:user_profile_head.html.twig' with {'user' : user} %}
+
+    <div class="row">
+        <div class="headline --line-separator">
+            <h3 class="heading">
+                {{ "Likes"|trans }}
+            </h3>
+        </div>
+        {% if is_current_user(user) %}
+            <div class="information-centered">
+                Click the "heart icon" when you see a story of listing that you like to recommend to your followers.
+                Stories and listings you recommend are stored here and may also enter the reading lists
+                and email digests of your followers.
+
+                <div class="inline-actions">
+                    <ul>
+                        <li>
+                            <a href="{{ path('ha_user_likes', {
+                                id: user.id,
+                                slug: user.slug
+                            }) }}">
+                                Listings (0)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('ha_user_likes', {
+                                id: user.id,
+                                slug: user.slug
+                            }) }}">
+                                Stories ({{ app.user|likes_count }})
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if pagination|length %}
+            <div class="items-collection">
+                <div class="blog">
+                    <ul class="list small-block-grid-2 medium-block-grid-3"
+                        data-page-total="{{ pageTotal }}"
+                        data-page-current="{{ page }}"
+                    >
+                        {% include 'AppBundle:user/profile/section:articles_collection.html.twig' %}
+                    </ul>
+                </div>
+            </div>
+        {% else %}
+            <div class="information-centered">
+                {{ "search.noresults"|trans }}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

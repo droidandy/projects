@@ -1,0 +1,20 @@
+.filter {
+  margin-bottom: 64px;
+
+  &:global(.notMargin) {
+    margin-bottom: 0;
+  }
+
+  & .segments {
+    display: grid;
+    grid-template-columns: 270px 270px 160px 255px;
+    grid-gap: 0 30px;
+    margin-bottom: 20px;
+
+    & .segment {
+      .switcher {
+        margin-top: 8px;
+      }
+    }
+  }
+}

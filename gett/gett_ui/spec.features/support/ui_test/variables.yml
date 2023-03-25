@@ -1,0 +1,9 @@
+super_admin:
+  email: super_admin@fakemail.com
+  password: P@ssword
+gett:
+  ent_id: UK-3836
+  aff_id: UK-3613
+ot:
+  username: Demo_admin
+  client_number: D25

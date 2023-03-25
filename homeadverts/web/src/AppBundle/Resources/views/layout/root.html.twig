@@ -1,0 +1,87 @@
+{% set is_phone = is_mobile() and not is_tablet() %}
+{% set is_tablet = is_tablet() %}
+{% set map_view = app.request.query.get('map') %}
+{% set is_article_edit = app.request.get('_route') in ['ha_article_edit'] %}
+{% set is_article_details = app.request.get('_route') == 'ha_article_details'%}
+{% set is_property_collection = app.request.get('_route') in ['featured_index', 'search_results'] %}
+{% set is_property_details = app.request.get('_route') in ['property_details'] %}
+{% set is_agent_collection = app.request.get('_route') in ['ha_user_search'] %}
+{% set is_user_profile = app.request.get('_route') in [
+    'ha_user_properties',
+    'ha_user_articles',
+    'ha_user_followers',
+    'ha_user_followings',
+] %}
+
+{% if (app.user) %}
+    {% set profile_href = path('ha_user_profile', {
+        id: app.user.id,
+        slug: app.user|slug
+    }) %}
+{% else %}
+    {% set profile_href = path('ha_homepage') %}
+{% endif %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="{{ currentLocale().iso_code }}" itemscope itemtype="http://schema.org/WebSite">
+<head>
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
+
+    {% include 'AppBundle:layout/head:meta.html.twig' %}
+    {% include 'AppBundle:layout/head:css.html.twig' %}
+</head>
+<body class="htmlwrap" data-url-statistics-tracking="{{ path('ha_statistics_event_display_post') }}">
+    {% if is_phone or is_tablet %}
+        {% if is_property_collection  %}
+            {% include 'AppBundle:layout/filter:property.html.twig' %}
+        {% endif %}
+        {% if is_agent_collection %}
+            {% include 'AppBundle:layout/filter:agent.html.twig' %}
+        {% endif %}
+    {% endif %}
+
+    <div class="mdl-layout mdl-js-layout page-container">
+        {% if is_article_edit %}
+            {% include 'AppBundle:layout/header:editor.html.twig' %}
+        {% else %}
+            {% include 'AppBundle:layout/header:default.html.twig' %}
+        {% endif %}
+
+        {% include 'AppBundle:layout/sidebar:sidenav.html.twig' %}
+
+        <main class="mdl-layout__content page-content">
+                {% block filters %}{% endblock %}
+
+                {% block flashes %}
+                    {% include 'AppBundle:layout/body:flash_message.html.twig' %}
+                {% endblock %}
+                {% block body %}{% endblock %}
+
+                {% block footer %}
+                    {% include 'AppBundle:layout/footer:links.html.twig' %}
+                {% endblock %}
+
+                {% block javascripts %}
+                    {% include 'AppBundle:layout/footer:js.html.twig' %}
+                {% endblock %}
+        </main>
+    </div>
+
+    {% include 'AppBundle:user/profile:popup.html.twig' %}
+
+    {% include 'AppBundle:user/security:auth_dialog.html.twig' %}
+    {% include 'AppBundle:user/security:auth_dialog.html.twig' %}
+
+    {% include 'AppBundle:property/details:video.html.twig' %}
+    {% include 'AppBundle:property/details:video_3d.html.twig' %}
+
+    {% include 'AppBundle:layout/share:share_dialog.html.twig' %}
+
+    {% include 'AppBundle:layout/body:loading_screen.html.twig' %}
+    {% include 'AppBundle:layout/body:snackbar.html.twig' %}
+    {% include 'AppBundle:layout/body:svg.html.twig' %}
+
+    {% block body_before_close %}
+    {% endblock %}
+</body>
+</html>

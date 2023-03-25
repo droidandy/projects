@@ -1,0 +1,1 @@
+export { StaticCustomerFlowMobileItem } from './StaticCustomerFlowMobileItem';

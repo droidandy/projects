@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.17 61.33" width="157" height="61" preserveAspectRatio="xMinYMid">
+  <defs>
+    <style>
+      .cls-1,.cls-2,.cls-5{fill:none;}.cls-2,.cls-5{stroke:#298499;stroke-miterlimit:10;}.cls-2{stroke-width:0.84px;}.cls-3{opacity:0.2;}.cls-4{clip-path:url(#clip-path);}.cls-5{stroke-width:0.69px;}.cls-6{clip-path:url(#clip-path-2);}
+    </style>
+    <clipPath id="clip-path" transform="translate(-20.68 -19)">
+      <path class="cls-1"
+            d="M121.47,67.18H73.72A12.74,12.74,0,0,1,61,54.45v-35h73.23v35A12.74,12.74,0,0,1,121.47,67.18ZM191.9,0H0V91.75H191.9Z"/>
+    </clipPath>
+    <clipPath id="clip-path-2" transform="translate(-20.68 -19)">
+      <path class="cls-1" d="M121,67.18H73.28A12.74,12.74,0,0,1,60.55,54.45v-35h73.23v35A12.74,12.74,0,0,1,121,67.18Z"/>
+    </clipPath>
+  </defs>
+  <title>brokers-comparsion</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="bbenfit2">
+      <g id="Computer">
+        <path class="cls-2" d="M121,67.18H73.28A12.74,12.74,0,0,1,60.55,54.45v-35h73.23v35A12.74,12.74,0,0,1,121,67.18Z"
+              transform="translate(-20.68 -19)"/>
+        <line class="cls-2" x1="58.97" y1="60.91" x2="94" y2="60.91"/>
+        <line class="cls-2" x1="68.53" y1="48.18" x2="65.34" y2="60.91"/>
+        <line class="cls-2" x1="84.44" y1="48.18" x2="87.63" y2="60.91"/>
+      </g>
+      <g class="cls-3">
+        <g class="cls-4">
+          <g id="File">
+            <path class="cls-5" d="M36.69,60.75H21.46V28.9H45V52.44A8.31,8.31,0,0,1,36.69,60.75Z"
+                  transform="translate(-20.68 -19)"/>
+            <line class="cls-5" x1="7.01" y1="19.59" x2="18.09" y2="19.59"/>
+            <line class="cls-5" x1="7.01" y1="25.13" x2="18.09" y2="25.13"/>
+            <line class="cls-5" x1="7.01" y1="30.67" x2="15.32" y2="30.67"/>
+          </g>
+          <g id="File-2" data-name="File">
+            <path class="cls-5" d="M69.57,60.75H54.33V28.9H77.88V52.44A8.31,8.31,0,0,1,69.57,60.75Z"
+                  transform="translate(-20.68 -19)"/>
+            <line class="cls-5" x1="39.89" y1="19.59" x2="50.97" y2="19.59"/>
+            <line class="cls-5" x1="39.89" y1="25.13" x2="50.97" y2="25.13"/>
+            <line class="cls-5" x1="39.89" y1="30.67" x2="48.2" y2="30.67"/>
+          </g>
+          <g id="File-3" data-name="File">
+            <path class="cls-5" d="M102.44,60.75H87.21V28.9h23.55V52.44A8.31,8.31,0,0,1,102.44,60.75Z"
+                  transform="translate(-20.68 -19)"/>
+            <line class="cls-5" x1="72.76" y1="19.59" x2="83.84" y2="19.59"/>
+            <line class="cls-5" x1="72.76" y1="25.13" x2="83.84" y2="25.13"/>
+            <line class="cls-5" x1="72.76" y1="30.67" x2="81.07" y2="30.67"/>
+          </g>
+          <g id="File-4" data-name="File">
+            <path class="cls-5" d="M135.32,60.75H120.08V28.9h23.55V52.44A8.31,8.31,0,0,1,135.32,60.75Z"
+                  transform="translate(-20.68 -19)"/>
+            <line class="cls-5" x1="105.64" y1="19.59" x2="116.72" y2="19.59"/>
+            <line class="cls-5" x1="105.64" y1="25.13" x2="116.72" y2="25.13"/>
+            <line class="cls-5" x1="105.64" y1="30.67" x2="113.95" y2="30.67"/>
+          </g>
+          <g id="File-5" data-name="File">
+            <path class="cls-5" d="M168.19,60.75H153V28.9H176.5V52.44A8.31,8.31,0,0,1,168.19,60.75Z"
+                  transform="translate(-20.68 -19)"/>
+            <line class="cls-5" x1="138.51" y1="19.59" x2="149.59" y2="19.59"/>
+            <line class="cls-5" x1="138.51" y1="25.13" x2="149.59" y2="25.13"/>
+            <line class="cls-5" x1="138.51" y1="30.67" x2="146.82" y2="30.67"/>
+          </g>
+        </g>
+      </g>
+      <g class="cls-6">
+        <g id="File-6" data-name="File">
+          <path class="cls-5" d="M36.26,60.75H21V28.9H44.57V52.44A8.31,8.31,0,0,1,36.26,60.75Z"
+                transform="translate(-20.68 -19)"/>
+          <line class="cls-5" x1="6.58" y1="19.59" x2="17.66" y2="19.59"/>
+          <line class="cls-5" x1="6.58" y1="25.13" x2="17.66" y2="25.13"/>
+          <line class="cls-5" x1="6.58" y1="30.67" x2="14.89" y2="30.67"/>
+        </g>
+        <g id="File-7" data-name="File">
+          <path class="cls-5" d="M69.13,60.75H53.9V28.9H77.44V52.44A8.31,8.31,0,0,1,69.13,60.75Z"
+                transform="translate(-20.68 -19)"/>
+          <line class="cls-5" x1="39.45" y1="19.59" x2="50.53" y2="19.59"/>
+          <line class="cls-5" x1="39.45" y1="25.13" x2="50.53" y2="25.13"/>
+          <line class="cls-5" x1="39.45" y1="30.67" x2="47.76" y2="30.67"/>
+        </g>
+        <g id="File-8" data-name="File">
+          <path class="cls-5" d="M102,60.75H86.77V28.9h23.55V52.44A8.31,8.31,0,0,1,102,60.75Z"
+                transform="translate(-20.68 -19)"/>
+          <line class="cls-5" x1="72.33" y1="19.59" x2="83.41" y2="19.59"/>
+          <line class="cls-5" x1="72.33" y1="25.13" x2="83.41" y2="25.13"/>
+          <line class="cls-5" x1="72.33" y1="30.67" x2="80.64" y2="30.67"/>
+        </g>
+        <g id="File-9" data-name="File">
+          <path class="cls-5" d="M134.88,60.75H119.65V28.9h23.55V52.44A8.31,8.31,0,0,1,134.88,60.75Z"
+                transform="translate(-20.68 -19)"/>
+          <line class="cls-5" x1="105.21" y1="19.59" x2="116.29" y2="19.59"/>
+          <line class="cls-5" x1="105.21" y1="25.13" x2="116.29" y2="25.13"/>
+          <line class="cls-5" x1="105.21" y1="30.67" x2="113.52" y2="30.67"/>
+        </g>
+        <g id="File-10" data-name="File">
+          <path class="cls-5" d="M167.76,60.75H152.52V28.9h23.55V52.44A8.31,8.31,0,0,1,167.76,60.75Z"
+                transform="translate(-20.68 -19)"/>
+          <line class="cls-5" x1="138.08" y1="19.59" x2="149.16" y2="19.59"/>
+          <line class="cls-5" x1="138.08" y1="25.13" x2="149.16" y2="25.13"/>
+          <line class="cls-5" x1="138.08" y1="30.67" x2="146.39" y2="30.67"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

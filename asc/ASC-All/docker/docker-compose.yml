@@ -1,0 +1,44 @@
+version: '2'
+networks:
+  ascnet:
+    driver: overlay
+services:
+  web:
+    image: ascregistry-on.azurecr.io/ascreact
+    ports: ["8080:8080"]
+    networks:
+      - ascnet
+  api-auth:
+    ports: ["3100:3100"]
+    image: ascregistry-on.azurecr.io/api-auth
+    networks:
+      - ascnet
+    environment:
+      - JWT_SECRET="JWT-SECRET" 
+      - FACEBOOK_APP_ID="FACEBOOK-APP-ID" 
+      - FACEBOOK_APP_SECRET="FACEBOOK-APP-SECRET"
+  api-comms:
+    ports: ["3900:3900"]
+    image: ascregistry-on.azurecr.io/api-comms
+    networks:
+      - ascnet
+  api-tags:
+    ports: ["3033:3033"]
+    image: ascregistry-on.azurecr.io/api-tags
+    networks:
+      - ascnet
+  api-user:
+    ports: ["3000:3000"]
+    image: ascregistry-on.azurecr.io/api-user
+    networks:
+      - ascnet
+  mongodb:
+    ports: ["27017:27017"]
+    image: mongo
+    networks:
+      - ascnet
+  hystrix:
+    ports: ["7979:7979"]
+    image: kennedyoliveira/hystrix-dashboard
+    networks:
+      - ascnet

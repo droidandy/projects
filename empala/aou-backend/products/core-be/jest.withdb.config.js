@@ -1,0 +1,45 @@
+module.exports = {
+  coverageDirectory: '<rootDir>/coverage',
+  coverageReporters: ['text', 'html', 'cobertura'],
+  testEnvironment: 'node',
+  moduleFileExtensions: [
+    'ts',
+    'tsx',
+    'js',
+  ],
+  collectCoverageFrom: [
+    'src/**/*.ts',
+    '!src/__tests__/**',
+    '!src/launch.ts',
+    '!src/apex-extend/trade/apex-error-code-converter.ts',
+    '!src/models/order.ts',
+    '!src/models/portfolio.ts',
+    '!src/test-utils/**',
+    '!src/security/authentication.ts',
+    '!src/services/**',
+    '!src/resolvers/portfolio.ts',
+    '!src/resolvers/trade.ts',
+    '!src/resolvers/onboarding.ts',
+    '!src/results/place-order.ts',
+    '!src/utils/apex-token-manager.ts',
+    '!src/utils/axios-adapter.ts',
+    '!src/utils/service-broker-registry.ts',
+    '!src/utils/graphql/*-schema.ts',
+    '!src/utils/apollo-logger.ts',
+    '!src/apex-extend/onboarding/*.ts',
+  ],
+  transform: {
+    '^.+\\.(ts|tsx)$': 'ts-jest',
+  },
+  modulePathIgnorePatterns: [],
+  testMatch: [
+    '**/?(*.)+(test\\.withdb|test)\\.ts',
+  ],
+  globals: {
+    'ts-jest': {
+      tsconfig: 'tsconfig.json',
+    },
+  },
+  globalSetup: '<rootDir>/src/test-utils/setup-tests.withdb.ts',
+  testTimeout: 15000,
+};

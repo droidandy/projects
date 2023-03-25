@@ -1,0 +1,13 @@
+{% if articles %}
+    <ul class="row small-block-grid-2 medium-block-grid-3">
+        {% for article in articles|slice(0, 3) %}
+            <li>
+                {% include 'AppBundle:article/card:small.html.twig' %}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="information-centered">
+        --- No Recommended ---
+    </p>
+{% endif %}

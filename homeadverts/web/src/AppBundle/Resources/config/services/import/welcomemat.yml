@@ -1,0 +1,22 @@
+services:
+    wellcomemat.feed:
+        class: AppBundle\Service\Import\Wellcomemat\PrecachedWellcomematFeed
+        arguments:
+            - '@ha.import.import_context'
+            - '@redis_cache'
+            - '@wellcomemat.feed_internal'
+    
+    wellcomemat.feed_internal:
+        class: AppBundle\Service\Import\Wellcomemat\WellcomematFeed
+        arguments:
+            - '@wellcomemat.feed_adapter'
+            - '@monolog.logger.import'
+            - '%ha.import.wellcomemat_enabled%'
+        public: true
+    
+    wellcomemat.feed_adapter:
+        class: AppBundle\Service\Import\Wellcomemat\WellcomematGuzzleAdapter
+        arguments:
+            - 'http://www.wellcomemat.com/api/media/'
+            - '%ha.import.wellcomemat_key%'
+            - '%ha.import.wellcomemat_secret%'

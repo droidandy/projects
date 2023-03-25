@@ -1,0 +1,43 @@
+query GetBanners {
+    banners {
+        id
+        location
+        preview
+        appLink
+    }
+}
+
+
+query GetPromoActions {
+    promoActions {
+        id
+        name
+        preview
+        previewText
+        detailText
+        products {
+            ...ListProduct
+        }
+    }
+}
+
+query GetCatalogRoot {
+    categories {
+        id
+        name
+        image
+    }
+}
+
+query GetCategories($id: Int!) {
+    categories(id: $id) {
+        id
+        name
+    }
+}
+
+query GetRecommended {
+    recommended {
+        ...ListProduct
+    }
+}

@@ -1,0 +1,9 @@
+.show {
+  transform: rotate(180deg);
+  transition: transform .24s;
+}
+
+.hide {
+  transform: rotate(0);
+  transition: transform .24s;
+}

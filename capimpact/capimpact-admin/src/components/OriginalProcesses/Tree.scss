@@ -1,0 +1,33 @@
+.rst__tree {
+  margin: 10px 0;
+}
+
+.rst__rowWrapper {
+  padding: 1px 1px 1px 0;
+}
+
+.rst__node {
+  height: 40px !important;
+}
+
+.rst__rowContents {
+  box-shadow: none;
+  padding: 0;
+}
+
+.rst__rowLabel {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.rst__Title {
+  height: 100%;
+  &.active {
+    background-color: #add8e6;
+  }
+}
+
+.rst__rowTitle {
+  font-weight: normal;
+}

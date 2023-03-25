@@ -1,0 +1,35 @@
+<ion-view on-finish-render="ngRepeatFinished">
+  <div class="gm-content vertical-align-center">
+    <div class="page">
+      <div class="container-fluid">
+        <div class="carousel-discover1">
+          <div class="title-block"> <h2>BOOOM!</h2>
+            <p>GET READY TO CHAT WITH</p>
+          </div>
+
+          <div class="bxslider slider-pic">
+            <div class="slide"><img ng-src="{{selectedPhoto()}}" class="img-responsive animate-show" fade="person.animateChange"  alt="">
+              <span class="bg"><span class="name">{{selectedName()}}</span></span>
+            </div>
+          </div>
+          <div id="bx-pager" class="slider-thumb clearfix">
+            <ul>
+              <!-- Thumbnails for person photos -->
+              <li ng-repeat="photo in person.photos">
+                <a href="" ng-class="{ 'active': photo.active }" ng-click="selectPhoto(photo)">
+                  <img ng-src="{{photo.thumb}}" class="img-responsive">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="video-chat-countdown">
+            <p>VIDEO CHAT WILL START IN</p>
+            <div class="time" ng-bind="secondsRemain"></div>
+            <p class="hint"><span>HINT:</span> Want a stunning eye in eye effect? Try looking directly in the camera</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-view>

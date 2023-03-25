@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  vars_files:
+    - vars/defaults.yml
+
+  roles:
+    - common
+    - webserver
+    - database
+    - app

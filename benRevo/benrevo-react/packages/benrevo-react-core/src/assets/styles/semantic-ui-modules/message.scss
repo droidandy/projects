@@ -1,0 +1,32 @@
+@import '../variables-theme';
+
+/* Message */
+
+.ui.message {
+  &:not(.positive) .header {
+    font-size: 14px !important;
+    color: #ffffff !important;;
+    font-weight: 400;
+  }
+
+  &.warning {
+    background-color: $WARNING_COLOR;
+    background-image: url('../../../assets/img/svg/alert-warning.svg');
+
+    &.grey {
+      background-color: $WARNING_GREY_COLOR;
+    }
+  }
+
+  &.info {
+    background-color: $INFO_COLOR;
+    background-image: url('../../../assets/img/svg/alert-info.svg');
+  }
+
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+  border: none;
+  padding: 15px 15px 15px 50px;
+  box-shadow: none !important;
+}

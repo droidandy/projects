@@ -1,0 +1,70 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    <div class="blog">
+        {% include 'AppBundle:article/card:covers.html.twig' %}
+
+        {% if articlesTop|length %}
+            <div id="featured-top" class="row">
+                <div class="headline --separator --collection">
+                    <h1 class="heading">
+                        Today’s Affairs
+                    </h1>
+                    <span class="sub-heading --small">
+                        Indulge yourself in some of the world's most amazing homes, gain market insights<br/>
+                        from those in the know and read about the latest design trends, inspirations,<br/>
+                        and must have accessories.
+                    </span>
+                </div>
+
+                {% for articleRow in articlesTop|batch(property_row_limit()) -%}
+                    <div class="items-collection">
+                        <ul class="small-block-grid-2 medium-block-grid-3">
+                            {% for article in articleRow %}
+                                <li>
+                                    {% include 'AppBundle:article/card:small.html.twig' %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    {% if loop.index == 1 %}
+                        {% include 'AppBundle:ads:ads-wide.html.twig' %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+
+        {% if propertiesTop %}
+            <div class="featured-homes">
+                <div class="headline --separator --button">
+                    <h1 class="heading">
+                        Extraordinary Homes
+                    </h1>
+                    <span class="sub-heading --small">
+                    Search among <strong>{{ property_total_published()|number_format(0, '.', ',') }}</strong> luxury homes
+                    from over <strong>{{ location_total() }}</strong> countries around the world.<br/>
+                    From the extraordinary and beyond, your next home is right here.
+                </span>
+                    <div class="information-centered">
+                        <a href="{{ path('featured_index', {'market': 'for-sale'}) }}"
+                           class="black mdl-button mdl-js-button mdl-js-ripple-effect">
+                            More
+                        </a>
+                    </div>
+                </div>
+
+                {% include 'AppBundle:property:featured_properties.html.twig' with {properties: propertiesTop} %}
+            </div>
+        {% endif %}
+
+        <div class="items-collection">
+            <ul class="list"
+                data-page-total="{{ pageTotal }}"
+                data-page-current="{{ page }}">
+                {% include 'AppBundle:page:homepage_collection.html.twig' %}
+            </ul>
+        </div>
+    </div>
+{% endblock body %}

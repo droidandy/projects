@@ -1,0 +1,56 @@
+[
+  {
+    "documentId": 17,
+    "carrierId": 3,
+    "fileName": "ant-kaiser-Lytton Rancheria (San Diego)2",
+    "fileExtension": "xls",
+    "mimeType": null,
+    "s3Key": "document/2357028b-0218-4d40-a908-23bb229c5afe_ant-kaiser-LyttonRancheria(SanDiego)2.xls",
+    "lastUpdated": 1509300867000
+  },
+  {
+    "documentId": 18,
+    "carrierId": 3,
+    "fileName": "2mb_decrypted",
+    "fileExtension": "pdf",
+    "mimeType": "application/pdf",
+    "s3Key": "document/b8e07ec5-15ee-4810-8fd2-6f962a39b016_2mb_decrypted.pdf",
+    "lastUpdated": 1509393200000
+  },
+  {
+    "documentId": 26,
+    "carrierId": 3,
+    "fileName": "KMS-Cryptographic-Details",
+    "fileExtension": "pdf",
+    "mimeType": "application/pdf",
+    "s3Key": "document/1c2f3fe2-ccc8-4111-ab93-a5eff964c93c_KMS-Cryptographic-Details.pdf",
+    "lastUpdated": 1509477671000
+  },
+  {
+    "documentId": 44,
+    "carrierId": 3,
+    "fileName": "T-Anthem Elem Choice EQ HMO 1500 Rx_Essential Formulary $5_$20_$50_$65_30% $500 Ded",
+    "fileExtension": "pdf",
+    "mimeType": "application/pdf",
+    "s3Key": "document/d441c041-b52b-4b9c-a567-3639d8031a81_T-AnthemElemChoiceEQHMO1500Rx_EssentialFormulary$5_$20_$50_$65_30%$500Ded.pdf",
+    "lastUpdated": 1509905934000
+  },
+  {
+    "documentId": 45,
+    "carrierId": 3,
+    "fileName": "T-Anthem Elem Choice EQ HMO 3000 Rx_Essential Formulary $5_$20_$50_$65_30% $500 Ded",
+    "fileExtension": "pdf",
+    "mimeType": "application/pdf",
+    "s3Key": "document/7e784152-c96c-400f-983a-1b7f0617f60c_T-AnthemElemChoiceEQHMO3000Rx_EssentialFormulary$5_$20_$50_$65_30%$500Ded.pdf",
+    "lastUpdated": 1509905934000
+  },
+  {
+    "documentId": 46,
+    "carrierId": 3,
+    "fileName": "T-Anthem Elem Choice EQ HMO 5900 Rx_Essential Formulary $5_$20_$50_$65_30% $500 Ded",
+    "fileExtension": "pdf",
+    "mimeType": "application/pdf",
+    "s3Key": "document/43104ebf-3680-46a1-8186-cc875756f8d4_T-AnthemElemChoiceEQHMO5900Rx_EssentialFormulary$5_$20_$50_$65_30%$500Ded.pdf",
+    "lastUpdated": 1509905934000
+  }
+]

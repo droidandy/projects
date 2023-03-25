@@ -1,0 +1,252 @@
+version: 2
+
+references:
+  freetds_restore_cache: &freetds_restore_cache
+    restore_cache:
+      keys:
+        - gett-ui-freetds-1.00.54-v1
+
+  freetds_install: &freetds_install
+    run:
+      name: Install freetds
+      command: |
+        cd ~
+        if [ ! -d "freetds" ]; then
+          wget ftp://ftp.freetds.org/pub/freetds/stable/freetds-1.00.54.tar.gz -O freetds.tar.gz
+          mkdir freetds && tar -xzf freetds.tar.gz -C freetds --strip-components=1
+          rm freetds.tar.gz
+          cd freetds
+          ./configure --prefix=/opt/local --with-tdsver=7.3
+          make
+        fi
+        cd ~/freetds
+        sudo make install
+
+  freetds_save_cache: &freetds_save_cache
+    save_cache:
+      key: gett-ui-freetds-1.00.54-v1
+      paths:
+        - ~/freetds
+
+  bundler_restore_cache: &bundler_restore_cache
+    restore_cache:
+      keys:
+        - gett-ui-bundler-{{ checksum "Gemfile.lock" }}
+
+  bundler_install: &bundler_install
+    run:
+      name: Bundle install
+      command: bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+  bundler_save_cache: &bundler_save_cache
+    save_cache:
+      key: gett-ui-bundler-{{ checksum "Gemfile.lock" }}
+      paths:
+        - vendor/bundle
+
+  yarn_restore_cache: &yarn_restore_cache
+    restore_cache:
+      keys:
+        - gett-ui-yarn-{{ checksum "ui/yarn.lock" }}
+
+  yarn_install: &yarn_install
+    run:
+      name: Yarn install
+      command: cd ui && yarn install --network-concurrency 1
+
+  yarn_save_cache: &yarn_save_cache
+    save_cache:
+      key: gett-ui-yarn-{{ checksum "ui/yarn.lock" }}
+      paths:
+        - ui/.cache/yarn
+
+  specs_environment: &specs_environment
+    environment:
+      DATABASE_URL: "postgres://gett@localhost:5432/gb_test"
+
+  specs_features_environment: &specs_features_environment
+    environment:
+      DATABASE_URL: "postgres://gett@localhost:5432/gb_test_features"
+
+jobs:
+  rubocop:
+    docker:
+      - image: circleci/ruby:2.4-node
+        environment:
+          DISABLE_SPRING: true
+
+    steps:
+      - checkout
+
+      - *freetds_restore_cache
+      - *freetds_install
+      - *freetds_save_cache
+
+      - *bundler_restore_cache
+      - *bundler_install
+      - *bundler_save_cache
+
+      - run:
+          name: Run rubocop
+          command: bundle exec rubocop --parallel
+
+  specs:
+    docker:
+      - image: circleci/ruby:2.4-node
+        environment:
+          TZ: "/usr/share/zoneinfo/Europe/London"
+          DISABLE_SPRING: true
+          RAILS_ENV: test
+          RACK_ENV: test
+          GHOST: 127.0.0.1
+          PARALLELIZM: 4
+          PARALLEL_TEST_FIRST_IS_1: true
+
+      - image: mdillon/postgis:9.6
+        environment:
+          - POSTGRES_DB=gb_test
+          - POSTGRES_USER=gett
+
+    steps:
+      - checkout
+
+      - run:
+          name: Pre setup
+          command: |
+            sudo apt-get install libgeos-dev libproj-dev postgresql-client pdftk -y
+            echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV
+
+      - *freetds_restore_cache
+      - *freetds_install
+      - *freetds_save_cache
+
+      - *bundler_restore_cache
+      - *bundler_install
+      - *bundler_save_cache
+
+      - run:
+          name: Setup DB
+          <<: *specs_environment
+          command: |
+            cp .env.example .env
+            bin/rails parallel:rake[db:create,$PARALLELIZM]
+            for i in $(seq 1 $PARALLELIZM); do
+              psql -h localhost -p 5432 -U gett -d gb_test$i -c "CREATE EXTENSION IF NOT EXISTS hstore WITH SCHEMA public;"
+            done
+            bin/rails parallel:rake[db:migrate,$PARALLELIZM]
+
+      - run:
+          name: Specs
+          <<: *specs_environment
+          command: |
+            bundle exec parallel_test -t rspec -n $PARALLELIZM spec
+
+      - type: store_test_results
+        path: /tmp/test-results
+
+  specs.features:
+    parallelism: 2
+    docker:
+      - image: circleci/ruby:2.4-node-browsers
+        environment:
+          TZ: "/usr/share/zoneinfo/Europe/London"
+          DISABLE_SPRING: true
+          RAILS_ENV: test_features
+          RACK_ENV: test_features
+
+      - image: mdillon/postgis:9.6
+        environment:
+          - POSTGRES_DB=gb_test_features
+          - POSTGRES_USER=gett
+
+      - image: redis:3.2
+
+    steps:
+      - checkout
+      # Map gett-test.me to localhost to avoid issues with PAC files and chrome
+      # https://chromium-review.googlesource.com/c/chromium/src/+/1324880
+      - run: echo 127.0.0.1 gett-test.me | sudo tee -a /etc/hosts
+
+      - run:
+          name: Pre setup
+          command: |
+            sudo apt-get install libgeos-dev libproj-dev postgresql-client pdftk -y
+            echo 'export PATH=${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin' >> $BASH_ENV
+
+      - *freetds_restore_cache
+      - *freetds_install
+      - *freetds_save_cache
+
+      - *bundler_restore_cache
+      - *bundler_install
+      - *bundler_save_cache
+
+      - *yarn_restore_cache
+      - *yarn_install
+      - *yarn_save_cache
+
+      - run:
+          name: Setup DB
+          <<: *specs_features_environment
+          command: |
+            psql -h localhost -p 5432 -U gett -d gb_test_features -c "CREATE EXTENSION IF NOT EXISTS hstore WITH SCHEMA public;"
+            cp .env.example .env.test_features
+            bin/rails db:migrate
+            bin/rails db:seed
+
+      - run:
+          name: Run foreman in background
+          <<: *specs_features_environment
+          command: bundle exec foreman start -f features.Procfile
+          background: true
+
+      - run:
+          name: Wait for frontend start
+          <<: *specs_features_environment
+          command: bash bin/wait-for-server-start.sh
+
+      - run:
+          name: Run specs
+          <<: *specs_features_environment
+          command: |
+            if [[ "${CIRCLE_BRANCH}" == "master" ]]; then
+              bin/rspec \
+              --format RspecJunitFormatter --out /tmp/test-results/rspec.xml \
+              --format progress \
+              $(circleci tests glob "spec.features/**/*_spec.rb" | circleci tests split --split-by=timings)
+            else
+              bin/rspec --tag ~priority:low --tag ~sporadic \
+              --format RspecJunitFormatter --out /tmp/test-results/rspec.xml \
+              --format progress \
+              $(circleci tests glob "spec.features/**/*_spec.rb" | circleci tests split --split-by=timings)
+            fi
+
+      - type: store_artifacts
+        path: tmp/capybara
+
+      - type: store_artifacts
+        path: bmp.log
+
+      - type: store_artifacts
+        path: tmp/mail
+
+      - type: store_artifacts
+        path: /tmp/test-results
+
+      - type: store_artifacts
+        path: log
+
+      - type: store_test_results
+        path: /tmp/test-results
+
+workflows:
+  version: 2
+  pull_request:
+    jobs:
+      - rubocop
+      - specs:
+          requires:
+            - rubocop
+      - specs.features:
+          requires:
+            - specs

@@ -1,0 +1,39 @@
+@import '../variables';
+@import '../variables-theme';
+
+.sub-nav {
+  margin-top: 50px;
+
+  .title {
+    color: $RFP_SUB_NAVIGATION_BOLD_COLOR;
+    text-transform: uppercase;
+  }
+
+  .ui.secondary.pointing.menu {
+    margin-top: 20px;
+    border-right: 0;
+    border-left: 3px solid hsla(210, 6%, 14%, 0.15);
+
+    a.item {
+      color: #aebac2;
+      font-weight: bold;
+      border-right: 0;
+      border-left: 3px solid transparent;
+      margin-left: -3px;
+      padding: 10px 20px;
+      &.active, &:hover {
+        color: $RFP_SUB_NAVIGATION_BOLD_COLOR;
+      }
+
+      &.active {
+        border-left-color: #1fb9f0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .sub-nav {
+    margin-top: 0 !important;
+  }
+}

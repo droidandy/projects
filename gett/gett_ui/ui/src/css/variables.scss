@@ -1,0 +1,94 @@
+/* Colors */
+$black: #373737;
+
+$blue: #1875f0;
+$light-blue: #69a4f3;
+$pale-blue: rgba($blue, 0.1);
+
+$red: #ff0000;
+$dark-red: #c70505;
+
+$green: #6bc11a;
+$light-green: #34cb49;
+
+$lilac: #a889dc;
+$deep-cyan: #2d5f6d;
+
+$orange: #da6f1c;
+$yellow: #fdb924;
+$dark-yellow: #e7aa23;
+
+$grey: #8794a0;
+$dark-grey: #808080;
+$light-grey: #e2e2e2;
+$light-grey-bg: #e2e2e2;
+$extra-light-grey: #fafafa;
+
+$sand: #f5f5f5;
+$white: #fff;
+
+$grey-text: $dark-grey;
+$dark-grey-text: $dark-grey;
+$medium-grey-text: #b3b3b3;
+$light-grey-text: $light-grey;
+
+/* theme colors */
+
+$primary-color: $yellow;
+$layout-color: #fbfbfb;
+
+/* button colors */
+$btn-disabled-bg: #e6e6e6;
+$btn-disabled-bg-hover: #e6e6e6;
+$btn-disabled-color: #a0a0a0;
+
+$btn-primary-bg: $primary-color;
+$btn-primary-bg-hover: $dark-yellow;
+$btn-primary-outline: #003555;
+$btn-primary-color: $black;
+
+$btn-secondary-bg: $white;
+$btn-secondary-bg-hover: $white;
+$btn-secondary-bg-outline: $light-grey;
+$btn-secondary-color: $black;
+
+$btn-danger-bg: $white;
+$btn-danger-bg-hover: $white;
+$btn-danger-bg-outline: $red;
+$btn-danger-color: $red;
+$btn-danger-color-hover: $dark-red;
+$btn-danger-bg-outline-hover: $dark-red;
+
+/* input */
+$input-border-focus-color: $yellow;
+$input-border-color: #ededed;
+
+/* table */
+$table-color: $black;
+
+$table-header-bg-color: #f3f3f3;
+$table-header-radius: 5px;
+$table-header-icons-color: $dark-grey;
+$table-header-icons-font-size: 14px;
+
+$table-row-border-color: #d8d8d8;
+
+/* pagination */
+$pagination-size: 40px;
+$pagination-border-radius: 4px;
+$pagination-border-width: 2px;
+$pagination-border-color: $light-grey;
+$pagination-bg-hover: $primary-color;
+$pagination-color: $black;
+$pagination-item-link-color: $dark-grey;
+
+/* shadow */
+$shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+
+$tablet: 1024px;
+$phone: 768px;
+
+@custom-media --phone (max-width: #{$phone});
+@custom-media --tablet (max-width: #{$tablet - 1});
+@custom-media --tablet-sidebar (max-width: #{$tablet});
+@custom-media --desktop (min-width: #{$tablet});

@@ -1,0 +1,60 @@
+{% extends 'AppBundle:user/profile:root.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:user/profile:user_profile_head.html.twig' with {'user' : user} %}
+
+    <div class="container">
+        <div class="row">
+            <div class="headline --line-separator">
+                <h3 class="heading">
+                    {{ market|trans }}
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    {% if is_current_user(user) %}
+        <div class="information-centered">
+            Your listings are currently visible for the public on your profile only.
+            Expand your potential by including your listings in our public search result pages.<br/>
+            <strong>Unlock your unlimited listing portfolio for only $99/month.</strong>
+
+            <div class="actions">
+                <button disabled="true"
+                        class="black upgrade-role-button mdl-button mdl-js-button mdl-js-ripple-effect">
+                    Upgrade
+                </button>
+            </div>
+        </div>
+    {% endif %}
+
+    {% if pagination[0]|length %}
+        <div class="property-listing items-collection --space-bottom">
+            <ul class="list"
+                data-page-total="{{ pageTotal }}"
+                data-page-current="{{ requestedPage }}"
+            >
+                {% if app.request.get('missing') %}
+                    <div class="headline">
+                        <p class="heading">{{ 'property.missing_error'|trans|nl2br }}</p>
+                    </div>
+                {% endif %}
+
+                {% include 'AppBundle:property/collection:items.html.twig' %}
+            </ul>
+        </div>
+
+        <div class="equalizer"></div>
+    {% else %}
+        {% if not is_current_user(user) %}
+            <div class="information-centered">
+                We are sorry but there are currently no listings related to this user.<br/>
+                Please check back later or click follow for updates.
+                <br/>
+                <br/>
+
+                {% include 'AppBundle:user/profile:follow_button.html.twig' %}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}

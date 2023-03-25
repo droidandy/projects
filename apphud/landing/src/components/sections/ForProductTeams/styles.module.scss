@@ -1,0 +1,61 @@
+@import "~styles/variables";
+
+.block {
+  padding-bottom: 200px;
+
+  h2 {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  & .item {
+    padding-top: 80px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 384px 488px;
+    justify-content: space-between;
+
+    &:global(._center) {
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & .item {
+      grid-template-columns: 1fr;
+      padding-top: 0;
+      text-align: center;
+
+      max-width: 680px;
+      margin: 0 auto;
+
+      & > div {
+        &:last-child {
+          order: -1;
+          margin-bottom: 33px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+
+    h2 {
+      margin-bottom: 26px;
+    }
+
+    & .item {
+      grid-template-columns: 1fr;
+      padding-top: 0;
+      text-align: center;
+
+      & > div {
+        &:last-child {
+          order: -1;
+          margin-bottom: 33px;
+        }
+      }
+    }
+  }
+}

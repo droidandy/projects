@@ -1,0 +1,1 @@
+export { getSavingsAccountRates } from './getSavingsAccountRates';

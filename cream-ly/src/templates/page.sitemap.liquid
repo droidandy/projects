@@ -1,0 +1,57 @@
+{% layout none %}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    {%- liquid
+
+    assign langs = "ru, en, lv" | split: ", "
+    assign hosts = "cream.ly, creamly.by, creamly.ru, creamly.ua, creamly.lv" | split: ", "
+
+    assign host = "https://cream.ly"
+    if hosts contains request.host %
+        assign host = "https://" | append: request.host
+    endif
+
+	render 'sitemap.url', host: host, url:''
+
+    if request.host == 'cream.ly'
+
+        render 'sitemap.url', url: '', host:host, lang:'en'
+
+
+    	render 'sitemap.url', url: '/blogs/beauty', host:host
+        for article in blogs["beauty"].articles
+       		render 'sitemap.url', url: article.url, host:host
+        endfor
+
+        render 'sitemap.url', url: '/blogs/beauty/kak-opredelit-tip-koji-lica', host:host
+        render 'sitemap.url', url: '/blogs/beauty/kak-chasto-delat-massazh-lica', host:host
+        render 'sitemap.url', url: '/blogs/beauty/kak-polyubit-svoyu-kozhu', host:host
+        render 'sitemap.url', url: '/blogs/beauty/sredstva-dlya-intimnoj-gigieny', host:host
+        render 'sitemap.url', url: '/blogs/beauty/suhaya-kozha-na-nogah', host:host
+        render 'sitemap.url', url: '/blogs/beauty/suhost-tela', host:host
+
+        render 'sitemap.products', host:host, lang:'ru'
+        render 'sitemap.products', host:host, lang:'en'
+        render 'sitemap.pages', host:host, lang:'ru'
+        render 'sitemap.pages', host:host, lang:'en'
+    endif
+
+    if request.host == 'creamly.lv'
+    	render 'sitemap.url', url: '', host:host, lang:'lv'
+     	render 'sitemap.products', host:host, lang:'lv'
+        render 'sitemap.pages', host:host, lang:'lv'
+    endif
+
+    if request.host == 'creamly.ru' or request.host == 'creamly.by' or request.host == 'creamly.ua'
+
+
+    endif
+
+
+
+    -%}
+
+  	{{- page.content }}
+</urlset>

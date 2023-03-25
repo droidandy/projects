@@ -1,0 +1,36 @@
+query getCurrentUserStacks {
+    currentUser {
+        ... on User {
+            stacks {
+                id
+                name
+                instruments {
+                    id
+                    symbol
+                    currentPrice
+                    priceChangePercentage
+                    description
+                    shortDescription
+                    name
+                }
+                totalValue
+                percentageChange
+            }
+            followedStacks {
+                id
+                name
+                instruments {
+                    id
+                    symbol
+                    currentPrice
+                    priceChangePercentage
+                    description
+                    shortDescription
+                    name
+                }
+                totalValue
+                percentageChange
+            }
+        }
+    }
+}

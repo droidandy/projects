@@ -1,0 +1,22 @@
+.setup {
+  .react-datepicker-wrapper {
+    width: 100%;
+    .react-datepicker__input-container {
+      width: 100%;
+      .datepicker {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  }
+
+  .ui.form .inline.fields {
+    margin: 0;
+  }
+
+  .ui.input {
+    input {
+      max-width: 320px;
+    }
+  }
+}

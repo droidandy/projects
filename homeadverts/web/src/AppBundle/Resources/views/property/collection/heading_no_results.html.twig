@@ -1,0 +1,51 @@
+<div class="one-column --margin-bottom">
+    <div class="headline --separator --collection --margin-bottom-no">
+        <h1 class="heading">
+            We're Sorry!
+        </h1>
+        <span class="sub-heading --small">
+            it seems that we do not have any listings in:
+        </span>
+    </div>
+
+    <div class="information-centered">
+        <p class="focused-title --nothing-found">
+            "{{ search.location.searchTerm }}"
+        </p>
+
+        {% if search.location.fallback %}
+            You may want to expand your search to:<br/>
+
+            <a class="focused-title"
+               href="{{ path('search_term', {
+                   market: 'for-sale',
+                   term: search.location.fallback.term })
+               }}">
+                "{{ search.location.fallback.label }}"
+            </a>
+
+            You may also check your spelling and try again or, click follow and
+            <br/> we'll notify you as soon as new listings becomes available
+        {% endif %}
+
+        <div class="actions">
+            <button
+                    data-name="{{ search.location.searchTerm }}"
+                    data-follow-url="{{ path("ha_location_follow", {id:search.location.id}) }}"
+                    data-unfollow-url="{{ path("ha_location_unfollow", {id:search.location.id}) }}"
+                    class="
+                            black
+                            follow-button
+                            mdl-button
+                            mdl-js-button
+                            {% if (app.user) and (app.user.isLocationFollowed(search.location)) %} --following {% endif %}
+                        "
+
+            >
+                <span class="follow">Follow</span>
+                <span class="following">Following</span>
+                <span class="unfollow">Unfollow</span>
+            </button>
+        </div>
+    </div>
+</div>

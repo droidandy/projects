@@ -1,0 +1,77 @@
+<div class="profile-section">
+    <h2>
+        Account details
+    </h2>
+    <p class="info">
+        Need to talk to someone? <a href="#">Contact us</a> — we’d love to help.<br/>
+    </p>
+
+    <div class="payment grouped-fields">
+        <form>
+            <h3>Payment</h3>
+            <div class="field-content">
+                {% if is_granted('ROLE_WRITER') %}
+                    <strong>Writer</strong> - allowed to publish stories and properties<br/>
+                    {{ billing.base_price }} {{ billing.base_currency }} per month<br/>
+                    <div class="payment-details">
+                        {% if app.user.creditCard %}
+                            - <br/>
+                            {{ app.user.creditCard.type }} {{ app.user.creditCard.maskedNumber }}<br/>
+                            Expiration: {{ app.user.creditCard.expirationMonth }}/{{ app.user.creditCard.expirationYear }}<br/>
+                            Card Holder: {{ app.user.creditCard.cardholderName }}<br/>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    <strong>Free</strong> - No content publishing<br/>
+                {% endif %}
+            </div>
+
+            <div class="settings-action --wide">
+                <button class="cancel-button white --right mdl-button mdl-js-button mdl-js-ripple-effect">
+                    Cancel
+                </button>
+
+                {% if is_granted('ROLE_WRITER') %}
+                    <button type="submit"
+                            class="
+                            edit-button
+                            white
+                            --right mdl-button
+                            mdl-js-button
+                            mdl-js-ripple-effect">
+                        <i class="material-icons">
+                            credit_card
+                        </i>
+                        Update Card Details
+                    </button>
+                    <button type="submit"
+                            class="save-button white --right mdl-button mdl-js-button mdl-js-ripple-effect">
+                        Update Card
+                    </button>
+                {% else %}
+                    <button
+                            type="submit"
+                            class="
+                            user-upgrade-button
+                            black
+                            --right
+                            mdl-button
+                            mdl-js-button
+                            mdl-js-ripple-effect
+                        ">
+                        <i class="material-icons">
+                            credit_card
+                        </i>
+                        Upgrade to Premium
+                    </button>
+                    <button type="submit"
+                            class="save-button white --right mdl-button mdl-js-button mdl-js-ripple-effect">
+                        Upgrade Account
+                    </button>
+                {% endif %}
+            </div>
+
+            {% include 'AppBundle:user/billing/details:cc_form.html.twig' %}
+        </form>
+    </div>
+</div>

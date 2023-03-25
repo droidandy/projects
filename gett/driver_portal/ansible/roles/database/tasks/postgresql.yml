@@ -1,0 +1,23 @@
+- name: Add PostgreSQL repository key
+  apt_key: url=https://www.postgresql.org/media/keys/ACCC4CF8.asc state=present
+  become: true
+
+- name: Add PostgreSQL repository
+  apt_repository: repo='deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main' state=present
+  become: true
+  register: postgresql_repo
+
+- name: Update APT package cache
+  action: apt update_cache=yes
+  when: postgresql_repo.changed
+
+- name: Install PostgreSQL deps
+  apt: state=latest update_cache=yes cache_valid_time=3600 pkg={{item}}
+  with_items:
+    - python-pycurl
+    - python-psycopg2
+
+- name: Install PostgreSQL
+  apt: state=latest update_cache=yes cache_valid_time=3600 pkg={{item}}
+  with_items:
+    - postgresql-10

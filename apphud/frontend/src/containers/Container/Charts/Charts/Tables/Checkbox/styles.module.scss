@@ -1,0 +1,100 @@
+$colors: #0085FF, #FF0C46, #F6921D, #20BF55, #9620BF, #2035F0, #CBDC0D, #0AB7AC, #FF0E9F, #424242;
+
+@each $color in $colors {
+  $i: index($colors, $color);
+  .hex-#{$i} {
+    label {
+      &:before {
+        border-color: $color !important;
+      }
+    }
+
+    input {
+      &:checked + label {
+        &:before {
+          background: $color !important;
+        }
+      }
+    }
+  }
+}
+
+.checkbox {
+  // width: 18px;
+  // height: 18px;
+  position: relative;
+  box-sizing: border-box;
+
+  label {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 22px;
+    display: flex;
+    align-items: center;
+    min-height: 22px;
+
+    &:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 4px;
+      border: 2px #0085ff solid;
+    }
+
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 2px solid #fcfff4;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+
+    &:global(._minus) {
+      &:after {
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        display: block;
+        width: 10px;
+        height: 2px;
+        border: none;
+        background: #fff;
+        transform: none;
+      }
+    }
+  }
+
+  input {
+    &:checked + label {
+      &:before {
+        background: #0085ff;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  input {
+    visibility: hidden;
+    cursor: default;
+    margin: 0;
+    height: 0;
+    position: absolute;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+  }
+}

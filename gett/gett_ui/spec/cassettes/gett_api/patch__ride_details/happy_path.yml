@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://rides.gett.com/sandbox/api/v1/business/rides/585?business_id=UK-3836
+    body:
+      encoding: UTF-8
+      string: '{"pickup":{"latitude":51.5141693,"longitude":-0.1088909,"address":"167
+        Fleet St, London EC4A 2EA, UK"},"note_to_driver":"asdasdasd","product_id":"5178cd83-20bf-4991-b559-c1128dfae662","reference":"101181","destination":{"latitude":51.5237102,"longitude":-0.1584593,"address":"221B
+        Baker St, Marylebone, London NW1 6XE, UK"},"scheduled_at":"2018-09-27T14:25:00.000+00:00"}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin16.7.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 6638667d009fa764b7199276bec694ef809e1585bdfc7df45702f7b7f7efcc8d
+      Content-Length:
+      - '371'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Sep 2018 11:28:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{}'
+    http_version:
+  recorded_at: Thu, 27 Sep 2018 11:27:25 GMT
+recorded_with: VCR 4.0.0

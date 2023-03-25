@@ -1,0 +1,8 @@
+  {%if article.handle and request.locale.iso_code == 'ru'}
+    {% assign handle = article.handle | replace: 'beauty/', '' -%}
+    {% assign snippet = 'staticHTML-' | append: handle | append: '-' | append: request.locale.iso_code %}
+    {% capture snippet_content %}{% include snippet %}{% endcapture %}
+    {% unless snippet_content contains "Liquid error" %}
+      {{ snippet_content }}
+    {% endunless %}
+  {%endif%}

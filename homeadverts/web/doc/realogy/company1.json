@@ -1,0 +1,50 @@
+{
+  "companySummary": {
+    "id": "69827e8e-eec7-4f3d-83e6-161d8e1f2620",
+    "name": "List Sotheby's International Realty",
+    "RFGID": "902901",
+    "brandCode": "SIR",
+    "isNrt": false,
+    "lastUpdateOn": "2018-09-25T15:00:02.367",
+    "canDoCommercialBusiness": true,
+    "commercialCompanyName": ""
+  },
+  "preferences": [
+    {
+      "preferenceType": "Allow consumers to send email to Sales Associate",
+      "preferenceValue": "True"
+    },
+    {
+      "preferenceType": "Display Open\/Pending Listings on web",
+      "preferenceValue": "True"
+    },
+    {
+      "preferenceType": "Display Sales Associate and Team Names on Listings",
+      "preferenceValue": "True"
+    },
+    {
+      "preferenceType": "Display Sales Associates on Website",
+      "preferenceValue": "True"
+    }
+  ],
+  "office": [
+    {
+      "officeId": "a508e2e6-57f3-4ac3-a932-4d54a75e3ef4",
+      "RFGOfficeId": "0001",
+      "isOpen": true,
+      "name": "List Sotheby's International Realty",
+      "type": "Main office",
+      "officeAddress": {
+        "streetAddress": "127 Gaysorn Tower, Unit C, 20th Floor Ratchadamri Road, Lumpini, Pathumwan ",
+        "city": "Bangkok",
+        "country": "Thailand",
+        "countryCode": "TH",
+        "latitude": 13.7533597946167,
+        "longitude": 100.504829406738
+      },
+      "phoneNumber": "+66 2 012 8515",
+      "emailAddress": "contact@listsir.in.th",
+      "websiteURL": "http:\/\/www.listsothebysrealty.in.th\/"
+    }
+  ]
+}

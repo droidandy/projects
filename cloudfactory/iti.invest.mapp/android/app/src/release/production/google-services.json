@@ -1,0 +1,190 @@
+{
+  "project_info": {
+    "project_number": "914057864633",
+    "project_id": "iti-invest",
+    "storage_bucket": "iti-invest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914057864633:android:82aa731832e6fc73470268",
+        "android_client_info": {
+          "package_name": "iti.invest.mapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1rW77Z7U7xWG8Wyu-xu-80QMPS-1jHJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914057864633-3n3l1qdbmibhvbsq4dgli47ueh1f2l24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iti.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914057864633:android:271388e281fe8ce1470268",
+        "android_client_info": {
+          "package_name": "iti.invest.mapp.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1rW77Z7U7xWG8Wyu-xu-80QMPS-1jHJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914057864633-3n3l1qdbmibhvbsq4dgli47ueh1f2l24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iti.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914057864633:android:ba3b58c654b5ea1e470268",
+        "android_client_info": {
+          "package_name": "iti.invest.mapp.preproduction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1rW77Z7U7xWG8Wyu-xu-80QMPS-1jHJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914057864633-3n3l1qdbmibhvbsq4dgli47ueh1f2l24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iti.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914057864633:android:dcf60b523a889afa470268",
+        "android_client_info": {
+          "package_name": "iti.invest.mapp.preview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1rW77Z7U7xWG8Wyu-xu-80QMPS-1jHJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914057864633-3n3l1qdbmibhvbsq4dgli47ueh1f2l24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iti.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914057864633:android:7e834781bd75e3fa470268",
+        "android_client_info": {
+          "package_name": "iti.invest.mapp.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1rW77Z7U7xWG8Wyu-xu-80QMPS-1jHJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914057864633-00dni3t95jlk4h8810b44295sbpfmatd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "914057864633-3n3l1qdbmibhvbsq4dgli47ueh1f2l24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "iti.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

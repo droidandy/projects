@@ -1,0 +1,447 @@
+@import "./variables-theme";
+@import "./components/navigation";
+@import "./components/add-carrier";
+@import "./components/add-email";
+@import "./components/CLSA";
+@import "./pages/clients";
+@import "./pages/client";
+@import "./pages/setup";
+@import "./pages/rfp";
+@import "./pages/admin";
+@import "./pages/setup-presentation";
+@import "./pages/presentation";
+@import "./pages/user-profile";
+/*
+ * Main styles
+ *
+ */
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $FONT_COLOR;
+  font-size: 13px;
+  position: relative;
+}
+
+body.fontLoaded {
+  font-family: $MAIN_FONT;
+}
+
+a {
+  color: $LINK_COLOR;
+  cursor: pointer;
+
+  &:hover {
+    color: $LINK_COLOR_HOVER;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#app {
+  background-color: $BACKGROUND_COLOR;
+
+  .side-navigation {
+    // width: 20%;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  #container-center {
+
+    #container-pushable {
+
+      #container-pusher {
+        min-height: 100vh;
+        // padding-bottom: 60px;
+
+        .section-wrap {
+          margin-top: 60px !important;
+
+          @media only screen and (min-width: 1200px) {
+            & {
+              width: $MAX_WIDTH !important;
+            }
+          }
+
+          &.without-top {
+            margin-top: 0 !important;
+
+            & > .row {
+              padding-top: 0;
+
+              .column.top-padded-empty {
+                display: flex;
+                padding-top: 0 !important;
+              }
+            }
+          }
+
+          .side-navigation-content {
+            width: 80%;
+            padding-top: 40px;
+            margin-left: 40px;
+            position: relative;
+
+            &.without-top {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .app-header {
+    background: #fff;
+    height: 65px;
+    padding-top: 7px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.13);
+    width: 100%;
+    z-index: 1111;
+    position: relative;
+
+    .ui.container {
+      // overflow: hidden;
+
+      @media only screen and (min-width: 1200px) {
+        & {
+          width: 1182px;
+        }
+      }
+    }
+
+    .ui.menu {
+      margin-top: 5px; margin-bottom:0;
+
+      .right.menu {
+        & > .item {
+          min-height: 45px;
+          line-height: 23px;
+        }
+      }
+    }
+
+    .ui.secondary.menu .item, .ui.secondary.menu .active.item, .ui.secondary.menu a.item:hover {
+      color: $HEADER_COLOR;
+    };
+
+    .logo {
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      background: url("https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/benrevo/benrevo_2x.png") no-repeat;
+      background-size: contain;
+      width: 300px;
+      height: 70px;
+      position: absolute;
+      margin: -12px 0;
+    }
+
+    .user-clients-icon {
+      display: block;
+      background: url("../img/svg/clients_icon.svg") no-repeat;
+      width: 29px;
+      height: 24px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .user-profile {
+      display: inline-block;
+      line-height: 24px;
+
+      .user-profile-icon {
+        display: block;
+        background: url("../img/svg/user-icon.svg") no-repeat;
+        width: 24px;
+        height: 24px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .user-profile-name {
+        font-weight: 600;
+        margin-right: 5px;
+      }
+    }
+
+    i.icon.angle {
+      font-weight: 600;
+      color: $LINK_COLOR;
+    }
+  }
+
+  .auth0-lock.auth0-lock .auth0-lock-name {
+    overflow: visible !important;
+  }
+}
+
+.page-heading-top {
+  h1.ui.header.page-heading {
+    margin-top: 0;
+    text-align: left;
+    float:left;
+    font-size: 36px;
+    color: $HEADER_COLOR;
+    font-weight: 200;
+    margin-bottom: 30px;
+
+    &.small {
+      font-size: 24px;
+    }
+
+    &.center {
+      text-align: center;
+    }
+  }
+}
+
+.row.rfpRowDivider {
+  &:after {
+    content: '';
+    height: 1px;
+    background-color: rgba(34, 36, 38, .15);
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.pageFooterActions {
+  width: 100%;
+
+  .ui.button {
+    width: 200px;
+  }
+
+  .ui.primary.button {
+    width: 220px;
+  }
+
+  .ui.loader {
+    float: none !important;
+    margin-top: 0 !important;
+    margin-right: 20px;
+  }
+}
+
+.ui.table.main-table {
+  border: none;
+
+  tr {
+    th.sorted, th {
+      background: none;
+      border: none;
+      height: 38px;
+      border-top: 1px solid $TABLE_BORDER_COLOR;
+      border-bottom: 1px solid $TABLE_BORDER_COLOR;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $LIGHT_GREY_COLOR;
+
+      &:hover {
+        background: none;
+      }
+
+      &:after {
+        margin-top: -5px;
+      }
+    }
+
+    td {
+      min-height: 50px;
+      vertical-align: middle;
+      border-bottom: 1px solid $TABLE_BORDER_COLOR;
+      font-size: 13px;
+      font-weight: 400;
+
+      &.align-top {
+        vertical-align: top;
+      }
+
+      &:last-child {
+        border-right: 1px solid $TABLE_BORDER_COLOR;
+      }
+
+      a {
+        font-weight: 600;
+      }
+
+      .client-initials {
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        background-color: #6DC296;
+        display: inline-block;
+        line-height: 32px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        margin-right: 20px;
+      }
+    }
+
+    &:not(.row-span) {
+      td {
+        &:first-child {
+          border-left: 1px solid $TABLE_BORDER_COLOR;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      border: none;
+
+      td.table-empty {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 30px;
+        & > .table-empty-inner {
+          padding: 40px;
+
+          .title {
+            font-size: 18px;
+            margin: 10px 0 5px;
+          }
+
+          img {
+            width: 32px;
+            height: 16px;
+            display: inline-block;
+            margin-top: 10px;
+          }
+
+          .main-button {
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  &.vertical-border {
+    tbody {
+      tr {
+        td:not(:last-child) {
+          border-right: 1px solid $TABLE_BORDER_COLOR;
+        }
+      }
+    }
+  }
+}
+
+.ui.message {
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-position: 15px;
+  border: none;
+  padding: 15px 15px 15px 50px;
+  box-shadow: none !important;
+
+  &:not(.positive) .header {
+    font-size: 14px !important;
+    color: #ffffff !important;
+    font-weight: 400;
+  }
+
+  &.warning {
+    background-image: url('../img/svg/alert-warning.svg');
+    &.grey {
+      background-color: $BUTTON_GREY_COLOR;
+    }
+  }
+}
+
+.edit-plan-name-popup.ui.inverted.popup {
+  background-color: $FONT_COLOR;
+  top: 104px !important;
+  width: 288px !important;
+
+  &:before {
+    background: $FONT_COLOR !important;
+  }
+
+  .label-row {
+    padding-top: 16px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .input-row {
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+    input {
+      border-radius: 0;
+      font-size: 13px;
+      font-weight: normal;
+    }
+  }
+  .buttons-row {
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    .column {
+      &:first-child {
+        padding-right: 5px;
+      }
+      &:last-child {
+        padding-left: 5px;
+      }
+    }
+
+    button {
+      border-radius: 2px;
+      &.inverted {
+        box-shadow: none !important;
+        height: 33px;
+      }
+    }
+  }
+}
+
+.ui.page.modals.dimmer.transition.visible.active {
+  overflow: auto !important;
+}
+
+.enrollment-popup.ui.inverted.popup {
+  background-color: $FONT_COLOR;
+  &:before {
+    background: $FONT_COLOR !important;
+  }
+
+  .enrollment-popup-inner {
+    font-size: 13px;
+    font-weight: 300;
+
+    .row {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+
+      &:first-child {
+        padding-top: 20px !important;
+      }
+      &:last-child {
+        padding-bottom: 20px !important;
+      }
+
+      .count {
+        text-align: right;
+      }
+    }
+
+    header {
+      color: $BUTTON_TEAL_COLOR;
+      font-size: 13px;
+      font-weight: 600 !important;
+    }
+  }
+}

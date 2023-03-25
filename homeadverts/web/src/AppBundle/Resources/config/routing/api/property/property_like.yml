@@ -1,0 +1,15 @@
+ha_property_like_add:
+    path:  /{id}/like
+    defaults:
+        _controller: AppBundle:Api/Like:add
+        entity: 'AppBundle\Entity\Property\Property'
+        key: 'id'
+    methods:  [POST]
+
+ha_property_like_remove:
+    path:  /{id}/like
+    defaults:
+        _controller: AppBundle:Api/Like:remove
+        entity: 'AppBundle\Entity\Property\Property'
+        key: 'id'
+    methods:  [DELETE]

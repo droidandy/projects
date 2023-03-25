@@ -1,0 +1,385 @@
+{
+  "listingSummary": {
+    "listingId": "97e13ad7-6330-4869-8ba8-33ce7ff71f7c",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-10-22",
+    "photoCount": 21,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "JPY",
+      "amount": 235000000,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 2168100
+    },
+    "propertyAddress": {
+      "city": "Zushi-Shi",
+      "stateProvince": "Kanagawa",
+      "stateProvinceCode": "14",
+      "country": "Japan",
+      "countryCode": "JP"
+    },
+    "mlsNumbers": [
+      "Victorian Style House Hirouyama"
+    ],
+    "RFGListingId": "7L9Q7E",
+    "isNewConstruction": false,
+    "listingURL": "https:\/\/www.sothebysrealty.com\/id\/7l9q7e",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "2 Story",
+    "propertyName": "Victorian Style House Hirouyama",
+    "totalBath": 2,
+    "lotSize": "506.93 SM",
+    "buildingArea": "316.06 Sq. M",
+    "noOfBedrooms": 3,
+    "squareFootage": 3402.038234,
+    "defaultPhotoURL": "\/\/imgs.azureedge.net\/40D90A20-935B-4F64-977D-C8EB25D3BC5B",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2019-06-18T05:44:01.973",
+    "agents": [
+      {
+        "id": "a7dd5efa-67eb-4ad8-9aa5-461507fe557f",
+        "name": "Inbound Team ",
+        "firstName": "Inbound",
+        "lastName": "Team",
+        "defaultPhotoURL": "\/\/imgs.azureedge.net\/1EA1B8A1-E303-4ADB-A169-09EF78511675",
+        "emailAddress": "list-tm@list.co.jp",
+        "businessPhone": "+81 3 3538 5808",
+        "isPrimary": true,
+        "office": {
+          "officeId": "7cde946a-9da9-4c10-9511-f77a7ae2bc49",
+          "RFGOfficeId": "0010",
+          "companyId": "c3646fdf-6a9d-4478-a700-aeacf3e009e5",
+          "companyName": "List Sotheby's International Realty",
+          "RFGCompanyId": "870117",
+          "brandCode": "SIR",
+          "name": "List Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "5F Meidi-Ya Ginza Bldg., 2-6-7 Ginza ",
+            "city": "Chuo-ku",
+            "stateProvince": "Tokyo",
+            "stateProvinceCode": "13",
+            "postalCode": "104-0061",
+            "country": "Japan",
+            "countryCode": "JP",
+            "latitude": 35.6699981689453,
+            "longitude": 139.770004272461
+          },
+          "phoneNumber": "+81 3 3538 5808",
+          "emailAddress": "list-tm@list.co.jp",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "0311"
+      }
+    ],
+    "isShowAddressOnInternet": false,
+    "expiresOn": "2019-08-31"
+  },
+  "fullBath": 2,
+  "providerKey": "97e13ad7-6330-4869-8ba8-33ce7ff71f7c",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Single-family home information\r\n\r\n\r\nRight: Freehold\r\nAccess: Take a bus from 'Zushi' Station (JR Yokosuka Line), and get off at 'Hirouyama Entrance'\r\nStructure: Wooden and RC, 2-story building with 2 levels of basement\r\nLand Area\/Setback: 506.93 sqmt.\r\nTotal Floor Area: 316.06 sqmt.\r\nCurrent Status: Vacant\r\nDelivery Date: Consultation\r\nMode of Transaction: Brokerage\r\nLast update date: 06\/17\/2019\r\nUpdate scheduled date: 07\/01\/2019",
+      "htmlRemark": "<p><b><u>Single-family home information<\/u><\/b><\/p><p><br><\/p><p>Right: Freehold<\/p><p>Access:&nbsp;<span style=\"white-space:pre\">\t<\/span>Take a bus from 'Zushi' Station (JR Yokosuka Line), and get off at 'Hirouyama Entrance'<span style=\"white-space:pre\">\t<\/span>&nbsp;<span style=\"white-space:pre\">\t\t\t\t\t\t\t\t\t<\/span><\/p><p>Structure: Wooden and RC, 2-story building with 2 levels of basement&nbsp;<span style=\"white-space:pre\">\t\t\t\t\t\t\t\t\t<\/span><\/p><p>Land Area\/Setback: 506.93 sqmt.&nbsp;<span style=\"white-space:pre\">\t\t\t\t\t\t<\/span><\/p><p>Total Floor Area: 316.06 sqmt.&nbsp;<span style=\"white-space:pre\">\t\t\t\t\t\t<\/span><\/p><p>Current Status: Vacant&nbsp;<span style=\"white-space:pre\">\t\t\t\t\t<\/span><\/p><p>Delivery Date: Consultation<\/p><p>Mode of Transaction: Brokerage<\/p><p>Last update date: 06\/17\/2019<\/p><p>Update scheduled date: 07\/01\/2019<\/p>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "ja",
+      "remark": "\u7269\u4ef6\u6982\u8981\r\n\r\n\r\n\u6a29\u5229\u5f62\u614b\uff1a\u6240\u6709\u6a29\r\n\u4ea4\u901a\uff1aJR\u6a2a\u9808\u8cc0\u7dda\u300c\u9017\u5b50\u300d\u99c5 \u30d0\u30b910\u5206 \u62ab\u9732\u5c71\u5165\u53e3\u4e0b\u8eca\r\n\u69cb\u9020\uff1a\u6728\u9244\u7b4b\u30b3\u30f3\u30af\u30ea\u30fc\u30c8\u3001\u5730\u4e0a2\u968e \u5730\u4e0b2\u968e\r\n\u571f\u5730\u9762\u7a4d\u30fb\u79c1\u9053\u8ca0\u62c5\u9762\u7a4d\uff1a 506.93 sqmt.\r\n\u5efa\u7269\u9762\u7a4d\uff1a 316.06 sqmt.\r\n\u73fe\u6cc1\uff1a\u7a7a\u5ba4\r\n\u5f15\u6e21\uff1a\u76f8\u8ac7\r\n\u53d6\u5f15\u614b\u69d8\uff1a\u5a92\u4ecb\r\n\u66f4\u65b0\u65e5\uff1a06\/17\/2019\r\n\u6b21\u56de\u66f4\u65b0\u4e88\u5b9a\u65e5: 07\/01\/2019",
+      "htmlRemark": "<p><b><u>\u7269\u4ef6\u6982\u8981<\/u><\/b><\/p><p><br><\/p><p>\u6a29\u5229\u5f62\u614b\uff1a\u6240\u6709\u6a29<span style=\"white-space:pre\">\t\t\t\t\t\t\t\t\t\t\t<\/span><\/p><p>\u4ea4\u901a\uff1aJR\u6a2a\u9808\u8cc0\u7dda\u300c\u9017\u5b50\u300d\u99c5\u3000\u30d0\u30b910\u5206\u3000\u62ab\u9732\u5c71\u5165\u53e3\u4e0b\u8eca<span style=\"white-space: pre;\">\t\t\t\t\t\t<\/span><\/p><p>\u69cb\u9020\uff1a\u6728\u9244\u7b4b\u30b3\u30f3\u30af\u30ea\u30fc\u30c8\u3001\u5730\u4e0a2\u968e\u3000\u5730\u4e0b2\u968e<span style=\"white-space:pre\">\t\t\t\t\t\t<\/span><\/p><p>\u571f\u5730\u9762\u7a4d\u30fb\u79c1\u9053\u8ca0\u62c5\u9762\u7a4d\uff1a&nbsp;<span style=\"white-space:pre\">\t<\/span><span style=\"background-color: rgb(240, 239, 239); color: rgb(51, 51, 51);\">506.93 sqmt.<\/span><span style=\"white-space: pre;\">\t\t\t\t\t<\/span><\/p><p>\u5efa\u7269\u9762\u7a4d\uff1a<span style=\"background-color: rgb(240, 239, 239); color: rgb(51, 51, 51);\">316.06 sqmt.&nbsp;<\/span><span style=\"white-space: pre;\">\t\t\t\t\t\t\t\t\t\t<\/span><\/p><p>\u73fe\u6cc1\uff1a\u7a7a\u5ba4<span style=\"white-space:pre\">\t\t\t\t\t\t<\/span><\/p><p>\u5f15\u6e21\uff1a\u76f8\u8ac7<\/p><p>\u53d6\u5f15\u614b\u69d8\uff1a\u5a92\u4ecb<span style=\"white-space:pre\">\t\t\t\t\t\t<\/span><\/p><p>\u66f4\u65b0\u65e5\uff1a06\/17\/2019<\/p><p>\u6b21\u56de\u66f4\u65b0\u4e88\u5b9a\u65e5: 07\/01\/2019<\/p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https:\/\/www.sothebysrealty.com\/id\/7l9q7e",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "3923FA8B-6D98-4FB9-A085-005B72B3311A",
+      "sequenceNumber": 17,
+      "url": "\/\/imgs.azureedge.net\/3923FA8B-6D98-4FB9-A085-005B72B3311A",
+      "isDefault": false,
+      "caption": "DSC_0098",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "C3F3D3DB-B70B-404D-83A4-11C7B846CA6B",
+      "sequenceNumber": 20,
+      "url": "\/\/imgs.azureedge.net\/C3F3D3DB-B70B-404D-83A4-11C7B846CA6B",
+      "isDefault": false,
+      "caption": "DSC_0119",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "15F620CF-8426-4A63-BBE2-2B63350BFCC0",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/15F620CF-8426-4A63-BBE2-2B63350BFCC0",
+      "isDefault": false,
+      "caption": "DSC_0051",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "E30B9B66-7EC7-4961-8CB1-35906FFB9B40",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/E30B9B66-7EC7-4961-8CB1-35906FFB9B40",
+      "isDefault": false,
+      "caption": "DSC_0013",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "B9E24DC8-16DC-4FBC-840E-48BFB925156B",
+      "sequenceNumber": 15,
+      "url": "\/\/imgs.azureedge.net\/B9E24DC8-16DC-4FBC-840E-48BFB925156B",
+      "isDefault": false,
+      "caption": "DSC_0092",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "94E24D05-38F6-44EE-80DE-4E7E14E9622F",
+      "sequenceNumber": 7,
+      "url": "\/\/imgs.azureedge.net\/94E24D05-38F6-44EE-80DE-4E7E14E9622F",
+      "isDefault": false,
+      "caption": "DSC_0023",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "5EA6B97E-12CE-4995-AECC-5AA221B168AA",
+      "sequenceNumber": 11,
+      "url": "\/\/imgs.azureedge.net\/5EA6B97E-12CE-4995-AECC-5AA221B168AA",
+      "isDefault": false,
+      "caption": "DSC_0086",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "222BAB4C-CAD9-45E3-828E-6D8CD494C3F8",
+      "sequenceNumber": 6,
+      "url": "\/\/imgs.azureedge.net\/222BAB4C-CAD9-45E3-828E-6D8CD494C3F8",
+      "isDefault": false,
+      "caption": "DSC_0020",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "B8FB3BF6-360E-414C-9D3B-6E7D9A048191",
+      "sequenceNumber": 4,
+      "url": "\/\/imgs.azureedge.net\/B8FB3BF6-360E-414C-9D3B-6E7D9A048191",
+      "isDefault": false,
+      "caption": "DSC_0042",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "AAD42312-0179-472B-963A-8B82F893F3CA",
+      "sequenceNumber": 21,
+      "url": "\/\/imgs.azureedge.net\/AAD42312-0179-472B-963A-8B82F893F3CA",
+      "isDefault": false,
+      "caption": "DSC_0127",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "D8E8D95E-DB6E-48FB-9AA8-8E1F6018FCD4",
+      "sequenceNumber": 10,
+      "url": "\/\/imgs.azureedge.net\/D8E8D95E-DB6E-48FB-9AA8-8E1F6018FCD4",
+      "isDefault": false,
+      "caption": "DSC_0079",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "EA0B601A-25F6-4A63-951A-935C35F1516E",
+      "sequenceNumber": 14,
+      "url": "\/\/imgs.azureedge.net\/EA0B601A-25F6-4A63-951A-935C35F1516E",
+      "isDefault": false,
+      "caption": "DSC_0089",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "4781D130-1722-4F76-9090-985E1398D59D",
+      "sequenceNumber": 12,
+      "url": "\/\/imgs.azureedge.net\/4781D130-1722-4F76-9090-985E1398D59D",
+      "isDefault": false,
+      "caption": "DSC_0034",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "AB0BC1A9-E023-46D6-842D-B415CDCFC200",
+      "sequenceNumber": 13,
+      "url": "\/\/imgs.azureedge.net\/AB0BC1A9-E023-46D6-842D-B415CDCFC200",
+      "isDefault": false,
+      "caption": "DSC_0038",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "C97F04BE-7B0E-4543-ABAB-BF89CF063F9E",
+      "sequenceNumber": 9,
+      "url": "\/\/imgs.azureedge.net\/C97F04BE-7B0E-4543-ABAB-BF89CF063F9E",
+      "isDefault": false,
+      "caption": "DSC_0067",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "40D90A20-935B-4F64-977D-C8EB25D3BC5B",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/40D90A20-935B-4F64-977D-C8EB25D3BC5B",
+      "isDefault": true,
+      "caption": "DSC_0110",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "5435A476-D552-4E72-873C-CA891BE9C9EE",
+      "sequenceNumber": 18,
+      "url": "\/\/imgs.azureedge.net\/5435A476-D552-4E72-873C-CA891BE9C9EE",
+      "isDefault": false,
+      "caption": "DSC_0100",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "4F8AB0A1-B281-4AB3-89CE-CBDC77F17A55",
+      "sequenceNumber": 8,
+      "url": "\/\/imgs.azureedge.net\/4F8AB0A1-B281-4AB3-89CE-CBDC77F17A55",
+      "isDefault": false,
+      "caption": "DSC_0057",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "4ADFB891-C1FE-41DD-B193-D768343D5C39",
+      "sequenceNumber": 5,
+      "url": "\/\/imgs.azureedge.net\/4ADFB891-C1FE-41DD-B193-D768343D5C39",
+      "isDefault": false,
+      "caption": "DSC_0045",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "39805095-98AC-4FEF-90D1-DEF49F0973FA",
+      "sequenceNumber": 1,
+      "url": "https:\/\/my.matterport.com\/show\/?m=H2XETNEpujg",
+      "isDefault": true,
+      "format": "3D Video",
+      "category": "3D Video",
+      "lastUpdateOn": "2018-10-23T06:55:05.667"
+    },
+    {
+      "mediaID": "22140C5D-4BA2-4617-96A7-FBBA41A9D87A",
+      "sequenceNumber": 16,
+      "url": "\/\/imgs.azureedge.net\/22140C5D-4BA2-4617-96A7-FBBA41A9D87A",
+      "isDefault": false,
+      "caption": "DSC_0074",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    },
+    {
+      "mediaID": "42F32FEC-8034-4ACC-B572-FEF6AE84BF97",
+      "sequenceNumber": 19,
+      "url": "\/\/imgs.azureedge.net\/42F32FEC-8034-4ACC-B572-FEF6AE84BF97",
+      "isDefault": false,
+      "caption": "DSC_0097",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-10-23T01:53:09.003"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "Victorian Style House Hirouyama",
+      "isPrimary": true
+    }
+  ]
+}

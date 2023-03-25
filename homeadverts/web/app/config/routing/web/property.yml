@@ -1,0 +1,12 @@
+property_details:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/property/property_details.yml"
+
+property_featured:
+  prefix: /featured
+  resource: "@AppBundle/Resources/config/routing/property/property.yml"
+
+property_search:
+  prefix: /search
+  resource: "@AppBundle/Resources/config/routing/property/property_search.yml"
+

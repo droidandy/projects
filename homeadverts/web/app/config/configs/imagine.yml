@@ -1,0 +1,139 @@
+liip_imagine:
+    loaders:
+        stream.images:
+            stream:
+                wrapper: '%cdn.url%/'
+    resolvers:
+        default:
+            aws_s3:
+                client_config:
+                    bucket_endpoint: true
+                    endpoint: %s3.bucket.endpoint%
+                    region: %s3.bucket.region%
+                    version: %s3.api_version%
+                    credentials:
+                        key:    %s3.access.key%
+                        secret: %s3.access.secret%
+                bucket: %s3.bucket.name%
+                proxies: [%cdn.url%]
+                cache: imagine_cache_adapter
+        profile:
+            aws_s3:
+                client_config:
+                    bucket_endpoint: true
+                    endpoint: %s3.bucket.profile.endpoint%
+                    region: %s3.profile_bucket.region%
+                    version: %s3.api_version%
+                    credentials:
+                        key:    %s3.access.key%
+                        secret: %s3.access.secret%
+                bucket: %s3.profile_bucket.name%
+                proxies: [%cdn.url%]
+                cache: imagine_cache_adapter
+    data_loader: stream.images
+    filter_sets:
+        cache: ~
+        property_small_extra:
+            filters:
+                thumbnail: { size: [100, 75], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        property_small:
+            filters:
+                thumbnail: { size: [200, 150], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        property_medium:
+            filters:
+                thumbnail: { size: [400, 300], mode: outbound }
+                interlace:
+                    # mode can be one of: 'none', 'line', 'plane' and 'partition'
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        property_large:
+            filters:
+                thumbnail: { size: [760, 570], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 100
+            post_processors:
+                jpegoptim: {}
+        property_extra_large:
+            filters:
+                thumbnail: { size: [1200, 630], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 100
+            post_processors:
+                jpegoptim: {}
+        
+        # Users
+        user_profile_photo_small_extra:
+            filters:
+                thumbnail: { size: [75, 75], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        user_profile_photo:
+            filters:
+                thumbnail: { size: [200, 200], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        user_profile_background:
+            filters:
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+                
+        # Articles
+        article_small_extra:
+            filters:
+                thumbnail: { size: [100, 75], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        article_small:
+            filters:
+                thumbnail: { size: [400, 300], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        article_medium:
+            filters:
+                thumbnail: { size: [800, 480], mode: outbound }
+                interlace:
+                    mode: line
+            quality: 95
+            post_processors:
+                jpegoptim: {}
+        article_large:
+            filters:
+                downscale: { max: [1920, 1280] }
+                interlace:
+                    mode: line
+            quality: 100
+            post_processors:
+                jpegoptim: {}
+
+parameters:
+    #CDN
+    cdn.url: 'https://d38g8qy2rulhfp.cloudfront.net'

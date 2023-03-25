@@ -1,0 +1,109 @@
+
+-
+    request:
+        method: GET
+        url: 'https://api.linkedin.com/v1/people/~/?format=json'
+        headers:
+            Host: api.linkedin.com
+            Authorization: 'Bearer 000000'
+            Content-Type: application/json
+            x-li-format: json
+            Expect: null
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Server: Apache-Coyote/1.1
+            x-li-request-id: GJPGG0LMCD
+            Vary: '*'
+            x-li-format: json
+            Content-Type: application/json;charset=UTF-8
+            Date: 'Tue, 29 May 2018 09:51:40 GMT'
+            X-Li-Fabric: prod-lor1
+            Transfer-Encoding: chunked
+            Connection: keep-alive
+            X-Li-Pop: PROD-IDB2
+            X-LI-Proto: http/1.1
+            Set-Cookie: 'lidc="b=OB22:g=1034:u=397:i=1527587500:t=1527673900:s=AQE0OQFwm7PvQ3BaK6ETMnPm-arI3Qzl"'
+            X-LI-Route-Key: '"b=OB22:g=1034:u=397:i=1527587500:t=1527673900:s=AQE0OQFwm7PvQ3BaK6ETMnPm-arI3Qzl"'
+            X-LI-UUID: OZb87LwUMxVAw3ImKisAAA==
+        body: "{\n  \"firstName\": \"Ivan\",\n  \"headline\": \"Software Architect\",\n  \"id\": \"wc8M6dKhjJ\",\n  \"lastName\": \"Proskuryakov\",\n  \"siteStandardProfileRequest\": {\"url\": \"https://www.linkedin.com/profile/view?id=AAoAAAadacIBuboPQAtCHniw5x41kapcYEn3n60&authType=name&authToken=Sak9&trk=api*a4232014*s4298234*\"}\n}"
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/354'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"location":{"type":"point","coordinates":[0.0,0.0]},"email":"greg.kling@conroy.org","name":"Nicola Flatley","bio":null,"companyName":null,"phone":"375.686.5807","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '201'
+            message: Created
+        headers:
+            Location: /test_agents/agent/354
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '147'
+        body: '{"_index":"test_agents","_type":"agent","_id":"354","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/356'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"fay.nya@ledner.com","name":"Brendon Ankunding","bio":null,"companyName":null,"phone":"1-342-360-8165 x162","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"356","_version":3,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/146'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"rmonahan@yahoo.com","name":"Dr. Jeffrey Kub","bio":null,"companyName":null,"phone":"793.879.0334","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '149'
+        body: '{"_index":"test_agents","_type":"agent","_id":"146","_version":11,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/340'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"jacquelyn.lindgren@leannon.biz","name":"Jerome Smitham IV","bio":null,"companyName":null,"phone":"721-544-7600 x400","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"340","_version":5,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'

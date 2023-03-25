@@ -1,0 +1,24 @@
+{% extends 'AppBundle:user/profile:root.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:user/profile:user_profile_head.html.twig' with {'user' : user} %}
+
+    <div class="container">
+        <div class="row">
+            <div class="headline --line-separator">
+                <h3 class="heading">
+                    Following
+                </h3>
+            </div>
+
+            {% if is_current_user(user) %}
+                <div class="information-centered">
+                    Follow members, categories or listing movements from within any area of interest.
+                    Available to you as it happens in your news feed, notifications and email.
+                </div>
+            {% endif %}
+
+            {% include 'AppBundle:user/profile/section:user_collection.html.twig'%}
+        </div>
+    </div>
+{% endblock %}

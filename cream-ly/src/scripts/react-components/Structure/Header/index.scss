@@ -1,0 +1,14 @@
+@import "../../../../styles/tools/mixins.scss";
+/* 
+.section-header.sub {
+    padding:40px 0 0 0 ;
+}
+ */
+.section-header.sub  {
+  padding:0;
+  @include spacingBottomMedium;
+
+  h1, h2 {
+    margin: 0;
+  }
+}

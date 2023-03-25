@@ -1,0 +1,2182 @@
+schema {
+  query: query_root
+  mutation: mutation_root
+  subscription: subscription_root
+}
+
+"""
+whether this query should be cached (Hasura Cloud only)
+"""
+directive @cached(
+  """
+  measured in seconds
+  """
+  ttl: Int! = 60
+
+  """
+  refresh the cache entry
+  """
+  refresh: Boolean! = false
+) on QUERY
+
+"""
+Boolean expression to compare columns of type "String". All fields are combined with logical 'AND'.
+"""
+input String_comparison_exp {
+  _eq: String
+  _gt: String
+  _gte: String
+
+  """
+  does the column match the given case-insensitive pattern
+  """
+  _ilike: String
+  _in: [String!]
+
+  """
+  does the column match the given POSIX regular expression, case insensitive
+  """
+  _iregex: String
+  _is_null: Boolean
+
+  """
+  does the column match the given pattern
+  """
+  _like: String
+  _lt: String
+  _lte: String
+  _neq: String
+
+  """
+  does the column NOT match the given case-insensitive pattern
+  """
+  _nilike: String
+  _nin: [String!]
+
+  """
+  does the column NOT match the given POSIX regular expression, case insensitive
+  """
+  _niregex: String
+
+  """
+  does the column NOT match the given pattern
+  """
+  _nlike: String
+
+  """
+  does the column NOT match the given POSIX regular expression, case sensitive
+  """
+  _nregex: String
+
+  """
+  does the column NOT match the given SQL regular expression
+  """
+  _nsimilar: String
+
+  """
+  does the column match the given POSIX regular expression, case sensitive
+  """
+  _regex: String
+
+  """
+  does the column match the given SQL regular expression
+  """
+  _similar: String
+}
+
+scalar bigint
+
+"""
+Boolean expression to compare columns of type "bigint". All fields are combined with logical 'AND'.
+"""
+input bigint_comparison_exp {
+  _eq: bigint
+  _gt: bigint
+  _gte: bigint
+  _in: [bigint!]
+  _is_null: Boolean
+  _lt: bigint
+  _lte: bigint
+  _neq: bigint
+  _nin: [bigint!]
+}
+
+scalar date
+
+"""
+Boolean expression to compare columns of type "date". All fields are combined with logical 'AND'.
+"""
+input date_comparison_exp {
+  _eq: date
+  _gt: date
+  _gte: date
+  _in: [date!]
+  _is_null: Boolean
+  _lt: date
+  _lte: date
+  _neq: date
+  _nin: [date!]
+}
+
+"""
+columns and relationships of "instruments.feed"
+"""
+type instruments_feed {
+  name: String!
+}
+
+"""
+aggregated selection of "instruments.feed"
+"""
+type instruments_feed_aggregate {
+  aggregate: instruments_feed_aggregate_fields
+  nodes: [instruments_feed!]!
+}
+
+"""
+aggregate fields of "instruments.feed"
+"""
+type instruments_feed_aggregate_fields {
+  count(columns: [instruments_feed_select_column!], distinct: Boolean): Int!
+  max: instruments_feed_max_fields
+  min: instruments_feed_min_fields
+}
+
+"""
+Boolean expression to filter rows from the table "instruments.feed". All fields are combined with a logical 'AND'.
+"""
+input instruments_feed_bool_exp {
+  _and: [instruments_feed_bool_exp!]
+  _not: instruments_feed_bool_exp
+  _or: [instruments_feed_bool_exp!]
+  name: String_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "instruments.feed"
+"""
+enum instruments_feed_constraint {
+  """
+  unique or primary key constraint
+  """
+  pkey_feed_name
+}
+
+enum instruments_feed_enum {
+  APEX
+  MORNING_STAR
+}
+
+"""
+Boolean expression to compare columns of type "instruments_feed_enum". All fields are combined with logical 'AND'.
+"""
+input instruments_feed_enum_comparison_exp {
+  _eq: instruments_feed_enum
+  _in: [instruments_feed_enum!]
+  _is_null: Boolean
+  _neq: instruments_feed_enum
+  _nin: [instruments_feed_enum!]
+}
+
+"""
+input type for inserting data into table "instruments.feed"
+"""
+input instruments_feed_insert_input {
+  name: String
+}
+
+"""
+aggregate max on columns
+"""
+type instruments_feed_max_fields {
+  name: String
+}
+
+"""
+aggregate min on columns
+"""
+type instruments_feed_min_fields {
+  name: String
+}
+
+"""
+response of any mutation on the table "instruments.feed"
+"""
+type instruments_feed_mutation_response {
+  """
+  number of rows affected by the mutation
+  """
+  affected_rows: Int!
+
+  """
+  data from the rows affected by the mutation
+  """
+  returning: [instruments_feed!]!
+}
+
+"""
+on conflict condition type for table "instruments.feed"
+"""
+input instruments_feed_on_conflict {
+  constraint: instruments_feed_constraint!
+  update_columns: [instruments_feed_update_column!]! = []
+  where: instruments_feed_bool_exp
+}
+
+"""
+Ordering options when selecting data from "instruments.feed".
+"""
+input instruments_feed_order_by {
+  name: order_by
+}
+
+"""
+primary key columns input for table: instruments_feed
+"""
+input instruments_feed_pk_columns_input {
+  name: String!
+}
+
+"""
+select columns of table "instruments.feed"
+"""
+enum instruments_feed_select_column {
+  """
+  column name
+  """
+  name
+}
+
+"""
+input type for updating data in table "instruments.feed"
+"""
+input instruments_feed_set_input {
+  name: String
+}
+
+"""
+update columns of table "instruments.feed"
+"""
+enum instruments_feed_update_column {
+  """
+  column name
+  """
+  name
+}
+
+"""
+columns and relationships of "marketdata.stock_prices_daily"
+"""
+type marketdata_stock_prices_daily {
+  feed: instruments_feed_enum!
+  inst_id: bigint!
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date!
+}
+
+"""
+aggregated selection of "marketdata.stock_prices_daily"
+"""
+type marketdata_stock_prices_daily_aggregate {
+  aggregate: marketdata_stock_prices_daily_aggregate_fields
+  nodes: [marketdata_stock_prices_daily!]!
+}
+
+"""
+aggregate fields of "marketdata.stock_prices_daily"
+"""
+type marketdata_stock_prices_daily_aggregate_fields {
+  avg: marketdata_stock_prices_daily_avg_fields
+  count(columns: [marketdata_stock_prices_daily_select_column!], distinct: Boolean): Int!
+  max: marketdata_stock_prices_daily_max_fields
+  min: marketdata_stock_prices_daily_min_fields
+  stddev: marketdata_stock_prices_daily_stddev_fields
+  stddev_pop: marketdata_stock_prices_daily_stddev_pop_fields
+  stddev_samp: marketdata_stock_prices_daily_stddev_samp_fields
+  sum: marketdata_stock_prices_daily_sum_fields
+  var_pop: marketdata_stock_prices_daily_var_pop_fields
+  var_samp: marketdata_stock_prices_daily_var_samp_fields
+  variance: marketdata_stock_prices_daily_variance_fields
+}
+
+"""
+aggregate avg on columns
+"""
+type marketdata_stock_prices_daily_avg_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+Boolean expression to filter rows from the table "marketdata.stock_prices_daily". All fields are combined with a logical 'AND'.
+"""
+input marketdata_stock_prices_daily_bool_exp {
+  _and: [marketdata_stock_prices_daily_bool_exp!]
+  _not: marketdata_stock_prices_daily_bool_exp
+  _or: [marketdata_stock_prices_daily_bool_exp!]
+  feed: instruments_feed_enum_comparison_exp
+  inst_id: bigint_comparison_exp
+  price_close: numeric_comparison_exp
+  price_high: numeric_comparison_exp
+  price_low: numeric_comparison_exp
+  price_open: numeric_comparison_exp
+  ts_date: date_comparison_exp
+}
+
+"""
+unique or primary key constraints on table "marketdata.stock_prices_daily"
+"""
+enum marketdata_stock_prices_daily_constraint {
+  """
+  unique or primary key constraint
+  """
+  pkey_stock_prices_daily_ts_date_inst_id_feed
+}
+
+"""
+input type for incrementing numeric columns in table "marketdata.stock_prices_daily"
+"""
+input marketdata_stock_prices_daily_inc_input {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+}
+
+"""
+input type for inserting data into table "marketdata.stock_prices_daily"
+"""
+input marketdata_stock_prices_daily_insert_input {
+  feed: instruments_feed_enum
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate max on columns
+"""
+type marketdata_stock_prices_daily_max_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate min on columns
+"""
+type marketdata_stock_prices_daily_min_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+response of any mutation on the table "marketdata.stock_prices_daily"
+"""
+type marketdata_stock_prices_daily_mutation_response {
+  """
+  number of rows affected by the mutation
+  """
+  affected_rows: Int!
+
+  """
+  data from the rows affected by the mutation
+  """
+  returning: [marketdata_stock_prices_daily!]!
+}
+
+"""
+on conflict condition type for table "marketdata.stock_prices_daily"
+"""
+input marketdata_stock_prices_daily_on_conflict {
+  constraint: marketdata_stock_prices_daily_constraint!
+  update_columns: [marketdata_stock_prices_daily_update_column!]! = []
+  where: marketdata_stock_prices_daily_bool_exp
+}
+
+"""
+Ordering options when selecting data from "marketdata.stock_prices_daily".
+"""
+input marketdata_stock_prices_daily_order_by {
+  feed: order_by
+  inst_id: order_by
+  price_close: order_by
+  price_high: order_by
+  price_low: order_by
+  price_open: order_by
+  ts_date: order_by
+}
+
+"""
+primary key columns input for table: marketdata_stock_prices_daily
+"""
+input marketdata_stock_prices_daily_pk_columns_input {
+  feed: instruments_feed_enum!
+  inst_id: bigint!
+  ts_date: date!
+}
+
+"""
+select columns of table "marketdata.stock_prices_daily"
+"""
+enum marketdata_stock_prices_daily_select_column {
+  """
+  column name
+  """
+  feed
+
+  """
+  column name
+  """
+  inst_id
+
+  """
+  column name
+  """
+  price_close
+
+  """
+  column name
+  """
+  price_high
+
+  """
+  column name
+  """
+  price_low
+
+  """
+  column name
+  """
+  price_open
+
+  """
+  column name
+  """
+  ts_date
+}
+
+"""
+input type for updating data in table "marketdata.stock_prices_daily"
+"""
+input marketdata_stock_prices_daily_set_input {
+  feed: instruments_feed_enum
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate stddev on columns
+"""
+type marketdata_stock_prices_daily_stddev_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_pop on columns
+"""
+type marketdata_stock_prices_daily_stddev_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_samp on columns
+"""
+type marketdata_stock_prices_daily_stddev_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate sum on columns
+"""
+type marketdata_stock_prices_daily_sum_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+}
+
+"""
+update columns of table "marketdata.stock_prices_daily"
+"""
+enum marketdata_stock_prices_daily_update_column {
+  """
+  column name
+  """
+  feed
+
+  """
+  column name
+  """
+  inst_id
+
+  """
+  column name
+  """
+  price_close
+
+  """
+  column name
+  """
+  price_high
+
+  """
+  column name
+  """
+  price_low
+
+  """
+  column name
+  """
+  price_open
+
+  """
+  column name
+  """
+  ts_date
+}
+
+"""
+aggregate var_pop on columns
+"""
+type marketdata_stock_prices_daily_var_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate var_samp on columns
+"""
+type marketdata_stock_prices_daily_var_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate variance on columns
+"""
+type marketdata_stock_prices_daily_variance_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+columns and relationships of "marketdata.view_stock_prices_daily"
+"""
+type marketdata_view_stock_prices_daily {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregated selection of "marketdata.view_stock_prices_daily"
+"""
+type marketdata_view_stock_prices_daily_aggregate {
+  aggregate: marketdata_view_stock_prices_daily_aggregate_fields
+  nodes: [marketdata_view_stock_prices_daily!]!
+}
+
+"""
+aggregate fields of "marketdata.view_stock_prices_daily"
+"""
+type marketdata_view_stock_prices_daily_aggregate_fields {
+  avg: marketdata_view_stock_prices_daily_avg_fields
+  count(columns: [marketdata_view_stock_prices_daily_select_column!], distinct: Boolean): Int!
+  max: marketdata_view_stock_prices_daily_max_fields
+  min: marketdata_view_stock_prices_daily_min_fields
+  stddev: marketdata_view_stock_prices_daily_stddev_fields
+  stddev_pop: marketdata_view_stock_prices_daily_stddev_pop_fields
+  stddev_samp: marketdata_view_stock_prices_daily_stddev_samp_fields
+  sum: marketdata_view_stock_prices_daily_sum_fields
+  var_pop: marketdata_view_stock_prices_daily_var_pop_fields
+  var_samp: marketdata_view_stock_prices_daily_var_samp_fields
+  variance: marketdata_view_stock_prices_daily_variance_fields
+}
+
+"""
+aggregate avg on columns
+"""
+type marketdata_view_stock_prices_daily_avg_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+Boolean expression to filter rows from the table "marketdata.view_stock_prices_daily". All fields are combined with a logical 'AND'.
+"""
+input marketdata_view_stock_prices_daily_bool_exp {
+  _and: [marketdata_view_stock_prices_daily_bool_exp!]
+  _not: marketdata_view_stock_prices_daily_bool_exp
+  _or: [marketdata_view_stock_prices_daily_bool_exp!]
+  inst_id: bigint_comparison_exp
+  price_close: numeric_comparison_exp
+  price_high: numeric_comparison_exp
+  price_low: numeric_comparison_exp
+  price_open: numeric_comparison_exp
+  ts_date: date_comparison_exp
+}
+
+"""
+input type for incrementing numeric columns in table "marketdata.view_stock_prices_daily"
+"""
+input marketdata_view_stock_prices_daily_inc_input {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+}
+
+"""
+input type for inserting data into table "marketdata.view_stock_prices_daily"
+"""
+input marketdata_view_stock_prices_daily_insert_input {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate max on columns
+"""
+type marketdata_view_stock_prices_daily_max_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate min on columns
+"""
+type marketdata_view_stock_prices_daily_min_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+response of any mutation on the table "marketdata.view_stock_prices_daily"
+"""
+type marketdata_view_stock_prices_daily_mutation_response {
+  """
+  number of rows affected by the mutation
+  """
+  affected_rows: Int!
+
+  """
+  data from the rows affected by the mutation
+  """
+  returning: [marketdata_view_stock_prices_daily!]!
+}
+
+"""
+Ordering options when selecting data from "marketdata.view_stock_prices_daily".
+"""
+input marketdata_view_stock_prices_daily_order_by {
+  inst_id: order_by
+  price_close: order_by
+  price_high: order_by
+  price_low: order_by
+  price_open: order_by
+  ts_date: order_by
+}
+
+"""
+select columns of table "marketdata.view_stock_prices_daily"
+"""
+enum marketdata_view_stock_prices_daily_select_column {
+  """
+  column name
+  """
+  inst_id
+
+  """
+  column name
+  """
+  price_close
+
+  """
+  column name
+  """
+  price_high
+
+  """
+  column name
+  """
+  price_low
+
+  """
+  column name
+  """
+  price_open
+
+  """
+  column name
+  """
+  ts_date
+}
+
+"""
+input type for updating data in table "marketdata.view_stock_prices_daily"
+"""
+input marketdata_view_stock_prices_daily_set_input {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate stddev on columns
+"""
+type marketdata_view_stock_prices_daily_stddev_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_pop on columns
+"""
+type marketdata_view_stock_prices_daily_stddev_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_samp on columns
+"""
+type marketdata_view_stock_prices_daily_stddev_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate sum on columns
+"""
+type marketdata_view_stock_prices_daily_sum_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+}
+
+"""
+aggregate var_pop on columns
+"""
+type marketdata_view_stock_prices_daily_var_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate var_samp on columns
+"""
+type marketdata_view_stock_prices_daily_var_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate variance on columns
+"""
+type marketdata_view_stock_prices_daily_variance_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+columns and relationships of "marketdata.view_stock_prices_monthly"
+"""
+type marketdata_view_stock_prices_monthly {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregated selection of "marketdata.view_stock_prices_monthly"
+"""
+type marketdata_view_stock_prices_monthly_aggregate {
+  aggregate: marketdata_view_stock_prices_monthly_aggregate_fields
+  nodes: [marketdata_view_stock_prices_monthly!]!
+}
+
+"""
+aggregate fields of "marketdata.view_stock_prices_monthly"
+"""
+type marketdata_view_stock_prices_monthly_aggregate_fields {
+  avg: marketdata_view_stock_prices_monthly_avg_fields
+  count(columns: [marketdata_view_stock_prices_monthly_select_column!], distinct: Boolean): Int!
+  max: marketdata_view_stock_prices_monthly_max_fields
+  min: marketdata_view_stock_prices_monthly_min_fields
+  stddev: marketdata_view_stock_prices_monthly_stddev_fields
+  stddev_pop: marketdata_view_stock_prices_monthly_stddev_pop_fields
+  stddev_samp: marketdata_view_stock_prices_monthly_stddev_samp_fields
+  sum: marketdata_view_stock_prices_monthly_sum_fields
+  var_pop: marketdata_view_stock_prices_monthly_var_pop_fields
+  var_samp: marketdata_view_stock_prices_monthly_var_samp_fields
+  variance: marketdata_view_stock_prices_monthly_variance_fields
+}
+
+"""
+aggregate avg on columns
+"""
+type marketdata_view_stock_prices_monthly_avg_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+Boolean expression to filter rows from the table "marketdata.view_stock_prices_monthly". All fields are combined with a logical 'AND'.
+"""
+input marketdata_view_stock_prices_monthly_bool_exp {
+  _and: [marketdata_view_stock_prices_monthly_bool_exp!]
+  _not: marketdata_view_stock_prices_monthly_bool_exp
+  _or: [marketdata_view_stock_prices_monthly_bool_exp!]
+  inst_id: bigint_comparison_exp
+  price_close: numeric_comparison_exp
+  price_high: numeric_comparison_exp
+  price_low: numeric_comparison_exp
+  price_open: numeric_comparison_exp
+  ts_date: date_comparison_exp
+}
+
+"""
+aggregate max on columns
+"""
+type marketdata_view_stock_prices_monthly_max_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate min on columns
+"""
+type marketdata_view_stock_prices_monthly_min_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+Ordering options when selecting data from "marketdata.view_stock_prices_monthly".
+"""
+input marketdata_view_stock_prices_monthly_order_by {
+  inst_id: order_by
+  price_close: order_by
+  price_high: order_by
+  price_low: order_by
+  price_open: order_by
+  ts_date: order_by
+}
+
+"""
+select columns of table "marketdata.view_stock_prices_monthly"
+"""
+enum marketdata_view_stock_prices_monthly_select_column {
+  """
+  column name
+  """
+  inst_id
+
+  """
+  column name
+  """
+  price_close
+
+  """
+  column name
+  """
+  price_high
+
+  """
+  column name
+  """
+  price_low
+
+  """
+  column name
+  """
+  price_open
+
+  """
+  column name
+  """
+  ts_date
+}
+
+"""
+aggregate stddev on columns
+"""
+type marketdata_view_stock_prices_monthly_stddev_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_pop on columns
+"""
+type marketdata_view_stock_prices_monthly_stddev_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_samp on columns
+"""
+type marketdata_view_stock_prices_monthly_stddev_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate sum on columns
+"""
+type marketdata_view_stock_prices_monthly_sum_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+}
+
+"""
+aggregate var_pop on columns
+"""
+type marketdata_view_stock_prices_monthly_var_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate var_samp on columns
+"""
+type marketdata_view_stock_prices_monthly_var_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate variance on columns
+"""
+type marketdata_view_stock_prices_monthly_variance_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+columns and relationships of "marketdata.view_stock_prices_weekly"
+"""
+type marketdata_view_stock_prices_weekly {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregated selection of "marketdata.view_stock_prices_weekly"
+"""
+type marketdata_view_stock_prices_weekly_aggregate {
+  aggregate: marketdata_view_stock_prices_weekly_aggregate_fields
+  nodes: [marketdata_view_stock_prices_weekly!]!
+}
+
+"""
+aggregate fields of "marketdata.view_stock_prices_weekly"
+"""
+type marketdata_view_stock_prices_weekly_aggregate_fields {
+  avg: marketdata_view_stock_prices_weekly_avg_fields
+  count(columns: [marketdata_view_stock_prices_weekly_select_column!], distinct: Boolean): Int!
+  max: marketdata_view_stock_prices_weekly_max_fields
+  min: marketdata_view_stock_prices_weekly_min_fields
+  stddev: marketdata_view_stock_prices_weekly_stddev_fields
+  stddev_pop: marketdata_view_stock_prices_weekly_stddev_pop_fields
+  stddev_samp: marketdata_view_stock_prices_weekly_stddev_samp_fields
+  sum: marketdata_view_stock_prices_weekly_sum_fields
+  var_pop: marketdata_view_stock_prices_weekly_var_pop_fields
+  var_samp: marketdata_view_stock_prices_weekly_var_samp_fields
+  variance: marketdata_view_stock_prices_weekly_variance_fields
+}
+
+"""
+aggregate avg on columns
+"""
+type marketdata_view_stock_prices_weekly_avg_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+Boolean expression to filter rows from the table "marketdata.view_stock_prices_weekly". All fields are combined with a logical 'AND'.
+"""
+input marketdata_view_stock_prices_weekly_bool_exp {
+  _and: [marketdata_view_stock_prices_weekly_bool_exp!]
+  _not: marketdata_view_stock_prices_weekly_bool_exp
+  _or: [marketdata_view_stock_prices_weekly_bool_exp!]
+  inst_id: bigint_comparison_exp
+  price_close: numeric_comparison_exp
+  price_high: numeric_comparison_exp
+  price_low: numeric_comparison_exp
+  price_open: numeric_comparison_exp
+  ts_date: date_comparison_exp
+}
+
+"""
+aggregate max on columns
+"""
+type marketdata_view_stock_prices_weekly_max_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+aggregate min on columns
+"""
+type marketdata_view_stock_prices_weekly_min_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+  ts_date: date
+}
+
+"""
+Ordering options when selecting data from "marketdata.view_stock_prices_weekly".
+"""
+input marketdata_view_stock_prices_weekly_order_by {
+  inst_id: order_by
+  price_close: order_by
+  price_high: order_by
+  price_low: order_by
+  price_open: order_by
+  ts_date: order_by
+}
+
+"""
+select columns of table "marketdata.view_stock_prices_weekly"
+"""
+enum marketdata_view_stock_prices_weekly_select_column {
+  """
+  column name
+  """
+  inst_id
+
+  """
+  column name
+  """
+  price_close
+
+  """
+  column name
+  """
+  price_high
+
+  """
+  column name
+  """
+  price_low
+
+  """
+  column name
+  """
+  price_open
+
+  """
+  column name
+  """
+  ts_date
+}
+
+"""
+aggregate stddev on columns
+"""
+type marketdata_view_stock_prices_weekly_stddev_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_pop on columns
+"""
+type marketdata_view_stock_prices_weekly_stddev_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate stddev_samp on columns
+"""
+type marketdata_view_stock_prices_weekly_stddev_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate sum on columns
+"""
+type marketdata_view_stock_prices_weekly_sum_fields {
+  inst_id: bigint
+  price_close: numeric
+  price_high: numeric
+  price_low: numeric
+  price_open: numeric
+}
+
+"""
+aggregate var_pop on columns
+"""
+type marketdata_view_stock_prices_weekly_var_pop_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate var_samp on columns
+"""
+type marketdata_view_stock_prices_weekly_var_samp_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+aggregate variance on columns
+"""
+type marketdata_view_stock_prices_weekly_variance_fields {
+  inst_id: Float
+  price_close: Float
+  price_high: Float
+  price_low: Float
+  price_open: Float
+}
+
+"""
+mutation root
+"""
+type mutation_root {
+  """
+  delete data from the table: "instruments.feed"
+  """
+  delete_instruments_feed(
+    """
+    filter the rows which have to be deleted
+    """
+    where: instruments_feed_bool_exp!
+  ): instruments_feed_mutation_response
+
+  """
+  delete single row from the table: "instruments.feed"
+  """
+  delete_instruments_feed_by_pk(name: String!): instruments_feed
+
+  """
+  delete data from the table: "marketdata.stock_prices_daily"
+  """
+  delete_marketdata_stock_prices_daily(
+    """
+    filter the rows which have to be deleted
+    """
+    where: marketdata_stock_prices_daily_bool_exp!
+  ): marketdata_stock_prices_daily_mutation_response
+
+  """
+  delete single row from the table: "marketdata.stock_prices_daily"
+  """
+  delete_marketdata_stock_prices_daily_by_pk(
+    feed: instruments_feed_enum!
+    inst_id: bigint!
+    ts_date: date!
+  ): marketdata_stock_prices_daily
+
+  """
+  delete data from the table: "marketdata.view_stock_prices_daily"
+  """
+  delete_marketdata_view_stock_prices_daily(
+    """
+    filter the rows which have to be deleted
+    """
+    where: marketdata_view_stock_prices_daily_bool_exp!
+  ): marketdata_view_stock_prices_daily_mutation_response
+
+  """
+  insert data into the table: "instruments.feed"
+  """
+  insert_instruments_feed(
+    """
+    the rows to be inserted
+    """
+    objects: [instruments_feed_insert_input!]!
+
+    """
+    on conflict condition
+    """
+    on_conflict: instruments_feed_on_conflict
+  ): instruments_feed_mutation_response
+
+  """
+  insert a single row into the table: "instruments.feed"
+  """
+  insert_instruments_feed_one(
+    """
+    the row to be inserted
+    """
+    object: instruments_feed_insert_input!
+
+    """
+    on conflict condition
+    """
+    on_conflict: instruments_feed_on_conflict
+  ): instruments_feed
+
+  """
+  insert data into the table: "marketdata.stock_prices_daily"
+  """
+  insert_marketdata_stock_prices_daily(
+    """
+    the rows to be inserted
+    """
+    objects: [marketdata_stock_prices_daily_insert_input!]!
+
+    """
+    on conflict condition
+    """
+    on_conflict: marketdata_stock_prices_daily_on_conflict
+  ): marketdata_stock_prices_daily_mutation_response
+
+  """
+  insert a single row into the table: "marketdata.stock_prices_daily"
+  """
+  insert_marketdata_stock_prices_daily_one(
+    """
+    the row to be inserted
+    """
+    object: marketdata_stock_prices_daily_insert_input!
+
+    """
+    on conflict condition
+    """
+    on_conflict: marketdata_stock_prices_daily_on_conflict
+  ): marketdata_stock_prices_daily
+
+  """
+  insert data into the table: "marketdata.view_stock_prices_daily"
+  """
+  insert_marketdata_view_stock_prices_daily(
+    """
+    the rows to be inserted
+    """
+    objects: [marketdata_view_stock_prices_daily_insert_input!]!
+  ): marketdata_view_stock_prices_daily_mutation_response
+
+  """
+  insert a single row into the table: "marketdata.view_stock_prices_daily"
+  """
+  insert_marketdata_view_stock_prices_daily_one(
+    """
+    the row to be inserted
+    """
+    object: marketdata_view_stock_prices_daily_insert_input!
+  ): marketdata_view_stock_prices_daily
+
+  """
+  update data of the table: "instruments.feed"
+  """
+  update_instruments_feed(
+    """
+    sets the columns of the filtered rows to the given values
+    """
+    _set: instruments_feed_set_input
+
+    """
+    filter the rows which have to be updated
+    """
+    where: instruments_feed_bool_exp!
+  ): instruments_feed_mutation_response
+
+  """
+  update single row of the table: "instruments.feed"
+  """
+  update_instruments_feed_by_pk(
+    """
+    sets the columns of the filtered rows to the given values
+    """
+    _set: instruments_feed_set_input
+    pk_columns: instruments_feed_pk_columns_input!
+  ): instruments_feed
+
+  """
+  update data of the table: "marketdata.stock_prices_daily"
+  """
+  update_marketdata_stock_prices_daily(
+    """
+    increments the numeric columns with given value of the filtered values
+    """
+    _inc: marketdata_stock_prices_daily_inc_input
+
+    """
+    sets the columns of the filtered rows to the given values
+    """
+    _set: marketdata_stock_prices_daily_set_input
+
+    """
+    filter the rows which have to be updated
+    """
+    where: marketdata_stock_prices_daily_bool_exp!
+  ): marketdata_stock_prices_daily_mutation_response
+
+  """
+  update single row of the table: "marketdata.stock_prices_daily"
+  """
+  update_marketdata_stock_prices_daily_by_pk(
+    """
+    increments the numeric columns with given value of the filtered values
+    """
+    _inc: marketdata_stock_prices_daily_inc_input
+
+    """
+    sets the columns of the filtered rows to the given values
+    """
+    _set: marketdata_stock_prices_daily_set_input
+    pk_columns: marketdata_stock_prices_daily_pk_columns_input!
+  ): marketdata_stock_prices_daily
+
+  """
+  update data of the table: "marketdata.view_stock_prices_daily"
+  """
+  update_marketdata_view_stock_prices_daily(
+    """
+    increments the numeric columns with given value of the filtered values
+    """
+    _inc: marketdata_view_stock_prices_daily_inc_input
+
+    """
+    sets the columns of the filtered rows to the given values
+    """
+    _set: marketdata_view_stock_prices_daily_set_input
+
+    """
+    filter the rows which have to be updated
+    """
+    where: marketdata_view_stock_prices_daily_bool_exp!
+  ): marketdata_view_stock_prices_daily_mutation_response
+}
+
+scalar numeric
+
+"""
+Boolean expression to compare columns of type "numeric". All fields are combined with logical 'AND'.
+"""
+input numeric_comparison_exp {
+  _eq: numeric
+  _gt: numeric
+  _gte: numeric
+  _in: [numeric!]
+  _is_null: Boolean
+  _lt: numeric
+  _lte: numeric
+  _neq: numeric
+  _nin: [numeric!]
+}
+
+"""
+column ordering options
+"""
+enum order_by {
+  """
+  in ascending order, nulls last
+  """
+  asc
+
+  """
+  in ascending order, nulls first
+  """
+  asc_nulls_first
+
+  """
+  in ascending order, nulls last
+  """
+  asc_nulls_last
+
+  """
+  in descending order, nulls first
+  """
+  desc
+
+  """
+  in descending order, nulls first
+  """
+  desc_nulls_first
+
+  """
+  in descending order, nulls last
+  """
+  desc_nulls_last
+}
+
+type query_root {
+  """
+  fetch data from the table: "instruments.feed"
+  """
+  instruments_feed(
+    """
+    distinct select on columns
+    """
+    distinct_on: [instruments_feed_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [instruments_feed_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: instruments_feed_bool_exp
+  ): [instruments_feed!]!
+
+  """
+  fetch aggregated fields from the table: "instruments.feed"
+  """
+  instruments_feed_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [instruments_feed_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [instruments_feed_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: instruments_feed_bool_exp
+  ): instruments_feed_aggregate!
+
+  """
+  fetch data from the table: "instruments.feed" using primary key columns
+  """
+  instruments_feed_by_pk(name: String!): instruments_feed
+
+  """
+  fetch data from the table: "marketdata.stock_prices_daily"
+  """
+  marketdata_stock_prices_daily(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_stock_prices_daily_bool_exp
+  ): [marketdata_stock_prices_daily!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.stock_prices_daily"
+  """
+  marketdata_stock_prices_daily_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_stock_prices_daily_bool_exp
+  ): marketdata_stock_prices_daily_aggregate!
+
+  """
+  fetch data from the table: "marketdata.stock_prices_daily" using primary key columns
+  """
+  marketdata_stock_prices_daily_by_pk(
+    feed: instruments_feed_enum!
+    inst_id: bigint!
+    ts_date: date!
+  ): marketdata_stock_prices_daily
+
+  """
+  fetch data from the table: "marketdata.view_stock_prices_daily"
+  """
+  marketdata_view_stock_prices_daily(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_daily_bool_exp
+  ): [marketdata_view_stock_prices_daily!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.view_stock_prices_daily"
+  """
+  marketdata_view_stock_prices_daily_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_daily_bool_exp
+  ): marketdata_view_stock_prices_daily_aggregate!
+
+  """
+  fetch data from the table: "marketdata.view_stock_prices_monthly"
+  """
+  marketdata_view_stock_prices_monthly(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_monthly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_monthly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_monthly_bool_exp
+  ): [marketdata_view_stock_prices_monthly!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.view_stock_prices_monthly"
+  """
+  marketdata_view_stock_prices_monthly_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_monthly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_monthly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_monthly_bool_exp
+  ): marketdata_view_stock_prices_monthly_aggregate!
+
+  """
+  fetch data from the table: "marketdata.view_stock_prices_weekly"
+  """
+  marketdata_view_stock_prices_weekly(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_weekly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_weekly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_weekly_bool_exp
+  ): [marketdata_view_stock_prices_weekly!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.view_stock_prices_weekly"
+  """
+  marketdata_view_stock_prices_weekly_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_weekly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_weekly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_weekly_bool_exp
+  ): marketdata_view_stock_prices_weekly_aggregate!
+}
+
+type subscription_root {
+  """
+  fetch data from the table: "instruments.feed"
+  """
+  instruments_feed(
+    """
+    distinct select on columns
+    """
+    distinct_on: [instruments_feed_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [instruments_feed_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: instruments_feed_bool_exp
+  ): [instruments_feed!]!
+
+  """
+  fetch aggregated fields from the table: "instruments.feed"
+  """
+  instruments_feed_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [instruments_feed_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [instruments_feed_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: instruments_feed_bool_exp
+  ): instruments_feed_aggregate!
+
+  """
+  fetch data from the table: "instruments.feed" using primary key columns
+  """
+  instruments_feed_by_pk(name: String!): instruments_feed
+
+  """
+  fetch data from the table: "marketdata.stock_prices_daily"
+  """
+  marketdata_stock_prices_daily(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_stock_prices_daily_bool_exp
+  ): [marketdata_stock_prices_daily!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.stock_prices_daily"
+  """
+  marketdata_stock_prices_daily_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_stock_prices_daily_bool_exp
+  ): marketdata_stock_prices_daily_aggregate!
+
+  """
+  fetch data from the table: "marketdata.stock_prices_daily" using primary key columns
+  """
+  marketdata_stock_prices_daily_by_pk(
+    feed: instruments_feed_enum!
+    inst_id: bigint!
+    ts_date: date!
+  ): marketdata_stock_prices_daily
+
+  """
+  fetch data from the table: "marketdata.view_stock_prices_daily"
+  """
+  marketdata_view_stock_prices_daily(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_daily_bool_exp
+  ): [marketdata_view_stock_prices_daily!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.view_stock_prices_daily"
+  """
+  marketdata_view_stock_prices_daily_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_daily_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_daily_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_daily_bool_exp
+  ): marketdata_view_stock_prices_daily_aggregate!
+
+  """
+  fetch data from the table: "marketdata.view_stock_prices_monthly"
+  """
+  marketdata_view_stock_prices_monthly(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_monthly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_monthly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_monthly_bool_exp
+  ): [marketdata_view_stock_prices_monthly!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.view_stock_prices_monthly"
+  """
+  marketdata_view_stock_prices_monthly_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_monthly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_monthly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_monthly_bool_exp
+  ): marketdata_view_stock_prices_monthly_aggregate!
+
+  """
+  fetch data from the table: "marketdata.view_stock_prices_weekly"
+  """
+  marketdata_view_stock_prices_weekly(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_weekly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_weekly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_weekly_bool_exp
+  ): [marketdata_view_stock_prices_weekly!]!
+
+  """
+  fetch aggregated fields from the table: "marketdata.view_stock_prices_weekly"
+  """
+  marketdata_view_stock_prices_weekly_aggregate(
+    """
+    distinct select on columns
+    """
+    distinct_on: [marketdata_view_stock_prices_weekly_select_column!]
+
+    """
+    limit the number of rows returned
+    """
+    limit: Int
+
+    """
+    skip the first n rows. Use only with order_by
+    """
+    offset: Int
+
+    """
+    sort the rows by one or more columns
+    """
+    order_by: [marketdata_view_stock_prices_weekly_order_by!]
+
+    """
+    filter the rows returned
+    """
+    where: marketdata_view_stock_prices_weekly_bool_exp
+  ): marketdata_view_stock_prices_weekly_aggregate!
+}

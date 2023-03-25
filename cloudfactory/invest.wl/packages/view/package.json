@@ -1,0 +1,22 @@
+{
+  "name": "@invest.wl/view",
+  "version": "0.1.41",
+  "description": "Invest.wl view module",
+  "repository": {
+    "type": "git",
+    "url": "https://git.effectivetrade.ru/EFTR.Frontend/invest.wl.git",
+    "directory": "packages/view"
+  },
+  "main": "src/index.ts",
+  "author": "skripko.andrey@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "peerDependencies": {
+    "@invest.wl/core": "*",
+    "@invest.wl/common": "*",
+    "@invest.wl/domain": "*",
+    "@invest.wl/system": "*"
+  }
+}

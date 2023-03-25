@@ -1,0 +1,203 @@
+{
+    "agentSummary": {
+        "id": "7d436ce8-d262-40c7-a4d2-fc6f2ceb72f9",
+        "isAgent": true,
+        "name": "Kim Ouellette - Manager",
+        "firstName": "Kim",
+        "lastName": "Ouellette - Manager",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/22D903B7-DA07-4831-83AB-3EEF151E18B8",
+        "emailAddress": "kim.ouellette@premiersir.com",
+        "leadEmailAddress": "800307.lead.4039402@leads.leadrouter.com",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+            "RFGOfficeId": "0003",
+            "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+            "companyName": "Premier",
+            "RFGCompanyId": "800307",
+            "brandCode": "SIR",
+            "name": "Premier Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "325 Vanderbilt Beach Road",
+                "city": "Naples",
+                "district": "Collier",
+                "stateProvince": "Florida",
+                "stateProvinceCode": "FL",
+                "postalCode": "34108",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 26.25358,
+                "longitude": -81.81984,
+                "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+            },
+            "phoneNumber": "2395949494",
+            "emailAddress": "accounting@premiersir.com"
+        }
+    },
+    "personId": "90eb7a88-c988-4131-bc57-f1d336c3a3ff",
+    "lastUpdateOn": "2018-08-06T21:00:30.103",
+    "roles": [
+        {
+            "office": {
+                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                "RFGOfficeId": "0003",
+                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                "companyName": "Premier",
+                "RFGCompanyId": "800307",
+                "brandCode": "SIR",
+                "name": "Premier Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "325 Vanderbilt Beach Road",
+                    "city": "Naples",
+                    "district": "Collier",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "34108",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 26.25358,
+                    "longitude": -81.81984,
+                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                },
+                "phoneNumber": "2395949494",
+                "emailAddress": "accounting@premiersir.com"
+            },
+            "role": "List Hub Manager",
+            "isFullTime": true,
+            "isProducingRole": false
+        },
+        {
+            "office": {
+                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                "RFGOfficeId": "0003",
+                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                "companyName": "Premier",
+                "RFGCompanyId": "800307",
+                "brandCode": "SIR",
+                "name": "Premier Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "325 Vanderbilt Beach Road",
+                    "city": "Naples",
+                    "district": "Collier",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "34108",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 26.25358,
+                    "longitude": -81.81984,
+                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                },
+                "phoneNumber": "2395949494",
+                "emailAddress": "accounting@premiersir.com"
+            },
+            "role": "ListTrac Contact",
+            "isFullTime": true,
+            "isProducingRole": false
+        },
+        {
+            "office": {
+                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                "RFGOfficeId": "0003",
+                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                "companyName": "Premier",
+                "RFGCompanyId": "800307",
+                "brandCode": "SIR",
+                "name": "Premier Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "325 Vanderbilt Beach Road",
+                    "city": "Naples",
+                    "district": "Collier",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "34108",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 26.25358,
+                    "longitude": -81.81984,
+                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                },
+                "phoneNumber": "2395949494",
+                "emailAddress": "accounting@premiersir.com"
+            },
+            "role": "Office Manager",
+            "isFullTime": true,
+            "isProducingRole": false
+        },
+        {
+            "office": {
+                "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                "RFGOfficeId": "0003",
+                "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                "companyName": "Premier",
+                "RFGCompanyId": "800307",
+                "brandCode": "SIR",
+                "name": "Premier Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "325 Vanderbilt Beach Road",
+                    "city": "Naples",
+                    "district": "Collier",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "34108",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 26.25358,
+                    "longitude": -81.81984,
+                    "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                },
+                "phoneNumber": "2395949494",
+                "emailAddress": "accounting@premiersir.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "kim.ouellette@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "22D903B7-DA07-4831-83AB-3EEF151E18B8",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/22D903B7-DA07-4831-83AB-3EEF151E18B8",
+            "isDefault": true,
+            "caption": "Kim Ouellette",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:17:09.100"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Kim Ouellette\u2019s distinguished career in real estate, which she began in Shelby Township, Michigan, in residential sales, spans over 20 years. She joins Premier Sotheby\u2019s International Realty as the Managing Broker of the Vanderbilt office, having worked for several other prominent brokerages and having earned prestigious awards, such as Century 21\u2019s Centurion award for the highest standard of performance and service, time and time again.\r\n\r\nUpon coming to Naples in 2004, she joined Coldwell Banker, where she quickly earned the title of sales manager overseeing, training and coaching 100 associates. After moving to Prudential Florida WCI Realty, now Berkshire Hathaway HomeServices, in 2006 to become a managing broker of their Naples Park Shore and The Ritz-Carlton offices, she led her team to be the top-producing office out of over 40 offices for the brokerage statewide in 2015. She was also instrumental in being able to secure a second Ritz-Carlton location at The Ritz-Carlton Tibur\u00f3n.\r\n\r\nCurrently, she is serving a second year as both a director for Florida REALTORS\u00ae and the Naples Area Board of REALTORS\u00ae. Having also held positions on the local board\u2019s professional standards and function committees, Kim is currently on their legal resources committee. She holds her GRI, ABR and CRB designations and belongs to several boards, including the Women\u2019s Council of REALTORS\u00ae.\r\n\r\nOutside of real estate, Kim is passionate about helping and dedicating her time to others, having chaired and co-chaired for Sunshine Kids for the past 10 years, a charity that has raised several million dollars for children with cancer. As a director for her hometown college, Macomb Community College, where she earned a degree as a legal assistant, Kim proudly hosts the school\u2019s president and his distinguished guests each year in Naples. She is married to her best friend, Ken, and they have two beautiful daughters.",
+            "htmlRemark": "Kim Ouellette\u2019s distinguished career in real estate, which she began in Shelby Township, Michigan, in residential sales, spans over 20 years. She joins Premier Sotheby\u2019s International Realty as the Managing Broker of the Vanderbilt office, having worked for several other prominent brokerages and having earned prestigious awards, such as Century 21\u2019s Centurion award for the highest standard of performance and service, time and time again.<br><br>Upon coming to Naples in 2004, she joined Coldwell Banker, where she quickly earned the title of sales manager overseeing, training and coaching 100 associates. After moving to Prudential Florida WCI Realty, now Berkshire Hathaway HomeServices, in 2006 to become a managing broker of their Naples Park Shore and The Ritz-Carlton offices, she led her team to be the top-producing office out of over 40 offices for the brokerage statewide in 2015. She was also instrumental in being able to secure a second Ritz-Carlton location at The Ritz-Carlton Tibur\u00f3n.<br><br>Currently, she is serving a second year as both a director for Florida REALTORS\u00ae and the Naples Area Board of REALTORS\u00ae. Having also held positions on the local board\u2019s professional standards and function committees, Kim is currently on their legal resources committee. She holds her GRI, ABR and CRB designations and belongs to several boards, including the Women\u2019s Council of REALTORS\u00ae.<br><br>Outside of real estate, Kim is passionate about helping and dedicating her time to others, having chaired and co-chaired for Sunshine Kids for the past 10 years, a charity that has raised several million dollars for children with cancer. As a director for her hometown college, Macomb Community College, where she earned a degree as a legal assistant, Kim proudly hosts the school\u2019s president and his distinguished guests each year in Naples. She is married to her best friend, Ken, and they have two beautiful daughters."
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "BR",
+            "stateCode": "FL",
+            "number": "BK3099786",
+            "issuedOn": "2004-10-20"
+        }
+    ]
+}

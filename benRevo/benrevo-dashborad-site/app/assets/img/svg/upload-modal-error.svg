@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="151" height="75" viewBox="0 0 151 75">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#AAAFB2" d="M62.5 37.75a3.001 3.001 0 0 1 0-6 3.001 3.001 0 0 1 0 6zM82.5 37.75a3.001 3.001 0 0 1 0-6 3.001 3.001 0 0 1 0 6zM63 52h20v1H63z"/>
+        <path stroke="#AAAFB2" d="M103 42c0 16.569-13.431 30-30 30-16.569 0-30-13.431-30-30 0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30z"/>
+        <g font-family="OpenSans, Open Sans">
+            <text fill="#AAAFB2" font-size="14" transform="translate(0 -6)">
+                <tspan x="143" y="57">+</tspan>
+            </text>
+            <text fill="#AAAFB2" font-size="14" transform="translate(0 -6)">
+                <tspan x="98" y="15">+</tspan>
+            </text>
+            <text fill="#09C" font-size="18" transform="translate(0 -6)">
+                <tspan x="0" y="54">+</tspan>
+            </text>
+            <text fill="#09C" font-size="18" transform="translate(0 -6)">
+                <tspan x="120" y="35">+</tspan>
+            </text>
+            <text fill="#AAAFB2" font-size="14" transform="translate(0 -6)">
+                <tspan x="28" y="24">+</tspan>
+            </text>
+            <text fill="#AAAFB2" font-size="14" transform="translate(0 -6)">
+                <tspan x="108" y="82">+</tspan>
+            </text>
+            <text fill="#AAAFB2" font-size="14" transform="translate(0 -6)">
+                <tspan x="10" y="80">+</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

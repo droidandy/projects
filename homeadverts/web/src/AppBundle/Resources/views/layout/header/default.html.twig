@@ -1,0 +1,65 @@
+<div class="nav-header">
+    <div class="container">
+        <div class="nav-row">
+            <div class="row">
+                <div class="nav-links">
+                    <ul>
+                        <li class="fixed-width-links --hideable">
+                            <a href="{{ path('featured_index', {'market': 'for-sale'}) }}">
+                                Real Estate
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('ha_homepage') }}">
+                                <img class="logo" src="{{ asset('assets/images/logo/logo_black.png') }}"/>
+                            </a>
+                        </li>
+                        <li class="fixed-width-links --hideable"
+                            style="text-align: left;margin-right: -10px;">
+                            {% if app.user %}
+                                <a href="{{ path('ha_stream') }}" class="auth-show">
+                                    For You
+                                </a>
+                            {% else %}
+                                <a href="#" class="auth-show">
+                                    Join Us
+                                </a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+
+                {% if is_phone or is_tablet %}
+                    {% include 'AppBundle:layout/header/nav:mobile.html.twig' %}
+                {% else %}
+                    {% if app.user %}
+                        <div class="actions">
+                            {% include 'AppBundle:layout/header/nav:write.html.twig' %}
+                            {% include 'AppBundle:layout/header/nav:profile_desktop.html.twig' %}
+                        </div>
+                    {% else %}
+                        <div class="actions">
+                            <div class="action">
+                                <div class="sidenav-show action-title" data-type="navigation">
+                                    <i class="material-icons">
+                                        menu
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="search-row">
+            <div class="main-search">
+                <i class="material-icons">&#xE8B6;</i>
+                {% include 'AppBundle:layout/search:form.html.twig' %}
+                <div class="search-progress mdl-progress mdl-js-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'AppBundle:layout/search:results.html.twig' %}
+</div>

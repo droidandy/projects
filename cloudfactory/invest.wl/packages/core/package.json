@@ -1,0 +1,23 @@
+{
+  "name": "@invest.wl/core",
+  "version": "0.1.41",
+  "description": "Invest.wl core module",
+  "repository": {
+    "type": "git",
+    "url": "https://git.effectivetrade.ru/EFTR.Frontend/invest.wl.git",
+    "directory": "packages/core"
+  },
+  "main": "src/index.ts",
+  "author": "skripko.andrey@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "rollup": "rollup --config ../../rollup.config.ts --configPlugin typescript"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "peerDependencies": {
+    "reflect-metadata": "~0.1.13",
+    "inversify": "^5.0.0"
+  }
+}

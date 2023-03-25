@@ -1,0 +1,24 @@
+{
+  "extends": "../../packages/config/ts/base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDirs": [
+      "../../node_modules",
+      "node_modules"
+    ],
+    "allowJs": false,
+    "strictNullChecks": true,
+    "types": [
+      "node",
+      "webpack-env",
+      "jest",
+      "googlemaps"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

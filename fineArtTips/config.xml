@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="allmax.fine.art.tips.free2" version="0.1.5" android-versionCode="28" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FineArt-Tips</name>
+    <description>
+        Application for Leonardo
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Yakushin K. E.
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="http://*/*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <preference name="android-minSdkVersion" value="18" />
+        <preference name="disallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+        <preference name="BackupWebStorage" value="none"/>
+    </platform>
+    <preference name="xwalkVersion" value="15+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+</widget>

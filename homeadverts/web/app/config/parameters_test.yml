@@ -1,0 +1,10 @@
+parameters:
+    database_name: la_app_test
+    router.request_context.host: dev.homeadverts.com
+    router.request_context.scheme: http
+    
+    s3.bucket.name: luxuryaffairs-dev
+    s3.profile_bucket.name: luxuryaffairs-dev
+    ha.es.index_prefix: 'test'
+    
+    ha.import.wellcomemat_enabled: false

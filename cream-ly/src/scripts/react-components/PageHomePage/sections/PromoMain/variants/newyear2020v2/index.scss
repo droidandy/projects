@@ -1,0 +1,100 @@
+
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.HomePromoMain.newyear2020v2 {
+
+
+	padding:0 !important;
+	background-color: #edecef;
+
+	.container {
+		background: url('./home-top-newyear_2020-2-center_800.png') no-repeat;
+		background-size: contain;	
+		background-position: right bottom;
+		padding-top: 25px;
+		
+		.content {
+			max-width: 50%;
+			margin-right: auto;
+
+			.buttonArea {
+				padding-bottom:20px;
+			}
+		}
+
+		@media screen and (max-width: 1200px) {
+			background-size: 50%;
+		}
+		   
+		@media screen and (max-width: 992px) {
+			background-size: 50%;
+		}
+		
+		@media screen and (max-width: 576px) {
+		   background: url('./home-top-newyear_2020-2-center_600.png') no-repeat;
+		   background-size: 350px;
+		   background-position: 140px top;
+
+		   padding-left:0;
+		   padding-right:0;
+		   padding-bottom:0;
+
+			.content {
+				max-width: 100%;
+				
+
+				.title {
+					margin-left: 10px;
+					margin-right: auto;
+					width: 100%;
+					max-width: 175px;
+					min-width: 175px;
+					margin-bottom:50px;
+					min-height: 235px;
+				}
+				
+				.steps {
+					background-color: #fff;
+					padding-left:5px;
+					padding-right:5px;
+					
+					.item {
+						margin-top:20px;
+						p {
+							font-size: 0.9em;
+
+						}
+						
+					}
+				}
+
+				.buttonArea {
+					background-color: #fff;
+					padding-top:20px;
+				
+					.btn_style {
+						margin:0;
+					}
+				}
+
+				
+			}
+		}
+
+		@media screen and (max-width: 350px) {
+			background-size: 250px;
+			background-position: 130px 87px;
+
+			.title {
+				min-height: 235px;
+				h1 {
+					max-width: 130px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		}
+	
+		
+	}
+}

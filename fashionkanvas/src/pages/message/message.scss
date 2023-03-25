@@ -1,0 +1,150 @@
+page-message {
+	ion-textarea{
+		font-size: 12px;
+		resize: both;
+	}
+
+	.back-button-text
+	{
+		display:none;
+	}
+
+	.back-button-icon
+	{
+				color: #f66565;
+	}
+	.left .item-inner
+	{
+	    // background: $chat-left-bg;
+			background: #f1f1f1;
+			border-radius: 15px;
+			padding: 10px!important;
+	}
+	.right .item-inner
+	{
+			border-radius: 15px;
+			padding: 10px!important;
+	}
+	.left .item-inner .label
+	{
+		padding: 0!important;
+		white-space: normal;
+		color:#000!important;
+		margin: 0!important;
+	}
+
+	.right .item-inner .label
+	{
+		padding: 0!important;
+		white-space: normal;
+		color:#000!important;
+		margin: 0!important;
+	}
+
+	.left .item-inner .label p
+	{
+		color:#000!important;
+	}
+
+	.right .item-inner .label p
+	{
+		color:#fff!important;
+	}
+
+	.item-left{
+	      padding: 0;
+	}
+
+	.left .item
+	{
+		padding-left: 0!important;
+	}
+
+	ion-avatar
+	{
+		    margin-right: 5px!important;
+	}
+
+	.left
+	{
+		    max-width: 84%!important;
+	}
+
+	.chatbox ion-avatar
+	{
+		width: 40px;
+	height: 40px;
+	float: left;
+	}
+
+		.chatbox ion-avatar img{
+			width: 40px;
+		height: 40px;
+		float: left;
+		border-radius: 100%;
+		}
+
+	.footer .item-inner
+	{
+		    background: #f1f1f1;
+				height: 35px;
+		    min-height: 35px;
+				border: none;
+				border-radius: 30px;
+	}
+
+	.footer .input-wrapper
+	{
+		height: 30px;
+	}
+
+	.footer .bottom_bar {
+		padding: 7px!important;
+    // padding-top: 6.5px;
+		    min-height: 55px!important;
+	}
+
+	.footer .text-input
+	{
+		padding: 8px;
+		margin: 0;
+		height: 30px;
+		resize: none;
+	}
+
+	.footer .item-button
+	{
+		    margin-top: 4px;
+	}
+
+	.sent{
+		margin: 0!important;
+    margin-top: 4px!important;
+    background: #666;
+    border-radius: 50px;
+		height: 26px!important;
+    width: 26px;
+	}
+
+	.sent .icon{
+		font-size: 19px!important;
+		color: #fff;
+	}
+
+	.attachment{
+		    margin-right: 5px;
+	}
+
+	.chatbox p {
+		margin: 0;
+		text-align: left;
+	}
+
+	.chat_head
+	{
+		width: 100%;
+		display: block;
+		float: left;
+	}
+
+}

@@ -1,0 +1,27 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.ProductBadge {
+  text-align: center;
+
+  @include media-query($small) {
+    margin-bottom: 3px;
+  }
+
+  .badge {
+    font-weight: normal;
+    color: var(--white);
+    border-radius: 0px;
+  }
+
+  .sold-out {
+    background-color: var(--lavender);
+  }
+
+  .recommended {
+    background-color: var(--rose);
+  }
+
+  .purchased {
+    background-color: var(--rosemary);
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.CartSummary { 
+    max-width: 400px;
+    margin:auto;
+
+    .toggle {
+        display: none;
+        @include media-query($small) {
+            text-align: center;
+            display: block;
+        }
+    }
+
+    
+
+    .hiddenOnMobile {
+        @include media-query($small) {
+           display: none;
+        }
+    }
+
+    form {
+        margin-top: 20px;
+        margin-bottom:20px;
+        @include media-query($small) {
+            margin-top: 10px;
+            margin-bottom:10px;
+        }
+
+        .discountCode {
+            button {
+                margin-left:10px;
+            }
+            
+            @include media-query($extra-small) {
+               .col {
+                   margin:0;
+                   input {font-size: 0.9em;}
+               }
+               button {
+                   font-size: 0.9em;
+               }
+            }
+        }
+    }
+
+   
+}

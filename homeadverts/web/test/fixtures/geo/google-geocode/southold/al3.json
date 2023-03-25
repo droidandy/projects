@@ -1,0 +1,59 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Southold",
+          "short_name" : "Southold",
+          "types" : [ "administrative_area_level_3", "political" ]
+        },
+        {
+          "long_name" : "Suffolk County",
+          "short_name" : "Suffolk County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New York",
+          "short_name" : "NY",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Southold, NY, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 41.3103871,
+            "lng" : -71.80938399999999
+          },
+          "southwest" : {
+            "lat" : 40.926724,
+            "lng" : -72.6947169
+          }
+        },
+        "location" : {
+          "lat" : 41.0801973,
+          "lng" : -72.4731529
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 41.3103871,
+            "lng" : -71.80938399999999
+          },
+          "southwest" : {
+            "lat" : 40.926724,
+            "lng" : -72.6947169
+          }
+        }
+      },
+      "place_id" : "ChIJ8YG9JySh6IkRW6lVj4g7NUw",
+      "types" : [ "administrative_area_level_3", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

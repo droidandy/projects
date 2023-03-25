@@ -1,0 +1,323 @@
+{
+    "listingSummary": {
+        "listingId": "c78cb6f7-3522-4783-8a67-740bfd5da111",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-09-09",
+        "photoCount": 14,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 1089000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "41 Top Of The Hill Rd",
+            "city": "Wilmington",
+            "district": "Windham County",
+            "stateProvince": "Vermont",
+            "stateProvinceCode": "VT",
+            "postalCode": "05363",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 42.88196,
+            "longitude": -72.83576,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "41 Top of Hill Rd, Wilmington, VT 05363"
+        },
+        "mlsNumbers": [
+            "4658497"
+        ],
+        "RFGListingId": "ENNH5K",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/ennh5k",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Other Style",
+        "propertyName": "41 Top Of The Hill Road, Wilmington",
+        "lotSize": "17.05 AC",
+        "buildingArea": "4950 Sq. Ft.",
+        "noOfBedrooms": 4,
+        "totalAcres": 17.05,
+        "squareFootage": 4950,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/90AC5EE5-8082-4739-8857-C80AD1CCC600",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-03-16T15:05:42.743",
+        "agents": [
+            {
+                "id": "7c3c2251-f0db-4ae4-8e87-a5c7ca2355f6",
+                "name": "Megan  McLeod",
+                "firstName": "Megan ",
+                "lastName": "McLeod",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+                "emailAddress": "mmcleod@sothebysrealty.ca",
+                "leadEmailAddress": "800372.lead.4039639@leads.leadrouter.com",
+                "businessPhone": "4169609995",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "a01dfd06-adae-4e7e-9979-475a52e0f955",
+                    "RFGOfficeId": "0024 ",
+                    "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+                    "companyName": "Sotheby's International Realty Canada",
+                    "RFGCompanyId": "810043",
+                    "brandCode": "SIR",
+                    "name": "Sotheby's International Realty Canada",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "113 Medora Street",
+                        "city": "Port Carling",
+                        "district": "Muskoka",
+                        "stateProvince": "Ontario",
+                        "stateProvinceCode": "ON",
+                        "postalCode": "P0B 1J0",
+                        "country": "Canada",
+                        "countryCode": "CA",
+                        "latitude": 45.1212,
+                        "longitude": -79.5793,
+                        "formattedAddress": "113 Medora St, Muskoka Lakes, ON P0B, Canada"
+                    },
+                    "phoneNumber": "1.877.960.9995",
+                    "emailAddress": "dusher@sothebysrealty.ca"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 4,
+    "halfBath": 1,
+    "levels": 0,
+    "yearBuilt": "1986",
+    "providerKey": "c78cb6f7-3522-4783-8a67-740bfd5da111",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Experience the best combination of proximity, privacy, and exposure, from this spectacular architect designed home nestled just off beautiful Stowe Hill Road a short drive out of the country village of Wilmington. Rod Williams, designer of the Inn at Sawmill Farms, personally designed this home in conjunction with these original owners. Like the Inn, this home has spectacular reclaimed barn style natural woodwork and rough hewn beams throughout the living spaces. Parts feel like a barn style conversion with the country charm befitting a country estate in Vermont. Enjoy the expansive great room filled with natural light from the southerly and westerly views over the Mount Snow and Haystack ridge lines, ski trails, and sunsets beyond. Spacious open concept spaces including a published chefs kitchen complete with brick hearth and wood burning fireplace and cantilevered over-the-fire grill, one-of-a-kind custom brick climate controlled wine enclave, gorgeous master suite with fireplace, spacious bath, and walk-in closet, guest suites with double jack and jill baths, main floor guest suite with easy accessibility, double floor decks to take in the sun, and spacious main floor deck for entertaining. This is complemented by a large mudroom, ski closet, and 2 car garage. The owners have allowed the trees to grow to accommodate their privacy, but with fresh clearing, thanks to the expansive 17+ acres, the new owner could have extensive exposure. Perennial gardens and stone walls.",
+            "htmlRemark": "Experience the best combination of proximity, privacy, and exposure, from this spectacular architect designed home nestled just off beautiful Stowe Hill Road a short drive out of the country village of Wilmington. Rod Williams, designer of the Inn at Sawmill Farms, personally designed this home in conjunction with these original owners. Like the Inn, this home has spectacular reclaimed barn style natural woodwork and rough hewn beams throughout the living spaces. Parts feel like a barn style conversion with the country charm befitting a country estate in Vermont. Enjoy the expansive great room filled with natural light from the southerly and westerly views over the Mount Snow and Haystack ridge lines, ski trails, and sunsets beyond. Spacious open concept spaces including a published chefs kitchen complete with brick hearth and wood burning fireplace and cantilevered over-the-fire grill, one-of-a-kind custom brick climate controlled wine enclave, gorgeous master suite with fireplace, spacious bath, and walk-in closet, guest suites with double jack and jill baths, main floor guest suite with easy accessibility, double floor decks to take in the sun, and spacious main floor deck for entertaining. This is complemented by a large mudroom, ski closet, and 2 car garage. The owners have allowed the trees to grow to accommodate their privacy, but with fresh clearing, thanks to the expansive 17+ acres, the new owner could have extensive exposure. Perennial gardens and stone walls."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/ennh5k",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "1DE8890E-CFBC-4CEF-AE5B-2C7C5738D777",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/1DE8890E-CFBC-4CEF-AE5B-2C7C5738D777",
+            "isDefault": false,
+            "caption": "Photo 8",
+            "shortDescription": "Caption 8",
+            "htmlDescription": "Caption 8",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1800,
+            "width": 1200,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "67A7858D-63C4-4C6E-A5E1-2EF0345BA747",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/67A7858D-63C4-4C6E-A5E1-2EF0345BA747",
+            "isDefault": false,
+            "caption": "Photo 14",
+            "shortDescription": "Caption 14",
+            "htmlDescription": "Caption 14",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "7547130B-D234-4934-830E-4508D6249669",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/7547130B-D234-4934-830E-4508D6249669",
+            "isDefault": false,
+            "caption": "Photo 4",
+            "shortDescription": "Caption 4",
+            "htmlDescription": "Caption 4",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "9F7DA33C-96B7-4AB5-A516-49219F712096",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/9F7DA33C-96B7-4AB5-A516-49219F712096",
+            "isDefault": false,
+            "caption": "Photo 11",
+            "shortDescription": "Caption 11",
+            "htmlDescription": "Caption 11",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "11DF28E5-1C0A-4FAA-A04D-5CDFE82E8A5A",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/11DF28E5-1C0A-4FAA-A04D-5CDFE82E8A5A",
+            "isDefault": false,
+            "caption": "Photo 5",
+            "shortDescription": "Caption 5",
+            "htmlDescription": "Caption 5",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "25C61F15-F440-42E4-8C0E-609573D0A7E1",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/25C61F15-F440-42E4-8C0E-609573D0A7E1",
+            "isDefault": false,
+            "caption": "Photo 6",
+            "shortDescription": "Caption 6",
+            "htmlDescription": "Caption 6",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "FDBD28DA-2210-4F33-9188-62B7A18A62D9",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/FDBD28DA-2210-4F33-9188-62B7A18A62D9",
+            "isDefault": false,
+            "caption": "Photo 13",
+            "shortDescription": "Caption 13",
+            "htmlDescription": "Caption 13",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "F93C9A38-838A-4F00-98D4-73A14B308739",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/F93C9A38-838A-4F00-98D4-73A14B308739",
+            "isDefault": false,
+            "caption": "Photo 9",
+            "shortDescription": "Caption 9",
+            "htmlDescription": "Caption 9",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "13B030C2-4B33-4DCF-A14C-78C4FF73DB3E",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/13B030C2-4B33-4DCF-A14C-78C4FF73DB3E",
+            "isDefault": false,
+            "caption": "Photo 10",
+            "shortDescription": "Caption 10",
+            "htmlDescription": "Caption 10",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "454CBB9D-5524-474E-B738-A5C9D878D0C9",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/454CBB9D-5524-474E-B738-A5C9D878D0C9",
+            "isDefault": false,
+            "caption": "Photo 3",
+            "shortDescription": "Caption 3",
+            "htmlDescription": "Caption 3",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "03AE59BA-FDD7-4007-9371-C09A6A0EAF75",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/03AE59BA-FDD7-4007-9371-C09A6A0EAF75",
+            "isDefault": false,
+            "caption": "Photo 12",
+            "shortDescription": "Caption 12",
+            "htmlDescription": "Caption 12",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "90AC5EE5-8082-4739-8857-C80AD1CCC600",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/90AC5EE5-8082-4739-8857-C80AD1CCC600",
+            "isDefault": true,
+            "caption": "Photo 1",
+            "shortDescription": "Caption 1",
+            "htmlDescription": "Caption 1",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "56701764-CF71-4D1C-946B-DF3E96865B0E",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/56701764-CF71-4D1C-946B-DF3E96865B0E",
+            "isDefault": false,
+            "caption": "Photo 2",
+            "shortDescription": "Caption 2",
+            "htmlDescription": "Caption 2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        },
+        {
+            "mediaID": "C5FA2907-3489-4D58-AA27-F0E5B45FC213",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/C5FA2907-3489-4D58-AA27-F0E5B45FC213",
+            "isDefault": false,
+            "caption": "Photo 7",
+            "shortDescription": "Caption 7",
+            "htmlDescription": "Caption 7",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-20T05:40:55.007"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "4658497",
+            "isPrimary": true
+        }
+    ]
+}

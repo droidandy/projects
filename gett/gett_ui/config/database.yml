@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  database: <%= Settings.db.database %>
+  user: <%= Settings.db.user %>
+  password: <%= Settings.db.password %>
+  host: <%= Settings.db.host %>
+  port: <%= Settings.db.port %>
+  max_connections: <%= Settings.db.max_connections %>
+  encoding: UTF8
+  test: false
+  servers:
+    read_only_replica:
+      host: <%= Settings.db.read_only_host %>
+
+<%= Rails.env %>:
+  <<: *default
+
+test:
+  <<: *default
+  database: gb_test<%= ENV['TEST_ENV_NUMBER'] %>
+
+test_features:
+  <<: *default
+  database: gb_test_features

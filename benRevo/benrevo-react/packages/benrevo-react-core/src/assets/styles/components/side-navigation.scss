@@ -1,0 +1,348 @@
+@import '../variables-theme';
+
+$PRESENTATION_NAVIGATION_COLOR: #aaafb2;
+
+.side-navigation {
+  z-index: 11;
+  padding: 20px 0 0 0;
+  width: 180px;
+  height: 100%;
+  left: 0px;
+  background-color: #3A444D;
+
+  .ui.button {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    margin-bottom: 25px;
+  }
+
+  .client-name {
+    font-size: 16px;
+    color: $PRESENTATION_NAVIGATION_COLOR;
+    padding: 10px 20px 20px;
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid $PRESENTATION_NAVIGATION_ACTIVE_BG;
+  }
+
+  .ui.accordion .title:not(.ui) {
+    font-size: 13px;
+    line-height: 26px;
+    color: white;
+  }
+
+  .ui.menu.vertical {
+    width: auto;
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: unset;
+    overflow-y: auto;
+
+    &:not(.second) {
+      // border-bottom: 1px solid $PRESENTATION_NAVIGATION_ACTIVE_BG;
+      border-radius: unset;
+    }
+
+    .item {
+      background: none;
+      color: #ffffff;
+      border: none;
+      font-size: 13px;
+      padding-left: 55px;
+      padding-right: 20px;
+      // padding: 0;
+      min-height: 40px;
+      line-height: 16px;
+      background-repeat: no-repeat;
+      background-position: 20px center;
+      border-left: 3px solid transparent;
+      border-radius: unset;
+      transition: 300ms background-color, 300ms border;
+
+      i {
+        display: none;
+      }
+
+      &:hover, &.active {
+        color: #ffffff;
+        background-color: $PRESENTATION_NAVIGATION_ACTIVE_BG;
+        border-left: 3px solid #21bdc3;
+        border-radius: unset;
+      }
+
+      &.nav-medical {
+        background-image: url("../../img/side-navigation/presentation-icon-medical.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-medical.svg");
+        }
+      }
+
+      &.nav-dental {
+        background-image: url("../../img/side-navigation/presentation-icon-dental.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-dental.svg");
+        }
+      }
+
+      &.nav-vision {
+        background-image: url("../../img/side-navigation/presentation-icon-vision.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-vision.svg");
+        }
+      }
+
+      &.nav-life {
+        background-image: url("../../img/side-navigation/presentation-icon-life.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-life.svg");
+        }
+      }
+
+      &.nav-ltd, &.nav-vltd {
+        background-image: url("../../img/side-navigation/presentation-icon-longterm.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-longterm.svg");
+        }
+      }
+
+      &.nav-plans {
+        background-image: url("../../img/side-navigation/presentation-icon-compare-plans.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-compare-plans.svg");
+        }
+      }
+
+      &.nav-enrollment {
+        background-image: url("../../img/side-navigation/presentation-icon-enrollment.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-enrollment.svg");
+        }
+      }
+
+      &.nav-tools {
+        background-image: url("../../img/side-navigation/presentation-icon-network-tools.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-network-tools.svg");
+        }
+      }
+
+      &.nav-disclosure {
+        background-image: url("../../img/side-navigation/presentation-icon-disclosures.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-disclosures.svg");
+        }
+      }
+
+      &.nav-quote {
+        background-image: url("../../img/side-navigation/presentation-icon-compare-plans.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-compare-plans.svg");
+        }
+      }
+
+      &.nav-rater {
+        background-image: url("../../img/side-navigation/presentation-icon-compare-plans.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/presentation-icon-hover-compare-plans.svg");
+        }
+      }
+
+      &.nav-summary {
+        background-image: url("../../img/side-navigation/summary.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/summary-hover.svg");
+        }
+      }
+
+      &.nav-bank {
+        background-image: url("../../img/side-navigation/rates.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/rates-hover.svg");
+        }
+      }
+
+      &.nav-broker {
+        background-image: url("../../img/side-navigation/send-to.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/send-to-hover.svg");
+        }
+      }
+
+      &.nav-setup {
+        background-image: url("../../img/side-navigation/setup.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/setup-hover.svg");
+        }
+      }
+
+      &.nav-download {
+        background-image: url("../../img/side-navigation/download.svg");
+
+        &:hover, &.active {
+          background-image: url("../../img/side-navigation/download-hover.svg");
+        }
+      }
+
+      &.nav-rfp-rates {
+        background: url("../../img/side-navigation/rfp-rates.svg") no-repeat 20px center;
+
+        &:hover, &.active {
+          background: #2b343c url("../../img/side-navigation/rfp-rates-hover.svg") no-repeat 20px center;
+        }
+      }
+
+      &.nav-rfp-enrollment {
+        background: url("../../img/side-navigation/rfp-enrollment.svg") no-repeat 20px center;
+
+        &:hover, &.active {
+          background: #2b343c url("../../img/side-navigation/rfp-enrollment-hover.svg") no-repeat 20px center;
+        }
+      }
+
+      &.nav-rfp-addteam {
+        background: url("../../img/side-navigation/rfp-addteam.svg") no-repeat 20px center;
+
+        &:hover, &.active {
+          background: #2b343c url("../../img/side-navigation/rfp-addteam-hover.svg") no-repeat 20px center;
+        }
+      }
+
+      &.nav-rfp-client {
+        background: url("../../img/side-navigation/rfp-client.svg") no-repeat 20px center;
+
+        &:hover, &.active {
+          background: #2b343c url("../../img/side-navigation/rfp-client-hover.svg") no-repeat 20px center;
+        }
+      }
+    }
+
+
+
+    &.second-menu {
+      margin-top: 40px;
+
+      .item {
+        color: $PRESENTATION_NAVIGATION_COLOR;
+      }
+    }
+  }
+}
+
+
+.side-navigation {
+  .ui.menu.vertical {
+    .item.accordion-item {
+      padding: 0;
+      border: none;
+      .title {
+        height: 40px;
+        line-height: 28px;
+        padding-left: 55px;
+        border-left: 3px solid transparent;
+        &:hover, &.active {
+          color: #ffffff;
+          background-color: $PRESENTATION_NAVIGATION_ACTIVE_BG;
+          border-left: 3px solid #21bdc3;
+        }
+        &.nav-client {
+          background: url("../../img/side-navigation/clientsetup.svg") no-repeat 20px center;
+
+          &:hover, &.active {
+            background: #2b343c url("../../img/side-navigation/clientsetup-hover.svg") no-repeat 20px center;
+          }
+        }
+
+        &.nav-medical {
+          background: url("../../img/side-navigation/presentation-icon-medical.svg") no-repeat 20px center;
+
+
+          &:hover, &.active {
+            background: #2b343c url("../../img/side-navigation/presentation-icon-hover-medical.svg") no-repeat 20px center;
+          }
+        }
+
+        &.nav-dental {
+          background: url("../../img/side-navigation/presentation-icon-dental.svg") no-repeat 20px center;
+
+          &:hover, &.active {
+            background: #2b343c url("../../img/side-navigation/presentation-icon-hover-dental.svg") no-repeat 20px center;
+          }
+        }
+
+        &.nav-vision {
+          background: url("../../img/side-navigation/presentation-icon-vision.svg") no-repeat 20px center;
+
+          &:hover, &.active {
+            background: #2b343c url("../../img/side-navigation/presentation-icon-hover-vision.svg") no-repeat 20px center;
+          }
+        }
+
+        &.nav-plans {
+          background: url("../../img/side-navigation/presentation-icon-compare-plans.svg") no-repeat 20px center;
+
+          &:hover, &.active {
+            background: #2b343c url("../../img/side-navigation/presentation-icon-hover-compare-plans.svg") no-repeat 20px center;
+          }
+        }
+        &.nav-bank {
+          background: url("../../img/side-navigation/rates.svg") no-repeat 20px center;
+
+          &:hover, &.active {
+            background: #2b343c url("../../img/side-navigation/rates-hover.svg") no-repeat 20px center;
+          }
+        }
+      }
+      .content {
+        background: #262e35;
+        padding: 10px 0;
+        .content-item {
+          display: block;
+          padding: 10px 0 10px 55px;
+          color: #aaafb2;
+          border: none;
+          background: unset;
+          font-weight: 600;
+
+          .dot {
+            position: absolute;
+            left: 27px;
+            top: 41%;
+            display: block;
+            border-radius: 20px;
+            background-color: $PRESENTATION_NAVIGATION_COLOR;;
+          }
+          &:hover, &.active {
+            border: none;
+            color: #ffffff;
+            .dot {
+              height: 6px;
+              width: 6px;
+              background-color: #21bdc3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slot-bottom {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "pageSize": 15,
+  "paginationSize": 6,
+  "push": {
+    "displayedTitleLength": 50,
+    "displayedMessageLength": 100
+  },
+  "segments": {
+    "minInputLength": 2,
+    "defaultCenter": [37.618423, 55.751244],
+    "defaultZoom": 8,
+    "defaultRadius": 15,
+    "defaultPadding": 60
+  }
+}

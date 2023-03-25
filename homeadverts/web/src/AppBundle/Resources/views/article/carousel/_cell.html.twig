@@ -1,0 +1,9 @@
+<div class="gallery-cell --order-{{ loop.index0 }} {% if loop.last %}--order-last{% endif %}">
+    <img class="gallery-cell-image"
+         src="{{ image.file.getUrl() }}"
+         data-flickity-lazyload="{{ image.file.getUrl() }}"
+         data-index="{{ loop.index0 }}"
+    />
+
+    {% include "AppBundle:article/carousel:_toolbar.html.twig" %}
+</div>

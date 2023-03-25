@@ -1,0 +1,17 @@
+[
+  {
+    "commentAuthor" : "Martinez",
+    "commentTime" : "2 Days Ago",
+    "commentText" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis."
+  },
+  {
+    "commentAuthor" : "Donald Ares",
+    "commentTime" : "2 hrs Ago",
+    "commentText" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis."
+  },
+  {
+    "commentAuthor" : "Ngozi",
+    "commentTime" : "3 Mins Ago",
+    "commentText" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis."
+  }
+]

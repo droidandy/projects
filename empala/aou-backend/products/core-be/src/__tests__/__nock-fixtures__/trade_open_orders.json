@@ -1,0 +1,27 @@
+[
+    {
+        "scope": "https://trade-api-uat.extend.apexclearing.com:443",
+        "method": "GET",
+        "path": "/api/orders/open?account=account_id",
+        "body": "",
+        "status": 200,
+        "response": [],
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 13:23:10 GMT",
+            "Server",
+            "Orb",
+            "Strict-Transport-Security",
+            "max-age=63072000; includeSubDomains; preload",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Type",
+            "application/json;charset=utf-8",
+            "Content-Length",
+            "2",
+            "Connection",
+            "close"
+        ],
+        "responseIsBinary": false
+    }
+]

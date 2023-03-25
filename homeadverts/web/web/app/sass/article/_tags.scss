@@ -1,0 +1,42 @@
+.article-tags {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  ul {
+    padding-top: 0;
+    margin-left: 0;
+    li {
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      a {
+        background: #212121;
+        padding: 7px 14px;
+        line-height: 1;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 12px;
+        display: block;
+        @include transition_all();
+
+
+        &:hover {
+          background: #424242;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_width - 1px) {
+  .article-tags {
+    padding: 0;
+    margin-top: 20px;
+
+    ul li {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}

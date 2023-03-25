@@ -1,0 +1,24 @@
+ha_article_new:
+    path:  /new
+    defaults: { _controller: AppBundle:Article:new }
+    methods:  [POST|GET]
+
+ha_article_new_import:
+    path:  /import
+    defaults: { _controller: AppBundle:Article:import }
+    methods:  [GET]
+
+ha_article_edit:
+    path:  /edit/{token}
+    defaults: { _controller: AppBundle:Article:edit }
+    methods:  [GET]
+    requirements:
+        page: \d+
+
+ha_article_details:
+    path: /{token}/{slug}
+    defaults:
+      _controller: AppBundle:Article:details
+      token: no-token
+      slug: no-slug
+    methods: [GET]

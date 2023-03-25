@@ -1,0 +1,30 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    "lodash",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-transform-modules-commonjs",
+    [
+      "module-resolver",
+      {
+        "extensions": [".js", ".ios.js", ".android.js"],
+        "root": ["./"],
+        "alias": {
+          "actions": "./src/actions",
+          "api": "./src/api",
+          "assets": "./src/assets",
+          "components": "./src/components",
+          "containers": "./src/containers",
+          "locales": "./src/locales",
+          "navigators": "./src/navigators",
+          "reducers": "./src/reducers",
+          "store": "./src/store",
+          "theme": "./src/theme",
+          "utils": "./src/utils",
+          "testIDs": "./e2e/testIDs"
+        }
+      }
+    ]
+  ],
+  "retainLines": true
+}

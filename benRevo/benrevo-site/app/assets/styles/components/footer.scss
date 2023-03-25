@@ -1,0 +1,45 @@
+@import "../variables-theme";
+
+.app-footer {
+  position: relative;
+  .footer-top {
+    z-index: -1;
+  }
+
+  .app-footer-bottom {
+    min-height: 330px;
+    background-color: $BACKGROUND_GRAY_COLOR;
+    padding-top: 45px;
+    padding-bottom: 65px;
+    font-size: 14px;
+
+    .logo {
+      background: url(../img/benrevo.svg) no-repeat;
+      width: 140px;
+      height: 43px;
+      display: block;
+    }
+
+    .column-header {
+      color: $THIRD_COLOR;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .column-item {
+      display: block;
+      color: $THIRD_COLOR;
+      margin-bottom: 15px;
+
+      &:hover {
+        color: $THIRD_COLOR_LIGHT;
+      }
+    }
+
+    .column.footer-copy {
+      margin-top: 65px;
+      font-size: 13px;
+    }
+  }
+}

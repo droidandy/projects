@@ -1,0 +1,135 @@
+.message {
+  padding: 1px 0;
+  color: black;
+  display: flex;
+
+  .details {
+    margin-left: 10px;
+    float: left;
+
+    .status {
+      font-family: 'Roboto Regular', sans-serif;
+      font-size: 11px;
+      color: #00000054;
+      display: flex;
+
+      .checkMark {
+        margin-left: 5px;
+        .icon {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+    .text {
+      max-width: 420px;
+      font-family: 'Roboto Regular', sans-serif;
+      font-size: 14px;
+      background: #ECEBEB;
+      color: #000000;
+      word-break: break-word;
+      padding: 12px 15px;
+      border-radius: 15px;
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+    }
+  }
+  &.__initial,
+  &.__first__last {
+    .details {
+      .text {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 15px;
+      }
+    }
+  }
+  &.__first {
+    .details {
+      .text {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+    }
+  }
+  &.__last {
+    .details {
+      .text {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 15px;
+      }
+    }
+  }
+  &.__noAvatar {
+    .details {
+      margin-left: 45px;
+    }
+  }
+}
+
+.messageMy {
+  padding: 1px 0;
+  font-size: 14px;
+  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .details {
+    float: right;
+    .text {
+      max-width: 450px;
+      font-family: 'Roboto Regular', sans-serif;
+      font-size: 14px;
+      background: #0085ff;
+      color: #fff;
+      word-break: break-word;
+      padding: 12px 15px;
+      border-radius: 15px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+    .status {
+      font-family: 'Roboto Regular', sans-serif;
+      font-size: 11px;
+      color: #00000054;
+      display: flex;
+      @include transition_opacity();
+
+      .checkMark {
+        margin-right: 5px;
+        .icon {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &.__initial,
+  &.__first__last {
+    margin-top: 5px;
+
+    .details {
+      .text {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+  }
+  &.__first {
+    margin-top: 10px;
+    .details {
+      .text {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+    }
+  }
+  &.__last {
+    .details {
+      .text {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+  }
+}

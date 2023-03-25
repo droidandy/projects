@@ -1,0 +1,46 @@
+
+@import "../../../../styles/tools/mixins.scss";
+.componentSelectedOptions {
+    @include spacingBottom;
+    @include marginXauto;
+    margin-bottom: 40px;
+    max-width: 1200px;
+
+    .componentQuizItem {
+        margin-bottom: 10px;
+        @include media-query($small) {
+            min-width: 33%;
+            padding-left:5px;
+            padding-right:5px;
+            font-size: 0.9em;
+            
+        }
+        
+    }
+    .componentQuizOption {
+        @include media-query($small) {
+            width: 110px;
+        }
+        @include media-query($medium) {
+            width: 150px;
+        }
+        .bubble {
+            height: 120px;
+            width: 120px;
+            @include media-query($small) {
+                height: 80px;
+                width: 80px;
+            }
+        }
+    }
+    .title {
+        text-align: center;
+        max-width: 120px;
+        margin: 0 auto;
+    }
+
+    .comment {
+        .commentLabel{ @include spacingBottomSmall(); text-align: center;}
+        textarea {width:100%;font-size:0.9em;}
+    }
+}

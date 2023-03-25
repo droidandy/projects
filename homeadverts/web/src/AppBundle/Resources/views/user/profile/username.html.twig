@@ -1,0 +1,26 @@
+{% set isFollowing = false %}
+
+{% if (app.user) and (app.user.isUserFollowing(user)) %}
+    {% set isFollowing = true %}
+{% endif %}
+
+<a href="{{ path('ha_user_profile', {id: user.id, slug: user|slug}) }}"
+   class="username user-popup-{{ user.id }}"
+   data-image="{{ user|user_profile_image }}"
+   data-background="{{ user.getBackgroundImage() }}"
+   data-url="{{ path('ha_user_get', {id: user.id}) }}"
+   data-name="{{ user.name }}"
+
+   data-url-profile="{{ path('ha_user_profile', {id: user.id, slug: user|slug}) }}"
+   data-url-articles="{{ path('ha_user_articles', {id: user.id, slug: user|slug}) }}"
+   data-url-properties="{{ path('ha_user_properties', {id: user.id, slug: user|slug, market: 'to-rent'}) }}"
+   data-url-followers="{{ path('ha_user_followers', {id: user.id, slug: user|slug}) }}"
+
+   data-url-follow="{{ path("ha_user_follow", {id:user.id}) }}"
+   data-url-unfollow="{{ path("ha_user_unfollow", {id:user.id}) }}"
+
+   data-id="{{ user.id }}"
+   data-is-following="{{ isFollowing }}"
+>
+    {{ user.name }}
+</a>

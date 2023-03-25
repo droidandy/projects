@@ -1,0 +1,48 @@
+query getCurrentUser {
+  currentUser {
+    ... on User {
+      id
+      userName
+      email
+      bio
+      fullName
+      nStacks
+      nHunches
+      nFollowers
+      avatar
+      hunches {
+        id
+        instrument {
+          name
+          symbol
+        }
+        byDate
+        priceChangePercentage
+        byDate
+        targetPrice
+        currentPrice
+      }
+      stacks {
+        id
+        name
+        instruments {
+          id
+          name
+          currentPrice
+        }
+        totalValue
+        percentageChange
+      }
+      followers {
+        id
+        userName
+        avatar
+      }
+      followedUsers {
+        id
+        userName
+        avatar
+      }
+    }
+  }
+}

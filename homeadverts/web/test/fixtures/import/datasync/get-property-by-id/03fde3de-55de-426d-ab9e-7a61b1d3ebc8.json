@@ -1,0 +1,373 @@
+{
+    "listingSummary": {
+        "listingId": "03fde3de-55de-426d-ab9e-7a61b1d3ebc8",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-11-10",
+        "photoCount": 11,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "EUR",
+            "amount": 10000000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 11691800
+        },
+        "propertyAddress": {
+            "city": "St Julians",
+            "district": "St Julians",
+            "country": "Malta",
+            "countryCode": "MT",
+            "geoCodeConfidenceLevel": "Low"
+        },
+        "geographicRegions": [
+            {
+                "type": "ContinentRegion",
+                "name": "Europe"
+            },
+            {
+                "type": "StateRegion",
+                "name": "Malta"
+            }
+        ],
+        "mlsNumbers": [
+            "300938"
+        ],
+        "RFGListingId": "DRKWPE",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/drkwpe",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Apartment",
+        "propertyStyle": "Other Style",
+        "propertyName": "Luxury Apartment",
+        "lotSize": "39 SM",
+        "noOfBedrooms": 3,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/4959BB45-CF89-4CBF-A88A-1E872025FA5B",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-18T05:27:03.200",
+        "agents": [
+            {
+                "id": "e94b3a56-24cb-4061-92a1-821df0aa31c6",
+                "name": "Ian Pace",
+                "firstName": "Ian",
+                "lastName": "Pace",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/A886046A-3758-4490-8B39-D177B3FD98D1",
+                "emailAddress": "ian.pace@maltasothebysrealty.com",
+                "mobilePhone": "+356 +35699108079",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "c024b6a5-eb75-4f14-93ea-184181c92b73",
+                    "RFGOfficeId": "0022 ",
+                    "companyId": "9dab1f9d-3076-442c-a01a-5148dde8f472",
+                    "companyName": "Malta Sotheby's International Realty",
+                    "RFGCompanyId": "870155",
+                    "brandCode": "SIR",
+                    "name": "Malta Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "Ground Floor, 200 Tower Road",
+                        "city": "Sliema",
+                        "postalCode": "SLM1602",
+                        "country": "Malta",
+                        "countryCode": "MT",
+                        "latitude": 34.084140777588,
+                        "longitude": -95.104438781738,
+                        "formattedAddress": "Tower Rd, Sliema, SLM, Malta"
+                    },
+                    "phoneNumber": "+356-2010-8070",
+                    "emailAddress": "info@maltasothebysrealty.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "lotDimension": "275",
+    "totalRooms": 0,
+    "providerKey": "03fde3de-55de-426d-ab9e-7a61b1d3ebc8",
+    "propertyFeatures": [
+        {
+            "groupName": "General",
+            "description": "Wheel Chair Accessible"
+        },
+        {
+            "groupName": "General",
+            "description": "Elevator"
+        },
+        {
+            "groupName": "Age",
+            "description": "New Construction"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Walk-in Closet"
+        },
+        {
+            "groupName": "Special Market",
+            "description": "Luxury Properties"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Designer Kitchen"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Mixed"
+        },
+        {
+            "groupName": "Pre-Wiring",
+            "description": "Security System"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Pool"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "A\/C"
+        },
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Electric"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Intercom System"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Terrace"
+        },
+        {
+            "description": "Sea and Country Views"
+        },
+        {
+            "groupName": "Lot Description",
+            "description": "New Development"
+        },
+        {
+            "groupName": "Garage Description",
+            "description": "Carport"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Waterfront"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "eGallery Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Top floor designer finished 275 sqm sky villa style apartment which will form part of this luxurious and super hi tech tower designed by well renowned Zaha Hadid Architects, the last project presented by herself, and renamed Jubilee 1 Zaha Hadid by current vendors. The project comprises of a twin tower with commercial office space residential apartments and 5 star Hotel with large shopping Mall on the lower floors with underground parking. Having a floor area of circa 275 sqm (236 sqm internal and 39 sqm terraces). Jubilee 1 Zaha Hadid will enjoy stunning open country and sea views from the terraces. Even though it has been designed with a three bedroom plus study configuration, minor alterations to the layout and specifications of finish can still be done, as still under construction. Possibility of purchasing along with adjacent unit which would increase the footprint to 600 sqm. Viewing is highly recommended.",
+            "htmlRemark": "Top floor designer finished 275 sqm sky villa style apartment which will form part of this luxurious and super hi tech tower designed by well renowned Zaha Hadid Architects, the last project presented by herself, and renamed Jubilee 1 Zaha Hadid by current vendors.   The project comprises of a twin tower with commercial office space residential apartments and 5 star Hotel with large shopping Mall on the lower floors with underground parking.  Having a floor area of circa 275 sqm (236 sqm internal and 39 sqm terraces). Jubilee 1 Zaha Hadid will enjoy stunning open country and sea views from the terraces. Even though it has been designed with a three bedroom plus study configuration,  minor alterations to the layout and specifications of finish can still be done, as still under construction. Possibility of purchasing along with adjacent unit which would increase the footprint to 600 sqm. Viewing is highly recommended."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/drkwpe",
+            "contentLanguageCode": "en"
+        },
+        {
+            "type": "Local IDX URL",
+            "name": "Malta Sotheby's International Realty",
+            "url": "http:\/\/www.maltasothebysrealty.com\/eng\/sales\/300938-mlsid",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "89D8259B-630C-4DF3-B78D-1E4B022348F6",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/89D8259B-630C-4DF3-B78D-1E4B022348F6",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1138,
+            "width": 1514,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        },
+        {
+            "mediaID": "4959BB45-CF89-4CBF-A88A-1E872025FA5B",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/4959BB45-CF89-4CBF-A88A-1E872025FA5B",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-15T12:10:44.693"
+        },
+        {
+            "mediaID": "145FD374-D3CB-409C-AFBC-239090B0A0EE",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/145FD374-D3CB-409C-AFBC-239090B0A0EE",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1138,
+            "width": 1516,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        },
+        {
+            "mediaID": "C9BF42D6-567C-478F-B4F0-3AAC8A46555E",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/C9BF42D6-567C-478F-B4F0-3AAC8A46555E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1138,
+            "width": 1516,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        },
+        {
+            "mediaID": "D8B7CAAE-340A-4ED8-B417-58C84F78203C",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/D8B7CAAE-340A-4ED8-B417-58C84F78203C",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 640,
+            "width": 689,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        },
+        {
+            "mediaID": "10FF4C8E-311E-48A5-8A98-6380234E2DB1",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/10FF4C8E-311E-48A5-8A98-6380234E2DB1",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-04T19:30:47.537"
+        },
+        {
+            "mediaID": "56962810-910C-417F-955E-81F7AD108CE4",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/56962810-910C-417F-955E-81F7AD108CE4",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1138,
+            "width": 875,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        },
+        {
+            "mediaID": "461F6D92-BD1D-4265-ABD6-841AA4B8D3CA",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/461F6D92-BD1D-4265-ABD6-841AA4B8D3CA",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-15T12:10:44.693"
+        },
+        {
+            "mediaID": "46D3D623-6657-4FD6-8892-A49874F3CA42",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/46D3D623-6657-4FD6-8892-A49874F3CA42",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1138,
+            "width": 1516,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        },
+        {
+            "mediaID": "0DE5BB81-50BC-4263-8992-AD39BF5C3E9E",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/0DE5BB81-50BC-4263-8992-AD39BF5C3E9E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-04T19:30:47.537"
+        },
+        {
+            "mediaID": "3D7BB3E7-96AF-4327-8E41-CA14F8D77EE0",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/3D7BB3E7-96AF-4327-8E41-CA14F8D77EE0",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1138,
+            "width": 1516,
+            "lastUpdateOn": "2018-03-22T05:39:08.100"
+        }
+    ],
+    "propertyRooms": [
+        {
+            "sequenceNumber": 1,
+            "level": "1",
+            "name": "Master Bedroom"
+        },
+        {
+            "sequenceNumber": 2,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 3,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 4,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 5,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 6,
+            "level": "1",
+            "name": "Half Bath"
+        },
+        {
+            "sequenceNumber": 7,
+            "level": "1",
+            "name": "Dining Room"
+        },
+        {
+            "sequenceNumber": 8,
+            "level": "1",
+            "name": "Kitchen"
+        },
+        {
+            "sequenceNumber": 9,
+            "level": "1",
+            "name": "Living Room"
+        },
+        {
+            "sequenceNumber": 10,
+            "level": "1",
+            "name": "Laundry Room"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "300938",
+            "isPrimary": true
+        }
+    ]
+}

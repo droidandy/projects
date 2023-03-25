@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title>{{ 'GROUPINFO' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <!-- Group Info -->
+  <div *ngIf="group">
+    <div class="top">
+        <img-loader src="{{group.img}}" useImg tappable (click)="setPhoto()"></img-loader>
+        <h3 tappable (click)="setName()">{{group.name}}</h3>
+        <p tappable (click)="setDescription()">{{group.description}}</p>
+        <p>{{ 'STARTED' | translate }} {{group.dateCreated | DateFormat}}</p>
+    </div>
+    <ion-list *ngIf="groupMembers">
+      <ion-list-header>
+        {{ 'GROUPMEMBERS' | translate }} ({{groupMembers.length}})
+      </ion-list-header>
+      <ion-item (click)="addMembers()">
+        <ion-icon name="add" item-left></ion-icon>
+        <h2>{{ 'ADDMEMBERS' | translate }}</h2>
+      </ion-item>
+      <ion-item *ngFor="let member of groupMembers" (click)="openDiscover(member)">
+        <ion-avatar item-left>
+          <img-loader src="{{member.img}}" useImg ></img-loader>
+        </ion-avatar>
+        <h2>{{member.name}}</h2>
+        <p>{{member.description}}</p>
+      </ion-item>
+    </ion-list>
+    <ion-list-header>
+        {{ 'MORE' | translate }}
+    </ion-list-header>
+    <ion-list style="text-align: center;">
+      <ion-item no-lines tappable (click)="leaveGroup()" *ngIf="groupMembers && groupMembers.length > 1">
+        {{ 'LEAVEGROUP' | translate }}
+      </ion-item>
+      <!-- When there's only one member left, allow deleting of group. -->
+      <ion-item no-lines tappable (click)="deleteGroup()" *ngIf="groupMembers && groupMembers.length <= 1">
+        {{ 'DELETEGROUP' | translate }}
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

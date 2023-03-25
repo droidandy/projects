@@ -1,0 +1,23 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="D: CLR+CBE+MS+APEX" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+    <deployment type="docker-compose.yml">
+      <settings>
+        <option name="composeProjectName" value="CBE-MS-APEX" />
+        <option name="envFilePath" value="D:\DEV\AOU\aou-backend\.env" />
+        <option name="secondarySourceFiles">
+          <list>
+            <option value="products/morningstar-datagrabber/docker-compose.yml" />
+            <option value="products/apex-ext-datagrabber/docker-compose.yml" />
+          </list>
+        </option>
+        <option name="sourceFilePath" value="products/core-be/docker-compose.yml" />
+      </settings>
+    </deployment>
+    <method v="2">
+      <option name="DisconnectBeforeRunTask">
+        <option name="dataSourceId" value="09de043d-5fe9-4f54-aa37-0bd786abac06" />
+      </option>
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Doker: CLEAR" run_configuration_type="ShConfigurationType" />
+    </method>
+  </configuration>
+</component>

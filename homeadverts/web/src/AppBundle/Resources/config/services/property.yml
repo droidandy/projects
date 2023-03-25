@@ -1,0 +1,9 @@
+services:
+    ha.property.service:
+        class: AppBundle\Service\PropertyService
+        arguments:
+            - '@cache'
+            - '@ha.image_helper'
+            - '@liip_imagine.cache.manager'
+            - '@doctrine.orm.default_entity_manager'
+            - '@?debug.stopwatch'

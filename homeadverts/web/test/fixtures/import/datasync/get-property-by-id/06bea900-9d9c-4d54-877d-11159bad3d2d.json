@@ -1,0 +1,425 @@
+{
+    "listingSummary": {
+        "listingId": "06bea900-9d9c-4d54-877d-11159bad3d2d",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-05-16",
+        "photoCount": 20,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "ZAR",
+            "amount": 16000000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 1212700
+        },
+        "propertyAddress": {
+            "city": "Cape Town",
+            "stateProvince": "Western Cape",
+            "stateProvinceCode": "WC",
+            "postalCode": "7708",
+            "country": "South Africa",
+            "countryCode": "ZA"
+        },
+        "RFGListingId": "F7T9QW",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/f7t9qw",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Contemporary",
+        "propertyName": "Claremont Upper",
+        "totalBath": 4,
+        "noOfBedrooms": 4,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/4DF27FBB-4C70-4568-90C2-52E326CDC474",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-07-28T05:00:37.243",
+        "agents": [
+            {
+                "id": "08470afb-983c-4bc9-a0aa-7db56a99eead",
+                "name": "Barbara Manning",
+                "firstName": "Barbara",
+                "lastName": "Manning",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/20BF7F8F-F397-4C23-9AC1-FAEA9F7203D7",
+                "emailAddress": "glenda.p@sothebysrealtyss.co.za",
+                "businessPhone": "10217621108",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "60f22466-db52-4ad0-969f-7df3cff40df3",
+                    "RFGOfficeId": "0021 ",
+                    "companyId": "05b5aa42-8f5e-47a2-8982-91dc236d2708",
+                    "companyName": "Sotheby\u2019s International Realty South Africa",
+                    "RFGCompanyId": "810042",
+                    "brandCode": "SIR",
+                    "name": "Lew Geffen Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "24 Protea Road, Corner Protea and Kildare Road Claremont Claremont",
+                        "city": "Cape Town",
+                        "stateProvince": "Western Cape",
+                        "stateProvinceCode": "WC",
+                        "postalCode": "7708",
+                        "country": "South Africa",
+                        "countryCode": "ZA",
+                        "latitude": -33.9811,
+                        "longitude": 18.4645
+                    },
+                    "phoneNumber": "+27  21 673 1240",
+                    "emailAddress": "ssho@sothebysrealtyss.co.za"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 4,
+    "providerKey": "06bea900-9d9c-4d54-877d-11159bad3d2d",
+    "propertyFeatures": [
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Outdoor Activities"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Gardens"
+        },
+        {
+            "groupName": "Rooms",
+            "description": "Staff Quarters"
+        },
+        {
+            "groupName": "Garage Count",
+            "description": "3 Car Garage"
+        },
+        {
+            "groupName": "Fireplace Count",
+            "description": "1 Fireplace"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Terrace"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Privacy"
+        },
+        {
+            "groupName": "Views",
+            "description": "Mountain"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Outdoor Activities"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Privacy"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Recently extended and fully refurbished four bedroomed home offering\nfabulous open-plan living, and exceptional indoor\/outdoor flow to covered\nterrace, landscaped garden and pool. Additional features include an independent\nguest suite, garaging for four cars and exceptional security.",
+            "htmlRemark": "<p><span lang=\"EN-US\" style=\"font-size:9.5pt;font-family:\n&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;color:red;\nbackground:white;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:\nAR-SA\">Recently extended and fully refurbished four bedroomed home offering\nfabulous open-plan living, and exceptional indoor\/outdoor flow to covered\nterrace, landscaped garden and pool. Additional features include an independent\nguest suite, garaging for four cars and exceptional security.<\/span><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/f7t9qw",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "3B037D3D-321F-4573-937A-00F0EB558C53",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/3B037D3D-321F-4573-937A-00F0EB558C53",
+            "isDefault": false,
+            "caption": "10",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "6C50319E-CA74-4619-8DFA-0AA1CC42FF50",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/6C50319E-CA74-4619-8DFA-0AA1CC42FF50",
+            "isDefault": false,
+            "caption": "14",
+            "shortDescription": "Feature Staircase",
+            "htmlDescription": "<p>Feature Staircase<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "1B71AD1A-8473-4AD8-9E2F-3EF8F7FDC7FE",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/1B71AD1A-8473-4AD8-9E2F-3EF8F7FDC7FE",
+            "isDefault": false,
+            "caption": "4",
+            "shortDescription": "Entrance of property with water feature",
+            "htmlDescription": "<p>Entrance of property with water feature<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "07508517-3444-4EE4-982D-432D35739081",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/07508517-3444-4EE4-982D-432D35739081",
+            "isDefault": false,
+            "caption": "16",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "7CACFC53-C467-45E8-B52E-4C152D7699FE",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/7CACFC53-C467-45E8-B52E-4C152D7699FE",
+            "isDefault": false,
+            "caption": "12",
+            "shortDescription": "Open plan dining area",
+            "htmlDescription": "<p>Open plan dining area<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "4DF27FBB-4C70-4568-90C2-52E326CDC474",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/4DF27FBB-4C70-4568-90C2-52E326CDC474",
+            "isDefault": true,
+            "caption": "1",
+            "shortDescription": "Side angle rear view of property",
+            "htmlDescription": "<p>Side angle rear view of property<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "7F7BFF2C-8521-4A64-8691-53516732AC9D",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/7F7BFF2C-8521-4A64-8691-53516732AC9D",
+            "isDefault": false,
+            "caption": "19",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "875E6D68-9F78-46EF-AC32-5A3C97A6ED5D",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/875E6D68-9F78-46EF-AC32-5A3C97A6ED5D",
+            "isDefault": false,
+            "caption": "15",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "51808BB6-2B80-4B5E-8FD7-5F11D4DE3333",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/51808BB6-2B80-4B5E-8FD7-5F11D4DE3333",
+            "isDefault": false,
+            "caption": "11",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "35EC7FDB-15F1-492D-87C4-66D2EEF37A7B",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/35EC7FDB-15F1-492D-87C4-66D2EEF37A7B",
+            "isDefault": false,
+            "caption": "20",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "A87D238A-3155-4F01-8F07-9BD587D76707",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/A87D238A-3155-4F01-8F07-9BD587D76707",
+            "isDefault": false,
+            "caption": "18",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "BF94FC73-02D5-488B-9590-9E198425E9EA",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/BF94FC73-02D5-488B-9590-9E198425E9EA",
+            "isDefault": false,
+            "caption": "3",
+            "shortDescription": "Side angle rear view of property",
+            "htmlDescription": "<p>Side angle rear view of property<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "C703F5AE-6144-4ABB-8B09-ADA62560AE94",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/C703F5AE-6144-4ABB-8B09-ADA62560AE94",
+            "isDefault": false,
+            "caption": "7",
+            "shortDescription": "View from balcony",
+            "htmlDescription": "<p>View from balcony<br><\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "32243540-66B2-40E5-903E-BE7EBF08DD11",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/32243540-66B2-40E5-903E-BE7EBF08DD11",
+            "isDefault": false,
+            "caption": "13",
+            "shortDescription": "Kitchen",
+            "htmlDescription": "<p>Kitchen<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "60A524A0-5766-4090-B0CD-C13F27CE30F6",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/60A524A0-5766-4090-B0CD-C13F27CE30F6",
+            "isDefault": false,
+            "caption": "8",
+            "shortDescription": "Covered terrace",
+            "htmlDescription": "<p>Covered terrace<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "F9E27A5E-5917-4695-9549-C1543CC42731",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/F9E27A5E-5917-4695-9549-C1543CC42731",
+            "isDefault": false,
+            "caption": "9",
+            "shortDescription": "Spacious living area",
+            "htmlDescription": "<p>Spacious living area<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "542916CB-74D0-4F2D-89EE-D3AF0B43C1D7",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/542916CB-74D0-4F2D-89EE-D3AF0B43C1D7",
+            "isDefault": false,
+            "caption": "2",
+            "shortDescription": "Rear view of property",
+            "htmlDescription": "<p>Rear view of property<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "2D187F2C-6C31-43F1-A5A5-DC5963EFF6BA",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/2D187F2C-6C31-43F1-A5A5-DC5963EFF6BA",
+            "isDefault": false,
+            "caption": "5",
+            "shortDescription": "Front view of property",
+            "htmlDescription": "<p>Front view of property<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "6E4D619E-BBFE-4D35-88E1-E49671E71991",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/6E4D619E-BBFE-4D35-88E1-E49671E71991",
+            "isDefault": false,
+            "caption": "6",
+            "shortDescription": "Frint view of property",
+            "htmlDescription": "<p>Frint view of property<\/p>",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "8611184B-6CC0-494D-A41B-EAC6FCF33009",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/8611184B-6CC0-494D-A41B-EAC6FCF33009",
+            "isDefault": false,
+            "caption": "17",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:26:25.790"
+        },
+        {
+            "mediaID": "5DEA85D7-08F9-4D91-8F20-FEDB816123AD",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.sothebysrealty.co.za\/results\/residential\/for-sale\/cape-town\/claremont-upper\/house\/40704\/",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2017-12-04T19:27:34.377"
+        }
+    ]
+}

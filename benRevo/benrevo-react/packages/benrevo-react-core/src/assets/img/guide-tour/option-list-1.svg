@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.79 73.13" width="77" height="73">
+  <defs>
+    <style>
+      .cls-1{fill:none;}.cls-2{fill:#e5e5e5;}.cls-3{clip-path:url(#clip-path);}.cls-4{fill:#fff;stroke:#22bb8f;stroke-miterlimit:10;stroke-width:0.87px;}.cls-5{font-size:24px;fill:#22bb8f;font-family:OpenSans,
+      Open Sans;letter-spacing:-0.05em;}
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="37.72" cy="34.53" r="34.53"/>
+    </clipPath>
+  </defs>
+  <title>presentation-overview-1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_5" data-name="Layer 5">
+      <circle class="cls-2" cx="37.72" cy="34.53" r="34.53"/>
+      <g class="cls-3">
+        <g id="Multiple_Files" data-name="Multiple Files">
+          <path class="cls-4" d="M21.19,72.69H.44V26.58H35V58.86A13.83,13.83,0,0,1,21.19,72.69Z"/>
+        </g>
+        <g id="Multiple_Files-2" data-name="Multiple Files">
+          <path class="cls-4" d="M62.52,72.69H41.77V26.58H76.35V58.86A13.83,13.83,0,0,1,62.52,72.69Z"/>
+        </g>
+      </g>
+      <text class="cls-5" transform="translate(9.85 55.39)">A</text>
+      <text class="cls-5" transform="translate(52.33 55.39)">B</text>
+    </g>
+  </g>
+</svg>

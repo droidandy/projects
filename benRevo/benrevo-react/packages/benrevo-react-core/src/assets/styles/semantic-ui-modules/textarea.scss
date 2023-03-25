@@ -1,0 +1,12 @@
+@import '../variables-theme';
+
+/* Textarea */
+
+.ui.form {
+  textarea {
+    background-color: $INPUT_BACKGROUND;
+    font-size: 12px;
+    color: $INPUT_COLOR;
+    border: $INPUT_BORDER;
+  }
+}

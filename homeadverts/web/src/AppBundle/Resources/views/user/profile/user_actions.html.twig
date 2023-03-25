@@ -1,0 +1,104 @@
+{% if isActionsVisible > 1 %}
+    <div class="inline-actions">
+        <ul>
+            {% if hasAgents %}
+                <li>
+                    <a href="{{ path('ha_user_agents', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_agents' %}class="--active"{% endif %}
+                    >
+                        Agents ({{ actions.agent.total > 99 ? "99+" : actions.agent.total }})
+                    </a>
+                </li>
+            {% endif %}
+            {% if hasAffiliates %}
+                <li>
+                    <a href="{{ path('ha_user_affiliates', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_affiliates' %}class="--active"{% endif %}
+                    >
+                        Affiliates ({{ actions.affiliate.total > 99 ? "99+" : actions.affiliate.total }})
+                    </a>
+                </li>
+            {% endif %}
+            {% if hasArticles %}
+                <li>
+                    <a href="{{ path('ha_user_articles', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_articles' %}class="--active"{% endif %}
+                    >
+                        Stories ({{ actions.article.total > 99 ? "99+" : actions.article.total }})
+                    </a>
+                </li>
+            {% endif %}
+            {% if hasSale %}
+                <li>
+                    <a href="{{ path('ha_user_properties', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_properties' and app.request.get('market') == 'for-sale' %}class="--active"{% endif %}
+                    >
+                        For Sale ({{ actions.property.for_sale.total > 99 ? "99+" : actions.property.for_sale.total }})
+                    </a>
+                </li>
+            {% endif %}
+            {% if hasRent %}
+                <li>
+                    <a href="{{ path('ha_user_properties', {
+                        id: user.id,
+                        slug: user.slug,
+                        market: 'to-rent'
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_properties' and app.request.get('market') == 'to-rent' %}class="--active"{% endif %}
+                    >
+                        To Rent ({{ actions.property.to_rent.total > 99 ? "99+" : actions.property.to_rent.total }})
+                    </a>
+                </li>
+            {% endif %}
+            {% if hasFollowers %}
+                <li>
+                    <a href="{{ path('ha_user_followers', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_followers' %}class="--active"{% endif %}
+                    >
+                        Followers ({{ user.getFollowersCount() > 99 ? "99+" : user.getFollowersCount() }})
+                    </a>
+                </li>
+            {% endif %}
+            {% if hasFollowings %}
+                <li>
+                    <a href="{{ path('ha_user_followings', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_followings' %}class="--active"{% endif %}
+                    >
+                        Following ({{ user.getFollowingsCount() > 99 ? "99+" : user.getFollowingsCount() }})
+                    </a>
+                </li>
+            {% endif %}
+
+            {% if is_current_user(user) %}
+                <li>
+                    <a href="{{ path('ha_user_likes', {
+                        id: user.id,
+                        slug: user.slug
+                    }) }}"
+                       {% if app.request.get('_route') == 'ha_user_likes' %}class="--active"{% endif %}
+                    >
+                        Likes ({{ app.user|likes_count > 99 ? "99+" :  app.user|likes_count }})
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+{% endif %}

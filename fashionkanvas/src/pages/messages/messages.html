@@ -1,0 +1,34 @@
+
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title>{{ 'CHATS' | translate }}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <!-- No conversations to show -->
+  <div class="empty-list" *ngIf="conversations && conversations.length <= 0">
+    <h1><ion-icon name="text"></ion-icon></h1>
+    <p>{{ 'NONEWCONVERSATIONYET' | translate }}.</p>
+  </div>
+  <!-- Show conversations -->
+  <ion-list class="avatar-list" *ngIf="conversations && conversations.length > 0">
+    <!-- <ion-searchbar [(ngModel)]="searchFriend" placeholder="Search for friend or username" showCancelButton="true" cancelButtonText="Done"></ion-searchbar> -->
+    <div *ngFor="let conversation of conversations | conversationFilter:searchFriend">
+    <ion-item  *ngIf="conversation.blocked != true" no-lines tappable (click)="message(conversation.key)">
+
+      <ion-avatar item-left *ngIf="conversation.friend" style="position: relative;">
+        <img-loader *ngIf="conversation.friend.img!='http://placehold.it/80X80'&&conversation.friend.img!=''" src="{{conversation.friend.img}}" useImg ></img-loader>
+        <img-loader *ngIf="conversation.friend.img=='http://placehold.it/80X80'||conversation.friend.img==''" src="assets/images/default-image.png" useImg ></img-loader>
+        <ion-badge class="upper_badge" color="danger" *ngIf="conversation.unreadMessagesCount > 0">{{conversation.unreadMessagesCount}}</ion-badge>
+      </ion-avatar>
+      <div [ngClass]=hasUnreadMessages(conversation)>
+        <h2 *ngIf="conversation.friend">{{conversation.friend.name}}</h2>
+
+        <p>{{conversation.message}}</p>
+        <span>{{conversation.date | DateFormat}}<ion-icon name="ios-arrow-forward-outline"></ion-icon></span>
+      </div>
+
+    </ion-item>
+    </div>
+  </ion-list>
+</ion-content>

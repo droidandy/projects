@@ -1,0 +1,450 @@
+@import "./variables-theme";
+@import 'semantic-ui-modules/checkbox';
+@import 'semantic-ui-modules/form';
+@import 'semantic-ui-modules/dropzone';
+
+/*
+ * Buttons
+ *
+ */
+
+.ui.labeled.button.icon.right {
+  font-size: 12px;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #a4b1ba;
+  min-width: 200px;
+  text-align: left;
+}
+
+.ui.massive.button, .ui.massive.buttons .ui.massive.buttons .or  {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ui.button.primary {
+  background-color: $LINK_COLOR;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: normal;
+
+  &.big {
+    font-size: 16px;
+    padding: 16px 0;
+  }
+
+  &.medium {
+    font-size: 12px;
+    height: 35px;
+  }
+
+  &:hover {
+    background-color: $LINK_HOVER_COLOR !important;
+  }
+
+  &.orange {
+    background-color: #FF9900;
+    &:hover {
+      background-color: #dc7c00 !important;
+    }
+  }
+
+  &.grey {
+    background-color: $SUB_NAV_ITEM_COLOR;
+
+    &:hover {
+      background-color: $SUB_MENU_HEADING_COLOR !important;
+    }
+  }
+}
+
+.ui.button.secondary {
+  background-color: $LINK_COLOR;
+  font-weight: normal;
+  text-transform: none;
+
+  &.big {
+    font-size: 16px;
+    padding: 16px 35px;
+  }
+  &.medium {
+    font-size: 12px;
+    height: 35px;
+  }
+  &:hover {
+    background-color: $LINK_HOVER_COLOR !important;
+  }
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  color: $INPUT_COLOR;
+  font-size: 14px;
+  font-family: $MAIN_FONT;
+  font-weight: 600;
+
+  &.large {
+    font-size: 18px;
+  }
+
+  &.blue {
+    text-transform: none;
+    border-bottom: 3px #1E649B solid;
+    padding: 10px 24px;
+
+    &.toggle {
+      &.active {
+        background-color: $BUTTON_TOGGLE_ATIVE_COLOR !important;
+        color: $INPUT_COLOR !important;
+      }
+    }
+  }
+
+  &.reset-blue {
+    border: none;
+    padding: 10px;
+  }
+
+  &.toggle {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+
+  &:first-child {
+    border-left: 1px solid #d6d8d9;
+  }
+
+  &.toggle.active, &.active.button {
+    background-color: $ELEM_ACTIVE_COLOR !important;
+  }
+
+  &:hover {
+    color: $INPUT_COLOR;
+  }
+
+  &.toggle:not(.basic):not(.inverted)>.button, &.toggle:not(.basic):not(.inverted) {
+    margin-left: -1px;
+  }
+
+  &.large {
+    padding: 13px 24px;
+  }
+}
+
+.ui.big.button, .ui.big.buttons .button, .ui.big.buttons .or {
+  font-size: 16px;
+  padding: 15px 30px;
+}
+
+.ui.basic.button, .ui.basic.buttons .button {
+  text-transform: uppercase;
+  border: $INPUT_BORDER;
+  color: $INPUT_COLOR;
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  border: 1px solid #d6d8d9;
+  background-color: #f5f8f9;
+  text-transform: uppercase;
+}
+
+.ui.primary.button, .ui.primary.buttons .button {
+  background-color: $ELEM_ACTIVE_COLOR;
+
+  &:hover {
+    background-color: $ELEM_ACTIVE_COLOR;
+  }
+}
+
+.ui.medium.button, .ui.medium.buttons .ui.medium.buttons .or  {
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.ui.button.remove-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: $REMOVE_BUTTON_COLOR;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 100px;
+  min-width: 0;
+  padding: 0;
+  font-size: 13px;
+  margin-left: 3px;
+
+  &:hover {
+    background-color: $REMOVE_BUTTON_COLOR_HOVER;
+  }
+
+  &.small {
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    padding-left: 1px;
+  }
+}
+
+
+/*
+ * TextArea
+ *
+ */
+
+textarea, .ui.form textarea {
+  background-color: $INPUT_BACKGROUND;
+  border: $INPUT_BORDER;
+  border-radius: 5px;
+  height: 125px;
+  width: 100%;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/*
+ * Header
+ *
+ */
+
+.ui.header {
+  font-family: $MAIN_FONT;
+}
+
+.header3 {
+  color: $HEADER3_COLOR;
+  font-size: 16px;
+}
+
+/*
+ * Menu
+ *
+ */
+
+.ui.menu {
+  font-family: $MAIN_FONT;
+}
+
+
+/*
+ * Input
+ *
+ */
+
+.ui.input {
+  input[type=text] {
+    background-color: $INPUT_BACKGROUND_COLOR;
+    border: $INPUT_BORDER;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .ui.button {
+    background-color: $LINK_COLOR;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #ffffff;
+    padding: 0 50px;
+
+    &:hover {
+      background-color: $LINK_HOVER_COLOR !important;
+    }
+  }
+}
+
+
+/*
+ * DropDown
+ *
+ */
+
+.ui.selection.dropdown, .ui.search.selection.dropdown, .ui.multiple.selection.dropdown {
+  background-color: $INPUT_BACKGROUND;
+  color: $INPUT_COLOR;
+  border: $INPUT_BORDER;
+  font-size: 12px;
+  height: 35px;
+  line-height: 14px;
+  padding-right: 45px;
+  display: table;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 3px;
+  border-collapse: separate;
+
+  .text {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 15px;
+  }
+
+  &>input.search {
+    padding-right: 45px;
+  }
+
+  .menu {
+    background-color: $INPUT_BACKGROUND;
+    color: $INPUT_COLOR;
+
+    &>.item {
+      font-size: 12px;
+    }
+  }
+
+  &>.dropdown.icon {
+    height: 100%;
+    width: 30px;
+
+    &:before {
+      color: $INPUT_BORDER_COLOR;
+      font-size: 14px;
+      position: relative;
+      top: 3px;
+      left: 2px;
+    }
+  }
+
+  &.multiple {
+    height: 25px;
+    background-color: #ffffff;
+    padding-top: 2px;
+
+    .search {
+      padding-right: 15px;
+    }
+
+    &>.dropdown.icon {
+      &:before {
+        top: 0;
+      }
+    }
+
+    .ui.label {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 2px;
+      padding-bottom: 5px;
+      background-color: transparent !important;
+
+      .delete.icon {
+        width: 13px;
+        height: 13px;
+        background-color: $REMOVE_BUTTON_COLOR;
+        cursor: pointer;
+        color: #ffffff;
+        border-radius: 100px;
+        padding: 0;
+        font-size: 10px;
+        opacity: 1;
+        font-weight: 400;
+        padding-top: 1px;
+
+        &:before {
+          content: 'X';
+          font-family: $MAIN_FONT;
+        }
+
+        &:hover {
+          background-color: $REMOVE_BUTTON_COLOR_HOVER;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    border: $INPUT_BORDER;
+  }
+
+  &.active {
+    border: $INPUT_BORDER;
+    background-color: $INPUT_BACKGROUND_FOCUS;
+
+    &:hover {
+      border: $INPUT_BORDER;
+    }
+
+    .menu {
+      border: $INPUT_BORDER;
+      background-color: $INPUT_BACKGROUND_FOCUS;
+      &:hover {
+        border: $INPUT_BORDER;
+      }
+    }
+  }
+}
+
+.ui.labeled.dropdown.button.icon {
+  font-weight: 400;
+  background-color: #acacac;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  text-transform: none;
+  padding-left: 20px !important;
+  //padding-right: 60px !important;
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+
+  & > .icon {
+    left: inherit;
+    right: 0;
+    background: 0;
+    font-size: 15px;
+  }
+
+  &.button.active {
+    background-color: #acacac !important;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.labeled.dropdown.button.icon {
+    max-width: none;
+  }
+}
+
+.ui.basic.buttons.toggle.toggle-button-blue {
+  border: none;
+  .ui.button {
+    background-color: transparent !important;
+    border-radius: 0;
+    color: $INPUT_BORDER_COLOR_DARK !important;
+    border-color: $INPUT_BORDER_COLOR_DARK;
+    font-weight: 400;
+    padding: 9px 16px;
+    min-width: 45px;
+
+    &:not(:last-child) {
+      margin-right: -1px;
+    }
+
+    &.active {
+      border-color: $BUTTON_COLOR;
+      color: $BUTTON_COLOR !important;
+      z-index: 1;
+    }
+  }
+}
+
+/* Datepicker */
+
+.datepicker {
+  background-color: $INPUT_BACKGROUND;
+  height: 35px;
+  font-size: 12px;
+  color: $INPUT_COLOR;
+  border: 1px solid $INPUT_BORDER_COLOR;
+  outline: 0;
+  border-radius: 4px;
+  padding: 0 10px;
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}

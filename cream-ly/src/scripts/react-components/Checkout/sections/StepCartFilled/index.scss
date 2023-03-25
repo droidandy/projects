@@ -1,0 +1,6 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.StepCartFilled {
+  @include defaultText();
+  @include maxWidthPage();
+}

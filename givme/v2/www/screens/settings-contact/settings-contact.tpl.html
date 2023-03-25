@@ -1,0 +1,80 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">
+        <span ng-if="!type">Contact</span>
+        <span ng-if="type">{{typeTitle}}</span>
+      </ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <!--<ion-content scroll="false">-->
+  <ion-content class="gm-content" on-scroll="gotScrolled()" delegate-handle="mainScroll">
+            <div class="row" ng-if="!type">
+                <div class="col-xs-12 selection selection--top">
+                  <ion-list can-swipe="false">
+                    <ion-item href="#/settings/contact/phone_number" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-2 selection__img__icon" align="center">
+                            <img src="img/phone.png" alt="" ng-if="contactData.phone_number">
+                            <img src="img/phoneg.png" alt="" ng-if="!contactData.phone_number">
+                          </div>
+                          <div class="col-xs-10 selection__content">Phone
+                          <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                      </div>
+                    </ion-item>
+                    <ion-item href="#/settings/contact/facebook" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                        <div class="col-xs-2 selection__img__icon" align="center">
+                          <img src="img/facebook.png" alt="" ng-if="contactData.facebook">
+                          <img src="img/facebookg.png" alt="" ng-if="!contactData.facebook">
+                        </div>
+                        <div class="col-xs-10 selection__content">Facebook
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                    </div>
+                    </ion-item>
+                    <ion-item href="#/settings/contact/instagram" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                        <div class="col-xs-2 selection__img__icon" align="center">
+                          <img src="img/instagram.png" alt="" ng-if="contactData.instagram">
+                          <img src="img/instagramg.png" alt="" ng-if="!contactData.instagram">
+                        </div>
+                        <div class="col-xs-10 selection__content">Instagram
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                    </div>
+                    </ion-item>
+                    <ion-item href="#/settings/contact/snapchat" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                        <div class="col-xs-2 selection__img__icon" align="center">
+                          <img src="img/snapchat.png" alt="" ng-if="contactData.snapchat">
+                          <img src="img/snapchatg.png" alt="" ng-if="!contactData.snapchat">
+                        </div>
+                        <div class="col-xs-10 selection__content">Snapchat
+                        <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span></div>
+                    </div>
+                    </ion-item>
+                    <ion-item href="#/settings/contact/skype" class="item-thumbnail-left settings-bg" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-2 selection__img__icon" align="center" >
+                            <img src="img/skype.png" alt="" ng-if="contactData.skype">
+                            <img src="img/skypeg.png" alt="" ng-if="!contactData.skype">
+                          </div>
+                          <div class="col-xs-10 selection__content selection__content__last">Skype
+                          <span class="selection__arrow pull-right"><img src="img/arrow-chevron.png" alt=""></span>
+                          </div>
+                      </div>
+                    </ion-item>
+                  </ion-list>
+                </div>
+            </div>
+            <div class="row" ng-if="type">
+                <div class="col-xs-12 selection">
+                    <input type="text" placeholder="{{typePlaceholder}}" ng-model="contactData[type]" ng-if="type != 'phone_number'">
+                    <input type="tel" placeholder="{{typePlaceholder}}" ng-model="contactData[type]" ng-if="type=='phone_number'">
+                </div>
+            </div>
+  </ion-content>
+</ion-view>

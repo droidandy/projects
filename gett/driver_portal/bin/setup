@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+require 'fileutils'
+include FileUtils
+
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+chdir APP_ROOT do
+  system! 'gem install bundler --conservative'
+  system('bundle check') || system!('bundle install')
+
+  unless File.exist?('config/database.yml')
+    cp 'config/database.example.yml', 'config/database.yml'
+  end
+
+  unless File.exist?('config/secrets.yml')
+    cp 'config/secrets.example.yml', 'config/secrets.yml'
+  end
+
+  system! 'bin/rails db:setup'
+  system! 'bin/rails log:clear tmp:clear'
+  system! 'bin/rails restart'
+end

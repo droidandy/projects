@@ -1,0 +1,1 @@
+export { InstalmentContent } from './InstalmentContent';

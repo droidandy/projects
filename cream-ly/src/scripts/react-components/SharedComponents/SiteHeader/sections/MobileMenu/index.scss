@@ -1,0 +1,60 @@
+@import "../../../../../../styles/tools/mixins.scss";
+
+.MobileMenu {
+
+  background-color: var(--rose);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  overflow-y: auto;
+  top: 60px;
+  left: 0;
+  z-index: 9998;
+
+  nav {
+
+
+    font-size: 1.7rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+
+    padding: 0 40px;
+
+    a {
+      color: #fff;
+      line-height: 1;
+      display: block;
+      margin-top: 0.6em;
+      margin-bottom: 0.6em;
+
+      &.highlight {
+        color: #fff;
+      }
+    }
+
+    .main {
+      font-size: 1.8em;
+    }
+
+    .other {
+      font-size: 1.2em;
+
+      .ComponentRegionIcon {
+        color: white;
+
+        svg {
+          stroke: white;
+
+          circle {
+            stroke: white;
+          }
+
+          text {
+            stroke: white;
+          }
+        }
+      }
+    }
+  }
+
+}

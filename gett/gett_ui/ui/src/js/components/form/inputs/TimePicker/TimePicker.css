@@ -1,0 +1,7 @@
+.timePicker {
+  width: 65px;
+
+  :global(.ant-select-selection__rendered) {
+    padding-left: 0;
+  }
+}

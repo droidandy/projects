@@ -1,0 +1,28 @@
+.accordion {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  h2 {
+    margin-bottom: 52px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+      margin-bottom: 6px;
+    }
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.accordion-items {
+  text-align: left;
+
+}

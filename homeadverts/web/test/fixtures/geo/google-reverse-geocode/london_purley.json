@@ -1,0 +1,594 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "188",
+          "short_name" : "188",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "Brighton Road",
+          "short_name" : "Brighton Rd",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Purley",
+          "short_name" : "Purley",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Purley",
+          "short_name" : "Purley",
+          "types" : [ "postal_town" ]
+        },
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "CR8 4HB",
+          "short_name" : "CR8 4HB",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "formatted_address" : "188 Brighton Rd, Purley CR8 4HB, UK",
+      "geometry" : {
+        "location" : {
+          "lat" : 51.3288175,
+          "lng" : -0.1277625
+        },
+        "location_type" : "ROOFTOP",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.3301664802915,
+            "lng" : -0.126413519708498
+          },
+          "southwest" : {
+            "lat" : 51.3274685197085,
+            "lng" : -0.129111480291502
+          }
+        }
+      },
+      "place_id" : "ChIJE1CsgJf9dUgRVFJbNaekiXw",
+      "types" : [ "street_address" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "Purley",
+          "short_name" : "Purley",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "London Borough of Croydon",
+          "short_name" : "London Borough of Croydon",
+          "types" : [ "administrative_area_level_3", "political" ]
+        },
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Purley, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.3495171,
+            "lng" : -0.07882989999999999
+          },
+          "southwest" : {
+            "lat" : 51.3112264,
+            "lng" : -0.1498133
+          }
+        },
+        "location" : {
+          "lat" : 51.339228,
+          "lng" : -0.119711
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.3495171,
+            "lng" : -0.07882989999999999
+          },
+          "southwest" : {
+            "lat" : 51.3112264,
+            "lng" : -0.1498133
+          }
+        }
+      },
+      "place_id" : "ChIJkdBxFnb9dUgRqACc8Rg4rPI",
+      "types" : [ "locality", "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "CR8 4HB",
+          "short_name" : "CR8 4HB",
+          "types" : [ "postal_code" ]
+        },
+        {
+          "long_name" : "Brighton Road",
+          "short_name" : "Brighton Rd",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Purley",
+          "short_name" : "Purley",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Purley",
+          "short_name" : "Purley",
+          "types" : [ "postal_town" ]
+        },
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Brighton Rd, Purley CR8 4HB, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.3289505,
+            "lng" : -0.1270197
+          },
+          "southwest" : {
+            "lat" : 51.3277319,
+            "lng" : -0.1296596
+          }
+        },
+        "location" : {
+          "lat" : 51.3282827,
+          "lng" : -0.1283114
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.3296901802915,
+            "lng" : -0.126990669708498
+          },
+          "southwest" : {
+            "lat" : 51.3269922197085,
+            "lng" : -0.129688630291502
+          }
+        }
+      },
+      "place_id" : "ChIJo0ZFh5f9dUgRyZTns_MzGew",
+      "types" : [ "postal_code" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "Purley",
+          "short_name" : "Purley",
+          "types" : [ "postal_town" ]
+        },
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "CR8",
+          "short_name" : "CR8",
+          "types" : [ "postal_code", "postal_code_prefix" ]
+        }
+      ],
+      "formatted_address" : "Purley CR8, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.3503633,
+            "lng" : -0.08557229999999999
+          },
+          "southwest" : {
+            "lat" : 51.3112513,
+            "lng" : -0.1495584
+          }
+        },
+        "location" : {
+          "lat" : 51.3312248,
+          "lng" : -0.1225147
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.3503633,
+            "lng" : -0.08557229999999999
+          },
+          "southwest" : {
+            "lat" : 51.3112513,
+            "lng" : -0.1495584
+          }
+        }
+      },
+      "place_id" : "ChIJaTq0pZT9dUgRwsEnNP23zEc",
+      "types" : [ "postal_town" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "CR8",
+          "short_name" : "CR8",
+          "types" : [ "postal_code", "postal_code_prefix" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "CR8, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.3503633,
+            "lng" : -0.0813976
+          },
+          "southwest" : {
+            "lat" : 51.2985924,
+            "lng" : -0.1495584
+          }
+        },
+        "location" : {
+          "lat" : 51.33123639999999,
+          "lng" : -0.1108331
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.3503633,
+            "lng" : -0.0813976
+          },
+          "southwest" : {
+            "lat" : 51.2985924,
+            "lng" : -0.1495584
+          }
+        }
+      },
+      "place_id" : "ChIJnxWFCyr8dUgRLk9wNQnTdwI",
+      "types" : [ "postal_code", "postal_code_prefix" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "London Borough of Croydon",
+          "short_name" : "London Borough of Croydon",
+          "types" : [ "administrative_area_level_3", "political" ]
+        },
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "London Borough of Croydon, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.4232442,
+            "lng" : 0.0032818
+          },
+          "southwest" : {
+            "lat" : 51.28676,
+            "lng" : -0.1619056
+          }
+        },
+        "location" : {
+          "lat" : 51.3679705,
+          "lng" : -0.070062
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.4232442,
+            "lng" : 0.0032818
+          },
+          "southwest" : {
+            "lat" : 51.28676,
+            "lng" : -0.1619056
+          }
+        }
+      },
+      "place_id" : "ChIJW_bCdKUAdkgREGjsoi2uDgQ",
+      "types" : [ "administrative_area_level_3", "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "London",
+          "short_name" : "London",
+          "types" : [ "political" ]
+        },
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "London, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.6918241,
+            "lng" : 0.3340442
+          },
+          "southwest" : {
+            "lat" : 51.2867019,
+            "lng" : -0.5103631
+          }
+        },
+        "location" : {
+          "lat" : 51.4309209,
+          "lng" : -0.0936496
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.6918241,
+            "lng" : 0.3340442
+          },
+          "southwest" : {
+            "lat" : 51.2867019,
+            "lng" : -0.5103631
+          }
+        }
+      },
+      "place_id" : "ChIJcYFfUmEDdkgR4Xf_HPV-nVc",
+      "types" : [ "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "Greater London",
+          "short_name" : "Greater London",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Greater London, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.6918726,
+            "lng" : 0.3339957
+          },
+          "southwest" : {
+            "lat" : 51.28676,
+            "lng" : -0.5103751
+          }
+        },
+        "location" : {
+          "lat" : 51.4309209,
+          "lng" : -0.0936496
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.6918726,
+            "lng" : 0.3339957
+          },
+          "southwest" : {
+            "lat" : 51.28676,
+            "lng" : -0.5103751
+          }
+        }
+      },
+      "place_id" : "ChIJb-IaoQug2EcRi-m4hONz8S8",
+      "types" : [ "administrative_area_level_2", "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "London Metropolitan Area",
+          "short_name" : "London Metropolitan Area",
+          "types" : [ "political" ]
+        },
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "London Metropolitan Area, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 51.8221472,
+            "lng" : 0.4911679
+          },
+          "southwest" : {
+            "lat" : 51.1051517,
+            "lng" : -0.5392819999999999
+          }
+        },
+        "location" : {
+          "lat" : 51.4309209,
+          "lng" : -0.0936496
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 51.8221472,
+            "lng" : 0.4911679
+          },
+          "southwest" : {
+            "lat" : 51.1051517,
+            "lng" : -0.5392819999999999
+          }
+        }
+      },
+      "place_id" : "ChIJ3SIYXV0CdkgRmRTYeONPi-U",
+      "types" : [ "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "England",
+          "short_name" : "England",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "England, UK",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 55.81165979999999,
+            "lng" : 1.7629159
+          },
+          "southwest" : {
+            "lat" : 49.8647411,
+            "lng" : -6.4185458
+          }
+        },
+        "location" : {
+          "lat" : 52.3555177,
+          "lng" : -1.1743197
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 55.81165979999999,
+            "lng" : 1.7629159
+          },
+          "southwest" : {
+            "lat" : 49.8647411,
+            "lng" : -6.4185458
+          }
+        }
+      },
+      "place_id" : "ChIJ39UebIqp0EcRqI4tMyWV4fQ",
+      "types" : [ "administrative_area_level_1", "political" ]
+    },
+    {
+      "address_components" : [
+        {
+          "long_name" : "United Kingdom",
+          "short_name" : "GB",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "United Kingdom",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 60.91569999999999,
+            "lng" : 33.9165549
+          },
+          "southwest" : {
+            "lat" : 34.5614,
+            "lng" : -8.8988999
+          }
+        },
+        "location" : {
+          "lat" : 55.378051,
+          "lng" : -3.435973
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 60.91569999999999,
+            "lng" : 33.9165549
+          },
+          "southwest" : {
+            "lat" : 34.5614,
+            "lng" : -8.8988999
+          }
+        }
+      },
+      "place_id" : "ChIJqZHHQhE7WgIReiWIMkOg-MQ",
+      "types" : [ "country", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

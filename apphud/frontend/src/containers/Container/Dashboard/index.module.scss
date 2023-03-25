@@ -1,0 +1,72 @@
+.cardGroup {
+  display: flex;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid #E4EDF4;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px #E9F0F5;
+  border-radius: 8px;
+  display: inline-flex;
+  position: relative;
+  &.fullWidth {
+    flex: 1;
+  }
+  .arrowContainer {
+    display: flex;
+    justify-content: space-between;
+    &:after {
+      content: "";
+      display: block;
+      background: url("./assets/arrow.svg") 100% 0% no-repeat;
+      width: 22px;
+      height: 100%;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.dashboardRow {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    color: #97ADC6;
+    margin-bottom: 10px;
+  }
+  .item {
+    margin-bottom: 15px;
+  }
+}
+
+.dashboardItem {
+  min-height: 79px;
+  min-width: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  .title {
+    font-weight: bold;
+    span {
+      text-transform: capitalize;
+      margin-right: 5px;
+    }
+  }
+  .value {
+    color: #1A344B;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: bold;
+  }
+  .footer {
+    font-size: 13px;
+    line-height: 21px;
+    color: #1A344B;
+  }
+}

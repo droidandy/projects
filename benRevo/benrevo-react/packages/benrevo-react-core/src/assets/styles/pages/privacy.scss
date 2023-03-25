@@ -1,0 +1,27 @@
+.privacy {
+  .terms-effective {
+    margin-bottom: -15px;
+    font-size: 12px;
+  }
+
+  .benrevo-logo {
+    width: 100px;
+    height: 28px;
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  ol {
+    list-style: disc;
+    margin-left: -20px;
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 10px;
+      span {
+        margin-right: 10px;
+        font-weight: 600;
+      }
+    }
+  }
+}

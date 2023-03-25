@@ -1,0 +1,1 @@
+export { useHeroTitle } from './useHeroTitle';

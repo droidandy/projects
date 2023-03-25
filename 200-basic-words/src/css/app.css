@@ -1,0 +1,248 @@
+.favorite-inactive {
+  background-image: url('../img/star-inactive.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  padding-right: 7px;
+}
+
+.favorite-active {
+  background-image: url('../img/star-active.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  padding-right: 7px;
+}
+
+.popover {
+  width: 200px;
+}
+
+.back-arrow {
+  background-image: url('../img/back-arrow.svg');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.tts-speakers {
+  background-image: url('../img/speaker.svg');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.splashscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background: #19ADE9 url("../img/logo.svg") center no-repeat;
+  background-size: 700px;
+  background-position: center 25%;
+}
+
+.offline-mode {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999990;
+  width: 100%;
+  height: 100%;
+  background: #19ADE9 url("../img/logo.svg") center no-repeat;
+  background-size: 700px;
+  background-position: center 25%;
+}
+
+.offline-button {
+  position: absolute;
+  width: 130px;
+  height: 40px;
+  top: 60%;
+  left: 30%;
+  background-color: #FFF;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.offline-info {
+    position: absolute;
+    color: #FFF;
+    font-size: 20px;
+    top: 55%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.logo-loading {
+  position: absolute;
+  color: #FFF;
+  font-size: 20px;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-copyright {
+  position: absolute;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+}
+
+.swap-arrow-white {
+  background-image: url('../img/swap-white.svg');
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 18px;
+  margin: 7px;
+}
+
+.speach-block {
+  width: 40px !important;
+  padding-left: 5px;
+  vertical-align: bottom;
+}
+
+.word-base {
+  padding-left: 5px !important;
+}
+
+.list-block .item-inner.word-inner {
+  margin-left: 0;
+  display: block;
+}
+
+.lang-from {
+  color: #DD0Ab2;
+  font-weight: bold;
+}
+
+.lang-to {
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
+}
+
+.phonetics {
+  display: inline-block;
+  width: 47%;
+  vertical-align: top;
+  font-style: italic;
+}
+
+.list-block .item-link.active-language {
+  color: #FF515B;
+}
+
+.active-language:before {
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  background: #FF515B;
+}
+
+.list-block .item-link.list-button.inactive-language {
+  padding-left: 29px;
+}
+
+.banner-space {
+  padding-bottom: 50px;
+}
+
+.main-header {
+  flex: 1 1 auto;
+}
+
+.menu-link {
+  flex: 0 1 56px;
+}
+
+.searchbar input[type=search]::-webkit-input-placeholder {
+  color: #2f2f2f !important;
+}
+
+.searchbar input[type=search] {
+  color: #2f2f2f;
+  background: url('../img/search.svg') no-repeat;
+  background-position-y: 7px;
+  background-size: 20px;
+}
+
+.main-searchbar, .favorites-searchbar {
+  background: #FFF;
+  border-bottom: 1px solid #1b1b1b;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+}
+
+.popover-about {
+  width: 80%;
+  height: 90%;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+
+.cross-icon {
+  background: url("../img/cross.png") center no-repeat;
+  background-size: 15px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+}
+
+.in-app-purchase {
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5000;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.purchase-item {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #181686;
+  color: #FFF;
+  width: 80%;
+  height: 50px;
+  display: inline-block;
+}
+
+.purchase-content {
+  padding: 5px;
+}
+
+.close-in-app {
+  z-index: 5000;
+  top: -10%;
+  background-size: 80%;
+}

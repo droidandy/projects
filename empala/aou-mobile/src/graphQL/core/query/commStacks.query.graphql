@@ -1,0 +1,10 @@
+query CommunityStacks {
+  communityStacks {
+    ... on CommStacks {
+      commStacks {
+        id
+        text: name
+      }
+    }
+  }
+}

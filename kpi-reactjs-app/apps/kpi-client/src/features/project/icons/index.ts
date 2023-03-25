@@ -1,0 +1,11 @@
+export { ProjectDetailsIcon } from './ProjectDetailsIcon';
+export { UserManagementIcon } from './UserManagementIcon';
+export { ProjectPhasesIcon } from './ProjectPhasesIcon';
+export { ProjectResourcesIcon } from './ProjectResourcesIcon';
+export { ProjectRisksIcon } from './ProjectRisksIcon';
+export { ChangeManagementIcon } from './ChangeManagementIcon';
+export { ReviewSubmitIcon } from './ReviewSubmitIcon';
+export { DeleteIcon } from './DeleteIcon';
+export { PlusIcon } from './PlusIcon';
+export { CalendarIcon } from './CalendarIcon';
+export { PencilIcon } from './PencilIcon';

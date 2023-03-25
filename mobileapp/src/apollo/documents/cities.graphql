@@ -1,0 +1,22 @@
+fragment City on CityModel {
+    id
+    code
+    name
+    storageId
+    storeTitle
+}
+query GetCities {
+    cities {
+        ...City
+    }
+}
+query GetCity($longitude: Float!, $latitude: Float!) {
+    city(longitude: $longitude, latitude: $latitude) {
+        ...City
+    }
+}
+
+
+mutation changeCity($id: Int!) {
+    changeCity(newCityId: $id)
+}

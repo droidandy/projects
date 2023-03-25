@@ -1,0 +1,114 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/tools/mixins.scss";
+.componentQuizOption {
+
+    text-align: center;
+    margin: auto;
+    width: 160px;
+    @include media-query($small) {
+        width: 110px;
+    }
+  
+
+
+
+    .bubble {
+        cursor: pointer;
+        background-color: #F9F9F9;
+       
+       
+        margin:auto;
+        border-radius: 50%;
+
+        width: 160px;
+        height: 160px;
+        @include media-query($small) {
+            width: 80px;
+            height: 80px;
+        }
+
+        
+        
+        .img {
+            margin:auto;
+           
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+    
+            width:70%;
+            height:70%;
+            // @include media-query($small) {
+            //     width:70%;
+            //     height:70%;
+            // }
+        
+        }
+    }
+    & + .title {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .label {
+        cursor: pointer; 
+        margin: auto;
+
+            font-size:15px;
+            font-weight: 300;
+            line-height: 24px;
+            color:var(--black-pearl);
+            @include media-query($small) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+    }
+}
+
+.componentQuizOption[data-option-value=normal] .bubble .img  {background-image: url("./skintype_normal.svg");}
+.componentQuizOption[data-option-value=dry] .bubble .img  {background-image: url("./skintype_dry.svg"); background-size: 60%;}
+.componentQuizOption[data-option-value=oily] .bubble  .img {background-image: url("./skintype_oily.svg");}
+.componentQuizOption[data-option-value=mixed] .bubble  .img {background-image: url("./skintype_mixed.svg");}
+
+.componentQuizOption[data-option-value=wrinkles] .bubble .img {background-image: url("./goal_wrinkles.svg");}
+.componentQuizOption[data-option-value=acne] .bubble .img {background-image: url("./goal_acne.svg");}
+.componentQuizOption[data-option-value=dehydrated] .bubble .img {background-image: url("./goal_dehydrated.svg");}
+.componentQuizOption[data-option-value=sensitive] .bubble .img {background-image: url("./goal_sensitive.svg");}
+.componentQuizOption[data-option-value=pimple] .bubble .img {background-image: url("./goal_pimple.svg");}
+.componentQuizOption[data-option-value=lighten] .bubble .img {background-image: url("./goal_lighten.svg"); background-size: 90%;}
+.componentQuizOption[data-option-value=pimple] .bubble .img  {background-image: url("./goal_pimple.svg");}
+.componentQuizOption[data-option-value=body] .bubble .img  {background-image: url("./goal_body.svg");  background-size: 80%;}
+
+.componentQuizOption[data-option-value=edema] .bubble  .img {background-image: url("./goal_edema.svg"); }
+.componentQuizOption[data-option-value=capillaries] .bubble .img  {background-image: url("./goal_capillaries.svg");}
+.componentQuizOption[data-option-value=neck_wrinkles] .bubble .img  {background-image: url("./goal_neck_wrinkles.svg");}
+.componentQuizOption[data-option-value=breast_shape] .bubble .img  {background-image: url("./goal_breast_shape.svg"); background-size: 80%;}
+.componentQuizOption[data-option-value=cellulite] .bubble .img {background-image: url("./goal_cellulite.svg");}
+
+.componentQuizOption[data-selected=true] {
+    .bubble{
+        background-color: var(--rosemary);
+
+        .img {
+            filter: invert(100%) brightness(1000%);
+        }
+    }
+    .label{
+        font-weight: 500;
+        color:var(--rosemary)
+    }
+    & + .title {
+        color: var(--rosemary);
+    }
+}
+
+.componentQuizOption[data-option-group=goals][data-selected=true] {
+    .bubble{
+        background-color: var(--lavender);
+    }
+    & + .title {
+        color: var(--lavender);
+    }
+}

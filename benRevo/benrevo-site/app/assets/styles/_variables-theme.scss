@@ -1,0 +1,29 @@
+$MAIN_FONT: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+$SECOND_FONT: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+
+$MAIN_COLOR: #293C4C;
+$SECOND_COLOR: #298499;
+$THIRD_COLOR: #455560;
+$THIRD_COLOR_LIGHT: #7496a1;
+$BACKGROUND_GRAY_COLOR: #F8F8F8;
+$BACKGROUND_BLUE_COLOR: #248EB9;
+$HEADER_COLOR: #383838;
+
+$LINK_COLOR: #48AED5;
+$LINK_COLOR_HOVER: #13cdf7;
+
+$MAIN_BUTTON_COLOR: #00AFD7;
+$MAIN_BUTTON_HOVER: #3F8BA7;
+$INVERTED_BUTTON_COLOR: #293C4C;
+$INVERTED_BUTTON_HOVER: #1E2F3A;
+
+$BORDER_COLOR: #C5C5C5;
+$INPUT_BORDER_COLOR: #999999;
+
+@mixin panelShadow() {
+  -webkit-box-shadow: 0px -5px 1px -1px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0px -5px 1px -1px rgba(0,0,0,0.10);
+  box-shadow: 0px -5px 1px -1px rgba(0,0,0,0.10);
+  z-index: 111;
+  position: relative;
+}

@@ -1,0 +1,64 @@
+
+-
+    request:
+        method: POST
+        url: 'https://graph.facebook.com/v2.10/me/feed'
+        headers:
+            Host: graph.facebook.com
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: fb-php-5.6.3
+            Accept-Encoding: '*'
+        body: 'link=http%3A%2F%2Fdev.homeadverts.com%2Fstory%2F00000&message=Hello+World&access_token=EAAIVsJIBgb8BAH5K7t1SXmyZAKdQnYEMn5EWBZChdMUr8ZBU6l0W3mayyasyoFCOkW7AHmIGYmk6tvTVbfW0bjyJ3WOgZBDd6qwjjTelWIq1DbfRBcqflwsrH6HC56SGZADga8zEFsb8MXv1wF4KFVNBUvT4zGVkYkbOCYdJj1QQZDZD&appsecret_proof=d01331691be7ad13a83d0db8d8b337eef808fe8081aecdeac377c29ff0212845'
+    response:
+        status:
+            http_version: '2'
+            code: '400'
+            message: ''
+        headers:
+            vary: Accept-Encoding
+            x-app-usage: '{"call_count":0,"total_cputime":0,"total_time":0}'
+            content-type: 'application/json; charset=UTF-8'
+            www-authenticate: 'OAuth "Facebook Platform" "invalid_token" "The access token could not be decrypted"'
+            x-fb-rev: '4681639'
+            access-control-allow-origin: '*'
+            cache-control: no-store
+            x-fb-trace-id: BZhwgBxALNY
+            expires: 'Sat, 01 Jan 2000 00:00:00 GMT'
+            strict-transport-security: 'max-age=15552000; preload'
+            pragma: no-cache
+            x-fb-debug: MJ4ToXaVRPXDRjN4EVieqc5n7Fsfx1tUpqA3TQyQx2jkJtCwinGqr/RtYJDGZcf2jo7x2za+YTfs1OrSMJn+Vg==
+            content-length: '125'
+            date: 'Sun, 13 Jan 2019 20:59:30 GMT'
+        body: '{"error":{"message":"The access token could not be decrypted","type":"OAuthException","code":190,"fbtrace_id":"BZhwgBxALNY"}}'
+-
+    request:
+        method: POST
+        url: 'https://graph.facebook.com/v2.10/me/feed'
+        headers:
+            Host: graph.facebook.com
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: fb-php-5.7.0
+            Accept-Encoding: '*'
+        body: 'link=http%3A%2F%2Fdev.homeadverts.com%2Fstory%2F00000&message=Hello+World&access_token=EAAIVsJIBgb8BAH5K7t1SXmyZAKdQnYEMn5EWBZChdMUr8ZBU6l0W3mayyasyoFCOkW7AHmIGYmk6tvTVbfW0bjyJ3WOgZBDd6qwjjTelWIq1DbfRBcqflwsrH6HC56SGZADga8zEFsb8MXv1wF4KFVNBUvT4zGVkYkbOCYdJj1QQZDZD&appsecret_proof=d01331691be7ad13a83d0db8d8b337eef808fe8081aecdeac377c29ff0212845'
+    response:
+        status:
+            http_version: '2'
+            code: '400'
+            message: ''
+        headers:
+            vary: Accept-Encoding
+            x-app-usage: '{"call_count":0,"total_cputime":0,"total_time":0}'
+            content-type: 'application/json; charset=UTF-8'
+            www-authenticate: 'OAuth "Facebook Platform" "invalid_token" "The access token could not be decrypted"'
+            strict-transport-security: 'max-age=15552000; preload'
+            pragma: no-cache
+            x-fb-rev: '1000872295'
+            access-control-allow-origin: '*'
+            cache-control: no-store
+            x-fb-trace-id: DJ5gHWQ5408
+            x-fb-request-id: AbWUhjqQ3guWEVExKeAeX6u
+            expires: 'Sat, 01 Jan 2000 00:00:00 GMT'
+            x-fb-debug: YcQTq54icL4qpriY8kQSarM40JfktqFOe+cKwbUSw6SYaaIqzKkPqge4HywucIQwm+EIbETYNS1kMa27gppxPg==
+            content-length: '125'
+            date: 'Mon, 24 Jun 2019 21:32:56 GMT'
+        body: '{"error":{"message":"The access token could not be decrypted","type":"OAuthException","code":190,"fbtrace_id":"DJ5gHWQ5408"}}'

@@ -1,0 +1,40 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% set primaryImage = article.getPrimaryImage() %}
+{% set meta_title = article.getMetaTitle() %}
+
+{% set og_title = article.title %}
+{% set og_description = article.intro() %}
+
+{% if primaryImage %}
+    {% set og_image = article|article_image('article_large') %}
+{% endif %}
+
+{% block body %}
+    <div class="blog read-story" data-id="{{ article.id }}" >
+        <div class="one-column --margin-bottom">
+            {% include 'AppBundle:article:user.html.twig' with {'user': article.author} %}
+            {% include 'AppBundle:article/actions:top.html.twig' %}
+
+            <h1 class="heading story-title">
+                <span id="story-title">{{ article.title|raw }}</span>
+            </h1>
+
+            <article class="story item">
+                {{ article.body|raw }}
+
+                {% include 'AppBundle:article/carousel:modal.html.twig' %}
+            </article>
+
+            {% include 'AppBundle:article:tags.html.twig' %}
+            {% include 'AppBundle:article:property.html.twig' %}
+        </div>
+
+        <div class="article-footer">
+            {% include 'AppBundle:article:related.html.twig' %}
+        </div>
+
+        {% include 'AppBundle:ads:ads-wide.html.twig' %}
+    </div>
+{% endblock body %}
+

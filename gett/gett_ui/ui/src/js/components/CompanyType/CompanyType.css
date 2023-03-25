@@ -1,0 +1,19 @@
+.companyType {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &.enterprise {
+    color: #1875f0;
+  }
+
+  &.affiliate {
+    color: #f5307f;
+  }
+
+  &.bbc {
+    color: #f04134;
+  }
+}

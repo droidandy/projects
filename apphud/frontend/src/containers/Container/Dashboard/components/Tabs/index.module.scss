@@ -1,0 +1,25 @@
+.root {
+  background: #fff;
+  display: flex;
+  padding: 0 32px;
+  .tab {
+    background: #ABD7FF;
+    text-decoration: none;
+    .icon {
+      padding-left: 10px;
+      padding-right: 5px;
+    }
+    &.active {
+      background: #0085FF;
+    }
+    border-radius: 8px 8px 0 0;
+    color: #fff;
+    padding: 0 31px 0 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+

@@ -1,0 +1,185 @@
+.share-dialog {
+  width: 800px;
+  text-align: left;
+  padding: 0;
+  border-radius: 5px;
+
+  .mdl-dialog__content {
+    padding: 0;
+
+    .media {
+      width: 450px;
+      float: left;
+      background: #000;
+      height: 450px;
+      position: relative;
+
+      .image {
+        position: relative;
+        z-index: 2;
+      }
+      .spinner {
+        position: absolute;
+        background: url(/assets/images/preloader-black.gif) 50% 50% no-repeat;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+    }
+    .content {
+      width: 350px;
+      float: right;
+      padding: 20px;
+      padding-left: 25px;
+
+      .heading {
+        span {
+          font-weight: 600;
+          margin-top: 0;
+          text-transform: uppercase;
+          float: left;
+          font-size: 16px;
+          color: #424242;
+        }
+
+        .close {
+          margin-top: -5px;
+          float: right;
+          margin-right: -10px;
+          color: $color_2;
+        }
+      }
+      .share-options {
+        display: inline-block;
+        margin-top: 30px;
+
+        li {
+          display: inline-block;
+          width: 100%;
+          margin-bottom: 3px;
+
+          a {
+            line-height: 40px;
+            color: $color_3;
+
+            span {
+              width: 35px;
+              height: 35px;
+              margin-right: 20px;
+              display: block;
+              float: left;
+              font-size: 18px;
+              text-align: center;
+              line-height: 35px;
+              color: #fff;
+              background: #424242;
+              transition: 0.3s;
+              border-radius: 1px;
+              @include transition(0.3s);
+            }
+            &:hover {
+              span {
+                &.fa-facebook {
+                  background: #3d5b97;
+                }
+                &.fa-twitter {
+                  background: #62a9db;
+                }
+                &.fa-linkedin {
+                  background: #1179b2;
+                }
+                &.fa-google-plus {
+                  background: #d95045;
+                }
+                &.fa-pinterest {
+                  background: #b60918;
+                }
+                &.fa-envelope {
+                  background: #444;
+                }
+              }
+            }
+          }
+        }
+      }
+      .link {
+        margin-top: 30px;
+
+        span {
+          font-weight: 600;
+          font-size: 10px;
+          color: $color_1;
+        }
+        .link-to-share {
+          font-size: 13px;
+          color: $color_1 !important;
+          border: 0;
+          clear: both;
+          width: 100%;
+          border-bottom: 1px solid #777;
+          padding-bottom: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet_width - 1px) {
+  .share-dialog {
+    .mdl-dialog__content {
+      padding: 24px;
+
+      .media {
+        display: none;
+      }
+      .content {
+        width: 100%;
+
+        padding: 30px 0 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet_width - 1px) and (min-height: 567px) {
+  .share-dialog {
+    .mdl-dialog__content {
+      padding: 24px;
+
+      .media {
+        display: none;
+      }
+      .content {
+        width: 100%;
+        padding: 50px 0 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 568px) and (orientation: landscape) {
+  .share-dialog {
+    .mdl-dialog__content {
+      padding: 24px;
+
+      .media {
+        display: none;
+      }
+      .content {
+        width: 100%;
+
+        .share-options {
+          margin-top: 10px;
+
+          li {
+            width: 50%;
+            margin: 8px -1px 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+---
+log:
+  level: LOG_LEVEL
+
+apexExtracts:
+  defaultTimezone: APEX_EXTRACTS_DEFAULT_TIMEZONE
+  daysBeforeCurrent: APEX_EXTRACTS_DAYS_BEFORE_CURRENT
+  hoursNumberAfterWhichSodFileMustBe: APEX_EXTRACTS_HOURS_NUMBER_AFTER_WHICH_SOD_FILE_MUST_BE
+  takeNonBusinessDaysAlso: APEX_EXTRACTS_TAKE_NON_BUSINESS_DAYS_ALSO
+  sftp:
+    host: APEX_EXTRACTS_SFTP_HOST
+    port: APEX_EXTRACTS_SFTP_PORT
+    username: APEX_EXTRACTS_SFTP_USER
+    privateKey: APEX_EXTRACTS_SFTP_PRIVATE_KEY
+    retriesOptions:
+      retries: APEX_EXTRACTS_SFTP_RETRIES_LIMIT
+      minTimeout: SFTP_RETRIES_MIN_TIMEOUT_MILLIS
+      maxTimeout: SFTP_RETRIES_MAX_TIMEOUT_MILLIS
+
+apexExtend:
+  applicationsUrl: APEX_EXTEND_APPLICATIONS_URL
+  admin:
+    email: APEX_EXTEND_ADMIN_EMAIL
+    password: APEX_EXTEND_ADMIN_PASSWORD
+
+instrumentsPerUpsert: INSTRUMENTS_PER_UPSERT
+pricesPerInsert: PRICES_PER_INSERT

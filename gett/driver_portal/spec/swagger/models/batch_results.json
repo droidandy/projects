@@ -1,0 +1,21 @@
+{
+  "succeeded": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/user"
+    }
+  },
+  "failed": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/user"
+    }
+  },
+  "skipped": {
+    "type": "array",
+    "items": {
+      "$ref": "#/definitions/user"
+    },
+    "x-nullable": true
+  }
+}

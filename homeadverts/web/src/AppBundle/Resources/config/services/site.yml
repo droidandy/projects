@@ -1,0 +1,15 @@
+services:
+    #define our Imagine service defanition
+    ha.imagine:
+        class: Imagine\Image\ImagineInterface
+        factory_service: ha.image_helper
+        factory_method: getImagine
+
+    #helper to keep image sizes and twig methods solid
+    ha.image_helper:
+        class: AppBundle\Service\File\ImageHelper
+        arguments:
+            - %cdn.url%
+            - @liip_imagine.cache.manager
+    cache:
+        alias: redis_cache

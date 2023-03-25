@@ -1,0 +1,148 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title *ngIf="userDetails">{{userDetails.role}}</ion-title>
+    <ion-buttons end >
+      <button ion-button (click)="openMessage()"><ion-icon name="ios-create-outline" class="plus"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!-- <div *ngIf="user">
+    <div class="top">
+        <img src="{{user.img}}" tappable (click)="setPhoto()">
+        <h3 tappable (click)="setName()">{{user.name}}</h3>
+        <p tappable (click)="setUsername()" >@{{user.username}}</p>
+        <p tappable (click)="setDescription()">{{user.description}}</p>
+    </div>
+    <ion-list>
+      <ion-item>
+        <ion-label>Show Online</ion-label>
+        <ion-toggle item-right [(ngModel)]="showOnline" (ionChange)="changeStatus()"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>Enable Notification</ion-label>
+        <ion-toggle item-right [(ngModel)]="isPushEnabled" [disabled]="isBrowser" (ionChange)="changeNotification()"></ion-toggle>
+      </ion-item>
+      <ion-item (click)="showBlockedList()">
+        <h2>Blocked List</h2>
+        <ion-icon item-right name="arrow-forward"></ion-icon>
+      </ion-item>
+      <ion-item tappable (click)="setEmail()">
+        Change Email Address
+      </ion-item>
+      <ion-item tappable (click)="setPassword()" *ngIf="user && user.provider == 'Firebase'">
+        Change Password
+      </ion-item>
+      <ion-item tappable (click)="deleteAccount()">
+        Delete Account
+      </ion-item>
+    </ion-list>
+  </div> -->
+  <div *ngIf="userDetails">
+    <ion-row class="profile_pic" (click)="enlargeImage(userDetails.img)">
+      <img-loader  *ngIf="userDetails.img!='http://placehold.it/80X80'&&userDetails.img!=''" style="width:100%;" src="{{userDetails.img}}" tappable useImg  ></img-loader>
+      <img-loader  *ngIf="userDetails.img=='http://placehold.it/80X80'||userDetails.img==''" style="width:100%;" src="assets/images/default-image.png" tappable useImg  ></img-loader>
+    </ion-row>
+
+    <!-- <form>
+      <ion-item>
+        <ion-label stacked>{{ 'FIRSTNAME' | translate }}</ion-label>
+        <ion-input type="text" value="{{userDetails.username}}" disabled=true></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>{{ 'LASTNAME' | translate }}</ion-label>
+        <ion-input type="text" value="{{userDetails.name}}" disabled=true></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>{{ 'ROLE' | translate }}</ion-label>
+        <ion-input type="text" value="{{userDetails.role}}" disabled=true></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>{{ 'CITY' | translate }}</ion-label>
+        <ion-input type="text" value="{{userDetails.city}}" disabled=true></ion-input>
+      </ion-item>
+
+      <ion-row class="add_images" *ngFor="let image of imagesList let i=index;">
+        <img-loader src="{{image.img}}" useImg  class="big_img" (click)="enlargeImage(image.img)"></img-loader>
+      </ion-row>
+
+
+    </form> -->
+
+    <ion-row class="profile_top_img">
+      <h2>{{userDetails.username}}</h2>
+      <p>{{userDetails.role}}</p>
+      <p>{{userDetails.city}}</p>
+    </ion-row>
+    <button ion-button block class="danger" tappable (click)="openMessage()">CHAT WITH ME</button>
+
+    <ion-row class="experience" *ngIf="expereince.length>0">
+      <span class="experience_head">
+        <span class="experience_left_head">{{ 'EXPERIENCE' | translate }}</span>
+
+      </span>
+
+      <span class="experience_body" *ngFor="let data of expereince">
+        <span class="experience_body_left">
+          <span></span>
+        </span>
+        <span class="experience_body_right">
+          <h2>{{data.role}}</h2>
+          <p class="legacy">{{data.agency}} {{data.event}}</p>
+          <p class="location">{{data.startDate|date:'MMM y' }} - {{data.diffDate}}</p>
+          <p class="description">{{data.location}}</p>
+          <p class="description" *ngIf="!data.isFullDescription">{{data.shortDescription}}</p>
+          <p class="description" *ngIf="data.isFullDescription">{{data.description}}</p>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&data.isFullDescription">Less more</button>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&!data.isFullDescription">Read more</button>
+
+        </span>
+      </span>
+    </ion-row>
+
+
+    <ion-row class="experience" *ngIf="education.length>0">
+      <span class="experience_head">
+        <span class="experience_left_head">{{ 'EDUCATION' | translate }}</span>
+
+      </span>
+
+      <span class="experience_body"  *ngFor="let data of education">
+        <span class="experience_body_left">
+          <span></span>
+        </span>
+        <span class="experience_body_right">
+          <h2>{{data.study}}</h2>
+          <p class="location">{{data.degree}}</p>
+          <p class="location">{{data.startDate|date:'y' }} - {{data.endDate|date:'y'}}</p>
+          <p class="location">{{data.schoolName}},{{data.location}}</p>
+          <p class="description" *ngIf="!data.isFullDescription">{{data.shortDescription}}</p>
+          <p class="description" *ngIf="data.isFullDescription">{{data.description}}</p>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&data.isFullDescription">Less more</button>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&!data.isFullDescription">Read more</button>
+
+        </span>
+      </span>
+    </ion-row>
+
+    <ion-row class="add_images experience" >
+      <span class="experience_head">
+        <span class="experience_left_head">{{ 'PORTFOLIO' | translate }}</span>
+      </span>
+      <ion-item *ngFor="let image of imagesList let i=index;">
+        <img-loader src="{{image.img}}" useImg  class="big_img"></img-loader>
+        <ion-col (click)="presentActionSheet(image,i)">
+          <ion-icon name="ios-more"></ion-icon>
+        </ion-col>
+    </ion-item>
+    </ion-row>
+
+
+
+    <button ion-button block class="danger" tappable (click)="reportSpam()">{{ 'REPORTSPAM' | translate }}</button>
+    <button ion-button block class="danger block_user_active" tappable (click)="block()">{{ 'BLOCKUSER' | translate }}</button>
+
+  </div>
+
+</ion-content>

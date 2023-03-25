@@ -1,0 +1,71 @@
+{
+  "companySummary": {
+    "id": "e13e505e-ae4c-406f-a4eb-ad0a807aa81a",
+    "name": "List Sotheby's International Realty",
+    "RFGID": "820902",
+    "brandCode": "SIR",
+    "isNrt": false,
+    "lastUpdateOn": "2018-07-20T03:51:56.550",
+    "canDoCommercialBusiness": true,
+    "commercialCompanyName": ""
+  },
+  "media": [
+    {
+      "mediaID": "0F9C4B82-8C63-41F8-BA72-A648B3C399C6",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/0F9C4B82-8C63-41F8-BA72-A648B3C399C6",
+      "isDefault": true,
+      "title": "01",
+      "caption": "01",
+      "format": "Image",
+      "category": "Company Photo",
+      "height": 1200,
+      "width": 2000,
+      "lastUpdateOn": "2017-12-04T08:30:16.603"
+    }
+  ],
+  "preferences": [
+    {
+      "preferenceType": "Allow consumers to send email to Sales Associate",
+      "preferenceValue": "True"
+    },
+    {
+      "preferenceType": "Display Open\/Pending Listings on web",
+      "preferenceValue": "True"
+    },
+    {
+      "preferenceType": "Display Sales Associate and Team Names on Listings",
+      "preferenceValue": "True"
+    },
+    {
+      "preferenceType": "Display Sales Associates on Website",
+      "preferenceValue": "True"
+    }
+  ],
+  "customAttributes": [
+    {
+      "attributeName": "BrightCoveAccountID",
+      "attributeValue": "5783078641001"
+    }
+  ],
+  "office": [
+    {
+      "officeId": "3abd0cf9-8996-484a-a191-ee57b642db43",
+      "RFGOfficeId": "0001",
+      "isOpen": true,
+      "name": "List Sotheby's International Realty",
+      "type": "Main office",
+      "officeAddress": {
+        "streetAddress": "33 Des Voeux Road Central Suite 1\/F",
+        "city": "Central",
+        "district": "Hong Kong",
+        "country": "Hong Kong",
+        "countryCode": "HK",
+        "latitude": 22.2830539,
+        "longitude": 114.1550443
+      },
+      "phoneNumber": "+852 3793 3688",
+      "emailAddress": "info@listsirhk.com"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+    "agentSummary": {
+        "id": "b5e59077-6655-445f-aecb-afca43545a8c",
+        "isAgent": true,
+        "name": "Rosemary   Low",
+        "firstName": "Rosemary",
+        "lastName": "Low",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+        "emailAddress": "Rosemary.Low@sothebyshomes.com",
+        "businessPhone": "3236605885",
+        "mobilePhone": "3233630381",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "0a8a7a76-3c6d-43b9-b5d2-b572ed9a2c3a",
+            "RFGOfficeId": "0015",
+            "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+            "companyName": "NRT Sotheby's International Realty",
+            "RFGCompanyId": "901195",
+            "brandCode": "SIR",
+            "name": "Sotheby's International Realty - Los Feliz Brokerage",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "1801  North Hillhurst Avenue ",
+                "city": "Los Angeles",
+                "district": "Los Angeles County",
+                "stateProvince": "California",
+                "stateProvinceCode": "CA",
+                "postalCode": "90027",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 34.104058,
+                "longitude": -118.287781,
+                "formattedAddress": "1801 Hillhurst Ave, Los Angeles, CA 90027"
+            },
+            "phoneNumber": "323.665.1700",
+            "emailAddress": "ALLSIRLosFelizEmployees@sothebyshomes.com"
+        }
+    },
+    "personId": "da7c2066-5502-45f5-a04a-2faf3d3869be",
+    "lastUpdateOn": "2018-08-07T22:30:05.907",
+    "roles": [
+        {
+            "office": {
+                "officeId": "0a8a7a76-3c6d-43b9-b5d2-b572ed9a2c3a",
+                "RFGOfficeId": "0015",
+                "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+                "companyName": "NRT Sotheby's International Realty",
+                "RFGCompanyId": "901195",
+                "brandCode": "SIR",
+                "name": "Sotheby's International Realty - Los Feliz Brokerage",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "1801  North Hillhurst Avenue ",
+                    "city": "Los Angeles",
+                    "district": "Los Angeles County",
+                    "stateProvince": "California",
+                    "stateProvinceCode": "CA",
+                    "postalCode": "90027",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 34.104058,
+                    "longitude": -118.287781,
+                    "formattedAddress": "1801 Hillhurst Ave, Los Angeles, CA 90027"
+                },
+                "phoneNumber": "323.665.1700",
+                "emailAddress": "ALLSIRLosFelizEmployees@sothebyshomes.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": false,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "Rosemary.Low@sothebyshomes.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-08-07T22:30:05.797"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Fax",
+            "number": "3236651780"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Rosemary Low is a top listing\/selling agent in Sotheby's International Realty's Los Feliz office as well as one of the top listing\/selling agents in California companywide. She's been selling real estate for over 30 years in the Los Feliz\/Silverlake\/Hollywood Hills area. She has two assistants that work just for her. These assistants follow through on some of the details so that she can provide the kind of care that her clients need. <br><br>\r\nShe takes personal pride in providing the best service and cutting-edge marketing in the area. These include expert evaluation of properties, redecorating homes using the existing furniture and items that are on hand if needed, color brochures with the very best designs, strategizing the best plan for listing and selling a property, blitzing advertisements in many publications potential buyers will be reading, having an open house every weekend at the seller's convenience, her own personal real estate web site with an impressive array of listings in all price categories, virtual tours and slide shows, and years of experience in negotiating the best price. <br><br>\r\nRosemary believes in personal care from start to finish and a continual real estate relationship."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Facebook",
+            "url": "http:\/\/www.facebook.com\/rosemary.low.50",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "CA",
+            "number": "492534"
+        }
+    ]
+}

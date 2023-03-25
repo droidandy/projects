@@ -1,0 +1,52 @@
+{
+  "ACT": {
+    "newSymbol": "VICE",
+    "feeds": [
+      "APEX"
+    ]
+  },
+  "AHPA": {
+    "newSymbol": "ORGO",
+    "feeds": [
+      "APEX"
+    ]
+  },
+  "AI": {
+    "newSymbol": "AAIC",
+    "feeds": [
+      "APEX"
+    ]
+  },
+  "AMCI": {
+    "newSymbol": "ADN",
+    "feeds": [
+      "APEX",
+      "MORNING_STAR"
+    ]
+  },
+  "ATAI": {
+    "newSymbol": "AACG",
+    "feeds": [
+      "APEX",
+      "MORNING_STAR"
+    ]
+  },
+  "AZRX": {
+    "newSymbol": "FWBI",
+    "feeds": [
+      "MORNING_STAR"
+    ]
+  },
+  "BCYP": {
+    "newSymbol": "SABS",
+    "feeds": [
+      "MORNING_STAR"
+    ]
+  },
+  "BOWX": {
+    "newSymbol": "WE",
+    "feeds": [
+      "MORNING_STAR"
+    ]
+  }
+}

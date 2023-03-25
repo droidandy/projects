@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    image: visavis/capadmin-web
+    ports:
+      - "3000:80"
+    networks:
+      - capimpact
+
+networks:
+  capimpact:
+    driver: bridge

@@ -1,0 +1,100 @@
+.post-import-dialog {
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  background: rgba(255, 255, 255, .97);
+  overflow: scroll;
+
+  .close {
+    position: absolute;
+    color: #757575;
+    right: 20px;
+    top: 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .heading {
+      max-width: 700px;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+
+      h4 {
+        line-height: 1.2;
+        color: #212121;
+        font-size: 32px;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #9e9e9e;
+        margin-top: 5px;
+      }
+    }
+    .intro {
+      margin-top: 90px;
+      display: flex;
+
+      .step {
+        flex-grow: 1;
+        text-align: center;
+
+        .step-heading {
+          font-size: 26px;
+          font-weight: 700;
+          color: #424242;
+          margin-bottom: 5px;
+        }
+        p {
+          line-height: 1.5;
+          color: #616161;
+          font-size: 15px;
+          width: 240px;
+          margin: 0 auto;
+        }
+        img {
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+      }
+    }
+    .actions {
+      text-align: center;
+      margin-top: 90px;
+    }
+  }
+}
+
+
+@media screen and (max-width: $mobile_width) {
+  .post-import-dialog .container {
+    text-align: center;
+    padding: 20px;
+
+    .heading {
+      margin-top: 40px;
+      h4 {
+        font-size: 18px;
+      }
+    }
+    .intro {
+      margin-top: 40px;
+      display: block;
+
+      .step .step-heading {
+        margin-top: 20px;
+      }
+    }
+    .actions {
+      margin-top: 40px;
+      margin-bottom: 110px;
+    }
+  }
+}

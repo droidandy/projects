@@ -1,0 +1,28 @@
+<ion-view>
+  <ion-content class="gm-content">
+    <div class="page">
+      <div class="pocket-container">
+        <div class="pocket-head" on-swipe-left="nextSettingsPage()" on-swipe-right="prevSettingsPage()">
+          <div class="text-head" ui-sref="menu">Done</div>
+          <div class="settings-icon"></div>
+          <div class="head-title">CONTACT CARD</div>
+          <div class="head-title-next" ng-click="nextSettingsPage()">PROFILE</div>
+          <div class="head-title-prev" ng-click="prevSettingsPage()">DISCOVERY</div>
+        </div>
+        <div class="settings contact-settings">
+          <ul>
+            <li><span class="icon call-num"></span>+44 719 362874</li>
+            <li><span class="icon loc-pin"></span>180 High Street, London</li>
+            <li><span class="icon bell-icon"></span>costannikk</li>
+            <li><span class="icon twitter-icon"></span>twitter</li>
+            <li><span class="icon fb-icon"></span>facebook</li>
+            <li><span class="icon save-icon"></span>save</li>
+            <li><span class="icon pin-icon  active"></span>loc pin</li>
+            <li><span class="icon whatsapp-icon"></span>whatsapp</li>
+            <li><span class="icon email-icon"></span>email</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

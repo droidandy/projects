@@ -1,0 +1,7 @@
+  {%if product.handle and request.locale.iso_code == 'ru' or request.locale.iso_code == 'en'}
+    {% assign snippet = 'staticHTML-' | append: product.handle | append: '-' | append: request.locale.iso_code %}
+    {% capture snippet_content %}{% include snippet %}{% endcapture %}
+    {% unless snippet_content contains "Liquid error" %}
+      {{ snippet_content }}
+    {% endunless %}
+  {%endif%}

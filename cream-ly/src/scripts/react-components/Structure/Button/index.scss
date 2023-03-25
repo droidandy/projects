@@ -1,0 +1,82 @@
+//@import "../../../../styles/variables.scss";
+//@import "../../../../styles/tools/mixins.scss";
+
+.compnentStructureButton {
+  a {
+    cursor: pointer;
+  }
+}
+
+.btn_style {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  a,
+  span {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: 0.9px;
+    background-color: var(--lavender);
+    display: inline-block;
+    min-width: 280px;
+    font-family: var(--font-heading);
+    padding: 15px 15px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 30px;
+      min-width: 240px;
+      padding: 7px 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      opacity: 0.9;
+    }
+  }
+
+  &.white {
+    color: var(--rosemary);
+    a {
+      background-color: #fff;
+      border: 1px solid var(--rosemary);
+      color: var(--rosemary);
+      &:hover {
+        color: var(--rosemary);
+      }
+    }
+  }
+  &.green {
+    a,
+    span {
+      background-color: var(--rosemary);
+      color: #fff;
+    }
+  }
+  &.greenBorder {
+    a,
+    span {
+      background-color: transparent;
+      border: 1px solid var(--rosemary);
+      color: var(--rosemary);
+    }
+  }
+  &.rose {
+    a,
+    span {
+      background-color: var(--rose);
+    }
+  }
+  &.disabled {
+    a,
+    span {
+      opacity: 0.3;
+    }
+  }
+}

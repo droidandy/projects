@@ -1,0 +1,14 @@
+<!-- <ion-tabs selectedIndex="0" tabsPlacement="bottom">
+  <ion-tab [root]="messages" tabIcon="chatbubbles" tabBadgeStyle="danger" tabBadge="{{getUnreadMessagesCount()}}"></ion-tab>
+  <ion-tab [root]="groups" tabIcon="people" tabBadgeStyle="danger" tabBadge="{{getUnreadGroupMessagesCount()}}"></ion-tab>
+  <ion-tab [root]="friends" tabIcon="list" tabBadgeStyle="danger" tabBadge="{{friendRequestCount}}"></ion-tab>
+  <ion-tab [root]="profile" tabIcon="contact" ></ion-tab>
+</ion-tabs> -->
+
+<ion-tabs selectedIndex="2" tabsPlacement="bottom"  (tap)="gotoDiscover()">
+  <ion-tab [root]="jobs" tabTitle="Jobs" tabIcon="customicon" ></ion-tab>
+  <ion-tab [root]="messages" tabTitle="{{ 'CHAT' | translate }}" tabIcon="customicon1" tabBadgeStyle="danger" tabBadge="{{getUnreadMessagesCount()}}"></ion-tab>
+  <ion-tab [root]="discover" tappable tabTitle="{{ 'DISCOVER' | translate }}" tabIcon="customicon2" ></ion-tab>
+  <ion-tab [root]="groups" tabTitle="{{ 'GROUPS' | translate }}" tabIcon="customicon3" tabBadgeStyle="danger" tabBadge="{{getUnreadGroupMessagesCount()}}"></ion-tab>
+  <ion-tab [root]="profile" tabTitle="{{ 'PROFILE' | translate }}"  tabIcon="customicon4" ></ion-tab>
+</ion-tabs>

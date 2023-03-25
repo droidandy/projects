@@ -1,0 +1,2179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="ebrandell"  id="4804b2ea-11df-4663-b6f2-d13885a001d0">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_submission" columnName="submitted_by"/>
+                <columnExists tableName="rfp_submission" columnName="submitted_date"/>
+            </not>
+        </preConditions>
+        <comment>Adds submission origin details to rfp_submission table</comment>
+        <addColumn tableName="rfp_submission">
+            <column name="submitted_by" type="VARCHAR(255)"/>
+            <column name="submitted_date" type="DATETIME"/>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="rfp_submission" columnName="submitted_by"/>
+            <dropColumn tableName="rfp_submission" columnName="submitted_date"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="01-08-17 21:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="rfp_quote_network_combination"/>
+            </not>
+        </preConditions>
+        <comment>Added new table rfp_quote_network_combination</comment>
+        <createTable tableName="rfp_quote_network_combination">
+            <column name="rfp_quote_network_combination_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+             	<constraints nullable="false"/>
+            </column>
+            <column name="carrier_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_rfp_quote_network_combination_carrier_id" 
+             				 referencedTableName="carrier" 
+             				 referencedColumnNames="carrier_id"/>
+            </column>
+            <column name="network_count" type="INT">
+             	<constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="rfp_quote_network_combination"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="01-08-17 22:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote_network" columnName="rfp_quote_network_combination_id"/>
+            </not>
+        </preConditions>
+        <comment>Added FK to rfp_quote_network_combination table</comment>
+        <addColumn tableName="rfp_quote_network">
+            <column name="rfp_quote_network_combination_id" type="BIGINT">
+            	<constraints nullable="true" 
+             				 foreignKeyName="fk_rfp_quote_network_combination_id" 
+             				 referencedTableName="rfp_quote_network_combination" 
+             				 referencedColumnNames="rfp_quote_network_combination_id"/>
+            </column>
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="rfp_quote_network" columnName="rfp_quote_network_combination_id"/>
+      	</rollback>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="02-08-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote" columnName="rating_tiers"/>
+            </not>
+        </preConditions>
+        <comment>Added new column rfp_quote.rating_tiers</comment>
+        <addColumn tableName="rfp_quote">
+        	<column name="rating_tiers" type="INTEGER" />
+        </addColumn>
+        <sql>
+        	update rfp_quote set rating_tiers = 4;
+        </sql>
+        <rollback>
+      		<dropColumn tableName="rfp_quote" columnName="rating_tiers"/>
+      	</rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="10-08-17 07:40">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote" columnName="s3_key" />
+            </not>
+        </preConditions>
+        <comment>Added column rfp_quote.s3_key</comment>
+        <addColumn tableName="rfp_quote">
+            <column name="s3_key" type="VARCHAR(255)" />
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="lemdy" id="08-14-17 15:05">
+        <preConditions onFail="HALT">
+            <sqlCheck expectedResult="1">
+                select count(*) from carrier where name = 'KAISER';
+            </sqlCheck>
+        </preConditions>
+        <comment>Insert KAISER rfp carriers If they don't exist</comment>
+        <sql>
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'MEDICAL' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'KAISER') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT category, carrier_id FROM rfp_carrier WHERE category = 'MEDICAL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'KAISER')
+            ) LIMIT 1;
+
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'DENTAL' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'KAISER') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT category, carrier_id FROM rfp_carrier WHERE category = 'DENTAL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'KAISER')
+            ) LIMIT 1;
+
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'VISION' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'KAISER') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT category, carrier_id FROM rfp_carrier WHERE category = 'VISION' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'KAISER')
+            ) LIMIT 1;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="08-14-17 15:10">
+        <preConditions onFail="HALT">
+            <sqlCheck expectedResult="1">
+                select count(*) from carrier where name = 'CIGNA';
+            </sqlCheck>
+        </preConditions>
+        <comment>Insert CIGNA rfp carriers If they don't exist</comment>
+        <sql>
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'MEDICAL' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'CIGNA') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT category, carrier_id FROM rfp_carrier WHERE category = 'MEDICAL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'CIGNA')
+            ) LIMIT 1;
+
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'DENTAL' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'CIGNA') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT category, carrier_id FROM rfp_carrier WHERE category = 'DENTAL' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'CIGNA')
+            ) LIMIT 1;
+
+            INSERT INTO rfp_carrier (category, carrier_id)
+            SELECT * FROM (SELECT 'VISION' AS category, (SELECT carrier_id FROM carrier WHERE NAME = 'CIGNA') AS carrier_id) AS tmp
+            WHERE NOT EXISTS (
+            SELECT category, carrier_id FROM rfp_carrier WHERE category = 'VISION' AND carrier_id = (SELECT carrier_id FROM carrier WHERE NAME = 'CIGNA')
+            ) LIMIT 1;
+        </sql>
+    </changeSet>
+    <changeSet author="artur.fenko" id="10-08-17 12:00">
+        <comment>Change dec_number column data type; Add meta column to network_medical_group table</comment>
+        <sql>
+            ALTER TABLE medical_group MODIFY dec_number VARCHAR(20);
+            ALTER TABLE network_medical_group ADD COLUMN meta VARCHAR(5) null;
+        </sql>
+        <rollback>
+            ALTER TABLE medical_group MODIFY dec_number BIGINT(20);
+            ALTER TABLE network_medical_group DROP COLUMN meta;
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="10-08-17 13:00">
+        <comment>Insert Anthem Medical Groups</comment>
+        <sqlFile path="../scripts/db.medical_groups.anthem.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="akorchak"  id="14-08-17 10:53">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client" columnName="date_quote_option_submitted"/>
+                <columnExists tableName="client" columnName="date_form_submitted"/>
+            </not>
+        </preConditions>
+        <comment>Adds submission dates to client table</comment>
+        <addColumn tableName="client">
+            <column name="date_quote_option_submitted" type="DATETIME"/>
+            <column name="date_form_submitted" type="DATETIME"/>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="client" columnName="date_quote_option_submitted"/>
+            <dropColumn tableName="client" columnName="date_form_submitted"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="14-08-17 15:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM form_question
+                WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'payment_information_type' AND multiselectable = TRUE)
+                AND form_id = (SELECT form_id FROM form WHERE NAME = 'anthem-blue-cross-questionnaire');
+            </sqlCheck>
+        </preConditions>
+        <comment>payment_information_type question is no longer multiselectable</comment>
+        <sql>
+            UPDATE question SET multiselectable = FALSE WHERE CODE = 'payment_information_type';
+
+            UPDATE variant SET alias = null WHERE question_id = (SELECT question_id FROM question WHERE CODE = 'payment_information_type');
+        </sql>
+        <rollback>
+            UPDATE question SET multiselectable = TRUE WHERE CODE = 'payment_information_type';
+
+            UPDATE variant SET alias = 'payment_information_type_init_prem' WHERE number = 1 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+            UPDATE variant SET alias = 'payment_information_type_init_prem_reccur' WHERE number = 2 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+            UPDATE variant SET alias = 'payment_information_type_other_chek' WHERE number = 3 AND question_id = (SELECT question_id FROM question WHERE code = 'payment_information_type');
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ositapara" id="08-15-17 14:00">
+        <comment>If present update Anthem riders to selectable</comment>
+        <sql>
+            UPDATE rider_meta SET selectable = 1 WHERE rider_code = '$10 Chiro' AND category = 'Chiropractor' AND type = 'HMO';
+            UPDATE rider_meta SET selectable = 1 WHERE rider_code = '$10 Chiro, Acupuncture' AND category = 'Chiro/Acupuncture' AND type = 'HMO';
+        </sql>
+        <rollback>
+            UPDATE rider_meta SET selectable = 0 WHERE rider_code = '$10 Chiro' AND category = 'Chiropractor' AND type = 'HMO';
+            UPDATE rider_meta SET selectable = 0 WHERE rider_code = '$10 Chiro, Acupuncture' AND category = 'Chiro/Acupuncture' AND type = 'HMO';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy"  id="08-16-17 13:54">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client_plan" columnName="out_of_state"/>
+                <columnExists tableName="client_plan" columnName="option_id"/>
+            </not>
+        </preConditions>
+        <comment>Adds out_of_state and option_id in client_plan table</comment>
+        <addColumn tableName="client_plan">
+            <column name="out_of_state" type="BIT(1)"/>
+            <column name="option_id" type="BIGINT(20)"/>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="client_plan" columnName="out_of_state"/>
+            <dropColumn tableName="client_plan" columnName="option_id"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy"  id="08-16-17 14:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote_option_network" columnName="out_of_state"/>
+            </not>
+        </preConditions>
+        <comment>Adds out_of_state in rfp_quote_option_network table</comment>
+        <addColumn tableName="rfp_quote_option_network">
+            <column name="out_of_state" type="BIT(1)"/>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="rfp_quote_option_network" columnName="out_of_state"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="08-17-17 15:58">
+        <comment>Updating existing outOfState values in client_plan table </comment>
+
+        <sql>
+            UPDATE client_plan SET out_of_state = false;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="08-17-17 16:00">
+        <comment>Setting default value for outOfState in client_plan table </comment>
+
+        <addDefaultValue columnDataType="bit(1)"
+                         columnName="out_of_state"
+                         defaultValueBoolean="false"
+                         tableName="client_plan"/>
+    </changeSet>
+
+    <changeSet author="lemdy" id="08-17-17 16:01">
+        <comment>Updating existing outOfState values in rfp_quote_option_network table </comment>
+
+        <sql>
+            UPDATE rfp_quote_option_network SET out_of_state = false;
+        </sql>
+    </changeSet>
+
+    <changeSet author="lemdy" id="08-17-17 16:02">
+        <comment>Setting default value for outOfState in rfp_quote_option_network table </comment>
+
+        <addDefaultValue columnDataType="bit(1)"
+                         columnName="out_of_state"
+                         defaultValueBoolean="false"
+                         tableName="rfp_quote_option_network"/>
+    </changeSet>
+
+    <changeSet author="lemdy"  id="08-17-17 13:36">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_submission" columnName="disqualification_reason"/>
+            </not>
+        </preConditions>
+        <comment>Adds submission_status and denial_reason in rfp_submission table</comment>
+        <addColumn tableName="rfp_submission">
+            <column name="disqualification_reason" type="varchar(255)"/>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="rfp_submission" columnName="disqualification_reason"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-17-17 12:00">
+        <comment>Set default value for broker_of_record column</comment>
+        <sql>
+            ALTER TABLE rfp CHANGE broker_of_record broker_of_record BIT(1) DEFAULT 1 NOT NULL;
+        </sql>
+        <rollback>
+            ALTER TABLE rfp CHANGE broker_of_record broker_of_record BIT(1) NULL;
+        </rollback>
+    </changeSet>
+    <changeSet author="artur.fenko" id="08-17-2017 14:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="broker" columnName="locale"/>
+            </not>
+        </preConditions>
+        <comment>Add locale column to broker table</comment>
+        <addColumn tableName="broker">
+            <column name="locale" type="ENUM('NORTH','SOUTH')"/>
+        </addColumn>
+        <rollback>
+            <dropColumn columnName="locale" tableName="broker"/>
+        </rollback>
+    </changeSet>
+
+ 	<changeSet author="golovchenkoaa" id="21-08-17 15:30" runInTransaction="true">
+        <preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select case when count(*) > 0 then 1 else 0 end from (
+        			select count(*) from rfp_quote_network_combination comb 
+					group by comb.name
+					having count(*) > 1) w
+        	</sqlCheck>
+        </preConditions>
+        <comment>Remove duplicates from rfp_quote_network_combination</comment>
+        <sql>
+	        update rfp_quote_network 
+			set rfp_quote_network_combination_id = (
+				select rfp_quote_network_combination_id from rfp_quote_network_combination 
+				where name = (select name from rfp_quote_network_combination c where c.rfp_quote_network_combination_id = rfp_quote_network.rfp_quote_network_combination_id)
+				order by rfp_quote_network_combination_id
+				limit 1)
+			where rfp_quote_network_combination_id is not null;
+			
+			delete from rfp_quote_network_combination
+			where not exists (
+				select 1 from rfp_quote_network 
+				where rfp_quote_network_combination_id = rfp_quote_network_combination.rfp_quote_network_combination_id);	
+        </sql>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="21-08-17 16:00">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select case when count(*) > 0 then 1 else 0 end from (
+        			select count(*) from rfp_quote_network_combination comb 
+					group by comb.name
+					having count(*) > 1) w
+        	</sqlCheck>
+        </preConditions>
+        <comment>Add unique constraint to rfp_quote_network_combination.name</comment> 
+        <addUniqueConstraint constraintName="uc_rfp_quote_network_combination_name" columnNames="name" tableName="rfp_quote_network_combination"/>
+        <rollback>
+        	<dropUniqueConstraint tableName="rfp_quote_network_combination" constraintName="uc_rfp_quote_network_combination_name"/>
+        </rollback>
+    </changeSet>
+    
+    
+    <changeSet author="golovchenkoaa" id="21-08-17 14:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="administrative_fee"/>
+            </not>
+        </preConditions>
+        <comment>Added new table administrative_fee</comment>
+        <createTable tableName="administrative_fee">
+            <column name="administrative_fee_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="carrier_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_administrative_fee_carrier_id" 
+             				 referencedTableName="carrier" 
+             				 referencedColumnNames="carrier_id"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+             	<constraints nullable="false"/>
+            </column>
+            <column name="value" type="FLOAT">
+             	<constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="administrative_fee"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="21-08-17 22:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote_option_network" columnName="administrative_fee_id"/>
+            </not>
+        </preConditions>
+        <comment>Added FK for administrative_fee table</comment>
+        <addColumn tableName="rfp_quote_option_network">
+            <column name="administrative_fee_id" type="BIGINT">
+            	<constraints nullable="true" 
+             				 foreignKeyName="fk_rfp_quote_option_network_fee_id" 
+             				 referencedTableName="administrative_fee" 
+             				 referencedColumnNames="administrative_fee_id"/>
+            </column>
+        </addColumn>
+        <rollback>
+            <dropColumn tableName="rfp_quote_option_network" columnName="administrative_fee_id"/>
+        </rollback>
+    </changeSet>
+     
+    <changeSet author="golovchenkoaa"  id="21-08-17 22:30" runInTransaction="true">
+        <preConditions onFail="MARK_RAN">
+        	<tableIsEmpty tableName="administrative_fee"/>
+        </preConditions>
+        <comment>Added default administrative_fee values for UHC and Anthem</comment>
+        <sql><![CDATA[
+        	INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'UHC'), 'Using my own third party HSA banking provider - $0.00', 0.0);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'UHC'), 'UnitedHealthcare HSA - $0.00 PCPM', 0.0);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'), 'Using my own third party HSA banking provider - $0.00', 0.0);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'), 'Act Wise CDHP HSA (Recommended) - $2.25 PCPM', 2.25);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'), 'Act Wise CDHP HSA & Limited Purpose FSA - $3.40 PCPM', 3.4);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'), 'Health Equity - $2.50 PCPM', 2.5);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS'), 'BenefitWallet - $2.50 PCPM', 2.5);
+        ]]></sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-25-2017 13:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="broker" columnName="bcc"/>
+            </not>
+        </preConditions>
+        <comment>Add bcc column to the broker table</comment>
+        <addColumn tableName="broker">
+            <column name="bcc" type="VARCHAR(255)"/>
+        </addColumn>
+        <rollback>
+            <dropColumn columnName="bcc" tableName="broker"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="23-08-17 19:00">
+        <comment>Updating incorrect network_count values in network combinations</comment>
+        <sql>
+            UPDATE rfp_quote_network_combination SET network_count = 1
+            WHERE lower(name) like 'single%' and network_count != 1;
+        </sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-29-2017 12:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client" columnName="archived"/>
+            </not>
+        </preConditions>
+        <comment>Add archived column to the client table</comment>
+        <addColumn tableName="client">
+            <column name="archived" type="bit(1)" defaultValueBoolean="false"/>
+        </addColumn>
+        <rollback>
+            <dropColumn columnName="archived" tableName="client"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="30-08-17 11:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="ext_product"/>
+            </not>
+        </preConditions>
+        <comment>Added new table ext_product</comment>
+        <createTable tableName="ext_product">
+            <column name="ext_product_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+             	<constraints nullable="false"/>
+            </column>
+            <column name="display_name" type="VARCHAR(255)">
+             	<constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="ext_product"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="30-08-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="client_ext_product"/>
+            </not>
+        </preConditions>
+        <comment>Added new table client_ext_product</comment>
+        <createTable tableName="client_ext_product">
+            <column name="client_ext_product_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="client_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_client_ext_product_client_id" 
+             				 referencedTableName="client" 
+             				 referencedColumnNames="client_id"/>
+            </column>
+            <column name="ext_product_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_client_ext_product_product_id" 
+             				 referencedTableName="ext_product" 
+             				 referencedColumnNames="ext_product_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="client_ext_product"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="30-08-17 12:30" runInTransaction="true">
+        <preConditions onFail="MARK_RAN">
+        	<tableIsEmpty tableName="ext_product"/>
+        </preConditions>
+        <comment>Added default ext_product values</comment>
+        <sql><![CDATA[
+        	INSERT INTO ext_product (name, display_name) VALUES ('LIFE', 'Basic Life/AD&D'); 
+			INSERT INTO ext_product (name, display_name) VALUES ('STD', 'Short Term Disability'); 
+			INSERT INTO ext_product (name, display_name) VALUES ('LTD', 'Long Term Disability'); 
+		]]></sql>
+    </changeSet>
+
+    <changeSet author="artur.fenko" id="08-31-17 13:00">
+        <comment>Insert UHC on-boarding enrollment questions</comment>
+        <sqlFile path="../scripts/db.uhc.onboarding.enrollment_info.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="09-05-17 15:45">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">SELECT COUNT(*) FROM carrier WHERE name = 'HEALTHNET' AND display_name = 'Healthnet';</sqlCheck>
+        </preConditions>
+        <comment>Updating Healthnet to Health Net in carrier table</comment>
+        <update tableName="carrier">
+            <column name="display_name" value="Health Net"/>
+            <where>
+                name = 'HEALTHNET' AND display_name = 'Healthnet'
+            </where>
+        </update>
+        <rollback>
+            <update tableName="carrier">
+                <column name="display_name" value="Healthnet"/>
+                <where>
+                    name = 'HEALTHNET' AND display_name = 'Health Net'
+                </where>
+            </update>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="ebrandell" id="09-05-17 18:05">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network WHERE name = 'DPPO Network' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL');
+            </sqlCheck>
+        </preConditions>
+        <comment>MediExcel DPPO Network addition</comment>
+        <sql>
+            INSERT INTO network (carrier_id,name,type,tier)
+            VALUES ((SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL'),'DPPO Network','DPPO','TIER_1_FULL');
+        </sql>
+        <rollback>
+            DELETE FROM network
+            WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL') AND name = 'DPPO Network';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="09-05-17 18:10">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network
+                WHERE name = 'DHMO Network' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL');
+            </sqlCheck>
+        </preConditions>
+        <comment>MediExcel DHMO Network addition</comment>
+        <sql>
+            INSERT INTO network (carrier_id,name,type,tier)
+            VALUES ((SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL'),'DHMO Network','DHMO','TIER_1_FULL');
+        </sql>
+        <rollback>
+            DELETE FROM network
+            WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL') AND name = 'DHMO Network';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="09-05-17 18:15">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT COUNT(*) FROM network
+                WHERE name = 'MediExcel Network' AND carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL');
+            </sqlCheck>
+        </preConditions>
+        <comment>MediExcel HMO Network addition</comment>
+        <sql>
+            INSERT INTO network (carrier_id,name,type,tier)
+            VALUES ((SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL'),'MediExcel Network','HMO','TIER_1_FULL');
+        </sql>
+        <rollback>
+            DELETE FROM network
+            WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'MEDIEXCEL') AND name = 'MediExcel Network';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="09-06-17 05:47">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="1">
+                SELECT COUNT(*) FROM rider_meta WHERE rider_code = 'BDX' AND selectable = b'1';
+            </sqlCheck>
+        </preConditions>
+        <comment>Update BDX rider to non-selectable</comment>
+        <sql>
+            UPDATE rider_meta SET selectable=b'0' WHERE rider_code = 'BDX' AND selectable = b'1';
+        </sql>
+        <rollback>
+            UPDATE rider_meta SET selectable=b'1' WHERE rider_code = 'BDX' AND selectable = b'0';
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="04-08-17 12:00" runInTransaction="true">
+        <preConditions onFail="MARK_RAN">
+        	<and>
+        	<sqlCheck expectedResult="0">
+        		select count(*) from administrative_fee 
+        		where carrier_id = (select carrier_id from carrier where name = 'ANTHEM_CLEAR_VALUE');
+        	</sqlCheck>
+        	<sqlCheck expectedResult="1">
+        		select count(*) from carrier where name = 'ANTHEM_CLEAR_VALUE';
+        	</sqlCheck>
+        	</and>
+        </preConditions>
+        <comment>Added administrative_fee values for Anthem Clear Value</comment>
+        <sql><![CDATA[
+        	INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_CLEAR_VALUE'), 'Act Wise CDHP HSA (Recommended) - $2.25 PCPM', 2.25);
+			
+			INSERT INTO administrative_fee (carrier_id, name, value) 
+			VALUES ((select carrier_id from carrier where name = 'ANTHEM_CLEAR_VALUE'), 'Act Wise CDHP HSA & Limited Purpose FSA - $3.40 PCPM', 3.40);
+        ]]></sql>
+        <rollback>
+        	<sql><![CDATA[
+        	DELETE FROM administrative_fee 
+            WHERE carrier_id = (select carrier_id from carrier where name = 'ANTHEM_CLEAR_VALUE')
+            AND name in ('Act Wise CDHP HSA (Recommended) - $2.25 PCPM', 'Act Wise CDHP HSA & Limited Purpose FSA - $3.40 PCPM');
+        	]]></sql> 
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="04-08-17 12:30" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from carrier where name = 'ANTHEM_CLEAR_VALUE';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Set default administrative_fee values for Anthem Clear Value</comment>
+        <sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_version qv on qv.rfp_quote_version_id = rqon.rfp_quote_version_id
+				inner join rfp_submission sub on sub.rfp_submission_id = qv.rfp_submission_id
+				inner join rfp_carrier carr on carr.rfp_carrier_id = sub.rfp_carrier_id
+				inner join administrative_fee fee 
+					on fee.carrier_id = carr.carrier_id 
+					and name = 'Act Wise CDHP HSA (Recommended) - $2.25 PCPM'
+			set rqon.administrative_fee_id = fee.administrative_fee_id 
+			where carr.carrier_id = (select carrier_id from carrier where name = 'ANTHEM_CLEAR_VALUE');
+        ]]></sql>
+        <rollback>
+        	<sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_version qv on qv.rfp_quote_version_id = rqon.rfp_quote_version_id
+				inner join rfp_submission sub on sub.rfp_submission_id = qv.rfp_submission_id
+				inner join rfp_carrier carr on carr.rfp_carrier_id = sub.rfp_carrier_id	
+			set rqon.administrative_fee_id = null
+			where carr.carrier_id = (select carrier_id from carrier where name = 'ANTHEM_CLEAR_VALUE');
+        	]]></sql> 
+        </rollback>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa" id="08-09-17 13:00" runInTransaction="true">
+        <preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        	select count(*) from ext_product where name in ('MEDICAL', 'DENTAL', 'VISION');
+        	</sqlCheck>
+        </preConditions>
+        <comment>Added new ext_product values</comment>
+        <sql><![CDATA[
+        	INSERT INTO ext_product (name, display_name) VALUES ('MEDICAL', 'Medical'); 
+			INSERT INTO ext_product (name, display_name) VALUES ('DENTAL', 'Dental'); 
+			INSERT INTO ext_product (name, display_name) VALUES ('VISION', 'Vision'); 
+		]]></sql>
+		<rollback>
+        	<sql>
+        	delete from ext_product where name in ('MEDICAL', 'DENTAL', 'VISION');
+        	</sql> 
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="08-09-17 13:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="client_rfp_product"/>
+            </not>
+        </preConditions>
+        <comment>Added new table client_rfp_product</comment>
+        <createTable tableName="client_rfp_product">
+            <column name="client_rfp_product_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="client_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_client_rfp_product_client_id" 
+             				 referencedTableName="client" 
+             				 referencedColumnNames="client_id"/>
+            </column>
+            <column name="ext_product_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_client_rfp_product_product_id" 
+             				 referencedTableName="ext_product" 
+             				 referencedColumnNames="ext_product_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="client_rfp_product"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="ebrandell" id="09-08-17 17:24">
+        <comment>Update out to bid reason to be larger character count</comment>
+        <modifyDataType tableName="client" columnName="out_to_bid_reason" newDataType="varchar(2000)"/>
+        <rollback>
+            <modifyDataType tableName="client" columnName="out_to_bid_reason" newDataType="varchar(255)"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="09-13-17 00:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="broker_config"/>
+            </not>
+        </preConditions>
+        <comment>Added new table broker_config</comment>
+        <createTable tableName="broker_config">
+            <column name="broker_config_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="broker_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_broker_config_broker_id" 
+             				 referencedTableName="broker" 
+             				 referencedColumnNames="broker_id"/>
+            </column>
+            <column name="type" type="VARCHAR(30)">
+             	<constraints nullable="false" /> 
+            </column>
+            <column name="data" type="TEXT">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="modify_by" type="VARCHAR(255)">
+             	<constraints nullable="false" /> 
+            </column>
+            <column name="modify_date" type="DATETIME">
+             	<constraints nullable="false" /> 
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="broker_config"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="golovchenkoaa"  id="15-09-17 17:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from carrier where name = 'ANTHEM_BLUE_CROSS';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Set default administrative_fee values for Anthem Blue Cross</comment>
+        <sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_version qv on qv.rfp_quote_version_id = rqon.rfp_quote_version_id
+				inner join rfp_submission sub on sub.rfp_submission_id = qv.rfp_submission_id
+				inner join rfp_carrier carr on carr.rfp_carrier_id = sub.rfp_carrier_id
+				inner join rfp_quote_network rqnet on rqnet.rfp_quote_network_id = rqon.rfp_quote_network_id
+				inner join network net on net.network_id = rqnet.network_id
+				inner join administrative_fee fee 
+					on fee.carrier_id = carr.carrier_id 
+					and fee.name = 'Using my own third party HSA banking provider - $0.00'
+			set rqon.administrative_fee_id = fee.administrative_fee_id 
+			where carr.carrier_id = (select carrier_id from carrier c where c.name = 'ANTHEM_BLUE_CROSS')
+			and rqon.administrative_fee_id is null
+			and net.type = 'HSA';
+        ]]></sql>
+        <rollback>
+        	<sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_version qv on qv.rfp_quote_version_id = rqon.rfp_quote_version_id
+				inner join rfp_submission sub on sub.rfp_submission_id = qv.rfp_submission_id
+				inner join rfp_carrier carr on carr.rfp_carrier_id = sub.rfp_carrier_id	
+				inner join rfp_quote_network rqnet on rqnet.rfp_quote_network_id = rqon.rfp_quote_network_id
+				inner join network net on net.network_id = rqnet.network_id
+			set rqon.administrative_fee_id = null
+			where carr.carrier_id = (select carrier_id from carrier where name = 'ANTHEM_BLUE_CROSS')
+			and net.type = 'HSA';
+        	]]></sql> 
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="18-09-17 14:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from carrier where name = 'UHC';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Set default administrative_fee values for UnitedHealthcare</comment>
+        <sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_version qv on qv.rfp_quote_version_id = rqon.rfp_quote_version_id
+				inner join rfp_submission sub on sub.rfp_submission_id = qv.rfp_submission_id
+				inner join rfp_carrier carr on carr.rfp_carrier_id = sub.rfp_carrier_id
+				inner join rfp_quote_network rqnet on rqnet.rfp_quote_network_id = rqon.rfp_quote_network_id
+				inner join network net on net.network_id = rqnet.network_id
+				inner join administrative_fee fee 
+					on fee.carrier_id = carr.carrier_id 
+					and fee.name = 'Using my own third party HSA banking provider - $0.00'
+			set rqon.administrative_fee_id = fee.administrative_fee_id 
+			where carr.carrier_id = (select carrier_id from carrier c where c.name = 'UHC')
+			and rqon.administrative_fee_id is null
+			and net.type = 'HSA';
+        ]]></sql>
+        <rollback>
+        	<sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_version qv on qv.rfp_quote_version_id = rqon.rfp_quote_version_id
+				inner join rfp_submission sub on sub.rfp_submission_id = qv.rfp_submission_id
+				inner join rfp_carrier carr on carr.rfp_carrier_id = sub.rfp_carrier_id	
+				inner join rfp_quote_network rqnet on rqnet.rfp_quote_network_id = rqon.rfp_quote_network_id
+				inner join network net on net.network_id = rqnet.network_id
+			set rqon.administrative_fee_id = null
+			where carr.carrier_id = (select carrier_id from carrier where name = 'UHC')
+			and net.type = 'HSA';
+        	]]></sql> 
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="18-09-17 14:30" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select (case when count(*) > 0 then 1 else 0 end)
+        		from rfp_quote_option_network where administrative_fee_id is not null;
+        	</sqlCheck>
+        </preConditions>
+        <comment>Remove administrative_fee values for non-HSA rfp quote option networks</comment>
+        <sql><![CDATA[
+        	update rfp_quote_option_network rqon
+				inner join rfp_quote_network rqnet on rqnet.rfp_quote_network_id = rqon.rfp_quote_network_id
+				inner join network net on net.network_id = rqnet.network_id
+			set rqon.administrative_fee_id = null
+			where net.type = 'HSA'
+			and rqon.administrative_fee_id is not null;
+        ]]></sql>
+        <!-- Rollback for updated incorrect data not needed. Back to incorrect? -->
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="19-09-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="rfp_plan"/>
+            </not>
+        </preConditions>
+        <comment>Added new table rfp_plan</comment>
+        <createTable tableName="rfp_plan">
+            <column name="rfp_plan_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="plan_type" type="VARCHAR(30)">
+             	<constraints nullable="false"/>
+            </column>
+            <column name="rfp_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_rfp_plan_rfp_id" 
+             				 referencedTableName="rfp" 
+             				 referencedColumnNames="rfp_id"/>
+            </column>
+            <column name="eap" type="BIT(1)"/>
+            <column name="visits" type="INTEGER"/>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="rfp_plan"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="19-09-17 18:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="rfp_class"/>
+            </not>
+        </preConditions>
+        <comment>Added new table rfp_class</comment>
+        <createTable tableName="rfp_class">
+            <column name="rfp_class_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+             	<constraints nullable="false"/>
+            </column>
+            <column name="waiver_of_premium" type="BIT(1)"/>
+            <column name="death_benefit" type="BIT(1)"/>
+            <column name="conversion" type="BIT(1)"/>
+            <column name="portability" type="BIT(1)"/>
+            <column name="percentage" type="FLOAT"/>
+            <column name="waiting_period_accident" type="INTEGER"/>
+            <column name="waiting_period_sickness" type="INTEGER"/>
+            <column name="condition_exclusion" type="VARCHAR(255)"/>
+            <column name="condition_exclusion_other" type="VARCHAR(255)"/>
+            <column name="elimination_period" type="INTEGER"/>
+            <column name="occupation_definition" type="VARCHAR(255)"/>
+            <column name="occupation_definition_other" type="VARCHAR(255)"/>
+            <column name="abuse_limitation" type="VARCHAR(255)"/>
+            <column name="abuse_limitation_other" type="VARCHAR(255)"/>
+            <column name="premiums_paid" type="VARCHAR(255)"/>
+            <column name="rfp_plan_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_rfp_class_rfp_plan_id" 
+             				 referencedTableName="rfp_plan" 
+             				 referencedColumnNames="rfp_plan_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="rfp_class"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="19-09-17 19:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="rfp_rate"/>
+            </not>
+        </preConditions>
+        <comment>Added new table rfp_rate</comment>
+        <createTable tableName="rfp_rate">
+            <column name="rfp_rate_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+    		<column name="current_life" type="FLOAT"/>
+            <column name="renewal_life" type="FLOAT"/>
+            <column name="current_add" type="FLOAT"/>
+            <column name="renewal_add" type="FLOAT"/>
+            <column name="current" type="FLOAT"/>
+            <column name="renewal" type="FLOAT"/>
+            <column name="employee" type="BIT(1)"/>
+            <column name="employee_t" type="BIT(1)"/>
+            <column name="spouse" type="BIT(1)"/>
+            <column name="spouse_based" type="VARCHAR(255)"/>
+           	<column name="rate_emp_add" type="FLOAT"/>
+            <column name="rate_spouse_add" type="FLOAT"/>
+            <column name="rate_child_life" type="FLOAT"/>
+            <column name="rate_child_add" type="FLOAT"/>
+            <column name="rfp_plan_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_rfp_rate_rfp_plan_id" 
+             				 referencedTableName="rfp_plan" 
+             				 referencedColumnNames="rfp_plan_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="rfp_rate"/>
+        </rollback>
+    </changeSet>
+     
+    <changeSet author="golovchenkoaa" id="19-09-17 19:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="rfp_rate_age"/>
+            </not>
+        </preConditions>
+        <comment>Added new table rfp_rate_age</comment>
+        <createTable tableName="rfp_rate_age">
+            <column name="rfp_rate_age_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+    		<column name="range_from" type="INTEGER"/>
+            <column name="range_to" type="INTEGER"/>
+            <column name="current_emp" type="FLOAT"/>
+            <column name="current_emp_t" type="FLOAT"/>
+            <column name="current_spouse" type="FLOAT"/>
+            <column name="renewal_emp" type="FLOAT"/>
+            <column name="renewal_emp_t" type="FLOAT"/>
+            <column name="renewal_spouse" type="FLOAT"/>
+            <column name="current" type="FLOAT"/>
+            <column name="renewal" type="FLOAT"/>
+            <column name="rfp_rate_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_rfp_rate_age_rfp_rate_id" 
+             				 referencedTableName="rfp_rate" 
+             				 referencedColumnNames="rfp_rate_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="rfp_rate_age"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="20-09-17 16:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp" columnName="alt_request"/>
+            </not>
+        </preConditions>
+        <comment>Added quote requests parameters to rfp table</comment>
+        <addColumn tableName="rfp">
+            <column name="quote_alt" type="BIT(1)"/>
+            <column name="alt_request" type="VARCHAR(1000)"/>
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="rfp" columnName="quote_alt"/>
+      		<dropColumn tableName="rfp" columnName="alt_request"/>
+      	</rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="21-09-17 14:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from rfp_carrier where category in ('LIFE', 'STD', 'LTD');
+        	</sqlCheck>
+        </preConditions>
+        <comment>Add new product rfp_carriers for UHC and Anthem</comment>
+        <sql><![CDATA[
+        INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name = 'UHC'), 'LIFE');
+		INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name = 'UHC'), 'STD');
+		INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name = 'UHC'), 'LTD');
+		
+		INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name = 'ANTHEM_BLUE_CROSS'), 'LIFE');
+		INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name = 'ANTHEM_BLUE_CROSS'), 'STD');
+		INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE name = 'ANTHEM_BLUE_CROSS'), 'LTD');
+
+        INSERT INTO rfp_carrier (carrier_id, category) SELECT carrier_id, 'LIFE' FROM carrier WHERE name = 'ANTHEM_CLEAR_VALUE';
+		INSERT INTO rfp_carrier (carrier_id, category) SELECT carrier_id, 'STD' FROM carrier WHERE name = 'ANTHEM_CLEAR_VALUE';
+		INSERT INTO rfp_carrier (carrier_id, category) SELECT carrier_id, 'LTD' FROM carrier WHERE name = 'ANTHEM_CLEAR_VALUE';
+        
+        ]]></sql>
+        <rollback>
+      		<sql>
+      		delete from rfp_carrier where category in ('LIFE', 'STD', 'LTD');
+      		</sql>
+      	</rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="09-22-17 10:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="rfp_quote" columnName="viewed"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="rfp_quote">
+            <column name="viewed" type="bit(1)" valueBoolean="true" defaultValueBoolean="false"/>
+        </addColumn>
+        <rollback>
+            <dropColumn columnName="viewed" tableName="rfp_quote"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="akorchak" id="09-26-17 10:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client" columnName="declined_outside"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="client">
+            <column name="declined_outside" type="bit(1)" valueBoolean="false" defaultValueBoolean="true"/>
+        </addColumn>
+        <rollback>
+            <dropColumn columnName="declined_outside" tableName="client"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="27-09-17 13:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from question where code = 'future_recurring';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Remove unactual Client Questionnaire questions for Sections 7</comment>
+        	<sqlFile path="../scripts/db.update_questionnaire_static_data_10.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <rollback>
+        	<sqlFile path="../scripts/db.update_questionnaire_static_data_10-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="27-09-17 18:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from question where code = 'wa_home_health';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Add/Update Client Questionnaire questions for Sections 7, 8, 9, 10</comment>
+       	<sqlFile path="../scripts/db.update_questionnaire_static_data_9.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <rollback>
+        	<sqlFile path="../scripts/db.update_questionnaire_static_data_9-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        </rollback>
+    </changeSet>
+
+    
+    <changeSet author="golovchenkoaa" id="28-09-17 21:00">
+        <preConditions onFail="MARK_RAN">
+        	<and>
+        		<columnExists tableName="rfp_plan" columnName="eap"/>
+        		<columnExists tableName="rfp_plan" columnName="visits"/>
+        	</and>
+        </preConditions>
+        <comment>Removed extra attributes for LTD product from rfp_plan table</comment>
+        <dropColumn tableName="rfp_plan" columnName="eap"/>
+        <dropColumn tableName="rfp_plan" columnName="visits"/>
+        <rollback>
+      		<addColumn tableName="rfp_plan">
+	            <column name="eap" type="BIT(1)"/>
+	            <column name="visits" type="INTEGER"/>
+	        </addColumn>
+      	</rollback>
+    </changeSet>
+    
+ 	<changeSet author="golovchenkoaa" id="28-09-17 21:30">
+        <preConditions onFail="MARK_RAN">
+        	<and>
+        		<not>
+                	<columnExists tableName="rfp" columnName="eap"/>
+                	<columnExists tableName="rfp" columnName="visits"/>
+            	</not>
+        	</and>
+        </preConditions>
+        <comment>Added extra attributes for LTD product in rfp table</comment>
+        <addColumn tableName="rfp">
+            <column name="eap" type="BIT(1)"/>
+            <column name="visits" type="INTEGER"/>
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="rfp" columnName="eap"/>
+      		<dropColumn tableName="rfp" columnName="visits"/>
+      	</rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="09-29-17 00:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="attribute"/>
+            </not>
+        </preConditions>
+        <createTable tableName="attribute">
+            <column name="attribute_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(31)">
+             	<constraints nullable="false" /> 
+            </column>
+            <column name="ref" type="BIGINT">
+             	<constraints nullable="false" /> 
+            </column>
+            <column name="name" type="VARCHAR(31)">
+             	<constraints nullable="false" /> 
+            </column>
+            <column name="description" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+        </createTable>
+	<createIndex indexName="idx_attribute_type_ref" tableName="attribute" unique="true">
+	    <column name="type" />
+	    <column name="ref" />
+	</createIndex>
+        <rollback>
+        	<dropTable tableName="attribute"/>
+        </rollback>
+    </changeSet>
+    
+ 	<changeSet author="golovchenkoaa"  id="03-10-17 12:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from question where code = 'no_blue_cross_ppo';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Fix Client Questionnaire questions for Sections 7, 8, 9, 10</comment>
+       	<sqlFile path="../scripts/db.update_questionnaire_static_data_9_fix.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <!-- Rollback for updated incorrect data not needed -->
+    </changeSet>
+
+    <changeSet author="golovchenkoaa"  id="03-10-17 21:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from question where code = 'employer_access_option';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Updated varians text for question employer_access_option</comment>
+        <sql><![CDATA[
+        update variant set `option` = 'Online member enrollment (member performs their own enrollments online)' 
+        where question_id = (select question_id from question where code = 'employer_access_option') 
+		and `option` = 'Online member enrollment';
+		
+		update variant set `option` = 'Online enrollment Census Tool (group administrator loads membership with Excel tool)' 
+        where question_id = (select question_id from question where code = 'employer_access_option') 
+		and `option` = 'Online enrollment Census Tool';
+
+        update variant set `option` = 'Group administrator performs online enrollments (additions, changes and terminations)' 
+        where question_id = (select question_id from question where code = 'employer_access_option') 
+		and `option` = 'Group administrator performs online enrollments';
+        ]]></sql>
+        <!-- Rollback for updated incorrect data not needed -->
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa"  id="03-10-17 17:00">
+    	<preConditions onFail="MARK_RAN">
+        	<columnExists tableName="client" columnName="situs_state"/>
+        </preConditions>
+        <comment>Remove column client.situs_state</comment>
+        <dropColumn tableName="client" columnName="situs_state"/>
+        <rollback>
+        	<addColumn tableName="client">
+            	<column name="situs_state" type="text"/>
+        	</addColumn>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="09-10-17 20:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="broker" columnName="general_agent"/>
+            </not>
+        </preConditions>
+        <comment>Add new column broker.general_agent</comment>
+        <addColumn tableName="broker">
+            <column name="general_agent" type="BIT(1)" />
+        </addColumn>
+        <sql>
+        	update broker set general_agent = 0;
+        </sql>
+        <addNotNullConstraint tableName="broker" columnName="general_agent" columnDataType="BIT(1)"/>
+        <rollback>
+      		<dropColumn tableName="broker" columnName="general_agent"/>
+      	</rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="09-10-17 20:30">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="ext_brokerage_access"/>
+            </not>
+        </preConditions>
+        <comment>Added new table ext_brokerage_access</comment>
+        <createTable tableName="ext_brokerage_access">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="brokerage_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_ext_brokerage_access_broker_id" 
+             				 referencedTableName="broker" 
+             				 referencedColumnNames="broker_id"/>
+            </column>
+            <column name="ext_brokerage_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_ext_brokerage_access_ga_broker_id" 
+             				 referencedTableName="broker" 
+             				 referencedColumnNames="broker_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="ext_brokerage_access"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="09-10-17 21:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="ext_client_access"/>
+            </not>
+        </preConditions>
+        <comment>Added new table ext_client_access</comment>
+        <createTable tableName="ext_client_access">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+    		 <column name="client_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_ext_client_access_client_id" 
+             				 referencedTableName="client" 
+             				 referencedColumnNames="client_id"/>
+            </column>
+            <column name="ext_brokerage_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_ext_client_access_ga_broker_id" 
+             				 referencedTableName="broker" 
+             				 referencedColumnNames="broker_id"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="ext_client_access"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="10-10-17 00:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="account_request"/>
+            </not>
+        </preConditions>
+        <createTable tableName="account_request">
+            <column name="account_request_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="broker_id" type="BIGINT">
+             	<constraints nullable="true" 
+                             foreignKeyName="fk_account_request_broker_id" 
+                             referencedTableName="broker" 
+                             referencedColumnNames="broker_id"/>
+            </column>
+            <column name="broker_name" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="broker_address" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="broker_city" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="broker_state" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="broker_zip" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="broker_email" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="ga_id" type="BIGINT">
+             	<constraints nullable="true" 
+                             foreignKeyName="fk_account_request_ga_id" 
+                             referencedTableName="broker" 
+                             referencedColumnNames="broker_id"/>
+            </column>
+            <column name="ga_name" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="ga_address" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="ga_city" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="ga_state" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="ga_zip" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="agent_full_name" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="agent_email" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="verification_code" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="agent_verified" type="bit(1)" valueBoolean="false" defaultValueBoolean="false"/>
+            <column name="approve" type="bit(1)" valueBoolean="false" defaultValueBoolean="false"/>
+            <column name="deny" type="bit(1)" valueBoolean="false" defaultValueBoolean="false"/>
+            <column name="deny_reason" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="action_by" type="VARCHAR(255)">
+             	<constraints nullable="true" /> 
+            </column>
+            <column name="created" type="DATETIME"/>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="account_request"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="10-12-17 00:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<indexExists tableName="account_request" indexName="idx_account_request_verification_code"/>
+            </not>
+        </preConditions>
+        <createIndex tableName="account_request" indexName="idx_account_request_verification_code" unique="true">
+	    <column name="verification_code" />
+        </createIndex>
+        <rollback>
+        	<dropIndex tableName="account_request" indexName="idx_account_request_verification_code" />
+        </rollback>
+    </changeSet>
+	
+    <changeSet author="golovchenkoaa" id="16-10-17 19:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="document"/>
+            </not>
+        </preConditions>
+        <comment>Added new table document</comment>
+        <createTable tableName="document">
+            <column name="document_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="carrier_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_document_carrier_id" 
+             				 referencedTableName="carrier" 
+             				 referencedColumnNames="carrier_id"/>
+            </column>
+            <column name="file_name" type="VARCHAR(255)" />
+            <column name="file_extension" type="VARCHAR(5)" />
+            <column name="last_updated" type="DATETIME"/>
+    		<column name="s3_key" type="VARCHAR(255)" />
+        </createTable>
+        <addUniqueConstraint columnNames="file_name, carrier_id" tableName="document" 
+        		constraintName="uc_document_file_name_carrier_id"/>
+        <rollback>
+        	<dropTable tableName="document"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="17-10-17 11:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<and>
+            	<columnExists tableName="account_request" columnName="broker_presale_name"/>
+            	<columnExists tableName="account_request" columnName="broker_sales_name"/>
+            	</and> 
+            </not>
+        </preConditions>
+        <comment>Added pre-sale and sales members to account_request table</comment>
+        <addColumn tableName="account_request">
+            <column name="broker_presale_name" type="VARCHAR(255)" afterColumn="broker_name" />
+            <column name="broker_sales_name" type="VARCHAR(255)"  afterColumn="broker_presale_name" />
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="account_request" columnName="broker_presale_name"/>
+      		<dropColumn tableName="account_request" columnName="broker_sales_name"/>
+      	</rollback>
+    </changeSet> 
+    
+    <changeSet author="golovchenkoaa" id="20-10-17 18:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<foreignKeyConstraintExists foreignKeyTableName="benefit" foreignKeyName="fk_benefit_plan_id" />
+            </not>
+        </preConditions>
+        <comment>Added FK to plan table</comment>
+        <addForeignKeyConstraint 
+        		constraintName="fk_benefit_plan_id" 
+        		referencedTableName="plan" 
+        		referencedColumnNames="plan_id"
+        		baseTableName="benefit"
+        		baseColumnNames="plan_id" />
+        <rollback>
+      		<dropForeignKeyConstraint baseTableName="benefit" constraintName="fk_benefit_plan_id" />
+      	</rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="24-10-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<columnExists tableName="rfp_quote_option_network" columnName="network_group"/>
+            </not>
+        </preConditions>
+        <comment>Added Network Group column to rfp_quote_option_network table</comment>
+        <addColumn tableName="rfp_quote_option_network">
+            <column name="network_group" type="VARCHAR(50)" />
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="rfp_quote_option_network" columnName="network_group"/>
+      	</rollback>
+    </changeSet>  
+    
+
+    <changeSet author="lemdy" id="17-10-24 11:05">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <and>
+                    <columnExists tableName="options" columnName="rate_type"/>
+                    <columnExists tableName="options" columnName="monthly_banded_premium"/>
+                    <columnExists tableName="options" columnName="monthly_banded_premium_renewal"/>
+                    <columnExists tableName="options" columnName="oos_monthly_banded_premium"/>
+                    <columnExists tableName="options" columnName="oos_monthly_banded_premium_renewal"/>
+                </and>
+            </not>
+        </preConditions>
+        <comment>Added columns that support small group to large group</comment>
+        <addColumn tableName="options">
+            <column name="rate_type" type="VARCHAR(30)"/>
+            <column name="monthly_banded_premium" type="DOUBLE"/>
+            <column name="monthly_banded_premium_renewal" type="DOUBLE"/>
+            <column name="oos_monthly_banded_premium" type="DOUBLE"/>
+            <column name="oos_monthly_banded_premium_renewal" type="DOUBLE"/>
+        </addColumn>
+        <sql>
+            UPDATE options SET rate_type = 'COMPOSITE';
+        </sql>
+        <rollback>
+            <dropColumn tableName="options" columnName="rate_type"/>
+            <dropColumn tableName="options" columnName="monthly_banded_premium"/>
+            <dropColumn tableName="options" columnName="monthly_banded_premium_renewal"/>
+            <dropColumn tableName="options" columnName="oos_monthly_banded_premium"/>
+            <dropColumn tableName="options" columnName="oos_monthly_banded_premium_renewal"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="lemdy" id="17-10-24 11:12">
+        <comment>Setting default value for rate_type in Option table </comment>
+
+        <addDefaultValue columnDataType="VARCHAR(30)"
+          columnName="rate_type"
+          defaultValue="COMPOSITE"
+          tableName="options"/>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="25-10-17 20:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from question where code = 'speciality_waiting_period_begin_date';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Updated Employer Application questions for Sections 4</comment>
+        	<sqlFile path="../scripts/db.update_employer_application_static_data_1.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <rollback>
+        	<sqlFile path="../scripts/db.update_employer_application_static_data_1-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="10-26-17 00:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="user_attribute"/>
+            </not>
+        </preConditions>
+        <createTable tableName="user_attribute">
+            <column name="user_attribute_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="auth_id" type="VARCHAR(30)">
+                <constraints nullable="false" /> 
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false" /> 
+            </column>
+        </createTable>
+	<createIndex indexName="idx_user_attribute_auth_id" tableName="user_attribute" unique="false">
+	    <column name="auth_id" />
+	</createIndex>
+        <rollback>
+            <dropTable tableName="user_attribute"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="30-10-17 02:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="1">
+        		select count(*) from variant where `option` = 'Other (Please provide detailed information)';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Updated variant text for question code 'speciality_waiting_period_begin_date'</comment>
+        <sql>
+        	update variant set `option` = 'Other (Please specify waiting period with Anthem)'
+        	where `option` = 'Other (Please provide detailed information)';
+        </sql>
+        <!-- Rollback for updated incorrect data not needed -->
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="30-10-17 12:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<columnExists tableName="document" columnName="mime_type"/>
+            </not>
+        </preConditions>
+        <comment>Added Mime Type column to document table</comment>
+        <addColumn tableName="document">
+            <column name="mime_type" type="VARCHAR(255)" afterColumn="file_extension"/>
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="document" columnName="mime_type"/>
+      	</rollback>
+    </changeSet>
+
+  <changeSet author="lemdy" id="10-30-17 16:03">
+    <preConditions onFail="MARK_RAN">
+      <sqlCheck expectedResult="1">
+        SELECT count(*) FROM variant where question_id = (select question_id from question where code = "is_tpa_broker");
+      </sqlCheck>
+    </preConditions>
+    <comment>Insert new variant for question code 'is_tpa_broker'</comment>
+    <sql>
+      insert into variant (`number`, `option`, question_id)
+      select 2, 'No', question_id from question where code = 'is_tpa_broker';
+    </sql>
+    <!-- Rollback for updated incorrect data not needed -->
+  </changeSet>
+
+
+    <changeSet author="akorchak" id="10-28-17 00:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT count(*) from network n 
+                WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'SHARP_HEALTH_PLANS') 
+                AND n.name = 'Sharp PPO' 
+                AND n.type = 'PPO';
+            </sqlCheck>
+        </preConditions>
+        <comment>Insert 'Sharp PPO' network if it doesn't exist</comment>
+        <sql>
+                INSERT INTO network (carrier_id, name, type, tier)
+                VALUES ((SELECT carrier_id FROM carrier WHERE name = 'SHARP_HEALTH_PLANS'),'Sharp PPO','PPO','TIER_1_FULL');
+        </sql>
+    </changeSet>
+
+    <changeSet author="akorchak" id="10-28-17 01:00">
+        <preConditions onFail="MARK_RAN">
+            <sqlCheck expectedResult="0">
+                SELECT count(*) from network n 
+                WHERE carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'SHARP_HEALTH_PLANS') 
+                AND n.name = 'Sharp HSA' 
+                AND n.type = 'HSA';
+            </sqlCheck>
+        </preConditions>
+        <comment>Insert 'Sharp HSA' network if it doesn't exist</comment>
+        <sql>
+                INSERT INTO network (carrier_id,name,type,tier)
+                VALUES ((SELECT carrier_id FROM carrier WHERE name = 'SHARP_HEALTH_PLANS'),'Sharp HSA','HSA','TIER_1_FULL');
+        </sql>
+    </changeSet>
+
+
+	<changeSet author="golovchenkoaa" id="31-10-17 11:00">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="1">
+				select case when count(*) > 0 then 1 else 0 end from (
+        			select count(*) from question where code in (
+						'standard_method_for_initial_enrollment',
+						'standard_method_for_ongoing_enrollment',
+						'employer_access_option')
+					and multiselectable = true) q
+        	</sqlCheck>
+		</preConditions>
+		<comment>Changed multiselectable flag for some questions</comment>
+		<sql>
+		update question set multiselectable = false where code in (
+			'standard_method_for_initial_enrollment',
+			'standard_method_for_ongoing_enrollment',
+			'employer_access_option');
+		update variant set alias = null where question_id in (select question_id from question where code in (
+			'standard_method_for_initial_enrollment',
+			'standard_method_for_ongoing_enrollment',
+			'employer_access_option'));
+		</sql>
+		<!-- Rollback for updated incorrect data not needed -->
+	</changeSet>
+	
+	<changeSet author="golovchenkoaa"  id="31-10-17 20:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from question where code = 'orthodontic_banding_by';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Add Client Questionnaire questions for Sections 11</comment>
+       	<sqlFile path="../scripts/db.update_questionnaire_static_data_11.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <rollback>
+        	<sqlFile path="../scripts/db.update_questionnaire_static_data_11-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="31-10-17 22:00">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="1">
+				select case when count(*) > 0 then 1 else 0 end from (
+        			select count(*) from question where code in ('eoc_will_be_sent_out_to')
+					and multiselectable = true) q
+        	</sqlCheck>
+		</preConditions>
+		<comment>Changed multiselectable flag for some questions</comment>
+		<sql>
+		update question set multiselectable = false where code in ('eoc_will_be_sent_out_to');
+		update variant set alias = null where question_id in (select question_id from question where code in ('eoc_will_be_sent_out_to'));
+		</sql>
+		<!-- Rollback for updated incorrect data not needed -->
+	</changeSet>
+	
+	<changeSet author="golovchenkoaa" id="01-11-17 01:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="1">
+				select case when count(*) > 0 then 1 else 0 end from (
+        			select a.client_id, a.question_id, count(*) from answer a, question q
+					where q.question_id = a.question_id
+					and q.multiselectable = false
+					group by a.client_id, a.question_id
+					having count(*) > 1) q
+        	</sqlCheck>
+		</preConditions>
+		<comment>Delete multiple answers for NOT multiselectable questions</comment>
+		<sql>
+			delete a1 from answer a1, answer dupl, question q
+			where a1.answer_id > dupl.answer_id 
+			and a1.client_id = dupl.client_id
+			and a1.question_id = dupl.question_id
+			and q.question_id = a1.question_id
+			and q.multiselectable = false;
+		</sql>
+		<!-- Rollback for updated incorrect data not needed -->
+	</changeSet>
+
+	<changeSet author="golovchenkoaa" id="02-11-17 02:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="1">
+				select case when count(*) > 0 then 1 else 0 end from (
+					select count(*) from answer a 
+					inner join question q on q.question_id = a.question_id
+					where exists (select 1 from variant v2 where v2.question_id = q.question_id)
+					and not exists (select 1 from variant v3 where v3.question_id = q.question_id and v3.option = a.value)
+				) q
+        	</sqlCheck>
+		</preConditions>
+		<comment>Set first avaliable variant to answer that has incorrect value (missing in avaliable variants)</comment>
+		<sql>
+			update answer a 
+			inner join question q on q.question_id = a.question_id
+			set a.value = (select v.option from variant v where v.question_id = q.question_id and v.number = 1)
+			where exists (select 1 from variant v2 where v2.question_id = q.question_id)
+			and not exists (select 1 from variant v3 where v3.question_id = q.question_id and v3.option = a.value)
+		</sql>
+		<!-- Rollback for updated incorrect data not needed -->
+	</changeSet>
+	
+	<changeSet author="golovchenkoaa" id="02-11-17 14:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="1">
+				select count(*) from question where code = 'medical_waiting_period_begin_date';
+        	</sqlCheck>
+		</preConditions>
+		<comment>Delete medical_waiting_period_begin_date question</comment>
+		<sql>
+			delete from answer where question_id in (
+				select q.question_id from question q where q.code in ('medical_waiting_period_begin_date'));
+				
+			delete from form_question where question_id in (
+				select q.question_id from question q where q.code in ('medical_waiting_period_begin_date'));
+
+			delete from variant where question_id in (
+				select question_id from question where code in ('medical_waiting_period_begin_date'));
+	
+			delete from question where code in ('medical_waiting_period_begin_date');
+			
+			/* fix and trim some variants */
+			update variant set `option` = 'Date of hire' where `option` = 'Date of hire ';
+			
+			update variant set `option` = '1st of the month following 1 month from date of hire' 
+			where `option` = '1st of the month following 1 month from date of hire ';
+		</sql>
+		<rollback>
+			<sql>
+			insert into question (code, title, multiselectable) values ('medical_waiting_period_begin_date', 'Eligibility/coverage begin date:', false);
+			
+			insert into variant (`number`, `option`, question_id) 
+			select 1, '1st of the month following date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 2, '1st of the month following 1 month from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 3, '1st of the month following 2 months from date of hire*', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 4, '1st of the month following 30 days from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 5, '1st of the month following 60 days from date of hire*', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 6, 'Date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 7, '1 month from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 8, '2 months from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 9, '30 days from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 10, '60 days from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 11, '90 days from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			insert into variant (`number`, `option`, question_id) 
+			select 12, '91 days from date of hire', question_id from question where code = 'medical_waiting_period_begin_date';
+			
+			insert into form_question (required, question_id, form_id, invisible) 
+			select false, q.question_id, f.form_id, false from question q, form f 
+			where q.code in ('medical_waiting_period_begin_date')
+			and f.name = 'anthem-blue-cross-employer-application';
+			</sql>
+		</rollback>
+	</changeSet>
+
+	<changeSet author="akorchak" id="11-02-17 17:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="0">
+			select count(*) from question where code in ('contact_role_1', 'contact_role_2', 'contact_role_3', 'contact_role_4', 'contact_counter');
+			</sqlCheck>
+		</preConditions>
+		<comment>Change contact questions for Sections 1-4</comment>
+		<sqlFile path="../scripts/db.update_questionnaire_static_data_12.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+		<rollback>
+			<sqlFile path="../scripts/db.update_questionnaire_static_data_12-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+		</rollback>
+	</changeSet>
+
+
+  <changeSet author="lemdy" id="11-03-17 14:10" runInTransaction="true">
+    <preConditions onFail="MARK_RAN">
+      <sqlCheck expectedResult="4">
+        select count(*) from variant where variant.option = 'group_administrator' ;
+      </sqlCheck>
+    </preConditions>
+    <comment>Update new question variants</comment>
+    <sql>
+      update variant set `option` = 'Group Administrator' where `option` = 'group_administrator';
+      update variant set `option` = 'Billing Contact' where `option` = 'billing_contact';
+      update variant set `option` = 'Decision Maker' where `option` = 'decision_maker';
+      update variant set `option` = 'Designated HIPAA Representative' where `option` = 'designated_hipaa';
+    </sql>
+    <rollback>
+      <sql>
+        update variant set `option` = 'group_administrator' where `option` = 'Group Administrator';
+        update variant set `option` = 'billing_contact Administrator' where `option` = 'Billing Contact';
+        update variant set `option` = 'decision_maker' where `option` = 'Decision Maker';
+        update variant set `option` = 'designated_hipaa' where `option` = 'Designated HIPAA Representative';
+      </sql>
+    </rollback>
+  </changeSet>
+
+	<changeSet author="akorchak" id="11-07-17 00:00">
+		<preConditions onFail="MARK_RAN">
+			<indexExists indexName="idx_attribute_type_ref" />
+		</preConditions>
+		<comment>Recreate index with unique=false</comment>
+		<dropIndex indexName="idx_attribute_type_ref" tableName="attribute" />
+		<createIndex indexName="idx_attribute_type_ref" tableName="attribute" unique="false">
+		    <column name="type" />
+		    <column name="ref" />
+		</createIndex>
+		<rollback>
+		</rollback>
+	</changeSet>
+	<changeSet author="akorchak" id="11-07-17 01:00">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="0">
+			select count(*) from attribute where `type` = 'DOCUMENT' and `name` ='BENEFIT_SUMMARY';
+			</sqlCheck>
+		</preConditions>
+		<sql>
+		insert into attribute (`type`, ref, name) select 'DOCUMENT', d.`document_id`, 'BENEFIT_SUMMARY' from `document` d ;
+		</sql>
+		<rollback>
+			<sql>
+			delete from attribute where `type` = 'DOCUMENT' and `name` ='BENEFIT_SUMMARY';
+			</sql>
+		</rollback>
+	</changeSet>
+  <changeSet author="lemdy"  id="11-08-17 14:00">
+    <preConditions onFail="MARK_RAN">
+      <sqlCheck expectedResult="0">
+        SELECT count(*) FROM rfp_carrier where category = "DENTAL" and carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'ASSURANT');
+      </sqlCheck>
+    </preConditions>
+    <comment>Add new dental rfp_carrier for UHC and Anthem</comment>
+    <sql>
+      INSERT INTO rfp_carrier (carrier_id, category) VALUES ((SELECT carrier_id FROM carrier WHERE display_name='ASSURANT'),'DENTAL');
+    </sql>
+    <rollback>
+      <sql>
+        DELETE FROM rfp_carrier where category = "DENTAL" and carrier_id = (SELECT carrier_id FROM carrier WHERE name = 'ASSURANT');
+      </sql>
+    </rollback>
+  </changeSet>
+	<changeSet author="golovchenkoaa" id="10-11-17 17:00" runInTransaction="true">
+		<preConditions onFail="MARK_RAN">
+			<sqlCheck expectedResult="0">
+				select count(*) from broker where name = 'Anthem Implementation Manager';
+        	</sqlCheck>
+		</preConditions>
+		<comment>Insert fake broker for Anthem Implementation Managers team</comment>
+		<sql>
+		insert into broker (broker_id, name, broker_token, general_agent)
+		values ((select coalesce(min(b1.broker_id + 1), 10) from broker b1 
+				where not exists (select 1 from broker b2 where b2.broker_id = (b1.broker_id + 1)) limit 1),
+		'Anthem Implementation Manager', '00000000-0000-0000-0000-000000000000', false);
+		</sql>
+		<rollback>
+			<sql>
+			delete from broker where name = 'Anthem Implementation Manager';
+			</sql>
+		</rollback>
+	</changeSet>
+  <changeSet author="akorchak" id="11-13-17 01:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="configuration"/>
+            </not>
+        </preConditions>
+        <createTable tableName="configuration">
+            <column name="configuration_id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="carrier_id" type="BIGINT">
+             	<constraints nullable="false" 
+             				 foreignKeyName="fk_configuration_carrier_id" 
+             				 referencedTableName="carrier" 
+             				 referencedColumnNames="carrier_id"/>
+            </column>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false" /> 
+            </column>
+            <column name="value" type="VARCHAR(255)">
+                <constraints nullable="true" /> 
+            </column>
+        </createTable>
+        <rollback>
+            <dropTable tableName="configuration"/>
+        </rollback>
+  </changeSet>
+  <changeSet author="akorchak" id="11-13-17 02:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="timeline" columnName="overdue_notification_time"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="timeline">
+        	<column name="overdue_notification_time" type="DATE" />
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="timeline" columnName="overdue_notification_time"/>
+      	</rollback>
+  </changeSet>
+
+  <changeSet author="golovchenkoaa" id="13-11-17 15:00" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from form where name = 'kit_requests';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Add questions for MISC - Sections 4</comment>
+       	<sqlFile path="../scripts/db.update_kit_requests_static_data_1.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <rollback>
+        	<sqlFile path="../scripts/db.update_kit_requests_static_data_1-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        </rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="11-17-17 01:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="account_request" columnName="broker_region"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="account_request">
+        	<column name="broker_region" type="VARCHAR(255)" />
+        </addColumn>
+        <rollback>
+      		<dropColumn tableName="account_request" columnName="broker_region"/>
+      	</rollback>
+    </changeSet>
+  
+    <changeSet author="akorchak" id="11-16-17 01:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+                <columnExists tableName="client_rfp_product" columnName="virgin_group"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="client_rfp_product">
+            <column name="virgin_group" type="bit(1)" valueBoolean="false" defaultValueBoolean="false">
+                <constraints nullable="false" /> 
+            </column>
+        </addColumn>
+        <rollback>
+            <dropColumn columnName="virgin_group" tableName="client_rfp_product"/>
+        </rollback>
+    </changeSet>
+  
+    <changeSet author="golovchenkoaa" id="14-11-17 23:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<tableExists tableName="access"/>
+            </not>
+        </preConditions>
+        <comment>Added new table access</comment>
+        <createTable tableName="access">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="origin" type="BIGINT">
+             	<constraints nullable="false"/>
+            </column>
+    		<column name="target" type="BIGINT">
+             	<constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(30)">
+             	<constraints nullable="false"/>
+            </column>
+        </createTable>
+        <rollback>
+        	<dropTable tableName="access"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="14-11-17 23:15">
+        <preConditions onFail="MARK_RAN">
+        	<and>
+        		<tableExists tableName="access"/>
+        		<tableExists tableName="ext_brokerage_access"/>
+        	</and>
+        </preConditions>
+        <comment>Copy data from ext_brokerage_access to access</comment>
+        <sql>
+        	insert into access (origin, target, type)
+        	select ext_brokerage_id, brokerage_id, 'BROKERAGE' from ext_brokerage_access;
+        </sql>
+        <rollback>
+        	<sql>
+        	delete from access where type = 'BROKERAGE';
+        	</sql>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="14-11-17 23:20">
+        <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="ext_brokerage_access"/>
+        </preConditions>
+        <comment>Drop table ext_brokerage_access</comment>
+        <dropTable tableName="ext_brokerage_access"/>
+        <rollback>
+        	<createTable tableName="ext_brokerage_access">
+	            <column name="id" type="BIGINT" autoIncrement="true">
+	                <constraints primaryKey="true" nullable="false"/>
+	            </column>
+	            <column name="brokerage_id" type="BIGINT">
+	             	<constraints nullable="false" 
+	             				 foreignKeyName="fk_ext_brokerage_access_broker_id" 
+	             				 referencedTableName="broker" 
+	             				 referencedColumnNames="broker_id"/>
+	            </column>
+	            <column name="ext_brokerage_id" type="BIGINT">
+	             	<constraints nullable="false" 
+	             				 foreignKeyName="fk_ext_brokerage_access_ga_broker_id" 
+	             				 referencedTableName="broker" 
+	             				 referencedColumnNames="broker_id"/>
+	            </column>
+	        </createTable>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="14-11-17 23:30">
+        <preConditions onFail="MARK_RAN">
+        	<and>
+        		<tableExists tableName="access"/>
+        		<tableExists tableName="ext_client_access"/>
+        	</and>
+        </preConditions>
+        <comment>Copy data from ext_client_access to access</comment>
+        <sql>
+        	insert into access (origin, target, type)
+        	select ext_brokerage_id, client_id, 'CLIENT' from ext_client_access;
+        </sql>
+        <rollback>
+        	<sql>
+        	delete from access where type = 'CLIENT';
+        	</sql>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="14-11-17 23:40">
+        <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="ext_client_access"/>
+        </preConditions>
+        <comment>Drop table ext_client_access</comment>
+        <dropTable tableName="ext_client_access"/>
+        <rollback>
+        	<createTable tableName="ext_client_access">
+	            <column name="id" type="BIGINT" autoIncrement="true">
+	                <constraints primaryKey="true" nullable="false"/>
+	            </column>
+	    		 <column name="client_id" type="BIGINT">
+	             	<constraints nullable="false" 
+	             				 foreignKeyName="fk_ext_client_access_client_id" 
+	             				 referencedTableName="client" 
+	             				 referencedColumnNames="client_id"/>
+	            </column>
+	            <column name="ext_brokerage_id" type="BIGINT">
+	             	<constraints nullable="false" 
+	             				 foreignKeyName="fk_ext_client_access_ga_broker_id" 
+	             				 referencedTableName="broker" 
+	             				 referencedColumnNames="broker_id"/>
+	            </column>
+	        </createTable>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="23-11-17 02:00">
+    	<preConditions onFail="MARK_RAN">
+        	<columnExists tableName="question" columnName="code"/>
+        </preConditions>
+        <comment>Increased the maximum length of the question.code column</comment>
+       	<modifyDataType tableName="question" columnName="code" newDataType="VARCHAR(100)"/>
+        <rollback>
+        	<modifyDataType tableName="question" columnName="code" newDataType="VARCHAR(50)"/>
+        </rollback>
+    </changeSet>
+    
+    <changeSet author="golovchenkoaa" id="23-11-17 02:15" runInTransaction="true">
+    	<preConditions onFail="MARK_RAN">
+        	<sqlCheck expectedResult="0">
+        		select count(*) from question where code = 'should_enrollment_packets_be_mailed_to_physical_address';
+        	</sqlCheck>
+        </preConditions>
+        <comment>Add questions for MISC - Sections 4</comment>
+       	<sqlFile path="../scripts/db.update_kit_requests_static_data_2.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        <rollback>
+        	<sqlFile path="../scripts/db.update_kit_requests_static_data_2-rollback.sql" relativeToChangelogFile="true" encoding="UTF-8"/>
+        </rollback>
+    </changeSet>
+
+
+    <changeSet author="akorchak" id="11-28-17 01:00"  runInTransaction="true">
+        <comment>Update benefit display name</comment>
+        <sql>
+            update benefit_name set display_name = 'Deductible - Individual' where `name` = 'INDIVIDUAL_DEDUCTIBLE' and display_name = 'Deductible';
+            update benefit_name set display_name = 'Deductible - Family' where `name` = 'FAMILY_DEDUCTIBLE' and display_name = 'Family Deductible';
+            update benefit_name set display_name = 'OOPM - Individual' where `name` = 'INDIVIDUAL_OOP_LIMIT' and display_name = 'OOP Limit';
+            update benefit_name set display_name = 'OOPM - Family' where `name` = 'FAMILY_OOP_LIMIT' and display_name = 'Family OOP Limit';
+        </sql>
+        <rollback>
+            update benefit_name set display_name = 'Deductible' where `name` = 'INDIVIDUAL_DEDUCTIBLE' and display_name = 'Deductible - Individual';
+            update benefit_name set display_name = 'Family Deductible' where `name` = 'FAMILY_DEDUCTIBLE' and display_name = 'Deductible - Family';
+            update benefit_name set display_name = 'OOP Limit' where `name` = 'INDIVIDUAL_OOP_LIMIT' and display_name = 'OOPM - Individual';
+            update benefit_name set display_name = 'Family OOP Limit' where `name` = 'FAMILY_OOP_LIMIT' and display_name = 'OOPM - Family';
+        </rollback>
+    </changeSet>
+
+    <changeSet author="akorchak" id="12-06-17 01:00">
+        <preConditions onFail="MARK_RAN">
+            <not>
+            	<columnExists tableName="attribute" columnName="value"/>
+            </not>
+        </preConditions>
+        <addColumn tableName="attribute">
+            <column name="value" type="VARCHAR(255)" />
+        </addColumn>
+        <rollback>
+ 	    <dropColumn tableName="attribute" columnName="value"/>
+      	</rollback>
+    </changeSet>
+    
+</databaseChangeLog>
+

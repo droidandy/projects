@@ -1,0 +1,640 @@
+{
+  "listingSummary": {
+    "listingId": "0068198e-f86c-4f2a-8c1d-86beee402463",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-05-16",
+    "photoCount": 18,
+    "videoCount": 1,
+    "listPrice": {
+      "currencyCode": "NZD",
+      "isPriceUponRequest": true,
+      "isHideListPrice": true
+    },
+    "propertyAddress": {
+      "streetAddress": "903 Lake Hayes - Arrow Junction Highway Lake Hayes",
+      "city": "Queenstown",
+      "stateProvince": "Otago",
+      "stateProvinceCode": "OTA",
+      "postalCode": "9371",
+      "country": "New Zealand",
+      "countryCode": "NZ",
+      "latitude": -44.97555,
+      "longitude": 168.82166
+    },
+    "geographicRegions": [
+      {
+        "type": "CityRegion",
+        "name": "Queenstown"
+      },
+      {
+        "type": "CountryRegion",
+        "name": "New Zealand"
+      },
+      {
+        "type": "StateRegion",
+        "name": "Otago"
+      }
+    ],
+    "mlsNumbers": [
+      "QBS11910"
+    ],
+    "RFGListingId": "WJC4PM",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/wjc4pm",
+    "isCallToShow": true,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Land -Single Family Acreage",
+    "propertyStyle": "Not Applicable",
+    "propertyUse": "Owner Occupied",
+    "propertyName": "903 Lake Hayes - Arrow Junction Highway",
+    "totalBath": 2,
+    "lotSize": "8.97 HA",
+    "buildingArea": "351 Sq. M",
+    "noOfBedrooms": 3,
+    "squareFootage": 3778.1289,
+    "defaultPhotoURL": "//openapi.azureedge.net/F635F5F6-D931-4C64-84C8-500DB5562A90",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-05T05:24:43.663",
+    "agents": [
+      {
+        "id": "288cb575-991d-4181-b208-9bd3bef1a3b2",
+        "name": "Justin Abbiss",
+        "firstName": "Justin",
+        "lastName": "Abbiss",
+        "defaultPhotoURL": "//openapi.azureedge.net/1050EF05-D55B-41F0-BB71-2D1147284D3D",
+        "emailAddress": "justin.abbiss@brownsre.com",
+        "businessPhone": "+64 3 441 0120",
+        "isPrimary": true,
+        "office": {
+          "officeId": "0b644964-97ab-4283-bab0-2021b4f70d3e",
+          "RFGOfficeId": "0002 ",
+          "companyId": "3e2c2667-f390-4782-8961-92eabd6fb5f8",
+          "companyName": "New Zealand Sotheby's International Realty",
+          "RFGCompanyId": "810012",
+          "brandCode": "SIR",
+          "name": "New Zealand Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Correspondence: PO Box 1595 2nd Floor, Mountaineer Building, Crnr Shotover and Rees Streets",
+            "city": "Queenstown",
+            "district": "Queenstown Lakes District",
+            "postalCode": "9300",
+            "country": "New Zealand",
+            "countryCode": "NZ",
+            "latitude": -45.03133,
+            "longitude": 168.659973,
+            "formattedAddress": "9300, New Zealand"
+          },
+          "phoneNumber": "+64 3 441 0120",
+          "emailAddress": "mark.harris@sothebysrealty.com"
+        }
+      },
+      {
+        "id": "43554e02-dd25-4590-b544-eb882d0aba8e",
+        "name": "George Passmore ",
+        "firstName": "George",
+        "lastName": "Passmore",
+        "defaultPhotoURL": "//openapi.azureedge.net/B808D724-0112-4F77-A884-AD884F7332E6",
+        "emailAddress": "george.passmore@brownsre.com",
+        "isPrimary": false,
+        "office": {
+          "officeId": "0b644964-97ab-4283-bab0-2021b4f70d3e",
+          "RFGOfficeId": "0002 ",
+          "companyId": "3e2c2667-f390-4782-8961-92eabd6fb5f8",
+          "companyName": "New Zealand Sotheby's International Realty",
+          "RFGCompanyId": "810012",
+          "brandCode": "SIR",
+          "name": "New Zealand Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Correspondence: PO Box 1595 2nd Floor, Mountaineer Building, Crnr Shotover and Rees Streets",
+            "city": "Queenstown",
+            "district": "Queenstown Lakes District",
+            "postalCode": "9300",
+            "country": "New Zealand",
+            "countryCode": "NZ",
+            "latitude": -45.03133,
+            "longitude": 168.659973,
+            "formattedAddress": "9300, New Zealand"
+          },
+          "phoneNumber": "+64 3 441 0120",
+          "emailAddress": "mark.harris@sothebysrealty.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 2,
+  "parkingPlaces": 6,
+  "yearBuilt": "1981",
+  "zoning": "Rural General",
+  "providerKey": "0068198e-f86c-4f2a-8c1d-86beee402463",
+  "propertyFeatures": [
+    {
+      "groupName": "Garage Count",
+      "description": "2 Car Garage"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Wood"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Refrigerator"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Guest House"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Resort / Lake"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Skiing"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Wood Siding"
+    },
+    {
+      "groupName": "Location",
+      "description": "Lakefront"
+    },
+    {
+      "groupName": "Fencing",
+      "description": "Fenced Yard"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Basement",
+      "description": "Slab Foundation"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Walk-in Closet"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range / Oven"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Luxury Properties"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "10-20 Acres"
+    },
+    {
+      "groupName": "Community Type",
+      "description": "Adult"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Golf"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Gardens"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Fishing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Body of Water",
+      "description": "Lake"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Mixed"
+    },
+    {
+      "groupName": "Property Description",
+      "description": "Acreage"
+    },
+    {
+      "groupName": "Roof",
+      "description": "Asphalt Shingle Roof"
+    },
+    {
+      "groupName": "Views",
+      "description": "Lake & Stream"
+    },
+    {
+      "groupName": "Pool Description",
+      "description": "Inground"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Vacation / Second Home"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Wine Country"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hunting"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "2 Fireplaces"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Tub Only"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Hunting"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "Septic"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Ramp"
+    },
+    {
+      "groupName": "Age",
+      "description": "31-40 Years Old"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Enclosed Porch"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Caretaker House"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Ski Resort"
+    },
+    {
+      "groupName": "Pre-Wiring",
+      "description": "Garage Door"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Fishing"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Access Type - Other"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Attached Garage"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Water Feature"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Climbing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hiking"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Snowmobiling"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Horse Riding/Stables"
+    },
+    {
+      "groupName": "Road Type",
+      "description": "Private Road"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Skiing"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Storage Shed"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "Video QC Approved Listing"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Area Description",
+      "languageCode": "en",
+      "remark": "Lakes District, Central Otago",
+      "htmlRemark": "<p>Lakes District, Central Otago<br></p>"
+    },
+    {
+      "type": "Headline",
+      "languageCode": "en",
+      "remark": "Possibly the finest property in Queenstown",
+      "htmlRemark": "<p><strong>Possibly the finest property in Queenstown</strong><br></p>"
+    },
+    {
+      "type": "Highlight 1",
+      "languageCode": "en",
+      "remark": "A Marquee Property of Southern Lakes",
+      "htmlRemark": "<p>A Marquee Property of Southern Lakes<br></p>"
+    },
+    {
+      "type": "Location",
+      "languageCode": "en",
+      "remark": "Otago, New Zealand",
+      "htmlRemark": "<p>Otago, New Zealand<br></p>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Tender closes Thursday 28 June 2018 at 4:00 p.m. (unless sold prior).\r\nAmongst the premium properties of the beautiful lakes district, this perhaps; is the Trophy.\r\nMagnificent poplar and silver birch line the kilometre long drive up to this unique site which bursts through a schist bluff onto Lake Hayes.\r\nSet amongst a 16.8 acre block, this stunning platform boasts established gardens and mature woods for privacy screens yet breath-taking views that start with Lake Hayes and fade into Walter Peak Station on the far side of Lake Wakatipu to the West. A northerly sweep of the uninterrupted vistas from here are framed by iconic Coronet Peak, the Pisa Range and The Remarkables.\r\nBuilt in 1981 as a holiday cottage, the house has evolved into a celebration of lives richly lived. With a large lake, swimming pool and ample room for a tennis court she is ready for new owners. For those wishing to build a home of international recognition, this is your pedestal.\r\nThis is the first time this marquee property has been brought to market.\r\nViewings by appointment only.\r\nNOTE: Boundaries and measurements are indicative.",
+      "htmlRemark": "<p><strong>Tender closes Thursday 28 June 2018 at 4:00 p.m. (unless sold prior).</strong></p><p>Amongst the premium properties of the beautiful lakes district, this perhaps; is the Trophy. </p><p>Magnificent poplar and silver birch line the kilometre long drive up to this unique site which bursts through a schist bluff onto Lake Hayes. </p><p>Set amongst a 16.8 acre block, this stunning platform boasts established gardens and mature woods for privacy screens yet breath-taking views that start with Lake Hayes and fade into Walter Peak Station on the far side of Lake Wakatipu to the West. A northerly sweep of the uninterrupted vistas from here are framed by iconic Coronet Peak, the Pisa Range and The Remarkables. </p><p>Built in 1981 as a holiday cottage, the house has evolved into a celebration of lives richly lived. With a large lake, swimming pool and ample room for a tennis court she is ready for new owners. For those wishing to build a home of international recognition, this is your pedestal.</p><p>This is the first time this marquee property has been brought to market. </p><p>Viewings by appointment only. </p><p><em><strong>NOTE: Boundaries and measurements are indicative.</strong></em></p><p><br></p>"
+    },
+    {
+      "type": "Zoning Description",
+      "languageCode": "en",
+      "remark": "Rural, General",
+      "htmlRemark": "<p>Rural, General<br></p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/wjc4pm",
+      "contentLanguageCode": "en"
+    },
+    {
+      "type": "Other",
+      "name": "sothebysrealty.com",
+      "url": "http://www.nzsothebysrealty.com/purchasing/property/QBS11910/903-lake-hayes---arrow-junction-highway-lake-hayes/",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "130794D5-90F2-4686-9774-0EEEEA339EE2",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/130794D5-90F2-4686-9774-0EEEEA339EE2",
+      "isDefault": false,
+      "caption": "11",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1300,
+      "width": 1896,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "14BA6340-23DC-4C5F-A605-2596C4386355",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/14BA6340-23DC-4C5F-A605-2596C4386355",
+      "isDefault": false,
+      "caption": "10",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1268,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "7241E2D4-2770-4C88-B9B9-2C16796FE1A6",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/7241E2D4-2770-4C88-B9B9-2C16796FE1A6",
+      "isDefault": false,
+      "caption": "02",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2025,
+      "width": 3600,
+      "lastUpdateOn": "2018-05-29T17:09:01.047"
+    },
+    {
+      "mediaID": "3D141A95-B5B3-45CB-82D1-450D933DBE6C",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/3D141A95-B5B3-45CB-82D1-450D933DBE6C",
+      "isDefault": false,
+      "caption": "15",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1246,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "F635F5F6-D931-4C64-84C8-500DB5562A90",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/F635F5F6-D931-4C64-84C8-500DB5562A90",
+      "isDefault": true,
+      "caption": "01 - Hero",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1233,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "CB87FB6E-118D-4DE8-8F9A-55EE94BAE9CC",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/CB87FB6E-118D-4DE8-8F9A-55EE94BAE9CC",
+      "isDefault": false,
+      "caption": "12",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1258,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "A414847B-BB85-4503-9D9B-68A7C4CF4E9A",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/A414847B-BB85-4503-9D9B-68A7C4CF4E9A",
+      "isDefault": false,
+      "caption": "04",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1300,
+      "width": 1733,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "C09604C3-D4F5-44E4-96A0-6E6C496A5088",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/C09604C3-D4F5-44E4-96A0-6E6C496A5088",
+      "isDefault": false,
+      "caption": "05",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1143,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "8A2F273D-4315-432E-9BDF-75BFF95FC4F6",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/8A2F273D-4315-432E-9BDF-75BFF95FC4F6",
+      "isDefault": false,
+      "caption": "13",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1272,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "BE999F53-55B5-4CCE-8BA8-7AF3ECC858A2",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/BE999F53-55B5-4CCE-8BA8-7AF3ECC858A2",
+      "isDefault": false,
+      "caption": "16",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1248,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "14AC3D4D-82DE-48F7-BD4E-875C5AC60564",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/14AC3D4D-82DE-48F7-BD4E-875C5AC60564",
+      "isDefault": false,
+      "caption": "17",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1268,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "70E48985-30F1-441B-9FF5-886935E7EF90",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/70E48985-30F1-441B-9FF5-886935E7EF90",
+      "isDefault": false,
+      "caption": "14",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1249,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "C5DBC7F8-6BFC-4AD0-A96B-8D8686D44FA5",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/C5DBC7F8-6BFC-4AD0-A96B-8D8686D44FA5",
+      "isDefault": false,
+      "caption": "18",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1248,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "0BD7ABE3-8A02-409D-8425-9D50755A7BC0",
+      "sequenceNumber": 1,
+      "url": "https://players.brightcove.net/5699924528001/default_default/index.html?videoId=5791565172001",
+      "isDefault": true,
+      "format": "Video",
+      "category": "Property Video",
+      "lastUpdateOn": "2018-05-30T22:25:43.150"
+    },
+    {
+      "mediaID": "29FFC3E3-F6F3-4508-88D2-B1C275B6D266",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/29FFC3E3-F6F3-4508-88D2-B1C275B6D266",
+      "isDefault": false,
+      "caption": "06",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 954,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "FB310111-0D42-4419-AA5F-B39D60B1CB51",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/FB310111-0D42-4419-AA5F-B39D60B1CB51",
+      "isDefault": false,
+      "caption": "08",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1037,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "561AE164-73EB-486F-B276-C02D42425417",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/561AE164-73EB-486F-B276-C02D42425417",
+      "isDefault": false,
+      "caption": "09",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1268,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "88399DDB-A036-441B-8278-CA9A885A2F8A",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/88399DDB-A036-441B-8278-CA9A885A2F8A",
+      "isDefault": false,
+      "caption": "07",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 954,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    },
+    {
+      "mediaID": "876BFC87-9325-49F3-A13E-F80CBBB4E82C",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/876BFC87-9325-49F3-A13E-F80CBBB4E82C",
+      "isDefault": false,
+      "caption": "03",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1268,
+      "width": 1900,
+      "lastUpdateOn": "2018-05-28T13:55:51.290"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "QBS11910",
+      "isPrimary": true
+    }
+  ]
+}

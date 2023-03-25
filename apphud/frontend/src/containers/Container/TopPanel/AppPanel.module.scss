@@ -1,0 +1,28 @@
+.root {
+  background: rgba(237,243,248,1);
+  min-height: 50px;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  display: flex;
+  .button {
+    display: flex;
+    background: #0085FF;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+  }
+  .title {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #1A344B;
+    margin-left: 10px;
+  }
+}

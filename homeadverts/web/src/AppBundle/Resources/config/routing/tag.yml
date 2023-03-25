@@ -1,0 +1,19 @@
+ha_tag_details:
+    path:  /{name}
+    defaults:
+        _controller: AppBundle:Tag:details
+        p: 1
+    methods:  [GET]
+    requirements:
+        page: \d+
+    condition: "request.headers.get('Pagination') == false"
+
+ha_tag_details_pagination:
+    path:  /{name}
+    defaults:
+      _controller: AppBundle:Tag:detailsPagination
+      p: 1
+    methods:  [GET]
+    requirements:
+      page: \d+
+    condition: "request.headers.get('Pagination')"

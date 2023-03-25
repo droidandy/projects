@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  encoding: unicode
+  schema_search_path: public
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: service_template_development
+  username: service_template
+  password: service_template
+  min_messages: log # debug5, debug4, debug3, debug2, debug1, log, notice, warning, error, fatal, and panic
+
+test:
+  <<: *default
+  database: service_template_test
+  username: service_template
+  password: service_template
+
+production:
+  <<: *default
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  database: <%= ENV['DATABASE'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>

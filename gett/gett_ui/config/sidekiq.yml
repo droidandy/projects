@@ -1,0 +1,64 @@
+:queues:
+  - default
+  - mailers
+  - [ot, 2]
+  - [gett, 4]
+  - [splyt, 2]
+:concurrency: 4
+production: &production
+  :concurrency: 128
+  :queues:
+    - [gett_gett, 8]
+    - [gett_ot, 4]
+    - [gett_splyt, 4]
+    - [gett_default, 1]
+    - [gett_mailers, 1]
+dev:
+  <<: *production
+  :concurrency: 8
+staging:
+  <<: *production
+  :concurrency: 8
+test_features:
+  <<: *production
+  :concurrency: 8
+:schedule:
+  # cron: 'second minute hour day month day_of_week'
+  BookingsUpdater:
+    every: ['31s', first_in: '31s']
+  OTBookingsStatusUpdater:
+    every: ['7s', first_in: '30s']
+  BookingsBeforehandUpdater:
+    every: ['1h', first_in: '10m']
+  RequestsCleaner:
+    every: ['1h', first_in: '1m']
+  PaymentsStatusUpdater:
+    every: ['1h', first_in: '15m']
+  WeeklyInvoiceCreator:
+    cron: '0 0 9 * * 4'
+  MonthlyInvoiceCreator:
+    cron: '0 0 9 * * 4'
+  OTChargesLoader:
+    cron: '0 0 4 * * 4'
+  FlightCheck::SlowWorker:
+    every: '8h'
+  FlightCheck::FastWorker:
+    every: '30m'
+  BookingsAlertsChecker:
+    every: ['10s', first_in: '30s']
+  ScheduledReminderCreator:
+    cron: '0 0 0 * * *'
+  WeeklyReceiptsNotifier:
+    cron: '0 0 10 * * 4'
+  SftpWorker:
+    every: ['1h', first_in: '45m']
+  CreditRateUpdater:
+    cron: '0 0 1 * * *'
+  DriversChannelWorker:
+    every: ['3s', first_in: '3s']
+  DriversChannelCleaner:
+    every: ['60s', first_in: '5s']
+  BbcNotificationWorker:
+    cron: '0 0 2 * * *'
+  BbcReferencesLoader:
+    cron: '0 0 5 * * *'

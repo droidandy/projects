@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "AptStore",
+    "slug": "AptStore",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "scheme": "aptstore",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./src/resources/icon.png",
+    "splash": {
+      "image": "./src/resources/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.aptekarielti.aptstore",
+      "config": {
+        "googleMapsApiKey": "AIzaSyB2gs50eER5i5Vl0HBVbLZmVZLdZS2DBo0"
+      }
+    },
+    "android": {
+      "package": "com.aptekarielti.aptstore",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDnUb2Amizi6o5EPYcDiXBHdJAslhUs1JQ"
+        }
+      }
+    }
+  }
+}

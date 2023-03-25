@@ -1,0 +1,121 @@
+.blog {
+  margin-bottom: 40px;
+
+  // Short details ====================================================================================
+  .story {
+    p {
+      color: $color_2;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .caption {
+      width: 100%;
+      color: #818181;
+      line-height: 22px;
+      text-align: center;
+      font-size: $font_size_s1;
+      padding: 30px;
+
+      a {
+        display: block;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      text-align: left;
+      font-weight: 700;
+      font-size: 24px;
+      color: #444;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 36px;
+      font-weight: 700;
+      color: #212121;
+    }
+
+    a {
+      color: #666;
+      font-weight: 600;
+      &:hover {
+        color: #212121;
+      }
+    }
+  }
+
+  .comments-heading {
+    color: #444;
+    margin-top: 60px;
+  }
+}
+
+.article-footer {
+  background: #fafafa;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 30px;
+
+  .headline {
+    background: transparent;
+  }
+}
+
+// Property
+.blog-property {
+  margin-bottom: 50px;
+
+  .price {
+    color: #888;
+    font-size: 17px;
+    clear: both;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: $desktop_width) {
+  .blog {
+    .actions {
+      top: 90px;
+      right: 30px;
+      margin: 0;
+      width: 50px;
+      left: inherit;
+    }
+    .cover-story {
+      height: 300px !important;
+
+      .row {
+        width: 750px;
+      }
+      .title {
+        font-size: 18px;
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet_width - 1px) {
+  .blog-property {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: $mobile_width) {
+  .blog-property {
+    padding: 0 20px;
+    text-align: center;
+
+    .links {
+      text-align: center;
+
+      li {
+        float: inherit !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{% macro ha_form(form, submit_name = false) %}
+    {% from _self import ha_form_row %}
+    {% for child in form %}
+        {% if child.vars.name != '_token' %}
+            {{ ha_form_row(child) }}
+        {% endif %}
+    {% endfor %}
+    {{ form_rest(form) }}
+    <div class="field-footer">
+        <button type="submit" class="button secondary">
+            {{ submit_name ? submit_name : 'user.profile.save'|trans }}
+        </button>
+    </div>
+{% endmacro %}
+
+{% macro ha_form_input(field, params) %}
+    {% set attrs = {'class': 'mdl-textfield__input'} %}
+    {% if params %}
+        {% set attrs = attrs|merge(params) %}
+    {% endif %}
+
+    <div class="
+        mdl-textfield
+        mdl-js-textfield
+        mdl-textfield--floating-label
+        {% if field.vars.value|length > 0 %}is-dirty{% endif %}"
+        >
+        <label class="mdl-textfield__label" for="{{ field.vars.id }}">
+            {{ field.vars.label|trans({}, field.vars.translation_domain) }}
+        </label>
+        {{ form_widget(field, {'attr': attrs}) }}
+    </div>
+{% endmacro %}
+
+{% macro ha_form_select(field) %}
+    {% set selected_text %}
+        {% if field.vars.value %}
+            {% for choice in field.vars.choices %}
+                {% if choice is iterable %}
+                    {% for subchoice in choice %}
+                        {% if subchoice.value == field.vars.value %}
+                            {{ subchoice.label|trans }}
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    {% if choice.value == field.vars.value %}
+                        {{ choice.label|trans }}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% elseif field.vars.empty_value != null %}
+            {{ field.vars.empty_value|trans({}, field.vars.translation_domain) }}
+        {% else %}
+            {{ (field.vars.choices|first).label|trans({}, field.vars.translation_domain) }}
+        {% endif %}
+    {% endset %}
+
+    <div class="select-group">
+		<span class="button button-select">
+			<span class="select-value">{{ selected_text|trans }}</span>
+			<span class="fa fa-caret-down"></span>
+            {{ form_widget(field) }}
+		</span>
+    </div>
+{% endmacro %}
+
+{% macro ha_form_telephone(field) %}
+    {% from _self import ha_form_select, ha_form_input %}
+    <div class="multipart-tel">
+        <div class="country-code">
+            {{ ha_form_select(field.telCode) }}
+        </div>
+        <div class="phone-numbers">
+            {{ ha_form_input(field.telNumber) }}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro ha_form_checkbox(field) %}
+    <div class="checkbox">
+        {{ form_widget(field) }}
+        <label for="{{ field.vars.id }}">{{ field.vars.help }}</label>
+    </div>
+{% endmacro %}
+
+{% macro ha_form_widget(field) %}
+    <li class="label-input-help">
+        {{ form_label(field) }}
+
+        <div class="textbox">
+            {{ form_widget(field) }}
+        </div>
+
+        {% if field.vars.required -%}
+            <p class="validate">{% trans %}user.required{% endtrans %}</p>
+        {%- endif %}
+    </li>
+{% endmacro %}
+
+{% macro ha_form_row(field, widget_options = []) %}
+    {% from _self import ha_form_checkbox, ha_form_select, ha_form_telephone, ha_form_input %}
+    {# formatting and generic styling #}
+    <div class="field-group">
+
+        {# radio buttons #}
+        {% if field.vars.block_prefixes.1 == 'choice' and field.vars.multiple == true and field.vars.expanded == true %}
+            <div class="multi-select">
+                {{ form_widget(field) }}
+            </div>
+
+            {# normal checkboxes #}
+        {% elseif field.vars.block_prefixes.1 == 'checkbox' %}
+            {{ ha_form_checkbox(field) }}
+
+            {# all other form types  #}
+        {% else %}
+
+            {# selects #}
+            {% if field.vars.block_prefixes.1 == 'choice' %}
+                {{ ha_form_select(field) }}
+                {# specific telephone select box hack #}
+            {% elseif field.vars.block_prefixes.1 == 'account_multipart_telephone' %}
+                {{ ha_form_telephone(field) }}
+            {% else %}
+                {{ ha_form_input(field) }}
+            {% endif %}
+
+            {# display messages for the user #}
+            <span class="group-message {% if not field.vars.valid %}error{% endif %} {% if not field.vars.valid %}required{% endif %}">
+				{# if the field is not valid  #}
+                {% if not field.vars.valid %}
+                    <span class="fa fa-circle"></span>
+                    <span>{{ field.vars.errors.0.message }}</span>
+
+                    {# if there is a help message to display, these were however removed at client request #}
+                {% elseif field.vars.help is defined and field.vars.help %}
+                    {{ field.vars.help|trans }}
+                {% endif %}
+			</span>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro ha_form_area_row(area, unit, widget_options = []) %}
+    {% from _self import ha_form_checkbox, ha_form_select %}
+
+    {# formatting and generic styling #}
+    <div class="field-group">
+        {{ form_label(area) }}
+
+        <div class="multipart-tel">
+            {{ form_widget(area) }}
+            {{ ha_form_select(unit) }}
+        </div>
+
+        {# display messages for the user #}
+        <span class="group-message {% if not area.vars.valid %}required{% endif %}">
+
+			{# if the field is not valid  #}
+            {% if not area.vars.valid %}
+                <span class="fa fa-circle"></span>
+                <span>{{ area.vars.errors.0.message }}</span>
+
+			{# if there is a help message to display, these were however removed at client request #}
+			{% elseif area.vars.help is defined and area.vars.help %}
+                {{ area.vars.help }}
+
+                {# the 'new-help' is to display Required for all required fields #}
+            {% elseif area.vars.required == true %}
+                <span class="required">{% trans %}user.required{% endtrans %}</span>
+            {% endif %}
+		</span>
+    </div>
+{% endmacro %}
+
+{% macro ha_form_output_messages(form) %}
+    {% from _self import ha_form_output_messages %}
+    {% for error in form.vars.errors %}
+        <p>{{ error.message }}</p>
+    {% endfor %}
+    {% for field in form %}
+        {{ ha_form_output_messages(field) }}
+    {% endfor %}
+{% endmacro %}
+
+{% macro ha_form_messages(form = null, allow_custom_errors = false) %}
+    {% from _self import ha_form_output_messages %}
+    {% if form and not form.vars.valid %}
+        <div class="field-content error">
+            {% if allow_custom_errors %}
+                {{ ha_form_output_messages(form) }}
+                {#% for field in form %}
+                    {% for error in field.vars.errors %}
+                        <p>{{ error.message }}</p>
+                    {% endfor %}
+                {% endfor %#}
+            {% else %}
+                <p>{% trans %}user.form_error{% endtrans %}</p>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endmacro %}

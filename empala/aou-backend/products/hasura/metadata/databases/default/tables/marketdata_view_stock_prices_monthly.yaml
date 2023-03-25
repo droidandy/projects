@@ -1,0 +1,9 @@
+table:
+  name: view_stock_prices_monthly
+  schema: marketdata
+select_permissions:
+- permission:
+    allow_aggregations: true
+    columns: "*"
+    filter: {}
+  role: public

@@ -1,0 +1,12 @@
+{% set class = '--no-company' %}
+
+{% if user.parentUser or user.companyName %}
+    {% set class = '' %}
+{% endif %}
+
+{% include 'AppBundle:user/profile:image.html.twig' %}
+
+<div class="details {{ class }}">
+    {% include 'AppBundle:user/profile:username.html.twig' %}
+    {% include 'AppBundle:user/profile:company.html.twig' %}
+</div>

@@ -1,0 +1,13 @@
+{% if article.getPublicTags %}
+    <div class="article-tags">
+        <ul>
+            {% for tag in article.getPublicTags %}
+                <li>
+                    <a href="{{ path('ha_tag_details', {name: tag.name}) }}">
+                        {{ tag.displayName }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}

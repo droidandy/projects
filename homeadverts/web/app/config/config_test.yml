@@ -1,0 +1,70 @@
+imports:
+    - { resource: config_dev.yml }
+    - { resource: parameters_test.yml }
+    
+framework:
+    test: ~
+    session:
+        storage_id: session.storage.mock_file
+    profiler:
+        enabled: true
+        collect: true
+
+doctrine:
+    dbal:
+        connections:
+            default:
+                driver:   %database_driver%
+                host:     %database_host%
+                port:     %database_port%
+                dbname:   %database_name%
+                user:     %database_user%
+                password: %database_password%
+                charset:  utf8mb4
+                default_table_options:
+                    charset: utf8mb4
+                    collate: utf8mb4_0900_ai_ci #MySQL8-specific
+
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+    
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: default
+            #use non-default db for test environment as namespace
+            dsn: redis://%redis_host%/1
+
+swiftmailer:
+    disable_delivery: true
+    spool:
+        type: file
+        path: '%kernel.root_dir%/spool'
+
+services:
+    ha.es.seed_generator:
+        class: AppBundle\Elastic\Integration\TestSeedGenerator
+    ha.geometry_service:
+        class: Test\HardcodedGeometryService
+    ha.article.image_validator:
+        class: AppBundle\Validation\ArticleImageValidator
+        arguments:
+            -
+              - 'https://cdn.homeadverts.dev'
+              - %s3.bucket.endpoint%
+        tags:
+            - { name: validator.constraint_validator, alias: article_image_validator }
+    
+    cache:
+        class: Doctrine\Common\Cache\ArrayCache
+    
+    ha.import.avatar_manager:
+        class: AppBundle\Import\Media\FakeAvatarManager
+        arguments: ['%s3.profile_bucket.name%']
+        
+    app.pusher:
+        class: AppBundle\Service\Messenger\PusherServiceTesting
+        arguments:
+            - "@app.pusher.library"

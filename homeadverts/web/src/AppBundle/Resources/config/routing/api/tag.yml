@@ -1,0 +1,30 @@
+ha_tag_post:
+   path: /
+   defaults: { _controller: AppBundle:Api/Tag:post }
+   methods: [ POST ]
+
+ha_tag_get:
+   path: /{id}
+   defaults: { _controller: AppBundle:Api/Tag:get }
+   methods: [ GET ]
+   
+ha_tag_collection:
+   path: /
+   defaults: { _controller: AppBundle:Api/Tag:getCollection }
+   methods: [ GET ]
+
+
+ha_tag_select:
+    path: /select
+    defaults: { _controller: AppBundle:Api/Tag:select }
+    methods:  [POST]
+
+ha_tag_follow:
+    path: /{id}/follow
+    defaults: { _controller: AppBundle:Api/Tag:follow }
+    methods:  [POST]
+
+ha_tag_unfollow:
+    path: /{id}/follow
+    defaults: { _controller: AppBundle:Api/Tag:unFollow }
+    methods:  [DELETE]

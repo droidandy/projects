@@ -1,0 +1,44 @@
+[
+  {
+    "quotedProducts": [
+      "MEDICAL",
+      "DENTAL"
+    ],
+    "clientId": 198137,
+    "clientName": "ClientSearchTest",
+    "brokerName": "ClientSearchBroker",
+    "effectiveDate": 1577467530000,
+    "carrierName": "Cigna",
+    "presalesName": "presalesFirstName",
+    "salesName": "salesFirstName",
+    "employeeCount": 150,
+    "diffPercent": -10,
+    "diffDollar": -50640,
+    "option1Id": 9611,
+    "quoteType": "STANDARD",
+    "probability": "HIGH",
+    "competitiveVsCurrent": "lastValue",
+    "rateBankAmount": 0
+  },
+  {
+    "quotedProducts": [
+      "MEDICAL",
+      "DENTAL"
+    ],
+    "clientId": 198138,
+    "clientName": "ClientSearchTest",
+    "brokerName": "ClientSearchBroker",
+    "effectiveDate": 1577467530002,
+    "carrierName": "Cigna",
+    "presalesName": "presalesFirstName",
+    "salesName": "salesFirstName",
+    "employeeCount": 150,
+    "diffPercent": -5,
+    "diffDollar": -5640,
+    "option1Id": 9613,
+    "quoteType": "STANDARD",
+    "probability": "HIGH",
+    "competitiveVsCurrent": "+20",
+    "rateBankAmount": 10
+  }
+]

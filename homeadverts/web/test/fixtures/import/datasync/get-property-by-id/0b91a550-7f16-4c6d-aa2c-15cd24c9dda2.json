@@ -1,0 +1,368 @@
+{
+    "listingSummary": {
+        "listingId": "0b91a550-7f16-4c6d-aa2c-15cd24c9dda2",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-09-14",
+        "photoCount": 16,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "BRL",
+            "amount": 10000000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 2694000
+        },
+        "propertyAddress": {
+            "city": "S\u00e3o Paulo",
+            "stateProvince": "S\u00e3o Paulo",
+            "stateProvinceCode": "SP",
+            "postalCode": "05692-000",
+            "country": "Brazil",
+            "countryCode": "BR"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Morumbi"
+            }
+        ],
+        "mlsNumbers": [
+            "35412"
+        ],
+        "RFGListingId": "SCE6MP",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/sce6mp",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Post-War",
+        "propertyName": "Tuscan Style Mansion",
+        "totalBath": 3,
+        "lotSize": "2000 SM",
+        "buildingArea": "770 Sq. M",
+        "noOfBedrooms": 5,
+        "squareFootage": 8288.203,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/E53F1E34-84DC-4890-A48A-0EB23F1CADE0",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-08T05:12:43.037",
+        "agents": [
+            {
+                "office": {
+                    "officeId": "af75e6c7-cf11-4abb-987f-49d01087f019",
+                    "RFGOfficeId": "0001 ",
+                    "companyId": "7827f9eb-d82e-4de4-bee5-ce255205a7d5",
+                    "companyName": "Bossa Nova Sotheby's International Realty",
+                    "RFGCompanyId": "819002",
+                    "brandCode": "SIR",
+                    "name": "Bossa Nova Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "Al. Gabriel Monteiro da Silva 2027-Jardins",
+                        "city": "Sao Paulo",
+                        "stateProvince": "S\u00e3o Paulo",
+                        "stateProvinceCode": "SP",
+                        "postalCode": "01441-001",
+                        "country": "Brazil",
+                        "countryCode": "BR",
+                        "latitude": -23.573830250351,
+                        "longitude": -46.68627455947
+                    },
+                    "phoneNumber": "+55 11 3061 0000",
+                    "emailAddress": "vendas@bossanovasir.com.br"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 3,
+    "parkingPlaces": 10,
+    "providerKey": "0b91a550-7f16-4c6d-aa2c-15cd24c9dda2",
+    "propertyFeatures": [
+        {
+            "groupName": "Area Description",
+            "description": "Metropolitan"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Gardens"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Balcony \/ Lanai"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Garage Description",
+            "description": "Garage"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Dry Bar"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Eat-in Kitchen"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Pool"
+        },
+        {
+            "groupName": "Road Type",
+            "description": "City \/ Town Street"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Views",
+            "description": "City \/ Strip"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Metropolitan"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Tuscan style residence with 770 m\u00b2 of built area in a 2,000 m\u00b2 site. Its social area has 2 spacious living rooms with fireplaces and access to the extraordinary landscaped garden, a lake with carps and a warm pool. The intimate area has a shared suite, 2 suites and a master suite with 100 m\u00b2. The project also has an office, a lunch room, a kitchen, a pantry, a laundry room, 10 parking spaces and staff quarters offering 4 bedrooms, 2 bathrooms and a small TV room.",
+            "htmlRemark": "<p><style type=\"text\/css\"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--><\/style><span style=\"font-size: 10pt; font-family: Arial;\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;Tuscan style residence with 770 m\u00b2 of built area in a 2,000 m\u00b2 site. Its social area has 2 spacious living rooms with fireplaces and access to the extraordinary landscaped garden, a lake with carps and a warm pool. The intimate area has a shared suite, 2 suites and a master suite with 100 m\u00b2. The project also has an office, a lunch room, a kitchen, a pantry, a laundry room, 10 parking spaces and staff quarters offering 4 bedrooms, 2 bathrooms and a small TV room. &quot;}\" data-sheets-userformat=\"{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,11839446],&quot;11&quot;:4,&quot;12&quot;:0}\">Tuscan style residence with 770 m\u00b2 of built area in a 2,000 m\u00b2 site. Its social area has 2 spacious living rooms with fireplaces and access to the extraordinary landscaped garden, a lake with carps and a warm pool. The intimate area has a shared suite, 2 suites and a master suite with 100 m\u00b2. The project also has an office, a lunch room, a kitchen, a pantry, a laundry room, 10 parking spaces and staff quarters offering 4 bedrooms, 2 bathrooms and a small TV room.&nbsp;<\/span><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/sce6mp",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "AB7D3798-6A21-4EC4-9B16-013970BB99A2",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/AB7D3798-6A21-4EC4-9B16-013970BB99A2",
+            "isDefault": false,
+            "caption": "IMG_8146 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "E53F1E34-84DC-4890-A48A-0EB23F1CADE0",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/E53F1E34-84DC-4890-A48A-0EB23F1CADE0",
+            "isDefault": true,
+            "caption": "IMG_8091 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "A23EF368-774F-4978-A5DC-35AC436AD473",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/A23EF368-774F-4978-A5DC-35AC436AD473",
+            "isDefault": false,
+            "caption": "IMG_8096 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "F917D314-48F9-4386-A0FC-7B5DD2EC810F",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/F917D314-48F9-4386-A0FC-7B5DD2EC810F",
+            "isDefault": false,
+            "caption": "IMG_8112 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "DA0A19A4-35DC-4ED7-8390-7C2FA452AF1B",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/DA0A19A4-35DC-4ED7-8390-7C2FA452AF1B",
+            "isDefault": false,
+            "caption": "IMG_8134 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "B80DE024-EAE6-4809-92FA-8A742F4213AA",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/B80DE024-EAE6-4809-92FA-8A742F4213AA",
+            "isDefault": false,
+            "caption": "IMG_8131 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "369486EE-FD8D-4ABE-8855-946DF27965BF",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/369486EE-FD8D-4ABE-8855-946DF27965BF",
+            "isDefault": false,
+            "caption": "IMG_8107 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "4569F5EC-D9BE-4ACB-A17D-9DEFF087294B",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/4569F5EC-D9BE-4ACB-A17D-9DEFF087294B",
+            "isDefault": false,
+            "caption": "IMG_8093 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "0302C65D-69AC-41B4-B264-B0E2E735B31E",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/0302C65D-69AC-41B4-B264-B0E2E735B31E",
+            "isDefault": false,
+            "caption": "IMG_8150 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "7CC6DC3D-05BF-49D1-904E-B3E4F3712536",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/7CC6DC3D-05BF-49D1-904E-B3E4F3712536",
+            "isDefault": false,
+            "caption": "IMG_8141 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "AA143F38-AA77-4A74-9066-BA73F01A110B",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/AA143F38-AA77-4A74-9066-BA73F01A110B",
+            "isDefault": false,
+            "caption": "IMG_8126 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "CC19C752-277B-4CB0-9A7C-BED1BA8AB21F",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/CC19C752-277B-4CB0-9A7C-BED1BA8AB21F",
+            "isDefault": false,
+            "caption": "IMG_8100 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "E4F4E319-147D-4B16-9B88-CB69A6FBBFF8",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/E4F4E319-147D-4B16-9B88-CB69A6FBBFF8",
+            "isDefault": false,
+            "caption": "IMG_8086 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "2AA7AE73-2857-40CA-9AC8-CF0A3A31265B",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/2AA7AE73-2857-40CA-9AC8-CF0A3A31265B",
+            "isDefault": false,
+            "caption": "IMG_8118 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "3FEB4E26-E077-4444-B2FA-F023098EEC0A",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/3FEB4E26-E077-4444-B2FA-F023098EEC0A",
+            "isDefault": false,
+            "caption": "IMG_8122 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        },
+        {
+            "mediaID": "BFA93932-CAD4-4120-9F5A-F7DDCD78B192",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.bnsir.com.br\/nossos-imoveis\/terceiros\/sao-paulo\/morumbi\/mansao-em-estilo-toscano\/5307",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2017-09-14T17:36:31.290"
+        },
+        {
+            "mediaID": "B9479A7A-1FE0-43B8-A677-FCF318A9FCF6",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/B9479A7A-1FE0-43B8-A677-FCF318A9FCF6",
+            "isDefault": false,
+            "caption": "IMG_8160 (Copy)",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1276,
+            "width": 1913,
+            "lastUpdateOn": "2017-12-11T05:27:37.650"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "35412",
+            "isPrimary": true
+        }
+    ]
+}

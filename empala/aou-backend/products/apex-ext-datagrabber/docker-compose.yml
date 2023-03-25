@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  sftp_local:
+    environment:
+      - APEX_EXTRACTS_MOCK_SFTP_PUBLIC_KEY=${APEX_EXTRACTS_MOCK_SFTP_PUBLIC_KEY}
+    build:
+      context: ./../../ci-cd
+      dockerfile: ./Dockerfile-sftp
+    ports:
+      - "2222:22"

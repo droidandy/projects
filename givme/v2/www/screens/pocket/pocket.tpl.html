@@ -1,0 +1,113 @@
+<ion-view on-finish-render="ngRepeatFinished">
+<ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="down" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">Pocket</ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <ion-content class="gm-content page--settings page--pocket" on-scroll="gotScrolled()" delegate-handle="mainScroll">
+              <div class="row">
+                <div class="col-xs-12 pokes" ng-if="pokes.length">
+                    <div class="row">
+                        <div class="col-xs-12 pokes">
+                            <div class="pokes__heading">
+                                Pokes
+                            </div>
+                        </div>
+                    </div>
+                    <ion-list show-delete="false"
+                        show-reorder="false"
+                        can-swipe="true">
+                      <ion-item ng-repeat="person in pokes" ng-class="pokeActivated(person)">
+                            <div class="row prev-row" ng-click="activatePoke(person)">
+                              <div class="col-xs-12 contacts-content contacts">
+                                  <div class="row">
+                                    <div class="poke-now" ng-click="poke(person)">Poke Now</div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row row-person" ng-click="activatePoke(person)">
+                                <div class="col-xs-2">
+                                    <img src="http://{{gmAPIServerIP}}{{person.contact.photos[0].thumbnail}}" class="avatar" alt="">
+                                </div>
+                                <div class="col-xs-10">
+                                    <h2 class="name">{{person.contact.first_name}}</h2>
+                                    <span class="poke-time" ng-class="pokeAlert(person)">{{person.poke}}</span>
+                                    <span class="time pull-right">{{person.time}}</span>
+                                </div>
+                            </div>
+                            <ion-option-button class="button-assertive"
+                                               ng-click="deletePoke(person)">
+                                               DELETE
+                            </ion-option-button>
+                            <ion-reorder-button class="ion-navicon"
+                                                on-reorder="reorderItem(person, $fromIndex, $toIndex)">
+                            </ion-reorder-button>
+                      </ion-item>
+                    </ion-list>
+                </div>
+                <div class="col-xs-12 pokes pokes--contact">
+                    <div class="row">
+                        <div class="col-xs-12 pokes">
+                            <div class="contacts__heading">
+                                Contact Cards
+                            </div>
+                        </div>
+                    </div>
+                    <ion-list show-delete="isItemVisible()"
+                        show-reorder="false"
+                        can-swipe="true">
+                        <ion-item ng-repeat="person in pocket" ng-class="personActivated(person)">
+                            <div class="row prev-row" ng-click="activatePerson(person)">
+                              <div class="col-xs-12 contacts-content contacts">
+                                  <div class="row">
+                                      <div class="col-xs-2 col-xs-offset-1" ng-class="isValidDetail(person, 'skype')"><img  ng-click="sendAlert($event, person, 'skype')" src="img/skype.png" alt=""></div>
+                                      <div class="col-xs-2" ng-class="isValidDetail(person, 'facebook')"><img  ng-click="sendAlert($event, person, 'facebook')" src="img/facebook.png" alt=""></div>
+                                      <div class="col-xs-2" ng-class="isValidDetail(person, 'instagram')"><img  ng-click="sendAlert($event, person, 'instagram')" src="img/instagram.png" alt=""></div>
+                                      <div class="col-xs-2" ng-class="isValidDetail(person, 'snapchat')"><img  ng-click="sendAlert($event, person, 'snapchat')" src="img/snapchat.png" alt=""></div>
+                                      <div class="col-xs-2" ng-class="isValidDetail(person, 'phone_number')"><img  ng-click="sendAlert($event, person, 'phone_number')" src="img/phone.png" alt=""></div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row row-person" ng-click="activatePerson(person)">
+                                <div class="col-xs-2">
+                                    <img src="http://{{gmAPIServerIP}}{{person.user_details.photo}}" class="avatar" alt="">
+                                </div>
+                                <div class="col-xs-10">
+                                    <h2 class="name">{{person.user_details.name}}</h2>
+                                    <span class="poke-time" ng-class="contactAlert(person)">{{person.message}}</span>
+                                    <span class="time pull-right">{{person.created}}</span>
+                                </div>
+                            </div>
+                            <!-- <ion-option-button class="button-positive"
+                                               ng-click="share(person)">
+                              Share
+                            </ion-option-button>
+                            <ion-option-button class="button-info"
+                                               ng-click="edit(person)">
+                              Edit
+                            </ion-option-button> -->
+                            <ion-option-button class="button-assertive delete-button"
+                                               ng-click="deleteContact(person)">
+                                               DELETE
+                            </ion-option-button>
+                            <ion-reorder-button class="ion-navicon"
+                                                on-reorder="reorderItem(person, $fromIndex, $toIndex)">
+                            </ion-reorder-button>
+                      </ion-item>
+                    </ion-list>
+                </div>
+            </div>
+  </ion-content>
+  <!--<div class="google-map" ng-style="{display: show ? 'block' : 'none'}">-->
+    <!--<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>-->
+  <!--</div>-->
+  <!-- <ul class="alpha_sidebar" ng-style="{top: top + '%'}">
+    <li ng-click="gotoList('index_{{letter}}')" on-drag="gotoList('index_{{letter}}')" ng-repeat="letter in alphabet">
+      {{letter}}
+    </li>
+  </ul> -->
+</ion-view>

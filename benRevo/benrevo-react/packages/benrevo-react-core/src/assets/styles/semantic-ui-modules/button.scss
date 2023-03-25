@@ -1,0 +1,133 @@
+@import '../variables-theme';
+
+/* Button */
+
+.ui.medium.button, .ui.medium.buttons .ui.medium.buttons .or, .ui.medium.toggle.selected-button  {
+  height: 28px;
+  font-size: 13px;
+  line-height: 5px;
+
+  &.icon {
+    & > i {
+      vertical-align: middle;
+    }
+  }
+}
+
+.ui.massive.button, .ui.massive.buttons .ui.massive.buttons .or  {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ui.big.button, .ui.big.buttons .button, .ui.big.buttons .or {
+  font-size: 16px;
+  padding: 15px 30px;
+  font-family: $SECOND_FONT;
+  font-weight: 400 !important;
+  min-height: 48px;
+}
+
+.ui.mini.button, .ui.mini.buttons .ui.mini.buttons .or  {
+  height: 22px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border-radius: 3px !important;
+  line-height: 5px;
+  background-color: $BUTTON_GREY_COLOR;
+  color: #ffffff;
+  border: none;
+
+  &:hover {
+    background-color: $BUTTON_GREY_HOVER_COLOR;
+    color: #ffffff;
+  }
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  &.green {
+    background-color: $ELEM_GREEN_COLOR;
+    &:hover, &:focus {
+      background-color: $ELEM_GREEN_COLOR_HOVER !important;
+    }
+  }
+
+  &.grey {
+    background-color: $BUTTON_GREY_COLOR !important;
+
+    &:hover {
+      background-color: $BUTTON_GREY_HOVER_COLOR !important;
+    }
+  }
+}
+
+.ui.basic.buttons.toggle.toggle-button-blue {
+  border: none;
+  .ui.button {
+    background-color: transparent !important;
+    border-radius: 0;
+    color: $INPUT_BORDER_COLOR_DARK !important;
+    border-color: $INPUT_BORDER_COLOR_DARK;
+    font-weight: 400;
+    padding: 9px 16px;
+    min-width: 45px;
+
+    &:not(:last-child) {
+      margin-right: -1px;
+    }
+
+    &.active {
+      border-color: $BUTTON_COLOR;
+      color: $BUTTON_COLOR !important;
+      z-index: 1;
+    }
+  }
+}
+
+.ui.primary.button, .ui.primary.buttons .button {
+  background-color: $ELEM_ACTIVE_COLOR;
+  font-weight: 400;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    background-color: $ELEM_ACTIVE_COLOR_HOVER;
+  }
+
+  &:active, &:focus {
+    background-color: $ELEM_ACTIVE_COLOR;
+  }
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  border: 1px solid #d6d8d9;
+  background-color: #f5f8f9;
+}
+
+.ui.labeled.button.icon.right {
+  font-size: 12px;
+  text-transform: none;
+  color: #ffffff;
+  background-color: #a4b1ba;
+  min-width: 200px;
+  text-align: left;
+}
+
+/* button link */
+.ui.button.btnLink {
+  background: none;
+  color:#00c2e5;
+  border:none;
+  padding:3px 5px;
+  text-transform: none;
+  font-size:14px;
+
+  &.white {
+    color: #ffffff;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

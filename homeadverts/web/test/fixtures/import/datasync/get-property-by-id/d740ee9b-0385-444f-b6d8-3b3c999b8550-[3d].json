@@ -1,0 +1,951 @@
+{
+  "listingSummary": {
+    "listingId": "d740ee9b-0385-444f-b6d8-3b3c999b8550",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2017-02-27",
+    "photoCount": 41,
+    "videoCount": 1,
+    "listPrice": {
+      "currencyCode": "CLP",
+      "amount": 4500000000,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 6490300
+    },
+    "propertyAddress": {
+      "streetAddress": "566 TERLUN DRIVE",
+      "city": "Durango",
+      "district": "La Plata County",
+      "stateProvince": "Colorado",
+      "stateProvinceCode": "CO",
+      "postalCode": "81301",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 37.274585723877,
+      "longitude": -107.963249206543,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "566 Terlun Dr, Durango, CO 81301"
+    },
+    "mlsNumbers": [
+      "728706"
+    ],
+    "RFGListingId": "WYXLXQ",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/wyxlxq",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Attached",
+    "propertyStyle": "Multi Level",
+    "propertyName": "566 Terlun Drive",
+    "totalBath": 3,
+    "lotSize": "35.77 AC",
+    "buildingArea": "5008 Sq. Ft.",
+    "noOfBedrooms": 6,
+    "squareFootage": 5008.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/75EAFBEF-86CA-4E56-837F-6789555B5D83",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-17T01:49:11.323",
+    "agents": [
+      {
+        "id": "9a16958a-f9f8-4299-b8b9-3269c74c07cb",
+        "name": "Kelly Kniffin",
+        "firstName": "Kelly",
+        "lastName": "Kniffin",
+        "defaultPhotoURL": "//openapi.azureedge.net/7C09E8FD-C907-45A7-AC9B-E6A8617CCE9A",
+        "emailAddress": "kelly@homesdurango.com",
+        "leadEmailAddress": "800350.lead.4030611@leads.leadrouter.com",
+        "businessPhone": "9707493867",
+        "isPrimary": true,
+        "office": {
+          "officeId": "5db8568c-9eda-4df6-8d73-ea0d2a413f3d",
+          "RFGOfficeId": "0001",
+          "companyId": "e55903cf-5166-4978-960a-6bbd797e759c",
+          "companyName": "Legacy Properties West",
+          "RFGCompanyId": "800350",
+          "brandCode": "SIR",
+          "name": "Legacy Properties West Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "743 Main Avenue",
+            "city": "Durango",
+            "district": "La Plata",
+            "stateProvince": "Colorado",
+            "stateProvinceCode": "CO",
+            "postalCode": "81301",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 37.27193,
+            "longitude": -107.88169,
+            "formattedAddress": "743 Main Ave, Durango, CO 81301"
+          },
+          "phoneNumber": "9706240444",
+          "emailAddress": "info@lpwsir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 2,
+  "halfBath": 1,
+  "threeQuarterBath": 3,
+  "levels": 3,
+  "yearBuilt": "2007",
+  "totalRooms": 6,
+  "providerKey": "d740ee9b-0385-444f-b6d8-3b3c999b8550",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Views",
+      "description": "Scenic"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Wood"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Refrigerator"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Log"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Sprinkler System"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Tile"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Vaulted Ceilings"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Propane"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "General",
+      "description": "Security System"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Microwave"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Walk-in Closet"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range / Oven"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Stone"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Fireplace in Master BR"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Fire Pit"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Gardens"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Breakfast Bar"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Double Oven"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Trash Compactor"
+    },
+    {
+      "groupName": "Roof",
+      "description": "Metal Roof"
+    },
+    {
+      "groupName": "Property Description",
+      "description": "Acreage"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Eat-in Kitchen"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Other"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Exercise Area"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Wall to Wall Carpet"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dryer"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Deck"
+    },
+    {
+      "groupName": "General",
+      "description": "Stereo System"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Fireplace"
+    },
+    {
+      "groupName": "Interior",
+      "description": "In-Home Gym"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Attached Garage"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Water Feature"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hiking"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Washer"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Radiant Floor"
+    },
+    {
+      "groupName": "Road Type",
+      "description": "County Street"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Garbage Disposal"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Views",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Patio"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Hiking"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Ski (Snow)"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Skiing"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "3 Fireplaces"
+    },
+    {
+      "groupName": "Pool Description",
+      "description": "Hot Tub"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Open"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "3 Car Garage"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "Septic"
+    },
+    {
+      "groupName": "Water",
+      "description": "Well"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Fishing"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Stream on Lot"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Privacy"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Fishing"
+    },
+    {
+      "groupName": "Basement",
+      "description": "Finished"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "20-50 Acres"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "Video QC Approved Listing"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "One of Durango's finest! Beautiful 5,000 square foot luxury log home on over 35 acres only 5 minutes to town!!! Main level features Great Room with soaring 20 foot floor to ceiling river rock fireplace opening to the dining room and a perfect kitchen to entertain. Incredible windows look out to the large covered wrap around Trex deck with log railings and a grand log staircase to access the custom landscaped yard below. The views are simply unbelievable! The main floor master suite includes large walk in closet, bath with marble sinks and laundry. There is also a powder room and ensuite (currently used as a piano room) which can be accessed with no stairs off the entry, other options; office, den, library or bedroom. The upper level features 3 bedrooms, 2 bathrooms, a second laundry room and a stunning loft area with beautiful views. The lower level has an additional living room with pellet stove embedded in stacked stone fireplace, pool table (included), gym, office and bathroom. Walk out from the lower level to 1 acre of landscaped grounds with auto irrigation system. Here you'll find the fire pit, Jacuzzi and waterfall with two pools connected by a creek. The 3 car over sized garage opens to the lower level with plenty of storage throughout. The front of the home faces South for great sunshine, with the back facing to the North for breathtaking mountain views. There is plenty of space and electric to a future 2nd garage/toy barn/shop (plans available). The home sits up on the ridge surrounded by 35.77 acres of Pine, Ponderosa and Juniper + 3 meadows . Privacy, luxury, mountain views, and only 5 minutes from town...This home is a Durango dream!",
+      "htmlRemark": "\n\n\n\n\n\n\n\n\n\n\n\n\n<style>\n<!--\n /* Font Definitions */\n@font-face\n\t{font-family:\"Cambria Math\";\n\tpanose-1:2 4 5 3 5 4 6 3 2 4;\n\tmso-font-charset:0;\n\tmso-generic-font-family:auto;\n\tmso-font-pitch:variable;\n\tmso-font-signature:-536870145 1107305727 0 0 415 0;}\n@font-face\n\t{font-family:Calibri;\n\tpanose-1:2 15 5 2 2 2 4 3 2 4;\n\tmso-font-charset:0;\n\tmso-generic-font-family:auto;\n\tmso-font-pitch:variable;\n\tmso-font-signature:-536870145 1073786111 1 0 415 0;}\n /* Style Definitions */\np.MsoNormal, li.MsoNormal, div.MsoNormal\n\t{mso-style-unhide:no;\n\tmso-style-qformat:yes;\n\tmso-style-parent:\"\";\n\tmargin:0in;\n\tmargin-bottom:.0001pt;\n\tmso-pagination:widow-orphan;\n\tfont-size:12.0pt;\n\tfont-family:Calibri;\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-fareast-font-family:Calibri;\n\tmso-fareast-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-bidi-font-family:\"Times New Roman\";\n\tmso-bidi-theme-font:minor-bidi;}\n.MsoChpDefault\n\t{mso-style-type:export-only;\n\tmso-default-props:yes;\n\tfont-family:Calibri;\n\tmso-ascii-font-family:Calibri;\n\tmso-ascii-theme-font:minor-latin;\n\tmso-fareast-font-family:Calibri;\n\tmso-fareast-theme-font:minor-latin;\n\tmso-hansi-font-family:Calibri;\n\tmso-hansi-theme-font:minor-latin;\n\tmso-bidi-font-family:\"Times New Roman\";\n\tmso-bidi-theme-font:minor-bidi;}\n@page WordSection1\n\t{size:8.5in 11.0in;\n\tmargin:1.0in 1.0in 1.0in 1.0in;\n\tmso-header-margin:.5in;\n\tmso-footer-margin:.5in;\n\tmso-paper-source:0;}\ndiv.WordSection1\n\t{page:WordSection1;}\n-->\n</style>\n\n\n\n\n\n\n<p class=\"MsoNormal\"><font face=\"Times New Roman\">One of Durango's finest! Beautiful 5,000 square foot luxury log home on over 35 acres only 5 minutes to town!!! Main level&nbsp;</font><span style=\"font-family: &quot;Times New Roman&quot;; font-size: 12pt;\">features Great Room with soaring 20 foot floor to ceiling river rock fireplace opening to the dining room and a perfect kitchen&nbsp;</span><span style=\"font-family: &quot;Times New Roman&quot;; font-size: 12pt;\">to entertain. Incredible windows look out to the large covered wrap around Trex deck with log railings and a grand log&nbsp;</span><span style=\"font-family: &quot;Times New Roman&quot;; font-size: 12pt;\">staircase to access the custom landscaped yard below. The views are simply unbelievable! The main floor master suite&nbsp;</span><span style=\"font-family: &quot;Times New Roman&quot;; font-size: 12pt;\">includes large walk in closet, bath with marble sinks and laundry. There is also a powder room and ensuite (currently used&nbsp;</span><span style=\"font-family: &quot;Times New Roman&quot;; font-size: 12pt;\">as a piano room) which can be accessed with no stairs off the entry, other options; office, den, library or bedroom. The upper&nbsp;</span><font face=\"Times New Roman\" style=\"font-size: 12pt;\">level features 3 bedrooms, 2 bathrooms, a second laundry room and a stunning loft area with beautiful views. The lower&nbsp;</font><span style=\"font-size: 12pt; font-family: &quot;Times New Roman&quot;;\">level has an additional living room with pellet stove embedded in stacked stone fireplace, pool table (included), gym, office&nbsp;</span><span style=\"font-size: 12pt; font-family: &quot;Times New Roman&quot;;\">and bathroom. Walk out from the lower level to 1 acre of landscaped grounds with auto irrigation system. Here you'll find&nbsp;</span><span style=\"font-size: 12pt; font-family: &quot;Times New Roman&quot;;\">the fire pit, Jacuzzi and waterfall with two pools connected by a creek. The 3 car over sized garage opens to the lower level&nbsp;</span><span style=\"font-size: 12pt; font-family: &quot;Times New Roman&quot;;\">with plenty of storage throughout. The front of the home faces South for great sunshine, with the back facing to the North for&nbsp;</span><span style=\"font-size: 12pt; font-family: &quot;Times New Roman&quot;;\">breathtaking mountain views. There is plenty of space and electric to a future 2nd garage/toy barn/shop (plans available).&nbsp;</span><font face=\"Times New Roman\" style=\"font-size: 12pt;\">The home sits up on the ridge surrounded by 35.77 acres of Pine, Ponderosa and Juniper + 3 meadows</font><span style=\"font-size: 12pt; font-family: &quot;Times New Roman&quot;;\">. Privacy, luxury, mountain views, and only 5 minutes from town...This home is a Durango dream!</span></p>\n\n\n\n\n\n"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/wyxlxq",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "D45CC056-0CEF-423D-B9BC-0278CFA4D23B",
+      "sequenceNumber": 24,
+      "url": "//openapi.azureedge.net/D45CC056-0CEF-423D-B9BC-0278CFA4D23B",
+      "isDefault": false,
+      "caption": "3513_1ba_ul2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "A7AB2C81-EDA4-4D68-B5D4-04523D3268EC",
+      "sequenceNumber": 23,
+      "url": "//openapi.azureedge.net/A7AB2C81-EDA4-4D68-B5D4-04523D3268EC",
+      "isDefault": false,
+      "caption": "3513_1br_ul1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "7BD9F8C0-4163-4E5D-8F97-0D7DD7472383",
+      "sequenceNumber": 27,
+      "url": "//openapi.azureedge.net/7BD9F8C0-4163-4E5D-8F97-0D7DD7472383",
+      "isDefault": false,
+      "caption": "3513_3br_ul1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-12-20T05:01:39.913"
+    },
+    {
+      "mediaID": "9946752F-8AAE-48BE-9CA9-123D65BB7072",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/9946752F-8AAE-48BE-9CA9-123D65BB7072",
+      "isDefault": false,
+      "caption": "3513_lr_ml2",
+      "shortDescription": "The front of the home faces South for great sunshine, with the back facing to the North for breathtaking mountain views.",
+      "htmlDescription": "<p><span style=\"color: rgb(51, 51, 51); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14px; background-color: rgb(255, 255, 255);\">&nbsp;The front of the home faces South for great sunshine, with the back facing to the North for breathtaking mountain views.</span><br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "E01D3F61-82C8-4F7E-BB20-18C98FCD054F",
+      "sequenceNumber": 35,
+      "url": "//openapi.azureedge.net/E01D3F61-82C8-4F7E-BB20-18C98FCD054F",
+      "isDefault": false,
+      "caption": "3762_hot tub_ll_4426",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "146D4849-10DD-45BA-BFA7-1D6970B7514D",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/146D4849-10DD-45BA-BFA7-1D6970B7514D",
+      "isDefault": false,
+      "caption": "3513_lau_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "B184EAA7-1BA1-4B01-BF6A-1DA6B6BF55AE",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/B184EAA7-1BA1-4B01-BF6A-1DA6B6BF55AE",
+      "isDefault": false,
+      "caption": "3513_kit_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "8E707D1F-D78B-40F5-A1B3-281235591244",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/8E707D1F-D78B-40F5-A1B3-281235591244",
+      "isDefault": false,
+      "caption": "3513_mbr_ml1",
+      "shortDescription": "The main floor master suite includes large walk in closet, bath with marble sinks and laundry.",
+      "htmlDescription": "<p><span style=\"color: rgb(51, 51, 51); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14px; background-color: rgb(255, 255, 255);\">The main floor master suite includes large walk in closet, bath with marble sinks and laundry.</span><br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "3FD52A36-0875-43E0-A7EE-2A0A82764C08",
+      "sequenceNumber": 37,
+      "url": "//openapi.azureedge.net/3FD52A36-0875-43E0-A7EE-2A0A82764C08",
+      "isDefault": false,
+      "caption": "3762_waterfall2_4433",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "B0DFB511-A696-4CA5-A556-361898F1E0F8",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/B0DFB511-A696-4CA5-A556-361898F1E0F8",
+      "isDefault": false,
+      "caption": "3513_mba_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "6458B6A6-0BA0-44F3-8E8C-45DDDCEC0E09",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/6458B6A6-0BA0-44F3-8E8C-45DDDCEC0E09",
+      "isDefault": false,
+      "caption": "3513_4ba_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "7D5BD19B-FB4D-4FFF-A591-499F7E867AD1",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/7D5BD19B-FB4D-4FFF-A591-499F7E867AD1",
+      "isDefault": false,
+      "caption": "3513_bonus_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "8E2F6479-C52E-48CE-A9DE-5413B9F15AF3",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/8E2F6479-C52E-48CE-A9DE-5413B9F15AF3",
+      "isDefault": false,
+      "caption": "3762_deck1_ul_4442",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "8467B816-097C-4109-A3D5-57A65983C7A6",
+      "sequenceNumber": 30,
+      "url": "//openapi.azureedge.net/8467B816-097C-4109-A3D5-57A65983C7A6",
+      "isDefault": false,
+      "caption": "3513_fr_ll3",
+      "shortDescription": "The lower level has an additional living room with pellet stove embedded in stacked stone fireplace, pool table (included), gym, office and bathroom.",
+      "htmlDescription": "<p><span style=\"color: rgb(51, 51, 51); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14px; background-color: rgb(255, 255, 255);\">The lower level has an additional living room with pellet stove embedded in stacked stone fireplace, pool table (included), gym, office and bathroom.</span><br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-12-20T05:01:39.913"
+    },
+    {
+      "mediaID": "3B2D7211-810A-462A-8314-58F937E7BEA8",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/3B2D7211-810A-462A-8314-58F937E7BEA8",
+      "isDefault": false,
+      "caption": "3513_1ba_ul1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "F22185EF-3323-4F81-8041-5A42C80444D2",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/F22185EF-3323-4F81-8041-5A42C80444D2",
+      "isDefault": false,
+      "caption": "3513_kit_ml2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "9A8F8885-840C-4908-89FB-5EF41CF41105",
+      "sequenceNumber": 32,
+      "url": "//openapi.azureedge.net/9A8F8885-840C-4908-89FB-5EF41CF41105",
+      "isDefault": false,
+      "caption": "3762_garage_4418",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "68244845-561B-4413-A6F1-64C739A14BAB",
+      "sequenceNumber": 25,
+      "url": "//openapi.azureedge.net/68244845-561B-4413-A6F1-64C739A14BAB",
+      "isDefault": false,
+      "caption": "3513_2br_ul1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "FDF1BAA3-033A-473D-BBEF-662E58B9A7A3",
+      "sequenceNumber": 26,
+      "url": "//openapi.azureedge.net/FDF1BAA3-033A-473D-BBEF-662E58B9A7A3",
+      "isDefault": false,
+      "caption": "3513_2ba_ul2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "8766C43F-7075-4D6A-AF68-6D96B4D97DD2",
+      "sequenceNumber": 19,
+      "url": "//openapi.azureedge.net/8766C43F-7075-4D6A-AF68-6D96B4D97DD2",
+      "isDefault": false,
+      "caption": "3513_lr_ml3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "3019C072-1461-4EF3-B7B1-756A0BD0F990",
+      "sequenceNumber": 36,
+      "url": "//openapi.azureedge.net/3019C072-1461-4EF3-B7B1-756A0BD0F990",
+      "isDefault": false,
+      "caption": "3762_patio1_ll_4424",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "505550FE-E1EA-43E9-AC51-7AAAA4E3DBDA",
+      "sequenceNumber": 28,
+      "url": "//openapi.azureedge.net/505550FE-E1EA-43E9-AC51-7AAAA4E3DBDA",
+      "isDefault": false,
+      "caption": "3513_fr_ll2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-12-20T05:01:39.913"
+    },
+    {
+      "mediaID": "E0D43500-4E1D-41FE-8677-7D9E89F12356",
+      "sequenceNumber": 29,
+      "url": "//openapi.azureedge.net/E0D43500-4E1D-41FE-8677-7D9E89F12356",
+      "isDefault": false,
+      "caption": "3513_fr_ll1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-12-20T05:01:39.913"
+    },
+    {
+      "mediaID": "087606D4-77A4-4987-81A9-7F49772BFDFD",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/087606D4-77A4-4987-81A9-7F49772BFDFD",
+      "isDefault": false,
+      "caption": "3513_kit_ml3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "13A94E4A-9AEB-48E9-938C-7F88385818D8",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/13A94E4A-9AEB-48E9-938C-7F88385818D8",
+      "isDefault": false,
+      "caption": "3513_mba_ml2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "BD5EEAED-A8E5-4A42-9312-8736A5E7A5FD",
+      "sequenceNumber": 39,
+      "url": "//openapi.azureedge.net/BD5EEAED-A8E5-4A42-9312-8736A5E7A5FD",
+      "isDefault": false,
+      "caption": "3762_patio2_4421",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "D21990CA-8C21-43F9-9997-88715A72236E",
+      "sequenceNumber": 1,
+      "url": "https://issuu.com/lpwsir/docs/566-terlun-drive?e=17110521/62080807",
+      "isDefault": true,
+      "caption": "Brochure",
+      "format": "3D Video",
+      "category": "3D Video",
+      "lastUpdateOn": "2018-06-05T17:55:39.627"
+    },
+    {
+      "mediaID": "840EC4B1-6202-4D08-AA34-8B4C16E1D481",
+      "sequenceNumber": 33,
+      "url": "//openapi.azureedge.net/840EC4B1-6202-4D08-AA34-8B4C16E1D481",
+      "isDefault": false,
+      "caption": "3513_gar_ll2",
+      "shortDescription": "The 3 car, over sized garage opens to the lower level with plenty of storage throughout.",
+      "htmlDescription": "<p><span style=\"color: rgb(51, 51, 51); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14px; background-color: rgb(255, 255, 255);\">The 3 car, over sized garage opens to the lower level with plenty of storage throughout.</span><br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "2EF7CD25-4256-4E78-88DE-99D28BF6BFD0",
+      "sequenceNumber": 34,
+      "url": "//openapi.azureedge.net/2EF7CD25-4256-4E78-88DE-99D28BF6BFD0",
+      "isDefault": false,
+      "caption": "IMG_1989",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "9698ED5C-BA26-43C1-ACDA-A1D2059D0A4C",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/9698ED5C-BA26-43C1-ACDA-A1D2059D0A4C",
+      "isDefault": false,
+      "caption": "3513_lr_ml1",
+      "shortDescription": "Main level features Great Room with soaring 20 foot floor to ceiling river rock fireplace opening to the dining room and a perfect kitchen to entertain.",
+      "htmlDescription": "<p><span style=\"color: rgb(51, 51, 51); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14px; background-color: rgb(255, 255, 255);\">Main level features Great Room with soaring 20 foot floor to ceiling river rock fireplace opening to the dining room and a perfect kitchen to entertain.</span><br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "ED42A527-C697-4E80-8148-A2E48BBB3D2E",
+      "sequenceNumber": 31,
+      "url": "//openapi.azureedge.net/ED42A527-C697-4E80-8148-A2E48BBB3D2E",
+      "isDefault": false,
+      "caption": "3513_exr_ll1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-12-20T05:01:39.913"
+    },
+    {
+      "mediaID": "80C4268D-5494-44A3-B78F-A46BAC2A2289",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/80C4268D-5494-44A3-B78F-A46BAC2A2289",
+      "isDefault": false,
+      "caption": "3762_deck2_ul_4443",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "E5A21ECC-E389-4C69-A725-AD48CB214653",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/E5A21ECC-E389-4C69-A725-AD48CB214653",
+      "isDefault": false,
+      "caption": "3513_foyer_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "57F6898D-437A-4298-B2AB-B2FC48D580C8",
+      "sequenceNumber": 40,
+      "url": "//openapi.azureedge.net/57F6898D-437A-4298-B2AB-B2FC48D580C8",
+      "isDefault": false,
+      "caption": "3762_front2_4438",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "FA528FE3-3F51-40B1-8900-C6FF1FE98450",
+      "sequenceNumber": 22,
+      "url": "//openapi.azureedge.net/FA528FE3-3F51-40B1-8900-C6FF1FE98450",
+      "isDefault": false,
+      "caption": "3513_lft_ul2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "EE15F36A-C744-4F00-97A9-CDF741464DA6",
+      "sequenceNumber": 20,
+      "url": "//openapi.azureedge.net/EE15F36A-C744-4F00-97A9-CDF741464DA6",
+      "isDefault": false,
+      "caption": "3513_lft_ul3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "0B6106F2-B203-4028-A973-D18A7303862F",
+      "sequenceNumber": 21,
+      "url": "//openapi.azureedge.net/0B6106F2-B203-4028-A973-D18A7303862F",
+      "isDefault": false,
+      "caption": "3513_lft_ul1",
+      "shortDescription": "The upper level features 3 bedrooms, 2 bathrooms, a second laundry room and a stunning loft area with beautiful views.",
+      "htmlDescription": "<p><span style=\"color: rgb(51, 51, 51); font-family: Georgia, &quot;Times New Roman&quot;, Times, serif; font-size: 14px; background-color: rgb(255, 255, 255);\">The upper level features 3 bedrooms, 2 bathrooms, a second laundry room and a stunning loft area with beautiful views.</span><br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "664EEF06-BEB5-4FDB-82C1-D5C09AE6F35B",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/664EEF06-BEB5-4FDB-82C1-D5C09AE6F35B",
+      "isDefault": false,
+      "caption": "3513_dr_ml1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "6F21CFC0-00BD-44A8-B80B-E319EFDF3200",
+      "sequenceNumber": 38,
+      "url": "//openapi.azureedge.net/6F21CFC0-00BD-44A8-B80B-E319EFDF3200",
+      "isDefault": false,
+      "caption": "3762_patio3_4422",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "00DCC953-86D6-41D4-868C-ED9E48749B08",
+      "sequenceNumber": 1,
+      "url": "https://my.matterport.com/show/?m=B5Yayg8nTj2",
+      "isDefault": true,
+      "caption": "766 Terlun 3D",
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2017-12-20T05:01:39.913"
+    },
+    {
+      "mediaID": "98A38379-B3F3-4C2B-BF12-EDECD860E798",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/98A38379-B3F3-4C2B-BF12-EDECD860E798",
+      "isDefault": true,
+      "caption": "3762_front1_4436",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.280"
+    },
+    {
+      "mediaID": "A12FA5E4-413A-411F-9426-F319AF625702",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/A12FA5E4-413A-411F-9426-F319AF625702",
+      "isDefault": false,
+      "caption": "3513_bonus_ml2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-27T21:23:41.297"
+    },
+    {
+      "mediaID": "60B91F61-9D64-4FFD-A658-FD0FEE32CCA4",
+      "sequenceNumber": 1,
+      "url": "https://players.brightcove.net/5699924528001/default_default/index.html?videoId=5800298311001",
+      "isDefault": true,
+      "format": "Video",
+      "category": "Property Video",
+      "lastUpdateOn": "2018-06-21T15:20:51.267"
+    },
+    {
+      "mediaID": "E834298A-089C-6A9E-CBFF-7F63B9E00EE4",
+      "sequenceNumber": 2,
+      "url": "\/\/openapi.azureedge.net\/E834298A-089C-6A9E-CBFF-7F63B9E00EE4",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Floor Plan",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-11-06T17:56:32.457"
+    },
+    {
+      "mediaID": "FC8B03F4-177A-D671-8516-95735682F706",
+      "sequenceNumber": 1,
+      "url": "\/\/openapi.azureedge.net\/FC8B03F4-177A-D671-8516-95735682F706",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Floor Plan",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2017-11-06T17:56:32.457"
+    }
+  ],
+  "propertyRooms": [
+    {
+      "sequenceNumber": 1,
+      "level": "1",
+      "name": "Master Bedroom",
+      "dimensions": "14 Feet x 15 Feet"
+    },
+    {
+      "sequenceNumber": 2,
+      "level": "1",
+      "name": "Bedroom 2",
+      "dimensions": "12 Feet x 14 Feet"
+    },
+    {
+      "sequenceNumber": 3,
+      "level": "1",
+      "name": "Bedroom 3",
+      "dimensions": "12 Feet x 14 Feet"
+    },
+    {
+      "sequenceNumber": 4,
+      "level": "1",
+      "name": "Bedroom 4",
+      "dimensions": "10 Feet x 18 Feet"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "728706",
+      "isPrimary": true
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+.user-info {
+  color: $color_2;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+
+  .photo {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0;
+    @include border-radius(50%);
+  }
+  .details {
+    display: block;
+
+    .username {
+      display: table;
+      margin-top: 2px;
+      line-height: 1;
+      font-size: 12px;
+      font-weight: 700;
+      color: #424242;
+      margin-bottom: 5px;
+      position: relative;
+      @include transition(color 0.3s);
+
+      &.__popup-visible {
+        color: #212121;
+        text-decoration: underline;
+      }
+    }
+    .company {
+      color: #757575;
+      line-height: 1.2;
+      font-size: 12px;
+      display: block;
+      margin-top: 2px;
+      font-weight: 600;
+    }
+    .meta-summary {
+      line-height: 1.2;
+      font-size: 12px;
+      display: block;
+      color: #757575;
+      margin-top: 2px;
+
+      span {
+        &:after {
+          content: "\00b7";
+          font-weight: 700;
+          font-size: 18px;
+          color: #aaa;
+          margin-left: 2px;
+          margin-right: 2px;
+          vertical-align: sub;
+          display: inline-block;
+          height: 16px;
+        }
+        &:last-of-type {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &.\--no-company {
+      margin-top: 11px;
+    }
+
+    .small-button {
+      margin-top: 5px;
+    }
+  }
+  &.\--footer {
+    margin-top: 10px;
+
+    .details {
+      .username {
+        display: table;
+        margin-bottom: 2px;
+        @include transition(color 0.3s);
+
+        &:hover {
+          color: #212121;
+        }
+      }
+    }
+  }
+
+  &.\--story {
+    .photo {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 45px;
+    }
+    .txt-info {
+      color: #9e9e9e;
+      margin-top: 2px;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .details {
+      margin-top: 5px;
+    }
+    .details.\--no-company {
+      margin-top: 12px;
+      .username {
+        margin-bottom: 2px;
+      }
+    }
+  }
+
+  &.\--missing {
+    .photo {
+      background: #333;
+    }
+  }
+
+  &.\--white {
+    .details .username,
+    .company,
+    .txt-info {
+      color: #eee;
+    }
+  }
+
+  .edit-field {
+    @include transition(background 0.3s);
+
+    &:hover,
+    &.\--edit {
+      background: #fafafa;
+    }
+    .data-input {
+      cursor: pointer;
+      margin-top: 0 !important;
+    }
+    &.\--edit {
+      background: #fafafa;
+    }
+    &.\--edit {
+      .data-input {
+        cursor: text;
+      }
+    }
+  }
+}

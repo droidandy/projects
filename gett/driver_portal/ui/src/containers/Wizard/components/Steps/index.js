@@ -1,0 +1,6 @@
+export { default as SignUp } from './SignUp'
+export { default as Info } from './Info'
+export { default as Info2 } from './Info2'
+export { default as Appointment } from './Appointment'
+export { default as Documents } from './Documents'
+export { default as WelcomeSession } from './WelcomeSession'

@@ -1,0 +1,80 @@
+{% macro ha_filter_select_inner(full_name, choices, value, translation_domain, attrs) %}
+    {% set list_options %}
+        <ul class="nav-menu">
+            {% set option_selected_label = (choices|first).label is defined ? (choices|first).label|trans : '' %}
+            {% set option_selected_value = '' %}
+
+            {% for group_label, choice in choices %}
+                {% set is_selected = '' %}
+
+                {% if choice is selectedchoice(value) %}
+                    {% set is_selected = ' class="selected"' %}
+                    {% set option_selected_value = choice.value %}
+                    {% set option_selected_label = choice.label|trans({}, translation_domain) %}
+                {% endif %}
+                <li data-value="{{ choice.value }}"{{ is_selected|raw }}>
+                    <a href="#">{{ choice.label|trans({}, translation_domain) }}</a>
+                </li>
+            {% endfor %}
+
+            {% if (option_selected_value is not filter_default) %}
+                {% set selected_flag = 'selected' %}
+            {% else %}
+                {% set selected_flag = '' %}
+            {% endif %}
+        </ul>
+    {% endset %}
+
+    <a href="#" class="main-filter {{ selected_flag }}" data-value="{{ option_selected_value }}">
+        {{ option_selected_label }}
+    </a>
+    {{ list_options }}
+
+    <input type="hidden"
+           name="{{ full_name }}"
+           {% if attrs.disabled|default(false) %}
+           disabled
+           {% else %}
+           value="{{ value }}"
+           {% endif %}
+           data-menu-value/>
+{% endmacro %}
+
+{% macro ha_filter_select(field) %}
+    {% from _self import ha_filter_select_inner %}
+
+    {{ ha_filter_select_inner(
+        field.vars.full_name,
+        field.vars.preferred_choices|merge(field.vars.choices),
+        field.vars.value,
+        field.vars.translation_domain
+    ) }}
+
+    {% do field.setRendered %}
+{% endmacro %}
+
+{% macro ha_filter_price(form_view) %}
+    {% from _self import ha_filter_select, ha_filter_select_inner %}
+
+    <li class="filter filter-currency">
+        {{ ha_filter_select(form_view.currency) }}
+    </li>
+    {% for currency, ranges in form_view.range.vars.choices %}
+        {% set currencySelected = currency == form_view.currency.vars.value %}
+        <li class="filter filter-price" data-currency="{{ currency }}"
+            {% if not currencySelected %}
+            style="display: none"
+            {% endif %}
+        >
+            {{ ha_filter_select_inner(
+                form_view.range.vars.full_name,
+                ranges,
+                form_view.range.vars.value,
+                form_view.range.vars.translation_domain,
+                {'disabled': not currencySelected}
+            ) }}
+        </li>
+    {% endfor %}
+
+    {% do form_view.range.setRendered %}
+{% endmacro %}

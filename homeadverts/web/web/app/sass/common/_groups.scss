@@ -1,0 +1,240 @@
+// Sign Up
+.register-block {
+  padding: 100px 0;
+  min-height: calc(100% - 311px);
+  background: none;
+
+  @media only screen and (max-width: $tablet_width + 1) {
+    padding: 20px 0;
+  }
+}
+
+.divide-icon {
+  width: 85px;
+  height: 85px;
+  font-size: 33px;
+  line-height: 79px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #565a5c;
+  color: $color_5;
+  text-align: center;
+  overflow: hidden;
+  display: none;
+  @include border-radius(50%);
+  @media screen and (min-width: 670px) {
+    display: block;
+    border-width: 12px;
+    top: 50%;
+    left: 50%;
+    margin: -55px 0 0 -57px;
+    width: 105px;
+    height: 105px;
+    font-size: 43px;
+    line-height: 88px;
+  }
+  .alt & {
+    border-color: #efefef;
+  }
+}
+
+.form-notice {
+  text-align: center;
+  .register-block & {
+    padding: 0 10px 0 10px;
+    clear: both;
+    margin-top: -20px;
+    @media screen and (min-width: 670px) {
+      position: absolute;
+      top: 0;
+      left: 59.4%;
+      width: 41.66667%;
+      height: 100%;
+      padding-right: 0;
+      margin-top: 0;
+    }
+    div {
+      @media screen and (min-width: 670px) {
+        height: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+  .register-block.agent-register-block & {
+    div {
+      @media screen and (min-width: 670px) {
+        height: auto;
+      }
+    }
+  }
+
+  a {
+    color: #427fed;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    color: #565a5c;
+    font-size: $font_size_s2;
+    padding-top: 13px;
+  }
+  h3 {
+    color: #565a5c;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 670px) {
+    text-align: left;
+  }
+}
+
+.form-message {
+  @media screen and (min-width: 670px) {
+    padding: 112px 0;
+  }
+  p {
+    padding-top: 0;
+  }
+}
+
+.sale {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #d3d3d3;
+  padding-top: 17px;
+  h3 {
+    padding-bottom: $font_size_s1;
+    color: #d34836;
+  }
+}
+
+.grouped-actions {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #d3d3d3;
+  padding: 10px 0;
+  .checkbox {
+    padding-right: 17px;
+  }
+  .button {
+    min-width: 100px;
+    margin-top: 10px;
+    @media screen and (min-width: 860px) {
+      margin-top: 0;
+    }
+  }
+  span {
+    color: #565a5c;
+    display: block;
+    padding-top: 10px;
+    @media screen and (min-width: 500px) {
+      display: inline;
+      padding-left: 31px;
+      padding-top: 0;
+    }
+  }
+}
+
+.field-notice {
+  padding-bottom: $font_size_s2;
+  display: inline-block;
+  @media screen and (min-width: 860px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 0;
+  }
+}
+
+.field-group-progress {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #d3d3d3;
+  padding: 20px 0;
+  @extend %clearfix;
+  @media screen and (min-width: 700px) {
+    padding: 10px 0;
+    line-height: $font_size_l;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    @media screen and (min-width: 700px) {
+      font-weight: normal;
+      display: inline-block;
+      padding-right: 48px;
+      line-height: $font_size_l;
+    }
+  }
+  .button {
+    min-width: 100px;
+    margin-top: 10px;
+    @media screen and (min-width: 700px) {
+      float: right;
+      margin-top: 0;
+    }
+  }
+  input {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    @extend %input-style;
+    @media screen and (min-width: 700px) {
+      margin-top: 0;
+      display: inline-block;
+      width: 44%;
+    }
+  }
+  .progress-bar {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    div {
+      background-color: #3974ea;
+    }
+    @media screen and (min-width: 700px) {
+      margin-top: 0;
+      display: inline-block;
+      width: 40%;
+      line-height: $font_size_l;
+    }
+  }
+  span[data-total-count] {
+    font-weight: 600;
+    color: #cd3f2f;
+  }
+}
+
+.upload-video {
+  label {
+    @media screen and (min-width: 700px) {
+      padding-right: 16%;
+    }
+  }
+}
+
+.textarea-field {
+  label {
+    vertical-align: top;
+  }
+}
+
+.required {
+  color: #d34836;
+}
+
+label.required {
+  color: #565a5c;
+}
+
+.ok {
+  color: #62b647;
+}

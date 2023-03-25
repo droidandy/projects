@@ -1,0 +1,495 @@
+$line-width: 4px;
+
+.users__custom-select {
+  vertical-align: top;
+}
+
+.users-export__label {
+  cursor: pointer;
+  color: $brand-blue;
+  span {
+    margin-left: 5px;
+  }
+  margin-top: 16px;
+}
+
+.users-date__select {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  * {
+    box-sizing: border-box;
+  }
+  margin-left: 1px;
+  svg {
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
+
+.container-description__users-label {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.users-export__modal-label {
+  line-height: 23px;
+}
+
+.users-export__list {
+  margin-top: 13px;
+}
+
+.users-filters {
+  float: left;
+  max-width: 955px;
+}
+
+.c-c__b-c__left {
+  width: 62%;
+  margin-right: 3%;
+  float: left;
+}
+
+.c-c__b-c__right {
+  width: 35%;
+  float: left;
+}
+
+.c-c__b-c__box {
+  background: $brand-white;
+  border-radius: 8px;
+  padding: 12px 13px;
+}
+
+.c-c__b-c__box-header_select {
+  .custom-select__value {
+    font-size: 18px;
+  }
+  .c-c__b-c__box-header-title {
+    vertical-align: middle;
+    line-height: 27px;
+  }
+  .custom-select__outer-menu__item-label {
+    font-weight: normal;
+  }
+}
+
+.c-c__b-c__box-header-title {
+  font-weight: bold;
+  font-size: 15px;
+  vertical-align: middle;
+  color: $brand-black;
+  line-height: normal;
+}
+
+.c-c__b-c__box-header__icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.c-c__b-c__box-header__icon_2 {
+  margin-right: 6px;
+}
+
+.c-c__b-c__box-header__icon_3 {
+  margin-right: 5px;
+}
+
+.c-c__b-c__box-content {
+  padding-left: 18px;
+  margin-top: 5px;
+}
+
+.c-c__b-c__box-content-promotion {
+  margin: 10px 17px 16px 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 23px;
+  color: $brand-black;
+}
+
+.c-c__b-c__box-content__table_props {
+  margin-top: 15px;
+  padding-left: 22px;
+}
+
+.c-c__b-c__box-content__description {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: $brand-black;
+}
+
+.span_3_of_12 {
+  width: 30%;
+  float: left;
+  margin-left: 4.95%;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.row {
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+  background: #0085FF;
+  border-radius: 17px;
+  margin: 2.5px 5px 2.5px 0px;
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon {
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.row-promotions {
+  margin-bottom: 25px;
+}
+
+.selects {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 16px;
+}
+.label {
+  margin-top: 20px;
+}
+
+.divider {
+  margin-right: 15px;
+}
+
+.c-c__b-c__box-header-title-3 {
+  font-size: 18px;
+}
+
+.c-c__b-c__box-table table td {
+  word-break: break-all;
+  padding-left: 0;
+  &:first-child {
+    font-weight: bold;
+  }
+}
+
+.c-c__b-c__box-table table tr {
+  &:hover {
+    background: transparent;
+  }
+  &:last-child {
+    border-bottom: 1px solid $brand-light-blue;
+  }
+}
+
+.c-c__b-c__box_table {
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.user-feed {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 21px;
+}
+
+.user-feed__item {
+  padding-bottom: 40px;
+  border-left: $line-width solid $brand-silver;
+  padding-left: 37px;
+  position: relative;
+  &:last-child {
+    padding-bottom: 0;
+    border-left: $line-width solid transparent;
+  }
+}
+
+.user-feed__item-first {
+  .user-feed__item-icon {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+}
+
+.user-feed__item-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: -2px;
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.user-feed__item_red-icon {
+  .user-feed__item-icon {
+    background: $brand-red;
+  }
+}
+
+.user-feed__item_orange-icon {
+  .user-feed__item-icon {
+    background: $brand-orange;
+  }
+}
+
+.user-feed__item_green-icon {
+  .user-feed__item-icon {
+    background: $brand-green;
+  }
+}
+
+.user-feed__item_blue-icon {
+  .user-feed__item-icon {
+    background: $brand-blue;
+  }
+}
+
+.user-feed__item_red-line {
+  border-color: $brand-red;
+}
+
+.user-feed__item_green-line {
+  border-color: $brand-green;
+}
+
+.user-feed__item_silver-line {
+  border-color: $brand-silver;
+}
+
+.user-feed__item_orange-line {
+  border-color: $brand-orange;
+}
+
+.user-feed__item_silver-icon {
+  .user-feed__item-icon {
+    background: $brand-silver;
+  }
+}
+
+.user-feed__item-title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+  color: $brand-black;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.user-feed__item-date {
+  color: $brand-black;
+  margin-bottom: 5px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.user-feed__item-autorenewall__status {
+  span {
+    color: $brand-green;
+    margin-left: 3px;
+    display: inline-block;
+  }
+  svg,
+  span {
+    vertical-align: middle;
+  }
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.user-feed__item-autorenewall__status_red {
+  span {
+    color: $brand-red;
+  }
+}
+
+.user-feed__item-bottom__info-item {
+  margin-top: 3px;
+  span {
+    vertical-align: middle;
+    margin-left: 4px;
+    font-size: 13px;
+    line-height: 11px;
+    color: $brand-black;
+  }
+  svg {
+    font-size: 11px;
+  }
+  margin-right: 11px;
+}
+
+.user-feed__item-bottom__info-item__logstatus {
+  margin-left: 6px;
+}
+
+.user-feed__item-bottom__info-item__log-text {
+  max-width: 300px;
+  word-break: break-word;
+  font-family: Ubuntu mono;
+}
+
+.column-users__integraitons-statuses__max-width {
+  overflow: hidden;
+  max-width: 70px;
+  text-overflow: ellipsis;
+  max-width: 118px;
+  display: inline-block;
+}
+
+.ReactModal__Content-top {
+  z-index: 2000;
+  position: relative;
+}
+
+.user-feed__item-bottom__info-item__integration-status {
+  margin-left: 6px;
+  line-height: normal;
+  .tip {
+    margin-left: 3px;
+    vertical-align: top;
+  }
+}
+
+.user-feed__item-bottom__info-item__integration-desc {
+  margin-left: 20px;
+  margin-top: 5px;
+  font-size: 13px;
+  color: #1a344b;
+}
+
+.user-feed__item-bottom__info-item_2 {
+  span {
+    vertical-align: inherit;
+  }
+}
+
+.user-feed__item-bottom__info-item__integrations-link {
+  border-bottom: 1px dashed;
+  line-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.user-feed__item-bottom__info-item__integrations-link_pending {
+  color: $brand-orange;
+  border-color: $brand-orange;
+}
+
+.user-feed__item-bottom__info-item__integrations-link_error {
+  color: $brand-red;
+  border-color: $brand-red;
+}
+
+.user-feed__item-bottom__info-item__integrations-link_sent {
+  color: $brand-green;
+  border-color: $brand-green;
+}
+
+.user-feed__item-description__revenue {
+  line-height: 21px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: $brand-green;
+  margin-bottom: 8px;
+}
+
+.user-feed__item-bottom__info-notification {
+  font-size: 13px;
+  line-height: 11px;
+  color: $brand-black;
+  span {
+    margin-left: 4px;
+  }
+  margin-top: 3px;
+}
+
+.user-feed__item-title__light {
+  font-weight: bold;
+}
+
+.c-c__b-c__box-header-title__right {
+  font-size: 15px;
+  color: $brand-blue;
+}
+
+.c-c__b-c__box-header-title__right-expand {
+  float: right;
+  span,
+  svg {
+    vertical-align: middle;
+  }
+  span {
+    margin-right: 5px;
+  }
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.users-table {
+  tbody tr:hover {
+    background: white;
+  }
+  margin-top: 20px;
+}
+
+.users-sandbox__switcher-label {
+  color: $brand-silver;
+  margin-right: 5px;
+}
+
+.users-search__input {
+  margin-left: 30px;
+}
+
+.users-count {
+  color: $brand-black;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.container-table_users {
+  padding-top: 13px;
+}
+
+.users-delete__button {
+  margin-left: 25px;
+}

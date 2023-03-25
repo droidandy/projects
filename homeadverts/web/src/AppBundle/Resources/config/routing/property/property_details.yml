@@ -1,0 +1,21 @@
+property_details:
+    path:  /{id}/{slug}
+    defaults: { _controller: AppBundle:PropertyDetails:index, slug: ''}
+    methods:  [GET]
+    requirements:
+        market: "for\-sale|to\-rent|all"
+        id: \d+
+
+property_description_translation:
+    path:  /{id}/{slug}/translation
+    defaults: { _controller: AppBundle:PropertyDetails:translation }
+    methods:  [GET]
+    requirements:
+        id: \d+
+
+property_images:
+    path:  /{id}/images
+    defaults: { _controller: AppBundle:PropertySearch:getImages }
+    methods:  [GET]
+    requirements:
+        id: \d+

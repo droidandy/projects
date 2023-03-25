@@ -1,0 +1,1 @@
+INSERT INTO `form_question` (`index_number`, `required`, `question_id`, `form_id`) VALUES (66, FALSE, (SELECT `question_id` FROM `question` WHERE CODE = 'was_there_more_than_one_wa'), (SELECT `form_id` FROM `form` WHERE name = 'group-application-other'));

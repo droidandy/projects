@@ -1,0 +1,42 @@
+.responsive-max(@maxWidth; @rules) {
+	@media only screen and (max-width: @maxWidth) {
+		@rules();
+	}
+}
+.responsive-min(@minWidth; @rules) {
+	@media only screen and (min-width: @minWidth) {
+		@rules();
+	}
+}
+.responsive(@minWidth; @maxWidth; @rules) {
+	@media only screen and (min-width: @minWidth) and (max-width: @maxWidth) {
+		@rules();
+	}
+}
+
+.text-gradient(@gradient) {
+	background-image: @gradient;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	:global(.no-backgroundcliptext) & {
+		color: @blue-6;
+		background-image: none;
+	}
+}
+
+.grid-block(){
+	display: -ms-grid;
+	display: grid;
+}
+
+.grid-template-columns(@args) {
+	-ms-grid-columns: @args;
+	grid-template-columns: @args;
+}
+
+.grid-template-rows(@args) {
+	-ms-grid-rows: @args;
+	grid-template-rows: @args;
+}

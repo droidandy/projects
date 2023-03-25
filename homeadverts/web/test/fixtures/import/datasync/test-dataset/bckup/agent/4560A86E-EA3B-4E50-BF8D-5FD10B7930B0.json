@@ -1,0 +1,116 @@
+{
+    "agentSummary": {
+        "id": "4560a86e-ea3b-4e50-bf8d-5fd10b7930b0",
+        "isAgent": true,
+        "name": "Suzanne H Ainslie",
+        "firstName": "Suzanne",
+        "lastName": "Ainslie",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/B85ACBDF-548D-4A67-8E34-2E9FF86406B9",
+        "emailAddress": "Suzanne.Ainslie@sothebyshomes.com",
+        "businessPhone": "5613731525",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "40c25e4b-8629-4351-b507-16d82dcb41c9",
+            "RFGOfficeId": "0030",
+            "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+            "companyName": "NRT Sotheby's International Realty",
+            "RFGCompanyId": "901195",
+            "brandCode": "SIR",
+            "name": "Sotheby's International Realty - Palm Beach Brokerage",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "340  Royal Poinciana Way Ste 337",
+                "city": "Palm Beach",
+                "district": "Palm Beach County",
+                "stateProvince": "Florida",
+                "stateProvinceCode": "FL",
+                "postalCode": "33480",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 26.717206,
+                "longitude": -80.0416613,
+                "formattedAddress": "340 Royal Poinciana Way, Palm Beach, FL 33480"
+            },
+            "phoneNumber": "5616593555",
+            "emailAddress": "Debra.Reece@sothebyshomes.com"
+        }
+    },
+    "personId": "fc7a75e7-9060-45bd-a5eb-ebf2fccde776",
+    "lastUpdateOn": "2018-07-11T17:57:51.473",
+    "roles": [
+        {
+            "office": {
+                "officeId": "40c25e4b-8629-4351-b507-16d82dcb41c9",
+                "RFGOfficeId": "0030",
+                "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+                "companyName": "NRT Sotheby's International Realty",
+                "RFGCompanyId": "901195",
+                "brandCode": "SIR",
+                "name": "Sotheby's International Realty - Palm Beach Brokerage",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "340  Royal Poinciana Way Ste 337",
+                    "city": "Palm Beach",
+                    "district": "Palm Beach County",
+                    "stateProvince": "Florida",
+                    "stateProvinceCode": "FL",
+                    "postalCode": "33480",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 26.717206,
+                    "longitude": -80.0416613,
+                    "formattedAddress": "340 Royal Poinciana Way, Palm Beach, FL 33480"
+                },
+                "phoneNumber": "5616593555",
+                "emailAddress": "Debra.Reece@sothebyshomes.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": false,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "Suzanne.Ainslie@sothebyshomes.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "B85ACBDF-548D-4A67-8E34-2E9FF86406B9",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/B85ACBDF-548D-4A67-8E34-2E9FF86406B9",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-07-11T17:57:51.427"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Fax",
+            "number": "5612734037"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Suzanne Ainslie was born in New York City and attended the Chapin School and then the Westover School.  After earning her B.A. degree from Barnard College she worked as a stockbroker with E.F. Hutton.  Suzanne then attended Columbia University\u2019s School of International Affairs receiving a master\u2019s degree in International Finance.  For 10 years she worked in venture capital with Wood River Capital and Pan Ocean Oil, assisting in raising capital for the funds and overseeing many of those firms\u2019 investments. <br> <br>\r\nSuzanne\u2019s passion for tennis has led to her serving nine years on the board of the International Tennis Hall of Fame and being ranked first in the Eastern section of the U.S. in the 35 and over women\u2019s doubles.  As an entrepreneur, she launched two ventures in the food business.  Gourmet Gazelle was a gourmet healthful food store in New York City.  Dining Smart was a restaurant guide to healthful dining in New York City that she both wrote and published.  Suzanne is on the board of the Society of the Four Arts and is chairman of the society\u2019s Children\u2019s Library committee.  She is involved with many not-for-profit organizations in Palm Beach and New York City. <br> <br>\r\nSuzanne lives in Palm Beach with her husband and daughter.  She obtained her Florida real estate license in 2003."
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "FL",
+            "number": "3055312"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+query CompanySearch($instrumentsPattern: String!, $instrumentsNMax: Int!) {
+  instruments(pattern: $instrumentsPattern, nMax: $instrumentsNMax) {
+    ... on Instruments {
+      instruments {
+        id
+        name
+        symbol
+        description
+        currentPrice
+        priceChangePercentage
+      }
+    }
+  }
+}

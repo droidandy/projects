@@ -1,0 +1,28 @@
+app:
+  name: marketplace-bff
+
+service:
+  type: ClusterIP
+  ports:
+  - port: 5000
+    name: web
+
+rgs:
+  metadata:
+    description: "Marketplace BFF"
+    severityLevel: "HIGH"
+    businessOwnerName: "Никита Гребенников"
+    businessOwnerEmail: "nv.Grebennikov@rgsbank.ru"
+    businessOwnerTelegram: "@nikitagreb"
+    technicalOwnerName: "Виктор Трухан"
+    technicalOwnerEmail: "v.trukhan@rgsbank.ru"
+    technicalOwnerTelegram: "@Cybermind"
+    telegramChannel: "https://t.me/joinchat/AAAAAFA8BSvjlucJPYXXdg"
+    monitoringDashboardUrl: "https://monitoring.rgsbank.ru/d/xtkCtBkiz/blackbox-metrics-for-marketplace?orgId=1&refresh=5s"
+    confluenceUrl: "https://confluence.rgsbank.ru/pages/viewpage.action?pageId=47592718"
+    jiraBoardUrl: "https://jira.rgsbank.ru/secure/RapidBoard.jspa?rapidView=622"
+    # egressApps (в какие сервисы ходит внутри кубера)
+    egressApps:
+      - catalog
+      - users
+      - application

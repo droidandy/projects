@@ -1,0 +1,2 @@
+- include: hostname.yml tags=common,initial_setup
+- include: apt.yml tags=common,initial_setup

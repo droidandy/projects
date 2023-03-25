@@ -1,0 +1,257 @@
+.user-welcome {
+  text-align: center;
+  color: #424242;
+  padding-top: 40px;
+  min-height: 420px;
+  margin: 0;
+}
+.user-welcome h5 {
+  font-size: 38px;
+  font-weight: 400;
+  padding-top: 40px;
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  color: #373737;
+}
+.user-welcome p.info {
+  font-size: 20px;
+}
+.user-welcome .tut-info {
+  min-height: 150px;
+}
+.user-welcome p {
+  font-size: 12px;
+  padding: 2px 0;
+  margin: 0;
+  color: #d3d3d3;
+}
+.user-welcome .pager li a {
+  text-indent: -9999px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  background-color: #919398;
+  border: 0;
+  margin: 0 3px;
+}
+.user-welcome .pager li a.active {
+  background-color: #fd3257;
+}
+.form-detail-block {
+  padding: 20px 45px;
+}
+.tutorial {
+  text-align: center;
+}
+.form-detail-block .info-form-field {
+  padding: 10px 0;
+}
+a.next-link {
+  font-size: 25px;
+  color: #fd3257;
+  margin-top: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.arrow-nxt-icon {
+  background: url(../img/arrow-done.png) no-repeat;
+  width: 13px;
+  height: 21px;
+  background-size: 100%;
+  display: inline-block;
+  position: relative;
+  margin: 2px 0 0 7px;
+  top: 2px;
+}
+.user-welcome .tutotial-icon {
+  line-height: 135px;
+  height: 135px;
+  margin-top: 50px;
+}
+.user-welcome .tutotial-icon img {
+  display: inline-block;
+}
+.tutorial .bx-wrapper {
+  overflow: hidden;
+}
+.tutorial .bx-wrapper .bx-pager,
+.tutorial .bx-wrapper .bx-controls-auto {
+  bottom: 0;
+}
+.tutorial .bx-wrapper .bx-pager.bx-default-pager a,
+.tutorial .bx-wrapper .bx-pager.bx-default-pager a {
+  background: #81838a;
+  margin: 0 8px;
+}
+.tutorial .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.tutorial .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background: #fd1640;
+}
+ul.tut-pager {
+  padding: 20px 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+ul.tut-pager li {
+  display: inline-block;
+  margin: 0 5px;
+}
+ul.tut-pager li span {
+  border: 2px solid #fff;
+  padding: 0;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  display: block;
+  border-radius: 70px;
+}
+ul.tut-pager li img {
+  border-radius: 70px;
+  width: 54px;
+}
+.tutorial .flip-info {
+  text-align: left;
+  color: #000;
+}
+.tutorial .flip-info p {
+  color: #000;
+}
+.tutorial .bx-has-controls-direction {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: 70px;
+}
+.tutorial .bx-wrapper {
+  position: static;
+}
+.skip-block {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.user-step h5 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  color: #424242;
+}
+.user-step p.info {
+  font-size: 17px;
+}
+.user-step .tut-info {
+  min-height: 150px;
+}
+.user-step p {
+  font-size: 12px;
+  padding: 2px 0;
+  margin: 0;
+  color: #424242;
+}
+.form-control::-moz-placeholder {
+  color: #b6b8bc;
+  opacity: 1;
+  font-size: 17px;
+}
+.form-control:-ms-input-placeholder {
+  color: #b6b8bc;
+}
+.form-control::-webkit-input-placeholder {
+  color: #b6b8bc;
+}
+.slide-pic {
+  box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.25);
+  border: 5px solid #fff;
+  background-color: #fff;
+  margin: 5px;
+  position: relative;
+}
+.user-step .tut-pinfo {
+  margin-top: 50px;
+}
+.user-step h3 {
+  border-bottom: 1px solid #efeeee;
+  color: #2f2f2f;
+  font-size: 20px;
+  margin: 0;
+  padding: 0 0 5px;
+  text-align: left;
+}
+.user-step .age {
+  color: #fb3256;
+  float: right;
+  font-size: 20px;
+  line-height: 1.1;
+  padding: 0 0 5px;
+}
+.user-step p {
+  color: #919398;
+  font-size: 17px;
+  padding-top: 10px;
+}
+.user-step p strong {
+  color: #fd294f;
+  font-weight: 400;
+}
+.flip-info-screen {
+  left: 0;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: left;
+}
+.user-step .ice-pic {
+  padding: 30px 0;
+}
+.user-step.step1 p.info {
+  color: #424242;
+  font-weight: 400;
+  font-size: 17px;
+}
+.user-step.step1 p {
+  color: #424242;
+  font-size: 12px;
+}
+.swipe-block {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 17px;
+  display: none;
+}
+/*End: new css 4  November*/
+@media (min-width: 320px) and (max-width: 359px) {
+  .slider-thumb ul li {
+    margin: 0;
+  }
+  .slider-thumb img {
+    width: 50px;
+  }
+  .caption-conainer-view ul {
+    padding: 3px 0 0 0;
+  }
+  .caption-conainer-view ul li {
+    font-size: 13px;
+  }
+  .modal-full {
+    margin: 0 20px;
+  }
+  ul.chat-info-type li a {
+    padding: 10px 0 10px 45px;
+  }
+  .modal-full {
+    top: 20px;
+  }
+  .pocket-close-icon {
+    top: 30%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-resolution: 240dpi) {
+  .sprite {
+    background-image: url(img/pickcontact-card@2x.png);
+  }
+}

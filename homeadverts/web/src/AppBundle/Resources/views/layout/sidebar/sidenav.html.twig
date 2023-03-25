@@ -1,0 +1,16 @@
+<div id="sidenav" class="mdl-layout__drawer">
+    <div class="heading"></div>
+    <nav class="mdl-navigation">
+        {% if app.user %}
+            {% include 'AppBundle:layout/sidebar/section:menu_user.html.twig' %}
+            {% include 'AppBundle:layout/sidebar/section/notification:notifications.html.twig' %}
+            {% include 'AppBundle:layout/sidebar/section:editor.html.twig' %}
+            {% include 'AppBundle:layout/sidebar/section:tags_to_follow.html.twig' %}
+        {% else %}
+            {% include 'AppBundle:layout/sidebar/section:menu_guest.html.twig' %}
+            {% include 'AppBundle:layout/sidebar/section:tags_guest.html.twig' %}
+        {% endif %}
+
+        {% include 'AppBundle:layout/sidebar/section:countries.html.twig' %}
+    </nav>
+</div>

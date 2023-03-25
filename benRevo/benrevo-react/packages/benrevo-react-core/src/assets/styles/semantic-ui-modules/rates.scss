@@ -1,0 +1,29 @@
+@import '../variables-theme';
+
+.rates-radio {
+  .row {
+    padding-left: 1rem !important;
+  }
+  span {
+    display: block;
+    margin: 0 10px;
+    float: left;
+  }
+  .ui.checkbox:not(.radio) input:checked ~ .box:after, .ui.checkbox:not(.radio) input:checked ~ label:after {
+    left: 40px !important;
+    top: -3px !important;
+  }
+  .ui.checkbox:not(.radio) input:checked ~ .box:after, .ui.checkbox:not(.radio) input:checked ~ label:after, .ui.checkbox input:indeterminate~.box:after, .ui.checkbox input:indeterminate~label:after {
+    font-family: Icons;
+    content: "\f00c" !important;
+    padding-top: 3px;
+    background-color: $BUTTON_COLOR;
+    color: white;
+    font-size: 12px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .ui.slider.checkbox .box:hover::before, .ui.slider.checkbox label:hover::before, .ui.slider.checkbox .box:before, .ui.slider.checkbox label:before {
+    background-color: #000!important;
+  }
+}

@@ -1,0 +1,27 @@
+-
+    request:
+        method: POST
+        url: 'https://api.twitter.com/1.1/statuses/update.json'
+        headers:
+            Host: api.twitter.com
+            Accept: application/json
+            Authorization: 'OAuth oauth_version="1.0", oauth_nonce="85bd4c452e0a61583f9fe81434b48167", oauth_timestamp="1547412763", oauth_consumer_key="aMJLdSmkEayfYpgL0wiSoQ", oauth_token="2734027794-6dHCDhNn4ubTifdJTwT3uQkaxVlhUio1XkEyXbBM", oauth_signature_method="HMAC-SHA1", oauth_signature="s%2FyocK7tWAi%2B68qgAO%2Bxx%2F%2FHe6s%3D"'
+            Expect: null
+        body: status=Hello%20World%0Ahttp%3A%2F%2Fdev.homeadverts.com%2Fstory%2F00000
+    response:
+        status:
+            http_version: '2'
+            code: '400'
+            message: ''
+        headers:
+            content-encoding: gzip
+            content-length: '87'
+            content-type: 'application/json; charset=utf-8'
+            date: 'Sun, 13 Jan 2019 20:52:38 GMT'
+            server: tsa_o
+            set-cookie: 'personalization_id="v1_GbCZ7y0/uLcu0OduRXgqUw=="; Max-Age=63072000; Expires=Tue, 12 Jan 2021 20:52:38 GMT; Path=/; Domain=.twitter.com, guest_id=v1%3A154741275813685567; Max-Age=63072000; Expires=Tue, 12 Jan 2021 20:52:38 GMT; Path=/; Domain=.twitter.com'
+            strict-transport-security: max-age=631138519
+            x-connection-hash: 43fedbe3e23e4d7293f849572caaae02
+            x-response-time: '111'
+            x-tsa-request-body-time: '0'
+        body: '{"errors":[{"code":215,"message":"Bad Authentication data."}]}'

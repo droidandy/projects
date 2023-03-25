@@ -1,0 +1,176 @@
+@import "../../../styles/tools/mixins.scss";
+
+.componentPageVideo {
+  @include defaultText;
+
+  .sectionMainVideo {
+    position: relative;
+    box-sizing: border-box;
+    @include spacingBottom();
+
+    margin-bottom: 50px;
+  }
+  .videoBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: $extra-light-bg;
+  }
+  .videoContent {
+    @include maxWidthPage;
+    @include defaultText;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: 608px;
+    @include media-query($small) {
+      min-height: 388px;
+    }
+    @include media-query($medium) {
+      min-height: 680px;
+    }
+    @include media-query($large) {
+      min-height: 766px;
+    }
+  }
+
+  .sectionVideoRows {
+    @include maxWidthPage;
+    @include defaultText;
+  }
+  .videoGallery {
+    .section-header {
+      @include media-query($small-up) {
+        padding: 0;
+      }
+
+      @include media-query($large-up) {
+        h2 {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .ComponentVideoCard {
+    margin-bottom: 40px;
+    @include media-query($small) {
+      display: flex;
+      margin-bottom: 24px;
+      flex-flow: row;
+      align-items: center;
+      min-width: 100vw;
+    }
+    .ComponentVideoThumbnail {
+      @include media-query($small) {
+        width: 106px;
+        height: 61px;
+        margin: initial;
+      }
+    }
+  }
+  .groupDescription {
+    @include media-query($small) {
+      display: flex;
+      margin-left: 6px;
+      justify-content: center;
+      flex-flow: column;
+      width: calc(100% - 112px);
+      .type {
+        text-align: left;
+        margin-top: 0;
+      }
+      .title {
+        text-align: left;
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .price {
+        text-align: left;
+      }
+    }
+  }
+
+  .videoDescription {
+    @include spacingBottom;
+
+    max-width: 800px;
+    p {
+      @include media-query($small) {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+      }
+    }
+
+    .section-header {
+      margin-bottom: 0;
+    }
+    h1 {
+      margin-bottom: 0;
+      @include media-query($small) {
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 12px;
+      }
+    }
+
+    margin-bottom: 10px;
+    @include media-query($small) {
+      padding-bottom: 0;
+    }
+    h2 {
+      @include spacingTopMedium;
+      text-align: center;
+      font-size: 24px;
+      line-height: 28px;
+      @include media-query($small) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+      font-family: var(--font-heading);
+      font-weight: normal;
+      text-transform: uppercase;
+      color: var(--black-pearl);
+      margin-bottom: 0;
+      @include media-query($small) {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    ol,
+    ul {
+      padding: 0;
+
+      li {
+        padding-left: 30px;
+        margin-bottom: 30px;
+        font-family: var(--font-body);
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        color: #535059;
+        background-image: url("./video_drop_pin.svg");
+        background-repeat: no-repeat;
+        background-position: 0 4px;
+        background-size: 11px;
+        list-style: none;
+        @include media-query($small) {
+          font-size: 14px;
+          line-height: 22px;
+          background-size: 8px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

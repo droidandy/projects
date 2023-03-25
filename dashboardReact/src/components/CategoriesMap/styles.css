@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inline_items {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.column_items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.row_items {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+}
+.subscribers_user_block {
+    width: 28px;
+    height: 28px;
+    background-color: #c6d92c;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.next_inner {
+    -webkit-mask-image: url("../__assets__/next.svg");
+    mask-image: url("../__assets__/next.svg");
+    width: 75%;
+    height: 75%;
+    background-color: rgb(250, 250, 250);
+}
+.inner_column {
+    display: flex;
+    flex-direction: column;
+}
+.label_small {
+    font-size: 8px;
+    font-weight: 300;
+    text-align: center;
+}
+.new-installation-antenna, .new-installations-antenna {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-antenna.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.new-installation-other, .new-installations-other {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-other.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.new-installation-decoder, .new-installations-decoder {
+    background: rgba(249, 249, 249, 0) url("../__assets__/new-installation-decoder.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.repair-antenna, .repair-installations-antenna {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-antenna.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.repair-decoder, .repair-installations-decoder {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-decoder.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}
+.repair-other, .repair-installations-other {
+    background: rgba(249, 249, 249, 0) url("../__assets__/repair-other.svg") no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+}

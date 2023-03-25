@@ -1,0 +1,35 @@
+<ion-view>
+  <ion-content class="gm-content" ng-class="displayBG()">
+    <div class="page">
+      <h1 class="logo my-image animated bounceInDown visible">
+        <!-- <img src="img/logo-colour.png" alt="" class="img-responsive animated bounceInDown"> -->
+      </h1>
+      <ion-list can-swipe="true">
+        <ion-item href="#/pocket" class="item item-thumbnail-left main-menu-text" transitiontype="slide" direction="up" go-native>
+            <div class="menu-row-holder">
+                <div class="icon pocket"></div>
+                The Pocket
+            </div>
+        </ion-item>
+        <ion-item href="#/addons" class="item item-thumbnail-left main-menu-text" transitiontype="slide" direction="up" go-native>
+            <div class="menu-row-holder">
+                <div class="icon basket"></div>
+                Add-ons
+            </div>
+        </ion-item>
+        <ion-item href="#/settings" class="item item-thumbnail-left main-menu-text" transitiontype="slide" direction="up" go-native>
+            <div class="menu-row-holder">
+                <div class="icon tool-box"></div>
+                Settings
+            </div>
+        </ion-item>
+      </ion-list>
+      <div class="rounded-rectangle-container">
+        <div class="rounded-rectangle">
+          <span>Slide to Play</span>
+          <div button-drag-animate class="circle" />
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

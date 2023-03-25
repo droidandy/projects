@@ -1,0 +1,18 @@
+{
+  "name": "ui-automation",
+  "version": "1.0.0",
+  "description": "Benrevo UI automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe \"chrome:headless --no-sandbox --start-maximized\" src/tests/smoke/rfp.uhc.test.js --assertion-timeout 15000 --selector-timeout 25000",
+    "test:uhc": "testcafe \"chrome\" src/tests/uhc.test.js",
+    "test:anthem": "testcafe \"chrome\" src/tests/anthem.test.js"
+  },
+  "author": "Benrevo team",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.6.2",
+    "serve-static": "^1.12.3",
+    "testcafe": "^0.16.2"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Sanger",
+          "short_name" : "Sanger",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Fresno County",
+          "short_name" : "Fresno County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "California",
+          "short_name" : "CA",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "93657",
+          "short_name" : "93657",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "formatted_address" : "Sanger, CA 93657, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 36.72125,
+            "lng" : -119.5274931
+          },
+          "southwest" : {
+            "lat" : 36.677265,
+            "lng" : -119.5832569
+          }
+        },
+        "location" : {
+          "lat" : 36.708006,
+          "lng" : -119.5559652
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 36.72125,
+            "lng" : -119.5274931
+          },
+          "southwest" : {
+            "lat" : 36.677265,
+            "lng" : -119.5832569
+          }
+        }
+      },
+      "place_id" : "ChIJa43vyLXwlIARgjfD2nur4eE",
+      "types" : [ "locality", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

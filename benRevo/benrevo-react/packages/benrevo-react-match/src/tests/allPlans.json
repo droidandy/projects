@@ -1,0 +1,696 @@
+[
+  {
+    "rfpQuoteNetworkPlanId":null,
+    "clientPlanId":975,
+    "name":"AAA",
+    "type":"current",
+    "selected":false,
+    "selectedSecond":false,
+    "carrier":"Aetna",
+    "networkName":"AVN HMO",
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"400.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"0.0",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"10.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Spouse",
+        "value":"10.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Child(ren)",
+        "value":"10.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Family",
+        "value":"10.0",
+        "type":"DOLLAR"
+      }
+    ],
+    "census":[
+
+    ],
+    "rx":[
+      {
+        "sysName":"RX_INDIVIDUAL_DEDUCTIBLE",
+        "name":"Rx Individual Deductible",
+        "value":"",
+        "type":"STRING"
+      },
+      {
+        "sysName":"RX_FAMILY_DEDUCTIBLE",
+        "name":"Rx Family Deductible",
+        "value":"",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_1",
+        "name":"Member Copay Tier 1",
+        "value":"",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_2",
+        "name":"Member Copay Tier 2",
+        "value":"",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_3",
+        "name":"Member Copay Tier 3",
+        "value":"",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_4",
+        "name":"Member Copay Tier 4",
+        "value":"",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MAIL_ORDER",
+        "name":"Mail Order",
+        "value":"",
+        "type":"STRING"
+      }
+    ],
+    "riders":[
+
+    ],
+    "total":400.0,
+    "percentDifference":0.0,
+    "employerFund":null,
+    "administrativeFee":null,
+    "summaryFileLink":null,
+    "favorite":null,
+    "attributes":[
+
+    ]
+  },
+  {
+    "rfpQuoteNetworkPlanId":6751,
+    "clientPlanId":null,
+    "name":"HMO 10/0 (U8M/4PJ)",
+    "type":"matchPlan",
+    "selected":true,
+    "selectedSecond":false,
+    "carrier":"UnitedHealthcare",
+    "networkName":"Signature",
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"$1,500x2",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"10",
+        "type":"DOLLAR",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"10",
+        "type":"DOLLAR",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"No Charge",
+        "type":"STRING",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"Admit",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"No Charge",
+        "type":"STRING",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"150",
+        "type":"DOLLAR",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"$10 ($75 OOA)",
+        "type":"STRING",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"46129.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"11432.3",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"567.39",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Spouse",
+        "value":"1242.59",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Child(ren)",
+        "value":"1078.05",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Family",
+        "value":"1724.87",
+        "type":"DOLLAR"
+      }
+    ],
+    "census":[
+      {
+        "name":"Employee Only",
+        "value":10
+      },
+      {
+        "name":"Employee + Spouse",
+        "value":10
+      },
+      {
+        "name":"Employee + Child(ren)",
+        "value":10
+      },
+      {
+        "name":"Employee + Family",
+        "value":10
+      }
+    ],
+    "rx":[
+
+    ],
+    "riders":[
+
+    ],
+    "total":46129.0,
+    "percentDifference":11432.3,
+    "employerFund":null,
+    "administrativeFee":null,
+    "summaryFileLink":"//dev-api-app.benrevo.com/v1/documents/569/download",
+    "favorite":false,
+    "attributes":[
+
+    ]
+  },
+  {
+    "rfpQuoteNetworkPlanId":6752,
+    "clientPlanId":null,
+    "name":"HMO 15/250A (U8T/4PJ)",
+    "type":"alternative",
+    "selected":false,
+    "selectedSecond":true,
+    "carrier":"UnitedHealthcare",
+    "networkName":"Signature",
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"$1,500x2",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"15",
+        "type":"DOLLAR",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"15",
+        "type":"DOLLAR",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"250",
+        "type":"DOLLAR",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"Admit",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"200",
+        "type":"DOLLAR",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"150",
+        "type":"DOLLAR",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"$15 ($75 OOA)",
+        "type":"STRING",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"45097.7",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"11174.4",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"554.71",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Spouse",
+        "value":"1214.81",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Child(ren)",
+        "value":"1053.94",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Family",
+        "value":"1686.31",
+        "type":"DOLLAR"
+      }
+    ],
+    "census":[
+      {
+        "name":"Employee Only",
+        "value":10
+      },
+      {
+        "name":"Employee + Spouse",
+        "value":10
+      },
+      {
+        "name":"Employee + Child(ren)",
+        "value":10
+      },
+      {
+        "name":"Employee + Family",
+        "value":10
+      }
+    ],
+    "rx":[
+
+    ],
+    "riders":[
+
+    ],
+    "total":45097.7,
+    "percentDifference":11174.4,
+    "employerFund":null,
+    "administrativeFee":null,
+    "summaryFileLink":"//dev-api-app.benrevo.com/v1/documents/571/download",
+    "favorite":false,
+    "attributes":[
+
+    ]
+  },
+  {
+    "rfpQuoteNetworkPlanId":6753,
+    "clientPlanId":null,
+    "name":"HMO 20-40/500A (Y93/42L)",
+    "type":"alternative",
+    "selected":false,
+    "selectedSecond":false,
+    "carrier":"UnitedHealthcare",
+    "networkName":"Signature",
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"$2,500x2",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"20",
+        "type":"DOLLAR",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"40",
+        "type":"DOLLAR",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"500",
+        "type":"DOLLAR",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"Admit",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"250",
+        "type":"DOLLAR",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"100",
+        "type":"DOLLAR",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"$20 ($50 OOA)",
+        "type":"STRING",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"43934.2",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"10883.5",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"540.4",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Spouse",
+        "value":"1183.47",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Child(ren)",
+        "value":"1026.75",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Family",
+        "value":"1642.8",
+        "type":"DOLLAR"
+      }
+    ],
+    "census":[
+      {
+        "name":"Employee Only",
+        "value":10
+      },
+      {
+        "name":"Employee + Spouse",
+        "value":10
+      },
+      {
+        "name":"Employee + Child(ren)",
+        "value":10
+      },
+      {
+        "name":"Employee + Family",
+        "value":10
+      }
+    ],
+    "rx":[
+
+    ],
+    "riders":[
+
+    ],
+    "total":43934.2,
+    "percentDifference":10883.5,
+    "employerFund":null,
+    "administrativeFee":null,
+    "summaryFileLink":"//dev-api-app.benrevo.com/v1/documents/574/download",
+    "favorite":false,
+    "attributes":[
+
+    ]
+  }
+]

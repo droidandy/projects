@@ -1,0 +1,1044 @@
+{
+  "optionName":"Option 1",
+  "plans":[
+    {
+      "name":"U8M",
+      "type":"current",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[
+        {
+          "name":"Specialist",
+          "value":"10",
+          "type":"DOLLAR"
+        },{
+          "name":"Inpatient Hospital",
+          "value":"Paid in full",
+          "type":"STRING"
+        },{
+          "name":"Calendar Year Maximum",
+          "value":"1500",
+          "type":"STRING"
+        },{
+          "name":"Calendar Year Deductible",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Deductible Type",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Combine Med/Rx Deductible",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Inpatient Copay Max",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Inpatient Copay Type",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Outpatient Surgery",
+          "value":"Paid in full",
+          "type":"STRING"
+        },{
+          "name":"Emergency Room",
+          "value":"150",
+          "type":"DOLLAR"
+        },{
+          "name":"PCP",
+          "value":"10",
+          "type":"DOLLAR"
+        }
+      ],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"140000.0",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"0.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"1000.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"1000.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"1000.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"1000.0",
+          "type":"DOLLAR"
+        }
+      ],
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"100",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"101",
+          "type":"STRING"
+        }, {
+          "name":"TIER 1",
+          "value":"102",
+          "type":"DOLLAR"
+        }, {
+          "name":"TIER 2",
+          "value":"103",
+          "type":"DOLLAR"
+        }, {
+          "name":"TIER 3",
+          "value":"104",
+          "type":"DOLLAR"
+        }, {
+          "name":"TIER 4",
+          "value":"105",
+          "type":"DOLLAR"
+        }, {
+          "name":"Mail Order",
+          "value":"106",
+          "type":"STRING"
+        }
+      ],
+      "total":270000.0,
+      "percentDifference":0.0
+    },
+    {
+      "rfpQuoteNetworkPlanId":2723,
+      "name":"ZF9",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"100",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"101",
+          "type":"STRING"
+        }, {
+          "name":"TIER 1",
+          "value":"102",
+          "type":"DOLLAR"
+        }, {
+          "name":"TIER 2",
+          "value":"103",
+          "type":"DOLLAR"
+        }, {
+          "name":"TIER 3",
+          "value":"104",
+          "type":"DOLLAR"
+        }, {
+          "name":"TIER 4",
+          "value":"105",
+          "type":"DOLLAR"
+        }, {
+          "name":"Mail Order",
+          "value":"106",
+          "type":"STRING"
+        }
+      ],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"272114.3",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"94.4",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"25852.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"37424.7",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"59440.21",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"124797.4",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":272114.3,
+      "percentDifference":94.4
+    },
+    {
+      "rfpQuoteNetworkPlanId":2724,
+      "name":"ZM2",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"268189.38",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"91.6",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"25407.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"36837.3",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"58479.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"122866.1",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":268189.38,
+      "percentDifference":91.6
+    },
+    {
+      "rfpQuoteNetworkPlanId":2725,
+      "name":"ZH5",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"267924.8",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"91.4",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"25377.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"36797.7",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"58414.2",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"122735.9",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":267924.8,
+      "percentDifference":91.4
+    },
+    {
+      "rfpQuoteNetworkPlanId":2726,
+      "name":"ZJU",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"266200.5",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"90.1",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"25181.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"36539.7",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"57991.8",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"121887.5",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":266200.5,
+      "percentDifference":90.1
+    },
+    {
+      "rfpQuoteNetworkPlanId":2727,
+      "name":"Z5F",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"265883.3",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"89.9",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"25145.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"36492.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"57914.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"121731.4",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":265883.3,
+      "percentDifference":89.9
+    },
+    {
+      "rfpQuoteNetworkPlanId":2728,
+      "name":"Z0P",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"264159.0",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"88.7",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"24950.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"36234.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"57492.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"120883.0",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":264159.0,
+      "percentDifference":88.7
+    },{
+      "rfpQuoteNetworkPlanId":2729,
+      "name":"ZLQ",
+      "type":"alternative",
+      "selected":true,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"263497.5",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"88.2",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"24875.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"36135.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"57330.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"120557.5",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":263497.5,
+      "percentDifference":88.2
+    },{
+      "rfpQuoteNetworkPlanId":2730,
+      "name":"ZHJ",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"258906.69",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"84.9",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"24354.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"35448.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"56205.6",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"118298.6",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":258906.69,
+      "percentDifference":84.9
+    },{
+      "rfpQuoteNetworkPlanId":2731,
+      "name":"Z50",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"258801.19",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"84.9",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"24342.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"35432.1",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"56179.8",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"118246.8",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":258801.19,
+      "percentDifference":84.9
+    },{
+      "rfpQuoteNetworkPlanId":2732,
+      "name":"WYN",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"254479.39",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"81.8",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"23852.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"34785.3",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"55121.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"116120.2",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":254479.39,
+      "percentDifference":81.8
+    },{
+      "rfpQuoteNetworkPlanId":2733,
+      "name":"ZLU",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"254479.39",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"81.8",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"23852.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"34785.3",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"55121.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"116120.2",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":254479.39,
+      "percentDifference":81.8
+    },{
+      "rfpQuoteNetworkPlanId":2734,
+      "name":"WSO",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"252543.4",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"80.4",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"23633.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"34495.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"54647.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"115167.5",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":252543.4,
+      "percentDifference":80.4
+    },{
+      "rfpQuoteNetworkPlanId":2735,
+      "name":"ZNO",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"247793.5",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"77.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"23094.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"33784.8",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"53484.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"112830.2",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":247793.5,
+      "percentDifference":77.0
+    },{
+      "rfpQuoteNetworkPlanId":2736,
+      "name":"ZNR",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"247634.4",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"76.9",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"23076.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"33761.1",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"53445.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"112751.8",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":247634.4,
+      "percentDifference":76.9
+    },{
+      "rfpQuoteNetworkPlanId":2737,
+      "name":"ZZS",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[
+        {
+          "name":"Specialist",
+          "value":"50",
+          "type":"DOLLAR"
+        },{
+          "name":"Inpatient Hospital",
+          "value":"50",
+          "type":"PERCENT"
+        },{
+          "name":"Calendar Year Maximum",
+          "value":"5000",
+          "type":"DOLLAR"
+        },{
+          "name":"Calendar Year Deductible",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Deductible Type",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Combine Med/Rx Deductible",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Inpatient Copay Max",
+          "value":"-2",
+          "type":"NUMBER"
+        },{
+          "name":"Inpatient Copay Type",
+          "value":"Admit",
+          "type":"STRING"
+        },{
+          "name":"Outpatient Surgery",
+          "value":"50",
+          "type":"PERCENT"
+        },{
+          "name":"Emergency Room",
+          "value":"300",
+          "type":"DOLLAR"
+        },{
+          "name":"PCP",
+          "value":"45",
+          "type":"DOLLAR"
+        }
+      ],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"240979.69",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"72.1",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"22322.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"32765.1",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"51815.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"109477.2",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":240979.69,
+      "percentDifference":72.1
+    },{
+      "rfpQuoteNetworkPlanId":2738,
+      "name":"ZO2",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"238938.19",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"70.7",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"22090.5",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"32459.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"51315.6",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"108472.7",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":238938.19,
+      "percentDifference":70.7
+    }, {
+      "rfpQuoteNetworkPlanId":2742,
+      "name":"WP8",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"232570.5",
+          "type":"DOLLAR"
+        }, {
+          "name":"% change from current",
+          "value":"66.1",
+          "type":"PERCENT"
+        }, {
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        }, {
+          "name":"Employee",
+          "value":"21368.5",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Spouse",
+          "value":"31506.3",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Child",
+          "value":"49756.21",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Family",
+          "value":"105339.5",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":232570.5,
+      "percentDifference":66.1
+    },{
+      "rfpQuoteNetworkPlanId":2743,
+      "name":"ZO5",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"228803.7",
+          "type":"DOLLAR"
+        }, {
+          "name":"% change from current",
+          "value":"63.4",
+          "type":"PERCENT"
+        }, {
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        }, {
+          "name":"Employee",
+          "value":"20941.5",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Spouse",
+          "value":"30942.9",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Child",
+          "value":"48833.4",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Family",
+          "value":"103485.9",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":228803.7,
+      "percentDifference":63.4
+    },{
+      "rfpQuoteNetworkPlanId":2744,
+      "name":"ZNU",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"226682.78",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"61.9",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"20701.0",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Spouse",
+          "value":"30625.2",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Child",
+          "value":"48314.4",
+          "type":"DOLLAR"
+        },{
+          "name":"Employee + Family",
+          "value":"102442.2",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":226682.78,
+      "percentDifference":61.9
+    },{
+      "rfpQuoteNetworkPlanId":2745,
+      "name":"ZM5",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"224826.2",
+          "type":"DOLLAR"
+        }, {
+          "name":"% change from current",
+          "value":"60.6",
+          "type":"PERCENT"
+        }, {
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        }, {
+          "name":"Employee",
+          "value":"20490.5",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Spouse",
+          "value":"30347.4",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Child",
+          "value":"47859.6",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Family",
+          "value":"101528.7",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":224826.2,"percentDifference":60.6
+    },{
+      "rfpQuoteNetworkPlanId":2746,
+      "name":"ZPT",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem",
+      "benefits":[],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"217161.31",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"55.1",
+          "type":"PERCENT"
+        }, {
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        }, {
+          "name":"Employee",
+          "value":"19621.5",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Spouse",
+          "value":"29200.5",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Child",
+          "value":"45982.2",
+          "type":"DOLLAR"
+        }, {
+          "name":"Employee + Family",
+          "value":"97757.1",
+          "type":"DOLLAR"
+        }
+      ],
+      "total":217161.31,
+      "percentDifference":55.1
+    }
+  ]
+}

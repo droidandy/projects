@@ -1,0 +1,18 @@
+engines:
+  brakeman:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  eslint:
+    enabled: true
+    config:
+      config: ui/.eslintrc.js
+      extensions:
+      - .js
+      - .jsx
+
+exclude_paths:
+- config/
+- db/
+- spec/
+- vendor/

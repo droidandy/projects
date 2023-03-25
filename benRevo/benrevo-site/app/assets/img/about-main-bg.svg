@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.42 62.11" width="93" height="62" preserveAspectRatio="xMinYMid">
+  <defs>
+    <style>.cls-1,.cls-2{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}.cls-2{stroke-dasharray:4;}
+    </style>
+  </defs>
+  <title>about-main-bg</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="scene3">
+      <line class="cls-1" x1="81.18" y1="46.61" x2="78.38" y2="41.37"/>
+      <path class="cls-1"
+            d="M77.26,48.14l-3.78,1.62c-.94.43-.92,1.27,0,1.75L93.06,61.64,89.51,44.86A1.13,1.13,0,0,0,87.84,44l-5.39,2.11"/>
+      <polyline class="cls-1" points="81.88 44.87 78.38 41.37 78.38 47.66"/>
+      <line class="cls-1" x1="81.18" y1="46.61" x2="93.06" y2="61.64"/>
+      <line class="cls-1" x1="93.06" y1="61.64" x2="78.38" y2="47.66"/>
+      <path class="cls-2"
+            d="M73.18,36.28c-12.91-.48-23.54-6.68-27-16-2.35-6.32-2.11-16,3-19,6.9-4.06,21.41,4.81,21,11-.51,7.62-24,15.61-44,11C13.5,20.36,4.81,13,.18,8.28"/>
+    </g>
+  </g>
+</svg>

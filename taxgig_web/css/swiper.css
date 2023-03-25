@@ -1,0 +1,31 @@
+/* Reusable */
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* BUGFIX: Safari any scroll action affects vertical swiper's scroll position */
+}
+
+.swiper-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+.swiper-slide {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  /*  overflow-y: scroll;*/
+}
+
+.swiper-pagination-bullet {
+    background-color: #D4D4E4 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #61AD15 !important;
+}

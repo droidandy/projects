@@ -1,0 +1,11 @@
+mutation DeleteUserFollows($deleteUserFollowsUserFollowIds: [ID!]!) {
+  deleteUserFollows(userFollowIds: $deleteUserFollowsUserFollowIds) {
+    ... on DeleteSuccess {
+      deleteIds
+    }
+    ... on DeleteInvalidInputError {
+      message
+      errorCode
+    }
+  }
+}

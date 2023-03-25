@@ -1,0 +1,26 @@
+services:
+    ha_billing:
+        class: AppBundle\Service\Billing\Billing
+        arguments:
+            - @em
+            - @ha_braintree_service
+            - @ha_vat
+            - @ha.mailer
+            - @security.token_storage
+
+    ha_braintree_service:
+        class: AppBundle\Service\Billing\BraintreeService
+        arguments:
+            - %braintree%
+
+    ha_braintree_service_webhook:
+        class: AppBundle\Service\Billing\BraintreeWebhook
+        arguments:
+            - @em
+            - @ha_braintree_service
+
+    ha_vat:
+        class: AppBundle\Service\Billing\Vat
+        arguments:
+            - %taxamo_private_key%
+            - %billing%

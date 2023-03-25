@@ -1,0 +1,54 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Grafton County",
+          "short_name" : "Grafton County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New Hampshire",
+          "short_name" : "NH",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Grafton County, NH, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 44.406635,
+            "lng" : -71.346863
+          },
+          "southwest" : {
+            "lat" : 43.5284489,
+            "lng" : -72.334903
+          }
+        },
+        "location" : {
+          "lat" : 43.9087929,
+          "lng" : -71.82599399999999
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 44.406635,
+            "lng" : -71.346863
+          },
+          "southwest" : {
+            "lat" : 43.5284489,
+            "lng" : -72.334903
+          }
+        }
+      },
+      "place_id" : "ChIJzThguhF_s0wRPG8XeyZNifk",
+      "types" : [ "administrative_area_level_2", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

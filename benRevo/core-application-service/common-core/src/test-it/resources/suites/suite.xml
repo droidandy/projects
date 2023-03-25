@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="core-tests-suite" parallel="instances" thread-count="1" data-provider-thread-count="1" verbose="2">
+    <test name="core-tests">
+        <groups>
+            <run>
+                <include name="rfp"/>
+                <include name="client"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.benrevo.core.*"/>
+        </packages>
+    </test>
+</suite>

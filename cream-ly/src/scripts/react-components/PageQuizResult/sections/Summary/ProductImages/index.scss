@@ -1,0 +1,189 @@
+@import "../../../../../../styles/tools/mixins.scss";
+
+.componentProductsSummaryImages {
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // width: 500px;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+
+    @include media-query($small) {
+      margin-bottom: 20px;
+    }
+
+    .notSelected {
+      opacity: 0.3;
+      filter: grayscale(100%);
+    }
+
+    .handwrittenNote {
+      font-family: "Marck Script", cursive;
+      color: #eeb9cf;
+      text-transform: lowercase;
+      font-size: 1.2em;
+
+      height: 200px;
+      width: 120px;
+      @include media-query($small) {
+        flex: 0 0 100%;
+        height: 50px;
+      }
+
+      .arrow {
+        background-image: url("./arrow_to_left.png");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 50px;
+      }
+
+      &.skinCare {
+        margin-right: 20px;
+        padding-top: 70px;
+        @include media-query($small) {
+          margin: 0;
+          margin-top: 20px;
+          padding: 0;
+
+          .arrowBlock {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-right: 150px;
+            .arrow {
+              margin-left: 10px;
+              height: 30px;
+              width: 50px;
+              transform: rotate(0) scaleY(-1);
+            }
+          }
+        }
+      }
+      &.bodyCare {
+        margin-left: 40px;
+        padding-top: 20px;
+        @include media-query($small) {
+          margin: 0;
+          padding: 0;
+          flex: 0 0 100%;
+        }
+        .arrowBlock {
+          @include media-query($small) {
+            margin-right: 70px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+          }
+          .arrow {
+            transform: rotate(180deg);
+            @include media-query($small) {
+              transform: rotate(0);
+              height: 30px;
+              width: 210px;
+            }
+          }
+          .text {
+            @include media-query($small) {
+              margin-left: 150px;
+            }
+          }
+        }
+      }
+    }
+
+    .svg_image {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 200px;
+      @include media-query($small) {
+        height: 100px;
+      }
+
+      &.cream_body {
+        margin-left: 50px;
+        @include media-query($small) {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .image {
+      width: 200px;
+      height: 300px;
+      background-size: contain;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      @include media-query($small) {
+        height: 150px;
+      }
+
+      &.oil {
+        width: 50px;
+        background-size: 60px;
+        @include media-query($small) {
+          background-size: 30px;
+          width: 30px;
+        }
+        background-image: url("./no_back_oil.png");
+      }
+      &.cream {
+        width: 60px;
+        background-size: 90px;
+        @include media-query($small) {
+          background-position-y: 14px;
+          background-size: 40px;
+          width: 30px;
+        }
+        background-image: url("./no_back_cream.png");
+      }
+      &.flower {
+        width: 100px;
+        background-position-y: 0px;
+
+        background-size: 150px;
+        @include media-query($small) {
+          background-position-y: 8px;
+          background-size: 70px;
+          max-width: 40px;
+        }
+        background-image: url("./no_back_flower.png");
+      }
+      &.cream_body {
+        width: 85px;
+        background-size: 150px;
+        background-image: url("./no_back_cream_body.png");
+        @include media-query($small) {
+          background-position-y: 16px;
+          background-size: 65px;
+          width: 38px;
+        }
+      }
+      &.brush {
+        background-position-y: 60px;
+        background-size: 150px;
+        width: 110px;
+        @include media-query($small) {
+          background-position-y: 48px;
+          background-size: 60px;
+          max-width: 45px;
+        }
+        background-image: url("./no_back_brush.png");
+      }
+      &.exfoliate {
+        width: 60px;
+        background-size: 80px;
+        @include media-query($small) {
+          background-position-y: 0px;
+          background-size: 40px;
+          width: 30px;
+          margin: 0;
+        }
+        background-image: url("./no_back_exfoliate.png");
+      }
+    }
+  }
+}

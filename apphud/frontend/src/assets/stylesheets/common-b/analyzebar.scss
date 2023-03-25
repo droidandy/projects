@@ -1,0 +1,48 @@
+.analyze-bar {
+  margin-bottom: 10px;
+  max-width: 800px;
+}
+
+.analyze-bar__percent,
+.analyze-bar__line {
+  display: inline-block;
+  vertical-align: top;
+  padding: 11px 10px;
+  font-size: 15px;
+  line-height: 18px;
+  box-sizing: border-box;
+}
+
+.analyze-bar__percent {
+  word-break: break-word;
+  width: 10%;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.analyze-bar__line {
+  width: 90%;
+  border-radius: 8px;
+  background-color: $brand-light-blue;
+  position: relative;
+  overflow: hidden;
+}
+
+.analyze-bar__line-track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.analyze-bar__line-title,
+.analyze-bar__line-count {
+  position: relative;
+  z-index: 1;
+}
+
+.analyze-bar__line-count {
+  display: inline-block;
+}

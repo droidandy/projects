@@ -1,0 +1,15 @@
+<div class="user-info --full-details --directory">
+    {% include 'AppBundle:user/profile:image.html.twig' %}
+    <div class="details">
+        {% include 'AppBundle:user/profile:username.html.twig' %}
+        {% include 'AppBundle:user/profile:company.html.twig' %}
+
+        {% if (user.address.country) %}
+            <span class="address">
+                {{ user.address|full_address }}
+            </span>
+        {% endif %}
+
+        {% include 'AppBundle:user/profile:follow_button.html.twig' %}
+    </div>
+</div>

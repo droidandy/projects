@@ -1,0 +1,172 @@
+.prequote-info {
+  .ui.header.shifted {
+    margin-bottom: 15px
+  }
+  .ui.header.header-bordered {
+    border-top: 1px solid #d8d8d8;
+    padding-top: 30px;
+  }
+
+  .ui.menu {
+    border: none;
+    box-shadow: unset;
+  }
+  .ui.vertical.menu {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-3%);
+    width: 300px;
+    box-shadow: unset;
+    .title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #0099cc;
+      padding-left: 26px;
+      &:before {
+        content: '+';
+        position: absolute;
+        display: block;
+        left: 10px;
+        top: 12px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 17px;
+        color: #fff;
+        background: #0099cc;
+
+      }
+      i {
+        display: none;
+      }
+    }
+    .content {
+      position: relative;
+      border-left: 6px solid #0099cc;
+      width: 357px;
+      padding: 0 0 0 20px !important;
+      margin-top: 30px;
+
+      .field {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .input-holder {
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dropdown-small {
+    width: 50% !important;
+  }
+  .input-small {
+    width: 35% !important;
+  }
+  .dropdown-add-field {
+    top: 35px;
+    left: -32px;
+    margin: 0 !important;
+  }
+  .add-field {
+    position: relative;
+    padding: 5px 26px;
+    color: #0099cc;
+    background: unset;
+    border: none;
+    margin: 10px 0 10px 0;
+    &:hover {
+      background-color: unset;
+      box-shadow: unset;
+      color: #0099cc;
+    }
+    &:focus {
+      background-color: unset;
+      box-shadow: unset;
+      color: #0099cc;
+    }
+    &:before {
+      content: '+';
+      position: absolute;
+      display: block;
+      left: 0px;
+      top: 7px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      font-size: 20px;
+      line-height: 18px;
+      color: #fff;
+      background: #0099cc;
+    }
+  }
+
+  .radio-holder {
+    margin-bottom: 50px;
+  }
+
+  .general-agent-holder {
+    position: relative;
+    .side-title {
+      position: absolute;
+      left: -64%;
+      top: 0px;
+      color: #6e7881;
+    }
+  }
+  .brokerage-accordion {
+    .ui.input {
+      width: 300px;
+    }
+    .contacts-holder {
+      position: relative;
+      .del-button {
+        position: absolute;
+        top: -10px;
+        right: -30px;
+        margin-top: 10px;
+        background: #fff;
+        border: none;
+        color: #979797;
+      }
+    }
+  }
+  .broker-accordion {
+    .contacts-holder {
+      position: relative;
+      .del-button {
+        position: absolute;
+        top: -9px;
+        right: -30px;
+        margin-top: 10px;
+        background: #fff;
+        border: none;
+        color: #979797;
+      }
+    }
+  }
+  .contacts-holder {
+    display: flex;
+
+    .ui.input {
+      width: 300px;
+    }
+
+    .ui.dropdown {
+      margin-top: 10px;
+    }
+
+    .del-button {
+      margin-top: 10px;
+      background: #fff;
+      border: none;
+      color: #979797;
+    }
+  }
+  .selected-broker {
+    margin: 30px 0;
+  }
+}

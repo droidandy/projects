@@ -1,0 +1,456 @@
+{
+  "listingSummary": {
+    "listingId": "5d2fd135-bfe7-48e9-8761-567f6e8bfcb7",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-02-06",
+    "photoCount": 14,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "isPriceUponRequest": true,
+      "isHideListPrice": true
+    },
+    "propertyAddress": {
+      "streetAddress": "Posadas 1600",
+      "city": "Buenos Aires",
+      "stateProvince": "Buenos Aires",
+      "stateProvinceCode": "B",
+      "postalCode": "C1113",
+      "country": "Argentina",
+      "countryCode": "AR",
+      "latitude": -34.5870229,
+      "longitude": -58.3882726
+    },
+    "geographicRegions": [
+      {
+        "type": "Neighbourhood",
+        "name": "Recoleta"
+      }
+    ],
+    "RFGListingId": "HX82JN",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/hx82jn",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Apartment",
+    "propertyStyle": "European",
+    "propertyName": "Stunning 489 sqm apartment",
+    "buildingArea": "5263 Sq. Ft.",
+    "noOfBedrooms": 4,
+    "squareFootage": 5263.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/330C1E13-626E-4EB0-A9E4-116F2A37AB44",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-05-22T15:06:01.770",
+    "agents": [
+      {
+        "id": "bcbaca29-d89f-4cdc-b3a3-6031e6719549",
+        "name": "Adriana Massa",
+        "firstName": "Adriana",
+        "lastName": "Massa",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/9DC48ABD-FD04-4BF0-BD1C-D082C8D8EC44",
+        "emailAddress": "adrimassa2@gmail.com",
+        "businessPhone": "+54 11 4805 3338?",
+        "isPrimary": false,
+        "office": {
+          "officeId": "3edd8034-754c-4df9-83b6-63203ad6e077",
+          "RFGOfficeId": "0002 ",
+          "companyId": "80c56373-c542-498b-b19a-3ce5d860d143",
+          "companyName": "Adriana Massa Sotheby's International Real",
+          "RFGCompanyId": "810024",
+          "brandCode": "SIR",
+          "name": "Adriana Massa Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Ave Alvear 1807, 8 piso, oficina 803",
+            "city": "Buenos Aires",
+            "stateProvince": "Buenos Aires",
+            "stateProvinceCode": "B",
+            "postalCode": "C 1129AAA",
+            "country": "Argentina",
+            "countryCode": "AR",
+            "latitude": -34.5881623257119,
+            "longitude": -58.3883093900044
+          },
+          "phoneNumber": "+54.11.4805.3338",
+          "emailAddress": "adriana@sothebysrealty.com"
+        }
+      },
+      {
+        "id": "e718edb9-4bd6-4374-a194-751c9b663aea",
+        "name": "Rosario Lix Klett",
+        "firstName": "Rosario",
+        "lastName": "Lix Klett",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/E48D57A4-2CF5-47D2-932A-F0241A82F973",
+        "emailAddress": "rosario.lixklett@sothebysrealty.com",
+        "businessPhone": "+54 11 4805 3338",
+        "isPrimary": true,
+        "office": {
+          "officeId": "3edd8034-754c-4df9-83b6-63203ad6e077",
+          "RFGOfficeId": "0002 ",
+          "companyId": "80c56373-c542-498b-b19a-3ce5d860d143",
+          "companyName": "Adriana Massa Sotheby's International Real",
+          "RFGCompanyId": "810024",
+          "brandCode": "SIR",
+          "name": "Adriana Massa Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Ave Alvear 1807, 8 piso, oficina 803",
+            "city": "Buenos Aires",
+            "stateProvince": "Buenos Aires",
+            "stateProvinceCode": "B",
+            "postalCode": "C 1129AAA",
+            "country": "Argentina",
+            "countryCode": "AR",
+            "latitude": -34.5881623257119,
+            "longitude": -58.3883093900044
+          },
+          "phoneNumber": "+54.11.4805.3338",
+          "emailAddress": "adriana@sothebysrealty.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 3,
+  "halfBath": 1,
+  "providerKey": "5d2fd135-bfe7-48e9-8761-567f6e8bfcb7",
+  "propertyFeatures": [
+    {
+      "groupName": "Bath Features",
+      "description": "Tub and Shower"
+    },
+    {
+      "groupName": "General",
+      "description": "Elevator"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "General",
+      "description": "Laundry Facilities"
+    },
+    {
+      "groupName": "General",
+      "description": "Storage Area"
+    },
+    {
+      "groupName": "Age",
+      "description": "Over 50 Years Old"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "1 Car Garage"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Bidet"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "2 Fireplaces"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "A/C"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Garage"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "City"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Fireplace"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Laundry Chute"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Radiant Floor"
+    },
+    {
+      "groupName": "General",
+      "description": "Doorman"
+    },
+    {
+      "groupName": "Water",
+      "description": "City Water"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Area Description",
+      "languageCode": "en",
+      "remark": "Located in the heart of Recoleta, the most distinguished area of the city. just steps away from Plaza Intendente Torcuato de Alvear -more commonly known as Plaza Francia-, one of the most beautiful and well-known parks in the country.",
+      "htmlRemark": "<p>Located in the heart of Recoleta, the most distinguished area of the city. &nbsp;just steps away from Plaza Intendente Torcuato de Alvear -more commonly known as Plaza Francia-, one of the most beautiful and well-known parks in the country.&nbsp;<br></p>"
+    },
+    {
+      "type": "Area Description",
+      "languageCode": "es-ES",
+      "remark": "Recoleta es el barrio más elegante de la ciudad por sus edificios, su zona comercial y su célebre cementerio. Es una zona de amplio interés histórico y arquitectónico, en especial por el Cementerio de la Recoleta ubicado allí, y un importante foco turístico y cultural dentro de la ciudad. Es un barrio tradicional de sectores acomodados, cuyos inmuebles cotizan entre los más caros de la ciudad.",
+      "htmlRemark": "<p>Recoleta es el barrio más elegante de la ciudad por sus edificios, su zona comercial y su célebre cementerio. Es una zona de amplio interés histórico y arquitectónico, en especial por el Cementerio de la Recoleta ubicado allí, y un importante foco turístico y cultural dentro de la ciudad. Es un barrio tradicional de sectores acomodados, cuyos inmuebles cotizan entre los más caros de la ciudad.<br></p>"
+    },
+    {
+      "type": "Area Description",
+      "languageCode": "es-US",
+      "remark": "Recoleta es el barrio más elegante de la ciudad por sus edificios, su zona comercial y su célebre cementerio. Es una zona de amplio interés histórico y arquitectónico, en especial por el Cementerio de la Recoleta ubicado allí, y un importante foco turístico y cultural dentro de la ciudad. Es un barrio tradicional de sectores acomodados, cuyos inmuebles cotizan entre los más caros de la ciudad.",
+      "htmlRemark": "<p>Recoleta es el barrio más elegante de la ciudad por sus edificios, su zona comercial y su célebre cementerio. Es una zona de amplio interés histórico y arquitectónico, en especial por el Cementerio de la Recoleta ubicado allí, y un importante foco turístico y cultural dentro de la ciudad. Es un barrio tradicional de sectores acomodados, cuyos inmuebles cotizan entre los más caros de la ciudad.<br></p>"
+    },
+    {
+      "type": "Owner/Expert Quote",
+      "languageCode": "en",
+      "remark": "The natural light, the green views and the close distance to the best restaurants are some of the characteristics that stand out in this property. A privilege location to enjoy pleasurable walks. The Recoleta neighbourhood is safe and familiar to me. I love Buenos Aires and its people.",
+      "htmlRemark": "<p>The natural light, the green views and the close distance to the best restaurants are some of the characteristics that stand out in this property. A privilege location to enjoy pleasurable walks. The Recoleta neighbourhood is safe and familiar to me. I love Buenos Aires and its people.<br></p>"
+    },
+    {
+      "type": "Owner/Expert Quote",
+      "languageCode": "es-ES",
+      "remark": "Lo mas destacado de mi casa es puntualmente es su ubicación, su calidad constructiva y la posibilidad de contar con dos cocheras fijas en el edificio.",
+      "htmlRemark": "<p>Lo mas destacado de mi casa es puntualmente&nbsp; es su ubicación, su calidad constructiva y la posibilidad de contar con dos cocheras fijas en el edificio.&nbsp;<br></p>"
+    },
+    {
+      "type": "Owner/Expert Quote",
+      "languageCode": "es-US",
+      "remark": "Lo mas destacado de mi casa es puntualmente es su ubicación, su calidad constructiva y la posibilidad de contar con dos cocheras fijas en el edificio.",
+      "htmlRemark": "<p>Lo mas destacado de mi casa es puntualmente&nbsp; es su ubicación, su calidad constructiva y la posibilidad de contar con dos cocheras fijas en el edificio.&nbsp;<br></p>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "es-ES",
+      "remark": "Este impactante piso de 489 m2 ubicado frente a Plaza San Martín de Tours, sobre la calle Posadas, fue totalmente renovado con excelentes detalles de buen gusto y calidad cuidando especialmente su estilo original y los detalles más destacados de la época. El edificio fue construido en 1926 por los Arquitectos Sanchez Lagos y De la Torre, estudió de renombre en la década.\r\nLa recepción totalmente externa rodeada de verde y con vista a la plaza cuenta con amplio hall de ingreso , doble living y escritorio al frente, ambos con chimenea y escritorio con destacada vista a la plaza San Martin de Tours. Se destacan sus impecables pisos de roble de Eslavonia , su doble altura de techos y la conservación de herrajes y fallebas de toda la casa. Las fallebas originales de todos los ventanales son detalles que dan a este espacio carácter único y especial. Completan este sector un toilette de recepción.\r\nUn amplio e importante corredor nos conduce a la zona íntima donde encontramos 4 dormitorios. La máster suite con vestidor, living íntimo y baño de generosas medidas todo en mármol y grifería bañada en oro. Una suite junior con vestidor y baño revestido en mármol. Los dos dormitorios restantes que comparten un baño.\r\nEl sector de servicio se compone de de una amplia cocina de generosas medidas comedor diario y lavadero, cuarto de plancha, todo en colores claros e impecable estado. Lavadero y dependencia de servicio con baño completo.\r\nEl piso cuenta con doble sistema de calefacción mediante radiadores con caldera autónoma y aire fío/calor. Además, esta unidad cuenta con un elegante escritorio con baño privado. 2 Cocheras y seguridad 24 hs.\r\nExpensas: $ 35.000 ABL: $7.500.\r\n*Las medidas, superficies y expensas consignadas en la presente ficha pueden no ser exactas. Los datos definitivos son los que surgen del título de la propiedad y de los comprobantes correspondientes.",
+      "htmlRemark": "<div>Este impactante piso de 489 m2 ubicado frente a Plaza San Martín de Tours, sobre la calle Posadas, fue totalmente renovado con excelentes detalles de buen gusto y calidad cuidando especialmente su estilo original y los detalles más destacados de la época. El edificio fue construido en 1926 por los Arquitectos Sanchez Lagos y De la Torre, estudió de renombre en la década.&nbsp;</div><div><br></div><div>La recepción totalmente externa rodeada de verde y con vista a la plaza cuenta con&nbsp;<span style=\"font-weight: bolder;\">amplio hall de ingreso</span>, doble living y escritorio al frente, ambos con chimenea y escritorio con destacada vista a la plaza San Martin de Tours.&nbsp;<span style=\"font-weight: bolder;\">Se destacan sus impecables pisos de roble de Eslavonia</span>, su doble altura de techos y la conservación de herrajes y fallebas de toda la casa.&nbsp;<span style=\"font-weight: bolder;\">Las fallebas originales de todos los ventanales son detalles que dan a este espacio carácter único y especial.</span>&nbsp;Completan este sector un toilette de recepción.</div><div><br></div><div>Un amplio e importante corredor nos conduce a la zona íntima donde encontramos 4 dormitorios.&nbsp;<span style=\"background-color: rgb(240, 239, 239); color: rgb(51, 51, 51);\">&nbsp;</span><span style=\"background-color: rgb(240, 239, 239); color: rgb(51, 51, 51);\">La máster suite con vestidor, living íntimo y baño de generosas medidas todo en mármol y grifería bañada en oro. Una suite junior con vestidor y baño revestido en mármol. Los dos dormitorios restantes que comparten un baño.&nbsp;</span></div><div><br></div><div>El sector de servicio se compone de de una amplia cocina de generosas medidas comedor diario y lavadero, cuarto de plancha, todo en colores claros e impecable estado. Lavadero y dependencia de servicio con baño completo.&nbsp;</div><div><br></div><div>El piso cuenta con doble sistema de calefacción mediante radiadores con caldera autónoma y aire fío/calor. Además, esta unidad cuenta con un elegante escritorio con baño privado. 2 Cocheras y seguridad 24 hs.</div><div><br></div><div>Expensas: $ 35.000&nbsp;</div><div>ABL: $7.500.</div><div><br></div><div>*Las medidas, superficies y expensas consignadas en la presente ficha pueden no ser exactas. Los datos definitivos son los que surgen del título de la propiedad y de los comprobantes correspondientes.</div>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "es-US",
+      "remark": "Este impactante piso de 489 m2 ubicado frente a Plaza San Martín de Tours, sobre la calle Posadas, fue totalmente renovado con excelentes detalles de buen gusto y calidad cuidando especialmente su estilo original y los detalles más destacados de la época. El edificio fue construido en 1926 por los Arquitectos Sanchez Lagos y De la Torre, estudió de renombre en la década.\r\nLa recepción totalmente externa rodeada de verde y con vista a la plaza cuenta con amplio hall de ingreso , doble living y escritorio al frente, ambos con chimenea y escritorio con destacada vista a la plaza San Martin de Tours. Se destacan sus impecables pisos de roble de Eslavonia , su doble altura de techos y la conservación de herrajes y fallebas de toda la casa. Las fallebas originales de todos los ventanales son detalles que dan a este espacio carácter único y especial. Completan este sector un toilette de recepción.\r\nUn amplio e importante corredor nos conduce a la zona íntima donde encontramos 4 dormitorios. La máster suite con vestidor, living íntimo y baño de generosas medidas todo en mármol y grifería bañada en oro. Una suite junior con vestidor y baño revestido en mármol. Los dos dormitorios restantes que comparten un baño.\r\nEl sector de servicio se compone de de una amplia cocina de generosas medidas comedor diario y lavadero, cuarto de plancha, todo en colores claros e impecable estado. Lavadero y dependencia de servicio con baño completo.\r\nEl piso cuenta con doble sistema de calefacción mediante radiadores con caldera autónoma y aire fío/calor. Además, esta unidad cuenta con un elegante escritorio con baño privado. 2 Cocheras y seguridad 24 hs.\r\nExpensas: $ 35.000 ABL: $7.500.\r\n*Las medidas, superficies y expensas consignadas en la presente ficha pueden no ser exactas. Los datos definitivos son los que surgen del título de la propiedad y de los comprobantes correspondientes.",
+      "htmlRemark": "<div>Este impactante piso de 489 m2 ubicado frente a Plaza San Martín de Tours, sobre la calle Posadas, fue totalmente renovado con excelentes detalles de buen gusto y calidad cuidando especialmente su estilo original y los detalles más destacados de la época. El edificio fue construido en 1926 por los Arquitectos Sanchez Lagos y De la Torre, estudió de renombre en la década.&nbsp;</div><div><br></div><div>La recepción totalmente externa rodeada de verde y con vista a la plaza cuenta con <b>amplio hall de ingreso</b>, doble living y escritorio al frente, ambos con chimenea y escritorio con destacada vista a la plaza San Martin de Tours. <b>Se destacan sus impecables pisos de roble de Eslavonia</b>, su doble altura de techos y la conservación de herrajes y fallebas de toda la casa. <b>Las fallebas originales de todos los ventanales son detalles que dan a este espacio carácter único y especial.</b> Completan este sector un toilette de recepción.</div><div><br></div><div>Un amplio e importante corredor nos conduce a la zona íntima donde encontramos 4 dormitorios.&nbsp;<span style=\"background-color: rgb(240, 239, 239); color: rgb(51, 51, 51);\">&nbsp;</span><span style=\"background-color: rgb(240, 239, 239); color: rgb(51, 51, 51);\">La máster suite con vestidor, living íntimo y baño de generosas medidas todo en mármol y grifería bañada en oro. Una suite junior con vestidor y baño revestido en mármol. Los dos dormitorios restantes que comparten un baño.&nbsp;</span></div><div><br></div><div>El sector de servicio se compone de de una amplia cocina de generosas medidas comedor diario y lavadero, cuarto de plancha, todo en colores claros e impecable estado. Lavadero y dependencia de servicio con baño completo.&nbsp;</div><div><br></div><div>El piso cuenta con doble sistema de calefacción mediante radiadores con caldera autónoma y aire fío/calor. Además, esta unidad cuenta con un elegante escritorio con baño privado. 2 Cocheras y seguridad 24 hs.</div><div><br></div><div>Expensas: $ 35.000&nbsp;</div><div>ABL: $7.500.</div><div><br></div><div>*Las medidas, superficies y expensas consignadas en la presente ficha pueden no ser exactas. Los datos definitivos son los que surgen del título de la propiedad y de los comprobantes correspondientes.</div>"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Stunning 489 sqm apartment on Posadas Street, overlooking Plaza San Martin de Tours. It was completely renovated with exquisite taste and excelent quality, keeping its original style and details.\r\nThe building was built in 1926 by Sanchez Lagos and de la Torre, a well-known architecture firm at the time.\r\nThe reception area, facing the beautiful Plaza San Martin de Tours, has a double living room, a dining room for over 12 people -both with fireplaces- and an office. Powder room.\r\nIts impeccable Slavonia oak floors, double height ceilings, its ironwork and original espagnolette bolts in every French window -and in perfect state of conservation- are some of the details that stand out and give this property a unique and special character.\r\nA wide and important corridor leads us to the bedroom area.\r\nThere are four bedrooms: a spacious master suite with dressing room, sitting area and a large marble clad bathroom with gold plated taps. A junior suite with marble-clad bathroom and two bedrooms that share a bathroom.\r\nThe service area has a large kitchen with breakfast nook, laundry room, ironing room and staff bedroom with its bathroom. Everything is in flawless condition.\r\nThe apartment has a double heating system, by radiators and by AC heat/cold splits.\r\nThere is an elegant office with a bathroom on the ground floor.\r\nThere is a garage in the building and another one a few meters away.\r\n24-hour security.\r\nMaintenance fees: $ 35.000 City tax: $ 7500\r\n\r\n*The measurements, surfaces and expense shown in this sheet may not be accurate. The definitive data are those that come from the title deed and the corresponding vouchers.",
+      "htmlRemark": "<p>Stunning 489 sqm apartment on Posadas Street, overlooking Plaza San Martin de Tours. It was completely renovated with exquisite taste and excelent quality, keeping its original style and details.</p><p>The building was built in 1926 by Sanchez Lagos and de la Torre, a well-known architecture firm at the time.</p><p>The reception area, facing the beautiful Plaza San Martin de Tours, has a double living room, a dining room for over 12 people -both with fireplaces- and an office. Powder room.</p><p>Its impeccable Slavonia oak floors, double height ceilings, its ironwork and original espagnolette bolts in every French window -and in perfect state of conservation- are some of the details that stand out and give this property a unique and special character.</p><p>A wide and important corridor leads us to the bedroom area.&nbsp;</p><p>There are four bedrooms: a spacious master suite with dressing room, sitting area and a large marble clad bathroom with gold plated taps. A junior suite with marble-clad bathroom and two bedrooms that share a bathroom.&nbsp;</p><p>The service area has a large kitchen with breakfast nook, laundry room, ironing room and staff bedroom with its bathroom. Everything is in flawless condition.&nbsp;</p><p>The apartment has a double heating system, by radiators and by AC heat/cold splits.</p><p>There is an elegant office with a bathroom on the ground floor.</p><p>There is a garage in the building and another one a few meters away.</p><p>24-hour security.</p><ul><li>Maintenance fees: $ 35.000</li><li>City tax: $ 7500</li></ul><div><br></div><p>\t</p><div>*The measurements, surfaces and expense shown in this sheet may not be accurate. The definitive data are those that come from the title deed and the corresponding vouchers.</div>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/hx82jn",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "00991DA8-13F4-49D7-9CC5-0AC01D66AD18",
+      "sequenceNumber": 1,
+      "url": "https://my.matterport.com/show/?m=1PAyJ8t1njF&play=1&ts=3&hl=0&guides=0&lp=1",
+      "isDefault": true,
+      "caption": "Posadas 1600",
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2018-05-09T22:16:37.780"
+    },
+    {
+      "mediaID": "A08DBB43-3D7A-4C57-8372-0EE8558282CB",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/A08DBB43-3D7A-4C57-8372-0EE8558282CB",
+      "isDefault": false,
+      "caption": "6",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "330C1E13-626E-4EB0-A9E4-116F2A37AB44",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/330C1E13-626E-4EB0-A9E4-116F2A37AB44",
+      "isDefault": true,
+      "caption": "7a",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "7CCDD626-AE88-4B53-8F97-22991089B949",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/7CCDD626-AE88-4B53-8F97-22991089B949",
+      "isDefault": false,
+      "caption": "12",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 1200,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "5C378026-0F52-4A48-9E49-4D19A78E65FB",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/5C378026-0F52-4A48-9E49-4D19A78E65FB",
+      "isDefault": false,
+      "caption": "10",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "2B74FA9D-15EC-44C0-8787-50F6E5C65BB4",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/2B74FA9D-15EC-44C0-8787-50F6E5C65BB4",
+      "isDefault": false,
+      "caption": "1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "43D78C9A-FA53-431C-96DA-66E95004272E",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/43D78C9A-FA53-431C-96DA-66E95004272E",
+      "isDefault": false,
+      "caption": "14",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 1200,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "3CE3FFE1-C15B-44CE-BDCA-673285CCEFEC",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/3CE3FFE1-C15B-44CE-BDCA-673285CCEFEC",
+      "isDefault": false,
+      "caption": "9",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "FE44F88C-E1EF-466D-B8C0-88200628B62E",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/FE44F88C-E1EF-466D-B8C0-88200628B62E",
+      "isDefault": false,
+      "caption": "13",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 1200,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "48AE287F-F355-45BA-96BD-8B4A6086086B",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/48AE287F-F355-45BA-96BD-8B4A6086086B",
+      "isDefault": false,
+      "caption": "5",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "89482E3E-FDC7-4A7E-8C10-A5168A1E11FA",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/89482E3E-FDC7-4A7E-8C10-A5168A1E11FA",
+      "isDefault": false,
+      "caption": "3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "9517A280-5319-4932-B2CA-BD6A41F4CFA6",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/9517A280-5319-4932-B2CA-BD6A41F4CFA6",
+      "isDefault": false,
+      "caption": "4",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "3AC0DA13-A5DF-4646-989C-CBE6012AC1DD",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/3AC0DA13-A5DF-4646-989C-CBE6012AC1DD",
+      "isDefault": false,
+      "caption": "2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "40D5BE59-B77F-408C-86DF-F5113E41D56E",
+      "sequenceNumber": 1,
+      "url": "https://my.matterport.com/show/?m=1PAyJ8t1njF&play=1&ts=3&hl=0&guides=0&lp=1",
+      "isDefault": true,
+      "caption": "Posadas 1600",
+      "format": "3D Video",
+      "category": "3D Video",
+      "lastUpdateOn": "2018-05-22T15:06:01.820"
+    },
+    {
+      "mediaID": "A6AB2B4B-B59D-413A-A4DF-F9B7F06D2ED3",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/A6AB2B4B-B59D-413A-A4DF-F9B7F06D2ED3",
+      "isDefault": false,
+      "caption": "8",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    },
+    {
+      "mediaID": "027742A7-134A-4E8D-870D-FC81213F7D88",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/027742A7-134A-4E8D-870D-FC81213F7D88",
+      "isDefault": false,
+      "caption": "11",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 1200,
+      "lastUpdateOn": "2018-02-09T18:10:12.757"
+    }
+  ]
+}

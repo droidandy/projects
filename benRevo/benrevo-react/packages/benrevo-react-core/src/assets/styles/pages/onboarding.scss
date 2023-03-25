@@ -1,0 +1,168 @@
+.on-boarding {
+  .field-additional-text {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .ui.form {
+    textarea {
+      width: auto;
+      min-width: 260px;
+    }
+  }
+
+
+  .ui.form.columns {
+    column-count: 2;
+    width: 75%;
+
+    .field {
+      white-space: nowrap
+    }
+  }
+
+  .page-description {
+    ul {
+      margin-top: 0;
+      padding-left: 20px;
+
+      li {
+        list-style: none;
+      }
+
+      li:before {
+        content: '\B7';
+        font-size: 35px;
+        margin-right: 15px;
+        margin-top: 5px;
+        position: relative;
+        top: 8px;
+      }
+    }
+  }
+
+  .action-button {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 991px) {
+      & {
+        display: block;
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .form-item:not(:first-child) {
+    margin-top: 26px;
+  }
+
+  .ui.input:not(.fluid) input[type="text"], .datepicker, .ui.selection.dropdown {
+    min-width: 260px;
+  }
+
+  .form-item {
+    &.inline {
+      display: inline-block;
+
+      & + .inline {
+        margin-left: 20px;
+      }
+
+      .datepicker {
+        min-width: 120px;
+        width: 120px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .ui.form.columns {
+      column-count: 1;
+      width: 100%;
+    }
+
+    .ui.input:not(.fluid), .datepicker, .ui.selection.dropdown {
+      width: 100%;
+    }
+
+    .form-item {
+      &.inline {
+        width: calc(50% - 10px);
+      }
+    }
+
+    .form-item {
+      .react-datepicker__input-container {
+        width: 100%;
+        .datepicker {
+          min-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .pageFooterActions .ui.button{
+    width: auto;
+  }
+
+  .ui.selection.dropdown {
+    @media only screen and (min-width: 991px) {
+      & {
+        width: 260px;
+      }
+    }
+   // float: left;
+    & + .label {
+      margin-top: 5px;
+    }
+  }
+
+  .radio-massive-label {
+    width: 250px;
+  }
+
+  .send-page-list-title {
+    text-transform: capitalize;
+  }
+
+  .ui.table {
+    border: $INPUT_BORDER;
+    thead th {
+      border-left: $INPUT_BORDER;
+      font-size: 13px;
+    }
+    tbody td {
+      border-left: $INPUT_BORDER;
+      border-top: $INPUT_BORDER;
+    }
+  }
+
+  .rfpPageFormSetHeading {
+    white-space: pre-wrap;
+    a {
+      font-weight: 400;
+      cursor: pointer;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .error-link {
+    span {
+      text-transform: capitalize;
+      width: 250px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+}
+

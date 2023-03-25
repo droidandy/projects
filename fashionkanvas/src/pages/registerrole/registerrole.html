@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+
+    </ion-buttons>
+    <!-- <ion-title>{{ 'CREATEANACCOUNT' | translate }}</ion-title> -->
+    <ion-buttons end>
+
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h2>{{ 'DOINFASHION' | translate }} </h2>
+  <ion-list>
+    <ion-item *ngFor="let data of roleList.data">
+      <!-- <ion-label>{{data.name}}</ion-label>
+      <ion-checkbox checked="{{data.checked}}" (click)="selectRole(data)"></ion-checkbox> -->
+      <span class="selectbox" [ngClass]="{'selectbox_active': selectRoleName==data.name}" (click)="selectRole(data.name)"></span>
+      <span (click)="selectRole(data.name)">{{data.name}}</span>
+    </ion-item>
+    <ion-item *ngIf="selectRoleName=='Other'">
+      <ion-input placeholder="Your Role" [(ngModel)]="newRoleName" class="role"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div>
+      <button ion-button class="loginbtn" block  (click)="openLocationbase()" >{{ 'Next' | translate }}</button>
+  </div>
+</ion-content>

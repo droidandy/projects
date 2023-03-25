@@ -1,0 +1,138 @@
+@import "../variables-theme";
+
+.sales {
+  .ui.button.edit-button {
+    width: 80%;
+  }
+
+  .top-segment {
+    min-height: 300px;
+  }
+
+  .search-personnel-form {
+    float: right;
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  .name-inputs {
+    width: 50%;
+  }
+
+  .ui.table.data-table {
+    .data-table-body td {
+      height: 100px !important;
+      padding: 20px;
+
+      .ui.form {
+        .fields {
+          .field {
+            .ui.input {
+              input {
+                min-width: 200px;
+              }
+            }
+
+            .remove-item {
+              cursor: pointer;
+              line-height: 93px;
+
+              &:hover {
+                opacity: 0.7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ui.loader {
+    float: right;
+    margin-right: 20px;
+    margin-top: -18px;
+  }
+
+  .buttons-list {
+    float: right;
+    .ui.button.big {
+      width: 200px;
+      float: right;
+    }
+
+    & + .ui.loader {
+      margin-top: 7px;
+    }
+  }
+}
+
+.ui.modal.sales-modal {
+  padding: 20px 20px 20px;
+
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: $DARK_COLOR;
+    font-weight: 600;
+
+    &:hover {
+      color: $DARK_COLOR;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .listBrokerages {
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    text-align: right;
+    margin-top: 10px;
+    .ui.button.primary {
+      width: 150px;
+    }
+
+    .cancel-button {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .buttons-centered {
+    text-align: center;
+    .ui.button.primary {
+      width: 150px;
+    }
+
+    .cancel-button {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .brokerageRemove {
+    cursor: pointer;
+    float: left;
+    height: fit-content;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.add-person {
+  .personRemove {
+    cursor: pointer;
+    float: right;
+    height: fit-content;
+    &:hover {
+      color: red;
+    }
+  }
+}

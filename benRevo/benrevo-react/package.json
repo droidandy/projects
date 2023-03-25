@@ -1,0 +1,264 @@
+{
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist --nohoist=semantic-ui-css",
+    "publish": "lerna publish",
+    "lint": "npm run lint:js",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals --ignore-pattern packages/**/dist",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint:staged": "lint-staged",
+    "pretest": "npm run test:clean && npm run lint",
+    "test:clean": "rimraf ./coverage",
+    "test": "cross-env NODE_ENV=test jest --ci --coverage --maxWorkers=2 --testResultsProcessor=jest-junit --setupTestFrameworkScriptFile=raf/polyfill",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+    "build:anthem": "cd packages/benrevo-react-anthem/ && cross-env NODE_ENV=production npm run set:env && cross-env NODE_ENV=production env-cmd .env webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:uhc": "cd packages/benrevo-react-uhc && cross-env NODE_ENV=production npm run set:env && cross-env NODE_ENV=production env-cmd .env webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
+  },
+  "pre-commit": "lint:js",
+  "babel": {
+    "presets": [
+      [
+        "latest",
+        {
+          "es2015": {
+            "modules": false
+          }
+        }
+      ],
+      "env",
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "syntax-dynamic-import"
+    ],
+    "env": {
+      "production": {
+        "only": [
+          "app"
+        ],
+        "plugins": [
+          "transform-react-remove-prop-types",
+          "transform-react-constant-elements",
+          "transform-react-inline-elements",
+          "transform-function-bind"
+        ]
+      },
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs",
+          "dynamic-import-node"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "env": {
+      "browser": true,
+      "node": true,
+      "jest": true,
+      "es6": true
+    },
+    "plugins": [
+      "redux-saga",
+      "react",
+      "jsx-a11y"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "arrow-body-style": [
+        2,
+        "as-needed"
+      ],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
+      "import/imports-first": 0,
+      "import/newline-after-import": 0,
+      "import/no-dynamic-require": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/no-named-as-default": 0,
+      "import/no-unresolved": 2,
+      "import/prefer-default-export": 0,
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "jsx-a11y/aria-props": 2,
+      "jsx-a11y/heading-has-content": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "jsx-a11y/href-no-hash": 2,
+      "jsx-a11y/label-has-for": 2,
+      "jsx-a11y/mouse-events-have-key-events": 2,
+      "jsx-a11y/role-has-required-aria-props": 2,
+      "jsx-a11y/role-supports-aria-props": 2,
+      "max-len": 0,
+      "newline-per-chained-call": 0,
+      "no-confusing-arrow": 0,
+      "no-console": 1,
+      "no-use-before-define": 0,
+      "prefer-template": 2,
+      "class-methods-use-this": 0,
+      "react/forbid-prop-types": 0,
+      "react/jsx-first-prop-new-line": [
+        2,
+        "multiline"
+      ],
+      "react/jsx-filename-extension": 0,
+      "react/jsx-no-target-blank": 0,
+      "react/require-extension": 0,
+      "react/self-closing-comp": 0,
+      "redux-saga/no-yield-in-race": 2,
+      "redux-saga/yield-effects": 2,
+      "require-yield": 0,
+      "import/no-webpack-loader-syntax": 0
+    }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx$": "babel-jest",
+      "^.+\\.js$": "babel-jest"
+    },
+    "testURL": "http://localhost",
+    "collectCoverageFrom": [
+      "packages/**/app/**/*.{js,jsx}",
+      "packages/**/src/**/*.{js,jsx}",
+      "!packages/**/app/**/*.test.{js,jsx}",
+      "!packages/**/src/**/*.test.{js,jsx}",
+      "!packages/**/app/*/RbGenerated*/*.{js,jsx}",
+      "!packages/**/app/app.js",
+      "!packages/**/app/routes.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "statements": 10,
+        "branches": 10,
+        "functions": 10,
+        "lines": 10
+      }
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "app",
+      "packages"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!auth0-js)"
+    ],
+    "moduleNameMapper": {
+      ".*\\.(css|less|styl|scss|sass)$": "<rootDir>/internals/mocks/cssModule.js",
+      ".*\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/internals/mocks/image.js"
+    },
+    "testPathIgnorePatterns": [
+      "<rootDir>/internals/",
+      "<rootDir>/node_modules/",
+      "<rootDir>/packages/benrevo-react-quote/dist/",
+      "<rootDir>/packages/benrevo-react-clients/dist/",
+      "<rootDir>/packages/benrevo-react-core/dist/",
+      "<rootDir>/packages/benrevo-react-rfp/dist/",
+      "<rootDir>/packages/benrevo-react-match/dist/",
+      "<rootDir>/packages/benrevo-react-onboarding/dist/",
+      "<rootDir>/packages/benrevo-react-timeline/dist/",
+      "<rootDir>/packages/benrevo-react-quote/node_modules/",
+      "<rootDir>/packages/benrevo-react-clients/node_modules/",
+      "<rootDir>/packages/benrevo-react-core/node_modules/",
+      "<rootDir>/packages/benrevo-react-rfp/node_modules/",
+      "<rootDir>/packages/benrevo-react-anthem/node_modules/",
+      "<rootDir>/packages/benrevo-react-uhc/node_modules/",
+      "<rootDir>/packages/benrevo-react-timeline/node_modules/",
+      "<rootDir>/packages/benrevo-react-onboarding/node_modules/",
+      "<rootDir>/packages/benrevo-react-match/node_modules/"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/internals/testing/test-bundler.js",
+    "setupFiles": [
+      "jest-localstorage-mock",
+      "<rootDir>/internals/scripts/test-setup.js"
+    ],
+    "testRegex": "tests/.*\\.test\\.js$"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "6.21.0",
+    "babel-eslint": "7.1.1",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "6.2.10",
+    "babel-plugin-dynamic-import-node": "1.0.0",
+    "babel-plugin-react-intl": "2.2.0",
+    "babel-plugin-react-transform": "2.0.2",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.18.0",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-react-constant-elements": "6.9.1",
+    "babel-plugin-transform-react-inline-elements": "6.8.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.2.11",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "6.16.0",
+    "babel-preset-react": "6.16.0",
+    "babel-preset-react-hmre": "1.1.1",
+    "babel-preset-stage-0": "6.16.0",
+    "cheerio": "0.22.0",
+    "circular-dependency-plugin": "2.0.0",
+    "coveralls": "2.11.15",
+    "css-loader": "0.26.1",
+    "env-cmd": "^5.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "3.11.1",
+    "eslint-config-airbnb": "13.0.0",
+    "eslint-config-airbnb-base": "10.0.1",
+    "eslint-import-resolver-webpack": "0.8.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "2.2.3",
+    "eslint-plugin-react": "6.7.1",
+    "eslint-plugin-redux-saga": "0.1.5",
+    "eventsource-polyfill": "0.9.6",
+    "exports-loader": "0.6.3",
+    "file-loader": "0.9.0",
+    "html-loader": "0.4.4",
+    "html-webpack-plugin": "2.24.1",
+    "image-webpack-loader": "2.0.0",
+    "imports-loader": "0.6.5",
+    "jest-cli": "21.2.1",
+    "jest-junit": "^3.1.0",
+    "jest-localstorage-mock": "^2.1.0",
+    "jsdom": "^9.12.0",
+    "lerna": "^2.5.1",
+    "lint-staged": "3.2.1",
+    "ngrok": "2.2.4",
+    "node-plop": "0.5.4",
+    "node-sass": "^4.5.0",
+    "null-loader": "0.1.1",
+    "offline-plugin": "4.5.2",
+    "plop": "1.7.3",
+    "pre-commit": "1.1.3",
+    "react-addons-test-utils": "15.4.1",
+    "react-test-renderer": "^16.2.0",
+    "redux-mock-store": "^1.4.0",
+    "redux-saga-testing": "^1.0.5",
+    "rimraf": "2.5.4",
+    "sass-loader": "^6.0.3",
+    "shelljs": "0.7.5",
+    "sinon": "2.0.0-pre",
+    "style-loader": "0.13.1",
+    "url-loader": "0.5.7",
+    "uuid": "^3.0.1",
+    "webpack": "2.2.0-rc.3",
+    "webpack-dev-middleware": "1.9.0",
+    "webpack-hot-middleware": "2.15.0"
+  }
+}

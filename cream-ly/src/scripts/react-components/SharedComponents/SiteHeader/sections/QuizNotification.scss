@@ -1,0 +1,38 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+
+.quizNotification {
+  background-color: var(--lavender);
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  a {
+    color: #fff;
+    text-decoration: underline !important;
+  }
+
+  .content {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 13px;
+
+    .content {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 13px;
+
+    .content {
+      max-width: 220px;
+    }
+  }
+}

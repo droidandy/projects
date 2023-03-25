@@ -1,0 +1,13 @@
+query getFollowedUsers {
+  currentUser {
+    ... on User {
+      followedUsers {
+        id
+        userName
+        email
+        fullName
+        avatar
+      }
+    }
+  }
+}

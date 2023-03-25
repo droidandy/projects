@@ -1,0 +1,48 @@
+{
+  "agentSummary": {
+    "id": "d509b510-5914-4687-b2f1-81fd3ed19120",
+    "isAgent": false,
+    "name": "Shannon Coxe",
+    "firstName": "Shannon",
+    "lastName": "Coxe",
+    "emailAddress": "shannon.coxe@steamboatsir.com",
+    "businessPhone": "9708752459",
+    "mobilePhone": "3032494801",
+    "office": {
+      "officeId": "1ee1b0da-9083-40e5-9ce8-b2617531a742",
+      "RFGOfficeId": "0001",
+      "companyId": "d0c52843-00e6-4b1c-abf7-b7af054b4c4b",
+      "companyName": "Steamboat",
+      "RFGCompanyId": "800357",
+      "brandCode": "SIR",
+      "name": "Steamboat Sotheby's International Realty",
+      "type": "Main office",
+      "officeAddress": {
+        "streetAddress": "610 Marketplace Plaza",
+        "city": "Steamboat Springs",
+        "district": "Routt",
+        "stateProvince": "Colorado",
+        "stateProvinceCode": "CO",
+        "postalCode": "80487",
+        "country": "United States",
+        "countryCode": "US",
+        "latitude": 40.4593,
+        "longitude": -106.82016,
+        "formattedAddress": "610 Marketplace Plaza, Steamboat Springs, CO 80487"
+      },
+      "phoneNumber": "9708798100",
+      "emailAddress": "contact@steamboatsir.com"
+    }
+  },
+  "personId": "a938ce69-fba6-4dbb-8da4-da93e84cfafc",
+  "lastUpdateOn": "2017-12-09T14:03:04.623",
+  "addlEmails": [{
+    "type": "Vanity",
+    "address": "shannon.coxe@sothebysrealty.com"
+  }],
+  "languagesSpoken": [{
+    "code": "eng",
+    "name": "English"
+  }],
+  "isTeamMember": false
+}

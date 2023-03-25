@@ -1,0 +1,89 @@
+<div class="grid-pagination">
+    <a href="#" class="show-prev">Previous</a> | <a href="#" class="show-next --active">Next</a>
+</div>
+
+<table class="grid --stories"
+       {% if collection|length %}
+           data-statistics-get="{{ path('ha_statistics_property_get', {id:collection|first.id}) }}"
+       {% endif %}>
+
+    <thead>
+        <tr>
+            <th class="--properties">
+                Properties
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--impressions">
+                Impressions
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--views">
+                Views
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--likes">
+                Likes
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+            <th class="--shares">
+                Shares
+                <i class="material-icons sort-desc">arrow_drop_down</i>
+                <i class="material-icons sort-asc">arrow_drop_up</i>
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for property in collection %}
+            <tr class="{% if loop.index0 == 0 %}--active{% endif %}"
+                {% if loop.index0 >= tablePageLength %}
+                    style="display: none;"
+                {% endif %}
+                data-statistics-get="{{ path('ha_statistics_property_get', {id:property.id}) }}">
+                <td class="--property"
+                    data-sort="{{ property.dateAdded|date("U") }}">
+                    <div class="image cover"
+                         data-background-image="{{ property|property_thumbnail }}">
+                    </div>
+
+                    <div>
+                        <div class="title">
+                            {{ property.getTitle() }}
+                        </div>
+                        <div class="meta-summary">
+                            <span>
+                                {{ property.dateAdded|date("F j, Y") }}
+                            </span>
+                            -
+                            <a href="{{ path('property_details', { 'id': property.id, 'slug': property.slug }) }}">
+                                View Listing
+                            </a>
+                        </div>
+                    </div>
+                </td>
+
+                <td class="--impressions">
+                    {{ property.impressionCount }}
+                </td>
+                <td class="--views">
+                    {{ property.viewCount }}
+                </td>
+                <td class="--likes">
+                    {{ property.getLikesCount() }}
+                </td>
+                <td class="--shares">
+                    0
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+<div class="grid-pagination">
+    <a href="#" class="show-prev">Previous</a> | <a href="#" class="show-next --active">Next</a>
+</div>

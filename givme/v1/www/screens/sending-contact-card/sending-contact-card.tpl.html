@@ -1,0 +1,44 @@
+<ion-view>
+  <ion-content class="gm-content">
+    <div class="page">
+      <div class="container-fluid">
+        <div class="title-block"> <h2>HOW WAS IT!</h2>
+          <p>SEND HER YOUR CONTACT CARD!</p>
+        </div>
+        <div class="" style="display:block">
+          <div class="modal-dialog" >
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="icon-head">
+                  <div class="send-card-block"><img src="img/rec-card-pic.png"  class="img-responsive" alt=""></div>
+                </div>
+                <div class="chat-mess-age-block">
+                  <span class="quote">&ldquo;</span><input class="chat-mess-age" placeholder="Write her something here"><span  class="quote">&rdquo;</span>
+                </div>
+                <div class="send-card-opt">
+                  <span class="help-info">PICK 1 OR MORE NETWORKS TO SEND</span>
+                  <ul>
+                    <li><a href="#" class="twitter-icon" ng-class="{ 'active': activeNetworks.twitter }" ng-click="activate($event)">twitter</a></li>
+                    <li><a href="#" class="fb-icon" ng-class="{ 'active': activeNetworks.facebook }" ng-click="activate($event)">facebook</a></li>
+                    <li><a href="#" class="call-icon" ng-class="{ 'active': activeNetworks.call }" ng-click="activate($event)">call</a></li>
+                    <li><a href="#" class="bell-icon" ng-class="{ 'active': activeNetworks.bell }" ng-click="activate($event)">bell</a></li>
+                    <li><a href="#" class="save-icon" ng-class="{ 'active': activeNetworks.save }" ng-click="activate($event)">save</a></li>
+                    <li><a href="#" class="pin-icon" ng-class="{ 'active': activeNetworks.pin }" ng-click="activate($event)">pin</a></li>
+                    <li><a href="#" class="whatsapp-icon" ng-class="{ 'active': activeNetworks.whatsapp }" ng-click="activate($event)">whatsapp</a></li>
+                    <li><a href="#" class="email-icon" ng-class="{ 'active': activeNetworks.email }" ng-click="activate($event)">email</a></li>
+                  </ul>
+                </div>
+                <div class="text-center btn-in-block" >
+                  <ul>
+                    <li> <a ui-sref="menu" class="btn btn-default">CANCEL</a> </li>
+                    <li> <a ui-sref="receive-contact-card" class="btn btn-primary" ng-class="{'disabled': !active}">SEND</a> </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,38 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+{% import 'AppBundle::forms.html.twig' as forms %}
+
+{% set meta_title = search|property_listing_title %}
+
+{% block filters %}
+    {% if not is_mobile() and search.hits %}
+        {% include 'AppBundle:property/collection:filters.html.twig' with { term: search.location.searchTerm } %}
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+
+    {% if search.hits %}
+        <div class="switch-views {{ map_view ? "" : "--collection" }} {{ is_mobile() ? "--mobile" : "" }}">
+            {% include "AppBundle:map:collection.html.twig" %}
+
+            <div class="property-listing items-collection">
+                {% include 'AppBundle:property/collection:heading.html.twig' %}
+
+                <ul class="list"
+                    data-json-target="{{ json_url ? : '' }}"
+                    data-location-id="{{ search.location.id }}"
+                    data-filter-url="{{ app.request.uri }}"
+                    data-page-total="{{ search.pages.total }}"
+                    data-page-current="{{ requestedPage }}"
+                >
+                    {% include 'AppBundle:property/collection:items.html.twig' %}
+                </ul>
+            </div>
+
+            <div class="equalizer"></div>
+        </div>
+    {% else %}
+        {% include 'AppBundle:property/collection:heading_no_results.html.twig' %}
+    {% endif %}
+
+{% endblock body %}

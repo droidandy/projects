@@ -1,0 +1,40 @@
+@import "~styles/variables";
+
+.content {
+  label {
+    display: block;
+    margin-bottom: 12px;
+    position: relative;
+
+    span {
+      background: #ffb9f8;
+      padding: 0 8px;
+      position: relative;
+      display: inline-block;
+      left: -17px;
+      bottom: -9px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      border-radius: 10px;
+      transform: rotate(-15deg);
+    }
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    label {
+      span {
+        position: absolute;
+        left: 47%;
+        top: -80%;
+        bottom: inherit;
+        transform: translateX(-50%) rotate(-15deg);
+      }
+    }
+  }
+}

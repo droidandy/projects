@@ -1,0 +1,1 @@
+export { getLinks } from './getLinks';

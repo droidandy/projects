@@ -1,0 +1,72 @@
+{% if payments %}
+    <div class="profile-section">
+        <h2>
+            Payment history
+        </h2>
+        <p class="info">
+            Downgrade anytime, but you’ll lose access to premium featured<br/>
+            Need to talk to someone? Contact us—we’d love to help.<br/>
+        </p>
+    </div>
+
+    <table class="grid --stories">
+        <thead class="--left">
+            <tr>
+                <th class="--id">
+                    ID
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                </th>
+                <th class="--date">
+                    Date
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                </th>
+                <th class="--method">
+                    Card
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                </th>
+                <th class="--amount">
+                    Amount
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                </th>
+                <th class="--amount">
+                    VAT
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                </th>
+                <th class="--address">
+                    Address
+                    <i class="material-icons sort-desc">arrow_drop_down</i>
+                    <i class="material-icons sort-asc">arrow_drop_up</i>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for payment in payments %}
+                <tr>
+                    <td class="--id">
+                        {{ payment.id }}
+                    </td>
+                    <td class="--date">
+                        {{ payment.startDate|date("F j Y") }}
+                    </td>
+                    <td class="--method">
+                        {{ payment.method }}
+                    </td>
+                    <td class="--amount">
+                        {{ payment.amount }} {{ payment.currency }}
+                    </td>
+                    <td class="--tax">
+                        {{ payment.vat }}
+                    </td>
+                    <td class="--address">
+                        {{ payment.postalCode }} / {{ payment.country }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

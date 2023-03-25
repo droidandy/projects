@@ -1,0 +1,11 @@
+parameters:
+    user_settings:
+        - "notificationNetwork"
+        - "notificationStories"
+        - "notificationsAll"
+        - "facebookAutoshare"
+        - "twitterAutoshare"
+        - "linkedinAutoshare"
+        - "networksOnProfile"
+
+

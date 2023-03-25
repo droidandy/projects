@@ -1,0 +1,290 @@
+{
+  "listingSummary": {
+    "listingId": "000073a8-d4b2-48f7-8279-e028ad30ce47",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2017-08-15",
+    "photoCount": 10,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 165000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "4440 Lindell Blvd # 1004",
+      "city": "St Louis",
+      "district": "St. Louis City",
+      "stateProvince": "Missouri",
+      "stateProvinceCode": "MO",
+      "postalCode": "63108",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 38.64156,
+      "longitude": -90.25571,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "4440 Lindell Blvd, St Louis, MO 63108"
+    },
+    "mlsNumbers": [
+      "18002802"
+    ],
+    "RFGListingId": "3D4G72",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/3d4g72",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Condominium",
+    "propertyStyle": "1 Level Ranch",
+    "propertyName": "Lindell Blvd",
+    "totalBath": 1,
+    "buildingArea": "1406 Sq. Ft.",
+    "noOfBedrooms": 2,
+    "squareFootage": 1406.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/BDA2F484-D6AB-47D1-BBEE-9D6607F589C1",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-03T06:31:57.190",
+    "agents": [
+      {
+        "id": "97b95431-c269-442e-ab70-46d8192e5c38",
+        "name": "Ted Wight",
+        "firstName": "Ted",
+        "lastName": "Wight",
+        "gender": "Male",
+        "defaultPhotoURL": "//openapi.azureedge.net/56A5BA12-140C-4324-8791-596AD6500344",
+        "emailAddress": "ted@tedwight.com",
+        "leadEmailAddress": "800075.lead.4006165@leads.leadrouter.com",
+        "businessPhone": "+1 3146075555",
+        "isPrimary": true,
+        "office": {
+          "officeId": "f51ddc2b-5318-4023-b52a-eff42bf2eb2a",
+          "RFGOfficeId": "0001",
+          "companyId": "b6648763-4458-492d-b60d-23c30bd894f4",
+          "companyName": "Dielmann",
+          "RFGCompanyId": "800075",
+          "brandCode": "SIR",
+          "name": "Dielmann Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "8301 Maryland Avenue Suite 100",
+            "city": "Saint Louis",
+            "district": "St. Louis",
+            "stateProvince": "Missouri",
+            "stateProvinceCode": "MO",
+            "postalCode": "63105",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 38.65318,
+            "longitude": -90.34604,
+            "formattedAddress": "8301 Maryland Ave, St Louis, MO 63105"
+          },
+          "phoneNumber": "3147250009",
+          "emailAddress": "andy.dielmann@sothebysrealty.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 1,
+  "levels": 1,
+  "yearBuilt": "1912",
+  "totalRooms": 5,
+  "providerKey": "000073a8-d4b2-48f7-8279-e028ad30ce47",
+  "propertyFeatures": [
+    {
+      "groupName": "Appliances",
+      "description": "Refrigerator"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Microwave"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Age",
+      "description": "Over 50 Years Old"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "1 Car Garage"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "City"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "In-City"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Garbage Disposal"
+    },
+    {
+      "groupName": "Water",
+      "description": "City Water"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Live well right in the heart of the fashionable Central West End. With 1,406 sq. feet of living space, this chic condo will be your ideal flat in the city. Walk to restaurants, Metro-Link, BJC Medical campus, Whole Foods & more. Gracious Living Room and formal Dining Room with hardwood floors. Spacious eat-in kitchen. 1 reserved indoor parking space. Additional parking spots may be rented if available. Rooftop patio. 24-hr doorman. Just pay electric. Heating included.",
+      "htmlRemark": "<p><br></p><table class=\"d7m2\" cellspacing=\"0\" cellpadding=\"0\" style=\"border-collapse: separate; background-color: rgb(255, 255, 255); table-layout: fixed; width: 749px; font-family: verdana, sans-serif; font-size: 11px; font-weight: 700; white-space: nowrap;\"><tbody><tr><td class=\"d7m56\" colspan=\"7\" style=\"margin: 0px; overflow: hidden; width: 663px; word-wrap: normal !important;\"><table class=\"d7m57\" cellspacing=\"0\" cellpadding=\"0\" style=\"border-collapse: separate; table-layout: fixed; width: 665px;\"><tbody><tr><td class=\"d7m56\" style=\"margin: 0px; overflow: hidden; width: 663px; word-wrap: normal !important;\"><span class=\"wrapped-field\" style=\"white-space: normal;\">Live well right in the heart of the fashionable Central West End. With 1,406 sq. feet of living space, this chic condo will be your ideal flat in the city. Walk to restaurants, Metro-Link, BJC Medical campus, Whole Foods &amp; more. Gracious Living Room and formal Dining Room with hardwood floors. Spacious eat-in kitchen. 1 reserved indoor parking space. Additional parking spots may be rented if available. Rooftop patio. 24-hr doorman. Just pay electric. Heating included.</span></td></tr></tbody></table></td></tr></tbody></table>"
+    }
+  ],
+  "propertyFees": [
+    {
+      "type": "Condo",
+      "amount": 662.0,
+      "frequency": "Monthly"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/3d4g72",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "636A96EC-8E05-4E9A-95AE-2635611C5051",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/636A96EC-8E05-4E9A-95AE-2635611C5051",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-8",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "5BFFFDFC-C710-4E0B-9160-5055D8B6E077",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/5BFFFDFC-C710-4E0B-9160-5055D8B6E077",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "0CDC063B-5CD7-4332-B1AA-57F59E1E8A0C",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/0CDC063B-5CD7-4332-B1AA-57F59E1E8A0C",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-6",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "E06E7751-28C9-4E79-B57C-7F0940716EAB",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/E06E7751-28C9-4E79-B57C-7F0940716EAB",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-7",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "BDA2F484-D6AB-47D1-BBEE-9D6607F589C1",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/BDA2F484-D6AB-47D1-BBEE-9D6607F589C1",
+      "isDefault": true,
+      "caption": "Lindell 4440 #1004 Low New-1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "F2EB6717-B3D7-4F38-8BA2-AADF53F08995",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/F2EB6717-B3D7-4F38-8BA2-AADF53F08995",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-11",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "D5D59C82-0DCF-4570-BE4C-B60F898669DB",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/D5D59C82-0DCF-4570-BE4C-B60F898669DB",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "1FA6BFC1-9377-427F-9D16-C93AC3854F50",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/1FA6BFC1-9377-427F-9D16-C93AC3854F50",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-4",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "DB525554-1A5F-45BC-B9F5-E6E2B909B48A",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/DB525554-1A5F-45BC-B9F5-E6E2B909B48A",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-9",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1267,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    },
+    {
+      "mediaID": "69A6DB4B-1A78-4501-B5BE-FA2F26F08774",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/69A6DB4B-1A78-4501-B5BE-FA2F26F08774",
+      "isDefault": false,
+      "caption": "Lindell 4440 #1004 Low New-5",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1266,
+      "width": 1900,
+      "lastUpdateOn": "2018-07-03T06:31:58.237"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "18002802",
+      "isPrimary": true
+    }
+  ]
+}

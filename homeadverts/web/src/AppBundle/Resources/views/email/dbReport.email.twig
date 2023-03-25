@@ -1,0 +1,45 @@
+{% extends 'AppBundle:email/layout:base.email.twig' %}
+
+{% block html_content %}
+    <strong>Ledger</strong> <br/>
+    Sync date: {{ summary.ledger.sync_date }} <br/>
+    User: {{ summary.ledger.ledger.user }} <br/>
+    Company: {{ summary.ledger.ledger.company }} <br/>
+    Office: {{ summary.ledger.ledger.office }} <br/>
+    Property: {{ summary.ledger.ledger.property }} <br/>
+    <br/>
+
+    <strong>Companies</strong> <br/>
+    Total: {{ summary.db_summary.company.total }} <br/>
+    Active: {{ summary.db_summary.company.active }} <br/>
+    Missing: {{ summary.db_summary.company.missing }} <br/>
+    Soft deleted: {{ summary.db_summary.company.soft_deleted }} <br/>
+    <br/>
+
+    <strong>Offices</strong> <br/>
+    Total: {{ summary.db_summary.office.total }} <br/>
+    Active: {{ summary.db_summary.office.active }} <br/>
+    Missing: {{ summary.db_summary.office.missing }} <br/>
+    Soft deleted: {{ summary.db_summary.office.soft_deleted }} <br/>
+    <br/>
+
+    <strong>Users</strong><br/>
+    Total: {{ summary.db_summary.user.total }} <br/>
+    Active: {{ summary.db_summary.user.active }} <br/>
+    Missing: {{ summary.db_summary.user.missing }} <br/>
+    Soft deleted: {{ summary.db_summary.user.soft_deleted }} <br/>
+    <br/>
+
+    <strong>Properties</strong> <br/>
+    Total: {{ summary.db_summary.property.total }} <br/>
+    Active total: {{ summary.db_summary.property.active.total }} <br/>
+    Active sale: {{ summary.db_summary.property.active.sale }} <br/>
+    Active rent: {{ summary.db_summary.property.active.rent }} <br/>
+    Missing: {{ summary.db_summary.property.missing }} <br/>
+    Soft deleted: {{ summary.db_summary.property.soft_deleted }} <br/>
+
+    Invalid: {{ summary.db_summary.property.invalid }} <br/>
+    Incomplete: {{ summary.db_summary.property.incomplete }} <br/>
+    Inactive: {{ summary.db_summary.property.inactive }} <br/>
+
+{% endblock %}

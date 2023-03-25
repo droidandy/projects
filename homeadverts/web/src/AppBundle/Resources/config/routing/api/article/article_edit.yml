@@ -1,0 +1,44 @@
+ha_article_save:
+    path:  /{token}
+    defaults: { _controller: AppBundle:Api\Article\Article:save }
+    methods:  [PUT]
+
+ha_article_get_my:
+    path:  /{token}
+    defaults: { _controller: AppBundle:Api\Article\Article:edit }
+    methods:  [GET]
+    
+ha_article_delete:
+    path:  /{token}
+    defaults: { _controller: AppBundle:Api\Article\Article:delete }
+    methods:  [DELETE]
+
+ha_article_publish:
+    path:  /{token}/publish
+    defaults: { _controller: AppBundle:Api\Article\Article:publish }
+    methods:  [POST]
+
+ha_article_analyse:
+    path:  /{token}/analyse
+    defaults: { _controller: AppBundle:Api\Article\Article:analyze }
+    methods:  [GET]
+
+ha_article_add_tags:
+    path:  /{token}/tags
+    defaults: { _controller: AppBundle:Api\Article\ArticleTag:addTags }
+    methods:  [POST]
+
+ha_article_remove_tags:
+    path:  /{token}/tags
+    defaults: { _controller: AppBundle:Api\Article\ArticleTag:removeTags }
+    methods:  [DELETE]
+
+ha_article_import:
+    path:  /import
+    defaults: { _controller: AppBundle:Api\Article\Article:importUrl }
+    methods:  [POST]
+
+ha_article_import_property:
+    path:  /import/property/{id}
+    defaults: { _controller: AppBundle:Api\Article\Article:importProperty }
+    methods:  [POST]

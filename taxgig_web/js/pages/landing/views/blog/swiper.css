@@ -1,0 +1,9 @@
+.custom-blog-swiper-container {
+  padding-left: 24px;
+  display: grid;
+  justify-content: center;
+}
+
+.custom-blog-swiper > :first-child {
+  height: calc(100% - 106px);
+}

@@ -1,0 +1,10 @@
+export { default as airport } from './airport';
+export { default as defaultAddress } from './default';
+export { default as favorites } from '../starEmpty';
+export { default as home } from './home';
+export { default as lodging } from './lodging';
+export { default as pointOfInterest } from './pointOfInterest';
+export { default as recent } from './recent';
+export { default as restaurant } from './restaurant';
+export { default as trainStation } from './trainStation';
+export { default as work } from './work';

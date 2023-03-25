@@ -1,0 +1,5 @@
+{
+  "extends": [
+    "./node_modules/@effectivetrade/eslint-plugin-react-native-typescript/tslint.json"
+  ]
+}

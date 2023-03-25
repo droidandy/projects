@@ -1,0 +1,173 @@
+{
+  "request": {
+    "carrier": {
+      "requestedCode": "BA",
+      "fsCode": "BA"
+    },
+    "codeType": {
+    },
+    "flightNumber": {
+      "requested": "5957",
+      "interpreted": "5957"
+    },
+    "departing": true,
+    "date": {
+      "year": "2017",
+      "month": "4",
+      "day": "29",
+      "interpreted": "2017-04-29"
+    },
+    "url": "https://api.flightstats.com/flex/schedules/rest/v1/json/flight/BA/5957/departing/2017/04/29"
+  },
+  "scheduledFlights": [
+    {
+      "carrierFsCode": "BA",
+      "flightNumber": "5957",
+      "departureAirportFsCode": "LHR",
+      "arrivalAirportFsCode": "DUB",
+      "stops": 0,
+      "departureTerminal": "2",
+      "arrivalTerminal": "2",
+      "departureTime": "2017-04-29T11:05:00.000",
+      "arrivalTime": "2017-04-29T12:25:00.000",
+      "flightEquipmentIataCode": "320",
+      "isCodeshare": true,
+      "isWetlease": false,
+      "serviceType": "J",
+      "serviceClasses": [
+        "Y"
+      ],
+      "trafficRestrictions": [
+
+      ],
+      "operator": {
+        "carrierFsCode": "EI",
+        "flightNumber": "157",
+        "serviceType": "J",
+        "serviceClasses": [
+          "R",
+          "F",
+          "J",
+          "Y"
+        ],
+        "trafficRestrictions": [
+
+        ]
+      },
+      "codeshares": [
+
+      ],
+      "referenceCode": "97-2200109--2200276"
+    },
+    {
+      "carrierFsCode": "BA",
+      "flightNumber": "5957",
+      "departureAirportFsCode": "DUB",
+      "arrivalAirportFsCode": "LHR",
+      "stops": 0,
+      "departureTerminal": "2",
+      "arrivalTerminal": "2",
+      "departureTime": "2017-04-29T16:05:00.000",
+      "arrivalTime": "2017-04-29T17:25:00.000",
+      "flightEquipmentIataCode": "320",
+      "isCodeshare": true,
+      "isWetlease": false,
+      "serviceType": "J",
+      "serviceClasses": [
+        "Y"
+      ],
+      "trafficRestrictions": [
+
+      ],
+      "operator": {
+        "carrierFsCode": "EI",
+        "flightNumber": "157",
+        "serviceType": "J",
+        "serviceClasses": [
+          "R",
+          "F",
+          "J",
+          "Y"
+        ],
+        "trafficRestrictions": [
+
+        ]
+      },
+      "codeshares": [
+
+      ],
+      "referenceCode": "97-2200109--2200276"
+    }
+  ],
+  "appendix": {
+    "airlines": [
+      {
+        "fs": "EI",
+        "iata": "EI",
+        "icao": "EIN",
+        "name": "Aer Lingus",
+        "phoneNumber": "1-800-IRISHAIR",
+        "active": true
+      },
+      {
+        "fs": "BA",
+        "iata": "BA",
+        "icao": "BAW",
+        "name": "British Airways",
+        "phoneNumber": "1-800-AIRWAYS",
+        "active": true
+      }
+    ],
+    "airports": [
+      {
+        "fs": "DUB",
+        "iata": "DUB",
+        "icao": "EIDW",
+        "name": "Dublin Airport",
+        "city": "Dublin",
+        "cityCode": "DUB",
+        "countryCode": "IE",
+        "countryName": "Ireland",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/Dublin",
+        "localTime": "2017-04-19T17:27:29.207",
+        "utcOffsetHours": 1.0,
+        "latitude": 53.42728,
+        "longitude": -6.24357,
+        "elevationFeet": 242,
+        "classification": 2,
+        "active": true
+      },
+      {
+        "fs": "LHR",
+        "iata": "LHR",
+        "icao": "EGLL",
+        "name": "London Heathrow Airport",
+        "city": "London",
+        "cityCode": "LON",
+        "stateCode": "EN",
+        "countryCode": "GB",
+        "countryName": "United Kingdom",
+        "regionName": "Europe",
+        "timeZoneRegionName": "Europe/London",
+        "localTime": "2017-04-19T17:27:29.207",
+        "utcOffsetHours": 1.0,
+        "latitude": 51.469603,
+        "longitude": -0.453566,
+        "elevationFeet": 80,
+        "classification": 1,
+        "active": true
+      }
+    ],
+    "equipments": [
+      {
+        "iata": "320",
+        "name": "Airbus A320",
+        "turboProp": false,
+        "jet": true,
+        "widebody": false,
+        "regional": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+export { getFullLink } from './getFullLink';

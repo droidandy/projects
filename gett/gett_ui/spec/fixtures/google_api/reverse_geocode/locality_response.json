@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "34",
+          "short_name": "34",
+          "types": ["street_number"]
+        },
+        {
+          "long_name": "Via Pasubio",
+          "short_name": "Via Pasubio",
+          "types": ["route"]
+        },
+        {
+          "long_name": "Dronero",
+          "short_name": "Dronero",
+          "types" : ["locality", "political"]
+        },
+        {
+          "long_name": "Dronero",
+          "short_name": "Dronero",
+          "types": ["administrative_area_level_3", "political"]
+        },
+        {
+          "long_name": "Provincia di Cuneo",
+          "short_name": "CN",
+          "types": ["administrative_area_level_2", "political"]
+        },
+        {
+          "long_name": "Piemonte",
+          "short_name": "Piemonte",
+          "types": ["administrative_area_level_1", "political"]
+        },
+        {
+          "long_name": "Italy",
+          "short_name": "IT",
+          "types": ["country", "political"]
+        },
+        {
+          "long_name": "12025",
+          "short_name": "12025",
+          "types": ["postal_code"]
+        }
+      ],
+      "formatted_address": "Via Pasubio, 34, 12025 Dronero CN, Italy",
+      "geometry": {
+         "location": {
+            "lat": 44.46481,
+            "lng": 7.355569999999999
+         },
+         "location_type": "ROOFTOP",
+         "viewport": {
+            "northeast": {
+               "lat": 44.4661589802915,
+               "lng": 7.356918980291502
+            },
+            "southwest": {
+               "lat": 44.4634610197085,
+               "lng": 7.354221019708497
+            }
+         }
+      },
+      "place_id": "ChIJ9X2GwQE-zRIRMqiTuJO0rbQ",
+      "types": ["street_address"]
+    }
+  ],
+  "status": "OK"
+}

@@ -1,0 +1,37 @@
+export interface SimplePdfDataDTO {
+  status: string;
+  number: string;
+  createdAt: number;
+  userFirstName: string;
+  vehicleBrandName: string;
+  vehicleModelName: string;
+  vehicleGenerationName: string;
+  vehicleEquipmentName: string;
+  vehicleVin: string;
+  vehicleYear: number;
+  vehicleBodyTypeName: string;
+  vehicleEquipmentVolume: string;
+  vehicleEquipmentPower: number;
+  vehicleEngineName: string;
+  vehicleDriveName: string;
+  vehicleTransmissionName: string;
+  vehicleColorName: string;
+  vehicleColorCode: string;
+  vehiclePrice: number;
+  tradeInStatus: string;
+  tradeInDiscount: number;
+  tradeInVehicleBrandName?: string;
+  tradeInVehicleModelName?: string;
+  tradeInVehicleGenerationName?: string;
+  tradeInVehiclePrice: number;
+  creditStatus: string;
+  creditDiscount: number;
+  creditValue: number;
+  creditTerm: number;
+  creditMonthlyPayment: number;
+  creditRate: string;
+  salesOfficeAddress: string;
+  salesOfficeName: string;
+  salesOfficePhones: string;
+  meetingScheduleDateTime: number;
+}

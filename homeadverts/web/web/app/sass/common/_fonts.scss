@@ -1,0 +1,496 @@
+@font-face {
+  font-family: 'fontawesome';
+  src: url('/assets/font/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+  src: url('/assets/font/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+  url('/assets/font/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+  url('/assets/font/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+  url('/assets/font/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+  url('/assets/font/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('/assets/font/icomoon/icomoon.eot');
+  src: url('/assets/font/icomoon/icomoon.eot') format('embedded-opentype'),
+  url('/assets/font/icomoon/icomoon.woff') format('woff'),
+  url('/assets/font/icomoon/icomoon.ttf') format('truetype'),
+  url('/assets/font/icomoon/icomoon.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('/assets/font/icons/Pe-icon-7-stroke.eot?-9uki6c');
+  src: url('/assets/font/icons/Pe-icon-7-stroke.eot?#iefix-9uki6c') format('embedded-opentype'),
+  url('/assets/font/icons/Pe-icon-7-stroke.woff?-9uki6c') format('woff'),
+  url('/assets/font/icons/Pe-icon-7-stroke.ttf?-9uki6c') format('truetype'),
+  url('/assets/font/icons/Pe-icon-7-stroke.svg?-9uki6c#Pe-icon-7-stroke') format('svg');
+}
+
+@font-face {
+  font-family: 'socialcircle';
+  src: url('/assets/font/social-circle/ss-social-circle.eot');
+  src: url('/assets/font/social-circle/ss-social-circle.eot?#iefix') format('embedded-opentype'),
+  url('/assets/font/social-circle/ss-social-circle.woff') format('woff'),
+  url('/assets/font/social-circle/ss-social-circle.ttf') format('truetype'),
+  url('/assets/font/social-circle/ss-social-circle.svg#SSSocialCircle') format('svg');
+}
+
+%font {
+  display: inline-block;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  white-space: nowrap;
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  .ie8 & {
+    -ms-zoom: 1;
+  }
+}
+
+%icons {
+  @extend %font;
+  font-family: 'icons';
+}
+
+%icomoon {
+  @extend %font;
+  font-family: 'icomoon';
+}
+
+%social-circle {
+  font-family: 'socialcircle';
+}
+
+%fontawesome {
+  font-family: 'fontawesome';
+}
+
+
+%icomoon {
+  @extend %font;
+  font-family: 'icomoon';
+}
+
+.editor-image-crop:before {
+  @extend %icomoon;
+  content: "\e900";
+}
+
+.editor-image-wide:before {
+  @extend %icomoon;
+  content: "\e901";
+}
+
+.editor-image-fullpage:before {
+  @extend %icomoon;
+  content: "\e903";
+}
+
+.editor-image-right:before {
+  @extend %icomoon;
+  content: "\e902";
+}
+
+.editor-image-left:before {
+  @extend %icomoon;
+  content: "\e904";
+}
+
+.fa-align-left:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f036";
+}
+
+.fa-quote-right:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f10e";
+}
+
+.fa-expand:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f065";
+}
+
+.fa-bold:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f032";
+}
+
+.fa-italic:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f033";
+}
+
+.fa-header:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f1dc";
+}
+
+.fa-link:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f0c1";
+}
+
+.fa-align-right:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f038";
+}
+
+.fa-th:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f00a";
+}
+
+.fa-align-justify:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f039";
+}
+
+.fa-youtube-play:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f16a";
+}
+
+.fa-globe:before {
+  @extend %icons;
+  content: "\e64f";
+}
+
+.icon-heart:before {
+  @extend %icomoon;
+  content: "\e9da";
+}
+.icon-heart-broken:before {
+  @extend %icomoon;
+  content: "\e9db";
+}
+.icon-facebook:before {
+  @extend %icomoon;
+  content: "\ea90";
+}
+.icon-twitter:before {
+  @extend %icomoon;
+  content: "\ea96";
+}
+
+
+.fa-globe:before {
+  @extend %icons;
+  content: "\e64f";
+}
+
+.fa-caret-down:before {
+  @extend %icons;
+  @extend %fontawesome;
+  // content: "\e688";
+  content: "\f0d7";
+  font-size: 12px;
+}
+
+.fa-caret-up:before {
+  @extend %icons;
+  @extend %fontawesome;
+  // content: "\e688";
+  content: "\f0d8";
+  font-size: 12px;
+}
+
+.fa-search:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f002";
+  // content: "\e618";
+}
+
+.fa-heart-o:before {
+  @extend %icons;
+  @extend %fontawesome;
+  // content: "\e642";
+  content: "\f004";
+}
+
+.fa-plus:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f067";
+  // content: "\e623";
+}
+
+.fa-minus:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f068";
+  // content: "\e644";
+}
+
+.fa-times:before {
+  @extend %icons;
+  content: "\e680";
+}
+
+.fa-times-alt:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f00d";
+}
+
+.fa-map-marker:before {
+  @extend %icons;
+  @extend %fontawesome;
+  content: "\f041";
+  // content: "\e638";
+}
+
+.fa-th-large:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f009";
+}
+
+.fa-th-list:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f00b";
+}
+
+.fa-cog:before {
+  @extend %icons;
+  content: "\e666";
+}
+
+.fa-check {
+  font-size: 35px;
+  .advertise & {
+    font-size: $font_size_s2;
+    @media screen and (min-width: 860px) {
+      font-size: 35px;
+    }
+  }
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f00c";
+    color: #89b251;
+  }
+}
+
+.fa-bell-o:before {
+  @extend %icons;
+  content: "\e677";
+}
+
+.fa-circle:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f111";
+}
+
+.fa-list-ul:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f0ca";
+}
+
+.fa-list-ol:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f0cb";
+}
+
+.fa-trash-o:before {
+  @extend %icons;
+  content: "\e609";
+}
+
+.fa-camera:before {
+  @extend %icons;
+  content: "\e66f";
+}
+
+.fa-arrows-alt:before {
+  @extend %icons;
+  content: "\e657";
+}
+
+.fa-clock-o:before {
+  @extend %icons;
+  content: "\e67e";
+}
+
+.fa-angle-left:before {
+  @extend %icons;
+  content: "\e686";
+}
+
+.fa-angle-right:before {
+  @extend %icons;
+  content: "\e684";
+}
+
+.fa-angle-alt-right:before {
+  @extend %icons;
+  content: "\e685";
+}
+
+.fa-bookmark:before {
+  @extend %icons;
+  content: "\e61a";
+}
+
+.fa-bars:before {
+  @extend %icons;
+  content: "\e636";
+}
+
+.fa-envelope-o:before,
+.fa-envelope:before {
+  @extend %icons;
+  content: "\e639";
+}
+
+.fa-share:before {
+  @extend %icons;
+  content: "\e61b";
+}
+
+.fa-desktop:before {
+  @extend %icons;
+  content: "\e634";
+}
+
+.fa-phone:before {
+  @extend %icons;
+  content: "\e627";
+}
+
+.fa-smile-o:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f118";
+}
+
+.fa-files-o:before {
+  @extend %icons;
+  content: "\e665";
+}
+
+// Social and Social Circle
+
+.fa-facebook {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f09a";
+  }
+}
+
+.fa-google-plus {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f0d5";
+  }
+}
+
+.fa-instagram {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f16d";
+  }
+}
+
+.fa-twitter {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f099";
+  }
+}
+
+.fa-pinterest {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f0d2";
+  }
+}
+
+.fa-pinterest-p {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f231";
+  }
+}
+
+.fa-linkedin {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f0e1";
+  }
+}
+
+.fa-youtube {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f167";
+  }
+}
+
+.fa-rss {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f09e";
+  }
+}
+
+.fa-tumblr {
+  &:before {
+    @extend %font;
+    @extend %fontawesome;
+    content: "\f173";
+  }
+}
+
+.fa-chevron-up:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f077";
+}
+
+.fa-chevron-left:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f053";
+}
+
+.fa-chevron-right:before {
+  @extend %font;
+  @extend %fontawesome;
+  content: "\f054";
+}

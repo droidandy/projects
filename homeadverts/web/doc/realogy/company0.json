@@ -1,0 +1,17 @@
+{
+  "companySummary": {
+    "id": "dd426029-1745-4ce4-97ab-006d5c425d5d",
+    "name": "Macdonald & Wood",
+    "RFGID": "800141",
+    "brandCode": "SIR",
+    "isNrt": false,
+    "websiteURL": "www.macdonaldwoodsir.com",
+    "lastUpdateOn": "2018-10-09T17:36:54.000",
+    "canDoCommercialBusiness": false
+  },
+  "addlWebSites": [{
+    "type": "Landing Page URL",
+    "url": "www.macdonaldwoodsir.com",
+    "contentLanguageCode": "en"
+  }]
+}

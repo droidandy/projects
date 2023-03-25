@@ -1,0 +1,21 @@
+@startuml
+
+actor User
+participant Marketplace
+participant BFF
+participant Users
+participant SMSGateway
+
+User -> Marketplace : input phone and send form
+Marketplace -> BFF : /send-sms (data: phone)
+BFF -> Users : /user/phone/auth (data: phone)
+Users -> SMSGateway : request sms
+SMSGateway -> User : send sms
+User -> Marketplace : input sms code
+Marketplace -> BFF : /phone-login (data: phone, code)
+BFF -> Users : /user/phone/auth/code-verification (data: phone, code)
+Users -> BFF : send token
+BFF -> Marketplace : set httpOnly cookie with token
+Marketplace -> User : authorizes user
+
+@enduml

@@ -1,0 +1,157 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<style type="text/css">
+        a {text-decoration: none; color:#277AC2; }
+        td,th {border:none}
+        .backgroundImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/header-image.png);
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 386px;
+        }
+        .uhcLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/uhc_intro_email_logo.png);
+            background-repeat: no-repeat;
+            width: 215px;
+            height: 55px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .poweredByBenrevoLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo1x_20.png);
+            background-repeat: no-repeat;
+            width: 181px;
+            height: 37px;
+        }
+        .headerImageText{
+            color: white;
+            padding-top: 6px;
+            font-size: 24px;
+        }
+        .loginButton {
+            border: none;
+            color: white;
+            padding: 13px 120px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0 auto;
+            cursor: pointer;
+            background-color: #09c;
+            border-radius: 4px;
+            box-shadow: none;
+            border: none;
+        }
+        .greyTextColor{
+            color: #666666;
+            font-size: 16px;
+            line-height: 23px;
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            .backgroundImage {
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/header-image-2x.png);
+                background-size: 800px 386px;
+            }
+            .uhcLogoImage{
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/uhc_intro_email_logo_2x.png);
+                background-size: 215px 55px;
+            }
+            .poweredByBenrevoLogoImage{
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo2x_20_20.png);
+                background-size: 181px 37px;
+            }
+        }
+	</style>
+    </head>
+    <body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial;">
+	<table bgcolor="#fff" style="margin:auto; border:1px solid #d3d3d3;" width="800" cellspacing='0' cellpadding='0'>
+            <tr>
+                <td align='center'>
+                    <div class="backgroundImage">
+                        <div class="headerImageText">
+                            <p>
+                                Your UHC proposal for $!client_name
+                                <br>
+                                is ready for review!
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><br/>
+                    <table bgcolor="#fff" style="margin:auto;border-spacing: 10px 0;padding:0px 0px; color:#666666;" width="800" >
+                        <tr>
+                            <td style="text-align:center;" align="center">
+        		              <div class="uhcLogoImage"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="text-align:center;" align="center">
+                              <div style="font-size: 19px;padding-bottom: 4px;color: #333333;">
+                                  Welcome to our new online platform
+                              </div>
+                              <div class="greyTextColor">
+                                  Maximize your productivity by spending your time analyzing, not spreadsheeting.
+                              </div>
+                              <div class="greyTextColor">
+                                  Our integrated tools allow you to build a custom solution to meet <br> the ever-changing needs of your groups.
+                              </div>
+
+                              <div class="greyTextColor">
+                                    <br/>
+                                    Thank you, $!sales_first_name
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px solid #d3d3d3;margin: 30px 25px;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="text-align: center;color: #17489B;font-size: 22px;font-weight: bold;margin-bottom: 20px;">Get Started</div>
+                                <div style="text-align: center;">If you <span style="color:#333333;font-weight: bold;">don't have an account</span> then you will be </div>
+                                <div style="text-align: center;line-height: 21px;">receiving an email to create your account shortly.</div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div style="text-align: center;margin-top: 29px;">If you currently <span style="color:#333333;font-weight: bold;">have a login, </span> for our platform,</div>
+                                <div style="text-align: center;line-height: 21px;">simply click the login button to access your quote online.</div>
+                                <div style="text-align: center;margin: 25px;">
+                                    <a class="loginButton" href="https://quote.benrevo.com/uhc/" target="_blank">Login</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div style="border-bottom: 1px solid #d3d3d3;margin: 30px 25px;"></div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <div class="poweredByBenrevoLogoImage"></div>
+                    <br/>
+                </td>
+            </tr>
+        </table>
+	<br/><br/>
+
+    </body>
+</html>

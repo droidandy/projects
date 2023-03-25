@@ -1,0 +1,52 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "title": {
+    "type": "string"
+  },
+  "content": {
+    "type": "string"
+  },
+  "published": {
+    "type": "boolean"
+  },
+  "published_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "item_type": {
+    "type": "string",
+    "enum": [
+      "regular",
+      "featured",
+      "numbers"
+    ]
+  },
+  "comments_count": {
+    "type": "integer"
+  },
+  "views_count": {
+    "type": "integer"
+  },
+  "number": {
+    "type": "integer"
+  },
+  "image_name": {
+    "type": "string"
+  },
+  "image_url": {
+    "type": "string"
+  },
+  "author": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  }
+}

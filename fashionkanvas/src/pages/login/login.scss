@@ -1,0 +1,56 @@
+page-login {
+
+    ion-list, ion-item{
+      background:transparent
+    }
+    .app-icon{
+      font-size:50px;
+      color: $primary;
+      text-align: center;
+    }
+
+    ion-item
+    {
+      padding-left: 0!important;
+          margin-bottom: 10px!important;
+    }
+
+    ion-item .label
+    {
+      color:#929292;
+      font-size: 10px!important;
+    }
+
+    .loginbtn
+    {
+      background-color: #f66565;
+      margin: 40px 0;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .forgotbtn
+    {
+      color: #f66565;
+      letter-spacing: 2px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .text-input
+    {
+      margin: 0!important;
+    }
+
+
+    .back-button-text
+    {
+      display:none;
+    }
+
+    .back-button-icon
+    {
+          color: #f66565;
+    }
+  }

@@ -1,0 +1,39 @@
+-
+    request:
+        method: POST
+        url: 'https://api.twitter.com/1.1/statuses/update.json'
+        headers:
+            Host: api.twitter.com
+            Accept: application/json
+            Authorization: 'OAuth oauth_version="1.0", oauth_nonce="6a6039c6b8a8c20598d2cbf7d23c7e7d", oauth_timestamp="1547412761", oauth_consumer_key="aMJLdSmkEayfYpgL0wiSoQ", oauth_token="2734027794-6dHCDhNn4ubTifdJTwT3uQkaxVlhUioXkEyXbBM", oauth_signature_method="HMAC-SHA1", oauth_signature="Tmh%2Fo8TQTBShIeuwu9SN1uG6VS8%3D"'
+            Expect: null
+        body: status=Hello%20World%0Ahttp%3A%2F%2Fdev.homeadverts.com%2Fstory%2F00000
+    response:
+        status:
+            http_version: '2'
+            code: '200'
+            message: ''
+        headers:
+            cache-control: 'no-cache, no-store, must-revalidate, pre-check=0, post-check=0'
+            content-disposition: 'attachment; filename=json.json'
+            content-encoding: gzip
+            content-length: '895'
+            content-type: application/json;charset=utf-8
+            date: 'Sun, 13 Jan 2019 20:52:37 GMT'
+            expires: 'Tue, 31 Mar 1981 05:00:00 GMT'
+            last-modified: 'Sun, 13 Jan 2019 20:52:37 GMT'
+            pragma: no-cache
+            server: tsa_o
+            set-cookie: 'personalization_id="v1_L6kyOHFFd8OFEWFoOj7yOA=="; Max-Age=63072000; Expires=Tue, 12 Jan 2021 20:52:37 GMT; Path=/; Domain=.twitter.com, lang=en; Path=/, guest_id=v1%3A154741275708126580; Max-Age=63072000; Expires=Tue, 12 Jan 2021 20:52:37 GMT; Path=/; Domain=.twitter.com'
+            status: '200 OK'
+            strict-transport-security: max-age=631138519
+            x-access-level: read-write
+            x-connection-hash: 8ae844befce2a56a0d2e744c38dbb9c0
+            x-content-type-options: nosniff
+            x-frame-options: SAMEORIGIN
+            x-response-time: '188'
+            x-transaction: 00c44c5b0090157d
+            x-tsa-request-body-time: '0'
+            x-twitter-response-tags: BouncerCompliant
+            x-xss-protection: '1; mode=block; report=https://twitter.com/i/xss_report'
+        body: '{"created_at":"Sun Jan 13 20:52:37 +0000 2019","id":1084553827200704519,"id_str":"1084553827200704519","text":"Hello World\nhttps:\/\/t.co\/mfsxrP7sez","truncated":false,"entities":{"hashtags":[],"symbols":[],"user_mentions":[],"urls":[{"url":"https:\/\/t.co\/mfsxrP7sez","expanded_url":"http:\/\/dev.homeadverts.com\/story\/00000","display_url":"dev.homeadverts.com\/story\/00000","indices":[12,35]}]},"source":"\u003ca href=\"https:\/\/luxuryaffairs.co.uk\/\" rel=\"nofollow\"\u003eLuxuryAffairs\u003c\/a\u003e","in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":2734027794,"id_str":"2734027794","name":"Ivan","screen_name":"iproskuryakov","location":"","description":"","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":70,"friends_count":10,"listed_count":49,"created_at":"Fri Aug 15 09:14:27 +0000 2014","favourites_count":134,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":954,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http:\/\/abs.twimg.com\/images\/themes\/theme2\/bg.gif","profile_background_image_url_https":"https:\/\/abs.twimg.com\/images\/themes\/theme2\/bg.gif","profile_background_tile":false,"profile_image_url":"http:\/\/pbs.twimg.com\/profile_images\/1072201128337653760\/4Xl_cORc_normal.jpg","profile_image_url_https":"https:\/\/pbs.twimg.com\/profile_images\/1072201128337653760\/4Xl_cORc_normal.jpg","profile_banner_url":"https:\/\/pbs.twimg.com\/profile_banners\/2734027794\/1544467796","profile_link_color":"ABB8C2","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false,"translator_type":"none"},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"}'

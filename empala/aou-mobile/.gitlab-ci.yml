@@ -1,0 +1,63 @@
+stages:
+  - unit_tests
+  - build
+
+variables:
+  LC_ALL: 'en_US.UTF-8'
+  LANG: 'en_US.UTF-8'
+  GIT_STRATEGY: clone
+  FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: qrff-axqs-jfxs-asgy
+
+unit-tests:
+  stage: unit_tests
+  script:
+    - echo "Jest test job"
+    - npx yarn
+    - npx yarn test
+  only:
+    - master
+    - demo
+    - /^release\/.*$/i
+    - /^feature\/.*$/i
+
+build-dev-app:
+  stage: build
+  before_script:
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - export VERSION=$(node -p "require('./package.json').version")
+  script:    
+    - npx yarn
+    - npx pod-install
+    - cd ios
+    - fastlane buildDevApp
+  only:
+    - dev
+
+build-demo-app:
+  stage: build
+  before_script:
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - export VERSION=$(node -p "require('./package.json').version")
+  script:
+    - npx yarn
+    - npx pod-install
+    - cd ios
+    - fastlane buildDemoApp
+  only:
+    - demo
+
+build-prod-app:
+  stage: build
+  before_script:
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - export VERSION=$(node -p "require('./package.json').version")
+  script:
+    - npx yarn
+    - npx pod-install
+    - cd ios
+    - fastlane buildProdApp
+  only:
+    - /^release\/.*$/i

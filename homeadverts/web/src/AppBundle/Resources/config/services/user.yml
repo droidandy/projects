@@ -1,0 +1,78 @@
+services:
+    ha.profile_image.form_type:
+        class: AppBundle\Form\Profile\ProfileImageType
+        tags:
+            - { name: form.type, alias: profile_image }
+
+    ha.background_image.form_type:
+        class: AppBundle\Form\Profile\BackgroundImageType
+        tags:
+            - { name: form.type, alias: background_image }
+
+    ha.profile_index_route_strategy:
+        class: AppBundle\Controller\IndexRouteStrategy\ProfileIndexRouteStrategy
+        arguments:
+            - @router
+            - @article_repo
+
+    ha.user.user_es_mapping:
+        class: AppBundle\Elastic\User\Mapping\UserMapping
+        factory: [@ha.es.mapping_factory, 'get']
+        arguments: [ 'user' ]
+        public: false
+
+    ha.user_manager:
+        class: AppBundle\Service\User\UserManager
+        arguments:
+            - @security.token_storage
+            - @session
+            - @security.encoder_factory
+            - @fos_user.util.username_canonicalizer
+            - @fos_user.util.email_canonicalizer
+            - @doctrine.orm.default_entity_manager
+            - %fos_user.model.user.class%
+
+            - @doctrine.orm.default_entity_manager
+            - @ha.resizer_uploader_profile
+            - %s3.bucket.pattern.user.profile.manual%
+
+    ha.user_settings:
+        class: AppBundle\Service\User\UserSettings
+        arguments:
+            - @ha.user_manager
+            - @doctrine.orm.default_entity_manager
+            - @validator
+
+    ha.user_profile:
+        class: AppBundle\Service\User\UserProfile
+        arguments:
+            - @ha.user.user_search_repo
+            - @article_repo
+            -
+                facebook:
+                    - %facebook_app_id%
+                    - %facebook_app_secret%
+                twitter:
+                    - %twitter_app_id%
+                    - %twitter_app_secret%
+                linkedin:
+                    - %linkedin_app_id%
+                    - %linkedin_app_secret
+
+    ha.oauth_user.provider:
+        class: AppBundle\Provider\FOSUBUserProvider
+        arguments:
+            - @ha.user_manager
+            - {facebook: facebookId, twitter: twitterId, google: googleId, linkedin: linkedinId}
+
+    hwi_oauth.account.connector: @ha.oauth_user.provider
+
+    ha.user.adjacency_registry:
+        class: AppBundle\Service\User\AdjacencyRegistry
+        arguments: ['@snc_redis.default_client']
+
+    ha.user.relation_manager:
+        class: AppBundle\Service\User\RelationManager
+        arguments:
+            - '@ha.user.adjacency_registry'
+            - '@em'

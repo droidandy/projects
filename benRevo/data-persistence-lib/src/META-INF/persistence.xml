@@ -1,0 +1,24 @@
+<persistence>
+    <persistence-unit name="BenrevoEmOld" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <properties>
+            <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+            <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+            <property name="hibernate.connection.url" value="${env.DB_URL}"/>
+            <property name="hibernate.connection.username" value="${env.DB_USERNAME}"/>
+            <property name="hibernate.connection.password" value="${env.DB_PASSWORD}"/>
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="sample">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <properties>
+            <property name="hibernate.connection.driver">com.mysql.jdbc.Driver</property>
+            <property name="hibernate.connection.url" value="${env.DB_URL}"/>
+            <property name="hibernate.connection.username" value="${env.DB_USERNAME}"/>
+            <property name="hibernate.connection.password" value="${env.DB_PASSWORD}"/>
+            <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        </properties>
+    </persistence-unit>
+
+</persistence>

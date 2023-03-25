@@ -1,0 +1,126 @@
+variables:
+  K8S_API_URL_AWS: https://2154979D2E16D354E53A2FBBADF24D6C.gr7.us-east-2.eks.amazonaws.com
+  DOCKER_HOST: "tcp://localhost:2375"
+  DOCKER_TLS_CERTDIR: ""
+  GIT_SUBMODULE_STRATEGY: recursive
+  AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+  AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+  AWS_REGION: $AWS_REGION
+  S3_BUCKET_NAME: $S3_BUCKET_NAME
+  CDN_DISTRIBUTION_ID: $CDN_DISTRIBUTION_ID
+  DOMAIN: app.appfist.com
+  DOCKERFILE: ./Dockerfile
+  CHART_REPO: ./.helm
+  CHART_VERSION: &ref "1.0.1"
+  DOCKER_CONTAINER_REGISTRY: registry.gitlab.apphud.com/apphud/frontend
+  REACT_APP_SEGMENT_KEY: $SEGMENT_KEY
+
+image: docker:19.03.1
+
+services:
+  - docker:19.03.1-dind
+
+# Default runner tag
+default:
+  tags: [aws-apphud]
+
+.k8s_context:
+  image: centosadmin/kubernetes-helm:v3.1.2
+  before_script:
+    - kubectl config set-cluster k8s --insecure-skip-tls-verify=true --server=$K8S_API_URL_AWS
+    - kubectl config set-credentials ci --token=$K8S_CI_TOKEN_AWS
+    - kubectl config set-context ci --cluster=k8s --user=ci
+    - kubectl config use-context ci
+
+stages:
+  - build
+  - build_stage
+  - deploy
+
+cache:
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - node_modules/
+
+.deploy:
+  stage: deploy
+  extends: .k8s_context
+  script:
+    - helm upgrade --install ${CI_PROJECT_NAME}-${CI_ENVIRONMENT_SLUG} ${CHART_REPO} --version ${CHART_VERSION} -f ${CHART_VALUES:="/dev/null"}
+      --namespace=${NAMESPACE}
+      --set image.name=$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
+      --set image.tag=$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+      --atomic
+      --wait
+    #  --set annotations."app\.gitlab\.com/env"="$CI_ENVIRONMENT_SLUG"
+    #  --set annotations."app\.gitlab\.com/app"="$CI_PROJECT_PATH_SLUG"
+    #  --set ingress.hosts[0]=$(echo "${CI_ENVIRONMENT_URL}" | awk -F/ '{print $3}')
+    #  --set ingress.tls[0].secretName="${CI_PROJECT_NAME}-${CI_ENVIRONMENT_SLUG}-tls"
+    #  --set ingress.tls[0].hosts[0]=$(echo "${CI_ENVIRONMENT_URL}" | awk -F/ '{print $3}')
+
+before_script:
+  - date
+
+after_script:
+  - date
+
+build:
+  stage: build
+  image: node:14.15.0-stretch
+  script:
+    - echo "Building deploy package"
+    - yarn install --ignore-platform
+    - yarn build
+    - echo "Build successful"
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 day
+
+build_stage:
+  stage: build_stage
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker pull $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest || true
+  script:
+    - docker build
+        --cache-from $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest
+        -t $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+        -f ./Dockerfile .
+    - docker tag
+        $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+        $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest
+    - docker push $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+    - docker push $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest
+  needs:
+    - build
+  except:
+    - tags
+    - master
+
+production:
+  image: xueshanf/awscli
+  stage: deploy
+  environment:
+    name: "production"
+    url: https://dev.${DOMAIN}
+  script:
+    - aws s3 sync build/ s3://$S3_BUCKET_NAME
+    - aws cloudfront create-invalidation --distribution-id ${CDN_DISTRIBUTION_ID} --paths "/*"
+  only:
+    - master
+    - tags
+    - /^hotfix\/*/
+
+staging:
+  variables:
+    NAMESPACE: apphud-stage
+    DOCKER_CONTAINER_REGISTRY: registry.gitlab.apphud.com/apphud/frontend/${CI_ENVIRONMENT_SLUG}
+  environment:
+    name: "staging"
+    url: https://${DOMAIN}
+  extends: .deploy
+  except:
+    - tags
+    - master
+  when: manual

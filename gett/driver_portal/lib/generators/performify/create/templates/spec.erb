@@ -1,0 +1,30 @@
+require 'rails_helper'
+require 'support/shared_examples/service_examples'
+
+RSpec.describe <%= class_name %> do
+  describe '#execute!' do
+    subject { described_class.new(current_user, params) }
+    let(:current_user) { create(:user, :with_site_admin_role) }
+
+    let(:params) do
+      {
+      }
+    end
+
+    include_examples 'it uses policy', RecordPolicy, :action?
+
+    it 'should work' do
+      subject.execute!
+      expect(subject).to be_success
+    end
+
+    it 'creates record' do
+      expect { subject.execute! }.to change { Record.count }.by(1)
+    end
+
+    it 'assign valid attributes' do
+      subject.execute!
+      expect(subject.record.foo).to eq('Bar')
+    end
+  end
+end

@@ -1,0 +1,11 @@
+ha_statistics_details_article:
+    path: /details/article
+    defaults:
+        _controller: AppBundle:Statistics:details
+        entity: article
+
+ha_statistics_details_property:
+    path: /details/property
+    defaults:
+        _controller: AppBundle:Statistics:details
+        entity: property

@@ -1,0 +1,25 @@
+{% for page in pagination %}
+    {% for row in page.teasers|batch(property_row_limit()) -%}
+
+        {% if loop.index == 2 %}
+            {% include 'AppBundle:article/card:featured.html.twig' with {article: page.featured|first} %}
+        {% endif %}
+
+        <li class="wide-line">
+            <div class="row">
+                <ul class="small-block-grid-2 medium-block-grid-3">
+                    {% for article in row %}
+                        <li>
+                            {% include 'AppBundle:article/card:small.html.twig' %}
+                        </li>
+                    {% endfor %}
+                </ul>
+                {% if not loop.last and not loop.first %}
+                    <div class="items-collection-separator"></div>
+                {% endif %}
+            </div>
+        </li>
+    {% endfor %}
+
+    {% include 'AppBundle:article/card:jumbo.html.twig' with {cover: page.cover} %}
+{% endfor %}

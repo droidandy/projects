@@ -1,0 +1,11 @@
+.logo {
+  width: 55px;
+  height: 68px;
+}
+
+.logo-ot {
+  font-size: 63px;
+  svg {
+    width: 220px;
+  }
+}

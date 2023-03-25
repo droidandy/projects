@@ -1,0 +1,102 @@
+{% macro ha_sidebar_select_inner(full_name, choices, value, translation_domain, filter_attrs) %}
+
+    {% set list_options %}
+        <ul>
+            {% set option_default_label = (choices|first).label is defined ? (choices|first).label|trans : '' %}
+            {% set option_default_value = (choices|first).value is defined ? (choices|first).value : '' %}
+            {% set option_selected_label = option_default_label %}
+            {% set option_selected_value = '' %}
+
+            {% for choice in choices[1:] %}
+                {% set is_selected = '' %}
+
+                {% if choice is selectedchoice(value) %}
+                    {% set is_selected = 'selected' %}
+                    {% set option_selected_value = choice.value %}
+                    {% set option_selected_label = choice.label|trans({}, translation_domain) %}
+                {% endif %}
+                <li>
+                    <a href="#" class="item menu-filter {{ is_selected }}"
+                       data-name="{{ full_name }}"
+                       data-value="{{ choice.value }}"
+                    >
+                        {{ choice.label|trans({}, translation_domain) }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endset %}
+
+    <div class="item {% if option_selected_value %}reset-filter{% endif %}"
+         data-name="{{ full_name }}"
+         data-default-label="{{ option_default_label }}"
+         data-default-value="{{ option_default_value }}"
+    >
+        <i class="material-icons">chevron_left</i>
+        <span class="filter-label" data-name="{{ full_name }}">
+            {{ option_selected_label }}
+        </span>
+        <div class="reset-button">
+            <span></span>
+        </div>
+    </div>
+    <div class="mp-level">
+        <h2 class="icon icon-params filter-label" data-name="{{ full_name }}">
+            {{ option_selected_label }}
+        </h2>
+        <input type="hidden"
+               class="filter-value {{ filter_attrs.classes|default('') }}"
+               {{ filter_attrs.attrs|default('') }}
+               name="{{ full_name }}"
+               {% if filter_attrs.disabled|default(false) %}
+               disabled
+               {% else %}
+               value="{{ option_selected_value }}"
+               {% endif %}
+               data-menu-value/>
+
+        {{ list_options }}
+    </div>
+
+{% endmacro %}
+
+{% macro ha_sidebar_select(field) %}
+    {% from _self import ha_sidebar_select_inner %}
+
+    {{ ha_sidebar_select_inner(
+        field.vars.full_name,
+        field.vars.preferred_choices|merge(field.vars.choices),
+        field.vars.value,
+        field.vars.translation_domain
+    ) }}
+{% endmacro %}
+
+{% macro ha_sidebar_price(form_view) %}
+    {% from _self import ha_sidebar_select, ha_sidebar_select_inner %}
+
+    <li class="filter-mobile filter-currency">
+        {{ ha_sidebar_select_inner(
+            form_view.currency.vars.full_name,
+            form_view.currency.vars.preferred_choices|merge(form_view.currency.vars.choices),
+            form_view.currency.vars.value,
+            form_view.currency.vars.translation_domain,
+            {classes: 'filter-value-currency'}
+        ) }}
+    </li>
+    {% for currency, ranges in form_view.range.vars.choices %}
+        {% set currencySelected = currency == form_view.currency.vars.value %}
+        <li class="filter-mobile filter-price"
+                {% if not currencySelected %}
+                style="display: none"
+                {% endif %}
+        >
+        {{ ha_sidebar_select_inner(
+            form_view.range.vars.full_name,
+            ranges,
+            form_view.range.vars.value,
+            form_view.range.vars.translation_domain,
+            {'classes': 'filter-value-price', 'disabled': not currencySelected, 'attrs': 'data-currency=' ~ currency}
+        ) }}
+        </li>
+    {% endfor %}
+{% endmacro %}

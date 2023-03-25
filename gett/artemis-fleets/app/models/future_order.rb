@@ -1,0 +1,2 @@
+class FutureOrder < ApplicationRecord
+end

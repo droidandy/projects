@@ -1,0 +1,257 @@
+{
+    "listingSummary": {
+        "listingId": "0461cc69-054b-46e9-b421-3c2707e00cb0",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2016-07-25",
+        "photoCount": 10,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "ZAR",
+            "amount": 10900000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 826200
+        },
+        "propertyAddress": {
+            "city": "Cape Town",
+            "stateProvince": "Western Cape",
+            "stateProvinceCode": "WC",
+            "postalCode": "7945",
+            "country": "South Africa",
+            "countryCode": "ZA"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Tokai"
+            }
+        ],
+        "RFGListingId": "MPWCLK",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/mpwclk",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Post-War",
+        "propertyName": "Steenberg Golf Estate",
+        "totalBath": 3,
+        "lotSize": "397 SM",
+        "buildingArea": "750 Sq. M",
+        "noOfBedrooms": 4,
+        "squareFootage": 8072.925,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/8D11EF62-DC07-452B-9CE1-EC397633DBAE",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-18T05:25:56.620",
+        "agents": [
+            {
+                "id": "22632d47-50f1-4d18-b944-1637aaed884c",
+                "name": "Dave Burger",
+                "firstName": "Dave",
+                "lastName": "Burger",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/AD35EBA6-84D6-4B23-AB69-66DB98832048",
+                "emailAddress": "david.b@sothebysrealtyss.co.za",
+                "businessPhone": "+27 +27217012446",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "0d4fc7c6-bb0a-4d10-9aed-fa604508f61a",
+                    "RFGOfficeId": "0005 ",
+                    "companyId": "05b5aa42-8f5e-47a2-8982-91dc236d2708",
+                    "companyName": "Sotheby\u2019s International Realty South Africa",
+                    "RFGCompanyId": "810042",
+                    "brandCode": "SIR",
+                    "name": "Lew Geffen Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "49 Tokai Road, Tokai",
+                        "city": "Cape Town",
+                        "stateProvince": "Western Cape",
+                        "stateProvinceCode": "WC",
+                        "postalCode": "7945",
+                        "country": "South Africa",
+                        "countryCode": "ZA",
+                        "latitude": -34.0805,
+                        "longitude": 18.4406
+                    },
+                    "phoneNumber": "+27 21 701 2446",
+                    "emailAddress": "info@sothebysrealtyss.co.za"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 3,
+    "providerKey": "0461cc69-054b-46e9-b421-3c2707e00cb0",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Highlight 1",
+            "languageCode": "en",
+            "remark": "Double garage with direct accessStaff accommodationSalt water swimming poolExposed beams in kitchen and dining roomUnderfloor heating",
+            "htmlRemark": "<ul><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Double garage with direct access<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Staff accommodation<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Salt water swimming pool<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Exposed beams in kitchen and dining room<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Underfloor heating<\/span><\/li><\/ul>"
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Relaxed informal living is offered by this farmhouse type home. Well positioned on the estate this family home offers four bedrooms, three bathrooms, study, lounge, eat in kitchen and staff accommodation.AccommodationCosy kitchen with fireplace, sunny breakfast nook and large glass sliding doors to private courtyard and patioSeparate sculleryLounge with large sliding doors to patio and beautiful views over golf courseTV room leading to patio with glass stacker doorsDining room overlooking swimming pool with exposed beams and wood burning fireplaceGracious guest toiletMain bedroom en-suite with dressing roomThree family bedrooms, one en-suite and two sharing a bathroom",
+            "htmlRemark": "<p align=\"center\" style=\"margin-left:28.35pt;text-align:center;text-indent:-28.35pt;\"><span style=\"color:windowtext;font-family:'Gill Sans MT', sans-serif;font-size:12pt;\">Relaxed informal living is offered by this farmhouse type home. Well positioned on the estate this family home offers four bedrooms, three bathrooms, study, lounge, eat in kitchen and staff accommodation.<\/span><br \/><\/p><p style=\"margin-left:28.35pt;text-indent:-28.35pt;\"><strong><span style=\"font-size:12.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\"><\/span><\/strong><\/p><p style=\"margin-left:28.35pt;text-indent:-28.35pt;\"><strong><span style=\"font-size:12.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Accommodation<\/span><\/strong><\/p><p style=\"margin-left:28.35pt;text-indent:-28.35pt;\"><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\"><\/span><\/p><ul><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Cosy kitchen with fireplace, sunny breakfast nook and large glass sliding doors to private courtyard and patio<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Separate scullery<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Lounge with large sliding doors to patio and beautiful views over golf course<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">TV room leading to patio with glass stacker doors<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Dining room overlooking swimming pool with exposed beams and wood burning fireplace<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Gracious guest toilet<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Main bedroom en-suite with dressing room<\/span><\/li><li><span style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">&nbsp;<\/span><span lang=\"EN-GB\" style=\"font-size:11.0pt;font-family:'Gill Sans MT',sans-serif;color:windowtext;\">Three family bedrooms, one en-suite and two sharing a bathroom<\/span><\/li><\/ul>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/mpwclk",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "ED65C160-4794-4B78-9E8B-0A1FFB22FE7F",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/ED65C160-4794-4B78-9E8B-0A1FFB22FE7F",
+            "isDefault": false,
+            "caption": "Kitchen ",
+            "shortDescription": "Cosy kitchen with fireplace, sunny breakfast nook and large glass sliding doors to private courtyard and patio\u00a0Separate scullery.",
+            "htmlDescription": "Cosy kitchen with fireplace, sunny breakfast nook and large glass sliding doors to private courtyard and patio\u00a0Separate scullery.",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "7EA71E15-D813-4A2B-8694-2452127C0EE7",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/7EA71E15-D813-4A2B-8694-2452127C0EE7",
+            "isDefault": false,
+            "caption": "Lounge",
+            "shortDescription": "Lounge with large sliding doors to patio and beautiful views over golf course",
+            "htmlDescription": "\u00a0Lounge with large sliding doors to patio and beautiful views over golf course",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "231365F6-EE0B-48B8-A972-462AD8855687",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.sothebysrealty.co.za\/results\/residential\/for-sale\/cape-town\/steenberg-golf-estate\/house\/32206\/",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2017-12-04T19:29:17.130"
+        },
+        {
+            "mediaID": "F47D1A8A-70C0-429B-B5C6-62B3528644B7",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/F47D1A8A-70C0-429B-B5C6-62B3528644B7",
+            "isDefault": false,
+            "caption": "Dining room",
+            "shortDescription": "Dining room overlooking swimming pool with exposed beams and wood burning fireplace",
+            "htmlDescription": "Dining room overlooking swimming pool with exposed beams and wood burning fireplace",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "958716BF-1B4D-4BBC-96E7-6721653F18C9",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/958716BF-1B4D-4BBC-96E7-6721653F18C9",
+            "isDefault": false,
+            "caption": "Exterior view",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "DEC3A838-C2B2-4A94-AA47-6E6014B14A23",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/DEC3A838-C2B2-4A94-AA47-6E6014B14A23",
+            "isDefault": false,
+            "caption": "Main bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "A6F537B2-76B7-400A-8A43-BAEFF5A2561F",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/A6F537B2-76B7-400A-8A43-BAEFF5A2561F",
+            "isDefault": false,
+            "caption": "Bathroom 2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "A98087C1-227D-4E69-B0C7-BFCE60D74534",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/A98087C1-227D-4E69-B0C7-BFCE60D74534",
+            "isDefault": false,
+            "caption": "Bathroom 1",
+            "shortDescription": "Main bedroom en-suite with dressing room",
+            "htmlDescription": "Main bedroom en-suite with dressing room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "17986C25-0918-4091-AA82-D906F2D9BE43",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/17986C25-0918-4091-AA82-D906F2D9BE43",
+            "isDefault": false,
+            "caption": "Views",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "01DEBA32-EB09-4DF6-9319-DD31AB59C909",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/01DEBA32-EB09-4DF6-9319-DD31AB59C909",
+            "isDefault": false,
+            "caption": "Court yard",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        },
+        {
+            "mediaID": "8D11EF62-DC07-452B-9CE1-EC397633DBAE",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/8D11EF62-DC07-452B-9CE1-EC397633DBAE",
+            "isDefault": true,
+            "caption": "Main picture",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-09T14:56:50.370"
+        }
+    ]
+}

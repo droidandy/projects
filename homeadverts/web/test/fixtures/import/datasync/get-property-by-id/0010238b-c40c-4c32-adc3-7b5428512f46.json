@@ -1,0 +1,324 @@
+{
+  "listingSummary": {
+    "listingId": "0010238b-c40c-4c32-adc3-7b5428512f46",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2017-02-10",
+    "photoCount": 13,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 5200000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "Fundo Pelumpen  ",
+      "city": "Valdivia",
+      "stateProvince": "Los Ríos",
+      "stateProvinceCode": "LR",
+      "postalCode": "",
+      "country": "Chile",
+      "countryCode": "CL",
+      "latitude": -39.7309913635254,
+      "longitude": -72.2178497314453
+    },
+    "geographicRegions": [
+      {
+        "type": "CityRegion",
+        "name": "Lago Panguipulli"
+      },
+      {
+        "type": "ContinentRegion",
+        "name": "Patagonia"
+      },
+      {
+        "type": "CountryRegion",
+        "name": "Region de Los Rios"
+      },
+      {
+        "type": "Neighbourhood",
+        "name": "Panguipulli"
+      },
+      {
+        "type": "StateRegion",
+        "name": "Provincia de Valdivia"
+      }
+    ],
+    "RFGListingId": "E3TJTP",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/e3tjtp",
+    "isCallToShow": true,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Farm and Agriculture",
+    "propertyType": "Farm/Ranch/Plantation",
+    "propertyStyle": "Other Style",
+    "propertyName": "Chilean Landscape Beauty Lago  Panguipulli",
+    "lotSize": "26 HA",
+    "defaultPhotoURL": "//openapi.azureedge.net/FD590A57-7E1D-41F2-9E32-8B9436F38DD6",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-04-06T16:10:47.077",
+    "agents": [
+      {
+        "id": "71ae8f1c-648a-47e5-9919-3cd8ea255912",
+        "name": "Yolanda Tejeda",
+        "firstName": "Yolanda",
+        "lastName": "Tejeda",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/B307E0CD-D504-44A4-BD29-89C7F71BD901",
+        "emailAddress": "ytejeda@chilesir.com",
+        "businessPhone": "+56974094405",
+        "isPrimary": true,
+        "office": {
+          "officeId": "bb2e28a9-dec9-4b80-9343-a19807b6d71a",
+          "RFGOfficeId": "0001",
+          "companyId": "9ecf1627-0d8f-411c-ae3b-721487afddba",
+          "companyName": "Chile Sotheby's International Realty",
+          "RFGCompanyId": "820402",
+          "brandCode": "SIR",
+          "name": "Chile Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Alonso de Córdova 2467",
+            "city": "Vitacura",
+            "stateProvince": "Santiago",
+            "stateProvinceCode": "RM",
+            "postalCode": "",
+            "country": "Chile",
+            "countryCode": "CL",
+            "latitude": -33.40129,
+            "longitude": -70.59562
+          },
+          "phoneNumber": "+56.97.697.2700",
+          "emailAddress": "contacto@chilesir.com"
+        }
+      },
+      {
+        "id": "6d48f9f1-58ef-47e4-97ce-eab86bc90835",
+        "name": "Javier Contreras",
+        "firstName": "Javier",
+        "lastName": "Contreras",
+        "gender": "Male",
+        "defaultPhotoURL": "//openapi.azureedge.net/214F5C21-28BB-455D-93F4-72C2C2E9C098",
+        "emailAddress": "jcontreras@chilesir.com",
+        "businessPhone": "+56 +56956085017",
+        "isPrimary": false,
+        "office": {
+          "officeId": "bb2e28a9-dec9-4b80-9343-a19807b6d71a",
+          "RFGOfficeId": "0001",
+          "companyId": "9ecf1627-0d8f-411c-ae3b-721487afddba",
+          "companyName": "Chile Sotheby's International Realty",
+          "RFGCompanyId": "820402",
+          "brandCode": "SIR",
+          "name": "Chile Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "Alonso de Córdova 2467",
+            "city": "Vitacura",
+            "stateProvince": "Santiago",
+            "stateProvinceCode": "RM",
+            "postalCode": "",
+            "country": "Chile",
+            "countryCode": "CL",
+            "latitude": -33.40129,
+            "longitude": -70.59562
+          },
+          "phoneNumber": "+56.97.697.2700",
+          "emailAddress": "contacto@chilesir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "providerKey": "0010238b-c40c-4c32-adc3-7b5428512f46",
+  "propertyFeatures": [
+    {
+      "groupName": "Location",
+      "description": "Lakefront"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Lakefront"
+    },
+    {
+      "groupName": "Property Description",
+      "description": "Farm / Ranch"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Waterfront"
+    },
+    {
+      "groupName": "Location",
+      "description": "Waterfront"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Chilean Landscape Beauty on Panguipulli Lake",
+      "htmlRemark": "<p>Chilean Landscape Beauty on Panguipulli Lake</p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/e3tjtp",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "D81FF372-E786-49EA-9358-25FEFFDB3245",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/D81FF372-E786-49EA-9358-25FEFFDB3245",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2172,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "B85A2AEC-E67A-4688-A1EC-2988E8AFFDD9",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/B85A2AEC-E67A-4688-A1EC-2988E8AFFDD9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "5D40181F-CA3A-45C9-8AA0-5591B62F83F7",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/5D40181F-CA3A-45C9-8AA0-5591B62F83F7",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "B4B2F9A9-953B-49CB-8A4C-5ACC4406958D",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/B4B2F9A9-953B-49CB-8A4C-5ACC4406958D",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "8CD64289-1FA2-4E97-935E-60F5CCD654B9",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/8CD64289-1FA2-4E97-935E-60F5CCD654B9",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "43E8E464-2159-4DFB-9283-730BAA67203D",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/43E8E464-2159-4DFB-9283-730BAA67203D",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "FD590A57-7E1D-41F2-9E32-8B9436F38DD6",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/FD590A57-7E1D-41F2-9E32-8B9436F38DD6",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "689752A0-8F55-4F47-B0EB-9CBDA673806E",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/689752A0-8F55-4F47-B0EB-9CBDA673806E",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "D055F4ED-B9D8-4423-9BD5-A280DB6D6389",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/D055F4ED-B9D8-4423-9BD5-A280DB6D6389",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "6E71D1B5-8F0B-48E3-889E-C25AB2D7098D",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/6E71D1B5-8F0B-48E3-889E-C25AB2D7098D",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "80C41C92-DE72-402D-84D2-DB2FE43DC906",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/80C41C92-DE72-402D-84D2-DB2FE43DC906",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "9C46D711-5B90-42CD-BE51-EC19DAB4DE2E",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/9C46D711-5B90-42CD-BE51-EC19DAB4DE2E",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    },
+    {
+      "mediaID": "C17C173C-0AB8-46D3-A8C9-FFEE1F0D6413",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/C17C173C-0AB8-46D3-A8C9-FFEE1F0D6413",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2176,
+      "width": 3264,
+      "lastUpdateOn": "2018-04-06T16:10:47.093"
+    }
+  ]
+}

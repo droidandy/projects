@@ -1,0 +1,56 @@
+{% from 'AppBundle::user/forms.html.twig' import ha_form, ha_form_row, ha_form_messages %}
+
+{% set social_networks = [
+    {name:'facebook', title:'Facebook', icon:'fa-google-plus', is_sharable: true},
+    {name:'twitter', title:'Twitter', icon:'fa-twitter', is_sharable: true},
+    {name:'linkedin', title:'LinkedIn', icon:'fa-linkedin', is_sharable: true},
+    {name:'google', title:'Google+', icon:'fa-google-plus', is_sharable: false},
+
+] %}
+
+<div id="social-connections" class="profile-section">
+    <h2>
+        Social Connections
+    </h2>
+
+    <p class="info">
+        Allow your visitors to find you on the social web by connecting any of the networks below.
+        Additionally, you should turn on automatic share so that your latest stories and home listings up-dates
+        and conveniently shared to your network of followers the minute it happens.
+        <br/>
+        <br/>
+        We will never post or message your friends without your permission.
+    </p>
+    <div class="grouped-fields">
+        {% for network in social_networks %}
+            {% include 'AppBundle:user/settings:_social_network.html.twig' %}
+        {% endfor %}
+    </div>
+    <div class="grouped-fields --separator-bottom">
+        <h3>Show Social Links on your profile page</h3>
+        <div class="field-content">
+            <p>Make this selection if you want your active social networks to show on your profile.</p>
+        </div>
+
+        <div class="settings-action">
+            <span class="onoff">On</span>
+            <div class="switch">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="show-social-profile-switch">
+                    <input type="checkbox"
+                           id="show-social-profile-switch"
+                           name="networksOnProfile"
+                            {% if (app.user.settingsKey('networksOnProfile')) %}
+                                checked
+                            {% endif %}
+                           class="mdl-switch__input">
+                    <span class="mdl-switch__label"></span>
+                </label>
+            </div>
+            <span class="onoff">Off</span>
+
+            <div class="comment">
+                Follow Only
+            </div>
+        </div>
+    </div>
+</div>

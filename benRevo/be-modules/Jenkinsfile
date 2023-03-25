@@ -1,0 +1,178 @@
+#!groovy
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+    overrideIndexTriggers(true)
+  }
+  agent {
+    node {
+      label 'buildfarm'
+    }
+  }
+  tools {
+    maven 'maven'
+  }
+  parameters {
+    choice(name: 'module', choices: 'ALL\nadmin\nclient\nonboarding\npresentation\nquote\nrfp\nsecurity\nshared', description: 'Module to build and deploy (default is NONE)')
+  }
+  environment {
+    APP_CARRIER='UHC'
+
+    DB_URL = 'jdbc:mysql://rds-unittest.cbogremexott.us-east-1.rds.amazonaws.com:3306/br_dev'
+    DB_USERNAME = 'root'
+    DB_PASSWORD = credentials('UNIT_TEST_DB_PASSWORD')
+    DEV_TOKEN_SECRET = credentials('AWS_DEV_ACCESS_SECRET')
+    DEV_TOKEN_ID = 'AKIAIEV2Q2CEUNPABDKA'
+
+    COVERALLS_REPO_TOKEN = credentials('BE_MODULES_COVERALLS_REPO_TOKEN')
+    COVERALLS_SERVICE_NAME = 'Jenkins'
+  }
+  stages {
+    stage('Setup') {
+      when {
+        expression { !(params.module ==~ /^$|\s+|NONE/) }
+      }
+      steps {
+        wrap([$class: 'BuildUser']) {
+          slackSend message: "Starting build: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}: ${RUN_DISPLAY_URL}"
+        }
+        checkout([
+          $class: 'GitSCM',
+          poll: false,
+          branches: [[name: '${BRANCH_NAME}']],
+          doGenerateSubmoduleConfigurations: false,
+          extensions: [],
+          submoduleCfg: [],
+          userRemoteConfigs: [[
+            credentialsId: '81e0269c-8b0b-4eeb-97f2-03da4cb75100',
+            url: 'https://github.com/BenRevo/be-modules.git'
+          ]]
+        ])
+        sh '''
+#!/bin/bash -xe
+
+export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+
+mvn clean install -q -B -U -DskipTests=true -Dsilent=true -s .s3.settings.xml
+        '''
+      }
+    }
+    stage('Build ALL') {
+      when {
+        expression { params.module ==~ /(ALL)/ }
+      }
+      steps {
+        echo "##### Building ALL Modules\n"
+        sh '''
+mvn clean install -U -B -V -s .s3.settings.xml
+        '''
+      }
+      post {
+        always {
+          jacoco exclusionPattern: '**/test*', execPattern: '**/build/reports/target/jacoco-aggregate/**.exec'
+        }
+      }
+    }
+    stage('Build Single Module') {
+      when {
+        expression { !(params.module ==~ /(^$|\s+|ALL|NONE)/) }
+      }
+      steps {
+        echo "##### Building ${params.module}\n"
+        sh '''
+mvn clean install -pl ${params.module} -am -amd -U -B -V -s .s3.settings.xml
+        '''
+      }
+      post {
+        always {
+          jacoco exclusionPattern: '**/test*', execPattern: '**/build/reports/target/jacoco-aggregate/**.exec'
+        }
+      }
+    }
+    /*stage('Dependency Check') {
+      steps {
+        dependencyCheckAnalyzer([
+          datadir: "/var/jenkins_home/.m2/repository/org/owasp/dependency-check-data/",
+          hintsFile: "",
+          includeCsvReports: false,
+          includeHtmlReports: false,
+          includeJsonReports: false,
+          includeVulnReports: false,
+          isAutoupdateDisabled: false,
+          outdir: "",
+          scanpath: "",
+          skipOnScmChange: false,
+          skipOnUpstreamChange: false,
+          suppressionFile: "",
+          zipExtensions: 'zip,jar'
+        ])
+      }
+    }*/
+    stage('Deploy ALL') {
+      when {
+        expression { params.module ==~ /(ALL)/ }
+      }
+      steps {
+        echo "##### Deploying ALL modules\n"
+        sh '''
+#!/bin/bash -xe
+
+export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+
+mvn deploy -B -V -DskipTests=true -Dmaven.deploy.skip=false
+        '''
+      }
+    }
+    stage('Deploy Single Module') {
+      when {
+        expression { !(params.module ==~ /(^$|\s+|ALL|NONE)/) }
+      }
+      steps {
+        echo "##### Deploying ${params.module}\n"
+        sh '''
+#!/bin/bash -xe
+
+export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+
+mvn deploy -pl ${params.module} -B -V -DskipTests=true -Dmaven.deploy.skip=false
+        '''
+      }
+    }
+    stage('Trigger') {
+      steps {
+        build job: "benrevo/core-application-service/${BRANCH_NAME}", propagate: true, wait: false
+        build job: "benrevo/benrevo-admin-service/${BRANCH_NAME}", propagate: true, wait: false
+        build job: "benrevo/be-dashboards-service/${BRANCH_NAME}", propagate: true, wait: false
+        build job: "benrevo/broker-application-service/${BRANCH_NAME}", propagate: true, wait: false
+      }
+    }
+  }
+  post {
+    /*always {
+      dependencyCheckPublisher([
+        canComputeNew: false,
+        defaultEncoding: "",
+        healthy: "",
+        unHealthy: "",
+        pattern: "",
+        shouldDetectModules: true
+      ])
+    }*/
+    failure {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "danger", message: "Build failed: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}. Build results: ${RUN_DISPLAY_URL}"
+        emailext body: '${JOB_NAME} ${BUILD_DISPLAY_NAME} - failed: Check console output at ${RUN_DISPLAY_URL} to view the results.', recipientProviders: [[$class: 'CulpritsRecipientProvider']], subject: 'Build failed: ${JOB_NAME} ${BUILD_DISPLAY_NAME}'
+      }
+    }
+    success {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "good", message: "Build success: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}. Build results: ${RUN_DISPLAY_URL}"
+        emailext body: '${JOB_NAME} ${BUILD_DISPLAY_NAME} - success: Check console output at ${RUN_DISPLAY_URL} to view the results.', recipientProviders: [[$class: 'CulpritsRecipientProvider']], subject: 'Build success: ${JOB_NAME} ${BUILD_DISPLAY_NAME}'
+      }
+    }
+  }
+}

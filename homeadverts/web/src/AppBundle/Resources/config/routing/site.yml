@@ -1,0 +1,45 @@
+ha_homepage:
+    path:  /
+    defaults:
+      _controller: AppBundle:Page:homepage
+      p: 1
+    methods:  [GET]
+    condition: "request.headers.get('Pagination') == false"
+
+ha_homepage_pagination:
+    path:  /
+    defaults:
+      _controller: AppBundle:Page:homepagePagination
+    methods:  [GET]
+    condition: "request.headers.get('Pagination')"
+
+ha_stream:
+    path:  /stream
+    defaults:
+      _controller: AppBundle:Page:stream
+      p: 1
+    methods:  [GET]
+    requirements:
+      page: \d+
+    condition: "request.headers.get('Pagination') == false"
+
+ha_stream_pagination:
+    path:  /stream
+    defaults:
+      _controller: AppBundle:Page:streamPagination
+      p: 1
+    methods:  [GET]
+    requirements:
+      page: \d+
+    condition: "request.headers.get('Pagination')"
+
+ha_latest:
+    path:  /latest
+    defaults: { _controller: AppBundle:Page:latest, p: 1 }
+    methods:  [GET]
+    requirements:
+      page: \d+
+
+ha_help:
+    path:  /help/{token}
+    defaults: { _controller: AppBundle:Page:help }

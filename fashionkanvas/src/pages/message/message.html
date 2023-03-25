@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title (click)="viewUser(userId)">{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content has-footer>
+  <!-- Messages -->
+  <div class="messages">
+    <p class="center" *ngIf="startIndex > 0"><span tappable (click)="loadPreviousMessages()">{{ 'LOADPREVIOUSMESSAGES' | translate }}</span></p>
+
+    <div class="chat_head" *ngFor="let message of messagesToShow">
+      <div class="sender" *ngIf="isSender(message)" class="chatbox right">
+        <div *ngIf="message.type == 'text'">
+          <p>{{message.message}}</p>
+        </div>
+        <div *ngIf="message.type == 'location'" [innerHtml]="message.message"></div>
+        <div *ngIf="message.type == 'contact'" [innerHtml]="message.message"></div>
+        <div *ngIf="message.type == 'image'">
+          <img-loader tappable src="{{message.message}}" useImg  (click)="enlargeImage(message.message)"></img-loader>
+        </div>
+        <div *ngIf="message.type == 'video'">
+          <video controls width="100%" >
+             <source src="{{message.message}}" type="video/mp4">
+          </video>
+        </div>
+        <span>{{message.date | DateFormat}}</span>
+      </div>
+      <div *ngIf="!isSender(message)" class="chatbox left">
+        <ion-avatar item-left>
+          <img-loader src="{{message.avatar}}" useImg ></img-loader>
+        </ion-avatar>
+        <div class="chatbox_left">
+
+        <div *ngIf="message.type == 'text'">
+          <p>{{message.message}}</p>
+        </div>
+        <div *ngIf="message.type == 'location'" [innerHtml]="message.message"></div>
+        <div *ngIf="message.type == 'contact'" [innerHtml]="message.message"></div>
+        <div  *ngIf="message.type == 'image'">
+          <img-loader tappable src="{{message.message}}" (click)="enlargeImage(message.message)" useImg ></img-loader>
+        </div>
+        <div *ngIf="message.type == 'video'">
+          <video controls width="100%">
+             <source src="{{message.message}}" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+        <span>{{message.date | DateFormat}}</span>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
+<!-- Message Box -->
+<ion-footer>
+  <ion-item class="bottom_bar">
+    <button class="attachment" item-left ion-button clear (click)="attach()"><ion-icon name="md-attach"></ion-icon></button>
+    <ion-textarea  type="text" rows="0" placeholder="{{ 'WRITEAMESSAGE' | translate }}" autocomplete="true" spellcheck="true" autocorrect="on"  [(ngModel)]="message"></ion-textarea>
+    <button class="sent" item-right ion-button clear (click)="send('text')" [disabled]="!message"><ion-icon name="md-arrow-up"></ion-icon></button>
+  </ion-item>
+</ion-footer>

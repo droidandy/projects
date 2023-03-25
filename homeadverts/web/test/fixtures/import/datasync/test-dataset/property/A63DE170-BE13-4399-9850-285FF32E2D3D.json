@@ -1,0 +1,528 @@
+{
+    "listingSummary": {
+        "listingId": "a63de170-be13-4399-9850-285ff32e2d3d",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForRent",
+        "listedOn": "2015-10-03",
+        "photoCount": 20,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 150000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "city": "Montauk",
+            "district": "Suffolk County",
+            "stateProvince": "New York",
+            "stateProvinceCode": "NY",
+            "postalCode": "11954",
+            "country": "United States",
+            "countryCode": "US",
+            "geoCodeConfidenceLevel": "High"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Montauk"
+            }
+        ],
+        "RFGListingId": "EGFDYS",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/egfdys",
+        "rentalFrequency": "Season",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Other Style",
+        "propertyName": "PRISTINE HITHER HILLS TRADITIONAL",
+        "buildingArea": "2500 Sq. Ft.",
+        "noOfBedrooms": 4,
+        "totalAcres": 0.2,
+        "squareFootage": 2500,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/BCEF5EE3-9917-FA26-7ADD-765407993FBC",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-04-19T22:15:32.827",
+        "agents": [
+            {
+                "id": "c8840aec-1be0-46cc-bc33-0fd25687ed7a",
+                "name": "Whitney Olch",
+                "firstName": "Whitney",
+                "lastName": "Olch",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/790CE1D0-AF32-4047-A8D4-80858840F9AA",
+                "emailAddress": "whitney@whitneyolch.com",
+                "businessPhone": "4356404147",
+                "mobilePhone": "5167684726",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "d01ecb9b-8725-43c9-866c-0f96674d5395",
+                    "RFGOfficeId": "0001",
+                    "companyId": "609fac28-f057-490c-bde3-e905b1f9d5e7",
+                    "companyName": "Summit",
+                    "RFGCompanyId": "800224",
+                    "brandCode": "SIR",
+                    "name": "Summit Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "1750 Park Avenue PO Box 2370",
+                        "city": "Park City",
+                        "district": "Summit",
+                        "stateProvince": "Utah",
+                        "stateProvinceCode": "UT",
+                        "postalCode": "84060",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 40.65862,
+                        "longitude": -111.50733,
+                        "formattedAddress": "1750 Park Ave, Park City, UT 84060"
+                    },
+                    "phoneNumber": "4356491884",
+                    "emailAddress": "info@summitsothebysrealty.com"
+                }
+            },
+            {
+                "id": "9dd00b44-d557-4545-9453-c859480ed170",
+                "name": "Zacheriah   Dayton",
+                "firstName": "Zacheriah",
+                "lastName": "Dayton",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/B54ED0FC-BB40-425E-80A9-C77E79D2015B",
+                "emailAddress": "Zack.Dayton@Sothebyshomes.com",
+                "businessPhone": "6319078485",
+                "mobilePhone": "6319051394",
+                "isPrimary": false,
+                "office": {
+                    "officeId": "bf027072-47d4-499e-9414-6a30a5f2a8c8",
+                    "RFGOfficeId": "0019",
+                    "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+                    "companyName": "NRT Sotheby's International Realty",
+                    "RFGCompanyId": "901195",
+                    "brandCode": "SIR",
+                    "name": "Sotheby's International Realty - East Hampton Brokerage",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "6  Main Street ",
+                        "city": "East Hampton",
+                        "district": "Suffolk County",
+                        "stateProvince": "New York",
+                        "stateProvinceCode": "NY",
+                        "postalCode": "11937",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 40.9637657,
+                        "longitude": -72.1850625,
+                        "formattedAddress": "6 Main St, East Hampton, NY 11937"
+                    },
+                    "phoneNumber": "6313246000",
+                    "emailAddress": "Nanette.Hansen@sothebyshomes.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 3,
+    "halfBath": 0,
+    "totalRooms": 0,
+    "providerKey": "a63de170-be13-4399-9850-285ff32e2d3d",
+    "propertyFeatures": [
+        {
+            "groupName": "Garage Count",
+            "description": "2 Car Garage"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Water View"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Gourmet Kitchen"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Resistance \/ Spa"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Hot Tub"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Ocean \/ Beach"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Other Beach"
+        },
+        {
+            "groupName": "Views",
+            "description": "Ocean"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Pool"
+        },
+        {
+            "groupName": "Pool Description",
+            "description": "Inground"
+        },
+        {
+            "groupName": "Bath Features",
+            "description": "Jacuzzi Tub"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Central A\/C"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "A\/C"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Balcony \/ Lanai"
+        },
+        {
+            "groupName": "Body of Water",
+            "description": "Ocean"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Deck"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Lifestyles",
+            "description": "Waterfront"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Located one block from private keyed ocean beach is this 2,500 square foot home. Relax and enjoy the spacious open floor plan of this luxury haven. The first floor includes 3 bedrooms each with access to the private pool. On the upper level are the master bedroom, chef's kitchen and open living room. The master suite has walk-in closet king size bed and bath with double sink, Jacuzzi tub and separate shower stall. Central air throughout and two car garage.  Memorial Day - Labor Day: $150,000, July - Labor Day: $110,000, August - Labor Day: $65,000, July Only: $50,000, Other \/ Short Term - June 2018: $35,000"
+        },
+        {
+            "type": "Headline",
+            "languageCode": "en",
+            "remark": "PRISTINE HITHER HILLS TRADITIONAL"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/egfdys",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "A70A5307-CDA2-01CC-C18A-00134AEC0A05",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/A70A5307-CDA2-01CC-C18A-00134AEC0A05",
+            "isDefault": false,
+            "caption": "Summer Oasis",
+            "shortDescription": "Summer Oasis",
+            "htmlDescription": "Summer Oasis",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "766638C3-64D8-F56D-6953-1212B1F9C5C0",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/766638C3-64D8-F56D-6953-1212B1F9C5C0",
+            "isDefault": false,
+            "caption": "Chef's Kitchen",
+            "shortDescription": "Chef's Kitchen",
+            "htmlDescription": "Chef's Kitchen",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "FFE28D8B-61B3-DAA6-79DC-28A18A7DF902",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/FFE28D8B-61B3-DAA6-79DC-28A18A7DF902",
+            "isDefault": false,
+            "caption": "Lower Level Living Area",
+            "shortDescription": "Lower Level Living Area",
+            "htmlDescription": "Lower Level Living Area",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "EE46C7F9-E5F6-4BB5-4987-2927300BF27D",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/EE46C7F9-E5F6-4BB5-4987-2927300BF27D",
+            "isDefault": false,
+            "caption": "Guest Bedroom",
+            "shortDescription": "Guest Bedroom",
+            "htmlDescription": "Guest Bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "14495502-2417-5D65-5CE0-3A0D87A851D7",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/14495502-2417-5D65-5CE0-3A0D87A851D7",
+            "isDefault": false,
+            "caption": "Lower Level Living Area",
+            "shortDescription": "Lower Level Living Area",
+            "htmlDescription": "Lower Level Living Area",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "32353B1F-9AF9-8A5D-4BCC-4AC999285DBB",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/32353B1F-9AF9-8A5D-4BCC-4AC999285DBB",
+            "isDefault": false,
+            "caption": "Pristine Traditional Moments To Ocean Beaches",
+            "shortDescription": "Pristine Traditional Moments To Ocean Beaches",
+            "htmlDescription": "Pristine Traditional Moments To Ocean Beaches",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "4B82A8C7-7BFD-E6EE-012A-4FECF8A7C0A4",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/4B82A8C7-7BFD-E6EE-012A-4FECF8A7C0A4",
+            "isDefault": false,
+            "caption": "Open Living Room",
+            "shortDescription": "Open Living Room",
+            "htmlDescription": "Open Living Room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "7233A85F-C37E-4509-9586-5FF6687705FC",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.sothebyshomes.com\/hamptons\/rental\/0046889",
+            "isDefault": true,
+            "caption": "Link",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-04-19T22:15:34.090"
+        },
+        {
+            "mediaID": "E9CC1861-70BD-347B-EEAE-7510FCAA405D",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/E9CC1861-70BD-347B-EEAE-7510FCAA405D",
+            "isDefault": false,
+            "caption": "Balcony Ocean Views",
+            "shortDescription": "Balcony Ocean Views",
+            "htmlDescription": "Balcony Ocean Views",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "BCEF5EE3-9917-FA26-7ADD-765407993FBC",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/BCEF5EE3-9917-FA26-7ADD-765407993FBC",
+            "isDefault": true,
+            "caption": "Main Photo",
+            "shortDescription": "Main Photo",
+            "htmlDescription": "Main Photo",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "B0A21D46-BCD5-94ED-F31F-76F643701F89",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/B0A21D46-BCD5-94ED-F31F-76F643701F89",
+            "isDefault": false,
+            "caption": "Ensuite Master Bathroom",
+            "shortDescription": "Ensuite Master Bathroom",
+            "htmlDescription": "Ensuite Master Bathroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "C02E4A91-16AB-C63D-B480-8AD12B64C1D5",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/C02E4A91-16AB-C63D-B480-8AD12B64C1D5",
+            "isDefault": false,
+            "caption": "Master Bedroom",
+            "shortDescription": "Master Bedroom",
+            "htmlDescription": "Master Bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "BE435262-BB25-3784-CA8A-8E7725716485",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/BE435262-BB25-3784-CA8A-8E7725716485",
+            "isDefault": false,
+            "caption": "Large Heated Pool",
+            "shortDescription": "Large Heated Pool",
+            "htmlDescription": "Large Heated Pool",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "2035B2F0-9152-6627-512B-92D08963F086",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/2035B2F0-9152-6627-512B-92D08963F086",
+            "isDefault": false,
+            "caption": "Guest Bedroom Suite",
+            "shortDescription": "Guest Bedroom Suite",
+            "htmlDescription": "Guest Bedroom Suite",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "0FB2361D-1BA3-349E-D067-9BC6A6629311",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/0FB2361D-1BA3-349E-D067-9BC6A6629311",
+            "isDefault": false,
+            "caption": "Chef's Kitchen",
+            "shortDescription": "Chef's Kitchen",
+            "htmlDescription": "Chef's Kitchen",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "C3A4C586-A42B-B123-B4B4-A614992DEE11",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/C3A4C586-A42B-B123-B4B4-A614992DEE11",
+            "isDefault": false,
+            "caption": "Open Living Room",
+            "shortDescription": "Open Living Room",
+            "htmlDescription": "Open Living Room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "1FADDC04-41B3-7E85-B64F-AEA33524CB0B",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/1FADDC04-41B3-7E85-B64F-AEA33524CB0B",
+            "isDefault": false,
+            "caption": "Guest Bedroom",
+            "shortDescription": "Guest Bedroom",
+            "htmlDescription": "Guest Bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "EC6AD794-BB5B-3B8E-8F8A-C284F46C0955",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/EC6AD794-BB5B-3B8E-8F8A-C284F46C0955",
+            "isDefault": false,
+            "caption": "Guest Bathroom",
+            "shortDescription": "Guest Bathroom",
+            "htmlDescription": "Guest Bathroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "ADFC41EF-8412-4425-3D80-C2BA9980CC06",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/ADFC41EF-8412-4425-3D80-C2BA9980CC06",
+            "isDefault": false,
+            "caption": "Stylish Entry Foyer",
+            "shortDescription": "Stylish Entry Foyer",
+            "htmlDescription": "Stylish Entry Foyer",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "CCE3C2C0-3F17-91A9-6E03-D95C08637282",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/CCE3C2C0-3F17-91A9-6E03-D95C08637282",
+            "isDefault": false,
+            "caption": "Private",
+            "shortDescription": "Private",
+            "htmlDescription": "Private",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        },
+        {
+            "mediaID": "D3D4CEF0-8A8F-72E8-8A96-F82A7D424FAC",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/D3D4CEF0-8A8F-72E8-8A96-F82A7D424FAC",
+            "isDefault": false,
+            "caption": "Open Living Room",
+            "shortDescription": "Open Living Room",
+            "htmlDescription": "Open Living Room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-04-13T13:35:11.013"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+query StockPricesDaily($companyId: bigint!, $from: date!, $to: date!) {
+    marketdata_view_stock_prices_daily(where: {
+        inst_id: {_eq: $companyId},
+        ts_date: {_gte: $from, _lte: $to}},
+        order_by: {ts_date: asc}
+    ) {
+        inst_id
+        price_close
+        price_high
+        price_low
+        price_open
+        ts_date
+    }
+}

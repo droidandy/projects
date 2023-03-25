@@ -1,0 +1,28 @@
+!!!
+%html(xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml")
+  %head
+    %meta(content="text/html; charset=utf-8" http-equiv="Content-Type")
+    %meta(content="IE=edge" http-equiv="X-UA-Compatible")
+    %meta(content="width=device-width, initial-scale=1" name="viewport")
+    %link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet")
+    = render 'layouts/mailer_styles'
+    = render 'layouts/card_receipt_styles'
+
+  %body
+    %center
+      %table#grayBackground(align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%")
+        = render 'card_receipt_mailer/card_receipt_header'
+        %tr
+          %td(align="center" valign="top")
+            %table(align="center" border="0" cellpadding="0" cellspacing="0" width="900" bgcolor="#ffffff" style="border-radius:10px; width:900px;")
+              %tr
+                %td(align="center" valign="top")
+                  %table(align="center" border="0" cellpadding="0" cellspacing="0" style="width:900px;" width="900")
+                    %tr
+                      %td(align="center" style="width:900px;" valign="top" width="900")
+                        %table.templateContainer(align="center" border="0" cellpadding="0" cellspacing="0" width="100%")
+                          %tr
+                            %td.bodyContainer(align="center" valign="top" style="padding:40px;")
+                              = yield
+              = render 'layouts/mailer_footer'
+        %tr(style="padding-bottom:130px; height:100%; display:block;")

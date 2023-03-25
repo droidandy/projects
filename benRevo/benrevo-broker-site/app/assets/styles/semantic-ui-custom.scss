@@ -1,0 +1,106 @@
+@import "./variables-theme";
+
+/*
+ * Header
+ */
+
+.ui.header {
+  font-family: $MAIN_FONT;
+}
+
+/*
+ * Buttons
+ */
+
+.ui.button {
+  font-weight: 400;
+  font-size: 13px;
+  font-family: $MAIN_FONT;
+  &.medium {
+    height: 28px;
+    line-height: 4px;
+    &.nowrap {
+      white-space: nowrap;
+    }
+  }
+
+  &.grey {
+    background-color: $BUTTON_GREY_COLOR !important;
+
+    &:hover {
+      background-color: $BUTTON_GREY_HOVER_COLOR !important;
+    }
+  }
+
+  &.teal {
+    background-color: $BUTTON_TEAL_COLOR !important;
+    border-color: $BUTTON_TEAL_COLOR;
+    &:hover {
+      background-color: $BUTTON_TEAL_HOVER_COLOR !important;
+    }
+
+    &.transparent {
+      background-color: transparent !important;
+      color: $BUTTON_TEAL_COLOR;
+
+      &:hover {
+        border-color: $BUTTON_TEAL_HOVER_COLOR !important;
+        color: $BUTTON_TEAL_HOVER_COLOR !important;
+      }
+    }
+  }
+}
+
+.ui.large.button, .ui.large.buttons .button, .ui.large.buttons .or {
+  height: 32px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 8px;
+}
+
+.round-blue-button {
+  cursor: pointer;
+  display: inline-block;
+
+  span {
+    margin-left: 2px;
+    font-size: 13px;
+    color: $LINK_COLOR;
+  }
+
+  &:hover {
+    &:before {
+      background-color: $LINK_COLOR_HOVER;
+    }
+
+    span {
+      color: $LINK_COLOR_HOVER;
+    }
+  }
+
+  &:before {
+    content: '+';
+    color: #ffffff;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: $LINK_COLOR;
+    font-weight: 600;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 20px;
+    margin-right: 5px;
+  }
+}
+
+.remove-button {
+  background: url(../img/svg/delete-icon.svg) no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

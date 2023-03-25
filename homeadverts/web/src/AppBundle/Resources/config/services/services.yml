@@ -1,0 +1,163 @@
+services:
+    redis_client:
+        class: AppBundle\Helper\RedisClient
+        arguments:
+            - %redis_host%
+
+    location_factory:
+        class: AppBundle\Search\LocationFactory
+        arguments:
+            - @ha.google_maps_provider
+            - @location_repo
+            - @em
+            - @locale_factory
+            - @?debug.stopwatch
+
+    ha.google_maps_provider:
+        class: AppBundle\Search\GoogleMapsProvider
+        arguments:
+            - @locale_factory
+            - %google.api_key%
+            - @ha.http_client
+            - @geocoder_cache_adapter
+            - @?debug.stopwatch
+
+    ha.http_client:
+        class: Guzzle\Http\Client
+
+    redis_cache:
+        class: Doctrine\Common\Cache\PredisCache
+        arguments: ['@snc_redis.default_client']
+        calls:
+            - ['setNamespace', ['luxuryaffairs']]
+
+    geocoder_cache_adapter:
+        class: Doctrine\Common\Cache\PredisCache
+        arguments: [@snc_redis.default]
+
+    address_geocoder:
+        class: AppBundle\Geo\AddressGeocoder
+        arguments: ['@geocoder']
+
+    imagine_cache_adapter:
+        class: Doctrine\Common\Cache\PredisCache
+        arguments: [@snc_redis.default]
+
+    ha.message_builder:
+        class: AppBundle\Service\Email\MessageBuilder
+        arguments: [@twig]
+        scope: prototype
+
+    liip_imagine.controller:
+        class: AppBundle\Controller\ImagineController
+        arguments:
+            - @liip_imagine.cache.resolver.default
+            - @liip_imagine.cache.resolver.default.cached
+            - @liip_imagine.data.manager
+            - @liip_imagine.filter.manager
+            - @liip_imagine.cache.manager
+            - @liip_imagine.cache.signer
+            - @logger
+
+    ha.meta_manager:
+        class: AppBundle\Service\MetaManager
+        arguments:
+            - @translator.default
+    
+    
+    ip_to_country :
+        class: AppBundle\Service\Geo\IpToCountry
+        arguments:
+            - '%kernel.root_dir%/GeoLite2-Country.mmdb'
+
+    locale_factory:
+        class: AppBundle\Service\Geo\LocaleFactory
+        arguments:
+          - @request_stack
+          - @ip_to_country
+          - %locales%
+
+    ha.locale_helper:
+        class: AppBundle\Service\Geo\LocaleHelper
+        arguments:
+            - @service_container
+            - @request_stack
+
+    ha.geometry_service:
+        class: AppBundle\Geo\GeometryService
+        arguments: [@ha.http_client, %ha.geo_endpoint%, @?debug.stopwatch]
+
+    ha.paginator:
+        class: AppBundle\Service\Paginator
+        arguments:
+          - @mobile_detect.mobile_detector.default
+          - %pagination%
+
+    ha.mailer:
+        class: AppBundle\Service\Email\Mailer
+        arguments:
+          - @twig
+          - @mailer
+          - @router.default
+          - @templating
+          - @ha.database_reporter
+          - %email_noreply%
+          - %email_report_recipients%
+
+    ha.import.import_mailer:
+        class: AppBundle\Service\Email\AggregatedImportMailer
+        arguments:
+            - %email_report_recipients%
+            - 'no-reply@homeadverts.com'
+            - '@snc_redis.default_client'
+            - '@ha.message_builder='
+            - '@mailer'
+            - '@monolog.logger.import'
+
+    ha.popular:
+        class: AppBundle\Service\Analysis\Popular
+        arguments:
+          - @em
+          - @cache
+
+          - @ha.search.location_repo
+          - @tag_repo
+          - @article_repo_recommended
+          - @article_repo
+          - @tag_repo
+          - @user_repo
+
+    ha.slugifier:
+        class: Cocur\Slugify\Slugify
+
+    ha.unique_field_object_constructor:
+        class: AppBundle\Serializer\Constructor\UniqueFieldDoctrineObjectConstructor
+        arguments: [@jms_serializer.doctrine_object_constructor, @em]
+
+    jms_serializer.object_constructor:
+        alias: ha.unique_field_object_constructor
+
+    ha.jms_serializer.suggest_collection_handler:
+        class: AppBundle\Serializer\ESCollectionHandler
+        tags:
+            - { name: jms_serializer.subscribing_handler }
+
+    ha.http.deserialize_param_converter:
+        class: AppBundle\Request\RequestBodyParamConverter
+        arguments:
+          - 'json'
+          - @jms_serializer
+          - @validator
+          - 'errorList'
+        tags:
+            - { name: request.param_converter, priority: 'false', converter: request_body }
+
+    ha.lock.value_generator:
+        class: AppBundle\Service\Lock\LockValueGenerator
+
+    ha.lock:
+        class: AppBundle\Service\Lock\RedisLock
+        arguments:
+            - '@ha.lock.value_generator'
+            - '@snc_redis.default_client'
+            - '@monolog.logger.import'

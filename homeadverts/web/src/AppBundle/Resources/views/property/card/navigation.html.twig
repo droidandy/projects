@@ -1,0 +1,55 @@
+{% set likesTotal = property.getLikesCount() %}
+{% set commentsTotal = property.getMessagesCount() %}
+
+{% if not likesTotal %}
+    {% set likesTotalClass = '--hidden' %}
+{% else %}
+    {% set likesTotalClass = '' %}
+{% endif %}
+{% if app.user and is_liked_by_user(app.user, property) %}
+    {% set isLikedClass = '--is-liked' %}
+{% else %}
+    {% set isLikedClass = '' %}
+{% endif %}
+
+<div class="
+article-likes-{{ property.id }}
+like-button
+like-counter {{ likesTotalClass }} {{ isLikedClass }}"
+     data-id="{{ property.id }}"
+     data-type="property"
+     data-title="{{ property.getTitle() }}"
+     data-add-url="{{ path('ha_property_like_add', {id:property.id}) }}"
+     data-remove-url="{{ path('ha_property_like_remove', {id:property.id}) }}"
+>
+    <i class="material-icons plus">favorite</i>
+    <i class="material-icons minus">favorite</i>
+
+    {% if likesTotal %}
+        <span>
+            {{ likesTotal }}
+        </span> likes
+    {% else %}
+        <span></span> Like
+    {% endif %}
+</div>
+
+<a class="comments-counter message-button" href="{{ path('ha_room_property_redirect', {id: property.id}) }}">
+    <i class="material-icons">comment</i>
+    {% if commentsTotal %}
+        <span>
+            {{ commentsTotal }}
+        </span> comments
+    {% else %}
+        <span></span> Comments
+    {% endif %}
+</a>
+
+<div class="article-share-{{ property.id }} share-button"
+     data-title="Share this property"
+     data-image="{{ property.getPrimaryPhoto().url }}"
+     data-url="{{ absolute_url(path('property_details', {id: property.id, slug: property.slug})) }}"
+>
+    <i class="material-icons">reply</i>
+    Share
+</div>

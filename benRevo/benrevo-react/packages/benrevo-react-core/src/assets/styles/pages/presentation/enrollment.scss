@@ -1,0 +1,62 @@
+@import "../../variables";
+
+.presentation-enrollment {
+  min-height: 500px;
+
+  & > .card {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px !important;
+    font-size: 12px;
+    .plan-name {
+      color: $BUTTON_COLOR;
+    }
+
+    &.edit {
+      border: 2px solid $BUTTON_COLOR;
+    }
+
+    .card-title {
+      font-size: 30px;
+      padding: 35px 30px 25px;
+      height: 94px;
+      text-transform: uppercase;
+    }
+
+    .card-bottom {
+      padding: 0 15px 15px;
+    }
+
+    .card-bottom, .card-title {
+
+    }
+
+    .column.no-padding {
+      padding: 0 0 15px;
+    }
+
+    .card-contributions-row {
+      padding-top: 22px;
+      padding-bottom: 22px;
+
+      &.edit {
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+
+      &.last {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .empty {
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

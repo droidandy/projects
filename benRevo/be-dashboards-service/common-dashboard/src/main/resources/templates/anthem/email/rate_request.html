@@ -1,0 +1,502 @@
+<!DOCTYPE html
+    PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style type="text/css">
+        a {text-decoration: none; color:#277AC2; }
+        * {box-sizing: border-box;}
+        td,th {border:none}
+        .backgroundImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/hero_1x.png);
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 225px;
+        }
+        .anthemLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/anthemlogo1x_02.png);
+            background-repeat: no-repeat;
+            width: 183px;
+            height: 60px;
+        }
+        .poweredByBenrevoLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo1x_20.png);
+            background-repeat: no-repeat;
+            width: 181px;
+            height: 37px;
+        }
+        .starsImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/star1x.png);
+            background-repeat: no-repeat;
+            width: 210px;
+            height: 55px;
+        }
+        .intro-header{
+           font-size: 22px;
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            .backgroundImage {
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/hero_2x.png);
+                background-size: 800px 225px;
+            }
+            .anthemLogoImage{
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/anthemlogo2x_03_03_02.png);
+                background-size: 183px 60px;
+            }
+            .poweredByBenrevoLogoImage{
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo2x_20_20.png);
+                background-size: 181px 37px;
+            }
+            .starsImage{
+              background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/star2x.png);
+              background-repeat: no-repeat;
+              width: 420px;
+              height: 110px;
+          }
+        }
+        .column {
+            float: left;
+            width: 80%;
+        }
+        .column2 {
+            float: left;
+            width: 20%;
+            height: 138px;
+            border-left: 1px solid #aaafb2;
+            padding-left: 18px;
+        }
+        .budgetColumn {
+            float: left;
+            width: 50%;
+        }
+        .totalColumn {
+            float: left;
+            width: 50%;
+            padding-left: 18px;
+        }
+        .row{
+          color: #3a444d;
+          font-size: 14px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .rateBankHeader{
+          font-size: 10px;
+          color: #3a444d;
+        }
+        .strike {
+            font: 12px sans-serif;
+            margin-top: 10px;
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+            z-index: 1;
+        }
+        .strike:before {
+            border-top: solid 1px #979797;
+            content:"";
+            margin: 0 auto;
+            position: absolute;
+            top: 8px; left: 0; right: 0; bottom: 0;
+            width: 60%;
+            z-index: -1;
+        }
+        .strike span {
+            background: #fff;
+            padding: 0 15px;
+        }
+        .planTable {
+          border-collapse: collapse;
+          width: 100%;
+          color: #3a444d;
+        }
+        .planTable th {
+            border: 0px;
+            border-bottom: #aaafb2 1px solid;
+            text-align: right;
+            font-size: 12px;
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: right;
+          }
+          .planTable th:first-child {
+            text-align: left;
+          }
+          .planTable tr:nth-child(even) {
+            background-color: #f8f8f8;
+          }
+          .planTable tr:first-child {
+            background-color: transparent;
+          }
+          .planTable td {
+            text-align: right;
+            font-size: 14px;
+          }
+          .planTable td:first-child {
+            text-align: left;
+            padding: 15px 10px;
+          }
+        .blue {
+          color: #0099cc;
+        }
+        .networkInfo{
+          font-size: 14px;
+          text-align: left;
+          color: #164d8d;
+          font-weight: 600;
+        }
+        .planInfo{
+          font-size: 14px;
+          color: #3a444d;
+        }
+        .columnSpacing{
+          padding-right: 15px;
+          text-align: right;
+        }
+        .sectionWidth {
+          height: 54px;
+          padding: 0 20px;
+          clear: both;
+        }
+        .greyBackground{
+          background-color: #f8f8f8;
+        }
+        .whiteBackground{
+          background-color: #ffffff;
+        }
+        .alignleft {
+          float: left;
+        }
+        .alignright {
+          float: right;
+        }
+        .textright{
+          text-align: right;
+        }
+      div.header {
+        font-size: 20px;
+        font-weight: 300;
+        border-bottom: 1px solid #aaafb2;
+        padding-top: 10px;
+        padding-left: 0px;
+      }
+      .leaders {
+        max-width: 30em;
+        padding: 0;
+        overflow-x: hidden;
+        list-style: none;
+        font-size: 14px;
+        margin-top: 0px;
+        width: 100%;
+      }
+      .leaders tr {
+        vertical-align: top;
+        min-height: 20px;
+      }
+      .leaders tr td {
+          padding: 5px;
+      }
+      .leaders tr:nth-child(odd){
+        background-color: #f8f8f8;
+      }
+      .leaders tr .title {
+        overflow: hidden;
+      }
+      .leaders tr .nums {
+        width: 80px;
+        text-align: right;
+        background: white;
+        color: #0099cc;
+        font-weight: 600;
+      }
+      .leaders tr .title span:after {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content: ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . ";
+      }
+      .leaders .title span {
+        padding-right: 0.33em;
+        background: white;
+      }
+      .leaders tr:nth-child(odd) span:first-child, .leaders tr:nth-child(odd) .nums {
+        background-color: #f8f8f8;
+      }
+      .anthemPremiumDiv{
+        width: 640px;
+        height: 62px;
+        background-color: #3a444d;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0px 20px;
+      }
+      .anthemPremiumDiv span{
+        color: #ffffff;
+        font-size: 16px;
+      }
+      .carrrierText{
+        margin-bottom: -10px;
+        font-size: 15px;
+      }
+	</style>
+</head>
+<body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial;">
+<table style="margin:auto;" width="650" cellspacing='0'>
+  <tr>
+    <td align='center'>
+      <div class="anthemLogoImage"></div>
+    </td>
+  </tr>
+</table>
+<table bgcolor="#fff" style="margin:auto; border:1px solid #d3d3d3; border-top: 8px solid #3a444d;" width="750" cellspacing='0' cellpadding='0'>
+  <tr>
+    <td style="padding-right:30px;"><br/>
+      <table bgcolor="#fff" style="margin:auto;border-spacing: 10px 20px;padding:0px 0px; color:#666666;" width="750" >
+        <tr>
+          <td>
+            <div class="row">
+              <div class="column">
+                <p class="intro-header">Hello $!manager_name,</p>
+                <p class="carrrierText"><span style="color:#0099cc;">SAE:</span> $!sae_name</p>
+                <p class="carrrierText"><span style="color:#0099cc;">SAR:</span> $!sar_name</p>
+                <p class="carrrierText"><span style="color:#0099cc;">BROKER:</span> $!brokerage_name</p>
+              </div>
+              <div class="column2">
+                <p><span style="color:#0099cc;font-size: 30px;">
+                                      #if($!rate_bank_amount)
+                                          $DecimalFormat.format($!rate_bank_amount)
+                                      #else
+                                          -
+                                      #end
+                                    </span>
+                  <br/>
+                  <span class="rateBankHeader">RATEBANK AMOUNT</span>
+                  <br/>
+                  <span class="rateBankHeader">REQUESTED</span>
+                </p>
+                <p>
+                                      <span style="color:#0099cc;font-size: 30px;">
+                                        #if($!pepy)
+                                          $DecimalFormat.format($!pepy)
+                                        #else
+                                            -
+                                        #end
+                                      </span>
+                  <br/><span class="rateBankHeader">PEPY</span></p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="margin-bottom: -10px;font-size: 15px; color: #3a444d;">Please reply all to this email to approve/deny this request.</p>
+            <br/>
+            <p style="margin-bottom: -10px;font-weight: 600;font-size: 15px; color: #3a444d;">Additional Info:</p>
+            <p style="font-size: 15px; color: #3a444d;">
+              #if($!note)
+              $!note
+              #else
+              -
+              #end
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p style="margin-bottom: -10px;font-weight: 600;font-size: 15px; color: #3a444d;">Rate Bank Exhibit:</p>
+            <div style="border-top: 1px solid #aaafb2; margin-top: 16px;margin-bottom: 10px;padding-left: 184px;"><div class="strike"><span>MONTHLY DIFFERENCES</span></div></div>
+            <table bgcolor="#fff" style="margin:auto;border-spacing: 10px 0;padding:0px 0px; color:#666666; border-bottom: 1px solid #aaafb2;text-align: left;" width="700" class="planTable">
+              <tr style="font-size: 12px;border-bottom: 1px solid #aaafb2;color: #3a444d;">
+                <th>NETWORK</th>
+                <th class="columnSpacing">ENROLL</th>
+                <th class="columnSpacing">% VS.<br/>CURRENT</th>
+                <th class="columnSpacing">$ VS.<br/>CURRENT</th>
+                <th class="columnSpacing">% VS.<br/>RENEWAL</th>
+                <th class="columnSpacing">$ VS.<br/>RENEWAL</th>
+                <th class="columnSpacing">RATE<br/>BANK</th>
+              </tr>
+              #foreach($plan in ${plans})
+              <tr>
+                <td style="padding-right: 9px;" width="50%">
+                  <p>
+                    <span class="networkInfo">$!plan.planType - $!plan.networkName</span>
+                    <br/>
+                    <span class="planInfo">$!plan.planName</span>
+                  </p>
+                </td>
+                <td class="columnSpacing" width="5%">$!plan.enrollment</td>
+                <td class="blue columnSpacing" width="5%">
+                  #if($!plan.percentDifference)
+                  $!plan.percentDifference%
+                  #else
+                  -
+                  #end
+                </td>
+                <td class="blue columnSpacing" width="10%">
+                  #if($!plan.dollarDifference)
+                  $DecimalFormat.format($!plan.dollarDifference)
+                  #else
+                  -
+                  #end
+                </td>
+                <td class="blue columnSpacing" width="5%">
+                  #if($!plan.renewalPercentDifference)
+                  $!plan.renewalPercentDifference%
+                  #else
+                  -
+                  #end
+                </td>
+                <td class="blue columnSpacing" width="20%">
+                  #if($!plan.renewalDollarDifference)
+                  $DecimalFormat.format($!plan.renewalDollarDifference)
+                  #else
+                  -
+                  #end
+                </td>
+                <td class="blue columnSpacing" width="5%">
+                  #if($!plan.networkRateBank)
+                  $!plan.networkRateBank%
+                  #else
+                  -
+                  #end
+                </td>
+              </tr>
+              #end
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="budgetColumn">
+                <div class="header sectionWidth">Budget Requests</div>
+                <div class="sectionWidth greyBackground">
+                  <p class="alignleft">Wellness</p>
+                  <p class="alignright">
+                    #if($!wellnessBudget)
+                    $DecimalFormat.format($!wellnessBudget)
+                    #else
+                    -
+                    #end
+                  </p>
+                </div>
+                <div class="sectionWidth whiteBackground">
+                  <p class="alignleft">Communication</p>
+                  <p class="alignright">
+                    #if($!communicationBudget)
+                    $DecimalFormat.format($!communicationBudget)
+                    #else
+                    -
+                    #end
+                  </p>
+                </div>
+                <div class="sectionWidth greyBackground" style="border-bottom: 1px solid #aaafb2;">
+                  <p class="alignleft">Implementation</p>
+                  <p class="alignright">
+                    #if($!implementationBudget)
+                    $DecimalFormat.format($!implementationBudget)
+                    #else
+                    -
+                    #end
+                  </p>
+                </div>
+              </div>
+              <div class="totalColumn">
+                <div class="header sectionWidth">Totals</div>
+                <table class="leaders">
+                  <tr>
+                    <td class="title"><span>PEPY</span></td>
+                    <td class="nums">
+                      #if($!pepy)
+                      $DecimalFormat.format($!pepy)
+                      #else
+                      -
+                      #end
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title"><span>Total rate bank $ amount requested</span></td>
+                    <td class="nums">
+                      #if($!rate_bank_amount)
+                      $DecimalFormat.format($!rate_bank_amount)
+                      #else
+                      -
+                      #end
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title"><span>Quote cost vs current</span></td>
+                    <td class="nums">
+                      #if($!quoteVsCurrent)
+                      $DecimalFormat.format($!quoteVsCurrent)
+                      #else
+                      -
+                      #end
+
+                      #if($!quoteVsCurrentPercentage)
+                      <br>
+                      $!quoteVsCurrentPercentage%
+                      #end
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="title"><span>Quote cost vs renewal</span></td>
+                    <td class="nums">
+                      #if($!quoteVsRenewal)
+                      $DecimalFormat.format($!quoteVsRenewal)
+                      #else
+                      -
+                      #end
+
+                      #if($!quoteVsRenewalPercentage)
+                      <br>
+                      $!quoteVsRenewalPercentage%
+                      #end
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="anthemPremiumDiv" style="padding-bottom: 30px;padding-top: 10px;">
+            <span style="float:left;">Anthem Total Medical Premium</span>
+            <span style="float:right;">
+                                  #if($!premium)
+                                    $DecimalFormat.format($!premium)
+                                  #else
+                                      -
+                                  #end
+                                </span>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td align='center'>
+      <div class="poweredByBenrevoLogoImage"></div>
+      <br/><br/>
+    </td>
+  </tr>
+</table>
+<br/><br/>
+
+</body>
+</html>

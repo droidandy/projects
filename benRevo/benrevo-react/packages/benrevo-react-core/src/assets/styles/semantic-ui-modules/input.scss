@@ -1,0 +1,35 @@
+@import '../variables-theme';
+@import '../variables';
+
+/* Input */
+
+.ui.input {
+
+  &.hidden {
+    display: none;
+  }
+
+  &:not(.fluid):not(.inline) {
+    input[type="text"] {
+      min-width: $INPUT_MIN_WIDTH;
+    }
+  }
+
+  input[type="text"] {
+    background-color: $INPUT_BACKGROUND;
+    height: 35px;
+    font-size: 12px;
+    color: $INPUT_COLOR;
+    border: $INPUT_BORDER;
+
+    &:focus {
+      background-color: $INPUT_BACKGROUND_FOCUS;
+      border: $INPUT_BORDER;
+    }
+
+    &::placeholder {@include inputPlaceholder();}
+    &::-webkit-input-placeholder {@include inputPlaceholder();}
+    &::-moz-placeholder          {@include inputPlaceholder();}
+    &:-ms-input-placeholder      {@include inputPlaceholder();}
+  }
+}

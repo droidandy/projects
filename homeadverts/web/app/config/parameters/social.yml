@@ -1,0 +1,9 @@
+parameters:
+  facebook_app_id: '586798061420991'
+  facebook_app_secret: 98a7b45c2d6ef117c6ba9f5e6237ef8e
+  google_app_id: 815449690686-aebavnldclej3kkhf6vi4mlcdndafjte.apps.googleusercontent.com
+  google_app_secret: Cztaxz0UQTchcaga_RS-H7_4
+  twitter_app_id: aMJLdSmkEayfYpgL0wiSoQ
+  twitter_app_secret: NtH8tKK8vjz3NS0RAtZvZ7Ye7jmCoFBFtzutfVlVHs
+  linkedin_app_id: 78fgv2f0tlmawx
+  linkedin_app_secret: tjc8y4E7qFheV5mY

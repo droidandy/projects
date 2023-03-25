@@ -1,0 +1,13 @@
+@import '../variables-theme';
+
+.ui.popup {
+  padding: 15px;
+  max-width: 220px;
+  &.inverted {
+    background-color: $POPUP_BG_COLOR;
+
+    &.top:before {
+      background-color: $POPUP_BG_COLOR;
+    }
+  }
+}

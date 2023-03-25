@@ -1,0 +1,26 @@
+{
+  "rating": {
+    "type": "float",
+    "example": 4.93
+  },
+  "today_acceptance": {
+    "type": "integer",
+    "example": 100,
+    "description": "percents"
+  },
+  "week_acceptance": {
+    "type": "integer",
+    "example": 75,
+    "description": "percents"
+  },
+  "month_acceptance": {
+    "type": "integer",
+    "example": 50,
+    "description": "percents"
+  },
+  "total_acceptance": {
+    "type": "integer",
+    "example": 25,
+    "description": "percents"
+  }
+}

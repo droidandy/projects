@@ -1,0 +1,43 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">Security</ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <ion-content scroll="false">
+            <div class="settings">
+              <ul class="left-list">
+                <li>Enable Passcode
+                  <span class="pull-right">
+                    <label class="toggle toggle-assertive">
+                      <input type="checkbox" ng-model="securityData.passcode">
+                      <div class="track">
+                        <div class="handle"></div>
+                      </div>
+                    </label>
+                  </span>
+                <li>Enable Touch ID
+                  <span class="pull-right">
+                    <label class="toggle toggle-assertive">
+                      <input type="checkbox" ng-model="securityData.touchId">
+                      <div class="track">
+                        <div class="handle"></div>
+                      </div>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+              <ion-list can-swipe="false" class="left-list left-list-security" ng-if="securityData.passcode">
+                    <ion-item href="" ng-click="changePasscode()" class="item-thumbnail-left" transitiontype="slide" direction="left" go-native>
+                      <div class="row">
+                          <div class="col-xs-12 selection__content selection__content__pink">Change Passcode</div>
+                      </div>
+                    </ion-item>
+              </ion-list>
+            </div>
+  </ion-content>
+</ion-view>

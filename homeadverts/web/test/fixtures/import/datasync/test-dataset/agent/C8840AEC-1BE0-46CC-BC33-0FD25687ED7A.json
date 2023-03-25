@@ -1,0 +1,106 @@
+{
+    "agentSummary": {
+        "id": "c8840aec-1be0-46cc-bc33-0fd25687ed7a",
+        "isAgent": true,
+        "name": "Whitney Olch",
+        "firstName": "Whitney",
+        "lastName": "Olch",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/790CE1D0-AF32-4047-A8D4-80858840F9AA",
+        "emailAddress": "whitney@whitneyolch.com",
+        "businessPhone": "4356404147",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "d01ecb9b-8725-43c9-866c-0f96674d5395",
+            "RFGOfficeId": "0001",
+            "companyId": "609fac28-f057-490c-bde3-e905b1f9d5e7",
+            "companyName": "Summit",
+            "RFGCompanyId": "800224",
+            "brandCode": "SIR",
+            "name": "Summit Sotheby's International Realty",
+            "type": "Main office",
+            "officeAddress": {
+                "streetAddress": "1750 Park Avenue PO Box 2370",
+                "city": "Park City",
+                "district": "Summit",
+                "stateProvince": "Utah",
+                "stateProvinceCode": "UT",
+                "postalCode": "84060",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 40.65862,
+                "longitude": -111.50733,
+                "formattedAddress": "1750 Park Ave, Park City, UT 84060"
+            },
+            "phoneNumber": "4356491884",
+            "emailAddress": "info@summitsothebysrealty.com"
+        }
+    },
+    "personId": "ec4c776f-af06-418d-8657-75cb3310e5ca",
+    "lastUpdateOn": "2018-03-12T19:04:55.647",
+    "roles": [
+        {
+            "office": {
+                "officeId": "d01ecb9b-8725-43c9-866c-0f96674d5395",
+                "RFGOfficeId": "0001",
+                "companyId": "609fac28-f057-490c-bde3-e905b1f9d5e7",
+                "companyName": "Summit",
+                "RFGCompanyId": "800224",
+                "brandCode": "SIR",
+                "name": "Summit Sotheby's International Realty",
+                "type": "Main office",
+                "officeAddress": {
+                    "streetAddress": "1750 Park Avenue PO Box 2370",
+                    "city": "Park City",
+                    "district": "Summit",
+                    "stateProvince": "Utah",
+                    "stateProvinceCode": "UT",
+                    "postalCode": "84060",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 40.65862,
+                    "longitude": -111.50733,
+                    "formattedAddress": "1750 Park Ave, Park City, UT 84060"
+                },
+                "phoneNumber": "4356491884",
+                "emailAddress": "info@summitsothebysrealty.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "whitney.olch@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "790CE1D0-AF32-4047-A8D4-80858840F9AA",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/790CE1D0-AF32-4047-A8D4-80858840F9AA",
+            "isDefault": true,
+            "caption": "wo dash new 2018",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-01-15T18:30:33.073"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "UT",
+            "number": "5722103-SA00",
+            "issuedOn": "2004-09-10"
+        }
+    ]
+}

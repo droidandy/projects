@@ -1,0 +1,129 @@
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.HomePromoMain.variant2022jan {
+  padding: 0 !important;
+  background-color: rgb(241,241,241);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(241,241,241,1)), color-stop(35%, rgba(245,245,245,1)), to(rgba(236,236,236,1)));
+  background: -o-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(245,245,245,1) 35%, rgba(236,236,236,1) 100%);
+  background: linear-gradient(180deg, rgba(241,241,241,1) 0%, rgba(245,245,245,1) 35%, rgba(236,236,236,1) 100%);
+
+  .container {
+    background: url("./creamly-bg-v4.png") no-repeat;
+    background-size: 490px;
+    background-position: right bottom;
+    padding-top: 25px;
+
+    .content {
+      max-width: 50%;
+      margin-left: 100px;
+      margin-right: auto;
+
+      .buttonArea {
+        padding-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 770px) {
+      .item {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 730px) {
+      background-position: right -30px bottom 80px;
+    }
+
+    @include media-query($medium) {
+      background-size: 490px;
+      .content {
+        max-width: 50%;
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      background: url("./creamly-bg-v4.png") no-repeat;
+      background-size: 285px;
+      background-position: right top;
+
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+
+      .content {
+        margin-left: 0;
+        max-width: 100%;
+
+        .title {
+          margin-left: 10px;
+          margin-right: auto;
+          width: 100%;
+          max-width: 175px;
+          min-width: 175px;
+          margin-bottom: 20px;
+          min-height: 235px;
+          h1 {
+            margin-bottom: 20px;
+          }
+          @media screen and (min-width: 450px) {
+            max-width: 245px;
+            min-width: 245px;
+          }
+        }
+
+        &--en {
+          .title {
+            max-width: 115px;
+            min-width: 115px;
+            @media screen and (min-width: 400px) {
+              max-width: 175px;
+              min-width: 175px;
+            }
+          }
+        }
+
+        .steps {
+          background-color: #fff;
+          padding-left: 5px;
+          padding-right: 5px;
+
+          .item {
+            margin-top: 20px;
+            p {
+              font-size: 0.9em;
+            }
+          }
+        }
+
+        .buttonArea {
+          background-color: #fff;
+          padding-top: 20px;
+
+          .btn_style {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      background-size: 260px;
+      background-position: center 135px;
+
+      .title {
+        min-height: 360px !important;
+        max-width: 295px !important;
+        margin-left: auto !important;
+        margin-bottom: 0px;
+        h1 {
+          max-width: 100% !important;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+}

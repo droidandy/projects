@@ -1,0 +1,270 @@
+<ion-view>
+  <ion-header-bar align-title="left" class="bar-positive pocket-head">
+    <div class="holder">
+      <div class="text-head" ui-sref="menu">Done</div>
+      <div class="settings-icon"></div>
+      <ion-slide-box show-pager="false" active-slide="currentSlideIndex">
+        <ion-slide on-drag-end="drag()" ng-class="currentClass(0)"> <!--on-drag-end="drag()"-->
+          <div class="head-title"><span>GENERAL</span></div>
+          <!--<div class="head-title-next" ng-click="nextSettingsPage()" ng-style="{display : slides.first ? 'block' : 'none'}">DISCOVERY</div>-->
+        </ion-slide>
+        <ion-slide on-drag-end="drag()" ng-class="currentClass(1)">
+          <div class="head-title"><span>DISCOVERY</span></div>
+          <!--<div class="head-title-next" ng-click="nextSettingsPage()" ng-style="{display : slides.second ? 'block' : 'none'}">CONTACT CARD</div>-->
+          <!--<div class="head-title-prev" ng-click="prevSettingsPage()" ng-style="{display : slides.second ? 'block' : 'none'}">GENERAL</div>-->
+        </ion-slide>
+        <ion-slide on-drag-end="drag()" ng-class="currentClass(2)">
+          <div class="head-title"><span>CONTACT CARD</span></div>
+          <!--<div class="head-title-next" ng-click="nextSettingsPage()" ng-style="{display : slides.third ? 'block' : 'none'}">PROFILE</div>-->
+          <!--<div class="head-title-prev" ng-click="prevSettingsPage()" ng-style="{display : slides.third ? 'block' : 'none'}">DISCOVERY</div>-->
+        </ion-slide>
+        <ion-slide on-drag-end="drag()" ng-class="currentClass(3)">
+          <div class="head-title"><span>PROFILE</span></div>
+          <!--<div class="head-title-prev" ng-click="prevSettingsPage()" ng-style="{display : slides.fourth ? 'block' : 'none'}">CONTACT CARD</div>-->
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </ion-header-bar>
+  <ion-content class="gm-content has-header-settings page--settings">
+    <div class="page page--play">
+      <div class="pocket-container pocket-container-mb-95">
+        <ion-slide-box delegate-handle="mainScroll" show-pager="false" active-slide="currentSlideIndex">
+          <!-- General -->
+          <ion-slide>
+            <div class="settings">
+              <ul>
+                <li>Notifications
+              <span class="pull-right">
+                <label class="toggle toggle-assertive">
+                  <input type="checkbox">
+                  <div class="track">
+                    <div class="handle"></div>
+                  </div>
+                </label>
+              </span>
+                <li>Use Mobile Data
+          <span class="pull-right">
+            <label class="toggle toggle-assertive">
+              <input type="checkbox">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </span>
+                </li>
+              </ul>
+              <ul>
+                <li>Passcode
+          <span class="pull-right">
+            <label class="toggle toggle-assertive">
+              <input type="checkbox">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </span>
+                </li>
+                <li>Enable Touch ID
+          <span class="pull-right">
+            <label class="toggle toggle-assertive">
+              <input type="checkbox">
+              <div class="track">
+                <div class="handle"></div>
+              </div>
+            </label>
+          </span>
+                </li>
+              </ul>
+              <ul>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms of Service</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+              <ul>
+                <li class="text-center"><a href="#" class="active">Log Out</a></li>
+
+              </ul>
+              <a class="deactivate-account-link">Deactivate Account</a>
+            </div>
+          </ion-slide>
+          <!-- Discovery -->
+          <ion-slide>
+            <div class="settings settings--discovery">
+              <!-- <div class="label-title clearfix">
+                <div class="pull-left">My age: </div>
+                <div class="pull-right">{{settings.age}}</div>
+              </div>
+              <ul>
+                <div range-slider min="18" max="100" model-max="settings.age" pin-handle="min"></div>
+              </ul> -->
+              <div class="label-title">Gender:</div>
+              <ul>
+                <li><span style="width: 33%">Male</span>
+                  <span style="width: 33%; text-align: center">
+                    <label class="toggle">
+                      <input type="checkbox" ng-model="settings.gender">
+                      <div class="track">
+                        <div class="handle"></div>
+                      </div>
+                    </label>
+                </span>
+                <span class="pull-right">
+                  Female
+                </span>
+                </li>
+              </ul>
+              <div class="label-title">Interested In:</div>
+              <ul>
+                <li><span style="width: 33%">Men</span>
+                  <span style="width: 33%; text-align: center">
+                <label class="toggle">
+                  <input type="checkbox" ng-model="settings.interested">
+                  <div class="track">
+                    <div class="handle"></div>
+                  </div>
+                </label>
+              </span>
+              <span class="pull-right">
+                Women
+                </span>
+                </li>
+              </ul>
+              <div class="label-title clearfix">
+                <div class="pull-left">Age: </div>
+                <div class="pull-right">{{settings.min_age}} - {{settings.max_age}} </div>
+              </div>
+              <ul>
+                <!--<li><img src="img/age-bar.png" class="img-responsive" alt=""> </li>-->
+
+                <div range-slider min="18" max="65" model-min="settings.min_age" model-max="settings.max_age"></div>
+
+              </ul>
+              <!-- <div class="label-title clearfix">
+                <div class="pull-left">Radius: </div>
+                <div class="pull-right">{{settings.radius}}KM</div>
+              </div>
+              <ul>
+                <div range-slider min="0" max="100" model-max="settings.radius" pin-handle="min"></div>
+              </ul> -->
+            </div>
+          </ion-slide>
+          <!-- Contact -->
+          <ion-slide>
+            <div class="settings contact-settings">
+
+              <ion-list id="networks" class="list-block" can-swipe="networks.listCanSwipe">
+                <ion-item class="item-remove-animate">
+                  <span class="icon call-num"></span>
+                  <input type="text" ng-model="settings.contacts.phone_number" placeholder="Number" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon loc-pin"></span>
+                  <input type="text" ng-model="settings.contacts.address" placeholder="City" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon bell-icon"></span>
+                  <input type="text" ng-model="settings.contacts.snapchat" placeholder="Snapchat" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon twitter"></span>
+                  <input type="text" ng-model="settings.contacts.twitter" placeholder="Twitter" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon fb"></span>
+                  <input type="text" ng-model="settings.contacts.facebook" placeholder="Facebook" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon instagram"></span>
+                  <input type="text" ng-model="settings.contacts.instagram" placeholder="Instagram" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon whatsapp"></span>
+                  <input type="text" ng-model="settings.contacts.whatsapp" placeholder="WhatsApp" ng-blur="updateContacts()">
+                </ion-item>
+                <ion-item class="item-remove-animate">
+                  <span class="icon email"></span>
+                  <input type="text" ng-model="settings.contacts.email" placeholder="Email" ng-blur="updateContacts()">
+                </ion-item>
+
+              </ion-list>
+              <ul style="padding: 0">
+                <append></append>
+                <!-- <li><span class="icon add-more"></span><a href="#" ng-click="addNetwork()">Add...</a></li> -->
+              </ul>
+            </div>
+          </ion-slide>
+          <!-- Profile -->
+          <ion-slide>
+            <div class="settings">
+              <div class="profile-title">Profile Pictures:</div>
+              <div  class="slider-thumb clearfix">
+                <ul>
+                  <li ng-click="select()" click-off="clickOff()" ng-repeat="img in pictureItems" ng-class="{active : img.active}">
+                    <a>
+                      <img ng-src="{{img.src}}" class="img-responsive"  alt="">
+                      <span class="pro-pic-bg">
+                        <span class="cross-icon"></span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="add" ng-if="pictureItems.length < 5">
+                    <a href="#" ng-click="selectImage()"><span>+</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="profile-title">Ice Breakers:
+            <span class="pull-right" ng-click="iceBreakers.shouldShowReorder = !iceBreakers.shouldShowReorder">
+              Reorder
+            </span>
+              </div>
+              <ion-list id="iceBreakers" class="list-block" show-reorder="iceBreakers.shouldShowReorder" can-swipe="iceBreakers.listCanSwipe">
+                <ion-item class="item-remove-animate" ng-repeat="ib in iceBreakers.items" item="ib">
+                  <span ng-bind="ib"></span>
+                  <ion-option-button class="button-assertive" ng-click="deleteIceBreaker(ib)">
+                    Delete
+                  </ion-option-button>
+                  <ion-reorder-button class="ion-navicon"
+                                      on-reorder="iceBreakers.moveItem(ib, $fromIndex, $toIndex)"></ion-reorder-button>
+                </ion-item>
+              </ion-list>
+              <ion-list>
+                <li class="item add-more">
+                  <input type="text" name="new-ice-breaker" ng-blur="addIceBreaker('blur')"  ng-keyup="addIceBreaker($event);" ng-model="newIceBreaker.text" placeholder="Add...">
+                  <!-- <a href="#" ng-click="addIceBreaker()">Add...</a> -->
+                </li>
+              </ion-list>
+
+              <div class="profile-note"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+
+
+              <div class="profile-title">
+                Languages:
+            <span class="pull-right" ng-click="languageItems.shouldShowReorder = !languageItems.shouldShowReorder">
+              Reorder
+            </span>
+              </div>
+
+              <ion-list id="languageItems" class="list-block" show-reorder="languageItems.shouldShowReorder" can-swipe="languageItems.listCanSwipe">
+                <ion-item class="item-remove-animate item item-complex item-right-editable" ng-repeat="lang in languageItems.items" item="lang">
+                  <span ng-bind="lang"></span>
+                  <ion-option-button class="button-assertive" ng-click="deleteLanguage(lang)">
+                    Delete
+                  </ion-option-button>
+                  <ion-reorder-button class="ion-navicon"
+                                      on-reorder="languageItems.moveItem(lang, $fromIndex, $toIndex)"></ion-reorder-button>
+                </ion-item>
+              </ion-list>
+              <ion-list>
+                <li class="item add-more">
+                  <input type="text" name="new-language" ng-blur="addLanguage('blur')"  ng-keyup="addLanguage($event);" ng-model="newLanguage.text" placeholder="Add...">
+                  <!-- <a href="#" ng-click="addLanguage()">Add...</a> -->
+                </li>
+              </ion-list>
+              <div class="profile-note"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

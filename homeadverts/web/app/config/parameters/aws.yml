@@ -1,0 +1,15 @@
+parameters:
+    s3.api_version: "2006-03-01"
+    s3.bucket.pattern.property: /properties/%%d/
+    s3.bucket.pattern.user.profile: /users/%%d/profile/
+    s3.bucket.pattern.user.profile.manual: /users/%%d/profile/manual/
+    s3.bucket.endpoint: 'https://%s3.bucket.name%.s3.amazonaws.com'
+    s3.bucket.profile.endpoint: 'https://%s3.profile_bucket.name%.s3.amazonaws.com'
+
+    #AWS
+    s3.bucket.name: luxuryaffairs-prod
+    s3.bucket.region: us-east-1
+    s3.profile_bucket.name: luxuryaffairs-prod
+    s3.profile_bucket.region: us-east-1
+    s3.access.key: AKIAJ63A2EU2WVO2IQFA
+    s3.access.secret: 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

@@ -1,0 +1,32 @@
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Build Files
+**/dependency-check-report.html
+target
+src/test-it/resources/db
+**/poiUtilTest.xls
+test.txt
+.env
+
+# IntelliJ IDEA
+.idea
+**/*.iml
+
+# Logs
+/logs
+
+# Eclipse
+.classpath
+.project
+.settings
+
+# OS specific files
+.DS_Store
+test-output/
+*.bak
+*.log
+bin

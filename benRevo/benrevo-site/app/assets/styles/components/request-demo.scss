@@ -1,0 +1,43 @@
+@import "../variables-theme";
+
+.request-demo {
+  min-height: 370px;
+  background: $MAIN_COLOR;
+  padding: 65px 0;
+  position: relative;
+  margin-top: 20px;
+
+  .column-header {
+    color: #ffffff;
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 20px;
+
+    &:after {
+      content: '';
+      height: 3px;
+      width: 40px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px;
+      background-color: #ffffff;
+    }
+  }
+
+  .ui.form {
+    .fields {
+      margin: 20px 0 40px;
+      .field {
+        padding: 0 7px;
+      }
+    }
+
+    .field {
+      .ui.button {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

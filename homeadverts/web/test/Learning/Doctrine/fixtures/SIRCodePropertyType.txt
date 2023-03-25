@@ -1,0 +1,6 @@
+Property Type Code|Property Type Name
+"C"|"Commercial"
+"FA"|"Farm and Agriculture"
+"LL"|"Lots & Land"
+"O"|"Other"
+"R"|"Residential"

@@ -1,0 +1,77 @@
+{{- if not .Values.database.host }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "aou-backend.postgresql.fullname" . }}-config
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: postgresql
+data:
+  POSTGRES_DB: "{{ .Values.database.name }}"
+  POSTGRES_USER: "{{ .Values.database.user }}"
+  POSTGRES_PASSWORD: "{{ .Values.database.password }}"
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: {{ include "aou-backend.postgresql.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: postgresql
+  annotations:
+    app.gitlab.com/env: {{ .Values.annotations.CIEnvironmentSlug }}
+    app.gitlab.com/app: {{ .Values.annotations.CIProjectPathSlug }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "aou-backend.selectorLabels" . | nindent 6 }}
+      component: postgresql
+  serviceName: postgres
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        {{- include "aou-backend.selectorLabels" . | nindent 8 }}
+        component: postgresql
+      annotations:
+        app.gitlab.com/env: {{ .Values.annotations.CIEnvironmentSlug }}
+        app.gitlab.com/app: {{ .Values.annotations.CIProjectPathSlug }}
+    spec:
+      serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+      containers:
+        - name: postgresql
+          image: timescale/timescaledb:latest-pg12
+          imagePullPolicy: "IfNotPresent"
+          ports:
+            - containerPort: 5432
+          envFrom:
+            - configMapRef:
+                name: {{ include "aou-backend.postgresql.fullname" . }}-config
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data
+              name: {{ include "aou-backend.postgresql.fullname" . }}-postgredb
+              subPath: postgres
+  volumeClaimTemplates:
+  - metadata:
+      name: {{ include "aou-backend.postgresql.fullname" . }}-postgredb
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: "1Gi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "aou-backend.postgresql.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: postgresql
+spec:
+  type: {{ .Values.services.type }}
+  ports:
+   - port: 5432
+  selector:
+    {{- include "aou-backend.selectorLabels" . | nindent 4 }}
+    component: postgresql
+{{- end }}

@@ -1,0 +1,149 @@
+{
+  "id": "Z2lkOi8vc2hvcGlmeS9DaGVja291dC80YmRmMGVmNjcyM2E5NmEyMjljNTk4ZTE5MzhlZjg4MT9rZXk9OGY2NWI5Y2JhNzI4OTQ5NGM0NmVjYzk0ODgyNWQ4ZjA=",
+  "ready": true,
+  "requiresShipping": true,
+  "note": null,
+  "paymentDue": "4500.00",
+  "currencyCode": "RUB",
+  "paymentDueV2": { "amount": "4500.0", "currencyCode": "RUB" },
+  "webUrl": "https://creamly.myshopify.com/23675871/checkouts/4bdf0ef6723a96a229c598e1938ef881?key=8f65b9cba7289494c46ecc948825d8f0",
+  "orderStatusUrl": null,
+  "taxExempt": false,
+  "taxesIncluded": true,
+  "totalTax": "0.00",
+  "totalTaxV2": { "amount": "0.0", "currencyCode": "RUB" },
+  "lineItemsSubtotalPrice": { "amount": "5000.0", "currencyCode": "RUB" },
+  "subtotalPrice": "50.80",
+  "subtotalPriceV2": { "amount": "4500.0", "currencyCode": "RUB" },
+  "totalPrice": "50.80",
+  "totalPriceV2": { "amount": "4500.0", "currencyCode": "RUB" },
+  "completedAt": null,
+  "createdAt": "2021-03-07T12:53:53Z",
+  "updatedAt": "2021-03-07T13:19:04Z",
+  "email": "test_email@cream.ly",
+  "discountApplications": {
+    "pageInfo": { "hasNextPage": false, "hasPreviousPage": false },
+    "edges": [
+      {
+        "node": {
+          "targetSelection": "ALL",
+          "allocationMethod": "ACROSS",
+          "targetType": "LINE_ITEM",
+          "value": { "percentage": 10 },
+          "code": "EPAM",
+          "applicable": true
+        }
+      }
+    ]
+  },
+  "appliedGiftCards": [],
+  "shippingAddress": null,
+  "shippingLine": null,
+  "customAttributes": [],
+  "lineItems": {
+    "pageInfo": { "hasNextPage": false, "hasPreviousPage": false },
+    "edges": [
+      {
+        "cursor": "eyJsYXN0X2lkIjo0Njg1OTI0MjA0NTgxMCwibGFzdF92YWx1ZSI6NDY4NTkyNDIwNDU4MTB9",
+        "node": {
+          "id": "Z2lkOi8vc2hvcGlmeS9DaGVja291dExpbmVJdGVtLzQ2ODU5MjQyMDQ1ODEwP2NoZWNrb3V0PTRiZGYwZWY2NzIzYTk2YTIyOWM1OThlMTkzOGVmODgx",
+          "title": "FLOWER POWDER MY SKIN",
+          "variant": {
+            "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80Njg1OTI0MjA0NTgx",
+            "title": "Default Title",
+            "price": "27.00",
+            "priceV2": { "amount": "27.0", "currencyCode": "EUR" },
+            "presentmentPrices": {
+              "pageInfo": { "hasNextPage": false, "hasPreviousPage": false },
+              "edges": [
+                {
+                  "node": {
+                    "price": { "amount": "42.0", "currencyCode": "CAD" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "CAD" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "31.0", "currencyCode": "CHF" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "CHF" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "204.0", "currencyCode": "DKK" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "DKK" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "27.0", "currencyCode": "EUR" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "EUR" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "24.0", "currencyCode": "GBP" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "GBP" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "109.0", "currencyCode": "ILS" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "ILS" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "2500.0", "currencyCode": "RUB" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "RUB" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "907.0", "currencyCode": "UAH" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "UAH" }
+                  }
+                },
+                {
+                  "node": {
+                    "price": { "amount": "33.0", "currencyCode": "USD" },
+                    "compareAtPrice": { "amount": "0.0", "currencyCode": "USD" }
+                  }
+                }
+              ]
+            },
+            "weight": 0,
+            "available": true,
+            "sku": "SKU-flower-powder",
+            "compareAtPrice": "0.00",
+            "compareAtPriceV2": { "amount": "0.0", "currencyCode": "EUR" },
+            "image": {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0SW1hZ2UvMTYzNDE1OTc3NDkzMDI=",
+              "src": "https://cdn.shopify.com/s/files/1/2367/5871/products/FLOWER_small_5cac56e6-a4a0-4a66-9702-1c2ba12be3e3.png?v=1592820582",
+              "altText": null
+            },
+            "selectedOptions": [{ "name": "Title", "value": "Default Title" }],
+            "product": {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzEyNDk5MzU1NDAz",
+              "handle": "flower-powder-my-skin"
+            }
+          },
+          "quantity": 2,
+          "discountAllocations": [
+            {
+              "allocatedAmount": { "amount": "500.0", "currencyCode": "RUB" },
+              "discountApplication": {
+                "targetSelection": "ALL",
+                "allocationMethod": "ACROSS",
+                "targetType": "LINE_ITEM",
+                "value": { "percentage": 10 },
+                "code": "EPAM",
+                "applicable": true
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

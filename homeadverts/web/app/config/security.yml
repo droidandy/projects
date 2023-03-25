@@ -1,0 +1,101 @@
+security:
+    #    always_authenticate_before_granting: true
+    encoders:
+        FOS\UserBundle\Model\UserInterface:
+            id: ha.user.security.encoder.bcrypt
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+    firewalls:
+        main:
+            pattern: ^/
+            logout:
+                path: fos_user_security_logout
+                target: ha_homepage
+            anonymous: true
+            form_login:
+                use_referer: true
+            oauth:
+                resource_owners:
+                    facebook: "/login/check-facebook"
+                    google:  "/login/check-google"
+                    twitter:  "/login/check-twitter"
+                    linkedin:  "/login/check-linkedin"
+                login_path: /oauth/complete
+                default_target_path: /oauth/complete
+                failure_path: /oauth/failure
+                oauth_user_provider:
+                    service: ha.oauth_user.provider
+                use_referer: false
+    access_control:
+        # MVC =====================================================
+        - { path: ^/connect/service/, role: ROLE_USER }
+        
+        # Articles
+        - { path: ^/story/new, role: [ROLE_USER] }
+        - { path: ^/story/import, role: [ROLE_USER] }
+        - { path: ^/story/edit/, role: [ROLE_USER] }
+        
+        # Users
+        - { path: ^/en/user/, role: ROLE_USER }
+        
+        # Stream
+        - { path: ^/en/stream, role: [ROLE_USER] }
+        
+        # Statistics
+        - { path: ^/en/statistics, roles: [ROLE_AGENT, ROLE_USER] }
+        
+        # Uploads
+        - { path: ^/upload, role: [ROLE_USER] }
+        
+        
+        # API =====================================================
+        # Admin
+        - { path: ^/api/admin/property, role: [ROLE_AGENT] }
+        - { path: ^/api/admin/article, role: [ROLE_USER] }
+        - { path: ^/api/admin/, role: [ROLE_ADMIN] }
+        - { path: ^/api/messenger/, role: [ROLE_USER] }
+        
+        # Notification
+        - { path: ^/api/notification/, role: [ROLE_USER] }
+        
+        # Statistics
+        - { path: ^/api/statistics/property/, roles: [ROLE_AGENT] }
+        - { path: ^/api/statistics/article/, roles: [ROLE_USER] }
+        
+        # Location
+        - { path: ^/api/location/, role: [ROLE_USER] }
+        
+        # Article
+        - { path: ^/api/article/edit, role: [ROLE_USER] }
+        - { path: ^/api/article/[^/]+/like, roles: [ROLE_USER] }
+        
+        # Property
+        - { path: ^/api/property/[^/]+/like, roles: [ROLE_USER] }
+        
+        # Comment
+        - { path: ^/api/comment, role: [ROLE_USER] }
+        
+        # Tag
+        - { path: ^/api/tag, role: [ROLE_USER] }
+        - { path: ^/api/tag/[^/]+/follow, role: [ROLE_USER] }
+        - { path: ^/api/tag/select, role: [ROLE_USER] }
+        
+        # Notification
+        - { path: ^/api/notification, role: [ROLE_USER] }
+        
+        # User
+        - { path: ^/api/user/billing, role: [ROLE_USER] }
+        - { path: ^/api/user/settings, role: [ROLE_USER] }
+        - { path: ^/api/user/[^/]+/follow, role: [ROLE_USER] }
+        - { path: ^/api/user/upgrade, role: [ROLE_USER] }
+        
+        - { path: ^/api/user/login, allow_if: "is_anonymous() and !is_authenticated()" }
+    
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_AGENT
+        
+        ROLE_COMPANY:     ROLE_OFFICE
+        ROLE_OFFICE:      ROLE_AGENT
+        ROLE_AGENT:       ROLE_WRITER
+        ROLE_WRITER:      ROLE_USER

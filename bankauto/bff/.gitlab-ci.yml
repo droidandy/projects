@@ -1,0 +1,8 @@
+include:
+  - project: cde106/devcloud/dat/ci
+    ref: '0.0.2'
+    file: .common.ci.yaml
+
+variables:
+  K8S_NAMESPACE: 'marketplace'
+  SERVICE_NAME: 'bff'

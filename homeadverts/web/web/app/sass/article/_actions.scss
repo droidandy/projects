@@ -1,0 +1,94 @@
+.article-actions {
+  z-index: 3;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  margin-right: 5px;
+  color: #fff;
+  width: 40px;
+  opacity: 0;
+  @include transition(0.6s);
+
+  .edit-actions .mdl-button {
+    background: #fff;
+    color: #757575;
+
+    i {
+      font-size: 16px;
+    }
+    a {
+      width: 100%;
+      display: inline-block;
+    }
+
+    &:hover {
+      &:hover {
+        background: #f1f1f1;
+        color: #212121;
+      }
+    }
+  }
+}
+
+.article-cover {
+  .article-actions {
+    position: absolute;
+    right: -80px;
+    top: 70px;
+    z-index: 2;
+  }
+}
+
+.gallery-cell,
+.property-list-item,
+.story-card {
+  &:hover {
+    .article-actions {
+      opacity: 1;
+    }
+  }
+}
+
+.recommended-editorials.\--fullheight-top,
+.recommended-editorials.\--fullheight {
+  .cover-slide:hover {
+    .article-actions {
+      opacity: 1;
+    }
+  }
+}
+
+.recommended-editorials.\--fullheight-top,
+.recommended-editorials.\--fullheight {
+  .article-actions {
+    position: absolute;
+    right: 0;
+    top: 130px;
+  }
+}
+
+.recommended-editorials.\--fullheight,
+.recommended-editorials.\--inline {
+  &:hover {
+    .article-actions {
+      opacity: 1;
+    }
+  }
+}
+
+.recommended-editorials.\--fullheight-top,
+.recommended-editorials.\--fullheight,
+.recommended-editorials.\--inline {
+  .column {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recommended-editorials.\--fullheight-top,
+  .recommended-editorials.\--fullheight {
+    .article-actions {
+      display: none;
+    }
+  }
+}

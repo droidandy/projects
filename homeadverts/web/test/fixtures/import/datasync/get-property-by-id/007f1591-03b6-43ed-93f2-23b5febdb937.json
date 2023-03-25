@@ -1,0 +1,381 @@
+{
+    "listingSummary": {
+        "listingId": "007f1591-03b6-43ed-93f2-23b5febdb937",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-06-12",
+        "photoCount": 14,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "EUR",
+            "amount": 10500000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 12276400
+        },
+        "propertyAddress": {
+            "city": "PARIS",
+            "district": "Paris",
+            "stateProvince": "\u00cele-de-France",
+            "stateProvinceCode": "J",
+            "postalCode": "75116",
+            "country": "France",
+            "countryCode": "FR"
+        },
+        "mlsNumbers": [
+            "PP2-1631"
+        ],
+        "RFGListingId": "M7N96N",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/m7n96n",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Apartment",
+        "propertyStyle": "Other Style",
+        "propertyName": "Avenue Foch",
+        "totalBath": 7,
+        "buildingArea": "400 Sq. M",
+        "noOfBedrooms": 4,
+        "squareFootage": 4305.56,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/187C1BA3-11BE-4BFC-9176-669540A2723E",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-07-05T05:21:58.633",
+        "agents": [
+            {
+                "id": "a8597029-534c-4b8f-9c1d-2cc7ebc498dc",
+                "name": "Kyan Zare",
+                "firstName": "Kyan",
+                "lastName": "Zare",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/CF090975-1A8F-4EF9-9615-285057DD15D2",
+                "emailAddress": "k.zare@proprietesparisiennes.com",
+                "businessPhone": "+33 (0)1 44 94 99 86",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "89017a76-4108-4c93-94af-493c764fbfe6",
+                    "RFGOfficeId": "0001 ",
+                    "companyId": "3f8af3e6-dd27-4296-ba67-ffb295a85785",
+                    "companyName": "Propri\u00e9t\u00e9s Parisiennes Sotheby's International Realty",
+                    "RFGCompanyId": "810051",
+                    "brandCode": "SIR",
+                    "name": "Propri\u00e9t\u00e9s Parisiennes Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "95, rue du Faubourg Saint Honor\u00e9",
+                        "city": "Paris",
+                        "stateProvince": "Paris",
+                        "stateProvinceCode": "75",
+                        "postalCode": "75008",
+                        "country": "France",
+                        "countryCode": "FR",
+                        "latitude": 48.872173879113,
+                        "longitude": 2.31263012
+                    },
+                    "phoneNumber": "+33 (0)1 44 94 99 80",
+                    "emailAddress": "rivedroite@sothebysrealty.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 2,
+    "halfBath": 5,
+    "threeQuarterBath": 2,
+    "parkingPlaces": 0,
+    "yearBuilt": "1900",
+    "totalRooms": 6,
+    "providerKey": "007f1591-03b6-43ed-93f2-23b5febdb937",
+    "propertyFeatures": [
+        {
+            "groupName": "Furnished Information",
+            "description": "Unfurnished"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "eGallery Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Overlooking the gardens of Avenue Foch, this newly renovated 3rd floor apartment in a classical Parisian turn-of-the-century freestone building proposes: Entrance gallery Living room with 3 large French-windows Dining room in lacquered Chinese style boiseries Master suite with bathroom and dressing room 3 other bedrooms with their bathrooms Kitchen and linen room Service one-bedroom apt. Cellar Highest standards renovation and decoration by an internationally acclaimed designer. Air conditioning and home automation.",
+            "htmlRemark": "Overlooking the gardens of Avenue Foch, this newly renovated 3rd floor apartment in a classical Parisian turn-of-the-century freestone building proposes:\nEntrance gallery\nLiving room with 3 large French-windows\nDining room in lacquered Chinese style boiseries\nMaster suite with bathroom and dressing room\n3 other bedrooms with their bathrooms\nKitchen and linen room\nService one-bedroom apt. \nCellar\n\nHighest standards renovation and decoration by an internationally acclaimed designer.\nAir conditioning and home automation."
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "fr",
+            "remark": "Sur les Jardins de l'Avenue Foch au sud, au 3e \u00e9tage d'un tr\u00e8s bel immeuble fin-de-si\u00e8cle en pierre-de-taille, ce somptueux appartement d'environ 400m2 en parfait \u00e9tat, propose : Entr\u00e9e en galerie Grand salon (3 fen\u00eatres - chemin\u00e9e) Salle-\u00e0-manger en boiseries laqu\u00e9es Chambre de ma\u00eetre - salle de bain - dressing 3 chambres - 3 salles de bain Cuisine et lingerie Studio de service Cave R\u00e9novation et d\u00e9coration d'exceptionnelle qualit\u00e9 Domotique et climatisation",
+            "htmlRemark": "Sur les Jardins de l'Avenue Foch au sud, au 3e \u00e9tage d'un tr\u00e8s bel immeuble fin-de-si\u00e8cle en pierre-de-taille, ce somptueux appartement d'environ 400m2 en parfait \u00e9tat, propose :\nEntr\u00e9e en galerie\nGrand salon (3 fen\u00eatres - chemin\u00e9e)\nSalle-\u00e0-manger en boiseries laqu\u00e9es\nChambre de ma\u00eetre - salle de bain - dressing\n3 chambres - 3 salles de bain\nCuisine et lingerie\nStudio de service\nCave\nR\u00e9novation et d\u00e9coration d'exceptionnelle qualit\u00e9\nDomotique et climatisation"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/m7n96n",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "C751763B-C4B2-48F4-BDD4-2BF82CB803AD",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/C751763B-C4B2-48F4-BDD4-2BF82CB803AD",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "58ACFF2F-2200-4F08-97F9-2CE9A74EFA22",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/58ACFF2F-2200-4F08-97F9-2CE9A74EFA22",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "567ADD7B-409B-4158-9476-50E2724A6E4D",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/567ADD7B-409B-4158-9476-50E2724A6E4D",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "67CC2180-9A47-49F9-8E21-53EB6D76BC76",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/67CC2180-9A47-49F9-8E21-53EB6D76BC76",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "B5B748AE-F851-44D1-8300-5CE4040D3D0A",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/B5B748AE-F851-44D1-8300-5CE4040D3D0A",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "187C1BA3-11BE-4BFC-9176-669540A2723E",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/187C1BA3-11BE-4BFC-9176-669540A2723E",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "C1637F7A-5D29-4709-B297-85605FD51C0E",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/C1637F7A-5D29-4709-B297-85605FD51C0E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "27B25A63-DD55-4B8E-B062-87E2CFA95A9B",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/27B25A63-DD55-4B8E-B062-87E2CFA95A9B",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "52E22754-D680-4A55-9943-9078806CD069",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/52E22754-D680-4A55-9943-9078806CD069",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "1439C491-7898-4412-BB04-97B7B5FCA7CC",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/1439C491-7898-4412-BB04-97B7B5FCA7CC",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "A0348F3E-D587-4121-8B99-A1036E3B119E",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/A0348F3E-D587-4121-8B99-A1036E3B119E",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "52444763-9A49-41AA-9E50-A896D633349A",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/52444763-9A49-41AA-9E50-A896D633349A",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "7947146D-4DF2-4EA9-80BB-B4A7E6DC54DC",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/7947146D-4DF2-4EA9-80BB-B4A7E6DC54DC",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "DEE4A2E0-7F0E-41C2-B694-D9227F0AA347",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/DEE4A2E0-7F0E-41C2-B694-D9227F0AA347",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1582,
+            "width": 2374,
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        },
+        {
+            "mediaID": "83E597DE-32C4-4897-BE4F-EA78E44092AE",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.sothebysrealty-france.com\/annonces\/details\/refPP2-1631\/",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-06-15T08:16:26.240"
+        }
+    ],
+    "propertyRooms": [
+        {
+            "sequenceNumber": 1,
+            "level": "1",
+            "name": "Kitchen"
+        },
+        {
+            "sequenceNumber": 2,
+            "level": "1",
+            "name": "Kitchen"
+        },
+        {
+            "sequenceNumber": 3,
+            "level": "1",
+            "name": "Dining Room"
+        },
+        {
+            "sequenceNumber": 4,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 5,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 6,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 7,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 8,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 9,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 10,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 11,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 12,
+            "level": "1",
+            "name": "Half Bath"
+        },
+        {
+            "sequenceNumber": 13,
+            "level": "1",
+            "name": "Half Bath"
+        },
+        {
+            "sequenceNumber": 14,
+            "level": "1",
+            "name": "Half Bath"
+        },
+        {
+            "sequenceNumber": 15,
+            "level": "1",
+            "name": "Half Bath"
+        },
+        {
+            "sequenceNumber": 16,
+            "level": "1",
+            "name": "Half Bath"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "PP2-1631",
+            "isPrimary": true
+        }
+    ]
+}

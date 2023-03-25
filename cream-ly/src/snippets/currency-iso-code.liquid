@@ -1,0 +1,9 @@
+{%- assign currency = cart.currency.iso_code -%}
+{%- assign alternativeCurrency = cart.attributes.currency -%}
+
+{%-comment%}for currencies not supported by shopify payments{%endcomment-%}
+{%- if alternativeCurrency == 'BYN' -%}
+{{-alternativeCurrency-}}
+{%- else -%}
+{%- if currency -%}{{-currency-}}{%- else -%}EUR{%- endif -%}
+{%- endif -%}

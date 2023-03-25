@@ -1,0 +1,107 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.SiteHeader {
+  .main_header {
+    height: 60px;
+    padding-left: 0;
+    background: #fff;
+    font-size: 1.7rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+
+    .row {
+      margin: 0;
+    }
+
+    nav {
+      a {
+        color: var(--purplish-grey);
+        padding-bottom: 0 !important;
+
+        &.highlight {
+          color: var(--lavender);
+        }
+
+        &.first {
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+    .logo {
+      .logo_md {
+        height: 50px;
+        content: url("./logo_md.png");
+      }
+
+      .logo_xs {
+        min-width: 100px;
+        width: 100px;
+        content: url("./logo_xs.png");
+      }
+    }
+
+    .cart_column {
+      @media screen and (max-width: 500px) {
+        flex: 0 0 51%;
+        max-width: 51%;
+        font-size: 0.9em;
+
+        .region-select {
+          display: none;
+        }
+
+        /* hide empty cart on mobile*/
+        // a.cart:not(.active) {display:none}
+      }
+
+      select.currencySelect {
+        width: 60px !important;
+        border: 0;
+        padding: 0;
+        display: inline-block;
+        height: 20px !important;
+        color: var(--purplish-grey);
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin-right: 10px !important;
+        background-image: url(./ico-select.svg);
+
+        &.currencySelectBYN {
+          width: 75px;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 55px !important;
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    /* overrisde bootstrap column sizes for small screens */
+    .main_header .navbar-left {
+      flex: 0 0 30%;
+      max-width: 30%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .main_header {
+      height: 68px;
+      padding-bottom: 0.6rem;
+    }
+
+    .main_header .cart_column {
+      margin-bottom: 0 !important;
+    }
+
+    .main_header .row {
+      align-items: flex-end;
+      margin: 0;
+    }
+  }
+}

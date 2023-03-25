@@ -1,0 +1,257 @@
+{
+  "medical": {
+    "networks": [
+      {
+        "type": "HMO",
+        "planName": "Name of plan"
+      },
+      {
+        "type": "HMO 2",
+        "planName": "Name of plan"
+      },
+      {
+        "type": "HMO 3",
+        "planName": "Name of plan"
+      },
+      {
+        "type": "HMO 4",
+        "planName": "Name of plan"
+      },
+      {
+        "type": "HMO 5",
+        "planName": "Name of plan"
+      },
+      {
+        "type": "HMO 6",
+        "planName": "Name of plan"
+      }
+    ],
+    "contributions": [
+      {
+        "planName": "Employee only",
+        "values": [
+          {
+            "value": 14
+          },
+          {
+            "value": 14
+          },
+          {
+            "value": 14
+          },
+          {
+            "value": 14
+          },
+          {
+            "value": 14
+          },
+          {
+            "value": 14
+          }
+        ]
+      },
+      {
+        "planName": "Employee + spouse",
+        "values": [
+          {
+            "value": 16
+          },
+          {
+            "value": 16
+          },
+          {
+            "value": 16
+          },
+          {
+            "value": 16
+          },
+          {
+            "value": 16
+          },
+          {
+            "value": 16
+          }
+        ]
+      },
+      {
+        "planName": "Employee + child",
+        "values": [
+          {
+            "value": 34
+          },
+          {
+            "value": 34
+          },
+          {
+            "value": 34
+          },
+          {
+            "value": 34
+          },
+          {
+            "value": 34
+          },
+          {
+            "value": 34
+          }
+        ]
+      },
+      {
+        "planName": "Employee + family",
+        "values": [
+          {
+            "value": 35
+          },
+          {
+            "value": 35
+          },
+          {
+            "value": 35
+          },
+          {
+            "value": 35
+          },
+          {
+            "value": 35
+          },
+          {
+            "value": 35
+          }
+        ]
+      }
+    ],
+    "total": [
+      {
+        "value": 97
+      },
+      {
+        "value": 97
+      },
+      {
+        "value": 97
+      },
+      {
+        "value": 97
+      },
+      {
+        "value": 97
+      },
+      {
+        "value": 97
+      }
+    ]
+  },
+  "dental": {
+    "networks": [
+      {
+        "type": "DHMO",
+        "planName": "Name of plan"
+      },
+      {
+        "type": "DPPO",
+        "planName": "Name of plan"
+      }
+    ],
+    "contributions": [
+      {
+        "planName": "Employee only",
+        "values": [
+          {
+            "value": 14
+          },
+          {
+            "value": 14
+          }
+        ]
+      },
+      {
+        "planName": "Employee + spouse",
+        "values": [
+          {
+            "value": 16
+          },
+          {
+            "value": 16
+          }
+        ]
+      },
+      {
+        "planName": "Employee + child",
+        "values": [
+          {
+            "value": 34
+          },
+          {
+            "value": 34
+          }
+        ]
+      },
+      {
+        "planName": "Employee + family",
+        "values": [
+          {
+            "value": 35
+          },
+          {
+            "value": 35
+          }
+        ]
+      }
+    ],
+    "total": [
+      {
+        "value": 97
+      },
+      {
+        "value": 97
+      }
+    ]
+  },
+  "vision": {
+    "networks": [
+      {
+        "type": "VISION",
+        "planName": "Name of plan"
+      }
+    ],
+    "contributions": [
+      {
+        "planName": "Employee only",
+        "values": [
+          {
+            "value": 14
+          }
+        ]
+      },
+      {
+        "planName": "Employee + spouse",
+        "values": [
+          {
+            "value": 16
+          }
+        ]
+      },
+      {
+        "planName": "Employee + child",
+        "values": [
+          {
+            "value": 34
+          }
+        ]
+      },
+      {
+        "planName": "Employee + family",
+        "values": [
+          {
+            "value": 35
+          }
+        ]
+      }
+    ],
+    "total": [
+      {
+        "value": 97
+      }
+    ]
+  }
+}

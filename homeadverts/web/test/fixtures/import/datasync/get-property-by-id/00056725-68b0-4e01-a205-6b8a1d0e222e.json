@@ -1,0 +1,264 @@
+{
+  "listingSummary": {
+    "listingId": "00056725-68b0-4e01-a205-6b8a1d0e222e",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-07-22",
+    "photoCount": 10,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "EUR",
+      "amount": 780000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 914200.0
+    },
+    "propertyAddress": {
+      "city": "Portimao",
+      "district": "Faro",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "geoCodeConfidenceLevel": "High"
+    },
+    "mlsNumbers": [
+      "106160065"
+    ],
+    "RFGListingId": "FN3FGJ",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/fn3fgj",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Residential Lot",
+    "propertyStyle": "Other Style",
+    "propertyName": "Stand for Sale",
+    "totalBath": 0,
+    "lotSize": "355150 SM",
+    "buildingArea": "0 Sq. M",
+    "squareFootage": 0.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/845F0306-F624-401C-9373-C7C6F0068BC0",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-22T05:21:49.223",
+    "agents": [
+      {
+        "id": "fe3880ae-df09-40ab-adaa-994d088e8bd1",
+        "name": "Joana Santos",
+        "firstName": "Joana",
+        "lastName": "Santos",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/C549C852-F171-4207-8B6B-ADD250CA186C",
+        "emailAddress": "jsantos.algarvecarvoeiro@sirpt.com",
+        "businessPhone": "351917707990",
+        "isPrimary": true,
+        "office": {
+          "officeId": "e71b4ceb-e81f-4710-9d32-4c14068b424e",
+          "RFGOfficeId": "0008 ",
+          "companyId": "790b8eef-9dc7-408b-816b-422a117286bf",
+          "companyName": "Portugal Sotheby's International Realty",
+          "RFGCompanyId": "810032",
+          "brandCode": "SIR",
+          "name": "Portugal Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "Rua do Povo do Burro 3",
+            "city": "Carvoeiro",
+            "stateProvince": "Faro",
+            "stateProvinceCode": "08",
+            "postalCode": "8400-502",
+            "country": "Portugal",
+            "countryCode": "PT",
+            "latitude": 37.0963402,
+            "longitude": -8.4674997
+          },
+          "phoneNumber": "+351 919 056 919",
+          "emailAddress": "algarvecarvoeiro@sirpt.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": false
+  },
+  "fullBath": 0,
+  "parkingPlaces": 0,
+  "yearBuilt": "1984",
+  "providerKey": "00056725-68b0-4e01-a205-6b8a1d0e222e",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Farm & Ranch"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Headline",
+      "languageCode": "en",
+      "remark": "Quality of Life",
+      "htmlRemark": "Quality of Life"
+    },
+    {
+      "type": "Headline",
+      "languageCode": "pt",
+      "remark": "Qualidade de Vida",
+      "htmlRemark": "Qualidade de Vida"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Excellent land/plot with luxury location near Portimão and the most beautiful beaches and golf courses in the region, very private with a generous plot area and feasibility constrution. This is the land that who have dreamed and may be yours, contact us and you will not regret",
+      "htmlRemark": "Excellent land/plot with luxury location near Portimão and the most beautiful beaches and golf courses in the region, very private with a generous plot area and feasibility constrution. This is the land that who have dreamed and may be yours, contact us and you will not regret"
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "pt",
+      "remark": "Excelente terreno com localização de luxo perto de Portimão e das praias e campos de Golfe mais bonitas da região, bastante privativo com uma área de lote muito generosa, assim como, de viabilidade de construção. Este é o terreno que tem procurado e poderá ser seu, consulte-nos e não se arrependerá",
+      "htmlRemark": "Excelente terreno com localização de luxo perto de Portimão e das praias e campos de Golfe mais bonitas da região, bastante privativo com uma área de lote muito generosa, assim como, de viabilidade de construção. Este é o terreno que tem procurado e poderá ser seu, consulte-nos e não se arrependerá"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Local IDX URL",
+      "url": "http://www.sothebysrealtypt.com/imoveis/show.aspx?idimovel=17675&idioma=pt1",
+      "contentLanguageCode": "en"
+    },
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/fn3fgj",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "28FB6B53-A0AE-44F7-85B1-1849EFAC533A",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/28FB6B53-A0AE-44F7-85B1-1849EFAC533A",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "BEABCE07-691E-4677-8388-31D00BD2865A",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/BEABCE07-691E-4677-8388-31D00BD2865A",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "2EAF4FA7-F2D4-4B10-B5DC-5473C7E210CD",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/2EAF4FA7-F2D4-4B10-B5DC-5473C7E210CD",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "D5144D67-7307-401B-B0CB-6BEA712E88BD",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/D5144D67-7307-401B-B0CB-6BEA712E88BD",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "BF2DA6D3-7024-46EB-83BB-6D0539034767",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/BF2DA6D3-7024-46EB-83BB-6D0539034767",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "CCF048F0-C8CA-4016-A0C7-70A6C35313EA",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/CCF048F0-C8CA-4016-A0C7-70A6C35313EA",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "353DB164-44C7-4DB4-90F7-868A3BCB4FDB",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/353DB164-44C7-4DB4-90F7-868A3BCB4FDB",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "A62DDBD2-A0BA-48EE-9CDB-A43FB55B952D",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/A62DDBD2-A0BA-48EE-9CDB-A43FB55B952D",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "845F0306-F624-401C-9373-C7C6F0068BC0",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/845F0306-F624-401C-9373-C7C6F0068BC0",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "EA683A14-CC0C-4F62-B3DF-EE45E8BFE0A0",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/EA683A14-CC0C-4F62-B3DF-EE45E8BFE0A0",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3000,
+      "width": 4000,
+      "lastUpdateOn": "2018-04-03T23:58:07.950"
+    },
+    {
+      "mediaID": "0E34A6E6-0F6F-4772-BB4F-FBCCA940EB20",
+      "sequenceNumber": 1,
+      "url": "http://www.sothebysrealtypt.com/imoveis/show.aspx?idimovel=17675&idioma=pt1",
+      "isDefault": true,
+      "caption": "Stand for Sale",
+      "format": "URL",
+      "category": "Local Listing Link",
+      "lastUpdateOn": "2017-12-10T03:31:12.937"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "106160065",
+      "isPrimary": true
+    }
+  ]
+}

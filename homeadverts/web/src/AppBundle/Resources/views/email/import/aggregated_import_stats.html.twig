@@ -1,0 +1,80 @@
+Summary
+{% for summary in summaries %}
+    Import {{ summary.franchise }} for {{ summary.date_added }}
+        Job ID: {{ summary.job_id }}
+        Type: {{ summary.type }}
+        Timing:
+            Total: {{ summary.time_summary.total_time }}
+            Deploy: {{ summary.time_summary.deploy_time }}
+            Extracting: {{ summary.time_summary.extracting_time }}
+            Company Extracting: {{ summary.time_summary.company_extracting_time }}
+            Office Extracting: {{ summary.time_summary.office_extracting_time }}
+            Processing: {{ summary.time_summary.processing_time }}
+            Company Processing: {{ summary.time_summary.company_processing_time }}
+            Office Processing: {{ summary.time_summary.office_processing_time }}
+            User Processing: {{ summary.time_summary.user_processing_time }}
+            Property Processing: {{ summary.time_summary.property_processing_time }}
+            Company removal: {{ summary.time_summary.company_removal_time }}
+            Office removal: {{ summary.time_summary.office_removal_time }}
+            User removal: {{ summary.time_summary.user_removal_time }}
+            Property removal: {{ summary.time_summary.property_removal_time }}
+        Feed stats:
+            Company:
+                Total: {{ summary.feed_summary.company.total }}
+                Processed: {{ summary.feed_summary.company.processed }}
+                Skipped: {{ summary.feed_summary.company.skipped }}
+                Updated: {{ summary.feed_summary.company.updated }}
+                Added: {{ summary.feed_summary.company.added }}
+                Removed: {{ summary.feed_summary.company.removed }}
+                Errors: {{ summary.feed_summary.company.errors }}
+            Office:
+                Total: {{ summary.feed_summary.office.total }}
+                Processed: {{ summary.feed_summary.office.processed }}
+                Skipped: {{ summary.feed_summary.office.skipped }}
+                Updated: {{ summary.feed_summary.office.updated }}
+                Added: {{ summary.feed_summary.office.added }}
+                Removed: {{ summary.feed_summary.office.removed }}
+                Errors: {{ summary.feed_summary.office.errors }}
+            Property:
+                Total: {{ summary.feed_summary.property.total }}
+                Processed: {{ summary.feed_summary.property.processed }}
+                Skipped: {{ summary.feed_summary.property.skipped }}
+                Updated: {{ summary.feed_summary.property.updated }}
+                Added: {{ summary.feed_summary.property.added }}
+                Removed: {{ summary.feed_summary.property.removed }}
+                Errors: {{ summary.feed_summary.property.errors.total }}
+                Errors with bedrooms: {{ summary.feed_summary.property.errors.bedroom }}
+                Errors with metadata: {{ summary.feed_summary.property.errors.metadata }}
+                Errors with address: {{ summary.feed_summary.property.errors.address }}
+                Errors with price: {{ summary.feed_summary.property.errors.price }}
+                Errors with photos: {{ summary.feed_summary.property.errors.photos }}
+                Other errors: {{ summary.feed_summary.property.errors.other }}
+            User:
+                Total: {{ summary.feed_summary.user.total }}
+                Processed: {{ summary.feed_summary.user.processed }}
+                Skipped: {{ summary.feed_summary.user.skipped }}
+                Updated: {{ summary.feed_summary.user.updated }}
+                Added: {{ summary.feed_summary.user.added }}
+                Removed: {{ summary.feed_summary.user.removed }}
+                Errors: {{ summary.feed_summary.user.errors }}
+        DB stats:
+            Company:
+                Total: {{ summary.db_summary.company.total }}
+                Active: {{ summary.db_summary.company.active }}
+                Soft deleted: {{ summary.db_summary.company.soft_deleted }}
+            Office:
+                Total: {{ summary.db_summary.office.total }}
+                Active: {{ summary.db_summary.office.active }}
+                Soft deleted: {{ summary.db_summary.office.soft_deleted }}
+            Property:
+                Total: {{ summary.db_summary.property.total }}
+                Active: {{ summary.db_summary.property.active }}
+                Inactive: {{ summary.db_summary.property.inactive }}
+                Incomplete: {{ summary.db_summary.property.incomplete }}
+                Invalid: {{ summary.db_summary.property.invalid }}
+                Soft deleted: {{ summary.db_summary.property.soft_deleted }}
+            User:
+                Total: {{ summary.db_summary.user.total }}
+                Active: {{ summary.db_summary.user.active }}
+                Soft deleted: {{ summary.db_summary.user.soft_deleted }}
+{% endfor %}

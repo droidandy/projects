@@ -1,0 +1,85 @@
+{
+  "rfpQuoteOptionId":60,
+  "carrier":"Anthem Blue Cross",
+  "riders":[
+
+  ],
+  "networkRidersDtos":[
+    {
+      "rfpQuoteOptionNetworkId":12,
+      "carrier":"Anthem Blue Cross",
+      "carrierId":3,
+      "administrativeFeeId":null,
+      "planNameByNetwork":"V-Premier HMO 10/100% Rx:Essential Formulary $5/$15/$25/$45/30%",
+      "networkType":"HMO",
+      "riders":[
+        {
+          "riderId":27,
+          "riderCode":"$10 Chiro",
+          "riderDescription":"Max 30 Visits",
+          "selected":true,
+          "selectable":true,
+          "tier1Rate":2.29,
+          "tier2Rate":4.8,
+          "tier3Rate":6.86,
+          "tier4Rate":0.0
+        },
+        {
+          "riderId":28,
+          "riderCode":"$10 Chiro, Acupuncture",
+          "riderDescription":"Max 30 Visits",
+          "selected":true,
+          "selectable":true,
+          "tier1Rate":3.58,
+          "tier2Rate":7.51,
+          "tier3Rate":10.73,
+          "tier4Rate":0.0
+        }
+      ]
+    },
+    {
+      "rfpQuoteOptionNetworkId":13,
+      "carrier":"Anthem Blue Cross",
+      "carrierId":3,
+      "administrativeFeeId":null,
+      "planNameByNetwork":"Solution PPO 1500/15/20 Rx:Essential Formulary $5/$20/$40/$60/30%",
+      "networkType":"PPO",
+      "riders":[
+
+      ]
+    },
+    {
+      "rfpQuoteOptionNetworkId":14,
+      "carrier":"Anthem Blue Cross",
+      "carrierId":3,
+      "administrativeFeeId":null,
+      "planNameByNetwork":"Solution PPO 1500/15/20 Rx:Essential Formulary $5/$20/$40/$60/30%",
+      "networkType":"PPO",
+      "riders":[
+
+      ]
+    },
+    {
+      "rfpQuoteOptionNetworkId":15,
+      "carrier":"Anthem Blue Cross",
+      "carrierId":3,
+      "administrativeFeeId":null,
+      "planNameByNetwork":null,
+      "networkType":"PPO",
+      "riders":[
+
+      ]
+    },
+    {
+      "rfpQuoteOptionNetworkId":16,
+      "carrier":"Anthem Blue Cross",
+      "carrierId":3,
+      "administrativeFeeId":null,
+      "planNameByNetwork":"EPO 1200/15/20 Rx:Essential Formulary $5/$20/$40/$60/30%",
+      "networkType":"PPO",
+      "riders":[
+
+      ]
+    }
+  ]
+}

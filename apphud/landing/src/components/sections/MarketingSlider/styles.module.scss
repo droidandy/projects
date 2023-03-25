@@ -1,0 +1,101 @@
+@import "~styles/variables";
+
+.slider {
+  padding-bottom: 200px;
+
+  h2 {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  & .slick {
+    margin-bottom: 42px;
+    margin-left: -10px;
+    margin-right: -10px;
+    outline: none;
+
+    img {
+      margin: 0 auto;
+    }
+
+    :global(.slick-dots) {
+      li {
+        display: inline-flex;
+        width: 10px;
+        height: 10px;
+        align-items: center;
+        justify-content: center;
+
+        &:global(.slick-active) {
+          button {
+            background-color: $blue;
+          }
+        }
+
+        button {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: $blue-grey;
+          padding: 4px;
+          margin: 0;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  & .slide {
+    outline: none;
+
+    padding: 0 10px;
+    min-height: 483px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .imageBig {
+    display: block;
+  }
+  & .imageSmall {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 80px;
+
+    & .slide {
+      display: initial;
+      min-height: initial;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-bottom: 24px;
+    }
+
+    & .imageBig {
+      display: none;
+    }
+    & .imageSmall {
+      display: block;
+    }
+  }
+}

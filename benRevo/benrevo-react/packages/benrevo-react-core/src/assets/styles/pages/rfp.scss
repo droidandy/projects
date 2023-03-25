@@ -1,0 +1,453 @@
+@import '../variables';
+@import '../variables-theme';
+@import './rfp/carrier';
+@import './rfp/rates';
+@import './rfp/products';
+
+.medicalRfpMainContainer {
+  .stateSitused {
+    width: 260px !important;
+  }
+
+  .rfpClient {
+    .link-tip {
+      margin-left: 5px;
+      font-size: 12px;
+    }
+
+    .field-description {
+      color: $RFP_NAVIGATION_ITEM_COLOR;
+      text-align: right;
+      margin-top: 10px;
+      font-size: 13px;
+
+      &.textarea-description {
+        width: 80%;
+      }
+    }
+
+    .ui.label.customFormValidation {
+      // margin-top: 10px;
+    }
+
+    .ui.input:not(.fluid) input[type="text"], .datepicker {
+      min-width: 260px;
+    }
+
+    .ui.form {
+      .inline.field {
+        .ui.dropdown {
+          float: left;
+        }
+
+        .ui.dropdown + .ui.input {
+          width: auto;
+
+          input[type="text"] {
+            width: 82px;
+            min-width: inherit;
+          }
+        }
+      }
+    }
+
+    .pageFooterActions {
+      .ui.loader {
+        float: right;
+        margin-right: 20px;
+        margin-top: 7px;
+      }
+    }
+  }
+
+  .rfpClientQuote {
+    .ui.table.clear-value-table {
+      margin-bottom: 20px;
+
+      tr:first-child {
+        background-color: $RFP_CLEAR_VALUE_STRIPPER_COLOR;
+      }
+
+      .ui.image {
+        background: none;
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+      }
+
+      .ui.image.clear-value-logo {
+        width: 85px;
+        height: 40px;
+      }
+
+      .logo {
+        width: 105px;
+        height: 30px;
+        margin-right: 20px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 5px;
+
+        li {
+          font-size: 15px;
+          &:not(:first-child) {
+            margin-top: 5px;
+          }
+
+          &.item-bold {
+            font-weight: 600;
+
+            &:before {
+              font-weight: 600;
+            }
+          }
+
+          &:before {
+            content: "•";
+            font-size: 12px;
+            padding-right: 20px;
+            margin-left: -20px;
+          }
+        }
+      }
+    }
+
+    .clear-value-note {
+      text-align: center;
+      font-style: italic;
+      margin: 50px 0 0 30px;
+      color: #0f0f0f;
+    }
+  }
+
+  &.preview-RFP {
+    .pdf-canvas {
+      width: 100%;
+      //  height: 1200px;
+
+      canvas {
+        margin: 0 auto;
+      }
+    }
+
+    .previewFooterActions {
+      .divider {
+        width: 100%;
+        border-top: 1px solid rgba(34,36,38,.15);
+        border-bottom: 1px solid rgba(255,255,255,.1);
+        height: 1px;
+        margin: 1rem 0;
+      }
+    }
+
+    #pdf-controls, .pdf-downloads-controls {
+      .downloading {
+        font-size: 13px !important;
+        font-style: italic !important;
+        margin-top: 20px;
+      }
+      .complete {
+        display: inline-block;
+        font-size: 13px;
+        font-style: italic;
+        img {
+          display: inline-flex;
+          width: 24px;
+          margin-right: 10px;
+        }
+
+        .downloading {
+          margin: 0 !important;
+          padding: 0 !important;
+
+          &.loader {
+            &:before, &:after {
+              left: -28px;
+              top: -5px;
+            }
+          }
+        }
+      }
+      .pdf-button {
+        text-transform: none;
+        font-size: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 200px;
+        margin-left: 10px;
+
+        img {
+          float: left;
+          height: 13px;
+        }
+      }
+    }
+
+    .pdf-downloads-controls {
+      .pdf-button {
+        width: 189px;
+      }
+    }
+  }
+
+  .rfpPlans {
+
+    & > .row {
+      overflow: hidden;
+    }
+
+    h3.ui.header.rfpPageSectionHeading {
+      font-size: 24px;
+      font-weight: 100;
+      line-height: 24px;
+    }
+
+    .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+
+    .labelColumn {
+      text-align: right;
+      &.network {
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    }
+
+    .adaTable {
+      margin-top: 238px;
+    }
+
+    .planInputRow {
+      height: 58px;
+    }
+
+    .carrier-dropdown {
+      .ui.selection.dropdown {
+        min-width: 0;
+      }
+    }
+
+    .plan-name {
+      font-weight: bold;
+    }
+  }
+
+  .rfpQuote {
+    .field-note {
+      margin-bottom: 25px;
+      max-width: 470px;
+      background-color: $NOTE_COLOR;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 13px;
+    }
+  }
+
+  .inner-grid-segment {
+    margin: 0;
+  }
+
+  /* Life STD LTS */
+
+  .life-std-ltd-class {
+    margin: 10px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #333333;
+      padding-bottom: 15px;
+    }
+  }
+
+  /* RFP Info Icons */
+
+  .rfp-info-icon {
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 66px;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+
+  .clear-value-logo-section {
+    background-image: url(../../img/svg/clear_value.svg);
+    width: 132px;
+    height: 72px;
+    position: absolute;
+  }
+
+  .rfp-info-medical-icon {
+    background-image: url(../../img/svg/rfp_info_medical.svg);
+  }
+
+  .rfp-info-dental-icon {
+    background-image: url(../../img/svg/rfp_info_dental.svg);
+  }
+
+  .rfp-info-vision-icon {
+    background-image: url(../../img/svg/rfp_info_vision.svg);
+  }
+
+  &.ui.stackable.grid.pageSegment {
+    padding: 25px 40px 90px;
+  }
+
+  .rfpBlock {
+    margin: 0 0 20px 0;
+    clear: both;
+    .ui.button.active {
+      border-color: $MENU_BORDER_COLOR;
+    }
+  }
+
+  .rfpBlockTop {
+    margin-top: 20px !important;
+  }
+
+  .count-control.rfpBlock {
+    text-align: center;
+  }
+
+  .rfpLabel {
+    display: block;
+    font-size: 12px;
+    color: $RFP_HEADING_COLOR;
+    font-weight: 200;
+  }
+
+  .rfpLabelButton {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase
+  }
+
+  .ui.grid > .column:not(.row), .ui.grid > .row > .column {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ui.grid > .column:not(.row), .ui.grid > .row > .column.rfpColumnPadding {
+    padding-right: 30px;
+  }
+
+  .ui.grid > .column:not(.row), .ui.grid > .row > .column.option-column {
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .ui.grid .row + .ui.divider {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .ui.form {
+    .inline.fields {
+      margin: 0;
+      label {
+        font-weight: 400;
+      }
+    }
+
+    textarea {
+      width: 80%;
+
+      &.rfpQuoteTextarea1 {
+        height: 5%;
+      }
+    }
+  }
+
+  .ui.form .inline.field:not(.wide) .ui.input.days-field {
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+
+  .rpfMedicalInfoCarriers {
+    .ui.search.dropdown.rfpBlock, .react-select {
+      min-width: 200px;
+      float: left;
+    }
+
+    .ui.selection.dropdown.yearsBlock {
+      min-width: 100px;
+    }
+  }
+
+  .rfpRemoveBLock {
+    color: $ELEM_ACTIVE_COLOR;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .rfpSeparate {
+    margin: 20px 0 0px;
+    font-style: italic;
+    font-size: 12px;
+    color: $RFP_HEADING_COLOR;
+    position: relative;
+    text-align: center;
+
+    span {
+      padding: 0 20px;
+      background-color: #ffffff;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      background-color: $RFP_HEADING_COLOR;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+
+    &.rfpSeparateSelfFunded {
+      width: 400px;
+    }
+  }
+
+  .rfpBlockList {
+    margin-top: 40px;
+    margin-left: 7px;
+  }
+
+  .rfpBlockListBottom {
+    margin-left: 7px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+
+  .ui.divider.rfpBlockListDivider {
+    margin-left: 7px;
+  }
+
+  .ui.header.rfpBlockListSection {
+    margin-left: 14px;
+    font-size: 12px;
+    margin-top: 40px;
+    font-weight: 600;
+  }
+}

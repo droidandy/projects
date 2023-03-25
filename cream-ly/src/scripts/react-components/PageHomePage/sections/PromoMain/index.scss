@@ -1,0 +1,129 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.HomePromoMain {
+  @include spacingBottom;
+
+  background: #efefef;
+  text-align: center;
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--purplish-grey);
+
+  h1 {
+    font-size: 27px;
+    line-height: 1.17;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    @include defaultText();
+  }
+
+  .steps {
+    display: flex;
+  }
+
+  .item {
+    margin-top: 60px;
+    width: 33.333%;
+
+    .step_img {
+      min-height: 75px;
+      display: block;
+      .step1_img {
+        background: no-repeat url("./step1.png");
+        background-size: contain;
+        background-position: center;
+        margin: auto;
+        width: 64px;
+        height: 64px;
+      }
+      svg {
+        width: 72px;
+        height: auto;
+      }
+    }
+    .number {
+      @include defaultText();
+      font-size: 1.2em;
+      &::before {
+        content: "- ";
+      }
+      &::after {
+        content: " -";
+      }
+    }
+    &:nth-child(1) {
+      .number {
+        color: var(--lavender);
+      }
+    }
+    &:nth-child(2) {
+      .number {
+        color: var(--rosemary);
+      }
+    }
+    &:nth-child(3) {
+      .number {
+        color: var(--rose);
+      }
+    }
+    p {
+      @include defaultText();
+      margin: 10px auto 0;
+      max-width: 180px;
+    }
+  }
+  .btn_style {
+    margin: 40px auto 0;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+
+    &.green a {
+      background-color: var(--rosemary);
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .HomePromoMain {
+    .item {
+      margin-top: 52px;
+      .step_img {
+        min-height: 100px;
+        .step1_img {
+          width: 81px;
+          height: 81px;
+        }
+        svg {
+          width: 92px;
+          height: auto;
+        }
+      }
+      p {
+        max-width: 115px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .HomePromoMain {
+    .item {
+      .step_img {
+        min-height: 110px;
+        .step1_img {
+          width: 92px;
+          height: 92px;
+        }
+        svg {
+          width: 104px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

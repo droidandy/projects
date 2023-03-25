@@ -1,0 +1,1013 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+    <!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- Title and Meta -->
+        <meta charset="UTF-8">
+        <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><![endif]-->
+        <meta name="author" content="Redfin Real-Time">
+
+        <!-- Facebook Open Graph Meta -->
+        <meta property="og:image" content="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/10/Screen-Shot-2017-10-06-at-1.32.06-PM.png">
+
+        <!-- Twitter Meta -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Migration Patterns Show More People Leaving Politically Blue Counties - @RedfinRedfin Real-Time">
+        <meta name="twitter:url" content="https://www.redfin.com/blog/2017/10/migration-patterns-show-more-people-leaving-politically-blue-counties.html">
+        <meta name="twitter:site" content="Redfin Real-Time">
+        <meta name="twitter:creator" content="@redfin">
+        <meta name="twitter:domain" content="https://www.redfin.com/blog">
+        <meta name="twitter:image" content="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/10/Screen-Shot-2017-10-06-at-1.32.06-PM.png">
+
+        <!-- Mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="60x60" href="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/favicon/apple-touch-icon-152x152.png">
+        <link rel="icon" type="image/x-icon" sizes="32x32" href="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/favicon/favicon.ico">
+
+        <!-- Feed -->
+        <link rel="alternate" type="application/rss+xml" title="Redfin Real-Time Feed" href="https://www.redfin.com/blog/feed/">
+
+        <!-- CSS & JS -->
+        <script type="text/javascript">
+            var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+            });
+            }
+        </script>
+
+        <!-- This site is optimized with the Yoast SEO Premium plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+        <title>Migration Patterns Show More People Leaving Politically Blue Counties - @Redfin</title>
+        <meta name="description" content="In the first half of 2017, more people moved from blue counties to red counties than vice versa, according to data on Redfin.com user searches."/>
+        <link rel="canonical" href="https://www.redfin.com/blog/2017/10/migration-patterns-show-more-people-leaving-politically-blue-counties.html" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Migration Patterns Show More People Leaving Politically Blue Counties - @Redfin" />
+        <meta property="og:description" content="In the first half of 2017, more people moved from blue counties to red counties than vice versa, according to data on Redfin.com user searches." />
+        <meta property="og:url" content="https://www.redfin.com/blog/2017/10/migration-patterns-show-more-people-leaving-politically-blue-counties.html" />
+        <meta property="og:site_name" content="Redfin Real-Time" />
+        <meta property="article:publisher" content="https://www.facebook.com/redfin/" />
+        <meta property="article:tag" content="housing affordability" />
+        <meta property="article:tag" content="migration" />
+        <meta property="article:tag" content="Politics" />
+        <meta property="article:tag" content="publish" />
+        <meta property="article:section" content="Real Estate News &amp; Analysis" />
+        <meta property="article:published_time" content="2017-10-13T05:00:16+00:00" />
+        <meta property="article:modified_time" content="2017-10-12T16:09:54+00:00" />
+        <meta property="og:updated_time" content="2017-10-12T16:09:54+00:00" />
+        <meta property="og:image" content="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/10/Screen-Shot-2017-10-06-at-1.32.06-PM.png" />
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:description" content="In the first half of 2017, more people moved from blue counties to red counties than vice versa, according to data on Redfin.com user searches."/>
+        <meta name="twitter:title" content="Migration Patterns Show More People Leaving Politically Blue Counties - @Redfin"/>
+        <meta name="twitter:site" content="@Redfin"/>
+        <meta name="twitter:domain" content="Redfin Real-Time"/>
+        <meta name="twitter:image" content="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/10/Screen-Shot-2017-10-06-at-1.32.06-PM.png"/>
+        <meta name="twitter:creator" content="@Redfin"/>
+        <!-- / Yoast SEO Premium plugin. -->
+
+        <link rel='stylesheet' id='crayon-css'  href='https://www.redfin.com/blog/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='contact-form-7-css'  href='https://www.redfin.com/blog/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='redfin_styles-css'  href='https://www.redfin.com/blog/wp-content/themes/redfin/assets/css/app.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='redfin_fonts-css'  href='https://www.redfin.com/blog/wp-content/themes/redfin/assets/css/fonts.min.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='jquery-magnific-popup-css'  href='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/magnific-popup/magnific-popup.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='cyclone-template-style-galleria-css'  href='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/templates/galleria/style.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='cyclone-template-style-standard-css'  href='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/templates/standard/style.css' type='text/css' media='all' />
+        <!-- This site uses the Google Analytics by Yoast plugin v5.4.6 - Universal enabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+        <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+            __gaTracker('create', 'UA-294985-1', 'auto');
+            __gaTracker('set', 'forceSSL', true);
+            __gaTracker('send','pageview');
+
+        </script>
+        <!-- / Google Analytics by Yoast -->
+        <script type='text/javascript' src='https://www.redfin.com/blog/wp-content/themes/redfin/assets/js/jquery.js'></script>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/www.redfin.com\/blog\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+        </script>
+        <script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script>
+        <link rel='https://api.w.org/' href='https://www.redfin.com/blog/wp-json/' />
+        <link rel="alternate" type="application/json+oembed" href="https://www.redfin.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.redfin.com%2Fblog%2Fblog%2F2017%2F10%2Fmigration-patterns-show-more-people-leaving-politically-blue-counties.html" />
+        <link rel="alternate" type="text/xml+oembed" href="https://www.redfin.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.redfin.com%2Fblog%2Fblog%2F2017%2F10%2Fmigration-patterns-show-more-people-leaving-politically-blue-counties.html&#038;format=xml" />
+        <style type="text/css" media="screen">
+            div.printfriendly a, div.printfriendly a:link, div.printfriendly a:hover, div.printfriendly a:visited {
+            text-decoration: none;
+            border: none;
+            }
+        </style>
+        <style type="text/css" media="screen">
+            div.printfriendly {
+            margin: 12px 12px 12px 12px;
+            }
+            div.printfriendly a, div.printfriendly a:link, div.printfriendly a:visited {
+            font-size: 14px;
+            color: #6D9F00;
+            vertical-align: bottom;
+            }
+
+            .printfriendly a:hover {
+            cursor: pointer;
+            }
+
+            .printfriendly a img  {
+            border: none;
+            padding:0;
+            margin-right: 6px;
+            display:inline-block;
+            box-shadow: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            }
+            .printfriendly a span{
+            vertical-align: bottom;
+            }
+            .pf-alignleft {
+            float: left;
+            }
+            .pf-alignright {
+            float: right;
+            }
+            div.pf-aligncenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            }
+        </style>
+        <style type="text/css" media="print">
+            .printfriendly {
+            display: none;
+            }
+        </style>
+        <link rel="icon" href="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/12/favicon@3x.png" sizes="32x32" />
+        <link rel="icon" href="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/12/favicon@3x.png" sizes="192x192" />
+        <link rel="apple-touch-icon-precomposed" href="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/12/favicon@3x.png" />
+        <meta name="msapplication-TileImage" content="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/12/favicon@3x.png" />
+
+    </head>
+    <body class="single single-post migration-patterns-show-more-people-leaving-politically-blue-counties.html blog fade-in-main">
+
+        <!-- Notice - Signup -->
+        <section class="signup-notice"></section>
+
+        <!-- Offcanvas Search
+        ================================================== -->
+
+        <section class="header-search">
+            <a class='js-search-close' href="#">
+                <div class='header-search__x'></div>
+            </a>
+
+            <div class="header-search__content">
+                <label for="search" class="offcanvas-search--label u-text-center">What Are You Looking For?</label>
+
+                <form id="searchform" role="search" class="search-form" method="get" action="https://www.redfin.com/blog/">
+                    <input id="s" class="search-form__input" name="s" type="text" placeholder="Search Redfin Real-Time">
+                    <button id="searchsubmit" class="search-form__submit" type="submit" aria-label="Submit" title="Submit">
+                        <i class="icon-search"></i>
+                    </button>
+                </form>
+                <nav class="header-search__nav">
+                    <ul>
+                        <li><strong>Or Show All:</strong></li>
+                        <li><a href="https://www.redfin.com/blog/category/real-estate" title="Real Estate News &amp; Analysis">Real Estate News &amp; Analysis</a></li>
+                        <li><a href="https://www.redfin.com/blog/category/local-news" title="Local News">Local News</a></li>
+                        <li><a href="https://www.redfin.com/blog/category/fun-fabulous" title="Fun &amp; Fabulous">Fun &amp; Fabulous</a></li>
+                        <li><a href="https://www.redfin.com/blog/category/tips-advice" title="Tips &amp; Advice">Tips &amp; Advice</a></li>
+                        <li><a href="" title="Redfin &amp; Our CEO">Redfin &amp; Our CEO</a></li>
+                        <li><a href="" title="Redfin Engineering">Redfin Engineering</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Header
+        ================================================== -->
+        <header class="header-main">
+            <div class="header-main__preheader">
+                <!-- Mobile Nav Toggle -->
+                <a class="header-main__nav-toggle js-nav-toggle">
+                    <div class="header-main__navbars"></div>
+                </a>
+                <!-- Logo -->
+                <a href="http://redfin.com/blog/" class="header-main__branding">
+                    <img class="header-main__logo" alt="Redfin Real Estate" src="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/logo-redfin.png">
+                </a>
+
+                <nav class="header-main__preheader-nav">
+                    <ul>
+                        <li>
+                            <a class="link-tel" href="tel:1-877-973-3346">1-877-973-3346</a>
+                        </li>
+                        <li class="has-dropdown">
+                            <span class="dropdown-toggle">Buy ▾</span> <!-- This is a dropdown on their parent site -->
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="https://www.redfin.com/why-buy">Buy with Redfin</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/how-much-house-can-i-afford">Affordability Calculator</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/home-buying-guide">Home Buying Guide</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/mortgage-rates">Compare Mortgage Rates</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/buy-a-home/openbook">Find Lenders &amp; Inspectors</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/buy-a-home/classes-and-events">Classes &amp; Events</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-dropdown">
+                            <span class="dropdown-toggle">Sell ▾</span> <!-- This is a dropdown on their parent site -->
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="https://www.redfin.com/why-sell">Sell with Redfin</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/what-is-my-home-worth">What Is My Home Worth?</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/sell-a-home/home-sale-proceeds-calculator">Will Selling Pay Off?</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/home-selling-guide">Home Selling Guide</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.redfin.com/sell-a-home/openbook">Find Handypeople &amp; Stagers</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://www.redfin.com/real-estate-agents">Real Estate Agents</a>
+                        </li>
+                        <li>
+                            <a href="https://www.redfin.com" onclick="trackOutboundLink('https://www.redfin.com'); return false;">Visit Redfin</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Main Nav-->
+            <nav role="navigation" class="header-main__nav js-offcanvas-nav">
+                <ul>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/real-estate">
+                            <span>Real Estate</span>
+                            <span class="hide-med-to-lg">News &amp; Analysis</span>
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/data-center">
+                            Data Center
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/local-news">
+                            <span>Local News</span>
+                            <span class="hide-med-to-lg">&amp; Insights</span>
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/fun-fabulous">
+                            Fun &amp; Fabulous
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/tips-advice">
+                            Tips &amp; Advice
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/redfin-ceo">
+                            <span class="hide-med-to-lg">More From</span>
+                            <span>Redfin &amp; Our CEO</span>
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item ">
+                        <a href="/blog/engineering-at-redfin">
+                            <span>Redfin Engineering</span>
+                        </a>
+                    </li>
+                    <li class="header-main__nav-item" >
+                        <a href="/blog/videos">
+                            Videos
+                        </a>
+                    </li>
+
+                    <li class="header-main__nav-item header-main__nav-item--search">
+                        <a class="header-main__search-link js-search-toggle">
+                            <span>Search</span>
+                            <span>Redfin Real-Time</span>
+                            <i class="header-main__icon-search icon-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header-main__m-search-link js-search-toggle" href="#">
+                <i class="header-main__icon-search icon-search"></i>
+            </a>
+        </header>
+
+        <!-- Header - Social Post Bar
+        ================================================== -->
+
+        <header class="header-postbar">
+            <div class="header-postbar--logo"><a class="" href="http://redfin.com/blog/"><img class="" alt="Redfin Real Estate" src="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/logo-redfin.svg"></a></div>
+
+            <div class="header-postbar--title"><span>Migration Patterns Show More People Leaving Politically Blue Counties</span></div>
+
+            <div class="header-postbar--shares">
+                <a class="icon icon-facebook" href="http://www.facebook.com/share.php?u=https://www.redfin.com/blog/?p=59712/&amp;title=Migration Patterns Show More People Leaving Politically Blue Counties" class="post-share--item" title="Facebook" target="_blank"></a>
+                <a class="icon icon-twitter" href="http://twitter.com/intent/tweet?text=Migration Patterns Show More People Leaving Politically Blue Counties%0a%0ahttps://www.redfin.com/blog/?p=59712" class="post-share--item" role="listitem" title="Twitter" target="_blank"></a>
+                <a class="icon icon-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.redfin.com/blog/?p=59712&title=Migration Patterns Show More People Leaving Politically Blue Counties&summary=&source=" class="post-share--item" role="listitem" title="LinkedIn"></a>
+            </div>
+        </header>
+
+
+        <!-- Main
+        ================================================== -->
+        <main role="main">
+
+            <!-- section-post-single
+            ================================================== -->
+            <section class="section-post-single">
+                <div class="row-xl section--padding">
+
+                    <!-- Post Content (layout)
+                    ================================================== -->
+                    <div class="post-content g-8 cols">
+
+                        <article id="post-59712">
+
+                        <!-- Post Header -->
+                        <header>
+                            <h3 class="headline--category">
+                                <a href="https://www.redfin.com/blog/category/real-estate" title="View all posts in Real Estate News &amp; Analysis" >Real Estate News &amp; Analysis</a>         </h3>
+
+                            <h1 class="headline--largest">
+                                Migration Patterns Show More People Leaving Politically Blue Counties        </h1>
+
+                            <p class="headline--subtitle">People are moving to purple and red counties, where homes are more affordable.</p>
+                            <div class="headline--byline">
+                                <p>Written by <a href="https://www.redfin.com/blog/author/taylormarr" title="Posts by Taylor Marr" rel="author">Taylor Marr</a> on October 13, 2017</p>
+                            </div>
+
+                            <!-- Social Shares -->
+
+                            <section class="post-share">
+                                <a href="http://www.facebook.com/share.php?u=https://www.redfin.com/blog/?p=59712/&amp;title=Migration Patterns Show More People Leaving Politically Blue Counties" class="post-share--item" role="listitem" title="Facebook" target="_blank">
+                                    <i class="post-share--icon icon-facebook" aria-label="Facebook"></i>
+                                </a>
+                                <a href="http://twitter.com/intent/tweet?text=Migration Patterns Show More People Leaving Politically Blue Counties%0a%0ahttps://www.redfin.com/blog/?p=59712" class="post-share--item" role="listitem" title="Twitter" target="_blank">
+                                    <i class="post-share--icon icon-twitter" aria-label="Twitter"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.redfin.com/blog/?p=59712&title=Migration Patterns Show More People Leaving Politically Blue Counties&summary=&source=" class="post-share--item" role="listitem" title="LinkedIn" target="_blank">
+                                    <i class="post-share--icon icon-linkedin" aria-label="LinkedIn"></i>
+                                </a>
+                                <a href="#" data-modal="share-modal" data-popup="cats-popup"  class="post-share--item js-open-modal" role="listitem" title="Share Link">
+                                    <i class="post-share--icon icon-link" aria-label="Share Link"></i>
+                                </a>
+                                <a href="javascript:window.print()" class="post-share--item" role="listitem" title="Print">
+                                    <i class="post-share--icon icon-printer" aria-label="Print"></i>
+                                </a>
+                            </section>
+
+                            <article id="share-modal"  class="modal-box modal-sharelink">
+                                <!-- Modal Header  -->
+                                <header>
+                                    <a href="#" class="js-close-modal">×</a>
+                                    <h4>Copy Link to Clipboard</h4>
+                                </header>
+
+                                <!-- Modal Body  -->
+                                <div class="modal-body">
+                                    <p>Press Ctrl / CMD + C to copy this to your clipboard.</p>
+                                    <div class="input-group ">
+                                        <i class="input-group--prefix icon-link"></i>
+                                        <input name="shortlink" class="input-group--input shortlink" type='text' value='https://www.redfin.com/blog/?p=59712' onclick='this.focus(); this.select();' />
+                                    </div>
+                                </div>
+                            </article>
+                        </header>
+
+
+
+                        <!--Post Body Content
+                        ================================================== -->
+                        <section class="post-content--body">
+                        <div class="pf-content"><p><span style="font-weight: 400;">In the first half of 2017, more people moved from blue (Democratic) counties to red (Republican) counties than from red to blue counties, according to data on Redfin.com user searches. Counties were classified as “blue” if the Democratic candidate for 2016 won by more than 20 percentage points and vice versa for “red” counties.</span><sup><a id="ref1" href="#fn1">1</a></sup></p>
+                            <p><span style="font-weight: 400;">Overall, 7.4 percent more people moved </span><span style="font-weight: 400;">out </span><span style="font-weight: 400;">of blue counties than to them. Compare that with red counties, which saw about 1 percent more people moving </span><span style="font-weight: 400;">in</span><span style="font-weight: 400;"> than moving out. Purple counties, where there’s a more balanced share of Democrats and Republicans, saw 3.9 percent more migrants moving in than out.</span></p>
+                            <p><span style="font-weight: 400;">Just looking at swing states—the most populous being Florida—the trend is even more pronounced. In these states, counties with more Democratic voters lost 9.2 percent more people than they gained while Republican counties gained 2.3 percent more than they lost. Swing counties in swing states saw 1.8 percent more people move in than out. </span></p>
+                            <p><span style="font-weight: 400;">“As blue counties are becoming increasingly less affordable, we see a great number of residents moving to red counties where they can afford the lifestyle they want,” said Redfin chief economist Nela Richardson. “At Redfin, we see this as a sign of hope for a less divided country, where people with differing views gain better understanding and tolerance of each other through sheer proximity.”</span></p>
+                            <figure id="media-59713" class="align-none"><img src="{{IMAGE_ONE}}" alt="Purple_and_red_destinations_user_growth" data-has-syndication-rights="" data-license-id="" data-licensor-name="" /></figure>
+                            <p><span style="font-weight: 400;">Redfin’s user data covers more than 72 percent of the voting age population and is concentrated in urban metropolises, which gives us a specific and recent look at where residents of blue counties are looking to move. While our analysis looked only at metro areas Redfin serves, its results are right in line with the latest </span><a href="https://www.census.gov/data/tables/2015/demo/geographic-mobility/county-to-county-migration-2011-2015.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.census.gov/data/tables/2015/demo/geographic-mobility/county-to-county-migration-2011-2015.html', 'county-to-county migration data');"><span style="font-weight: 400;">county-to-county migration data</span></a><span style="font-weight: 400;"> published by the Census, which revealed that from 2011 to 2015, over 50 percent more migrants moved from blue to red counties than the other way around. </span></p>
+                            <p><span style="font-weight: 400;">The advantage is that Redfin’s user data is forward looking and predictive of moves happening this year. Redfin’s unique data shows that two years later—as housing prices have appreciated by more than 14 percent</span><span style="font-weight: 400;">—this trend has accelerated. </span></p>
+                            <p><span style="font-weight: 400;">The trend is most pronounced in <a href="https://www.redfin.com/state/Colorado" target="_blank">Colorado</a>, <a href="https://www.redfin.com/state/Oregon" target="_blank">Oregon</a> and <a href="https://www.redfin.com/state/Washington" target="_blank">Washington</a>, where respectively, blue counties saw more than 12.7 percent, 12.1 percent and 10.3 percent more people leave than come. Exceptions to the trend were in <a href="https://www.redfin.com/state/Louisiana" target="_blank">Louisiana</a>, <a href="https://www.redfin.com/state/New-Mexico" target="_blank">New Mexico</a> and <a href="https://www.redfin.com/state/Indiana" target="_blank">Indiana</a>—each of which experienced growth in the bluest counties.</span></p>
+                            <div class='tableauPlaceholder' id='viz1507849496499' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PoliticsandMigration&#47;StoryBoard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /><param name='embed_code_version' value='2' /><param name='site_root' value='' /><param name='name' value='PoliticsandMigration&#47;StoryBoard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PoliticsandMigration&#47;StoryBoard&#47;1.png' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>
+                            <p>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1507849496499');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></p>
+                            <h3><strong>In Search of Affordability</strong></h3>
+                            <p><span style="font-weight: 400;">This is happening for two major reasons. The first is economic. Housing is becoming less available and less affordable in America’s largest urban counties (almost all of which are blue). The second is a longer trend of the self-sorting of Americans by lifestyle and political partisanship resulting in political polarization. </span></p>
+                            <p><span style="font-weight: 400;">High housing costs in blue counties have </span><a href="https://www.redfin.com/blog/2016/12/millions-of-renters-face-eviction-why-todays-housing-market-is-partially-to-blame.html"><span style="font-weight: 400;">pushed</span></a><span style="font-weight: 400;"> people further out into nearby purple </span><a href="https://www.redfin.com/blog/2016/03/homebuyers-are-bucking-the-urban-revival-as-burbs-beckon.html"><span style="font-weight: 400;">suburbs</span></a><span style="font-weight: 400;">. Nationwide, the average home in a blue county costs around $360,000—more than 62 percent more than that of homes in red counties ($223,000).</span><span style="font-weight: 400;"> Sure blue-county incomes are usually higher, but their residents spend on average 32 percent of their household income on rent, nearly 5 percentage points higher than residents of red counties (purple counties fall in between at 30.9 percent), according to the Census.</span></p>
+                            <figure id="media-59714" class="align-none"><img src="{{IMAGE_TWO}}" alt="distribution_of_housing_affordability" data-has-syndication-rights="" data-license-id="" data-licensor-name="" /></figure>
+                            <p><span style="font-weight: 400;">Affordable housing for families is paramount. For example, in August, the typical home in Denver County sold for </span><a href="https://www.redfin.com/blog/data-center"><span style="font-weight: 400;">$400,000</span></a><span style="font-weight: 400;">, whereas in Douglas County homes sold for only about </span><a href="https://www.redfin.com/blog/data-center"><span style="font-weight: 400;">three-fifths of that</span></a><span style="font-weight: 400;">, after controlling for size. Additionally, in 2015, the typical resident spent a full 3 percent more of their income on rent in Denver County as well—29.5 percent compared with 26.4 in Douglas County.</span></p>
+                            <p><span style="font-weight: 400;">As a result, one in 10 Redfin users looking to move out of Denver County, Colorado—where nearly three in four votes last November were for Hillary Clinton—were looking to nearby </span><a href="https://www.redfin.com/county/379/CO/Douglas-County"><span style="font-weight: 400;">Douglas County</span></a><span style="font-weight: 400;">—where Trump won 54.7 percent of the vote. </span></p>
+                            <h3><strong>On the Other Hand: The Big Sort</strong></h3>
+                            <p><span style="font-weight: 400;">It is not all about economics, however. Politics can be a </span><a href="https://www.nytimes.com/2017/08/16/upshot/political-migration-a-new-business-of-moving-out-to-fit-in.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.nytimes.com/2017/08/16/upshot/political-migration-a-new-business-of-moving-out-to-fit-in.html', 'major reason');"><span style="font-weight: 400;">major reason</span></a><span style="font-weight: 400;"> people decide where to move—there is even a </span><a href="https://conservativemove.com/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://conservativemove.com/', 'business');"><span style="font-weight: 400;">business</span></a><span style="font-weight: 400;"> built on this premise that helps conservatives move to staunchly Republican neighborhoods. </span></p>
+                            <p><span style="font-weight: 400;">A </span><a href="https://www.redfin.com/blog/2017/06/one-in-three-recent-homebuyers-made-an-offer-sight-unseen-up-from-one-in-five-a-year-ago.html"><span style="font-weight: 400;">Redfin survey</span></a><span style="font-weight: 400;"> found that, 41 percent of recent homebuyers reported hesitations about moving to a place where most people have political views different from their own. In contrast, less than one in 10 respondents were enthusiastic about moving to a different political climate, while the remaining half were neutral. Millennials—the largest group forming new households—were even more likely to be hesitant, consistent with </span><a href="http://www.gwern.net/docs/dnb/2007-danigelis.pdf" onclick="__gaTracker('send', 'event', 'download', 'http://www.gwern.net/docs/dnb/2007-danigelis.pdf');"><span style="font-weight: 400;">sociological research</span></a><span style="font-weight: 400;"> showing an increased political tolerance as people age. </span></p>
+                            <p><span style="font-weight: 400;">This trend of sorting by political beliefs has been dubbed the “</span><a href="https://www.amazon.com/Big-Sort-Clustering-Like-Minded-America/dp/0547237723" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.amazon.com/Big-Sort-Clustering-Like-Minded-America/dp/0547237723', 'Big Sort');"><span style="font-weight: 400;">Big Sort</span></a><span style="font-weight: 400;">” by researcher Bill Bishop and has been underway since the early 1970s. Increasingly, the politics of our neighbors are </span><a href="https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://www.nytimes.com/2017/09/24/opinion/dying-art-of-disagreement.html', 'not any different');"><span style="font-weight: 400;">not any different</span></a><span style="font-weight: 400;"> from our own. By this way of thinking, it&#8217;s less likely that all this cross-county migration will result in any different of a political landscape at the state-level. As people continue to self-sort into areas that represent their lifestyle and demographics—and </span><a href="http://www.people-press.org/2015/04/07/a-deep-dive-into-party-affiliation/" onclick="__gaTracker('send', 'event', 'outbound-article', 'http://www.people-press.org/2015/04/07/a-deep-dive-into-party-affiliation/', 'thus politics');"><span style="font-weight: 400;">thus politics</span></a><span style="font-weight: 400;">—those who lean Republican are the </span><a href="https://fivethirtyeight.com/features/migration-isnt-turning-red-states-blue/" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://fivethirtyeight.com/features/migration-isnt-turning-red-states-blue/', 'most likely to leave');"><span style="font-weight: 400;">most likely to leave</span></a><span style="font-weight: 400;"> the bluest counties. </span></p>
+                            <h3><strong>It Might Be Different this Time</strong></h3>
+                            <p><span style="font-weight: 400;">While the evidence that people will continue to self-sort by political beliefs is strong, we would contend that the housing affordability crisis in the bluest counties is unprecedented. With no sign of a drastic drop in prices anytime soon, there’s an argument that many more people, regardless of politics, will move to where they can buy a comfortable home.  </span></p>
+                            <p><span style="font-weight: 400;">We will continue to look at these migration patterns into the next election cycle to track how this trend evolves in the next year leading up to the midterm elections.</span></p>
+                            <p><strong>Methodology</strong></p>
+                            <p><span style="font-weight: 400;">Redfin analyzed a sample of more than one million Redfin.com users searching for homes from January through June of 2017. Users must have viewed at least 10 listings during the year. We also excluded locations that in aggregate represented less than 20 percent of a user’s searches. We determined the home metro by mapping the user’s IP address of the most common location they searched from. If a user was searching in more than one county, we accounted for the share of searches in each county. The county-level election results were downloaded from </span><a href="https://github.com/tonmcg/County_Level_Election_Results_12-16" onclick="__gaTracker('send', 'event', 'outbound-article', 'https://github.com/tonmcg/County_Level_Election_Results_12-16', 'here');"><span style="font-weight: 400;">here</span></a><span style="font-weight: 400;">. </span></p>
+                            <hr />
+                            <p><sup id="fn1">1. Counties that won with only a 10 percentage point margin “lean” blue or red and the remaining counties are purple.<a title="Jump back to footnote 1 in the text." href="#ref1">↩</a></sup><br />
+                                <sup id="fn2">2. This is computed by comparing the national median sale price growth from September 2015 to 2017 using the Redfin Data Center.<a title="Jump back to footnote 2 in the text." href="#ref2">↩</a></sup><br />
+                                <sup id="fn3">3. The breakdown of median sale prices and price growth is as follows: Blue counties: $360k (6.9%), Leans Blue: $280k (5.7%), Purple: $278k (6.5%), Leans Red $237k (6.5%), and Red counties $223k (7.5%).<a title="Jump back to footnote 3 in the text." href="#ref3">↩</a></sup><br />
+                                <sup id="fn4">4. Average Gross Rent as Percent of Household Income by county: Blue counties: 32%, Leans Blue: 31.1%, Purple: 30.9%, Leans Red: 29.4%, Red counties: 27.5%.<a title="Jump back to footnote 4 in the text." href="#ref4">↩</a></sup></p>
+                            <div role="form" class="wpcf7" id="wpcf7-f53540-p59712-o1" lang="en-US" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                <form action="/blog/2017/10/migration-patterns-show-more-people-leaving-politically-blue-counties.html#wpcf7-f53540-p59712-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="53540" />
+                                    <input type="hidden" name="_wpcf7_version" value="4.3.1" />
+                                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f53540-p59712-o1" />
+                                    <input type="hidden" name="_wpnonce" value="8bae71b853" />
+                                </div>
+                                <div class="ask-agent-form-container">
+                                    <div class="overlay">
+                                        <h2 class="heading">Ask an Agent</h2>
+                                        <p class="subhead">We're here to help seven days a week.</p>
+                                        <p class="label">Name<br />
+                                            <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required ask-agent-name" aria-required="true" aria-invalid="false" /></span> </p>
+                                        <p class="label">Email<br />
+                                            <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email ask-agent-email" aria-required="true" aria-invalid="false" /></span> </p>
+                                        <p class="label">Phone<br />
+                                            <span class="wpcf7-form-control-wrap tel-862"><input type="tel" name="tel-862" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel ask-agent-tel" aria-invalid="false" /></span></p>
+                                        <p class="label">What can we help you with?<br />
+                                            <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="3" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required ask-agent-question" aria-required="true" aria-invalid="false" placeholder="I&#039;m interested in buying, selling or a free consult with a Redfin Agent."></textarea></span> </p>
+                                        <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit" /></p>
+                                    </p></div>
+                            </div>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>
+                </div>
+
+                <!-- Post Footer -->
+                <footer class="post-content--footer">
+
+                    <!-- Post Footer: Tags -->
+                    <ul class="post-tags"></li><li><a href="https://www.redfin.com/blog/tag/housing-affordability" rel="tag">housing affordability</a>, <a href="https://www.redfin.com/blog/tag/migration" rel="tag">migration</a>, <a href="https://www.redfin.com/blog/tag/politics" rel="tag">Politics</a>, <a href="https://www.redfin.com/blog/tag/publish" rel="tag">publish</a></li></ul>
+
+                <!-- Post Footer: Socials -->
+
+                <section class="post-share">
+                    <a href="http://www.facebook.com/share.php?u=https://www.redfin.com/blog/?p=59712/&amp;title=Migration Patterns Show More People Leaving Politically Blue Counties" class="post-share--item" role="listitem" title="Facebook" target="_blank">
+                        <i class="post-share--icon icon-facebook" aria-label="Facebook"></i>
+                    </a>
+                    <a href="http://twitter.com/intent/tweet?text=Migration Patterns Show More People Leaving Politically Blue Counties%0a%0ahttps://www.redfin.com/blog/?p=59712" class="post-share--item" role="listitem" title="Twitter" target="_blank">
+                        <i class="post-share--icon icon-twitter" aria-label="Twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.redfin.com/blog/?p=59712&title=Migration Patterns Show More People Leaving Politically Blue Counties&summary=&source=" class="post-share--item" role="listitem" title="LinkedIn" target="_blank">
+                        <i class="post-share--icon icon-linkedin" aria-label="LinkedIn"></i>
+                    </a>
+                    <a href="#" data-modal="share-modal" data-popup="cats-popup"  class="post-share--item js-open-modal" role="listitem" title="Share Link">
+                        <i class="post-share--icon icon-link" aria-label="Share Link"></i>
+                    </a>
+                    <a href="javascript:window.print()" class="post-share--item" role="listitem" title="Print">
+                        <i class="post-share--icon icon-printer" aria-label="Print"></i>
+                    </a>
+                </section>
+
+                <article id="share-modal"  class="modal-box modal-sharelink">
+                    <!-- Modal Header  -->
+                    <header>
+                        <a href="#" class="js-close-modal">×</a>
+                        <h4>Copy Link to Clipboard</h4>
+                    </header>
+
+                    <!-- Modal Body  -->
+                    <div class="modal-body">
+                        <p>Press Ctrl / CMD + C to copy this to your clipboard.</p>
+                        <div class="input-group ">
+                            <i class="input-group--prefix icon-link"></i>
+                            <input name="shortlink" class="input-group--input shortlink" type='text' value='https://www.redfin.com/blog/?p=59712' onclick='this.focus(); this.select();' />
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Post Footer: Author -->
+                <section class="section-author post-author">
+
+
+                    <figure class="author__avatar">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2015/12/taylor-marr.png" alt="taylormarr">
+                    </figure>
+                    <div class="author__info">
+                        <h4 class="author__name"><a href="https://www.redfin.com/blog/author/taylormarr" title="Posts by Taylor Marr" rel="author">Taylor Marr</a></h4>          <h6 class="author__title">Senior Economist</h6>
+                        <p>Taylor is a senior economist, data scientist, and visualization whiz on the research team at Redfin. He is passionate about cities and housing. Taylor went to graduate school for economics in Berlin, where he focused on behavioral economics and the housing market crash. Redfin is a real estate brokerage with agents across the United States. For more information about working with a Redfin agent to buy or sell a home, visit <a href="https://www.redfin.com/why-redfin?utm_source=blog&amp;utm_medium=post&amp;utm_content=real_estate&amp;utm_campaign=1002170">Redfin.com/why-redfin</a>.</p>
+                        <a class="author__more" href="mailto:taylor.marr@redfin.com"><i class="icon-mail"></i> Email Taylor</a>
+                    </div>
+
+                </section>
+            </footer>
+        </section>
+    </article>
+
+    <!-- Comments  -->
+    <a class="btn-grey btn-clear btn-large js-expand js-textswap u-centered" data-expander="expand-comments" data-text-swap="Hide Comments">Show Comments</a>
+    <br/>
+    <section id="expand-comments" class="section-comments expand-content" >
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() {  // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//redfin.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+
+</div><!--/ Close Post Col -->
+
+    <!-- Aside - ads, most popular (has layout class)
+    ================================================== -->
+
+    <aside class="post-sidebar g-4 cols">
+
+        <div class="redfin-ad redfin-ad--single">
+            <a class="js-imgbg" href="http://redf.in/2qtn8vZ" target="_blank">
+                <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/05/Single-Ad-Home-Buying-Guide.jpg" alt="">
+                <div class="redfin-ad--bottom-text">
+                </div>
+            </a>
+        </div>
+        <!-- Posts: Most Popular -->
+        <section class="posts-popular section--padding__aside bg-light">
+            <header>
+                <h4 class="section-heading">Most Popular</h4>
+            </header>
+
+            <!-- Article 60568 -->
+            <article class="post-preview" id="post-60568">
+                <a href="https://www.redfin.com/blog/2017/12/redfins-2018-housing-market-predictions.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/12/2018HousingMarketTrends_120717-Hero-1.jpg"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate/real-time-research">Real-Time Research</h6>
+                        <h4 class="headline--small">2018 Predictions: Homebuyers Will Leave High-Tax States if SALT...</h4>
+                        <time class="headline--time">December 11, 2017</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+            <!-- Article 49325 -->
+            <article class="post-preview" id="post-49325">
+                <a href="https://www.redfin.com/blog/2016/05/not-so-full-anymore-the-famous-full-house-home-just-hit-the-market.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/05/full-house-without-netflix-2.png"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/fun-fabulous/celebrity-news">Celebrity News</h6>
+                        <h4 class="headline--small">Not So Full Anymore! The Famous “Full House” Home Just Hit...</h4>
+                        <time class="headline--time">May 26, 2016</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+            <!-- Article 60829 -->
+            <article class="post-preview" id="post-60829">
+                <a href="https://www.redfin.com/blog/2018/01/new-year-new-house-heres-how-to-prepare-for-the-2018-market.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2018/01/DCMD_11690-Main-St-Ashburn-VA_edit.jpg"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/tips-advice/home-buying">Home Buying</h6>
+                        <h4 class="headline--small">New Year, New House? Here’s How to Prepare for the 2018 Market</h4>
+                        <time class="headline--time">January 3, 2018</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+            <!-- Article 43059 -->
+            <article class="post-preview" id="post-43059">
+                <a href="https://www.redfin.com/blog/2016/01/redfin-predicts-the-hottest-neighborhoods-of-2016.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/01/HottestNeighborhoods_2016.jpg"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate/special-reports">Special Reports</h6>
+                        <h4 class="headline--small">Redfin Predicts the Hottest Neighborhoods of 2016</h4>
+                        <time class="headline--time">January 28, 2016</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+            <!-- Article 60712 -->
+            <article class="post-preview" id="post-60712">
+                <a href="https://www.redfin.com/blog/2017/12/redfin-ranks-2017s-most-competitive-neighborhoods-for-homebuyers.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/12/iStock-479505728.jpg"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate/special-reports">Special Reports</h6>
+                        <h4 class="headline--small">Redfin Ranks 2017’s Most Competitive Neighborhoods for...</h4>
+                        <time class="headline--time">December 21, 2017</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+            <!-- Article 59923 -->
+            <article class="post-preview" id="post-59923">
+                <a href="https://www.redfin.com/blog/2017/10/6-steps-for-preparing-your-home-for-winter.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/10/6-Ways-to-Prepare-Your-Home-this-Winter_resized-1.jpg"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/tips-advice/home-ownership">Home Ownership</h6>
+                        <h4 class="headline--small">6 Steps for Preparing Your Home for Winter</h4>
+                        <time class="headline--time">October 31, 2017</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+            <!-- Article 45506 -->
+            <article class="post-preview" id="post-45506">
+                <a href="https://www.redfin.com/blog/2016/03/4-real-estate-tax-deductions-you-dont-want-to-overlook.html">
+                    <figure class="js-imgbg post-preview__thumb-small">
+                        <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2016/02/house-on-calculator.jpg"/>
+                    </figure>
+                    <div class="post-preview__headline post-preview__headline-small">
+                        <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/tips-advice/home-ownership">Home Ownership</h6>
+                        <h4 class="headline--small">4 Real Estate Tax Deductions You Don&#8217;t Want to Overlook</h4>
+                        <time class="headline--time">March 1, 2016</time>
+                    </div>
+                </a>
+            </article>
+
+
+
+        </section>
+
+    </aside>  </div>
+        </section>
+
+        <!-- Posts: related
+        ================================================== -->
+        <!-- Posts: Most Popular -->
+<section class="related section--padding bg-light">
+<div class="row-xxl">
+    <h5 class="section-heading cols">
+        You Might Also Like
+    </h5>
+
+
+    <article class="related-post xsm-6 g-3 cols">
+        <a href="https://www.redfin.com/blog/2018/02/market-tracker-january-2018.html">
+            <figure class="js-imgbg post-preview__thumb-full">
+                <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/11/housing_market_tracker-1-1.jpg"/>
+            </figure>
+            <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate">Real Estate News &amp; Analysis</h6>
+            <h4 class="headline--normal">Strong January Home Price Growth and Declining Inventory Signal Another Competitive Spring for Homebuyers</h4>
+            <time class="headline--time">February 15, 2018</time>
+        </a>
+    </article>
+
+
+    <article class="related-post xsm-6 g-3 cols">
+        <a href="https://www.redfin.com/blog/2018/02/if-mortgage-rates-surpassed-5.html">
+            <figure class="js-imgbg post-preview__thumb-full">
+                <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2018/02/KeysCalculatorBudgetLoanMortgage.jpg"/>
+            </figure>
+            <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate/real-time-research">Real-Time Research</h6>
+            <h4 class="headline--normal">Redfin Survey: Just 6% of Homebuyers Would Cancel Plans to Buy if Mortgage Rates Surpassed 5%</h4>
+            <time class="headline--time">February 12, 2018</time>
+        </a>
+    </article>
+
+
+    <article class="related-post xsm-6 g-3 cols">
+        <a href="https://www.redfin.com/blog/2018/02/q4-migration-report.html">
+            <figure class="js-imgbg post-preview__thumb-full">
+                <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2017/11/RedfinBlog_MigrationReport-V1-1.jpg"/>
+            </figure>
+            <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate/real-time-research">Real-Time Research</h6>
+            <h4 class="headline--normal">Affordable Inland Metros Drew People from San Francisco, New York and Los Angeles</h4>
+            <time class="headline--time">February 7, 2018</time>
+        </a>
+    </article>
+
+
+    <article class="related-post xsm-6 g-3 cols">
+        <a href="https://www.redfin.com/blog/2018/02/immigration-policies-caused-15percent-to-sell-or-not-buy.html">
+            <figure class="js-imgbg post-preview__thumb-full">
+                <img src="https://www.redfin.com/blog/wp-content/uploads/sites/5/2018/02/yard-sign-header.jpg"/>
+            </figure>
+            <h6 class="headline--category" data-sim-link="https://www.redfin.com/blog/category/real-estate/special-reports">Special Reports</h6>
+            <h4 class="headline--normal">Redfin Survey: 15% of Respondents Sold Their Home or Did Not Buy Last Year Because of Worry Over Immigration Policies</h4>
+            <time class="headline--time">February 6, 2018</time>
+        </a>
+    </article>
+
+</div>
+</section>
+
+
+        </main>
+
+
+        <!-- RedFin-Ad: Full -->
+<section class="redfin-ad redfin-ad--full">
+<a href="https://www.redfin.com?utm_source=blog&utm_medium=ad&utm_content=footer&utm_campaign=1002189" style="background-color: #a02021; background-image:url(https://www.redfin.com/blog/wp-content/uploads/sites/5/2015/12/footer-bg-agent_2000x540.png)">
+    <div class="row-xxl">
+        <img class="redfin-ad--logo" src="https://www.redfin.com/blog/wp-content/themes/redfin/assets/images/logo-redfin-white.png" width="150" height="41" alt="Redfin">
+        <h2 class="redfin-ad--text">Real estate redefined</h2>
+    </div>
+</a>
+</section>
+
+        <!-- Footer: Main -->
+<footer class="footer-main">
+<section class="footer-sitemap bg-light">
+    <div class="row-xxl">
+
+        <!-- Real Estate -->
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    <span>Real Estate</span>
+                    <span>News &amp; Analysis</span>
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/real-estate/housing-market-news/">Housing Market News</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/real-estate/special-reports/">Special Reports</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/real-estate/real-time-research">Real-Time Research</a>
+            </li>
+        </ul>
+
+        <!-- Data Center -->
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    Data Center
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/data-center">Downloadable Data</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/data-center/#section-visualization">Visualization of the Week</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/data-center/#section-reports">About Redfin Reports</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/data-center/#section-walkscore">Walk Score Data</a>
+            </li>
+        </ul>
+
+        <!--Local News -->
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    <span>Local News</span>
+                    <span>&amp; Insights</span>
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/local-news/best-places/">Best Places</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/local-news/local-stories/">Local Stories</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/local-news/walk-score-reports/">Walk Score Reports</a>
+            </li>
+        </ul>
+
+        <!-- Fun & Fabulous -->
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    Fun &amp; Fabulous
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/fun-fabulous/celebrity-news/">Celebrity News</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/fun-fabulous/living/">Living</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/fun-fabulous/unique-homes/">Unique Homes</a>
+            </li>
+        </ul>
+
+        <!-- Tips $ Advice -->
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    Tips &amp; Advice
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/tips-advice/home-buying/">Home Buying</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/tips-advice/home-selling/">Home Selling</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/tips-advice/home-ownership/">Home Ownership</a>
+            </li>
+        </ul>
+
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    <span>More From Redfin</span>
+                    <span>&amp; Our CEO</span>
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/redfin-ceo/redfin-news/">Redfin News</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/redfin-ceo/ceo/">CEO Glenn Kelman</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/category/redfin-ceo/engineering-at-redfin/">Engineering at Redfin</a>
+            </li>
+        </ul>
+
+        <!-- About -->
+        <ul class="footer-sitemap__category">
+            <li class="footer-sitemap__item">
+                <h6 class="footer-sitemap__category-title">
+                    About
+                </h6>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/about/">About Redfin Real-Time</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/about/#section-team">Editorial Team</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="/blog/contact">Contact Us</a>
+            </li>
+            <li class="footer-sitemap__item">
+                <a href="http://press.redfin.com">Redfin Press Center</a>
+            </li>
+        </ul>
+
+        <div class="footer-sitemap__contact">
+            <div class="footer-sitemap__contact-title">Have A Story?</div>
+            <a class="footer-sitemap__contact-button btn-beta btn-clear" href="/blog/contact">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="row-xxl section--padding__small">
+        <div class="footer-legal">
+            <strong>Updated January 2016:</strong>
+            By searching, you agree to the <a href="https://www.redfin.com/about/terms-of-use">Terms of Use</a>, <a href="https://www.redfin.com/about/privacy-policy" target="_blank">Privacy Policy</a>, and <a href="https://www.redfin.com/about/terms-of-use#eula" target="_blank">End User License Agreement</a>.
+        </div>
+        <div class="footer-legal">
+            © 2018 Redfin. All rights reserved. Patent pending.
+            Equal Housing Opportunity California <strong>BRE #01521930</strong>
+        </div>
+        <div class="footer-social" role="list">
+            <a class="footer-social__icon icon-twitter" href="https://twitter.com/Redfin" role="listitem" aria-label="Twitter" title="Twitter" target="_blank"></a>
+            <a class="footer-social__icon icon-facebook" href="https://www.facebook.com/redfin" role="listitem" aria-label="Facebook" title="Facebook" target="_blank"></a>
+            <a class="footer-social__icon icon-pinterest" href="https://www.pinterest.com/redfin/" role="listitem" aria-label="Pinterest" title="Pinterest" target="_blank"></a>
+            <a class="footer-social__icon icon-linkedin" href="https://www.linkedin.com/company/redfin" role="listitem" aria-label="LinkedIn" title="LinkedIn" target="_blank"></a>
+            <a class="footer-social__icon icon-youtube" href="https://www.youtube.com/user/RedfinTV" role="listitem" aria-label="YouTube" title="YouTube" target="_blank"></a>
+            <a class="footer-social__icon icon-instagram" href="https://instagram.com/redfinrealestate/" role="listitem" aria-label="Instagram" title="Instagram" target="_blank"></a>
+            <a class="footer-social__icon icon-feed" href="https://www.redfin.com/blog/feed" role="listitem" aria-label="RSS" title="RSS"></a>
+            <a class="footer-social__icon icon-feed" href="http://example.com" role="listitem" aria-label="RSS" title="RSS"></a>
+        </div>
+    </div>
+</section>
+</footer>
+
+        <!-- JavaScript -->
+<script type="text/javascript">
+// <![CDATA[
+        var disqus_shortname = 'redfin-corporate-blog';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+</script>
+<script type="text/javascript">
+
+var pfHeaderImgUrl = '';
+var pfHeaderTagline = '';
+var pfdisableClickToDel = '0';
+var pfHideImages = '0';
+var pfImageDisplayStyle = 'right';
+var pfDisableEmail = '0';
+var pfDisablePDF = '0';
+var pfDisablePrint = '0';
+var pfCustomCSS = '';
+(function() {
+var e = document.createElement('script'); e.type="text/javascript";
+if('https:' == document.location.protocol) {
+js='https://pf-cdn.printfriendly.com/ssl/main.js';
+}
+else{
+js='http://cdn.printfriendly.com/printfriendly.js';
+}
+e.src = js;
+document.getElementsByTagName('head')[0].appendChild(e);
+})();
+</script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/www.redfin.com\/blog\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptchaEmpty":"Please verify that you are not a robot.","sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/themes/redfin/assets/js/app.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/cycle2/jquery.cycle2.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/cycle2/jquery.cycle2.carousel.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/cycle2/jquery.cycle2.swipe.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/cycle2/jquery.cycle2.tile.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/cycle2/jquery.cycle2.video.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/jquery-easing/jquery.easing.1.3.1.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/libs/magnific-popup/jquery.magnific-popup.min.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/templates/galleria/script.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/templates/standard/script.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-content/plugins/cyclone-slider-pro/js/client.js'></script>
+<script type='text/javascript' src='https://www.redfin.com/blog/wp-includes/js/wp-embed.min.js'></script>
+
+        </body>
+        </html>

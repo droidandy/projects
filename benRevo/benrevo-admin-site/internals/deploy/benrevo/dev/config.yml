@@ -1,0 +1,20 @@
+branch-defaults:
+  develop:
+    environment: dev-benrevo-admin-fe
+environment-defaults:
+  dev-benrevo-admin-fe:
+    branch: null
+    repository: null
+global:
+  application_name: dev-benrevo-admin-fe
+  default_ec2_keyname: benrevo-dev-us-west-2
+  default_platform: arn:aws:elasticbeanstalk:us-west-2::platform/Docker running on 64bit Amazon Linux/2.10.0
+  default_region: us-west-2
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: git
+  workspace_type: Application
+deploy:
+  artifact: Dockerrun.aws.json

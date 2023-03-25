@@ -1,0 +1,199 @@
+$i: 0;
+
+@while $i <= 45 {
+  .m-#{$i} {
+    margin: #{$i}px;
+  }
+
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}px;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+
+  $i: $i + 5;
+}
+
+.mt-23 {
+  margin-top: 23px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ml-55 {
+  margin-left: 55px;
+}
+
+@media(--tablet) {
+  $i: 0;
+
+  @while $i <= 40 {
+    .sm-m-#{$i} {
+      margin: #{$i}px;
+    }
+
+    .sm-mt-#{$i} {
+      margin-top: #{$i}px;
+    }
+
+    .sm-mb-#{$i} {
+      margin-bottom: #{$i}px;
+    }
+
+    .sm-mr-#{$i} {
+      margin-right: #{$i}px;
+    }
+
+    .sm-ml-#{$i} {
+      margin-left: #{$i}px;
+    }
+
+    .sm-p-#{$i} {
+      padding: #{$i}px;
+    }
+
+    .sm-pt-#{$i} {
+      padding-top: #{$i}px;
+    }
+
+    .sm-pb-#{$i} {
+      padding-bottom: #{$i}px;
+    }
+
+    .sm-pl-#{$i} {
+      padding-left: #{$i}px;
+    }
+
+    .sm-pr-#{$i} {
+      padding-right: #{$i}px;
+    }
+
+    $i: $i + 5;
+  }
+
+  .sm-center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media(--phone) {
+  .xs-mr-0 {
+    margin-right: 0;
+  }
+
+  .xs-ml-0 {
+    margin-left: 0;
+  }
+
+  .xs-mr-5 {
+    margin-right: 5px;
+  }
+
+  .xs-mb-20 {
+    margin-bottom: 20px;
+  }
+
+  .xs-mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .xs-mb-20 {
+    margin-bottom: 20px;
+  }
+
+  .xs-mb-5 {
+    margin-bottom: 5px;
+  }
+
+  .xs-pb-0 {
+    padding-bottom: 0;
+  }
+
+  .xs-pr-0 {
+    padding-right: 0;
+  }
+
+  .xs-pl-0 {
+    padding-left: 0;
+  }
+
+  .xs-mt-10 {
+    margin-top: 10px;
+  }
+
+  .xs-mt-20 {
+    margin-top: 20px;
+  }
+
+  .xs-mt-25 {
+    margin-top: 25px;
+  }
+
+  .xs-mt-40 {
+    margin-top: 40px;
+  }
+
+  .xs-p-0 {
+    padding: 0;
+  }
+
+  .xs-p-10 {
+    padding: 10px;
+  }
+
+  .xs-p-20 {
+    padding: 20px;
+  }
+
+  .xs-pr-20 {
+    padding-right: 20px;
+  }
+
+  .xs-pl-20 {
+    padding-left: 20px;
+  }
+}

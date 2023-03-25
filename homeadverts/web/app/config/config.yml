@@ -1,0 +1,60 @@
+imports:
+    - { resource: parameters/notification.yml}
+    - { resource: parameters/global.yml}
+    - { resource: parameters/social.yml}
+    - { resource: parameters/email.yml}
+    - { resource: parameters/user.yml}
+    - { resource: parameters/welcomemat.yml}
+    - { resource: parameters/web.yml}
+    - { resource: parameters/aws.yml }
+    - { resource: parameters/pagination.yml}
+    - { resource: parameters/iframely.yml }
+    - { resource: parameters/locales.yml }
+    - { resource: parameters/media.yml }
+    - { resource: parameters/pusher.yml }
+    - { resource: parameters/import.yml }
+    - { resource: parameters.yml }
+
+    - { resource: security.yml }
+
+    - { resource: configs/cors.yml }
+    - { resource: configs/swiftmailer.yml }
+    - { resource: configs/doctrine.yml }
+    - { resource: configs/hwi_oauth.yml}
+    - { resource: configs/imagine.yml}
+    - { resource: configs/fos_user.yml}
+    - { resource: configs/jms.yml}
+    - { resource: configs/twig.yml}
+#    - { resource: configs/dunglas_angular_csrf.yml}
+    - { resource: configs/geocoder.yml}
+    - { resource: configs/mailchimp.yml}
+    - { resource: configs/assetic.yml}
+    - { resource: configs/redis.yml}
+    - { resource: configs/framework.yml}
+    - { resource: configs/billing.yml}
+    - { resource: configs/monolog.yml}
+
+    - { resource: "@AppBundle/Resources/config/services/events.yml" }
+    - { resource: "@AppBundle/Resources/config/services/validation.yml" }
+
+    - { resource: "@AppBundle/Resources/config/services/article/article.yml" }
+    - { resource: "@AppBundle/Resources/config/services/article/article_analyze.yml" }
+    - { resource: "@AppBundle/Resources/config/services/article/article_import.yml" }
+    - { resource: "@AppBundle/Resources/config/services/article/article_processor.yml" }
+    - { resource: "@AppBundle/Resources/config/services/article/article_publish.yml" }
+
+    - { resource: "@AppBundle/Resources/config/services/import/import.yml" }
+    - { resource: "@AppBundle/Resources/config/services/import/datasync.yml" }
+    - { resource: "@AppBundle/Resources/config/services/import/welcomemat.yml" }
+    - { resource: "@AppBundle/Resources/config/services/site.yml" }
+    - { resource: "@AppBundle/Resources/config/services/search.yml" }
+    - { resource: "@AppBundle/Resources/config/services/tag.yml" }
+    - { resource: "@AppBundle/Resources/config/services/twig.yml" }
+    - { resource: "@AppBundle/Resources/config/services/user.yml" }
+    - { resource: "@AppBundle/Resources/config/services/property.yml" }
+    - { resource: "@AppBundle/Resources/config/services/social/messenger.yml" }
+    - { resource: "@AppBundle/Resources/config/services/social/notification.yml" }
+    - { resource: "@AppBundle/Resources/config/services/location.yml" }
+    - { resource: "@AppBundle/Resources/config/services/statistics.yml" }
+    - { resource: "@AppBundle/Resources/config/services/billing.yml" }
+    - { resource: "@AppBundle/Resources/config/services/upload.yml" }

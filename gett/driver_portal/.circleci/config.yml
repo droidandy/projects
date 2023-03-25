@@ -1,0 +1,105 @@
+version: 2
+
+jobs:
+  build-job:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+        environment:
+          - RAILS_ENV=test
+          - RACK_ENV=test
+          - PG_HOST=localhost
+          - PG_USER=dp
+
+      - image: circleci/postgres:9.5
+        environment:
+          - POSTGRES_USER=dp
+          - POSTGRES_DB=driver_portal_test
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - dp-core-dependencies-{{ checksum "Gemfile.lock" }}
+          - dp-core-dependencies-
+
+      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - restore_cache:
+          keys:
+            - dp-core-dependencies-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+
+      - save_cache:
+          key: dp-core-dependencies-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - restore_cache:
+          key: dp-yarn-{{ .Branch }}-{{ checksum "ui/package.json" }}
+
+      - run: cd ui && yarn install
+
+      - save_cache:
+          key: dp-yarn-{{ .Branch }}-{{ checksum "ui/package.json" }}
+          paths:
+            - ui/node_modules
+
+      - run:
+          name: Copy configs
+          command: |
+            cp config/database.example.yml config/database.yml
+            cp config/secrets.example.yml config/secrets.yml
+
+      - run:
+          name: Set up DB
+          command: |
+            bin/rake db:create
+            bin/rake db:schema:load
+            bin/rake db:migrate
+          environment:
+            DATABASE_URL: "postgres://dp@localhost:5432/driver_portal_test"
+
+      - run:
+          name: Specs
+          command: |
+            bin/rspec
+          environment:
+            DATABASE_URL: "postgres://dp@localhost:5432/driver_portal_test"
+
+      - run:
+          name: Linters
+          command: |
+            bin/rubocop
+            cd ui && yarn eslint
+
+  deploy-job:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+        environment:
+          - RAILS_ENV=test
+          - RACK_ENV=test
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - dp-core-dependencies-{{ checksum "Gemfile.lock" }}
+          - dp-core-dependencies-
+
+      - run: bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - restore_cache:
+          keys:
+            - dp-core-dependencies-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+
+      - save_cache:
+          key: dp-core-dependencies-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      - run: bundle exec cap dev deploy
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build-job

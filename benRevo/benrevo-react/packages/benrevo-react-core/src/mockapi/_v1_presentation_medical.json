@@ -1,0 +1,173 @@
+{
+	"totalAnnualPremium": 929890,
+	"percentDifference": 0.037,
+	"dollarDifference": 32890,
+  "name": "Option 1",
+  "id": 11,
+	"overviewPlans": [
+    {
+		"carrier": "Aetna",
+		"label": "(current plan)",
+		"employer": 416000,
+		"employee": 481000,
+		"total": 897000
+	}, {
+		"carrier": "Anthem",
+		"employer": 416000,
+		"employee": 513890,
+		"total": 929890
+	}
+  ],
+	"detailedPlans": [
+    {
+		"carrier": "Anthem",
+		"dollarDifference": -260,
+		"percentDifference": -0.1,
+      	"rfpQuoteNetworkId": 1,
+      	"rfpQuoteOptionNetworkId": 1,
+		"currentPlan": {
+			"name": "CA HMO 10",
+			"type": "HMO",
+			"employer": 208000,
+			"employee": 214500,
+			"total": 422500
+		},
+		"newPlan": {
+			"name": "Access + HMO1",
+			"type": "HMO",
+			"employer": 208000,
+			"employee": 212240,
+			"total": 422240,
+			"subscriptions": {
+				"employeeOnly": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.31,
+					"diffEe": 1,
+					"currentEnrollment": 15,
+					"proposedEnrollment": 15
+				},
+				"employeeSpouse": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.51,
+					"diffEe": 2,
+					"currentEnrollment": 10,
+					"proposedEnrollment": 10
+				},
+				"employeeChild": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.42,
+					"diffEe": 2,
+					"currentEnrollment": 8,
+					"proposedEnrollment": 8
+				},
+				"employeeFamily": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.39,
+					"diffEe": 2,
+					"currentEnrollment": 15,
+					"proposedEnrollment": 15
+				},
+				"total": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.05
+				},
+				"erCost": {
+					"currentEr": 34408,
+					"renewalEr": 35901,
+					"proposedEr": 35901
+				},
+				"change": {
+					"renewalEr": 0.043,
+					"proposedEr": 0.043,
+					"proposedEe": 0.042
+				}
+			}
+		}
+	},
+    {
+		"carrier": "Anthem",
+		"dollarDifference": 33150,
+		"percentDifference": 7,
+      "rfpQuoteNetworkId": 1,
+      "rfpQuoteOptionNetworkId": 1,
+		"currentPlan": {
+			"name": "Comb. Ded. 30-500 90/60",
+			"type": "PPO",
+			"employer": 208000,
+			"employee": 266500,
+			"total": 474500
+		},
+		"newPlan": {
+			"name": "Premier PPO 500/20/20",
+			"type": "PPO",
+			"employer": 208000,
+			"employee": 299650,
+			"total": 507650,
+			"subscriptions": {
+				"employeeOnly": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.31,
+					"diffEe": 1,
+					"currentEnrollment": 15,
+					"proposedEnrollment": 15
+				},
+				"employeeSpouse": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.51,
+					"diffEe": 2,
+					"currentEnrollment": 10,
+					"proposedEnrollment": 10
+				},
+				"employeeChild": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.42,
+					"diffEe": 2,
+					"currentEnrollment": 8,
+					"proposedEnrollment": 8
+				},
+				"employeeFamily": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.39,
+					"diffEe": 2,
+					"currentEnrollment": 15,
+					"proposedEnrollment": 15
+				},
+				"total": {
+					"currentEr": 0.95,
+					"renewalEr": 0.95,
+					"proposedEr": 0.95,
+					"proposedEe": 0.05
+				},
+				"erCost": {
+					"currentEr": 34408,
+					"renewalEr": 35901,
+					"proposedEr": 35901
+				},
+				"change": {
+					"renewalEr": 0.043,
+					"proposedEr": 0.043,
+					"proposedEe": 0.042
+				}
+			}
+		}
+	}
+  ]
+}

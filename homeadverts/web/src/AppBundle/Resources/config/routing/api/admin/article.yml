@@ -1,0 +1,9 @@
+ha_admin_article_tag_add:
+    path:  /{token}/tag
+    defaults: { _controller: AppBundle:Api/Admin/Article:addTag }
+    methods:  [POST]
+
+ha_admin_article_tag_remove:
+    path:  /{token}/tag
+    defaults: { _controller: AppBundle:Api/Admin/Article:removeTag }
+    methods:  [DELETE]

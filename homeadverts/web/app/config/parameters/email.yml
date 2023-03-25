@@ -1,0 +1,5 @@
+parameters:
+    app_name: luxuryaffairs.co.uk
+    email_noreply: service@luxuryaffairs.co.uk
+    email_summary_notification: service@luxuryaffairs.co.uk
+    email_report_recipients: ['tha@homeadverts.com', 'volgodark@gmail.com', 'sjs-master@yandex.ru']

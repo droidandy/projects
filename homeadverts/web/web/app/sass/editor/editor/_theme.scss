@@ -1,0 +1,142 @@
+//colors
+$black: #212121;
+$color_celeste_approx: #ccc;
+$color_sinbad_approx: #c7b343;
+$color_spring_wood_approx: #f8f5f3;
+$color_spring_wood_80_approx: rgba(248, 245, 243, 0.8);
+
+
+.medium-editor-toolbar {
+  background-color: #212121;
+  border: none;
+  border-radius: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+
+  li {
+    .medium-editor-action {
+      background-color: transparent;
+      border: none;
+      box-sizing: border-box;
+      color: #fff;
+      line-height: 40px;
+      height: 45px;
+      padding: 3px 5px;
+      transition: background-color .2s ease-in, color .2s ease-in;
+
+      .material-icons {
+        vertical-align: middle;
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: $color_sinbad_approx;
+      }
+
+      &.story-heading {
+        margin-right: -5px;
+        border-left: 1px solid #555;
+        margin-left: 10px;
+        height: 20px;
+        margin-top: 13px;
+
+        .material-icons {
+          padding-left: 5px;
+          font-size: 28px;
+          height: 20px;
+          margin-left: -3px;
+          vertical-align: middle;
+          margin-top: -38px;
+        }
+      }
+
+      &.story-sub-heading {
+        .material-icons {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .medium-editor-button-first {
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 50px;
+      padding-left: 10px;
+    }
+
+    .medium-editor-button-last {
+      border-bottom-right-radius: 50px;
+      border-right: none;
+      border-top-right-radius: 50px;
+      padding-right: 10px;
+    }
+
+    .medium-editor-button-active {
+      color: $color_sinbad_approx;
+    }
+  }
+}
+
+.medium-editor-toolbar-form {
+  background: $black;
+  border-radius: 50px;
+  color: $color_celeste_approx;
+  overflow: hidden;
+
+  .medium-editor-toolbar-input {
+    background: $black;
+    box-sizing: border-box;
+    color: $color_celeste_approx;
+    height: 45px;
+    padding-left: 16px;
+    width: 220px;
+
+    &:-moz-placeholder {
+      color: $color_spring_wood_approx;
+      color: $color_spring_wood_80_approx;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color_spring_wood_approx;
+      color: $color_spring_wood_80_approx;
+    }
+  }
+
+  .medium-editor-toolbar-input::-webkit-input-placeholder {
+    color: $color_spring_wood_approx;
+    color: $color_spring_wood_80_approx;
+  }
+
+  .medium-editor-toolbar-input::-moz-placeholder {
+    color: $color_spring_wood_approx;
+    color: $color_spring_wood_80_approx;
+  }
+
+  a {
+    color: $color_celeste_approx;
+    transform: translateY(2px);
+  }
+
+  .medium-editor-toolbar-close {
+    margin-right: 16px;
+  }
+}
+
+.medium-editor-toolbar-anchor-preview {
+  background: #212121;
+  border-radius: 4px;
+  padding: 5px 12px;
+}
+
+.medium-toolbar-arrow-under:after {
+  border-color: $black transparent transparent transparent;
+  top: 45px;
+}
+
+.medium-toolbar-arrow-over:before {
+  border-color: transparent transparent $black transparent;
+}
+
+.medium-editor-anchor-preview a {
+  color: $color_celeste_approx;
+  text-decoration: none;
+}

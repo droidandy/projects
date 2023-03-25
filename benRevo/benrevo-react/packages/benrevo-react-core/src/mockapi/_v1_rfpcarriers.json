@@ -1,0 +1,38 @@
+[
+  {
+    "rfpCarrierId": 1,
+    "category": "MEDICAL",
+    "carrier": {
+      "carrierId": 5,
+      "name": "BLUE_SHIELD",
+      "displayName": "Blue Shield"
+    }
+  },
+  {
+    "rfpCarrierId": 2,
+    "category": "MEDICAL",
+    "carrier": {
+      "carrierId": 3,
+      "name": "ANTHEM_BLUE_CROSS",
+      "displayName": "Anthem Blue Cross"
+    }
+  },
+  {
+    "rfpCarrierId": 11,
+    "category": "MEDICAL",
+    "carrier": {
+      "carrierId": 22,
+      "name": "UHC",
+      "displayName": "United Health Care"
+    }
+  },
+  {
+    "rfpCarrierId": 12,
+    "category": "MEDICAL",
+    "carrier": {
+      "carrierId": 33,
+      "name": "KAISER",
+      "displayName": "Kaiser"
+    }
+  }
+]

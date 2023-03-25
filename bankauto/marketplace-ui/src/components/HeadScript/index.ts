@@ -1,0 +1,1 @@
+export { HeadScript } from './HeadScript';

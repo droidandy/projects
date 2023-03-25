@@ -1,0 +1,20 @@
+{% set listhub_properties = [] %}
+
+{% for page in pagination %}
+    {% for row in page|batch(property_row_limit()) -%}
+
+        <li class="wide-line">
+            <div class="row">
+                <ul class="medium-block-grid-3">
+                    {% for property in row %}
+                        <li class="property-list-item property{{ loop.index }}"
+                            data-property-id="{{ property.id }}"
+                        >
+                            {% include 'AppBundle:property/collection:item.html.twig' %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </li>
+    {% endfor %}
+{% endfor %}

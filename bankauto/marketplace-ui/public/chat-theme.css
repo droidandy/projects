@@ -1,0 +1,199 @@
+/* Кнопка чата */
+.cx-widget .cx-side-button-group {
+  bottom: 80px !important;
+  left: 50px !important;
+  right: auto;
+  top: auto;
+}
+
+.cx-theme-bankauto.cx-webchat-chat-button {
+  width: 61px !important;
+  height: 61px !important;
+  font-size: 61px !important;
+  background: rgb(153, 0, 49) !important;
+  color: rgb(255, 255, 255) !important;
+  text-align: center !important;
+  border-radius: 50% !important;
+  line-height: 40px !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33) !important;
+}
+
+.cx-theme-bankauto.cx-webchat-chat-button .cx-icon {
+  transform: rotate(90deg);
+  fill: #fff;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+.cx-theme-bankauto.cx-webchat-chat-button .cx-chat-button-label {
+  display: none;
+}
+
+/* Регистрация */
+.cx-powered-by {
+  display: none;
+}
+
+.cx-branding-icon {
+  display: none !important;
+}
+
+.cx-form-inputs table tr:nth-child(2) {
+  display: none;
+}
+
+.cx-theme-bankauto.cx-common-container {
+  border-radius: 11px;
+  overflow: hidden;
+  background: rgb(153, 0, 49);
+  left: 50px;
+  right: auto !important;
+}
+
+.cx-theme-bankauto .cx-titlebar {
+  color: #fff;
+  border: 0;
+}
+
+.cx-common-container .cx-titlebar .cx-title {
+  font-size: 1.25em;
+}
+
+.cx-theme-bankauto .cx-titlebar .cx-icon {
+  fill: #fff;
+}
+
+.cx-theme-bankauto.cx-common-container .cx-buttons-window-control button:focus {
+  border: 0;
+  padding: 3px;
+}
+
+.cx-theme-bankauto .cx-buttons-window-control button {
+  padding: 3px;
+}
+
+.cx-theme-bankauto .cx-buttons-window-control .cx-icon {
+  fill: #fff;
+}
+
+.cx-theme-bankauto .cx-body {
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
+  /*overflow: hidden;*/
+  background: #fff;
+}
+
+.cx-theme-bankauto .cx-btn-primary {
+  background: #990031;
+  color: #fff;
+}
+
+.cx-theme-bankauto.cx-webchat-chat-button {
+  background: #fff;
+}
+
+.cx-theme-bankauto .cx-footer {
+  background: #fff;
+}
+
+/* Чат */
+/* Список сообщений начало */
+.cx-theme-bankauto .cx-transcript .cx-you .cx-bubble {
+  padding: 0;
+  border-radius: 0;
+}
+
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message-group > .cx-message.cx-participant.cx-you .cx-bubble {
+  margin: 0 0 0 20px !important;
+  padding: 0;
+  border-radius: 0;
+}
+
+.cx-theme-bankauto .cx-participant .cx-bubble {
+  margin: 0;
+}
+
+.cx-theme-bankauto .cx-transcript .cx-you .cx-message-text {
+  padding: 14px;
+  background: rgb(200, 200, 200);
+  border-radius: 23px !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.cx-theme-bankauto .cx-transcript .cx-them .cx-message-text {
+  padding: 14px;
+  background: rgb(243, 242, 247);
+  border-radius: 23px !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message-group > .cx-message.cx-participant.cx-you .cx-bubble-arrow,
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message-group > .cx-message.cx-you:first-child .cx-bubble-arrow {
+  display: none !important;
+}
+
+.cx-webchat .cx-transcript .cx-message-group > .cx-message.cx-participant.cx-them:first-child .cx-avatar-wrapper,
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message.cx-them .cx-avatar-wrapper,
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message.cx-them:first-child .cx-avatar-wrapper {
+  display: none !important;
+}
+
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message.cx-them .cx-bubble-arrow,
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message.cx-them:first-child .cx-bubble-arrow {
+  display: none !important;
+}
+
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message.cx-them .cx-bubble {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message-group > .cx-message.cx-participant.cx-you .cx-name,
+.cx-webchat.cx-theme-bankauto .cx-transcript .cx-message-group > .cx-message.cx-you:first-child .cx-name {
+  display: none !important;
+}
+
+.cx-theme-bankauto .cx-transcript .cx-you .cx-time {
+  text-align: right;
+}
+
+.cx-theme-bankauto .cx-container.cx-overlay.cx-static.cx-idle-dialog {
+  background: #fff;
+}
+/*Список сообщений конец */
+
+/* Поле ввода начало*/
+.cx-theme-bankauto .cx-input-container {
+  border: 0 !important;
+}
+
+.cx-theme-bankauto .cx-input-container .cx-textarea-cell {
+  background: #f3f2f7;
+  border-radius: 30px;
+  padding: 12px;
+  padding-right: 48px;
+  padding-left: 24px;
+}
+
+.cx-theme-bankauto .cx-input-container .cx-textarea-cell .cx-input {
+  margin: 0;
+  min-height: 20px !important;
+}
+
+.cx-theme-bankauto .cx-input-container .cx-textarea-cell .cx-send {
+  bottom: 12px;
+  top: auto;
+  right: 15px;
+  fill: rgb(254, 87, 82);
+}
+
+.cx-theme-bankauto .cx-input-container .cx-menu-cell .cx-icon {
+  fill: rgb(165, 164, 175);
+}
+
+.cx-webchat .cx-menu {
+  margin-top: 8px;
+  justify-content: flex-end;
+}
+/* Поле ввода конец */

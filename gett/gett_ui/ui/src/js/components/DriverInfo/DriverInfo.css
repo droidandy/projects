@@ -1,0 +1,10 @@
+:global {
+  .ant-rate-star {
+    cursor: default;
+    margin-right: 4px;
+  }
+  .ant-rate-star-half .ant-rate-star-first,
+  .ant-rate-star-full .ant-rate-star-second {
+    color: #fdb924;
+  }
+}

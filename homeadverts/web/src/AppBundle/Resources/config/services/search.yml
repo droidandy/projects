@@ -1,0 +1,37 @@
+services:
+    ha_search.facet.parser:
+        class: AppBundle\Search\FacetParser
+
+    es_client_builder:
+        class: Elasticsearch\ClientBuilder
+        factory: ['Elasticsearch\ClientBuilder', create]
+        calls:
+            - [setHosts, ["%es_hosts%"]]
+
+    es_client:
+        class: Elasticsearch\Client
+        factory: [@es_client_builder, build]
+
+    ha.currency.manager:
+        class: AppBundle\Service\CurrencyManager
+        arguments:
+            - @cache
+            - @database_connection
+            - @locale_factory
+            - @security.context
+            - @request_stack
+            - @session
+        lazy: true
+
+    ha.results.helper:
+        class: AppBundle\Helper\ResultsHelper
+        arguments:
+            - @service_container
+
+    ha.search.location.helper:
+        class: AppBundle\Search\SearchLocationHelper
+        scope: prototype
+        arguments: [@location_factory]
+
+    ha.property.types:
+        class: AppBundle\Entity\Property\PropertyTypes

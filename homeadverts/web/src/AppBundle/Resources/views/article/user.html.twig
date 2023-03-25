@@ -1,0 +1,49 @@
+{% set class = '--no-company' %}
+
+{% if user.parentUser or user.companyName %}
+    {% set class = '' %}
+{% endif %}
+
+<div class="user-info --story">
+    {% include 'AppBundle:user/profile:image.html.twig' %}
+
+    <div class="details {{ class }}">
+        {% include 'AppBundle:user/profile:username.html.twig' %}
+        {% include 'AppBundle:user/profile:company.html.twig' %}
+
+        <div class="meta-summary">
+            <span class="date">
+                {{ article.publishedAt|date("F j, Y - h:i a") }}
+            </span>
+            {% if article.viewCount %}
+                <span>
+                {% transchoice article.viewCount %}
+                    {1} One view|]1,Inf] %count% views
+                {% endtranschoice %}
+                </span>
+            {% endif %}
+            <span>{{ article.estimatedReadingTime }} min reading</span>
+            {% if article.messagesCount %}
+                <span>
+                    {% transchoice article.getMessagesCount() %}
+                        {1} One message|]1,Inf] %count% messages
+                    {% endtranschoice %}
+                </span>
+            {% endif %}
+        </div>
+
+        {% include 'AppBundle:user/profile:follow_button.html.twig' with {
+            'mode': 'small-button outline'
+        } %}
+        {% if not is_current_user(user) %}
+            <a href="{{ path('ha_room_user_redirect', {id: article.author.id}) }}"
+               class="black
+                         outline
+                         small-button
+                         message-button mdl-button mdl-js-button mdl-js-ripple-effect"
+            >
+                Message
+            </a>
+        {% endif %}
+    </div>
+</div>

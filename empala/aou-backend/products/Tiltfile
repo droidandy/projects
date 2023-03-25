@@ -1,0 +1,38 @@
+clusterRegistryName = os.getenv('CLUSTER_REGISTRY_NAME', 'aou-backend-registry')
+docker_build(clusterRegistryName + '/hasura-cli:latest', './../ci-cd/', dockerfile='./../ci-cd/Dockerfile-hasura-cli')
+docker_build(clusterRegistryName + '/aou-backend:apollo-1', '.', dockerfile='./Dockerfile-apollo')
+docker_build(clusterRegistryName + '/aou-backend:dbmigration-1', '.', dockerfile='./Dockerfile-dbmigration')
+docker_build(clusterRegistryName + '/aou-backend:hasura-1', '.', dockerfile='./Dockerfile-hasura')
+docker_build(clusterRegistryName + '/aou-backend:hasura-metadata-1', '.',
+  {
+    'HASURA_CLI_IMAGE_TAG': clusterRegistryName + '/hasura-cli:latest'
+  },
+  dockerfile='./Dockerfile-hasura-metadata')
+k8s_yaml(
+  helm(
+    'chart',
+    set=[
+      'environment=development',
+      'image.repository=' + clusterRegistryName + '/aou-backend',
+      'awsCognito.JWKSClient=' + os.getenv('AWS_COGNITO_JWKS_CLIENT'),
+      'awsCognito.audienceClaim=' + os.getenv('AWS_COGNITO_AUDIENCE_CLAIM'),
+      'awsCognito.issuerClaim=' + os.getenv('AWS_COGNITO_ISSUER_CLAIM'),
+      'hasura.adminSecret=' + os.getenv('HASURA_GRAPHQL_ADMIN_SECRET'),
+      'apex.extend.tradeApiUrl=' + os.getenv('APEX_EXTEND_TRADE_API_URL'),
+      'apex.extend.tradeApiEntity=' + os.getenv('APEX_EXTEND_TRADE_API_ENTITY'),
+      'apex.extend.tradeApiGroup=' + os.getenv('APEX_EXTEND_TRADE_API_GROUP'),
+      'apex.extend.tradeApiKey=' + os.getenv('APEX_EXTEND_TRADE_API_KEY'),
+      'apex.extend.isTradeAccountIdBase64Encoded=false',
+      'apex.extend.tradeAccountId=' + os.getenv('APEX_EXTEND_TRADE_ACCOUNT_ID'),
+      'apex.extend.applicationsUrl=' + os.getenv('APEX_EXTEND_APPLICATIONS_URL'),
+      'apex.extend.userId=' + os.getenv('APEX_EXTEND_APPLICATIONS_USER_ID'),
+      'apex.extend.adminApiKey=' + os.getenv('APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY'),
+      'apex.extend.adminApiSecret=' + os.getenv('APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET'),
+      'ingress.enabled=false',
+      'services.type=LoadBalancer',
+      'services.apollo.port=3000',
+      'services.hasura.port=8080'
+    ],
+    values='chart/values.yaml'
+  )
+)

@@ -1,0 +1,17 @@
+<button
+        data-name="{{ tag.name }}"
+        data-follow-url="{{ path("ha_tag_follow", {id:tag.id}) }}"
+        data-unfollow-url="{{ path("ha_tag_unfollow", {id:tag.id}) }}"
+        class="
+                    black
+                    small-button
+                    follow-button
+                    mdl-button
+                    mdl-js-button
+                    mdl-js-ripple-effect
+                    {% if (app.user) and (app.user.isTagFollowed(tag)) %} --following {% endif %}
+                ">
+    <span class="follow">Follow</span>
+    <span class="following">Following</span>
+    <span class="unfollow">Unfollow</span>
+</button>

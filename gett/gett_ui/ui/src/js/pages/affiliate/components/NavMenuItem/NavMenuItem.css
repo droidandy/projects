@@ -1,0 +1,13 @@
+.active {
+  background: #fff;
+  color: #ffb71a;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #ffb71a;
+  }
+}
+
+.subItem {
+  padding-right: 47px;
+}

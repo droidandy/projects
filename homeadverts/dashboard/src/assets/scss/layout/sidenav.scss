@@ -1,0 +1,43 @@
+#drawer {
+  div:nth-child(2) {
+    width: 400px;
+  }
+  @media only screen and (max-width: 450px) {
+    div:nth-child(2) {
+      width: 280px;
+    }
+  }
+}
+
+#sideNav {
+  .userHeader {
+    height: 50px;
+    font-size: 20px;
+    padding-left: 18px;
+    font-weight: 600;
+    color: #43444f;
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    .userPhoto {
+      float: left;
+    }
+    span {
+      font-size: 18px;
+      line-height: 45px;
+      margin-left: 15px;
+    }
+  }
+  span {
+    font-weight: 600;
+    color: #616161;
+    font-size: 13px;
+  }
+}
+
+#showDrawer {
+
+  button {
+    padding: 10px;
+  }
+}

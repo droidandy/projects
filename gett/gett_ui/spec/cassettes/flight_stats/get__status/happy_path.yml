@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/TK/5/arr/2018/8/22
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Appid:
+      - cb1f0b57
+      Appkey:
+      - ed9ba54c15ce2ea6d448432ab39e70ae
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '4165'
+      Date:
+      - Wed, 22 Aug 2018 15:38:56 GMT
+    body:
+      encoding: UTF-8
+      string: '{"request":{"airline":{"requestedCode":"TK","fsCode":"TK"},"flight":{"requested":"5","interpreted":"5"},"date":{"year":"2018","month":"8","day":"22","interpreted":"2018-08-22"},"utc":{"interpreted":false},"airport":{},"codeType":{},"extendedOptions":{},"url":"https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/TK/5/arr/2018/8/22"},"appendix":{"airlines":[{"fs":"TK","iata":"TK","icao":"THY","name":"Turkish
+        Airlines","phoneNumber":"+90 212 444 0 849","active":true},{"fs":"PK","iata":"PK","icao":"PIA","name":"Pakistan
+        International Airlines","phoneNumber":"+92 111-786-786","active":true},{"fs":"SQ","iata":"SQ","icao":"SIA","name":"Singapore
+        Airlines","phoneNumber":"+1 800 7423333","active":true}],"airports":[{"fs":"ORD","iata":"ORD","icao":"KORD","faa":"ORD","name":"O''Hare
+        International Airport","street1":"10000 West O''Hare","city":"Chicago","cityCode":"CHI","stateCode":"IL","postalCode":"60666","countryCode":"US","countryName":"United
+        States","regionName":"North America","timeZoneRegionName":"America/Chicago","weatherZone":"ILZ014","localTime":"2018-08-22T10:38:56.485","utcOffsetHours":-5.0,"latitude":41.976912,"longitude":-87.904876,"elevationFeet":668,"classification":1,"active":true,"delayIndexUrl":"https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/ORD?codeType=fs","weatherUrl":"https://api.flightstats.com/flex/weather/rest/v1/json/all/ORD?codeType=fs"},{"fs":"IST","iata":"IST","icao":"LTBA","name":"Istanbul
+        Ataturk Airport","city":"Istanbul","cityCode":"IST","countryCode":"TR","countryName":"Turkey","regionName":"Europe","timeZoneRegionName":"Europe/Istanbul","localTime":"2018-08-22T18:38:56.485","utcOffsetHours":3.0,"latitude":40.976667,"longitude":28.815278,"elevationFeet":158,"classification":1,"active":true,"delayIndexUrl":"https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/IST?codeType=fs","weatherUrl":"https://api.flightstats.com/flex/weather/rest/v1/json/all/IST?codeType=fs"}],"equipments":[{"iata":"77W","name":"Boeing
+        777-300ER","turboProp":false,"jet":true,"widebody":true,"regional":false}]},"flightStatuses":[{"flightId":970665035,"carrierFsCode":"TK","flightNumber":"5","departureAirportFsCode":"IST","arrivalAirportFsCode":"ORD","departureDate":{"dateLocal":"2018-08-22T14:00:00.000","dateUtc":"2018-08-22T11:00:00.000Z"},"arrivalDate":{"dateLocal":"2018-08-22T17:35:00.000","dateUtc":"2018-08-22T22:35:00.000Z"},"status":"A","schedule":{"flightType":"J","serviceClasses":"RFJY","restrictions":""},"operationalTimes":{"publishedDeparture":{"dateLocal":"2018-08-22T14:00:00.000","dateUtc":"2018-08-22T11:00:00.000Z"},"publishedArrival":{"dateLocal":"2018-08-22T17:35:00.000","dateUtc":"2018-08-22T22:35:00.000Z"},"scheduledGateDeparture":{"dateLocal":"2018-08-22T14:00:00.000","dateUtc":"2018-08-22T11:00:00.000Z"},"estimatedGateDeparture":{"dateLocal":"2018-08-22T14:11:00.000","dateUtc":"2018-08-22T11:11:00.000Z"},"actualGateDeparture":{"dateLocal":"2018-08-22T14:11:00.000","dateUtc":"2018-08-22T11:11:00.000Z"},"flightPlanPlannedDeparture":{"dateLocal":"2018-08-22T14:10:00.000","dateUtc":"2018-08-22T11:10:00.000Z"},"estimatedRunwayDeparture":{"dateLocal":"2018-08-22T14:22:00.000","dateUtc":"2018-08-22T11:22:00.000Z"},"actualRunwayDeparture":{"dateLocal":"2018-08-22T14:22:00.000","dateUtc":"2018-08-22T11:22:00.000Z"},"scheduledGateArrival":{"dateLocal":"2018-08-22T17:35:00.000","dateUtc":"2018-08-22T22:35:00.000Z"},"estimatedGateArrival":{"dateLocal":"2018-08-22T17:26:00.000","dateUtc":"2018-08-22T22:26:00.000Z"},"flightPlanPlannedArrival":{"dateLocal":"2018-08-22T16:26:00.000","dateUtc":"2018-08-22T21:26:00.000Z"}},"codeshares":[{"fsCode":"PK","flightNumber":"5005","relationship":"L"},{"fsCode":"SQ","flightNumber":"6205","relationship":"L"}],"delays":{"departureGateDelayMinutes":11,"departureRunwayDelayMinutes":12},"flightDurations":{"scheduledBlockMinutes":695,"scheduledAirMinutes":616,"scheduledTaxiOutMinutes":10,"taxiOutMinutes":11,"scheduledTaxiInMinutes":69},"airportResources":{"departureTerminal":"I","arrivalTerminal":"5"},"flightEquipment":{"scheduledEquipmentIataCode":"77W","actualEquipmentIataCode":"77W","tailNumber":"TC-JJR"}}]}'
+    http_version: 
+  recorded_at: Wed, 22 Aug 2018 15:38:56 GMT
+recorded_with: VCR 4.0.0

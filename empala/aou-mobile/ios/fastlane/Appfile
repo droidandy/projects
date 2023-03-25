@@ -1,0 +1,21 @@
+for_platform :ios do
+  apple_id("onepood@gmail.com") # Your Apple email address
+
+  itc_team_id("119734157") # App Store Connect Team ID
+  team_id("3436TG88NR") # Developer Portal Team ID
+
+  for_lane :buildDevApp do
+    app_identifier 'com.allofusfinancial.devapp'
+  end
+
+  for_lane :buildDemoApp do
+    app_identifier 'com.allofusfinancial.mobileapp'
+  end
+
+  for_lane :buildProdApp do
+    app_identifier 'com.allofusfinancial.mobile'
+  end
+end
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

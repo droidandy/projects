@@ -1,0 +1,1 @@
+export { VehicleContent } from './VehicleContent';

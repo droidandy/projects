@@ -1,0 +1,127 @@
+@import "../../../styles/tools/mixins.scss";
+
+.PageProductDetails {
+  @include maxWidthPage;
+  @include defaultText;
+  width: 100%;
+  position: relative;
+
+  .Gallery {
+    margin: 0 auto;
+  }
+
+  @include media-query($medium) {
+      width: 95%;
+  }
+
+  .back_pro_link {
+    position: absolute;
+    max-width: 280px;
+
+    @include media-query($medium-down) {
+      max-width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    a {
+      font-family: var(--font-heading);
+
+      text-transform: uppercase;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        border-left: 1px solid #52aea2;
+        border-bottom: 1px solid #52aea2;
+        width: 8px;
+        height: 8px;
+        left: -10px;
+        top: 4px;
+        transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
+  }
+
+  // &__col {
+  //   @include media-query($small) {
+  //     padding: 0;
+  //   }
+  // }
+
+  .section-header {
+    margin-bottom: 0;
+    h1, h2 {
+      // font-size: 32px;
+      // line-height: 38px;
+      letter-spacing: 0.05em;
+    }
+  }
+  .ProductHeader {
+    margin: auto;
+    max-width: 500px;
+  }
+  .item-catalog--time {
+    position: relative;
+    padding: 1px 0 2px 35px;
+    margin: 8px 0 20px;
+    &:before {
+      content: "";
+      display: block;
+      background: url("./icon_clock.svg");
+      width: 24px;
+      height: 24px;
+      background-size: 100% 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__video {
+    h1 {
+      @include spacingBottomMedium;
+    }
+  }
+  .componentFeedbacks {
+    .slide {
+      background: var(--silver);
+    }
+  }
+  .description {
+    @include spacingBottomMedium;
+  }
+  .quiz {
+    h2 {
+      font-family: "Yanone Kaffeesatz";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .options {
+      @include spacingBottomMedium;
+
+      display: flex;
+      justify-content: center;
+      .componentQuizOption {
+        width: 120px;
+        margin: 0;
+
+        .bubble {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+  }
+}

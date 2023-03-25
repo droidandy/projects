@@ -1,0 +1,24 @@
+{
+  "development": {
+    "username": "xthrift",
+    "password": "saakaajula",
+    "database": "xthrift",
+    "host": "xthrift.c8ojtbyuqol9.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres"
+
+  },
+  "test": {
+    "username": "xthrift",
+    "password": "saakaajula",
+    "database": "xthrift",
+    "host": "xthrift.c8ojtbyuqol9.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "xthrift",
+    "password": "saakaajula",
+    "database": "xthrift",
+    "host": "xthrift.c8ojtbyuqol9.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

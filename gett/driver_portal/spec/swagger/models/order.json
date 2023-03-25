@@ -1,0 +1,117 @@
+{
+  "id": {
+    "type": "integer",
+    "example": 14347135
+  },
+  "origin": {
+    "type": "object",
+    "properties": {
+      "full_address": {
+        "type": "string",
+        "example": "216 Richmond Road, London, E8"
+      },
+      "latitude": {
+        "type": "number",
+        "example": 51.543267
+      },
+      "longitude": {
+        "type": "number",
+        "example": -0.061942
+      }
+    }
+  },
+  "destination": {
+    "type": "object",
+    "properties": {
+      "full_address": {
+        "type": "string",
+        "example": "Overland House, 151-153 Great Portland Street, London, W1W 6QW"
+      },
+      "latitude": {
+        "type": "number",
+        "example": 51.520896
+      },
+      "longitude": {
+        "type": "number",
+        "example": -0.143318
+      }
+    }
+  },
+  "dropoff": {
+    "type": "object",
+    "properties": {
+      "full_address": {
+        "type": "string",
+        "example": "153 Great Portland Street, London, W1W 6QW"
+      },
+      "latitude": {
+        "type": "number",
+        "example": 51.520912
+      },
+      "longitude": {
+        "type": "number",
+        "example": -0.143296
+      }
+    }
+  },
+  "events": {
+    "type": "object",
+    "properties": {
+      "scheduled_at": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2017-11-15T07:50:01+00:00"
+      },
+      "arrived_at": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2017-11-15T07:52:18+00:00"
+      },
+      "started_at": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2017-11-15T07:58:18+00:00"
+      },
+      "ended_at": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2017-11-15T08:43:02+00:00"
+      },
+      "cancelled_at": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2017-11-15T08:45:02+00:00"
+      }
+    }
+  },
+  "distance": {
+    "type": "number",
+    "example": 6.4251,
+    "description": "Miles"
+  },
+  "path": {
+    "type": "array",
+    "description": "Array with points coordinates",
+    "items": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lng": {
+          "type": "number"
+        }
+      }
+    },
+    "example": [
+      {
+        "lat": 51.543362875193,
+        "lng": -0.062043146973017
+      },
+      {
+        "lat": 51.543373510907,
+        "lng": -0.062232141158385
+      }
+    ]
+  }
+}

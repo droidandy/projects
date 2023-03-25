@@ -1,0 +1,5 @@
+export enum ADS_CARD_TYPE {
+  CUSTOM = 'CUSTOM',
+  C2C_EXPOCAR = 'C2C_EXPOCAR',
+  C2C_AD = 'C2C_AD',
+}

@@ -1,0 +1,120 @@
+.presentation-compare {
+  min-height: 500px;
+
+  .presentation-alternatives-actions {
+    height: 52px;
+    line-height: 43px;
+    margin: 30px 0 40px 0;
+    border-top: 1px solid $HEADER_SUB_COLOR2;
+    border-bottom: 1px solid $HEADER_SUB_COLOR2;
+
+    .left-block {
+      width: 60%;
+      float: left;
+      height: 50px;
+
+      .ui.dropdown {
+        display: inline-block;
+        height: 26px;
+        margin-top: 8px;
+        margin-right: 10px;
+        line-height: 29px;
+        border-radius: 0;
+
+        .dropdown.icon {
+          padding-top: 6px !important;
+        }
+      }
+    }
+
+
+    .right-block {
+      width: 40%;
+      float: right;
+      text-align: right;
+
+      .ui.grid {
+        margin: 0;
+        height: 50px;
+        .row {
+          padding: 0;
+
+          .column {
+            padding-top: 5px;
+            padding-left: 0;
+            padding-right: 0;
+
+            &.empty {
+              width: calc(100% - 329px);
+            }
+
+            &.label-column {
+              width: 124px !important;
+            }
+            &.toggle-column {
+              width: 88px !important;
+            }
+            &.showing-column {
+              width: 117px !important;
+            }
+          }
+        }
+      }
+
+      .toggle-label {
+        font-size: 13px;
+        line-height: 18px;
+        color: $HEADER_SUB_COLOR2;
+
+        span {
+          color: $FONT_COLOR;
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .toggle-button {
+        margin-right: 20px;
+        margin-left: 10px;
+        width: 58px;
+        margin-top: 5px;
+
+        .toggle-button-tap {
+          width: 22px;
+
+          &.right {
+            margin-left: -25px;
+            font-weight: 300;
+          }
+          &.left {
+            font-weight: 300;
+          }
+        }
+
+        .toggle-button-right {
+          background: url(../img/svg/group-2-2.svg);
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          margin-right: 0;
+          right: 0;
+          top: -1px;
+        }
+      }
+      .showing {
+        line-height: 35px;
+      }
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+    .filter-button {
+      border-radius: 0 !important;
+      background-color: white;
+      border-color: $PRESENTATION_NAVIGATION_COLOR;
+      margin-right: 10px;
+    }
+  }
+}

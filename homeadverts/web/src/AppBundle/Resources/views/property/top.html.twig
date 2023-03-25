@@ -1,0 +1,72 @@
+{% set likesTotal = property.getLikesCount() %}
+{% set commentsTotal = property.getMessagesCount() %}
+
+{% set propertyUrl = path('property_details', { 'id': property.id, 'slug': property.slug }) %}
+{% if app.user and is_liked_by_user(app.user, property) %}
+    {% set isLikedClass = '--is-liked' %}
+{% else %}
+    {% set isLikedClass = '' %}
+{% endif %}
+
+<div class="details-sliding-panel">
+    <div class="details-navigation one-column">
+        {% include 'AppBundle:user/profile:image.html.twig' with {user: property.user } %}
+        <div class="details">
+            <div class="titles">
+                <div class="title">{{ property.title|raw }}</div>
+                <div class="subtitle">
+                    {{ property.address.stateCounty }}, {{ property.address.countryName }}
+                </div>
+            </div>
+            <div class="item-navigation">
+                <div class="property-likes-{{ property.id }} like-button like-counter {{ isLikedClass }}"
+                     data-id="{{ property.id }}"
+                     data-type="property"
+                     data-title="{{ property.getTitle() }}"
+                     data-add-url="{{ path('ha_property_like_add', {id:property.id}) }}"
+                     data-remove-url="{{ path('ha_property_like_remove', {id:property.id}) }}"
+                >
+                    <i class="material-icons plus">favorite</i>
+                    <i class="material-icons minus">favorite</i>
+
+                    {% if likesTotal %}
+                        Likes (<span>{{ likesTotal }}</span>)
+                    {% else %}
+                        Like <span></span>
+                    {% endif %}
+                </div>
+
+                <a href="{{ path('ha_room_property_redirect', {id: property.id}) }}"
+                   class="comments-counter message-button"
+                >
+                    <i class="material-icons">comment</i>
+                    {% if commentsTotal %}
+                        <span>
+                        {{ commentsTotal }}
+                    </span> comments
+                    {% else %}
+                        <span></span>
+                        {% if not is_mobile() %}
+                            Open Discussion
+                        {% else %}
+                            Discussion
+                        {% endif %}
+                    {% endif %}
+                </a>
+
+                <div class="property-share-{{ property.id }} share-button"
+                     data-title="Share this property"
+                     data-image="{{ property.getPrimaryPhoto().url }}"
+                     data-url="{{ absolute_url(propertyUrl) }}"
+                >
+                    <i class="material-icons">reply</i>
+                    {% if not is_mobile() %}
+                        Share Property
+                    {% else %}
+                        Share
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

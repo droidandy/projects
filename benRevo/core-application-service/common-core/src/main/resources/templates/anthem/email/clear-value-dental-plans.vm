@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BenRevo</title>
+    <style type="text/css">
+
+       body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+        }
+        .bodyNoBg {
+            background: none;
+        }
+        /* headings */
+        h1, h2, h3, h4, h5, h6 {
+            color: #090b3c;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 26px;
+        }
+        h5 {
+            font-size: 24px;
+        }
+        h6 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            color: #676767;
+            margin-bottom: 10px;
+        }
+        div {
+            font-size: 12px;
+            color: #333;
+        }
+        .clearfix:after {
+            /*content: ".";
+            display: block;*/
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: auto;
+        }
+        .clearfix {
+            /*	display: inline-block;
+            */}
+        html[xmlns] .clearfix {
+            display: block;
+        }
+        * html .clearfix {
+            height: 1%;
+        }
+        .wrapper {
+            margin: auto;
+            max-width: 1100px;
+            width: 100%;
+        }
+        .floatRt {
+        }
+        .floatLft {
+        }
+        .clearBoth {
+            clear: both !important;
+        }
+        .noBorder {
+            border: 0px !important;
+        }
+        .noMargin {
+            margin: 0px !important;
+        }
+        /*********** custom *************/
+
+        .pageleft {
+            width: 15%;
+        }
+        .pageRt {
+
+            width: 77%;
+        }
+        .logo {
+
+            margin: 33px 0 91px;
+        }
+        .hdrRt {
+            width: 77%;
+            margin: 90px 0 0px 0;
+        }
+        /*****************  *************/
+
+
+        table tr td {
+            border-collapse: collapse;
+        }
+        .maintble {
+            max-width: 800px;
+            width:100%;
+            margin:0 auto;
+            border:none;
+        }
+        .maintble tr td {
+            color: #676766;
+            font-family: "OpenSansRegular_0";
+            font-size: 14px;
+        }
+        .hdtxtleft {
+            width:100%;
+        }
+        .maintble .hdrRt {
+            width:100%;
+            text-align:left;
+            margin:130px 0 0;
+        }
+        .rtmaintble {
+            border:none;
+        }
+        .rtmaintble tr td {
+            padding:10px 15px;
+            border:0;
+            border-bottom:1px solid #afb0af;
+        }
+        .tblbdr {
+            width:100%;
+        }
+        .tblbdrmain {
+            width:100% !important;
+        }
+
+        .rtmaintble tr.tblbdrmain {
+            width:100%;
+        }
+        .rtmaintble tr.tblbdrmain > td.tblbdr > {
+            width:100%;
+        }
+        .tablebordered tr {
+            border:0;
+        }
+        .tablebordered tr td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+        }
+        .tablebordered {
+            border:0;
+            border-bottom:1px solid #9fa09f;
+            padding-bottom:20px;
+            margin:0 0 10px 0;
+        }
+        .issueto {
+            width: 100%;
+        }
+        .issueto h2 {
+            width: 100%;
+            font-family: 'OpenSansBold';
+            font-size: 18px;
+            color: #999a99;
+            border-bottom: 4px solid #7d7e7e;
+            padding: 0 0 9px 0;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .hdrRt h1 {
+            font-size: 42px;
+            color: #11b4dd;
+            letter-spacing: 3px;
+            font-family: 'OpenSansBold';
+        }
+
+        .productMed {
+            width: 100%;
+            border-bottom: 4px solid #7d7e7e;
+        }
+        .productMed h2 {
+            font-family: 'OpenSansBold';
+            font-size: 18px;
+            color: #999a99;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-align: left;
+            border-bottom: 4px solid #7d7e7e;
+            padding-bottom: 10px;
+        }
+        .productMed h2 span {
+            color: #676766;
+        }
+
+        .rightpannel {
+            width:77%;
+            margin-left:5%;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<table class="maintble" border="0">
+    <tr>
+        <td class="rightpannel">
+            <tr>
+                <h1 style="padding-top: 0px;">Generated Rates for Dental Anthem Clear Value</h1>
+                <br></br>
+            </tr>
+            <table class="rtmaintble" width="100%" border="1" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td>Group's Legal Name</td>
+                    <td>$!clientName</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>$!date</td>
+                </tr>
+                <tr>
+                    <td>Number of Tiers</td>
+                    <td>$!ratingTiers</td>
+                </tr>
+                <tr>
+                    <td>Predominant County</td>
+                    <td>$!county</td>
+                </tr>
+                <tr>
+                    <td>SIC Code</td>
+                    <td>$!sicCode</td>
+                </tr>
+                <tr>
+                    <td>Average Age</td>
+                    <td>$!averageAge</td>
+                </tr>
+                <tr>
+                    <td>Commission Percentage</td>
+                    <td>#if($paymentMethod == "NET OF COMMISSION")0% - Net of Commissions#{else}$!commission%#end</td>
+                </tr>
+                <tr>
+                    <td>Qualified for Clear Value</td>
+                    <td>$!isQualified</td>
+                </tr>
+                <tr>
+                    <td>Clear Value Disqualification Reason</td>
+                    <td>$!disqualificationReason</td>
+                </tr>
+            </table>
+            <br></br>
+            <br></br>
+            #if($!isQualified)
+                <table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>Plan Name</td>
+                        <td>EE Rate % DIFF</td>
+                        <td>Tier 1 Rate</td>
+                        <td>Tier 2 Rate</td>
+                        <td>Tier 3 Rate</td>
+                        <td>Tier 4 Rate</td>
+                    </tr>
+                    #foreach($plan in ${plans})
+                        <tr>
+                            <td>$plan.medName</td>
+                            <td>#if(!$plan.currentEEtier1RateDiff)N/A#{else}$DecimalFormat.format($plan.currentEEtier1RateDiff)%#end</td>
+                            <td>$$DecimalFormat.format($plan.tier1Rate)</td>
+                            <td>$$DecimalFormat.format($plan.tier2Rate)</td>
+                            <td>$$DecimalFormat.format($plan.tier3Rate)</td>
+                            <td>$$DecimalFormat.format($plan.tier4Rate)</td>
+                        </tr>
+                    #end
+                </table>
+            #end
+        </td>
+    </tr>
+</table>
+</body>
+</html>

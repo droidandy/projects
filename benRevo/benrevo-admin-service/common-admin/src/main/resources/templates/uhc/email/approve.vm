@@ -1,0 +1,80 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    </head>
+    <body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial, Helvetica, sans-serif;">
+        <table bgcolor="#f8f9fb" style="margin:auto;" width="600">
+            <tr>
+                <td style="width:100%;text-align:right;float:left;">
+                    <img alt="UnitedHealthcare" src="https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/logo.jpg"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table bgcolor="#fff" style="margin:auto;padding:0 30px;" width="600">
+                        <tr>
+                            <td>
+                                <br/>
+                                <p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">Hello #if($StringUtils.isNotEmpty($broker_name))${broker_name}#end,
+                                    <br/>
+                                    <br/>
+				    The final selections submitted for the below employer group have been approved by UnitedHealthcare. You can now access the Onboarding section to complete the implementation.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table bgcolor="#fff" cellpadding="0" cellspacing="0" style="margin:0;padding:0" width="600">
+                                    <tr>
+                                        <td width="250">
+                                            <ul style="color: #7f7e7e;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">
+                                                <li>Employer Group Name:</li>
+                                                <li>Effective Date:</li>
+                                                <li>Broker Name:</li>
+                                            </ul>
+                                        </td>
+                                        <td width="350">
+                                            <ul style="list-style: none;color: #7f7e7e;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">
+                                                <li>$!client_name</li>
+                                                <li>$!effective_date</li>
+                                                <li>$!broker_name</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">Please note that the implementation process with UHC will not begin until the post sale forms have been completed and submitted within BenRevo.</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">To log back into the site to view the quote, click <a href="https://quote.benrevo.com/uhc/" target="_blank">here</a></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p style="height:10px;float:left;width:100%;border-bottom:1px solid #d7d7d7;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="color:#989898; font-family: Arial,Helvetica,sans-serif;font-size: 14px;line-height: 25px;margin-top:0px;">Thank you,
+				    <br/>UnitedHealthcare
+				</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+FROM node:lts-alpine
+
+# Copy source
+COPY ./ae-logos-datagrabber /ae-logos-datagrabber/
+COPY ./utils /utils/
+
+# Working directory
+WORKDIR /ae-logos-datagrabber
+
+ENV NODE_ENV=development
+# Install dependencies, build and cleanup
+RUN apk --update add --no-cache redis && cd /utils && npm ci --unsafe-perm && cd /ae-logos-datagrabber && npm ci --unsafe-perm && npm run build && npm prune
+
+ENV BULLMQ_REDIS_HOST=localhost
+ENV BULLMQ_REDIS_PORT=6379
+ENV BULLMQ_REDIS_MAX_PING_ATTEMPTS=30
+
+# Start job
+CMD /utils/wait-for-redis.sh $BULLMQ_REDIS_HOST $BULLMQ_REDIS_PORT $BULLMQ_REDIS_MAX_PING_ATTEMPTS && \
+    (npm start; EXIT_CODE=$?; redis-cli -h $BULLMQ_REDIS_HOST -p $BULLMQ_REDIS_PORT shutdown nosave; exit $EXIT_CODE)

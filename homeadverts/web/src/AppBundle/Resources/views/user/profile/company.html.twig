@@ -1,0 +1,19 @@
+{% if user.parentUser %}
+    <a class="company" href="{{ path('ha_user_profile', {id: user.parentUser.id, slug: user.parentUser|slug}) }}">
+        {% if (user.companyName) %}
+            {{ user.companyName }}
+        {% else %}
+            {{ user.parentUser.username }}
+        {% endif %}
+    </a>
+{% else %}
+    {% if user.companyName %}
+        <span class="company">
+            {{ user.companyName }}
+        </span>
+    {% endif %}
+{% endif %}
+
+
+
+

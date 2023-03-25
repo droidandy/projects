@@ -1,0 +1,496 @@
+{
+    "listingSummary": {
+        "listingId": "f4f9dc56-6680-490a-aa03-2d8312930898",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-07-06",
+        "photoCount": 26,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "CAD",
+            "amount": 649900,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 497800
+        },
+        "propertyAddress": {
+            "streetAddress": "18 Ch. Livinal",
+            "city": "Alleyn-et-Cawood",
+            "district": "Outaouais",
+            "stateProvince": "Quebec",
+            "stateProvinceCode": "QC",
+            "postalCode": "J0X1P0",
+            "country": "Canada",
+            "countryCode": "CA",
+            "latitude": 45.92243827,
+            "longitude": -76.21370315,
+            "geoCodeConfidenceLevel": "Medium",
+            "formattedAddress": "J0X 1P0, QC"
+        },
+        "geographicRegions": [
+            {
+                "type": "StateRegion",
+                "name": "OUTAOUAIS"
+            }
+        ],
+        "mlsNumbers": [
+            "18373491"
+        ],
+        "RFGListingId": "PYLM8F",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/pylm8f",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Other Style",
+        "propertyName": "Alleyn-et-Cawood, Outaouais",
+        "totalBath": 3,
+        "lotSize": "3794.96 SM",
+        "buildingArea": "4190 Sq. Ft.",
+        "noOfBedrooms": 4,
+        "squareFootage": 4190,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/FCD331D3-8AFE-4963-A4B9-E1FCE38EF865",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-03T05:33:04.673",
+        "agents": [
+            {
+                "id": "ee96fb7d-4bb5-4a8c-8669-dab117329878",
+                "name": "Delmar Fincher",
+                "firstName": "Delmar",
+                "lastName": "Fincher",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/31EDEC62-204C-4DCC-AC43-254B9B5BB36E",
+                "emailAddress": "delmar.fincher@russlyon.com",
+                "businessPhone": "4809912929",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "3e2068da-9ee2-4418-83d0-e5825c02bdda",
+                    "RFGOfficeId": "0020",
+                    "companyId": "ccf3b688-6771-4135-bf38-ab35ffa85a27",
+                    "companyName": "Russ Lyon",
+                    "RFGCompanyId": "800201",
+                    "brandCode": "SIR",
+                    "name": "Russ Lyon Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "7669 E. Pinnacle Peak Road Suite 110",
+                        "city": "Scottsdale",
+                        "district": "Maricopa",
+                        "stateProvince": "Arizona",
+                        "stateProvinceCode": "AZ",
+                        "postalCode": "85255",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 33.69598,
+                        "longitude": -111.91516,
+                        "formattedAddress": "7669 E Pinnacle Peak Rd, Scottsdale, AZ 85255"
+                    },
+                    "phoneNumber": "4805857070",
+                    "emailAddress": "contact@russlyon.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 2,
+    "halfBath": 1,
+    "parkingPlaces": 0,
+    "yearBuilt": "2018",
+    "providerKey": "f4f9dc56-6680-490a-aa03-2d8312930898",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Gated community with beautiful charming house on the water on a 1 acre lot. Solar home system with electricity. High ceiling with open concept. Large living room with wood fireplace. Walk out basement with massive family room. View on the lake. Very high end 10 min away from Mont-Ste-Marie. A are find!",
+            "htmlRemark": "Gated community with beautiful charming house on the water on a 1 acre lot. Solar home system with electricity. High ceiling with open concept. Large living room with wood fireplace. Walk out basement with massive family room. View on the lake. Very high end 10 min away from Mont-Ste-Marie. A are find!"
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "fr",
+            "remark": "Maison sur un acre de terrain sur le bord de l&apos;eau dans un projet r\u00e9sidentiel prive. Maison solaire et \u00e9lectrique de 4 chambres et 3 salles de bain. Bois franc, plafond cath\u00e9drale, foyer au bois. \u00e0 10 min du Mont Ste-Marie.",
+            "htmlRemark": "Maison sur un acre de terrain sur le bord de l&apos;eau dans un projet r\u00e9sidentiel prive. Maison solaire et \u00e9lectrique de 4 chambres  et 3 salles de bain. Bois franc, plafond cath\u00e9drale, foyer au bois. \u00e0 10 min du Mont Ste-Marie."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/pylm8f",
+            "contentLanguageCode": "en"
+        },
+        {
+            "type": "Other",
+            "name": "Sotheby's International Realty Canada",
+            "url": "http:\/\/sothebysrealty.ca\/en\/property\/quebec\/outaouais-real-estate\/alleyn-et-cawood\/324812\/",
+            "contentLanguageCode": "en"
+        },
+        {
+            "type": "Other",
+            "name": "Sotheby's International Realty Canada",
+            "url": "http:\/\/sothebysrealty.ca\/fr\/property\/quebec\/outaouais-real-estate\/alleyn-et-cawood\/324812\/",
+            "contentLanguageCode": "fr"
+        },
+        {
+            "type": "Other",
+            "name": "Sotheby's International Realty Canada",
+            "url": "http:\/\/sothebysrealty.ca\/zh\/property\/quebec\/outaouais-real-estate\/alleyn-et-cawood\/324812\/",
+            "contentLanguageCode": "zh"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "615EE9B0-E266-495D-9171-020E022B98B9",
+            "sequenceNumber": 25,
+            "url": "\/\/openapi.azureedge.net\/615EE9B0-E266-495D-9171-020E022B98B9",
+            "isDefault": false,
+            "caption": "Land\/Lot",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "778D6F12-8AD7-41A7-B007-0717A7BAA1AA",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/778D6F12-8AD7-41A7-B007-0717A7BAA1AA",
+            "isDefault": false,
+            "caption": "View",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "3716FFCF-656D-4FD6-80FB-1C41BA18BAC7",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/3716FFCF-656D-4FD6-80FB-1C41BA18BAC7",
+            "isDefault": false,
+            "caption": "Master bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "02387B96-3CF0-4880-8CDC-1D55B72F0D6F",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/02387B96-3CF0-4880-8CDC-1D55B72F0D6F",
+            "isDefault": false,
+            "caption": "Bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "F84B6E6A-A9C0-4384-9832-26E777816863",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/F84B6E6A-A9C0-4384-9832-26E777816863",
+            "isDefault": false,
+            "caption": "Overall View",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "13BBDC96-B33E-413B-AB06-33ED8F0AC277",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/13BBDC96-B33E-413B-AB06-33ED8F0AC277",
+            "isDefault": false,
+            "caption": "Family room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "9D037F6B-B5C6-4544-9ABF-54E56F830788",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/9D037F6B-B5C6-4544-9ABF-54E56F830788",
+            "isDefault": false,
+            "caption": "Water view",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "9FC628F1-9EFC-41A1-937B-7B4AB9118924",
+            "sequenceNumber": 3,
+            "url": "http:\/\/sothebysrealty.ca\/zh\/property\/quebec\/outaouais-real-estate\/alleyn-et-cawood\/324812\/",
+            "isDefault": false,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "D254D3B6-318B-4A9E-A851-814B470E790D",
+            "sequenceNumber": 26,
+            "url": "\/\/openapi.azureedge.net\/D254D3B6-318B-4A9E-A851-814B470E790D",
+            "isDefault": false,
+            "caption": "Land\/Lot",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "2052BEA5-3E04-4AB3-BDCF-8CEFE595AF92",
+            "sequenceNumber": 2,
+            "url": "http:\/\/sothebysrealty.ca\/fr\/property\/quebec\/outaouais-real-estate\/alleyn-et-cawood\/324812\/",
+            "isDefault": false,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "29DBE15D-D4A1-4834-9F6B-907B4CE9D166",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/29DBE15D-D4A1-4834-9F6B-907B4CE9D166",
+            "isDefault": false,
+            "caption": "Overall View",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "A9AF555C-1A5D-4FCD-A74D-98A3FE1F8FB8",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/A9AF555C-1A5D-4FCD-A74D-98A3FE1F8FB8",
+            "isDefault": false,
+            "caption": "Bathroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "B43D07CC-3705-4BE4-BD91-9BC12E2DCBF1",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/B43D07CC-3705-4BE4-BD91-9BC12E2DCBF1",
+            "isDefault": false,
+            "caption": "Overall View",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "9620306B-2295-4D97-A1F5-9E5C4D040353",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/9620306B-2295-4D97-A1F5-9E5C4D040353",
+            "isDefault": false,
+            "caption": "Bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "983DE137-8998-4F02-BFA9-A6A4D9FD046A",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/983DE137-8998-4F02-BFA9-A6A4D9FD046A",
+            "isDefault": false,
+            "caption": "Water view",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "5FE9CB02-6F88-4130-9502-A7FDDF7ECA06",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/5FE9CB02-6F88-4130-9502-A7FDDF7ECA06",
+            "isDefault": false,
+            "caption": "Kitchen",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "6746D9E8-871D-4444-B7C2-AD1609D760BF",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/6746D9E8-871D-4444-B7C2-AD1609D760BF",
+            "isDefault": false,
+            "caption": "Family room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "F433A759-4CDE-4A83-BC67-C47AD001DACD",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/F433A759-4CDE-4A83-BC67-C47AD001DACD",
+            "isDefault": false,
+            "caption": "Bathroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "D92BD4C5-99DD-4D94-A0D4-C60406A6CE09",
+            "sequenceNumber": 1,
+            "url": "http:\/\/sothebysrealty.ca\/en\/property\/quebec\/outaouais-real-estate\/alleyn-et-cawood\/324812\/",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "D0D7ADF5-38E4-40B6-B72D-CB7341B04F34",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/D0D7ADF5-38E4-40B6-B72D-CB7341B04F34",
+            "isDefault": false,
+            "caption": "Living room",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "3BE33320-2B08-428D-97F7-CECFB88C1A4B",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/3BE33320-2B08-428D-97F7-CECFB88C1A4B",
+            "isDefault": false,
+            "caption": "Water view",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "558C50E5-66B8-47DD-B0AB-CFC0C9FFD21F",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/558C50E5-66B8-47DD-B0AB-CFC0C9FFD21F",
+            "isDefault": false,
+            "caption": "Bedroom",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "B34F689F-D9EE-4182-B1D4-D1D44B8BB166",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/B34F689F-D9EE-4182-B1D4-D1D44B8BB166",
+            "isDefault": false,
+            "caption": "Water view",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "FEE8E77E-E372-4DEC-84D1-D37FC8973C07",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/FEE8E77E-E372-4DEC-84D1-D37FC8973C07",
+            "isDefault": false,
+            "caption": "Water view",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "99777E8D-993D-44C1-900D-DB95D70942EF",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/99777E8D-993D-44C1-900D-DB95D70942EF",
+            "isDefault": false,
+            "caption": "Reception Area",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "FCD331D3-8AFE-4963-A4B9-E1FCE38EF865",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/FCD331D3-8AFE-4963-A4B9-E1FCE38EF865",
+            "isDefault": true,
+            "caption": "Frontage",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "D309908F-5AAB-4CDB-861F-E90EEE5ABC15",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/D309908F-5AAB-4CDB-861F-E90EEE5ABC15",
+            "isDefault": false,
+            "caption": "Kitchen",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "91A4DC91-4E8F-4D3B-B6B5-F02B2A217667",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/91A4DC91-4E8F-4D3B-B6B5-F02B2A217667",
+            "isDefault": false,
+            "caption": "View",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        },
+        {
+            "mediaID": "BC55E2B1-B35B-436E-A2BA-F7A689DF28C3",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/BC55E2B1-B35B-436E-A2BA-F7A689DF28C3",
+            "isDefault": false,
+            "caption": "Overall View",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-07-07T05:35:23.060"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "18373491",
+            "isPrimary": true
+        }
+    ]
+}

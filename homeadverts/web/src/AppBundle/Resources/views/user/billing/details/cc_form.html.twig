@@ -1,0 +1,122 @@
+<div class="cc-form">
+    <p class="charge">
+        The charge of <strong>
+            {{ billing.base_price }}
+            {{ billing.base_currency }}
+        </strong>
+        are processed each 30 days, for one month of service.
+    </p>
+
+    <div class="inputs">
+        <div class="card-number">
+            <strong>Card details</strong>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input"
+                       name="number"
+                       type="text"
+                       id="number"
+                       required="true"
+                />
+                <label class="mdl-textfield__label" for="number">
+                    Card number
+                </label>
+            </div>
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input"
+                       name="cardholderName"
+                       type="text"
+                       id="cardholderName"
+                       required="true"
+                />
+                <label class="mdl-textfield__label" for="cardholderName">
+                    Name on card
+                </label>
+            </div>
+
+            <div class="last-line">
+                <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input"
+                           name="expirationMonth"
+                           type="text"
+                           maxlength="2"
+                           size="2"
+                           id="expirationMonth"
+                           required="true"
+                    />
+                    <label class="mdl-textfield__label" for="expirationMonth">
+                        Month
+                    </label>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield ">
+                    <input class="mdl-textfield__input"
+                           name="expirationYear"
+                           type="text"
+                           maxlength="2"
+                           size="2"
+                           id="expirationYear"
+                           required="true"
+                    />
+                    <label class="mdl-textfield__label" for="expirationYear">
+                        Year
+                    </label>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield cc-cvv">
+                    <input class="mdl-textfield__input"
+                           name="cvv"
+                           type="text"
+                           id="cvv"
+                           required="true"
+                    />
+                    <label class="mdl-textfield__label" for="cvv">
+                        CVV
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="card-address">
+            <strong>Billing address</strong>
+
+            <div class="mdl-textfield mdl-js-textfield getmdl-select getmdl-select__fix-height">
+
+                <input class="mdl-textfield__input"
+                        {% if app.user.card is defined and app.user.card.zip %}
+                            value="{{ app.user.card.counry }}"
+                        {% endif %}
+                       id="countryCodeAlpha2"
+                       required="true"
+                       readonly/>
+
+                <input value="" type="hidden" name="countryCodeAlpha2"/>
+                <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                <label class="mdl-textfield__label" for="countryCodeAlpha2">Country</label>
+
+                <ul for="countryCodeAlpha2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                    {% for country in countries %}
+                        <li class="mdl-menu__item"
+                            data-val="{{ country.iso2 }}">
+                            {{ country.name }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="postal-code mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input"
+                       name="postalCode"
+                       type="text"
+                       id="postalCode"
+                       required="true"
+                        {% if app.user.card is defined and app.user.card.zip %}
+                            value="{{ app.user.card.zip }}"
+                        {% endif %}
+                />
+                <label class="mdl-textfield__label" for="postalCode">
+                    Postal Code
+                </label>
+            </div>
+        </div>
+        <img class="cc-img" src="{{ asset('assets/images/billing/cc.jpg') }}"/>
+    </div>
+</div>

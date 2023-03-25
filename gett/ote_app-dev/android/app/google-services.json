@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "913555513167",
+    "firebase_url": "https://ote-push-production.firebaseio.com",
+    "project_id": "ote-push-production",
+    "storage_bucket": "ote-push-production.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913555513167:android:3d9ed0f8381ec1eb",
+        "android_client_info": {
+          "package_name": "com.onetransport.enterprise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913555513167-fpbsdr3ouunktkhei97t20qa0u48dlkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzvPo4cwXdlNCysAUdL6muEI_yN1F_ADw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913555513167:android:1e1c17d547c63d50",
+        "android_client_info": {
+          "package_name": "com.onetransport.enterprise.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913555513167-fpbsdr3ouunktkhei97t20qa0u48dlkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzvPo4cwXdlNCysAUdL6muEI_yN1F_ADw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,315 @@
+{
+  "listingSummary": {
+    "listingId": "028109a4-09bc-419a-a242-c597bb0ad117",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2016-01-01",
+    "photoCount": 16,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 590000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "Ruta 2, Fray Bentos",
+      "city": "Río Negro",
+      "stateProvince": "Río Negro",
+      "stateProvinceCode": "RN",
+      "postalCode": "65000",
+      "country": "Uruguay",
+      "countryCode": "UY",
+      "latitude": -33.181720746887,
+      "longitude": -58.291809149086
+    },
+    "RFGListingId": "JG3F4P",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/jg3f4p",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Farm and Agriculture",
+    "propertyType": "Farm/Ranch/Plantation",
+    "propertyStyle": "1 Level Ranch",
+    "propertyUse": "Vacation Home",
+    "propertyName": "Historic Farm",
+    "lotSize": "25 HA",
+    "buildingArea": "300 Sq. Ft.",
+    "squareFootage": 300.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/09A4A918-E1A7-4C01-8AF1-59B5F9F1C7C8",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2017-12-20T05:59:42.217",
+    "agents": [
+      {
+        "id": "38b69803-6d89-4aa0-920d-eb1f8c8bca4c",
+        "name": "Carlos Garcia Arocena",
+        "firstName": "Carlos",
+        "lastName": "Garcia Arocena",
+        "gender": "Male",
+        "defaultPhotoURL": "//openapi.azureedge.net/EB1774FB-24A3-48EA-AF1C-CE5902E4EABA",
+        "emailAddress": "cgas@badoperazzo.com",
+        "businessPhone": "+59859826046463",
+        "isPrimary": true,
+        "office": {
+          "officeId": "31077df0-54fe-4dfc-b78c-52c0e8e3077e",
+          "RFGOfficeId": "0006 ",
+          "companyId": "56b92138-2981-4ab0-85ad-a2a3aee0a655",
+          "companyName": "Perazzo Inmobiliara Sotheby's International Realty",
+          "RFGCompanyId": "810023",
+          "brandCode": "SIR",
+          "name": "Bado & Perazzo Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "Divina Comedia 1666 ",
+            "city": "Montevideo",
+            "stateProvince": "Montevideo",
+            "stateProvinceCode": "MO",
+            "postalCode": "",
+            "country": "Uruguay",
+            "countryCode": "UY",
+            "latitude": -34.8877,
+            "longitude": -56.0592
+          },
+          "phoneNumber": "598 2604 6463",
+          "emailAddress": "cgas@badoperazzo.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "providerKey": "028109a4-09bc-419a-a242-c597bb0ad117",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "A historic farm of 25 hectares near Fray Bentos with a house from 1880 that was fully renovated in recent years. It is one of the first English estancias in Uruguay. Distance to Fray Bentos city is 7 km and distance to route 3 is 11 km. Located at 300 km from Montevideo and 8 km from the international bridge between Uruguay and Argentina. Golf course and good fishing only 7 Kim's away.The main house consists of 7 bedrooms and 4 bathrooms plus two livings. It also has a kitchen and deposit.Staff house has a living room, 2 bedrooms, bathroom and kitchen.There is a barn and two water wells with more than sufficient water supply.The entire house was renovated with lots of authentic details in wooden floors, doors and fireplaces.",
+      "htmlRemark": "<p style=\"color:#222222;font-family:arial, sans-serif;font-size:13px;background-color:#ffffff;margin-bottom:10px;\"><span style=\"background-color:rgba(255, 255, 255, 0);\">A historic farm of 25 hectares near Fray Bentos with a house from 1880 that was fully renovated in recent years. It is one of the first English estancias in Uruguay. Distance to Fray Bentos city is 7 km and distance to route 3 is 11 km. Located at 300 km from Montevideo and 8 km from the international bridge between Uruguay and Argentina. Golf course and good fishing only 7 Kim's away.&nbsp;</span></p><p style=\"color:#222222;font-family:arial, sans-serif;font-size:13px;background-color:#ffffff;margin-bottom:10px;\"><span style=\"background-color:rgba(255, 255, 255, 0);\">The main house consists of 7 bedrooms and 4 bathrooms plus two livings. It also has a kitchen and deposit.<br />Staff house has a living room, 2 bedrooms, bathroom and kitchen.</span></p><p style=\"color:#222222;font-family:arial, sans-serif;font-size:13px;background-color:#ffffff;margin-bottom:10px;\"><span style=\"background-color:rgba(255, 255, 255, 0);\">There is a barn and two water wells with more than sufficient water supply.<br />The entire house was renovated with lots of authentic details in wooden floors, doors and fireplaces.&nbsp;</span></p><div><span style=\"background-color:rgba(255, 255, 255, 0);\"><br /></span></div>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/jg3f4p",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "91B12EE9-BD4F-4E3E-8A46-070808A15663",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/91B12EE9-BD4F-4E3E-8A46-070808A15663",
+      "isDefault": false,
+      "caption": "139",
+      "shortDescription": "Road to the Ranch",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "D0E697CF-209B-47EA-A99B-0895BB1A1958",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/D0E697CF-209B-47EA-A99B-0895BB1A1958",
+      "isDefault": false,
+      "caption": "PC200014",
+      "shortDescription": "Landscape",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "73C113C8-35C0-45C7-B7D8-0CAF41EBAD09",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/73C113C8-35C0-45C7-B7D8-0CAF41EBAD09",
+      "isDefault": false,
+      "caption": "DSC01538",
+      "shortDescription": "Patio",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "022A8FF5-06B7-468F-9917-1F397799E460",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/022A8FF5-06B7-468F-9917-1F397799E460",
+      "isDefault": false,
+      "caption": "173",
+      "shortDescription": "Main house",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "078CF567-A2BB-48DE-9DB1-311DB7BB38FF",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/078CF567-A2BB-48DE-9DB1-311DB7BB38FF",
+      "isDefault": false,
+      "caption": "DSC01560",
+      "shortDescription": "Sheeps",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "287A77FC-D013-493C-81DF-3B4C13217308",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/287A77FC-D013-493C-81DF-3B4C13217308",
+      "isDefault": false,
+      "caption": "DSC01545",
+      "shortDescription": "Main house",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "322DF7C2-0814-4AA9-98EE-4A7710175DBD",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/322DF7C2-0814-4AA9-98EE-4A7710175DBD",
+      "isDefault": false,
+      "caption": "DSC01561",
+      "shortDescription": "Outdoor landscape",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "09A4A918-E1A7-4C01-8AF1-59B5F9F1C7C8",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/09A4A918-E1A7-4C01-8AF1-59B5F9F1C7C8",
+      "isDefault": true,
+      "caption": "DSC01544",
+      "shortDescription": "Main house",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "D00EF483-46C0-4B49-8DC8-6D07BDBDEC31",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/D00EF483-46C0-4B49-8DC8-6D07BDBDEC31",
+      "isDefault": false,
+      "caption": "DSC01566",
+      "shortDescription": "Outdoor landscape",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "CB1AA39B-9AD8-4A73-86D3-78EE29D8552E",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/CB1AA39B-9AD8-4A73-86D3-78EE29D8552E",
+      "isDefault": false,
+      "caption": "178",
+      "shortDescription": "Horses",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "C846ADDA-BF5E-4CD3-8EDD-915F7FBCC356",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/C846ADDA-BF5E-4CD3-8EDD-915F7FBCC356",
+      "isDefault": false,
+      "caption": "DSC01554",
+      "shortDescription": "Bedroom",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "E1450AA5-E512-440C-B8A9-91F5CBE355A9",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/E1450AA5-E512-440C-B8A9-91F5CBE355A9",
+      "isDefault": false,
+      "caption": "DSC01536",
+      "shortDescription": "Patio",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "55C66E87-5A06-443D-A567-A41E648C2473",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/55C66E87-5A06-443D-A567-A41E648C2473",
+      "isDefault": false,
+      "caption": "DSC01563",
+      "shortDescription": "Outdoor landscape",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "139BB873-EE44-44BE-8B0C-AC3D98AE7FDE",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/139BB873-EE44-44BE-8B0C-AC3D98AE7FDE",
+      "isDefault": false,
+      "caption": "DSC01537",
+      "shortDescription": "Patio",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "5B26B831-F72D-4CA1-B921-C86D06E118DE",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/5B26B831-F72D-4CA1-B921-C86D06E118DE",
+      "isDefault": false,
+      "caption": "DSC01539",
+      "shortDescription": "Patio",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    },
+    {
+      "mediaID": "A910C5C0-4725-46C0-8D38-EFB09AF3E5F3",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/A910C5C0-4725-46C0-8D38-EFB09AF3E5F3",
+      "isDefault": false,
+      "caption": "232",
+      "shortDescription": "Landscape",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 950,
+      "width": 1290,
+      "lastUpdateOn": "2017-12-20T05:59:42.233"
+    }
+  ]
+}

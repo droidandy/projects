@@ -1,0 +1,10 @@
+<div id="tags-to-follow" data-heading="Popular">
+    <div class="content">
+        {% for t in top_rated_tags() %}
+            <a href="{{ path('ha_tag_details', {name: t.tag.name}) }}"
+               class="mdl-navigation__link">
+                {{ t.tag.displayName }}
+            </a>
+        {% endfor %}
+    </div>
+</div>

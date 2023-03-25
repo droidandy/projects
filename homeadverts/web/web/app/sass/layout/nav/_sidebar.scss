@@ -1,0 +1,331 @@
+.touch,
+.no-touch {
+  .page-container, .mp-level, #sidebar-menu {
+    @include transition(transform 0.30s, margin 0.30s, left 0.30s);
+  }
+}
+
+.page-container {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    background: #fff;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.3);
+    @include transition(opacity 0.3s);
+  }
+
+  &.\--pushed {
+    &::after {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      z-index: 999;
+      @include transition(opacity 0.3s);
+    }
+  }
+
+  &.\--fixed {
+    position: fixed;
+  }
+}
+
+#sidebar-menu {
+  z-index: 111;
+  position: fixed;
+  background: #000;
+  width: 260px;
+  height: 100vh;
+  display: block;
+  transform: translateX(-270px);
+
+  .mp-level > form > h2,
+  .mp-level > form > ul > li > .item {
+    padding-left: 20px !important;
+  }
+
+  .mp-level {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #282828;
+    z-index: 1;
+
+    h2 {
+      margin: 0;
+      padding: 25px 30px;
+      color: #eee;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+      font-size: 2em;
+      font-weight: 500;
+    }
+    .logo {
+      width: 170px;
+      padding: 35px 0 35px 35px;
+    }
+    .back {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 9099;
+      color: #bbb;
+      font-size: 30px;
+      margin-right: 5px;
+      margin-top: 5px;
+      @include transition(transform 0.3s, opacity 0.3s);
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        color: #eee;
+
+        .item {
+          padding: 15px 20px 15px 30px;
+          color: #ccc;
+          display: block;
+          outline: none;
+          text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+          font-weight: 100;
+          font-size: 18px;
+          position: relative;
+          @include transition(color 0.35s, background 0.35s, box-shadow 0.35s);
+
+          &:hover {
+            color: #fff;
+          }
+
+          i {
+            vertical-align: bottom;
+            font-size: 25px;
+            line-height: 22px;
+            margin-right: 5px;
+          }
+
+          &.\--label {
+            padding-left: 55px;
+          }
+        }
+
+        &.separator {
+          border-top: 1px solid rgba(0, 0, 0, 0.2);
+          padding-bottom: 20px;
+          margin-top: 20px;
+        }
+      }
+
+      &.separator {
+        li {
+          box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.2);
+            box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    > form {
+      max-height: 100%;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: auto;
+    }
+
+    // Nested Levels ------------------------------------------
+    .mp-level {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      @include translate3d(-97%, 0, 0);
+
+      &.mp-level-open {
+        @include translate3d(-45px, 0, 0);
+        box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
+        z-index: 3;
+
+        .mp-level {
+          &.mp-level-open {
+            z-index: 5;
+          }
+        }
+      }
+
+      h2 {
+        padding: 25px 40px;
+      }
+      .item {
+        padding: 15px 20px 15px 40px;
+      }
+    }
+    // Nested Levels ------------------------------------------
+
+    &::after, &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      content: '';
+      opacity: 0;
+    }
+
+    &::after {
+      z-index: 0;
+      background: rgba(0, 0, 0, 0.2);
+      @include transition(opacity 0.3s, width 0.1s 0.3s, height 0.1s 0.3s);
+    }
+
+    &.mp-level-overlay {
+      cursor: pointer;
+
+      .back {
+        opacity: 1;
+      }
+
+      &::after {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        @include transition(opacity 0.3s);
+      }
+
+      &.mp-level::before {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        opacity: 1;
+      }
+    }
+  }
+
+  #sidebar-filters {
+    .item {
+      .reset-button {
+        display: none;
+      }
+
+      &.item-switch {
+        label {
+          float: right;
+          width: 40px;
+          margin-right: -10px;
+          z-index: 0;
+        }
+
+        //Override colors
+        .mdl-switch.is-checked .mdl-switch__track {
+          background: rgba(44, 181, 30, 0.5);
+        }
+
+        .mdl-switch.is-checked .mdl-switch__thumb {
+          background: rgb(44, 181, 30);
+        }
+
+        .mdl-switch__ripple-container .mdl-ripple {
+          background: rgb(44, 181, 30);
+        }
+      }
+
+      &.reset-filter {
+        .reset-button {
+          z-index: 0;
+          cursor: pointer;
+          top: 0;
+          right: 0;
+          width: 50px;
+          height: 100%;
+          position: absolute;
+          display: block;
+          @include translate3d(0, 0, 0);
+
+          &:hover {
+            &::before,
+            &::after {
+              background: #9e9e9e;
+            }
+          }
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            display: block;
+            width: 50%;
+            height: 1px;
+            font-size: 0;
+            @include user-select(none);
+
+            &::before,
+            &::after {
+              position: absolute;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #bbb;
+              content: '';
+            }
+
+            &::before {
+              @include rotate(45deg);
+            }
+
+            &::after {
+              @include rotate(-45deg);
+            }
+          }
+        }
+      }
+    }
+
+    .reset-and-close {
+      cursor: pointer;
+      float: right;
+      margin: 20px;
+      color: #aaa;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+
+  @media only screen and (max-width: $tablet_width) {
+    .mp-level > form,
+    .mp-level > ul {
+      padding-bottom: 80px;
+    }
+  }
+
+  @media only screen and (max-width: $mobile_width) {
+    .mp-level,
+    .mp-level.mp-level {
+      .logo {
+        width: 150px;
+      }
+      h2 {
+        padding-left: 40px;
+      }
+      ul li .item {
+        padding: 10px 20px 12px 40px;
+        font-size: 16px !important;
+      }
+    }
+  }
+}

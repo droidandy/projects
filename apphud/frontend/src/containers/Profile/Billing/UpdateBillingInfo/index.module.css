@@ -1,0 +1,36 @@
+.billding-info-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 730px;
+}
+
+.billding-info-form-column {
+  width: 100%;
+}
+
+.billding-info-form-column:first-child {
+  margin-right: 40px;
+}
+
+.button-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-success {
+  margin-right: 25px !important;
+}
+
+.button {
+  width: 100%;
+}
+
+.select {
+  appearance: none;
+}
+
+.input-item {
+  width: calc(50% - 20px);
+}

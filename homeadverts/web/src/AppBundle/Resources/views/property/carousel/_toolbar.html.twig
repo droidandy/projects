@@ -1,0 +1,55 @@
+{% set primaryVideo = property.primaryVideo %}
+{% set primaryVideo3d = property.primaryVideo3d %}
+{% set propertyUrl = path('property_details', { 'id': property.id, 'slug': property.slug }) %}
+{% set isLiked = app.user and is_liked_by_user(app.user, property) %}
+
+<div class="gallery-toolbar">
+    <ul>
+        {% if type == 'modal' %}
+            <li class="details">
+                <a target="_blank" href="{{ propertyUrl }}">
+                    <i class="material-icons">subject</i>
+                    <span>Details</span>
+                </a>
+            </li>
+        {% endif %}
+
+        {% if primaryVideo %}
+            <li class="play-video"
+                data-type="{{ primaryVideo.getType() }}"
+                data-url="{{ primaryVideo.getVideoUrl() }}">
+                <i class="material-icons">videocam</i>
+            </li>
+        {% endif %}
+
+        {% if primaryVideo3d %}
+            <li class="play-3d"
+                data-url="{{ primaryVideo3d.url }}">
+                <i class="material-icons">3d_rotation</i>
+            </li>
+        {% endif %}
+
+        <li class='counter-wrapper'>
+        </li>
+
+        <li class="share"
+            data-title="Share this property"
+            data-image="{{ property.getPrimaryPhoto().url }}"
+            data-url="{{ absolute_url(propertyUrl) }}">
+            <i class="material-icons">reply</i>
+        </li>
+
+        <li class="like {{ isLiked ? '--is-liked' : '' }}"
+            data-title="{{ property.getTitle() }}"
+            data-id="{{ property.id }}"
+            data-type="property"
+            data-add-url="{{ path('ha_property_like_add', { id: property.id }) }}"
+            data-remove-url="{{ path('ha_property_like_remove', { id: property.id }) }}">
+            <i class="material-icons unliked">favorite_bordered</i>
+            <i class="material-icons liked">favorite</i>
+        </li>
+
+        {% if type == 'inline' %}
+        {% endif %}
+    </ul>
+</div>

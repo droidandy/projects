@@ -1,0 +1,928 @@
+{
+  "listingSummary": {
+    "listingId": "be529d7c-ca3b-40f9-86c0-554a660facca",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2019-05-06",
+    "photoCount": 37,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 520000,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "765 Mountain View Drive",
+      "city": "Fairplay",
+      "district": "Park County",
+      "stateProvince": "Colorado",
+      "stateProvinceCode": "CO",
+      "postalCode": "80440",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 39.239109,
+      "longitude": -106.093841,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "765 Mountain View Dr, Fairplay, CO 80440"
+    },
+    "mlsNumbers": [
+      "S1013230"
+    ],
+    "RFGListingId": "929Q3H",
+    "isNewConstruction": false,
+    "listingURL": "https:\/\/www.sothebysrealty.com\/id\/929q3h",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Multi Level",
+    "propertyName": "Rocky Mountain Retreat",
+    "totalBath": 2,
+    "buildingArea": "1792 Sq. Ft.",
+    "noOfBedrooms": 3,
+    "squareFootage": 1792,
+    "defaultPhotoURL": "\/\/imgs.azureedge.net\/D7AB1F48-6157-4447-A1AF-7046D017FB76",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2019-05-21T17:00:41.740",
+    "agents": [
+      {
+        "id": "991c7090-7569-4299-b838-b9a3b0833738",
+        "name": "Jeni Friedrich",
+        "firstName": "Jeni",
+        "lastName": "Friedrich",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/imgs.azureedge.net\/26F3135E-3BEA-4971-AF15-0E117CAE99A6",
+        "emailAddress": "jfriedrich@livsothebysrealty.com",
+        "leadEmailAddress": "800217.lead.4027403@leads.leadrouter.com",
+        "businessPhone": "9704853837",
+        "mobilePhone": "9704853837",
+        "isPrimary": true,
+        "office": {
+          "officeId": "6ea4b819-1687-419b-8ca5-2fd4d5f9af03",
+          "RFGOfficeId": "0013",
+          "companyId": "79edc4ba-e127-4a0a-9f5d-e7bb77269161",
+          "companyName": "LIV",
+          "RFGCompanyId": "800217",
+          "brandCode": "SIR",
+          "name": "LIV Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "101 South Main Street P.O. Box 2619",
+            "city": "Breckenridge",
+            "district": "Summit",
+            "stateProvince": "Colorado",
+            "stateProvinceCode": "CO",
+            "postalCode": "80424",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 39.48209,
+            "longitude": -106.04647,
+            "formattedAddress": "101 S Main St, Breckenridge, CO 80424"
+          },
+          "serviceRegion": "Mountain",
+          "phoneNumber": "9704530550",
+          "emailAddress": "livteam@livsothebysrealty.com",
+          "canDoCommercialBusiness": false
+        },
+        "RFGStaffId": "10365"
+      }
+    ],
+    "isShowAddressOnInternet": true,
+    "expiresOn": "2019-11-22"
+  },
+  "fullBath": 2,
+  "parkingPlaces": 6,
+  "yearBuilt": "2005",
+  "zoning": "Residential Rural",
+  "providerKey": "be529d7c-ca3b-40f9-86c0-554a660facca",
+  "propertyFeatures": [
+    {
+      "groupName": "Views",
+      "description": "Scenic"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "2 Car Garage"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Refrigerator"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Wood Burning Stove"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Resort \/ Lake"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Skiing"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Detached Garage"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Ski (Snow)"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Access Type - Road"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "General",
+      "description": "Fire Alarms"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range \/ Oven"
+    },
+    {
+      "groupName": "General",
+      "description": "Ceiling Fan(s)"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Pool"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "1-2 Acres"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Fire Pit"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Fly Fishing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Golf"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "No A\/C"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Jogging \/ Biking Path"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Fishing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Property Description",
+      "description": "Ski Property"
+    },
+    {
+      "groupName": "Roof",
+      "description": "Metal Roof"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Dock"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Boating"
+    },
+    {
+      "groupName": "Age",
+      "description": "11-20 Years Old"
+    },
+    {
+      "groupName": "Bath Features",
+      "description": "Stall Shower and Tub"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Vacation \/ Second Home"
+    },
+    {
+      "groupName": "General",
+      "description": "Smoke Detector"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Blinds"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hunting"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "2 Fireplaces"
+    },
+    {
+      "groupName": "Basement",
+      "description": "None"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Wall to Wall Carpet"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Hunting"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "Septic"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Ramp"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dryer"
+    },
+    {
+      "groupName": "Water",
+      "description": "Well"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Ski Resort"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Resort"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Fishing"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Wooded"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Biking"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Deck"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Cedar Siding"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Cycling"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Climbing"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Forced Air"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hiking"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Washer"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Snowmobiling"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Historic \/ Antique"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Horse Riding\/Stables"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Tennis"
+    },
+    {
+      "groupName": "Road Type",
+      "description": "County Street"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Skiing"
+    },
+    {
+      "groupName": "General",
+      "description": "Window Treatments"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Resort"
+    },
+    {
+      "groupName": "Views",
+      "description": "Mountain"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "\"The Mountains Are Calling\" - imagine crisp mountain air, sunrises and sunsets from the deck - this mountain home is calling! With both an upper and lower level family room, bring the whole gang! The open floor plan upstairs features a wood stove, new flooring and floor to ceiling windows. An oversized 2 car garage is perfect for storing all your ski gear, bikes,snowmobiles - All the Toys! Too many upgrades to detail - this is your ideal mountain retreat, income property or vacation home!",
+      "htmlRemark": "<p>\"The Mountains Are Calling\" - imagine crisp mountain air, sunrises and sunsets from the deck - this mountain home is calling! With both an upper and lower level family room, bring the whole gang! The open floor plan upstairs features a wood stove, new flooring and floor to ceiling windows. An oversized 2 car garage is perfect for storing all your ski gear, bikes,snowmobiles - All the Toys! Too many upgrades to detail - this is your ideal mountain retreat, income property or vacation home!&nbsp;<\/p><div><br><\/div>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https:\/\/www.sothebysrealty.com\/id\/929q3h",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "DAAF23FC-9883-4033-A4F8-0033CF88885B",
+      "sequenceNumber": 29,
+      "url": "\/\/imgs.azureedge.net\/DAAF23FC-9883-4033-A4F8-0033CF88885B",
+      "isDefault": false,
+      "caption": "Bedroom",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "D0032460-F8BF-4A67-965F-0B068E167756",
+      "sequenceNumber": 27,
+      "url": "\/\/imgs.azureedge.net\/D0032460-F8BF-4A67-965F-0B068E167756",
+      "isDefault": false,
+      "caption": "Bedroom",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "4ECA903F-6155-4195-A9A8-17D3473D072D",
+      "sequenceNumber": 20,
+      "url": "\/\/imgs.azureedge.net\/4ECA903F-6155-4195-A9A8-17D3473D072D",
+      "isDefault": false,
+      "caption": "Dining Room\/Kitchen",
+      "shortDescription": "Dining Room\/Kitchen",
+      "htmlDescription": "<p>Dining Room\/Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "07EA029C-4D9A-4F9D-94B8-18CA1BC95F74",
+      "sequenceNumber": 32,
+      "url": "\/\/imgs.azureedge.net\/07EA029C-4D9A-4F9D-94B8-18CA1BC95F74",
+      "isDefault": false,
+      "caption": "Garage",
+      "shortDescription": "Garage",
+      "htmlDescription": "<p>Garage<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "687A8F6C-6CDC-4C35-A8CB-18F90F530F56",
+      "sequenceNumber": 31,
+      "url": "\/\/imgs.azureedge.net\/687A8F6C-6CDC-4C35-A8CB-18F90F530F56",
+      "isDefault": false,
+      "caption": "Exterior",
+      "shortDescription": "Exterior",
+      "htmlDescription": "<p>Exterior<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "A8DC968E-F0F3-4064-A9D0-247DCC1390B1",
+      "sequenceNumber": 22,
+      "url": "\/\/imgs.azureedge.net\/A8DC968E-F0F3-4064-A9D0-247DCC1390B1",
+      "isDefault": false,
+      "caption": "Dining Room\/Kitchen",
+      "shortDescription": "Dining Room\/Kitchen",
+      "htmlDescription": "<p>Dining Room\/Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "F8876A61-4125-481A-8E79-28329872D4A5",
+      "sequenceNumber": 5,
+      "url": "\/\/imgs.azureedge.net\/F8876A61-4125-481A-8E79-28329872D4A5",
+      "isDefault": false,
+      "caption": "Living Room",
+      "shortDescription": "Living Room",
+      "htmlDescription": "<p>Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "1A42CF69-915E-4C47-A5EC-28458198F65F",
+      "sequenceNumber": 8,
+      "url": "\/\/imgs.azureedge.net\/1A42CF69-915E-4C47-A5EC-28458198F65F",
+      "isDefault": false,
+      "caption": "Bedroom",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "08A1EBBE-D67A-45F4-89D6-2A481E39022B",
+      "sequenceNumber": 16,
+      "url": "\/\/imgs.azureedge.net\/08A1EBBE-D67A-45F4-89D6-2A481E39022B",
+      "isDefault": false,
+      "caption": "Living Room\/Looking into Kitchen",
+      "shortDescription": "Living Room\/Looking into Kitchen",
+      "htmlDescription": "<p>Living Room\/Looking into Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "8F5783C4-9274-4FE9-97BF-30AF8959C431",
+      "sequenceNumber": 7,
+      "url": "\/\/imgs.azureedge.net\/8F5783C4-9274-4FE9-97BF-30AF8959C431",
+      "isDefault": false,
+      "caption": "Living Room",
+      "shortDescription": "Living Room",
+      "htmlDescription": "<p>Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "EBD0AE5E-C5C5-4299-936D-31481932CDCC",
+      "sequenceNumber": 30,
+      "url": "\/\/imgs.azureedge.net\/EBD0AE5E-C5C5-4299-936D-31481932CDCC",
+      "isDefault": false,
+      "caption": "Bedroom",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "22EE63AD-7FB3-41B4-898C-32581ADB3191",
+      "sequenceNumber": 12,
+      "url": "\/\/imgs.azureedge.net\/22EE63AD-7FB3-41B4-898C-32581ADB3191",
+      "isDefault": false,
+      "caption": "Upper Living Room",
+      "shortDescription": "Upper Living Room",
+      "htmlDescription": "<p>Upper Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "EB04377C-FCE3-4F0C-B288-349A97A06773",
+      "sequenceNumber": 2,
+      "url": "\/\/imgs.azureedge.net\/EB04377C-FCE3-4F0C-B288-349A97A06773",
+      "isDefault": false,
+      "caption": "Living Room",
+      "shortDescription": "Living Room",
+      "htmlDescription": "<p>Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "864FCFE0-F438-4741-AF54-3574FCC83DB0",
+      "sequenceNumber": 14,
+      "url": "\/\/imgs.azureedge.net\/864FCFE0-F438-4741-AF54-3574FCC83DB0",
+      "isDefault": false,
+      "caption": "Living Room\/Looking into Kitchen",
+      "shortDescription": "Living Room\/Looking into Kitchen",
+      "htmlDescription": "<p>Living Room\/Looking into Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "84DBBB12-22BE-4F89-B8CB-38DAEC714CA3",
+      "sequenceNumber": 6,
+      "url": "\/\/imgs.azureedge.net\/84DBBB12-22BE-4F89-B8CB-38DAEC714CA3",
+      "isDefault": false,
+      "caption": "Living Room",
+      "shortDescription": "Living Room",
+      "htmlDescription": "<p>Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "53FA4EDA-211E-4E45-984A-3B9135D8E725",
+      "sequenceNumber": 4,
+      "url": "\/\/imgs.azureedge.net\/53FA4EDA-211E-4E45-984A-3B9135D8E725",
+      "isDefault": false,
+      "caption": "Living Room",
+      "shortDescription": "Living Room",
+      "htmlDescription": "<p>Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "6E0E6F56-6713-4B30-8E0F-3DA5354F389A",
+      "sequenceNumber": 18,
+      "url": "\/\/imgs.azureedge.net\/6E0E6F56-6713-4B30-8E0F-3DA5354F389A",
+      "isDefault": false,
+      "caption": "Back Deck",
+      "shortDescription": "Back Deck",
+      "htmlDescription": "<p>Back Deck<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "F4046DC3-48F2-47A6-8C0B-4CEEA88CB1F3",
+      "sequenceNumber": 35,
+      "url": "\/\/imgs.azureedge.net\/F4046DC3-48F2-47A6-8C0B-4CEEA88CB1F3",
+      "isDefault": false,
+      "caption": "Exterior-Side",
+      "shortDescription": "Exterior-Side",
+      "htmlDescription": "<p>Exterior-Side<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "6B401F22-09B3-4ACF-AF40-56F033115CC2",
+      "sequenceNumber": 3,
+      "url": "\/\/imgs.azureedge.net\/6B401F22-09B3-4ACF-AF40-56F033115CC2",
+      "isDefault": false,
+      "caption": "Living Room",
+      "shortDescription": "Living Room",
+      "htmlDescription": "<p>Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "19743A78-8D3A-42C7-B960-685E6828D5FA",
+      "sequenceNumber": 24,
+      "url": "\/\/imgs.azureedge.net\/19743A78-8D3A-42C7-B960-685E6828D5FA",
+      "isDefault": false,
+      "caption": "Kitchen",
+      "shortDescription": "Kitchen",
+      "htmlDescription": "<p>Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "51552F7A-02BA-48FF-8F2B-6C8C62105717",
+      "sequenceNumber": 9,
+      "url": "\/\/imgs.azureedge.net\/51552F7A-02BA-48FF-8F2B-6C8C62105717",
+      "isDefault": false,
+      "caption": "Bedroom",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "3EEB3230-09DA-4DB3-AC74-6D2ECF60525C",
+      "sequenceNumber": 15,
+      "url": "\/\/imgs.azureedge.net\/3EEB3230-09DA-4DB3-AC74-6D2ECF60525C",
+      "isDefault": false,
+      "caption": "Living Room\/Looking into Kitchen",
+      "shortDescription": "Living Room\/Looking into Kitchen",
+      "htmlDescription": "<p>Living Room\/Looking into Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "62BE9AAA-A775-4F31-87C5-6E129C845336",
+      "sequenceNumber": 23,
+      "url": "\/\/imgs.azureedge.net\/62BE9AAA-A775-4F31-87C5-6E129C845336",
+      "isDefault": false,
+      "caption": "Kitchen\/Eating Area",
+      "shortDescription": "Kitchen\/Eating Area",
+      "htmlDescription": "<p>Kitchen\/Eating Area<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "D7AB1F48-6157-4447-A1AF-7046D017FB76",
+      "sequenceNumber": 1,
+      "url": "\/\/imgs.azureedge.net\/D7AB1F48-6157-4447-A1AF-7046D017FB76",
+      "isDefault": true,
+      "caption": "Exterior",
+      "shortDescription": "Exterior",
+      "htmlDescription": "<p>Exterior<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "BD32EFF8-0BBA-4467-8F5C-83066F2E31E4",
+      "sequenceNumber": 11,
+      "url": "\/\/imgs.azureedge.net\/BD32EFF8-0BBA-4467-8F5C-83066F2E31E4",
+      "isDefault": false,
+      "caption": "Upper Living Room",
+      "shortDescription": "Upper Living Room",
+      "htmlDescription": "<p>Upper Living Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "33FBD1A3-189D-45B2-AB7F-87664C5DDF71",
+      "sequenceNumber": 13,
+      "url": "\/\/imgs.azureedge.net\/33FBD1A3-189D-45B2-AB7F-87664C5DDF71",
+      "isDefault": false,
+      "caption": "Living\/Dining Room",
+      "shortDescription": "Living\/Dining Room",
+      "htmlDescription": "<p>Living\/Dining Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "ECFF5C17-6E45-40BC-A686-9BDAF51D2FD5",
+      "sequenceNumber": 33,
+      "url": "\/\/imgs.azureedge.net\/ECFF5C17-6E45-40BC-A686-9BDAF51D2FD5",
+      "isDefault": false,
+      "caption": "Garage",
+      "shortDescription": "Garage",
+      "htmlDescription": "<p>Garage<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "DF52415D-9786-45D6-BD01-9D558BFEC52A",
+      "sequenceNumber": 26,
+      "url": "\/\/imgs.azureedge.net\/DF52415D-9786-45D6-BD01-9D558BFEC52A",
+      "isDefault": false,
+      "caption": "Bathroom",
+      "shortDescription": "Bathroom",
+      "htmlDescription": "<p>Bathroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "FEC4DC27-5A37-4AF2-89DE-AAC518DAEF2F",
+      "sequenceNumber": 19,
+      "url": "\/\/imgs.azureedge.net\/FEC4DC27-5A37-4AF2-89DE-AAC518DAEF2F",
+      "isDefault": false,
+      "caption": "Back Deck",
+      "shortDescription": "Back Deck",
+      "htmlDescription": "<p>Back Deck<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "926CDC2A-0534-47AF-B2DD-B35702ED5147",
+      "sequenceNumber": 1,
+      "url": "https:\/\/www.tourbuzz.net\/1307537?idx=1",
+      "isDefault": true,
+      "caption": "LIV Media Tour",
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "40C655C3-7BC0-4455-94A2-C151570860E8",
+      "sequenceNumber": 21,
+      "url": "\/\/imgs.azureedge.net\/40C655C3-7BC0-4455-94A2-C151570860E8",
+      "isDefault": false,
+      "caption": "Dining Room\/Kitchen",
+      "shortDescription": "Dining Room\/Kitchen",
+      "htmlDescription": "<p>Dining Room\/Kitchen<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "6226F66D-30D9-40B7-BAD2-CA9987B7E31E",
+      "sequenceNumber": 36,
+      "url": "\/\/imgs.azureedge.net\/6226F66D-30D9-40B7-BAD2-CA9987B7E31E",
+      "isDefault": false,
+      "caption": "View of Home and Garage",
+      "shortDescription": "View of Home and Garage",
+      "htmlDescription": "<p>View of Home and Garage<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "57322038-D858-4362-9474-CE2B24517666",
+      "sequenceNumber": 28,
+      "url": "\/\/imgs.azureedge.net\/57322038-D858-4362-9474-CE2B24517666",
+      "isDefault": false,
+      "caption": "Bedroom",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "ADD2DC15-7A5D-4C59-BBF0-D051D8734CE5",
+      "sequenceNumber": 25,
+      "url": "\/\/imgs.azureedge.net\/ADD2DC15-7A5D-4C59-BBF0-D051D8734CE5",
+      "isDefault": false,
+      "caption": "Bathroom\/Hallway",
+      "shortDescription": "Bathroom\/Hallway",
+      "htmlDescription": "<p>Bathroom\/Hallway<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "158A778E-E74D-4A71-99CF-D5ED72947957",
+      "sequenceNumber": 10,
+      "url": "\/\/imgs.azureedge.net\/158A778E-E74D-4A71-99CF-D5ED72947957",
+      "isDefault": false,
+      "caption": "Bathroom",
+      "shortDescription": "Bathroom",
+      "htmlDescription": "<p>Bathroom<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "2B7218CB-71C3-41E1-860F-EFA070C8EA71",
+      "sequenceNumber": 17,
+      "url": "\/\/imgs.azureedge.net\/2B7218CB-71C3-41E1-860F-EFA070C8EA71",
+      "isDefault": false,
+      "caption": "Dining Room",
+      "shortDescription": "Dining Room",
+      "htmlDescription": "<p>Dining Room<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "5044960C-5666-4511-9C7B-EFD6D964ECE1",
+      "sequenceNumber": 34,
+      "url": "\/\/imgs.azureedge.net\/5044960C-5666-4511-9C7B-EFD6D964ECE1",
+      "isDefault": false,
+      "caption": "Exterior-Side and Garage",
+      "shortDescription": "Exterior-Side and Garage",
+      "htmlDescription": "<p>Exterior-Side and Garage<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    },
+    {
+      "mediaID": "F6668CA7-6879-460E-A2E8-FDA9BAF4FE54",
+      "sequenceNumber": 37,
+      "url": "\/\/imgs.azureedge.net\/F6668CA7-6879-460E-A2E8-FDA9BAF4FE54",
+      "isDefault": false,
+      "caption": "View of Home and Garage",
+      "shortDescription": "View of Home and Garage",
+      "htmlDescription": "<p>View of Home and Garage<br><\/p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2019-05-21T17:00:38.630"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "S1013230",
+      "isPrimary": true
+    }
+  ]
+}

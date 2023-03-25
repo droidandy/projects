@@ -1,0 +1,21 @@
+.prequoted-rater {
+  .ui.grid {
+    .row {
+      .wrap.column {
+        padding: 0;
+
+        .ui.card.inner {
+          padding: 35px 20px 60px;
+
+          .ui.button {
+            margin-top: 30px;
+          }
+
+          .ui.loader {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

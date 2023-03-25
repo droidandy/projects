@@ -1,0 +1,25 @@
+## To do
+
+1. Requests
+	- FAQ search
+	- Careers 
+	--- Subscriber email (home, pro, footer)
+
+--- 2. Mailto btn
+3. Seeder: add data 
+4. Add pixel
+5. Pro: Popular jobs
+6. Deploy
+
+## Bugs
+1. Footer line
+2. Submit email btn height os not centered
+3. Calculator helper on hover
+
+## Later
+1. SSR
+2. email btn, text appers immediately (need to delay appeare)
+3. pagination
+4. React-router scroll to top: https://reacttraining.com/react-router/web/guides/scroll-restoration/scroll-to-top
+5. .env variables
+6. onScroll hide browser UI

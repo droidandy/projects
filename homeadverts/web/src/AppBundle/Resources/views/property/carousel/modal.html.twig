@@ -1,0 +1,20 @@
+{% spaceless %}
+    <div class="modal-carousel"
+        {% if app.user %}
+            data-liked="{{ is_liked_by_user(app.user, property) }}"
+        {% endif %}
+    >
+
+        <div class="gallery-wrapper">
+            <div class="carousel" data-id="{{ property.id }}">
+                {% for photo in property|property_carousel_photos %}
+                    {% include "AppBundle:property/carousel:_cell.html.twig" with {
+                        photo: photo,
+                        type: 'modal'
+                    } %}
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+{% endspaceless %}

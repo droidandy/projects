@@ -1,0 +1,15 @@
+@import '../../../styles/variables.scss';
+
+.CustomerLoginForm {
+
+    width:95%;
+    max-width: 500px;
+    margin:auto;
+
+    p, label {
+        color: #535059;
+        &.label--error {
+            color: #ff6d6d;
+        }
+    }
+}

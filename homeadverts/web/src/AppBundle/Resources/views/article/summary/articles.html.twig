@@ -1,0 +1,13 @@
+{% if articles %}
+    <ul class="row small-block-grid-2 medium-block-grid-3">
+        {% for article in articles %}
+            <li>
+                {% include 'AppBundle:article/card:small.html.twig' %}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p class="information-centered">
+        There are no fresh articles if you see this message.
+    </p>
+{% endif %}

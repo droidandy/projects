@@ -1,0 +1,45 @@
+@import '../variables';
+@import '../variables-theme';
+
+.rfpSubmitSuccess {
+  text-align: center; margin: 20px 0 20px;
+  .ui.header.rfpSuccessHeading {
+    font-size: 24px;
+    color: $RFP_HEADING_COLOR;
+    font-weight: 200;
+    margin-top: 10px;
+  }
+
+  & > p {
+    color: $RFP_HEADING_COLOR;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 700px;
+    margin: 30px auto;
+  }
+
+  .ui.card.clear-value-card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 35px 40px 30px;
+
+    img {
+      width: 200px;
+      background: transparent;
+      margin-bottom: 25px;
+    }
+
+    .rfpSuccessHeading {
+      margin-bottom: 20px;
+    }
+
+    .ui.button {
+      max-width: 300px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+}

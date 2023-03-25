@@ -1,0 +1,121 @@
+{
+    "agentSummary": {
+        "id": "e298855c-362f-429b-bdd8-a8f8842b0c5f",
+        "isAgent": true,
+        "name": "Barbara White",
+        "firstName": "Barbara",
+        "lastName": "White",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/5FD772D9-C54C-49EC-B459-4BDF4792721D",
+        "emailAddress": "BWhite@wpsir.com",
+        "leadEmailAddress": "800024.lead.4016644@leads.leadrouter.com",
+        "businessPhone": "+110 8605670806",
+        "office": {
+            "officeId": "74776ea9-c752-4dac-b750-69c53a23e0fd",
+            "RFGOfficeId": "0049",
+            "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+            "companyName": "William Pitt",
+            "RFGCompanyId": "800024",
+            "brandCode": "SIR",
+            "name": "William Pitt Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "10 South Street PO Box 275",
+                "city": "Litchfield",
+                "district": "Litchfield",
+                "stateProvince": "Connecticut",
+                "stateProvinceCode": "CT",
+                "postalCode": "06759",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 41.746773,
+                "longitude": -73.189399,
+                "formattedAddress": "10 South St, Litchfield, CT 06759"
+            },
+            "phoneNumber": "8605670806",
+            "emailAddress": "wps.leads@mrtsystems.com"
+        }
+    },
+    "personId": "7eb0f8e0-d1a1-4726-8a43-1504c47b9715",
+    "lastUpdateOn": "2018-07-23T15:30:37.137",
+    "roles": [
+        {
+            "office": {
+                "officeId": "74776ea9-c752-4dac-b750-69c53a23e0fd",
+                "RFGOfficeId": "0049",
+                "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+                "companyName": "William Pitt",
+                "RFGCompanyId": "800024",
+                "brandCode": "SIR",
+                "name": "William Pitt Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "10 South Street PO Box 275",
+                    "city": "Litchfield",
+                    "district": "Litchfield",
+                    "stateProvince": "Connecticut",
+                    "stateProvinceCode": "CT",
+                    "postalCode": "06759",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 41.746773,
+                    "longitude": -73.189399,
+                    "formattedAddress": "10 South St, Litchfield, CT 06759"
+                },
+                "phoneNumber": "8605670806",
+                "emailAddress": "wps.leads@mrtsystems.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "barbara.white@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "5FD772D9-C54C-49EC-B459-4BDF4792721D",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/5FD772D9-C54C-49EC-B459-4BDF4792721D",
+            "isDefault": true,
+            "caption": "Barbara White",
+            "htmlDescription": "Barbara",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-07-23T15:30:37.090"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Sothebysrealty.com 800",
+            "number": "8604594866"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Barbara White - Real Estate Professional in Litchfield, CT As a Broker Associate for over 20 years, it is a pleasure working for the largest Sotheby's affilate in the world. Working with Buyers and Sellers, helping them to achieve their realestate goals, I strive to satisfy the needs of my clients and make a commitment to provide outstanding service with market skills to achieve their goals whether it be buying or selling a house. My success can be attributed to hard work, dedication and offering help to my clients in finding vendors, financial assistance, staging homes and marketing their home to get the highest price. If you're intested in selling your home I can offer you my service with a market analysis to determine the fair market value; help with staging and selling tips. Your home's presence on williampitt.com will be carefully designed to provide an exceptional showcase experience to buyers searching for properties not only by location but also by their desired lifestyle and unique amenities If your interested in listing your home, Sotheby's offers many advantages including the most sophisticated and far-reaching marketing for every listing, the most advanced online presentation and technological tools for meeting the modern needs of buyers through our exceptional sales force .We have network members to connect qualified buyers and sellers from well beyond our local markets. www.barbarawhite.williampitt.com http:\/\/www.williampitt.com\/our-agents\/list\/barbarawhite bwhite@wpsir.com Professional AssociationLitchfield County Board of Realtors, Connecticut Association of Realtors, Connecticut Multiple Listing Service, National Association of Realtors Professional SpecialtyFirst and Second Home Buyers, Vacation Homes, Lake PropertiesCommunity InvolvementServed as President of the Litchfield Aid of the Connecticut Junior Republic - Served as Director of the Connecticut Junior Republic - Member of the Women's Forum of LitchfieldExperienceBroker's License, Appraiser's License. Servicing Litchfield, New Haven and Hartford Counties for 20 plus years.",
+            "htmlRemark": "Barbara White - Real Estate Professional in Litchfield, CT&lt;BR\/&gt;&lt;BR\/&gt;As a Broker Associate for over 20 years, it is a  pleasure working for  the largest  Sotheby's affilate  in the world. Working  with Buyers and Sellers, helping them to achieve their realestate goals, I strive to satisfy the needs of my clients and make a commitment to provide outstanding  service with market skills to achieve their goals whether it be buying or selling a house.  My success can be attributed to hard work, dedication and offering help to my clients in finding vendors, financial assistance, staging homes and marketing their  home to get the highest price.&lt;BR\/&gt;&lt;BR\/&gt;If you're intested in selling your home I can offer you my service with a market analysis to determine the fair market value; help with staging and  selling tips. Your home's presence on williampitt.com will be carefully designed to provide an exceptional showcase experience to buyers searching for properties not only by location but also by their desired lifestyle and unique amenities&lt;BR\/&gt;&lt;BR\/&gt;If your interested in listing your home, Sotheby's offers many advantages including the most sophisticated and far-reaching marketing for every listing, the most advanced online presentation and technological tools for meeting the modern needs of buyers through our exceptional sales force .We have network members to connect qualified buyers and sellers from well beyond our local markets. &lt;BR\/&gt;&lt;BR\/&gt; www.barbarawhite.williampitt.com&lt;BR\/&gt;&lt;BR\/&gt;http:\/\/www.williampitt.com\/our-agents\/list\/barbarawhite &lt;BR\/&gt;&lt;BR\/&gt;bwhite@wpsir.com&lt;BR\/&gt;&lt;BR\/&gt; &lt;BR\/&gt;&lt;BR\/&gt;Professional AssociationLitchfield County Board of Realtors, Connecticut Association of Realtors, Connecticut Multiple Listing Service, National Association of Realtors&lt;BR\/&gt;&lt;BR\/&gt;Professional SpecialtyFirst and Second Home Buyers, Vacation Homes, Lake PropertiesCommunity InvolvementServed as President of the Litchfield Aid of the Connecticut Junior Republic - Served as Director of the Connecticut Junior Republic - Member of the Women's Forum of LitchfieldExperienceBroker's License, Appraiser's License.  Servicing Litchfield, New Haven and Hartford Counties for 20 plus years. &lt;BR\/&gt;&lt;BR\/&gt;"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "BR",
+            "stateCode": "CT",
+            "number": "REB.023657",
+            "issuedOn": "2015-01-01"
+        }
+    ]
+}

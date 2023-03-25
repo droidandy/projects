@@ -1,0 +1,23 @@
+1. Get the application URL by running these commands:
+{{- if .Values.ingress.enabled }}
+  http{{ if $.Values.ingress.sslCert }}s{{ end }}://core.{{ $.Values.ingress.host }}/
+  http{{ if $.Values.ingress.sslCert }}s{{ end }}://hasura.{{ $.Values.ingress.host }}/
+{{- else if contains "NodePort" .Values.services.type }}
+  export APOLLO_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ include "aou-backend.apollo.fullname" . }})
+  export HASURA_NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ include "aou-backend.hasura.fullname" . }})
+  export NODE_IP=$(kubectl get nodes --namespace {{ .Release.Namespace }} -o jsonpath="{.items[0].status.addresses[0].address}")
+  echo http://$NODE_IP:$APOLLO_NODE_PORT
+  echo http://$NODE_IP:$HASURA_NODE_PORT
+{{- else if contains "LoadBalancer" .Values.services.type }}
+     NOTE: It may take a few minutes for the LoadBalancer IP to be available.
+           You can watch the status of by running 'kubectl get --namespace {{ .Release.Namespace }} svc -w {{ include "aou-backend.apollo.fullname" . }}' and
+           'kubectl get --namespace {{ .Release.Namespace }} svc -w {{ include "aou-backend.hasura.fullname" . }}'
+  export APOLLO_SERVICE_IP=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "aou-backend.apollo.fullname" . }} --template "{{"{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}"}}")
+  export HASURA_SERVICE_IP=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "aou-backend.hasura.fullname" . }} --template "{{"{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}"}}")
+  echo http://$APOLLO_SERVICE_IP:{{ .Values.services.apollo.port }}
+  echo http://$HASURA_SERVICE_IP:{{ .Values.services.hasura.port }}
+{{- else if contains "ClusterIP" .Values.services.type }}
+  export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app.kubernetes.io/name={{ include "aou-backend.name" . }},app.kubernetes.io/instance={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
+  echo "Visit http://127.0.0.1:3000 to use your application"
+  kubectl --namespace {{ .Release.Namespace }} port-forward $POD_NAME 3000:3000
+{{- end }}

@@ -1,0 +1,402 @@
+{
+    "listingSummary": {
+        "listingId": "06f37771-627e-4673-b91f-3cd755ed28f2",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-12-01",
+        "photoCount": 20,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "BRL",
+            "amount": 10450000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 2815200
+        },
+        "propertyAddress": {
+            "city": "S\u00e3o Paulo",
+            "stateProvince": "S\u00e3o Paulo",
+            "stateProvinceCode": "SP",
+            "postalCode": "",
+            "country": "Brazil",
+            "countryCode": "BR"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Vila Nova Concei\u00e7\u00e3o"
+            }
+        ],
+        "mlsNumbers": [
+            "36433"
+        ],
+        "RFGListingId": "Z4R67K",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/z4r67k",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "Post-War",
+        "propertyName": "http:\/\/www.bnsir.com.br\/nossos-imoveis\/prontos\/sao-paulo\/vila-nova-conceicao\/ref",
+        "totalBath": 4,
+        "lotSize": "335 SM",
+        "buildingArea": "335 Sq. M",
+        "noOfBedrooms": 3,
+        "squareFootage": 3605.9065,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/C48559AA-5EBD-4530-9CFF-AFE3F2C94A82",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-13T23:06:25.073",
+        "agents": [
+            {
+                "id": "46c7e313-f94e-4077-a15a-18ffea8edfe1",
+                "name": "Maria Clara Trancredi ",
+                "firstName": "Maria Clara",
+                "lastName": "Trancredi",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/D985F80D-AD39-45EF-ABBB-473193ECC4D9",
+                "emailAddress": "vendas@bossanovasir.com.br",
+                "businessPhone": "+551130610000",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "af75e6c7-cf11-4abb-987f-49d01087f019",
+                    "RFGOfficeId": "0001 ",
+                    "companyId": "7827f9eb-d82e-4de4-bee5-ce255205a7d5",
+                    "companyName": "Bossa Nova Sotheby's International Realty",
+                    "RFGCompanyId": "819002",
+                    "brandCode": "SIR",
+                    "name": "Bossa Nova Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "Al. Gabriel Monteiro da Silva 2027-Jardins",
+                        "city": "Sao Paulo",
+                        "stateProvince": "S\u00e3o Paulo",
+                        "stateProvinceCode": "SP",
+                        "postalCode": "01441-001",
+                        "country": "Brazil",
+                        "countryCode": "BR",
+                        "latitude": -23.573830250351,
+                        "longitude": -46.68627455947
+                    },
+                    "phoneNumber": "+55 11 3061 0000",
+                    "emailAddress": "vendas@bossanovasir.com.br"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 4,
+    "parkingPlaces": 5,
+    "providerKey": "06f37771-627e-4673-b91f-3cd755ed28f2",
+    "propertyFeatures": [
+        {
+            "groupName": "Kitchen Features",
+            "description": "Eat-in Kitchen"
+        },
+        {
+            "groupName": "Pre-Wiring",
+            "description": "Generator"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "A\/C"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Terrace"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Patio"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Marble"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "A few meters from Ibirapuera Park, this timeless building by Botti Rubin Office holds a 345 m\u00b2 apartment with a wide living, a terrace, a wine cellar, a library, a dining room with a gourmet kitchen, a functional kitchen, an airy service area and staff quarters. The intimate area has 3 lofty suites, all holding closets and terraces, and the master suite offers a stall shower, and a bathtub with a view to the greenery. Remodeled by the architect Felippe Crescenti, it gained a wide ambiance integration, with a front and back view. It has natural Travertine marble floors, inverted baseboards, exposed cement, custom-made textured Pau Brasil wood work, a lightning project with gypsum, ambiance sound and air-conditioning.",
+            "htmlRemark": "<p><style type=\"text\/css\"><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--><\/style><span style=\"font-size: 10pt; font-family: Arial;\" data-sheets-value=\"{&quot;1&quot;:2,&quot;2&quot;:&quot;A few meters from Ibirapuera Park, this timeless building by Botti Rubin Office holds a 345 m\u00b2 apartment with a wide living, a terrace, a wine cellar, a library, a dining room with a gourmet kitchen, a functional kitchen, an airy service area and staff quarters. The intimate area has 3 lofty suites, all holding closets and terraces, and the master suite offers a stall shower, and a bathtub with a view to the greenery. Remodeled by the architect Felippe Crescenti, it gained a wide ambiance integration, with a front and back view. It has natural Travertine marble floors, inverted baseboards, exposed cement, custom-made textured Pau Brasil wood work, a lightning project with gypsum, ambiance sound and air-conditioning.  &quot;}\" data-sheets-userformat=\"{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,16777215],&quot;11&quot;:4,&quot;12&quot;:0}\">A few meters from Ibirapuera Park, this timeless building by Botti Rubin Office holds a 345 m\u00b2 apartment with a wide living, a terrace, a wine cellar, a library, a dining room with a gourmet kitchen, a functional kitchen, an airy service area and staff quarters. The intimate area has 3 lofty suites, all holding closets and terraces, and the master suite offers a stall shower, and a bathtub with a view to the greenery. Remodeled by the architect Felippe Crescenti, it gained a wide ambiance integration, with a front and back view. It has natural Travertine marble floors, inverted baseboards, exposed cement, custom-made textured Pau Brasil wood work, a lightning project with gypsum, ambiance sound and air-conditioning.&nbsp;&nbsp;<\/span><br><\/p>"
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "pt-BR",
+            "remark": "A poucos metros do Parque Ibirapuera, em edif\u00edcio atemporal do escrit\u00f3rio Botti Rubin e 5 vagas paralelas. Apartamento de 345 m\u00b2, possui amplo living com terra\u00e7o, lavabo, adega, biblioteca, sala de jantar equipada com cozinha gourmet, cozinha funcional, \u00e1rea de servi\u00e7o arejada e quarto para funcion\u00e1rios. A \u00e1rea \u00edntima conta com 3 espa\u00e7osas su\u00edtes, todas com closet e terra\u00e7os, sendo que a master possui al\u00e9m de box, banheira com vista para o verde tamb\u00e9m. Reformado pelo arquiteto Felippe Crescenti, ganhou amplitude com a ampla integra\u00e7\u00e3o da \u00e1rea social que possui vista tanto de frente como de fundos. Acabamentos de piso em travertino natural, rodap\u00e9s invertidos, pilares e vigas em concreto aparente, marcenaria sob medida em Pau Brasil texturizado, gesso tabicado com projeto luminot\u00e9cnico e som ambiente. Ar-condicionado em todos ambientes.",
+            "htmlRemark": "<p><span style=\"color: rgb(102, 102, 102); font-family: &quot;open sans&quot;, Arial, sans-serif; background-color: rgb(255, 255, 255);\">A poucos metros do Parque Ibirapuera, em edif\u00edcio atemporal do escrit\u00f3rio Botti Rubin e 5 vagas paralelas. Apartamento de 345 m\u00b2, possui amplo living com terra\u00e7o, lavabo, adega, biblioteca, sala de jantar equipada com cozinha gourmet, cozinha funcional, \u00e1rea de servi\u00e7o arejada e quarto para funcion\u00e1rios. A \u00e1rea \u00edntima conta com 3 espa\u00e7osas su\u00edtes, todas com closet e terra\u00e7os, sendo que a master possui al\u00e9m de box, banheira com vista para o verde tamb\u00e9m. Reformado pelo arquiteto Felippe Crescenti, ganhou amplitude com a ampla integra\u00e7\u00e3o da \u00e1rea social que possui vista tanto de frente como de fundos. Acabamentos de piso em travertino natural, rodap\u00e9s invertidos, pilares e vigas em concreto aparente, marcenaria sob medida em Pau Brasil texturizado, gesso tabicado com projeto luminot\u00e9cnico e som ambiente. Ar-condicionado em todos ambientes.<\/span><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/z4r67k",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "715EBEDF-9E65-453B-8219-06841826BE1E",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/715EBEDF-9E65-453B-8219-06841826BE1E",
+            "isDefault": false,
+            "caption": "36433-17-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "8D8BC130-F6F3-4CFB-AA9B-0B0AEE27CE46",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/8D8BC130-F6F3-4CFB-AA9B-0B0AEE27CE46",
+            "isDefault": false,
+            "caption": "36433-2-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "B8C251A6-8847-4255-A66C-1506EF0FED54",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/B8C251A6-8847-4255-A66C-1506EF0FED54",
+            "isDefault": false,
+            "caption": "36433-19-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "7A587BE3-A35D-4539-AB8C-40A5D56E987A",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/7A587BE3-A35D-4539-AB8C-40A5D56E987A",
+            "isDefault": false,
+            "caption": "36433-27-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "85B9274D-DE60-4EF4-B812-590203CCEC31",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/85B9274D-DE60-4EF4-B812-590203CCEC31",
+            "isDefault": false,
+            "caption": "36433-5-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "BBB60930-2124-4D05-B54C-674C04D59BD8",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/BBB60930-2124-4D05-B54C-674C04D59BD8",
+            "isDefault": false,
+            "caption": "36433-28-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "4E88EBD9-E0E3-436E-AE1A-6A910FD25B5E",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/4E88EBD9-E0E3-436E-AE1A-6A910FD25B5E",
+            "isDefault": false,
+            "caption": "36433-14-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "1848C8B5-2BEA-4DF8-9815-7AE91F77B0A6",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/1848C8B5-2BEA-4DF8-9815-7AE91F77B0A6",
+            "isDefault": false,
+            "caption": "36433-6-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "130C5F98-F997-4C78-BF96-8172C164A713",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/130C5F98-F997-4C78-BF96-8172C164A713",
+            "isDefault": false,
+            "caption": "36433-15-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "B2BB9B6A-65E8-4A9B-BA48-86A079A36ADA",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/B2BB9B6A-65E8-4A9B-BA48-86A079A36ADA",
+            "isDefault": false,
+            "caption": "36433-8-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "56C1E899-52D7-4DB1-AEA5-920014C02688",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/56C1E899-52D7-4DB1-AEA5-920014C02688",
+            "isDefault": false,
+            "caption": "36433-13-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "CB4803CA-574B-4AB1-8600-9F9BA8F23B18",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/CB4803CA-574B-4AB1-8600-9F9BA8F23B18",
+            "isDefault": false,
+            "caption": "36433-9-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "CCE98A45-C859-4D01-8BFE-ADF0649EC1C9",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/CCE98A45-C859-4D01-8BFE-ADF0649EC1C9",
+            "isDefault": false,
+            "caption": "36433-12-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "C48559AA-5EBD-4530-9CFF-AFE3F2C94A82",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/C48559AA-5EBD-4530-9CFF-AFE3F2C94A82",
+            "isDefault": true,
+            "caption": "36433-3",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "9AA5E271-5305-46E8-B168-B4C124D68163",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/9AA5E271-5305-46E8-B168-B4C124D68163",
+            "isDefault": false,
+            "caption": "36433-26-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "ACC8CB7F-02F4-4303-8552-D842344E99D7",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/ACC8CB7F-02F4-4303-8552-D842344E99D7",
+            "isDefault": false,
+            "caption": "36433-4-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "94FF2916-DB24-4E63-AC44-DAF727849464",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.bnsir.com.br\/nossos-imoveis\/prontos\/sao-paulo\/vila-nova-conceicao\/reformado-por-felippe-crescenti-a-poucos-metros-do-ibirapuera\/36433",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2017-12-04T19:29:07.363"
+        },
+        {
+            "mediaID": "A2F47DC9-E312-41DA-9910-DB6AA1369C98",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/A2F47DC9-E312-41DA-9910-DB6AA1369C98",
+            "isDefault": false,
+            "caption": "36433-16-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2018-08-13T23:06:25.357"
+        },
+        {
+            "mediaID": "2C8FBBD7-BC73-48F9-A800-DCEB22EF9925",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/2C8FBBD7-BC73-48F9-A800-DCEB22EF9925",
+            "isDefault": false,
+            "caption": "36433-10-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "2202B83F-0AF7-4F9D-BCE2-DF303923210E",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/2202B83F-0AF7-4F9D-BCE2-DF303923210E",
+            "isDefault": false,
+            "caption": "36433-11-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1279,
+            "width": 1899,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        },
+        {
+            "mediaID": "AB54B4EF-83E1-4229-8F5E-EF8F0BCE9FEF",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/AB54B4EF-83E1-4229-8F5E-EF8F0BCE9FEF",
+            "isDefault": false,
+            "caption": "36433-7-2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1266,
+            "width": 1900,
+            "lastUpdateOn": "2017-12-11T05:29:13.510"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "36433",
+            "isPrimary": true
+        }
+    ]
+}

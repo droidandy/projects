@@ -1,0 +1,47 @@
+%table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:9px;" valign="top")
+        %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(style="width:600px;" valign="top" width="600")
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td.mcnTextContent(style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top")
+
+                      %p Dear #{@user.full_name},
+                      %p Great news, you can now book any vehicle, anytime, anywhere. To get started, just click the button below to activate your account.
+
+%table.mcnButtonBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnButtonBlockOuter
+    %tr
+      %td(align="center" valign="middle")
+        %a.mcnButton{href: root_url + "auth/set?token=#{@user.reset_password_token}"}
+          Activate account
+
+%table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:9px;" valign="top")
+        %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(style="width:600px;" valign="top" width="600")
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td.mcnTextContent(style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top")
+                      %p When you log in for the first time you will need to choose a password and once you’re fully set-up you can book any vehicle, manage existing bookings and run multiple reports.
+
+%table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:9px;" valign="top")
+        %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(style="width:600px;" valign="top" width="600")
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td.mcnTextContent(style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top")
+                      %span(style="font-family: 'Roboto', open sans,helvetica neue,helvetica,arial,sans-serif") Thank you for joining us.

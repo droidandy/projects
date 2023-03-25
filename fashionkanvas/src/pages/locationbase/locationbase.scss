@@ -1,0 +1,74 @@
+page-locationbase {
+  .header
+  {
+    box-shadow: none!important;
+  }
+
+  .scroll-content
+  {
+    padding: 50px!important;
+  }
+
+  h2
+  {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .item-block
+  {
+    padding: 0!important;
+  }
+
+  .footer
+  {
+    padding: 50px;
+  }
+
+  .label
+  {
+    white-space: normal!important;
+  }
+
+  .checkbox-icon
+  {
+    border-radius: 4px!important;
+  }
+
+  .checkbox-inner
+  {
+    border-color: #f66565!important;
+  }
+
+  .footer .item-inner
+  {
+    border-bottom: none!important;
+  }
+
+  .footer a
+  {
+    color:#f66565;
+    text-decoration: none;
+  }
+
+  .back-button-icon
+  {
+    color:#f66565;
+  }
+
+  .back-button-text
+  {
+    display: none;
+  }
+
+  .footer .item{
+    width: 36px;
+    float: left;
+  }
+
+}

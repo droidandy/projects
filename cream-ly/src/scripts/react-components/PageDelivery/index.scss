@@ -1,0 +1,75 @@
+
+@import "../../../styles/tools/mixins.scss";
+
+.componentPageDelivery {
+  @include defaultText;
+  @include maxWidthPage;
+
+  position: relative;
+
+  // .section-header {
+  //   padding: 0;
+  //   margin-bottom: 0;
+  // }
+    
+  .label {
+    // text-transform: uppercase;
+    // font-size: 16px;
+    // font-weight: bold;
+
+    font-family: var(--font-heading);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    /* Black Pearl */
+
+    color: var(--purplish-grey);
+
+    &--noPadding {
+      padding: 0; 
+    }
+  }
+
+  .autocomplete {
+    width: 300px;
+
+    @include media-query($small) {
+      width: 100%;
+    }
+
+    .select-input-wrapper {
+      position: relative;
+      width: 100%;
+
+
+      &:focus-within {
+        .select-arrow {
+          transform: rotate(180deg);
+        }
+      }
+
+      .autocomplete-input {
+        width: 100%;
+      }
+  
+      .select-arrow {
+        position: absolute;
+        right: 10px;
+        top: calc(50% - 3px);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  border-bottom: dotted var(--purplish-grey)  1px;
+}
+

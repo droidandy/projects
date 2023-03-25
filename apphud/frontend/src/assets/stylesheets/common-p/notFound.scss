@@ -1,0 +1,26 @@
+.not-found {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./../../images/image-desert.jpg');
+    background-size: 819px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 354px;
+
+    .not-found_redirect-button {
+        color: #ffffff;
+        text-decoration: none;
+        margin-top: 22px;
+    }
+
+    .not-found_image {
+        margin-top: 132px;
+    }
+
+    .not-found_subtitle {
+        font-size: 24px;
+        margin-top: 46px;
+    }
+}

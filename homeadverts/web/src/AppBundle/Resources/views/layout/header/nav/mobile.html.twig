@@ -1,0 +1,43 @@
+<div class="actions --mobile --left">
+    {% if is_property_collection or is_agent_collection %}
+        <div class="filters-show nav-mobile-left">
+            <i class="material-icons">&#xE152;</i>
+        </div>
+    {% else %}
+        <a class="nav-mobile-left" href="{{ path('featured_index', {'market': 'for-sale'}) }}">
+            <i class="material-icons">
+                all_inclusive
+            </i>
+        </a>
+    {% endif %}
+</div>
+
+<div class="actions --mobile --right">
+    {% if not app.user %}
+        <div class="sidenav-show action-title" data-type="navigation">
+            <i class="material-icons">
+                menu
+            </i>
+        </div>
+    {% else %}
+        {% set total = app.user|notification_unread_qty %}
+
+        <div class="action">
+            <div class="
+            sidenav-show
+            action-title
+            {% if total %}--unread{% endif %}
+            notification-balloon
+            "
+                 data-type="navigation"
+            >
+                {% include 'AppBundle:user/profile:image.html.twig' with {user: app.user} %}
+                {% if total %}
+                    <span class="counter">
+                        {{ total }}
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>

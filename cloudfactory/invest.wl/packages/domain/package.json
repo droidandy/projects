@@ -1,0 +1,28 @@
+{
+  "name": "@invest.wl/domain",
+  "version": "0.1.41",
+  "description": "Invest.wl domain module",
+  "repository": {
+    "type": "git",
+    "url": "https://git.effectivetrade.ru/EFTR.Frontend/invest.wl.git",
+    "directory": "packages/domain"
+  },
+  "main": "src/index.ts",
+  "author": "skripko.andrey@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "index:gen": "/Users/chudnyid/projects/effectivetrade/deno-pkg/rn-app/cli/rn.ts structure index generate -f src"
+  },
+  "dependencies": {
+    "tslib": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.0"
+  },
+  "peerDependencies": {
+    "@invest.wl/core": "*",
+    "@invest.wl/common": "*",
+    "mobx-utils": "^6.0.4",
+    "uuid": "^8.3.2"
+  }
+}

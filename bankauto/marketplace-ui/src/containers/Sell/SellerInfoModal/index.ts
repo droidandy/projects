@@ -1,0 +1,1 @@
+export { SellerInfoModal } from './SellerInfoModal';

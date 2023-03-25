@@ -1,0 +1,46 @@
+.nearMe__map
+  height: 100%
+
+.nearMe__topButton
+  border-radius: 50%
+  background-color: $alert-dialog-button-color
+  position: absolute
+  top: 20px
+  font-size: 30px
+  font-weight: 400
+  width: 40px
+  height: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+.nearMe__topButton:active
+    background-color: $toolbar-background-color
+
+.nearMe__myPosition__divbtn
+  right: 20px
+
+.nearMe__filter__divbtn
+  right: 80px
+
+.nearMe__refresh__divbtn
+  right: 140px
+
+.nearMe__list__divbtn
+  left: 20px
+
+.nearMe__list2__divbtn
+  left: 80px
+
+.nearMe__map__pin
+  position: relative
+  bottom: 50px
+  right: 17px
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    border: 6px solid transparent
+    border-width: 9px 5px
+    border-top-color: inherit
+    top: 39px
+    left: 13px

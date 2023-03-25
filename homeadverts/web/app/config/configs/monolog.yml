@@ -1,0 +1,2 @@
+monolog:
+    channels: [import, elastic, geo]

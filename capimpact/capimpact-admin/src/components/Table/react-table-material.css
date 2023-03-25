@@ -1,0 +1,66 @@
+.ReactTable-Wrapper {
+  margin-bottom: 10px;
+}
+.ReactTable {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  background-color: white;
+}
+.ReactTable .rt-table {
+  margin-bottom: 0;
+  overflow: visible;
+}
+.ReactTable .rt-thead.-header {
+  box-shadow: none;
+}
+.ReactTable .rt-thead .rt-th {
+  box-shadow: none;
+  border-right-width: 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 500;
+  /*padding: 4px 56px 4px 24px;*/
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.ReactTable .rt-tbody .rt-tr-group {
+  border: none;
+  min-height: 55px;
+}
+.ReactTable .rt-tbody .rt-td {
+  border-right-width: 0;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8125rem;
+  /*line-height: 3rem;*/
+  font-weight: 400;
+  white-space: inherit;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ReactTable .rt-tbody .rt-td:last-child {
+  align-items: center;
+}
+
+.ReactTable .-pagination {
+  box-shadow: none;
+  justify-content: flex-end;
+  align-items: center;
+  border-width: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.ReactTable .-pagination .-previous,
+.ReactTable .-pagination .-next,
+.ReactTable .-pagination .-center {
+  flex: 0 auto;
+}

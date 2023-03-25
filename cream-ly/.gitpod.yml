@@ -1,0 +1,12 @@
+
+image: node:12
+
+tasks:
+   - before: npm install
+
+ports:
+   - port: 6006 #storybook port
+
+vscode:
+  extensions:
+    - eamodio.gitlens

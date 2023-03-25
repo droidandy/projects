@@ -1,0 +1,9 @@
+# Redis bundle - For config options/examples https://github.com/snc/SncRedisBundle/blob/master/Resources/doc/index.md
+snc_redis:
+    clients:
+        default:
+            type: predis
+            alias: default
+            options:
+                profile: '3.2'
+            dsn: redis://%redis_host%

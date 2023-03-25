@@ -1,0 +1,22 @@
+{
+  "name": "AptStore GraphQL Schema",
+  "schemaPath": "src/apollo/schema.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "https://aptstore.ru/mobile/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      },
+      "localhost": {
+        "url": "http://localhost:4444/mobile/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

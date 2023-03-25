@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Unlimited Rollover",
+    "type": "PPO"
+  },
+  {
+    "id": 2,
+    "name": "Traditional",
+    "type": "HMO"
+  },
+  {
+    "id": 3,
+    "name": "Traditional",
+    "type": "HMO"
+  },
+  {
+    "id": 4,
+    "name": "Full Network",
+    "type": "PPO"
+  },
+  {
+    "id": 5,
+    "name": "Select",
+    "type": "HMO"
+  },
+  {
+    "id": 6,
+    "name": "Full Network",
+    "type": "PPO"
+  }
+]

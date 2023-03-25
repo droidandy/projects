@@ -1,0 +1,9 @@
+<settings>
+    <servers>
+        <server>
+            <id>s3.snapshot</id>
+            <username>${env.AWS_ACCESS_KEY_ID}</username>
+            <password>${env.AWS_SECRET_KEY}</password>
+        </server>
+    </servers>
+</settings>

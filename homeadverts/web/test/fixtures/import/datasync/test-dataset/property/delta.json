@@ -1,0 +1,2891 @@
+[
+    {
+        "data": [
+            {
+                "action": "Delete",
+                "id": "18368D33-002E-4E91-B1D6-B509F2F3D28A",
+                "lastUpdateOn": "2018-08-08T05:02:06.363"
+            },
+            {
+                "action": "Delete",
+                "id": "497EE623-9643-4ED0-8284-35A561BC48A9",
+                "lastUpdateOn": "2018-08-08T05:00:46.147"
+            },
+            {
+                "action": "Delete",
+                "id": "5392D2B3-8B54-4B1B-9B06-DCE1E5C5292E",
+                "lastUpdateOn": "2018-08-08T05:00:50.927"
+            },
+            {
+                "action": "Delete",
+                "id": "C78CB6F7-3522-4783-8A67-740BFD5DA111",
+                "lastUpdateOn": "2018-08-08T05:01:36.550"
+            },
+            {
+                "action": "Delete",
+                "id": "F4F9DC56-6680-490A-AA03-2D8312930898",
+                "lastUpdateOn": "2018-08-08T01:10:03.267"
+            },
+            {
+                "action": "Upsert",
+                "id": "E52D9110-EECB-414C-BF7C-87C91B5195BB",
+                "lastUpdateOn": "2018-08-08T02:35:17.960",
+                "entityDetail": {
+                    "listingSummary": {
+                        "listingId": "e52d9110-eecb-414c-bf7c-87c91b5195bb",
+                        "isActive": true,
+                        "isPending": false,
+                        "listingType": "ForSale",
+                        "listedOn": "2018-08-07",
+                        "photoCount": 11,
+                        "videoCount": 0,
+                        "listPrice": {
+                            "currencyCode": "EUR",
+                            "amount": 310000,
+                            "isPriceUponRequest": false,
+                            "isHideListPrice": false,
+                            "listPriceinUSD": 362400
+                        },
+                        "propertyAddress": {
+                            "city": "Funchal",
+                            "district": "ilha da madeira",
+                            "country": "Portugal",
+                            "countryCode": "PT",
+                            "geoCodeConfidenceLevel": "Medium"
+                        },
+                        "mlsNumbers": [
+                            "111170198"
+                        ],
+                        "RFGListingId": "DNB83M",
+                        "isNewConstruction": false,
+                        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/dnb83m",
+                        "isCallToShow": false,
+                        "isForAuction": false,
+                        "isByAppointmentOnly": false,
+                        "propertyCategory": "Residential",
+                        "propertyType": "Duplex",
+                        "propertyStyle": "Other Style",
+                        "propertyName": "Duplex, 2 bedrooms, for Sale",
+                        "totalBath": 2,
+                        "lotSize": "0 SM",
+                        "buildingArea": "209.84 Sq. M",
+                        "noOfBedrooms": 2,
+                        "squareFootage": 2258.696776,
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/B833EC26-CCE3-4B76-84C5-431D945AE667",
+                        "isForeClosure": false,
+                        "isShortSale": false,
+                        "lastUpdateOn": "2018-08-08T02:35:17.960",
+                        "agents": [
+                            {
+                                "id": "0ea8fd3f-9c99-48b4-b55a-d6bd98dfe845",
+                                "name": "Pamela Dalton",
+                                "firstName": "Pamela",
+                                "lastName": "Dalton",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/9146984B-4A02-48ED-9F8B-79FEAA726ECE",
+                                "emailAddress": "pdalton@briggsfreeman.com",
+                                "isPrimary": true,
+                                "office": {
+                                    "officeId": "36afe41a-58ae-449c-8616-00be89584092",
+                                    "RFGOfficeId": "0001",
+                                    "companyId": "42f7c2c9-0409-4dd0-b18b-d3fb994bce34",
+                                    "companyName": "Briggs Freeman",
+                                    "RFGCompanyId": "800306",
+                                    "brandCode": "SIR",
+                                    "name": "Briggs Freeman Sotheby's International Realty",
+                                    "type": "Main office",
+                                    "officeAddress": {
+                                        "streetAddress": "5600 W. Lovers Lane, Suite 224,",
+                                        "city": "Dallas",
+                                        "district": "Dallas",
+                                        "stateProvince": "Texas",
+                                        "stateProvinceCode": "TX",
+                                        "postalCode": "75209",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 32.85064,
+                                        "longitude": -96.81632,
+                                        "formattedAddress": "5600 W Lovers Ln, Dallas, TX 75209"
+                                    },
+                                    "phoneNumber": "2143500400",
+                                    "emailAddress": "briggsfreeman@briggsfreeman.com"
+                                }
+                            }
+                        ],
+                        "isShowAddressOnInternet": false
+                    },
+                    "fullBath": 2,
+                    "parkingPlaces": 0,
+                    "levels": 6,
+                    "yearBuilt": "2004",
+                    "providerKey": "e52d9110-eecb-414c-bf7c-87c91b5195bb",
+                    "propertyFeatures": [
+                        {
+                            "groupName": "Special Program",
+                            "description": "QC Approved Listing"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Headline",
+                            "languageCode": "en",
+                            "remark": "Duplex, 2 rooms, Funchal, S\u00e3o Martinho",
+                            "htmlRemark": "Duplex, 2 rooms, Funchal, S\u00e3o Martinho"
+                        },
+                        {
+                            "type": "Headline",
+                            "languageCode": "pt",
+                            "remark": "Duplex, 2 quartos, Funchal, S\u00e3o Martinho",
+                            "htmlRemark": "Duplex, 2 quartos, Funchal, S\u00e3o Martinho"
+                        },
+                        {
+                            "type": "Property Description",
+                            "languageCode": "en",
+                            "remark": "Exceptional duplex apartment,with high quality finishes, located on the top floor of the building. There have two bedrooms, one suite, a living room and a dining room with balcony. A fully equipped kitchen with laundry area and social bathroom. On the second floor there are an amazing an large attic room with about 88 square meters, with a panoramic balcony and also a bathroom. This is an open space where you can be subject to multiple adaptations, becoming a \"plus\" to be taken into account at the time of acquisition. It has two parking spaces and a storage room in the basement. Near here there are a variety of services of diverse commerce, catering, supermarkets, shopping, beaches, gymnasiums and it's so easy to get the speedway. We are certain that will offer you a formidable quality of life if it comes to acquire it. An assertive choice, either for investment or for own housing.",
+                            "htmlRemark": "Exceptional duplex apartment,with high quality finishes, located on the top floor of the building. There have two bedrooms, one suite, a living room and a dining room with balcony. A fully equipped kitchen with laundry area and social bathroom. On the second floor there are an amazing an large attic room with about 88 square meters, with a panoramic balcony and also a bathroom. This is an open space where you can be subject to multiple adaptations, becoming a \"plus\" to be taken into account at the time of acquisition. It has two parking spaces and a storage room in the basement. Near here there are a variety of services of diverse commerce, catering, supermarkets, shopping, beaches, gymnasiums and it's so easy to get the speedway.  We are certain that will offer you a formidable quality of life if it comes to acquire it. An assertive choice, either for investment or for own housing."
+                        },
+                        {
+                            "type": "Property Description",
+                            "languageCode": "pt",
+                            "remark": "Excepcional apartamento duplex, situado no \u00faltimo piso de pr\u00e9dio muito bem constru\u00eddo, com acabamentos de qualidade indiscut\u00edvel. Tem dois lugares de garagem e uma arrecada\u00e7\u00e3o na cave. Disp\u00f5e de \u00e1reas agradavelmente generosas, dois quartos de dormir, um deles suite, sala de estar e jantar com varanda, cozinha completamente equipada com zona de lavandaria e casa de banho social completa. No segundo piso surge um surpreendente e amplo s\u00f3t\u00e3o, com cerca de 88 metros quadrados, totalmente pavimentado e revestido, com varanda panor\u00e2mica e ainda uma casa de banho completa. Este espa\u00e7o encontra-se sem divis\u00f3rias, podendo ser sujeito a m\u00faltiplas adapta\u00e7\u00f5es, tornando-se um \"plus\" a ter em conta no momento da aquisi\u00e7\u00e3o. Perto de um conjunto de servi\u00e7os de com\u00e9rcio diverso, restaura\u00e7\u00e3o, supermercados, shopping, praias e gin\u00e1sios, e de f\u00e1cil acesso \u00e0 via-r\u00e1pida, estamos certos que oferecer-lhe-\u00e1 uma formid\u00e1vel qualidade de vida se vier a adquiri-lo. Uma escolha assertiva, seja para investimento ou para habita\u00e7\u00e3o pr\u00f3pria.",
+                            "htmlRemark": "Excepcional apartamento duplex, situado no \u00faltimo piso de pr\u00e9dio muito bem constru\u00eddo, com acabamentos de qualidade indiscut\u00edvel. Tem dois lugares de garagem e uma arrecada\u00e7\u00e3o na cave. Disp\u00f5e de \u00e1reas agradavelmente generosas, dois quartos de dormir, um deles suite, sala de estar e jantar com varanda, cozinha completamente equipada com zona de lavandaria e casa de banho social completa. No segundo piso surge um surpreendente e amplo s\u00f3t\u00e3o, com cerca de 88 metros quadrados, totalmente pavimentado e revestido, com varanda panor\u00e2mica e ainda uma casa de banho completa. Este espa\u00e7o encontra-se sem divis\u00f3rias, podendo ser sujeito a m\u00faltiplas adapta\u00e7\u00f5es, tornando-se um \"plus\" a ter em conta no momento da aquisi\u00e7\u00e3o. Perto de um conjunto de servi\u00e7os de com\u00e9rcio diverso, restaura\u00e7\u00e3o, supermercados, shopping, praias e gin\u00e1sios, e de f\u00e1cil acesso \u00e0 via-r\u00e1pida, estamos certos que oferecer-lhe-\u00e1 uma formid\u00e1vel qualidade de vida se vier a adquiri-lo. Uma escolha assertiva, seja para investimento ou para habita\u00e7\u00e3o pr\u00f3pria."
+                        }
+                    ],
+                    "webSites": [
+                        {
+                            "type": "Landing Page URL",
+                            "name": "Landing Page URL",
+                            "url": "https:\/\/www.sothebysrealty.com\/id\/dnb83m",
+                            "contentLanguageCode": "en"
+                        },
+                        {
+                            "type": "Local IDX URL",
+                            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=25883&idioma=pt1",
+                            "contentLanguageCode": "en"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "8AFB5671-9728-4F13-93DF-14959849C027",
+                            "sequenceNumber": 3,
+                            "url": "\/\/openapi.azureedge.net\/8AFB5671-9728-4F13-93DF-14959849C027",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5008,
+                            "width": 7511,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "C7B5BE31-CBF1-45EE-96D0-15B7BCADA56D",
+                            "sequenceNumber": 5,
+                            "url": "\/\/openapi.azureedge.net\/C7B5BE31-CBF1-45EE-96D0-15B7BCADA56D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5058,
+                            "width": 7588,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "ED6CC276-3A88-41E7-9B37-403B39914C2C",
+                            "sequenceNumber": 4,
+                            "url": "\/\/openapi.azureedge.net\/ED6CC276-3A88-41E7-9B37-403B39914C2C",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4282,
+                            "width": 6422,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "B833EC26-CCE3-4B76-84C5-431D945AE667",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/B833EC26-CCE3-4B76-84C5-431D945AE667",
+                            "isDefault": true,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5306,
+                            "width": 7954,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "0939A529-FD2D-40E7-A183-4431A0443995",
+                            "sequenceNumber": 1,
+                            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=25883&idioma=pt1",
+                            "isDefault": true,
+                            "caption": "Duplex, 2 bedrooms, for Sale",
+                            "format": "URL",
+                            "category": "Local Listing Link",
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "AEE87B21-ACF0-4708-B74D-57C3B5CEED2D",
+                            "sequenceNumber": 6,
+                            "url": "\/\/openapi.azureedge.net\/AEE87B21-ACF0-4708-B74D-57C3B5CEED2D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4809,
+                            "width": 7214,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "3E0C122C-4719-4F50-B7B3-675377C62B43",
+                            "sequenceNumber": 11,
+                            "url": "\/\/openapi.azureedge.net\/3E0C122C-4719-4F50-B7B3-675377C62B43",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4430,
+                            "width": 6645,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "61360CAF-08DC-41D9-A7A5-A4E99C74B821",
+                            "sequenceNumber": 7,
+                            "url": "\/\/openapi.azureedge.net\/61360CAF-08DC-41D9-A7A5-A4E99C74B821",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5034,
+                            "width": 7553,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "0F4A0A20-090B-41E0-B6F6-B24CF0D153B1",
+                            "sequenceNumber": 2,
+                            "url": "\/\/openapi.azureedge.net\/0F4A0A20-090B-41E0-B6F6-B24CF0D153B1",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5304,
+                            "width": 7952,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "E7EDFF88-CAE3-4318-9993-B4CE5771FEC6",
+                            "sequenceNumber": 10,
+                            "url": "\/\/openapi.azureedge.net\/E7EDFF88-CAE3-4318-9993-B4CE5771FEC6",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5304,
+                            "width": 7952,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "72AA56C7-7566-452E-8A8A-BAA61465D33C",
+                            "sequenceNumber": 8,
+                            "url": "\/\/openapi.azureedge.net\/72AA56C7-7566-452E-8A8A-BAA61465D33C",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4787,
+                            "width": 7179,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        },
+                        {
+                            "mediaID": "190E5247-712C-4720-BEB0-EF08C65CBCDA",
+                            "sequenceNumber": 9,
+                            "url": "\/\/openapi.azureedge.net\/190E5247-712C-4720-BEB0-EF08C65CBCDA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 5304,
+                            "width": 7952,
+                            "lastUpdateOn": "2018-04-12T17:52:25.850"
+                        }
+                    ],
+                    "propertyRooms": [
+                        {
+                            "sequenceNumber": 1,
+                            "level": "1",
+                            "name": "Unknown"
+                        },
+                        {
+                            "sequenceNumber": 2,
+                            "level": "1",
+                            "name": "Kitchen"
+                        },
+                        {
+                            "sequenceNumber": 3,
+                            "level": "1",
+                            "name": "Unknown"
+                        },
+                        {
+                            "sequenceNumber": 4,
+                            "level": "1",
+                            "name": "Bedroom"
+                        },
+                        {
+                            "sequenceNumber": 5,
+                            "level": "1",
+                            "name": "Bedroom"
+                        },
+                        {
+                            "sequenceNumber": 6,
+                            "level": "1",
+                            "name": "Den"
+                        },
+                        {
+                            "sequenceNumber": 7,
+                            "level": "1",
+                            "name": "Attic Finished"
+                        },
+                        {
+                            "sequenceNumber": 8,
+                            "level": "1",
+                            "name": "Full Bath"
+                        },
+                        {
+                            "sequenceNumber": 9,
+                            "level": "1",
+                            "name": "Full Bath"
+                        },
+                        {
+                            "sequenceNumber": 10,
+                            "level": "1",
+                            "name": "Full Bath"
+                        }
+                    ],
+                    "mlsInformation": [
+                        {
+                            "number": "111170198",
+                            "isPrimary": true
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "2E5ADCC3-E4D4-40E2-BD75-6CFD1F462CA9",
+                "lastUpdateOn": "2018-08-08T02:35:09.100",
+                "entityDetail": {
+                    "listingSummary": {
+                        "listingId": "2e5adcc3-e4d4-40e2-bd75-6cfd1f462ca9",
+                        "isActive": true,
+                        "isPending": false,
+                        "listingType": "ForSale",
+                        "listedOn": "2018-08-07",
+                        "photoCount": 46,
+                        "videoCount": 0,
+                        "listPrice": {
+                            "currencyCode": "EUR",
+                            "amount": 5500000,
+                            "isPriceUponRequest": false,
+                            "isHideListPrice": false,
+                            "listPriceinUSD": 6430500
+                        },
+                        "propertyAddress": {
+                            "city": "Oeiras",
+                            "district": "lisboa",
+                            "country": "Portugal",
+                            "countryCode": "PT",
+                            "geoCodeConfidenceLevel": "High"
+                        },
+                        "mlsNumbers": [
+                            "104150214"
+                        ],
+                        "RFGListingId": "ZPVQE3",
+                        "isNewConstruction": false,
+                        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/zpvqe3",
+                        "isCallToShow": false,
+                        "isForAuction": false,
+                        "isByAppointmentOnly": false,
+                        "propertyCategory": "Residential",
+                        "propertyType": "Farm\/Ranch\/Plantation",
+                        "propertyStyle": "Other Style",
+                        "propertyName": "Country Estate, 9 bedrooms, for Sale",
+                        "totalBath": 5,
+                        "lotSize": "7483 SM",
+                        "buildingArea": "1175 Sq. M",
+                        "noOfBedrooms": 9,
+                        "squareFootage": 12647.5825,
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/C0ADEAB6-FAA9-4E88-A6B3-677FE53F1B0F",
+                        "isForeClosure": false,
+                        "isShortSale": false,
+                        "lastUpdateOn": "2018-08-08T02:35:09.100",
+                        "agents": [
+                            {
+                                "id": "8e4e9172-1dc0-47a8-942d-d9ee6ebab137",
+                                "name": "Robin Stieff Knisley",
+                                "firstName": "Robin",
+                                "lastName": "Knisley",
+                                "gender": "Female",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/E9A804C8-45E8-4B17-A6D6-C4F1A51A32E8",
+                                "emailAddress": "robin@mottandchace.com",
+                                "businessPhone": "+1 4013150808",
+                                "isPrimary": true,
+                                "office": {
+                                    "officeId": "b5d00604-44c7-4bf4-aba1-97ae488b1350",
+                                    "RFGOfficeId": "0002",
+                                    "companyId": "82901fad-97fd-4a18-9284-bc48636e5d39",
+                                    "companyName": "Mott & Chace",
+                                    "RFGCompanyId": "800354",
+                                    "brandCode": "SIR",
+                                    "name": "Mott & Chace Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "27 Bay Street",
+                                        "city": "Watch Hill",
+                                        "district": "Washington",
+                                        "stateProvince": "Rhode Island",
+                                        "stateProvinceCode": "RI",
+                                        "postalCode": "02891",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 41.31225,
+                                        "longitude": -71.85614,
+                                        "formattedAddress": "27 Bay St, Westerly, RI 02891"
+                                    },
+                                    "phoneNumber": "4013150808",
+                                    "emailAddress": "geer.messinger@mottandchace.com"
+                                }
+                            }
+                        ],
+                        "isShowAddressOnInternet": false
+                    },
+                    "fullBath": 5,
+                    "parkingPlaces": 0,
+                    "yearBuilt": "0",
+                    "providerKey": "2e5adcc3-e4d4-40e2-bd75-6cfd1f462ca9",
+                    "propertyFeatures": [
+                        {
+                            "groupName": "Special Program",
+                            "description": "QC Approved Listing"
+                        },
+                        {
+                            "groupName": "Lifestyles",
+                            "description": "Farm & Ranch"
+                        },
+                        {
+                            "groupName": "Lifestyles",
+                            "description": "Historic"
+                        },
+                        {
+                            "groupName": "Lifestyles",
+                            "description": "Waterfront"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Headline",
+                            "languageCode": "en",
+                            "remark": "Beautifull Small Palace",
+                            "htmlRemark": "Beautifull Small Palace"
+                        },
+                        {
+                            "type": "Headline",
+                            "languageCode": "pt",
+                            "remark": "Magn\u00edfico Palacete junto ao rio Tejo",
+                            "htmlRemark": "Magn\u00edfico Palacete junto ao rio Tejo"
+                        },
+                        {
+                            "type": "Property Description",
+                            "languageCode": "en",
+                            "remark": "The property has a plot of land in rectangular shape with approximately 7500 m2, and is composed of a small palace (4 floors) with a magnificent garden, Gardener's House and House of Concierge (both with 2 floors) and a Building Garage. The building dates from the late nineteenth century, and is composed of masonry walls, covered in ceramic tile, the frames of the windows are painted iron and wood. Floor coverings are wooden floors to the English or polished marble stone, the ceilings are stucco worked and the doors and wardrobes in lacquered wood. Outside there is a vast space of landscaping with large trees, including cedars and ornate gardens with small lakes. The property has a high historical value that increases his prestige, a good architectural quality, a good sun exposure and a magnificent view over the Tagus river, near Lisbon.",
+                            "htmlRemark": "The property has a plot of land in rectangular shape with approximately 7500 m2, and is composed of a small palace (4 floors) with a magnificent garden, Gardener's House and House of Concierge (both with 2 floors) and a Building Garage.\nThe building dates from the late nineteenth century, and is composed of masonry walls, covered in ceramic tile, the frames of the windows are painted iron and wood. Floor coverings are wooden floors to the English or polished marble stone, the ceilings are stucco worked and the doors and wardrobes in lacquered wood.\nOutside there is a vast space of landscaping with large trees, including cedars and ornate gardens with small lakes.\nThe property has a high historical value that increases his prestige, a good architectural quality, a good sun exposure and a magnificent view over the Tagus river, near Lisbon."
+                        },
+                        {
+                            "type": "Property Description",
+                            "languageCode": "pt",
+                            "remark": "Com uma localiza\u00e7\u00e3o privilegiada, entre o Estoril e o centro de Lisboa, esta propriedade constitui o pulm\u00e3o verde da zona. Com um terreno em forma rectangular com cerca de 7500 m2, \u00e9 composto por um pequeno Palacete (4 andares) com um magn\u00edfico Jardim, Casa do Caseiro e Casa do Jardineiro (ambos com 2 pisos) e um edif\u00edcio Garagem. O edif\u00edcio data de finais do s\u00e9culo XIX, e \u00e9 composto por paredes de alvenaria , cobertura em Telha Cer\u00e2mica, janelas em ferro e madeira pintadas. Os pavimentos s\u00e3o em madeira estilo Ingl\u00eas ou em pedra de m\u00e1rmore polido, os paredes s\u00e3o de estuque trabalhado e as portas e roupeiros em madeira lacada. No Jardim existe um vasto espa\u00e7o de exterior com \u00e1rvores de grande porte , incluindo cedros e ornamentados jardins com pequenos lagos . A propriedade tem um elevado valor hist\u00f3rico que aumenta o seu prest\u00edgio , uma boa qualidade arquitect\u00f3nica , boa exposi\u00e7\u00e3o solar e uma vista magn\u00edfica sobre o rio Tejo , perto de Lisboa . Certificado energ\u00e9tico em vias de emiss\u00e3o.",
+                            "htmlRemark": "Com uma localiza\u00e7\u00e3o privilegiada, entre o Estoril e o centro de Lisboa, esta propriedade constitui o pulm\u00e3o verde da zona.\nCom um terreno em forma rectangular com cerca de 7500 m2, \u00e9 composto por um pequeno Palacete (4 andares) com um magn\u00edfico Jardim, Casa do Caseiro e Casa do Jardineiro (ambos com 2 pisos) e um edif\u00edcio Garagem.\nO edif\u00edcio data de finais do s\u00e9culo XIX, e \u00e9 composto por paredes de alvenaria , cobertura em Telha Cer\u00e2mica, janelas em ferro e madeira pintadas.\nOs pavimentos s\u00e3o em madeira estilo Ingl\u00eas ou em pedra de m\u00e1rmore polido, os paredes s\u00e3o de estuque trabalhado e as portas e roupeiros em madeira lacada.\nNo Jardim existe um vasto espa\u00e7o de exterior com \u00e1rvores de grande porte , incluindo cedros e ornamentados jardins com pequenos lagos .\nA propriedade tem um elevado valor hist\u00f3rico que aumenta o seu prest\u00edgio , uma boa qualidade arquitect\u00f3nica , boa exposi\u00e7\u00e3o solar e uma vista magn\u00edfica sobre o rio Tejo , perto de Lisboa .\n\nCertificado energ\u00e9tico em vias de emiss\u00e3o."
+                        }
+                    ],
+                    "webSites": [
+                        {
+                            "type": "Local IDX URL",
+                            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=16303&idioma=pt1",
+                            "contentLanguageCode": "en"
+                        },
+                        {
+                            "type": "Landing Page URL",
+                            "name": "Landing Page URL",
+                            "url": "https:\/\/www.sothebysrealty.com\/id\/zpvqe3",
+                            "contentLanguageCode": "en"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "B78FFEA1-3AE5-42DA-A7C4-018AB5F9F674",
+                            "sequenceNumber": 21,
+                            "url": "\/\/openapi.azureedge.net\/B78FFEA1-3AE5-42DA-A7C4-018AB5F9F674",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3941,
+                            "width": 5255,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "7E7D1919-A8BB-4E27-BA0A-0420CF8E4931",
+                            "sequenceNumber": 34,
+                            "url": "\/\/openapi.azureedge.net\/7E7D1919-A8BB-4E27-BA0A-0420CF8E4931",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5334,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "85820B64-E329-4A13-B979-0508CB8C8579",
+                            "sequenceNumber": 15,
+                            "url": "\/\/openapi.azureedge.net\/85820B64-E329-4A13-B979-0508CB8C8579",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3762,
+                            "width": 5016,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "3EDB13DF-966D-4AD5-9233-0D87943EBEC2",
+                            "sequenceNumber": 12,
+                            "url": "\/\/openapi.azureedge.net\/3EDB13DF-966D-4AD5-9233-0D87943EBEC2",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4014,
+                            "width": 5352,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "152F5985-7BAF-48E8-92CD-103C7D36A086",
+                            "sequenceNumber": 16,
+                            "url": "\/\/openapi.azureedge.net\/152F5985-7BAF-48E8-92CD-103C7D36A086",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "B330B28A-7255-41E5-8F05-10AE9FE4D249",
+                            "sequenceNumber": 10,
+                            "url": "\/\/openapi.azureedge.net\/B330B28A-7255-41E5-8F05-10AE9FE4D249",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3936,
+                            "width": 5248,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "73121C31-DC84-415B-BF01-114C7C575EC2",
+                            "sequenceNumber": 23,
+                            "url": "\/\/openapi.azureedge.net\/73121C31-DC84-415B-BF01-114C7C575EC2",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3960,
+                            "width": 5280,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "FF9F9099-C4FA-40AA-BA38-125CE613FA20",
+                            "sequenceNumber": 38,
+                            "url": "\/\/openapi.azureedge.net\/FF9F9099-C4FA-40AA-BA38-125CE613FA20",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3942,
+                            "width": 5256,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "38DFF438-134A-4C24-86D8-1453823ECC52",
+                            "sequenceNumber": 22,
+                            "url": "\/\/openapi.azureedge.net\/38DFF438-134A-4C24-86D8-1453823ECC52",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3630,
+                            "width": 4840,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "7829BEFB-72D1-4A2F-86C4-1FBA9E34FB86",
+                            "sequenceNumber": 17,
+                            "url": "\/\/openapi.azureedge.net\/7829BEFB-72D1-4A2F-86C4-1FBA9E34FB86",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "75DB04B5-FD2B-4FFB-AA1A-27AA5A23225D",
+                            "sequenceNumber": 3,
+                            "url": "\/\/openapi.azureedge.net\/75DB04B5-FD2B-4FFB-AA1A-27AA5A23225D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3973,
+                            "width": 5297,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "0FB51AA6-3C8C-4B2F-86F9-2E9E2FFBBF5C",
+                            "sequenceNumber": 41,
+                            "url": "\/\/openapi.azureedge.net\/0FB51AA6-3C8C-4B2F-86F9-2E9E2FFBBF5C",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5334,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "A252C40E-D4A6-477B-A355-319B81202B9E",
+                            "sequenceNumber": 9,
+                            "url": "\/\/openapi.azureedge.net\/A252C40E-D4A6-477B-A355-319B81202B9E",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5334,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "431EEE1C-7056-4E60-BB18-32618674F832",
+                            "sequenceNumber": 29,
+                            "url": "\/\/openapi.azureedge.net\/431EEE1C-7056-4E60-BB18-32618674F832",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "F21BB372-D217-4C69-B1F3-3E20D5A7442F",
+                            "sequenceNumber": 2,
+                            "url": "\/\/openapi.azureedge.net\/F21BB372-D217-4C69-B1F3-3E20D5A7442F",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3928,
+                            "width": 5238,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "1D0981D8-FBC8-43C9-B34F-43A71C5F7478",
+                            "sequenceNumber": 30,
+                            "url": "\/\/openapi.azureedge.net\/1D0981D8-FBC8-43C9-B34F-43A71C5F7478",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3475,
+                            "width": 4634,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "736936CC-6870-4FA5-9074-4F7EC86972C9",
+                            "sequenceNumber": 33,
+                            "url": "\/\/openapi.azureedge.net\/736936CC-6870-4FA5-9074-4F7EC86972C9",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "633EECB7-CF87-4370-B612-4FC0024181C9",
+                            "sequenceNumber": 31,
+                            "url": "\/\/openapi.azureedge.net\/633EECB7-CF87-4370-B612-4FC0024181C9",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "57E72D24-4284-4960-94DF-4FD494922361",
+                            "sequenceNumber": 42,
+                            "url": "\/\/openapi.azureedge.net\/57E72D24-4284-4960-94DF-4FD494922361",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4001,
+                            "width": 5335,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "6CDE4779-DA35-477D-A02B-57465D21C737",
+                            "sequenceNumber": 18,
+                            "url": "\/\/openapi.azureedge.net\/6CDE4779-DA35-477D-A02B-57465D21C737",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3839,
+                            "width": 5119,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "6DAACEC8-0D9E-48C0-8271-608A5B36D8A0",
+                            "sequenceNumber": 37,
+                            "url": "\/\/openapi.azureedge.net\/6DAACEC8-0D9E-48C0-8271-608A5B36D8A0",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "C0ADEAB6-FAA9-4E88-A6B3-677FE53F1B0F",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/C0ADEAB6-FAA9-4E88-A6B3-677FE53F1B0F",
+                            "isDefault": true,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3848,
+                            "width": 5130,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "0652DB07-1DCF-4545-906B-6A081DF3555D",
+                            "sequenceNumber": 35,
+                            "url": "\/\/openapi.azureedge.net\/0652DB07-1DCF-4545-906B-6A081DF3555D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3981,
+                            "width": 5308,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "71DF6A14-9A71-4E17-8BFA-7CAD49A0D3CB",
+                            "sequenceNumber": 26,
+                            "url": "\/\/openapi.azureedge.net\/71DF6A14-9A71-4E17-8BFA-7CAD49A0D3CB",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "E42CA8F7-6238-415C-B8C1-7E3985E69670",
+                            "sequenceNumber": 7,
+                            "url": "\/\/openapi.azureedge.net\/E42CA8F7-6238-415C-B8C1-7E3985E69670",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3980,
+                            "width": 5306,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "A66B81A9-85A7-43FF-B949-8604F6A2DEB0",
+                            "sequenceNumber": 13,
+                            "url": "\/\/openapi.azureedge.net\/A66B81A9-85A7-43FF-B949-8604F6A2DEB0",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3806,
+                            "width": 5074,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "C755D018-DFC9-4601-9023-87E9047673A5",
+                            "sequenceNumber": 5,
+                            "url": "\/\/openapi.azureedge.net\/C755D018-DFC9-4601-9023-87E9047673A5",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "A38C1434-6749-41DB-BA8C-9767E8E7466C",
+                            "sequenceNumber": 46,
+                            "url": "\/\/openapi.azureedge.net\/A38C1434-6749-41DB-BA8C-9767E8E7466C",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3841,
+                            "width": 5122,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "4CF7C5F3-3CF2-4C43-9189-9B7073A81DA9",
+                            "sequenceNumber": 19,
+                            "url": "\/\/openapi.azureedge.net\/4CF7C5F3-3CF2-4C43-9189-9B7073A81DA9",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3880,
+                            "width": 5174,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "439FF514-3C37-4142-B0A6-A44454DA609D",
+                            "sequenceNumber": 27,
+                            "url": "\/\/openapi.azureedge.net\/439FF514-3C37-4142-B0A6-A44454DA609D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3916,
+                            "width": 5171,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "C80FA4CF-4432-46E2-9017-A7CC080EC694",
+                            "sequenceNumber": 36,
+                            "url": "\/\/openapi.azureedge.net\/C80FA4CF-4432-46E2-9017-A7CC080EC694",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "0C4EDBF2-4550-437C-9EDA-A99D8BCB2950",
+                            "sequenceNumber": 24,
+                            "url": "\/\/openapi.azureedge.net\/0C4EDBF2-4550-437C-9EDA-A99D8BCB2950",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "1B480DF1-03A7-482E-8663-ACC25A7D0169",
+                            "sequenceNumber": 39,
+                            "url": "\/\/openapi.azureedge.net\/1B480DF1-03A7-482E-8663-ACC25A7D0169",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3985,
+                            "width": 5313,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "114A6451-B658-40EF-AF82-AEF5CA0E8C69",
+                            "sequenceNumber": 20,
+                            "url": "\/\/openapi.azureedge.net\/114A6451-B658-40EF-AF82-AEF5CA0E8C69",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3964,
+                            "width": 5286,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "C18A70C0-3A8D-4F8C-B853-B3484A401313",
+                            "sequenceNumber": 11,
+                            "url": "\/\/openapi.azureedge.net\/C18A70C0-3A8D-4F8C-B853-B3484A401313",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4003,
+                            "width": 5338,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "CA24602C-A280-45BB-AE4F-BB31600FB406",
+                            "sequenceNumber": 44,
+                            "url": "\/\/openapi.azureedge.net\/CA24602C-A280-45BB-AE4F-BB31600FB406",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "809DF8A3-94D1-42BB-ADB6-BC9709BAFA16",
+                            "sequenceNumber": 6,
+                            "url": "\/\/openapi.azureedge.net\/809DF8A3-94D1-42BB-ADB6-BC9709BAFA16",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4002,
+                            "width": 5336,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "4D721853-A5EE-4C7A-9FF1-C3EA8B771CEE",
+                            "sequenceNumber": 40,
+                            "url": "\/\/openapi.azureedge.net\/4D721853-A5EE-4C7A-9FF1-C3EA8B771CEE",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4002,
+                            "width": 5336,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "4A0D6090-F34B-4A57-861E-CC592EE8BCFC",
+                            "sequenceNumber": 45,
+                            "url": "\/\/openapi.azureedge.net\/4A0D6090-F34B-4A57-861E-CC592EE8BCFC",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3960,
+                            "width": 5280,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "2945DDD9-E599-4E8C-A8F1-D03F0E231D7B",
+                            "sequenceNumber": 14,
+                            "url": "\/\/openapi.azureedge.net\/2945DDD9-E599-4E8C-A8F1-D03F0E231D7B",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "80A2E8F7-B47F-469D-A949-DAFB14430CA7",
+                            "sequenceNumber": 28,
+                            "url": "\/\/openapi.azureedge.net\/80A2E8F7-B47F-469D-A949-DAFB14430CA7",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "23BE854F-813F-49E9-8C31-E276801E69B1",
+                            "sequenceNumber": 43,
+                            "url": "\/\/openapi.azureedge.net\/23BE854F-813F-49E9-8C31-E276801E69B1",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3978,
+                            "width": 5305,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "7CB3A0EA-BCF7-4FFE-97C9-E534FC1D97C9",
+                            "sequenceNumber": 1,
+                            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=16303&idioma=pt1",
+                            "isDefault": true,
+                            "caption": "Country Estate, 9 bedrooms, for Sale",
+                            "format": "URL",
+                            "category": "Local Listing Link",
+                            "lastUpdateOn": "2017-12-10T03:31:21.733"
+                        },
+                        {
+                            "mediaID": "49120293-0773-4B7A-9AF1-F5016538939D",
+                            "sequenceNumber": 4,
+                            "url": "\/\/openapi.azureedge.net\/49120293-0773-4B7A-9AF1-F5016538939D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5333,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "0DB0F0F0-36A5-4DF1-942B-F679DCECD2C4",
+                            "sequenceNumber": 25,
+                            "url": "\/\/openapi.azureedge.net\/0DB0F0F0-36A5-4DF1-942B-F679DCECD2C4",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3910,
+                            "width": 5213,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "D27F08DE-6A49-4D76-8A53-F7EF5D0785D5",
+                            "sequenceNumber": 8,
+                            "url": "\/\/openapi.azureedge.net\/D27F08DE-6A49-4D76-8A53-F7EF5D0785D5",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 4000,
+                            "width": 5334,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        },
+                        {
+                            "mediaID": "1046E0A6-A749-4A10-91BC-FF82C8E3F8DC",
+                            "sequenceNumber": 32,
+                            "url": "\/\/openapi.azureedge.net\/1046E0A6-A749-4A10-91BC-FF82C8E3F8DC",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3867,
+                            "width": 5156,
+                            "lastUpdateOn": "2018-04-04T00:00:38.590"
+                        }
+                    ],
+                    "mlsInformation": [
+                        {
+                            "number": "104150214",
+                            "isPrimary": true
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "28968F96-BF9A-423B-97A1-124BC6B7BB8D",
+                "lastUpdateOn": "2018-08-08T02:40:04.240",
+                "entityDetail": {
+                    "listingSummary": {
+                        "listingId": "28968f96-bf9a-423b-97a1-124bc6b7bb8d",
+                        "isActive": true,
+                        "isPending": false,
+                        "listingType": "ForSale",
+                        "listedOn": "2018-08-07",
+                        "photoCount": 34,
+                        "videoCount": 0,
+                        "listPrice": {
+                            "currencyCode": "EUR",
+                            "amount": 1550000,
+                            "isPriceUponRequest": false,
+                            "isHideListPrice": false,
+                            "listPriceinUSD": 1812200
+                        },
+                        "propertyAddress": {
+                            "city": "Sintra",
+                            "district": "lisboa",
+                            "country": "Portugal",
+                            "countryCode": "PT",
+                            "geoCodeConfidenceLevel": "High"
+                        },
+                        "mlsNumbers": [
+                            "102170376"
+                        ],
+                        "RFGListingId": "3PYJ43",
+                        "isNewConstruction": false,
+                        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/3pyj43",
+                        "isCallToShow": false,
+                        "isForAuction": false,
+                        "isByAppointmentOnly": false,
+                        "propertyCategory": "Residential",
+                        "propertyType": "Farm\/Ranch\/Plantation",
+                        "propertyStyle": "Other Style",
+                        "propertyName": "Small Farm, 8 bedrooms, for Sale",
+                        "totalBath": 5,
+                        "lotSize": "4220 SM",
+                        "buildingArea": "687 Sq. M",
+                        "noOfBedrooms": 8,
+                        "squareFootage": 7394.7993,
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/79FA57D0-8CDE-43E5-A72F-1AD713307BA9",
+                        "isForeClosure": false,
+                        "isShortSale": false,
+                        "lastUpdateOn": "2018-08-08T02:40:04.240",
+                        "agents": [
+                            {
+                                "id": "7d436ce8-d262-40c7-a4d2-fc6f2ceb72f9",
+                                "name": "Kim Ouellette - Manager",
+                                "firstName": "Kim",
+                                "lastName": "Ouellette - Manager",
+                                "gender": "Male",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/22D903B7-DA07-4831-83AB-3EEF151E18B8",
+                                "emailAddress": "kim.ouellette@premiersir.com",
+                                "businessPhone": "351919228919",
+                                "isPrimary": true,
+                                "office": {
+                                    "officeId": "3db55cbd-bbdf-4a09-b360-e955fa1f9cef",
+                                    "RFGOfficeId": "0003",
+                                    "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+                                    "companyName": "Premier",
+                                    "RFGCompanyId": "800307",
+                                    "brandCode": "SIR",
+                                    "name": "Premier Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "325 Vanderbilt Beach Road",
+                                        "city": "Naples",
+                                        "district": "Collier",
+                                        "stateProvince": "Florida",
+                                        "stateProvinceCode": "FL",
+                                        "postalCode": "34108",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 26.25358,
+                                        "longitude": -81.81984,
+                                        "formattedAddress": "325 Vanderbilt Beach Rd, Naples, FL 34108"
+                                    },
+                                    "phoneNumber": "2395949494",
+                                    "emailAddress": "accounting@premiersir.com"
+                                }
+                            }
+                        ],
+                        "isShowAddressOnInternet": false
+                    },
+                    "fullBath": 5,
+                    "parkingPlaces": 0,
+                    "yearBuilt": "1965",
+                    "providerKey": "28968f96-bf9a-423b-97a1-124bc6b7bb8d",
+                    "propertyFeatures": [
+                        {
+                            "groupName": "Special Program",
+                            "description": "QC Approved Listing"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Property Description",
+                            "languageCode": "pt",
+                            "remark": "Esplendida Quinta localizada no cora\u00e7\u00e3o da natureza em Sintra, ampla moradia inserida num lote de 4220 metros quadrados, Dispoe de quatro salas, oito quartos,jardim, estufa e churrasqueira ao lado da piscina. Entre a serra de Sintra e o Mar, rodeada de luxuriante vegeta\u00e7\u00e2o. Pelas suas caracteristicas e localiza\u00e7\u00e3o tem um grande potencial para turismo rural. Al\u00e9m do edif\u00edcio principal, existem mais dois edif\u00edcios que servem como apartamentos independentes.",
+                            "htmlRemark": "Esplendida Quinta localizada no cora\u00e7\u00e3o da natureza em Sintra, ampla moradia inserida num lote de 4220 metros quadrados, Dispoe de quatro salas, oito quartos,jardim, estufa e churrasqueira ao lado da piscina. Entre a serra de Sintra e o Mar, rodeada de luxuriante vegeta\u00e7\u00e2o. Pelas suas caracteristicas e localiza\u00e7\u00e3o tem um grande potencial para turismo rural. \nAl\u00e9m do edif\u00edcio principal, existem mais dois edif\u00edcios que servem como apartamentos independentes.\n"
+                        },
+                        {
+                            "type": "Headline",
+                            "languageCode": "en",
+                            "remark": "Villa in Sintra",
+                            "htmlRemark": "Villa in Sintra "
+                        },
+                        {
+                            "type": "Headline",
+                            "languageCode": "pt",
+                            "remark": "Quinta em Sintra",
+                            "htmlRemark": "Quinta em Sintra "
+                        },
+                        {
+                            "type": "Property Description",
+                            "languageCode": "en",
+                            "remark": "Located in the heart of nature in Sintra, large villa inserted in a plot of 3400 square meters, it has 4 living rooms, 8 rooms, garage for 3-4 cars, with garden, greenhouse and barbecue by the pool. Between the mountains of Sintra and the Sea, surrounded by luxuriant vegetation. Due to its characteristics and location it has a great potential for rural tourism. In addition to the main building, there are 2 more buildings that serve as independent apartments.",
+                            "htmlRemark": "Located in the heart of nature in Sintra, large villa inserted in a plot of 3400 square meters, it has 4 living rooms, 8 rooms, garage for 3-4 cars, with garden, greenhouse and barbecue by the pool. Between the mountains of Sintra and the Sea, surrounded by luxuriant vegetation. Due to its characteristics and location it has a great potential for rural tourism.\nIn addition to the main building, there are 2 more buildings that serve as independent apartments."
+                        }
+                    ],
+                    "webSites": [
+                        {
+                            "type": "Landing Page URL",
+                            "name": "Landing Page URL",
+                            "url": "https:\/\/www.sothebysrealty.com\/id\/3pyj43",
+                            "contentLanguageCode": "en"
+                        },
+                        {
+                            "type": "Local IDX URL",
+                            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=18782&idioma=pt1",
+                            "contentLanguageCode": "en"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "F27855DD-920A-4DB1-A71C-030CC9324DAF",
+                            "sequenceNumber": 22,
+                            "url": "\/\/openapi.azureedge.net\/F27855DD-920A-4DB1-A71C-030CC9324DAF",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "B308FA86-AAEB-4FD9-9162-0CEF056D15C1",
+                            "sequenceNumber": 11,
+                            "url": "\/\/openapi.azureedge.net\/B308FA86-AAEB-4FD9-9162-0CEF056D15C1",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3742,
+                            "width": 4989,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "0CC5F478-5989-4F8A-9BD5-167CA1EE1085",
+                            "sequenceNumber": 3,
+                            "url": "\/\/openapi.azureedge.net\/0CC5F478-5989-4F8A-9BD5-167CA1EE1085",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3566,
+                            "width": 4756,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "55AC5D6B-C975-4CF1-AF3A-1A1FF8594815",
+                            "sequenceNumber": 13,
+                            "url": "\/\/openapi.azureedge.net\/55AC5D6B-C975-4CF1-AF3A-1A1FF8594815",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "79FA57D0-8CDE-43E5-A72F-1AD713307BA9",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/79FA57D0-8CDE-43E5-A72F-1AD713307BA9",
+                            "isDefault": true,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3638,
+                            "width": 4851,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "9B4DB201-2C12-4295-B762-24DA62A208B6",
+                            "sequenceNumber": 27,
+                            "url": "\/\/openapi.azureedge.net\/9B4DB201-2C12-4295-B762-24DA62A208B6",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3748,
+                            "width": 4998,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "B0A69583-04EF-4DD7-879C-31159F57DDFB",
+                            "sequenceNumber": 19,
+                            "url": "\/\/openapi.azureedge.net\/B0A69583-04EF-4DD7-879C-31159F57DDFB",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "D9609A0B-9413-4610-922B-361B9EC12404",
+                            "sequenceNumber": 26,
+                            "url": "\/\/openapi.azureedge.net\/D9609A0B-9413-4610-922B-361B9EC12404",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "BADBFB24-111C-4D01-ADA5-4BBBF9164567",
+                            "sequenceNumber": 29,
+                            "url": "\/\/openapi.azureedge.net\/BADBFB24-111C-4D01-ADA5-4BBBF9164567",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3740,
+                            "width": 4986,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "475545AB-D485-498F-B88D-7DF23ADF2E0E",
+                            "sequenceNumber": 32,
+                            "url": "\/\/openapi.azureedge.net\/475545AB-D485-498F-B88D-7DF23ADF2E0E",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "E12E028A-EAFF-4E5D-9AA9-823A4D4D6833",
+                            "sequenceNumber": 34,
+                            "url": "\/\/openapi.azureedge.net\/E12E028A-EAFF-4E5D-9AA9-823A4D4D6833",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "E4121DCF-637E-43DF-AA07-894BDF410972",
+                            "sequenceNumber": 8,
+                            "url": "\/\/openapi.azureedge.net\/E4121DCF-637E-43DF-AA07-894BDF410972",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "59FE1DAA-CA0D-4642-B7D1-8D3CCBA66A32",
+                            "sequenceNumber": 1,
+                            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=18782&idioma=pt1",
+                            "isDefault": true,
+                            "caption": "Small Farm, 8 bedrooms, for Sale",
+                            "format": "URL",
+                            "category": "Local Listing Link",
+                            "lastUpdateOn": "2017-12-10T03:31:17.907"
+                        },
+                        {
+                            "mediaID": "560DF103-30CE-41C0-B5ED-908C90D5AC13",
+                            "sequenceNumber": 24,
+                            "url": "\/\/openapi.azureedge.net\/560DF103-30CE-41C0-B5ED-908C90D5AC13",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "0E9ED8A1-5A37-4017-BB36-911DA5E5467F",
+                            "sequenceNumber": 12,
+                            "url": "\/\/openapi.azureedge.net\/0E9ED8A1-5A37-4017-BB36-911DA5E5467F",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "3375F106-3538-4A43-97A1-9D67B1A0D5B3",
+                            "sequenceNumber": 21,
+                            "url": "\/\/openapi.azureedge.net\/3375F106-3538-4A43-97A1-9D67B1A0D5B3",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3729,
+                            "width": 4971,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "A7E3F8FB-1962-40B8-BB0A-A3F938FA17FB",
+                            "sequenceNumber": 14,
+                            "url": "\/\/openapi.azureedge.net\/A7E3F8FB-1962-40B8-BB0A-A3F938FA17FB",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "74721921-0B9E-4E2E-877B-A79F12F611D7",
+                            "sequenceNumber": 31,
+                            "url": "\/\/openapi.azureedge.net\/74721921-0B9E-4E2E-877B-A79F12F611D7",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3741,
+                            "width": 4987,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "87FD039A-537A-41CC-9A4D-A853D342C4AA",
+                            "sequenceNumber": 15,
+                            "url": "\/\/openapi.azureedge.net\/87FD039A-537A-41CC-9A4D-A853D342C4AA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3736,
+                            "width": 4982,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "59038799-6663-47C0-A183-ADDC677F84FA",
+                            "sequenceNumber": 16,
+                            "url": "\/\/openapi.azureedge.net\/59038799-6663-47C0-A183-ADDC677F84FA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "D64D424B-415C-4D3B-9DB3-B759F09E041D",
+                            "sequenceNumber": 9,
+                            "url": "\/\/openapi.azureedge.net\/D64D424B-415C-4D3B-9DB3-B759F09E041D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3668,
+                            "width": 4891,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "60A7890E-E8F5-495A-8E74-BC3BEFA70F60",
+                            "sequenceNumber": 10,
+                            "url": "\/\/openapi.azureedge.net\/60A7890E-E8F5-495A-8E74-BC3BEFA70F60",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3746,
+                            "width": 4994,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "D9C13476-2FF9-4A5C-865A-C200A3DF7505",
+                            "sequenceNumber": 28,
+                            "url": "\/\/openapi.azureedge.net\/D9C13476-2FF9-4A5C-865A-C200A3DF7505",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "D4E22BEC-6E66-4FD9-9E2D-D2AE180228E7",
+                            "sequenceNumber": 7,
+                            "url": "\/\/openapi.azureedge.net\/D4E22BEC-6E66-4FD9-9E2D-D2AE180228E7",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "A474A34D-EB9B-44CD-9AF6-D4DF1A0C59C1",
+                            "sequenceNumber": 23,
+                            "url": "\/\/openapi.azureedge.net\/A474A34D-EB9B-44CD-9AF6-D4DF1A0C59C1",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "223001A6-F2C1-4C8E-B17C-D83C09D0AF55",
+                            "sequenceNumber": 20,
+                            "url": "\/\/openapi.azureedge.net\/223001A6-F2C1-4C8E-B17C-D83C09D0AF55",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3717,
+                            "width": 4955,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "7EEE85BF-4BCB-4C51-ACFB-DA5ADC789ADC",
+                            "sequenceNumber": 6,
+                            "url": "\/\/openapi.azureedge.net\/7EEE85BF-4BCB-4C51-ACFB-DA5ADC789ADC",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "909A3C67-9EFC-4B01-A6D2-E40FD5199EC4",
+                            "sequenceNumber": 2,
+                            "url": "\/\/openapi.azureedge.net\/909A3C67-9EFC-4B01-A6D2-E40FD5199EC4",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "4897C2CE-D0DC-4EB8-88C9-EC03988232F9",
+                            "sequenceNumber": 33,
+                            "url": "\/\/openapi.azureedge.net\/4897C2CE-D0DC-4EB8-88C9-EC03988232F9",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "6872E792-10DE-48DD-B9A8-EC8166FF4A51",
+                            "sequenceNumber": 17,
+                            "url": "\/\/openapi.azureedge.net\/6872E792-10DE-48DD-B9A8-EC8166FF4A51",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "848E5D8F-814E-42E7-B3CA-EFC0C1CB8459",
+                            "sequenceNumber": 18,
+                            "url": "\/\/openapi.azureedge.net\/848E5D8F-814E-42E7-B3CA-EFC0C1CB8459",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3754,
+                            "width": 5005,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "C151F380-AC1C-4DF9-8094-F6F1AC3C531F",
+                            "sequenceNumber": 25,
+                            "url": "\/\/openapi.azureedge.net\/C151F380-AC1C-4DF9-8094-F6F1AC3C531F",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "B9937AD7-1D9B-412C-AC1E-FA566ED9C226",
+                            "sequenceNumber": 30,
+                            "url": "\/\/openapi.azureedge.net\/B9937AD7-1D9B-412C-AC1E-FA566ED9C226",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "0739F94C-2629-4AE1-A7D3-FD17637CC5A8",
+                            "sequenceNumber": 5,
+                            "url": "\/\/openapi.azureedge.net\/0739F94C-2629-4AE1-A7D3-FD17637CC5A8",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        },
+                        {
+                            "mediaID": "D92D4B9F-E89E-4A88-AE41-FE30110862CA",
+                            "sequenceNumber": 4,
+                            "url": "\/\/openapi.azureedge.net\/D92D4B9F-E89E-4A88-AE41-FE30110862CA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 3744,
+                            "width": 4992,
+                            "lastUpdateOn": "2018-04-03T23:55:28.107"
+                        }
+                    ],
+                    "mlsInformation": [
+                        {
+                            "number": "102170376",
+                            "isPrimary": true
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "34A70F56-98F9-4A16-ABD7-9CD32E4FB953",
+                "lastUpdateOn": "2018-08-08T03:45:34.857",
+                "entityDetail": {
+                    "listingSummary": {
+                        "listingId": "34a70f56-98f9-4a16-abd7-9cd32e4fb953",
+                        "isActive": true,
+                        "isPending": false,
+                        "listingType": "ForSale",
+                        "listedOn": "2018-04-17",
+                        "photoCount": 30,
+                        "videoCount": 1,
+                        "listPrice": {
+                            "currencyCode": "USD",
+                            "amount": 5750000,
+                            "isPriceUponRequest": false,
+                            "isHideListPrice": false
+                        },
+                        "propertyAddress": {
+                            "streetAddress": "7615 Southdown Rd",
+                            "city": "ALEXANDRIA",
+                            "district": "Fairfax",
+                            "stateProvince": "Virginia",
+                            "stateProvinceCode": "VA",
+                            "postalCode": "22308",
+                            "country": "United States",
+                            "countryCode": "US",
+                            "latitude": 38.74957,
+                            "longitude": -77.04806,
+                            "geoCodeConfidenceLevel": "High",
+                            "formattedAddress": "7615 Southdown Rd, Alexandria, VA 22308"
+                        },
+                        "geographicRegions": [
+                            {
+                                "type": "Neighbourhood",
+                                "name": "Wellington Villa"
+                            }
+                        ],
+                        "mlsNumbers": [
+                            "FX10211995"
+                        ],
+                        "RFGListingId": "WPBWXN",
+                        "isNewConstruction": false,
+                        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/wpbwxn",
+                        "isCallToShow": false,
+                        "isForAuction": false,
+                        "isByAppointmentOnly": false,
+                        "propertyCategory": "Residential",
+                        "propertyType": "Single Family Detached",
+                        "propertyStyle": "Other Style",
+                        "propertyName": "7615 Southdown Rd",
+                        "totalBath": 9,
+                        "lotSize": "25474 SF",
+                        "buildingArea": "11300 Sq. Ft.",
+                        "noOfBedrooms": 6,
+                        "totalAcres": 0.58,
+                        "squareFootage": 11300,
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/170649B5-E649-4DB8-AC05-DB7E42C01767",
+                        "isForeClosure": false,
+                        "isShortSale": false,
+                        "lastUpdateOn": "2018-08-08T03:45:34.857",
+                        "agents": [
+                            {
+                                "id": "5f7b4ae3-5a29-4bc8-acd8-a63f54ba17f4",
+                                "name": "Ken Ipox",
+                                "firstName": "Ken",
+                                "lastName": "Ipox",
+                                "gender": "Male",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/0A096FE7-8CB5-472C-AD69-5F4464C26ACA",
+                                "emailAddress": "ken.ipox@premiersir.com",
+                                "leadEmailAddress": "800256.lead.4022429@leads.leadrouter.com",
+                                "businessPhone": "+1 9419937279",
+                                "isPrimary": true,
+                                "office": {
+                                    "officeId": "434edc3d-d21e-4efb-a1d5-5ffaf95c3c80",
+                                    "RFGOfficeId": "0005",
+                                    "companyId": "c8987fde-4bde-4864-a1e4-47d3c183ddea",
+                                    "companyName": "Premier",
+                                    "RFGCompanyId": "800256",
+                                    "brandCode": "SIR",
+                                    "name": "Premier Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "540 John Ringling Blvd",
+                                        "city": "Sarasota",
+                                        "district": "Sarasota",
+                                        "stateProvince": "Florida",
+                                        "stateProvinceCode": "FL",
+                                        "postalCode": "34236",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 27.31916,
+                                        "longitude": -82.575,
+                                        "formattedAddress": "540 John Ringling Blvd, Sarasota, FL 34236"
+                                    },
+                                    "phoneNumber": "9413832500",
+                                    "emailAddress": "REFERRALS@PREMIERSIR.COM"
+                                }
+                            },
+                            {
+                                "id": "ced03e35-72a8-4adf-a3b1-c2625cce4e6d",
+                                "name": "The Patterson Group ",
+                                "firstName": "The Patterson",
+                                "lastName": "Group",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/2366F36E-E966-4D35-891E-061FF195C69E",
+                                "emailAddress": "pattersongroup@ttrsir.com",
+                                "leadEmailAddress": "800107.lead.4042522@leads.leadrouter.com",
+                                "businessPhone": "+1 7033106201",
+                                "isPrimary": false,
+                                "office": {
+                                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                                    "RFGOfficeId": "0007",
+                                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                                    "companyName": "TTR",
+                                    "RFGCompanyId": "800107",
+                                    "brandCode": "SIR",
+                                    "name": "TTR Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "400 South Washington Street",
+                                        "city": "Alexandria",
+                                        "district": "Alexandria Indep. City",
+                                        "stateProvince": "Virginia",
+                                        "stateProvinceCode": "VA",
+                                        "postalCode": "22314",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 38.80141,
+                                        "longitude": -77.04742,
+                                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                                    },
+                                    "phoneNumber": "7033106800",
+                                    "emailAddress": "alexandria@ttrsir.com"
+                                }
+                            },
+                            {
+                                "id": "3edf47d3-ebaa-433c-9000-f8869decec67",
+                                "name": "Brittany Patterson",
+                                "firstName": "Brittany",
+                                "lastName": "Patterson",
+                                "middleName": "Ann",
+                                "gender": "Female",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/C4DA192E-8122-452D-8F8B-8CAA775A28BF",
+                                "emailAddress": "bpatterson@ttrsir.com",
+                                "leadEmailAddress": "800107.lead.4029990@leads.leadrouter.com",
+                                "businessPhone": "+1 7033106201",
+                                "isPrimary": false,
+                                "office": {
+                                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                                    "RFGOfficeId": "0007",
+                                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                                    "companyName": "TTR",
+                                    "RFGCompanyId": "800107",
+                                    "brandCode": "SIR",
+                                    "name": "TTR Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "400 South Washington Street",
+                                        "city": "Alexandria",
+                                        "district": "Alexandria Indep. City",
+                                        "stateProvince": "Virginia",
+                                        "stateProvinceCode": "VA",
+                                        "postalCode": "22314",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 38.80141,
+                                        "longitude": -77.04742,
+                                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                                    },
+                                    "phoneNumber": "7033106800",
+                                    "emailAddress": "alexandria@ttrsir.com"
+                                }
+                            }
+                        ],
+                        "isShowAddressOnInternet": true
+                    },
+                    "fullBath": 7,
+                    "halfBath": 2,
+                    "parkingPlaces": 0,
+                    "levels": 3,
+                    "yearBuilt": "2003",
+                    "providerKey": "34a70f56-98f9-4a16-abd7-9cd32e4fb953",
+                    "propertyFeatures": [
+                        {
+                            "groupName": "Special Program",
+                            "description": "QC Approved Listing"
+                        },
+                        {
+                            "groupName": "Special Program",
+                            "description": "Video QC Approved Listing"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Refrigerator"
+                        },
+                        {
+                            "groupName": "General",
+                            "description": "Elevator"
+                        },
+                        {
+                            "groupName": "Interior",
+                            "description": "Wet Bar"
+                        },
+                        {
+                            "groupName": "Flooring",
+                            "description": "Hardwood"
+                        },
+                        {
+                            "groupName": "Kitchen Features",
+                            "description": "Gourmet Kitchen"
+                        },
+                        {
+                            "groupName": "General",
+                            "description": "Security System"
+                        },
+                        {
+                            "groupName": "Views",
+                            "description": "Water"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Microwave"
+                        },
+                        {
+                            "groupName": "General",
+                            "description": "Laundry Facilities"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Dishwasher"
+                        },
+                        {
+                            "groupName": "Exterior",
+                            "description": "Underground Lawn Sprinkler"
+                        },
+                        {
+                            "groupName": "Area Amenities",
+                            "description": "Outdoor Activities"
+                        },
+                        {
+                            "groupName": "Interior",
+                            "description": "Walk-in Closet"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Range \/ Oven"
+                        },
+                        {
+                            "groupName": "Exterior Description",
+                            "description": "Stone"
+                        },
+                        {
+                            "groupName": "Exterior Living Space",
+                            "description": "Screened Porch"
+                        },
+                        {
+                            "groupName": "Location",
+                            "description": "Riverfront"
+                        },
+                        {
+                            "groupName": "Kitchen Features",
+                            "description": "Breakfast Bar"
+                        },
+                        {
+                            "groupName": "Sewer",
+                            "description": "Public"
+                        },
+                        {
+                            "groupName": "Kitchen Features",
+                            "description": "Eat-in Kitchen"
+                        },
+                        {
+                            "groupName": "Pool Description",
+                            "description": "Pool"
+                        },
+                        {
+                            "groupName": "Pool Description",
+                            "description": "Inground"
+                        },
+                        {
+                            "groupName": "Interior",
+                            "description": "Blinds"
+                        },
+                        {
+                            "groupName": "Lot Description",
+                            "description": "Access Type - Water"
+                        },
+                        {
+                            "groupName": "General",
+                            "description": "Workshop"
+                        },
+                        {
+                            "groupName": "Rooms",
+                            "description": "Library"
+                        },
+                        {
+                            "groupName": "Cooling",
+                            "description": "Central A\/C"
+                        },
+                        {
+                            "groupName": "Interior",
+                            "description": "In-law Suite"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Dryer"
+                        },
+                        {
+                            "groupName": "Exterior Living Space",
+                            "description": "Balcony \/ Lanai"
+                        },
+                        {
+                            "groupName": "Exterior Living Space",
+                            "description": "Porch"
+                        },
+                        {
+                            "groupName": "Location",
+                            "description": "Cul-de-sac"
+                        },
+                        {
+                            "groupName": "Garage Description",
+                            "description": "Garage"
+                        },
+                        {
+                            "groupName": "Fireplace Description",
+                            "description": "Fireplace"
+                        },
+                        {
+                            "groupName": "Heating Type",
+                            "description": "Forced Air"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Washer"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Garbage Disposal"
+                        },
+                        {
+                            "groupName": "Road Type",
+                            "description": "Private Road"
+                        },
+                        {
+                            "groupName": "Kitchen Features",
+                            "description": "Kitchen Facilities"
+                        },
+                        {
+                            "groupName": "Kitchen Features",
+                            "description": "Butlers Pantry"
+                        },
+                        {
+                            "groupName": "Location",
+                            "description": "Waterfront"
+                        },
+                        {
+                            "groupName": "Exterior Living Space",
+                            "description": "Patio"
+                        },
+                        {
+                            "groupName": "Body of Water",
+                            "description": "River"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Property Description",
+                            "languageCode": "en",
+                            "remark": "Magnificent Nantucket shingle style home on the Potomac River. Escape from DC to your vacation paradise-just 20 minutes away. Set sail from your 300 ft dock (w\/ lifts) to Old Town, Nats games, Wharf and National Harbor. Custom built with reclaimed floors, two screened porches,pool, elevator and 5 bedrooms with sweeping panoramic views. Watch the eagles soar and the sun rise. Truly incomparable.",
+                            "htmlRemark": "Magnificent Nantucket shingle style home on the Potomac River.  Escape from DC to your vacation paradise-just 20 minutes away.  Set sail from your 300 ft dock (w\/ lifts) to Old Town, Nats games, Wharf and National Harbor. Custom built with reclaimed floors, two screened porches,pool, elevator and 5 bedrooms with sweeping panoramic views. Watch the eagles soar and the sun rise. Truly incomparable."
+                        }
+                    ],
+                    "webSites": [
+                        {
+                            "type": "Landing Page URL",
+                            "name": "Landing Page URL",
+                            "url": "https:\/\/www.sothebysrealty.com\/id\/wpbwxn",
+                            "contentLanguageCode": "en"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "1A670E64-FB50-4010-89B9-06D1BBE2D9A6",
+                            "sequenceNumber": 2,
+                            "url": "\/\/openapi.azureedge.net\/1A670E64-FB50-4010-89B9-06D1BBE2D9A6",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "14763017-00BA-461C-9834-07B0F1D6AC5D",
+                            "sequenceNumber": 15,
+                            "url": "\/\/openapi.azureedge.net\/14763017-00BA-461C-9834-07B0F1D6AC5D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "193554F2-CD43-4853-9D30-1C8BC9505B73",
+                            "sequenceNumber": 16,
+                            "url": "\/\/openapi.azureedge.net\/193554F2-CD43-4853-9D30-1C8BC9505B73",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "1B9E433B-8CD2-46CC-BA0A-433486F0CE73",
+                            "sequenceNumber": 4,
+                            "url": "\/\/openapi.azureedge.net\/1B9E433B-8CD2-46CC-BA0A-433486F0CE73",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "B9D5B69F-22C7-4DC9-A8D9-4AF0D82CBCBA",
+                            "sequenceNumber": 20,
+                            "url": "\/\/openapi.azureedge.net\/B9D5B69F-22C7-4DC9-A8D9-4AF0D82CBCBA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "284AC4A4-DB77-4884-8C72-5D83D42499A9",
+                            "sequenceNumber": 10,
+                            "url": "\/\/openapi.azureedge.net\/284AC4A4-DB77-4884-8C72-5D83D42499A9",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "F9E47E44-420D-4A2B-A9CD-6309A046E5D6",
+                            "sequenceNumber": 19,
+                            "url": "\/\/openapi.azureedge.net\/F9E47E44-420D-4A2B-A9CD-6309A046E5D6",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "1ADFB5A9-3022-495B-9362-682A72D3505E",
+                            "sequenceNumber": 6,
+                            "url": "\/\/openapi.azureedge.net\/1ADFB5A9-3022-495B-9362-682A72D3505E",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "1F204283-AB60-4A05-B3C6-7597BB81A784",
+                            "sequenceNumber": 5,
+                            "url": "\/\/openapi.azureedge.net\/1F204283-AB60-4A05-B3C6-7597BB81A784",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "F77BE410-04F4-4346-9962-77FFA38F9E0A",
+                            "sequenceNumber": 28,
+                            "url": "\/\/openapi.azureedge.net\/F77BE410-04F4-4346-9962-77FFA38F9E0A",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "8CD57930-0B69-4A6F-A949-830B1F7E0375",
+                            "sequenceNumber": 8,
+                            "url": "\/\/openapi.azureedge.net\/8CD57930-0B69-4A6F-A949-830B1F7E0375",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "C8EDF0CE-47E1-40FC-A692-866814FD0854",
+                            "sequenceNumber": 17,
+                            "url": "\/\/openapi.azureedge.net\/C8EDF0CE-47E1-40FC-A692-866814FD0854",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "E5BF08B6-FD11-4617-8C64-866E41F9BAC8",
+                            "sequenceNumber": 14,
+                            "url": "\/\/openapi.azureedge.net\/E5BF08B6-FD11-4617-8C64-866E41F9BAC8",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "6D5F26C5-378C-4730-A077-87F9B97B16C4",
+                            "sequenceNumber": 27,
+                            "url": "\/\/openapi.azureedge.net\/6D5F26C5-378C-4730-A077-87F9B97B16C4",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "944527CC-6537-42C3-B0B2-9039F2E726E5",
+                            "sequenceNumber": 3,
+                            "url": "\/\/openapi.azureedge.net\/944527CC-6537-42C3-B0B2-9039F2E726E5",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "453AAADC-B9C4-4F7A-B085-97E7B2809FB5",
+                            "sequenceNumber": 25,
+                            "url": "\/\/openapi.azureedge.net\/453AAADC-B9C4-4F7A-B085-97E7B2809FB5",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "383D64BE-7525-487E-B8FC-9858F845AAFD",
+                            "sequenceNumber": 26,
+                            "url": "\/\/openapi.azureedge.net\/383D64BE-7525-487E-B8FC-9858F845AAFD",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "ED1EC25A-9519-40D5-AED6-98A8204A2089",
+                            "sequenceNumber": 7,
+                            "url": "\/\/openapi.azureedge.net\/ED1EC25A-9519-40D5-AED6-98A8204A2089",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "BB13E502-57DF-4B6B-857E-9A16C3EB89BD",
+                            "sequenceNumber": 29,
+                            "url": "\/\/openapi.azureedge.net\/BB13E502-57DF-4B6B-857E-9A16C3EB89BD",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "4D8F8AEC-3E22-420E-928E-9D8011F04B7D",
+                            "sequenceNumber": 13,
+                            "url": "\/\/openapi.azureedge.net\/4D8F8AEC-3E22-420E-928E-9D8011F04B7D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "AC796DFA-3D53-4DB4-A3A2-A41D26253F8A",
+                            "sequenceNumber": 9,
+                            "url": "\/\/openapi.azureedge.net\/AC796DFA-3D53-4DB4-A3A2-A41D26253F8A",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "66603F4D-2A07-4A10-B3B8-B88742564475",
+                            "sequenceNumber": 1,
+                            "url": "https:\/\/players.brightcove.net\/5699924528001\/default_default\/index.html?videoId=5786809706001",
+                            "isDefault": true,
+                            "format": "Video",
+                            "category": "Property Video",
+                            "lastUpdateOn": "2018-05-22T03:54:34.380"
+                        },
+                        {
+                            "mediaID": "CD74BAED-0744-4609-9318-C94F387DA6EC",
+                            "sequenceNumber": 21,
+                            "url": "\/\/openapi.azureedge.net\/CD74BAED-0744-4609-9318-C94F387DA6EC",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "EF99444E-8BDF-4CB4-BA9C-CD496E0D3049",
+                            "sequenceNumber": 11,
+                            "url": "\/\/openapi.azureedge.net\/EF99444E-8BDF-4CB4-BA9C-CD496E0D3049",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "ABA50F5D-D2C4-4BB2-84DF-D0C1919B2AFA",
+                            "sequenceNumber": 18,
+                            "url": "\/\/openapi.azureedge.net\/ABA50F5D-D2C4-4BB2-84DF-D0C1919B2AFA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "F13CE2B4-188E-4EEF-8571-D4DC485C25A3",
+                            "sequenceNumber": 30,
+                            "url": "\/\/openapi.azureedge.net\/F13CE2B4-188E-4EEF-8571-D4DC485C25A3",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "EACF1930-027D-483F-B8D9-D8B75CE36D9B",
+                            "sequenceNumber": 24,
+                            "url": "\/\/openapi.azureedge.net\/EACF1930-027D-483F-B8D9-D8B75CE36D9B",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "170649B5-E649-4DB8-AC05-DB7E42C01767",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/170649B5-E649-4DB8-AC05-DB7E42C01767",
+                            "isDefault": true,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "A3B357EE-C0BC-4842-8C80-E914C8E87F14",
+                            "sequenceNumber": 12,
+                            "url": "\/\/openapi.azureedge.net\/A3B357EE-C0BC-4842-8C80-E914C8E87F14",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "4BDF5A6A-ACBB-446C-8F01-ED8AE7870AA1",
+                            "sequenceNumber": 1,
+                            "url": "http:\/\/slideshow.mris.com\/slideshow\/slideshow.htm?ListingKey=300362502274",
+                            "isDefault": true,
+                            "format": "URL",
+                            "category": "Virtual Tour",
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "E3B4AA47-EEEC-40C4-A134-F45222B1B5FF",
+                            "sequenceNumber": 23,
+                            "url": "\/\/openapi.azureedge.net\/E3B4AA47-EEEC-40C4-A134-F45222B1B5FF",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        },
+                        {
+                            "mediaID": "063991CF-E164-47D6-A18E-FAF59955B03C",
+                            "sequenceNumber": 22,
+                            "url": "\/\/openapi.azureedge.net\/063991CF-E164-47D6-A18E-FAF59955B03C",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-05-09T20:41:19.180"
+                        }
+                    ],
+                    "schools": [
+                        {
+                            "type": "Primary School",
+                            "name": "WAYNEWOOD"
+                        },
+                        {
+                            "type": "High School",
+                            "name": "WEST POTOMAC"
+                        },
+                        {
+                            "type": "Middle School",
+                            "name": "CARL SANDBURG"
+                        }
+                    ],
+                    "mlsInformation": [
+                        {
+                            "number": "FX10211995",
+                            "isPrimary": true
+                        }
+                    ]
+                }
+            },
+            {
+                "action": "Upsert",
+                "id": "AFF6CB2B-294D-42AB-81B7-83F88434235B",
+                "lastUpdateOn": "2018-08-08T03:50:22.870",
+                "entityDetail": {
+                    "listingSummary": {
+                        "listingId": "aff6cb2b-294d-42ab-81b7-83f88434235b",
+                        "isActive": true,
+                        "isPending": false,
+                        "listingType": "ForSale",
+                        "listedOn": "2018-05-01",
+                        "photoCount": 24,
+                        "videoCount": 0,
+                        "listPrice": {
+                            "currencyCode": "USD",
+                            "amount": 449900,
+                            "isPriceUponRequest": false,
+                            "isHideListPrice": false
+                        },
+                        "propertyAddress": {
+                            "streetAddress": "1600 Prince St #612",
+                            "city": "ALEXANDRIA",
+                            "district": "ALEXANDRIA CITY",
+                            "stateProvince": "Virginia",
+                            "stateProvinceCode": "VA",
+                            "postalCode": "22314",
+                            "country": "United States",
+                            "countryCode": "US",
+                            "latitude": 38.80509,
+                            "longitude": -77.05742,
+                            "geoCodeConfidenceLevel": "High",
+                            "formattedAddress": "1600 Prince St, Alexandria, VA 22314"
+                        },
+                        "geographicRegions": [
+                            {
+                                "type": "Neighbourhood",
+                                "name": "1600 PRINCE STREET"
+                            }
+                        ],
+                        "mlsNumbers": [
+                            "AX10225787"
+                        ],
+                        "RFGListingId": "GB5MZ9",
+                        "isNewConstruction": false,
+                        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/gb5mz9",
+                        "isCallToShow": false,
+                        "isForAuction": false,
+                        "isByAppointmentOnly": false,
+                        "propertyCategory": "Residential",
+                        "propertyType": "Condominium",
+                        "propertyStyle": "Traditional",
+                        "propertyName": "1600 Prince St #612",
+                        "totalBath": 1,
+                        "lotSize": "0 SF",
+                        "buildingArea": "899 Sq. Ft.",
+                        "noOfBedrooms": 1,
+                        "squareFootage": 899,
+                        "defaultPhotoURL": "\/\/openapi.azureedge.net\/CC596747-E17C-4922-9F22-C21D5ABD8174",
+                        "isForeClosure": false,
+                        "isShortSale": false,
+                        "lastUpdateOn": "2018-08-08T03:50:22.870",
+                        "agents": [
+                            {
+                                "id": "32e0b3db-8b5c-4090-8387-0ab249cc1ea3",
+                                "name": "Dayna Blumel",
+                                "firstName": "Dayna",
+                                "lastName": "Blumel",
+                                "gender": "Female",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/D0FC797A-3500-4DAE-B0CB-969D90D461F8",
+                                "emailAddress": "dblumel@ttrsir.com",
+                                "leadEmailAddress": "800107.lead.4030418@leads.leadrouter.com",
+                                "businessPhone": "+1 7035972252",
+                                "isPrimary": false,
+                                "office": {
+                                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                                    "RFGOfficeId": "0007",
+                                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                                    "companyName": "TTR",
+                                    "RFGCompanyId": "800107",
+                                    "brandCode": "SIR",
+                                    "name": "TTR Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "400 South Washington Street",
+                                        "city": "Alexandria",
+                                        "district": "Alexandria Indep. City",
+                                        "stateProvince": "Virginia",
+                                        "stateProvinceCode": "VA",
+                                        "postalCode": "22314",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 38.80141,
+                                        "longitude": -77.04742,
+                                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                                    },
+                                    "phoneNumber": "7033106800",
+                                    "emailAddress": "alexandria@ttrsir.com"
+                                }
+                            },
+                            {
+                                "id": "869f9b52-9331-4b7c-87c7-627d1c04f877",
+                                "name": "Kaye Cawili",
+                                "firstName": "Kaye",
+                                "lastName": "Cawili",
+                                "gender": "Female",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/10228F2E-668F-4493-99FF-76B4D4C19D1F",
+                                "emailAddress": "kaye.cawili@list-gr.com",
+                                "leadEmailAddress": "800107.lead.4030417@leads.leadrouter.com",
+                                "businessPhone": "5560554",
+                                "isPrimary": true,
+                                "office": {
+                                    "officeId": "cf12d208-0f34-4860-a230-2553d4c1ac68",
+                                    "RFGOfficeId": "0001",
+                                    "companyId": "0643479d-13d0-4950-b599-7ced6235387d",
+                                    "companyName": "List Sotheby's International Realty ",
+                                    "RFGCompanyId": "820102",
+                                    "brandCode": "SIR",
+                                    "name": "List Sotheby's International Realty ",
+                                    "type": "Main office",
+                                    "officeAddress": {
+                                        "streetAddress": "Unit 802 Eco Tower, 32nd Street Corner 9th Avenue",
+                                        "city": "Taguig",
+                                        "district": "Fourth District NCR",
+                                        "postalCode": "1634",
+                                        "country": "Philippines",
+                                        "countryCode": "PH",
+                                        "latitude": 14.55359,
+                                        "longitude": 121.05026,
+                                        "formattedAddress": "32nd St, Taguig City, Philippines"
+                                    },
+                                    "phoneNumber": "+632 556 0554"
+                                }
+                            },
+                            {
+                                "id": "61227dd7-9d8c-44fc-bc58-b0e893187048",
+                                "name": "Dayna Blumel and Kerry Adams ",
+                                "firstName": "Dayna Blumel and Kerry",
+                                "lastName": "Adams",
+                                "defaultPhotoURL": "\/\/openapi.azureedge.net\/75DDB43B-589D-4CEA-898F-3AFCD6BAB22D",
+                                "emailAddress": "blumeladams@ttrsir.com",
+                                "businessPhone": "7035972252",
+                                "mobilePhone": "7035972252",
+                                "isPrimary": false,
+                                "office": {
+                                    "officeId": "18a83bb7-9aa7-427a-8c6a-e4f08d0a9ae0",
+                                    "RFGOfficeId": "0007",
+                                    "companyId": "f2ae7b69-a2f3-4eb7-a576-c72dc000b4ad",
+                                    "companyName": "TTR",
+                                    "RFGCompanyId": "800107",
+                                    "brandCode": "SIR",
+                                    "name": "TTR Sotheby's International Realty",
+                                    "type": "Branch office",
+                                    "officeAddress": {
+                                        "streetAddress": "400 South Washington Street",
+                                        "city": "Alexandria",
+                                        "district": "Alexandria Indep. City",
+                                        "stateProvince": "Virginia",
+                                        "stateProvinceCode": "VA",
+                                        "postalCode": "22314",
+                                        "country": "United States",
+                                        "countryCode": "US",
+                                        "latitude": 38.80141,
+                                        "longitude": -77.04742,
+                                        "formattedAddress": "400 S Washington St, Alexandria, VA 22314"
+                                    },
+                                    "phoneNumber": "7033106800",
+                                    "emailAddress": "alexandria@ttrsir.com"
+                                }
+                            }
+                        ],
+                        "isShowAddressOnInternet": true
+                    },
+                    "fullBath": 1,
+                    "halfBath": 0,
+                    "parkingPlaces": 1,
+                    "levels": 1,
+                    "yearBuilt": "1982",
+                    "providerKey": "aff6cb2b-294d-42ab-81b7-83f88434235b",
+                    "propertyFeatures": [
+                        {
+                            "groupName": "Heating - Fuel Type",
+                            "description": "Wood"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Refrigerator"
+                        },
+                        {
+                            "groupName": "General",
+                            "description": "Elevator"
+                        },
+                        {
+                            "groupName": "Flooring",
+                            "description": "Hardwood"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Microwave"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Dishwasher"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Range \/ Oven"
+                        },
+                        {
+                            "groupName": "Exterior Description",
+                            "description": "Brick"
+                        },
+                        {
+                            "groupName": "Sewer",
+                            "description": "Public"
+                        },
+                        {
+                            "groupName": "Cooling",
+                            "description": "Central A\/C"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Dryer"
+                        },
+                        {
+                            "groupName": "Exterior Living Space",
+                            "description": "Balcony \/ Lanai"
+                        },
+                        {
+                            "groupName": "Heating - Fuel Type",
+                            "description": "Electric"
+                        },
+                        {
+                            "groupName": "Special Program",
+                            "description": "QC Approved Listing"
+                        },
+                        {
+                            "groupName": "Fireplace Description",
+                            "description": "Fireplace"
+                        },
+                        {
+                            "groupName": "Heating Type",
+                            "description": "Forced Air"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Washer"
+                        },
+                        {
+                            "groupName": "Appliances",
+                            "description": "Garbage Disposal"
+                        },
+                        {
+                            "groupName": "Kitchen Features",
+                            "description": "Kitchen Facilities"
+                        }
+                    ],
+                    "remarks": [
+                        {
+                            "type": "Property Description",
+                            "languageCode": "en",
+                            "remark": "Welcome to one of the few one bedroom plus den units in desirable 1600 Prince St - located just two blocks from King Street Metro. With 899 square feet, this condo features a bright and open floor plan with separate dining room, spacious living room with wood burning fireplace, updated kitchen and bathroom, washer and dryer, hardwood floors, and crown molding. Park your car in the garage and stroll to Old Town shops, restaurants, and the waterfront.",
+                            "htmlRemark": "Welcome to one of the few one bedroom plus den units in desirable 1600 Prince St - located just two blocks from King Street Metro. With 899 square feet, this condo features&amp;nbsp; a bright and open floor plan with separate dining room, spacious living room with wood burning fireplace, updated kitchen and bathroom, washer and dryer, hardwood floors, and crown molding.&amp;nbsp; Park your car in the garage and stroll to Old Town shops, restaurants, and the waterfront."
+                        }
+                    ],
+                    "webSites": [
+                        {
+                            "type": "Landing Page URL",
+                            "name": "Landing Page URL",
+                            "url": "https:\/\/www.sothebysrealty.com\/id\/gb5mz9",
+                            "contentLanguageCode": "en"
+                        }
+                    ],
+                    "media": [
+                        {
+                            "mediaID": "BD63905D-EB3C-496B-8FFB-020F81161400",
+                            "sequenceNumber": 15,
+                            "url": "\/\/openapi.azureedge.net\/BD63905D-EB3C-496B-8FFB-020F81161400",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "3149D452-4DBA-4252-BB32-045986BFCE7D",
+                            "sequenceNumber": 5,
+                            "url": "\/\/openapi.azureedge.net\/3149D452-4DBA-4252-BB32-045986BFCE7D",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1364,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "BF47DEC5-5DBB-4410-B0C8-13019E9AE902",
+                            "sequenceNumber": 12,
+                            "url": "\/\/openapi.azureedge.net\/BF47DEC5-5DBB-4410-B0C8-13019E9AE902",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "A12274C2-4792-44FD-9DEA-15D048D79257",
+                            "sequenceNumber": 8,
+                            "url": "\/\/openapi.azureedge.net\/A12274C2-4792-44FD-9DEA-15D048D79257",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1364,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "BC0E7ABB-C3D6-40B2-B3C7-19242557F93B",
+                            "sequenceNumber": 19,
+                            "url": "\/\/openapi.azureedge.net\/BC0E7ABB-C3D6-40B2-B3C7-19242557F93B",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1230,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "3F6C1C1D-97E2-4C34-872C-21464686BEAD",
+                            "sequenceNumber": 22,
+                            "url": "\/\/openapi.azureedge.net\/3F6C1C1D-97E2-4C34-872C-21464686BEAD",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1126,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "1822044D-27FB-439E-9462-21DE0FA47257",
+                            "sequenceNumber": 18,
+                            "url": "\/\/openapi.azureedge.net\/1822044D-27FB-439E-9462-21DE0FA47257",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "C81735C5-134B-43BA-84C3-2805403FEAD1",
+                            "sequenceNumber": 23,
+                            "url": "\/\/openapi.azureedge.net\/C81735C5-134B-43BA-84C3-2805403FEAD1",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "5B5D520B-F00D-4542-9E60-42B555C8351C",
+                            "sequenceNumber": 1,
+                            "url": "https:\/\/tours.shootandshowcase.com\/1018505?idx=1",
+                            "isDefault": true,
+                            "format": "URL",
+                            "category": "Virtual Tour",
+                            "lastUpdateOn": "2018-05-10T02:25:46.530"
+                        },
+                        {
+                            "mediaID": "E5308E1B-CFD4-4791-BB48-48A53A36500E",
+                            "sequenceNumber": 11,
+                            "url": "\/\/openapi.azureedge.net\/E5308E1B-CFD4-4791-BB48-48A53A36500E",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "74003CC8-C785-4BD3-9D03-494D142AEE41",
+                            "sequenceNumber": 6,
+                            "url": "\/\/openapi.azureedge.net\/74003CC8-C785-4BD3-9D03-494D142AEE41",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "CB6606FE-3065-4FB9-AE47-4A091DD2154E",
+                            "sequenceNumber": 17,
+                            "url": "\/\/openapi.azureedge.net\/CB6606FE-3065-4FB9-AE47-4A091DD2154E",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "594E9D2A-B1C6-4ABF-9E03-53D20409B23F",
+                            "sequenceNumber": 9,
+                            "url": "\/\/openapi.azureedge.net\/594E9D2A-B1C6-4ABF-9E03-53D20409B23F",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "FDAF288F-C10E-4193-A23A-6A6E2FF48C81",
+                            "sequenceNumber": 3,
+                            "url": "\/\/openapi.azureedge.net\/FDAF288F-C10E-4193-A23A-6A6E2FF48C81",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "3E4F10FE-17E8-449E-BFB7-6B2594AD622F",
+                            "sequenceNumber": 7,
+                            "url": "\/\/openapi.azureedge.net\/3E4F10FE-17E8-449E-BFB7-6B2594AD622F",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "96F966D0-20F7-4A18-80AA-A12F79FF63AE",
+                            "sequenceNumber": 20,
+                            "url": "\/\/openapi.azureedge.net\/96F966D0-20F7-4A18-80AA-A12F79FF63AE",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1267,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "A5364219-FED3-4110-97B4-ABDC5FE4159C",
+                            "sequenceNumber": 24,
+                            "url": "\/\/openapi.azureedge.net\/A5364219-FED3-4110-97B4-ABDC5FE4159C",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1365,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "CC596747-E17C-4922-9F22-C21D5ABD8174",
+                            "sequenceNumber": 1,
+                            "url": "\/\/openapi.azureedge.net\/CC596747-E17C-4922-9F22-C21D5ABD8174",
+                            "isDefault": true,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1061,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "AD173FF9-2F90-4A30-BCC9-C59083EF2C94",
+                            "sequenceNumber": 14,
+                            "url": "\/\/openapi.azureedge.net\/AD173FF9-2F90-4A30-BCC9-C59083EF2C94",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1367,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "75D47340-D637-48D9-93A1-C5FC634DE9CA",
+                            "sequenceNumber": 13,
+                            "url": "\/\/openapi.azureedge.net\/75D47340-D637-48D9-93A1-C5FC634DE9CA",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "6E0F6FA5-1D2C-4EB0-8842-D9ECEE8E2813",
+                            "sequenceNumber": 16,
+                            "url": "\/\/openapi.azureedge.net\/6E0F6FA5-1D2C-4EB0-8842-D9ECEE8E2813",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "CE77FC46-60D1-43AB-BB9B-DDE146374B1B",
+                            "sequenceNumber": 21,
+                            "url": "\/\/openapi.azureedge.net\/CE77FC46-60D1-43AB-BB9B-DDE146374B1B",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "1D934149-3DEE-4310-A0F2-E1BCE5FA2614",
+                            "sequenceNumber": 10,
+                            "url": "\/\/openapi.azureedge.net\/1D934149-3DEE-4310-A0F2-E1BCE5FA2614",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "8D6FA428-6EAD-46F8-ABA7-EC459B74DCD6",
+                            "sequenceNumber": 4,
+                            "url": "\/\/openapi.azureedge.net\/8D6FA428-6EAD-46F8-ABA7-EC459B74DCD6",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        },
+                        {
+                            "mediaID": "9C0E2C48-E127-4FF8-BA20-EE23BA84C729",
+                            "sequenceNumber": 2,
+                            "url": "\/\/openapi.azureedge.net\/9C0E2C48-E127-4FF8-BA20-EE23BA84C729",
+                            "isDefault": false,
+                            "format": "Image",
+                            "category": "Listing Photo",
+                            "height": 1366,
+                            "width": 2048,
+                            "lastUpdateOn": "2018-08-06T15:10:43.787"
+                        }
+                    ],
+                    "schools": [
+                        {
+                            "type": "Primary School",
+                            "name": "LYLES-CROUCH"
+                        },
+                        {
+                            "type": "High School",
+                            "name": "T.C. WILLIAMS"
+                        },
+                        {
+                            "type": "Middle School",
+                            "name": "GEORGE WASHINGTON"
+                        }
+                    ],
+                    "mlsInformation": [
+                        {
+                            "number": "AX10225787",
+                            "isPrimary": true
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]

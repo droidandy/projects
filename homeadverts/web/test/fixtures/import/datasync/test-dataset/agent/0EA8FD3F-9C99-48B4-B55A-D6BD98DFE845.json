@@ -1,0 +1,120 @@
+{
+    "agentSummary": {
+        "id": "0ea8fd3f-9c99-48b4-b55a-d6bd98dfe845",
+        "isAgent": true,
+        "name": "Pamela Dalton",
+        "firstName": "Pamela",
+        "lastName": "Dalton",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/9146984B-4A02-48ED-9F8B-79FEAA726ECE",
+        "emailAddress": "pdalton@briggsfreeman.com",
+        "businessPhone": "+1 2147297636",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "36afe41a-58ae-449c-8616-00be89584092",
+            "RFGOfficeId": "0001",
+            "companyId": "42f7c2c9-0409-4dd0-b18b-d3fb994bce34",
+            "companyName": "Briggs Freeman",
+            "RFGCompanyId": "800306",
+            "brandCode": "SIR",
+            "name": "Briggs Freeman Sotheby's International Realty",
+            "type": "Main office",
+            "officeAddress": {
+                "streetAddress": "5600 W. Lovers Lane, Suite 224,",
+                "city": "Dallas",
+                "district": "Dallas",
+                "stateProvince": "Texas",
+                "stateProvinceCode": "TX",
+                "postalCode": "75209",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 32.85064,
+                "longitude": -96.81632,
+                "formattedAddress": "5600 W Lovers Ln, Dallas, TX 75209"
+            },
+            "phoneNumber": "2143500400",
+            "emailAddress": "briggsfreeman@briggsfreeman.com"
+        }
+    },
+    "personId": "a1e03b13-ef1f-47b9-981c-a2c002559315",
+    "lastUpdateOn": "2018-03-19T19:30:20.787",
+    "roles": [
+        {
+            "office": {
+                "officeId": "36afe41a-58ae-449c-8616-00be89584092",
+                "RFGOfficeId": "0001",
+                "companyId": "42f7c2c9-0409-4dd0-b18b-d3fb994bce34",
+                "companyName": "Briggs Freeman",
+                "RFGCompanyId": "800306",
+                "brandCode": "SIR",
+                "name": "Briggs Freeman Sotheby's International Realty",
+                "type": "Main office",
+                "officeAddress": {
+                    "streetAddress": "5600 W. Lovers Lane, Suite 224,",
+                    "city": "Dallas",
+                    "district": "Dallas",
+                    "stateProvince": "Texas",
+                    "stateProvinceCode": "TX",
+                    "postalCode": "75209",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 32.85064,
+                    "longitude": -96.81632,
+                    "formattedAddress": "5600 W Lovers Ln, Dallas, TX 75209"
+                },
+                "phoneNumber": "2143500400",
+                "emailAddress": "briggsfreeman@briggsfreeman.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "pamela.dalton@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "9146984B-4A02-48ED-9F8B-79FEAA726ECE",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/9146984B-4A02-48ED-9F8B-79FEAA726ECE",
+            "isDefault": true,
+            "caption": "Pam Dalton",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:13:19.613"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Home",
+            "number": "2146962761"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "WHAT I BRING TO YOU Selling a house takes a unique perspective on Dallas and knowledge of each neighborhood's strengths and weaknesses. As a native Dallasite, I bring a distinct view on areas in Dallas and the history behind them. My large network of contacts within the community and the real estate arena make it possible for me to find the right buyer for you. Working with Briggs Freeman brings an excellent support team dedicated to your listing. Our close-knit group of agents, combined with a support staff that consistently exceeds expectations, creates a team that is one-of-a-kind. In addition, my partnership with another agent, Susan Johnson, results in the best knowledge of the Dallas area. We are a team dedicated to ensuring that your house is marketed to sell. With our combined knowledge, our ability to leverage two sets of contacts and double the time spent on marketing your home, we guaranteed you a team that obtains results. For me, interaction with sellers is one of my favorite parts of real estate, and nothing beats the satisfaction of a sale! BACKGROUND THAT WORKS FOR YOU I was born and raised in Dallas and have lived in and around Dallas and the Park Cities for many years. I graduated from Ursuline Academy and have maintained an extensive group of friends extending back to kindergarten days. Active in the Junior League Sustainers group and support other Dallas organizations that I feel truly make an impact on the Dallas community. RESULTS Recognized twice by D Magazine as one of Dallas' \"Best Realtors,\" the top 1 percent of agents selected by clients and peers. Multi-million dollars in annual transactions over the last five years.",
+            "htmlRemark": "WHAT I BRING TO YOU<br\/><br\/>Selling a house takes a unique perspective on Dallas and knowledge of each neighborhood's strengths and weaknesses.  As a native Dallasite, I bring a distinct view on areas in Dallas and the history behind them.  My large network of contacts within the community and the real estate arena make it possible for me to find the right buyer for you.<br\/><br\/>Working with Briggs Freeman brings an excellent support team dedicated to your listing.  Our close-knit group of agents, combined with a support staff that consistently exceeds expectations, creates a team that is one-of-a-kind.  In addition, my partnership with another agent, Susan Johnson, results in the best knowledge of the Dallas area.  We are a team dedicated to ensuring that your house is marketed to sell.  With our combined knowledge, our ability to leverage two sets of contacts and double the time spent on marketing your home, we guaranteed you a team that obtains results.  For me, interaction with sellers is one of my favorite parts of real estate, and nothing beats the satisfaction of a sale!<br\/><br\/>BACKGROUND THAT WORKS FOR YOU<br\/><br\/>I was born and raised in Dallas and have lived in and around Dallas and the Park Cities for many years.  I graduated from Ursuline Academy and have maintained an extensive group of friends extending back to kindergarten days.  Active in the Junior League Sustainers group and support other Dallas organizations that I feel truly make an impact on the Dallas community.<br\/><br\/>RESULTS<br\/><br\/>Recognized twice by D Magazine as one of Dallas' \"Best Realtors,\" the top 1 percent of agents selected by clients and peers.<br\/><br\/>Multi-million dollars in annual transactions over the last five years.<br\/><br\/>"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "TX",
+            "number": "0382528",
+            "issuedOn": "1989-01-01"
+        }
+    ]
+}

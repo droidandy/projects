@@ -1,0 +1,16 @@
+{% set is_property_sale = path('featured_index', {'market': 'for-sale'}) in app.request.uri %}
+{% set is_property_rent = path('featured_index', {'market': 'to-rent'}) in app.request.uri %}
+
+<a href="{{ path('featured_index', {'market': 'for-sale'}) }}"
+   class="{% if is_property_sale %}--inactive{% endif %}"
+>
+    {{ summary.sale }} {{ "site.for_sale"|trans }}
+</a>
+
+{% if summary.rent %}
+    <a href="{{ path('featured_index', {'market': 'to-rent'}) }}"
+       class="{% if is_property_rent %}--inactive{% endif %}"
+    >
+        {{ summary.rent }} {{ "site.to_rent"|trans }}
+    </a>
+{% endif %}

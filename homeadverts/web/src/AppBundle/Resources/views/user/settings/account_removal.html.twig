@@ -1,0 +1,34 @@
+{% set form = form_account_removal %}
+
+<div class="profile-section">
+	<h2>
+		Closing Your Account
+	</h2>
+	<p class="info">
+		Deleting your user will remove it from Homeadverts withing a few minutes.
+		You can sign back in anytime to reactivate your user and restore its content.
+	</p>
+	<div class="grouped-fields">
+		<h3>{% trans %}billing.confirm_cancel{% endtrans %}</h3>
+		<div class="field-content">
+			<p>Permanently delete your user and all of your content.</p>
+		</div>
+		<div class="field-footer">
+			<form action="{{ path('ha_account_settings', {type: form.vars.name, redirect: path('ha_homepage') }) }}"
+				  method="POST" name="{{ form.vars.name }}">
+				<button
+						type="submit"
+						class="
+                            white
+                            mdl-button
+                            mdl-js-button
+                            mdl-js-ripple-effect
+                        ">
+                    {% trans %}billing.confirm{% endtrans %}
+				</button>
+
+				{{ form_widget(form._token) }}
+			</form>
+		</div>
+	</div>
+</div>

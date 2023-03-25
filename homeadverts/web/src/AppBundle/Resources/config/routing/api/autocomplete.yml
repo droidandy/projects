@@ -1,0 +1,14 @@
+ha_autocomplete:
+  path: /autocomplete
+  defaults: { _controller: AppBundle:Api\Autocomplete:index }
+  methods:  POST
+  
+ha_autocomplete_user:
+    path: /autocomplete/user
+    defaults: { _controller: AppBundle:Api\Autocomplete:user }
+    methods:  GET
+
+ha_autocomplete_tag:
+    path: /autocomplete/tag
+    defaults: { _controller: AppBundle:Api\Autocomplete:tag }
+    methods:  GET

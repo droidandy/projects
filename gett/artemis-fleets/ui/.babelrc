@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["es2015", { "modules": false }],
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "recharts",
+    "lodash",
+    ["import", { "libraryName": "antd", "style": true }]
+  ],
+  "env": {
+    "production": {
+      "plugins": ["transform-react-remove-prop-types", "transform-react-constant-elements"]
+    }
+  }
+}

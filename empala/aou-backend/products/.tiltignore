@@ -1,0 +1,8 @@
+**/docker-compose*.*
+**/*.sh
+!**/wait-for*.sh
+**/node_modules
+**/coverage
+**/dist
+**/cdk
+test

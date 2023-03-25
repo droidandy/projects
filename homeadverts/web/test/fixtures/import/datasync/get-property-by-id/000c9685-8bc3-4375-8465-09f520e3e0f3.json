@@ -1,0 +1,286 @@
+{
+  "listingSummary": {
+    "listingId": "000c9685-8bc3-4375-8465-09f520e3e0f3",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-01-09",
+    "photoCount": 10,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "EUR",
+      "amount": 630000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false,
+      "listPriceinUSD": 738400.0
+    },
+    "propertyAddress": {
+      "city": "CHAMBERY",
+      "district": "Savoie",
+      "stateProvince": "Rhône-Alpes",
+      "stateProvinceCode": "V",
+      "postalCode": "73000",
+      "country": "France",
+      "countryCode": "FR"
+    },
+    "mlsNumbers": [
+      "DM2-2091"
+    ],
+    "RFGListingId": "6QKEWE",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/6qkewe",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Other Style",
+    "propertyName": "Villa de standing avec vue dégagée",
+    "totalBath": 2,
+    "lotSize": "14222 SM",
+    "buildingArea": "200 Sq. M",
+    "noOfBedrooms": 4,
+    "totalAcres": 3.51,
+    "squareFootage": 2152.78,
+    "defaultPhotoURL": "//openapi.azureedge.net/E188EAF0-0821-4D26-8A5F-936E2FD083EF",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-05T05:23:20.677",
+    "agents": [
+      {
+        "office": {
+          "officeId": "8627d775-4d9e-4c7d-a899-3d09bb6893ff",
+          "RFGOfficeId": "0001",
+          "companyId": "a625acf6-b6b9-4bde-8dab-2f9129195b17",
+          "companyName": "De Meyer Immobilier Sotheby's International Realty",
+          "RFGCompanyId": "814705",
+          "brandCode": "SIR",
+          "name": "De Meyer Immobilier Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "5, rue Paul Guiton",
+            "city": "Annecy",
+            "stateProvince": "Haute-Savoie",
+            "stateProvinceCode": "74",
+            "postalCode": "74000",
+            "country": "France",
+            "countryCode": "FR",
+            "latitude": 45.90964,
+            "longitude": 6.13255
+          },
+          "phoneNumber": "+33  450 230 230"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": false
+  },
+  "halfBath": 2,
+  "parkingPlaces": 1,
+  "levels": 2,
+  "yearBuilt": "2006",
+  "totalRooms": 6,
+  "providerKey": "000c9685-8bc3-4375-8465-09f520e3e0f3",
+  "propertyFeatures": [
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Furnished Information",
+      "description": "Unfurnished"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Radiant Floor"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "fr",
+      "remark": "Située sur les hauteurs de Chambéry, cette villa récente en surplomb offre une belle vue dégagée sur la vallée et les montagnes. Le beau séjour cathédral et ses ouvertures capturent la lumière. D’une surface d’environ 200 m², elle comprend une vaste pièce de vie, une cuisine américaine, le tout donnant sur une grande terrasse en surplomb ainsi qu’une chambre. L’étage offre une mezzanine et 3 chambres avec rangements, salle de bains et salle d’eau. Le terrain boisé de 14 000 m² place cette propriété dans un véritable écrin de verdure. A 10 minutes de Chambéry-centre et 15 minutes de l’aéroport.",
+      "htmlRemark": "Située sur les hauteurs de Chambéry, cette villa récente en surplomb offre une belle vue dégagée sur la vallée et les montagnes.\n\nLe beau séjour cathédral et ses ouvertures capturent la lumière.\n\nD’une surface d’environ 200 m², elle comprend une vaste pièce de vie, une cuisine américaine, le tout donnant sur une grande terrasse en surplomb ainsi qu’une chambre.\n\nL’étage offre une mezzanine et 3 chambres avec rangements, salle de bains et salle d’eau.\n\nLe terrain boisé de 14 000 m² place cette propriété dans un véritable écrin de verdure.\n\nA 10 minutes de Chambéry-centre et 15 minutes de l’aéroport."
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/6qkewe",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "2F7F9161-B070-4497-A1CD-0469B6148774",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/2F7F9161-B070-4497-A1CD-0469B6148774",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1600,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "4FA503CB-13AB-43A5-935D-0C9B5898C199",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/4FA503CB-13AB-43A5-935D-0C9B5898C199",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1600,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "EF5D936B-D663-414A-9F87-365C0A5C25AB",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/EF5D936B-D663-414A-9F87-365C0A5C25AB",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1600,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "45594C7D-ABA8-44EC-8880-4D06EAAF45FC",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/45594C7D-ABA8-44EC-8880-4D06EAAF45FC",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "7D452272-073F-4D07-A276-5BCB4B0490F6",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/7D452272-073F-4D07-A276-5BCB4B0490F6",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1600,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "50AE03F2-5BF8-4DA5-9C43-82666F04D48A",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/50AE03F2-5BF8-4DA5-9C43-82666F04D48A",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "9E1131C1-71ED-42FA-B005-8A19C1A28074",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/9E1131C1-71ED-42FA-B005-8A19C1A28074",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1600,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "E188EAF0-0821-4D26-8A5F-936E2FD083EF",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/E188EAF0-0821-4D26-8A5F-936E2FD083EF",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1600,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "A170F0AE-513A-4362-B86F-B9788AA6AA1C",
+      "sequenceNumber": 1,
+      "url": "http://www.sothebysrealty-france.com/annonces/details/refDM2-2091/",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Local Listing Link",
+      "lastUpdateOn": "2018-06-15T08:46:08.633"
+    },
+    {
+      "mediaID": "0D1E2166-6DB9-4628-9128-DB241C97399F",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/0D1E2166-6DB9-4628-9128-DB241C97399F",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    },
+    {
+      "mediaID": "164AD2E6-4B16-4F2E-9218-E42B38AC6893",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/164AD2E6-4B16-4F2E-9218-E42B38AC6893",
+      "isDefault": false,
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1800,
+      "width": 2400,
+      "lastUpdateOn": "2018-06-19T08:21:03.590"
+    }
+  ],
+  "propertyRooms": [
+    {
+      "sequenceNumber": 1,
+      "level": "1",
+      "name": "Kitchen"
+    },
+    {
+      "sequenceNumber": 2,
+      "level": "1",
+      "name": "Living Room"
+    },
+    {
+      "sequenceNumber": 3,
+      "level": "1",
+      "name": "Bedroom"
+    },
+    {
+      "sequenceNumber": 4,
+      "level": "1",
+      "name": "Bedroom"
+    },
+    {
+      "sequenceNumber": 5,
+      "level": "1",
+      "name": "Bedroom"
+    },
+    {
+      "sequenceNumber": 6,
+      "level": "1",
+      "name": "Bedroom"
+    },
+    {
+      "sequenceNumber": 7,
+      "level": "1",
+      "name": "Half Bath"
+    },
+    {
+      "sequenceNumber": 8,
+      "level": "1",
+      "name": "Half Bath"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "DM2-2091",
+      "isPrimary": true
+    }
+  ]
+}

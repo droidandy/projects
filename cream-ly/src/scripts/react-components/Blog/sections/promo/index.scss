@@ -1,0 +1,39 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.Promo {
+  @include spacingBottom;
+
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+
+  background: #efefef;
+  text-align: center;
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--purplish-grey);
+  padding: 20px;
+
+  h1 {
+    font-size: 27px;
+    line-height: 1.17;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .subtitle {
+    @include defaultText();
+  }
+
+  .btn_style {
+    margin: 40px auto 0;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+
+    &.green a {
+      background-color: var(--rosemary);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+services:
+    ha.geo.guzzle6_client:
+        class: GuzzleHttp\Client
+        factory: 'AppBundle\Geo\Geocode\HttpClient::getGuzzleHttpClient'
+    ha.geo.location_cache:
+        class: AppBundle\Geo\Geocode\EmAwareLocationArrayCache
+        arguments: [@em]
+        scope: prototype
+    ha.geo.geocode_http_client_raw:
+        class: AppBundle\Geo\Geocode\HttpClient
+        arguments: [@ha.geo.guzzle6_client, %google.api_key%, @monolog.logger.geo, true]
+    ha.geo.geocode_http_client:
+        class: AppBundle\Geo\Geocode\CachedHttpClient
+        arguments: ['@redis_cache', '@ha.geo.geocode_http_client_raw']
+    ha.geo.location_unfolder:
+        class: AppBundle\Geo\Geocode\ReverseGeocodeLocationUnfolder
+        arguments:
+            - @ha.geo.geocode_http_client
+            - @google_location_repo
+            - @em
+            - @ha.geo.location_cache=
+            - @ha.lock
+            - @monolog.logger.geo
+    ha.geo.mu.proc:
+        class: Monolog\Processor\MemoryUsageProcessor
+        tags:
+            - {name: monolog.processor, channel: geo}
+    ha.geo.mpu.proc:
+        class: Monolog\Processor\MemoryPeakUsageProcessor
+        tags:
+            - {name: monolog.processor, channel: geo}
+    ha.geo.psr_log_message.proc:
+        class: Monolog\Processor\PsrLogMessageProcessor
+        tags:
+            - {name: monolog.processor, channel: geo}

@@ -1,0 +1,136 @@
+@import '../variables-theme';
+
+/* Dropdown */
+
+.ui.selection.dropdown, .ui.search.selection.dropdown, div.ui.search.dropdown {
+  background-color: $BUTTON_BG_COLOR;
+  color: $INPUT_COLOR;
+  border: $BUTTON_BORDER !important;
+  font-size: 12px;
+  height: 30px;
+  line-height: 14px;
+  padding-right: 45px;
+  display: table;
+  padding-top: 0;
+  padding-bottom: 0;
+  transform: none;
+  font-weight: 600;
+
+  .text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &>input.search {
+    padding-right: 45px;
+    margin-top: -1px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+    margin-left: -1px;
+  }
+
+  .menu {
+    background-color: #ffffff;
+    color: $INPUT_COLOR;
+    margin-top: 1px;
+
+    &>.item {
+      font-size: 12px;
+      font-weight: 500;
+      &:not(:first-child) {
+        border: none;
+      }
+      &:hover {
+        background-color: $ELEM_ACTIVE_COLOR_HOVER;
+        color: #ffffff;
+      }
+
+      &.selected {
+        background-color: $ELEM_ACTIVE_COLOR;
+        color: #ffffff;
+      }
+    }
+
+    & > .header {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  &>.dropdown.icon {
+    height: 95%;
+    width: 30px;
+    border-left: $BUTTON_BORDER;
+    opacity: 1;
+    color: $FONT_COLOR;
+    background-color: $BUTTON_BG_COLOR;
+    margin-top: -7px;
+
+    &:before {
+      font-size: 14px;
+      position: relative;
+      top: 0;
+      left: 2px;
+    }
+
+    &.Select-arrow-zone {
+      padding-left: 9px;
+      padding-top: 4px;
+      opacity: 0.5;
+    }
+  }
+
+  &:hover {
+    border: $BUTTON_BORDER;
+  }
+
+  &.active {
+    border: $BUTTON_BORDER;
+    background-color: $BUTTON_BG_COLOR_HOVER;
+
+    &:hover {
+      border: $BUTTON_BORDER;
+    }
+
+    .menu {
+      border: $BUTTON_BORDER;
+      background-color: #ffffff;
+      &:hover {
+        border: $BUTTON_BORDER;
+      }
+    }
+  }
+}
+
+.ui.labeled.dropdown.button.icon {
+  font-weight: 400;
+  background-color: #acacac;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  text-transform: none;
+  padding-left: 20px !important;
+  //padding-right: 60px !important;
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+
+  & > .icon {
+    left: inherit;
+    right: 0;
+    background: 0;
+    font-size: 15px;
+  }
+
+  &.button.active {
+    background-color: #acacac !important;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.labeled.dropdown.button.icon {
+    max-width: none;
+  }
+}

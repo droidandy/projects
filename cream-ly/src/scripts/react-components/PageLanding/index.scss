@@ -1,0 +1,68 @@
+@import "../../../styles/tools/mixins.scss";
+
+.PageLanding {
+	@include maxWidthPage();
+	@include spacingBottom();
+
+	.imgTop {
+		max-width: 1440px;
+		min-height: 350px;
+		@include media-query($small) {
+			min-height: 150px;
+		}
+		height: auto;
+		background-image: url("./about_top.png");
+        background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	p {
+		margin: 0 0 30px;
+		@include defaultText();
+	}
+
+    .embedly-card-hug {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 600px;
+        margin: auto;
+        & > div, iframe {
+            width: 100%;
+        }
+    }
+
+	.blockquote {
+		background-image: url('./testimonials-qoute-sign.png');
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		padding: 5px 15px 5px 100px;
+		text-align: left;
+		margin-bottom: 80px;
+
+		@media only screen and (max-width: 767px) {
+				background-size: 30px;
+				padding: 0px 0px 0px 45px;
+				text-align: left;
+				margin-bottom: 40px;
+				p {
+					text-align: left;
+				}
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+		h4 {
+			margin: 0;
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 24px;
+			letter-spacing: normal;
+			color: #535059;
+			font-family: var(--font-heading);
+		}
+	}
+}

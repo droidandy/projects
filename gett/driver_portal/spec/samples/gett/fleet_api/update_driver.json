@@ -1,0 +1,15 @@
+{
+  "code": "SUCCESS",
+  "result": {
+    "name": "Ronnie Show 1",
+    "phone": "123 4567 89",
+    "email": "anton.macius@gettaxi.com",
+    "postal_address": "170041 boo bar",
+    "zip": "123456",
+    "birthdate": "2018-01-02",
+    "account_number": "New account number",
+    "sort_code": "New sort code",
+    "color": null,
+    "color_en": "Black"
+  }
+}

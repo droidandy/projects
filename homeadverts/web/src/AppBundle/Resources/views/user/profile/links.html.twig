@@ -1,0 +1,38 @@
+<div class="row profile-links">
+    <div class="medium-12 medium-centered">
+        <ul>
+            <li>
+                {% if (user.propertyForSaleCount > 0) %}
+                    <span>
+                        {{ 'listing.forsale'|trans }}
+                    </span>
+                {% else %}
+                    <span class="na">{{ 'listing.forsale'|trans }}</span>
+                {% endif %}
+            </li>
+            <li>
+                {% if (user.propertyToRentCount > 0) %}
+                    <span>
+                        {{ 'listing.torent'|trans }}
+                    </span>
+                {% else %}
+                    <span class="na">{{ 'listing.torent'|trans }}</span>
+                {% endif %}
+            </li>
+            <li>
+                {% if (user.getOriginalDescription.description is defined) %}
+                    <span>
+                        {% trans %}listing.about{% endtrans %}
+                    </span>
+                {% else %}
+                    <span class="na">{% trans %}listing.about{% endtrans %}</span>
+                {% endif %}
+            </li>
+            <li>
+                <span href="{{ path('ha_user_articles', { id: user.id, slug: user|slug }) }}">
+                    Stories
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>

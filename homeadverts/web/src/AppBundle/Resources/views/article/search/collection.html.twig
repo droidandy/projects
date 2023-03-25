@@ -1,0 +1,13 @@
+{% for page in search.pagination %}
+    <li class="wide-line">
+        <div class="row">
+            <ul class="small-block-grid-2 medium-block-grid-3">
+                {% for article in page %}
+                    <li>
+                        {% include 'AppBundle:article/card:small.html.twig' %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </li>
+{% endfor %}

@@ -1,0 +1,31 @@
+@import "../../../styles/tools/mixins.scss";
+
+.checkoutComponent2 {
+
+	@include maxWidthPage()
+
+	.content {
+		@include spacingBottomMedium();
+		@include media-query($small) {
+			@include spacingBottom();
+		}
+		
+		&.isLoading {
+			a, input, select, textarea {
+				pointer-events: none;
+			}
+		}
+	}
+
+
+	.sidebar {
+		margin: 0;
+		hr {
+			margin: 1rem 0;
+		}
+	}
+
+	.buttons {
+		text-align: center;
+	}
+}

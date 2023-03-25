@@ -1,0 +1,89 @@
+.carrierMainContainer{
+
+  .row.nav-row {
+    margin-top: 1rem;
+  }
+
+  .carrierGrid {
+    padding-bottom: 5rem;
+
+    .carrierCard {
+      width: 100%;
+
+      .header {
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+      }
+
+      .imgBlock {
+        width: 100%;
+        display: block;
+        float: left;
+
+        img {
+          display: block !important;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      .description {
+        width: 80%;
+        padding-top: 1rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .extra.content {
+        border-top: 0 !important;
+        display: block;
+        button {
+          width: 80%;
+          display: block !important;
+          margin: 0 auto;
+        }
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  .carrierHeader {
+    margin-bottom: 2rem;
+
+    .header {
+      text-transform: none;
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    span {
+
+    }
+  }
+}
+
+.messageBlock{
+  background: $SEND_TO_CARIER_BACKGROUND !important;
+  border: $SEND_TO_CARIER_BORDER !important;
+  color: $PRESENTATION_OPTIONS_HEADER_COLOR !important;
+  box-shadow: none !important;
+
+  .one.wide.column {
+    padding: 0;
+  }
+
+  .header {
+    font-weight: 200 !important;
+    font-size: 2rem !important;
+    line-height: 2rem;
+    color: $PRESENTATION_OPTIONS_HEADER_COLOR !important;
+    font-family: inherit !important;
+  }
+  p{
+    font-style: italic;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+  }
+}

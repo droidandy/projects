@@ -1,0 +1,12 @@
+services:
+    ha_article.analyser_client_google:
+        class: AppBundle\Service\Article\Analysis\AnalyzerClientGoogle
+        arguments:
+            - '%kernel.root_dir%/config/key/google.cloud.api.json'
+            - @monolog.logger
+
+    ha_article.analyser:
+        class: AppBundle\Service\Article\Analysis\Analyzer
+        arguments:
+            - @ha_article.analyser_client_google
+            - @doctrine.orm.entity_manager

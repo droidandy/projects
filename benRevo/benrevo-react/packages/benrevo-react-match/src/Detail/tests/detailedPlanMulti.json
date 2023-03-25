@@ -1,0 +1,565 @@
+{
+  "rfpQuoteOptionNetworkId":1237,
+  "rfpQuoteNetworkId":161,
+  "rfpQuoteNetworkPlanId":null,
+  "secondRfpQuoteNetworkPlanId":null,
+  "kaiserNetwork":false,
+  "outOfState":false,
+  "carrier":"Cigna",
+  "rfpCarrierId":59,
+  "type":"HMO",
+  "networkName":"Cigna HMO",
+  "networkId":12,
+  "dollarDifference":null,
+  "percentDifference":null,
+  "employerFund":0.0,
+  "administrativeFee":0.0,
+  "discountType":null,
+  "currentPlan":{
+    "planId":17,
+    "carrier":"Blue Shield",
+    "label":null,
+    "name":"test",
+    "type":"HMO",
+    "employer":52.0,
+    "employee":468.0,
+    "total":520.0,
+    "tier1Rate":null,
+    "tier2Rate":null,
+    "tier3Rate":null,
+    "tier4Rate":null,
+    "quoteType":null,
+    "rx":[
+      {
+        "sysName":"RX_INDIVIDUAL_DEDUCTIBLE",
+        "name":"Rx Individual Deductible",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"RX_FAMILY_DEDUCTIBLE",
+        "name":"Rx Family Deductible",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_1",
+        "name":"Member Copay Tier 1",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_2",
+        "name":"Member Copay Tier 2",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_3",
+        "name":"Member Copay Tier 3",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_4",
+        "name":"Member Copay Tier 4",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MAIL_ORDER",
+        "name":"Mail Order",
+        "value":"N/A",
+        "type":"STRING"
+      }
+    ],
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"520.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"0.0",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"11.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Spouse",
+        "value":"10.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Child(ren)",
+        "value":"10.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Family",
+        "value":"10.0",
+        "type":"DOLLAR"
+      }
+    ],
+    "selected":false
+  },
+  "selectedPlan": {
+    "planId":249,
+    "carrier":"Anthem Blue Cross",
+    "label":null,
+    "name":"V-Premier HMO 10/100% Rx:Essential Formulary $5/$15/$25/$45/30%",
+    "type":"HMO",
+    "employer":335.3,
+    "employee":35280.3,
+    "total":35615.6,
+    "tier1Rate":583.86,
+    "tier2Rate":1226.11,
+    "tier3Rate":1751.59,
+    "tier4Rate":0.0,
+    "quoteType":"STANDARD",
+    "rx":[
+      {
+        "sysName":"RX_INDIVIDUAL_DEDUCTIBLE",
+        "name":"Rx Individual Deductible",
+        "value":"0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"RX_FAMILY_DEDUCTIBLE",
+        "name":"Rx Family Deductible",
+        "value":"0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_1",
+        "name":"Member Copay Tier 1",
+        "value":"$5/$15",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_2",
+        "name":"Member Copay Tier 2",
+        "value":"25",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_3",
+        "name":"Member Copay Tier 3",
+        "value":"45",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_4",
+        "name":"Member Copay Tier 4",
+        "value":"30% up to $250",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MAIL_ORDER",
+        "name":"Mail Order",
+        "value":"$12.50/$37.50/$75/$135",
+        "type":"STRING"
+      }
+    ],
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"0",
+        "type":"DOLLAR",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"$1,500x2",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"10",
+        "type":"DOLLAR",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"10",
+        "type":"DOLLAR",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"0",
+        "type":"DOLLAR",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"0",
+        "type":"DOLLAR",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"100",
+        "type":"DOLLAR",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"10",
+        "type":"DOLLAR",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"35615.6",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"6749.2",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"583.86",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + 1",
+        "value":"1226.11",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + 2 or more",
+        "value":"1751.59",
+        "type":"DOLLAR"
+      }
+    ],
+    "selected":true
+  },
+  "newPlan":{
+    "planId":2109,
+    "carrier":"Cigna",
+    "label":null,
+    "name":"HMO A",
+    "type":"HMO",
+    "employer":0.0,
+    "employee":0.0,
+    "total":0.0,
+    "tier1Rate":0.0,
+    "tier2Rate":0.0,
+    "tier3Rate":0.0,
+    "tier4Rate":0.0,
+    "quoteType":"STANDARD",
+    "rx":[
+      {
+        "sysName":"RX_INDIVIDUAL_DEDUCTIBLE",
+        "name":"Rx Individual Deductible",
+        "value":"0",
+        "type":"NUMBER"
+      },
+      {
+        "sysName":"RX_FAMILY_DEDUCTIBLE",
+        "name":"Rx Family Deductible",
+        "value":"0",
+        "type":"NUMBER"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_1",
+        "name":"Member Copay Tier 1",
+        "value":"10",
+        "type":"NUMBER"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_2",
+        "name":"Member Copay Tier 2",
+        "value":"20",
+        "type":"NUMBER"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_3",
+        "name":"Member Copay Tier 3",
+        "value":"40",
+        "type":"NUMBER"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_4",
+        "name":"Member Copay Tier 4",
+        "value":"-",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MAIL_ORDER",
+        "name":"Mail Order",
+        "value":"$20/$40/$80",
+        "type":"STRING"
+      }
+    ],
+    "benefits":[
+      {
+        "sysName":"INDIVIDUAL_DEDUCTIBLE",
+        "name":"Deductible - Individual",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":1
+      },
+      {
+        "sysName":"INDIVIDUAL_OOP_LIMIT",
+        "name":"OOPM - Individual",
+        "value":"$1,000x2",
+        "type":"STRING",
+        "ordinal":4
+      },
+      {
+        "sysName":"PCP",
+        "name":"PCP",
+        "value":"10",
+        "type":"NUMBER",
+        "ordinal":6
+      },
+      {
+        "sysName":"SPECIALIST",
+        "name":"Specialist",
+        "value":"10",
+        "type":"NUMBER",
+        "ordinal":7
+      },
+      {
+        "sysName":"INPATIENT_HOSPITAL",
+        "name":"Inpatient Hospital",
+        "value":"0",
+        "type":"NUMBER",
+        "ordinal":8
+      },
+      {
+        "sysName":"IP_COPAY_MAX",
+        "name":"Inpatient Copay Max",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":9
+      },
+      {
+        "sysName":"IP_COPAY_TYPE",
+        "name":"Inpatient Copay Type",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":10
+      },
+      {
+        "sysName":"OUTPATIENT_SURGERY",
+        "name":"Outpatient Surgery",
+        "value":"0",
+        "type":"NUMBER",
+        "ordinal":13
+      },
+      {
+        "sysName":"EMERGENCY_ROOM",
+        "name":"Emergency Room",
+        "value":"100",
+        "type":"NUMBER",
+        "ordinal":14
+      },
+      {
+        "sysName":"DEDUCTIBLE_TYPE",
+        "name":"Deductible Type",
+        "value":"N/A",
+        "type":"STRING",
+        "ordinal":15
+      },
+      {
+        "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+        "name":"Combine Med/Rx Deductible",
+        "value":"-",
+        "type":"STRING",
+        "ordinal":16
+      },
+      {
+        "sysName":"URGENT_CARE",
+        "name":"Urgent Care",
+        "value":"25",
+        "type":"NUMBER",
+        "ordinal":17
+      }
+    ],
+    "cost":[
+      {
+        "sysName":null,
+        "name":"Monthly cost",
+        "value":"0.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"% change from current",
+        "value":"-100.0",
+        "type":"PERCENT"
+      },
+      {
+        "sysName":null,
+        "name":"Employee Only",
+        "value":"0.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Spouse",
+        "value":"0.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Child(ren)",
+        "value":"0.0",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":null,
+        "name":"Employee + Family",
+        "value":"0.0",
+        "type":"DOLLAR"
+      }
+    ],
+    "selected":true
+  },
+  "secondNewPlan":null
+}

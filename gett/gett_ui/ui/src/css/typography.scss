@@ -1,0 +1,276 @@
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.elipsis-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic-font {
+  font-style: italic;
+}
+
+.white-text {
+  color: #fff;
+
+  &:hover, &:active, &:focus {
+    color: #fff;
+  }
+}
+
+.black-text {
+  color: $black;
+
+  &:hover, &:active, &:focus {
+    color: $black;
+  }
+}
+
+.dark-grey-text {
+  color: $dark-grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $dark-grey-text;
+  }
+}
+
+.grey-text {
+  color: $grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $grey-text;
+  }
+}
+
+.grey-link {
+  color: $grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $primary-color;
+  }
+}
+
+.blue-link {
+  color: $blue;
+
+  &:hover, &:active, &:focus {
+    color: $primary-color;
+  }
+}
+
+.medium-grey-text {
+  color: $medium-grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $medium-grey-text;
+  }
+}
+
+.light-grey-text {
+  color: $light-grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $light-grey-text;
+  }
+}
+
+.light-grey-link {
+  color: $light-grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $grey-text;
+  }
+}
+
+.black-link {
+  color: $black;
+
+  &:hover, &:active, &:focus {
+    color: $dark-grey-text;
+  }
+}
+
+.blue-text {
+  color: $blue;
+
+  &:hover, &:active, &:focus {
+    color: $blue;
+  }
+}
+
+.yellow-text {
+  color: $yellow;
+
+  &:hover, &:active, &:focus {
+    color: $yellow;
+  }
+}
+
+.light-yellow-text {
+  color: #ffd787;
+
+  &:hover, &:active, &:focus {
+    color: #ffd787;
+  }
+}
+
+.green-text {
+  color: $green;
+
+  &:hover, &:active, &:focus {
+    color: $green;
+  }
+}
+
+.light-green-text {
+  color: $light-green;
+
+  &:hover, &:active, &:focus {
+    color: $light-green;
+  }
+}
+
+.red-text {
+  color: $red;
+
+  &:hover, &:active, &:focus {
+    color: $red;
+  }
+}
+
+.lilac-text {
+  color: $lilac;
+
+  &:hover, &:active, &:focus {
+    color: $lilac;
+  }
+}
+
+.deep-cyan-text {
+  color: $deep-cyan;
+
+  &:hover, &:active, &:focus {
+    color: $deep-cyan;
+  }
+}
+
+.lh-0 {
+  line-height: 0;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.bold-text {
+  font-weight: 500;
+}
+
+.light-text {
+  font-weight: 300;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+@for $i from 9 through 26 {
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.text-24 {
+  font-size: 24px;
+}
+
+.text-30 {
+  font-size: 30px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-50 {
+  font-size: 50px;
+}
+
+.text-70 {
+  font-size: 70px;
+}
+
+.text-90 {
+  font-size: 90px;
+}
+
+.text-130 {
+  font-size: 130px;
+}
+
+.text-180 {
+  font-size: 180px;
+}
+
+.text-200 {
+  font-size: 200px;
+}
+
+.text-250 {
+  font-size: 250px;
+}
+
+.page-title {
+  font-size: 24px;
+  line-height: 1.67;
+  color: #3d3d3d;
+  font-weight: 300;
+}
+
+@media(--tablet) {
+  .sm-text-left {
+    text-align: left;
+  }
+
+  .sm-text-center {
+    text-align: center;
+  }
+
+  .sm-disable-copy {
+    user-select: none;
+  }
+
+  .sm-text-40 {
+    font-size: 40px;
+  }
+
+  .sm-text-20 {
+    font-size: 20px;
+  }
+
+  .sm-text-14 {
+    font-size: 14px;
+  }
+
+  .sm-text-12 {
+    font-size: 12px;
+  }
+}

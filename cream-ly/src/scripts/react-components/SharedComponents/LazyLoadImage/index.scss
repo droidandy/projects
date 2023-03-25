@@ -1,0 +1,5 @@
+@import "~react-lazy-load-image-component/src/effects/blur.css";
+
+.Gallery span.lazy-load-image-background.lazy-load-image-loaded img {
+    max-height: none !important;
+}

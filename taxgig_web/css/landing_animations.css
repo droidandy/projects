@@ -1,0 +1,781 @@
+/* Step 1 */
+
+#step-image-1 {
+    overflow: visible;
+}
+
+#tp-step-1-card {
+    transform-origin: 50% 50%;
+    transition: all .4s ease;
+    animation: tp-step-1-card 4.5s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes tp-step-1-card {
+    0% {
+        transform: translateY(0);
+    }
+    21% {
+        transform: translateY(-40px);
+    }
+    22% {
+        transform: translateY(-40px) scale(1);
+    }
+    31% {
+        transform: translateY(-40px) scale(.97);
+    }
+    37% {
+        transform: translateY(-40px) scale(1);
+    }
+    50% {
+        transform: translateY(-40px) scale(1);
+    }
+
+    90% {
+       transform: translateY(0);
+    }
+}
+
+#tp-step-1-card-shadow {
+    animation: tp-step-1-card-shadow 4.5s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes tp-step-1-card-shadow {
+    0% {
+        transform: translate(0, 0);
+    }
+    21% {
+        transform: translate(10px, -20px) scale(.96);
+    }
+    50% {
+        transform: translate(10px, -20px) scale(.96);
+    }
+    90% {
+        transform: translate(0, 0);
+    }
+}
+
+#tp-step-1-card-btn-bg {
+    animation: tp-step-1-card-btn-bg 4.5s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes tp-step-1-card-btn-bg {
+    30% {
+        stroke: #61AD15;
+    }
+    50% {
+        stroke: #61AD15;
+    }
+}
+
+#tp-step-1-card-btn rect {
+        animation: tp-step-1-card-btn-bg 4.5s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes green-text-btn {
+    30% {
+        fill: #61AD15;
+    }
+    50% {
+        fill: #61AD15;
+    }
+}
+
+#tp-step-1-card-btn path {
+
+        animation: green-text-btn 4.5s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+/* Step 2 */
+
+#tp-step-2-ellipse-1 {
+    animation: tp-step-2-ellipse-1 7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes tp-step-2-ellipse-1 {
+    11% {
+        fill: #EBEBF9;
+    }
+    22% {
+        fill: #61AD15;
+    }
+    61% {
+        fill: #EBEBF9;
+    }
+    95% {
+        fill: #EBEBF9;
+    }
+}
+
+#tp-step-2-rectangle-1 {
+    animation: tp-step-2-rectangle-1 7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes tp-step-2-rectangle-1 {
+    15% {
+        fill: #EBEBF9;
+    }
+    26% {
+        fill: #61AD15;
+    }
+    66% {
+        fill: #EBEBF9;
+    }
+    95% {
+        fill: #EBEBF9;
+    }
+}
+
+#tp-step-2-ellipse-2 {
+    animation: tp-step-2-ellipse-2 7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes tp-step-2-ellipse-2 {
+    15% {
+        fill: #EBEBF9;
+    }
+    27% {
+        fill: #61AD15;
+    }
+    66% {
+        fill: #EBEBF9;
+    }
+    100% {
+        fill: #EBEBF9;
+    }
+}
+
+#tp-step-2-rectangle-2 {
+    animation: tp-step-2-rectangle-2 7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes tp-step-2-rectangle-2 {
+    20% {
+        fill: #EBEBF9;
+    }
+    31% {
+        fill: #61AD15;
+    }
+    71% {
+        fill: #EBEBF9;
+    }
+    100% {
+        fill: #EBEBF9;
+    }
+}
+
+#tp-step-2-card {
+    animation: tp-step-2-card 7s infinite cubic-bezier(0.7, 0.21, 0.58, 1);
+}
+
+@keyframes tp-step-2-card {
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    67% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#tp-step-2-btn {
+    transform-origin: 50% 50%;
+    opacity: .0001;
+    animation: tp-step-2-btn 7s infinite cubic-bezier(0.23, 0.49, 0.24, 1);
+}
+
+@keyframes tp-step-2-btn {
+    30% {
+        opacity: .0001;
+    }
+    38% {
+        transform: scale(1);
+    }
+    42% {
+        opacity: 0;
+    }
+    42% {
+        transform: scale(.97);
+    }
+    70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    83% {
+        opacity: 1;
+    }
+    87% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#tp-step-2-btn-price {
+    animation: tp-step-2-btn-price 7s infinite cubic-bezier(0.23, 0.49, 0.24, 1);
+    transform-origin: 50% 50%;
+}
+
+@keyframes tp-step-2-btn-price {
+
+    38% {
+        transform: scale(1);
+    }
+    42% {
+        opacity: 0;
+    }
+    42% {
+        transform: scale(.97);
+    }
+    59% {
+        transform: scale(1);
+    }
+    78% {
+        opacity: 1;
+    }
+    95% {
+        opacity: .0001;
+    }
+}
+
+/* Step 3 */
+
+
+#tp-step-3-girl {
+    animation: tp-step-3-girl 5.7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes tp-step-3-girl {
+    0% {
+        transform: translateY(0);
+    }
+    53% {
+        transform: translateY(-22px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#tp-step-3-card {
+    animation: tp-step-3-card 5.7s infinite cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+@keyframes tp-step-3-card {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    63% {
+        transform: translateY(-22px);
+    }
+    70% {
+        transform: translateY(-22px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Step 4 */
+
+#tp-step-4-loader-green {
+    transform: translateY(60px);
+    animation: tp-step-4-loader-green 4.6s infinite cubic-bezier(0.06, 0.12, 0.09, 0.26);
+}
+
+@keyframes tp-step-4-loader-green {
+    10% {
+        transform: translateY(60px);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(60px);
+    }
+}
+
+#tp-step-4-file {
+    animation: tp-step-4-file 4.6s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes tp-step-4-file {
+    25% {
+        transform: translateY(0);
+    }
+    34% {
+        transform: translateY(-10px);
+    }
+    42% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#tp-step-4-ok {
+    opacity: .0001;
+    animation: tp-step-4-ok 4.6s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes tp-step-4-ok {
+    32% {
+        opacity: .0001;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.0001;
+    }
+}
+
+/* Step 5 */
+
+
+#z1 {
+    animation: z1 4s infinite ease;
+}
+
+@keyframes z1 {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(-12px);
+        opacity: .001;
+    }
+    100% {
+        transform: translateY(-12px);
+        opacity: .001;
+    }
+}
+
+#z2 {
+    animation: z2 4s infinite ease;
+}
+
+@keyframes z2 {
+    0% {
+        transform: translateY(0);
+        opacity: .001;
+    }
+    5% {
+        transform: translateY(0);
+        opacity: .001;
+    }
+    6% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    37% {
+        transform: translateY(-12px);
+        opacity: .001;
+    }
+    100% {
+        transform: translateY(-12px);
+        opacity: .001;
+    }
+}
+
+#z3 {
+    animation: z3 4s infinite ease;
+}
+
+@keyframes z3 {
+    0% {
+        transform: translateY(0);
+        opacity: .001;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: .001;
+    }
+    11% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-12px);
+        opacity: .001;
+    }
+    100% {
+        transform: translateY(-12px);
+        opacity: .001;
+    }
+}
+
+/* Pro */
+
+/* STEP 1 */
+
+#ta-step-1-elem-1,
+#ta-step-1-elem-2,
+#ta-step-1-elem-3,
+#ta-step-1-elem-4,
+#ta-step-1-elem-5,
+#ta-step-1-elem-6,
+#ta-step-1-elem-7,
+#ta-step-1-elem-8 {
+    opacity: .0001;
+}
+
+#ta-step-1-elem-1 {
+    animation: ta-step-1-elem-1 4.2s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes ta-step-1-elem-1 {
+    0% {
+        opacity: .0001;
+    }
+    15% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#ta-step-1-elem-2 {
+    animation: ta-step-1-elem-2 4.2s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes ta-step-1-elem-2 {
+    0% {
+        opacity: .0001;
+    }
+    15% {
+        opacity: .0001;
+    }
+    30% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#ta-step-1-elem-3,
+#ta-step-1-elem-4 {
+    animation: ta-step-1-elem-3 4.2s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes ta-step-1-elem-3 {
+    0% {
+        opacity: .0001;
+    }
+    30% {
+        opacity: .0001;
+    }
+    45% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#ta-step-1-elem-5 {
+    animation: ta-step-1-elem-5 4.2s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes ta-step-1-elem-5 {
+    0% {
+        opacity: .0001;
+    }
+    45% {
+        opacity: .0001;
+    }
+    60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#ta-step-1-elem-6,
+#ta-step-1-elem-7 {
+    animation: ta-step-1-elem-6 4.2s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes ta-step-1-elem-6 {
+    0% {
+        opacity: .0001;
+    }
+    60% {
+        opacity: .0001;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#ta-step-1-elem-8 {
+    animation: ta-step-1-elem-8 4.2s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes ta-step-1-elem-8 {
+    0% {
+        opacity: .0001;
+    }
+    75% {
+        opacity: .0001;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+/* STEP 2 */
+
+#verified-stamp {
+    opacity: 1;
+    animation: verified-stamp 3s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes verified-stamp {
+    0% {
+        opacity: .0001;
+    }
+    25% {
+        opacity: .0001;
+    }
+    26% {
+        opacity: .0001;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+#paper {
+    animation: paper 3s infinite cubic-bezier(0.42, 0, 0.2, 0.72);
+}
+
+@keyframes paper {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-60px);
+    }
+    50% {
+        transform: translateY(-60px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#cpa-star {
+    opacity: .0001;
+    transform: translateY(2px);
+    animation: cpa-star-show 3s infinite cubic-bezier(0.42, 0, 0.58, 1), cpa-star-move 4s alternate infinite ease-in;
+}
+
+@keyframes cpa-star-show {
+    25% {
+        opacity: .0001; 
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .0001;
+    }
+}
+
+@keyframes cpa-star-move {
+    0% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(2px);
+    }
+}
+
+/* STEP 3 */
+
+#ta-step-3 {
+    overflow: visible;
+}
+
+#portal-1,
+#portal-2 {
+    transform-origin: 24% 25%;
+    transform: scale(.0001);
+    animation: portal 5.2s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes portal {
+    5% {
+        transform: scale(.0001);
+    }
+    9% {
+        transform: scale(1.3);
+    }
+    18% {
+        transform: scale(1);
+    }
+    47% {
+        transform: scale(1);
+    }
+    56% {
+        transform: scale(1.3);
+    }
+    65% {
+        transform: scale(.0001);
+    }
+    80% {
+        transform: scale(.0001);
+    }
+    100% {
+        transform: scale(.0001);
+    }
+}
+
+#papers-down {
+    transform: translateY(-100px);
+    animation: papers-down 5.2s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes papers-down {
+    24% {
+        transform: translateY(-100px);
+    }
+    47% {
+        transform: translateY(110px);
+    }
+    80% {
+        transform: translateY(110px);
+    }
+    100% {
+        transform: translateY(110px);
+    }
+}
+
+#pro-step-3-display {
+    opacity: .001;
+    animation: pro-step-3-display 5.2s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@keyframes pro-step-3-display {
+    50% {
+        opacity: .001;
+    }
+    62% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#bags-with-money {
+    opacity: .0001;
+    transform: translateX(-252px);
+    animation: bags-with-money 5.2s infinite cubic-bezier(0, 0, 0.58, 1);
+}
+
+@keyframes bags-with-money {
+    69% {
+        opacity: .0001;
+        transform: translateX(-252px);
+    }
+    76% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#bags-with-money-big {
+    opacity: .0001;
+    animation: bags-with-money-big 5.2s infinite cubic-bezier(0, 0, 0.58, 1);
+}
+
+@keyframes bags-with-money-big {
+    72% {
+        opacity: .0001;
+    }
+    76% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,1 @@
+export { getDepositRates } from './getDepositRates';

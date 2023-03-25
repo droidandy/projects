@@ -1,0 +1,109 @@
+
+-
+    request:
+        method: POST
+        url: 'https://graph.facebook.com/v2.10/me'
+        headers:
+            Host: graph.facebook.com
+            Content-Type: application/x-www-form-urlencoded
+            User-Agent: fb-php-5.6.1
+            Accept-Encoding: '*'
+        body: 'fields=id%2C+link%2C+name&access_token=EAAIVsJIBgb8BAJ7NfJWxVCGksAkDh7ukiLRv8ElOGdVmpmZCsN7acU5xViCTYHDzZAEeCBHHs41yk7IElc9foF4wW45MgVlD8zfuAoSV5ZB5ZAB4oDrQSBj0GGTSu6mR71zYW57ZCs6bgy1nuPENAcfvvwHFcGRuvxJZBsztVo7gZDZD&appsecret_proof=9bba244245b137b1c61b712c3ef681d79908e6be4befc1553dc3aec0eb02f63e'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            Access-Control-Allow-Origin: '*'
+            Pragma: no-cache
+            Cache-Control: 'private, no-cache, no-store, must-revalidate'
+            facebook-api-version: v2.10
+            Expires: 'Sat, 01 Jan 2000 00:00:00 GMT'
+            x-fb-rev: '3949520'
+            Content-Type: 'application/json; charset=UTF-8'
+            x-fb-trace-id: AaX5Atnyr+f
+            Strict-Transport-Security: 'max-age=15552000; preload'
+            Vary: Accept-Encoding
+            X-FB-Debug: idcxye1p0o7nJI4zgjiPSi9NJC3cK0cF9AaNgn1JSbZw7OGPyMsj9dwREPZWNQh8Y4Bf4i/n38N4gkNjT9lsng==
+            Date: 'Tue, 29 May 2018 08:55:55 GMT'
+            Connection: keep-alive
+            Content-Length: '271'
+        body: '{"id":"000000","link":"https:\/\/www.facebook.com\/app_scoped_user_id\/000000\/","name":"Ivan Proskuryakov"}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/351'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"location":{"type":"point","coordinates":[0.0,0.0]},"email":"vicky.harris@ebert.com","name":"Ena O''Kon","bio":null,"companyName":null,"phone":"324.769.8848 x91730","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '201'
+            message: Created
+        headers:
+            Location: /test_agents/agent/351
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '147'
+        body: '{"_index":"test_agents","_type":"agent","_id":"351","_version":1,"result":"created","_shards":{"total":2,"successful":1,"failed":0},"created":true}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/353'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"florencio04@braun.com","name":"Emily Heidenreich","bio":null,"companyName":null,"phone":"481-254-2016 x512","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"353","_version":3,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/143'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"marcelo18@gmail.com","name":"Miss Shyann Mills PhD","bio":null,"companyName":null,"phone":"478.957.4967 x67616","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '149'
+        body: '{"_index":"test_agents","_type":"agent","_id":"143","_version":11,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/337'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"kaci.quitzon@gmail.com","name":"Dr. Leopold Spencer","bio":null,"companyName":null,"phone":"791.534.9295 x3499","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"337","_version":5,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'

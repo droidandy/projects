@@ -1,0 +1,35 @@
+.vehicleType {
+  img {
+    width: auto;
+  }
+
+  &.xs {
+    height: 20px;
+    width: 50px;
+
+    img {
+      max-height: 15px;
+      max-width: 40px;
+    }
+  }
+
+  &.small {
+    max-height: 38px;
+    max-width: 80px;
+
+    img {
+      max-height: 38px;
+      max-width: 80px;
+    }
+  }
+
+  &.big {
+    height: 50px;
+    width: 120px;
+
+    img {
+      max-height: 50px;
+      max-width: 120px;
+    }
+  }
+}

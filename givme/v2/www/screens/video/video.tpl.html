@@ -1,0 +1,19 @@
+<ion-view on-finish-render="ngRepeatFinished" class="it">
+  <ion-content class="gm-content transparent" style="padding-top: 0;" scroll="false">
+    <div class="page">
+      <div class="relative" id="screenContainer">
+        <img ng-if="image" ng-src="{{getImage()}}" class="background-screen">
+        <a class="info-icon tool" ng-click="showAttentionPopup()" id="info_link">info</a>
+        <div class="chat-thumb tool" id="videoItemContainer">
+          <div id="yourVideoItem tool" class=""></div>
+        </div>
+        <ul class="call-opt tool">
+          <li class="call-icon">
+            <a class="tool" ng-click="disconnect()">Drop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

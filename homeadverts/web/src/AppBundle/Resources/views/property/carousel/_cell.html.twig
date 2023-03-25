@@ -1,0 +1,17 @@
+<div class="gallery-cell --order-{{ loop.index0 }} {% if loop.last %}--order-last{% endif %}">
+
+    {% include 'AppBundle:property:edit.html.twig' with {
+        'property':property,
+        'photo':photo,
+    } %}
+
+    <img class="gallery-cell-image"
+         src="{{ photo.url }}"
+         data-flickity-lazyload="{{ photo.lazyload }}"
+         data-index="{{ loop.index0 }}"
+         alt="{{ property|property_title }}"
+         title="{{ property|property_title }}"
+    />
+
+    {% include "AppBundle:property/carousel:_toolbar.html.twig" with { type: type } %}
+</div>

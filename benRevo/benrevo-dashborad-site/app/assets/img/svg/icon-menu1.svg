@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.4 29.4" width="30" height="30">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.4px;}</style>
+  </defs>
+  <title>icon-menu1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="chrome">
+      <g id="Pie_Chart_-_Alt" data-name="Pie Chart - Alt">
+        <circle id="Chart" class="cls-1" cx="14.7" cy="14.7" r="14"/>
+        <polyline class="cls-1" points="14.7 0.7 14.7 14.7 28.7 14.7"/>
+        <line class="cls-1" x1="24.6" y1="4.8" x2="4.79" y2="24.59"/>
+        <line class="cls-1" x1="20.94" y1="2.16" x2="14.7" y2="8.38"/>
+        <line class="cls-1" x1="27.32" y1="8.6" x2="21.23" y2="14.68"/>
+      </g>
+    </g>
+  </g>
+</svg>

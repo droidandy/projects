@@ -1,0 +1,10 @@
+default: &default
+  adapter: postgresql
+  database: <%= ENV["OTE__DB__DATABASE"] %>
+  user: <%= ENV["OTE__DB__USER"] %>
+  password: <%= ENV["OTE__DB__PASSWORD"] %>
+  encoding: utf8
+  locale: en_US.UTF-8
+  host: <%= ENV["OTE__DB__HOST"] %>
+  port: <%= ENV["OTE__DB__PORT"] %>
+  max_connections: <%= ENV["OTE__DB__MAX_CONNECTIONS"] %>

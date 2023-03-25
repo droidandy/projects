@@ -1,0 +1,73 @@
+page-registerrole {
+  .checkbox-inner
+  {
+    border-color: #f66565!important;
+  }
+
+  .checkbox-icon
+  {
+        border-radius: 4px!important;
+  }
+
+  h2,.item-inner,ion-item
+  {
+    border:none!important;
+  }
+
+  .item-block
+  {
+    padding: 4px 0;
+    padding-left: 0!important;
+  }
+
+  .scroll-content
+  {
+    padding: 50px!important;
+  }
+
+  h2
+  {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .checkbox-icon
+  {
+    border-color: #f66565!important;
+  }
+
+  .role{
+    border-bottom: solid 1px #ccc;
+  }
+
+  .header
+  {
+    box-shadow: none!important;
+  }
+
+  .back-button-icon
+  {
+    color:#f66565;
+  }
+
+  .back-button-text
+  {
+    display: none;
+  }
+
+  .selectbox
+  {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #f77070;
+    float: left;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+
+  .selectbox_active
+  {
+    background: #f77070;
+  }
+
+}

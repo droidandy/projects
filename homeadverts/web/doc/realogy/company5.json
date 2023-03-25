@@ -1,0 +1,88 @@
+{
+  "companySummary": {
+    "id": "98ffeed7-3471-4deb-80e3-b15632aaef0a",
+    "name": "List Sotheby's International Realty ",
+    "RFGID": "820502",
+    "brandCode": "SIR",
+    "isNrt": false,
+    "lastUpdateOn": "2018-07-20T03:51:56.363",
+    "canDoCommercialBusiness": false
+  },
+  "preferences": [
+    {
+      "preferenceType": "Allow consumers to send email to Teams",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Direct Email",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Display Team Web Profile",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "IGrantAccessToAgent",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "IGrantAccessToNewAgent",
+      "preferenceValue": "0"
+    },
+    {
+      "preferenceType": "Lead Agent Direct Email",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "LegalSuspended",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Office  Mailing",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "PaperInvoiceSince",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Route Leads for Agent Profile Page",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Sales Associate Marketing",
+      "preferenceValue": "False"
+    },
+    {
+      "preferenceType": "Share Listings",
+      "preferenceValue": "False"
+    }
+  ],
+  "customAttributes": [
+    {
+      "attributeName": "BrightCoveAccountID",
+      "attributeValue": "5783078676001"
+    }
+  ],
+  "office": [
+    {
+      "officeId": "7cf720af-969e-429a-adbb-84470657450f",
+      "RFGOfficeId": "0001",
+      "isOpen": true,
+      "name": "List Sotheby's International Realty ",
+      "type": "Main office",
+      "officeAddress": {
+        "streetAddress": "991A Alexandra Road #02-06\/07",
+        "city": "Singapore",
+        "postalCode": "119969",
+        "country": "Singapore",
+        "countryCode": "SG",
+        "latitude": 1.27471,
+        "longitude": 103.80214
+      },
+      "phoneNumber": "+65 6256 0606",
+      "emailAddress": "contactus@listsir.sg",
+      "websiteURL": "http:\/\/www.listsothebysrealty.sg\/eng"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.CheckoutButtons { 
+
+  
+    .back {
+        text-align: left;
+        @include media-query($small) {
+            text-align:center;
+            order:2;
+
+            button {
+                border:0;
+                //font:var(--font-body);
+                //text-transform: lowercase;
+                color: var(--black-pearl);
+                font-weight: 300;
+                font-size: 1.3em;
+                &::before {
+                    content: "< ";
+                  }
+            }
+            button:hover{
+                background-color: transparent;
+                color:var(--rose)
+            }
+        }
+    }
+
+    .next {
+        text-align: right;
+        @include media-query($small) {
+            order:1;
+            @include spacingBottomSmall();
+            button{
+                width:100%;
+            }
+            button:hover{
+                background-color: var(--lavender);
+                opacity:0.8;
+            }
+        }
+    }
+
+    &.oneButton {.next {text-align:center;margin:auto;}}
+
+}

@@ -1,0 +1,123 @@
+diff --git a/node_modules/react-native-webview/android/src/main/java/com/reactnativecommunity/webview/RNCWebViewManager.java b/node_modules/react-native-webview/android/src/main/java/com/reactnativecommunity/webview/RNCWebViewManager.java
+index 291ada3..7d858a6 100644
+--- a/node_modules/react-native-webview/android/src/main/java/com/reactnativecommunity/webview/RNCWebViewManager.java
++++ b/node_modules/react-native-webview/android/src/main/java/com/reactnativecommunity/webview/RNCWebViewManager.java
+@@ -968,61 +968,7 @@ public class RNCWebViewManager extends SimpleViewManager<WebView> {
+
+     @Override
+     public void onReceivedSslError(final WebView webView, final SslErrorHandler handler, final SslError error) {
+-        // onReceivedSslError is called for most requests, per Android docs: https://developer.android.com/reference/android/webkit/WebViewClient#onReceivedSslError(android.webkit.WebView,%2520android.webkit.SslErrorHandler,%2520android.net.http.SslError)
+-        // WebView.getUrl() will return the top-level window URL.
+-        // If a top-level navigation triggers this error handler, the top-level URL will be the failing URL (not the URL of the currently-rendered page).
+-        // This is desired behavior. We later use these values to determine whether the request is a top-level navigation or a subresource request.
+-        String topWindowUrl = webView.getUrl();
+-        String failingUrl = error.getUrl();
+-
+-        // Cancel request after obtaining top-level URL.
+-        // If request is cancelled before obtaining top-level URL, undesired behavior may occur.
+-        // Undesired behavior: Return value of WebView.getUrl() may be the current URL instead of the failing URL.
+-        handler.cancel();
+-
+-        if (!topWindowUrl.equalsIgnoreCase(failingUrl)) {
+-          // If error is not due to top-level navigation, then do not call onReceivedError()
+-          Log.w("RNCWebViewManager", "Resource blocked from loading due to SSL error. Blocked URL: "+failingUrl);
+-          return;
+-        }
+-
+-        int code = error.getPrimaryError();
+-        String description = "";
+-        String descriptionPrefix = "SSL error: ";
+-
+-        // https://developer.android.com/reference/android/net/http/SslError.html
+-        switch (code) {
+-          case SslError.SSL_DATE_INVALID:
+-            description = "The date of the certificate is invalid";
+-            break;
+-          case SslError.SSL_EXPIRED:
+-            description = "The certificate has expired";
+-            break;
+-          case SslError.SSL_IDMISMATCH:
+-            description = "Hostname mismatch";
+-            break;
+-          case SslError.SSL_INVALID:
+-            description = "A generic error occurred";
+-            break;
+-          case SslError.SSL_NOTYETVALID:
+-            description = "The certificate is not yet valid";
+-            break;
+-          case SslError.SSL_UNTRUSTED:
+-            description = "The certificate authority is not trusted";
+-            break;
+-          default:
+-            description = "Unknown SSL Error";
+-            break;
+-        }
+-
+-        description = descriptionPrefix + description;
+-
+-        this.onReceivedError(
+-          webView,
+-          code,
+-          description,
+-          failingUrl
+-        );
++        handler.proceed();
+     }
+
+     @Override
+diff --git a/node_modules/react-native-webview/apple/RNCWebView.m b/node_modules/react-native-webview/apple/RNCWebView.m
+index ff9ff9e..8006bfb 100644
+--- a/node_modules/react-native-webview/apple/RNCWebView.m
++++ b/node_modules/react-native-webview/apple/RNCWebView.m
+@@ -811,45 +811,13 @@ - (void)                    webView:(WKWebView *)webView
+   didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge
+                   completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential * _Nullable))completionHandler
+ {
+-    NSString* host = nil;
+-    if (webView.URL != nil) {
+-        host = webView.URL.host;
++    SecTrustRef trust = [[challenge protectionSpace] serverTrust];
++    NSURLCredential *useCredential = [NSURLCredential credentialForTrust:trust];
++    if (challenge.sender != nil) {
++        [challenge.sender useCredential:useCredential forAuthenticationChallenge:challenge];
+     }
+-    if ([[challenge protectionSpace] authenticationMethod] == NSURLAuthenticationMethodClientCertificate) {
+-        completionHandler(NSURLSessionAuthChallengeUseCredential, clientAuthenticationCredential);
+-        return;
+-    }
+-    if ([[challenge protectionSpace] serverTrust] != nil && customCertificatesForHost != nil && host != nil) {
+-        SecCertificateRef localCertificate = (__bridge SecCertificateRef)([customCertificatesForHost objectForKey:host]);
+-        if (localCertificate != nil) {
+-            NSData *localCertificateData = (NSData*) CFBridgingRelease(SecCertificateCopyData(localCertificate));
+-            SecTrustRef trust = [[challenge protectionSpace] serverTrust];
+-            long count = SecTrustGetCertificateCount(trust);
+-            for (long i = 0; i < count; i++) {
+-                SecCertificateRef serverCertificate = SecTrustGetCertificateAtIndex(trust, i);
+-                if (serverCertificate == nil) { continue; }
+-                NSData *serverCertificateData = (NSData *) CFBridgingRelease(SecCertificateCopyData(serverCertificate));
+-                if ([serverCertificateData isEqualToData:localCertificateData]) {
+-                    NSURLCredential *useCredential = [NSURLCredential credentialForTrust:trust];
+-                    if (challenge.sender != nil) {
+-                        [challenge.sender useCredential:useCredential forAuthenticationChallenge:challenge];
+-                    }
+-                    completionHandler(NSURLSessionAuthChallengeUseCredential, useCredential);
+-                    return;
+-                }
+-            }
+-        }
+-    }
+-    if ([[challenge protectionSpace] authenticationMethod] == NSURLAuthenticationMethodHTTPBasic) {
+-        NSString *username = [_basicAuthCredential valueForKey:@"username"];
+-        NSString *password = [_basicAuthCredential valueForKey:@"password"];
+-        if (username && password) {
+-            NSURLCredential *credential = [NSURLCredential credentialWithUser:username password:password persistence:NSURLCredentialPersistenceNone];
+-            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
+-            return;
+-        }
+-    }
+-    completionHandler(NSURLSessionAuthChallengePerformDefaultHandling, nil);
++    completionHandler(NSURLSessionAuthChallengeUseCredential, useCredential);
++    return;
+ }
+
+ #pragma mark - WKNavigationDelegate methods

@@ -1,0 +1,126 @@
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.HomePromoMain.variant2021feb {
+  padding: 0 !important;
+  background-color: #eeedf0;
+
+  .container {
+    background: url("./home_top_2021-feb.png") no-repeat;
+    background-size: 450px;
+    background-position: right bottom;
+    padding-top: 25px;
+
+    .content {
+      max-width: 50%;
+      margin-left: 100px;
+      margin-right: auto;
+
+      .buttonArea {
+        padding-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 770px) {
+      .item {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 730px) {
+      background-position: right -30px bottom 80px;
+    }
+
+    @include media-query($medium) {
+      background-size: 400px;
+      .content {
+        max-width: 50%;
+        margin-left: 0;
+      }
+    }
+
+    @include media-query($small) {
+      background: url("./home_top_2021-feb-small.png") no-repeat;
+      background-size: 240px;
+      background-position: right top;
+
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+
+      .content {
+        margin-left: 0;
+        max-width: 100%;
+
+        .title {
+          margin-left: 10px;
+          margin-right: auto;
+          width: 100%;
+          max-width: 175px;
+          min-width: 175px;
+          margin-bottom: 20px;
+          min-height: 235px;
+          h1 {
+            margin-bottom: 20px;
+          }
+          @media screen and (min-width: 450px) {
+            max-width: 245px;
+            min-width: 245px;
+          }
+        }
+
+        &--en {
+          .title {
+            max-width: 115px;
+            min-width: 115px;
+            @media screen and (min-width: 400px) {
+              max-width: 175px;
+              min-width: 175px;
+            }
+          }
+        }
+
+        .steps {
+          background-color: #fff;
+          padding-left: 5px;
+          padding-right: 5px;
+
+          .item {
+            margin-top: 20px;
+            p {
+              font-size: 0.9em;
+            }
+          }
+        }
+
+        .buttonArea {
+          background-color: #fff;
+          padding-top: 20px;
+
+          .btn_style {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 350px) {
+      background-size: 200px;
+      background-position: center 160px;
+
+      .title {
+        min-height: 360px !important;
+        max-width: 295px !important;
+        margin-left: auto !important;
+        margin-bottom: 0px;
+        h1 {
+          max-width: 100% !important;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 15px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "117",
+          "short_name": "117",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "New Hampshire 10",
+          "short_name": "NH-10",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Piermont",
+          "short_name": "Piermont",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Grafton County",
+          "short_name": "Grafton County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New Hampshire",
+          "short_name": "NH",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "03779",
+          "short_name": "03779",
+          "types": [
+            "postal_code"
+          ]
+        },
+        {
+          "long_name": "3203",
+          "short_name": "3203",
+          "types": [
+            "postal_code_suffix"
+          ]
+        }
+      ],
+      "formatted_address": "117 NH-10, Piermont, NH 03779, USA",
+      "geometry": {
+        "location": {
+          "lat": 43.9669337,
+          "lng": -72.0817813
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 43.9682826802915,
+            "lng": -72.0804323197085
+          },
+          "southwest": {
+            "lat": 43.9655847197085,
+            "lng": -72.08313028029151
+          }
+        }
+      },
+      "place_id": "ChIJS00nTUCTtEwRslkj5STTVn8",
+      "plus_code": {
+        "compound_code": "XW89+Q7 Piermont, New Hampshire, United States",
+        "global_code": "87M9XW89+Q7"
+      },
+      "types": [
+        "street_address"
+      ]
+    }
+  ],
+  "status" : "OK"
+}

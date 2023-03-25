@@ -1,0 +1,130 @@
+{
+    "name": "LuxuryAffairs.co.uk",
+    "description": "LuxuryAffairs.co.uk",
+    "autoload": {
+        "psr-0": { "": "src/" },
+        "psr-4": { "Eko\\GoogleTranslateBundle\\": "src/Eko/GoogleTranslateBundle/" }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Test\\": "test/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.0, ^7.2",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-dom": "*",
+
+        "twig/twig": "~1",
+        "twig/extensions": "dev-master",
+
+        "symfony/symfony": "~2.8",
+        "symfony/assetic-bundle": "~2.8",
+        "symfony/swiftmailer-bundle": "~2.6",
+        "symfony/monolog-bundle": "~3.3",
+
+        "sensio/distribution-bundle": "~3.0",
+        "sensio/framework-extra-bundle": "~3.0",
+
+        "doctrine/orm": "~2.5",
+        "doctrine/doctrine-bundle": "~1.2",
+        "doctrine/doctrine-migrations-bundle": "1.*",
+
+        "friendsofsymfony/user-bundle": "2.0.0-alpha3",
+        "friendsofsymfony/rest-bundle": "~1.7.8",
+
+        "jms/di-extra-bundle": "1.4.*",
+        "jms/serializer-bundle": "^1.5",
+
+        "incenteev/composer-parameter-handler": "~2.0",
+        "hwi/oauth-bundle": "^0.4.2",
+        "elasticsearch/elasticsearch": "~5.0",
+        "predis/predis": "~1.0",
+        "snc/redis-bundle": "1.1.x-dev",
+        "cocur/slugify": "0.2.3",
+        "cmfcmf/openweathermap-php-api": "1.1.*",
+        "aws/aws-sdk-php": "^3.48",
+        "eko/googletranslatebundle": "dev-master",
+        "crodas/influx-php": "0.1.*",
+        "geoip2/geoip2": "dev-master",
+        "ahmedsamy/hype-mailchimp-bundle": "dev-master",
+        "chrisboulton/php-resque": "master",
+        "exercise/htmlpurifier-bundle": "*",
+        "hobnob/xml-stream-reader": "dev-master",
+        "willdurand/geocoder-bundle": "~3.0",
+        "patchwork/utf8": "1.1.*",
+        "misd/phone-number-bundle": "~1.0",
+        "raven/raven": "~0.10",
+        "ocramius/proxy-manager": "~0.5",
+        "presta/sitemap-bundle": "^1.3@dev",
+
+        "imagine/imagine": "~0.5.0",
+        "liip/imagine-bundle": "^1.3",
+
+        "suncat/mobile-detect-bundle": "^1.0",
+        "hashids/hashids": "^2",
+        "dunglas/angular-csrf-bundle": "^1.0",
+
+        "guzzle/guzzle": "3.8.1",
+        "guzzlehttp/psr7": "^1.4",
+        "guzzlehttp/guzzle": "^6.3",
+
+        "facebook/graph-sdk": "^5.6",
+        "abraham/twitteroauth": "^0.7.4",
+        "happyr/linkedin-api-client": "^1.0",
+        "php-vcr/php-vcr": "^1.4",
+        "andreskrey/readability.php": "^1.1",
+        "sainsburys/guzzle-oauth2-plugin": "^3.0",
+        "taxamo/taxamo-php": "1.0.23",
+        "braintree/braintree_php": "^3.35",
+        "nelmio/cors-bundle": "^1.5",
+        "pusher/pusher-php-server": "^3.3",
+        "google/cloud-language": "^0.18.0"
+    },
+    "require-dev": {
+        "mikey179/vfsStream": "v1.2.0",
+        "mockery/mockery": "dev-master@dev",
+        "phpunit/phpunit": "^5.7",
+        "fzaninotto/faker": "^1.6"
+    },
+    "replace": {
+        "eko/googletranslatebundle": "dev-master"
+    },
+    "suggest": {
+        "ext-gmp": "*",
+        "ext-intl": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        },
+        "branch-alias": {
+            "dev-master": "2.3-dev"
+        }
+    }
+
+}

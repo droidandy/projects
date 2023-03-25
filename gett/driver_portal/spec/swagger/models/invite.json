@@ -1,0 +1,24 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "created_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "updated_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "accepted_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "expires_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "step": {
+    "type": "string"
+  }
+}

@@ -1,0 +1,135 @@
+version: 2
+
+references:
+  database_test_environment: &database_test_environment
+    environment:
+      DATABASE_URL: "postgres://charging_service_user@localhost:5432/charging_service_test"
+
+  add_ssh_keys: &add_ssh_keys
+    fingerprints:
+      - "82:d3:77:fc:d5:a6:36:02:8c:bd:77:0e:1f:61:a6:a4"
+
+  make_aws_creds: &make_aws_creds
+    run: mkdir ~/.aws/ && echo "[default]" >> ~/.aws/credentials && printenv  | grep AWS >> ~/.aws/credentials
+
+  ecr_login: &ecr_login
+    run: $(aws ecr get-login --no-include-email --region eu-west-1)
+
+
+jobs:
+  tests:
+    docker:
+      - image: circleci/ruby:2.5.3-node-browsers
+        environment:
+          - RAILS_ENV=test
+          - RACK_ENV=test
+          - PG_HOST=localhost
+          - PG_USER=charging_service_user
+
+      - image: circleci/postgres:9.6
+        environment:
+          - POSTGRES_USER=charging_service_user
+          - POSTGRES_DB=charging_service_test
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - add_ssh_keys: *add_ssh_keys
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Gemfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run:
+          name: Install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - run:
+          name: Copy configs
+          command: |
+            cp .env.example .env
+            cp config/database.yml.example config/database.yml
+            cp config/settings.yml.example config/settings.yml
+        
+      # Database setup
+      - run:
+          name: Setup database
+          <<: *database_test_environment
+          command: |
+            bundle exec rake db:setup
+
+      # Run tests
+      - run:
+          name: run tests
+          <<: *database_test_environment
+          command: |
+            mkdir /tmp/test-results
+            bundle exec rspec
+
+      # collect reports
+      - store_test_results:
+          path: /tmp/test-results
+      - store_artifacts:
+          path: /tmp/test-results
+          destination: test-results
+
+  build:
+    docker:
+      - image: circleci/python:3.6.1
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      - add_ssh_keys: *add_ssh_keys
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "Gemfile.lock" }}
+          - v1-dependencies-
+
+      - run:
+          name: install aws
+          command: |
+            sudo pip3 install --upgrade pip
+            sudo pip3 install awscli
+            aws --version
+
+      - *make_aws_creds
+
+      - *ecr_login
+
+      - run:
+          name: docker build
+          command: |
+            printenv
+            docker build -t charging_service --build-arg GH_TOKEN=${GH_TOKEN} .
+            docker tag charging_service:latest 622461947221.dkr.ecr.eu-west-1.amazonaws.com/charging_service:latest
+            docker push 622461947221.dkr.ecr.eu-west-1.amazonaws.com/charging_service:latest
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+
+workflows:
+  version: 2
+  main_workflow:
+    jobs:
+      - tests
+        #- build:
+        #  requires:
+        #    - tests

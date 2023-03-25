@@ -1,0 +1,202 @@
+.uhc-home {
+  font-family: 'Montserrat';
+  padding-bottom: 510px;
+
+  .block-top {
+    color: #ffffff;
+    background: url("../img/bg_home_uhc.png") no-repeat center;
+    background-size: cover;
+    padding-bottom: 20px;
+
+    .header {
+      padding-top: 30px;
+      margin-bottom: 70px;
+
+      @media only screen and (max-width: 991px) {
+        & {
+          margin-bottom: 60px;
+        }
+      }
+
+      img {
+        width: 170px;
+        float: left;
+        margin-top: -5px;
+      }
+
+      .ui.menu {
+        .right.menu {
+          & > .item {
+            color: rgba(255, 255, 255, 0.7);
+
+            & > span, .dropdown > span {
+              font-family: 'Montserrat';
+            }
+
+            &.active {
+              color: #ffffff;
+              background: none;
+            }
+
+            &:hover {
+              background: none;
+            }
+          }
+
+
+        }
+
+        &:last-child {
+            margin-top: 0;
+        }
+      }
+    }
+
+    h6 {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 22px;
+      color: #ffffff;
+      margin-bottom: 10px;
+
+      .fa {
+        font-size: 16px;
+        color: rgba(255,255,255, .3);
+      }
+    }
+
+    .sub-title {
+      font-size: 38px;
+      font-weight: 100;
+      line-height: 50px;
+
+      @media only screen and (max-width: 1350px) and (min-width: 991px) {
+        & {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+      @media only screen and (max-width: 774px) {
+        & {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .explore-button {
+      cursor: pointer;
+      background: #00c2e5;
+      font-family: 'Montserrat' !important;
+      border-radius: 3px !important;
+      -moz-border-radius: 3px !important;
+      -o-border-radius: 3px !important;
+      -webkit-border-radius: 3px !important;
+      color: #fff;
+      display: inline-block;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      padding: 15px 30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 0;
+      margin-bottom: 10px;
+      margin-top: 30px;
+      font-weight: 400;
+    }
+
+    .header-block {
+      margin-top: 20px;
+    }
+
+    .ui.grid {
+      .column.ipad-block {
+        margin-bottom: -80px;
+        padding-left: 30px;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .block-features {
+    background-color: #ffffff;
+    padding: 70px 0 70px 0;
+
+    .powered {
+
+      img {
+        width: 200px;
+        float: right;
+      }
+    }
+
+    .features {
+      padding-top: 30px;
+    }
+
+    .block-features-item {
+
+      &:first-child {
+        .block-features-icon {
+          height: 70px;
+          margin-top: -10px;
+        }
+      }
+
+      .block-features-icon {
+        height: 55px;
+        max-width: 70px;
+        float: left;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .block-features-title, .block-features-body {
+        margin-left: 85px;
+      }
+
+      .block-features-title {
+        font-size: 16px;
+      }
+
+      .block-features-body {
+        color: #7c7e80;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .home-block-signup {
+    background: url("../img/bg2_home_uhc.png") no-repeat center;
+    background-size: cover;
+    padding: 50px 0 100px 0;
+
+      h1 {
+        text-align: center;
+        font-size: 36px;
+      }
+  }
+
+  .app-footer {
+    margin-top: 0 !important;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 620px;
+    padding-top: 70px;
+    font-size: 15px;
+    background-color: #313233;
+    color: #7c7c7c;
+
+    img {
+      width: 230px;
+      margin: 0 auto 40px;
+    }
+  }
+}

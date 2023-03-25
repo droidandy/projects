@@ -1,0 +1,15 @@
+FROM node:lts-alpine
+
+# Copy source
+COPY ./apex-ext-datagrabber /apex-ext-datagrabber/
+COPY ./utils /utils/
+
+# Working directory
+WORKDIR /apex-ext-datagrabber
+
+ENV NODE_ENV=development
+# Install dependencies, build and cleanup
+RUN cd /utils && npm ci --unsafe-perm && cd /apex-ext-datagrabber && npm ci --unsafe-perm && npm run build && npm prune
+
+# Start job
+CMD npm start

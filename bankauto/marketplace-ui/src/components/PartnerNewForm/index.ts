@@ -1,0 +1,1 @@
+export { PartnerNewForm } from './PartnerNewForm';

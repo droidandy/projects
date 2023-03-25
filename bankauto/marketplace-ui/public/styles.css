@@ -1,0 +1,116 @@
+html {
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url('/fonts/OpenSans-Regular.woff2') format('woff2'), 
+       url('/fonts/OpenSans-Regular.woff') format('woff'), 
+       url('/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  src: url('/fonts/OpenSans-SemiBold.woff2') format('woff2'), 
+       url('/fonts/OpenSans-SemiBold.woff') format('woff'), 
+       url('/fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  src: url('/fonts/OpenSans-Bold.woff2') format('woff2'), 
+       url('/fonts/OpenSans-Bold.woff') format('woff'), 
+       url('/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  src: url('/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'), 
+       url('/fonts/HelveticaNeueCyr-Bold.woff') format('woff'), 
+       url('/fonts/HelveticaNeueCyr-Bold') format('truetype');
+  font-display: swap;
+}
+
+html * {
+  font-family: Open Sans, Helvetica Neue, sans-serif !important;
+}
+
+@media screen and (max-width: 1920px) {
+  html {
+    font-size: 16px;
+    font-size: 0.83333333vw;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+    font-size: 0.97222222vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 10px;
+    font-size: 1.04166666vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+p,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+::-moz-selection {
+  background-color: #990031;
+  color: #ffffff;
+}
+::selection {
+  background-color: #990031;
+  color: #ffffff;
+}

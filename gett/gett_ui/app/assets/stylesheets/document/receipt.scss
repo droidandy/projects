@@ -1,0 +1,83 @@
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 40px;
+  .header-line {
+    font-size: 24px;
+    line-height: 150px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .logo {
+    height: 60px;
+    img {
+      height: 100%;
+      vertical-align: top;
+    }
+  }
+  .invoice-line {
+    padding: 0.25cm;
+    background-color: #fff;
+    margin-bottom: 1cm;
+    .card-holder img {
+      vertical-align: middle;
+    }
+  }
+  .map img {
+    width: 792px;
+  }
+  table {
+    width: 100%;
+    thead th {
+      display: block;
+      margin-top: 40px;
+    }
+    tfoot td {
+      display: block;
+      height: 10px;
+      margin-bottom: 30px;
+    }
+  }
+  .content {
+    margin-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    table {
+      padding: 40px 0;
+    }
+    .address-line {
+      font-size: 14px;
+      padding-bottom: 20px;
+      .icon-holder {
+        display: inline-block;
+        width: 25px;
+        margin-right: 0.5cm;
+        img {
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+    }
+    .driver-details {
+      width: 70px;
+      padding-right: 1.5cm;
+    }
+  }
+}
+
+.route-point {
+  page-break-before: always;
+  page-break-after: auto;
+}
+
+.avatar-holder {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.receipt-title {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}

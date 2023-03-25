@@ -1,0 +1,344 @@
+{
+  "listingSummary": {
+    "listingId": "00003da9-9eb6-4b5c-b754-57f9b001b5f8",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-06-04",
+    "photoCount": 11,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 125000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "TBD Golden Stone",
+      "city": "Carbondale",
+      "district": "Jefferson County",
+      "stateProvince": "Colorado",
+      "stateProvinceCode": "CO",
+      "postalCode": "81623",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 39.4011383056641,
+      "longitude": -107.216186523438,
+      "geoCodeConfidenceLevel": "Low",
+      "formattedAddress": "Golden, CO"
+    },
+    "mlsNumbers": [
+      "154423"
+    ],
+    "RFGListingId": "TFN55P",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/tfn55p",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Lots & Land",
+    "propertyType": "Land -Agricultural (Not Zoned)",
+    "propertyStyle": "Not Applicable",
+    "propertyName": "Roaring Fork Mesa at Aspen Glen Lot:32",
+    "lotSize": "15899.4 SF",
+    "defaultPhotoURL": "//openapi.azureedge.net/365465C4-1D5E-4E80-A739-E13E1840F307",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-06-06T08:43:52.890",
+    "agents": [
+      {
+        "id": "a95c7c7b-b040-4d19-9353-9a70e828451c",
+        "name": "Laura Gee",
+        "firstName": "Laura",
+        "lastName": "Gee",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/382D0361-B364-497E-87E0-EC8CED153CE0",
+        "emailAddress": "Laura.Gee@morrisandfyrwald.com",
+        "leadEmailAddress": "800262.lead.4024184@leads.leadrouter.com",
+        "businessPhone": "+1 9709488568",
+        "isPrimary": true,
+        "office": {
+          "officeId": "5c9017cf-e1de-431d-be20-53dff6e84d9e",
+          "RFGOfficeId": "0012",
+          "companyId": "99d5ee37-c916-4f4a-9c15-2f3344d44c6d",
+          "companyName": "Aspen Snowmass",
+          "RFGCompanyId": "800262",
+          "brandCode": "SIR",
+          "name": "Aspen Snowmass Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "201 Midland Avenue, P.O. Box 650",
+            "city": "Basalt",
+            "district": "Pitkin",
+            "stateProvince": "Colorado",
+            "stateProvinceCode": "CO",
+            "postalCode": "81621",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 39.3625602722168,
+            "longitude": -107.032180786133,
+            "formattedAddress": "201 Midland Ave, Basalt, CO 81621"
+          },
+          "phoneNumber": "9709278080",
+          "emailAddress": "info@aspenshowmasssir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "providerKey": "00003da9-9eb6-4b5c-b754-57f9b001b5f8",
+  "propertyFeatures": [
+    {
+      "groupName": "Views",
+      "description": "Scenic"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Golf"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Skiing"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Level"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Pool"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Golf"
+    },
+    {
+      "groupName": "General",
+      "description": "Clubhouse"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Country Club"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Boating"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hunting"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Ramp"
+    },
+    {
+      "groupName": "Location",
+      "description": "Cul-de-sac"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Fishing"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Biking"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Climbing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hiking"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Snowmobiling"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Horse Riding/Stables"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Tennis"
+    },
+    {
+      "groupName": "Views",
+      "description": "Mountain"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Finest pricing available in Aspen Glen. This lot is located in Roaring Fork Mesa in Aspen Glen. One lot adjoining and two lots across the street are also available from the same seller. Homes built in this area enjoy grounds maintenance, landscaping, snow removal, window washing, and more (add'l fees once home is built). The Aspen Glen community is bike- and pedestrian-friendly, with access to the valley's Rio Grande Trail and 4.5 miles of gold-medal fishing. Aspen Glen is just minutes from Carbondale and Glenwood Springs, both named a ''Best Place to Live'' by Outside Magazine.\r\nMembership to the Aspen Glen Club provides access to the clubhouse, pool, fitness center, golf course, tennis & pickle ball courts, and social events. While membership is not included in the lot purchase, it is available. See attached document for more information on the Club.",
+      "htmlRemark": "<p style=\"font-family: Arial, sans-serif; font-size: 13.3333px;\">Finest pricing available in Aspen Glen. This lot is located in Roaring Fork Mesa in Aspen Glen. One lot adjoining and two lots across the street are also available from the same seller. Homes built in this area enjoy grounds maintenance, landscaping, snow removal, window washing, and more (add'l fees once home is built). The Aspen Glen community is bike- and pedestrian-friendly, with access to the valley's Rio Grande Trail and 4.5 miles of gold-medal fishing. Aspen Glen is just minutes from Carbondale and Glenwood Springs, both named a ''Best Place to Live'' by Outside Magazine.</p><p style=\"font-family: Arial, sans-serif; font-size: 13.3333px;\">Membership to the Aspen Glen Club provides access to the clubhouse, pool, fitness center, golf course, tennis &amp; pickle ball courts, and social events. While membership is not included in the lot purchase, it is available. See attached document for more information on the Club.&nbsp;</p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/tfn55p",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "1AF80725-650A-4429-BC73-0552FA225C55",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/1AF80725-650A-4429-BC73-0552FA225C55",
+      "isDefault": false,
+      "caption": "M-32_2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3024,
+      "width": 4032,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "FF9FA7D7-1E8D-4648-AC73-4B6FB72B445F",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/FF9FA7D7-1E8D-4648-AC73-4B6FB72B445F",
+      "isDefault": false,
+      "caption": "Aspen Glen Golf Course_3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "7FDC63F1-BAD3-4EB7-9DA8-52BD14AC5DCA",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/7FDC63F1-BAD3-4EB7-9DA8-52BD14AC5DCA",
+      "isDefault": false,
+      "caption": "Aspen Glen Golf Course_2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "38FEB5BA-A796-4BEF-B4A1-56C1D2428A35",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/38FEB5BA-A796-4BEF-B4A1-56C1D2428A35",
+      "isDefault": false,
+      "caption": "Aspen Glen Scenic_2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "87F1C0C4-E6E8-4980-BF3F-6BA8498807B7",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/87F1C0C4-E6E8-4980-BF3F-6BA8498807B7",
+      "isDefault": false,
+      "caption": "Aspen Glen Scenic_1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "4060B4BD-A572-4BAF-AE57-6C1BA53BD77F",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/4060B4BD-A572-4BAF-AE57-6C1BA53BD77F",
+      "isDefault": false,
+      "caption": "Aspen Glen Golf Course_1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "1B76F67D-73F1-44E3-9474-BED5F46481B8",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/1B76F67D-73F1-44E3-9474-BED5F46481B8",
+      "isDefault": false,
+      "caption": "Front Gate - Summer",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2569,
+      "width": 4237,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "26356E5A-4DF6-4E18-9119-C6B20A0D231D",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/26356E5A-4DF6-4E18-9119-C6B20A0D231D",
+      "isDefault": false,
+      "caption": "M-32_1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3024,
+      "width": 4032,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "86E90A02-819A-496B-8BD0-D13ECEE1FBE6",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/86E90A02-819A-496B-8BD0-D13ECEE1FBE6",
+      "isDefault": false,
+      "caption": "Aspen Glen Clubhouse",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "365465C4-1D5E-4E80-A739-E13E1840F307",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/365465C4-1D5E-4E80-A739-E13E1840F307",
+      "isDefault": true,
+      "caption": "Aspen Glen Club Pool",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    },
+    {
+      "mediaID": "3525FE05-1A81-48FF-858B-E4CF760FFAAE",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/3525FE05-1A81-48FF-858B-E4CF760FFAAE",
+      "isDefault": false,
+      "caption": "Aspen Glen Club Tennis & Pickleball Courts",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1920,
+      "width": 2880,
+      "lastUpdateOn": "2018-06-06T08:43:52.907"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "154423",
+      "isPrimary": true
+    }
+  ]
+}

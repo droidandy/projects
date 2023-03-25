@@ -1,0 +1,1 @@
+export { CompanyTicker } from './CompanyTicker';

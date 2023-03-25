@@ -1,0 +1,325 @@
+{
+    "listingSummary": {
+        "listingId": "e52d9110-eecb-414c-bf7c-87c91b5195bb",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-08-07",
+        "photoCount": 11,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "EUR",
+            "amount": 310000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 362400
+        },
+        "propertyAddress": {
+            "city": "Funchal",
+            "district": "ilha da madeira",
+            "country": "Portugal",
+            "countryCode": "PT",
+            "geoCodeConfidenceLevel": "Medium"
+        },
+        "mlsNumbers": [
+            "111170198"
+        ],
+        "RFGListingId": "DNB83M",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/dnb83m",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Duplex",
+        "propertyStyle": "Other Style",
+        "propertyName": "Duplex, 2 bedrooms, for Sale",
+        "totalBath": 2,
+        "lotSize": "0 SM",
+        "buildingArea": "209.84 Sq. M",
+        "noOfBedrooms": 2,
+        "squareFootage": 2258.696776,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/B833EC26-CCE3-4B76-84C5-431D945AE667",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-08-08T02:35:17.960",
+        "agents": [
+            {
+                "id": "0ea8fd3f-9c99-48b4-b55a-d6bd98dfe845",
+                "name": "Pamela Dalton",
+                "firstName": "Pamela",
+                "lastName": "Dalton",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/9146984B-4A02-48ED-9F8B-79FEAA726ECE",
+                "emailAddress": "pdalton@briggsfreeman.com",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "36afe41a-58ae-449c-8616-00be89584092",
+                    "RFGOfficeId": "0001",
+                    "companyId": "42f7c2c9-0409-4dd0-b18b-d3fb994bce34",
+                    "companyName": "Briggs Freeman",
+                    "RFGCompanyId": "800306",
+                    "brandCode": "SIR",
+                    "name": "Briggs Freeman Sotheby's International Realty",
+                    "type": "Main office",
+                    "officeAddress": {
+                        "streetAddress": "5600 W. Lovers Lane, Suite 224,",
+                        "city": "Dallas",
+                        "district": "Dallas",
+                        "stateProvince": "Texas",
+                        "stateProvinceCode": "TX",
+                        "postalCode": "75209",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 32.85064,
+                        "longitude": -96.81632,
+                        "formattedAddress": "5600 W Lovers Ln, Dallas, TX 75209"
+                    },
+                    "phoneNumber": "2143500400",
+                    "emailAddress": "briggsfreeman@briggsfreeman.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 2,
+    "parkingPlaces": 0,
+    "levels": 6,
+    "yearBuilt": "2004",
+    "providerKey": "e52d9110-eecb-414c-bf7c-87c91b5195bb",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Headline",
+            "languageCode": "en",
+            "remark": "Duplex, 2 rooms, Funchal, S\u00e3o Martinho",
+            "htmlRemark": "Duplex, 2 rooms, Funchal, S\u00e3o Martinho"
+        },
+        {
+            "type": "Headline",
+            "languageCode": "pt",
+            "remark": "Duplex, 2 quartos, Funchal, S\u00e3o Martinho",
+            "htmlRemark": "Duplex, 2 quartos, Funchal, S\u00e3o Martinho"
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Exceptional duplex apartment,with high quality finishes, located on the top floor of the building. There have two bedrooms, one suite, a living room and a dining room with balcony. A fully equipped kitchen with laundry area and social bathroom. On the second floor there are an amazing an large attic room with about 88 square meters, with a panoramic balcony and also a bathroom. This is an open space where you can be subject to multiple adaptations, becoming a \"plus\" to be taken into account at the time of acquisition. It has two parking spaces and a storage room in the basement. Near here there are a variety of services of diverse commerce, catering, supermarkets, shopping, beaches, gymnasiums and it's so easy to get the speedway. We are certain that will offer you a formidable quality of life if it comes to acquire it. An assertive choice, either for investment or for own housing.",
+            "htmlRemark": "Exceptional duplex apartment,with high quality finishes, located on the top floor of the building. There have two bedrooms, one suite, a living room and a dining room with balcony. A fully equipped kitchen with laundry area and social bathroom. On the second floor there are an amazing an large attic room with about 88 square meters, with a panoramic balcony and also a bathroom. This is an open space where you can be subject to multiple adaptations, becoming a \"plus\" to be taken into account at the time of acquisition. It has two parking spaces and a storage room in the basement. Near here there are a variety of services of diverse commerce, catering, supermarkets, shopping, beaches, gymnasiums and it's so easy to get the speedway.  We are certain that will offer you a formidable quality of life if it comes to acquire it. An assertive choice, either for investment or for own housing."
+        },
+        {
+            "type": "Property Description",
+            "languageCode": "pt",
+            "remark": "Excepcional apartamento duplex, situado no \u00faltimo piso de pr\u00e9dio muito bem constru\u00eddo, com acabamentos de qualidade indiscut\u00edvel. Tem dois lugares de garagem e uma arrecada\u00e7\u00e3o na cave. Disp\u00f5e de \u00e1reas agradavelmente generosas, dois quartos de dormir, um deles suite, sala de estar e jantar com varanda, cozinha completamente equipada com zona de lavandaria e casa de banho social completa. No segundo piso surge um surpreendente e amplo s\u00f3t\u00e3o, com cerca de 88 metros quadrados, totalmente pavimentado e revestido, com varanda panor\u00e2mica e ainda uma casa de banho completa. Este espa\u00e7o encontra-se sem divis\u00f3rias, podendo ser sujeito a m\u00faltiplas adapta\u00e7\u00f5es, tornando-se um \"plus\" a ter em conta no momento da aquisi\u00e7\u00e3o. Perto de um conjunto de servi\u00e7os de com\u00e9rcio diverso, restaura\u00e7\u00e3o, supermercados, shopping, praias e gin\u00e1sios, e de f\u00e1cil acesso \u00e0 via-r\u00e1pida, estamos certos que oferecer-lhe-\u00e1 uma formid\u00e1vel qualidade de vida se vier a adquiri-lo. Uma escolha assertiva, seja para investimento ou para habita\u00e7\u00e3o pr\u00f3pria.",
+            "htmlRemark": "Excepcional apartamento duplex, situado no \u00faltimo piso de pr\u00e9dio muito bem constru\u00eddo, com acabamentos de qualidade indiscut\u00edvel. Tem dois lugares de garagem e uma arrecada\u00e7\u00e3o na cave. Disp\u00f5e de \u00e1reas agradavelmente generosas, dois quartos de dormir, um deles suite, sala de estar e jantar com varanda, cozinha completamente equipada com zona de lavandaria e casa de banho social completa. No segundo piso surge um surpreendente e amplo s\u00f3t\u00e3o, com cerca de 88 metros quadrados, totalmente pavimentado e revestido, com varanda panor\u00e2mica e ainda uma casa de banho completa. Este espa\u00e7o encontra-se sem divis\u00f3rias, podendo ser sujeito a m\u00faltiplas adapta\u00e7\u00f5es, tornando-se um \"plus\" a ter em conta no momento da aquisi\u00e7\u00e3o. Perto de um conjunto de servi\u00e7os de com\u00e9rcio diverso, restaura\u00e7\u00e3o, supermercados, shopping, praias e gin\u00e1sios, e de f\u00e1cil acesso \u00e0 via-r\u00e1pida, estamos certos que oferecer-lhe-\u00e1 uma formid\u00e1vel qualidade de vida se vier a adquiri-lo. Uma escolha assertiva, seja para investimento ou para habita\u00e7\u00e3o pr\u00f3pria."
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/dnb83m",
+            "contentLanguageCode": "en"
+        },
+        {
+            "type": "Local IDX URL",
+            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=25883&idioma=pt1",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "8AFB5671-9728-4F13-93DF-14959849C027",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/8AFB5671-9728-4F13-93DF-14959849C027",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5008,
+            "width": 7511,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "C7B5BE31-CBF1-45EE-96D0-15B7BCADA56D",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/C7B5BE31-CBF1-45EE-96D0-15B7BCADA56D",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5058,
+            "width": 7588,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "ED6CC276-3A88-41E7-9B37-403B39914C2C",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/ED6CC276-3A88-41E7-9B37-403B39914C2C",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 4282,
+            "width": 6422,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "B833EC26-CCE3-4B76-84C5-431D945AE667",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/B833EC26-CCE3-4B76-84C5-431D945AE667",
+            "isDefault": true,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5306,
+            "width": 7954,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "0939A529-FD2D-40E7-A183-4431A0443995",
+            "sequenceNumber": 1,
+            "url": "http:\/\/www.sothebysrealtypt.com\/imoveis\/show.aspx?idimovel=25883&idioma=pt1",
+            "isDefault": true,
+            "caption": "Duplex, 2 bedrooms, for Sale",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "AEE87B21-ACF0-4708-B74D-57C3B5CEED2D",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/AEE87B21-ACF0-4708-B74D-57C3B5CEED2D",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 4809,
+            "width": 7214,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "3E0C122C-4719-4F50-B7B3-675377C62B43",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/3E0C122C-4719-4F50-B7B3-675377C62B43",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 4430,
+            "width": 6645,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "61360CAF-08DC-41D9-A7A5-A4E99C74B821",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/61360CAF-08DC-41D9-A7A5-A4E99C74B821",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5034,
+            "width": 7553,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "0F4A0A20-090B-41E0-B6F6-B24CF0D153B1",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/0F4A0A20-090B-41E0-B6F6-B24CF0D153B1",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5304,
+            "width": 7952,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "E7EDFF88-CAE3-4318-9993-B4CE5771FEC6",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/E7EDFF88-CAE3-4318-9993-B4CE5771FEC6",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5304,
+            "width": 7952,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "72AA56C7-7566-452E-8A8A-BAA61465D33C",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/72AA56C7-7566-452E-8A8A-BAA61465D33C",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 4787,
+            "width": 7179,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        },
+        {
+            "mediaID": "190E5247-712C-4720-BEB0-EF08C65CBCDA",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/190E5247-712C-4720-BEB0-EF08C65CBCDA",
+            "isDefault": false,
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 5304,
+            "width": 7952,
+            "lastUpdateOn": "2018-04-12T17:52:25.850"
+        }
+    ],
+    "propertyRooms": [
+        {
+            "sequenceNumber": 1,
+            "level": "1",
+            "name": "Unknown"
+        },
+        {
+            "sequenceNumber": 2,
+            "level": "1",
+            "name": "Kitchen"
+        },
+        {
+            "sequenceNumber": 3,
+            "level": "1",
+            "name": "Unknown"
+        },
+        {
+            "sequenceNumber": 4,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 5,
+            "level": "1",
+            "name": "Bedroom"
+        },
+        {
+            "sequenceNumber": 6,
+            "level": "1",
+            "name": "Den"
+        },
+        {
+            "sequenceNumber": 7,
+            "level": "1",
+            "name": "Attic Finished"
+        },
+        {
+            "sequenceNumber": 8,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 9,
+            "level": "1",
+            "name": "Full Bath"
+        },
+        {
+            "sequenceNumber": 10,
+            "level": "1",
+            "name": "Full Bath"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "111170198",
+            "isPrimary": true
+        }
+    ]
+}

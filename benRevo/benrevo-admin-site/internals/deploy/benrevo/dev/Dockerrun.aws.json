@@ -1,0 +1,10 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "434704177489.dkr.ecr.us-west-2.amazonaws.com/dev-benrevo-admin-fe:latest",
+    "Update": "true"
+    },
+  "Ports": [{
+    "ContainerPort": "3000"
+  }]
+}

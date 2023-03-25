@@ -1,0 +1,363 @@
+@import "./variables-theme";
+@import "./semantic-ui-modules/checkbox";
+@import "./semantic-ui-modules/dropdown";
+
+/*
+ * Header
+ */
+
+.ui.header {
+  font-family: $MAIN_FONT;
+}
+
+/*
+ * Form
+ */
+
+.ui.form {
+  .field {
+    & > label {
+      margin-bottom: 10px;
+      color: $FONT_COLOR;
+      &.nowrap {
+        white-space: nowrap;
+      }
+    }
+
+    &.blue {
+      .ui.checkbox {
+        label {
+          &:before {
+            background-color: $BUTTON_BG_COLOR !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .field {
+      & > label {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+/*
+ * Table
+ */
+
+.ui.table {
+  font-family: $MAIN_FONT;
+  color: $FONT_COLOR;
+  border-radius: 0;
+
+  &:not(.full-celled) {
+    border-left: none;
+    border-right: none;
+  }
+
+  &.not-celled {
+    thead {
+      tr {
+        th {
+          border-left: none;
+          border-right: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td:not(.without-padding) {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+
+        td.without-padding {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  thead {
+    tr {
+      th {
+        background-color: $TABLE_HEADER_BG_COLOR;
+        border-radius: 0 !important;
+        font-weight: 600;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td.without-padding {
+        padding: 0;
+      }
+
+      &.row-span {
+        td:first-child {
+          border-left: 1px solid rgba(34,36,38,.1);
+        }
+      }
+    }
+  }
+
+  &.sortable {
+    thead {
+      tr {
+        th.sorted {
+          &:after {
+            margin-top: -5px;
+          }
+
+          &.sort-inactive {
+            &:after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.inner-table {
+    border-top: none;
+    margin: 0;
+  }
+
+  &.stripped {
+    border: none;
+    border-bottom: 1px solid $TABLE_STRIPPED_BORDER;
+    font-size: 14px;
+
+    thead {
+      tr {
+        th {
+          background: none;
+          border-bottom: 1px solid $TABLE_STRIPPED_BORDER;
+          font-size: 11px;
+          font-weight: 600;
+          color: $HEADER_SUB_COLOR2;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    tbody {
+      tr:nth-child(odd){
+        td {
+          background-color: $TABLE_STRIPPED_BG;
+        }
+      }
+
+      tr {
+        td {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * Input
+ */
+
+.ui.input {
+  input, input[type=text] {
+    background-color: $BUTTON_BG_COLOR !important;
+    border: 1px solid $BUTTON_BORDER_COLOR;
+    height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+
+    &:focus {
+      border: 1px solid $BUTTON_BORDER_COLOR;
+    }
+  }
+
+  &.search {
+    height: 32px;
+    input, input[type=text] {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+
+  & > i.remove.icon.input-clear {
+    position: absolute;
+    right: 85px;
+    left: auto;
+    cursor: pointer;
+  }
+
+  .ui.button {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    position: relative;
+    top: 1px;
+  }
+}
+
+/*
+ * TextArea
+ */
+
+.ui.form {
+  textarea {
+    background-color: $BUTTON_BG_COLOR !important;
+    border: 1px solid $BUTTON_BORDER_COLOR;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+
+    &:focus {
+      border: 1px solid $BUTTON_BORDER_COLOR;
+    }
+  }
+}
+
+
+/*
+ * Buttons
+ */
+
+button, input, select, textarea {
+  border-style: none;
+  color: inherit;
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  font-family: $MAIN_FONT;
+  box-shadow: none;
+  font-size: 13px;
+
+  &:not(.big):not(.medium):not(.mini):not(.filter-button) {
+    height: 32px;
+    line-height: 6px;
+  }
+
+  &.filter-button-toggle {
+    background-color: $BUTTON_BG_COLOR;
+    border: 1px solid $BUTTON_BORDER_COLOR;
+    font-size: 12px;
+    width: 140px;
+    padding: 8px 10px;
+    text-align: left;
+    color: $FONT_COLOR;
+    font-weight: 600;
+    line-height: 13px !important;
+    position: relative;
+
+    img {
+      margin-bottom: 0;
+      margin-right: 5px;
+    }
+
+    i:not(.button) {
+      position: absolute;
+      right: 10px;
+      font-size: 15px;
+      opacity: 1;
+      margin-right: 0;
+    }
+
+    &:hover {
+      box-shadow: none;
+      color: $FONT_COLOR;
+      background-color: $BUTTON_BG_COLOR_HOVER;
+    }
+  }
+
+  &.black {
+    background-color: $BUTTON_DARK_BG_COLOR !important;
+    padding-top: 11px;
+
+    &:hover {
+      background-color: $BUTTON_DARK_BG_COLOR_HOVER !important;
+    }
+  }
+
+  &.toggle.medium {
+    padding: 14px 42px 20px;
+    font-weight: 400;
+
+    &.selected-button {
+      padding: 0;
+      background-color: $ELEM_ACTIVE_COLOR;
+      color: #ffffff;
+
+      &.active {
+        background: $BUTTON_DISABLED_COLOR url(../img/svg/button-success.svg) 10px center no-repeat !important;
+        color: $INPUT_COLOR !important;
+        padding: 0 0 0 20px;
+      }
+
+      &:hover {
+        background-color: $ELEM_ACTIVE_COLOR_HOVER;
+      }
+    }
+  }
+}
+
+.ui.medium.button, .ui.medium.buttons .ui.medium.buttons .or, .ui.medium.toggle.selected-button  {
+  height: 28px;
+  font-size: 13px;
+  line-height: 5px;
+
+  &.icon {
+    & > i {
+      vertical-align: middle;
+    }
+  }
+}
+
+.ui.basic.button, .ui.basic.buttons .button {
+  border: 1px solid $BUTTON_BORDER_COLOR;
+  color: #000000 !important;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+
+  &:active, &:focus {
+    background-color: transparent !important;
+    color: $INPUT_COLOR !important;
+    box-shadow: none;
+  }
+
+  &.white-text {
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: 400;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.ui.primary.button, .ui.primary.buttons .button {
+  background-color: $ELEM_ACTIVE_COLOR;
+  font-weight: 600;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    background-color: $ELEM_ACTIVE_COLOR_HOVER;
+  }
+
+  &:active, &:focus {
+    background-color: $ELEM_ACTIVE_COLOR;
+  }
+}

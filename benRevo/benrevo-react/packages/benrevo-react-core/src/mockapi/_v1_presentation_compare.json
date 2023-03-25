@@ -1,0 +1,470 @@
+[
+  {
+    "name": "Current",
+    "plans": [
+      {
+        "networkName": "HMO 1",
+        "networkPlan": {
+          "type": "current",
+          "name": "HMO 20",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "value": "0",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "value": "3500",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "Specialist",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "ER",
+              "value": "150",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "IP Hospital",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay max",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Deductible type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Combined Med/Rx deductible?",
+              "value": "0",
+              "type": "PERCENT"
+            }
+          ]
+        }
+      },
+      {
+        "networkName": "HMO 2",
+        "networkPlan": {
+          "type": "current",
+          "name": "Access + HMO1",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "value": "0",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "value": "1500",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "Specialist",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "ER",
+              "value": "150",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "IP Hospital",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay max",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Deductible type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Combined Med/Rx deductible?",
+              "value": "0",
+              "type": "PERCENT"
+            }
+          ]
+        }
+      },
+      {
+        "networkName": "HSA",
+        "networkPlan": {
+          "type": "current",
+          "name": "H.S.A plan A",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "valueIn": "1500",
+              "valueOut": "3000",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "valueIn": "3000",
+              "valueOut": "6000",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "Specialist",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "ER",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "IP Hospital",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "IP Copay max",
+              "valueIn": "N/A",
+              "valueOut": "N/A",
+              "type": "STRING"
+            },
+            {
+              "name": "IP Copay type",
+              "valueIn": "N/A",
+              "valueOut": "N/A",
+              "type": "STRING"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            }
+          ]
+        }
+      }
+    ],
+    "selected": false
+  },
+  {
+    "name": "Option 1",
+    "plans": [
+      {
+        "networkName": "HMO 1",
+        "networkPlan": {
+          "type": "match plan",
+          "name": "HMO 20",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "value": "0",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "value": "1500",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "Specialist",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "ER",
+              "value": "150",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "IP Hospital",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay max",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Deductible type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Combined Med/Rx deductible?",
+              "value": "0",
+              "type": "PERCENT"
+            }
+          ]
+        }
+      },
+      {
+
+      },
+      {
+        "networkName": "HSA",
+        "networkPlan": {
+          "type": "match plan",
+          "name": "H.S.A plan A",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "valueIn": "1500",
+              "valueOut": "3000",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "valueIn": "1000",
+              "valueOut": "1200",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "Specialist",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "ER",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "IP Hospital",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            },
+            {
+              "name": "IP Copay max",
+              "valueIn": "N/A",
+              "valueOut": "N/A",
+              "type": "STRING"
+            },
+            {
+              "name": "IP Copay type",
+              "valueIn": "N/A",
+              "valueOut": "N/A",
+              "type": "STRING"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "valueIn": "90",
+              "valueOut": "70",
+              "type": "NUMBER"
+            }
+          ]
+        }
+      }
+    ],
+    "selected": true
+  },
+  {
+    "name": "Option 3",
+    "plans": [
+      {
+        "networkName": "HMO 1",
+        "networkPlan": {
+          "type": "match plan",
+          "name": "HMO 20",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "value": "0",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "value": "1500",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "Specialist",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "ER",
+              "value": "150",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "IP Hospital",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay max",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Deductible type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Combined Med/Rx deductible?",
+              "value": "0",
+              "type": "PERCENT"
+            }
+          ]
+        }
+      },
+      {
+        "networkName": "HMO 2",
+        "networkPlan": {
+          "type": "current",
+          "name": "Access + HMO1",
+          "benefits": [
+            {
+              "name": "Deductible",
+              "value": "0",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "OOP Max",
+              "value": "1500",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "PCP",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "Specialist",
+              "value": "20",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "ER",
+              "value": "150",
+              "type": "DOLLAR"
+            },
+            {
+              "name": "IP Hospital",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay max",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "IP Copay type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Outpatient Surgery",
+              "value": "100",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Deductible type",
+              "value": "0",
+              "type": "PERCENT"
+            },
+            {
+              "name": "Combined Med/Rx deductible?",
+              "value": "0",
+              "type": "PERCENT"
+            }
+          ]
+        }
+      },
+      {}
+    ],
+    "selected": false
+  }
+]

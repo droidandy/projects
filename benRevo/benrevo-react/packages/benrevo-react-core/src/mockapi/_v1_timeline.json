@@ -1,0 +1,35 @@
+[
+  {
+    "milestone": "Confirm Final Notification of Sale",
+    "assignee": "Client",
+    "projected": "Mar 2, 2017",
+    "status": "Completed",
+    "completedDate": "Apr 14, 2017",
+    "timelines": []
+  },
+  {
+    "milestone": "Complete Group Application",
+    "assignee": "My Brokerage / Client",
+    "projected": "Mar 4, 2017",
+    "status": "In progress",
+    "selected": true,
+    "completedDate": "",
+    "timelines": []
+  },
+  {
+    "milestone": "Determine Open Enrollment Support",
+    "assignee": "Client / Anthem",
+    "projected": "Mar 5, 2017",
+    "status": "In progress",
+    "completedDate": "",
+    "timelines": []
+  },
+  {
+    "milestone": "Kick Off Call With Anthem Implementation Manager",
+    "assignee": "All Parties",
+    "projected": "Mar 10, 2017",
+    "status": "In progress",
+    "completedDate": "",
+    "timelines": []
+  }
+]

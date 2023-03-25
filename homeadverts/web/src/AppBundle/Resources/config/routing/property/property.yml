@@ -1,0 +1,23 @@
+featured_index:
+    path:  /{market}
+    defaults:
+        _controller: AppBundle:PropertySearch:featured
+        p: 1
+        geo_strategy: place_id
+    methods:  [GET]
+    requirements:
+        market: "for\-sale|to\-rent"
+    condition: "request.headers.get('Pagination') == false"
+
+featured_index_pagination:
+    path:  /{market}
+    defaults:
+        _controller: AppBundle:PropertySearch:featuredPagination
+        p: 1
+        geo_strategy: place_id
+    methods:  [GET]
+    requirements:
+      id: \d+
+      user_type: "[0-9a-z\-]+"
+      slug: "[0-9a-z\-]+"
+    condition: "request.headers.get('Pagination')"

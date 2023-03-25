@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="165" height="78" viewBox="0 0 165 78">
+    <g fill="none" fill-rule="evenodd">
+        <g stroke="#C9CBCC">
+            <path d="M83 42.263V11M96.026 24.026L83 11 69.974 24.026M95.913 33.579h8.609L116 50.947l-2.706 16.377c-.923 5.584-5.71 9.676-11.322 9.676H64.028c-5.612 0-10.4-4.092-11.322-9.676L50 50.947 61.478 33.58h8.609"/>
+            <path d="M50 50.947h22.957l.898 3.264c1.166 4.237 4.9 7.157 9.145 7.157 4.246 0 7.979-2.92 9.145-7.157l.898-3.264H116"/>
+        </g>
+        <text fill="#3A444D" font-family="OpenSans, Open Sans" font-size="14" opacity=".304" transform="translate(0 -6)">
+            <tspan x="157" y="57">+</tspan>
+        </text>
+        <text fill="#3A444D" font-family="OpenSans, Open Sans" font-size="14" opacity=".304" transform="translate(0 -6)">
+            <tspan x="112" y="15">+</tspan>
+        </text>
+        <text fill="#09C" font-family="OpenSans, Open Sans" font-size="18" opacity=".57" transform="translate(0 -6)">
+            <tspan x="0" y="55">+</tspan>
+        </text>
+        <text fill="#21BDC3" font-family="OpenSans, Open Sans" font-size="16" opacity=".292" transform="translate(0 -6)">
+            <tspan x="134" y="35">+</tspan>
+        </text>
+        <text fill="#3A444D" font-family="OpenSans, Open Sans" font-size="14" opacity=".304" transform="translate(0 -6)">
+            <tspan x="42" y="24">+</tspan>
+        </text>
+        <text fill="#3A444D" font-family="OpenSans, Open Sans" font-size="14" opacity=".304" transform="translate(0 -6)">
+            <tspan x="24" y="80">+</tspan>
+        </text>
+    </g>
+</svg>

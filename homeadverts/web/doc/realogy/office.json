@@ -1,0 +1,307 @@
+{
+  "officeSummary": {
+    "officeId": "af672cbb-e06e-4a7e-bd93-f3a376b18bb0",
+    "companyId": "cc4b1e2b-4f91-469e-ac76-bda14ceb600a",
+    "companyName": "Everest",
+    "RFGCompanyId": "301923",
+    "RFGOfficeId": "0004",
+    "brandCode": "C21",
+    "name": "CENTURY 21 Everest",
+    "type": "Branch office",
+    "officeAddress": {
+      "streetAddress": "112 Los Altos St. #B",
+      "city": "Oxnard",
+      "district": "VENTURA",
+      "stateProvince": "California",
+      "stateProvinceCode": "CA",
+      "postalCode": "93035",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 34.17209,
+      "longitude": -119.23297,
+      "formattedAddress": "112 Los Altos St, Oxnard, CA 93035"
+    },
+    "phoneNumber": "8052040210",
+    "emailAddress": "oxnard@troop.com"
+  },
+  "leadEmailAddress": "301923.lead@leads.leadrouter.com",
+  "defaultPhotoURL": "//openapi.azureedge.net/52385BCC-A9EC-4CF5-994D-E84D840AE058",
+  "brokerName": "Charlene Siemon",
+  "officeManagerName": "Kristy Towry",
+  "RFGCompanyId": "301923",
+  "RFGOfficeId": "0004",
+  "recruitingEmailAddress": "csiemon@c21everest.com",
+  "lastUpdateOn": "2018-10-09T17:47:28.040",
+  "areaServed": [{
+    "type": "City",
+    "items": [
+      "Agoura Hills",
+      "Agua Dulce",
+      "Camarillo",
+      "Canyon Country",
+      "Carpinteria",
+      "Castaic",
+      "Moorpark",
+      "Newhall",
+      "Newport Beach",
+      "Newport Coast",
+      "Oak Park",
+      "Oxnard",
+      "Port Hueneme",
+      "Santa Clarita",
+      "Simi Valley",
+      "Springville",
+      "Stevenson Ranch",
+      "Summerland",
+      "Valencia",
+      "Ventura"
+    ]
+  },
+    {
+      "type": "PostalCode",
+      "items": [
+        "91350",
+        "91377",
+        "92663",
+        "93001",
+        "93003",
+        "93004",
+        "93010",
+        "93012",
+        "93014",
+        "93021",
+        "93030",
+        "93035",
+        "93036",
+        "93041",
+        "93065",
+        "93067"
+      ]
+    }
+  ],
+  "remarks": [{
+    "type": "Office Profile",
+    "languageCode": "en",
+    "remark": "Welcome to Hollywood Beach! We love this beautiful community. We define our reputation with each transaction, always striving to set the standard for superior customer service. We will provide the expert support and guidance that you deserve, while working for you to achieve the highest level of results possible. We pledge to continually exceed your expectations through an unwavering commitment to honesty, integrity, knowledge, and innovation. As you learn more about us, you will discover the Independent Difference that we at CENTURY 21 Troop Real Estate will bring to you when handling your real estate needs. A difference that we are proud of! Led by Branch Manager, Kathy Courter, Troop Real Estate professionals in Hollywood Beach and Channel Islands specialize in beach and harbor communities including the popular Victoria Estates, Oxnard Shores, Seabridge and Hueneneme Bay subdivisions. Deeply committed to sharing knowledge, Manager Kathy Courter is a devoted student of the real estate business. She has built an outstanding team of real estate professionals at her offices by employing a program of supportive mentoring and advanced training systems. Buyers and sellers who work with Oxnard Troop Real Estate agents can count on full service support. The Oxnard branch of Troop Real Estate spans much of southern Ventura County's coastline. Oxnard has a number of business parks and shopping areas, some reflecting the city's heritage and others representative on the modern, cutting-edge industries that re finding Oxnard and excellent location to expand their business.",
+    "htmlRemark": "Welcome to Hollywood Beach! We love this beautiful community.\nWe define our reputation with each transaction, always striving to set the standard for superior customer service. We will provide the expert support and guidance that you deserve, while working for you to achieve the highest level of results possible. We pledge to continually exceed your expectations through an unwavering commitment to honesty, integrity, knowledge, and innovation.\nAs you learn more about us, you will discover the Independent Difference that we at CENTURY 21 Troop Real Estate will bring to you when handling your real estate needs. A difference that we are proud of!\nLed by Branch Manager, Kathy Courter, Troop Real Estate professionals in Hollywood Beach and Channel Islands specialize in beach and harbor communities including the popular Victoria Estates, Oxnard Shores, Seabridge and Hueneneme Bay subdivisions.\nDeeply committed to sharing knowledge, Manager Kathy Courter is a devoted student of the real estate business. She has built an outstanding team of real estate professionals at her offices by employing a program of supportive mentoring and advanced training systems. Buyers and sellers who work with Oxnard Troop Real Estate agents can count on full service support.\nThe Oxnard branch of Troop Real Estate spans much of southern Ventura County's coastline. Oxnard has a number of business parks and shopping areas, some reflecting the city's heritage and others representative on the modern, cutting-edge industries that re finding Oxnard and excellent location to expand their business.\n"
+  }],
+  "specialMarkets": [
+    "C21 Global Real Estate Network",
+    "Fine Homes & Estates"
+  ],
+  "addlWebSites": [{
+    "type": "Facebook",
+    "name": "Facebook",
+    "url": "http://www.facebook.com/C21TroopHollywoodBeach/",
+    "contentLanguageCode": "en"
+  }],
+  "languagesSpoken": [{
+    "code": "eng",
+    "name": "English"
+  }],
+  "media": [{
+    "mediaID": "5FE0D5EC-0618-44B6-991D-067C05C9D7D8",
+    "sequenceNumber": 1,
+    "url": "https://assets0.livecache.net/L6/3/IOGLO/988333700/257590030/Build979981036_20180313_215808965.png",
+    "isDefault": true,
+    "format": "URL",
+    "category": "White Center Aligned Logo",
+    "lastUpdateOn": "2018-04-19T19:01:21.787"
+  },
+    {
+      "mediaID": "9F8D128B-1FC1-4F09-BF13-1046B5914D0E",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/9F8D128B-1FC1-4F09-BF13-1046B5914D0E",
+      "isDefault": true,
+      "shortDescription": "white/gold",
+      "htmlDescription": "white/gold",
+      "format": "Image",
+      "category": "White/Gold Office Logo",
+      "height": 660,
+      "width": 1290,
+      "lastUpdateOn": "2018-06-07T18:00:14.910"
+    },
+    {
+      "mediaID": "E314FEA1-0F78-4427-AB5F-2D2E6A8311AC",
+      "sequenceNumber": 1,
+      "url": "https://assets0.livecache.net/L6/3/IOGLO/992560746/258771973/Build979983845_20180330_000250686.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Gold Wide Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "F30D8225-4425-4B55-ACAB-3AF78693DC80",
+      "sequenceNumber": 1,
+      "url": "https://assets1.livecache.net/L6/3/IOGLO/992560681/258771914/Build979983845_20180330_000222374.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "White Wide Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "87E32607-0531-431B-9BA1-5B4AA5217D43",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/87E32607-0531-431B-9BA1-5B4AA5217D43",
+      "isDefault": true,
+      "shortDescription": "black/gold",
+      "htmlDescription": "black/gold",
+      "format": "Image",
+      "category": "Black/Gold Office Logo",
+      "height": 660,
+      "width": 1290,
+      "lastUpdateOn": "2018-06-07T18:00:14.910"
+    },
+    {
+      "mediaID": "7DE1025A-C1FE-4433-BC7D-695B2BBEE9ED",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/7DE1025A-C1FE-4433-BC7D-695B2BBEE9ED",
+      "isDefault": true,
+      "shortDescription": "white",
+      "htmlDescription": "white",
+      "format": "Image",
+      "category": "White Office Logo",
+      "height": 660,
+      "width": 1290,
+      "lastUpdateOn": "2018-06-07T18:00:14.910"
+    },
+    {
+      "mediaID": "5E868715-8782-4ED8-ABBA-6FBAA68083DB",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/5E868715-8782-4ED8-ABBA-6FBAA68083DB",
+      "isDefault": true,
+      "shortDescription": "black",
+      "htmlDescription": "black",
+      "format": "Image",
+      "category": "Black Office Logo",
+      "height": 660,
+      "width": 1290,
+      "lastUpdateOn": "2018-06-07T18:00:14.910"
+    },
+    {
+      "mediaID": "7E6F1891-3090-4354-8A27-75129F178A6A",
+      "sequenceNumber": 1,
+      "url": "https://assets2.livecache.net/L6/3/IOGLO/988328431/257589018/Build979971278_20180313_214458807.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Gold Left Aligned Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "2F4B10B8-88BE-469A-9E2E-823879308633",
+      "sequenceNumber": 1,
+      "url": "https://assets1.livecache.net/L6/3/IOGLO/988331866/257589674/Build979981036_20180313_215309308.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Grey Center Aligned Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "31655698-BE88-4040-B4C5-ACFD5A674ACD",
+      "sequenceNumber": 1,
+      "url": "https://assets1.livecache.net/L6/3/IOGLO/988330044/257589317/Build979971278_20180313_214850896.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "White Left Aligned Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "90C2CBF1-46BE-4A0E-8188-B3CF1E1BB70F",
+      "sequenceNumber": 1,
+      "url": "https://assets1.livecache.net/L6/3/IOGLO/988326872/257588811/Build979971278_20180313_214101346.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Grey Left Aligned Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "54C050EA-2474-40E0-B651-CA2DC9549D37",
+      "sequenceNumber": 1,
+      "url": "https://assets0.livecache.net/L6/3/IOGLO/992560619/258771860/Build979983845_20180330_000151092.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Grey Wide Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "BC18611A-C1F1-448B-8808-D6F7ED3DFBCD",
+      "sequenceNumber": 1,
+      "url": "https://assets0.livecache.net/L6/3/IOGLO/988335224/257590360/Build979981036_20180313_220200402.png",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Gold Center Aligned Logo",
+      "lastUpdateOn": "2018-04-19T19:01:21.787"
+    },
+    {
+      "mediaID": "52385BCC-A9EC-4CF5-994D-E84D840AE058",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/52385BCC-A9EC-4CF5-994D-E84D840AE058",
+      "isDefault": true,
+      "title": "CENTURY 21 Troop Real Estate: Hollywood Beach",
+      "caption": "CENTURY 21 Troop Real Estate: Hollywood Beach",
+      "htmlDescription": "CENTURY 21 Troop",
+      "format": "Image",
+      "category": "Office Photo",
+      "height": 660,
+      "width": 1290,
+      "lastUpdateOn": "2018-03-12T18:22:00.777"
+    },
+    {
+      "mediaID": "4B5E9B73-3366-4169-918B-F104DAC954C3",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/4B5E9B73-3366-4169-918B-F104DAC954C3",
+      "isDefault": true,
+      "format": "Image",
+      "category": "Gold-CenterAlign-Padded",
+      "height": 592,
+      "width": 1371,
+      "lastUpdateOn": "2018-07-13T18:01:54.217"
+    }
+  ],
+  "agentCount": 3,
+  "entityPreference": [{
+    "type": "Allow consumers to send email to Sales Associate",
+    "value": true
+  },
+    {
+      "type": "Allow consumers to send email to Teams",
+      "value": true
+    },
+    {
+      "type": "Display Office on the Internet",
+      "value": true
+    },
+    {
+      "type": "Display Open/Pending Listings on web",
+      "value": true
+    },
+    {
+      "type": "Display Sales Associate and Team Names on Listings",
+      "value": true
+    },
+    {
+      "type": "Display Sales Associate Business Email on Web",
+      "value": true
+    },
+    {
+      "type": "Display Sales Associate Business Phone on Web",
+      "value": true
+    },
+    {
+      "type": "Display Sales Associate Mobile Phone on Web",
+      "value": true
+    },
+    {
+      "type": "Display Sales Associate Vanity Email on Web",
+      "value": false
+    },
+    {
+      "type": "Display Sales Associates on Website",
+      "value": true
+    },
+    {
+      "type": "Display Team Web Profile",
+      "value": true
+    }
+  ]
+}

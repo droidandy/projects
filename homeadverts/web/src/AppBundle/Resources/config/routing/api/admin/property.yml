@@ -1,0 +1,18 @@
+property_featured_add:
+    path:  /{id}/featured/
+    defaults: { _controller: AppBundle:Api\Admin\Property:featuredAdd }
+    methods:  [POST]
+    requirements:
+        id: \d+
+
+property_featured_remove:
+    path:  /{id}/featured
+    defaults: { _controller: AppBundle:Api\Admin\Property:featuredRemove }
+    methods:  [DELETE]
+    requirements:
+        id: \d+
+
+property_primary_photo:
+    path:  /primary/photo/
+    defaults: { _controller: AppBundle:Api\Admin\Property:setPrimaryPhoto }
+    methods:  [POST]

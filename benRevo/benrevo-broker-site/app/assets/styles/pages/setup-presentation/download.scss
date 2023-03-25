@@ -1,0 +1,39 @@
+.download-page {
+
+  .loader {
+    margin-top: 100px;
+  }
+
+  .content {
+    .loader {
+      margin-top: 0;
+    }
+  }
+
+  .navigation {
+
+    .navigation-title-bg {
+      background-color: $NAVIGATION_DARK_BLUE_COLOR !important;
+    }
+    .navigation-title {
+      background-color: $NAVIGATION_DARK_BLUE_COLOR !important;
+
+      &::after {
+        border-color: transparent transparent transparent $NAVIGATION_DARK_BLUE_COLOR !important;
+      }
+
+      &.download {
+        background-color: $NAVIGATION_LIGHT_BLUE_COLOR !important;
+        z-index: 0;
+        padding-left: 40px;
+        padding-right: 30px;
+        color: white !important;
+        cursor: auto;
+
+        &::after {
+          border-color: transparent transparent transparent $NAVIGATION_LIGHT_BLUE_COLOR !important;
+        }
+      }
+    }
+  }
+}

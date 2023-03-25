@@ -1,0 +1,33 @@
+<ion-view on-finish-render="ngRepeatFinished">
+    <div class="vmodal vmodal-container" ng-if="!poked">
+        <div class="vmodal-header">
+            <div class="lightning"></div>
+            <h2 class="heading">Booooom!</h2>
+            Get ready to talk
+        </div>
+        <div class="vmodal-content" align="center">
+            Call will start in <span class="emp">{{secondsRemain}} seconds</span>
+        </div>
+        <div class="vmodal-footer">
+            <div class="row">
+                <div class="col-xs-12 send-full" ng-click="pokeLater()">Poke
+                later</div>
+            </div>
+        </div>
+    </div>
+    <div class="vmodal vmodal-container" ng-if="poked">
+        <div class="vmodal-header">
+            <div class="lightning"></div>
+            <h2 class="heading">Speak later!</h2>
+            The other person will poke you to speak later
+        </div>
+        <div class="vmodal-content" align="center">
+            Look out for a notification
+        </div>
+        <div class="vmodal-footer">
+            <div class="row">
+                <div class="col-xs-12 send-full" ng-click="okay()">Okay</div>
+            </div>
+        </div>
+    </div>
+</ion-view>

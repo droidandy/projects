@@ -1,0 +1,9 @@
+<div class="actions">
+    {% include 'AppBundle:user/profile:follow_button.html.twig' with {'mode':''} %}
+
+    <a href="{{ path("ha_room_user_redirect", {id:user.id}) }}"
+       class="black message-button mdl-button mdl-js-button mdl-js-ripple-effect"
+    >
+        Message
+    </a>
+</div>

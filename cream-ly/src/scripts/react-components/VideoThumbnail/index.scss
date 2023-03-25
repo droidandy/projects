@@ -1,0 +1,28 @@
+@import "../../../styles/tools/mixins.scss";
+
+.ComponentVideoThumbnail {
+  margin: auto;
+  background-size: cover; //backgorund img is set in Thumbnail.js
+  cursor: pointer;
+  height: 168px;
+  width: 280px;
+  @include media-query($medium) {
+    width: 248px;
+    height: 148px;
+  }
+
+  .playButton {
+    text-align: center;
+    height: 168px;
+    opacity: 0.9;
+    background-image: url("./play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    @include media-query($small) {
+      // height: 61px;
+      // background-size: 50px;
+      // display: none;
+      visibility: hidden;
+    }
+  }
+}

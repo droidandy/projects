@@ -1,0 +1,60 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    {% if not is_mobile() %}
+        {% from 'AppBundle:filters:filter_elements.html.twig' import ha_filter_select %}
+        {% set filters_form = search.form.createView() %}
+        {% set action = path('ha_article_search', {
+                'term': search.term
+            })
+        %}
+
+        <div class="container filters-wrapper">
+            <form method="get" action="{{ action }}">
+                <div class="filters">
+                    <div id="primary-filter" class="primary-filters">
+                        <ul>
+                            <li class="filter">
+                                {{ ha_filter_select(filters_form.since) }}
+                            </li>
+                            <li class="filter">
+                                {{ ha_filter_select(filters_form.sort) }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    {% endif %}
+
+    <div class="blog">
+        <div class="items-collection">
+            <h1 class="headline --separator --summary">
+                <span class="heading">
+                    {{ term|capitalize }}
+                </span>
+                <p class="sub-heading --small">
+                    Your search in stories returned
+
+                    {% if search.search_results.total %}
+                        the following {{ search.search_results.total }}
+
+                        {% transchoice search.search_results.total %}
+                            {1} one result|]1,Inf] results
+                        {% endtranschoice %}
+                    {% else %}
+                        zero results
+                    {% endif %}
+                </p>
+            </h1>
+
+            <ul class="list"
+                data-page-total="{{ search.pages.total }}"
+                data-page-current="{{ search.pages.current }}">
+
+                {% include 'AppBundle:article/search:collection.html.twig' %}
+
+            </ul>
+        </div>
+    </div>
+{% endblock body %}

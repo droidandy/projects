@@ -1,0 +1,253 @@
+@import "./variables-theme";
+@import "./components/footer";
+@import "./components/request-demo";
+@import "./pages/home";
+@import "./pages/carriers";
+@import "./pages/brokers";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/terms";
+@import "./pages/notfound";
+
+#app {
+  color: $MAIN_COLOR;
+  font-size: 16px;
+  font-family: $MAIN_FONT;
+}
+
+a {
+  color: $LINK_COLOR;
+
+  &:hover {
+    color: $LINK_COLOR_HOVER;
+  }
+}
+
+.app-header {
+  font-family: $SECOND_FONT;
+  overflow: hidden;
+  padding-top: 35px;
+  position: absolute;
+  margin: 0 auto 35px;
+  left: 0;
+  right: 0;
+  .ui.container {
+    overflow: hidden;
+  }
+
+  .logo {
+    float: left;
+    background: url(../img/benrevo.svg) no-repeat;
+    width: 170px;
+    height: 53px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 20px;
+    .logo {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 134px;
+      height: 42px;
+      margin-top: 4px;
+    }
+  }
+
+  &.white {
+    .logo {
+      background: url(../img/benrevo-white.svg) no-repeat;
+    }
+
+    .ui.secondary.menu {
+      a.item {
+        color: #ffffff;
+        &.active, &.active:hover, &:hover {
+          border-bottom: 2px solid #ffffff;
+        }
+      }
+    }
+
+    .content-icon {
+      color: #ffffff;
+    }
+  }
+
+  .content-icon {
+    display: none;
+    font-size: 33px;
+    padding: 0;
+    height: 75px;
+    cursor: pointer;
+
+    i.icon {
+      position: absolute;
+      top: 27px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      & {
+        display: block;
+      }
+    }
+  }
+}
+
+h1.ui.header.page-header {
+  font-size: 40px;
+  padding: 0 20px;
+  margin-top: 49px;
+
+  &.white {
+    color: #ffffff;
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 26px;
+  }
+}
+
+.page-description {
+  font-size: 18px;
+  max-width: 770px;
+  margin: 25px auto;
+  font-weight: 200;
+  padding: 0 10px;
+}
+
+.ui.grid {
+  .row.home-row {
+    padding: 70px 0;
+    &.gray {
+      background-color: $BACKGROUND_GRAY_COLOR;
+    }
+  }
+}
+
+.ui.header.column-header2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.footer-top {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: -15px;
+  width: 100%;
+  li {
+    display: inline-block;
+    height: 7px;
+
+    &:nth-child(1) {
+      background-color: #293C4C;
+      opacity: 0.84;
+      width: 15%;
+    }
+    &:nth-child(2) {
+      background-color: #13B2DA;
+      width: 14%;
+    }
+    &:nth-child(3) {
+      background-color: #1385BE;
+      width: 14%;
+    }
+    &:nth-child(4) {
+      background-color: #293C4C;
+      opacity: 0.84;
+      width: 14%;
+    }
+    &:nth-child(5) {
+      background-color: #298499;
+      width: 14%;
+    }
+    &:nth-child(6) {
+      background-color: #408AA8;
+      width: 14%;
+    }
+    &:nth-child(7) {
+      background-color: #596E7C;
+      opacity: 0.84;
+      width: 15%;
+    }
+  }
+}
+
+.sent-message {
+  &.success {
+    text-align: left;
+    width: 270px;
+    margin: 40px auto 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #ffffff;
+    font-size: 14px;
+    padding-left: 55px;
+    border-radius: 2px;
+    background: #8BC53F url(../img/icon-success.svg) no-repeat;
+    background-position: 15px center;
+  }
+}
+
+.ui.modal>.close {
+  position: absolute;
+  top: -16px;
+  right: -17px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+  color: #fff;
+  background-color: #9b9b9b;
+  border-radius: 50%;
+  padding: 3px;
+  opacity: 1;
+
+  &::before {
+    font-family: $MAIN_FONT;
+    content: 'X';
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.ui.dimmer {
+  background-color: rgba(0,0,0,.6);
+}
+
+.corner-tab-data {
+  padding-left: 35px;
+  position: relative;
+  width: 380px;
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+  }
+  .header-text {
+    font-size: 22px;
+    line-height: 1.27;
+    font-weight: bold;
+    color: #3a444d;
+    &::before {
+      content: ' ';
+      position: absolute;
+      top: 5px;
+      left: 0;
+      border-color: transparent;
+      border-style: solid;
+      width: 5px;
+      height: 5px;
+      border-radius: 3px;
+      border-width: 10px;
+      border-left-color: #22bdc2;
+      border-top-color: #22bdc2;
+    }
+  }
+}

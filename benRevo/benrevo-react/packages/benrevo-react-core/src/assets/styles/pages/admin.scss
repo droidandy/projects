@@ -1,0 +1,52 @@
+@import '../variables-theme';
+
+.admin {
+  .DraftEditor-root {
+    overflow-y: scroll;
+  }
+  .ui.grid.gridSegment {
+    min-height: 450px;
+  }
+
+  h1.ui.header.page-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .ui.form {
+    margin-bottom: 20px;
+  }
+
+  .disclosure-read {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-top: 1px solid $DIVIDER_COLOR;
+    border-bottom: 1px solid $DIVIDER_COLOR;
+    padding: 30px 30px 60px;
+    white-space: pre-wrap;
+
+    p {
+      margin-bottom: 0;
+      line-height: 100%;
+    }
+  }
+
+  .modify {
+    font-size: 13px;
+    color: $SUB_HEADER_COLOR;
+    margin-bottom: 20px;
+  }
+
+  .ui.loader {
+    top: 320px;
+  }
+
+  .button-edit {
+    width: 65px;
+    float: right;
+  }
+
+  .DraftEditor-editorContainer {
+    height: 150px;
+  }
+}

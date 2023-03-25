@@ -1,0 +1,59 @@
+@import "../variables-theme";
+
+.ui.grid.add-carrier-content {
+  width: 100%;
+  margin-left: 0;
+
+  .back-button {
+    width: 205px;
+  }
+
+  .title-row {
+    font-weight: 700;
+  }
+
+  .card.carrier-card {
+    height: 80px;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: $CARD_BACKGROUND_COLOR !important;
+    box-shadow: none;
+    border: 1px solid #B8BBBD;
+    position: relative;
+
+    &.selected {
+      box-shadow: 0 0 0 2px $CARD_ACTIVE_COLOR !important;
+
+      &:before {
+        width: 28px;
+        height: 28px;
+        border-radius: 50px;
+        background: $CARD_INDICATOR_COLOR url(../img/svg/selected-carrier-icon.svg) center no-repeat;
+        content: '';
+        display: block;
+        position: absolute;
+        top: -14px;
+        left: -14px;
+      }
+    }
+
+    &:hover {
+      transform: none;
+      box-shadow: 0 0 0 2px $CARD_ACTIVE_COLOR !important;
+      z-index: 0;
+    }
+
+    & > .image {
+      background: none;
+      height: 100%;
+    }
+  }
+
+  .show-more {
+    a {
+      cursor: pointer;
+    }
+  }
+}

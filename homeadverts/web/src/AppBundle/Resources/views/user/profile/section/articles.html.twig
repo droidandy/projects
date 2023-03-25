@@ -1,0 +1,84 @@
+{% if is_published %}
+    {% set publishedArticlesCount = user|published_article_count %}
+{% else %}
+    {% set publishedArticlesCount = user|unpublished_article_count %}
+{% endif %}
+
+{% extends 'AppBundle:user/profile:root.html.twig' %}
+
+{% block body %}
+    {% include 'AppBundle:user/profile:user_profile_head.html.twig' with {'user' : user} %}
+
+    <div class="row">
+        <div class="headline --line-separator">
+            <h3 class="heading">
+                {{ "Stories"|trans }} {% if not is_published %}(Drafts){% endif %}
+            </h3>
+        </div>
+
+        {% if user == app.user and is_granted('ROLE_WRITER') %}
+            <div class="information-centered">
+                Our easy-to-use editor make sure all your work looks the best. It’s simple to integrate photos,
+                audio, and video from anywhere. Import blogs from your own website or create new.
+                Connect all your social networks and share automatically, every time.
+
+                <div class="actions">
+                    <form action="{{ path('ha_article_new') }}" method="post">
+                        <button type="submit"
+                                class="black mdl-button mdl-js-button mdl-js-ripple-effect">
+                            Write a story
+                        </button>
+                    </form>
+                </div>
+
+                <div class="inline-actions">
+                    <ul>
+                        <li>
+                            <a href="{{ path('ha_user_articles', {
+                                id: user.id,
+                                slug: user.slug
+                            }) }}"
+                               {% if is_published %}class="--active"{% endif %}
+                            >
+                                Published ({{ user|published_article_count }})
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('ha_user_articles', {
+                                id: user.id,
+                                slug: user.slug,
+                                status: 'draft'
+                            }) }}"
+                               {% if not is_published %}class="--active"{% endif %}
+                            >
+                                Drafts ({{ user|unpublished_article_count }})
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        {% endif %}
+
+        {% if publishedArticlesCount %}
+            <div class="items-collection">
+                <div class="blog">
+                    <ul class="list small-block-grid-2 medium-block-grid-3"
+                        data-page-total="{{ pageTotal }}"
+                        data-page-current="{{ page }}"
+                    >
+                        {% include 'AppBundle:user/profile/section:articles_collection.html.twig' %}
+                    </ul>
+                </div>
+            </div>
+        {% else %}
+            <div class="information-centered">
+                We are sorry but there are currently no stories related to this user.
+                Please check back later or click follow for updates.
+                <br/>
+                <br/>
+
+                {% include 'AppBundle:user/profile:follow_button.html.twig' %}
+            </div>
+        {% endif %}
+    </div>
+{% endblock %}

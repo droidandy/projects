@@ -1,0 +1,71 @@
+<ion-view>
+  <ion-content class="gm-content">
+    <div class="page">
+      <div class="pocket-container">
+        <div class="pocket-head" on-swipe-right="prevSettingsPage()">
+          <div class="text-head" ui-sref="menu">Done</div>
+          <div class="settings-icon"></div>
+          <div class="head-title">PROFILE</div>
+          <div class="head-title-prev" ng-click="prevSettingsPage()">CONTACT CARD</div>
+        </div>
+        <div class="settings">
+
+          <div class="profile-title">Profile Pictures:</div>
+
+          <div  class="slider-thumb clearfix">
+            <ul>
+              <li class="active"><a href="#"><img src="img/img-thumb-01.png" class="img-responsive"  alt=""><span class="pro-pic-bg"><span class="cross-icon"></span></span></a></li>
+              <li><a href="#"><img src="img/img-thumb-02.png" class="img-responsive"  alt=""></a></li>
+              <li><a href="#"><img src="img/img-thumb-03.png" class="img-responsive"  alt=""></a></li>
+              <li><a href="#"><img src="img/img-thumb-04.png" class="img-responsive"  alt=""></a></li>
+              <li class="add"><a href="#"><span>+</span></a></li>
+            </ul>
+          </div>
+          <div class="profile-title">Ice Breakers:
+            <span class="pull-right" ng-click="iceBreakers.shouldShowReorder = !iceBreakers.shouldShowReorder">
+              Reorder
+            </span>
+          </div>
+          <ion-list class="list-block" show-reorder="iceBreakers.shouldShowReorder" can-swipe="iceBreakers.listCanSwipe">
+            <ion-item class="item-remove-animate" ng-repeat="ib in iceBreakers.items" item="ib">
+              <span ng-bind="ib"></span>
+              <ion-option-button class="button-assertive" ng-click="iceBreakers.deleteItem($index)">
+                Delete
+              </ion-option-button>
+              <ion-reorder-button class="ion-navicon"
+                                  on-reorder="iceBreakers.moveItem(ib, $fromIndex, $toIndex)"></ion-reorder-button>
+            </ion-item>
+            <li class="item add-more">
+              <a href="#">Add...</a>
+            </li>
+          </ion-list>
+
+          <div class="profile-note"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+
+
+          <div class="profile-title">
+            Languages:
+            <span class="pull-right" ng-click="languages.shouldShowReorder = !languages.shouldShowReorder">
+              Reorder
+            </span>
+          </div>
+
+          <ion-list class="list-block" show-reorder="languages.shouldShowReorder" can-swipe="languages.listCanSwipe">
+            <ion-item class="item-remove-animate" ng-repeat="lang in languages.items" item="lang">
+              <span ng-bind="lang"></span>
+              <ion-option-button class="button-assertive" ng-click="languages.deleteItem($index)">
+                Delete
+              </ion-option-button>
+              <ion-reorder-button class="ion-navicon"
+                                  on-reorder="languages.moveItem(lang, $fromIndex, $toIndex)"></ion-reorder-button>
+            </ion-item>
+            <li class="item add-more">
+              <a href="#">Add...</a>
+            </li>
+          </ion-list>
+          <div class="profile-note"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

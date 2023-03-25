@@ -1,0 +1,23 @@
+.rfp-carrier {
+  margin-bottom: 100px !important;
+
+  .error-link {
+    span {
+      text-transform: capitalize;
+      width: 150px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .include-hint {
+    float: right;
+    background: url("../../img/svg/rfp_carrier_include.svg") no-repeat center right;
+    background-size: 15px 19px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+}

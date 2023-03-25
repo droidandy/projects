@@ -1,0 +1,20 @@
+
+
+
+<ion-content padding >
+
+  <img-loader src="assets/imgs/logo1.png" useImg  ></img-loader>
+
+  <h2>{{ 'LANDINGHINT' | translate }}</h2>
+
+  <button ion-button class="facebook" block tappable (click)="facebookLogin()"> <ion-icon name="logo-facebook"></ion-icon> {{ 'SIGNINWITHFACEBOOK' | translate }}</button>
+  <span class="terms" *ngIf="isIos">
+    <ion-checkbox color="dark" [(ngModel)]="isTerms"></ion-checkbox>
+    <p>{{ 'IAGREE' | translate }} <span (click)="openTerms()">{{ 'TERMS' | translate }}.</span></p>
+  </span>
+  <button ion-button (click)="openRegister()" class="loginbtn" block tappable>{{ 'CREATEANACCOUNT' | translate }}</button>
+
+</ion-content>
+<ion-footer>
+<p>{{ 'ALREADYMEMBER' | translate }}? <span (click)="openLogin()">{{ 'LOGIN' | translate }}</span></p>
+</ion-footer>

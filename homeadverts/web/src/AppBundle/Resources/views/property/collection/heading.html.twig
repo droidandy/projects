@@ -1,0 +1,55 @@
+{% if search.error %}
+    <div class="row">
+        <div class="column">
+            <!-- No Results -->
+            <div class="no-results">
+                <p>{% trans %}search.error{% endtrans %}: {{ search.error['error'] }}</p>
+            </div>
+        </div>
+    </div>
+{% elseif app.session.flashbag.peekAll()|length > 0 %}
+    {% for label, flashes in app.session.flashbag.all %}
+        {% for message in flashes %}
+            <div class="row">
+                <div class="column">
+                    <div class="no-results"><p>{{ message }}</p></div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+<h1 class="headline --separator --summary">
+    {% if search.location.id == -1 %}
+        <p class="heading">
+            Extraordinary Homes
+        </p>
+        <p class="sub-heading --small">
+            {% include 'AppBundle:property/collection:market_summary.html.twig' %}
+        </p>
+    {% else %}
+        <p class="heading">{{ search.location.searchTerm }}</p>
+        <p class="sub-heading --small">
+            {% include 'AppBundle:property/collection:summary.html.twig' %}
+            <div class="actions">
+                <button
+                        data-name="{{ search.location.searchTerm }}"
+                        data-follow-url="{{ path("ha_location_follow", {id:search.location.id}) }}"
+                        data-unfollow-url="{{ path("ha_location_unfollow", {id:search.location.id}) }}"
+                        class="
+                                black
+                                follow-button
+                                mdl-button
+                                mdl-js-button
+                                {% if (app.user) and (app.user.isLocationFollowed(search.location)) %} --following {% endif %}
+                            "
+
+                >
+                    <span class="follow">Follow</span>
+                    <span class="following">Following</span>
+                    <span class="unfollow">Unfollow</span>
+                </button>
+            </div>
+        </p>
+    {% endif %}
+</h1>

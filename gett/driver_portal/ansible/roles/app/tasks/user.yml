@@ -1,0 +1,15 @@
+---
+- name: Create app user
+  user: name={{application_user}} comment="{{application_user}} user" shell="/bin/bash"
+
+- name: Create .bash.d directory
+  file: path=~{{application_user}}/.bash.d owner={{application_user}} group={{application_user}} state=directory
+
+- name: Source .bash.d directory in .bash_profile
+  lineinfile: dest=~{{application_user}}/.bash_profile regexp="^for i in \$HOME/\.bash\.d/\*\.bash" insertafter=EOF line="for i in $HOME/.bash.d/*.bash; do source $i; done" create=yes  owner={{application_user}} group={{application_user}}
+
+- name: Source .bash.d directory in .bashrc
+  lineinfile: dest=~{{application_user}}/.bashrc regexp="^for i in \$HOME/\.bash\.d/\*\.bash" insertbefore=BOF line="for i in $HOME/.bash.d/*.bash; do source $i; done" create=yes  owner={{application_user}} group={{application_user}}
+
+- name: Create deployment directory
+  file: path=/home/{{application_user}}/{{application_name}} owner={{application_user}} group={{application_user}} state=directory

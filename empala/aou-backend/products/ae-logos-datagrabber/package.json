@@ -1,0 +1,58 @@
+{
+  "name": "ae-logos-datagrabber",
+  "version": "1.0.0",
+  "description": "ae-logos-datagrabber",
+  "main": "dist/ae-logos-datagrabber/start.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "build-watch": "tsc --watch",
+    "lint": "eslint --ext .js,.ts --config ../../.eslintrc.js .",
+    "start": "node dist/ae-logos-datagrabber/start.js",
+    "test:all": "cross-env NODE_ENV=test jest --testPathPattern=/src/__tests__/.+\\.test\\.ts --runInBand --config jest.config.js --detectOpenHandles --forceExit"
+  },
+  "keywords": [
+    "apex-extend",
+    "api",
+    "instruments"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@types/bull-arena": "^3.0.4",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/luxon": "^2.0.8",
+    "@types/node": "^16.11.10",
+    "amazon-cognito-identity-js": "^5.2.2",
+    "cross-env": "^7.0.3",
+    "jest": "^27.3.1",
+    "jest-cli": "^27.3.1",
+    "jwt-decode": "^3.1.2",
+    "pg": "^8.7.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "typeorm": "^0.2.40",
+    "typeorm-naming-strategies": "^2.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.44.0",
+    "@aws-sdk/node-http-handler": "^3.40.0",
+    "@graphql-codegen/cli": "^2.2.2",
+    "@graphql-codegen/typescript-type-graphql": "^2.2.0",
+    "@types/config": "0.0.40",
+    "@types/jest": "^27.0.2",
+    "@types/lodash": "^4.14.176",
+    "axios": "^0.24.0",
+    "bull-arena": "^3.29.3",
+    "bullmq": "^1.51.3",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.7.2",
+    "graphql-request": "^3.6.1",
+    "lodash": "^4.17.21",
+    "luxon": "^2.2.0",
+    "tslog": "^3.2.2",
+    "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">= 10.x.x"
+  }
+}

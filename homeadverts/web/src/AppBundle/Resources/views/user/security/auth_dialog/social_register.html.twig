@@ -1,0 +1,79 @@
+<div class="register-form" style="display: none">
+    <div class="introduction">
+        <h2>Join Us.</h2>
+        <p>
+            Create an user to personalize your homepage,
+            follow your favorite authors and publications,
+            applaud stories you love, and more.
+        </p>
+    </div>
+    <div class="form-block">
+
+        <div class="sign-up-social">
+            <a href="{{ path("hwi_oauth_service_redirect",{"service":"facebook"}) }}"
+               class="mdl-button
+               mdl-js-button
+               --facebook
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               --wide" type="submit">
+                <span class="fa-facebook"></span> Sign up with Facebook
+            </a>
+            <a href="{{ path("hwi_oauth_service_redirect",{"service":"google"}) }}"
+               class="mdl-button
+               mdl-js-button
+               --google
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               --wide"
+               type="submit">
+                <img src="{{ asset('assets/images/google-oauth.png') }}"> Sign up with Google
+            </a>
+            <a href="{{ path("hwi_oauth_service_redirect",{"service":"twitter"}) }}"
+               class="mdl-button
+               mdl-js-button
+               --twitter
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               --wide"
+               type="submit">
+                <span class="fa-twitter"></span> Sign in with Twitter
+            </a>
+            <a href="{{ path("hwi_oauth_service_redirect",{"service":"linkedin"}) }}"
+               class="mdl-button
+               mdl-js-button
+               --linkedin
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               --wide"
+               type="submit">
+                <span class="fa-linkedin"></span> Sign in with LinkedIn
+            </a>
+            <button href="#"
+               class="mdl-button
+               mdl-js-button
+               --email
+               mdl-button--raised
+               mdl-js-ripple-effect
+               button
+               button-auth
+               button-switch-view-to-manual
+               --wide"
+               type="submit">
+                <i class="material-icons">mail_outline</i> Sign up with Email
+            </button>
+        </div>
+
+        <p class="auth-information">
+            Already have an user? <a class="button-switch-view" href="#">Sign In.</a>
+        </p>
+    </div>
+</div>

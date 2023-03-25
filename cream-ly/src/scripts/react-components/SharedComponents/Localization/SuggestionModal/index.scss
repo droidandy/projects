@@ -1,0 +1,85 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.in.visible {
+  opacity: 1;
+  transform: translateX(0);
+
+  @include media-query($medium-down) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SuggestionModal {
+    z-index: 100001;
+    position: absolute;
+    top: 65px;
+    right: 5px;
+    overflow: hidden;
+    height: auto;
+    background-color: white;
+    border: 1px solid #d3dbe2;
+    box-shadow: 0px 0px 15px rgba(102, 99, 108, 0.25);
+    opacity: 0;
+    transform: translateX(250px);
+    transition: opacity 1s ease, transform 1s ease;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 35px;
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+        .text {
+            text-align: center;
+            @include spacingBottomMedium;
+
+            @include media-query($small) {
+                max-width: 80%;
+            }
+        }
+        .buttons {
+            display: flex;
+            @include media-query($small) {
+                flex-direction: column;
+            }
+
+            .btn_style {
+                margin: 5px;
+            }
+        }
+        .switchLang {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+
+            a {
+                margin-left: 5px;
+                color: var(--rose);
+                &:hover {
+                    color: var(--rose);
+                }
+            }
+        }
+    }
+    @include media-query($medium-down) {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: auto;
+      transform: translateY(250px);
+
+      .content {
+          padding: 20px;
+      }
+    }
+}

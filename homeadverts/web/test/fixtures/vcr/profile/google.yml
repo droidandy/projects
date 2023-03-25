@@ -1,0 +1,77 @@
+
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/144'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"location":{"type":"point","coordinates":[0.0,0.0]},"email":"marlen.stroman@hotmail.com","name":"Destinee Bartell","bio":null,"companyName":null,"phone":"+15524108644","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"144","_version":2,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/354'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"frankie80@hotmail.com","name":"Olen Hayes","bio":null,"companyName":null,"phone":"+1-941-716-8801","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"354","_version":3,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/144'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"rohan.eleazar@okuneva.com","name":"Dr. Iliana Graham","bio":null,"companyName":null,"phone":"814.461.1150","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '149'
+        body: '{"_index":"test_agents","_type":"agent","_id":"144","_version":11,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'
+-
+    request:
+        method: PUT
+        url: 'http://127.0.0.1:9200/test_agents/agent/338'
+        headers:
+            Host: '127.0.0.1:9200'
+            Expect: null
+            Content-Type: application/json
+            Accept: application/json
+        body: '{"type":"user","userProfile":null,"teamProfile":null,"companyProfile":null,"location":{"type":"point","coordinates":[0.0,0.0]},"email":"mfisher@gerhold.info","name":"Juanita Jerde","bio":null,"companyName":null,"phone":"868-625-2023","mobilePhone":null,"companyPhone":null,"homePageUrl":null,"profileImage":null,"primaryLanguage":"en","spokenLanguages":null,"preferredCurrency":null,"status":1,"franchise":null,"address1":"","address2":"","townCity":"","county":"","country":"","postcode":"","googleLocations":[],"propertyCount":1,"propertyToRentCount":0,"propertyForSaleCount":0,"deletedAt":null}'
+    response:
+        status:
+            http_version: '1.1'
+            code: '200'
+            message: OK
+        headers:
+            content-type: 'application/json; charset=UTF-8'
+            content-length: '148'
+        body: '{"_index":"test_agents","_type":"agent","_id":"338","_version":5,"result":"updated","_shards":{"total":2,"successful":1,"failed":0},"created":false}'

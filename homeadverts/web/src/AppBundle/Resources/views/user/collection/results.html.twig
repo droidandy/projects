@@ -1,0 +1,31 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    {% if not is_mobile() and search.total %}
+        {% include 'AppBundle:user:collection/filters.html.twig' %}
+    {% endif %}
+
+    {% if search.total %}
+        <div class="switch-views {{ map_view ? "" : "--collection"}}">
+            {% include 'AppBundle:map:directory.html.twig' %}
+
+            <div class="agent-listing items-collection">
+                {% include 'AppBundle:user/collection:heading.html.twig' %}
+
+                <div class="row">
+                    <div class="list"
+                         data-filter-url="{{ app.request.uri }}"
+                         data-page-total="{{ search.pages.total }}"
+                         data-page-current="{{ currentPage }}">
+                        {% include 'AppBundle:user:collection/items.html.twig' %}
+                    </div>
+                </div>
+            </div>
+
+            <div class="equalizer"></div>
+        </div>
+    {% else %}
+        {% include 'AppBundle:user/collection:heading_no_results.html.twig' %}
+    {% endif %}
+
+{% endblock %}

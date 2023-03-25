@@ -1,0 +1,31 @@
+---
+log:
+  level: debug
+
+apexExtracts:
+  defaultTimezone: America/Chicago
+  daysBeforeCurrent: 30
+  hoursNumberAfterWhichSodFileMustBe: 6
+  # If true, the service will search for SOD files for all days, including weekends and holidays.
+  # Previously, it was discovered that files were appearing on holidays. For example 2021-11-11. 
+  takeNonBusinessDaysAlso: false
+  sftp:
+    host: localhost
+    port: 2222
+    username: test
+    privateKey: "***"
+    # retriesOptions - as they are passed in the 'p-retry' options
+    retriesOptions:
+      retries: 1
+      minTimeout: 60000 # Milliseconds
+      maxTimeout: 300000 # Milliseconds
+
+apexExtend:
+  applicationsUrl: https://accounts-api-uat.extend.apexclearing.com
+  admin:
+    email: ""
+    password: "***"
+
+instrumentsPerUpsert: 500
+pricesPerInsert: 500
+

@@ -1,0 +1,106 @@
+.w360 {
+  width: 360px;
+  max-width: 100%;
+  margin-right: 10px;
+
+  @media(max-width: 767px) {
+    width: 100%;
+    order: 3;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+
+.mtEditable {
+  margin-top: 20px;
+}
+
+.select :global(.ant-select-selection) {
+  max-height: 180px;
+  overflow: auto;
+}
+
+.exportBtn {
+  :global {
+    .ant-btn {
+      min-width: 34px;
+      width: 34px;
+      padding: 0;
+    }
+  }
+}
+
+.exportBtnWrapper {
+  order: 2;
+}
+
+.bookerFormContainer {
+  padding-right: 0px;
+
+  @media(min-width: 1440px) {
+    padding-right: 80px;
+  }
+}
+
+@media(min-width: 1025px) {
+  .chartContainer {
+    min-width: 260px;
+  }
+}
+
+.bookerMainContainer {
+  display: flex;
+}
+
+@media(max-width: 1023px) {
+  .bookerMainContainer {
+    flex-direction: column;
+  }
+
+  .bookerControllsRow {
+    justify-content: center;
+  }
+
+  .mtEditable {
+    margin-top: 60px;
+  }
+}
+
+.bookerControllsContainer {
+  width: 230px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.editable {
+  margin-top: -130px;
+  margin-bottom: 100px;
+}
+
+@media(max-width: 480px) {
+  .title {
+    margin-bottom: 20px;
+  }
+  .header {
+    display: block;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .editable {
+    margin-top: -190px;
+    margin-bottom: 105px;
+  }
+  .mtEditable {
+    margin-top: 120px;
+  }
+}
+
+.bookerAvatarSection {
+  @media(min-width: 1024px) {
+    max-width: 280px;
+  }
+}

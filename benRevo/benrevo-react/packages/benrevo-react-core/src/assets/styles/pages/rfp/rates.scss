@@ -1,0 +1,91 @@
+@import '../../semantic-ui-modules/rates';
+
+.row.noPaddedRow {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+.rateRow {
+  .ui.input input {
+    padding: .67857143em 0.4rem !important;
+  }
+  .rfpColumnVPadding {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .divider {
+    height: 1px;
+    width: 100%;
+    padding: 0;
+    background: $INPUT_BORDER_COLOR;
+  }
+  .addRange {
+    padding: 0 0 1rem 0;
+    margin-left: 5px;
+    button {
+      color: $ELEM_ACTIVE_COLOR;
+      cursor: pointer;
+      position: relative;
+      border: 0;
+      &:disabled {
+        color:$BUTTON_TOGGLE_ATIVE_COLOR;
+        cursor: default;
+      }
+    }
+  }
+  .removeBtn {
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 17px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    img {
+      float: right;
+      height: 100%;
+    }
+  }
+  .rfpInputRow {
+    width: 100% !important;
+    padding: 0.5rem 0;
+  }
+  .rfpHalfBorder {
+    padding: 0 0.5rem;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      height: 1rem;
+      border-top: 1px solid $INPUT_BORDER_COLOR;
+      border-left: 1px solid $INPUT_BORDER_COLOR;
+      border-right: 1px solid $INPUT_BORDER_COLOR;
+      margin-top: 1rem;
+    }
+  }
+  .ageGrid{
+    margin: 0;
+    .rfpColumnPadding {
+      padding: 0 5px !important;
+    }
+    .minHeightFix{
+      font-size: 12px !important;
+      height: 32px !important;
+      font-weight: 300 !important;
+
+      &.topPadded {
+        line-height: 3rem;
+        padding: 0 5px;
+        text-align: right;
+        &.rightPadded {
+          padding-right: 20px;
+        }
+      }
+    }
+    &.bottom{
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{% set isFollowing = false %}
+
+{% if (app.user) and (app.user.isUserFollowing(user)) %}
+    {% set isFollowing = true %}
+{% endif %}
+
+
+<a href="{{ path('ha_user_profile', {id: user.id, slug: user|slug}) }}"
+   class="photo profile-block-image user-popup-{{ user.id }}"
+   style="background-image:url('{{ user|user_profile_image }}');
+           filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='{{ user|user_profile_image }}',
+           sizingMethod='scale');"
+   data-image="{{ user|user_profile_image }}"
+   data-url="{{ path('ha_user_get', {id: user.id}) }}"
+   data-background="{{ user.getBackgroundImage() }}"
+   data-name="{{ user.name }}"
+
+   data-url-profile="{{ path('ha_user_profile', {id: user.id, slug: user|slug}) }}"
+   data-url-articles="{{ path('ha_user_articles', {id: user.id, slug: user|slug}) }}"
+   data-url-properties="{{ path('ha_user_properties', {id: user.id, slug: user|slug, market: 'to-rent'}) }}"
+   data-url-followers="{{ path('ha_user_followers', {id: user.id, slug: user|slug}) }}"
+
+   data-url-follow="{{ path("ha_user_follow", {id:user.id}) }}"
+   data-url-unfollow="{{ path("ha_user_unfollow", {id:user.id}) }}"
+
+   data-id="{{ user.id }}"
+   data-is-following="{{ isFollowing }}"
+
+        {% if user.activeAt %}
+            title="Last seen at {{ user.activeAt|date("F j, Y - h:i a") }}"
+        {% endif %}
+>
+    <span class="online-status online-{{ user.id }}"></span>
+</a>

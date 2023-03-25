@@ -1,0 +1,15 @@
+#snackbar {
+  z-index: 999;
+
+  .mdl-snackbar__text {
+    color: #fafafa;
+    background: #212121;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 25px;
+  }
+  .mdl-snackbar__action {
+    display: none;
+  }
+}

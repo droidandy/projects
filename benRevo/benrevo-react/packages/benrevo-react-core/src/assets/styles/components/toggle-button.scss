@@ -1,0 +1,80 @@
+@import '../variables-theme';
+@import '../variables';
+
+.toggle-button {
+  background-color: $ELEM_ACTIVE_COLOR;
+  width: 60px;
+  height: 28px;
+  display: inline-block;
+  position: relative;
+  font-size: 10px;
+  border-radius: 14px;
+  color: #ffffff;
+  padding: 3px;
+  cursor: pointer;
+  @include disableSelect();
+
+  .toggle-button-left, .toggle-button-right {
+    display: block;
+    line-height: 21px;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .toggle-button-left {
+    float: left;
+  }
+
+  .toggle-button-right {
+    float: right;
+
+    &.check {
+      background: url(../../img/svg/group-2-2.svg);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      margin-right: 0;
+      right: 3px;
+      top: -1px;
+    }
+  }
+
+  .toggle-button-tap {
+    width: 22px;
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    border-radius: 14px;
+    color: $ELEM_ACTIVE_COLOR;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 200ms;
+
+    &.left {
+      left: 3px;
+    }
+
+    &.right {
+      left: 100%;
+      margin-left: -25px;
+    }
+  }
+
+  &.wide {
+    width: 160px;
+
+    .toggle-button-tap {
+      width: 80px;
+
+      &.right {
+        margin-left: -83px;
+      }
+    }
+  }
+}

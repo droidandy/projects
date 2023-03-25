@@ -1,0 +1,38 @@
+---
+log:
+  level: debug
+idleTimeLimitSec: 350
+instrumentsPerUpsert: 500
+morningStar:
+  IPWhitelist:
+    - 3.13.236.193
+    - 3.23.173.207
+    - 3.143.64.67
+    - 18.116.22.218
+    - 18.116.186.211
+  user: "***"
+  password: "***"
+  protocol: http
+  host: msuxml.morningstar.com
+  defaultTimezone: UTC+00
+  quotas:
+    # 500 by agreement
+    symbolsInRequest: 450
+    # 50 by agreement
+    requestsPerSecond: 45
+    # 500 by agreement
+    symbolsPerSecond: 450
+  loadPriceFrom: '2000-01-01'
+bullmq:
+  concurrency: 50
+  attempts: 8
+  backoff:
+    type: exponential
+    delay: 5000
+  cleanOnStart: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  arena:
+    host: 0.0.0.0
+    port: 9119

@@ -1,0 +1,127 @@
+.pinterest-icon,
+.facebook-icon,
+.twitter-icon,
+.youtube-icon,
+.google-plus-icon,
+.googleplus-icon,
+.linkedin-icon {
+  color: #fff;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  line-height: 33px;
+  font-size: 24px;
+}
+
+.pinterest-icon {
+  background: #bd081c;
+  &:hover {
+    background: #9e0717;
+  }
+}
+
+.facebook-icon {
+  background: #334990;
+  &:hover {
+    background: #3b54a6;
+  }
+}
+
+.twitter-icon {
+  background: #069fed;
+  &:hover {
+    background: #06a8fb;
+  }
+}
+
+.google-plus-icon,
+.googleplus-icon {
+  background: #d84232;
+  &:hover {
+    background: #ec4a38;
+  }
+}
+
+.youtube-icon {
+  background: #d12121;
+  &:hover {
+    background: #dc2323;
+  }
+}
+
+.linkedin-icon {
+  background: #1076a7;
+  &:hover {
+    background: #128EC9;
+  }
+}
+
+.share-listings {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #d3d3d3;
+  .social-sharing & {
+    border-width: 0 0 1px 0;
+  }
+  li {
+    padding: $font_size_s2 0;
+    position: relative;
+    .social-sharing & {
+      border-width: 1px 0 0 0;
+      border-style: solid;
+      border-color: #d3d3d3;
+      padding: 10px 0;
+      @media screen and (min-width: 860px) {
+        line-height: $font_size_l;
+      }
+    }
+  }
+  label {
+    padding-left: 103px;
+    cursor: pointer;
+    color: #565a5c;
+    display: block;
+    @media screen and (min-width: 860px) {
+      width: 24%;
+      display: inline-block;
+    }
+    .social-sharing & {
+      line-height: $font_size_l;
+      padding-left: 47px;
+      cursor: default;
+    }
+  }
+  p {
+    color: #565a5c;
+    padding-top: $font_size_s2;
+    @media screen and (min-width: 860px) {
+      display: inline-block;
+      width: 75%;
+      padding-top: 0;
+    }
+  }
+  input {
+    position: absolute;
+    left: 10px;
+    top: 22px;
+  }
+  span {
+    position: absolute;
+    top: 11px;
+    left: 48px;
+    .social-sharing & {
+      left: 0;
+    }
+  }
+  .button {
+    min-width: 100px;
+    margin-top: 10px;
+    @media screen and (min-width: 860px) {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      margin-top: 0;
+    }
+  }
+}

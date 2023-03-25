@@ -1,0 +1,215 @@
+.layout-background {
+  background-color: $layout-color;
+}
+
+.message {
+  position: fixed;
+  height: 50px;
+  background-color: $blue;
+  box-shadow: 0 3px 8px rgba(50, 50, 50, .40);
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.message-warning {
+  color: white;
+  background-color: $red;
+}
+
+.header {
+  height: 52px;
+  margin-left: 280px;
+  border-bottom: 2px solid #5b6573;
+
+  .title {
+    height: 50px;
+    background: $sand;
+  }
+}
+
+.mobile-header {
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+
+  .menu-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 280px;
+  background: #fff;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  overflow: auto;
+}
+
+/*100vh height fix for filters(dropdown) overlap*/
+
+.content {
+  margin-left: 280px;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &.shifted {
+    padding-top: 90px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+}
+
+/*
+  styles in block below fix problem of "Logged in as Admin of Company X" block
+  that overlaps page content. Numbers in additional calculations here correspond to
+  amendments by height of '.message' block, where incarnated info is rendered to.
+*/
+@media(--desktop) {
+  .message ~ div {
+    .af-content {
+      max-height: calc(100vh - 180px);
+    }
+  }
+}
+
+@media(--tablet-sidebar) {
+  .sidebar {
+    width: 250px;
+    transform: translateX(-100%);
+    background: #fff;
+    margin-bottom: 0;
+    height: 100%;
+    max-height: 100%;
+    z-index: 1001;
+    transition: transform .3s;
+
+    &.open {
+      transform: translateX(0);
+    }
+
+    .footer {
+      position: static;
+    }
+
+  }
+  .close-menu-icon {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    background: $primary-color;
+    padding: 5px;
+    animation: slide-right .3s;
+
+    &.aligned-right {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  @keyframes slide-right {
+    0% {
+      transform: translateX(-282px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  .content,
+  .header {
+    margin-left: 0;
+  }
+
+  .content {
+    max-height: calc(100vh - 60px);
+    padding: 20px 10px;
+
+    &.shifted {
+      padding-top: 30px;
+    }
+  }
+
+  .header {
+    height: 50px;
+    border-bottom: none;
+
+    .title {
+      justify-content: center;
+      text-transform: none;
+      font-size: 18px;
+    }
+  }
+
+  .message {
+    position: static;
+  }
+}
+
+.af-header {
+  height: 50px;
+  background-color: #fff;
+  min-width: 850px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .1);
+  .logo-text {
+    color: $grey;
+  }
+  .logo {
+    width: 66px;
+    height: 50px;
+  }
+}
+
+.af-sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(0);
+  width: 200px;
+  background: $yellow;
+  overflow: auto;
+  transition: transform .3s;
+  z-index: 1001;
+  &:not(.open) {
+    transform: translateX(100%);
+  }
+}
+
+.af-content {
+  max-height: calc(100vh - 130px);
+  min-width: 850px;
+  overflow: auto;
+  padding-top: 40px;
+}
+
+#scrollContainer {
+  position: relative;
+}
+
+.contentContainer {
+  background-color: #fff;
+  box-shadow: $shadow;
+  border-radius: 6px;
+  padding: 30px;
+}
+
+.chartContainer {
+  background-color: #fff;
+  box-shadow: $shadow;
+  border-radius: 6px;
+}

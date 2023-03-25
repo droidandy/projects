@@ -1,0 +1,4 @@
+ha_article_get:
+    path:  /{id}
+    defaults: { _controller: AppBundle:Api\Article\Article:get }
+    methods:  [GET]

@@ -1,0 +1,11 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "binding_hash": {
+    "type": "string"
+  },
+  "image_url": {
+    "type": "string"
+  }
+}

@@ -1,0 +1,25 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">
+        <span>Confirm Passcode</span>
+      </ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <ion-content scroll="false">
+    <div class="settings">
+      <div class="row" >
+        <div class="col-xs-12 selection">
+          <input type="password" placeholder="Passcode" ng-model="data.passcode">
+        </div>
+      </div>
+      <ul class="bad-things">
+        <li class="text-center log-out"><a href="" class="active" ng-click="confirmPasscode()" transitiontype="slide" direction="up">Confirm</a></li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

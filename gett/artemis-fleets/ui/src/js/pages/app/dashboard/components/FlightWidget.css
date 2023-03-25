@@ -1,0 +1,32 @@
+.widget {
+  width: calc(25% - 15px);
+}
+
+.input {
+  border: none;
+  border-radius: 8px;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e8ec;
+    + td {
+      border-left: 1px solid #e0e8ec;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .widget {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .widget {
+    width: 100%;
+  }
+}

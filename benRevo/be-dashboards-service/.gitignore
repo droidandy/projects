@@ -1,0 +1,40 @@
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Build Files
+**/dependency-check-report.html
+target
+test.txt
+.env
+
+# IntelliJ IDEA
+.idea
+*.iml
+
+# Auth0/AWS
+**/auth0.properties
+**/aws.properties
+**/salesforce.properties
+
+# Logs
+/logs
+
+# Eclipse
+.classpath
+.project
+.settings
+
+# OS specific files
+.DS_Store
+test-output/
+*.bak
+*.log
+bin
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

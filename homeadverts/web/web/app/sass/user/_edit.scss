@@ -1,0 +1,457 @@
+.image-cropping-dialog,
+.background-cropping-dialog {
+  .mdl-dialog__content {
+    padding: 10px 8px 14px 8px;
+
+    .cropping-box {
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .cropping-result {
+    background: #333;
+    color: #fff;
+    font-size: 13px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include transition(0.3s);
+
+    &:hover {
+      background: #000;
+    }
+  }
+
+  .cropping-cancel {
+    color: #333;
+    font-size: 13px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    @include transition(0.3s);
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.image-cropping-dialog {
+  width: 420px;
+
+  .mdl-dialog__content {
+    .cropping-box {
+      .cropper-view-box,
+      .cropper-face {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.background-cropping-dialog {
+  width: 640px;
+}
+
+.settings-form {
+  display: flex;
+  margin-top: 20px;
+
+  .data {
+    flex: 1;
+
+    &.\--left {
+      margin-right: 20px;
+    }
+  }
+}
+
+.profile-section {
+  position: relative;
+  margin-top: 80px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color_1;
+    margin-bottom: 10px;
+  }
+
+  .info {
+    font-size: 15px;
+    color: $color_2;
+    line-height: 1.4;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+
+    &.\--separator {
+      border-bottom: 0;
+      margin-top: 30px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    a {
+      color: #757575;
+      font-weight: 600;
+      @include transition(0.3s);
+
+      &:hover {
+        color: #212121;
+      }
+    }
+  }
+
+  &.\--margin-bottom {
+    margin-bottom: 80px;
+  }
+}
+
+.user-profile-upload {
+  width: 115px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  z-index: 9;
+
+  .upload-image {
+    opacity: 0;
+    position: absolute;
+    left: 3px;
+    top: 0;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    i {
+      z-index: 1;
+      font-size: 36px;
+      left: 40px;
+      top: 40px;
+      position: absolute;
+      cursor: pointer;
+    }
+
+    input {
+      z-index: 5;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      left: 0;
+      cursor: pointer;
+      position: absolute;
+    }
+  }
+
+  .profile-block-image {
+    border: 2px solid #fff;
+
+    &:before {
+      opacity: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 11;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+
+  &:hover {
+    .upload-image {
+      opacity: 1;
+    }
+
+    .profile-block-image {
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.grouped-fields {
+  position: relative;
+  color: #777;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+
+  &.\--separator-top {
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+  }
+
+  &.\--separator-bottom {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  &.\--enquiry {
+    .inline-and-save {
+      .input-line {
+        width: calc(100% - 180px);
+      }
+
+      button {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: $color_1;
+  }
+
+  .field-group {
+    margin-bottom: 10px;
+  }
+
+  .field-content {
+    margin-bottom: 20px;
+    width: 50%;
+    color: $color_2;
+    line-height: 1.5;
+    float: left;
+    @extend %clearfix;
+
+    .highlighted & {
+      border-color: #555;
+    }
+
+    ol {
+      li {
+        list-style-type: decimal;
+        list-style-position: inside;
+        line-height: 20px;
+      }
+    }
+
+    .button {
+      float: right;
+      margin-left: 10px;
+      min-width: 100px;
+      margin-top: $font_size_s2;
+      @media screen and (min-width: 500px) {
+        margin-top: 0;
+      }
+    }
+
+    h3 {
+      font-size: $font_size_s2;
+      line-height: 20px;
+      padding-bottom: 18px;
+    }
+  }
+
+  .group-item {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    .name {
+      float: left;
+
+      .social-button {
+        width: 270px;
+        margin-top: -5px;
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+        font-size: 12px;
+
+        &.\--facebook {
+          background: #3d5b97;
+        }
+
+        &.\--twitter {
+          background: #62a9db;
+        }
+
+        &.\--linkedin {
+          background: #1179b2;
+        }
+
+        &.\--tumblr {
+          background: #34465c;
+        }
+
+        &.\--google {
+          background: #d95045;
+        }
+
+        &.\--youtube {
+          background: #d95045;
+        }
+
+        &.\--pinterest {
+          background: #b60918;
+        }
+
+        &.\--disconnect {
+          background: #fafafa;
+          color: #212121;
+        }
+
+        .fa {
+          font-size: 18px;
+          float: left;
+          margin-right: 10px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+.grouped-fields,
+.group-item {
+  .comment {
+    font-weight: 700;
+    text-align: left;
+    float: right;
+    margin-right: 40px;
+    color: $color_2;
+    position: absolute;
+    left: -100px;
+    top: 0;
+  }
+
+  .settings-action {
+    float: right;
+    position: relative;
+    width: 150px;
+
+    .onoff {
+      color: $color_2;
+      display: block;
+      font-weight: 700;
+      float: right;
+    }
+
+    .switch {
+      float: right;
+      margin: 0 20px;
+    }
+    &.\--wide {
+      width: initial;
+    }
+  }
+}
+
+.field-footer {
+  padding: 10px 0;
+  clear: both;
+  @extend %clearfix;
+
+  .button {
+    min-width: 100px;
+    margin-top: 10px;
+    float: right;
+    margin-left: 10px;
+
+    .sale & {
+      float: none;
+      margin-left: 10px;
+    }
+  }
+
+  span {
+    .sale & {
+      margin-top: 10px;
+      display: inline;
+      line-height: $font_size_l;
+    }
+
+    &.fa-caret-down {
+      line-height: 34px;
+    }
+  }
+
+  .form-email-message & {
+    border-width: 0;
+  }
+
+  .button-menu {
+    display: inline-block;
+    position: relative;
+  }
+
+  .sale & {
+    padding: 22px 0;
+    text-align: right;
+  }
+}
+
+// Tablet
+@media only screen and (max-width: $tablet_width - 1px) {
+  .grouped-fields .group-item .name .social-button {
+    width: 214px;
+  }
+
+  .grouped-fields .comment, .group-item .comment {
+    left: -55px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: $mobile_width) {
+  .settings-form {
+    display: block;
+    .data {
+      &.\--left {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .grouped-fields .settings-action,
+  .group-item .settings-action,
+  .grouped-fields .comment,
+  .group-item .comment {
+    display: block;
+    position: static;
+    float: none;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .grouped-fields .group-item {
+    padding-bottom: 0;
+
+    .name {
+      width: 100%;
+      margin-bottom: 10px;
+      clear: both;
+
+      .social-button {
+        width: 100%;
+      }
+    }
+  }
+
+  .grouped-fields .field-content {
+    width: 100%;
+  }
+}

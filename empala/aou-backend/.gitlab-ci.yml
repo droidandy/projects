@@ -1,0 +1,785 @@
+# See https://docs.gitlab.com/ee/ci/cloud_deployment and https://docs.gitlab.com/ee/ci/docker/using_docker_images.html for more info
+# For more info about the deploy image used by the runners, see ./gitlab-ci/images/deploy
+
+stages:
+  - withdb-test
+  - apex-extend-test
+  - build
+  - apex-ext-datagrabber-test
+  - morningstar-datagrabber-test
+  - ae-logos-datagrabber-test
+  - deploy
+  - integration-test
+
+withdb-test:
+  stage: withdb-test
+  only:
+    - branches
+    - tags
+    - merge_requests
+  tags:
+    - eks-dev
+  image: node:14-alpine
+  variables:
+    POSTGRES_DB: aou-test-template
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test-template
+    AWS_COGNITO_READONLY_ADMIN_USER_NAME: ${AWS_COGNITO_READONLY_ADMIN_USER_NAME_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME_FEATURE}
+  services:
+    - timescale/timescaledb:latest-pg12
+  coverage: /All files[^|]*\|[^|]*\s+[\d\.]+[^|]*\|[^|]*\s+([\d\.]+)/
+  before_script:
+    - apk update && apk add git && npm --loglevel warn ci
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../ae-logos-datagrabber
+    - npm --loglevel warn ci
+    - cd ../apex-ext-datagrabber
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - cd ../morningstar-datagrabber
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - cd ../..
+  script:
+    - ./ci-cd/check-rebase.sh
+    - ./ci-cd/check-code.sh
+    - cd ./products/utils
+    - npm run test
+    - cd ../core-be
+    - npm run coverage:withdb
+  artifacts:
+    reports:
+      cobertura: products/core-be/coverage/cobertura-coverage.xml
+
+apex-extend-trading-api-test:
+  stage: apex-extend-test
+  tags:
+    - eks-dev
+  image: node:14-alpine
+  variables:
+    POSTGRES_DB: aou-test-template
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test-template
+    AWS_COGNITO_READONLY_ADMIN_USER_NAME: ${AWS_COGNITO_READONLY_ADMIN_USER_NAME_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME_FEATURE}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID_FOR_TESTS}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+  services:
+    - timescale/timescaledb:latest-pg12
+  coverage: /All files[^|]*\|[^|]*\s+[\d\.]+[^|]*\|[^|]*\s+([\d\.]+)/
+  before_script:
+    - apk update && apk add git && npm --loglevel warn ci
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../ae-logos-datagrabber
+    - npm --loglevel warn ci
+    - cd ../apex-ext-datagrabber
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - cd ../morningstar-datagrabber
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - cd ../..
+  script:
+    - ./ci-cd/check-rebase.sh
+    - ./ci-cd/check-code.sh
+    - cd ./products/core-be
+    - npm run coverage:apex-extend
+  artifacts:
+    reports:
+      cobertura: products/core-be/coverage/cobertura-coverage.xml
+  rules:
+    - if: '($CI_COMMIT_REF_PROTECTED == "true" && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_APEX_EXTEND_TESTS != "true") && $CI_PIPELINE_SOURCE != "merge_request_event") || ($CI_COMMIT_REF_PROTECTED == "false" && $DISABLE_APEX_EXTEND_TESTS != "true" && (($CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE !~ /.*#noapexextend.*/) || ($CI_PIPELINE_SOURCE != "merge_request_event" && ($CI_COMMIT_REF_NAME =~ /.*apexextend.*/ || $CI_COMMIT_MESSAGE =~ /.*#apexextend.*/))))'
+
+build:
+  stage: build
+  tags:
+    - eks-dev
+  image: docker:20.10.7
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    APOLLO_IMAGE_TAG: ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+    HASURA_IMAGE_TAG: ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID}
+  services:
+    - docker:20.10.7-dind
+  before_script:
+    - |
+      for i in $(seq 1 30)
+      do
+          docker info && break
+          echo "Waiting for docker to start"
+          sleep 1s
+      done
+  script:
+    - cd ./products
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker build --tag ${APOLLO_IMAGE_TAG} --file Dockerfile-apollo .
+    - docker push ${APOLLO_IMAGE_TAG}
+    - docker build --tag ${HASURA_IMAGE_TAG} --file Dockerfile-hasura .
+    - docker push ${HASURA_IMAGE_TAG}
+  needs:
+    - job: withdb-test
+      optional: false
+    - job: apex-extend-trading-api-test
+      optional: true
+  only:
+    - branches
+    - tags
+    - merge_requests
+
+integration-test:
+  stage: integration-test
+  tags:
+    - eks-dev
+  image: $HASURA_CLI_IMAGE_TAG
+  variables:
+    POSTGRES_DB: aou-test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test
+    APOLLO_SERVER_HOST_URI: http://127.0.0.1:3000
+    AWS_COGNITO_JWKS_CLIENT: ${AWS_COGNITO_JWKS_CLIENT_FEATURE}
+    AWS_COGNITO_AUDIENCE_CLAIM: ${AWS_COGNITO_AUDIENCE_CLAIM_FEATURE}
+    AWS_COGNITO_ISSUER_CLAIM: ${AWS_COGNITO_ISSUER_CLAIM_FEATURE}
+    AWS_COGNITO_USER_POOL_ID: ${AWS_COGNITO_USER_POOL_ID_FEATURE}
+    AWS_COGNITO_IDENTITY_POOL_ID: ${AWS_COGNITO_IDENTITY_POOL_ID_FEATURE}
+    AWS_COGNITO_REGION: ${AWS_COGNITO_REGION_FEATURE}
+    AWS_COGNITO_CLIENT_ID: ${AWS_COGNITO_CLIENT_ID_FEATURE}
+    AWS_COGNITO_READONLY_ADMIN_USER_NAME: ${AWS_COGNITO_READONLY_ADMIN_USER_NAME_FEATURE}
+    AWS_COGNITO_READONLY_ADMIN_USER_PASSWORD: ${AWS_COGNITO_READONLY_ADMIN_USER_PASSWORD_FEATURE}
+    AWS_COGNITO_TEST_USER_EMAIL: ${AWS_COGNITO_TEST_USER_EMAIL_FEATURE}
+    AWS_COGNITO_TEST_USER_PASSWORD: ${AWS_COGNITO_TEST_USER_PASSWORD_FEATURE}
+    APEX_EXTEND_LOGOS_API_URL: ${APEX_EXTEND_LOGOS_API_URL}
+    APEX_EXTEND_LOGOS_API_KEY: ${APEX_EXTEND_LOGOS_API_KEY}
+    APEX_EXTEND_LOGOS_API_SECRET: ${APEX_EXTEND_LOGOS_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+    HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET_FEATURE}
+    HASURA_GRAPHQL_ENDPOINT: http://127.0.0.1:8080/v1/graphql
+    HASURA_ENDPOINT: http://127.0.0.1:8080
+    HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_UNAUTHORIZED_ROLE: public
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+  services:
+    - timescale/timescaledb:latest-pg12
+    - ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+    - ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID}
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - npm run typeorm-dev migration:run
+    - cd ../
+    - hasura-cli metadata apply --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura
+    - cd ./test
+    - npm --loglevel warn ci
+    - npm run test:integration
+  needs: ["build"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' || $CI_COMMIT_REF_PROTECTED == "false"
+
+integration-test-ext:
+  stage: integration-test
+  tags:
+    - eks-dev
+  image: node:14-alpine
+  variables:
+    POSTGRES_DB: aou-test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test
+    APOLLO_SERVER_HOST_URI: http://127.0.0.1:3000
+    AWS_COGNITO_JWKS_CLIENT: ${AWS_COGNITO_JWKS_CLIENT_FEATURE}
+    AWS_COGNITO_AUDIENCE_CLAIM: ${AWS_COGNITO_AUDIENCE_CLAIM_FEATURE}
+    AWS_COGNITO_ISSUER_CLAIM: ${AWS_COGNITO_ISSUER_CLAIM_FEATURE}
+    AWS_COGNITO_USER_POOL_ID: ${AWS_COGNITO_USER_POOL_ID_FEATURE}
+    AWS_COGNITO_IDENTITY_POOL_ID: ${AWS_COGNITO_IDENTITY_POOL_ID_FEATURE}
+    AWS_COGNITO_REGION: ${AWS_COGNITO_REGION_FEATURE}
+    AWS_COGNITO_CLIENT_ID: ${AWS_COGNITO_CLIENT_ID_FEATURE}
+    AWS_COGNITO_READONLY_ADMIN_USER_NAME: ${AWS_COGNITO_READONLY_ADMIN_USER_NAME_FEATURE}
+    AWS_COGNITO_READONLY_ADMIN_USER_PASSWORD: ${AWS_COGNITO_READONLY_ADMIN_USER_PASSWORD_FEATURE}
+    AWS_COGNITO_TEST_USER_EMAIL: ${AWS_COGNITO_TEST_USER_EMAIL_FEATURE}
+    AWS_COGNITO_TEST_USER_PASSWORD: ${AWS_COGNITO_TEST_USER_PASSWORD_FEATURE}
+    APEX_EXTEND_LOGOS_API_URL: ${APEX_EXTEND_LOGOS_API_URL}
+    APEX_EXTEND_LOGOS_API_KEY: ${APEX_EXTEND_LOGOS_API_KEY}
+    APEX_EXTEND_LOGOS_API_SECRET: ${APEX_EXTEND_LOGOS_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+  services:
+    - timescale/timescaledb:latest-pg12
+    - ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - npm run typeorm-dev migration:run
+    - cd ../test
+    - npm --loglevel warn ci
+    - npm run test:integration-ext
+  needs: ["build"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' || $CI_COMMIT_REF_PROTECTED == "false"
+
+apex-ext-datagrabber-mock-sftp-test:
+  stage: apex-ext-datagrabber-test
+  tags:
+    - eks-dev
+  image: $HASURA_CLI_IMAGE_TAG
+  variables:
+    POSTGRES_DB: aou-test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test
+    APEX_EXTRACTS_SFTP_HOST: 127.0.0.1
+    APEX_EXTRACTS_SFTP_PORT: 22
+    APEX_EXTRACTS_SFTP_USER: test
+    APEX_EXTRACTS_DAYS_BEFORE_CURRENT: 2
+    APEX_EXTRACTS_SFTP_PRIVATE_KEY: ${APEX_EXTRACTS_SFTP_PRIVATE_KEY_LOCAL}
+    APEX_EXTRACTS_MOCK_SFTP_PUBLIC_KEY: ${APEX_EXTRACTS_MOCK_SFTP_PUBLIC_KEY}
+    APOLLO_SERVER_HOST_URI: http://127.0.0.1:3000
+    AWS_COGNITO_JWKS_CLIENT: ${AWS_COGNITO_JWKS_CLIENT_FEATURE}
+    AWS_COGNITO_AUDIENCE_CLAIM: ${AWS_COGNITO_AUDIENCE_CLAIM_FEATURE}
+    AWS_COGNITO_ISSUER_CLAIM: ${AWS_COGNITO_ISSUER_CLAIM_FEATURE}
+    AWS_COGNITO_USER_POOL_ID: ${AWS_COGNITO_USER_POOL_ID_FEATURE}
+    AWS_COGNITO_IDENTITY_POOL_ID: ${AWS_COGNITO_IDENTITY_POOL_ID_FEATURE}
+    AWS_COGNITO_REGION: ${AWS_COGNITO_REGION_FEATURE}
+    AWS_COGNITO_CLIENT_ID: ${AWS_COGNITO_CLIENT_ID_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD_FEATURE}
+    APEX_EXTEND_LOGOS_API_URL: ${APEX_EXTEND_LOGOS_API_URL}
+    APEX_EXTEND_LOGOS_API_KEY: ${APEX_EXTEND_LOGOS_API_KEY}
+    APEX_EXTEND_LOGOS_API_SECRET: ${APEX_EXTEND_LOGOS_API_SECRET}
+    HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET_FEATURE}
+    HASURA_GRAPHQL_ENDPOINT: http://127.0.0.1:8080/v1/graphql
+    HASURA_ENDPOINT: http://127.0.0.1:8080
+    HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_UNAUTHORIZED_ROLE: public
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+  services:
+    - timescale/timescaledb:latest-pg12
+    - ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+    - ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID}
+    - $SFTP_SERVER_IMAGE_TAG
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - npm run typeorm-dev migration:run
+    - cd ../
+    - hasura-cli metadata apply --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura
+    - cd ./apex-ext-datagrabber
+    - npm --loglevel warn ci
+    - npm run coverage:apex:mock:sftp
+  needs: ["build"]
+  only:
+    - branches
+    - tags
+    - merge_requests
+
+apex-ext-datagrabber-test:
+  stage: apex-ext-datagrabber-test
+  tags:
+    - eks-dev
+  image: $HASURA_CLI_IMAGE_TAG
+  variables:
+    POSTGRES_DB: aou-test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test
+    APEX_EXTRACTS_SFTP_HOST: ${APEX_EXTRACTS_SFTP_HOST_UAT}
+    APEX_EXTRACTS_SFTP_PORT: 22
+    APEX_EXTRACTS_SFTP_USER: ${APEX_EXTRACTS_SFTP_USER_UAT}
+    APEX_EXTRACTS_DAYS_BEFORE_CURRENT: 2
+    APEX_EXTRACTS_SFTP_PRIVATE_KEY: ${APEX_EXTRACTS_SFTP_PRIVATE_KEY_UAT}
+    APOLLO_SERVER_HOST_URI: http://127.0.0.1:3000
+    AWS_COGNITO_JWKS_CLIENT: ${AWS_COGNITO_JWKS_CLIENT_FEATURE}
+    AWS_COGNITO_AUDIENCE_CLAIM: ${AWS_COGNITO_AUDIENCE_CLAIM_FEATURE}
+    AWS_COGNITO_ISSUER_CLAIM: ${AWS_COGNITO_ISSUER_CLAIM_FEATURE}
+    AWS_COGNITO_USER_POOL_ID: ${AWS_COGNITO_USER_POOL_ID_FEATURE}
+    AWS_COGNITO_IDENTITY_POOL_ID: ${AWS_COGNITO_IDENTITY_POOL_ID_FEATURE}
+    AWS_COGNITO_REGION: ${AWS_COGNITO_REGION_FEATURE}
+    AWS_COGNITO_CLIENT_ID: ${AWS_COGNITO_CLIENT_ID_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD_FEATURE}
+    APEX_EXTEND_LOGOS_API_URL: ${APEX_EXTEND_LOGOS_API_URL}
+    APEX_EXTEND_LOGOS_API_KEY: ${APEX_EXTEND_LOGOS_API_KEY}
+    APEX_EXTEND_LOGOS_API_SECRET: ${APEX_EXTEND_LOGOS_API_SECRET}
+    HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET_FEATURE}
+    HASURA_GRAPHQL_ENDPOINT: http://127.0.0.1:8080/v1/graphql
+    HASURA_ENDPOINT: http://127.0.0.1:8080
+    HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_UNAUTHORIZED_ROLE: public
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+  services:
+    - timescale/timescaledb:latest-pg12
+    - ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+    - ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID}
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - npm run typeorm-dev migration:run
+    - cd ../
+    - hasura-cli metadata apply --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura 
+    - cd ./apex-ext-datagrabber
+    - npm --loglevel warn ci
+    - npm run test:apex:real:sftp
+  needs: ["build"]
+  rules:
+    - if: '($CI_COMMIT_REF_PROTECTED == "true" && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_APEX_LEGACY_TESTS != "true") && $CI_PIPELINE_SOURCE != "merge_request_event") || ($CI_COMMIT_REF_PROTECTED == "false" && $DISABLE_APEX_LEGACY_TESTS != "true" && (($CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE !~ /.*#noapexlegacy.*/) || ($CI_PIPELINE_SOURCE != "merge_request_event" && ($CI_COMMIT_REF_NAME =~ /.*apexlegacy.*/ || $CI_COMMIT_MESSAGE =~ /.*#apexlegacy.*/))))'
+
+morningstar-datagrabber-test:
+  stage: morningstar-datagrabber-test
+  tags:
+    - eks-dev
+  image: $HASURA_CLI_IMAGE_TAG
+  variables:
+    POSTGRES_DB: aou-test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test
+    MORNING_STAR_USER: ${MORNING_STAR_USER_FEATURE}
+    MORNING_STAR_PASSWORD: ${MORNING_STAR_PASSWORD_FEATURE}
+    BULLMQ_REDIS_HOST: localhost
+    BULLMQ_REDIS_PORT: ${BULLMQ_REDIS_PORT_FEATURE}
+    APOLLO_SERVER_HOST_URI: http://127.0.0.1:3000
+    AWS_COGNITO_JWKS_CLIENT: ${AWS_COGNITO_JWKS_CLIENT_FEATURE}
+    AWS_COGNITO_AUDIENCE_CLAIM: ${AWS_COGNITO_AUDIENCE_CLAIM_FEATURE}
+    AWS_COGNITO_ISSUER_CLAIM: ${AWS_COGNITO_ISSUER_CLAIM_FEATURE}
+    AWS_COGNITO_USER_POOL_ID: ${AWS_COGNITO_USER_POOL_ID_FEATURE}
+    AWS_COGNITO_IDENTITY_POOL_ID: ${AWS_COGNITO_IDENTITY_POOL_ID_FEATURE}
+    AWS_COGNITO_REGION: ${AWS_COGNITO_REGION_FEATURE}
+    AWS_COGNITO_CLIENT_ID: ${AWS_COGNITO_CLIENT_ID_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD_FEATURE}
+    APEX_EXTEND_LOGOS_API_URL: ${APEX_EXTEND_LOGOS_API_URL}
+    APEX_EXTEND_LOGOS_API_KEY: ${APEX_EXTEND_LOGOS_API_KEY}
+    APEX_EXTEND_LOGOS_API_SECRET: ${APEX_EXTEND_LOGOS_API_SECRET}
+    HASURA_GRAPHQL_ADMIN_SECRET: ${HASURA_GRAPHQL_ADMIN_SECRET_FEATURE}
+    HASURA_GRAPHQL_ENDPOINT: http://127.0.0.1:8080/v1/graphql
+    HASURA_ENDPOINT: http://127.0.0.1:8080
+    HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/aou-test
+    HASURA_GRAPHQL_UNAUTHORIZED_ROLE: public
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+  services:
+    - timescale/timescaledb:latest-pg12
+    - ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+    - ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID}
+    - redis:alpine
+  script:
+    - cd ./products/core-be
+    - npm --loglevel warn ci
+    - npm run typeorm-dev migration:run
+    - cd ../
+    - hasura-cli metadata apply --skip-update-check --endpoint $HASURA_ENDPOINT --admin-secret $HASURA_GRAPHQL_ADMIN_SECRET --project hasura
+    - cd ./utils
+    - npm --loglevel warn ci
+    - cd ../morningstar-datagrabber
+    - npm --loglevel warn ci
+    - npm run test:morningstar
+  needs: ["build"]
+  rules:
+    - if: '($CI_COMMIT_REF_PROTECTED == "true" && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_MORNING_STAR_TESTS != "true") && $CI_PIPELINE_SOURCE != "merge_request_event") || ($CI_COMMIT_REF_PROTECTED == "false" && $DISABLE_MORNING_STAR_TESTS != "true" && $DISABLE_MORNING_STAR_TESTS != "true" && (($CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE !~ /.*#nomorningstar.*/) || ($CI_PIPELINE_SOURCE != "merge_request_event" && ($CI_COMMIT_REF_NAME =~ /.*morningstar.*/ || $CI_COMMIT_MESSAGE =~ /.*#morningstar.*/))))'
+
+ae-logos-datagrabber-test:
+  stage: ae-logos-datagrabber-test
+  tags:
+    - eks-dev
+  image: node:14-alpine
+  variables:
+    POSTGRES_DB: aou-test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+    POSTGRES_HOST_AUTH_METHOD: trust
+    NODE_ENV: development
+    DB_HOST: 127.0.0.1
+    DB_PORT: 5432
+    DB_NAME: aou-test
+    APEX_EXTEND_LOGOS_AWS_ACCESS_KEY_ID: ${APEX_EXTEND_LOGOS_AWS_ACCESS_KEY_ID_FEATURE}
+    APEX_EXTEND_LOGOS_AWS_SECRET_ACCESS_KEY: ${APEX_EXTEND_LOGOS_AWS_SECRET_ACCESS_KEY_FEATURE}
+    APEX_EXTEND_LOGOS_AWS_REGION: ${APEX_EXTEND_LOGOS_AWS_REGION_FEATURE}
+    APEX_EXTEND_LOGOS_AWS_S3_BUCKET_NAME: ${APEX_EXTEND_LOGOS_AWS_S3_BUCKET_NAME_FEATURE}
+    APEX_EXTEND_LOGOS_AWS_CLOUDFRONT_URL: ${APEX_EXTEND_LOGOS_AWS_CLOUDFRONT_URL_FEATURE}
+    BULLMQ_REDIS_HOST: localhost
+    BULLMQ_REDIS_PORT: ${BULLMQ_REDIS_PORT_FEATURE}
+    APOLLO_SERVER_HOST_URI: http://127.0.0.1:3000
+    AWS_COGNITO_JWKS_CLIENT: ${AWS_COGNITO_JWKS_CLIENT_FEATURE}
+    AWS_COGNITO_AUDIENCE_CLAIM: ${AWS_COGNITO_AUDIENCE_CLAIM_FEATURE}
+    AWS_COGNITO_ISSUER_CLAIM: ${AWS_COGNITO_ISSUER_CLAIM_FEATURE}
+    AWS_COGNITO_USER_POOL_ID: ${AWS_COGNITO_USER_POOL_ID_FEATURE}
+    AWS_COGNITO_IDENTITY_POOL_ID: ${AWS_COGNITO_IDENTITY_POOL_ID_FEATURE}
+    AWS_COGNITO_REGION: ${AWS_COGNITO_REGION_FEATURE}
+    AWS_COGNITO_CLIENT_ID: ${AWS_COGNITO_CLIENT_ID_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_NAME_FEATURE}
+    AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD: ${AWS_COGNITO_MARKETDATA_UPDATER_USER_PASSWORD_FEATURE}
+    APEX_EXTEND_LOGOS_API_URL: ${APEX_EXTEND_LOGOS_API_URL}
+    APEX_EXTEND_LOGOS_API_KEY: ${APEX_EXTEND_LOGOS_API_KEY}
+    APEX_EXTEND_LOGOS_API_SECRET: ${APEX_EXTEND_LOGOS_API_SECRET}
+    INSTRUMENT_CACHE_LOADING_BATCH_SIZE: ${INSTRUMENT_CACHE_LOADING_BATCH_SIZE}
+    INSTRUMENT_CACHE_RELOAD_UTC_TIME: ${INSTRUMENT_CACHE_RELOAD_UTC_TIME}
+    APEX_EXTEND_APPLICATIONS_URL: ${APEX_EXTEND_APPLICATIONS_URL}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_KEY}
+    APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET: ${APEX_EXTEND_APPLICATIONS_ADMIN_API_SECRET}
+    APEX_EXTEND_APPLICATIONS_USER_ID: ${APEX_EXTEND_APPLICATIONS_USER_ID}
+    APEX_EXTEND_TRADE_ACCOUNT_ID: ${APEX_EXTEND_TRADE_ACCOUNT_ID}
+    APEX_EXTEND_TRADE_API_KEY: ${APEX_EXTEND_TRADE_API_KEY}
+    APEX_EXTEND_TRADE_API_ENTITY: ${APEX_EXTEND_TRADE_API_ENTITY}
+    APEX_EXTEND_TRADE_API_GROUP: ${APEX_EXTEND_TRADE_API_GROUP}
+    APEX_EXTEND_TRADE_API_URL: ${APEX_EXTEND_TRADE_API_URL}
+  services:
+    - timescale/timescaledb:latest-pg12
+    - ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID}
+    - redis:alpine
+  script:
+    - cd ./products/core-be
+    - npm --loglevel warn ci
+    - npm run typeorm-dev migration:run
+    - cd ../utils
+    - npm --loglevel warn ci
+    - cd ../ae-logos-datagrabber
+    - npm --loglevel warn ci
+    - npm run test:all
+  needs: ["build"]
+  rules:
+    - if: '($CI_COMMIT_REF_PROTECTED == "true" && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_APEX_EXTEND_TESTS != "true") && $CI_PIPELINE_SOURCE != "merge_request_event") || ($CI_COMMIT_REF_PROTECTED == "false" && $DISABLE_APEX_EXTEND_TESTS != "true" && (($CI_PIPELINE_SOURCE == "merge_request_event" && $CI_COMMIT_MESSAGE !~ /.*#noapexextend.*/) || ($CI_PIPELINE_SOURCE != "merge_request_event" && ($CI_COMMIT_REF_NAME =~ /.*apexextend.*/ || $CI_COMMIT_MESSAGE =~ /.*#apexextend.*/))))'
+
+deploy-dev:
+  stage: deploy
+  tags:
+    - eks-dev
+  environment:
+    name: development
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: $DEPLOY_ENV_IMAGE_TAG
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    NODE_ENV: development
+  services:
+    - docker:20.10.7-dind
+  before_script:
+    - |
+      for i in $(seq 1 30)
+      do
+          docker info && break
+          echo "Waiting for docker to start"
+          sleep 1s
+      done
+  script:
+    - ./ci-cd/deploy-core-be.sh dev-develop ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID} ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID} $DEPLOY_ENV_APOLLO_ADD_ARGS
+  needs: ["build"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH
+
+deploy-main:
+  stage: deploy
+  tags:
+    - eks-dev
+  environment:
+    name: main
+    deployment_tier: development
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: $DEPLOY_ENV_IMAGE_TAG
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    NODE_ENV: development
+  services:
+    - docker:20.10.7-dind
+  before_script:
+    - |
+      for i in $(seq 1 30)
+      do
+          docker info && break
+          echo "Waiting for docker to start"
+          sleep 1s
+      done
+  script:
+    - ./ci-cd/deploy-core-be.sh dev-main ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID} ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID} $DEPLOY_ENV_APOLLO_ADD_ARGS
+  needs: ["build"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH
+
+deploy-stg:
+  stage: deploy
+  tags:
+    - eks-dev
+  environment:
+    name: staging
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: $DEPLOY_ENV_IMAGE_TAG
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+    DOCKER_TLS_VERIFY: 1
+    DOCKER_CERT_PATH: "$DOCKER_TLS_CERTDIR/client"
+    NODE_ENV: development
+    APEX_EXTRACTS_SFTP_HOST: ${APEX_EXTRACTS_SFTP_HOST_UAT}
+    APEX_EXTRACTS_SFTP_USER: ${APEX_EXTRACTS_SFTP_USER_UAT}
+    APEX_EXTRACTS_SFTP_PRIVATE_KEY: ${APEX_EXTRACTS_SFTP_PRIVATE_KEY_UAT}
+  services:
+    - docker:20.10.7-dind
+  before_script:
+    - |
+      for i in $(seq 1 30)
+      do
+          docker info && break
+          echo "Waiting for docker to start"
+          sleep 1s
+      done
+  script:
+    - aws eks --region ${AWS_DEFAULT_REGION} update-kubeconfig --name aou-backend-stg
+    - echo $'\r' >> ./products/.dockerignore && cat ./products/.dockerignore.prod >> ./products/.dockerignore
+    - ./ci-cd/deploy-core-be.sh stg ${CI_REGISTRY_IMAGE}/apollo:${CI_PIPELINE_ID} ${CI_REGISTRY_IMAGE}/hasura:${CI_PIPELINE_ID} $DEPLOY_ENV_APOLLO_ADD_ARGS
+  needs:
+    - job: build
+      optional: false
+    - job: apex-ext-datagrabber-mock-sftp-test
+      optional: false
+    - job: ae-logos-datagrabber-test
+      optional: true
+    - job: apex-ext-datagrabber-test
+      optional: true
+    - job: apex-extend-trading-api-test
+      optional: true
+    - job: morningstar-datagrabber-test
+      optional: true
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH
+      when: manual
+
+integration-test-dev:
+  stage: integration-test
+  tags:
+    - eks-dev
+  environment:
+    name: development
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: node:14-alpine
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - export APOLLO_SERVER_HOST_URI=http://aou-backend-dev-develop-apollo.${KUBE_NAMESPACE}.svc.cluster.local:80
+    - export HASURA_GRAPHQL_ENDPOINT=http://aou-backend-dev-develop-hasura.${KUBE_NAMESPACE}.svc.cluster.local:80/v1/graphql
+    - npm run test:integration
+  needs: ["deploy-dev"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH
+
+integration-test-ext-dev:
+  stage: integration-test
+  tags:
+    - eks-dev
+  environment:
+    name: development
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: node:14-alpine
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - export APOLLO_SERVER_HOST_URI=http://aou-backend-dev-develop-apollo.${KUBE_NAMESPACE}.svc.cluster.local:80
+    - export HASURA_GRAPHQL_ENDPOINT=http://aou-backend-dev-develop-hasura.${KUBE_NAMESPACE}.svc.cluster.local:80/v1/graphql
+    - npm run test:integration-ext
+  needs: ["deploy-dev"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "merge_request_event" && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_APEX_EXTEND_TESTS != "true")'
+
+integration-test-main:
+  stage: integration-test
+  tags:
+    - eks-dev
+  environment:
+    name: main
+    deployment_tier: development
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: node:14-alpine
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - export APOLLO_SERVER_HOST_URI=http://aou-backend-dev-main-apollo.${KUBE_NAMESPACE}.svc.cluster.local:80
+    - export HASURA_GRAPHQL_ENDPOINT=http://aou-backend-dev-main-hasura.${KUBE_NAMESPACE}.svc.cluster.local:80/v1/graphql
+    - npm run test:integration
+  needs: ["deploy-main"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH
+
+integration-test-ext-main:
+  stage: integration-test
+  tags:
+    - eks-dev
+  environment:
+    name: main
+    deployment_tier: development
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: node:14-alpine
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - export APOLLO_SERVER_HOST_URI=http://aou-backend-dev-main-apollo.${KUBE_NAMESPACE}.svc.cluster.local:80
+    - export HASURA_GRAPHQL_ENDPOINT=http://aou-backend-dev-main-hasura.${KUBE_NAMESPACE}.svc.cluster.local:80/v1/graphql
+    - npm run test:integration-ext
+  needs: ["deploy-main"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "merge_request_event" && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_APEX_EXTEND_TESTS != "true")'
+
+integration-test-stg:
+  stage: integration-test
+  tags:
+    - eks-dev
+  environment:
+    name: staging
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: node:14-alpine
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - export APOLLO_SERVER_HOST_URI=https://core.stg-${EXTERNAL_URL_RANDOM_HASH}.launchpad-saas.net
+    - export HASURA_GRAPHQL_ENDPOINT=https://hasura.stg-${EXTERNAL_URL_RANDOM_HASH}.launchpad-saas.net/v1/graphql
+    - npm run test:integration
+  needs: ["deploy-stg"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE != 'merge_request_event' && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH
+
+integration-test-ext-stg:
+  stage: integration-test
+  tags:
+    - eks-dev
+  environment:
+    name: staging
+  resource_group: $CI_ENVIRONMENT_NAME
+  image: node:14-alpine
+  script:
+    - cd ./products/utils
+    - npm --loglevel warn ci
+    - cd ../core-be
+    - npm --loglevel warn ci
+    - cd ../test
+    - npm --loglevel warn ci
+    - export APOLLO_SERVER_HOST_URI=https://core.stg-${EXTERNAL_URL_RANDOM_HASH}.launchpad-saas.net
+    - export HASURA_GRAPHQL_ENDPOINT=https://hasura.stg-${EXTERNAL_URL_RANDOM_HASH}.launchpad-saas.net/v1/graphql
+    - npm run test:integration-ext
+  needs: ["deploy-stg"]
+  rules:
+    - if: '$CI_PIPELINE_SOURCE != "merge_request_event" && $CI_COMMIT_BRANCH == $ENV_DEFAULT_BRANCH && ($APPLY_DISABLING_TESTS_TO_PROTECTED_BRANCHES != "true" || $DISABLE_APEX_EXTEND_TESTS != "true")'
+

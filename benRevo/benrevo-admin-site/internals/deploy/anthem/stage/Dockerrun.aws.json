@@ -1,0 +1,14 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-superadmin-anthem-stage:latest",
+    "Update": "true"
+    },
+  "Ports": [{
+    "ContainerPort": "3000"
+  }],
+  "Volumes": [{
+    "HostDirectory": "/var/log/benrevo-superadmin-anthem-stage",
+    "ContainerDirectory": "/var/log/benrevo-superadmin-anthem-stage"
+  }]
+}

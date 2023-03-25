@@ -1,0 +1,598 @@
+/*
+Naming rules
+BEM
+Block - Element - Modificator
+examples:
+.block
+.block-element
+.block-element_modificator
+*/
+
+
+@font-face {
+  font-family: LuckiestGuy;
+  src: url("fonts/LuckiestGuy.ttf");
+}
+
+/*############ <Variables > ############*/
+$ocean_color: #c7f4ff;
+$media_iPhone4:   "screen and (min-width:320px) and (min-height:480px) and (max-height: 490px)";
+$media_iPhone5:   "screen and (min-width:320px) and (min-height:568px)";
+$media_iPhone6:   "screen and (min-width:375px) and (max-width:550px) and (min-height:627px) and (max-height:800px)";
+$media_iPhone6s:  "screen and (min-width:414px) and (min-height:736px)";
+$media_iPad:      "screen and (min-width:768px) and (min-height:920px)";
+$media_mediumTablets: "screen and (min-width:560px) and (max-width:765px)";
+$media_iPad_landscape: "screen and (min-width:900px) and (max-width:1100px) and (min-height:590px) and (max-height:900px)";
+$media_phones: "screen and (max-width:745px) and (max-height:450px)";
+
+
+/*######################################*/
+
+/*############ <Functions > ############*/
+
+
+
+
+/*#######################################*/
+
+/*############ <Mixins > ############*/
+
+
+
+
+/*####################################*/
+
+
+/*############ <f7 rules > ############*/
+body {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.navbar {
+  background: linear-gradient(to top, #1a8e2f, #59bc67);
+  box-shadow: 0 2px 2px rgba(0,0,0,.5);
+  color: #ffffff;
+  &:after {
+    display: none;
+  }
+}
+.page {
+  background: $ocean_color;
+}
+
+/*####################################*/
+
+//Special names. Exception from rule
+.svg-region {
+  transition: all 400ms;
+  &.help {
+    fill: #6cb92f;
+  }
+  &.hover {
+    filter: url(#hover-effect);
+  }
+  &.read-name-click {
+    filter: url(#hover-effect);
+  }
+  &.right-dropped {
+    filter: url(#inner-shadow);
+  }
+  &.wrong {
+    filter: url(#wrong);
+  }
+}
+.svg-region_name {
+  transition: all 400ms;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+.makeMap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  .regionsList {
+    position: relative;
+    width: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #363636;
+    @media #{$media_phones} {
+      width: 180px;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      width: 1px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-color: rgba(0, 0, 0, .3);
+      transform: translate3d(0, 0, 0) scale(.5, 1);
+    }
+    &-el {
+      width: 190px;
+      height: 100px;
+      //margin: auto;
+      margin-left: 10px;
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media #{$media_phones} {
+        width: 140px;
+      }
+      &_inside {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>img {
+          filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.5));
+          @media #{$media_phones} {
+            height: 50px;
+          }
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 250px;
+        background-color: rgba(90, 90, 90, .4);
+        transform: translate3d(0px, 0, 0);
+        box-shadow: inset 0 0 3px 1px rgba(152,152,152,.1);
+      }
+    }
+  }
+
+  .map {
+    width: calc(100% - 250px);
+    @media #{$media_phones} {
+      width: calc(100% - 180px);
+    }
+    height: 100%;
+    overflow: hidden;
+  }
+  .regPrev {
+    width: 180px;
+    @media #{$media_phones} {
+      height: 140px;
+    }
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    &>img {
+      filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.5));
+      @media #{$media_phones} {
+        height: 50px;
+      }
+    }
+    &.regPrev_putNames {
+      position: relative;
+      color: #ffffff;
+      font-family: LuckiestGuy;
+      font-size: 20px;
+      @media #{$media_phones} {
+        font-size: 15px;
+      }
+      letter-spacing: 2px;
+      background-color: #f58d37;
+      width: 190px;
+      height: 80px;
+      animation: bg-changing .5s forwards;
+      text-align: center;
+      border-radius: 2px;
+      &:after {
+        content: "";
+        position: absolute;
+        animation: border-changing .5s forwards;
+        left: 50%;
+        bottom: 0;
+        transform: translate3d(-50%, 80%, 0);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 10px 0 10px;
+        border-color: #f58d37 transparent transparent transparent;
+
+      }
+    }
+  }
+}
+@keyframes border-changing {
+  0% {
+    border-color: #419e64 transparent transparent transparent;
+  }
+  100% {
+    border-color: #f58d37 transparent transparent transparent;
+  }
+}
+
+
+@keyframes bg-changing {
+  0% {
+    background-color: #419e64;
+  }
+  100% {
+    //opacity: 1;
+    background-color: #f58d37;
+    //transform: translate3d(0, -50px, 0);
+  }
+}
+.putNames-el {
+  color: #ffffff;
+  font-family: LuckiestGuy;
+  font-size: 20px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, #388656, #419e64);
+  width: 180px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media #{$media_phones} {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+}
+.read-name.container {
+  $ANIMATION_TIME: 1900ms;
+  $ANIMATION_FUNCTION: cubic-bezier(0, 2.24, 1, 0.99);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 400;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1) translate3d(0, 0, 0);
+    transition: opacity $ANIMATION_TIME $ANIMATION_FUNCTION;
+    background-color: rgba(0, 0, 0, .4);
+  }
+  .text {
+    font-family: LuckiestGuy;
+    color: #feea6d;
+    text-shadow: 2px 2px 3px #c87c1f;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 180px;
+    text-align: center;
+    font-size: 70px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1) translate3d(-50%, -50%, 0);
+    transition: opacity $ANIMATION_TIME $ANIMATION_FUNCTION;
+    z-index: 420;
+    left: 50%;
+    top: 50%;
+    //margin-top: -90px;
+    //margin-left: -90px;
+  }
+  .appear {
+    visibility: visible;
+    opacity: 1;
+  }
+  .overlay.appear {
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+  .text.appear {
+    transform: scale(1) translate3d(-50%, -50%, 0);
+  }
+}
+.zoom-control {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  bottom: 5px;
+  right: 0;
+  @media #{$media_phones} {
+    width: 100px;
+    bottom: 5px;
+    height: 50px;
+  }
+  .zoom-in, .zoom-out {
+    width: 70px;
+    height: 70px;
+    @media #{$media_phones} {
+      height: 50px;
+      width: 50px;
+    }
+    color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    opacity: .7;
+    transition: opacity 300ms;
+    &.active-state {
+      opacity: 1;
+    }
+  }
+  .zoom-in {
+    background-image: url(img/b-plus.png);
+  }
+  .zoom-out {
+    background-image: url(img/b-minus.png);
+  }
+}
+
+.correcter-notifier {
+  font-family: LuckiestGuy;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms;
+  text-align: center;
+  font-size: 60px;
+  @media #{$media_phones} {
+    top: 50%;
+    font-size: 50px;
+  }
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.wrong {
+    color: #fd8e61;
+    text-shadow: 2px 2px 3px #c87c1f;
+  }
+  &.correct {
+    color: #6cb92f;
+    text-shadow: 2px 2px 3px #000000;
+  }
+}
+.progressCounter {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 450;
+  transform: translate3d(0, 0, 0);
+  &.forTest {
+    top: 60px;
+    right: 30px;
+  }
+  &-text {
+    font-family: LuckiestGuy;
+    color: #f6fec1;
+    text-shadow: 2px 2px 3px #c87c1f;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+.m-btn {
+  width: 120px;
+  height: 32px;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #1a8e2f, #59bc67);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1px 2px 2px rgba(0,0,0,.4);
+  color: #ffffff;
+}
+.menu {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/background-ipad.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    @media #{$media_phones} {
+      height: 100%;
+      width: 70%;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 44%;
+      height: 44%;
+      background-color: rgba(255,255,255,.6);
+      border-radius: 4px;
+      box-shadow: 0 3px 4px 2px rgba(10,10,10,.1);
+      font: {
+        family: LuckiestGuy;
+        size: 22px;
+      }
+      @media #{$media_phones} {
+        text-shadow: 0 2px 3px #000;
+        font-size: 19px;
+        background-size: 43%;
+      }
+      letter-spacing: 2px;
+      text-align: center;
+      background-size: 75%;
+      background-repeat: no-repeat;
+      background-position: center 15%;
+      &.active-state {
+        opacity: .6;
+      }
+      &.read-name {
+        //color: #6dcff6;
+        color: #f26c4f;
+        background-image: url(img/read.png);
+        @media #{$media_phones} {
+          background-size: 43%;
+        }
+      }
+      &.make-map {
+        //color: #3cb878;
+        color: #f26c4f;
+        background-image: url(img/make-map.png);
+        background-size: 83%;
+        @media #{$media_phones} {
+          background-size: 48%; //Set size bigger cause it looks smaller then other ones
+        }
+      }
+      &.put-names {
+        //color: #5674b9;
+        color: #f26c4f;
+        background-image: url(img/put-names.png);
+        @media #{$media_phones} {
+          background-size: 43%;
+        }
+      }
+      &.capitals-test {
+        color: #f26c4f;
+        background-image: url(img/capitals.png);
+        background-size: 83%;
+        @media #{$media_phones} {
+          background-size: 48%; //Set size bigger cause it looks smaller then other ones
+        }
+      }
+    }
+  }
+}
+
+.test {
+  background-image: url("img/background-ipad.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    height: 75%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 4px;
+    box-shadow: 0 2px 20px 1px rgba(10,10,10,.4);
+    @media #{$media_phones} {
+      width: 95%;
+      height: 95%;
+    }
+    .questContainer {
+      width: 80%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      .question {
+        font: {
+          size: 40px;
+        }
+        text-align: center;
+        width: 100%;
+        position: relative;
+        padding: 20px;
+        @media #{$media_phones} {
+          font-size: 24px;
+          padding: 15px;
+        }
+        &:after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, .4);
+        }
+      }
+
+      .answer {
+        border: 1px solid rgba(20, 20, 20, .4);
+        background-color: #fff;
+        height: 85px;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font: {
+          size: 30px;
+        }
+        color: #ef6900;
+        @media #{$media_phones} {
+          font-size: 24px;
+          height: 35px;
+        }
+        &.true.active {
+          background-image: linear-gradient(to top, #1a8e2f, #59bc67);
+          color: #ffffff;
+        }
+        &.false.active {
+          background-image: linear-gradient(to top, #af2226, #e23c1c);
+          color: #ffffff;
+        }
+        &.disable {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+.splash {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5400;
+  visibility: visible;
+  background-color: #fff;
+  transition: all 300ms ease;
+  opacity: 1;
+  transform: translate3d(0,0,0) scale(1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(img/logo.png);
+  &.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate3d(0,0,0) scale(1.1);
+  }
+}
+

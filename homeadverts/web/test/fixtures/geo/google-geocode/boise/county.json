@@ -1,0 +1,54 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Ada County",
+          "short_name" : "Ada County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "Idaho",
+          "short_name" : "ID",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Ada County, ID, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 43.8074699,
+            "lng" : -115.974239
+          },
+          "southwest" : {
+            "lat" : 43.112238,
+            "lng" : -116.514055
+          }
+        },
+        "location" : {
+          "lat" : 43.478767,
+          "lng" : -116.2420304
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.8074699,
+            "lng" : -115.974239
+          },
+          "southwest" : {
+            "lat" : 43.112238,
+            "lng" : -116.514055
+          }
+        }
+      },
+      "place_id" : "ChIJySzGOs_0rlQRA33YPY5VCsM",
+      "types" : [ "administrative_area_level_2", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

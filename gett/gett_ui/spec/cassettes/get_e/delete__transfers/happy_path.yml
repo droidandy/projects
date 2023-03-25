@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://test.api.get-e.com/api/v2/transfers/3253362110
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Authorization:
+      - X-Api-Key 8197323302846fe8ad92aab1fda5f71c045476bd6d5f9f8254191c5ad7e96b95
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Booking-Session, Authorization
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,HEAD,POST,PUT,DELETE,PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 22 Aug 2018 18:49:37 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - laravel_session=eyJpdiI6ImsyVW1GbEhVbVlibjdVY05uSG9kQ1E9PSIsInZhbHVlIjoibUZwTkc5SUdjT3BtWVN5ZkpcL2R2anNSRkl5dVB3UExmZzBQeVU2N2ttRExnRlhqclh5YXZlV1BMTzlidXFaNDciLCJtYWMiOiI2NmY0YWJlYTBmNTgxYjQxZjkzZjBlZmJkMGNmOTBhYzEzYjRhODQ1ZDUwMWViNjUwZGNlN2YwYzgzZDhkM2M1In0%3D;
+        expires=Wed, 22-Aug-2018 20:49:38 GMT; Max-Age=7200; path=/; httponly
+      Content-Length:
+      - '248'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "status": 200,
+            "href": "https://test.api.get-e.com/api/v2/transfers/3253362110",
+            "meta": {
+                "method": "DELETE",
+                "ip": "96.90.79.254"
+            },
+            "data": {
+                "Unid": 3253362110,
+                "Status": "Cancelled"
+            }
+        }
+    http_version: 
+  recorded_at: Wed, 22 Aug 2018 18:49:39 GMT
+recorded_with: VCR 4.0.0

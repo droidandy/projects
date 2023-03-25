@@ -1,0 +1,131 @@
+.brands {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 105px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 125%;
+    height: 100%;
+    display: block;
+    background: #f8fbff;
+    transform: skew(1.33deg, 1.33deg);
+  }
+
+  & .container {
+    position: relative;
+
+    & .line {
+      position: absolute;
+      bottom: -70%;
+      right: 6%;
+    }
+
+    & .ball {
+      background: #93e6cf;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      bottom: -11%;
+      left: 2%;
+    }
+  }
+
+  h2 {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #97adc6;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+
+  & .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -25px;
+
+    & > div {
+      line-height: 1;
+      margin-right: 38px;
+      margin-bottom: 16px;
+
+      &:nth-child(7) {
+        margin-right: 0;
+      }
+
+      & > img {
+        max-height: 58px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & .container {
+      & .line {
+        display: none;
+      }
+
+      & .ball {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+    padding-bottom: 37px;
+
+    &:before {
+      transform: none;
+    }
+
+    & .container {
+      & .line {
+        display: none;
+      }
+
+      & .ball {
+        display: none;
+      }
+    }
+
+    & .list {
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      overflow-x: auto;
+      padding-bottom: 15px;
+      justify-content: flex-start;
+
+      & > div {
+        margin-right: 20px;
+        margin-bottom: 0;
+
+        & > img {
+          max-width: initial;
+          max-height: 32px;
+        }
+
+        &:nth-child(7) {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+}

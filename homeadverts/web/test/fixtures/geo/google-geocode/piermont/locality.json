@@ -1,0 +1,64 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Piermont",
+          "short_name" : "Piermont",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Grafton County",
+          "short_name" : "Grafton County",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "New Hampshire",
+          "short_name" : "NH",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "United States",
+          "short_name" : "US",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "03779",
+          "short_name" : "03779",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "formatted_address" : "Piermont, NH 03779, USA",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 44.0295921,
+            "lng" : -71.9592091
+          },
+          "southwest" : {
+            "lat" : 43.915577,
+            "lng" : -72.117012
+          }
+        },
+        "location" : {
+          "lat" : 43.9697892,
+          "lng" : -72.0806443
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 44.0295921,
+            "lng" : -71.9592091
+          },
+          "southwest" : {
+            "lat" : 43.915577,
+            "lng" : -72.117012
+          }
+        }
+      },
+      "place_id" : "ChIJK4lKlK-TtEwRfgIcSmSPk5U",
+      "types" : [ "locality", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

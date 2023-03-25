@@ -1,0 +1,34 @@
+.language-select__icon {
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  margin-top: 1px;
+}
+
+.custom-select__outer_language {
+  min-width: 290px;
+}
+
+.custom-select__outer-menu__item__notcurrent {
+  padding-right: 10px;
+}
+
+.custom-select__outer-menu__item_link {
+  &:hover {
+    background: white;
+  }
+  svg {
+    margin-top: 2px;
+  }
+}
+
+.custom-select__outer-menu__item__default {
+  color: $brand-silver;
+  margin-top: 3px;
+  margin-right: 5px;
+  float: right;
+}

@@ -1,0 +1,42 @@
+<form method="post"
+      id="searchbar"
+      class="property-search">
+    <input id="reference" type="hidden" value="" name="reference"/>
+    <input
+        tabindex="1"
+        autocomplete="off"
+        spellcheck="false"
+        class="autocomplete"
+        type="text"
+        placeholder="Homes & Lifestyles"
+        name="query"
+        data-url="{{ path('ha_autocomplete') }}"
+        data-translate-location="{{ "site.location"|trans }}"
+        data-translate-mls="{{ "site.mls"|trans }}"
+        data-translate-ref="{{ "site.ref"|trans }}"
+        data-translate-guid="{{ "site.guid"|trans }}"
+        data-translate-zip="{{ "site.zip"|trans }}"
+        data-translate-article="{{ "site.article"|trans }}"
+        data-translate-tag="{{ "site.tag"|trans }}"
+        data-translate-agent="Profiles"
+        data-translate-business="Business"
+
+        data-translate-listings="Listings"
+        data-translate-by="by"
+        data-translate-and="and"
+        data-translate-agents="Agents"
+        data-translate-affiliates="Affiliates"
+        data-translate-articles="Articles"
+        data-translate-businesses="Businesses"
+        data-translate-show-all="Show All"
+
+        data-translate-properties="{{ "site.properties"|trans }}"
+        data-translate-nothingfound="{% trans %}search.noresults{% endtrans %}"
+        data-translate-badsearch="{% trans %}search.bar.error{% endtrans %}"
+        data-prev="{% trans %}search.bar.previous{% endtrans %}"
+        data-api="google"
+
+        data-article-search-result-url="{{ path('ha_article_search', {term: '__TERM__'}) }}"
+        data-tag-details-url="{{ path('ha_tag_details', {name: '__NAME__'}) }}"
+    >
+</form>

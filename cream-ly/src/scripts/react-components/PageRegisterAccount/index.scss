@@ -1,0 +1,39 @@
+@import '../../../styles/tools/mixins.scss';
+
+.PageRegisterAccount {
+    
+    @include maxWidthPage();
+    @include spacingBottom();
+
+    form {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        input[type=text], input[type=password] {width: 100%;}
+        input[type=submit] {@include spacingTopMedium()}
+        label {margin-bottom: 3px;@include spacingTopSmall()}
+
+    }
+
+    .section-header {
+        margin-bottom: 0;
+    }
+
+    .sentIcon {
+        background-image: url("./check_email.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 270px;
+        max-width: 400px;
+        margin:auto;
+        background-position-x: center;
+        background-position-y: bottom;
+        @include media-query($small) {
+            height: 200px;
+            max-width: 90%;
+        }
+    }
+
+    
+}

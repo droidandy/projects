@@ -1,0 +1,75 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.ProductHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.mobile-header {
+        @include spacingBottom;
+        width: 100%;
+        display: flex;
+    }
+    @include media-query($medium-down) {
+        &.mobile-header {
+            display: flex;
+        }
+        &.desktop-header {
+            display: none;
+        }
+    }
+    @include media-query($large-up) {
+        &.mobile-header {
+            display: none;
+        }
+        &.desktop-header {
+            display: flex;
+        }
+    }
+    & + .ProductDescription {
+        padding: 0 5px;
+    }
+
+    .section-header {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .type {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--black-pearl);
+        font-family: var(--font-heading);
+
+        @include media-query($small) {
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+        }
+        @include media-query($medium) {
+          display: inline-block;
+          font-size: 24px;
+          line-height: 28px;
+          padding-right: 4px;
+        }
+      }
+
+      .title {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--black-pearl);
+        font-family: var(--font-heading);
+
+        @include media-query($small) {
+          display: inline-block;
+        }
+        @include media-query($medium) {
+          display: block;
+        }
+      }
+}

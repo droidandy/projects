@@ -1,0 +1,48 @@
+@import "~styles/variables";
+
+.block {
+  padding-bottom: 200px;
+
+  h2 {
+    margin-bottom: 52px;
+    text-align: center;
+  }
+
+  & .item {
+    padding-top: 140px;
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 384px 488px;
+    justify-content: space-between;
+
+    &:global(._center) {
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & .item {
+      grid-template-columns: 1fr;
+      padding-top: 0;
+      text-align: center;
+
+      max-width: 680px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+    padding-top: 40px;
+
+    & .item {
+      grid-template-columns: 1fr;
+      padding-top: 0;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.conversationDetails::-webkit-scrollbar { width: 0 !important }
+.conversationDetails {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  order: 3;
+  background: #fff;
+  padding: 40px 20px;
+  border-left: 1px solid #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto auto;
+
+  &.default {
+    width: 340px;
+    min-width: 340px;
+  }
+
+  &.flex {
+    flex: 1;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid #f1f1f1;
+    display: block;
+    margin: 12px 0;
+  }
+
+  .data {
+    a {
+      color: #416ec0;
+    }
+  }
+
+  p, a {
+    color: #43444f;
+    text-decoration: none;
+    font-size: 14px;
+
+    svg {
+      vertical-align: middle;
+      margin-top: -4px;
+      margin-right: 5px;
+    }
+  }
+}

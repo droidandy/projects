@@ -1,0 +1,10 @@
+
+  <div  data-react-component-placeholder="PageFAQ">
+    {%if request.locale.iso_code == "en"%}
+    {% include 'staticHTML-PageFAQ-en' %}
+    {%elsif request.locale.iso_code == "lv"%}
+    {% include 'staticHTML-PageFAQ-lv' %}
+    {%else%}
+    {% include 'staticHTML-PageFAQ-ru' %}
+    {%endif%}
+     </div>

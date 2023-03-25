@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 56.2 46.6" width="56" height="47" preserveAspectRatio="xMinYMid" style="enable-background:new 0 0 56.2 46.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#298499;stroke-width:1.16;stroke-miterlimit:10;}
+	.st1{clip-path:url(#SVGID_2_);}
+</style>
+<title>carrier-benefits-3</title>
+<g id="Layer_2">
+	<g id="features2">
+		<g id="Computer">
+			<path class="st0" d="M46,36.5H10.1c-5.3,0-9.6-4.3-9.6-9.6l0,0V0.6h55v26.3C55.6,32.2,51.3,36.4,46,36.5z"/>
+			<line class="st0" x1="14.9" y1="46" x2="41.2" y2="46"/>
+			<line class="st0" x1="22.1" y1="36.5" x2="19.7" y2="46"/>
+			<line class="st0" x1="34.1" y1="36.5" x2="36.4" y2="46"/>
+		</g>
+		<g>
+			<defs>
+				<path id="SVGID_1_" d="M46,36.5H10.1c-5.3,0-9.6-4.3-9.6-9.6l0,0V0.6h55v26.3C55.6,32.2,51.3,36.4,46,36.5z"/>
+			</defs>
+			<clipPath id="SVGID_2_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g class="st1">
+				<g id="File">
+					<path class="st0" d="M-17.7,31.6h-11.4V7.7h17.7v17.7C-11.4,28.8-14.2,31.6-17.7,31.6C-17.7,31.6-17.7,31.6-17.7,31.6z"/>
+					<line class="st0" x1="-24.4" y1="15" x2="-16.1" y2="15"/>
+					<line class="st0" x1="-24.4" y1="19.1" x2="-16.1" y2="19.1"/>
+					<line class="st0" x1="-24.4" y1="23.3" x2="-18.2" y2="23.3"/>
+				</g>
+				<g id="File-2">
+					<path class="st0" d="M7,31.6H-4.4V7.7h17.7v17.7C13.3,28.8,10.5,31.6,7,31.6C7.1,31.6,7,31.6,7,31.6z"/>
+					<line class="st0" x1="0.3" y1="15" x2="8.6" y2="15"/>
+					<line class="st0" x1="0.3" y1="19.1" x2="8.6" y2="19.1"/>
+					<line class="st0" x1="0.3" y1="23.3" x2="6.5" y2="23.3"/>
+				</g>
+				<g id="File-3">
+					<path class="st0" d="M31.7,31.6H20.3V7.7H38v17.7C38,28.8,35.2,31.6,31.7,31.6L31.7,31.6z"/>
+					<line class="st0" x1="25" y1="15" x2="33.3" y2="15"/>
+					<line class="st0" x1="25" y1="19.1" x2="33.3" y2="19.1"/>
+					<line class="st0" x1="25" y1="23.3" x2="31.2" y2="23.3"/>
+				</g>
+				<g id="File-4">
+					<path class="st0" d="M56.4,31.6H45V7.7h17.7v17.7C62.7,28.8,59.9,31.6,56.4,31.6L56.4,31.6z"/>
+					<line class="st0" x1="49.7" y1="15" x2="58" y2="15"/>
+					<line class="st0" x1="49.7" y1="19.1" x2="58" y2="19.1"/>
+					<line class="st0" x1="49.7" y1="23.3" x2="55.9" y2="23.3"/>
+				</g>
+				<g id="File-5">
+					<path class="st0" d="M81.1,31.6H69.7V7.7h17.7v17.7C87.3,28.8,84.5,31.6,81.1,31.6z"/>
+					<line class="st0" x1="74.3" y1="15" x2="82.7" y2="15"/>
+					<line class="st0" x1="74.3" y1="19.1" x2="82.7" y2="19.1"/>
+					<line class="st0" x1="74.3" y1="23.3" x2="80.6" y2="23.3"/>
+				</g>
+			</g>
+		</g>
+		<path class="st0" d="M46,36.5H10.1c-5.3,0-9.6-4.3-9.6-9.6l0,0V0.6h55v26.3C55.6,32.2,51.3,36.4,46,36.5z"/>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,7 @@
+@import "../../../styles/tools/mixins.scss";
+
+.PageHomePage {
+ .maxWidthPage {
+    @include maxWidthPage;
+ }   
+}

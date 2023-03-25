@@ -1,0 +1,10 @@
+
+  <div  data-react-component-placeholder="PageLanding">
+    {%if request.locale.iso_code == "en"%}
+    {% include 'staticHTML-PageLanding-en' %}
+    {%elsif request.locale.iso_code == "lv"%}
+    {% include 'staticHTML-PageLanding-lv' %}
+    {%else%}
+    {% include 'staticHTML-PageLanding-ru' %}
+    {%endif%}
+     </div>

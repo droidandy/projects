@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.carey.com/CSIOTAProxy_v2/CareyReservationService
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.opentravel.org/OTA/2003/05"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:OTA_GroundCancelRQ
+        Version="1" SequenceNmbr="15349679861244162323"><tns:POS><tns:Source><tns:RequestorID
+        MessagePassword="carey123" ID="testarranger@testnone.com" Type="TA"></tns:RequestorID><tns:BookingChannel
+        Type="TA"><tns:CompanyName Code="3dfb7b39fa5615fc105f62cf7dbc9bb0" CompanyShortName="PM54006"
+        CodeContext="54006">CSI - Gett</tns:CompanyName></tns:BookingChannel></tns:Source></tns:POS><tns:Reservation><tns:UniqueID
+        ID="WA10706729-1"></tns:UniqueID></tns:Reservation></tns:OTA_GroundCancelRQ></env:Body></env:Envelope>
+    headers:
+      App-Id:
+      - 89e6c8c7
+      App-Key:
+      - 3dfb7b39fa5615fc105f62cf7dbc9bb0
+      X-Soap-Method:
+      - CancelReservation
+      Soapaction:
+      - '"cancelReservation"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '800'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Aug 2018 19:59:56 GMT
+      Server:
+      - JBoss-EAP/7
+      X-Powered-By:
+      - Undertow/1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><OTA_GroundCancelRS
+        xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:ns2="http://www.opentravel.org/OTA/2003/05/alpha"
+        PrimaryLangID="1534967996N9z5wMXYgT"><Errors><Error Code="1100">Because your
+        pick up is soon, please call 800-336-8850 in the US or Canada or +1-301-624-5006
+        from elsewhere to book or change your trip.</Error></Errors></OTA_GroundCancelRS></S:Body></S:Envelope>
+    http_version:
+  recorded_at: Wed, 22 Aug 2018 19:59:56 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,93 @@
+{
+  "id": 1,
+  "name": "Option 1",
+  "totalAnnualPremium": 76103.12,
+  "percentDifference": 80.3,
+  "dollarDifference": 33903.117,
+  "overviewPlans": [
+    {
+      "carrier": "Blue Shield",
+      "label": "(current plan)",
+      "employer": 4220.0,
+      "employee": 37980.0,
+      "total": 42200.0
+    },
+    {
+      "carrier": "Blue Shield",
+      "employer": 0.0,
+      "employee": 76103.12,
+      "total": 76103.12
+    }
+  ],
+  "detailedPlans": [
+    {
+      "rfpQuoteOptionNetworkId": 1,
+      "carrier": "Blue Shield",
+      "type": "HMO",
+      "dollarDifference": 33903.117,
+      "percentDifference": 80.3,
+      "currentPlan": {
+        "name": "BLUE SHIELD HMO PLAN (Access + HMO)",
+        "type": "HMO",
+        "employer": 37980.0,
+        "employee": 4220.0,
+        "total": 42200.0
+      },
+      "newPlan": {
+        "name": "T-Clsc HMO 20/250A/125OP",
+        "type": "HMO",
+        "employer": 25332.0,
+        "employee": 50771.117,
+        "total": 76103.12
+      }
+    },
+    {
+      "rfpQuoteOptionNetworkId": 621,
+      "carrier": "Blue Shield",
+      "type": "PPO",
+      "newPlan": {
+        "name": "T-Premier HMO 15/100%",
+        "type": "HMO",
+        "employer": 0.0,
+        "employee": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "rfpQuoteOptionNetworkId": 1160,
+      "carrier": "Blue Shield",
+      "type": "PPO",
+      "newPlan": {
+        "name": "Classic PPO 250/20/10",
+        "type": "PPO",
+        "employer": 0.0,
+        "employee": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "rfpQuoteOptionNetworkId": 1376,
+      "carrier": "Blue Shield",
+      "type": "PPO",
+      "newPlan": {
+        "name": "Premier Plus 0/10/10",
+        "type": "PPO",
+        "employer": 0.0,
+        "employee": 0.0,
+        "total": 0.0
+      }
+    },
+    {
+      "rfpQuoteOptionNetworkId": 1377,
+      "carrier": "Blue Shield",
+      "type": "PPO",
+      "newPlan": {
+        "name": "Premier Plus 250/20/10",
+        "type": "PPO",
+        "employer": 0.0,
+        "employee": 0.0,
+        "total": 0.0
+      }
+    }
+  ]
+}

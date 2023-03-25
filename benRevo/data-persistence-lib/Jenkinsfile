@@ -1,0 +1,125 @@
+#!groovy
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+    overrideIndexTriggers(true)
+  }
+  agent {
+    node {
+      label 'buildfarm'
+    } 
+  }
+  tools {
+    maven 'maven'
+  }
+  environment {
+    DEV_TOKEN_SECRET = credentials('AWS_DEV_ACCESS_SECRET')
+    DEV_TOKEN_ID = 'AKIAIEV2Q2CEUNPABDKA'
+
+    COVERALLS_REPO_TOKEN = credentials('DATA_PERSISTENCE_LIB_COVERALLS_REPO_TOKEN')
+    COVERALLS_SERVICE_NAME = 'Jenkins'
+  }
+  stages {
+    stage('Setup') {
+      steps {
+        wrap([$class: 'BuildUser']) {
+          slackSend message: "Starting build: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}: ${RUN_DISPLAY_URL}"
+        }
+        checkout([
+          $class: 'GitSCM',
+          branches: [[name: '${BRANCH_NAME}']],
+          doGenerateSubmoduleConfigurations: false,
+          extensions: [],
+          submoduleCfg: [],
+          userRemoteConfigs: [[
+            credentialsId: '81e0269c-8b0b-4eeb-97f2-03da4cb75100',
+            url: 'https://github.com/BenRevo/data-persistence-lib.git'
+          ]]
+        ])
+        sh '''
+#!/bin/bash -xe
+
+export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+
+mvn clean install -q -B -U -DskipTests=true -Dsilent=true -s .s3.settings.xml
+        '''
+      }
+    }
+    stage('Build') {
+      steps {
+        sh '''
+#!/bin/bash -xe
+
+mvn clean install -B -V -U -s .s3.settings.xml
+        '''
+      }
+      post {
+        always {
+          jacoco exclusionPattern: '**/test*'
+        }
+      }
+    }
+    /*stage('Dependency Check') {
+      steps {
+        dependencyCheckAnalyzer([
+          datadir: "/var/jenkins_home/.m2/repository/org/owasp/dependency-check-data/",
+          hintsFile: "",
+          includeCsvReports: false,
+          includeHtmlReports: false,
+          includeJsonReports: false,
+          includeVulnReports: false,
+          isAutoupdateDisabled: false,
+          outdir: "",
+          scanpath: "",
+          skipOnScmChange: false,
+          skipOnUpstreamChange: false,
+          suppressionFile: "",
+          zipExtensions: 'zip,jar'
+        ])
+      }
+    }*/
+    stage('Deploy') {
+      steps {
+        sh ''' 
+#!/bin/bash -xe
+
+export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+
+mvn deploy -B -V -s .s3.settings.xml
+        '''
+      }
+    }
+    stage('Trigger') {
+      steps {
+        build job: "benrevo/be-modules/${BRANCH_NAME}", propagate: true, wait: false
+      }
+    }
+  }
+  post {
+    /*always {
+      dependencyCheckPublisher([
+        canComputeNew: false,
+        defaultEncoding: "",
+        healthy: "",
+        unHealthy: "",
+        pattern: "",
+        shouldDetectModules: true
+      ])
+    }*/
+    failure {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "danger", message: "Build failed: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}. Build results: ${RUN_DISPLAY_URL}"
+        emailext body: '${JOB_NAME} ${BUILD_DISPLAY_NAME} - failed: Check console output at ${RUN_DISPLAY_URL} to view the results.', recipientProviders: [[$class: 'CulpritsRecipientProvider']], subject: 'Build failed: ${JOB_NAME} ${BUILD_DISPLAY_NAME}'
+      }
+    }
+    success {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "good", message: "Build success: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}. Build results: ${RUN_DISPLAY_URL}"
+        emailext body: '${JOB_NAME} ${BUILD_DISPLAY_NAME} - success: Check console output at ${RUN_DISPLAY_URL} to view the results.', recipientProviders: [[$class: 'CulpritsRecipientProvider']], subject: 'Build success: ${JOB_NAME} ${BUILD_DISPLAY_NAME}'
+      }
+    }
+  }
+}

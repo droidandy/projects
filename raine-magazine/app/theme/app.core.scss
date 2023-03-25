@@ -1,0 +1,35 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+// Import Breakpoint (Must be installed first by running 'npm install' in project root)
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+@import "../../node_modules/animate.css/animate";
+@import "device-sizes.scss";
+
+// import App's fonts
+@import "app.fonts";
+
+// Import our App-wide component styles
+@import "app.components";
+
+// Import our Page Classes
+@import "../pages/home/home";
+@import "../pages/login/login";
+@import "../pages/tab-forgot/tab-forgot";
+@import "../pages/tab-login/tab-login";
+@import "../pages/post-detail/post-detail";
+@import "../pages/search/search";
+@import "../pages/category/category";
+
+// Add our the styles of our custom components
+@import "../custom-components/post/post";
+@import "../custom-components/single-post/single-post";
+@import "../custom-components/mini-posts/mini-post";
+@import "../custom-components/like/vote";
+@import "../custom-components/comment/comment";
+@import "../custom-components/loader-block/loader-block";

@@ -1,0 +1,12 @@
+{
+  "name": "Raine Magazine",
+  "app_id": "b5c024e5",
+  "v2": true,
+  "typescript": true,
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://audacitus.com/magaza-json/"
+    }
+  ]
+}

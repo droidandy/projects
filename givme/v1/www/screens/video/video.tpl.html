@@ -1,0 +1,96 @@
+<ion-view on-finish-render="ngRepeatFinished" class="it">
+  <ion-content class="gm-content transparent" style="padding-top: 0;">
+    <div class="page">
+      <div>
+        <div class="relative">
+          <div id="screen" class=""></div>
+          <a href="#" class="info-icon kostyl" data-toggle="modal" data-target="#interrupted" id="info_link">info</a>
+          <div class="chat-thumb kostyl">
+            <div id="list" class=""></div>
+          </div>
+          <ul class="call-opt kostyl">
+            <li class="drop-icon kostyl">
+              <a href="#" class="kostyl">Drop</a>
+            </li>
+            <li class="call-icon kostyl">
+              <a class="kostyl" ng-click="disconnect()">Drop</a>
+            </li>
+            <li class="timer-icon kostyl">
+              <a class="kostyl" href="#">Timer</a>
+            </li>
+          </ul>
+          <div class="modal fade kostyl" role="dialog" id="interrupted">
+            <div class="modal-dialog kostyl" >
+              <div class="modal-content kostyl">
+                <div class="modal-body kostyl">
+                  <div class="icon-head kostyl">
+                    <div class="info-ticker kostyl"></div>
+                  </div>
+                  <div class="message kostyl">
+                    <h2>OH NO!</h2>
+                    <p>TELL US WHAT HAPPENED</p>
+                  </div>
+                  <ul class="chat-info-type kostyl">
+                    <li><a href="#"><span class="icon inapp-video kostyl"></span>Inappropriate Video</a></li>
+                    <li><a href="#"><span class="icon inapp-chat kostyl"></span>Inappropriate Chat</a></li>
+                    <li><a href="#"><span class="icon spam kostyl"></span>I think it's spam</a></li>
+                    <li><a href="#" data-dismiss="modal" data-toggle="modal" data-target="#reason"><span class="icon other-reasons kostyl"></span>Other reasons</a></li>
+                  </ul>
+                  <div class="text-center btn-in-block kostyl">
+                    <a href="#" class="btn btn-default kostyl" data-dismiss="modal">Cancel</a>
+                  </div>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+          <div class="modal fade kostyl" role="dialog" id="reason">
+            <div class="modal-dialog kostyl" >
+              <div class="modal-content kostyl">
+                <div class="modal-body kostyl">
+                  <div class="icon-head kostyl">
+                    <div class="info-ticker kostyl"></div>
+                  </div>
+                  <div class="message kostyl">
+                    <h2>OH NO!</h2>
+                    <p>TELL US WHAT HAPPENED</p>
+                  </div>
+                  <div class="detailed-report-block kostyl"><input name="" class="form-control field-report kostyl"  placeholder="Tell Us More..."  type="text"></div>
+                  <div class="text-center btn-in-block kostyl">
+                    <ul>
+                      <li> <a href="#" class="btn btn-default kostyl" data-dismiss="modal">IGNORE</a> </li>
+                      <li> <a href="#" class="btn btn-primary kostyl" data-dismiss="modal" data-toggle="modal" data-target="#weakConnection">REPORT</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+          <div class="modal fade kostyl" role="dialog" id="weakConnection">
+            <div class="modal-dialog kostyl" >
+              <div class="modal-content kostyl">
+                <div class="modal-body kostyl">
+                  <div class="icon-head kostyl">
+                    <div class="info-ticker kostyl"></div>
+                  </div>
+                  <div class="message kostyl">
+                    <h2>S#!T</h2>
+                    <p>WEAK CONNECTION</p>
+                  </div>
+                  <div class="detailed-report-block kostyl">
+                      Do you want to wait or end the call?
+                  </div>
+
+                  <div class="text-center btn-in-block kostyl">
+                    <ul>
+                      <li> <a href="#" class="btn btn-primary kostyl" data-dismiss="modal">END CALL</a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,16 @@
+<div class="map --item">
+    {% if address.hidden %}
+        {% set lat = ((random(20) - 10) / 10000) + address.latitude %}
+        {% set lng = ((random(20) - 10) / 10000) + address.longitude %}
+    {% else %}
+        {% set lat = address.latitude %}
+        {% set lng = address.longitude %}
+    {% endif %}
+
+    <div class="map-canvas"
+         data-maplat="{{ lat }}"
+         data-maplng="{{ lng }}"
+         {% if address.hidden %}data-address-hidden{% endif %}
+    >
+    </div>
+</div>

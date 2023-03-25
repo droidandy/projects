@@ -1,0 +1,43 @@
+{
+  "id": {
+    "type": "integer"
+  },
+  "checkin_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "completed": {
+    "type": "boolean"
+  },
+  "documents_ready": {
+    "type": "boolean"
+  },
+  "identity_checked_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "license": {
+    "type": "string"
+  },
+  "name": {
+    "type": "string"
+  },
+  "phone": {
+    "type": "string"
+  },
+  "scheduled_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "agent": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "string"
+      }
+    }
+  }
+}

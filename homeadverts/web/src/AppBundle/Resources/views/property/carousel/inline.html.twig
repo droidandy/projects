@@ -1,0 +1,25 @@
+{% spaceless %}
+    {% if property.photos|length > 0 %}
+        <div class="inline-carousel --raw"
+             data-id="{{ property.id }}"
+
+             {% if property.source == 'listhub' %}
+                 data-listhub-sourceRef="{{ property.sourceRef }}"
+             {% endif %}
+             {% if app.user %}
+                 data-liked="{{ is_liked_by_user(app.user, property) }}"
+             {% endif %}>
+
+            <div class="gallery-wrapper">
+                <div class="carousel">
+                    {% for photo in property|property_carousel_photos %}
+                        {% include "AppBundle:property/carousel:_cell.html.twig" with {
+                            photo: photo,
+                            type: 'inline'
+                        } %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endspaceless %}

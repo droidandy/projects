@@ -1,0 +1,32 @@
+{% if app.user and is_liked_by_user(app.user, property) %}
+    {% set isLikedClass = '--is-liked' %}
+{% else %}
+    {% set isLikedClass = '' %}
+{% endif %}
+{% if not property.likesCount %}
+    {% set likesTotalClass = '--hidden' %}
+{% else %}
+    {% set likesTotalClass = '' %}
+{% endif %}
+
+<div class="article-actions">
+    <div class="like-counter-{{ property.id }} like-counter {{ likesTotalClass }}">
+        <span>{{ property.likesCount }}</span>
+    </div>
+    <button class="like mdl-button mdl-js-button mdl-button--icon {{ isLikedClass }}"
+            data-id="{{ property.id }}"
+            data-title="{{ property.getTitle() }}"
+            data-type="property"
+            data-add-url="{{ path('ha_property_like_add',{id: property.id}) }}"
+            data-remove-url="{{ path('ha_property_like_remove',{id: property.id}) }}"
+    >
+        <i class="material-icons plus">favorite</i>
+        <i class="material-icons minus">favorite</i>
+    </button>
+    <button class="share mdl-button mdl-js-button mdl-button--icon"
+            data-title="Share this property"
+            data-image="{{ property.getPrimaryPhoto().url }}"
+            data-url="{{ absolute_url(propertyUrl) }}">
+        <i class="material-icons">reply</i>
+    </button>
+</div>

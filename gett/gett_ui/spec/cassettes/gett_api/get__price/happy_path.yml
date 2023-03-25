@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rides.gett.com/sandbox/api/v1/business/price?business_id=UK-3836&destination_latitude=51.523767&destination_longitude=-0.1585557&pickup_latitude=51.5141693&pickup_longitude=-0.1088909
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 2de11ec0b97f8ccdc8644aac53c149e30cb14c04607a5c729cde9d00b4540952
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 09 Aug 2018 20:23:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '777'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df74fb5355913edcc87b228afec3589ef1533846216; expires=Fri, 09-Aug-19
+        20:23:36 GMT; path=/; domain=.gett.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin,Accept,Content-Type,Authorization
+      Access-Control-Allow-Origin:
+      - ''
+      X-Rate-Limit-Limit:
+      - '1000000'
+      X-Rate-Limit-Remaining:
+      - '999921'
+      X-Rate-Limit-Reset:
+      - '2018-08-09T20:23:55Z'
+      X-Request-Id:
+      - c367127e-d9eb-45f5-9f87-0f2ad8a4a190
+      - c367127e-d9eb-45f5-9f87-0f2ad8a4a190
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 447cf1077c529dcd-ORD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"prices":[{"product_id":"2f42d1fd-7efb-45bb-83c7-4a42bd37dde8","display_name":"ViaCan","estimate":"32","currency":"GBP","low_estimate":32.17,"high_estimate":32.17,"scheduled_at":"2018-08-09T20:23:37Z"},{"product_id":"5178cd83-20bf-4991-b559-c1128dfae662","display_name":"Business
+        Class","estimate":"0","currency":"GBP","low_estimate":0,"high_estimate":0,"scheduled_at":"2018-08-09T20:23:37Z"},{"product_id":"00407fdc-4385-4a22-9035-9d2d3e0a031a","display_name":"Business
+        Class XL","estimate":"0","currency":"GBP","low_estimate":0,"high_estimate":0,"scheduled_at":"2018-08-09T20:23:37Z"},{"product_id":"f6cc0e3a-1e55-445e-8e75-e9367920cb27","display_name":"PBv2","estimate":"13","currency":"GBP","low_estimate":12.91,"high_estimate":12.91,"scheduled_at":"2018-08-09T20:23:37Z"},{"product_id":"c4522291-783f-4d50-9d98-888e8cd42457","display_name":"PBv1","estimate":"13","currency":"GBP","low_estimate":12.91,"high_estimate":12.91,"scheduled_at":"2018-08-09T20:23:37Z"}]}'
+    http_version: 
+  recorded_at: Thu, 09 Aug 2018 20:23:37 GMT
+recorded_with: VCR 4.0.0

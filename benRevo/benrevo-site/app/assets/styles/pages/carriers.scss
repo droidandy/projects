@@ -1,0 +1,343 @@
+@import "../variables-theme";
+
+.app-carriers {
+  & > .top {
+    background: linear-gradient(135deg, #fcfcfc 0, #fcfcfc 25%, rgba(0, 0, 0, 0) 25%),
+                linear-gradient(135deg, #f5f6f7  25%, rgba(241, 240, 240, 0.84) 42%, rgba(189, 190, 190, 0.6));
+    @media only screen and (max-width: 991px) {
+      background: linear-gradient(140deg, #fff 0, #fff 50%, rgba(0, 0, 0, 0) 50%),
+                  linear-gradient(140deg, #fbfcfd  50%, rgba(241, 240, 240, 0.84) 55%, rgba(189, 190, 190, 0.6));
+    }
+    .page-header {
+      font-size: 42px;
+      line-height: 1.31;
+      font-weight: bold;
+      color: #3a444d;
+      :first-child {
+        color: #0099cc;
+      }
+    }
+    width: 100%;
+    .ui.grid {
+      padding-top: 90px;
+
+      .row {
+        padding: 0;
+
+        .ui.image {
+          max-width: 1051px !important;
+          width: 100%;
+        }
+      }
+    }
+    .ui.button {
+      background-color: #0099cc;
+      width: 185px;
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .page-description {
+      font-size: 24px;
+      font-weight: 600;
+      color: #3a444d;
+      width: 100%;
+      max-width: 879px;
+      line-height: normal;
+    }
+  }
+
+  & > .bottom {
+    @include panelShadow();
+    padding: 0;
+    margin: 15px 0 0;
+
+    .center-row-header {
+      width: 850px;
+      margin-bottom: 52px;
+      font-size: 24px;
+      line-height: 35px;
+      color: #3a444d;
+      @media only screen and (max-width: 1200px) {
+        width: 80%;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+    }
+
+    .image.benrevo-center {
+      width: 100%;
+      max-width: 625px !important;
+    }
+
+    .process {
+      max-width: 330px;
+      border-left: 2px solid #E5E5E5;
+      padding-left: 30px;
+
+      .ui.header {
+        font-size: 27px;
+        color: $SECOND_COLOR;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        & {
+          border-left: none;
+          padding-left: 0;
+        }
+      }
+    }
+
+    .mac-row {
+      min-height: 741px;
+      color: #fff;
+      background: linear-gradient(135deg, #0099cc 0, #0099cc 25%, rgba(0, 0, 0, 0) 25%),
+                  linear-gradient(135deg, #3dacd1 0, #3dacd1 10%, #0099cc 79%, #0099cc);
+      @media only screen and (max-width: 991px) {
+        background: linear-gradient(135deg, #0099cc 0, #0099cc 50%, rgba(0, 0, 0, 0) 50%),
+                    linear-gradient(135deg, #3dacd1 0, #3dacd1 30%, #0099cc 90%, #0099cc);
+      }
+
+      .carrier-mac {
+        height: 469px;
+        min-width: 861px;
+        position: absolute;
+        left: -15rem;
+        @media only screen and (min-width: 1770px) {
+            left: 2rem;
+        }
+      }
+
+      @media only screen and (max-width: 1225px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .tablet.column {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            .seven.wide.column {
+              width: 50% !important;
+            }
+        }
+        .carrier-mac {
+          position: relative;
+          left: 0;
+          min-width: 0;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        .tablet.column.seven.wide.column {
+          width: 100% !important;
+        }
+        .carrier-mac {
+          height: 240px;
+        }
+      }
+
+      @media only screen and (max-width: 474px) {
+        .carrier-mac {
+          margin-top: 40px;
+          height: 200px;
+        }
+      }
+
+      @media only screen and (max-width: 407px) {
+        .carrier-mac {
+          margin-top: 70px;
+        }
+      }
+
+      .mac-row-header {
+        height: 119px;
+        margin-top: 55px;
+        .header-text {
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 1.27;
+        }
+        .sub-header-text {
+          margin: 0 auto;
+          font-size: 24px;
+          margin-top: 15px;
+          line-height: normal;
+          max-width: 879px;
+        }
+      }
+      .snippets {
+        font-size: 16px;
+        margin-top: 12px;
+        margin-left: 1px;
+        line-height: 1.38;
+        .snippet-header {
+          font-weight: bold;
+          line-height: 22px;
+        }
+        .snippet-paragraph {
+          margin: 10px 0 22px 0;
+          max-width: 304px;
+        }
+        @media only screen and (max-width: 602px) {
+          .snippet-paragraph {
+            max-width: 100%
+          }
+        }
+      }
+    }
+
+    .screenshots-row {
+      padding: 69px 125px;
+      height: 465px;
+      color: #3a444d;
+
+      .corner-tab-data {
+        max-width: 585px;
+        width: 100%;
+      }
+
+      ul {
+        margin-top: 30px;
+        margin-left: 27px;
+        line-height: normal;
+        font-size: 10px;
+        li {
+          padding-left: 12px;
+          max-width: 502px;
+          width: 100%;
+          margin-bottom: 10px;
+          span {
+            font-size: 16px;
+          }
+        }
+      }
+      .mgr-dashboard {
+        margin-top: -13px;
+        margin-left: 24px;
+        height: 395px;
+        min-width: 564px;
+      }
+
+      &.screenshots-row-bottom {
+        padding-top: 89px;
+        height: 620px;
+        .match-details {
+          margin-left: 15px;
+          min-width: 510px;
+          width: 510px;
+        }
+        .corner-tab-data {
+          width: 530px;
+          margin-left: 62px;
+        }
+        ul {
+          margin-left: 89px;
+          li {
+            width: 425px;
+          }
+        }
+        @media only screen and (max-width: 1200px) {
+          .mgr-dashboard {
+            margin: 0 auto;
+          }
+          .corner-tab-data {
+            width: 400px;
+          }
+          ul li {
+            width: 300px;
+          }
+        }
+      }
+      @media only screen and (max-width: 1120px) {
+        padding: 40px 100px;
+        height: 700px;
+        .corner-tab-data {
+          max-width: 100%;
+        }
+        ul li {
+          max-width: 100%;
+        }
+
+        .mgr-dashboard {
+          margin: 0 auto;
+        }
+
+        &.screenshots-row-bottom {
+          max-width: 100%;
+          height: 680px;
+          padding-top: 0;
+          ul {
+            margin-left: 27px;
+            li {
+              max-width: 100%;
+              width: 100%;
+            }
+          }
+          .corner-tab-data {
+            width: 100%;
+            margin-left: 0;
+          }
+          .match-details {
+            height: 395px;
+            margin: 0 auto;
+            min-width: 503px;
+          }
+
+          .image-column {
+            order: 2;
+          }
+          @media only screen and (max-width: 600px) {
+            .match-details {
+              min-width: 0;
+              width: 364px;
+              height: 284px;
+            }
+          }
+        }
+        .eight.wide.column.screenshot-column {
+          min-width: 100%;
+          &.image-column {
+            display: flex;
+          }
+        }
+      }
+      @media only screen and (max-width: 840px) {
+        height: 100%;
+        .mgr-dashboard {
+          margin-top: 30px;
+        }
+        &.screenshots-row-bottom {
+          height: 100%;
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        padding: 40px 20px;
+      }
+      @media only screen and (max-width: 680px) {
+        height: 100%;
+        &.screenshots-row-bottom {
+          height: 100%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .mgr-dashboard {
+          min-width: 0;
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 602px) {
+  .app-carriers > .bottom .mac-row .tablet.column .seven.wide.column {
+    padding-left: 0;
+    width: 100% !important;
+    text-align: center;
+  }
+}

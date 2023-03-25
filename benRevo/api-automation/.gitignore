@@ -1,0 +1,12 @@
+.idea
+target
+*.iml
+.settings
+.classpath
+.project
+test-output
+logs
+poiUtilTest.xls
+**/.DS_Store
+bin
+**/auth0.properties

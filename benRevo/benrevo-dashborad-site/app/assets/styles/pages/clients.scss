@@ -1,0 +1,154 @@
+@import "../variables-theme";
+
+
+/*
+ * Clients page styles
+ *
+ */
+
+.clients {
+  .card-main {
+    min-height: 500px;
+  }
+  .round-ruler {
+    width: 160px;
+    height: 36px;
+    margin: 0 auto;
+
+    .big-round {
+      position: relative;
+      top: -13px;
+      width: 36px;
+      height: 36px;
+      background: red;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      z-index: 12;
+
+      span{
+        font-size: 13px;
+        display: block;
+        color: white;
+        line-height: 34px;
+        text-align: center;
+        overflow: hidden;
+      }
+    }
+    .small-round {
+      position: relative;
+      top: 10px;
+      left: 75px;
+      width: 10px;
+      height: 10px;
+      background: $SMALL_ROUND_COLOR;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      border-radius: 5px;
+      z-index: 11;
+    }
+
+    .center-line {
+      position: relative;
+      top: 17px;
+      width: 40px;
+      height: 4px;
+      background: red;
+      z-index: 10;
+      left: 36px;
+    }
+  }
+
+  .right {
+    float: right;
+  }
+
+  .ui.image.right.icon-svg {
+    line-height: 60px;
+    font-weight: 400;
+    width: 16px;
+  }
+
+  .ui.small.left.icon.input {
+    display: inline-block;
+    input {
+      width: 190px;
+    }
+    input, i {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+
+  .clients-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 25px;
+
+    .ps__scrollbar-x-rail {
+      top: 3px;
+      bottom: 0;
+      opacity: 1;
+      background-color: transparent !important;
+
+      .ps__scrollbar-x {
+        height: 10px !important;
+      }
+    }
+
+    .ui.checkbox.checkbox-no-bg {
+      margin-left: 0;
+
+      input:checked~label:after{
+        background-color: transparent;
+      }
+    }
+  }
+
+  .ui.table {
+    min-width: 1000px;
+    margin-top: -1px;
+
+
+    .carrier-logo {
+      & > div {
+        display: flex;
+        position: relative;
+
+        .ui.image {
+          width: 98%;
+          position: absolute;
+          align-self: center;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 0;
+          bottom: 50%;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1185px) {
+    .ui.table {
+      margin-top: 20px;
+    }
+  }
+}
+
+.round-ruler-cell {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-icon {
+  width: 28px;
+  margin: 0 3px;
+  cursor: default !important;
+}
+
+.table-popup-wrap, .table-popup-wrap:before {
+  background: $POPUP_BACKGROUND !important;
+}
+.table-popup-wrap {
+  border-radius: 7px !important;
+}

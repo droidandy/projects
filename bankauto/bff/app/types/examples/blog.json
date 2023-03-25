@@ -1,0 +1,81 @@
+// /blog/posts
+{
+  "items": [
+    {
+      "id": 2,
+      "published_at": null,
+      "hide_at": null,
+      "created_at": 1608014187,
+      "updated_at": 1608014264,
+      "creator_id": 1,
+      "editor_id": null,
+      "author_id": null,
+      "is_active": 1,
+      "is_main": 1,
+      "is_promo": 1,
+      "is_comment": 1,
+      "name": "Тест №2",
+      "meta_title": "meta Title",
+      "meta_description": "meta description",
+      "meta_keywords": "meta, keywords, blog",
+      "og_title": "OG title",
+      "og_description": "OG description",
+      "og_type": "OG публикации",
+      "og_image": null,
+      "alias": "test-no2"
+    },
+    {
+      "id": 1,
+      "published_at": null,
+      "hide_at": null,
+      "created_at": 1608014099,
+      "updated_at": 1608014145,
+      "creator_id": 1,
+      "editor_id": null,
+      "author_id": null,
+      "is_active": 1,
+      "is_main": null,
+      "is_promo": null,
+      "is_comment": null,
+      "name": "Заголовок",
+      "meta_title": "Meta Заголовок",
+      "meta_description": "Meta Описание",
+      "meta_keywords": "Meta Ключевые слова",
+      "og_title": "OG Заголовок",
+      "og_description": "OG Описание",
+      "og_type": "OG Тип публикации",
+      "og_image": null,
+      "alias": "zagolovok"
+    }
+  ],
+  "count": 2
+}
+
+# /blog/posts/alias/{alias}
+
+{
+  "id": 1,
+  "name": "Заголовок",
+  "description": "Анонс",
+  "meta_title": "Meta Заголовок",
+  "meta_description": "Meta Описание",
+  "meta_keywords": "Meta Ключевые слова",
+  "og_title": "OG Заголовок",
+  "og_description": "OG Описание",
+  "og_type": "OG Тип публикации",
+  "og_image": null,
+  "text_json": "{\"time\":1608014144806,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Описание статьи\"}}],\"version\":\"2.18.0\"}",
+  "text_html": "<p>Описание статьи</p>",
+  "alias": "zagolovok",
+  "published_at": null,
+  "hide_at": null,
+  "created_at": 1608014099,
+  "updated_at": 1608014145,
+  "creator_id": 1,
+  "editor_id": null,
+  "author_id": null,
+  "is_active": 1,
+  "is_main": null,
+  "is_promo": null,
+  "is_comment": null
+}

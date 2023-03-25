@@ -1,0 +1,7 @@
+name: "Shopify Deploy Premaster"
+on: [workflow_dispatch]
+jobs:
+ deploy-workflow:
+    uses: cream-ly/shopify_theme/.github/workflows/shopify_deploy.yml@master
+    secrets:
+      SHOPIFY_API_PASSWORD: ${{ secrets.SHOPIFY_PRODUCTION_PASSWORD }} 

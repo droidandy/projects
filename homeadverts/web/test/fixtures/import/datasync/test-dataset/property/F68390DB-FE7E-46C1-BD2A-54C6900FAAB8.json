@@ -1,0 +1,262 @@
+{
+    "listingSummary": {
+        "listingId": "f68390db-fe7e-46c1-bd2a-54c6900faab8",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2017-12-05",
+        "photoCount": 12,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "HRK",
+            "amount": 3487500,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 550500
+        },
+        "propertyAddress": {
+            "city": "Rovinj",
+            "stateProvince": "Istria",
+            "stateProvinceCode": "18",
+            "postalCode": "52210",
+            "country": "Croatia",
+            "countryCode": "HR"
+        },
+        "RFGListingId": "KWXHDN",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/kwxhdn",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Apartment",
+        "propertyStyle": "Modern",
+        "propertyName": "Apartment Porta",
+        "buildingArea": "82 Sq. M",
+        "noOfBedrooms": 1,
+        "squareFootage": 882.6398,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/9E252FDF-E091-42C3-BBE3-DA125D1020A7",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-05-10T05:36:46.867",
+        "agents": [
+            {
+                "id": "f33f24b8-fb34-46a6-ac77-09a80a296362",
+                "name": "Melvin Swain ",
+                "firstName": "Melvin",
+                "lastName": "Swain",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/EA7921BD-B0E0-4C65-968E-54CE08E10057",
+                "emailAddress": "mswain@signaturesothebys.com",
+                "businessPhone": "+385.91.612.0096",
+                "mobilePhone": "248-789-0172",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "42497839-1703-4199-9768-828cc9f2bb27",
+                    "RFGOfficeId": "0004",
+                    "companyId": "311788a3-f7f8-4230-91cd-c4aa04ebb8af",
+                    "companyName": "Signature",
+                    "RFGCompanyId": "800115",
+                    "brandCode": "SIR",
+                    "name": "Signature Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "6755 Telegraph",
+                        "city": "Bloomfield Hills",
+                        "district": "OAKLAND",
+                        "stateProvince": "Michigan",
+                        "stateProvinceCode": "MI",
+                        "postalCode": "48301",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 42.5468635559082,
+                        "longitude": -83.2866363525391,
+                        "formattedAddress": "6755 Telegraph Rd, Bloomfield Hills, MI 48301"
+                    },
+                    "phoneNumber": "2486478888",
+                    "emailAddress": "info@signaturesothebys.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": false
+    },
+    "fullBath": 1,
+    "providerKey": "f68390db-fe7e-46c1-bd2a-54c6900faab8",
+    "propertyFeatures": [
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Apartment Porta is situated in the very centre of Rovinj, historical Istrian touristic destination. Equipped and newly renovated it is ideal for summer vacation in the centre of old town Rovinj. Todays old town is situated on the very peninsula of Rovinj, which used to be an island and whose history goes all the way back to 3 ct AD. Surrounded with old city doors ( portas) the apartment is situated on the second floor of historical building and offers the view on three sides of the city, with direct view on the sea and main city square.\r\nApartment Porta has one bedroom, spacious living room connected with kitchen and dining area and a comfortable bathroom. Completely equipped, with two air condition units and all necessary furniture and electrics it was renovated with perfect blend of old city flats and new modern design. It is perfect for year round stay.\r\nWith its calming atmosphere in the apartment and good quality materials it is a true pleasure being in the apartment.\r\nApartment Portas is close to all Rovinj's touristic destinations, famous old town and church Eufemia and restaurants. The nearest airport is Pula, but also Trieste and Rijeka. Positioned on the very coast Rovinj has many pleasures during the summer but also in the winter period.",
+            "htmlRemark": "<p>Apartment Porta is situated in the very centre of Rovinj, historical Istrian touristic destination. Equipped and newly renovated it is ideal for summer vacation in the centre of old town Rovinj. Todays old town is situated on the very peninsula of Rovinj, which used to be an island and whose history goes all the way back to 3 ct AD. Surrounded with old city doors ( portas) the apartment is situated on the second floor of historical building and offers the view on three sides of the city, with direct view on the sea and main city square.<\/p><p>Apartment Porta has one bedroom, spacious living room connected with kitchen and dining area and a comfortable bathroom. Completely equipped, with two air condition units and all necessary furniture and electrics it was renovated with perfect blend of old city flats and new modern design. It is perfect for year round stay.<\/p><p>With its calming atmosphere in the apartment and good quality materials it is a true pleasure being in the apartment.<\/p><p>Apartment Portas is close to all Rovinj's&nbsp; touristic destinations, famous old town and church Eufemia and restaurants. The nearest&nbsp; airport is Pula, but also Trieste and Rijeka. Positioned on the very coast Rovinj has many pleasures during the summer but also in the winter period.&nbsp;<\/p><p><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/kwxhdn",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "17033E14-5657-4FFD-951D-0D8513F5018F",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/17033E14-5657-4FFD-951D-0D8513F5018F",
+            "isDefault": false,
+            "caption": "IMG_7080",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "051F6B87-E570-402E-A18E-20EA8B1EF58A",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/051F6B87-E570-402E-A18E-20EA8B1EF58A",
+            "isDefault": false,
+            "caption": "IMG_7126-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "FC091ED1-0335-446D-949E-2D71FDF506AE",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/FC091ED1-0335-446D-949E-2D71FDF506AE",
+            "isDefault": false,
+            "caption": "IMG_7114-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "221C7442-FECB-4EF0-82C8-55786151054D",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/221C7442-FECB-4EF0-82C8-55786151054D",
+            "isDefault": false,
+            "caption": "IMG_7117-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "4FA87A92-5708-4EE0-AC14-5A5B7702970B",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/4FA87A92-5708-4EE0-AC14-5A5B7702970B",
+            "isDefault": false,
+            "caption": "IMG_7181",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "EB819856-312D-4AE1-9B42-76F28BCA784A",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/EB819856-312D-4AE1-9B42-76F28BCA784A",
+            "isDefault": false,
+            "caption": "IMG_7120-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "B86617A6-284F-470E-8470-82865310FA22",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/B86617A6-284F-470E-8470-82865310FA22",
+            "isDefault": false,
+            "caption": "IMG_7102-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "A6CFBEAE-353E-4E6F-9825-8D34BB8BA401",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/A6CFBEAE-353E-4E6F-9825-8D34BB8BA401",
+            "isDefault": false,
+            "caption": "IMG_7129-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "5B9469EE-2E7D-4AE8-A9C2-BF7E6E81FE11",
+            "sequenceNumber": 1,
+            "url": "https:\/\/sothebysrealty.hr\/properties\/apartment-porta\/",
+            "isDefault": true,
+            "caption": "Apartment Porta",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2017-12-14T15:42:34.713"
+        },
+        {
+            "mediaID": "EDCCCDCA-747B-47E4-BBA3-CAAA74EEC031",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/EDCCCDCA-747B-47E4-BBA3-CAAA74EEC031",
+            "isDefault": false,
+            "caption": "IMG_7084-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "9E252FDF-E091-42C3-BBE3-DA125D1020A7",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/9E252FDF-E091-42C3-BBE3-DA125D1020A7",
+            "isDefault": true,
+            "caption": "IMG_7105-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "416E375F-ACD6-4B37-8A6D-DA4F0609D9C2",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/416E375F-ACD6-4B37-8A6D-DA4F0609D9C2",
+            "isDefault": false,
+            "caption": "IMG_7176",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        },
+        {
+            "mediaID": "65343E9A-2448-4EF7-9909-DD5A3F507458",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/65343E9A-2448-4EF7-9909-DD5A3F507458",
+            "isDefault": false,
+            "caption": "IMG_7081-HDR",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2017-12-11T05:37:47.997"
+        }
+    ]
+}

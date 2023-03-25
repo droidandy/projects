@@ -1,0 +1,5 @@
+--color
+--require spec_helper
+--format RspecJunitFormatter
+--out /tmp/test-results/rspec.xml
+--format progress

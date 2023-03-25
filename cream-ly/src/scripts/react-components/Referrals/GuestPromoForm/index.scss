@@ -1,0 +1,48 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.ComponentPageReferAFriend {
+
+	@include spacingBottom();
+
+	max-width: 800px;
+	background-color:#c3c4c4;// #edecef;
+
+	.form {
+
+		header.section-header {
+			h1, h2 {color:var(--black-pearl)}
+			margin-bottom: 20px;
+			padding-bottom:0;
+		}
+
+		.intro {
+			max-width: 90%;
+			@include spacingBottomMedium();
+		}
+		
+		input {
+			@include spacingBottomSmall();
+			background-color: white;
+			min-width: 70%;
+			@include media-query($small) {
+				min-width: 90%;
+			}
+		}
+		
+	}
+	
+	.image {
+		min-height: 500px;
+		
+		background-image: url("./ira-marina.png");
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: contain;
+
+		@include media-query($small) {
+			background-size: 70%;
+			background-position: right -60px;
+			min-height: 300px;
+		}
+	}
+}

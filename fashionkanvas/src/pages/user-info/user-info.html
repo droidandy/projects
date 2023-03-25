@@ -1,0 +1,174 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title *ngIf="user">{{ 'PROFILE' | translate }}</ion-title>
+    <!-- <ion-buttons end (click)="addPhoto()">
+      <button ion-button ><ion-icon name="add" class="plus"></ion-icon></button>
+    </ion-buttons> -->
+    <ion-buttons end>
+      <button ion-button (click)="openSettings()">
+        <ion-icon name="settings" class="plus"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div *ngIf="user">
+    <ion-row class="profile_pic" >
+      <img-loader *ngIf="user.img!='http://placehold.it/80X80'&&user.img!=''" src="{{user.img}}" tappable useImg  style="width: 100%;"></img-loader>
+      <img-loader *ngIf="user.img=='http://placehold.it/80X80'||user.img==''" src="assets/images/default-image.png" tappable useImg  style="width: 100%;"></img-loader>
+      <span><ion-icon name="md-create" (click)="editProfile()"></ion-icon></span>
+    </ion-row>
+
+    <ion-row class="profile_top_img">
+      <h2>{{user.username}}</h2>
+      <p>{{user.role}}</p>
+      <p>{{user.city}}</p>
+    </ion-row>
+
+    <ion-row class="experience">
+      <span class="experience_head">
+        <span class="experience_left_head">{{ 'EXPERIENCE' | translate }}</span>
+        <span class="experience_right_head" (click)="openAddexperience()"><ion-icon name="md-add"></ion-icon></span>
+      </span>
+
+      <span class="experience_body addexperience" >
+        <span class="experience_body_right" *ngIf="expereince.length==0">
+          <h1>{{ 'ADDANEXPERIENCE' | translate }}</h1>
+        </span>
+      </span>
+
+      <span class="experience_body" *ngFor="let data of expereince">
+        <span class="experience_body_left">
+          <span></span>
+        </span>
+        <span class="experience_body_right" >
+          <h2>{{data.role}} <span class="side_edit" (click)="editExpereince(data)"><ion-icon name="md-create"></ion-icon></span></h2>
+          <p class="legacy">{{data.agency}} {{data.event}}</p>
+          <p class="location">{{data.startDate|date:'MMM y' }} - {{data.diffDate}}</p>
+          <p class="description">{{data.location}}</p>
+          <p class="description" *ngIf="!data.isFullDescription">{{data.shortDescription}}</p>
+          <p class="description" *ngIf="data.isFullDescription">{{data.description}}</p>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&data.isFullDescription">Less more</button>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&!data.isFullDescription">Read more</button>
+
+        </span>
+      </span>
+    </ion-row>
+
+
+    <ion-row class="experience">
+      <span class="experience_head">
+        <span class="experience_left_head">{{ 'EDUCATION' | translate }}</span>
+        <span class="experience_right_head" (click)="openAddeducation()"><ion-icon name="md-add"></ion-icon></span>
+      </span>
+
+      <span class="experience_body addexperience">
+        <span class="experience_body_right" *ngIf="education.length==0">
+          <h1>{{ 'ADDANEDUCATION' | translate }}</h1>
+        </span>
+      </span>
+
+      <span class="experience_body" *ngFor="let data of education">
+        <span class="experience_body_left">
+          <span></span>
+        </span>
+        <span class="experience_body_right">
+          <h2>{{data.study}} <span class="side_edit"><ion-icon name="md-create" (click)="editEducation(data)"></ion-icon></span></h2>
+          <p class="location">{{data.degree}}</p>
+          <p class="location">{{data.startDate|date:'y' }} - {{data.endDate|date:'y'}}</p>
+          <p class="location">{{data.schoolName}},{{data.location}}</p>
+          <p class="description" *ngIf="!data.isFullDescription">{{data.shortDescription}}</p>
+          <p class="description" *ngIf="data.isFullDescription">{{data.description}}</p>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&data.isFullDescription">Less more</button>
+          <button ion-button class="loginbtn" block tappable  class="loginbtn button read_more" (click)="data.isFullDescription=!data.isFullDescription" *ngIf="data.description.length>150&&!data.isFullDescription">Read more</button>
+
+        </span>
+      </span>
+
+
+
+    </ion-row>
+
+
+    <ion-row class="experience linkedaccount">
+      <span class="experience_head">
+        <span class="experience_left_head">{{ 'LINKEDACCOUNT' | translate }}</span>
+      </span>
+
+      <span class="experience_body">
+        <span class="experience_body_right">
+          <p class="pick_photos">{{ 'PICKINSTRAGRAMPICTURE' | translate }}</p>
+        </span>
+        <div>
+          <button ion-button class="loginbtn instabtn" block tappable (click)="connectInstagram()">{{ 'CONNECTINSTA' | translate }}</button>
+        </div>
+        <ion-scroll direction="x" class="wide-as-needed">
+           <span class="button inline-button" *ngFor="let data of instagramImageList">
+             <span> <ion-icon name="md-add"></ion-icon></span>
+             <img-loader src="{{data.url}}" tappable useImg  style="width: 100%;"></img-loader>
+           </span>
+        </ion-scroll>
+      </span>
+
+
+    </ion-row>
+
+
+
+
+    
+
+      <ion-row class="add_images experience" *ngFor="let image of imagesList let i=index;">
+        <span class="experience_head">
+          <span class="experience_left_head">{{ 'PORTFOLIO' | translate }}</span>
+          <span class="experience_right_head" (click)="addPhoto()"><ion-icon name="md-add"></ion-icon></span>
+        </span>
+        <span class="experience_body addexperience">
+          <span class="experience_body_right">
+            <h1>{{ 'SHOWYOURWORK' | translate }}</h1>
+          </span>
+        </span>
+        <img-loader src="{{image.img}}" useImg  class="big_img"></img-loader>
+        <ion-col (click)="presentActionSheet(image,i)">
+          <ion-icon name="ios-more"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <div>
+        <button ion-button class="loginbtn" block tappable (click)="addPhoto()">{{ 'ADDPICTURE' | translate }}</button>
+      </div>
+
+    </div>
+
+  <!-- User Info -->
+  <!-- <div *ngIf="user">
+
+    <div class="top">
+        <img src="{{user.img}}" tappable (click)="enlargeImage(user.img)">
+        <h3>{{user.name}}</h3>
+        <p>@{{user.username}}</p>
+        <p>{{user.description}}</p>
+    </div>
+    <div class="center">
+
+      <div *ngIf="friendRequests && friendRequests.indexOf(user.$key) > -1">
+        <p class="info">Sent you a friend request.</p>
+        <button ion-button icon-only class="danger" tappable (click)="rejectFriendRequest()"><ion-icon name="md-close"></ion-icon></button>
+        <button ion-button icon-only class="success" tappable (click)="acceptFriendRequest()"><ion-icon name="md-checkmark"></ion-icon></button>
+      </div>
+      <div *ngIf="requestsSent && requestsSent.indexOf(user.$key) > -1">
+        <p class="info">Friend request sent.</p>
+        <button ion-button class="dark" tappable (click)="cancelFriendRequest()">Cancel Friend Request</button>
+      </div>
+      <div *ngIf="canAdd()">
+        <p class="info">You are not yet friends.</p>
+        <button ion-button class="primary" tappable (click)="sendFriendRequest()">Send Friend Request</button>
+      </div>
+      <div *ngIf="friends && friends.indexOf(user.$key) > -1">
+        <p class="info">You are already friends.</p>
+        <button ion-button class="primary" tappable (click)="sendMessage()">Send Message</button>
+        <button ion-button class="danger" tappable (click)="block()">Block User</button>
+      </div>
+    </div>
+  </div> -->
+</ion-content>

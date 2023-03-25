@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://publicapi.scrum27.gett.io/v1/business/rides/590?business_id=UK-3950
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 0e1a992b1a2fb3e6c2111040b8bc09bfdb91d5622fa501a17c5257641ca88543
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin,Accept,Content-Type,Authorization
+      Access-Control-Allow-Origin:
+      - ''
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Aug 2018 16:46:25 GMT
+      X-Rate-Limit-Limit:
+      - '1000000'
+      X-Rate-Limit-Remaining:
+      - '999998'
+      X-Rate-Limit-Reset:
+      - '2018-08-21T16:47:09Z'
+      X-Request-Id:
+      - 9802eba1d811f7014f8e26e5e5d5dde5
+      - 9802eba1d811f7014f8e26e5e5d5dde5
+      Content-Length:
+      - '474'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ride_id":"590","status":"Waiting","product_id":"5178cd83-20bf-4991-b559-c1128dfae662","pickup":{"latitude":51.517297,"longitude":-0.082372,"address":"23
+        Liverpool St, London EC2M, UK"},"destination":{"latitude":51.524254,"longitude":-0.140308,"address":"339
+        Euston Rd, Kings Cross, London NW1 3AD, UK"},"rider":{"name":"Alvera Skiles","phone_number":"+5168992719"},"driver":{"name":"John Johnson","image_url":"","phone_number":"+1(312)111-1111","rating":"5.0","vehicle":{"license_plate": "Q661182"},"location":{"latitude":51.5243,"longitude":-0.140308,"bearing":""},"phv_license":"03432225555"},"reference":"100039","requested_at":"2018-08-21T17:45:58+01:00","scheduled_at":"2018-08-21T17:45:58+01:00"}'
+    http_version:
+  recorded_at: Tue, 21 Aug 2018 16:46:25 GMT
+recorded_with: VCR 4.0.0

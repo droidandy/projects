@@ -1,0 +1,32 @@
+parameters:
+  ha.es.index_prefix: ''
+  locale: en
+  liip_imagine.cache.resolver.cache.class: AppBundle\Imagine\QueueCacheResolver
+  geocode_farm:
+      key: d90025a6e5ed60dc668fb90e2fe7e8b8f8984569
+
+  google.api_key: AIzaSyARF0oom8SstA7yWBF8DhPpVFDF2g0R44Q
+  open_exchange_rates_app_id: 941ba5d647e74cc0bab5fc35fa537f6e
+  mailchimp:
+      api_key: 89e5fe6cd41f9c4c87be56ed972b099c-us6
+  listhub:
+    metrics:
+      provider: M-999999
+      test_mode: true
+
+  #imagine images sizes
+  thumbnails:
+      sm: 200x150
+      md: 300x225
+      lg: 460x345
+
+  #the current environments cache folder
+  cache_dir: %kernel.cache_dir%
+
+  #when the users session is stored, the session_key is the key within the session array
+  user_locale.session_key: locale.iso_code
+  media_tmp: %kernel.cache_dir%/import-media/
+  ha.blog.featured: featured
+  ha.blog.featured_blog: ha_agent
+
+  liip_imagine.jpegoptim.binary: /usr/bin/jpegoptim

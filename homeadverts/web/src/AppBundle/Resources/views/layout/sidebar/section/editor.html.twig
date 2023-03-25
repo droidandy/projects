@@ -1,0 +1,108 @@
+{% if is_article_edit %}
+    {% set isPublished = article.publishedAt != NULL %}
+    {% set primaryImage = article.getPrimaryImage() %}
+    {% set allSocialsLinked = app.user.facebookAccessToken and app.user.twitterTokenSecret and app.user.linkedinAccessToken %}
+
+<div id="editor-publish"
+        {% if isPublished %}
+            data-heading="Publish the changes"
+        {% else %}
+            data-heading="Publish your story"
+        {% endif %}
+>
+    <div class="content">
+
+        <div class="section section-tags --loading">
+            <div class="sub-title">
+                Add up to 5 tags
+            </div>
+            <div class="enter-tags">
+                <select class="story-tags"
+                        data-article-tags="{{ article.editorTags|json_encode }}"
+                        data-tag-create-url="{{ path("ha_tag_post") }}"
+                        data-tag-autocomplete-url="{{ path("ha_autocomplete_tag") }}"
+                        data-article-tag-add-url="{{ path("ha_article_add_tags", {token: article.token}) }}"
+                        data-article-tag-remove-url="{{ path("ha_article_remove_tags", {token: article.token}) }}"
+                        multiple>
+                </select>
+                <div class="progress-tags mdl-progress mdl-js-progress mdl-progress__indeterminate">
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-media">
+            <div class="sub-title">
+                Select featured image
+            </div>
+            <p class="intro">
+                Add a high resolution image or video in order
+                to publish this story.
+                Featured stories requires min. 1920 x 800 pixels.
+            </p>
+            <div class="primary-media-selection carousel"
+                    {% if (primaryImage) %}
+                        data-primary-media-url="{{ primaryImage.file|media_image }}"
+                    {% endif %}
+            >
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sub-title">
+                Share your story
+            </div>
+            <p class="intro">
+                Select social icon to share your story.
+            </p>
+            <div class="social-publish">
+                {% if (app.user.facebookAccessToken) %}
+                    <button
+                            class="connect --facebook"
+                            data-social="facebook"
+                    >
+                        <span class="fa fa-facebook"></span>
+                    </button>
+                {% endif %}
+                {% if (app.user.twitterTokenSecret) %}
+                    <button
+                            class="connect --twitter {% if article.channelEnabled('twitter') %}--connected{% endif %}"
+                            data-social="twitter"
+                    >
+                        <span class="fa fa-twitter"></span>
+                    </button>
+                {% endif %}
+                {% if (app.user.linkedinAccessToken) %}
+                    <button
+                            class="connect  --linkedin {% if article.channelEnabled('linkedin') %}--connected{% endif %}"
+                            data-social="linkedin"
+                    >
+                        <span class="fa fa-linkedin"></span>
+                    </button>
+                {% endif %}
+                {% if not allSocialsLinked %}
+                    <a href="{{ path('ha_account_settings') }}#social-connections"
+                       class="connect  --add"
+                       target="_blank">
+                        <span class="fa fa-plus"></span>
+                    </a>
+                    <p class="intro">
+                        Click (+) to add new/more networks.
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="publish-article">
+            <a href="{{ path('ha_user_articles', {
+                id: app.user.id,
+                slug: app.user.slug}) }}"
+
+               class="white mdl-button mdl-js-button mdl-js-ripple-effect">
+                Publish Later
+            </a>
+            <button class="black mdl-button mdl-js-button">
+                Publish
+            </button>
+        </div>
+    </div>
+</div>
+{% endif %}

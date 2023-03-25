@@ -1,0 +1,27 @@
+{
+
+  "schema": {
+    "request": {
+      "url" : "https://api.tradekoo.com/graphql",
+      "method" : "POST",
+      "postIntrospectionQuery" : true,
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL"
+        }
+      }
+    }
+
+  },
+  "endpoints" : [
+    {
+      "name": "Default (http://api.bidscanner.com/graphql)",
+      "url": "https://api.tradekoo.com/graphql",
+      "options" : {
+        "headers": {
+          "user-agent" : "JS GraphQL"
+        }
+      }
+    }
+  ]
+}

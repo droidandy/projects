@@ -1,0 +1,23 @@
+ha_user_settings_social_disconnect:
+    path:  /social/{service}
+    defaults:
+      _controller: AppBundle:Api\User\UserSettings:socialDisconnect
+    methods:  [DELETE]
+    requirements:
+        service: facebook|twitter|google|linkedin
+
+ha_user_settings_bio:
+    path: /bio
+    defaults:
+      _controller: AppBundle:Api\User\UserSettings:bioPost
+    methods:  [POST]
+
+ha_change_currency:
+    path:  /change-currency
+    defaults: { _controller: AppBundle:Api\User\UserSettings:changeCurrency }
+    methods:  [POST]
+
+ha_user_settings_post:
+    path: /
+    defaults: { _controller: AppBundle:Api\User\UserSettings:settingsPost }
+    methods:  [POST]

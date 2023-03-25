@@ -1,0 +1,37 @@
+query getCurrentUserHunches {
+    currentUser {
+        ... on User {
+            id
+            hunches {
+                id
+                description
+                instrument {
+                    id
+                    symbol
+                    currentPrice
+                    priceChangePercentage
+                    description
+                    shortDescription
+                    name
+                }
+                priceChangePercentage
+                targetPrice
+            }
+            followedHunches {
+                id
+                description
+                instrument {
+                    id
+                    symbol
+                    currentPrice
+                    priceChangePercentage
+                    description
+                    shortDescription
+                    name
+                }
+                targetPrice
+                priceChangePercentage
+            }
+        }
+    }
+}

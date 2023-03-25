@@ -1,0 +1,20 @@
+[
+    {
+      "feedImage": "build/assets/feed-img-1.jpg",
+      "feedTitle": "Pohoda festival one of the best in Europe",
+      "feedCategory" : "Events",
+      "postID" : 1
+    },
+    {
+      "feedImage": "build/assets/feed-img-2.jpg",
+      "feedTitle": "All ado about nothing",
+      "feedCategory" : "Poetry",
+      "postID" : 2
+    },
+    {
+      "feedImage": "build/assets/feed-img-3.jpg",
+      "feedTitle": "Wold Food Festival in Barcelona",
+      "feedCategory" : "Food",
+      "postID" : 3
+    }
+  ]

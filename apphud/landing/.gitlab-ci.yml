@@ -1,0 +1,96 @@
+variables:
+  DOCKER_HOST: "tcp://localhost:2375"
+  DOCKER_TLS_CERTDIR: ""
+  GIT_SUBMODULE_STRATEGY: recursive
+
+image: docker:19.03.1
+
+services:
+  - docker:19.03.1-dind
+
+stages:
+  - build
+  - production
+  - staging
+
+default:
+  tags:
+    - aws-apphud
+
+.k8s_context:
+  image: centosadmin/kubernetes-helm:v3.1.2
+  before_script:
+    - kubectl config set-cluster k8s --insecure-skip-tls-verify=true --server=$K8S_API_URL
+    - kubectl config set-credentials ci --token=$K8S_CI_TOKEN_AWS
+    - kubectl config set-context ci --cluster=k8s --user=ci
+    - kubectl config use-context ci
+
+.deploy:
+  stage: deploy
+  extends: .k8s_context
+  script:
+    - helm lint .helm --set k8s_config.api_url=$K8S_API_URL_AWS
+    - helm upgrade --install $CI_PROJECT_NAME .helm
+      --values .helm/$HELM_VALUES
+      --namespace $PROJECT_NAMESPACE
+      --set image.name=$CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
+      --set image.tag=$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+      --set k8s_config.api_url=$K8S_API_URL_AWS
+      --timeout 500s
+      --atomic
+      --debug
+    - kubectl get po -n $PROJECT_NAMESPACE
+
+before_script:
+  - date
+
+after_script:
+  - date
+
+build:
+  stage: build
+  before_script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
+    - docker pull $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest || true
+  script:
+    - docker build
+      --cache-from $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest
+      -t $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+      -f ./Dockerfile .
+    - docker tag
+      $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+      $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest
+    - docker push $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.$CI_PIPELINE_ID
+    - docker push $CI_REGISTRY/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG.latest
+  when: manual
+
+production:
+  stage: production
+  extends: .deploy
+  variables:
+    PROJECT_NAMESPACE: apphud
+    HELM_VALUES: "values.yaml"
+  after_script:
+    - kubectl -n $CI_PROJECT_PATH_SLUG-$CI_ENVIRONMENT_NAME logs -ltype=atomiclog --tail=-1
+  environment:
+    name: apphud-prod
+    url: https://app.apphud.com
+  only:
+    - tags
+    - /^hotfix\/*/
+  needs:
+    - build
+
+staging:
+  stage: staging
+  extends: .deploy
+  variables:
+    PROJECT_NAMESPACE: apphud-stage
+    HELM_VALUES: "values-staging.yaml"
+  environment:
+    name: apphud-staging
+    url: https://app.appfist.com
+  except:
+    - tags
+  needs:
+    - build

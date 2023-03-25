@@ -1,0 +1,36 @@
+@import "../../../../../../styles/tools/mixins.scss";
+.componentSummaryVideos {
+  @include marginXauto;
+  max-width: 335px;
+
+  @include media-query($small) {
+    padding-left: 40px;
+  }
+  @include media-query($extra-small) {
+    padding-left: 30px;
+  }
+
+  .row.video {
+    @include spacingBottomSmall;
+  }
+
+  .row.notSelected {
+    opacity: 0.3;
+    filter: grayscale(100%);
+  }
+
+  .colNumber {
+    max-width: 76px;
+    min-height: 61px;
+
+    div {
+      min-width: 35px;
+      max-width: 76px;
+      text-align: center;
+    }
+  }
+
+  .colCard {
+    max-width: 300px;
+  }
+}

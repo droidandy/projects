@@ -1,0 +1,4 @@
+module.exports={
+  "header": "Video courses and Master classes",
+  "intro": "Cosmetics work at the level of the skin, and wrinkles often form deeper - the muscles go into hyper-tonicity, the skin on them folds and turns out to be a skin-wrinkle hall.\n   <br><br>\n   CREAM.LY is for a systematic approach, so we have prepared a set of video courses with really working exercises to complement the effect of cosmetics and solve deeper problems.\n   <br><br>\n   Course author Natalya Chichuk, doctor-cometologist, neurologist, international trainer in massage techniques and aesthetic taping, practicing specialist with 10 years of experience."
+}

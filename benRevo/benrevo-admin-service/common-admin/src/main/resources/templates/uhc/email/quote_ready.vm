@@ -1,0 +1,359 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+      <style type="text/css">
+        .header {
+          height: 245px;
+          left: 350px;
+          bottom: 0px;
+          color: black;
+          background-color: #f2f5fb;
+        }
+
+        .button:before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          height: 100%;
+        }
+
+        .button {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            width: 320px;
+            padding: 14px;
+            font-size: 15px;
+            border-radius: 4px;
+            background-color: #2562a6;
+            text-align : center;
+        }
+
+        .uhcLogoImage{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/uhclogo.png);
+            background-repeat: no-repeat;
+            width: 177px;
+            height: 37px;
+        }
+
+        .clientIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/icon-page.png);
+            background-repeat: no-repeat;
+            width: 44px;
+            height: 56px;
+        }
+        .medicalIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/medical-icon.png) ;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 30px;
+        }
+
+        .dentalIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/dental-icon.png) ;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 30px;
+        }
+
+        .visionIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/vision-icon.png) ;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 24px;
+        }
+
+        .first-third {
+            width: 8%;
+            padding: 0 10px 0 0;
+            float: left;
+        }
+
+        .second-third {
+            width: 13%;
+            padding: 0 10px 0 0;
+            float: left;
+        }
+
+        .third-third {
+            padding: 0 10px 0 0;
+            float: right;
+            width: 66%;
+        }
+
+        .first-third-equal {
+            width: 29.33%;
+            float: left;
+        }
+
+        .second-third-equal {
+            width: 37%;
+            float: left;
+        }
+
+        .third-third-equal {
+            float: right;
+            width: 29.33%;
+        }
+
+        .divider{
+          width: 614px;
+          height: 1px;
+          background-color: rgba(214, 217, 219, 0.59);
+          margin-bottom: 35px;
+          margin-top: 35px;
+        }
+
+        .summary{
+            font-size: 15px;
+            text-align: left;
+            color: #3a444d;
+        }
+
+        .product{
+          font-size: 15px;
+          font-weight: 600;
+          text-align: left;
+          color: #333333;
+        }
+
+        .thickDivider{
+          height: 9px;
+          background-color: #2562a6;
+          margin-top:29px;
+          margin-bottom: 30px;
+        }
+        .poweredByBenrevoLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo1x_20.png);
+            background-repeat: no-repeat;
+            width: 181px;
+            height: 37px;
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+
+          .poweredByBenrevoLogoImage{
+              background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo2x_20_20.png);
+              background-size: 181px 37px;
+          }
+          .uhcLogoImage{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/uhclogo@2x.png);
+              background-size: 177px 37px;
+          }
+
+          .clientIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/icon-page@2x.png);
+            background-repeat: no-repeat;
+            background-size: 44px 56px;
+          }
+          .medicalIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/medical-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 25px 30px;
+          }
+          .dentalIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/dental-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 25px 30px;
+          }
+          .visionIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/vision-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 35px 24px;
+          }
+        }
+      </style>
+    </head>
+    <body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial, Helvetica, sans-serif;">
+
+        <table bgcolor="#f8f9fb" style="margin:auto;margin-top: 30px;" width="800">
+            <tr>
+                <td>
+                    <table bgcolor="#fff" style="margin:auto;padding:0 30px;border-radius: 8px;" width="800">
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="uhcLogoImage" style="float:right;padding-bottom: 13px; margin-top: 13px;"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align='center' style="padding-bottom: 40px;">
+                            <div class="header">
+
+                              <table width="100%" cellspacing='0'>
+                                <tbody>
+                                  <tr>
+                                    <td align='center' style="width:100%;"><br/>
+                                      <p style="font-size: 28px; color: #3a444d;">YOUR QUOTE IS READY</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <div class="clientIcon" style="margin-left: 35px; display: inline-block; vertical-align: top"></div>
+                                        <table cellpadding="0" cellspacing="0" style="display: inline-block; margin:0;padding:0; margin-bottom: 14px;margin-left: 35px;">
+                                          <tr>
+                                            <td>
+                                              <ul style="color: #656e75;list-style: none;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;padding: 0; list-style-type: none;">
+                                                <li>Client:</li>
+                                                <li>Effective Date:</li>
+                                                <li>Included:</li>
+                                              </ul>
+                                            </td>
+                                            <td>
+                                              <ul style="list-style: none;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;padding: 0; list-style-type: none;">
+                                                <li>$!client_name</li>
+                                                <li>$!effective_date</li>
+                                                <li>$!proposals</li>
+                                              </ul>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td style="text-align: center;">
+                                      <a class="button" href="https://quote.benrevo.com/uhc/" target="_blank"> Start by reviewing your quote</a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        #if($!medical_quote_summary)
+                          <tr>
+                            <td style="line-height: 1.5;">
+                              <div class="medicalIcon first-third"></div>
+                              <div class="product second-third">
+                                Medical
+                                #if($!isMedicalRenewal)
+                                <br>(Renewal)
+                                #end
+                              </div>
+                              <div class="summary third-third">$!medical_quote_summary</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="divider"></div>
+                            </td>
+                          </tr>
+                        #end
+                        #if($!medical_kaiser_quote_summary)
+                          <tr>
+                            <td style="line-height: 1.5;">
+                              <div class="medicalIcon first-third"></div>
+                              <div class="product second-third">
+                                Medical(Kaiser)
+                                #if($!isMedicalRenewal)
+                                  <br>(Renewal)
+                                #end
+                              </div>
+                              <div class="summary third-third">$!medical_kaiser_quote_summary</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="divider"></div>
+                            </td>
+                          </tr>
+                        #end
+                        #if($!dental_quote_summary)
+                          <tr>
+                            <td style="line-height: 1.5;">
+                              <div class="dentalIcon first-third"></div>
+                              <div class="product second-third">
+                                Dental
+                                #if($!isDentalRenewal)
+                                  <br>(Renewal)
+                                #end
+                              </div>
+                              <div class="summary third-third">$!dental_quote_summary</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="divider"></div>
+                            </td>
+                          </tr>
+                        #end
+                        #if($!vision_quote_summary)
+                          <tr>
+                            <td style="line-height: 1.5;">
+                              <div class="visionIcon first-third"></div>
+                              <div class="product second-third">
+                                Vision
+                                #if($!isVisionRenewal)
+                                <br>(Renewal)
+                                #end
+                              </div>
+                              <div class="summary third-third">$!vision_quote_summary</div>
+                            </td>
+                          </tr>
+                        #end
+                        <tr>
+                          <td>
+                            <div class="thickDivider"></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p style="color: #2562a6;font-size: 16px;text-align: center;"> Bundle our products together and wrap up the savings! </p>
+                            <p style="color: #3a444d;font-size: 16px;text-align: center;line-height: 1.4;"> <span style="font-weight: 600;">Save up to 3%</span> on the health premium by adding employer-sponsored Dental, Vision, Life and Disability. Here is how the savings can add up:</p>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td align='center'>
+                            <div class="header" style="padding-bottom: 16px;">
+
+                              <table width="100%" cellspacing='0'>
+                                <tbody>
+                                <tr>
+                                  <td align='center' style="width:100%;"><br/>
+                                    <p style="font-size: 28px; color: #3a444d;">BUNDLE DISCOUNTS </p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="line-height: 1.33; padding: 17px 25px; color: #3a444d; font-weight: 600; border-bottom: 1px solid rgba(214, 217, 219, 0.59);">
+                                    <div class="first-third-equal">
+                                      Health + Dental - 1%
+                                      <br/>
+                                      Health + Vision - 0.5%
+                                    </div>
+                                    <div class="second-third-equal">Health + Life + Supp. Life - 0.5%</div>
+                                    <div class="third-third-equal">
+                                      Health + STD + LTD - 0.5%
+                                      <br>
+                                      Health + Supp. Life - 0.5%
+                                    </div>
+                                  </td>
+                                </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p style="color: #6e7881;font-size: 16px;text-align: center;padding: 0px 15px;">We look forward to continuing to serve you and your client through the upcoming plan year!</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align='center' style="padding-top: 36px;">
+                            <div class="poweredByBenrevoLogoImage"></div>
+                            <br/><br/>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

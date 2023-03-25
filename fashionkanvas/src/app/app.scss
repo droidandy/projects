@@ -1,0 +1,287 @@
+
+//Add class="no-scroll" on <ion-content> to disable scrolling
+.no-scroll .scroll-content {
+  overflow: hidden;
+}
+
+@font-face {
+font-family: MyFont;
+src: url("../assets/fonts/sf-ui-text-regular.otf");
+}
+
+body, span, button, h1, h2, h3, h4, h5, h6, p, ion-item, ion-title {
+font-family: 'MyFont' !important;
+}
+
+.input-has-focus,.input-has-value
+{
+  text-transform: uppercase;
+}
+
+.tabs-ios .tab-button-icon
+{
+  min-width: 26px;
+}
+
+.ion-ios-customicon-outline,.ion-md-customicon-outline {
+  background-image: url('../assets/svg/tabs/job_inactive.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon,.ion-md-customicon{
+  background-image: url('../assets/svg/tabs/job_active.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon1-outline,.ion-md-customicon1-outline {
+  background: url('../assets/svg/tabs/chat_inactive.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon1,.ion-md-customicon1{
+  background: url('../assets/svg/tabs/chat_active.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon2-outline,.ion-md-customicon2-outline {
+  background: url('../assets/svg/tabs/discover_inactive.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon2,.ion-md-customicon2{
+  background: url('../assets/svg/tabs/discover_active.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon3-outline,.ion-md-customicon3-outline {
+  background: url('../assets/svg/tabs/group_inactive.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon3,.ion-md-customicon3{
+  background: url('../assets/svg/tabs/group_active.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon4-outline,.ion-md-customicon4-outline {
+  background: url('../assets/svg/tabs/profile_inactive.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ion-ios-customicon4,.ion-md-customicon4{
+  background: url('../assets/svg/tabs/profile_active.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+//Center Class to align content to center.
+.center {
+  text-align: center;
+}
+.tabs-ios .tabbar{
+  background: #fff;
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon{
+  color: $primary;
+}
+
+.tabs-ios .tab-button[aria-selected=true]{
+  color: $primary;
+  border-bottom: 2px solid $primary;
+}
+
+.segment-ios .segment-button{
+  border-color: $primary;
+  color:$primary;
+}
+.segment-ios .segment-button.segment-activated{
+  background: $primary;
+}
+
+.header-ios .toolbar-background-ios, .footer-ios .toolbar-background-ios{
+  border-style: none;
+}
+.top{
+  background: $primary;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+.top img{
+  height: 80px;
+  width: 80px;
+}
+a{
+  color: #222;
+}
+
+.chatbox{
+  padding:3px;
+  border-radius: 5px;
+  max-width: 70%;
+  // min-width: 70%;
+  margin: 5px;
+}
+.chatbox span{
+  font-size: 12px;
+    color: #999;
+}
+.right{
+  border-radius: 15px;
+
+  color: #fff;
+  float: right;
+  text-align: right;
+  padding-right: 5px
+}
+
+.right div{
+    background: $chat-left-bg;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.left{
+  border-radius: 5px;
+
+  color:$chat-left-color;
+  float: left;
+  text-align: left;
+  padding-left: 5px
+}
+.left .chatbox_left{
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 5px 10px;
+  float: left;
+  color: #000;
+  max-width: 81%;
+}
+
+
+.left span{
+  float: left;
+    width: 100%;
+}
+
+
+video{
+  background: $chat-left-bg;
+  border-radius: 5px;
+}
+
+
+
+//Empty List
+.empty-list {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+
+  h1,
+  p {
+    color: $gray;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1.125em;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button {
+    background: $dark;
+  }
+
+  button.activated,
+  button:active {
+    background: $dark-active;
+  }
+}
+
+.toolbar-background
+{
+  background: transparent!important;
+}
+
+.header{
+  box-shadow: 1px 2px 6px #e6e6e6;
+}
+
+.toolbar-title
+{
+  color: #000;
+font-weight: 400;
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+//Footer Bar for message.html and group.html
+ion-footer.footer {
+  background-position: initial initial;
+  background-repeat: initial initial;
+}
+
+.bottom_bar {
+  padding-top: 0.25em;
+  // padding-bottom: 0.25em;
+  border-top: 1px solid #e1e1e1;
+
+  ion-textarea {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    border-radius: 0.75em;
+  }
+
+  button ion-icon {
+    font-size: 2em !important;
+    color: $primary;
+  }
+}
+
+.action-sheet-group
+{
+  overflow: hidden;
+}
+
+.action-sheet-button
+{
+  color:#f66565!important;
+}
+
+.ion-ios-custom-settings,.ion-md-custom-settings {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.4em;
+  height: 1.4em;
+  background-image: url('../assets/svg/settings.svg');
+}
+
+.ion-ios-custom-filter,.ion-md-custom-filter {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.4em;
+  height: 1.4em;
+  background-image: url('../assets/svg/filter.svg');
+}
+

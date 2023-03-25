@@ -1,0 +1,167 @@
+{% assign lang = "ru" %}
+{%if attributes.lang%}{% assign lang = attributes.language %}{%endif%}
+
+{% comment %} -------------------- translations_begin --------------------{% endcomment %}
+{% capture email_title %}Ошибка оплаты в {{shop.name}} {% endcapture %}
+{%if lang == "en"%}
+  {% capture email_title %} {{shop.name}} Payment couldn’t be processed {% endcapture %}
+{%endif%}
+
+{% capture email_body %} Ваш платеж был отклонен. Деньги не были списаны с вашего счета {% endcapture %}
+{%if lang == "en"%}
+  {% capture email_body %} You added items to your shopping cart but the payment couldn’t be processed. You haven’t been charged.{% endcapture %}
+{%endif%}
+
+
+{% capture translation_complete %}Вы можете вернуться в вашу корзину и повторить попытку оплаты либо выбрать другой способ оплаты.{% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_complete %}You can still return to your shopping bag to complete your purchase. {% endcapture %}
+{%endif%}
+
+{% capture translation_return %} Перейти в корзину {% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_return %} Return to your shopping bag {% endcapture %}
+{%endif%}
+
+{% capture translation_visit %} или <a href="{{ shop.url }}">Перейти на сайт </a>{% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_visit %}or <a href="{{ shop.url }}">Visit our store</a> {% endcapture %}
+{%endif%}
+
+{% capture translation_questions %}Если у вас есть вопросы, просто ответьте на этой имэйл или напишите на <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>{% endcapture %}
+{%if lang == "en"%}
+  {% capture translation_questions %}If you have any questions, reply to this email or contact us at <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>{% endcapture %}
+{%endif%}
+
+{% comment %} -------------------- translations_end --------------------{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <title>{{ email_title }}</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/notifications/styles.css">
+  <style>
+    .button__cell { background: {{ shop.email_accent_color }}; }
+    a, a:hover, a:active, a:visited { color: {{ shop.email_accent_color }}; }
+  </style>
+</head>
+
+  <body>
+    <table class="body">
+      <tr>
+        <td>
+          <table class="header row">
+  <tr>
+    <td class="header__cell">
+      <center>
+
+        <table class="container">
+          <tr>
+            <td>
+
+              <table class="row">
+                <tr>
+                  <td class="shop-name__cell">
+                    {%- if shop.email_logo_url %}
+                      <img src="{{shop.email_logo_url}}" alt="{{ shop.name }}" width="{{ shop.email_logo_width }}">
+                    {%- else %}
+                      <h1 class="shop-name__text">
+                        <a href="{{shop.url}}">{{ shop.name }}</a>
+                      </h1>
+                    {%- endif %}
+                  </td>
+
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+
+      </center>
+    </td>
+  </tr>
+</table>
+
+          <table class="row content">
+  <tr>
+    <td class="content__cell">
+      <center>
+        <table class="container">
+          <tr>
+            <td>
+              
+            <h2>{{ email_title }}</h2>
+            <p>{{ email_body }}</p>
+            <p> {{translation_complete}} </p>
+            {% if shop.url %}
+              <table class="row actions">
+                <tr>
+                  <td class="actions__cell">
+                    <table class="button main-action-cell">
+                      <tr>
+                        <table class="row actions">
+  <tr>
+    <td class="empty-line"> </td>
+  </tr>
+  <tr>
+    <td class="actions__cell">
+      <table class="button main-action-cell">
+        <tr>
+          <td class="button__cell"><a href="{{ url }}" class="button__text">{{translation_return}}</a></td>
+        </tr>
+      </table>
+      {% if shop.url %}
+    <table class="link secondary-action-cell">
+      <tr>
+        <td class="link__cell">{{translation_visit}}</td>
+      </tr>
+    </table>
+{% endif %}
+
+    </td>
+  </tr>
+</table>
+
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            {% endif %}
+
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+          <table class="row footer">
+  <tr>
+    <td class="footer__cell">
+      <center>
+        <table class="container">
+          <tr>
+            <td>
+              
+              <p class="disclaimer__subtext">
+                {{translation_questions}}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
+
+<img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1" />
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

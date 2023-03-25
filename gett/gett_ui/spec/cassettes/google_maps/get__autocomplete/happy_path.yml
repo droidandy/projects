@@ -1,0 +1,284 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/autocomplete/json?channel=channel_name&components=&input=221B%20Baker%20london%20uk&key=AIzaSyBmgcuoNZLqQG7I51V9dk_mUoadHi438P8&language=en
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 01 Aug 2018 19:45:21 GMT
+      Expires:
+      - Wed, 01 Aug 2018 19:45:21 GMT
+      Cache-Control:
+      - private, max-age=300
+      Server:
+      - scaffolding on HTTPServer2
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "predictions" : [
+              {
+                 "description" : "221b Baker Street, London, UK",
+                 "id" : "de1ca3815dc4c1d3a57ec502dfe35a5c3b23be5f",
+                 "matched_substrings" : [
+                    {
+                       "length" : 10,
+                       "offset" : 0
+                    },
+                    {
+                       "length" : 2,
+                       "offset" : 27
+                    }
+                 ],
+                 "place_id" : "Eh0yMjFiIEJha2VyIFN0cmVldCwgTG9uZG9uLCBVSw",
+                 "reference" : "CjQhAAAA6b4h5UZkr9BireWXE1o7xBjlId1FuwStnRqWpvu2nX_SDMhgGdL10Jh9JdWgX0uKEhCxgPSLES6_Ivgmcbzq_eD5GhQlMUGmz__Wq3Fy6t9Mx-0kjvsBJA",
+                 "structured_formatting" : {
+                    "main_text" : "221b Baker Street",
+                    "main_text_matched_substrings" : [
+                       {
+                          "length" : 10,
+                          "offset" : 0
+                       }
+                    ],
+                    "secondary_text" : "London, UK",
+                    "secondary_text_matched_substrings" : [
+                       {
+                          "length" : 2,
+                          "offset" : 8
+                       }
+                    ]
+                 },
+                 "terms" : [
+                    {
+                       "offset" : 0,
+                       "value" : "221b Baker Street"
+                    },
+                    {
+                       "offset" : 19,
+                       "value" : "London"
+                    },
+                    {
+                       "offset" : 27,
+                       "value" : "UK"
+                    }
+                 ],
+                 "types" : [ "route", "geocode" ]
+              },
+              {
+                 "description" : "<%= input || '221b Baker Passage, London, UK' %>",
+                 "id" : "ba3891b35d74b52853ae7dd8b277595ba8ce532a",
+                 "matched_substrings" : [
+                    {
+                       "length" : 10,
+                       "offset" : 0
+                    },
+                    {
+                       "length" : 2,
+                       "offset" : 28
+                    }
+                 ],
+                 "place_id" : "Eh4yMjFiIEJha2VyIFBhc3NhZ2UsIExvbmRvbiwgVUs",
+                 "reference" : "CjQiAAAA9FfcBMCImkNIQs6Idpg7wK-KJ09UMxBJNzu4OPvdLFaflh-r6sPGae_JUMzbFyRyEhARKC5t6-PfeSgJFIrjGRmxGhRR3ao2QUqKA5Z7_5kMmBlBY1GG1A",
+                 "structured_formatting" : {
+                    "main_text" : "221b Baker Passage",
+                    "main_text_matched_substrings" : [
+                       {
+                          "length" : 10,
+                          "offset" : 0
+                       }
+                    ],
+                    "secondary_text" : "London, UK",
+                    "secondary_text_matched_substrings" : [
+                       {
+                          "length" : 2,
+                          "offset" : 8
+                       }
+                    ]
+                 },
+                 "terms" : [
+                    {
+                       "offset" : 0,
+                       "value" : "221b Baker Passage"
+                    },
+                    {
+                       "offset" : 20,
+                       "value" : "London"
+                    },
+                    {
+                       "offset" : 28,
+                       "value" : "UK"
+                    }
+                 ],
+                 "types" : [ "route", "geocode" ]
+              },
+              {
+                 "description" : "221b Baker Road, London, UK",
+                 "id" : "3f4bf7437510900586ccfe17ab735ce1a08023f8",
+                 "matched_substrings" : [
+                    {
+                       "length" : 10,
+                       "offset" : 0
+                    },
+                    {
+                       "length" : 2,
+                       "offset" : 25
+                    }
+                 ],
+                 "place_id" : "EhsyMjFiIEJha2VyIFJvYWQsIExvbmRvbiwgVUs",
+                 "reference" : "CiQfAAAA1CfSWz3m146kKXJsML37a2n9oHWLc8vI_77j5kvAHvwSEE9yoihpDHT4jvvOkIMgivAaFB30yg21-0h64aoHRrTkn_l8rmtH",
+                 "structured_formatting" : {
+                    "main_text" : "221b Baker Road",
+                    "main_text_matched_substrings" : [
+                       {
+                          "length" : 10,
+                          "offset" : 0
+                       }
+                    ],
+                    "secondary_text" : "London, UK",
+                    "secondary_text_matched_substrings" : [
+                       {
+                          "length" : 2,
+                          "offset" : 8
+                       }
+                    ]
+                 },
+                 "terms" : [
+                    {
+                       "offset" : 0,
+                       "value" : "221b Baker Road"
+                    },
+                    {
+                       "offset" : 17,
+                       "value" : "London"
+                    },
+                    {
+                       "offset" : 25,
+                       "value" : "UK"
+                    }
+                 ],
+                 "types" : [ "route", "geocode" ]
+              },
+              {
+                 "description" : "221b Baker Court, London, UK",
+                 "id" : "c70b325d7051b8caf598669ed93dab2607544323",
+                 "matched_substrings" : [
+                    {
+                       "length" : 10,
+                       "offset" : 0
+                    },
+                    {
+                       "length" : 2,
+                       "offset" : 26
+                    }
+                 ],
+                 "place_id" : "EhwyMjFiIEJha2VyIENvdXJ0LCBMb25kb24sIFVL",
+                 "reference" : "CiQgAAAAXrEHGf9SOIvN9MEjwXner-t_gTFnlBC6QptAA6wRRNQSEDRq96vvQlafUughTZ_B9z0aFAKmIlu3CZSw5COXd5pV4jST78z9",
+                 "structured_formatting" : {
+                    "main_text" : "221b Baker Court",
+                    "main_text_matched_substrings" : [
+                       {
+                          "length" : 10,
+                          "offset" : 0
+                       }
+                    ],
+                    "secondary_text" : "London, UK",
+                    "secondary_text_matched_substrings" : [
+                       {
+                          "length" : 2,
+                          "offset" : 8
+                       }
+                    ]
+                 },
+                 "terms" : [
+                    {
+                       "offset" : 0,
+                       "value" : "221b Baker Court"
+                    },
+                    {
+                       "offset" : 18,
+                       "value" : "London"
+                    },
+                    {
+                       "offset" : 26,
+                       "value" : "UK"
+                    }
+                 ],
+                 "types" : [ "route", "geocode" ]
+              },
+              {
+                 "description" : "221b Baker Street, Potters Bar, UK",
+                 "id" : "5353d19d335bbafbb944a9d4b2e3171e5b957095",
+                 "matched_substrings" : [
+                    {
+                       "length" : 10,
+                       "offset" : 0
+                    },
+                    {
+                       "length" : 2,
+                       "offset" : 32
+                    }
+                 ],
+                 "place_id" : "EiIyMjFiIEJha2VyIFN0cmVldCwgUG90dGVycyBCYXIsIFVL",
+                 "reference" : "CjQmAAAA5oTnXmiaZabhBe0FqAgq1YHqHu8hB2tMHJL_OY65XXd9aJ_wxisR6e_Cebho5V6dEhDcLaKksZR9hnPF6Kwuzf1WGhRJT1XbNsg1khtPfibRG27uGOUz9A",
+                 "structured_formatting" : {
+                    "main_text" : "221b Baker Street",
+                    "main_text_matched_substrings" : [
+                       {
+                          "length" : 10,
+                          "offset" : 0
+                       }
+                    ],
+                    "secondary_text" : "Potters Bar, UK",
+                    "secondary_text_matched_substrings" : [
+                       {
+                          "length" : 2,
+                          "offset" : 13
+                       }
+                    ]
+                 },
+                 "terms" : [
+                    {
+                       "offset" : 0,
+                       "value" : "221b Baker Street"
+                    },
+                    {
+                       "offset" : 19,
+                       "value" : "Potters Bar"
+                    },
+                    {
+                       "offset" : 32,
+                       "value" : "UK"
+                    }
+                 ],
+                 "types" : [ "route", "geocode" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version:
+  recorded_at: Wed, 01 Aug 2018 19:45:21 GMT
+recorded_with: VCR 4.0.0

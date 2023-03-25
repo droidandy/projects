@@ -1,0 +1,111 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">
+        <span>Profile</span>
+      </ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <ion-content>
+  <!--<ion-content class="gm-content" on-scroll="gotScrolled()" delegate-handle="mainScroll">-->
+            <div class="settings">
+              <div class="label-title label-title--first">My profile pictures are:</div>
+              <div  class="slider-thumb slider-thumb--pictures clearfix selection">
+                <ul>
+                  <li ng-click="handleImage(img)" click-off="clickOff()" ng-repeat="img in pictureItems" ng-class="isActiveImage(img)">
+                    <a>
+                    <img ng-src="{{img.thumbnail}}" class="img-responsive"  alt="" ng-class="imageClass(img)">
+                    <span class="pro-pic-bg">
+                      <span class="cross-icon"></span>
+                    </span>
+                  </a>
+                  </li>
+                  <li class="add" ng-if="profileData.photos.length < 5">
+                    <form action="" id="pictureForm" enctype="multipart/form-data">
+                      <input type="file" name="picture" ng-model="newPhoto" onchange="angular.element(this).scope().submitForm(this)" style="position: absolute; opacity: 0;">
+                    </form>
+                    <a ng-click="selectImage()"><span>+</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="label-title">I like talking about:
+              </div>
+              <div class="row">
+                <div class="col-xs-12 selection selection--shorter">
+
+
+                  <!--<ion-list id="iceBreakers" sortable draggable=".card" sorted="iceBreakers.onReorder($fromIndex, $toIndex)" class="disable-user-behavior">
+                    <ion-item ng-repeat="ib in iceBreakers.items" item="ib" class="iitem-light item-avatar card item-complex item">
+                      <div class="item-content">
+                       <div class="item-divider"><span ng-bind="ib"></span></div>
+                        <div class="item-text-wrap">
+                        </div>
+                      </div>
+
+                    </ion-item>
+                  </ion-list>-->
+                  <!-- Use directive ng-sortable -->
+                  <!--<ul ng-sortable="{animation:150}">
+                    <li ng-repeat="ib in iceBreakers.items" item="ib">
+                      <span ng-bind="ib"></span>
+                    </li>
+                  </ul>-->
+
+                  <ion-list id="iceBreakers" class="list-block list-block-selection" show-reorder="showReorder('tags')" ng-click="toggleShowReorder('tags')" can-swipe="true">
+                    <ion-item class="item-remove-animate" ng-repeat="ib in iceBreakers.items" item="ib">
+                      <span ng-bind="ib"></span>
+                      <ion-option-button class="button-assertive" ng-click="deleteIceBreaker(ib)">
+                        Delete
+                      </ion-option-button>
+                      <ion-reorder-button class="ion-navicon"
+                                          on-reorder="iceBreakers.moveItem(ib, $fromIndex, $toIndex)">
+                      </ion-reorder-button>
+                    </ion-item>
+                  </ion-list>
+
+                  <ion-list ng-if="iceBreakers.items.length < 3">
+                    <li class="item add-more">
+                      <input type="text" name="new-ice-breaker" ng-blur="addIceBreaker('blur')"  ng-keyup="addIceBreaker($event);" ng-model="newIceBreaker.text" placeholder="Add new...">
+                      <!-- <a href="#" ng-click="addIceBreaker()">Add...</a> -->
+                    </li>
+                  </ion-list>
+                </div>
+              </div>
+
+
+              <div class="label-title">I speak:
+              </div>
+              <div class="row">
+                <div class="col-xs-12 selection selection--shorter">
+                  <ion-list id="languageItems" class="list-block list-block-selection" show-reorder="showReorder('languages')" ng-click="toggleShowReorder('languages')" can-swipe="true">
+                    <ion-item class="item-remove-animate item item-complex item-right-editable" ng-repeat="lang in languageItems.items" item="lang">
+                      <span ng-bind="lang"></span>
+                      <ion-option-button class="button-assertive" ng-click="deleteLanguage(lang)">
+                        Delete
+                      </ion-option-button>
+                      <ion-reorder-button class="ion-navicon"
+                                          on-reorder="languageItems.moveItem(lang, $fromIndex, $toIndex)"></ion-reorder-button>
+                    </ion-item>
+                  </ion-list>
+                  <ion-list  ng-if="languageItems.items.length < 3">
+                    <li class="item add-more">
+                      <input type="text" name="new-language" ng-blur="addLanguage('blur')"  ng-keyup="addLanguage($event);" ng-model="newLanguage.text" placeholder="Add new...">
+                      <!-- <a href="#" ng-click="addLanguage()">Add...</a> -->
+                    </li>
+                  </ion-list>
+                </div>
+              </div>
+              <div class="label-title clearfix">
+                  <div class="pull-left">My height is: </div>
+                  <div class="pull-right">{{profileData.height}}cm</div>
+                </div>
+                <ul>
+                    <div range-slider min="0" max="220" model-max="profileData.height" pin-handle="min"></div>
+                </ul>
+            </div>
+  </ion-content>
+</ion-view>

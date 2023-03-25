@@ -1,0 +1,27 @@
+[
+   {
+      "miniPostImage":"build/assets/mini-post-pic-1.jpg",
+      "miniPostTitle":"Maximo Pohoda festival one of the best in Europe",
+      "miniPostID" : 24
+   },
+   {
+      "miniPostImage":"build/assets/mini-post-pic-2.jpg",
+      "miniPostTitle":"All ado about nothing",
+      "miniPostID" : 59
+   },
+   {
+      "miniPostImage":"build/assets/mini-post-pic-3.jpg",
+      "miniPostTitle":"Magaza in action: Search Result Entry",
+      "miniPostID" : 13
+   },
+   {
+      "miniPostImage":"build/assets/mini-post-pic-3.jpg",
+      "miniPostTitle":"Wold Food Festival in Barcelona",
+      "miniPostID" : 98
+   },
+   {
+      "miniPostImage":"build/assets/mini-post-pic-3.jpg",
+      "miniPostTitle":"Wold Food Festival in Barcelona",
+      "miniPostID" : 43
+   }
+]

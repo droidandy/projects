@@ -1,0 +1,114 @@
+page-appliedjob {
+  .header .plus{
+    color: #f66565!important;
+    font-size: 34px;
+  }
+
+  .joboffers_head
+  {
+    padding: 50px 50px 20px 50px;
+    width:100%;
+    float: left;
+    font-size: 18px;
+    margin: 0;
+  }
+
+
+  .left_list
+  {
+    width:40px;
+    height:40px;
+    float: left;
+  }
+
+  .middle_list
+  {
+    width:calc(100% - 100px);
+    float: left;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .middle_list p
+  {
+    font-size: 11px;
+  }
+
+  .right_list
+  {
+    float: right;
+    width: 100px;
+  }
+
+  .right_list span
+  {
+    font-size: 12px;
+    float: right;
+    color: #8e9093;
+  }
+
+  .right_list .icon
+  {
+    font-size: 16px;
+    float: right;
+    line-height: 5px;
+    color: #8e9093;
+        margin-left: 6px;
+  }
+
+  .item-inner,.item
+  {
+    border:none!important
+  }
+
+  .item .label{
+
+  }
+
+  .left_list_total
+  {
+    width: calc(100% - 40px);
+    float: right;
+    border-bottom: solid 1px #e4e4e4;
+    float: left;
+    padding-bottom: 7px;
+  }
+
+  .days
+  {
+    margin: 0 auto;
+    background: #efecec!important;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color:#b6b6ba;
+  }
+
+  .back-button
+  {
+    color:#f66565 !important;
+  }
+
+  .back-button-text
+  {
+    display: none;
+  }
+
+  .expire_cover
+  {
+    position: absolute;
+    background: rgba(255,255,255,0.9);
+    top: 0;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .expire_cover span{
+    color: #f66565 !important;
+  }
+
+}

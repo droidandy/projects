@@ -1,0 +1,141 @@
+<div id="menu" class="__user" data-heading="Menu">
+    {% if app.user %}
+        <div class="profile">
+            {% include 'AppBundle:user/profile:image.html.twig' with {user: app.user} %}
+            <a href="{{ path('ha_user_profile', {id: app.user.id, slug: app.user|slug}) }}">
+                {{ app.user.name }}
+            </a>
+        </div>
+        {% set total = app.user|notification_unread_qty %}
+
+        <a href="#" class="mdl-navigation__link
+                           sidenav-show
+                           {% if total %}--unread{% endif %}
+                           notifications
+                          "
+           data-url="{{ path('ha_notification_read_all') }}"
+           data-date="{{ 'now'|date('U') }}"
+           data-type="notifications-internal"
+           data-total="{{ total }}"
+        >
+            <i class="material-icons">&#xE7f5;</i>
+            Notifications
+
+            <span class="counter">
+                {{ total }}
+            </span>
+        </a>
+        {% if is_mobile() %}
+            <a href="{{ path('ha_stream') }}" class="mdl-navigation__link">
+                <i class="material-icons">
+                    dashboard
+                </i> For You
+            </a>
+            <a href="{{ path('featured_index', {'market': 'for-sale'}) }}" class="mdl-navigation__link">
+                <i class="material-icons">
+                    star
+                </i> Real Estate
+            </a>
+        {% endif %}
+        <a href="#" class="mdl-navigation__link sidenav-show" data-type="categories-internal">
+            <i class="material-icons">
+                book
+            </i> Choose Your Interests
+        </a>
+        <a href="#" class="mdl-navigation__link sidenav-show" data-type="countries-internal">
+            <i class="material-icons">
+                location_on
+            </i> Locations
+        </a>
+        <a href="{{ messenger_url }}" class="mdl-navigation__link">
+            <i class="material-icons">
+                contacts
+            </i> Messenger
+        </a>
+
+        <div class="separator"></div>
+
+        {% if is_granted('ROLE_WRITER') %}
+            <form action="{{ path('ha_article_new') }}" method="post">
+                <button type="submit" class="mdl-navigation__link">
+                    <i class="material-icons">
+                        create
+                    </i> Write a Story
+                </button>
+            </form>
+            <a href="{{ path('ha_user_articles', {
+                id: app.user.id,
+                slug: app.user.slug}) }}" class="mdl-navigation__link">
+                <i class="material-icons">
+                    inbox
+                </i> My Stories
+            </a>
+            <a href="{{ path('ha_user_articles', {
+                id: app.user.id,
+                slug: app.user.slug,
+                status: 'draft'
+            }) }}" class="mdl-navigation__link">
+                <i class="material-icons">
+                    drafts
+                </i> Drafts
+                <span class="counter">{{ app.user|unpublished_article_count }}</span>
+            </a>
+            <a href="{{ path('ha_article_new_import') }}" class="mdl-navigation__link">
+                <i class="material-icons">
+                    cloud_download
+                </i> Story Import
+            </a>
+
+            <div class="separator"></div>
+        {% endif %}
+
+        <a href="{{ path('ha_user_articles', {
+            id: app.user.id,
+            slug: app.user.slug}) }}" class="mdl-navigation__link">
+            <i class="material-icons">
+                account_circle
+            </i>
+            Profile
+        </a>
+        <a class="mdl-navigation__link" href="{{ path('ha_account_settings') }}">
+            <i class="material-icons">
+                tune
+            </i> Settings
+        </a>
+        <a class="mdl-navigation__link" href="{{ path('ha_billing') }}">
+            <i class="material-icons">
+                credit_card
+            </i> Billing
+        </a>
+
+        {% if is_granted('ROLE_WRITER') %}
+            <a class="mdl-navigation__link" href="{{ path('ha_statistics_details_article') }}">
+                <i class="material-icons">
+                    show_chart
+                </i> Statistics
+            </a>
+        {% endif %}
+
+        {% if is_granted('ROLE_AGENT') %}
+            <a class="mdl-navigation__link" href="#">
+                <i class="material-icons">
+                    monetization_on
+                </i> Ads Manager
+            </a>
+        {% endif %}
+        <div class="separator"></div>
+
+    {% endif %}
+
+    <a href="{{ path('ha_help', {'token':'z78'}) }}" class="mdl-navigation__link">
+        <i class="material-icons">
+            help
+        </i> Help
+    </a>
+    <a href="{{ path('fos_user_security_logout') }}" class="mdl-navigation__link">
+        <i class="material-icons">
+            exit_to_app
+        </i>
+        Sign Out
+    </a>
+</div>

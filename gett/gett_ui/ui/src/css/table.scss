@@ -1,0 +1,325 @@
+/* table */
+.ant-table table {
+  word-wrap: break-word;
+  word-break: break-word;
+  color: $table-color;
+}
+
+.table-expandable tr:not(.ant-table-expanded-row) {
+  cursor: pointer;
+}
+
+.ant-table-thead {
+  .icon {
+    color: $table-header-icons-color;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+
+  .anticon.anticon-filter {
+    font-size: $table-header-icons-font-size;
+    margin-left: 2px;
+    color: $table-header-icons-color;
+  }
+}
+
+.ant-table-thead > tr {
+  th {
+    background-color: $table-header-bg-color;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    line-height: 18px;
+  }
+
+  &:first-child {
+    th:first-child {
+      border-top-left-radius: $table-header-radius;
+    }
+    th:last-child {
+      border-top-right-radius: $table-header-radius;
+    }
+  }
+}
+
+.table-fixed .ant-table-body > table {
+  table-layout: fixed;
+  .ant-table-thead > tr > th {
+    white-space: nowrap;
+  }
+}
+
+.ant-table-body {
+  .ant-table-row-expand-icon {
+    display: none;
+  }
+  .ant-tag {
+    cursor: default;
+  }
+}
+
+.ant-table-row {
+  background: #fff;
+
+  .hover-visible {
+    visibility: hidden;
+  }
+  &:hover {
+    .hover-visible {
+      visibility: visible;
+    }
+  }
+}
+
+.ant-table-thead,
+.ant-table-tbody {
+  > tr > {
+    .ant-table-row-expand-icon-cell,
+    .ant-table-expand-icon-th {
+      padding: 0;
+      width: 0;
+      min-width: 0;
+    }
+  }
+  .ant-table-expanded-row {
+    background: #fff;
+    > td:first-child {
+      padding: 0;
+    }
+    > td:hover {
+      background: none;
+    }
+    &:hover {
+      background: #fff;
+    }
+  }
+  .expanded-parent-highlight {
+    background: $white;
+    > td {
+      border: none;
+    }
+  }
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  padding: 6px 10px;
+  word-break: inherit;
+
+  &.text-center {
+    text-align: center;
+  }
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid $table-row-border-color;
+  height: 70px;
+}
+
+.ant-table-thead > tr > th {
+  padding: 16px 10px;
+  color: $dark-grey-text;
+}
+
+.ant-pagination {
+  font-size: 14px;
+  font-weight: bold;
+
+  a:hover, a:active {
+    color: $pagination-bg-hover;
+  }
+}
+
+/* pagination */
+.ant-pagination-prev,
+.ant-pagination-next,
+.ant-pagination-item,
+.ant-pagination-jump-prev,
+.ant-pagination-jump-next,
+.ant-pagination-prev .ant-pagination-item-link,
+.ant-pagination-next .ant-pagination-item-link {
+  min-width: $pagination-size;
+  height: $pagination-size;
+  line-height: $pagination-size;
+  border-radius: $pagination-border-radius;
+  border-width: $pagination-border-width;
+
+  a {
+    color: $pagination-item-link-color;
+
+    &:hover {
+      border-color: $pagination-border-color;
+      color: $pagination-item-link-color;
+    }
+  }
+}
+
+.ant-pagination-prev .ant-pagination-item-link:after,
+.ant-pagination-next .ant-pagination-item-link:after {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ant-pagination-item:hover,
+.ant-pagination-prev:hover,
+.ant-pagination-next:hover,
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover,
+.ant-pagination-prev:focus .ant-pagination-item-link,
+.ant-pagination-next:focus .ant-pagination-item-link,
+.ant-pagination-prev:hover .ant-pagination-item-link,
+.ant-pagination-next:hover .ant-pagination-item-link {
+  border-color: $pagination-bg-hover;
+}
+
+.ant-pagination-item:not(.ant-pagination-item-active):hover a,
+.ant-pagination-prev:not(.ant-pagination-item-active):hover a,
+.ant-pagination-next:not(.ant-pagination-item-active):hover a,
+.ant-pagination-item-active a,
+.agination-item-active:hover a,
+.ant-pagination-item-active:focus,
+.ant-pagination-next:focus .ant-pagination-item-link {
+  color: $pagination-color;
+}
+
+.ant-pagination-item-active {
+  border-color: $pagination-bg-hover;
+  background: #fff;
+  color: $pagination-bg-hover;
+  font-weight: bold;
+
+  a, &:focus a, &:hover a {
+    color: $pagination-color;
+  }
+}
+
+/* table filter */
+.ant-table-filter-dropdown .ant-dropdown-menu-without-submenu {
+  max-height: 550px;
+}
+
+.ant-table-filter-dropdown {
+  .ant-dropdown-menu-item {
+    padding: 10px 20px;
+    color: $black;
+
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    &:hover {
+      background: $white;
+    }
+
+    > label + span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.ant-dropdown-menu-item {
+  a:hover {
+    color: $black;
+  }
+}
+
+.ant-dropdown-menu-item-selected {
+  color: $black;
+  background: $white;
+  a:hover {
+    color: $black;
+  }
+}
+
+.ant-table-filter-dropdown-btns {
+  border: none;
+  font-size: 14px;
+  color: $primary-color;
+  padding: 20px;
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.ant-table-column-sorter {
+  margin-left: 0;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorter,
+.ant-table-thead > tr > th .anticon-filter,
+.ant-table-thead > tr > th .ant-table-filter-icon {
+  color: inherit;
+  &.ant-table-filter-selected {
+    color: $yellow;
+  }
+}
+
+.ant-table-thead > tr > th .ant-table-filter-icon > svg {
+  top: 48%;
+}
+
+.ant-table-thead > tr > th.ant-table-column-has-filters .ant-table-filter-icon,
+.ant-table-thead > tr > th.ant-table-column-has-sorters .ant-table-column-sorter {
+  right: auto;
+  margin-left: 5px;
+}
+
+.ant-table-thead > tr > th.ant-table-column-has-filters.ant-table-column-has-sorters .ant-table-filter-icon {
+  margin-left: 22px;
+}
+
+.ant-table-column-has-filters > div,
+.ant-table-column-sorters > div {
+  display: inline-block;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorter {
+  top: 47%;
+}
+
+.ant-table-column-sorters {
+  word-break: keep-all;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorters > *:not(.ant-table-column-sorter) {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* media */
+@media(--desktop) {
+  .ant-table-thead > tr > th {
+    white-space: nowrap;
+  }
+}
+
+@media(--tablet) {
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .ant-table-pagination.ant-pagination {
+    display: flex;
+    justify-content: center;
+    float: none;
+  }
+}
+
+@media(--phone) {
+  .ant-table-thead > tr > th {
+    font-size: 10px;
+  }
+  .ant-table-tbody > tr > td {
+    font-size: 12px;
+  }
+
+  .ant-pagination-item:not(.ant-pagination-item-active) {
+    display: none;
+  }
+}

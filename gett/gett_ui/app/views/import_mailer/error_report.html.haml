@@ -1,0 +1,11 @@
+%p There was an error while processing HR feed of "#{@company.name}".
+
+- if @line_errors.any?
+  %p The following lines could not be processed:
+
+  %ul
+    - @line_errors.each do |line_error|
+      %li Line #{line_error[:line]}: #{line_error[:errors].join(', ')}
+
+- if @encoding_error_present
+  %p The CSV file had an invalid encoding.

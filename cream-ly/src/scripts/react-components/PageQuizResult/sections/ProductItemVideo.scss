@@ -1,0 +1,33 @@
+
+@import "../../../../styles/tools/mixins.scss";
+
+.ProductItemVideo {
+    text-align: center;
+    
+    @include spacingBottomMedium();
+
+    .type {
+        margin-top:5px;
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        a { color:var(--black-pearl);}
+    }
+    .title {
+        font-family: var(--font-heading);
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        a { color: var(--rosemary);}
+    }
+    .price {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 500;
+        a { color:var(--black-pearl);}
+    }
+    
+}

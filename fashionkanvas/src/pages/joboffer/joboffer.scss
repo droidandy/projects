@@ -1,0 +1,177 @@
+page-joboffer {
+  .header .plus{
+    color: #f66565!important;
+    font-size: 22px;
+  }
+
+  .back-button-icon
+  {
+    color: #f66565!important;
+  }
+
+  .back-button-text
+  {
+    overflow: hidden;
+  }
+
+  .jobimage
+  {
+    margin: 40px auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  h3
+  {
+    font-size: 20px;
+    width: 100%;
+    margin: 2px 0;
+    text-align: center;
+  }
+
+  .offerplace
+  {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #aeaeae;
+  }
+
+  .offer
+  {
+    margin-top: 10px;
+  }
+
+  .offer_para
+  {
+    width: 100%;
+    float: left;
+    padding: 30px;
+  }
+
+  .offer_para p
+  {
+    margin: 0;
+    width: 100%;
+    float:left;
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 23px;
+  }
+
+  .postbtn
+  {
+    width: calc(100% - 60px);
+    margin: 20px 30px;
+  }
+
+  .postbtn_disable
+  {
+    width: calc(100% - 60px);
+    margin: 20px 30px;
+    background: #f1f1f1!important;
+    color: #ababab;
+  }
+
+
+
+
+
+  .left_list
+  {
+    width:40px;
+    height:40px;
+    float: left;
+  }
+
+  .middle_list
+  {
+    width:calc(100% - 100px);
+    float: left;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .middle_list p
+  {
+    font-size: 11px;
+  }
+
+  .right_list
+  {
+    float: right;
+    width: 100px;
+  }
+
+  .right_list span
+  {
+    font-size: 12px;
+    float: right;
+    color: #8e9093;
+  }
+
+  .right_list .icon
+  {
+    font-size: 16px;
+    float: right;
+    line-height: 5px;
+    color: #8e9093;
+        margin-left: 6px;
+  }
+
+  .item-inner,.item
+  {
+    border:none!important
+  }
+
+  .item .label{
+
+  }
+
+  .left_list_total
+  {
+    width: calc(100% - 40px);
+    float: right;
+    border-bottom: solid 1px #e4e4e4;
+    float: left;
+    padding-bottom: 7px;
+    padding: 4px 0 12px 0;
+  }
+
+  .days
+  {
+    margin: 0 auto;
+    background: #efecec!important;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color:#b6b6ba;
+  }
+
+  .middle_list p
+  {
+    margin: 0;
+  }
+
+  .applied_job .list
+  {
+    width:100%;
+    float: left;
+  }
+
+    .applied_job .list h3
+    {
+      text-align: left!important;
+    }
+
+    .applied_job_span
+    {
+      width: 100%;
+      float: left;
+      text-align: center;
+      padding: 10px 0;
+      color: #606060;
+    }
+
+}

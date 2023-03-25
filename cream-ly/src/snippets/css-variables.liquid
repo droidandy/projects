@@ -1,0 +1,42 @@
+<style>
+  {{ settings.font_heading | font_face }}
+  {{ settings.font_body | font_face }}
+
+  {%- assign font_body_bold = settings.font_body | font_modify: 'weight', 'bolder' -%}
+  {%- assign font_body_bold_italic = font_body_bold | font_modify: 'style', 'italic' -%}
+
+  {{ font_body_bold | font_face }}
+  {{ font_body_bold_italic | font_face }}
+
+  :root {
+    --color-accent: {{ settings.color_accent }};
+    --color-body-text: #535059; /*{{ settings.color_body_text }};*/
+    --color-main-background: #fff; /*{{ settings.color_main_bg }};*/
+    --color-border: #e8e9eb; /*{{ settings.color_body_text | color_lighten: 50 }};*/
+
+    --color-lavender: #bd86c1; 
+    --color-rose: #fb6ea4; 
+    --color-rosemary: #52aea2;
+    
+    --purplish-grey: #66636c;
+    --cool-grey: #b2b1b5;
+    --lavender-mid: #dec2e0;
+    --lavender-pale: #f5edf6;
+    --silver: #e8e8e9;
+    --rosemary-mid: #a8d6d0;
+    --rosemary: #52aea2;
+    --rosemary-pale: #e5f3f1;
+    --lavender: #bd86c1;
+    --rose: #fb6ea4;
+    --rose-mid: #fdb6d1;
+    --rose-pale: #fff3fa;
+    --white: #ffffff;
+    
+
+    --font-heading: "Pathway Gothic One", "Yanone Kaffeesatz"; 
+    --font-body: Raleway, "Open Sans", arial, sans-serif; 
+    --font-body-weight: 300; /*{{ settings.font_body.weight }};*/
+    --font-body-style: {{ settings.font_body.style }};
+    --font-body-bold-weight: 700 /*{{ font_body_bold.weight | default: 'bold' }};*/
+  }
+</style>

@@ -1,0 +1,80 @@
+@import "../../../../styles/tools/mixins.scss";
+.componentVideoTitle {
+  // max-height: 448px;
+  h1 {
+    margin: 0;
+  }
+
+  margin-top: 20px;
+  .isPurchased {
+    margin-top: 20px;
+  }
+  @include defaultText;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  @include media-query($small) {
+    margin-bottom: 12px;
+  }
+  @include media-query($medium) {
+    display: block;
+  }
+  .type {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black-pearl);
+    font-family: var(--font-heading);
+
+    @include media-query($small) {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+    }
+    @include media-query($medium) {
+      display: inline-block;
+      font-size: 32px;
+      line-height: 38px;
+      padding-right: 4px;
+    }
+  }
+
+  .title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black-pearl);
+    font-family: var(--font-heading);
+
+    @include media-query($small) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    @include media-query($medium) {
+      display: inline-block;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  .price {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--black-pearl);
+    margin-bottom: 20px;
+    @include media-query($small) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

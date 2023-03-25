@@ -1,0 +1,22 @@
+framework:
+    translator: { fallback: en }
+    secret:          %secret%
+    router:
+        resource: "%kernel.root_dir%/config/routing/routing.yml"
+        strict_requirements: ~
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_proxies: ~
+    fragments: { path: /_fragment }
+    http_method_override: true
+    session:
+        handler_id: session.handler.native_file
+        save_path: "/tmp"
+        cookie_lifetime: 0
+    serializer: true
+

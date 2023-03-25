@@ -1,0 +1,42 @@
+query GetOrder($orderId: Int!){
+    order(orderId: $orderId){
+        id
+        dateInsert
+        userId
+        price
+        currency
+        isPossibleCancel
+        priceFormat
+        statusName
+        statusColor
+        basket {
+            ...CartItemWithProduct
+        }
+    }
+}
+
+query GetOrders($page: Int!, $limit: Int!) {
+    orders(page: $page, limit: $limit) {
+        orders {
+            id
+            dateInsert
+            isPossibleCancel
+            statusName
+            statusColor
+        }
+        allPage
+    }
+}
+
+
+mutation CancelOrder($orderId: Int!) {
+    cancelOrder(orderId: $orderId)
+}
+
+mutation CreateOrder ($pharmacyId: Int!) {
+    createOrder (pharmacyId: $pharmacyId)
+}
+
+mutation ReOrder($orderId: Int!) {
+    reOrder(orderId: $orderId)
+}

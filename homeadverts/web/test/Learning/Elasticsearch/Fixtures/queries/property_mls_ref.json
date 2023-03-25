@@ -1,0 +1,33 @@
+{
+    "index": "properties",
+    "type": "property",
+    "body": {
+        "from": 0,
+        "size": 1,
+        "query": {
+            "constant_score": {
+                "filter": {
+                    "bool": {
+                        "must": [
+                            {
+                                "wildcard": {
+                                    "mlsRef": "*San*"
+                                }
+                            }
+                        ],
+                        "filter": [
+                            {
+                                "term": {
+                                    "status": 100
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "sort": {
+            "mlsRef": "asc"
+        }
+    }
+}

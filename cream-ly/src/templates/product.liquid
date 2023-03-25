@@ -1,0 +1,14 @@
+{% if product.tags contains 'videoProduct' %}
+{% assign placeholderComopenet = "PageVideoDetails" %}
+{% else %}
+{% assign placeholderComopenet = "PageProductDetails" %}
+{% endif %}
+
+{% assign staticFileName = "staticHTML-"| append: product.handle | append: "-" | append: request.locale.iso_code %}
+
+
+
+<div data-react-component-placeholder="{{placeholderComopenet}}" data-handle={{product.handle|json}}
+  data-sku={{product.selected_or_first_available_variant.sku|json}}>
+  {% include staticFileName %}
+</div>

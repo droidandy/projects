@@ -1,0 +1,138 @@
+page-jobcreateedit {
+  .top{
+    background: $primary;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #fff;
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+
+.plus{
+  color: #f66565;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.top
+{
+  background: #ccc!important;
+}
+
+
+.profile_pic span
+{
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  color: #f66565;
+  font-size: 30px;
+}
+
+.profile_pic
+{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    float: left;
+}
+
+
+.profile_pic span .icon{
+  background: #fff;
+  position: absolute;
+  bottom: 8px;
+  font-size: 19px;
+  right: 10px;
+  border-radius: 100%;
+  height: 17px;
+  width: 10px;
+  line-height: 0px;
+}
+
+.profile_pic img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.row{
+  text-align: center;
+}
+
+.job_create
+{
+  padding:40px 40px;
+  float: left;
+  width:100%;
+}
+
+.selectbox
+{
+  width: 20px;
+  height: 20px;
+  border: solid 1px #f77070;
+  float: left;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.selectbox_active
+{
+  background: #f77070;
+}
+
+h4
+{
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+h2
+{
+    margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+      width: 100%;
+      text-align: left;
+      padding-bottom: 15px;
+}
+
+.item{
+  padding: 0!important;
+}
+
+.role,.date{
+  margin-top:40px;
+}
+
+.role .item-inner
+{
+  border-bottom:none!important;
+}
+
+.bar-button
+{
+  color:#f66565!important;
+}
+
+.back-button-text
+{
+  display: none!important;
+}
+
+.save_btn
+{
+  background: #f1f1f1 !important;
+  color: #ababab;
+}
+
+}

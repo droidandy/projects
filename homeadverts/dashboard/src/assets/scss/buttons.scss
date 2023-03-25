@@ -1,0 +1,17 @@
+#root {
+  .like {
+    font-size: 11px;
+    color: #414141;
+    display: inline-block;
+    font-weight: 600;
+
+    .likeButton {
+      padding: 8px;
+    }
+    .label {
+      margin-left: 3px;
+      margin-right: 5px;
+      color: #616161;
+    }
+  }
+}

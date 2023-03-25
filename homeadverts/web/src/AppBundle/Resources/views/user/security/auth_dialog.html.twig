@@ -1,0 +1,20 @@
+{% if not app.user %}
+    <dialog class="auth-dialog mdl-dialog"
+            data-url-login="{{ path('ha_user_login') }}"
+            data-url-register="{{ path('ha_user_post') }}"
+    >
+        <div class="mdl-dialog__content">
+            <div class="heading">
+                <button class="close mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+
+            {% include 'AppBundle:user/security/auth_dialog:social_login.html.twig' %}
+            {% include 'AppBundle:user/security/auth_dialog:social_register.html.twig' %}
+
+            {% include 'AppBundle:user/security/auth_dialog:manual_login.html.twig' %}
+            {% include 'AppBundle:user/security/auth_dialog:manual_register.html.twig' %}
+        </div>
+</dialog>
+{% endif %}

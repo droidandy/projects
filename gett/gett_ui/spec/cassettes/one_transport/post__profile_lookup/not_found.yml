@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://awsuat.one-transport.co.uk/OTWS/OTWebservice.asmx
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.one-transport.co.uk/OTWebservice"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:ProfileLookup><tns:Request><tns:Header><tns:Version>4</tns:Version><tns:Key>Demo123456</tns:Key><tns:Username>Demo_admin</tns:Username><tns:ClientNumber>D25</tns:ClientNumber><tns:Password>Demo4dmin</tns:Password><tns:MaxReply>1</tns:MaxReply></tns:Header><tns:Username>Demo_fail</tns:Username><tns:ClientNumber>123</tns:ClientNumber></tns:Request></tns:ProfileLookup></env:Body></env:Envelope>
+    headers:
+      Soapaction:
+      - '"http://www.one-transport.co.uk/OTWebservice/ProfileLookup"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '670'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0,no-store,no-cache
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Mon, 06 Aug 2018 19:03:27 GMT
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Frame-Options:
+      - SAMEORIGIN
+      Content-Length:
+      - '840'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><ProfileLookupResponse
+        xmlns="http://www.one-transport.co.uk/OTWebservice"><ProfileLookupResult><Header><Version>3</Version><SoftwareVersion>One
+        Transport General Webservices version 2.13.0.0</SoftwareVersion><Time>2018-08-06T19:03:27.7933171Z</Time><Result><Message>ProfileLookup
+        failed: There were no profile matches for the criteria entered.</Message><Code>603</Code></Result></Header><Profile><General><PassengerType><Name
+        /><Type>None</Type></PassengerType><Notification /><SpecialRequirements /><Flags
+        /></General><PaymentMethods /></Profile></ProfileLookupResult></ProfileLookupResponse></soap:Body></soap:Envelope>'
+    http_version: 
+  recorded_at: Mon, 06 Aug 2018 19:04:07 GMT
+recorded_with: VCR 4.0.0

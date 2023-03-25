@@ -1,0 +1,1 @@
+require 'gett/core/version'

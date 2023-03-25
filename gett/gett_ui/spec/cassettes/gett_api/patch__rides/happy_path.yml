@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://rides.gett.com/sandbox/api/v1/business/rides/?business_id=UK-3836
+    body:
+      encoding: UTF-8
+      string: '{"pickup":{"latitude":51.523767,"longitude":-0.1585557,"address":"312
+        Vauxhall Bridge Rd"},"note_to_driver":"Flight: EK5, New message","product_id":"5178cd83-20bf-4991-b559-c1128dfae662","reference":"101182","destination":{"latitude":51.523767,"longitude":-0.1585557,"address":"Big
+        Ben, London, UK"},"scheduled_at":"2018-09-27T13:44:24.922+00:00"}'
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin16.7.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer d2bcf731cdf929aa735a622f3e5e08a35f9edc3efd6bf9419288b6114e22b97a
+      Content-Length:
+      - '347'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 27 Sep 2018 11:47:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{}'
+    http_version:
+  recorded_at: Thu, 27 Sep 2018 11:46:16 GMT
+recorded_with: VCR 4.0.0

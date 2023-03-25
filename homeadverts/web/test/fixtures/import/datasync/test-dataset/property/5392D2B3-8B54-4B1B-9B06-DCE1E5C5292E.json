@@ -1,0 +1,570 @@
+{
+    "listingSummary": {
+        "listingId": "5392d2b3-8b54-4b1b-9b06-dce1e5c5292e",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-07-17",
+        "photoCount": 25,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 650000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "610 Newark St #5G",
+            "city": "Hoboken",
+            "district": "Hudson County",
+            "stateProvince": "New Jersey",
+            "stateProvinceCode": "NJ",
+            "postalCode": "07030",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 40.73669,
+            "longitude": -74.04127,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "610 Newark St, Hoboken, NJ 07030"
+        },
+        "mlsNumbers": [
+            "180013659",
+            "1830069"
+        ],
+        "RFGListingId": "DGMSKD",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/dgmskd",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Condominium",
+        "propertyStyle": "Multi Level",
+        "propertyName": "HOBOKEN GRANDE ~ 2BR + Private Terrace",
+        "totalBath": 2,
+        "buildingArea": "930 Sq. Ft.",
+        "noOfBedrooms": 2,
+        "squareFootage": 930,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/0828FA2C-A5C7-4417-96F0-11488F6609A3",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-07-25T04:23:34.230",
+        "agents": [
+            {
+                "id": "f33f24b8-fb34-46a6-ac77-09a80a296362",
+                "name": "Melvin Swain ",
+                "firstName": "Melvin",
+                "lastName": "Swain",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/EA7921BD-B0E0-4C65-968E-54CE08E10057",
+                "emailAddress": "mswain@signaturesothebys.com",
+                "leadEmailAddress": "800115.lead.100137352@leads.leadrouter.com",
+                "businessPhone": "2016807270",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "42497839-1703-4199-9768-828cc9f2bb27",
+                    "RFGOfficeId": "0004",
+                    "companyId": "311788a3-f7f8-4230-91cd-c4aa04ebb8af",
+                    "companyName": "Signature",
+                    "RFGCompanyId": "800115",
+                    "brandCode": "SIR",
+                    "name": "Signature Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "6755 Telegraph",
+                        "city": "Bloomfield Hills",
+                        "district": "OAKLAND",
+                        "stateProvince": "Michigan",
+                        "stateProvinceCode": "MI",
+                        "postalCode": "48301",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 42.5468635559082,
+                        "longitude": -83.2866363525391,
+                        "formattedAddress": "6755 Telegraph Rd, Bloomfield Hills, MI 48301"
+                    },
+                    "phoneNumber": "2486478888",
+                    "emailAddress": "info@signaturesothebys.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 2,
+    "providerKey": "5392d2b3-8b54-4b1b-9b06-dce1e5c5292e",
+    "propertyFeatures": [
+        {
+            "groupName": "Appliances",
+            "description": "Refrigerator"
+        },
+        {
+            "groupName": "Bath Features",
+            "description": "Tub and Shower"
+        },
+        {
+            "groupName": "General",
+            "description": "Elevator"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Other",
+            "description": "Association Fee"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Microwave"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dishwasher"
+        },
+        {
+            "groupName": "General",
+            "description": "Fire Alarms"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Range \/ Oven"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "BBQ"
+        },
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Gas"
+        },
+        {
+            "groupName": "Interior",
+            "description": "High Tech Cabling"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Jogging \/ Biking Path"
+        },
+        {
+            "groupName": "Exterior Description",
+            "description": "Brick"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Designer Kitchen"
+        },
+        {
+            "groupName": "Road Type",
+            "description": "City \/ Town Street"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Metropolitan"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Exercise Area"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Sidewalk"
+        },
+        {
+            "groupName": "General",
+            "description": "Smoke Detector"
+        },
+        {
+            "groupName": "Exterior",
+            "description": "Covered Terraces"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Central A\/C"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Dryer"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "A\/C"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Biking"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Intercom System"
+        },
+        {
+            "groupName": "Heating Type",
+            "description": "Forced Air"
+        },
+        {
+            "groupName": "Pre-Wiring",
+            "description": "Cable"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Privacy"
+        },
+        {
+            "groupName": "Appliances",
+            "description": "Washer"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Historic \/ Antique"
+        },
+        {
+            "groupName": "General",
+            "description": "Doorman"
+        },
+        {
+            "groupName": "Pre-Wiring",
+            "description": "Phone Jacks"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Welcome home to your Luxury 2 Bedroom \/ 2 Bath condo with a great open layout and a large private terrace off the living room. The open kitchen features stainless steel appliances, breakfast bar, tile back splash and terrific cabinet space. This home offers Central AC, large LG washer\/ dryer in unit and 9 foot ceilings in the living room for a wonderful open feel. Located in Downtown Hoboken, the Hoboken Grande is a modern steel and concrete elevator building with gym, sauna, common courtyard and shuttle service to the PATH. Located just 1 block away from Hoboken's new Southwest Park, this location will allow you easy access to PATH, Ferry, Light Rail, NJ Transit and all that Hoboken and downtown Jersey City has to offer.",
+            "htmlRemark": "<p>Welcome home to your Luxury 2 Bedroom \/ 2 Bath condo with a great open layout and a large private terrace off the living room. The open kitchen features stainless steel appliances, breakfast bar, tile back splash and terrific cabinet space. This home offers Central AC, large LG washer\/ dryer in unit and 9 foot ceilings in the living room for a wonderful open feel. Located in Downtown Hoboken, the Hoboken Grande is a modern steel and concrete elevator building with gym, sauna, common courtyard and shuttle service to the PATH. Located just 1 block away from Hoboken's new Southwest Park, this location will allow you easy access to PATH, Ferry, Light Rail, NJ Transit and all that Hoboken and downtown Jersey City has to offer.<\/p><div><br><\/div>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/dgmskd",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "2135B56B-3DF8-4A9C-98F7-0382BF424FDE",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/2135B56B-3DF8-4A9C-98F7-0382BF424FDE",
+            "isDefault": false,
+            "caption": "006-281171-IMG_8033_6672093",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "6F2486B4-8ABC-41E7-B106-045E428E7140",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/6F2486B4-8ABC-41E7-B106-045E428E7140",
+            "isDefault": false,
+            "caption": "002-281171-IMG_8014_6672071",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "E02FF7BF-9FAB-40E1-8AD3-0F8A8CE0BDDC",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/E02FF7BF-9FAB-40E1-8AD3-0F8A8CE0BDDC",
+            "isDefault": false,
+            "caption": "025-281171-IMG_8001_6672058",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "0828FA2C-A5C7-4417-96F0-11488F6609A3",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/0828FA2C-A5C7-4417-96F0-11488F6609A3",
+            "isDefault": true,
+            "caption": "001-281171-IMG_8120_6672170",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "AC5AF577-AF5D-40E5-B7E3-1437135C5E5B",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/AC5AF577-AF5D-40E5-B7E3-1437135C5E5B",
+            "isDefault": false,
+            "caption": "005-281171-IMG_8058_6672116",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "298F18A3-A930-4A43-8A42-1AF2A119100A",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/298F18A3-A930-4A43-8A42-1AF2A119100A",
+            "isDefault": false,
+            "caption": "008-281171-IMG_8007_6672064",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "00DAD9FF-4607-48D0-B79C-1C8DC13B3777",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/00DAD9FF-4607-48D0-B79C-1C8DC13B3777",
+            "isDefault": false,
+            "caption": "023-281171-IMG_8068_6672127",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "A248380F-2C13-44BD-BB8C-2051DCAA025A",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/A248380F-2C13-44BD-BB8C-2051DCAA025A",
+            "isDefault": false,
+            "caption": "004-281171-IMG_8086_6672147",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "63450B32-FBEC-4390-882D-29917FF3FC48",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/63450B32-FBEC-4390-882D-29917FF3FC48",
+            "isDefault": false,
+            "caption": "010-281171-IMG_8028_6672084",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "EC686408-8DEE-4FD0-883F-2E4CDBC272BF",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/EC686408-8DEE-4FD0-883F-2E4CDBC272BF",
+            "isDefault": false,
+            "caption": "019-281171-IMG_8100_6672156",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "23BF2AF6-05CF-40A7-AB6C-3A071DD66041",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/23BF2AF6-05CF-40A7-AB6C-3A071DD66041",
+            "isDefault": false,
+            "caption": "024-281171-IMG_7993_6672048",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "C6212D50-9C2A-45A7-BF02-4C72DEF1B621",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/C6212D50-9C2A-45A7-BF02-4C72DEF1B621",
+            "isDefault": false,
+            "caption": "020-281171-IMG_8093_6672151",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "81E108A3-06D7-427A-9B84-5C90E2054151",
+            "sequenceNumber": 24,
+            "url": "\/\/openapi.azureedge.net\/81E108A3-06D7-427A-9B84-5C90E2054151",
+            "isDefault": false,
+            "caption": "018-281171-IMG_7974_6672019",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "7F07EA81-8E05-4040-A93E-6E94B72C4EA1",
+            "sequenceNumber": 23,
+            "url": "\/\/openapi.azureedge.net\/7F07EA81-8E05-4040-A93E-6E94B72C4EA1",
+            "isDefault": false,
+            "caption": "021-281171-IMG_8105_6672161",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "85B4F3A3-1597-4944-B823-6EFB7221701D",
+            "sequenceNumber": 1,
+            "url": "http:\/\/jumpvisualtours.com\/story\/281171\/b",
+            "isDefault": true,
+            "format": "URL",
+            "category": "Virtual Tour",
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "C64AE4EC-76D7-427E-BC46-87AAF56258C1",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/C64AE4EC-76D7-427E-BC46-87AAF56258C1",
+            "isDefault": false,
+            "caption": "026-281171-IMG_8064_6672122",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "E61503E0-151E-4163-A1CA-9CD6D13ACC0D",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/E61503E0-151E-4163-A1CA-9CD6D13ACC0D",
+            "isDefault": false,
+            "caption": "009-281171-IMG_8022_6672077",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "FF94F1F5-520D-4D2D-A9D8-9DD175DFB413",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/FF94F1F5-520D-4D2D-A9D8-9DD175DFB413",
+            "isDefault": false,
+            "caption": "013-281171-IMG_7987_6672042",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "278E9B3B-E340-4504-89F9-A72C5184CDA0",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/278E9B3B-E340-4504-89F9-A72C5184CDA0",
+            "isDefault": false,
+            "caption": "014-281171-IMG_8074_6672135",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "977CA173-B4E4-4720-BE15-AD0E27123D08",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/977CA173-B4E4-4720-BE15-AD0E27123D08",
+            "isDefault": false,
+            "caption": "007-281171-IMG_8040_6672098",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "12CDE017-ACE9-441C-A0B2-B3F5F9A68733",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/12CDE017-ACE9-441C-A0B2-B3F5F9A68733",
+            "isDefault": false,
+            "caption": "003-281171-IMG_8078_6672142",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "4AF0C7F8-ACF4-498E-AD00-C482A778AE62",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/4AF0C7F8-ACF4-498E-AD00-C482A778AE62",
+            "isDefault": false,
+            "caption": "012-281171-IMG_8045_6672104",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "18C79B87-84DB-464E-A2E1-D29BA821D2C4",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/18C79B87-84DB-464E-A2E1-D29BA821D2C4",
+            "isDefault": false,
+            "caption": "015-281171-IMG_7980_6672034",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "DA1884F6-680B-48E2-B13F-ECCE868B1EF3",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/DA1884F6-680B-48E2-B13F-ECCE868B1EF3",
+            "isDefault": false,
+            "caption": "017-281171-IMG_7968_6672016",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "1966AA60-BF50-48B0-807E-FE14D14A4025",
+            "sequenceNumber": 25,
+            "url": "\/\/openapi.azureedge.net\/1966AA60-BF50-48B0-807E-FE14D14A4025",
+            "isDefault": false,
+            "caption": "016-281171-IMG_8114_6672166",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        },
+        {
+            "mediaID": "7D90EF0B-758F-4DFB-B8B1-FE988E2EBE33",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/7D90EF0B-758F-4DFB-B8B1-FE988E2EBE33",
+            "isDefault": false,
+            "caption": "011-281171-IMG_8051_6672108",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1280,
+            "width": 1920,
+            "lastUpdateOn": "2018-07-18T16:00:50.553"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "180013659",
+            "isPrimary": true
+        },
+        {
+            "number": "1830069",
+            "isPrimary": false
+        }
+    ]
+}

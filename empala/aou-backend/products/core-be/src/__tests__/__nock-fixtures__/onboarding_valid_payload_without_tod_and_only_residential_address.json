@@ -1,0 +1,1001 @@
+[
+    {
+        "scope": "https://accounts-api-uat.extend.apexclearing.com:443",
+        "method": "POST",
+        "path": "/api/auth/login",
+        "body": {
+            "with": [
+                "user"
+            ],
+            "api_key": "api_key",
+            "api_secret": "api_secret"
+        },
+        "status": 200,
+        "response": {
+            "status": true,
+            "login": {
+                "token": {
+                    "access_token": "access_token",
+                    "token_type": "bearer",
+                    "expires_at": "2022-01-18T12:29:17+00:00"
+                },
+                "user": {
+                    "id": "user_id",
+                    "first_name": "MPLA",
+                    "last_name": "Compliance",
+                    "email": "user_email",
+                    "phone": null,
+                    "phone_verified": 0,
+                    "email_verified": 0,
+                    "tfa_enabled": 0
+                }
+            }
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 12:29:17 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx/1.20.1",
+            "Cache-Control",
+            "no-cache, private",
+            "X-RateLimit-Limit",
+            "1000",
+            "X-RateLimit-Remaining",
+            "999",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Content-Type-Options",
+            "nosniff"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://accounts-api-uat.extend.apexclearing.com:443",
+        "method": "POST",
+        "path": "/api/applications/create",
+        "body": {
+            "user_id": "330683"
+        },
+        "status": 200,
+        "response": {
+            "status": true,
+            "application": {
+                "id": 82567,
+                "uid": "6J2X2GDJ",
+                "account_number": null,
+                "is_encrypted_with_application_key": 1,
+                "is_encrypted_with_public_key": 0,
+                "application_type_version": null,
+                "submitted_at": null,
+                "custodian_reserved_at": null,
+                "custodian_completed_at": null,
+                "watchmen_completed_at": null
+            }
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 12:29:18 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx/1.20.1",
+            "Cache-Control",
+            "no-cache, private",
+            "X-RateLimit-Limit",
+            "1000",
+            "X-RateLimit-Remaining",
+            "999",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Content-Type-Options",
+            "nosniff"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://accounts-api-uat.extend.apexclearing.com:443",
+        "method": "POST",
+        "path": "/api/applications/answer-multiple",
+        "body": {
+            "application_id": 82567,
+            "answers": [
+                {
+                    "question_id": 10647,
+                    "data": 10930
+                },
+                {
+                    "question_id": 10648,
+                    "data": 10931
+                },
+                {
+                    "question_id": 10649,
+                    "data": 10934
+                },
+                {
+                    "question_id": 10651,
+                    "data": "John"
+                },
+                {
+                    "question_id": 10653,
+                    "data": "Bull"
+                },
+                {
+                    "question_id": 10655,
+                    "data": "01/01/1980"
+                },
+                {
+                    "question_id": 10674,
+                    "data": "+12025550144"
+                },
+                {
+                    "question_id": 10675,
+                    "data": "test@test.com"
+                },
+                {
+                    "question_id": 10656,
+                    "data": 10938
+                },
+                {
+                    "question_id": 10658,
+                    "data": "670001234"
+                },
+                {
+                    "question_id": 10666,
+                    "data": 10953
+                },
+                {
+                    "question_id": 10668,
+                    "data": "201 S MARKET ST"
+                },
+                {
+                    "question_id": 10670,
+                    "data": "San Jose"
+                },
+                {
+                    "question_id": 10672,
+                    "data": "CA"
+                },
+                {
+                    "question_id": 10673,
+                    "data": "95113"
+                },
+                {
+                    "question_id": 10676,
+                    "data": 10955
+                },
+                {
+                    "question_id": 10685,
+                    "data": 10960
+                },
+                {
+                    "question_id": 10688,
+                    "data": 10962
+                },
+                {
+                    "question_id": 10690,
+                    "data": 10964
+                },
+                {
+                    "question_id": 10692,
+                    "data": 10966
+                },
+                {
+                    "question_id": 10698,
+                    "data": 10973
+                },
+                {
+                    "question_id": 10694,
+                    "data": 10968
+                },
+                {
+                    "question_id": 10695,
+                    "data": 10970
+                },
+                {
+                    "question_id": 10712,
+                    "data": 10978
+                },
+                {
+                    "question_id": 10713,
+                    "data": "Google Inc."
+                },
+                {
+                    "question_id": 10714,
+                    "data": "Engineering Manager"
+                },
+                {
+                    "question_id": 10716,
+                    "data": 10983
+                },
+                {
+                    "question_id": 10718,
+                    "data": 11001
+                },
+                {
+                    "question_id": 10720,
+                    "data": 11014
+                },
+                {
+                    "question_id": 10721,
+                    "data": 11020
+                },
+                {
+                    "question_id": 10724,
+                    "data": 11030
+                },
+                {
+                    "question_id": 10725,
+                    "data": "10"
+                },
+                {
+                    "question_id": 10726,
+                    "data": 11033
+                },
+                {
+                    "question_id": 10728,
+                    "data": 11038
+                },
+                {
+                    "question_id": 10731,
+                    "data": 11045
+                },
+                {
+                    "question_id": 10805,
+                    "data": 11077
+                },
+                {
+                    "question_id": 10812,
+                    "data": 11087
+                },
+                {
+                    "question_id": 10814,
+                    "data": "signature"
+                }
+            ]
+        },
+        "status": 200,
+        "response": {
+            "status": true,
+            "answers": {
+                "success": [
+                    {
+                        "question_id": 10647,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10647,
+                            "question_id_without_fk": 10647,
+                            "question_system_identifier": "customer-type",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10930,
+                            "option_id_without_fk": 10930,
+                            "option_system_identifier": "customer-type.individual",
+                            "updated_at": "2022-01-17T12:29:20.000000Z",
+                            "created_at": "2022-01-17T12:29:20.000000Z",
+                            "id": 3286512
+                        }
+                    },
+                    {
+                        "question_id": 10648,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10648,
+                            "question_id_without_fk": 10648,
+                            "question_system_identifier": "account-type",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10931,
+                            "option_id_without_fk": 10931,
+                            "option_system_identifier": "account-type.cash",
+                            "updated_at": "2022-01-17T12:29:20.000000Z",
+                            "created_at": "2022-01-17T12:29:20.000000Z",
+                            "id": 3286513
+                        }
+                    },
+                    {
+                        "question_id": 10649,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10649,
+                            "question_id_without_fk": 10649,
+                            "question_system_identifier": "options",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10934,
+                            "option_id_without_fk": 10934,
+                            "option_system_identifier": "options.no",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286514
+                        }
+                    },
+                    {
+                        "question_id": 10651,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10651,
+                            "question_id_without_fk": 10651,
+                            "question_system_identifier": "account-name-first",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "John",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286515
+                        }
+                    },
+                    {
+                        "question_id": 10653,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10653,
+                            "question_id_without_fk": 10653,
+                            "question_system_identifier": "account-name-last",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "Bull",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286516
+                        }
+                    },
+                    {
+                        "question_id": 10655,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10655,
+                            "question_id_without_fk": 10655,
+                            "question_system_identifier": "birthday",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "eyJpdiI6IjNWSlFiaVVkeGV4VHlLc1pPZS9BNGc9PSIsInZhbHVlIjoicnFVRlY5dk4zL25mSVJEeml6Tm9DdDRIR3ExTW1mQnhvYVYzTy92UzhJZz0iLCJtYWMiOiI2N2RmMGE4MWI5MDc1OTE3OWFlMWUzYzdkMjNkZGMwNTczOTg3ZDU5YWU3M2NkYzFmMzc1ZjVmODMwYTg1ZThhIiwidGFnIjoiIn0=",
+                            "is_encrypted_with_application_key": 1,
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286517
+                        }
+                    },
+                    {
+                        "question_id": 10674,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10674,
+                            "question_id_without_fk": 10674,
+                            "question_system_identifier": "home-phone",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "+12025550144",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286518
+                        }
+                    },
+                    {
+                        "question_id": 10675,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10675,
+                            "question_id_without_fk": 10675,
+                            "question_system_identifier": "email",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "test@test.com",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286519
+                        }
+                    },
+                    {
+                        "question_id": 10656,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10656,
+                            "question_id_without_fk": 10656,
+                            "question_system_identifier": "citizen-of-usa",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10938,
+                            "option_id_without_fk": 10938,
+                            "option_system_identifier": "citizen-of-usa.yes",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286520
+                        }
+                    },
+                    {
+                        "question_id": 10658,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10658,
+                            "question_id_without_fk": 10658,
+                            "question_system_identifier": "ssn",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "eyJpdiI6IjNtQTNUQVJRdXgxUFdwaWxhU0EzZGc9PSIsInZhbHVlIjoic29UQThzYWlwVlhtd3lzbHN0VkpLTENiTHR1OUExY1gvMlRicG9rRmRuOD0iLCJtYWMiOiJkMjc4NGQxYWI0OTNmYWVlMmRkN2Y3OTQ0MTFkNmMwZWJjZGM3OTJjZmRmMjZkZjgyYzRjNmRmODVmOTU4YjdiIiwidGFnIjoiIn0=",
+                            "is_encrypted_with_application_key": 1,
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286521
+                        }
+                    },
+                    {
+                        "question_id": 10666,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10666,
+                            "question_id_without_fk": 10666,
+                            "question_system_identifier": "aiHomeAddress.us_or_not",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10953,
+                            "option_id_without_fk": 10953,
+                            "option_system_identifier": "aiHomeAddress.us_or_not.yes",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286522
+                        }
+                    },
+                    {
+                        "question_id": 10668,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10668,
+                            "question_id_without_fk": 10668,
+                            "question_system_identifier": "aiHomeAddress.line_1",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "201 S MARKET ST",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286523
+                        }
+                    },
+                    {
+                        "question_id": 10670,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10670,
+                            "question_id_without_fk": 10670,
+                            "question_system_identifier": "aiHomeAddress.city",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "San Jose",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286524
+                        }
+                    },
+                    {
+                        "question_id": 10672,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10672,
+                            "question_id_without_fk": 10672,
+                            "question_system_identifier": "aiHomeAddress.state",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "CA",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286525
+                        }
+                    },
+                    {
+                        "question_id": 10673,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10673,
+                            "question_id_without_fk": 10673,
+                            "question_system_identifier": "aiHomeAddress.zipcode",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "95113",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286526
+                        }
+                    },
+                    {
+                        "question_id": 10676,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10676,
+                            "question_id_without_fk": 10676,
+                            "question_system_identifier": "mailingAddressSameAsHome",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10955,
+                            "option_id_without_fk": 10955,
+                            "option_system_identifier": "mailingAddressSameAsHome.yes",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286527
+                        }
+                    },
+                    {
+                        "question_id": 10685,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10685,
+                            "question_id_without_fk": 10685,
+                            "question_system_identifier": "additional-info-pep",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10960,
+                            "option_id_without_fk": 10960,
+                            "option_system_identifier": "additional-info-pep.no",
+                            "updated_at": "2022-01-17T12:29:21.000000Z",
+                            "created_at": "2022-01-17T12:29:21.000000Z",
+                            "id": 3286528
+                        }
+                    },
+                    {
+                        "question_id": 10688,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10688,
+                            "question_id_without_fk": 10688,
+                            "question_system_identifier": "control-person",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10962,
+                            "option_id_without_fk": 10962,
+                            "option_system_identifier": "control-person.no",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286529
+                        }
+                    },
+                    {
+                        "question_id": 10690,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10690,
+                            "question_id_without_fk": 10690,
+                            "question_system_identifier": "affiliation-with-stocks",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10964,
+                            "option_id_without_fk": 10964,
+                            "option_system_identifier": "affiliation-with-stocks.no",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286530
+                        }
+                    },
+                    {
+                        "question_id": 10692,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10692,
+                            "question_id_without_fk": 10692,
+                            "question_system_identifier": "trading-authorization-ira",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10966,
+                            "option_id_without_fk": 10966,
+                            "option_system_identifier": "trading-authorization-ira.no",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286531
+                        }
+                    },
+                    {
+                        "question_id": 10698,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10698,
+                            "question_id_without_fk": 10698,
+                            "question_system_identifier": "account.domestic-or-foreign",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10973,
+                            "option_id_without_fk": 10973,
+                            "option_system_identifier": "account.domestic-or-foreign.domestic",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286532
+                        }
+                    },
+                    {
+                        "question_id": 10694,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10694,
+                            "question_id_without_fk": 10694,
+                            "question_system_identifier": "trusted-contact-age",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10968,
+                            "option_id_without_fk": 10968,
+                            "option_system_identifier": "trusted-contact-age.no",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286533
+                        }
+                    },
+                    {
+                        "question_id": 10695,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10695,
+                            "question_id_without_fk": 10695,
+                            "question_system_identifier": "trustedContact-yes-no",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10970,
+                            "option_id_without_fk": 10970,
+                            "option_system_identifier": "trustedContact-yes-no.no",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286534
+                        }
+                    },
+                    {
+                        "question_id": 10712,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10712,
+                            "question_id_without_fk": 10712,
+                            "question_system_identifier": "employment-status",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10978,
+                            "option_id_without_fk": 10978,
+                            "option_system_identifier": "employment-status.EMPLOYED",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286535
+                        }
+                    },
+                    {
+                        "question_id": 10713,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10713,
+                            "question_id_without_fk": 10713,
+                            "question_system_identifier": "employer",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "Google Inc.",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286536
+                        }
+                    },
+                    {
+                        "question_id": 10714,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10714,
+                            "question_id_without_fk": 10714,
+                            "question_system_identifier": "position",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "Engineering Manager",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286537
+                        }
+                    },
+                    {
+                        "question_id": 10716,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10716,
+                            "question_id_without_fk": 10716,
+                            "question_system_identifier": "suitability-investment-objective",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 10983,
+                            "option_id_without_fk": 10983,
+                            "option_system_identifier": "suitability-investment-objective.income",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286538
+                        }
+                    },
+                    {
+                        "question_id": 10718,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10718,
+                            "question_id_without_fk": 10718,
+                            "question_system_identifier": "suitability-income",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11001,
+                            "option_id_without_fk": 11001,
+                            "option_system_identifier": "suitability-income.100001-200000",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286539
+                        }
+                    },
+                    {
+                        "question_id": 10720,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10720,
+                            "question_id_without_fk": 10720,
+                            "question_system_identifier": "suitability-total-net-worth",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11014,
+                            "option_id_without_fk": 11014,
+                            "option_system_identifier": "suitability-total-net-worth.50001-100000",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286540
+                        }
+                    },
+                    {
+                        "question_id": 10721,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10721,
+                            "question_id_without_fk": 10721,
+                            "question_system_identifier": "suitability-risk-tolerance",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11020,
+                            "option_id_without_fk": 11020,
+                            "option_system_identifier": "suitability-risk-tolerance.low",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286541
+                        }
+                    },
+                    {
+                        "question_id": 10724,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10724,
+                            "question_id_without_fk": 10724,
+                            "question_system_identifier": "suitability-investment-experience",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11030,
+                            "option_id_without_fk": 11030,
+                            "option_system_identifier": "suitability-investment-experience.limited",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286542
+                        }
+                    },
+                    {
+                        "question_id": 10725,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10725,
+                            "question_id_without_fk": 10725,
+                            "question_system_identifier": "suitability-tax-bracket",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "10",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286543
+                        }
+                    },
+                    {
+                        "question_id": 10726,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10726,
+                            "question_id_without_fk": 10726,
+                            "question_system_identifier": "service-instructions",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11033,
+                            "option_id_without_fk": 11033,
+                            "option_system_identifier": "service-instructions.SWEEP",
+                            "updated_at": "2022-01-17T12:29:22.000000Z",
+                            "created_at": "2022-01-17T12:29:22.000000Z",
+                            "id": 3286544
+                        }
+                    },
+                    {
+                        "question_id": 10728,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10728,
+                            "question_id_without_fk": 10728,
+                            "question_system_identifier": "service.dividends-reinvestment",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11038,
+                            "option_id_without_fk": 11038,
+                            "option_system_identifier": "service.dividends-reinvestment.do_not_reinvest",
+                            "updated_at": "2022-01-17T12:29:23.000000Z",
+                            "created_at": "2022-01-17T12:29:23.000000Z",
+                            "id": 3286545
+                        }
+                    },
+                    {
+                        "question_id": 10731,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10731,
+                            "question_id_without_fk": 10731,
+                            "question_system_identifier": "tod.decision",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11045,
+                            "option_id_without_fk": 11045,
+                            "option_system_identifier": "tod.decision.no",
+                            "updated_at": "2022-01-17T12:29:23.000000Z",
+                            "created_at": "2022-01-17T12:29:23.000000Z",
+                            "id": 3286546
+                        }
+                    },
+                    {
+                        "question_id": 10805,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10805,
+                            "question_id_without_fk": 10805,
+                            "question_system_identifier": "legalese.v5-customer-account-agreement-individual",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11077,
+                            "option_id_without_fk": 11077,
+                            "option_system_identifier": "legalese.v5-customer-account-agreement-individual.agree",
+                            "updated_at": "2022-01-17T12:29:26.000000Z",
+                            "created_at": "2022-01-17T12:29:26.000000Z",
+                            "id": 3286547
+                        }
+                    },
+                    {
+                        "question_id": 10812,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10812,
+                            "question_id_without_fk": 10812,
+                            "question_system_identifier": "legalese.v5-customer-account-agreement-custodian",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "option_id": 11087,
+                            "option_id_without_fk": 11087,
+                            "option_system_identifier": "legalese.v5-customer-account-agreement-custodian.agree",
+                            "updated_at": "2022-01-17T12:29:26.000000Z",
+                            "created_at": "2022-01-17T12:29:26.000000Z",
+                            "id": 3286548
+                        }
+                    },
+                    {
+                        "question_id": 10814,
+                        "answer": {
+                            "application_id": 82567,
+                            "question_id": 10814,
+                            "question_id_without_fk": 10814,
+                            "question_system_identifier": "signature-primary",
+                            "question_has_multiple_answers": 0,
+                            "deleted_at": null,
+                            "answered_by": 318823,
+                            "data": "signature",
+                            "updated_at": "2022-01-17T12:29:26.000000Z",
+                            "created_at": "2022-01-17T12:29:26.000000Z",
+                            "id": 3286549
+                        }
+                    }
+                ]
+            }
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 12:29:26 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx/1.20.1",
+            "Cache-Control",
+            "no-cache, private",
+            "X-RateLimit-Limit",
+            "1000",
+            "X-RateLimit-Remaining",
+            "998",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Content-Type-Options",
+            "nosniff"
+        ],
+        "responseIsBinary": false
+    },
+    {
+        "scope": "https://accounts-api-uat.extend.apexclearing.com:443",
+        "method": "POST",
+        "path": "/api/applications/delete",
+        "body": {
+            "application_id": 82567
+        },
+        "status": 200,
+        "response": {
+            "status": true,
+            "http_status_message": "Successful: OK",
+            "data": null
+        },
+        "rawHeaders": [
+            "Date",
+            "Mon, 17 Jan 2022 12:29:27 GMT",
+            "Content-Type",
+            "application/json",
+            "Transfer-Encoding",
+            "chunked",
+            "Connection",
+            "close",
+            "Server",
+            "nginx/1.20.1",
+            "Cache-Control",
+            "no-cache, private",
+            "X-RateLimit-Limit",
+            "1000",
+            "X-RateLimit-Remaining",
+            "997",
+            "X-Frame-Options",
+            "SAMEORIGIN",
+            "X-XSS-Protection",
+            "1; mode=block",
+            "X-Content-Type-Options",
+            "nosniff"
+        ],
+        "responseIsBinary": false
+    }
+]

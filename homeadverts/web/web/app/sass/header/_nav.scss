@@ -1,0 +1,214 @@
+.nav-header {
+  color: $color_1;
+
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding-top: 27px;
+    z-index: 8;
+
+    .row {
+      position: relative;
+
+      .nav-links {
+        text-align: center;
+
+        ul {
+          display: inline-block;
+          margin-top: 2px;
+          margin-left: -30px;
+
+          li {
+            float: left;
+
+            &.fixed-width-links {
+              width: 120px;
+            }
+            a {
+              color: #212121;
+              margin: 0 25px;
+              font-size: 14px;
+              font-weight: 600;
+
+              &:hover {
+                color: #212121;
+                text-decoration: underline;
+              }
+            }
+            .logo {
+              width: 280px;
+              margin-top: -29px;
+              margin-left: 15px;
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+    .nav-row {
+      border-bottom: 4px solid #eee;
+      height: 53px;
+    }
+    .search-row {
+      padding: 10px;
+      border-bottom: 4px solid #eee;
+    }
+  }
+}
+
+.filters-wrapper {
+  padding-top: 0 !important;
+  z-index: 3;
+  border-bottom: 1px solid #f1f1f1;
+  position: relative;
+  background: #fff;
+
+  .filters {
+    .primary-filters {
+      padding: 0 5px;
+      height: inherit;
+      position: relative;
+
+      .filter {
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 12px 5px 1px;
+        margin: 0;
+        margin-bottom: -1px;
+
+        &:hover {
+          box-shadow: none;
+
+          > a {
+            color: #212121;
+            border-bottom: 2px solid #212121;
+          }
+        }
+
+        .main-filter {
+          color: #424242;
+
+          &.selected {
+            border-bottom: 2px solid #424242;
+          }
+        }
+
+        &:after {
+          content: "\00b7";
+          font-weight: 700;
+          font-size: 22px;
+          color: $color_2_lighten;
+          float: right;
+          line-height: 22px;
+          padding-left: 12px;
+        }
+
+        &.\--separator {
+          &:after {
+            content: '|';
+            font-size: 14px;
+          }
+        }
+
+        &:last-child {
+          &:after {
+            display: none;
+          }
+
+          .nav-menu {
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .filters {
+    .main-filter {
+      &.selected {
+        color: #424242;
+      }
+    }
+  }
+}
+
+// Different filters behavior for HA & Forbes (Bounce issue on iPhone)
+.filters,
+.primary-nav {
+  text-align: center;
+  overflow: auto;
+  top: 0;
+  height: 100%;
+  transition: all 0.4s;
+  position: relative;
+  width: auto;
+  overflow: inherit;
+  z-index: 4;
+  display: block;
+  min-height: auto;
+  opacity: 1;
+}
+
+body main.page-content {
+  margin-top: $header_height;
+
+  @media screen and (max-width: $tablet_width) {
+    margin-top: $mobile_header_height;
+  }
+}
+
+@media only screen and (max-width: $mobile_small_width) {
+  .nav-header .container .row .nav-links ul li .logo {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: $desktop_width) {
+  .nav-header {
+    .container {
+      .row {
+        .nav-links {
+          ul {
+            margin-left: 0;
+
+            li {
+              &.\--hideable {
+                display: none;
+              }
+
+              .logo {
+                width: 180px;
+                margin-top: -24px;
+              }
+            }
+          }
+        }
+      }
+
+      .search-row {
+        padding-left: 0;
+        padding-right: 0;
+
+        i,
+        form {
+          margin-left: 12px;
+          transition: margin .15s ease-out;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet_width) {
+  .nav-header {
+    .container {
+      padding-top: 17px;
+
+      .nav-row {
+        height: 43px;
+      }
+    }
+  }
+}

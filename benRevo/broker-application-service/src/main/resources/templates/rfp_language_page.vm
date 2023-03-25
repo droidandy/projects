@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BenRevo</title>
+    #include("rfp_style.vm")
+</head>
+
+<body>
+<table class="maintble" border="0">
+    #if($StringUtils.isNotBlank($!brokerage_logo))
+      <tr><td style="text-align: right;">
+        <img src="$!{brokerage_logo}" width="200" height="47"/>
+      </td></tr>
+    #end
+    <tr>
+        <td class="rightpannel"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr class="productMed">
+                <th>
+                 <h2>BROKERAGE: <span>${broker_firm}</span><br/><br/>DATE: <span>$!{date}</span></h2>
+                </th>
+            </tr>
+			<tr><td>
+                            $!broker_language
+			</td></tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

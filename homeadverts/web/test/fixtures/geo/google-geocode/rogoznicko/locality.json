@@ -1,0 +1,59 @@
+{
+  "results" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "Zečevo Rogozničko",
+          "short_name" : "Zečevo Rogozničko",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Općina Rogoznica",
+          "short_name" : "Općina Rogoznica",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "Šibensko-kninska županija",
+          "short_name" : "Šibensko-kninska županija",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "Croatia",
+          "short_name" : "HR",
+          "types" : [ "country", "political" ]
+        }
+      ],
+      "formatted_address" : "Zečevo Rogozničko, Croatia",
+      "geometry" : {
+        "bounds" : {
+          "northeast" : {
+            "lat" : 43.5610217,
+            "lng" : 15.9613305
+          },
+          "southwest" : {
+            "lat" : 43.5335914,
+            "lng" : 15.8864236
+          }
+        },
+        "location" : {
+          "lat" : 43.5535886,
+          "lng" : 15.9401624
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 43.5610217,
+            "lng" : 15.9613305
+          },
+          "southwest" : {
+            "lat" : 43.5335914,
+            "lng" : 15.8864236
+          }
+        }
+      },
+      "place_id" : "ChIJK9oWFkYYNRMRCHyvJdAaigs",
+      "types" : [ "locality", "political" ]
+    }
+  ],
+  "status" : "OK"
+}

@@ -1,0 +1,1202 @@
+{
+    "statuses": [
+        {
+            "created_at": "Thu Aug 17 05:22:39 +0000 2017",
+            "id": 898052431975731200,
+            "id_str": "898052431975731200",
+            "text": "Etherum b\u00f6rjar idag handlas p\u00e5 bitstamp och \u00e4r gratis fram till oktober",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "sv",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 4768163067,
+                "id_str": "4768163067",
+                "name": "Otursb\u00f6rsen",
+                "screen_name": "Otursbors",
+                "location": "",
+                "description": "Otursam jurist som alltid f\u00f6rv\u00e4ntar sig det v\u00e4rsta men hoppas p\u00e5 det b\u00e4sta. Investerar p\u00e5 l\u00e4ngre sikt och swingar f\u00f6r det mesta. Endast egna \u00e5sikter #MurphysLag",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 1162,
+                "friends_count": 437,
+                "listed_count": 15,
+                "created_at": "Sun Jan 10 22:08:45 +0000 2016",
+                "favourites_count": 9112,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 5060,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/686309242681307137\/OTWBVgr9_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/686309242681307137\/OTWBVgr9_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/4768163067\/1475756832",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "sv"
+        },
+        {
+            "created_at": "Thu Aug 17 02:35:49 +0000 2017",
+            "id": 898010445377712128,
+            "id_str": "898010445377712128",
+            "text": "@RyanOrozco @Big_Savvy which ones are worth investing in though? etherum neo ripple ??",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "RyanOrozco",
+                        "name": "Ryan Orozco",
+                        "id": 36603844,
+                        "id_str": "36603844",
+                        "indices": [
+                            0,
+                            11
+                        ]
+                    },
+                    {
+                        "screen_name": "Big_Savvy",
+                        "name": "Samuel Edmondson",
+                        "id": 765982586,
+                        "id_str": "765982586",
+                        "indices": [
+                            12,
+                            22
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"http:\/\/twitter.com\/download\/iphone\" rel=\"nofollow\"\u003eTwitter for iPhone\u003c\/a\u003e",
+            "in_reply_to_status_id": 898000593989517312,
+            "in_reply_to_status_id_str": "898000593989517312",
+            "in_reply_to_user_id": 36603844,
+            "in_reply_to_user_id_str": "36603844",
+            "in_reply_to_screen_name": "RyanOrozco",
+            "user": {
+                "id": 347457925,
+                "id_str": "347457925",
+                "name": "steven short",
+                "screen_name": "stevenshort_",
+                "location": "seattle\/ LA",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 355,
+                "friends_count": 282,
+                "listed_count": 3,
+                "created_at": "Tue Aug 02 20:44:47 +0000 2011",
+                "favourites_count": 773,
+                "utc_offset": -25200,
+                "time_zone": "Pacific Time (US & Canada)",
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 6541,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "0D0D0D",
+                "profile_background_image_url": "http:\/\/pbs.twimg.com\/profile_background_images\/349011200\/imgres",
+                "profile_background_image_url_https": "https:\/\/pbs.twimg.com\/profile_background_images\/349011200\/imgres",
+                "profile_background_tile": true,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/875484113934794753\/zi8Al0XG_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/875484113934794753\/zi8Al0XG_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/347457925\/1476869706",
+                "profile_link_color": "96923C",
+                "profile_sidebar_border_color": "E2E8EB",
+                "profile_sidebar_fill_color": "EDF3F5",
+                "profile_text_color": "0F0B0F",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 2,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Thu Aug 17 01:43:10 +0000 2017",
+            "id": 897997196787945472,
+            "id_str": "897997196787945472",
+            "text": "The Top 10 Best #Ethereum Wallets (2017 Edition) https:\/\/t.co\/deu8EDTuax $ETH #ETH #Cryptocurrency #ETC https:\/\/t.co\/U9yuysW1uq",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Ethereum",
+                        "indices": [
+                            16,
+                            25
+                        ]
+                    },
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            78,
+                            82
+                        ]
+                    },
+                    {
+                        "text": "Cryptocurrency",
+                        "indices": [
+                            83,
+                            98
+                        ]
+                    },
+                    {
+                        "text": "ETC",
+                        "indices": [
+                            99,
+                            103
+                        ]
+                    }
+                ],
+                "symbols": [
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            73,
+                            77
+                        ]
+                    }
+                ],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https:\/\/t.co\/deu8EDTuax",
+                        "expanded_url": "https:\/\/goo.gl\/yVzBfq",
+                        "display_url": "goo.gl\/yVzBfq",
+                        "indices": [
+                            49,
+                            72
+                        ]
+                    }
+                ],
+                "media": [
+                    {
+                        "id": 897997194174836736,
+                        "id_str": "897997194174836736",
+                        "indices": [
+                            104,
+                            127
+                        ],
+                        "media_url": "http:\/\/pbs.twimg.com\/media\/DHZTsLgWsAA7lCb.jpg",
+                        "media_url_https": "https:\/\/pbs.twimg.com\/media\/DHZTsLgWsAA7lCb.jpg",
+                        "url": "https:\/\/t.co\/U9yuysW1uq",
+                        "display_url": "pic.twitter.com\/U9yuysW1uq",
+                        "expanded_url": "https:\/\/twitter.com\/CoinSutra\/status\/897997196787945472\/photo\/1",
+                        "type": "photo",
+                        "sizes": {
+                            "large": {
+                                "w": 719,
+                                "h": 385,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 719,
+                                "h": 385,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 364,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            }
+                        }
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 897997194174836736,
+                        "id_str": "897997194174836736",
+                        "indices": [
+                            104,
+                            127
+                        ],
+                        "media_url": "http:\/\/pbs.twimg.com\/media\/DHZTsLgWsAA7lCb.jpg",
+                        "media_url_https": "https:\/\/pbs.twimg.com\/media\/DHZTsLgWsAA7lCb.jpg",
+                        "url": "https:\/\/t.co\/U9yuysW1uq",
+                        "display_url": "pic.twitter.com\/U9yuysW1uq",
+                        "expanded_url": "https:\/\/twitter.com\/CoinSutra\/status\/897997196787945472\/photo\/1",
+                        "type": "photo",
+                        "sizes": {
+                            "large": {
+                                "w": 719,
+                                "h": 385,
+                                "resize": "fit"
+                            },
+                            "medium": {
+                                "w": 719,
+                                "h": 385,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 364,
+                                "resize": "fit"
+                            },
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            }
+                        }
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"https:\/\/panel.socialpilot.co\/\" rel=\"nofollow\"\u003eSocialPilot.co\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 798788069306445825,
+                "id_str": "798788069306445825",
+                "name": "CoinSutra",
+                "screen_name": "CoinSutra",
+                "location": "",
+                "description": "CoinSutra is a community of Bitcoin, Altcoins, #Cryptocurrency users from around the globe. Find exclusive #Bitcoin resources & guides.  https:\/\/t.co\/zH2SI9LeDl",
+                "url": "https:\/\/t.co\/PuaGCNNHX2",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https:\/\/t.co\/PuaGCNNHX2",
+                                "expanded_url": "https:\/\/coinsutra.com",
+                                "display_url": "coinsutra.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https:\/\/t.co\/zH2SI9LeDl",
+                                "expanded_url": "https:\/\/coinsutra.com\/",
+                                "display_url": "coinsutra.com",
+                                "indices": [
+                                    137,
+                                    160
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 7259,
+                "friends_count": 422,
+                "listed_count": 46,
+                "created_at": "Wed Nov 16 07:21:31 +0000 2016",
+                "favourites_count": 1009,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 1363,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/798791552164196352\/HbjVhYWs_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/798791552164196352\/HbjVhYWs_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/798788069306445825\/1479281792",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+
+        {
+            "created_at": "Wed Aug 16 23:32:41 +0000 2017",
+            "id": 897964361624559617,
+            "id_str": "897964361624559617",
+            "text": "Existem milhares de criptomoedas saindo por a\u00ed.\n\nA Etherum est\u00e1 tendo uma boa valoriza\u00e7\u00e3o.\n\nMas aja com calma com e\u2026 https:\/\/t.co\/6LJ95NLhjN",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https:\/\/t.co\/6LJ95NLhjN",
+                        "expanded_url": "https:\/\/twitter.com\/i\/web\/status\/897964361624559617",
+                        "display_url": "twitter.com\/i\/web\/status\/8\u2026",
+                        "indices": [
+                            117,
+                            140
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "pt",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"https:\/\/about.twitter.com\/products\/tweetdeck\" rel=\"nofollow\"\u003eTweetDeck\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 4858045199,
+                "id_str": "4858045199",
+                "name": "POLITZ",
+                "screen_name": "PolitzOficial",
+                "location": "Brazil",
+                "description": "POLITZ - 2017 \u00a9",
+                "url": "https:\/\/t.co\/Y36h7i0MpL",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https:\/\/t.co\/Y36h7i0MpL",
+                                "expanded_url": "http:\/\/politz.com.br",
+                                "display_url": "politz.com.br",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 6930,
+                "friends_count": 620,
+                "listed_count": 52,
+                "created_at": "Thu Jan 28 18:17:03 +0000 2016",
+                "favourites_count": 5693,
+                "utc_offset": -14400,
+                "time_zone": "Georgetown",
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 11780,
+                "lang": "pt",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "7FDBB6",
+                "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/719683751853363200\/UrAOWst3_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/719683751853363200\/UrAOWst3_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/4858045199\/1461380913",
+                "profile_link_color": "ABB8C2",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": true,
+            "quoted_status_id": 897963920736079873,
+            "quoted_status_id_str": "897963920736079873",
+            "quoted_status": {
+                "created_at": "Wed Aug 16 23:30:56 +0000 2017",
+                "id": 897963920736079873,
+                "id_str": "897963920736079873",
+                "text": "@PolitzOficial Por falar em Bitcoin ,vcs sabem alguma criptomoeda que deve ser uma boa aposta em valoriza\u00e7\u00e3o futura ?",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [
+                        {
+                            "screen_name": "PolitzOficial",
+                            "name": "POLITZ",
+                            "id": 4858045199,
+                            "id_str": "4858045199",
+                            "indices": [
+                                0,
+                                14
+                            ]
+                        }
+                    ],
+                    "urls": []
+                },
+                "metadata": {
+                    "iso_language_code": "pt",
+                    "result_type": "recent"
+                },
+                "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": 4858045199,
+                "in_reply_to_user_id_str": "4858045199",
+                "in_reply_to_screen_name": "PolitzOficial",
+                "user": {
+                    "id": 315765213,
+                    "id_str": "315765213",
+                    "name": "wellington alves",
+                    "screen_name": "well_tinho",
+                    "location": "",
+                    "description": "",
+                    "url": null,
+                    "entities": {
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 96,
+                    "friends_count": 72,
+                    "listed_count": 2,
+                    "created_at": "Sun Jun 12 12:08:57 +0000 2011",
+                    "favourites_count": 3704,
+                    "utc_offset": -10800,
+                    "time_zone": "Brasilia",
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 10445,
+                    "lang": "pt",
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "000000",
+                    "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                    "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/2170290995\/161595_100003274274974_1145485171_n_normal.jpg",
+                    "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/2170290995\/161595_100003274274974_1145485171_n_normal.jpg",
+                    "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/315765213\/1379283866",
+                    "profile_link_color": "1B95E0",
+                    "profile_sidebar_border_color": "000000",
+                    "profile_sidebar_fill_color": "000000",
+                    "profile_text_color": "000000",
+                    "profile_use_background_image": false,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": false,
+                    "follow_request_sent": false,
+                    "notifications": false,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 0,
+                "favorite_count": 0,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "pt"
+            },
+            "retweet_count": 0,
+            "favorite_count": 5,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": true,
+            "lang": "pt"
+        },
+        {
+            "created_at": "Wed Aug 16 22:55:09 +0000 2017",
+            "id": 897954916089581568,
+            "id_str": "897954916089581568",
+            "text": "\u26a1\ufe0f \u201cCryptoCurrency BitCoin LiteCoin Etherum etc\u201d       \n\nhttps:\/\/t.co\/LwbmXo2DAc",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https:\/\/t.co\/LwbmXo2DAc",
+                        "expanded_url": "https:\/\/twitter.com\/i\/moments\/897949186544386048",
+                        "display_url": "twitter.com\/i\/moments\/8979\u2026",
+                        "indices": [
+                            57,
+                            80
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 448023422,
+                "id_str": "448023422",
+                "name": "Santosh Kagvate",
+                "screen_name": "Santosh_10FIGNW",
+                "location": "Singapore & HongKong",
+                "description": "Non-RSS\/BJP\/ShivSena  Engineer Investor NonReligious DevoutSpiritual Believe= #GOD #ALLAH #LordBuddha Context:Global T\/Rt\u2260ENDORSEMENT,NoStatutoryInterpretations",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 208,
+                "friends_count": 1910,
+                "listed_count": 15,
+                "created_at": "Tue Dec 27 14:43:02 +0000 2011",
+                "favourites_count": 1360,
+                "utc_offset": 19800,
+                "time_zone": "New Delhi",
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 9691,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/467990832386019328\/NqlVYADd_normal.jpeg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/467990832386019328\/NqlVYADd_normal.jpeg",
+                "profile_link_color": "4A913C",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "regular"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Aug 16 21:49:45 +0000 2017",
+            "id": 897938455711424512,
+            "id_str": "897938455711424512",
+            "text": "if you wanna fly, go for @omise_go  #Ardor #OmiseGo #Bitcoin #Etherum #BTC #ETH #Golem",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "Ardor",
+                        "indices": [
+                            36,
+                            42
+                        ]
+                    },
+                    {
+                        "text": "OmiseGo",
+                        "indices": [
+                            43,
+                            51
+                        ]
+                    },
+                    {
+                        "text": "Bitcoin",
+                        "indices": [
+                            52,
+                            60
+                        ]
+                    },
+                    {
+                        "text": "Etherum",
+                        "indices": [
+                            61,
+                            69
+                        ]
+                    },
+                    {
+                        "text": "BTC",
+                        "indices": [
+                            70,
+                            74
+                        ]
+                    },
+                    {
+                        "text": "ETH",
+                        "indices": [
+                            75,
+                            79
+                        ]
+                    },
+                    {
+                        "text": "Golem",
+                        "indices": [
+                            80,
+                            86
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "omise_go",
+                        "name": "OmiseGO",
+                        "id": 831847934534746114,
+                        "id_str": "831847934534746114",
+                        "indices": [
+                            25,
+                            34
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 89466011,
+                "id_str": "89466011",
+                "name": "Basel Nassar",
+                "screen_name": "BASEL21",
+                "location": "The Capital, Kuwait",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 50,
+                "friends_count": 150,
+                "listed_count": 0,
+                "created_at": "Thu Nov 12 15:13:39 +0000 2009",
+                "favourites_count": 109,
+                "utc_offset": -7200,
+                "time_zone": "Greenland",
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 27,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "1A1B1F",
+                "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+                "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme9\/bg.gif",
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/808757673080406016\/HI1C62ZF_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/808757673080406016\/HI1C62ZF_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/89466011\/1481657769",
+                "profile_link_color": "2FC2EF",
+                "profile_sidebar_border_color": "181A1E",
+                "profile_sidebar_fill_color": "252429",
+                "profile_text_color": "666666",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Aug 16 21:17:36 +0000 2017",
+            "id": 897930366102773761,
+            "id_str": "897930366102773761",
+            "text": "ICO OPUS &gt; Crowdsale: 24.07.2017 - 21.08.2017\nContribute with Etherum, Bitcoin or other AltCoins\nhttps:\/\/t.co\/2rhVHk6y6O\n#opusfoundation",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "opusfoundation",
+                        "indices": [
+                            124,
+                            139
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https:\/\/t.co\/2rhVHk6y6O",
+                        "expanded_url": "https:\/\/opus-foundation.org\/index.php\/crowdsale\/",
+                        "display_url": "opus-foundation.org\/index.php\/crow\u2026",
+                        "indices": [
+                            100,
+                            123
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"http:\/\/twitter.com\" rel=\"nofollow\"\u003eTwitter Web Client\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 742229688400089088,
+                "id_str": "742229688400089088",
+                "name": "Bitonator",
+                "screen_name": "TimoBitonator",
+                "location": "",
+                "description": "Crypto-Enthusiast | Bitcoin, Ethereum, Dash, Lisk, Dogecoin, Litecoin etc.",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 1209,
+                "friends_count": 867,
+                "listed_count": 128,
+                "created_at": "Mon Jun 13 05:38:42 +0000 2016",
+                "favourites_count": 3069,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 8269,
+                "lang": "de",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/742231849032908800\/HJVG1I0n_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/742231849032908800\/HJVG1I0n_normal.jpg",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Aug 16 18:08:10 +0000 2017",
+            "id": 897882693182029824,
+            "id_str": "897882693182029824",
+            "text": "Mid-Day Ethereum Summary: Up 1.58% \ud83d\ude10 Check it out! https:\/\/t.co\/CEz4EBP2oP #cryptocurrency #steem #blockchain",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "cryptocurrency",
+                        "indices": [
+                            75,
+                            90
+                        ]
+                    },
+                    {
+                        "text": "steem",
+                        "indices": [
+                            91,
+                            97
+                        ]
+                    },
+                    {
+                        "text": "blockchain",
+                        "indices": [
+                            98,
+                            109
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https:\/\/t.co\/CEz4EBP2oP",
+                        "expanded_url": "http:\/\/ift.tt\/2fLJZiM",
+                        "display_url": "ift.tt\/2fLJZiM",
+                        "indices": [
+                            51,
+                            74
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"https:\/\/ifttt.com\" rel=\"nofollow\"\u003eIFTTT\u003c\/a\u003e",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 728433956169752576,
+                "id_str": "728433956169752576",
+                "name": "Stakepool",
+                "screen_name": "StakepoolCom",
+                "location": "New York, NY",
+                "description": "Join us on DISCORD: https:\/\/t.co\/iU4FOxkWJJ",
+                "url": "https:\/\/t.co\/ih1DpaYICk",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https:\/\/t.co\/ih1DpaYICk",
+                                "expanded_url": "http:\/\/stakepool.com",
+                                "display_url": "stakepool.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "https:\/\/t.co\/iU4FOxkWJJ",
+                                "expanded_url": "https:\/\/discord.gg\/cqQRBpv",
+                                "display_url": "discord.gg\/cqQRBpv",
+                                "indices": [
+                                    20,
+                                    43
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 23458,
+                "friends_count": 20,
+                "listed_count": 1292,
+                "created_at": "Fri May 06 03:59:23 +0000 2016",
+                "favourites_count": 8,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 289279,
+                "lang": "en",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/728434717087825922\/27P9cOhq_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/728434717087825922\/27P9cOhq_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/728433956169752576\/1462507687",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 1,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Aug 16 17:39:10 +0000 2017",
+            "id": 897875395231535111,
+            "id_str": "897875395231535111",
+            "text": "@Kwebbelkop Etherum? You into etherum mining?\ud83e\udd14\ud83e\udd14\ud83d\ude02",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "Kwebbelkop",
+                        "name": "Kwebbelkop",
+                        "id": 346526830,
+                        "id_str": "346526830",
+                        "indices": [
+                            0,
+                            11
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "\u003ca href=\"http:\/\/twitter.com\/download\/android\" rel=\"nofollow\"\u003eTwitter for Android\u003c\/a\u003e",
+            "in_reply_to_status_id": 897871030965948416,
+            "in_reply_to_status_id_str": "897871030965948416",
+            "in_reply_to_user_id": 346526830,
+            "in_reply_to_user_id_str": "346526830",
+            "in_reply_to_screen_name": "Kwebbelkop",
+            "user": {
+                "id": 4745013502,
+                "id_str": "4745013502",
+                "name": "MrDanMan [YT]\ud83c\udf10",
+                "screen_name": "MrDanMan_7",
+                "location": "Veenendaal, Nederland",
+                "description": "Youtube gaming channel! Check out the link below!",
+                "url": "https:\/\/t.co\/wsLndIMIS5",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https:\/\/t.co\/wsLndIMIS5",
+                                "expanded_url": "http:\/\/www.youtube.com\/channel\/UC_EQKjvVroae0pO27zTVlIA",
+                                "display_url": "youtube.com\/channel\/UC_EQK\u2026",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 75,
+                "friends_count": 159,
+                "listed_count": 4,
+                "created_at": "Fri Jan 08 13:54:24 +0000 2016",
+                "favourites_count": 7869,
+                "utc_offset": 7200,
+                "time_zone": "Amsterdam",
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 2559,
+                "lang": "nl",
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "000000",
+                "profile_background_image_url": "http:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                "profile_background_image_url_https": "https:\/\/abs.twimg.com\/images\/themes\/theme1\/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http:\/\/pbs.twimg.com\/profile_images\/827198486315671552\/bcH0Po8D_normal.jpg",
+                "profile_image_url_https": "https:\/\/pbs.twimg.com\/profile_images\/827198486315671552\/bcH0Po8D_normal.jpg",
+                "profile_banner_url": "https:\/\/pbs.twimg.com\/profile_banners\/4745013502\/1486054878",
+                "profile_link_color": "FF691F",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "000000",
+                "profile_text_color": "000000",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": false,
+                "follow_request_sent": false,
+                "notifications": false,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        }
+
+    ],
+    "search_metadata": {
+        "completed_in": 0.036,
+        "max_id": 898052431975731200,
+        "max_id_str": "898052431975731200",
+        "query": "etherum",
+        "refresh_url": "?since_id=898052431975731200&q=etherum&include_entities=1",
+        "count": 15,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}

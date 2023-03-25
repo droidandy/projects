@@ -1,0 +1,23 @@
+export type InstalmentPdfDto = {
+  number: string;
+  createdAt: number;
+  userFirstName: string;
+  userPatronymicName: string;
+  creditMonthlyPayment: number;
+  creditTerm: number;
+  vehicleBrandName: string;
+  vehicleModelName: string;
+  vehicleEquipmentName: string;
+  vehicleColorName: string;
+  vehicleBodyTypeName: string;
+  vehicleYear: number;
+  vehicleTransmissionName: string;
+  vehicleDriveName: string;
+  vehicleEngineName: string;
+  vehicleEquipmentVolume: string;
+  vehicleEquipmentPower: number;
+  salesOfficeName: string;
+  salesOfficeAddress: string;
+  salesOfficePhones: string[];
+  vehicleImage: string;
+};

@@ -1,0 +1,1 @@
+export { MicrodataContainer } from './MicrodataContainer';

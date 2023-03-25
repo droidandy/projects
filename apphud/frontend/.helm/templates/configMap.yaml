@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "static.fullname" . }}
+data:
+  {{ toYaml .Values.configMap | indent 2 | trim }}
+
+
+
+
+  
+

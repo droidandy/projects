@@ -1,0 +1,39 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:cer="http://cerberusllc.com/service/cerberusftpservice" xmlns:com="http://cerberusllc.com/common">
+   <soap:Header/>
+   <soap:Body>
+      <cer:AddUserRequest>
+         <com:credentials>
+            <com:user><%= soap_username %></com:user>
+            <com:password><%= soap_password %></com:password>
+         </com:credentials>
+         <cer:User com:name="<%= username %>">
+            <com:password com:value="<%= password %>"/>
+            <com:isAllowPasswordChange com:value="false"/>
+            <com:isAnonymous com:value="false"/>
+            <com:isSimpleDirectoryMode com:value="true"/>
+            <com:protocols com:ftp="false" com:ftps="false" com:sftp="true" com:http="false" com:https="false"/>
+            <com:maxUploadFilesize com:value="0"/>
+            <com:rootList>
+               <com:root>
+                 <com:name><%= directory %></com:name>
+                  <com:path>D:\ftproot\<%= directory %></com:path>
+                  <com:permissions>
+                     <com:allowListFile>true</com:allowListFile>
+                     <com:allowListDir>true</com:allowListDir>
+                     <com:allowDownload>true</com:allowDownload>
+                     <com:allowUpload>true</com:allowUpload>
+                     <com:allowRename>true</com:allowRename>
+                     <com:allowDelete>true</com:allowDelete>
+                     <com:allowDirectoryCreation>false</com:allowDirectoryCreation>
+                     <com:allowDisplayHidden>false</com:allowDisplayHidden>
+                     <com:allowZip>false</com:allowZip>
+                     <com:allowUnzip>false</com:allowUnzip>
+                     <com:allowShare>false</com:allowShare>
+                     <com:allowShareUpload>false</com:allowShareUpload>
+                  </com:permissions>
+               </com:root>
+            </com:rootList>
+         </cer:User>
+      </cer:AddUserRequest>
+   </soap:Body>
+</soap:Envelope>

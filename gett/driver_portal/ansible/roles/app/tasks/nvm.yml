@@ -1,0 +1,40 @@
+---
+- name: Install dependencies
+  apt: state=latest update_cache=yes cache_valid_time=3600 pkg={{ item }}
+  with_items:
+    - git
+    - curl
+    - build-essential
+    - libssl-dev
+  tags: nvm
+
+- name: Install nvm
+  become: true
+  become_user: "{{ application_user }}"
+  git: repo=https://github.com/creationix/nvm.git dest=~/.nvm version={{ nvm.version }}
+  tags: nvm
+
+- name: Installs nvm bash file
+  copy: src=50_nvm.bash dest=/home/{{application_user}}/.bash.d/50_nvm.bash mode=700 owner={{application_user}} group={{application_user}}
+  tags: nvm
+
+- name: Install {{ nvm.node_version }}
+  command: sudo -iu {{ application_user }} nvm install {{ nvm.node_version }}
+  register: nvm_install_result
+  changed_when: "'is already installed.' not in nvm_install_result.stdout"
+  tags: nvm
+
+- name: Check if {{ nvm.node_version }} is the default node version
+  shell: sudo -iu {{ application_user }} nvm ls | grep -e 'default -> {{ nvm.node_version }}'
+  register: nvm_check_default
+  changed_when: False
+  ignore_errors: True
+  tags: nvm
+
+- name: Set default node version to {{ nvm.node_version }}
+  command: sudo -iu {{ application_user }} nvm alias default {{ nvm.node_version }}
+  when: nvm_check_default|failed
+  tags: nvm
+
+- name: Install npm
+  apt: state=latest update_cache=yes cache_valid_time=3600 pkg=npm

@@ -1,0 +1,26 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+{% import 'AppBundle::forms.html.twig' as forms %}
+
+{% block body %}
+
+    <div class="one-column --margin-bottom">
+        <div id="error">
+            <i class="material-icons">
+                free_breakfast
+            </i>
+
+            <p class="title">
+                {% trans %}search.results.noresult{% endtrans %}
+            </p>
+            <p class="subtitle">
+                {% trans %}search.results.noresult.description{% endtrans %}
+            </p>
+
+            <a href="{{ path('featured_index', {'market': 'for-sale'}) }}"
+               class="black mdl-button mdl-js-button">
+                Real Estate
+            </a>
+        </div>
+    </div>
+
+{% endblock body %}

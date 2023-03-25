@@ -1,0 +1,52 @@
+@import "../variables-theme";
+
+
+/*
+ * Checkbox styles
+ *
+ */
+
+.ui.checkbox:not(.small-grey):not(.slider):not(.checkbox-no-bg) {
+  &:not(.radio) {
+    label {
+      padding-left: 35px;
+      font-size: 13px;
+      padding-top: 2px;
+
+      &:before {
+        width: 22px;
+        height: 22px;
+        border: 1px solid $BORDER_COLOR;
+        border-radius: 1px;
+      }
+
+      &:after {
+        background-color: $FONT_COLOR;
+        content: '';
+        width: 14px;
+        height: 14px;
+        margin-left: 4px;
+        margin-top: 4px;
+      }
+    }
+  }
+
+  &.radio {
+    label {
+      &:after {
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.ui.checkbox.small-grey {
+  margin-left: 0;
+  label {
+    &:before {
+      background: #f2f2f2 !important;
+      border: solid 1px #c9cbcc !important;
+    }
+  }
+}

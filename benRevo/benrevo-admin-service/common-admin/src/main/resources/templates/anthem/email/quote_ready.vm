@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    </head>
+    <body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial, Helvetica, sans-serif;">
+        <table bgcolor="#f8f9fb" style="margin:auto;" width="600">
+            <tr>
+                <td style="width:100%;text-align:center;float:left;">
+                    <img alt="Anthem Blue Cross" src="https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/logo.jpg"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table bgcolor="#fff" style="margin:auto;padding:0 30px;" width="600">
+                        <tr>
+                            <td>
+                                <br/>
+                                <p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">Hello #if($StringUtils.isNotEmpty($broker_name))${broker_name}#end,
+                                    <br/>
+                                    <br/>
+                                    The $!proposals proposal(s) for the below employer group are now available via the BenRevo portal. You can now access the Quote section to view the proposal and select your options.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table bgcolor="#fff" cellpadding="0" cellspacing="0" style="margin:0;padding:0" width="600">
+                                    <tr>
+                                        <td width="250">
+                                            <ul style="color: #7f7e7e;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">
+                                                <li>Employer Group Name:</li>
+                                                <li>Effective Date:</li>
+                                                <li>Proposal Due Date:</li>
+                                                <li>Eligible Employees:</li>
+                                                <li>Broker Name:</li>
+                                            </ul>
+                                        </td>
+                                        <td width="350">
+                                            <ul style="list-style: none;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">
+                                                <li>$!client_name</li>
+                                                <li>$!effective_date</li>
+                                                <li>$!proposal_date</li>
+                                                <li>$!eligible_employees</li>
+                                                <li>$!broker_name</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p style="color: #000;font-family: Arial,Helvetica,sans-serif;font-size: 15px;line-height: 25px;margin-top:0px;">To log back into the site to view the quote, click <a href="https://quote.benrevo.com/anthem/" target="_blank">here</a></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <p style="height:10px;float:left;width:100%;border-bottom:1px solid #d7d7d7;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="font-family: Arial,Helvetica,sans-serif;font-size: 14px;line-height: 25px;margin-top:0px;">We wish you the best of luck through the marketing process!
+
+                                    <br/>
+                                    <span style="color:#2e67b1;text-decoration:none;font-weight:bold">Your Anthem Blue Cross sales team.</span></p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

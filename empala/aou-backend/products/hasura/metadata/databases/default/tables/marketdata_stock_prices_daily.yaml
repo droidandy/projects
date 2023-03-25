@@ -1,0 +1,3 @@
+table:
+  name: stock_prices_daily
+  schema: marketdata

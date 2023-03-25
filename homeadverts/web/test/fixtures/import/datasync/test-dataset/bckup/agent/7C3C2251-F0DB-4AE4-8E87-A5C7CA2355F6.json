@@ -1,0 +1,136 @@
+{
+    "agentSummary": {
+        "id": "7c3c2251-f0db-4ae4-8e87-a5c7ca2355f6",
+        "isAgent": true,
+        "name": "Megan  McLeod",
+        "firstName": "Megan ",
+        "lastName": "McLeod",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+        "emailAddress": "mmcleod@sothebysrealty.ca",
+        "businessPhone": "4169609995",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "a01dfd06-adae-4e7e-9979-475a52e0f955",
+            "RFGOfficeId": "0024 ",
+            "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+            "companyName": "Sotheby's International Realty Canada",
+            "RFGCompanyId": "810043",
+            "brandCode": "SIR",
+            "name": "Sotheby's International Realty Canada",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "113 Medora Street",
+                "city": "Port Carling",
+                "district": "Muskoka",
+                "stateProvince": "Ontario",
+                "stateProvinceCode": "ON",
+                "postalCode": "P0B 1J0",
+                "country": "Canada",
+                "countryCode": "CA",
+                "latitude": 45.1212,
+                "longitude": -79.5793,
+                "formattedAddress": "113 Medora St, Muskoka Lakes, ON P0B, Canada"
+            },
+            "phoneNumber": "1.877.960.9995",
+            "emailAddress": "dusher@sothebysrealty.ca"
+        }
+    },
+    "personId": "e81b5b71-1a4c-492a-b15c-85a3dabf1c29",
+    "lastUpdateOn": "2018-08-03T14:30:17.630",
+    "roles": [
+        {
+            "office": {
+                "officeId": "7f7b3aee-ac58-4e2a-af0f-07d17f24deb0",
+                "RFGOfficeId": "0007 ",
+                "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+                "companyName": "Sotheby's International Realty Canada",
+                "RFGCompanyId": "810043",
+                "brandCode": "SIR",
+                "name": "Sotheby's International Realty Canada",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "1867 Yonge Street, Suite 100",
+                    "city": "Toronto",
+                    "district": "Toronto",
+                    "stateProvince": "Ontario",
+                    "stateProvinceCode": "ON",
+                    "postalCode": "M4S 1Y5",
+                    "country": "Canada",
+                    "countryCode": "CA",
+                    "latitude": 43.6972,
+                    "longitude": -79.3959,
+                    "formattedAddress": "1867 Yonge St, Toronto, ON M4S 1Y5, Canada"
+                },
+                "phoneNumber": "416.960.9995",
+                "emailAddress": "dusher@sothebysrealty.ca"
+            },
+            "role": "Broker",
+            "isFullTime": true,
+            "isProducingRole": true
+        },
+        {
+            "office": {
+                "officeId": "a01dfd06-adae-4e7e-9979-475a52e0f955",
+                "RFGOfficeId": "0024 ",
+                "companyId": "d88d9bd9-0a68-4460-a86e-db2e4f83d233",
+                "companyName": "Sotheby's International Realty Canada",
+                "RFGCompanyId": "810043",
+                "brandCode": "SIR",
+                "name": "Sotheby's International Realty Canada",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "113 Medora Street",
+                    "city": "Port Carling",
+                    "district": "Muskoka",
+                    "stateProvince": "Ontario",
+                    "stateProvinceCode": "ON",
+                    "postalCode": "P0B 1J0",
+                    "country": "Canada",
+                    "countryCode": "CA",
+                    "latitude": 45.1212,
+                    "longitude": -79.5793,
+                    "formattedAddress": "113 Medora St, Muskoka Lakes, ON P0B, Canada"
+                },
+                "phoneNumber": "1.877.960.9995",
+                "emailAddress": "dusher@sothebysrealty.ca"
+            },
+            "role": "Broker",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "megan.mcleod@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/62D1D0ED-DA25-4FF1-B425-A7AA10806AC7",
+            "isDefault": true,
+            "caption": "new_bw",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-08-03T14:30:17.613"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "As a Real Estate Broker living year round in Muskoka, Megan brings a rare insight into the unique demands associated with waterfront living. This understanding has helped her become one of the top producing Brokers for waterfront sales in the Lake of Bays, Huntsville & Muskoka Lakes areas. Even though Oakville was home to Megan, she fell in love with the Muskoka area and was looking for a profession that would enable her to live and play here permanently. In 1996 she left her sales position with Xerox to indulge her passion for interior design and Muskoka Living. In 2000, Megan entered the real estate profession where she was able to develop her exceptional sales ability and her creative side into an award-winning career as a top-producing Real Estate Broker. With her vast knowledge of the industry and area, it made sense that she would then take her experience to the next level and co-found a Real Estate Brokerage in Muskoka. The last few years have been rewarding as she ran and built a successful Brokerage. But her savvy sales and marketing experience was leading her back to where her heart was \u2013 back into sales. Megan is now focusing on selling and staging Muskoka properties and loving it! She spends her free time enjoying her life with her son, pets and friends. Megan brings passion, dedication and integrity to her work, typically going above and beyond by providing superior service to ensure her clients' complete happiness and satisfaction. She consistently achieves the highest internal sales awards. Forward thinking, with a designer's eye for detail and strong grounding in practicality, Megan is exceptionally qualified to assist both Buyers and Sellers achieve their goals in a timely and professional manner. Since 2011, Megan\u2019s Licensed Assistant Dawn Corbett has worked taking care of all the fine details while Megan can concentrate on the sale or purchase of your perfect Muskoka property! You can reach Dawn anytime and she will deal with your needs promptly with care. Your Muskoka lifestyle dream starts with a realtor who has a keen understanding of the area, who knows the specifics of waterfront living and who is committed to providing their clients with the very best one-on-one service. To learn more about Megan\u2019s new selling strategies please contact her directly.",
+            "htmlRemark": "As a Real Estate Broker living year round in Muskoka, Megan brings a rare insight into the unique demands associated with waterfront living. This understanding has helped her become one of the top producing Brokers for waterfront sales in the Lake of Bays, Huntsville & Muskoka Lakes areas.\n\nEven though Oakville was home to Megan, she fell in love with the Muskoka area and was looking for a profession that would enable her to live and play here permanently.   In 1996 she left her sales position with Xerox to indulge her passion for interior design and Muskoka Living.  In 2000, Megan entered the real estate profession where she was able to develop her exceptional sales ability and her creative side into an award-winning career as a top-producing Real Estate Broker.\n\nWith her vast knowledge of the industry and area, it made sense that she would then take her experience to the next level and co-found a Real Estate Brokerage in Muskoka.  The last few years have been rewarding as she ran and built a successful Brokerage.  But her savvy sales and marketing experience was leading her back to where her heart was \u2013 back into sales.  Megan is now focusing on selling and staging Muskoka properties and loving it! She spends her free time enjoying her life with her son, pets and friends.\n\nMegan brings passion, dedication and integrity to her work, typically going above and beyond by providing superior service to ensure her clients' complete happiness and satisfaction.  She consistently achieves the highest internal sales awards. Forward thinking, with a designer's eye for detail and strong grounding in practicality, Megan is exceptionally qualified to assist both Buyers and Sellers achieve their goals in a timely and professional manner.\n\nSince 2011, Megan\u2019s Licensed Assistant Dawn Corbett has worked taking care of all the fine details while Megan can concentrate on the sale or purchase of your perfect Muskoka property!  You can reach Dawn anytime and she will deal with your needs promptly with care.\n\nYour Muskoka lifestyle dream starts with a realtor who has a keen understanding of the area, who knows the specifics of waterfront living and who is committed to providing their clients with the very best one-on-one service.\n\nTo learn more about Megan\u2019s new selling strategies please contact her directly."
+        }
+    ],
+    "isTeamMember": false
+}

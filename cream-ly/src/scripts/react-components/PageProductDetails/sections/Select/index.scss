@@ -1,0 +1,23 @@
+.VariantSelect {
+   
+    margin:auto;
+    padding-bottom:20px;
+    max-width: 270px;
+    text-align: center;
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-position: 100%;
+        background-image: url(./ico-select.svg);
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        line-height: 1.2;
+        text-indent: .01px;
+        text-overflow: "";
+        cursor: pointer;
+        padding: 8px 28px 8px 15px;
+    }
+
+    
+}

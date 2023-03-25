@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"> -->
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'"> -->
+  <title>GIVME</title>
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6905554/696908/css/fonts.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/tutorial.css" rel="stylesheet">
+  <link href="css/custom-style.css" rel="stylesheet">
+  <link href="screens/css/discovery.css" rel="stylesheet">
+  <link href="screens/css/login.css" rel="stylesheet">
+  <link href="screens/css/menu.css" rel="stylesheet">
+  <link href="screens/css/settings.css" rel="stylesheet">
+  <link href="lib/angular-rangeslider/angular.rangeSlider.css" rel="stylesheet">
+  <link href="lib/angular-ui-router-anim-in-out/css/anim-in-out.css" rel="stylesheet">
+
+  <script src="lib/jquery/dist/jquery.min.js"></script>
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- OpenTok will be working only on real device -->
+  <!-- .min only works on laptop -->
+  <script src='opentok.js'></script>
+  <!--<script type="text/javascript" charset="utf-8" src="https://static.opentok.com/v2/js/opentok.min.js"></script>-->
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <script src="cordova_plugins.js"></script>
+
+  <script src="http://rubaxa.github.io/Sortable/Sortable.js"></script>
+  <script src="http://rubaxa.github.io/Sortable/ng-sortable.js"></script>
+
+  <!-- Other dependencies -->
+
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/jquery.bxslider.min.js"></script>
+  <script src="lib/flip.js"></script>
+  <script src="lib/angular-rangeslider/angular.rangeSlider.js"></script>
+  <script src="lib/angular-ui-router-anim-in-out/anim-in-out.js"></script>
+  <script src="common/angular-ios9-uiwebview.patch.js"></script>
+
+  <!--<script src='lib/lodash/lodash.min.js'></script>-->
+  <!--<script src='lib/angular-simple-logger/dist/index.js'></script>-->
+  <!--<script src='lib/angular-google-maps/dist/angular-google-maps.min.js'></script>-->
+
+  <!-- your app's js -->
+  <script src="app.js"></script>
+  <script src="common/camera.fabric.js"></script>
+	<script src="openfb/openfb.js"></script>
+	<script src="openfb/ngopenfb.js"></script>
+  <script src="screens/home/home.controller.js"></script>
+  <script src="screens/menu/menu.controller.js"></script>
+  <script src="screens/menu/menu.factory.js"></script>
+  <script src="screens/help/help.controller.js"></script>
+  <script src="screens/tutorial-1/tutorial1.factory.js"></script>
+  <script src="screens/tutorial-1/tutorial1.controller.js"></script>
+  <script src="screens/tutorial-2/tutorial2.controller.js"></script>
+  <script src="screens/login/login.controller.js"></script>
+  <script src="screens/settings/settings.factory.js"></script>
+  <script src="screens/settings/settings.controller.js"></script>
+  <script src="screens/settings-general/settings-general.controller.js"></script>
+  <script src="screens/settings-security/settings-security.controller.js"></script>
+  <script src="screens/settings-legal/settings-legal.controller.js"></script>
+  <script src="screens/settings-contact/settings-contact.controller.js"></script>
+  <script src="screens/settings-discovery/settings-discovery.controller.js"></script>
+  <script src="screens/settings-profile/settings-profile.controller.js"></script>
+  <script src="screens/contact-card/contact-card.controller.js"></script>
+  <script src="screens/discovery-card/discovery-card.controller.js"></script>
+  <script src="screens/profile-card/profile-card.controller.js"></script>
+  <script src="screens/discovery/play.controller.js"></script>
+  <script src="screens/video/video.controller.js"></script>
+  <script src="screens/pocket/pocket.controller.js"></script>
+  <script src="common/onFinishRender.directive.js"></script>
+  <script src="common/fade.directive.js"></script>
+  <script src="screens/gender/gender.controller.js"></script>
+  <script src="screens/match/match.controller.js"></script>
+  <script src="screens/poke/poke.controller.js"></script>
+  <script src="screens/poked/poked.controller.js"></script>
+  <script src="screens/discovery/play-person-preview.factory.js"></script>
+  <script src="common/facebook.factory.js"></script>
+  <script src="common/gm-api.factory.js"></script>
+  <script src="common/facebook-app-id.constant.js"></script>
+  <script src="screens/menu/menu.directive.js"></script>
+  <script src="screens/pocket/pocket.directive.js"></script>
+  <script src="screens/sending-contact-card/sending-contact-card.controller.js"></script>
+  <script src="screens/receive-contact-card/receive-contact-card.controller.js"></script>
+  <script src="screens/discovery/play.directive.js"></script>
+  <script src="common/offClick.directive.js"></script>
+  <script src="screens/settings/settings.directive.js"></script>
+  <script src="common/aes.js"></script>
+  <script src="screens/confirm-passcode/confirm-passcode.controller.js"></script>
+  <script src="screens/add-passcode/add-passcode.controller.js"></script>
+  <script src="screens/change-passcode/change-passcode.controller.js"></script>
+</head>
+<body ng-app="givmeApp" ng-style="help_background" ng-controller="AppCtrl">
+<!--
+  The nav bar that will be updated as we navigate between views.
+-->
+<!--<ion-nav-bar class="bar-stable">-->
+<!--<ion-nav-back-button>-->
+<!--</ion-nav-back-button>-->
+<!--</ion-nav-bar>-->
+<!--
+  The views will be rendered in the <ion-nav-view> directive below
+  Templates are in the /templates folder (but you could also
+  have templates inline in this html file if you'd like).
+-->
+
+<ion-nav-view class="it" animation="slide-left-left"></ion-nav-view>
+<!--<div id="fb-root"></div>-->
+</body>
+</html>

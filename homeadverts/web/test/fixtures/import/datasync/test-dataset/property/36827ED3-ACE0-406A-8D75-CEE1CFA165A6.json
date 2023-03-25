@@ -1,0 +1,460 @@
+{
+    "listingSummary": {
+        "listingId": "36827ed3-ace0-406a-8d75-cee1cfa165a6",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-05-29",
+        "photoCount": 17,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 728000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "3 Almy Court",
+            "city": "Newport",
+            "district": "Newport County",
+            "stateProvince": "Rhode Island",
+            "stateProvinceCode": "RI",
+            "postalCode": "02840",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 41.46337,
+            "longitude": -71.30868,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "3 Almy Ct, Newport, RI 02840"
+        },
+        "geographicRegions": [
+            {
+                "type": "Neighbourhood",
+                "name": "Almy Pond"
+            }
+        ],
+        "mlsNumbers": [
+            "1193138"
+        ],
+        "RFGListingId": "6H7M7T",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/6h7m7t",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Single Family Detached",
+        "propertyStyle": "1 Level Ranch",
+        "propertyName": "'Pondelai'",
+        "totalBath": 1,
+        "lotSize": "14810 SF",
+        "buildingArea": "1676 Sq. Ft.",
+        "noOfBedrooms": 3,
+        "squareFootage": 1676,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/C78E367A-9A1D-4E40-A129-0EB5818DFB73",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-06-13T14:50:43.773",
+        "agents": [
+            {
+                "id": "54eb3792-86de-4700-9650-4ce993699443",
+                "name": "Wendy Murray",
+                "firstName": "Wendy",
+                "lastName": "Murray",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/569CC766-6C04-4E4B-9164-5AC5485E059F",
+                "emailAddress": "wmurray@tcsir.com",
+                "businessPhone": "3212433595",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "3985db2f-188e-4ebe-b010-172dbbc4fe49",
+                    "RFGOfficeId": "0003",
+                    "companyId": "a7f557c9-6264-4404-a4de-b12fd2e7b447",
+                    "companyName": "Treasure Coast",
+                    "RFGCompanyId": "800207",
+                    "brandCode": "SIR",
+                    "name": "Treasure Coast Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "301 Ocean Avenue",
+                        "city": "Melbourne Beach",
+                        "district": "Brevard",
+                        "stateProvince": "Florida",
+                        "stateProvinceCode": "FL",
+                        "postalCode": "32951",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 28.0636119842529,
+                        "longitude": -80.5585632324219,
+                        "formattedAddress": "301 Ocean Ave, Melbourne Beach, FL 32951"
+                    },
+                    "phoneNumber": "3219843135"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 1,
+    "providerKey": "36827ed3-ace0-406a-8d75-cee1cfa165a6",
+    "propertyFeatures": [
+        {
+            "groupName": "Garage Count",
+            "description": "2 Car Garage"
+        },
+        {
+            "groupName": "Heating Type",
+            "description": "Baseboard"
+        },
+        {
+            "groupName": "Flooring",
+            "description": "Hardwood"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Outdoor Activities"
+        },
+        {
+            "groupName": "General",
+            "description": "Ceiling Fan(s)"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Granite Countertops"
+        },
+        {
+            "groupName": "Age",
+            "description": "Over 50 Years Old"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Golf"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Aquatic Activities"
+        },
+        {
+            "groupName": "Location",
+            "description": "Ocean \/ Beach"
+        },
+        {
+            "groupName": "Road Type",
+            "description": "City \/ Town Street"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Boat Dock"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Boating"
+        },
+        {
+            "groupName": "Roof",
+            "description": "Asphalt Shingle Roof"
+        },
+        {
+            "groupName": "Special Market",
+            "description": "College \/ University"
+        },
+        {
+            "groupName": "Special Market",
+            "description": "Vacation \/ Second Home"
+        },
+        {
+            "groupName": "Fireplace Count",
+            "description": "1 Fireplace"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Boat Ramp"
+        },
+        {
+            "groupName": "Heating - Fuel Type",
+            "description": "Oil"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Fishing"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Biking"
+        },
+        {
+            "groupName": "Sewer",
+            "description": "City"
+        },
+        {
+            "groupName": "Basement",
+            "description": "Full"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Hiking"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Area Tennis"
+        },
+        {
+            "groupName": "Area Description",
+            "description": "Suburban"
+        },
+        {
+            "groupName": "Water",
+            "description": "City Water"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Premium Newport location off Coggeshall Avenue on a quiet cul-de-sac leading to Almy Pond. Single-level living with large windows offers peeks of the pond. Spacious rooms and hardwood floors throughout. Sited on a large lot, with opportunity for expansion. Separate two-car garage. Stroll down Coggeshall to the beach or Cliff Walk.",
+            "htmlRemark": "<p><span style=\"font-size: 12px;\">Premium Newport location off Coggeshall Avenue on a quiet cul-de-sac leading to Almy Pond. Single-level living with large windows offers peeks of the pond.&nbsp; Spacious rooms and hardwood floors throughout.&nbsp; Sited on a large lot, with opportunity for expansion.&nbsp; Separate two-car garage.&nbsp; Stroll down Coggeshall to the beach or Cliff Walk.&nbsp;<\/span><br><\/p>"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/6h7m7t",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "F482A567-1273-4F34-9034-02660C6A91D3",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/F482A567-1273-4F34-9034-02660C6A91D3",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.21.18",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1991,
+            "width": 3540,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "5E35A6A7-D3EB-417A-BBC4-02D0CCFA035E",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/5E35A6A7-D3EB-417A-BBC4-02D0CCFA035E",
+            "isDefault": false,
+            "caption": "DJI_0219",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 959,
+            "width": 1280,
+            "lastUpdateOn": "2018-05-29T17:10:10.373"
+        },
+        {
+            "mediaID": "C78E367A-9A1D-4E40-A129-0EB5818DFB73",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/C78E367A-9A1D-4E40-A129-0EB5818DFB73",
+            "isDefault": true,
+            "caption": "DJI_0324",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 825,
+            "width": 1280,
+            "lastUpdateOn": "2018-05-29T17:10:10.373"
+        },
+        {
+            "mediaID": "38CCF524-3D08-45E7-9580-227FA55599DD",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/38CCF524-3D08-45E7-9580-227FA55599DD",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.15.18",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1771,
+            "width": 3148,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "2A9755EE-272D-4ECB-B7A2-2495B879626D",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/2A9755EE-272D-4ECB-B7A2-2495B879626D",
+            "isDefault": false,
+            "caption": "Kitchen",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2277,
+            "width": 4048,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "218B7497-9104-4EBD-8AA3-29857C5D4084",
+            "sequenceNumber": 1,
+            "url": "https:\/\/my.matterport.com\/show\/?m=Zboa18UgGKu",
+            "isDefault": true,
+            "caption": "Matterport",
+            "format": "URL",
+            "category": "Virtual Tour",
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "E2AF4812-703A-4971-ABDC-367D41BB5507",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/E2AF4812-703A-4971-ABDC-367D41BB5507",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.15.33",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1771,
+            "width": 3148,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "2048402E-3DDB-47BA-8A9B-50ED290C0F52",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/2048402E-3DDB-47BA-8A9B-50ED290C0F52",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.20.35",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1593,
+            "width": 2832,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "02B9012E-87B3-442C-8ED2-5B6795D78328",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/02B9012E-87B3-442C-8ED2-5B6795D78328",
+            "isDefault": true,
+            "caption": "XAlmy3 FP",
+            "format": "Image",
+            "category": "Floor Plan",
+            "height": 2048,
+            "width": 2896,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "408CD85B-8D6C-4F0C-BA18-6D71CEEB58B6",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/408CD85B-8D6C-4F0C-BA18-6D71CEEB58B6",
+            "isDefault": false,
+            "caption": "DJI_0247",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 959,
+            "width": 1280,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "E9506743-2A13-4538-9D2B-79DE5F26E659",
+            "sequenceNumber": 1,
+            "url": "https:\/\/my.matterport.com\/show\/?m=Zboa18UgGKu",
+            "isDefault": true,
+            "caption": "Matterport",
+            "format": "3D Video",
+            "category": "3D Video",
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "646E6534-9FF1-4421-AFB7-7C33E108DD18",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/646E6534-9FF1-4421-AFB7-7C33E108DD18",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.16.09",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1771,
+            "width": 3148,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "4B2B184B-7A3C-45A3-B286-9A132922714C",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/4B2B184B-7A3C-45A3-B286-9A132922714C",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.18.38",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1771,
+            "width": 3148,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "39C8F236-C48A-4F26-AA85-BE8AFE8A638A",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/39C8F236-C48A-4F26-AA85-BE8AFE8A638A",
+            "isDefault": false,
+            "caption": "bath",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2277,
+            "width": 4048,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "179EBE0C-9D30-4769-B6BF-C75A1A5ABEAC",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/179EBE0C-9D30-4769-B6BF-C75A1A5ABEAC",
+            "isDefault": false,
+            "caption": "DJI_0345",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 959,
+            "width": 1280,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "0213F9B2-8DCE-45AA-8B21-CF1F8CC5FCDB",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/0213F9B2-8DCE-45AA-8B21-CF1F8CC5FCDB",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.21.41",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1991,
+            "width": 3540,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "4451443D-B8E2-4665-8181-DC53FC7673E6",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/4451443D-B8E2-4665-8181-DC53FC7673E6",
+            "isDefault": false,
+            "caption": "DJI_0274",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 959,
+            "width": 1280,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "43F0E57C-D78D-4B4D-A208-E29959944807",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/43F0E57C-D78D-4B4D-A208-E29959944807",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.16.58",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1771,
+            "width": 3148,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        },
+        {
+            "mediaID": "E60CF482-1886-426D-880E-FCEB66386279",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/E60CF482-1886-426D-880E-FCEB66386279",
+            "isDefault": false,
+            "caption": "Zboa18UgGKu - 05.24.2018_20.20.13",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1593,
+            "width": 2832,
+            "lastUpdateOn": "2018-06-05T18:35:36.873"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "1193138",
+            "isPrimary": true
+        }
+    ]
+}

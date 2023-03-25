@@ -1,0 +1,73 @@
+%table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:9px;" valign="top")
+        %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(style="width:600px;" valign="top" width="600" collspan="2")
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td(style="width: 100px;text-align: center;font-weight: 300;font-size:30px;color:#373737;padding:40px 0;" colspan="2" width="100" valign="top")
+                      Invoice No.#{@invoice.id} - #{@invoice.billing_period_start.year}
+                  %tr
+                    %td.mcnTextContent(style="padding-top:0; padding-bottom:9px;" valign="top" colspan="2")
+                      %p Dear #{@user.full_name.presence || 'customer'},
+
+                      %p Your Gett Business Solutions powered by One Transport invoice is attached and due for payment.
+
+                      %p Please pay by choosing one of the payment options below:
+                      
+                      %div
+                        %div(style="display: inline-block; vertical-align: top; color: #373737; font-size: 16px; font-weight: bold; width: 30px; height: 30px; border-radius: 50%; background-color: #fdb924; text-align: center; line-height: 30px; margin-right: 18px; margin-top: 6px;") 1
+                        %div(style="display: inline-block; vertical-align: top; width: 540px;")
+                          %p
+                            %strong Credit/Debit Card
+                          %p
+                            Please follow 
+                            %span= link_to('the link', root_url + 'settings/billing', style: 'font-weight: bold;')
+                            to login and go to Settings > Billing page.
+                      
+                      %div
+                        %div(style="display: inline-block; vertical-align: top; color: #373737; font-size: 16px; font-weight: bold; width: 30px; height: 30px; border-radius: 50%; background-color: #fdb924; text-align: center; line-height: 30px; margin-right: 18px; margin-top: 6px;") 2
+                        %div(style="display: inline-block; vertical-align: top; width: 540px;")
+                          %p
+                            %strong BACS
+                          %p
+                            Please use the following payment details and provide your
+                            invoice number as payment reference.
+                  %tr
+                    %td.mcnTextContent(style="padding-right:18px; padding-bottom:9px; color: #808080;" width="110" valign="top" colspan="2")
+                      %span(style="width: 125px; margin-right:20px; margin-left: 53px; display: inline-block; font-size: 14px;") Account name:
+                      %span(style="color: #000;") One Transport Limited
+                  %tr
+                    %td.mcnTextContent(style="padding-right:18px; padding-bottom:9px; color: #808080;" width="110" valign="top" colspan="2")
+                      %span(style="width: 125px; margin-right:20px; margin-left: 53px; display: inline-block; font-size: 14px;") Bank:
+                      %span(style="color: #373737;") JPMorgan Bank N.A
+                  %tr
+                    %td.mcnTextContent(style="padding-right:18px; padding-bottom:9px; color: #808080;" width="110" valign="top" colspan="2")
+                      %span(style="width: 125px; margin-right:20px; margin-left: 53px; display: inline-block; font-size: 14px;") Sort code:
+                      %span(style="color: #373737;") 609242
+                  %tr
+                    %td.mcnTextContent(style="padding-right:18px; padding-bottom:9px; color: #808080;" width="110" valign="top" colspan="2")
+                      %span(style="width: 125px; margin-right:20px; margin-left: 53px; display: inline-block; font-size: 14px;") Account number:
+                      %span(style="color: #373737;") 41401781
+                  %tr
+                    %td(colspan="2" style="font-weight:300;font-size:20px;text-align:center;padding:50px 0 30px 0;")
+                      If you have any questions — just let us know
+                  %tr(style="position: relative;")
+                    %td(style="padding: 20px 0px; text-align: center; background-color: #f9f9f9; border-top-left-radius: 10px; width: 50%; border-bottom-left-radius: 10px;line-height: 24px;")
+                      %div(style="border-right: 1px solid #d8d8d8;")
+                        = image_tag("mailer/phone.png", align: "center", alt: "", style: "max-width: 40px; margin:auto; padding: 10px 0 0 0; display: block;", width: "40")
+                        %p(style="font-size: 14px; color: #808080;")
+                          Call Us
+                          %br
+                        %p(style="color: #373737;")
+                          = link_to('0203 608 9312', 'tel:0203 608 9312', style: 'text-decoration:none; color: #373737;font-weight: 500;')
+                    %td(style="text-align: center; background-color: #f9f9f9; border-top-right-radius: 10px; width: 50%; border-bottom-right-radius: 10px;line-height: 24px;")
+                      = image_tag("mailer/email.png", align: "center", alt: "", style: "max-width: 36px; margin:auto; padding: 10px 0 0 0; display: block;", width: "36")                      
+                      %p(style="font-size: 14px; color: #808080;")
+                        Write us
+                        %br
+                      %p(style="color: #373737;")
+                        = link_to('contact.uk@gett.com', 'mailto:contact.uk@gett.com', style: 'text-decoration:none; color: #373737;font-weight: 500;')

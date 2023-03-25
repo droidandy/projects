@@ -1,0 +1,23 @@
+%table.mcnTextBlock(border="0" cellpadding="0" cellspacing="0" style="min-width:100%;" width="100%")
+  %tbody.mcnTextBlockOuter
+    %tr
+      %td.mcnTextBlockInner(style="padding-top:9px;" valign="top")
+        %table(align="left" border="0" cellpadding="0" cellspacing="0" style="width:100%;" width="100%")
+          %tr
+            %td(style="width:600px;" valign="top" width="600")
+              %table.mcnTextContentContainer(align="left" border="0" cellpadding="0" cellspacing="0" style="max-width:100%; min-width:100%;" width="100%")
+                %tbody
+                  %tr
+                    %td.mcnTextContent(style="padding-top:0; padding-right:18px; padding-bottom:9px; padding-left:18px;" valign="top")
+                      %p Dear #{@user.full_name},
+
+                      %p
+                        - if @ww_ride
+                          A work to work private hire journey (booking ref #{@booking.order_id}) has been booked for you which is over #{@user.mileage_limit} miles.
+                          As per the expenses policy http://home.gateway.bbc.co.uk/expensespolicy/index.html the portion over #{@user.mileage_limit} miles will be deducted from your salary (cost #{@excess_mileage_cost} pounds).
+                        - else
+                          Your taxi journey between home and work, booking reference #{@booking.order_id}, is over #{@company.travel_policy_mileage_limit} miles.
+                          The portion over #{@user.mileage_limit} miles will be deducted from your salary (cost #{@excess_mileage_cost} pounds).
+
+
+                      %p If you wish to cancel the booking contact the person who booked the journey or follow the link http://tbs.gateway.bbc.co.uk/Transport/Index.aspx?bookingtype=cab

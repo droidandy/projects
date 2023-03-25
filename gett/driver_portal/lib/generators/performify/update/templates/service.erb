@@ -1,0 +1,28 @@
+class <%= class_name %> < ApplicationService
+  attr_reader :updated_record
+
+  schema do
+    required(:record_id).filled(:int?)
+  end
+
+  def execute!
+    raise ActiveRecord::RecordNotFound unless record
+
+    authorize! record
+
+    super do
+      record.update attributes
+    end
+  end
+
+  on_success { @updated_record = record }
+  on_fail { errors!(record.errors.to_h) if record.present? }
+
+  def record
+    @record ||= Record::Search.new({ id: record_id }, current_user: current_user).one
+  end
+
+  private def attributes
+    {}
+  end
+end

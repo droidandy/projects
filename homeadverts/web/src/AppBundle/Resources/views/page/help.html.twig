@@ -1,0 +1,53 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    <div id="page-help" class="container">
+        <div class="row">
+            <div class="large-3 column help-sidebar">
+                <div class="help-sidebar-open">
+                    <i class="fa fa-chevron-left"></i> Content
+                </div>
+
+                <h1>Help & Support</h1>
+                <ul>
+                    <li class='help-sidebar-close'>
+                        <h1>Help & Support</h1>
+                        <i class='fa fa-times'></i>
+                    </li>
+                    {% for article in articles %}
+
+                        {% if article.title == "-" %}
+                            <li class="help-sidebar-separator"></li>
+                        {% else %}
+                            <li>
+                                <i class='fa fa-chevron-right'></i>
+                                <a href="{{ path('ha_help', {'token': article.token}) }}"
+                                   class="{% if article.token == token %}--active{% endif %}">
+                                    {{ article.title }}
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="large-9 column help-content">
+                {% for article in articles %}
+                    {% if article.token == token %}
+                        <div class="blog one-column --margin-bottom read-story" data-id="{{ article.id }}">
+                            <h1 class="heading story-title">
+                                <span id="story-title">{{ article.title|raw }}</span>
+                            </h1>
+
+                            <article class="story item">
+                                {{ article.body|raw }}
+                            </article>
+                        </div>
+
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+

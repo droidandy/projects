@@ -1,0 +1,37 @@
+@import "../../../styles/tools/mixins.scss";
+.componentVideosGroupCard {
+    .colThumbnail {
+        max-width:106px !important;
+        margin-right: 8px !important;
+        .ComponentVideoThumbnail {
+            width:106px;
+            height: 61px;
+            a {height: 61px;display: block;}
+            a:hover {text-decoration: none;}
+        }
+    }
+
+    .type {
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        a { color:var(--black-pearl);}
+
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .title {
+        font-family: var(--font-heading);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        a { color: var(--rosemary);}
+
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .badge {
+        margin-left: -.2em;
+    }
+
+}

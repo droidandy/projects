@@ -1,0 +1,1 @@
+export { PolicyItemDesktop } from './PolicyItemDesktop';

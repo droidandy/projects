@@ -1,0 +1,4 @@
+parameters:
+    media_upload_domains:
+      - %cdn.url%
+      - %s3.bucket.endpoint%

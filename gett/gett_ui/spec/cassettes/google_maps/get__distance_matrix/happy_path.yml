@@ -1,0 +1,68 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/distancematrix/json?channel=channel_name&client=gme-gtgettaxiservices&destinations=51.517297,-0.0823724&language=en&origins=51.523767,-0.1585557&signature=qjyZo2ebbiGrLuuhl7kPs41t72c=&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 08 Aug 2018 21:01:22 GMT
+      Expires:
+      - Thu, 09 Aug 2018 21:01:22 GMT
+      Server:
+      - mafe
+      Content-Length:
+      - '558'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - public, max-age=86400
+      Age:
+      - '2897'
+      Alt-Svc:
+      - quic=":443"; ma=2592000; v="44,43,39,35"
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+           "destination_addresses" : [ "23 Liverpool St, London EC2M 7RD, UK" ],
+           "origin_addresses" : [ "The Volunteer, 245-247 Baker St, Marylebone, London NW1 6XE, UK" ],
+           "rows" : [
+              {
+                 "elements" : [
+                    {
+                       "distance" : {
+                          "text" : "<%= distance || '4.1 mi' %>",
+                          "value" : 6672
+                       },
+                       "duration" : {
+                          "text" : "27 mins",
+                          "value" : 1604
+                       },
+                       "status" : "OK"
+                    }
+                 ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version:
+  recorded_at: Wed, 08 Aug 2018 21:49:39 GMT
+recorded_with: VCR 4.0.0

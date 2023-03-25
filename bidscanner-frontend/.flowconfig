@@ -1,0 +1,10 @@
+[ignore]
+
+[include]
+
+[libs]
+types/
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=.

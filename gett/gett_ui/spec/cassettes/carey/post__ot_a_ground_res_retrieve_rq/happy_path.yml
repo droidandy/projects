@@ -1,0 +1,196 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.carey.com/CSIOTAProxy_v2/CareyReservationService
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.opentravel.org/OTA/2003/05"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:OTA_GroundResRetrieveRQ><tns:POS><tns:Source><tns:RequestorID
+        MessagePassword="carey123" ID="testarranger@testnone.com" Type="TA"></tns:RequestorID><tns:BookingChannel
+        Type="TA"><tns:CompanyName Code="3dfb7b39fa5615fc105f62cf7dbc9bb0" CompanyShortName="PM54006"
+        CodeContext="54006">CSI - Gett</tns:CompanyName></tns:BookingChannel></tns:Source></tns:POS><tns:Reference
+        ID="WA10706729-1"></tns:Reference></tns:OTA_GroundResRetrieveRQ></env:Body></env:Envelope>
+    headers:
+      App-Id:
+      - 89e6c8c7
+      App-Key:
+      - 3dfb7b39fa5615fc105f62cf7dbc9bb0
+      X-Soap-Method:
+      - FindReservation
+      Soapaction:
+      - '"findReservation"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '729'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Aug 2018 19:59:46 GMT
+      Server:
+      - JBoss-EAP/7
+      X-Powered-By:
+      - Undertow/1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version=''1.0'' encoding=''UTF-8''?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><OTA_GroundResRetrieveRS
+        xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:ns2="http://www.opentravel.org/OTA/2003/05/alpha"
+        EchoToken="1" PrimaryLangID="1534967985bg4rR3hzIB" SequenceNmbr="15349678998361022897"
+        TimeStamp="2018-08-22T15:59:46Z" Version="1"><TPA_Extensions><Arranger AgencyNumber=""><Name><GivenName>admin</GivenName><Surname>admin</Surname><TPA_Extensions><ArrangerId>WA_AA_911602</ArrangerId></TPA_Extensions></Name><ContactInformation><Phone
+        Number="5555555555"/><Mobile CountryCode="1" CountryName="United States of
+        America">5555555555</Mobile><Email>testarranger@testnone.com</Email></ContactInformation></Arranger><IsModifyAllowed>true</IsModifyAllowed><IsReturnTripAllowed>true</IsReturnTripAllowed><CityTimeZone>America/New_York</CityTimeZone><ChargeDetails><Charges
+        BillingType="HOURLY" ReadBack="USD 84.94/hr  + Incidentals + Taxes and Government
+        Fees USD 8.56/hr"><Items><ItemFixed ReadBack="$ 0.00" SequenceNumber="4"><ItemName>Fuel
+        Surcharge</ItemName><ItemDescription>Fuel Surcharge</ItemDescription><ItemPrice
+        Currency="USD">0.00</ItemPrice></ItemFixed><ItemVariable ReadBack="$ 10.54/hr"
+        SequenceNumber="1"><ItemName>STC</ItemName><ItemDescription>STC</ItemDescription><ItemUnit
+        Unit="hr">1</ItemUnit><ItemUnitPrice Currency="USD">10.54</ItemUnitPrice></ItemVariable><ItemVariable
+        ReadBack="$ 6.44/hr" SequenceNumber="2"><ItemName>NY Sales Tax</ItemName><ItemDescription>NY
+        Sales Tax</ItemDescription><ItemUnit Unit="hr">1</ItemUnit><ItemUnitPrice
+        Currency="USD">6.44</ItemUnitPrice></ItemVariable><ItemVariable ReadBack="$
+        2.12/hr" SequenceNumber="3"><ItemName>NY State Surcharge</ItemName><ItemDescription>NY
+        State Surcharge</ItemDescription><ItemUnit Unit="hr">1</ItemUnit><ItemUnitPrice
+        Currency="USD">2.12</ItemUnitPrice></ItemVariable><ItemVariable ReadBack="$
+        12.40/hr" SequenceNumber="5"><ItemName>Gratuity</ItemName><ItemDescription>Suggested
+        Gratuity</ItemDescription><ItemUnit Unit="hr">1</ItemUnit><ItemUnitPrice Currency="USD">12.40</ItemUnitPrice></ItemVariable><ItemVariable
+        ReadBack="$ 62.00/hr" SequenceNumber="0"><ItemName>Base</ItemName><ItemDescription>Garage
+        to Garage</ItemDescription><ItemUnit Unit="hr">1</ItemUnit><ItemUnitPrice
+        Currency="USD">62.00</ItemUnitPrice><ItemUnitMinimum Unit="Hour">2</ItemUnitMinimum></ItemVariable></Items></Charges><AdditionalInfo><DisplayMessage
+        DisplayCode="P" Order="0">A minimum of 2.0 hours will be billed.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="16">STC is a surcharge based upon various overhead
+        expense items, some of which may not relate to the specific trip. The STC
+        is always calculated as a flat percentage of the base rate.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="18">The entire amount of all collected gratuities is
+        paid to your professional chauffeur. For your convenience, a suggested gratuity,
+        which is a percentage of the Base Rate, has been added to your bill. The amount
+        of any gratuity you pay is at your discretion.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="20">Estimate includes surcharge, fuel and airport fee.
+        Wait time, tolls, parking and local taxes that cannot be calculated prior
+        to service may apply and are excluded.  Additional service may change rate.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="24">Where hourly rates apply billing is garage to garage.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="26">Taxes and government fees include taxes imposed
+        by all levels of taxing authorities and government fees and surcharges.</DisplayMessage></AdditionalInfo></ChargeDetails><CancelPolicy>Changes
+        or cancellations must be made at least 2 hours prior to scheduled pick up
+        time to avoid fees</CancelPolicy><TermsAndConditions><DisplayMessage DisplayCode="P"
+        Order="100">We invite you to visit www.carey.com to confirm chauffeur services
+        worldwide, change reservations, view credit card receipts and explore the
+        multitude of services Carey offers.</DisplayMessage><DisplayMessage DisplayCode="H"
+        Order="108">Change, Cancellation and No Show Policies</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="116">For reservations in the United States, Canada
+        and Puerto Rico, a change fee or late cancellation fee of $75.00 will be charged,
+        unless the all-inclusive charge is less which then applies, to all transfer
+        or hourly reservations changed or cancelled within the minimum stated time
+        and prior to the scheduled pick up time in the city of service.  For all other
+        countries, the applicable base transfer rate applies, and for hourly service,
+        the change or late cancellation fee is equal to the hourly minimum*.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="124">A no show fee equal to the hourly minimum or base
+        transfer, as applicable, for the confirmed vehicle plus airport fee, fuel
+        surcharge, tolls, and parking, if applicable, will apply should the passenger
+        fail to cancel or meet the chauffeur at the designated pick up location for
+        all reservations*.</DisplayMessage><DisplayMessage DisplayCode="P" Order="132">To
+        avoid either a late cancellation or no show fee, the reservation(s) must be
+        cancelled in accordance with the cancellation policy noted in the email confirmation.  You
+        may either call 800.336.4646 or cancel the reservation at www.carey.com.  Outside
+        the United States and Canada, call +1.301.624.5006.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="140">If you experience difficulty locating your chauffeur,
+        please call the Service Provider telephone number listed in the email confirmation.  Leaving
+        the pick-up location without notifying Carey will result in a no-show fee.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="148">* Applies to all sedan, SUV, limousine and van
+        reservations where the pick up location is within the local city metropolitan
+        area.  The local city metropolitan area is defined as within 75 miles of the
+        city center.  All services outside the local city metropolitan area may be
+        assessed the actual drive time to/from the pick-up location.</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="156">NOTE: All Special Event Change and Cancellation
+        Policies supersede standard Change and Cancellation Policies and are noted
+        in the email confirmation.</DisplayMessage><DisplayMessage DisplayCode="H"
+        Order="164">Garage-to-Garage Calculations</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="172">Garage-to-Garage means charges are calculated
+        by applying the applicable hourly rate commencing from the time the chauffeur
+        departs the garage to begin service and continuing through such time the chauffeur
+        concludes service and returns to the garage. The minimum number of billable
+        hours appears in the estimate, however the actual billable hours may exceed
+        the minimum.  For services in Europe, a kilometer charge will also apply.</DisplayMessage><DisplayMessage
+        DisplayCode="H" Order="180">Wait Time - Airport Transfer</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="188">Wait time is not charged for commercial flights
+        unless customers choose to deviate from proceeding to the stated customer/chauffeur
+        meeting location.  In such instances, wait time beyond twenty (20) minutes
+        will incur the transfer base charge plus the hourly charge prorated in fifteen
+        (15) minute intervals.</DisplayMessage><DisplayMessage DisplayCode="H" Order="196">Wait
+        Time - Point-to-Point Transfer</DisplayMessage><DisplayMessage DisplayCode="P"
+        Order="204">Customers are permitted twenty (20) minutes of wait time after
+        the scheduled pickup time.  Wait time beyond the twenty (20) minutes will
+        incur the transfer base charge plus the hourly charge prorated in fifteen
+        (15) minute intervals.</DisplayMessage><DisplayMessage DisplayCode="H" Order="212">Extra
+        Stops</DisplayMessage><DisplayMessage DisplayCode="P" Order="220">Customers
+        are allowed to make one stop which does not exceed fifteen (15) minutes during
+        a transfer.  If the stop exceeds fifteen (15) minutes, the customer will be
+        charged the transfer base rate plus the hourly charge for the vehicle in fifteen
+        (15) minute increments up to forty-five (45) minutes (rounded up) for the
+        time that the chauffeur waits.  If there is more than one stop, or if the
+        one stop lasts more than forty-five (45) minutes, then the trip will convert
+        to an hourly charge.</DisplayMessage><DisplayMessage DisplayCode="H" Order="228">Surface
+        Transportation Charge (STC)</DisplayMessage><DisplayMessage DisplayCode="P"
+        Order="236">STC is a surcharge based upon various overhead expense items,
+        some of which may not relate to the specific trip.  The STC is always calculated
+        as a flat percentage of the base rate.</DisplayMessage><DisplayMessage DisplayCode="H"
+        Order="244">Suggested Gratuity</DisplayMessage><DisplayMessage DisplayCode="P"
+        Order="252">The entire amount of all collected gratuities is paid to your
+        professional chauffeur. For your convenience, a suggested gratuity, which
+        is a percentage of the Base Rate, has been added to your bill. The amount
+        of any gratuity you pay is at your discretion. </DisplayMessage><DisplayMessage
+        DisplayCode="H" Order="260">Incidentals</DisplayMessage><DisplayMessage DisplayCode="P"
+        Order="268">Certain charges that are in addition to base rates.  Includes
+        chauffeur hotel accommodations and meals, greeter fee, parking, port fee,
+        special requests and tolls. </DisplayMessage><DisplayMessage DisplayCode="H"
+        Order="276">Fuel Surcharge</DisplayMessage><DisplayMessage DisplayCode="P"
+        Order="284">For sedan, limousine and SUV services in the United States and
+        Canada, the Fuel Surcharge is calculated based on the Energy Information Agency''s
+        (EIA''s) published fuel pricing forecasts.  Quoted amount may differ from
+        billed amount based on forecast in effect when service is provided.  Fuel
+        surcharges for specialty vehicles, including vans, minibuses and motor coaches,
+        will vary.</DisplayMessage><DisplayMessage DisplayCode="H" Order="292">Rate
+        Estimate </DisplayMessage><DisplayMessage DisplayCode="P" Order="300">Rates
+        quoted prior to service are only an initial estimate of the cost of services
+        reserved. Wait time and/or additional services may change the final price.</DisplayMessage><DisplayMessage
+        DisplayCode="H" Order="308">Exchange Rate</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="316">Any quoted rate is based on the exchange rate
+        in effect at the time of booking.  The final bill will be calculated using
+        the exchange rate in effect at the time of billing.</DisplayMessage><DisplayMessage
+        DisplayCode="H" Order="324">Child Safety Seats</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="332">For safety reasons of providing age and weight
+        appropriate equipment, Carey does not provide child safety or booster seats.  However,
+        customers may provide and install their own child safety or booster seats.</DisplayMessage><DisplayMessage
+        DisplayCode="H" Order="340">Lost or Misplaced Items</DisplayMessage><DisplayMessage
+        DisplayCode="P" Order="348">Carey assumes no liability for any lost or misplaced
+        personal property or any other items.</DisplayMessage><DisplayMessage DisplayCode="P"
+        Order="356">See Carey''s Terms and Conditions at www.carey.com/termsandconditions
+        for complete details.</DisplayMessage></TermsAndConditions><ServiceProvider
+        PhoneNumber="1112223333" ShortName="Carey New York"/><GarageToGarageEstimate>Garage
+        to Garage. A minimum of 2.0 hours will be billed.</GarageToGarageEstimate><PuIntlFlag>false</PuIntlFlag><DoIntlFlag>false</DoIntlFlag><ServiceLevel>Standard</ServiceLevel><ServiceType>Inside
+        Sales</ServiceType><TotalAmount Currency="USD">$ 93.50 /hr</TotalAmount><PickUpSpecialInstructions></PickUpSpecialInstructions></TPA_Extensions><SummaryReservation><Confirmation
+        ID="WA10706729-1" Instance="Booked"><TPA_Extensions><NumberOfPassenger>1</NumberOfPassenger><SVCCity
+        svcCityId="WA_GC_89408" svcType="Premium"/><SpecialQuotes>N</SpecialQuotes></TPA_Extensions></Confirmation><Comments></Comments></SummaryReservation><DetailedReservation><Confirmation
+        ID="WA10706729-1" Instance="Booked"><TPA_Extensions><NumberOfPassenger>1</NumberOfPassenger><SVCCity
+        svcCityId="WA_GC_89408" svcType="Premium"/><SpecialQuotes>N</SpecialQuotes></TPA_Extensions></Confirmation><Passenger><Primary><PersonName><GivenName>adsfasd</GivenName><Surname>adfs</Surname></PersonName><Telephone
+        CountryAccessCode="1" PhoneNumber="3112222222" PhoneUseType="1"/><Email EmailType="com@fakemail.com">com@fakemail.com</Email><CustomerID
+        ID="WA_PS_4125711" Instance=""><TPA_Extensions><IsGuestBooking>false</IsGuestBooking></TPA_Extensions></CustomerID></Primary></Passenger><Service><Locations><Pickup
+        DateTime="2018-08-22T17:59:00"><Address Latitude="40.6892494" Longitude="-74.0445004"><AddressLine>New
+        York</AddressLine><CityName>New York</CityName><PostalCode>10004</PostalCode><StateProv
+        StateCode="NY">New York</StateProv><CountryName Code="US">United States</CountryName><TPA_Extensions/><LocationType>City</LocationType><LocationName></LocationName><Directions
+        Title=""/></Address></Pickup><Stops/><Dropoff><Address><AddressLine></AddressLine><AddressLine></AddressLine><CityName></CityName></Address></Dropoff></Locations><ServiceType
+        DisabilityVehicleInd="false" MaximumBaggage="4" MaximumPassengers="3"><ServiceLevel
+        Code="AsDirected" Description="Premium"/><VehicleType Code="ES03">Executive
+        Sedan</VehicleType></ServiceType></Service><RateQualifier AccountID="WA831732"
+        AccountName="TestAccount"/><TotalCharge RateTotalAmount="187.00"/><Comments></Comments></DetailedReservation></OTA_GroundResRetrieveRS></S:Body></S:Envelope>'
+    http_version:
+  recorded_at: Wed, 22 Aug 2018 19:59:46 GMT
+recorded_with: VCR 4.0.0

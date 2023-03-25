@@ -1,0 +1,141 @@
+services:
+    app.import_property_remover:
+        class: AppBundle\Import\Job\PropertyRemover
+        arguments:
+            - '@ha.property.property_es_mapping'
+            - '@database_connection'
+            - '@em'
+            - '@ha.import.image_cleaner'
+            - '@redis_client'
+            - '@ha.user.count_resolver'
+            - '@monolog.logger.import'
+    
+    
+    sothebys.user_receiver:
+        class: AppBundle\Import\User\BlockingUserReceiver
+        arguments:
+            - '@em'
+            - '@monolog.logger.import'
+            - '@ha.import.user_importer'
+            - '@ha.import.import_job_tracker'
+            - '@ha.import.event_dispatcher'
+            - '@ha.import.import_context'
+            - '@ha.import.queue_adapter'
+            
+    ha.import.user_remover:
+        class: AppBundle\Import\Job\UserRemover
+        arguments:
+            - '@db'
+            - '@ha.user.user_es_mapping'
+            - '@ha.user.count_resolver'
+
+    ha.import.user_importer:
+        class: AppBundle\Import\Job\UserImporter
+        arguments:
+            - '@user_repo'
+            - '@ha.import.user_entity_matcher'
+            - '@monolog.logger.import'
+            - '@em'
+            - '@ha.import.user_transformer'
+            - '@ha.import.user_skip_strategy'
+            - '@ha.import.import_job_tracker'
+            - '@ha.import.import_user_tracker'
+            - '@ha.import.source_ref_user_registry'
+
+    sothebys.datasync_extractor:
+        class: AppBundle\Import\Adapter\Realogy\Extraction\Extractor
+        arguments:
+            - '@import_job_repo'
+            - '@sothebys.datasync_extraction_strategy_factory'
+            - '@em'
+            - '@wellcomemat.feed'
+    
+    sothebys.datasync_extraction_strategy_factory:
+        class: AppBundle\Import\Adapter\Realogy\Extraction\StrategyFactory
+        arguments:
+            - '@import_job_repo'
+            - '@ha.import.datasync_client'
+            - '@ha.import.queue_adapter'
+            - '@user_repo'
+            - '@property_repo'
+            - '@ha.import.event_dispatcher'
+            
+    ha.import.normalised_entity_factory:
+        class: AppBundle\Import\Normalizer\NormalisedEntityFactory
+        arguments:
+            - '@ha.import.datasync_client'
+            - '@ha.import.datasync_company_normalizer'
+            - '@ha.import.datasync_office_normalizer'
+            - '@ha.import.datasync_user_normalizer'
+            - '@ha.import.datasync_property_normalizer'
+
+    ha.import.datasync_company_normalizer:
+        class: AppBundle\Import\Normalizer\Company\CompanyNormalizer
+    ha.import.datasync_office_normalizer:
+        class: AppBundle\Import\Normalizer\Office\OfficeNormalizer
+    ha.import.datasync_user_normalizer:
+        class: AppBundle\Import\Normalizer\User\UserNormalizer
+    ha.import.datasync_property_normalizer:
+        class: AppBundle\Import\Normalizer\Property\PropertyNormalizer
+        arguments:
+            - '@wellcomemat.feed'
+            - '@locale_helper'
+            - '@monolog.logger.import'
+
+    ha.import.datasync_client:
+        class: AppBundle\Import\Adapter\Realogy\DataSyncClient
+        factory: [AppBundle\Import\Adapter\Realogy\DataSyncClientBuilder, 'build']
+        arguments:
+            -   api_endpoint: '%datasync.api_endpoint%'
+                signature: '%datasync.signature%'
+                logger: '@monolog.logger.import'
+                response_saver_folder: '%ha.import.debug_dir%'
+                oauth:
+                    token_url: '%datasync.okta.token_url%'
+                    client_id: '%datasync.okta.client_id%'
+                    client_secret: '%datasync.okta.client_secret%'
+                    scope: '%datasync.okta.scope%'
+                    cache: '@redis_cache'
+                    cache_prefix: 'ha'
+            - [AppBundle\Import\Adapter\Realogy\Middleware, signature]
+            - [AppBundle\Import\Adapter\Realogy\Middleware, responseParser]
+            - [AppBundle\Import\Adapter\Realogy\Middleware, requestBuilder]
+            - [AppBundle\Import\Adapter\Realogy\Middleware, httpHandler]
+            - [AppBundle\Import\Adapter\Realogy\Middleware, responseSaver]
+
+    ha.import.worker_status_checker:
+        class: AppBundle\Import\Queue\WorkerStatusChecker
+
+    ha.import.queue_adapter:
+        class: AppBundle\Import\Queue\ResqueQueueAdapter
+        arguments:
+            - '@snc_redis.default_client'
+            - '@ha.import.worker_status_checker'
+            - '@monolog.logger.import'
+            - '@redis_client'
+
+    ha.import.queue_import_job_completeness_strategy:
+        class: AppBundle\Import\Queue\QueueImportCompletenessStrategy
+        arguments:
+            - '@em'
+            - '@ha.import.worker_status_checker'
+            - '@ha.import.queue_adapter'
+
+    ha.import.import_job_completeness_strategy:
+        class: AppBundle\Import\Queue\FlexImportCompletenessStrategy
+        arguments:
+            -   company: '@ha.import.queue_import_job_completeness_strategy'
+                office: '@ha.import.queue_import_job_completeness_strategy'
+                user: '@ha.import.queue_import_job_completeness_strategy'
+                property: '@ha.import.queue_import_job_completeness_strategy'
+
+    ha.importer:
+        class: AppBundle\Service\Import\Importer
+        arguments:
+            - @service_container
+
+
+    ha.importer_failed_property:
+        class: AppBundle\Service\Import\ImporterFailedProperty
+        arguments:
+            - @service_container

@@ -1,0 +1,27 @@
+.Modal {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        .close {
+            margin-right: 20px;
+            cursor: pointer;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .section-header {
+            margin-bottom: 0;
+        }
+    }
+
+    .content {
+        margin: 0 37px;
+        max-height: 100%;
+        overflow: scroll;
+    }
+}

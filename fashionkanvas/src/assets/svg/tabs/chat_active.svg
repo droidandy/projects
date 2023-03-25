@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Icon / Menu / Chat-on</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-Menu-/-Chat-on" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16.1666667,16.4444444 L12,22 L7.83333333,16.4444444 L4.29369823,16.4444444 C3.02692368,16.4444444 2,15.4175208 2,14.1507462 L2,4.29369823 C2,3.02692368 3.02692368,2 4.29369823,2 L19.7063018,2 C20.9730763,2 22,3.02692368 22,4.29369823 L22,14.1507462 C22,15.4175208 20.9730763,16.4444444 19.7063018,16.4444444 L16.1666667,16.4444444 Z" id="Combined-Shape" stroke="#FF6969" stroke-width="1.5"></path>
+        <path d="M7,7 L17,7" id="Line" stroke="#FF6969" stroke-width="1.5"></path>
+        <path d="M7,11 L17,11" id="Line" stroke="#FF6969" stroke-width="1.5"></path>
+    </g>
+</svg>

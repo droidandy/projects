@@ -1,0 +1,39 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ include "aou-backend.hasura-metadata.fullname" . }}
+  labels:
+    {{- include "aou-backend.labels" . | nindent 4 }}
+    component: hasura-metadata
+  annotations:
+    "helm.sh/hook": post-install,post-upgrade
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+    "helm.sh/hook-weight": "0"
+spec:
+  backoffLimit: 0
+  template:
+    metadata:
+      labels:
+        {{- include "aou-backend.selectorLabels" . | nindent 8 }}
+        component: hasura-metadata
+    spec:
+    {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+    {{- end }}
+      serviceAccountName: {{ include "aou-backend.serviceAccountName" . }}
+      containers:
+      - env:
+        - name: HASURA_ENDPOINT
+          value: "http://{{ include "aou-backend.hasura.fullname" . }}:{{ .Values.services.hasura.port }}"
+        {{- if .Values.hasura.adminSecret }}
+        - name: HASURA_GRAPHQL_ADMIN_SECRET
+          valueFrom:
+            secretKeyRef:
+              name: {{ include "aou-backend.hasura-secret.fullname" . }}
+              key: adminSecret
+        {{- end }}
+        name: hasura-metadata
+        image: "{{ .Values.image.repository }}:hasura-metadata-{{ .Chart.AppVersion }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+      restartPolicy: Never

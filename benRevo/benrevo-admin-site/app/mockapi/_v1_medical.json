@@ -1,0 +1,227 @@
+[
+  {
+    "planType": "HMO",
+    "planName": "",
+    "benefits": [
+      {
+        "sysName": "INDIVIDUAL_DEDUCTIBLE",
+        "name": "Deductible",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "INDIVIDUAL_OOP_LIMIT",
+        "name": "OOP Limit",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "PCP",
+        "name": "PCP",
+        "value": "",
+        "type": "DOLLAR"
+      }, {
+        "sysName": "SPECIALIST",
+        "name": "Specialist",
+        "value": "",
+        "type": "DOLLAR"
+      }, {
+        "sysName": "INPATIENT_HOSPITAL",
+        "name": "Inpatient Hospital",
+        "value": "",
+        "type": "PERCENT"
+      }, {
+        "sysName": "IP_COPAY_MAX",
+        "name": "Inpatient Copay Max",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "IP_COPAY_TYPE",
+        "name": "Inpatient Copay Type",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "OUTPATIENT_SURGERY",
+        "name": "Outpatient Surgery",
+        "value": "",
+        "type": "PERCENT"
+      }, {
+        "sysName": "EMERGENCY_ROOM",
+        "name": "Emergency Room",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "DEDUCTIBLE_TYPE",
+        "name": "Deductible Type",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "COMBINE_MED_RX_DEDUCTIBLE",
+        "name": "Combine Med/Rx Deductible",
+        "value": "",
+        "type": "STRING"
+      }, {
+        "sysName": "URGENT_CARE",
+        "name": "Urgent Care",
+        "value": "",
+        "type": "DOLLAR"
+      }
+    ]
+  }, {
+    "planType": "PPO",
+    "planName": "",
+    "benefits": [
+      {
+        "name": "Deductible",
+        "sysName": "INDIVIDUAL_DEDUCTIBLE",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Co-insurance",
+        "sysName": "CO_INSURANCE",
+        "typeIn": "PERCENT",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "OOP Limit",
+        "sysName": "INDIVIDUAL_OOP_LIMIT",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "PCP",
+        "sysName": "PCP",
+        "typeIn": "DOLLAR",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Specialist",
+        "sysName": "SPECIALIST",
+        "typeIn": "DOLLAR",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Inpatient Hospital",
+        "sysName": "INPATIENT_HOSPITAL",
+        "typeIn": "DOLLAR",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "IP Per-Occurrence Ded",
+        "sysName": "IP_PER_OCCURENCE_DEDUCTIBLE",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Outpatient Surgery",
+        "sysName": "OUTPATIENT_SURGERY",
+        "typeIn": "PERCENT",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Emergency Room",
+        "sysName": "EMERGENCY_ROOM",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Deductible Type",
+        "sysName": "DEDUCTIBLE_TYPE",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Combine Med/Rx Deductible",
+        "sysName": "COMBINE_MED_RX_DEDUCTIBLE",
+        "type": "STRING",
+        "value": ""
+      }
+    ]
+  }, {
+    "planType": "H.S.A",
+    "planName": "",
+    "benefits": [
+      {
+        "name": "Deductible",
+        "sysName": "INDIVIDUAL_DEDUCTIBLE",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Co-insurance",
+        "sysName": "CO_INSURANCE",
+        "typeIn": "PERCENT",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "OOP Limit",
+        "sysName": "INDIVIDUAL_OOP_LIMIT",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "PCP",
+        "sysName": "PCP",
+        "typeIn": "DOLLAR",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Specialist",
+        "sysName": "SPECIALIST",
+        "typeIn": "DOLLAR",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Inpatient Hospital",
+        "sysName": "INPATIENT_HOSPITAL",
+        "typeIn": "DOLLAR",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "IP Per-Occurrence Ded",
+        "sysName": "IP_PER_OCCURENCE_DEDUCTIBLE",
+        "type": "STRING",
+        "value": ""
+      }, {
+        "name": "Outpatient Surgery",
+        "sysName": "OUTPATIENT_SURGERY",
+        "typeIn": "PERCENT",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Emergency Room",
+        "sysName": "EMERGENCY_ROOM",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Deductible Type",
+        "sysName": "DEDUCTIBLE_TYPE",
+        "typeIn": "STRING",
+        "typeOut": "STRING",
+        "valueIn": "",
+        "valueOut": ""
+      }, {
+        "name": "Combine Med/Rx Deductible",
+        "sysName": "COMBINE_MED_RX_DEDUCTIBLE",
+        "type": "STRING",
+        "value": ""
+      }
+    ]
+  }
+]

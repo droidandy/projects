@@ -1,0 +1,16 @@
+.wrapper {
+  margin-left: -5px;
+}
+
+.rateItem {
+  color: #808080;
+  border: solid 2px #e2e2e2;
+  min-width: 40px;
+  min-height: 40px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.selected {
+  color: #373737;
+  border-color: #fdb924;
+}

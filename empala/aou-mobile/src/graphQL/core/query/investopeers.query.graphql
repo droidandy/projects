@@ -1,0 +1,16 @@
+query getInvestopeers {
+  topUsers {
+    ... on TopUsers {
+      users {
+        id
+        fullName
+        userName
+        bio
+        nFollowers
+        nHunches
+        nStacks
+        avatar
+      }
+    }
+  }
+}

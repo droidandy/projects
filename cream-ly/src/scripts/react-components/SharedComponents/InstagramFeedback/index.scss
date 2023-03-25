@@ -1,0 +1,24 @@
+
+@import "../../../../styles/tools/mixins.scss";
+
+.InstagramFeedback {
+
+  @include defaultText;
+  @include spacingBottom;
+  @include maxWidthPage;
+
+  .section-header {
+    padding:0;
+    @include spacingBottomSmall;
+    h1, h2 {
+      margin: 0;
+    }
+  }
+
+  .subTitle {
+    text-align: center;
+    @include maxWidthPage;
+    @include spacingBottomSmall;
+  }
+
+}

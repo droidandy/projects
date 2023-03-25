@@ -1,0 +1,4 @@
+export default {
+  USER_SEARCH: 'USER_SEARCH',
+  USER_SEARCH_CLEAR: 'USER_SEARCH_CLEAR',
+};

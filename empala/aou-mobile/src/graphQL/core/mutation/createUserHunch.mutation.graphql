@@ -1,0 +1,21 @@
+mutation CreateUserHunch($createUserHunchData: CreateHunchInput!) {
+  createUserHunch(data: $createUserHunchData) {
+    ... on CreateUserHunchSuccess {
+      hunch {
+        id
+        targetPrice
+        instrument {
+          id
+        }
+        byDate
+      }
+    }
+    ... on InstNotFoundError {
+      message
+    }
+    ... on CreateInvalidInputError {
+      message
+      errorCode
+    }
+  }
+}

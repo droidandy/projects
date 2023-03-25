@@ -1,0 +1,1 @@
+export { CascoText } from './CascoText';

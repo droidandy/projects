@@ -1,0 +1,39 @@
+.tab-login {
+  ion-navbar {
+    background-color: none;
+  }
+}
+
+.tab-login-form {
+  a,p {color: white;}
+  ion-item.item {
+    background: none;
+    border-top:none;
+    padding-left: 0;
+    padding-right: 0;
+    // border-bottom:1px solid transparentize(white, 0.5);;
+    .item-inner .input-wrapper ion-label {
+      color:transparentize(white, 0.5);
+    }
+    ion-input input.text-input {
+      color: white;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  button {
+    margin:40px 0;
+  }
+}
+
+.terms-and-services {
+  position: absolute;
+  bottom: 10px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  left:0;
+  right:0;
+  font-size: 10px;
+  font-weight: normal;
+}

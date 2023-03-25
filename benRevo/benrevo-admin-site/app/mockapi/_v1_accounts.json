@@ -1,0 +1,42 @@
+[
+  {
+    "created": "02.04.17",
+    "agentVerified": false,
+    "agentEmail": "agent@mail.com",
+    "agentName": "Agent Name",
+    "brokerAddress": "string",
+    "brokerCity": "string",
+    "brokerEmail": "broker@mail.com",
+    "brokerId": null,
+    "brokerName": "Broker",
+    "brokerState": "California",
+    "brokerZip": "string",
+    "gaAddress": "string",
+    "gaCity": "string",
+    "gaId": null,
+    "gaName": "GA",
+    "gaState": "California",
+    "gaZip": "string",
+    "id": 5
+  },
+  {
+    "created": "02.04.17",
+    "agentVerified": true,
+    "agentEmail": "agent@mail.com",
+    "agentName": "Agent Name",
+    "brokerAddress": "string",
+    "brokerCity": "string",
+    "brokerEmail": "broker@mail.com",
+    "brokerId": null,
+    "brokerName": "string",
+    "brokerState": "California",
+    "brokerZip": "string",
+    "gaAddress": "string",
+    "gaCity": "string",
+    "gaId": null,
+    "gaName": "Broker",
+    "gaState": "California",
+    "gaZip": "string",
+    "id": 2
+  }
+]

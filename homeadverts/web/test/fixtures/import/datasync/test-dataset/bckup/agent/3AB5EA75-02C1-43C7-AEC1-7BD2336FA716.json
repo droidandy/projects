@@ -1,0 +1,114 @@
+{
+    "agentSummary": {
+        "id": "3ab5ea75-02c1-43c7-aec1-7bd2336fa716",
+        "isAgent": true,
+        "name": "Kirsten Cole",
+        "firstName": "Kirsten",
+        "lastName": "Cole",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/7CBA9BC4-6B48-4D40-9154-09EE483E7B4F",
+        "emailAddress": "kirsten.cole@vistasir.com",
+        "leadEmailAddress": "800171.lead.4036333@leads.leadrouter.com",
+        "businessPhone": "3107563524",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "a8cdc22c-12d0-450a-ac2e-cced01cbef97",
+            "RFGOfficeId": "0005",
+            "companyId": "a1b39eff-560a-4437-967c-fcf08187e624",
+            "companyName": "Vista",
+            "RFGCompanyId": "800171",
+            "brandCode": "SIR",
+            "name": "Vista Sotheby's International Realty",
+            "type": "Main office",
+            "officeAddress": {
+                "streetAddress": "2501 N. Sepulveda Boulevard 2nd Floor",
+                "city": "Manhattan Beach",
+                "district": "Los Angeles",
+                "stateProvince": "California",
+                "stateProvinceCode": "CA",
+                "postalCode": "90266",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 33.89509,
+                "longitude": -118.39635,
+                "formattedAddress": "2501 N Sepulveda Blvd, Manhattan Beach, CA 90266"
+            },
+            "phoneNumber": "3105467611"
+        }
+    },
+    "personId": "27fbb3b0-d829-4cfe-a4c1-a506246d35a7",
+    "lastUpdateOn": "2017-12-09T14:14:42.190",
+    "roles": [
+        {
+            "office": {
+                "officeId": "a8cdc22c-12d0-450a-ac2e-cced01cbef97",
+                "RFGOfficeId": "0005",
+                "companyId": "a1b39eff-560a-4437-967c-fcf08187e624",
+                "companyName": "Vista",
+                "RFGCompanyId": "800171",
+                "brandCode": "SIR",
+                "name": "Vista Sotheby's International Realty",
+                "type": "Main office",
+                "officeAddress": {
+                    "streetAddress": "2501 N. Sepulveda Boulevard 2nd Floor",
+                    "city": "Manhattan Beach",
+                    "district": "Los Angeles",
+                    "stateProvince": "California",
+                    "stateProvinceCode": "CA",
+                    "postalCode": "90266",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 33.89509,
+                    "longitude": -118.39635,
+                    "formattedAddress": "2501 N Sepulveda Blvd, Manhattan Beach, CA 90266"
+                },
+                "phoneNumber": "3105467611"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "kirsten.cole@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "7CBA9BC4-6B48-4D40-9154-09EE483E7B4F",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/7CBA9BC4-6B48-4D40-9154-09EE483E7B4F",
+            "isDefault": true,
+            "caption": "Kirsten Cole",
+            "shortDescription": "Kirsten",
+            "htmlDescription": "Kirsten",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:14:42.177"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Kirsten Cole started her real estate career as a child stuffing flyers for her father and worked for his brokerage company in high school. She studied organizational communication and business at Arizona State University and worked as a retail multi-level manager for many years. After honing her skills in customer service, communication, time management and follow-through during her retail career, Kirsten's transition to real estate was seamless. She has been with South Bay Brokers since 2003. Kirsten is married with a son and a daughter. She enjoys all sports, especially walking and jogging at The Strand and playing with her kids at the beach and local parks. What would you like potential clients to know about you? \"I put myself in th     eir shoes and give them advice as if it were my own personal investment. I strive to earn my clients' trust and business for life. Almost 100% of my business is from past clients hiring me again or referring me to their friends, family or co-workers.\"What does it take to be the best in the business? \"You need to be available 24\/7 and constantly network in order to be an expert in your field. I have sold many off-market listings by my participation in local networking groups.\"How do you give back to your community? \"My daughter, Katie, has Down syndrome. I donate a portion of my proceeds to the Down syndrome Research and Treatment Foundation. I lost my little sister, Kendra, to breast cancer, so I walk and donate to    various cancer research organizations in her honor. I am a member of Commissions for Education and donate a portion of my commissions to our local schools.\"Who is your typical client? \"I work with a lot of sellers since I have a reputa     tion for doing what it takes to ensure my clients receive the best possible price. I also work with investors, clients who are upsizing or downsizing, first-time home buyers, people relocating and distressed sellers. I specialize in helping buyers purchase bank-owned or short sale properties.\"What keeps you interested in real estate? \"I'm constantly meeting new clients and am also thrilled when I can work with past clients again. Every day is different. I get to spend time doing my fav     orite thing . helping clients in the South Bay.\"",
+            "htmlRemark": "Kirsten Cole started her real estate career as a child stuffing flyers for her father and worked for his brokerage company in high school. She studied organizational communication and business at Arizona State University and worked as a retail multi-level manager for many years. After honing her skills in customer service, communication, time management and follow-through during her retail career, Kirsten's transition to real estate was seamless. She has been with South Bay Brokers since 2003. Kirsten is married with a son and a daughter. She enjoys all sports, especially walking and jogging at The Strand and playing with her kids at the beach and local parks. <br\/><br\/>What would you like potential clients to know about you? <br\/>\"I put myself in th     eir shoes and give them advice as if it were my own personal investment. I strive to earn my clients' trust and business for life. Almost 100% of my business is from past clients hiring me again or referring me to their friends, family or co-workers.\"<br \/><br\/>What does it take to be the best in the business? <br\/>\"You need to be available 24\/7 and constantly network in order to be an expert in your field. I have sold many off-market listings by my participation in local networking groups.\"<br\/><br      \/>How do you give back to your community? <br\/>\"My daughter, Katie, has Down syndrome. I donate a portion of my proceeds to the Down syndrome Research and Treatment Foundation. I lost my little sister, Kendra, to breast cancer, so I walk and donate to    various cancer research organizations in her honor. I am a member of Commissions for Education and donate a portion of my commissions to our local schools.\"<br\/><br\/>Who is your typical client? <br\/>\"I work with a lot of sellers since I have a reputa     tion for doing what it takes to ensure my clients receive the best possible price. I also work with investors, clients who are upsizing or downsizing, first-time home buyers, people relocating and distressed sellers. I specialize in helping buyers purchase bank-owned or short sale properties.\"<br\/><br\/>What keeps you interested in real estate? <br\/>\"I'm constantly meeting new clients and am also thrilled when I can work with past clients again. Every day is different. I get to spend time doing my fav     orite thing . helping clients in the South Bay.\"\n"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "CA",
+            "number": "01450452",
+            "issuedOn": "2016-08-30"
+        }
+    ]
+}

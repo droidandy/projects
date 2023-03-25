@@ -1,0 +1,25 @@
+services:
+    ha_statistics:
+        class: AppBundle\Service\Statistics\Statistics
+        arguments:
+            - @doctrine.orm.default_entity_manager
+            - @statistics_repo
+
+    ha_statistics_aggregation:
+        class: AppBundle\Service\Statistics\StatisticsAggregation
+        arguments:
+            - @doctrine.orm.default_entity_manager
+            - @statistics_repo
+
+    ha.import.import_reporter:
+        class: AppBundle\Service\Report\ImportReporter
+        arguments:
+            - '@ha.import.import_mailer'
+            - '@property_repo'
+            - '@user_repo'
+            - '@ha.import.execution_time_tracker'
+
+    ha.database_reporter:
+        class: AppBundle\Service\Report\DbReporter
+        arguments:
+            - '@em'

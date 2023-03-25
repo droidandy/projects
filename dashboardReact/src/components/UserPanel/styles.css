@@ -1,0 +1,41 @@
+.user_inner {
+    -webkit-mask-image: url("../__assets__/user.svg");
+    mask-image: url("../__assets__/user.svg");
+    width: 28px;
+    height: 28px;
+    background-color: rgb(250, 250, 250);
+}
+.subscribers_user_block {
+    width: 28px;
+    height: 28px;
+    background-color: #c6d92c;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.gofundis_user_block {
+    width: 28px;
+    height: 28px;
+    background-color: #fbaa1a;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.inline_items {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+}
+.row_items {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,178 @@
+{
+  "planId":17,
+  "carrier":"Blue Shield",
+  "label":null,
+  "name":"test",
+  "type":"HMO",
+  "employer":52.0,
+  "employee":468.0,
+  "total":520.0,
+  "tier1Rate":null,
+  "tier2Rate":null,
+  "tier3Rate":null,
+  "tier4Rate":null,
+  "quoteType":null,
+  "rx":[
+    {
+      "sysName":"RX_INDIVIDUAL_DEDUCTIBLE",
+      "name":"Rx Individual Deductible",
+      "value":"N/A",
+      "type":"STRING"
+    },
+    {
+      "sysName":"RX_FAMILY_DEDUCTIBLE",
+      "name":"Rx Family Deductible",
+      "value":"N/A",
+      "type":"STRING"
+    },
+    {
+      "sysName":"MEMBER_COPAY_TIER_1",
+      "name":"Member Copay Tier 1",
+      "value":"N/A",
+      "type":"STRING"
+    },
+    {
+      "sysName":"MEMBER_COPAY_TIER_2",
+      "name":"Member Copay Tier 2",
+      "value":"N/A",
+      "type":"STRING"
+    },
+    {
+      "sysName":"MEMBER_COPAY_TIER_3",
+      "name":"Member Copay Tier 3",
+      "value":"N/A",
+      "type":"STRING"
+    },
+    {
+      "sysName":"MEMBER_COPAY_TIER_4",
+      "name":"Member Copay Tier 4",
+      "value":"N/A",
+      "type":"STRING"
+    },
+    {
+      "sysName":"MAIL_ORDER",
+      "name":"Mail Order",
+      "value":"N/A",
+      "type":"STRING"
+    }
+  ],
+  "benefits":[
+    {
+      "sysName":"INDIVIDUAL_DEDUCTIBLE",
+      "name":"Deductible - Individual",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":1
+    },
+    {
+      "sysName":"INDIVIDUAL_OOP_LIMIT",
+      "name":"OOPM - Individual",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":4
+    },
+    {
+      "sysName":"PCP",
+      "name":"PCP",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":6
+    },
+    {
+      "sysName":"SPECIALIST",
+      "name":"Specialist",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":7
+    },
+    {
+      "sysName":"INPATIENT_HOSPITAL",
+      "name":"Inpatient Hospital",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":8
+    },
+    {
+      "sysName":"IP_COPAY_MAX",
+      "name":"Inpatient Copay Max",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":9
+    },
+    {
+      "sysName":"IP_COPAY_TYPE",
+      "name":"Inpatient Copay Type",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":10
+    },
+    {
+      "sysName":"OUTPATIENT_SURGERY",
+      "name":"Outpatient Surgery",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":13
+    },
+    {
+      "sysName":"EMERGENCY_ROOM",
+      "name":"Emergency Room",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":14
+    },
+    {
+      "sysName":"DEDUCTIBLE_TYPE",
+      "name":"Deductible Type",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":15
+    },
+    {
+      "sysName":"COMBINE_MED_RX_DEDUCTIBLE",
+      "name":"Combine Med/Rx Deductible",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":16
+    },
+    {
+      "sysName":"URGENT_CARE",
+      "name":"Urgent Care",
+      "value":"-",
+      "type":"STRING",
+      "ordinal":17
+    }
+  ],
+  "cost":[
+    {
+      "sysName":null,
+      "name":"Monthly cost",
+      "value":"520.0",
+      "type":"DOLLAR"
+    },
+    {
+      "sysName":null,
+      "name":"% change from current",
+      "value":"0.0",
+      "type":"PERCENT"
+    },
+    {
+      "sysName":null,
+      "name":"Employee Only",
+      "value":"11.0",
+      "type":"DOLLAR"
+    },
+    {
+      "sysName":null,
+      "name":"Employee + 1",
+      "value":"10.0",
+      "type":"DOLLAR"
+    },
+    {
+      "sysName":null,
+      "name":"Employee + 2 or more",
+      "value":"10.0",
+      "type":"DOLLAR"
+    }
+  ],
+  "selected":false
+}

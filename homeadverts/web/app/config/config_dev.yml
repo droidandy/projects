@@ -1,0 +1,39 @@
+imports:
+    - { resource: config.yml }
+    - { resource: parameters_dev.yml }
+
+framework:
+    router:
+        resource: "%kernel.root_dir%/config/routing/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+
+monolog:
+    handlers:
+        main:
+            type:  stream
+            path:  %kernel.logs_dir%/%kernel.environment%.log
+            level: debug
+            channels: ["!import"]
+        import:
+            type:  stream
+            path:  %kernel.logs_dir%/errors.import.%kernel.environment%.log
+            level: debug
+            channels: [import]
+
+web_profiler:
+    toolbar: false
+    intercept_redirects: false
+    
+assetic:
+    use_controller: false
+
+swiftmailer:
+    spool:
+        type: memory
+    transport: smtp
+    host:      smtp.mailtrap.io
+    username:  ca2808f405b7b5
+    password:  255e6013aa13db
+    auth_mode: cram-md5
+    port: 2525

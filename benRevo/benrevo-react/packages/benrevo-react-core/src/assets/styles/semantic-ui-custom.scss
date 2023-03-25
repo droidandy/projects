@@ -1,0 +1,140 @@
+@import 'variables-theme';
+@import 'semantic-ui-modules/dropdown';
+@import 'semantic-ui-modules/checkbox';
+@import 'semantic-ui-modules/form';
+@import 'semantic-ui-modules/dropzone';
+@import 'semantic-ui-modules/menu';
+@import 'semantic-ui-modules/popup';
+@import 'semantic-ui-modules/button';
+@import 'semantic-ui-modules/toggle-button';
+@import 'semantic-ui-modules/input';
+@import 'semantic-ui-modules/datepicker';
+@import 'semantic-ui-modules/count';
+@import 'semantic-ui-modules/textarea';
+@import 'semantic-ui-modules/tabs';
+
+/* Header */
+
+.warningIcon{float:left; margin-right: 10px;}
+
+.ui.header {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ui.message {text-align: left;}
+
+/* List */
+
+.ui.list.divided {
+  & > .item {
+    border-top: 1px solid #eee;
+  }
+}
+
+/* Button */
+
+.ui.small.button, .ui.small.buttons .ui.small.buttons .or  {
+  height: 35px;
+  font-size: 13px;
+  line-height: 5px;
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  color: $INPUT_COLOR;
+  font-size: 14px;
+  font-family: $MAIN_FONT;
+  font-weight: 600;
+
+  &.large {
+    font-size: 18px;
+  }
+
+  &.orange {
+    background-color: $ELEM_ORANGE_COLOR !important;
+
+    &:hover, &:focus {
+      background-color: $ELEM_ORANGE_COLOR_HOVER !important;
+    }
+  }
+
+  &.violet {
+    background-color: $VIOLET_COLOR !important;
+
+    &:hover {
+      background-color: $VIOLET_COLOR_HOVER !important;
+    }
+  }
+
+  &.toggle.medium {
+    &.selected-button {
+      padding: 0;
+      background-color: $ELEM_ACTIVE_COLOR;
+      color: #ffffff;
+
+      &.active {
+        background: $BUTTON_DISABLED_COLOR url(../img/svg/button-success.svg) 10px center no-repeat !important;
+        color: $INPUT_COLOR !important;
+        padding: 0 0 0 20px;
+      }
+
+      &:hover {
+        background-color: $ELEM_ACTIVE_COLOR_HOVER;
+      }
+    }
+  }
+}
+
+.ui.basic.button, .ui.basic.buttons .button {
+  border: 1px solid $BUTTON_BORDER_COLOR;
+  color: $INPUT_COLOR;
+  font-weight: 400;
+  border-radius: 4px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+
+  &:active, &:focus {
+    background-color: transparent !important;
+    color: $INPUT_COLOR !important;
+    box-shadow: none;
+  }
+}
+
+.ui.primary.button, .ui.primary.buttons .button {
+  background-color: $ELEM_ACTIVE_COLOR;
+  font-weight: 400;
+  border-radius: 4px;
+  box-shadow: none;
+  border: none;
+
+  &:hover {
+    background-color: $ELEM_ACTIVE_COLOR_HOVER;
+  }
+
+  &:active, &:focus {
+    background-color: $ELEM_ACTIVE_COLOR;
+  }
+}
+
+//.ui.button.toggle, .ui.buttons .button.toggle, .ui.buttons .or.toggle {padding-left: 5%; padding-right: 5%;}
+//.ui.buttons .button {padding-left: 8%!important; padding-right: 8% !important; padding-top: 8% !important; padding-bottom: 8% !important}
+
+//@media only screen and (max-width: 1199px) and (min-width: 992px) {
+//  .ui.pointing.label:before {display: none;}
+//  .ui.pointing.label {margin: 10px 0 !important; }
+//  .ui.buttons .button {padding: 24px !important; }
+//}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .ui.pointing.label:before {display: none;}
+  .ui.pointing.label {margin: 10px 0 !important; }
+  .ui.buttons .button {padding: 24px !important; }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.buttons {flex-direction: column !important;}
+  .ui.pointing.label:before {display: none;}
+  .ui.pointing.label {margin: 10px 0 !important; width:100%;}
+}

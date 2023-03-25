@@ -1,0 +1,37 @@
+.follow-button {
+
+  .unfollow {
+    display: none;
+  }
+  .following {
+    display: none;
+  }
+  .follow {
+    display: block;
+  }
+
+  &.\--following {
+    .unfollow {
+      display: none;
+    }
+    .following {
+      display: block;
+    }
+    .follow {
+      display: none;
+    }
+
+    &:hover {
+      .unfollow {
+        display: block;
+      }
+      .following {
+        display: none;
+      }
+      .follow {
+        display: none;
+      }
+    }
+  }
+
+}

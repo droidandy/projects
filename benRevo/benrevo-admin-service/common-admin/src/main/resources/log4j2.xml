@@ -1,0 +1,64 @@
+<Configuration monitorInterval="60">
+    <Properties>
+        <Property name="log-path">logs</Property>
+        <Property name="console_pattern">[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%c] (%t) (%X) - %msg%n</Property>
+        <Property name="file_pattern">[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%c] (%t) (%X) - %msg%n</Property>
+        <Property name="token">$${env:SPLUNK_HEC_TOKEN}</Property>
+        <Property name="carrier">$${env:APP_CARRIER}</Property>
+    </Properties>
+
+    <Appenders>
+        <CustomHttp name="Splunk"
+                    url="https://input-prd-p-nqnkfv6k67mr.cloud.splunk.com:8088"
+                    token="${token}"
+                    app_carrier="${carrier}"
+                    disableCertificateValidation="true"
+                    batch_size_count="10">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%c] (%t) (%X) - %msg%n"/>
+        </CustomHttp>
+
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>
+                    ${console_pattern}
+                </pattern>
+            </PatternLayout>
+        </Console>
+        <RollingFile name="File-Appender" fileName="${log-path}/info.log"
+                     filePattern="${log-path}/info-%d{yyyy-MM-dd}-%i.log.gz">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>
+                    ${file_pattern}
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+        <RollingFile name="File" fileName="${log-path}/error.log"
+                     filePattern="${log-path}/error-%d{yyyy-MM-dd}-%i.log.gz">
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout>
+                <pattern>
+                    ${file_pattern}
+                </pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console-Appender"/>
+            <AppenderRef ref="File-Appender"/>
+            <AppenderRef ref="File"/>
+            <AppenderRef ref="Splunk"/>
+        </Root>
+    </Loggers>
+</Configuration>

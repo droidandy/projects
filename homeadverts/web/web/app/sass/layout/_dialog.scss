@@ -1,0 +1,38 @@
+dialog {
+  position: fixed;
+  max-width: 100vw;
+  max-height: 100vh;
+  top: 50%;
+  opacity: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: translate(0, -50%);
+
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.05),
+  0 11px 15px -7px rgba(0, 0, 0, 0.05),
+  0 24px 38px 3px rgba(0, 0, 0, 0.05) !important;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  &.\--shown {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: $tablet_width - 1px) {
+  dialog {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    transform: scale(0.8);
+
+    &.\--shown {
+      transform: scale(1);
+    }
+  }
+}

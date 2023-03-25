@@ -1,0 +1,10 @@
+fragment ThemesFields on Themes {
+    themes {
+        id
+        name
+        instruments {
+            id
+            description
+        }
+    }
+}

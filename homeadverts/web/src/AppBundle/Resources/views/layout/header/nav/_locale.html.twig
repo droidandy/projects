@@ -1,0 +1,10 @@
+{% set route_name = app.request.attributes.get('_route') ?: 'ha_homepage' %}
+{% set route_params = app.request.attributes.get('_route_params') ?: {} %}
+
+{% for locale in availableLocales() %}
+    <li class="{{ locale.status }}">
+        <a href="{{ path(route_name, route_params|merge({'_locale': locale.iso_code})) }}">
+            {{ locale.language }}
+        </a>
+    </li>
+{% endfor %}

@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title>
+      <span>{{ 'APPLIED' | translate }}</span>
+    </ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+    <ion-row>
+      <p class="joboffers_head">{{ 'DOUBLEECLICKHINT' | translate }}.</p>
+    </ion-row>
+
+    <ion-list>
+      <ion-item (click)="openJoboffer(job)" *ngFor="let job of appliedJob">
+        <span class="left_list">
+          <img-loader src="{{job.img}}" *ngIf="job.img != ''" tappable useImg  ></img-loader>
+          <img-loader src="assets/images/set.png" *ngIf="job.img == ''" tappable useImg  ></img-loader>
+        </span>
+        <span class="left_list_total">
+          <span class="middle_list">
+            <h3>{{job.title|CapitalizeFirstLetter}}</h3>
+            <p>{{job.hiring|CapitalizeFirstLetter}} . {{job.typeJob|CapitalizeFirstLetter}} . {{job.currency|CurrencySymbol}}{{job.amount}}/{{job.periodical}} </p>
+            <p *ngIf="job.isPost==false">{{ 'DRAFT' | translate }}</p>
+            <p *ngIf="job.isPost">{{job.applicationCount ? job.applicationCount : 0 }} applications</p>
+          </span>
+          <span class="right_list">
+             <ion-icon name="arrow-forward" class="plus"></ion-icon>
+             <span>{{job.dateCreated | DateFormat}}</span>
+          </span>
+          <!-- <span class="expire_cover">This job has expired.  <span>OK</span></span> -->
+        </span>
+      </ion-item>
+
+    </ion-list>
+
+</ion-content>

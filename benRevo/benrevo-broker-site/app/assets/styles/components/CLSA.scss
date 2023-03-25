@@ -1,0 +1,120 @@
+@import "../variables-theme";
+
+.ui.modal.clsa {
+  .close {
+    @include lineCloseButton();
+    font-size: 28px;
+  }
+  .clsa-inner {
+    .clsa-left {
+      font-weight: 200;
+      font-size: 16px;
+      padding: 50px 60px;
+      -webkit-box-shadow: 12px 0px 43px 5px rgba(0,0,0,0.07);
+      -moz-box-shadow: 12px 0px 43px 5px rgba(0,0,0,0.07);
+      box-shadow: 12px 0px 43px 5px rgba(0,0,0,0.07);
+      .ui.image {
+        width: 290px;
+        height: 118px;
+      }
+
+      .title1 {
+        padding-top: 65px;
+        position: relative;
+
+        &:before {
+          width: 34px;
+          background-color: #B5B5B6;
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          height: 1px;
+          left: 50%;
+          margin-left: -17px;
+        }
+      }
+
+      .title2 {
+        font-size: 36px;
+        color: $LINK_COLOR;
+        margin: 15px 0;
+      }
+    }
+
+    .title3 {
+      font-size: 11px;
+    }
+
+    .clsa-right {
+      padding: 70px 80px;
+      min-height: 520px;
+
+      &.centered {
+        .disqualification {
+          margin-top: 60px;
+          font-size: 13px;
+        }
+        a {
+          margin-top: 40px;
+          margin-bottom: 80px;
+          display: block;
+        }
+      }
+
+      .ui.input, .ui.dropdown, .ui.button {
+        max-width: 300px;
+        margin: 15px 0 25px;
+      }
+
+      .ui.dimmer {
+        width: 85%;
+        left: 40px !important;
+      }
+
+      .ui.button {
+        .icon {
+          font-size: 25px;
+          position: relative;
+          top: 3px;
+          left: 10px;
+        }
+
+        &.centered {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      .title3 {
+        max-width: 280px;
+      }
+
+      @media only screen and (max-width: 1200px) and (min-width: 767px) {
+        & {
+          padding: 100px 70px 90px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      & {
+        padding: 50px 30px;
+        .clsa-right {
+          .ui.input, .ui.dropdown, .ui.button {
+            max-width: 100%;
+          }
+
+          .ui.dimmer {
+            width: 100%;
+            left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .ui.modal.clsa-error {
+    padding: 50px 60px;
+  }
+}

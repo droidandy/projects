@@ -1,0 +1,163 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.Post {
+  @include maxWidthPage;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #383441;
+
+  .post-content {
+    a {
+      font-weight: 400;
+      font-size: 18px;
+      font-family: "Yanone Kaffeesatz";
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .post-header {
+    .section-header {
+      margin: 0 auto;
+      max-width: 670px;
+
+      @media screen and (min-width: 1100px) {
+        max-width: 800px;
+      }
+
+      @include media-query($medium-down) {
+        padding-top: 10px;
+      }
+    }
+
+    .back-btn {
+      margin-top: 35px;
+      position: absolute;
+
+      @include media-query($medium-down) {
+        max-width: 100%;
+        text-align: center;
+        position: relative;
+      }
+
+      a {
+        font-family: var(--font-heading);
+        text-transform: uppercase;
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          border-left: 1px solid #52aea2;
+          border-bottom: 1px solid #52aea2;
+          width: 8px;
+          height: 8px;
+          left: -10px;
+          top: 4px;
+          transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .post-hero {
+    text-align: center;
+    margin: 80px 0;
+
+    @include media-query($small) {
+      margin: 32px 0;
+    }
+  }
+
+  .tags {
+    margin: 20px 0;
+
+    .tag {
+      margin: 2px 4px;
+      border-radius: 0;
+      font-size: 12px;
+      transition: opacity ease 0.25s;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  blockquote {
+		background-image: url('./testimonials-qoute-sign.png');
+		background-repeat: no-repeat;
+    // background-size: contain;
+    background-size: 40px;
+		background-position: 0 0;
+		padding: 5px 15px 5px 60px;
+		text-align: left;
+		margin: 40px 0;
+    min-height: 40px;
+		font-size: 15px;
+
+		@media only screen and (max-width: 767px) {
+      background-size: 30px;
+      padding: 0px 0px 0px 45px;
+      margin: 30px 0;
+      text-align: left;
+      p {
+        text-align: left;
+      }
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+		h4 {
+			margin: 0;
+			font-size: 18px;
+			font-weight: normal;
+			line-height: 24px;
+			letter-spacing: normal;
+			color: #535059;
+			font-family: var(--font-heading);
+		}
+	}
+
+  ol {
+    margin-bottom: 30px;
+    padding-left: 30px;
+
+    @include media-query($small) {
+      margin-bottom: 20px;
+    }
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      padding-left: 30px;
+      margin-bottom: 20px;
+      background-image: url("./video_drop_pin.svg");
+      background-repeat: no-repeat;
+      background-position: 0 4px;
+      background-size: 11px;
+      list-style: none;
+
+      @include media-query($small) {
+        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 22px;
+        background-size: 8px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 48px;
+    @include media-query($small) {
+      margin-bottom: 32px;
+    }
+  }
+}

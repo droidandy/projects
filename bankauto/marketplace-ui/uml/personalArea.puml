@@ -1,0 +1,92 @@
+@startuml
+
+package Application {
+
+  class ApplicationPage << (P,green) page>> {
+
+  }
+
+  class ApplicationState << (S,yellow) state>> {
+    ~store
+  }
+
+  class VehicleState << (S,yellow) state>> {
+    ~store
+  }
+
+  class TradeInState << (S,yellow) state>> {
+    ~store
+  }
+
+  class CreditState << (S,yellow) state>> {
+    ~store
+  }
+
+  class Vehicle << (C,red) container>> {
+    ~store
+  }
+
+  class BuyBlock << (C,red) container>> {
+    ~store
+  }
+
+  class TradeIn << (C,red) container>> {
+    ~store
+  }
+
+  class Credit << (C,red) container>> {
+    ~store
+  }
+
+  class Submit << (C,red) container>> {
+    ~store
+  }
+
+  ApplicationState o-- VehicleState
+  ApplicationState o-- TradeInState
+  ApplicationState o-- CreditState
+
+  ApplicationPage o-- Vehicle
+  ApplicationPage o-- TradeIn
+  ApplicationPage o-- Credit
+  ApplicationPage o-- Submit
+  ApplicationPage o-- BuyBlock
+
+  Vehicle <.u.> VehicleState
+  BuyBlock <.u. VehicleState
+  Credit <.u.> CreditState
+  TradeIn <.u.> TradeInState
+
+}
+
+package PersonalArea {
+
+  class ProfilePage << (P,green) page>> {
+
+  }
+
+  class ApplicationsState << (S,yellow) state>> {
+    ~store
+  }
+
+  class UserState << (S,yellow) state>> {
+    ~store
+  }
+
+  class Applications << (C,red) container>> {
+    ~store
+  }
+
+  class Profile << (C,red) container>> {
+    ~store
+  }
+
+  ProfilePage o-- Applications
+  ProfilePage o-- Profile
+
+  Applications <.u.> ApplicationsState
+  Profile <.u.> UserState
+  
+}
+
+@enduml

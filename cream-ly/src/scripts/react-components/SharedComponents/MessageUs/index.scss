@@ -1,0 +1,120 @@
+
+@import "../../../../styles/tools/mixins.scss";
+
+.message-us-component {
+  @include spacingBottom;
+  @include maxWidthPage;
+
+  header.section-header {
+    padding-bottom: 40px;
+    margin: auto;
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    @include media-query($small) {
+      padding-bottom: 24px;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    margin: auto;
+    text-transform: uppercase;
+
+    .button {
+        @include media-query($medium) {
+          max-width: 22%;
+        }
+
+      a {
+        border: 1px solid #edecef;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        animation: opacity 0.3s ease-out;
+        height: 60px;
+        margin-right: 20px;
+        max-width: 240px;
+
+        @include media-query($medium) {
+          max-width: 254px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @include media-query($small) {
+          height: 44px;
+          max-width: 100%;
+          margin: auto;
+          .btn-content {
+            min-width: 135px;
+          }
+          @include spacingBottomSmall;
+        }
+
+        .img {
+          width: 32px;
+          height: 32px;
+          background-size: 32px 32px;
+        }
+      }
+
+      a:hover {
+        text-decoration: none;
+        opacity: 0.8;
+        animation: opacity 0.3s ease-in;
+      }
+
+      a.telegram {
+        color: #36ade0;
+        .img {background-image: url("./img_telegram.svg")}
+      }
+
+      a.whatsapp {
+        color: #25d366;
+        .img {background-image: url("./img_whatsapp.svg")}
+      }
+
+      a.instagram {
+        color: #a739ac;
+        .img { background-image: url("./img_instagram.svg")}
+      }
+
+      a.facebook {
+        color: #0099ff;
+        .img {background-image: url("./img_messanger.svg")}
+      }
+
+      .label {
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        font-family: var(--font-heading);
+        padding-left: 14px;
+        @include media-query($medium) {
+          padding-left: 5px;
+        }
+      }
+    }
+    @include media-query($medium-up) {
+      .button:last-child a {
+        margin-right: 0;
+      }
+    }
+    @include media-query($medium) {
+
+      .button:nth-child(odd) {
+        a {
+            margin-left: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title>{{ 'DISCOVER' | translate }}</ion-title>
+    <ion-buttons end >
+      <button ion-button (click)="openFilter()"><ion-icon name="md-options" class="filtericon"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ng-container *ngIf='tempDiscoverList.length>0'>
+  <ion-row *ngFor="let discover of tempDiscoverList" (click)="openDiscover(discover)">
+    <img-loader *ngIf="discover.discoverimg!='http://placehold.it/80X80'&&discover.discoverimg!=''" src="{{discover.discoverimg}}" useImg  class="big_img"></img-loader>
+    <img-loader *ngIf="discover.discoverimg=='http://placehold.it/80X80'||discover.discoverimg==''" src="assets/images/default-image.png" useImg  class="big_img"></img-loader>
+    <ion-list >
+      <ion-item>
+        <ion-avatar item-start>
+          <img-loader *ngIf="discover.img!='http://placehold.it/80X80'&&discover.img!=''" spinner="false" src="{{discover.img}}" useImg class="profile_image"></img-loader>
+          <img-loader *ngIf="discover.img=='http://placehold.it/80X80'||discover.img==''" spinner="false" src="assets/images/default-image.png" useImg class="profile_image"></img-loader>
+        </ion-avatar>
+        <h2>{{discover.username}}</h2>
+        <p>{{discover.role}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-row>
+</ng-container>
+<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+</ion-content>

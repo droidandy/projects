@@ -1,0 +1,343 @@
+.flagSelect {
+  width: calc(100% - 2px);
+  position: absolute;
+
+  :global {
+    .ant-select-arrow {
+      display: none;
+    }
+
+    .ant-select-selection-selected-value {
+      padding-right: 0;
+    }
+
+    .ant-select-selection__rendered {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      height: 30px;
+    }
+
+    .ant-select-selection {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      border-right-width: 0;
+
+      &:focus, &:hover, &:active {
+        border-color: #d9d9d9;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.input {
+  width: calc(100% - 57px);
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  &:focus-within {
+    width: calc(100% - 2px);
+    background: transparent;
+    padding-left: 55px;
+    z-index: 1;
+  }
+  :global(.ant-input) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+    &:focus, &:hover, &:active {
+      border-color: #d9d9d9;
+      box-shadow: none;
+    }
+  }
+}
+
+.phoneInput {
+  min-height: 34px;
+
+  & :global {
+    .ant-select .ant-input, .ant-select-selection {
+      border:none;
+      padding: 0;
+      height: 30px;
+    }
+    .ant-select:nth-child(1) {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-right: none;
+    }
+    .ant-select:nth-child(2) {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-left: none;
+      margin-left: -2px;
+    }
+    .ant-select .ant-select-selection__rendered {
+      line-height: 30px;
+      .ant-select-search__field {
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &:hover :global(.ant-select),
+  &:focus-within :global(.ant-select) {
+    border-color: #fdb924;
+  }
+}
+
+@mixin flag-icon($country, $position) {
+  .#{$country} {
+    height: 32px;
+    width: 32px;
+    background-image: url(./flags.png);
+    background-position: $position;
+  }
+}
+
+@include flag-icon(ad, -32px 0);
+@include flag-icon(ae, -64px 0);
+@include flag-icon(af, -96px 0);
+@include flag-icon(ag, -128px 0);
+@include flag-icon(ai, -160px 0);
+@include flag-icon(al, -192px 0);
+@include flag-icon(am, -224px 0);
+@include flag-icon(an, -256px 0);
+@include flag-icon(ao, -288px 0);
+@include flag-icon(ar, -320px 0);
+@include flag-icon(as, -352px 0);
+@include flag-icon(at, -384px 0);
+@include flag-icon(au, -416px 0);
+@include flag-icon(aw, -448px 0);
+@include flag-icon(ax, -480px 0);
+@include flag-icon(az, 0 -32px);
+@include flag-icon(ba, -32px -32px);
+@include flag-icon(bb, -64px -32px);
+@include flag-icon(bd, -96px -32px);
+@include flag-icon(be, -128px -32px);
+@include flag-icon(bf, -160px -32px);
+@include flag-icon(bg, -192px -32px);
+@include flag-icon(bh, -224px -32px);
+@include flag-icon(bi, -256px -32px);
+@include flag-icon(bj, -288px -32px);
+@include flag-icon(bl, -320px -32px);
+@include flag-icon(bm, -352px -32px);
+@include flag-icon(bn, -384px -32px);
+@include flag-icon(bo, -416px -32px);
+@include flag-icon(br, -448px -32px);
+@include flag-icon(bs, -480px -32px);
+@include flag-icon(bt, 0 -64px);
+@include flag-icon(bw, -32px -64px);
+@include flag-icon(by, -64px -64px);
+@include flag-icon(bz, -96px -64px);
+@include flag-icon(ca, -128px -64px);
+@include flag-icon(cd, -160px -64px);
+@include flag-icon(cf, -192px -64px);
+@include flag-icon(cg, -224px -64px);
+@include flag-icon(ch, -256px -64px);
+@include flag-icon(ci, -288px -64px);
+@include flag-icon(ck, -320px -64px);
+@include flag-icon(cl, -352px -64px);
+@include flag-icon(cm, -384px -64px);
+@include flag-icon(cn, -416px -64px);
+@include flag-icon(co, -448px -64px);
+@include flag-icon(cr, -480px -64px);
+@include flag-icon(cu, 0 -96px);
+@include flag-icon(cv, -32px -96px);
+@include flag-icon(cw, -64px -96px);
+@include flag-icon(cy, -96px -96px);
+@include flag-icon(cz, -128px -96px);
+@include flag-icon(de, -160px -96px);
+@include flag-icon(dj, -192px -96px);
+@include flag-icon(dk, -224px -96px);
+@include flag-icon(dm, -256px -96px);
+@include flag-icon(do, -288px -96px);
+@include flag-icon(dz, -320px -96px);
+@include flag-icon(ec, -352px -96px);
+@include flag-icon(ee, -384px -96px);
+@include flag-icon(eg, -416px -96px);
+@include flag-icon(eh, -448px -96px);
+@include flag-icon(er, -480px -96px);
+@include flag-icon(es, 0 -128px);
+@include flag-icon(et, -32px -128px);
+@include flag-icon(eu, -64px -128px);
+@include flag-icon(fi, -96px -128px);
+@include flag-icon(fj, -128px -128px);
+@include flag-icon(fk, -160px -128px);
+@include flag-icon(fm, -192px -128px);
+@include flag-icon(fo, -224px -128px);
+@include flag-icon(fr, -256px -128px);
+@include flag-icon(gf, -256px -128px);
+@include flag-icon(pm, -256px -128px);
+@include flag-icon(ga, -288px -128px);
+@include flag-icon(gb, -320px -128px);
+@include flag-icon(io, -320px -128px);
+@include flag-icon(gd, -352px -128px);
+@include flag-icon(ge, -384px -128px);
+@include flag-icon(gg, -416px -128px);
+@include flag-icon(gh, -448px -128px);
+@include flag-icon(gi, -480px -128px);
+@include flag-icon(gl, 0 -160px);
+@include flag-icon(gm, -32px -160px);
+@include flag-icon(gn, -64px -160px);
+@include flag-icon(gp, -96px -160px);
+@include flag-icon(gq, -128px -160px);
+@include flag-icon(gr, -160px -160px);
+@include flag-icon(gs, -192px -160px);
+@include flag-icon(gt, -224px -160px);
+@include flag-icon(gu, -256px -160px);
+@include flag-icon(gw, -288px -160px);
+@include flag-icon(gy, -320px -160px);
+@include flag-icon(hk, -352px -160px);
+@include flag-icon(hn, -384px -160px);
+@include flag-icon(hr, -416px -160px);
+@include flag-icon(ht, -448px -160px);
+@include flag-icon(hu, -480px -160px);
+@include flag-icon(ic, 0 -192px);
+@include flag-icon(id, -32px -192px);
+@include flag-icon(ie, -64px -192px);
+@include flag-icon(il, -96px -192px);
+@include flag-icon(im, -128px -192px);
+@include flag-icon(in, -160px -192px);
+@include flag-icon(iq, -192px -192px);
+@include flag-icon(ir, -224px -192px);
+@include flag-icon(is, -256px -192px);
+@include flag-icon(it, -288px -192px);
+@include flag-icon(je, -320px -192px);
+@include flag-icon(jm, -352px -192px);
+@include flag-icon(jo, -384px -192px);
+@include flag-icon(jp, -416px -192px);
+@include flag-icon(ke, -448px -192px);
+@include flag-icon(kg, -480px -192px);
+@include flag-icon(kh, 0 -224px);
+@include flag-icon(ki, -32px -224px);
+@include flag-icon(km, -64px -224px);
+@include flag-icon(kn, -96px -224px);
+@include flag-icon(kp, -128px -224px);
+@include flag-icon(kr, -160px -224px);
+@include flag-icon(kw, -192px -224px);
+@include flag-icon(ky, -224px -224px);
+@include flag-icon(kz, -256px -224px);
+@include flag-icon(la, -288px -224px);
+@include flag-icon(lb, -320px -224px);
+@include flag-icon(lc, -352px -224px);
+@include flag-icon(li, -384px -224px);
+@include flag-icon(lk, -416px -224px);
+@include flag-icon(lr, -448px -224px);
+@include flag-icon(ls, -480px -224px);
+@include flag-icon(lt, 0 -256px);
+@include flag-icon(lu, -32px -256px);
+@include flag-icon(lv, -64px -256px);
+@include flag-icon(ly, -96px -256px);
+@include flag-icon(ma, -128px -256px);
+@include flag-icon(mc, -160px -256px);
+@include flag-icon(md, -192px -256px);
+@include flag-icon(me, -224px -256px);
+@include flag-icon(mf, -256px -256px);
+@include flag-icon(mg, -288px -256px);
+@include flag-icon(mh, -320px -256px);
+@include flag-icon(mk, -352px -256px);
+@include flag-icon(ml, -384px -256px);
+@include flag-icon(mm, -416px -256px);
+@include flag-icon(mn, -448px -256px);
+@include flag-icon(mo, -480px -256px);
+@include flag-icon(mp, 0 -288px);
+@include flag-icon(mq, -32px -288px);
+@include flag-icon(mr, -64px -288px);
+@include flag-icon(ms, -96px -288px);
+@include flag-icon(mt, -128px -288px);
+@include flag-icon(mu, -160px -288px);
+@include flag-icon(mv, -192px -288px);
+@include flag-icon(mw, -224px -288px);
+@include flag-icon(mx, -256px -288px);
+@include flag-icon(my, -288px -288px);
+@include flag-icon(mz, -320px -288px);
+@include flag-icon(na, -352px -288px);
+@include flag-icon(nc, -384px -288px);
+@include flag-icon(ne, -416px -288px);
+@include flag-icon(nf, -448px -288px);
+@include flag-icon(ng, -480px -288px);
+@include flag-icon(ni, 0 -320px);
+@include flag-icon(nl, -32px -320px);
+@include flag-icon(no, -64px -320px);
+@include flag-icon(np, -96px -320px);
+@include flag-icon(nr, -128px -320px);
+@include flag-icon(nu, -160px -320px);
+@include flag-icon(nz, -192px -320px);
+@include flag-icon(om, -224px -320px);
+@include flag-icon(pa, -256px -320px);
+@include flag-icon(pe, -288px -320px);
+@include flag-icon(pf, -320px -320px);
+@include flag-icon(pg, -352px -320px);
+@include flag-icon(ph, -384px -320px);
+@include flag-icon(sx, -32px -320px);
+@include flag-icon(bq, -32px -320px);
+@include flag-icon(pk, -416px -320px);
+@include flag-icon(pl, -448px -320px);
+@include flag-icon(pn, -480px -320px);
+@include flag-icon(pr, 0 -352px);
+@include flag-icon(ps, -32px -352px);
+@include flag-icon(pt, -64px -352px);
+@include flag-icon(pw, -96px -352px);
+@include flag-icon(py, -128px -352px);
+@include flag-icon(qa, -160px -352px);
+@include flag-icon(re, -192px -352px);
+@include flag-icon(ro, -224px -352px);
+@include flag-icon(rs, -256px -352px);
+@include flag-icon(ru, -288px -352px);
+@include flag-icon(rw, -320px -352px);
+@include flag-icon(sa, -352px -352px);
+@include flag-icon(sb, -384px -352px);
+@include flag-icon(sc, -416px -352px);
+@include flag-icon(sd, -448px -352px);
+@include flag-icon(se, -480px -352px);
+@include flag-icon(sg, 0 -384px);
+@include flag-icon(sh, -32px -384px);
+@include flag-icon(si, -64px -384px);
+@include flag-icon(sk, -96px -384px);
+@include flag-icon(sl, -128px -384px);
+@include flag-icon(sm, -160px -384px);
+@include flag-icon(sn, -192px -384px);
+@include flag-icon(so, -224px -384px);
+@include flag-icon(sr, -256px -384px);
+@include flag-icon(ss, -288px -384px);
+@include flag-icon(st, -320px -384px);
+@include flag-icon(sv, -352px -384px);
+@include flag-icon(sy, -384px -384px);
+@include flag-icon(sz, -416px -384px);
+@include flag-icon(tc, -448px -384px);
+@include flag-icon(td, -480px -384px);
+@include flag-icon(tf, 0 -416px);
+@include flag-icon(tg, -32px -416px);
+@include flag-icon(th, -64px -416px);
+@include flag-icon(tj, -96px -416px);
+@include flag-icon(tk, -128px -416px);
+@include flag-icon(tl, -160px -416px);
+@include flag-icon(tm, -192px -416px);
+@include flag-icon(tn, -224px -416px);
+@include flag-icon(to, -256px -416px);
+@include flag-icon(tr, -288px -416px);
+@include flag-icon(tt, -320px -416px);
+@include flag-icon(tv, -352px -416px);
+@include flag-icon(tw, -384px -416px);
+@include flag-icon(tz, -416px -416px);
+@include flag-icon(ua, -448px -416px);
+@include flag-icon(ug, -480px -416px);
+@include flag-icon(us, 0 -448px);
+@include flag-icon(uy, -32px -448px);
+@include flag-icon(uz, -64px -448px);
+@include flag-icon(va, -96px -448px);
+@include flag-icon(vc, -128px -448px);
+@include flag-icon(ve, -160px -448px);
+@include flag-icon(vg, -192px -448px);
+@include flag-icon(vi, -224px -448px);
+@include flag-icon(vn, -256px -448px);
+@include flag-icon(vu, -288px -448px);
+@include flag-icon(wf, -320px -448px);
+@include flag-icon(ws, -352px -448px);
+@include flag-icon(ye, -384px -448px);
+@include flag-icon(yt, -416px -448px);
+@include flag-icon(za, -448px -448px);
+@include flag-icon(zm, -480px -448px);
+@include flag-icon(zw, 0 -480px);

@@ -1,0 +1,78 @@
+.landing {
+  @include parallax_index(2, #f1f1f1);
+}
+
+footer {
+  background: #f7f7f7;
+
+  .contentinfo {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+
+    .separator {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #424242;
+    }
+    li {
+      display: inline-block;
+    }
+    .ha-links {
+      margin-top: 15px;
+      margin-bottom: 20px;
+
+      li {
+        &:after {
+          content: "\00b7";
+          font-weight: 700;
+          font-size: 16px;
+          color: #424242;
+          margin-left: 0px;
+          margin-right: 0px;
+          vertical-align: sub;
+          display: inline-block;
+          height: 16px;
+        }
+        &:last-child:after {
+          content: "";
+        }
+        a {
+          position: relative;
+          padding: 0 5px;
+          color: #212121;
+          font-size: 12px;
+          font-weight: 600;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .copyright {
+      position: relative;
+      font-size: 12px;
+      text-align: center;
+      color: #424242;
+      width: 350px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+    .footer-logo {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet_width - 1px) {
+  footer {
+    .copyright {
+      width: 210px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+  }
+}

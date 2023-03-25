@@ -1,0 +1,19 @@
+{
+  "name": "ZoomerRadio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle": "node node_modules/react-native/local-cli/cli.js bundle"
+  },
+  "dependencies": {
+    "react-native": "^0.19.0",
+    "react-native-video": "github:brentvatne/react-native-video"
+  },
+  "devDependencies": {
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13"
+  }
+}

@@ -1,0 +1,25 @@
+.scroller::-webkit-scrollbar {
+    width: 6px;
+}
+.scroller::-webkit-scrollbar-track {
+    background: transparent;
+    visibility:hidden;
+}
+.scroller:hover::-webkit-scrollbar-track {
+    visibility:visible;
+}
+.scroller::-webkit-scrollbar-thumb {
+    background: #5c5c5c;
+    visibility:hidden;
+    border-radius:10px
+}
+.scroller:hover::-webkit-scrollbar-thumb {
+    visibility:visible;
+}
+.scroller {
+    overflow: auto;
+    font: 16px/1.5 Arial;
+    color: #444;
+    max-height:500px;
+    /*overflow-y:scroll*/
+}

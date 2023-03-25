@@ -1,0 +1,74 @@
+.presentation-modal-disclosure {
+  &.ui.modal.presentation-modal .ui.header.page-heading {
+    text-align: left;
+    width: auto;
+  }
+  &.ui.modal>.content {
+    padding: 3.5em;
+  }
+  .ui.dropdown {
+    display: inline-block;
+    height: 26px;
+    margin-top: 8px;
+    margin-right: 10px;
+    line-height: 29px;
+    border-radius: 0;
+    background: #fff;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .header-holding {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    padding: 15px 0 30px;
+    h1.ui.header.page-heading {
+      margin: 0;
+    }
+  }
+  .ui.pointing.menu {
+    margin-left: -49px;
+    margin-right: -49px;
+    padding-left: 49px;
+    border-top: 1px solid $PRESENTATION_MODAL_DIVIDER_COLOD;
+    border-bottom: 1px solid $PRESENTATION_MODAL_DIVIDER_COLOD;
+  }
+  .ui.secondary.pointing.menu .active.item {
+    color: $BUTTON_TEAL_COLOR;
+    border-color: $BUTTON_TEAL_COLOR;
+  }
+  .ui.secondary.pointing.menu .item {
+    font-weight: 700;
+    color: #3d4144;
+  }
+  .ui.attached.segment {
+    border-color: transparent;
+  }
+  .content-inner {
+    &h3 {
+      color: #0c0e0f;
+    }
+    padding: 20px 0;
+    width: 80%;
+    color: #6e7881;
+    p {
+      color: $HEADER_SUB_COLOR2;
+    }
+    ul {
+      padding-left: 17px;
+      li {
+        padding-bottom: 20px;
+      }
+   }
+  }
+  .ui.segment {
+    padding: 0;
+  }
+  
+}

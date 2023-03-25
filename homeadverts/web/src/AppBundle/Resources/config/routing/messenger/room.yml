@@ -1,0 +1,14 @@
+ha_room_user_redirect:
+    path: /user/{id}
+    defaults:
+        _controller: AppBundle:Messenger\Room:redirectPrivateUserRoom
+
+ha_room_article_redirect:
+    path: /article/{id}
+    defaults:
+        _controller: AppBundle:Messenger\Room:redirectPublicArticleRoom
+
+ha_room_property_redirect:
+    path: /property/{id}
+    defaults:
+        _controller: AppBundle:Messenger\Room:redirectPublicPropertyRoom

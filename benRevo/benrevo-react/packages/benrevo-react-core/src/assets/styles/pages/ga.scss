@@ -1,0 +1,92 @@
+.ga {
+  .section-wrap .ui.stackable.grid.gridSegment {
+    padding-bottom: 200px;
+    margin-bottom: 140px;
+    padding-top: 50px;
+
+    .gaCenteredRow {
+      .logo-img {
+        margin: 0 auto 30px;
+      }
+
+      .ui.loader {
+        margin-top: 90px;
+      }
+
+      &.bottom {
+        padding-top: 15px !important;
+        .field-button {
+          .form-home-button {
+            width: 100%;
+            text-transform: none;
+          }
+        }
+      }
+
+      .formBlock {
+        height: auto;
+        float: left;
+        width: 100%;
+        padding: 0 0 20px 0;
+
+        .sign-up-policy {
+          label {
+            padding-left: 20px;
+            font-size: 12px;
+            a {
+              font-size: 13px;
+            }
+          }
+        }
+
+        a {
+          cursor: pointer;
+        }
+
+        .ui.checkbox {
+          position: relative;
+          top: 8px;
+        }
+      }
+
+      .gaFormField {
+        padding: 6px 0;
+
+        .gaPageHeading {
+          font-size: 13px;
+          color: #333333;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .ui.input {
+          width: 100%;
+          input {
+            border: 1px solid $INPUT_BORDER_COLOR;
+            background: $INPUT_BACKGROUND;
+          }
+        }
+        &.inline {
+          width: 48% !important;
+          float: left;
+
+          .ui.dropdown {
+            width: 100% !important;
+          }
+
+          @media only screen and (min-width: 767px) {
+            & + .inline:not(:last-child) {
+              margin-left: 4%;
+            }
+          }
+
+          @media only screen and (max-width: 767px) {
+            & {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

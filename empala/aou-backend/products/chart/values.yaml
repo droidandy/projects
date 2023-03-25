@@ -1,0 +1,138 @@
+# Default values for aou-backend.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+annotations:
+  CIEnvironmentSlug: ""
+  CIProjectPathSlug: empala-aou-backend
+
+awsCognito:
+  JWKSClient:
+  audienceClaim:
+  issuerClaim:
+  userPoolId:
+  clientId:
+
+authentication:
+  readonlyAdminUserName:
+  marketdataUpdaterUserName:
+  marketdataUpdaterUserPassword:
+
+environment: production
+
+database:
+  host:
+  name: aou-local
+  user: postgres
+  password: postgres
+  port: 5432
+  sslCACert:
+
+apexExtend:
+  logosApiUrl:
+  logosApiKey:
+  logosApiSecret:
+
+instrumentCache:
+  loadingBatchSize: 1000
+  reloadUTCTime: "14-00"
+
+apex:
+  extend:
+    tradeApiUrl:
+    tradeApiEntity:
+    tradeApiGroup:
+    tradeApiKey: 
+    applicationsUrl:
+    tradeAccountId:
+    isTradeAccountIdBase64Encoded: false
+    userId:
+    adminApiKey:
+    adminApiSecret:
+
+dataGrabbers:
+  apexExtendLogos:
+    isScheduleB64Encoded: false
+    schedule: "0 13 * * *"
+    AWSAccessKeyId:
+    AWSSecretAccessKey:
+    AWSRegion: us-east-2
+    AWSS3BucketName:
+    AWSCloudFrontUrl:
+    backoffLimit: 1
+    successfulJobsHistoryLimit: 3
+    failedJobsHistoryLimit: 1
+  apexExtracts:
+    isScheduleB64Encoded: false
+    schedule: "0 13 * * *"
+    daysBeforeCurrent: 2
+    SFTPHost:
+    SFTPPort: 22
+    SFTPUser:
+    SFTPPrivateKey:
+    backoffLimit: 3
+    successfulJobsHistoryLimit: 3
+    failedJobsHistoryLimit: 1
+  morningStar:
+    isScheduleB64Encoded: false
+    schedule: "0 13 * * *"
+    host:
+    user:
+    password:
+    backoffLimit: 1
+    successfulJobsHistoryLimit: 3
+    failedJobsHistoryLimit: 1
+
+hasura:
+  enableConsole: true
+  adminSecret:
+
+replicaCount: 1
+
+image:
+  repository: aou-backend
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name:
+
+services:
+  type: NodePort
+  apollo:
+    port: 80
+  hasura:
+    port: 80
+
+ingress:
+  enabled: true
+  host: launchpad-saas.net
+  sslCert:
+  wafWaclArn:
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

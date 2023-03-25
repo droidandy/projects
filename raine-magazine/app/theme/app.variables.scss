@@ -1,0 +1,112 @@
+// http://ionicframework.com/docs/v2/theming/
+
+// Ionic Shared Functions
+// --------------------------------------------------
+// Makes Ionic Sass functions available to your App
+
+@import "globals.core";
+
+// App Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files. Setting
+// variables before Ionic's Sass will use these variables rather than
+// Ionic's default Sass variable values. App Shared Sass imports belong
+// in the app.core.scss file and not this file. Sass variables specific
+// to the mode belong in either the app.ios.scss or app.md.scss files.
+
+
+
+// App Shared Color Variables
+// --------------------------------------------------
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+// Both iOS and MD colors can be further customized if colors
+// are different per mode.
+
+
+$colors: (
+  primary:    #00BCD4,
+  // primary :   #34329a,
+  secondary:  #0957d7,
+  danger:     #ff0000,
+  light:      #fcfcfc,
+  dark:       #222,
+  favorite:   #69BB7B,
+
+  // Cyan
+	turquiose : #1ABC9C,
+	greensea : #16A085,
+
+	// Green
+	emerald : #2ECC71,
+	nephritis : #27AE60,
+
+	// Blue
+	peterriver : #3498DB,
+	belizehole : #2980B9,
+
+	// Purple
+	amethyst : #9B59B6,
+	wisteria : #8E44AD,
+
+	// Dark Navy Blue
+	wetasphalt : #34495E,
+	midnightblue : #2C3E50,
+
+	// Yellow  Orange
+	sunflower : #F1C40F,
+	orange : #F39C12,
+
+	// Carrot
+	carrot : #E67E22,
+	pumpkin : #D35400,
+
+	// Red
+	alizarin: #E74C3C,
+	pomegranate : #C0392B,
+
+	// White Grey
+	clouds : #ECF0F1,
+	silver : #BDC3C7,
+
+	// Flat Grey :D
+	concrete : #95A5A6,
+	asbestos : #7F8C8D,
+
+  app-button: (
+    base: white,
+    contrast: #000
+  )
+);
+
+$toolbar-app-height : 55px;
+$toolbar-ios-height : $toolbar-app-height;
+$toolbar-md-height : $toolbar-app-height;
+$toolbar-wp-height : $toolbar-app-height;
+$tabs-app-tab-min-height : $toolbar-app-height;
+
+$tabs-ios-tab-min-height : $tabs-app-tab-min-height;
+$tabs-md-tab-min-height : $tabs-app-tab-min-height;
+$tabs-wp-tab-min-height : $tabs-app-tab-min-height;
+
+$toolbar-border-color: color($colors, primary);
+
+$tabs-ios-background: white;
+$tabs-md-background: white;
+$tabs-wp-background: white;
+$toolbar-background: white;
+
+$toolbar-ios-title-font-size : 2.0rem;
+$toolbar-md-title-font-size : 2.0rem;
+
+$font-family-md-base: "Montserrat Regular";
+$font-family-ios-base: "Montserrat Regular";
+$font-family-wp-base: "Montserrat Regular";
+
+$loading-ios-spinner-bubbles-color: #00BCD4;
+$loading-md-spinner-bubbles-color: #00BCD4;
+$loading-wp-spinner-bubbles-color: #00BCD4;
+

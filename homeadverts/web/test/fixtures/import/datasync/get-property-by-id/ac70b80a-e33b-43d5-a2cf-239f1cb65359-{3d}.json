@@ -1,0 +1,566 @@
+{
+  "listingSummary": {
+    "listingId": "ac70b80a-e33b-43d5-a2cf-239f1cb65359",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-02-21",
+    "photoCount": 22,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 385000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "226 Sunset Drive",
+      "city": "Lake Arrowhead",
+      "district": "San Bernardino County",
+      "stateProvince": "California",
+      "stateProvinceCode": "CA",
+      "postalCode": "92352",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 34.25377,
+      "longitude": -117.1773,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "226 Sunset Dr, Lake Arrowhead, CA 92352"
+    },
+    "mlsNumbers": [
+      "2180275"
+    ],
+    "RFGListingId": "QCNBWG",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/qcnbwg",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Multi Level",
+    "propertyName": "226 Sunset Drive Lake Arrowhead, California 92352",
+    "totalBath": 1,
+    "lotSize": "4756 SF",
+    "buildingArea": "1865 Sq. Ft.",
+    "noOfBedrooms": 4,
+    "squareFootage": 1865.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/7172B05E-5A31-42B2-9EFB-53C633CF51B3",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-20T16:21:10.727",
+    "agents": [
+      {
+        "id": "585d815c-4292-4a65-bf36-56058feae02c",
+        "name": "Trent Tiecke",
+        "firstName": "Trent",
+        "lastName": "Tiecke",
+        "middleName": "A.",
+        "gender": "Male",
+        "defaultPhotoURL": "//openapi.azureedge.net/6F3195F6-6D7B-4BC6-BCFD-DF904ED573B1",
+        "emailAddress": "ttiecke@gmail.com",
+        "businessPhone": "+1 9093666958",
+        "mobilePhone": "+1 7602184273",
+        "isPrimary": true,
+        "office": {
+          "officeId": "87d29651-9438-4160-b11b-ccfa88475e94",
+          "RFGOfficeId": "0004",
+          "companyId": "c36fdfb3-9bf1-417f-bc77-199149779b2d",
+          "companyName": "Wheeler Steffen",
+          "RFGCompanyId": "800337",
+          "brandCode": "SIR",
+          "name": "Wheeler Steffen Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "27201 Highway 189",
+            "city": "Blue Jay",
+            "district": "san Bernardino",
+            "stateProvince": "California",
+            "stateProvinceCode": "CA",
+            "postalCode": "92317",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 34.24618,
+            "longitude": -117.20983,
+            "formattedAddress": "27201 Highway 189, Blue Jay, CA 92317"
+          },
+          "phoneNumber": "9093666940",
+          "emailAddress": "info@wssir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 1,
+  "threeQuarterBath": 2,
+  "parkingPlaces": 5,
+  "yearBuilt": "1961",
+  "providerKey": "ac70b80a-e33b-43d5-a2cf-239f1cb65359",
+  "propertyFeatures": [
+    {
+      "groupName": "Roof",
+      "description": "Composition Shingle"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Resort / Lake"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Wood Siding"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Hardwood"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Beam -Ceilings"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Access Type - Road"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Brick"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range / Oven"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Laminate"
+    },
+    {
+      "groupName": "Age",
+      "description": "Over 50 Years Old"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Jogging / Biking Path"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Galley Kitchen"
+    },
+    {
+      "groupName": "Body of Water",
+      "description": "Lake"
+    },
+    {
+      "groupName": "General",
+      "description": "Lake Privileges"
+    },
+    {
+      "groupName": "Rooms",
+      "description": "Media Room / Home Theater"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Mixed"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Dock"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Boating"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "1 Fireplace"
+    },
+    {
+      "groupName": "Basement",
+      "description": "None"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "Under 1/2 Acre"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Wall to Wall Carpet"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Ramp"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Cathedral Ceilings"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dryer"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Fishing"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Biking"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Deck"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "City"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Forced Air"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hiking"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Tennis"
+    },
+    {
+      "groupName": "Road Type",
+      "description": "County Street"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Curb Parking."
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Garbage Disposal"
+    },
+    {
+      "groupName": "Water",
+      "description": "City Water"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "A dramatic two-story ceiling, wall of glass, four bedrooms plus a game room/sleeping area allows to sleep twelve and if you use the pull-outs sixteen, and three baths. This home is in the highly desired Palisades neighborhood, close to shopping, dining, gym, and the marina. It sits down slope so from the street it appears small and is not a drive by. One step inside and you will realize it is quite large and it comes fully furnished per inventory. Large rear deck plus lower patio. Close to lake, trails and of course has lake rights. There is a parking deck for two and partial off-street parking for three more. For more information or to schedule a showing please contact listing agent Trent Tiecke directly, at 760.218.4273 or trent.tiecke@sothebysrealty.com",
+      "htmlRemark": "<p class=\"MsoNormal\"><span style=\"font-size: 10pt; line-height: 107%; font-family: &quot;Gill Sans MT&quot;, sans-serif; background: white;\">A dramatic two-story\nceiling, wall of glass, four bedrooms plus a game room/sleeping area allows to\nsleep twelve and if you use the pull-outs sixteen, and three baths. This home\nis in the highly desired Palisades neighborhood, close to shopping, dining,\ngym, and the marina. It sits down slope so from the street it appears small and\nis not a drive by. One step inside and you will realize it is quite large and\nit comes fully furnished per inventory. Large rear deck plus lower patio. Close\nto lake, trails and of course has lake rights. There is a parking deck for two\nand partial off-street parking for three more.&nbsp;</span><span style=\"font-size: 10pt; line-height: 107%; font-family: &quot;Gill Sans MT&quot;, sans-serif; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;\">For more information or to schedule a showing please contact listing agent\nTrent Tiecke directly, at 760.218.4273 or&nbsp;</span><span style=\"font-size:10.0pt;line-height:107%;font-family:&quot;Gill Sans MT&quot;,sans-serif\"><a href=\"mailto:trent.tiecke@sothebysrealty.com\"><span style=\"background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;\">trent.tiecke@sothebysrealty.com</span></a><o:p></o:p></span></p><p>\n\n</p><p class=\"MsoNormal\" style=\"line-height:normal\"><span style=\"font-size:10.0pt;\nfont-family:&quot;Gill Sans MT&quot;,sans-serif\"><o:p>&nbsp;</o:p></span></p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/qcnbwg",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "7B416002-D2A9-4497-96B9-03A7FC8488C8",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/7B416002-D2A9-4497-96B9-03A7FC8488C8",
+      "isDefault": false,
+      "caption": "bed-1",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "499B1312-3A79-452C-A3A9-0B5A1DC5529B",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/499B1312-3A79-452C-A3A9-0B5A1DC5529B",
+      "isDefault": false,
+      "caption": "bath",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "C55F3C60-D737-4D49-BCA4-2AAEDB02C104",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/C55F3C60-D737-4D49-BCA4-2AAEDB02C104",
+      "isDefault": false,
+      "caption": "bath",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "2CAC73EE-EBAC-4677-85D6-3FC1F5A81667",
+      "sequenceNumber": 21,
+      "url": "//openapi.azureedge.net/2CAC73EE-EBAC-4677-85D6-3FC1F5A81667",
+      "isDefault": false,
+      "caption": "living room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "A2B28AFE-CCF2-45FF-86D3-4AD8C1281177",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/A2B28AFE-CCF2-45FF-86D3-4AD8C1281177",
+      "isDefault": false,
+      "caption": "bunk room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "68B751F9-6A71-422C-A552-4B41FBF479AC",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/68B751F9-6A71-422C-A552-4B41FBF479AC",
+      "isDefault": false,
+      "caption": "deck",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "7172B05E-5A31-42B2-9EFB-53C633CF51B3",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/7172B05E-5A31-42B2-9EFB-53C633CF51B3",
+      "isDefault": true,
+      "caption": "exterior",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "F46E2E18-9D68-456D-966F-5A2C79347CF2",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/F46E2E18-9D68-456D-966F-5A2C79347CF2",
+      "isDefault": false,
+      "caption": "living room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "E1E6564C-095B-4164-9E43-627866D65B6B",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/E1E6564C-095B-4164-9E43-627866D65B6B",
+      "isDefault": false,
+      "caption": "bunk room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "95E00D16-8430-4DEF-8946-732EC242813B",
+      "sequenceNumber": 20,
+      "url": "//openapi.azureedge.net/95E00D16-8430-4DEF-8946-732EC242813B",
+      "isDefault": false,
+      "caption": "living room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "0A843CAD-BC71-44D1-B838-741997EB741E",
+      "sequenceNumber": 22,
+      "url": "//openapi.azureedge.net/0A843CAD-BC71-44D1-B838-741997EB741E",
+      "isDefault": false,
+      "caption": "living room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "8D3D1C68-AFF1-4B74-9C2D-81AFB253E02D",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/8D3D1C68-AFF1-4B74-9C2D-81AFB253E02D",
+      "isDefault": false,
+      "caption": "game-room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "A7419D16-7A5F-4EF4-A19B-81C8951B7232",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/A7419D16-7A5F-4EF4-A19B-81C8951B7232",
+      "isDefault": false,
+      "caption": "bed-2",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "1255B144-2CC1-46B2-8C08-8C0361B0A6E5",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/1255B144-2CC1-46B2-8C08-8C0361B0A6E5",
+      "isDefault": false,
+      "caption": "kitchen",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "E31FFB46-4E26-44E3-95F7-8FB71F8F88DD",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/E31FFB46-4E26-44E3-95F7-8FB71F8F88DD",
+      "isDefault": false,
+      "caption": "exterior-back",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "0016E130-F81C-41BA-9491-9D95C9078B6A",
+      "sequenceNumber": 1,
+      "url": "https://my.matterport.com/show/?m=gTLrotgY5Kt",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2018-07-20T16:21:11.163"
+    },
+    {
+      "mediaID": "1C38710C-A479-4E04-AFD1-A3004E568C40",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/1C38710C-A479-4E04-AFD1-A3004E568C40",
+      "isDefault": false,
+      "caption": "bath",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "598C74E9-1728-4EBE-B10C-ADE09D3FB5D6",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/598C74E9-1728-4EBE-B10C-ADE09D3FB5D6",
+      "isDefault": false,
+      "caption": "bed-3",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "D230C7E9-722F-43E7-AA54-B682DB3AFFDF",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/D230C7E9-722F-43E7-AA54-B682DB3AFFDF",
+      "isDefault": false,
+      "caption": "drone",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "FDE3BBB0-BDAF-44F8-9424-C7F4CD56764A",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/FDE3BBB0-BDAF-44F8-9424-C7F4CD56764A",
+      "isDefault": false,
+      "caption": "kitchen",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "B16E7D88-A5C8-4224-9695-CA49C20F7E1D",
+      "sequenceNumber": 19,
+      "url": "//openapi.azureedge.net/B16E7D88-A5C8-4224-9695-CA49C20F7E1D",
+      "isDefault": false,
+      "caption": "living room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "C52D8FB3-364E-4033-BE57-D09C0B0D99DC",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/C52D8FB3-364E-4033-BE57-D09C0B0D99DC",
+      "isDefault": false,
+      "caption": "IMG_0221",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    },
+    {
+      "mediaID": "0717CE87-A53A-4A7D-AFCD-DAA7FE06CAFE",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/0717CE87-A53A-4A7D-AFCD-DAA7FE06CAFE",
+      "isDefault": false,
+      "caption": "game-room",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-02-28T22:41:57.053"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "2180275",
+      "isPrimary": true
+    }
+  ]
+}

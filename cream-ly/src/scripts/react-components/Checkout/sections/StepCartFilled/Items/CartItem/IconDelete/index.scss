@@ -1,0 +1,19 @@
+.IconDelete {
+  svg {
+    height: 19px;
+    width: 21px;
+    margin: auto;
+
+    fill: #fff;
+    path {
+      stroke: var(--black-pearl);
+    }
+
+    &.active,
+    &:hover {
+      path {
+        stroke: var(--rose);
+      }
+    }
+  }
+}

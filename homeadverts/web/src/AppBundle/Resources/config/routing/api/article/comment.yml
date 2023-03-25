@@ -1,0 +1,9 @@
+ha_comment_article_new:
+    path:  /comment
+    defaults: { _controller: AppBundle:Api\Article\Comment:new }
+    methods:  [POST]
+
+ha_comment_article_delete:
+    path:  /comment/{id}
+    defaults: { _controller: AppBundle:Api\Article\Comment:delete }
+    methods:  [DELETE]

@@ -1,0 +1,204 @@
+@import "../variables-theme";
+@import "./rfp/benefits";
+
+.start {
+  .ui.segment.grid.gridSegment {
+    padding-top: 60px;
+
+    .ui.form {
+      margin-left: 30px;
+    }
+  }
+
+  .column.right.aligned.bottom-line {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.rfp-carrier {
+  .rfp-submitted {
+    border: 1px solid #6DC9C7;
+    border-radius: 5px;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 18px;
+    background: url(../img/svg/rfp-submitted-bg.svg) no-repeat;
+    background-position: center 30px;
+
+    .ui.image {
+      margin-bottom: 40px;
+      margin-top: 10px;
+    }
+
+    .rfp-submitted-title {
+      color: #24A8A8;
+      font-size: 28px;
+      font-weight: 200;
+      margin-bottom: 30px;
+      line-height: 25px;
+    }
+
+    .rfp-submitted-info {
+      width: 85%;
+      margin: 0 auto;
+      line-height: 25px;
+    }
+  }
+
+  .include-hint {
+    margin-bottom: -20px;
+    margin-right: 80px;
+    margin-top: 40px;
+    background-position: right 20px;
+    height: 50px;
+  }
+
+  .main-table {
+    margin-top: 0;
+  }
+
+  .ui.basic.table.invisible {
+    border: 0;
+    margin-top: -62px;
+  }
+
+  .ui.table.main-table.send-table {
+    width: 100%;
+
+    .ui.image.carrier-logo {
+      height: 70px;
+      width: 175px;
+    }
+
+    .email-item {
+      margin-bottom: 5px;
+      .remove-button {
+        position: relative;
+        top: 1px;
+        margin-left: 30px;
+      }
+    }
+
+    .add-email {
+      margin-top: 5px;
+
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .ui.button.primary {
+    margin-left: 20px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .include-hint {
+      margin-right: 65px;
+      margin-bottom: -10px;
+      margin-top: 0;
+    }
+
+    .ui.basic.table.invisible {
+      border: 0;
+      margin-top: -22px;
+    }
+
+    .main-table {
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .include-hint {
+      margin-right: 45px;
+      margin-top: 0;
+    }
+
+    .pageFooterActions {
+      .ui.button {
+        width: 100% !important;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.ui.modal.submit-modal {
+  padding: 30px 40px;
+
+  .close {
+    @include lineCloseButton();
+  }
+
+  h1.ui.header.page-heading.small.center {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .message {
+    text-align: center;
+    background-color: $MESSAGE_BG_COLOR;
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 100%;
+    margin-top: -40px;
+  }
+
+  .buttons {
+    width: 100%;
+
+    .button-prev {
+      float: left;
+      margin-top: -10px;
+    }
+
+    .button-next {
+      float: right;
+      margin-top: -10px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    & {
+      width: 600px;
+    }
+  }
+}
+
+.ui.secondary.menu.rfp-tab-top-menu {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  border: none;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  a.item {
+    color: $HEADER_SUB_COLOR2;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 15px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 5px;
+
+    .counter {
+      margin-right: 5px;
+    }
+
+    &.active, &:hover {
+      background: none;
+      font-weight: 600;
+      border: none;
+      border-bottom: 3px solid $BUTTON_TEAL_COLOR !important;
+    }
+  }
+}

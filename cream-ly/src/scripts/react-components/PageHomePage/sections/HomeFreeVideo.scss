@@ -1,0 +1,10 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.HomeFreeVideo {
+  @include spacingBottom;
+  text-align: center;
+    .section-header {
+        padding: 0;
+        margin: 0;
+    }
+}

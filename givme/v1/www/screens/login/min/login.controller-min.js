@@ -1,0 +1,1 @@
+"use strict";function LoginCtrl(o,n,l,r,t){o.facebookLogin=function(){n.go("menu")}}angular.module("givmeApp.controllers").controller("LoginCtrl",LoginCtrl);

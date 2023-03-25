@@ -1,0 +1,124 @@
+{
+    "agentSummary": {
+        "id": "d693de6e-2de4-45ea-ba02-53944df70c10",
+        "isAgent": true,
+        "name": "Sandy Chittenden",
+        "firstName": "Sandy",
+        "lastName": "Chittenden",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/B4793351-8761-4893-8339-DDB6B79608E6",
+        "emailAddress": "sandy.chittenden@juliabfee.com",
+        "leadEmailAddress": "800024.lead.4016403@leads.leadrouter.com",
+        "businessPhone": "+1 9149219207",
+        "office": {
+            "officeId": "45458639-9735-49e9-94d6-5c38731ebf0e",
+            "RFGOfficeId": "0041",
+            "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+            "companyName": "William Pitt",
+            "RFGCompanyId": "800024",
+            "brandCode": "SIR",
+            "name": "Julia B. Fee Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "49 Purchase Street",
+                "city": "Rye",
+                "district": "Westchester",
+                "stateProvince": "New York",
+                "stateProvinceCode": "NY",
+                "postalCode": "10580",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 40.98324,
+                "longitude": -73.68497,
+                "formattedAddress": "49 Purchase St, Rye, NY 10580"
+            },
+            "phoneNumber": "9149674600",
+            "emailAddress": "wps.leads@mrtsystems.com"
+        }
+    },
+    "personId": "30d0942c-97f2-4520-a37a-0b1f9405c441",
+    "lastUpdateOn": "2018-07-31T18:00:09.103",
+    "designations": [
+        "Licensed Associate Real Estate Broker"
+    ],
+    "roles": [
+        {
+            "office": {
+                "officeId": "45458639-9735-49e9-94d6-5c38731ebf0e",
+                "RFGOfficeId": "0041",
+                "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+                "companyName": "William Pitt",
+                "RFGCompanyId": "800024",
+                "brandCode": "SIR",
+                "name": "Julia B. Fee Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "49 Purchase Street",
+                    "city": "Rye",
+                    "district": "Westchester",
+                    "stateProvince": "New York",
+                    "stateProvinceCode": "NY",
+                    "postalCode": "10580",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 40.98324,
+                    "longitude": -73.68497,
+                    "formattedAddress": "49 Purchase St, Rye, NY 10580"
+                },
+                "phoneNumber": "9149674600",
+                "emailAddress": "wps.leads@mrtsystems.com"
+            },
+            "role": "Associate Real Estate Broker",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "sandy.chittenden@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "B4793351-8761-4893-8339-DDB6B79608E6",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/B4793351-8761-4893-8339-DDB6B79608E6",
+            "isDefault": true,
+            "caption": "Sandra Chittenden",
+            "htmlDescription": "Sandra",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-07-31T18:00:09.040"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Sothebysrealty.com 800",
+            "number": "9148791837"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Sandy has over twenty one years experience in the Westchester real estate market. Sandy is a lifetime resident of Rye and has been a top producing agent for the last decade. Her knowledge of the local marketplace provides her clients with a distinctive edge in the purchase or sale of real estate. Sandy has a notable percentage of repeat business from satisfied clients. It would be difficult to overstate Sandy's talent in negotiating or her determination and enthusiasm for the success of her clients. Sandy is a member of the National Association of Realtors, New York State Association of Realtors, Westchester Putnam Board of Realtors and Rye-Harrison Multiple Listing Service.Call Sandy today to discuss your real estate goals.",
+            "htmlRemark": "Sandy has over twenty one years experience in the Westchester real estate market. Sandy is a lifetime resident of Rye and has been a top producing agent for the last decade. Her knowledge of the local marketplace provides her clients with a distinctive edge in the purchase or sale of real estate. Sandy has a notable percentage of repeat business from satisfied clients. It would be difficult to overstate Sandy's talent in negotiating or her determination and enthusiasm for the success of her clients. Sandy is a member of the National Association of Realtors, New York State Association of Realtors, Westchester Putnam Board of Realtors and Rye-Harrison Multiple Listing Service.Call Sandy today to discuss your real estate goals.&lt;BR\/&gt;&lt;BR\/&gt;"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "AB",
+            "stateCode": "NY",
+            "number": "30ch095067",
+            "issuedOn": "2014-01-01"
+        }
+    ]
+}

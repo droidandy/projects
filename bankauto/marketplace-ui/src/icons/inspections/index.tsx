@@ -1,0 +1,11 @@
+export { ReactComponent as IconBodyType } from './iconCarSimple.svg';
+export { ReactComponent as IconWrench } from './iconWrench.svg';
+export { ReactComponent as IconShieldCheck } from './iconShieldCheck.svg';
+export { ReactComponent as IconClipboardText } from './iconClipboardText.svg';
+export { ReactComponent as IconTimer } from './iconTimer.svg';
+export { ReactComponent as IconShield } from './iconShield.svg';
+export { ReactComponent as IconDocument } from './document.svg';
+export { ReactComponent as IconPaymentLogos } from './iconPaymentLogos.svg';
+export { ReactComponent as IconForm } from './steps/iconForm.svg';
+export { ReactComponent as IconPrice } from './steps/iconPrice.svg';
+export { ReactComponent as IconPublish } from './steps/iconPublish.svg';

@@ -1,0 +1,39 @@
+.startups-caps {
+  .tree-capabilities {
+    height: calc(100vh - 280px);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    .rst__tree {
+      margin: 0;
+      .ReactVirtualized__List {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+.startups-table.ReactTable {
+  .rt-table {
+    overflow: visible;
+  }
+  //width: 1280px;
+  //height: 530px;
+  /*
+  .rt-tbody {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .rt-thead {
+    overflow: visible;
+  }
+  */
+  /*
+  .rt-tbody {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    min-width: 1280px !important;
+    max-width: 800px;
+    width: 1280px;
+    height: 530px;
+  }
+  */
+}

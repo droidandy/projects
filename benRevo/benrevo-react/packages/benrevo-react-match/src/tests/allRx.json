@@ -1,0 +1,106 @@
+[
+  {
+    "rfpQuoteNetworkPlanId":6767,
+    "name":"Advantage (4PJ)",
+    "type":"matchPlan",
+    "selected":true,
+    "secondSelected":false,
+    "carrier":"UnitedHealthcare",
+    "rx":[
+      {
+        "sysName":"RX_INDIVIDUAL_DEDUCTIBLE",
+        "name":"Rx Individual Deductible",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"RX_FAMILY_DEDUCTIBLE",
+        "name":"Rx Family Deductible",
+        "value":"N/A",
+        "type":"STRING"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_1",
+        "name":"Member Copay Tier 1",
+        "value":"15",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_2",
+        "name":"Member Copay Tier 2",
+        "value":"30",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_3",
+        "name":"Member Copay Tier 3",
+        "value":"50",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MEMBER_COPAY_TIER_4",
+        "name":"Member Copay Tier 4",
+        "value":"100",
+        "type":"DOLLAR"
+      },
+      {
+        "sysName":"MAIL_ORDER",
+        "name":"Mail Order",
+        "value":"$30/$60/$100/$100",
+        "type":"STRING"
+      }
+    ]
+  },
+  {
+    "rfpQuoteNetworkPlanId": 6769,
+    "name": "Advantage (3A5)",
+    "type": "alternative",
+    "selected": false,
+    "secondSelected": false,
+    "carrier": "UnitedHealthcare",
+    "rx": [
+      {
+        "sysName": "RX_INDIVIDUAL_DEDUCTIBLE",
+        "name": "Rx Individual Deductible",
+        "value": "Medical Deductible Applies",
+        "type": "STRING"
+      },
+      {
+        "sysName": "RX_FAMILY_DEDUCTIBLE",
+        "name": "Rx Family Deductible",
+        "value": "Medical Deductible Applies",
+        "type": "STRING"
+      },
+      {
+        "sysName": "MEMBER_COPAY_TIER_1",
+        "name": "Member Copay Tier 1",
+        "value": "15",
+        "type": "DOLLAR"
+      },
+      {
+        "sysName": "MEMBER_COPAY_TIER_2",
+        "name": "Member Copay Tier 2",
+        "value": "30",
+        "type": "DOLLAR"
+      },
+      {
+        "sysName": "MEMBER_COPAY_TIER_3",
+        "name": "Member Copay Tier 3",
+        "value": "50",
+        "type": "DOLLAR"
+      },
+      {
+        "sysName": "MEMBER_COPAY_TIER_4",
+        "name": "Member Copay Tier 4",
+        "value": "N/A",
+        "type": "STRING"
+      },
+      {
+        "sysName": "MAIL_ORDER",
+        "name": "Mail Order",
+        "value": "$30/$60/$100",
+        "type": "STRING"
+      }
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+@import "../../variables-theme";
+@import "./product-benefits";
+
+.prequote-product {
+
+  .separator {
+    margin: 0 0 20px 0;
+    font-style: italic;
+    font-size: 12px;
+    color: $HEADER_SUB_COLOR2;
+    position: relative;
+    text-align: center;
+
+    span {
+      padding: 0 20px;
+      background-color: #ffffff;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      background-color: $DIVIDER_COLOR;
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+
+  h3.ui.header.rfpPageFormSetHeading, h3.ui.header.rfpPageTopSectionHeading, h3.ui.header.rfpPageSectionHeading {
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  h3.ui.header.rfpPageSectionHeading {
+    margin-bottom: 0;
+  }
+
+  h3.ui.header.rfpPageSubSectionHeading {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $HEADER_SUB_COLOR2;
+    font-weight: 400;
+    margin-top: 10px;
+
+
+    &.minHeight {
+      min-height: 28px;
+    }
+  }
+
+  h3.ui.header.rfpPageFormSetHeading.minHeightFix {
+    @media screen and (max-width: 945px) and (min-width: 768px) {
+      min-height: 36px !important;
+      white-space: pre-line;
+    }
+  }
+
+  .ui.grid.rates-radio {
+    & > .row {
+      & > .column {
+        padding: 0;
+        width: 115px !important;
+      }
+    }
+  }
+
+  .rates {
+    margin-top: 30px !important;
+  }
+
+  .rfpBlockTop {
+    margin-top: 30px !important;
+  }
+}

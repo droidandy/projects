@@ -1,0 +1,191 @@
+.prequoted-send {
+  div.header-border {
+    font-size: 24px;
+    font-weight: 300;
+    border-bottom: solid 1px #aaafb2;
+    padding-bottom: 15px;
+    padding-left: 22px;
+  }
+
+  .title1-description {
+    margin-bottom: 20px;
+  }
+
+  .ui.table {
+    tbody {
+      tr {
+        td {
+          min-height: 75px;
+        }
+
+        &.subtotal {
+          height: 53px;
+          color: $DARK_BLUE;
+          font-weight: 600;
+          font-size: 13px;
+
+          td {
+            background-color: #ffffff;
+            border-top: 1px solid $TABLE_STRIPPED_BORDER;
+          }
+        }
+      }
+    }
+  }
+
+  .plan-info {
+    font-size: 13px;
+
+    .plan-title {
+      color: $DARK_BLUE;
+      font-weight: 600;
+    }
+  }
+
+  .discounts {
+    background-color: $TABLE_STRIPPED_BG;
+    padding: 15px;
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 34px;
+    bottom: 1rem;
+    font-size: 13px;
+
+    ul.discounts-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-top: 15px;
+
+      li {
+        display: inline-block;
+        margin-right: 40px;
+        margin-bottom: 15px;
+      }
+    }
+
+    ul.leaders {
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      right: 130px;
+      width: auto;
+
+      li {
+        .title {
+          padding-right: 0;
+        }
+
+        .nums {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  ul.leaders {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    font-size: 14px;
+    margin-top: 0;
+
+    li {
+      padding: 12px 10px 17px;
+      position: relative;
+      min-height: 20px;
+      font-size: 13px;
+
+      &:nth-child(odd){
+        background-color: $TABLE_STRIPPED_BG;
+      }
+
+      .title {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-right: 150px;
+        top: 4px;
+        margin-bottom: 5px;
+
+        span {
+          padding-right: 0.33em;
+          background: white;
+        }
+
+        span:after {
+          float: left;
+          width: 0;
+          white-space: nowrap;
+          content: ". . . . . . . . . . . . . . . . . . . . "
+          ". . . . . . . . . . . . . . . . . . . . "
+          ". . . . . . . . . . . . . . . . . . . . "
+          ". . . . . . . . . . . . . . . . . . . . ";
+          position: absolute;
+        }
+      }
+
+      .nums {
+        display: inline-block;
+        position: absolute;
+        bottom: 18px;
+        right: 10px;
+        text-align: right;
+        background: white;
+        font-weight: 600;
+        font-size: 16px;
+
+        .nums-blue {
+          color: #0099cc;
+        }
+
+        &.total {
+          bottom: 17px;
+          padding-left: 10px;
+        }
+
+        &.total > span {
+          background-color: #ffffff !important;
+          border: solid 1px #6e7880;
+          padding: 4px 6px 6px;
+          border-radius: 4px;
+        }
+      }
+
+      &:nth-child(odd) span:first-child, &:nth-child(odd) .nums {
+        background-color: #f8f8f8;
+      }
+    }
+  }
+
+  .tab-menu.small {
+    margin-top: 30px;
+  }
+
+  .members-list {
+    margin-top: 30px;
+
+    .members-item {
+      margin-top: 15px;
+    }
+  }
+
+  .button-line {
+    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    .send-button {
+      max-width: 300px;
+      float: left;
+    }
+
+    .ui.loader {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+  }
+}

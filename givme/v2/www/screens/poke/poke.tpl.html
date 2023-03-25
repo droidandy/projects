@@ -1,0 +1,20 @@
+<ion-view on-finish-render="ngRepeatFinished">
+    <!-- <div class="vmodal vmodal-container" ng-if="!poked">
+        <div class="vmodal-header">
+            <div class="lightning"></div>
+            <h2 class="heading">Poke sent!</h2>
+            You have sent a Poke to the other player. If they respond, you will start a call!
+        </div>
+        <div class="vmodal-content" align="center">
+            Time remaining for response: <span class="emp">{{secondsRemain}} seconds</span>
+        </div>
+        <div class="vmodal-footer">
+            <div class="row">
+                <div class="col-xs-12 send-full" ng-click="pokeLater()">Cancel</div>
+            </div>
+        </div>
+    </div> -->
+    <img ng-src="{{getImage()}}" class="background-screen background-screen--poking">
+    <div class="poking">{{pokingStatement()}}</div>
+    <div class="end-call" ng-click="pokeLater()"></div>
+</ion-view>

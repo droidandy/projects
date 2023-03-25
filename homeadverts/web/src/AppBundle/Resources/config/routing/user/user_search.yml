@@ -1,0 +1,42 @@
+ha_user_search:
+    path:  /{id}/{user_type}/{slug}
+    defaults:
+        _controller: AppBundle:User\Search:location
+        p: 1
+        geo_strategy: 'place_id'
+    methods:  [GET]
+    requirements:
+        id: \d+
+        user_type: "[0-9a-z\-]+"
+        slug: "[0-9a-z\-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_search_pagination:
+    path:  /{id}/{user_type}/{slug}
+    defaults:
+        _controller: AppBundle:User\Search:locationPagination
+        p: 1
+        geo_strategy: 'place_id'
+    methods:  [GET]
+    requirements:
+        id: \d+
+        user_type: "[0-9a-z\-]+"
+        slug: "[0-9a-z\-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_search_term:
+    path:  /{term}
+    defaults:
+        _controller: AppBundle:User\Search:term
+    methods:  [GET]
+
+ha_user_search_map:
+    path:  /{id}/{user_type}/{slug}/map
+    defaults:
+        _controller: AppBundle:User\Search:map
+        geo_strategy: 'place_id'
+    requirements:
+        id: \d+
+        user_type: "[0-9a-z\-]+"
+        slug: "[0-9a-z\-]+"
+    methods:  [GET]

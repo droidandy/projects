@@ -1,0 +1,202 @@
+@import "../scss/functions";
+
+$cell_desktop_w: 760px;
+$cell_tablet_w: 600px;
+
+.inline-carousel {
+  width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  height: 100%;
+
+  @media only screen and (max-width: $tablet_width) {
+    background: #000;
+  }
+
+  .gallery-wrapper {
+    .carousel {
+      max-height: 80vh;
+      @include transition(all 0.3s ease-in-out);
+
+      // Tablet + Desktop
+      @media only screen and (min-width: $tablet_width+1) {
+        margin-top: 30px;
+        height: 450px !important;
+      }
+
+      // Desktop
+      @media only screen and (min-width: $desktop_width+1) {
+        margin-top: 40px;
+        height: 570px !important;
+      }
+
+      &:not(.flickity-enabled) {
+        .gallery-cell {
+          opacity: 0.5;
+        }
+
+        .gallery-cell:first-of-type {
+          opacity: 1;
+        }
+      }
+
+      &.flickity-enabled {
+        opacity: 1;
+      }
+
+      .gallery-cell {
+        position: relative;
+        cursor: pointer;
+        height: auto;
+        width: 100%;
+        max-height: 100%;
+        text-align: center;
+        margin: 0 8px;
+        background: url("/assets/images/preloader-black.gif") 50% 50% no-repeat #000;
+        opacity: 0.5;
+        float: left;
+        overflow: hidden;
+        z-index: 1;
+
+        &.is-selected {
+          opacity: 1;
+
+          .gallery-toolbar {
+            display: block;
+          }
+        }
+
+        img {
+          max-width: none;
+          height: auto;
+          width: 100%;
+          display: inline-block;
+
+          &.\--mobile-height {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+        }
+
+        // hide images during preloading ...
+        img[src=""],
+        img:not([src]) {
+          visibility: hidden;
+        }
+
+        .gallery-cell-image {
+          &.flickity-lazyloaded,
+          &.flickity-lazyerror {
+            opacity: 1;
+          }
+        }
+
+        // Tablet + Desktop
+        @media only screen and (min-width: $tablet_width+1) {
+          width: 600px;
+          height: 450px;
+          margin-left: 20px;
+          margin-right: 20px;
+          border-radius: 2px;
+          img {
+            padding: 0;
+            //height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+          }
+        }
+        // Desktop
+        @media only screen and (min-width: $desktop_width+1) {
+          width: $cell_desktop_w;
+          height: 570px;
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+      }
+    }
+  }
+
+  .flickity-prev-next-button {
+    display: none;
+  }
+}
+
+// Display images during page load, when carousel is not ready.
+.inline-carousel {
+  &.\--raw {
+    .carousel {
+      @include transition_all();
+
+      width: 100%;
+      overflow: hidden;
+      .gallery-cell {
+        visibility: hidden;
+
+        &.\--order-last,
+        &.\--order-0,
+        &.\--order-1 {
+          background: none !important;
+        }
+
+        &.\--order-last {
+          position: absolute;
+          visibility: visible;
+          left: 50%;
+        }
+        &.\--order-0 {
+          position: absolute;
+          visibility: visible;
+          left: 50%;
+        }
+        &.\--order-1 {
+          position: absolute;
+          visibility: visible;
+          left: 50%;
+        }
+        // Tablet
+        @media only screen and (min-width: $tablet_width) {
+          &.\--order-last {
+            margin-left: calc(((-#{$cell_tablet_w} / 2) * 3) - 40px);
+          }
+          &.\--order-0 {
+            margin-left: calc(-#{$cell_tablet_w} / 2);
+          }
+          &.\--order-1 {
+            margin-left: calc(#{$cell_tablet_w} / 2 + 40px);
+          }
+        }
+        // Desktop
+        @media only screen and (min-width: $desktop_width) {
+          &.\--order-last {
+            margin-left: calc(((-#{$cell_desktop_w} / 2) * 3) - 80px);
+          }
+          &.\--order-0 {
+            margin-left: calc(-#{$cell_desktop_w} / 2);
+          }
+          &.\--order-1 {
+            margin-left: calc(#{$cell_desktop_w} / 2 + 80px);
+          }
+        }
+        // Mobile
+        @media only screen and (max-width: $tablet_width+1) {
+          display: none;
+          &.\--order-0 {
+            position: relative;
+            left: 0;
+            margin: 0;
+            display: block;
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

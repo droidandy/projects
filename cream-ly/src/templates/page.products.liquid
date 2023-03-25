@@ -1,0 +1,10 @@
+
+  <div  data-react-component-placeholder="PageProductsList">
+    {%if request.locale.iso_code == "en"%}
+    {% include 'staticHTML-PageProductsList-en' %}
+    {%elsif request.locale.iso_code == "lv"%}
+    {% include 'staticHTML-PageProductsList-lv' %}
+    {%else%}
+    {% include 'staticHTML-PageProductsList-ru' %}
+    {%endif%}
+     </div>

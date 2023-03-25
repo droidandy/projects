@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <path id="carArrowHoverIcon" d="M16.867 10.267H7.942l4.1-4.1L11 5.133 5.133 11 11 16.867l1.034-1.034-4.092-4.1h8.925z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="28" height="28" x="1" y="1" fill="#FFF" stroke="#fdb924" stroke-width="2" rx="4"/>
+        <use fill="gray" fill-rule="nonzero" transform="translate(4 4)" xlink:href="#carArrowHoverIcon"/>
+    </g>
+</svg>

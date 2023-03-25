@@ -1,0 +1,157 @@
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.white-text {
+  color: #fff;
+
+  &:hover, &:active, &:focus {
+    color: #fff;
+  }
+}
+
+.black-text {
+  color: #000;
+
+  &:hover, &:active, &:focus {
+    color: #000;
+  }
+}
+
+.grey-text {
+  color: $dark-grey;
+
+  &:hover, &:active, &:focus {
+    color: $dark-grey;
+  }
+}
+
+.navy-text {
+  color: $navy-blue-text;
+
+  &:hover, &:active, &:focus {
+    color: $navy-blue-text;
+  }
+}
+
+.blue-text {
+  color: $blue;
+
+  &:hover, &:active, &:focus {
+    color: $blue;
+  }
+}
+
+.yellow-text {
+  color: $yellow;
+
+  &:hover, &:active, &:focus {
+    color: $yellow;
+  }
+}
+
+.light-yellow-text {
+  color: #ffd787;
+
+  &:hover, &:active, &:focus {
+    color: #ffd787;
+  }
+}
+
+.green-text {
+  color: $green;
+
+  &:hover, &:active, &:focus {
+    color: $green;
+  }
+}
+
+.red-text {
+  color: $red;
+
+  &:hover, &:active, &:focus {
+    color: $red;
+  }
+}
+
+.lh-0 {
+  line-height: 0;
+}
+
+.lh-1 {
+  line-height: 1;
+}
+
+.deep-cyan-text {
+  color: $deep-cyan;
+
+  &:hover, &:active, &:focus {
+    color: $deep-cyan;
+  }
+}
+
+.light-grey-text {
+  color: $light-grey-text;
+
+  &:hover, &:active, &:focus {
+    color: $light-grey-text;
+  }
+}
+
+.lilac-text {
+  color: $lilac;
+
+  &:hover, &:active, &:focus {
+    color: $lilac;
+  }
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+@for $i from 9 through 26 {
+  .text-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+.text-30 {
+  font-size: 30px;
+}
+
+.text-40 {
+  font-size: 40px;
+}
+
+.text-50 {
+  font-size: 50px;
+}
+
+.text-90 {
+  font-size: 90px;
+}
+
+.text-180 {
+  font-size: 180px;
+}
+
+.text-200 {
+  font-size: 200px;
+}
+
+.text-250 {
+  font-size: 250px;
+}

@@ -1,0 +1,381 @@
+{
+    "listingSummary": {
+        "listingId": "85d51a5e-eefa-44a3-a00d-05503321ed2b",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForRent",
+        "listedOn": "2017-10-23",
+        "photoCount": 16,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "EUR",
+            "amount": 11200,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false,
+            "listPriceinUSD": 13100
+        },
+        "propertyAddress": {
+            "city": "Casole d'Elsa",
+            "stateProvince": "Siena",
+            "stateProvinceCode": "SI",
+            "country": "Italy",
+            "countryCode": "IT",
+            "latitude": 43.3252979557616,
+            "longitude": 11.0863537672119
+        },
+        "geographicRegions": [
+            {
+                "type": "CountryRegion",
+                "name": "Toscana"
+            }
+        ],
+        "mlsNumbers": [
+            "2705002303"
+        ],
+        "RFGListingId": "WSP3XG",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/wsp3xg",
+        "rentalFrequency": "Weekly",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Other Residential",
+        "propertyStyle": "Other Style",
+        "propertyName": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+        "totalBath": 4,
+        "buildingArea": "0 Sq. M",
+        "noOfBedrooms": 4,
+        "squareFootage": 0,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/67AB7785-CB35-4B8C-BA9D-5E9E96902842",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-07-26T05:03:21.420",
+        "agents": [
+            {
+                "id": "5f7b4ae3-5a29-4bc8-acd8-a63f54ba17f4",
+                "name": "Ken Ipox",
+                "firstName": "Ken",
+                "lastName": "Ipox",
+                "gender": "Male",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/0A096FE7-8CB5-472C-AD69-5F4464C26ACA",
+                "emailAddress": "ken.ipox@premiersir.com",
+                "businessPhone": "+1 9419937279",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "434edc3d-d21e-4efb-a1d5-5ffaf95c3c80",
+                    "RFGOfficeId": "0005",
+                    "companyId": "c8987fde-4bde-4864-a1e4-47d3c183ddea",
+                    "companyName": "Premier",
+                    "RFGCompanyId": "800256",
+                    "brandCode": "SIR",
+                    "name": "Premier Sotheby's International Realty",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "540 John Ringling Blvd",
+                        "city": "Sarasota",
+                        "district": "Sarasota",
+                        "stateProvince": "Florida",
+                        "stateProvinceCode": "FL",
+                        "postalCode": "34236",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 27.31916,
+                        "longitude": -82.575,
+                        "formattedAddress": "540 John Ringling Blvd, Sarasota, FL 34236"
+                    },
+                    "phoneNumber": "9413832500",
+                    "emailAddress": "REFERRALS@PREMIERSIR.COM"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 4,
+    "levels": 0,
+    "totalRooms": 8,
+    "providerKey": "85d51a5e-eefa-44a3-a00d-05503321ed2b",
+    "propertyFeatures": [
+        {
+            "groupName": "Furnished Information",
+            "description": "Unfurnished"
+        },
+        {
+            "description": "Furniture Not Included"
+        },
+        {
+            "groupName": "Heating Type",
+            "description": "No Heat"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Fireplace Description",
+            "description": "Fireplace"
+        },
+        {
+            "groupName": "Kitchen Features",
+            "description": "Kitchen Facilities"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "This charming and elegant Tuscan farmhouse, nesled within the grounds of a luxurious, ancient castle, is flanked by forests, an olive grove, and a sweeping meadow, provides an unobstructed and dramatic panorama of its gorgeous surroundings of the hills surrounding the marvelous city of Siena. The villa is situated within the estate of an castle that dates as far back as 3000 B.C. The castle has been restored into a gorgeous resort, restaurant, hotel, and game reserve. Upon its grounds also grow renowned organic vineyards and century-old olive groves. Guests can enjoy visits to the gorgeous cities of Siena, San Gimignano, or Volterra or a daytrip to the Renaissance city of Florence. Within the villa's private grounds, guests can enjoy the heated glass-tiled infinity swimming pool, the perfect spot to relax and bask under the Tuscan sun. The villa also features a charming patio with lounge chairs, a beautiful courtyard, and a spa adjacent to the pool. The elegantly decorated villa is furnished with Tuscan marble, local ceramics, and Italian designer fabrics and antiques, offering an atmosphere rich in traditional Tuscan characteristics but with a modern and welcoming touch. The villa also includes a traditional fireplace and a pizza oven. The estate can accommodate up to eight guests. The villa features a fully-equipped kitchen, a dining room and a formal dining room, a cozy sitting room, and a spacious living room. The villa also features four luxurious master bedrooms, all with individual lounges and private bathrooms, offering ample space for guests to enjoy privacy and relaxation as well as each others' company. A short walk will take the guests to the dining, spa, fitness center, and other luxurious amenities offered within the nearby castle. The rural surroundings accompanied by convenience make this property a magnificent Tuscan retreat.",
+            "htmlRemark": "This charming and elegant Tuscan farmhouse, nesled within the grounds of a luxurious, ancient castle, is flanked by forests, an olive grove, and a sweeping meadow, provides an unobstructed\nand dramatic panorama of its gorgeous surroundings of the hills surrounding the marvelous city of Siena.&nbsp;\nThe villa is situated within the estate of an castle that dates as far back as 3000 B.C. The castle has been restored into a gorgeous resort, restaurant, hotel, and game reserve. Upon its grounds also grow renowned organic vineyards and century-old olive groves. Guests can enjoy visits to the gorgeous cities of Siena, San Gimignano, or Volterra or a daytrip to the Renaissance city of Florence. Within the villa's private grounds, guests can enjoy the heated glass-tiled infinity swimming pool, the perfect spot to relax and bask under the Tuscan sun. The villa also features a charming patio with lounge chairs, a beautiful courtyard, and a spa adjacent to the pool.&nbsp;\nThe elegantly decorated villa is furnished with Tuscan marble, local ceramics, and Italian designer fabrics and antiques, offering&nbsp; an atmosphere rich in traditional Tuscan characteristics but with a modern and welcoming touch. The villa also includes a traditional fireplace and a pizza oven.&nbsp;\nThe estate can accommodate\nup to eight guests. The villa features a fully-equipped kitchen, a dining room and a formal dining room, a cozy sitting room, and a spacious living room.&nbsp; The villa also features four luxurious master bedrooms, all with individual lounges and private bathrooms, offering ample space for guests to enjoy privacy and relaxation as well as each others' company.&nbsp;\nA short walk will take the guests to the dining, spa, fitness center, and other luxurious amenities offered within the nearby castle. The rural surroundings accompanied by convenience make this property a magnificent Tuscan retreat.&nbsp;"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/wsp3xg",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "6A5E01AB-D64D-4D94-A0AB-29673A925567",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/6A5E01AB-D64D-4D94-A0AB-29673A925567",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "B077CF19-8C75-4035-BADE-348B324E2A83",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/B077CF19-8C75-4035-BADE-348B324E2A83",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "272A8CF3-C718-4ED9-B7F3-5238D9149398",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/272A8CF3-C718-4ED9-B7F3-5238D9149398",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "29181A5A-89DA-44BB-AA19-534B97DD6D16",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/29181A5A-89DA-44BB-AA19-534B97DD6D16",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "2866EAE8-B075-4909-98B9-565D917337DD",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/2866EAE8-B075-4909-98B9-565D917337DD",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "1C1BFC97-5180-4E7C-B109-5E3411EF2DDF",
+            "sequenceNumber": 1,
+            "url": "http:\/\/retreats.italy-sothebysrealty.com\/tuscany\/siena\/casale_salice",
+            "isDefault": true,
+            "caption": "Listing Link",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "67AB7785-CB35-4B8C-BA9D-5E9E96902842",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/67AB7785-CB35-4B8C-BA9D-5E9E96902842",
+            "isDefault": true,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "4ECC794E-E435-4877-AC95-6922920F83AA",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/4ECC794E-E435-4877-AC95-6922920F83AA",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "140F8C4F-795D-44C5-9382-77F222927C16",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/140F8C4F-795D-44C5-9382-77F222927C16",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "7981EB8B-6BB9-43CC-B512-9CE18C07E297",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/7981EB8B-6BB9-43CC-B512-9CE18C07E297",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "B6322224-77B5-4FDA-AFF7-9F12190F2F0D",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/B6322224-77B5-4FDA-AFF7-9F12190F2F0D",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "35F3EF2F-0CA1-40E9-B685-9FE5444D7047",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/35F3EF2F-0CA1-40E9-B685-9FE5444D7047",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "8EB6A183-F29F-4E04-A035-A3E80349060F",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/8EB6A183-F29F-4E04-A035-A3E80349060F",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "86F59BFC-F599-42DB-A6D0-A75920E0D79C",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/86F59BFC-F599-42DB-A6D0-A75920E0D79C",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "A7D5E678-B780-46CB-AA4C-C56D5DCD5DC4",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/A7D5E678-B780-46CB-AA4C-C56D5DCD5DC4",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "504D23BA-945A-4237-859A-D60AA1445373",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/504D23BA-945A-4237-859A-D60AA1445373",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        },
+        {
+            "mediaID": "41EF463B-26C7-4DA1-8DE8-DFE96DCAAB62",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/41EF463B-26C7-4DA1-8DE8-DFE96DCAAB62",
+            "isDefault": false,
+            "caption": "Casale Salice",
+            "shortDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "htmlDescription": "Casale Salice, a remarkable farmhouse within the grounds of an Tuscan castle",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 1200,
+            "width": 1800,
+            "lastUpdateOn": "2018-05-14T07:10:20.560"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "2705002303",
+            "isPrimary": true
+        }
+    ]
+}

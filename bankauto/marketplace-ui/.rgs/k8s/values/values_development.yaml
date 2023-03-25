@@ -1,0 +1,13 @@
+replicaCount: 1
+
+containers:
+  - image: registry.rgsbank.ru/cde107/marketplace/marketplace-ui/nginx
+    name: nginx
+    ports:
+      - containerPort: 80
+        name: nginx
+  - image: registry.rgsbank.ru/cde107/marketplace/marketplace-ui
+    name: node
+    ports:
+      - containerPort: 3000
+        name: web

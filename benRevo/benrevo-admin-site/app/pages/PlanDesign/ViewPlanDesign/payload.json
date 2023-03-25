@@ -1,0 +1,160 @@
+{
+    "plans": [
+        {
+            "planId": 2558377,
+            "planName": "Basic HMO name that is too long",
+            "planType": "HMO",
+            "planYear": 2018,
+            "planBenefits": [],
+            "planNetwork": {
+                "networkId": 8,
+                "name": "Priority Select Network",
+                "type": "HMO"
+            },
+            "pnnCreated": null,
+            "pnnUpdated": null,
+            "planCreated": 1523467052000,
+            "planUpdated": null
+        },
+        {
+            "planId": 2558376,
+            "planName": "Basic HMO",
+            "planType": "HMO",
+            "planYear": 2018,
+            "planBenefits": [
+                {
+                    "id": 34338084,
+                    "name": "Deductible - Individual some rediculously long name",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338085,
+                    "name": "OOPM - Individual",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338086,
+                    "name": "PCP",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338087,
+                    "name": "Specialist",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338090,
+                    "name": "Inpatient Hospital",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338091,
+                    "name": "Inpatient Copay Max",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338092,
+                    "name": "Inpatient Copay Type",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338093,
+                    "name": "Outpatient Surgery",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338088,
+                    "name": "Emergency Room",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338094,
+                    "name": "Deductible Type",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338095,
+                    "name": "Combine Med/Rx Deductible",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                },
+                {
+                    "id": 34338089,
+                    "name": "Urgent Care",
+                    "inOutNetwork": "IN",
+                    "value": "-",
+                    "format": "STRING",
+                    "restriction": null,
+                    "created": 1523467155000,
+                    "updated": null
+                }
+            ],
+            "planNetwork": {
+                "networkId": 8,
+                "name": "Priority Select Network",
+                "type": "HMO"
+            },
+            "pnnCreated": null,
+            "pnnUpdated": null,
+            "planCreated": 1523467052000,
+            "planUpdated": null
+        }
+    ],
+    "currentElements": 30,
+    "totalPages": 11,
+    "totalElements": 306
+}

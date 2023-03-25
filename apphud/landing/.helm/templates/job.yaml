@@ -1,0 +1,40 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "helm-atomic-log-{{ .Chart.Name }}" 
+  annotations:
+    "helm.sh/hook": pre-delete,pre-rollback
+    "helm.sh/hook-delete-policy": before-hook-creation
+  labels:
+    app: {{ .Chart.Name }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}" 
+    release: {{ .Release.Name }}
+spec:
+  activeDeadlineSeconds: 100
+  template:
+    metadata:
+      name: "helm-atomic-log-{{ .Chart.Name }}" 
+      labels:
+        app: {{ .Chart.Name }}
+        release: {{ .Release.Name }}
+        type: atomiclog
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: atomiclog
+        image: "centosadmin/helm-logs:v0.0.1"
+        imagePullPolicy: IfNotPresent
+        command:
+        - /usr/local/bin/hooklog.sh
+        args:
+        - {{ .Release.Namespace }}
+        - {{ .Release.Name }}
+        - helm-atomic-log
+        env:
+        - name: K8S_CLUSTER_NAME
+          value: cluster.local
+        - name: K8S_API_URL
+          value: {{ .Values.k8s_config.api_url }}
+      serviceAccount: "{{ .Release.Namespace }}"
+...

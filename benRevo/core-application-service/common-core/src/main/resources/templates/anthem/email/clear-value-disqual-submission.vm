@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Anthem Blue Cross</title>
+    </head>
+    <body style="background:#f8f9fb;margin:0px;padding:0px;font-family:Arial,Helvetica,sans-serif;">
+        <table width="600" bgcolor="#f8f9fb" style="margin:auto;">
+            <tr>
+                <td style="width:100%;text-align:center;float:left;"><img src="https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/logo.jpg" alt="Anthem Blue Cross" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="600" bgcolor="#fff" style="margin:auto;padding:0 30px;">
+                        <tr>
+                            <td><h3 style="font-family:Arial,Helvetica,sans-serif;color:#2d67b2;font-weight:bold;font-size:24px;">Dear #if($StringUtils.isNotEmpty($!sales_first_name)) $!sales_first_name#end,</h3></td>
+                        </tr>
+                        <tr>
+                            <td>
+                            <p style="color:#000;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;margin-top:0px;">$!client_name has been disqualified from receiving a Clear Value quote due to the following reason:</p>
+                            <ul style="color:#000;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;margin-top:0px;">
+                                <li>$!disqual_reason</li>
+                            </ul>
+                            <p style="color:#000;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:25px;margin-top:0px;">Let us know if you have any questions or if you would like any additional information. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p style="height:10px;float:left;width:100%;border-bottom:1px solid #d7d7d7;">&nbsp;</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p style="color:#989898;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:25px;margin-top:0px;">We appreciate your partnership through this marketing process!
+                                    <br/><span style="color:#2E67B1;text-decoration:none;font-weight:bold;">BenRevo Team</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+[
+  {
+    "address": "string",
+    "brokerToken": "string",
+    "city": "string",
+    "generalAgent": true,
+    "id": 11,
+    "name": "string",
+    "state": "string",
+    "zip": "string"
+  },
+  {
+    "address": "string",
+    "brokerToken": "string",
+    "city": "string",
+    "generalAgent": true,
+    "id": 12,
+    "name": "string 2",
+    "state": "string",
+    "zip": "string"
+  }
+]

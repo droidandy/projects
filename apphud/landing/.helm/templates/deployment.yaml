@@ -1,0 +1,117 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: {{ .Chart.Name }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    component: app
+  name: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  {{- if .Values.strategy }}
+  strategy:
+    type: {{ .Values.strategy.type }}
+    {{- if eq .Values.strategy.type "RollingUpdate" }}
+    rollingUpdate:
+      maxSurge: {{ .Values.strategy.maxSurge | default 1 }}
+      maxUnavailable: {{ .Values.strategy.maxUnavailable | default 1 }}
+    {{- end }}
+  {{- end }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+      release: {{ .Release.Name }}
+      component: app
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        release: {{ .Release.Name }}
+        component: app
+    spec:
+      #affinity:
+       # podAntiAffinity:
+        #  preferredDuringSchedulingIgnoredDuringExecution:
+        #  - labelSelector:
+        #      matchExpressions:
+        #      - key: app
+        #        operator: In
+        #        values:
+        #        - {{ .Chart.Name }}
+        #    topologyKey: "kubernetes.io/hostname"
+      containers:
+      - env:
+        {{- range $key, $val := .Values.env }}
+        - name: {{ $key | quote }}
+          value: {{ $val | quote }}
+        {{- end }}
+        {{- range $key, $val := .Values.envSecret }}
+        - name: {{ $key | quote }}
+          valueFrom:
+            secretKeyRef:
+              key: {{ $key | lower | replace "_" "-" }}
+              name: {{ $key | lower | replace "_" "-" }}
+        {{- end }}
+        image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.imagepullpolicy }}
+        name: app
+        {{- if .Values.command }}
+        command: {{ .Values.command }}
+        {{- end }}
+        ports:
+        - containerPort: 3000
+          protocol: TCP
+          name: api
+        - containerPort: {{ .Values.service.port }}
+          protocol: TCP
+          name: metrics
+        resources:
+{{ toYaml .Values.resources | indent 12 }}
+        livenessProbe:
+          httpGet:
+            path: /
+            port: {{ .Values.service.port }}
+          initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds }}
+          periodSeconds: {{ .Values.livenessProbe.periodSeconds }}
+          timeoutSeconds: {{ .Values.livenessProbe.timeoutSeconds }}
+          successThreshold: {{ .Values.livenessProbe.successThreshold }}
+          failureThreshold: {{ .Values.livenessProbe.failureThreshold }}
+        readinessProbe:
+          httpGet:
+            path: /
+            port: {{ .Values.service.port }}
+          initialDelaySeconds: {{ .Values.readinessProbe.initialDelaySeconds }}
+          periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
+          timeoutSeconds: {{ .Values.readinessProbe.timeoutSeconds }}
+          successThreshold: {{ .Values.readinessProbe.successThreshold }}
+          failureThreshold: {{ .Values.readinessProbe.failureThreshold }}
+      - name: nginx
+        image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.imagepullpolicy }}
+        command: ["/usr/sbin/nginx", "-g", "daemon off;"]
+        volumeMounts:
+        - name: nginx-config
+          mountPath: /etc/nginx/nginx.conf
+          subPath: nginx.conf
+        ports:
+        - containerPort: {{ .Values.service.port }}
+          protocol: TCP
+      volumes:
+        - name: nginx-config
+          configMap:
+            name: nginx-configmap-landing
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecret }}
+      nodeSelector:
+        role: worker
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+
+
+

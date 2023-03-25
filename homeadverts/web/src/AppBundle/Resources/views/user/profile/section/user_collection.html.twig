@@ -1,0 +1,14 @@
+{% if pagination|length %}
+    <div class="list small-block-grid-2 medium-block-grid-3"
+        data-page-total="{{ pageTotal }}"
+        data-page-current="{{ page }}"
+    >
+        {% include 'AppBundle:user:collection/items.html.twig' %}
+    </div>
+{% else %}
+    {% if not is_current_user(user) %}
+        <div class="information-centered">
+            {{ "search.noresults"|trans }}
+        </div>
+    {% endif %}
+{% endif %}

@@ -1,0 +1,80 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% block body %}
+    <div class="blog one-column --margin-bottom write-story"
+         data-token="{{ article.token }}"
+         data-get-url="{{ path("ha_article_details", {token: article.token, slug: article.slug}) }}"
+         data-put-url="{{ path("ha_article_save", {token: article.token}) }}"
+         data-post-url="{{ path("ha_article_publish", {token: article.token}) }}"
+         data-analyze-url="{{ path("ha_article_analyse", {token: article.token}) }}"
+
+         data-facebook="{{ article.channelEnabled('facebook') }}"
+         data-twitter="{{ article.channelEnabled('twitter') }}"
+         data-linkedin="{{ article.channelEnabled('linkedin') }}"
+    >
+
+        <div class="story-title">
+            <label for="story-title" style="display: none;">Title</label>
+            <textarea type="text"
+                      id="story-title"
+                      name="title"
+                      rows='1'
+                      placeholder="Title"
+                      autocomplete="off">{{ article.title }}</textarea>
+        </div>
+        <div class="editable"
+             data-upload-file-url="{{ path("ha_file_upload_article") }}"
+             data-delete-file-url=""
+        >
+            {{ article.body|raw }}
+        </div>
+
+        <div id="uploading-spinner" class="mdl-spinner mdl-js-spinner"></div>
+    </div>
+
+    <script type="text/javascript">
+        window.iframelyKey = '{{ iframely_key }}';
+    </script>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
+{% block footer_before %}
+{% endblock %}
+
+{% block body_before_close %}
+    {% if app.request.query.get('with-help') %}
+        {% include 'AppBundle:article:post-import-dialog.html.twig' %}
+    {% endif %}
+
+    <script src="{{ asset('bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js') }}"></script>
+    <script src="{{ asset('bower_components/blueimp-file-upload/js/jquery.iframe-transport.js') }}"></script>
+    <script src="{{ asset('bower_components/blueimp-file-upload/js/jquery.fileupload.js') }}"></script>
+    <script src="{{ asset('bower_components/blueimp-canvas-to-blob/js/canvas-to-blob.js') }}"></script>
+    <script src="{{ asset('bower_components/medium-editor/dist/js/medium-editor.js') }}"></script>
+    <script src="{{ asset('bower_components/selectize/dist/js/standalone/selectize.min.js') }}"></script>
+    <script src="{{ asset('app/js/libraries/selectizeOverrided.js') }}"></script>
+
+    <script src="{{ asset('app/js/editor/postImportDialog.js') }}"></script>
+
+    <script src="{{ asset('app/js/editor/editor/utils/browserDetection.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/utils/easing.js') }}"></script>
+
+    <script src="{{ asset('app/js/editor/editor/settings.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/paste.js') }}"></script>
+
+    <script src="{{ asset('app/js/editor/editor/dragndrop/dropUpload.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/dragndrop/mediaComposer.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/dragndrop/dragAndDrop.js') }}"></script>
+
+    <script src="{{ asset('app/js/editor/editor/insert/core.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/insert/embeds.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/insert/images.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor/insert/templates.js') }}"></script>
+
+    <script src="{{ asset('app/js/editor/tagAutoComplete.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editor.js') }}"></script>
+    <script src="{{ asset('app/js/editor/editorPublishing.js') }}"></script>
+    <script src="{{ asset('app/js/editor/primaryMediaSelection.js') }}"></script>
+
+{% endblock %}

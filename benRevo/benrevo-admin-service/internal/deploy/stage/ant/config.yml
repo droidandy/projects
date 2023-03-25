@@ -1,0 +1,20 @@
+branch-defaults:
+  develop:
+    environment: be-superadmin-anthem-stage
+environment-defaults:
+  be-superadmin-anthem-stage:
+    branch: null
+    repository: null
+global:
+  application_name: be-superadmin
+  default_ec2_keyname: aws-misc
+  default_platform: arn:aws:elasticbeanstalk:us-east-1::platform/64bit Amazon Linux 2017.03 v2.6.0 running Java 8
+  default_region: us-east-1
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  sc: git
+  workspace_type: Application
+deploy:
+  artifact: carriers/anthem/target/anthem-admin-service.zip

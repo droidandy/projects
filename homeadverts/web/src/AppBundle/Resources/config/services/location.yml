@@ -1,0 +1,6 @@
+services:
+    ha_location.service:
+        class: AppBundle\Service\LocationService
+        arguments:
+            - "@cache"
+            - "@em"

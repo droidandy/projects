@@ -1,0 +1,2 @@
+/core-be/db/migration/*marketdata.ts
+/core-be/db/migration/*dev-seeds.ts

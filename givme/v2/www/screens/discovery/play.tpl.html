@@ -1,0 +1,296 @@
+<ion-view>
+  <div class="gm-content vertical-align-center" style="padding-top: 0">
+    <div class="page page--play givme">
+      <div class="status-bar-header"></div>
+      <div class="container-fluid play-container">
+        <div class="carousel-discover1" ng-class="loaded ? '' : 'preloader'" id="topPerson">
+          <div ng-style="{ opacity: loaded ? 1 : 0 }">
+              <div class="chose-message" id="topPersonMessage"></div>
+            <div id="bx-pager" class="slider-thumb clearfix" id="topPersonPager">
+              <ul>
+                <!-- Thumbnails for Top Person photos -->
+                <li ng-repeat="photo in topPerson.photos track by $index">
+                  <a href="" ng-click="topPerson.selectPhoto(photo)" ng-class="{ 'active': photo.active }">
+                    <img ng-src="http://52.18.229.105{{photo.thumb}}" class="img-responsive">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bxslider slider-pic">
+              <div class="slide" play-drag-animate person="top"
+                   on-swipe-up="topPerson.showInformation('up')"
+                   on-swipe-down="topPerson.showInformation('down')">
+                   <div class="slide-flip-block" style="height: 200px">
+                    <div class="front">
+                      <img class="img-responsive animate-show photo-image" ng-src="http://52.18.229.105{{topPerson.selectedPhoto()}}" fade="topPerson.animateChange"
+                           ng-class="{ 'remove-slide': topPerson.rejected,
+                               'selected-slide': topPerson.accepted }"/>
+                      <img class="img-responsive animate-hide prev-photo" ng-src="http://52.18.229.105{{topPerson.prevPhoto}}" />
+                    </div>
+                    <div class="back">
+                      <img src="images/img-me-blank.png" class="img-responsive photo-image"  alt="">
+                      <!-- Selected state-->
+                      <!-- End Rejected state-->
+                      <div class="flip-info"><span class="age">{{topPerson.age}}</span>
+                        <h3>{{topPerson.name}}</h3>
+                        <p> Lives in <strong>London, UK</strong> {{getPronoun(topPerson.gender)}} speaks <strong>{{topPerson.languagesString}}</strong> and {{getPronoun(topPerson.gender)}} likes <strong>{{topPerson.tagsString}}</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <span class="icon-selected" id="topPersonAccept"></span>
+              <!-- Rejected state -->
+              <span class="icon-remove" id="topPersonReject"></span>
+            </div>
+          </div>
+        </div>
+        <div class="progress-bar-container">
+          <div class="mask-container">
+          <div class="slider-base">
+            <div class="slider-drag" ng-style="timeoutProgress()" ng-class="shouldPoint ? 'slider-drag-pointed' : ''"></div>
+          </div>
+          <div class="mask"></div>
+          <a class="slider-arrow-prev" ng-click="confirmGoHome()"><span class="prev-icon-arrow"></span></a>
+          <div class="slider-count-next" ng-class="secondsColour()">{{timeoutSeconds()}}</div>
+          </div>
+        </div>
+        <!-- <div class="progress-bar-block progress-bar-container" ng-class="loading">
+          <div class="progress" ng-style="timeoutProgress()">
+            <span ng-if="percentage > 70">{{message}}</span>
+          </div>
+          <span class="loading-message" ng-if="loading">{{message}}</span>
+        </div> -->
+        <div class="carousel-discover2" ng-class="loaded ? '' : 'preloader'" id="bottomPerson">
+          <div ng-style="{ opacity: loaded ? 1 : 0 }">
+            <div class="bxslider1 slider-pic">
+              <div class="slide" play-drag-animate person="bottom"
+                   on-swipe-up="bottomPerson.showInformation('up')"
+                   on-swipe-down="bottomPerson.showInformation('down')">
+                   <div class="slide-flip-block" style="height: 200px">
+                    <div class="front">
+                      <img class="img-responsive animate-show photo-image" ng-src="http://52.18.229.105{{bottomPerson.selectedPhoto()}}" fade="bottomPerson.animateChange"
+                           ng-class="{ 'remove-slide': bottomPerson.rejected, 'selected-slide': bottomPerson.accepted }"/>
+                      <img class="img-responsive animate-hide prev-photo" ng-src="http://52.18.229.105{{bottomPerson.prevPhoto}}" />
+                    </div>
+                    <div class="back">
+                      <img src="images/img-me-blank.png" class="img-responsive photo-image"  alt="">
+                      <!-- Selected state-->
+                      <!-- End Rejected state-->
+                      <div class="flip-info"><span class="age">{{bottomPerson.age}}</span>
+                        <h3>{{bottomPerson.name}}</h3>
+                        <p> Lives in <strong>London, UK</strong> {{getPronoun(bottomPerson.gender)}} speaks <strong>{{bottomPerson.languagesString}}</strong> and {{getPronoun(bottomPerson.gender)}} likes <strong>{{bottomPerson.tagsString}}</strong>.</p>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Information container -->
+                <!-- <div class="info-container caption-conainer-view"
+                     ng-show="bottomPerson.showInfo || false"
+                     on-swipe-up="bottomPerson.switchToLanguages()"
+                     on-swipe-down="bottomPerson.switchToIceBreakers()">
+                  <div class="info" ng-show="bottomPerson.showIceBreakers">
+                    <h3>ICE BREAKERS</h3>
+                    <ul>
+                      <li ng-repeat="iceBreaker in bottomPerson.iceBreakers track by $index">
+                        <a href="#" ng-bind="iceBreaker"></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info" ng-show="bottomPerson.showLanguages">
+                    <h3>LANGUAGES</h3>
+                    <ul>
+                      <li ng-repeat="language in bottomPerson.languages track by $index">
+                        <a href="#" ng-bind="language"></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="info-controls">
+                    <ul class="pager">
+                      <li><a href="javascript://" ng-class="{ active: bottomPerson.showIceBreakers }" ng-click="bottomPerson.showLanguages = !(bottomPerson.showIceBreakers = true)">1</a></li>
+                      <li><a href="javascript://" ng-class="{ active: bottomPerson.showLanguages }" ng-click="bottomPerson.showIceBreakers = !(bottomPerson.showLanguages = true)">2</a></li>
+                    </ul>
+                  </div>
+                </div> -->
+                <!-- End information container-->
+              </div>
+                <span class="icon-selected" id="bottomPersonAccept"></span>
+                  <!-- Rejected state -->
+                  <span class="icon-remove" id="bottomPersonReject"></span>
+            </div>
+            <div id="bx-pager1" class="slider-thumb clearfix" id="bottomPersonPager">
+            <ul>
+              <!-- Thumbnails for Bottom Person photos -->
+              <li ng-repeat="photo in bottomPerson.photos track by $index">
+                <a href="" ng-click="bottomPerson.selectPhoto(photo)" ng-class="{ 'active': photo.active}">
+                  <img ng-src="http://52.18.229.105{{photo.thumb}}" class="img-responsive">
+                </a>
+              </li>
+            </ul>
+          </div>
+              <div class="chose-message chose-message--bottom" id="bottomPersonMessage"></div>
+          </div>
+        </div>
+        <div class="modal-item" ng-class="checkState('waiting')" id="wait-for-partner" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-info">
+                <div class="icon"><img src="img/wait-time-icon.png" width="34" height="38" alt=""></div>
+                <p class="title"> <span>Just a few seconds...</span>The others are still deciding. </p>
+              </div>
+              <div class="modal-footer">
+                <ul class="buttons">
+                  <li class="full"><a class="active" ng-click="changeState('waiting')">Close</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-item" ng-class="checkState('replay')" id="no-luck" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-info">
+                <div class="icon"><img src="img/no-luck-icon.png" width="38" height="38" alt=""></div>
+                <p class="title"> <span>Better luck next time!</span> Lets continue the search </p>
+              </div>
+              <div class="modal-footer">
+                <ul class="buttons">
+                  <li class="first"><a ng-click="goTo('menu')">Home</a></li>
+                  <li><a ng-click="goTo('menu')" class="active">Play</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" role="dialog" id="reject">
+          <div class="modal-dialog" >
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="icon-head">
+                  <div class="info-ticker"></div>
+                </div>
+                <div class="message">
+                  <h2>OH NO!</h2>
+                </div>
+                <div class="detailed-report-block">
+                  <p>You chose no one! Please try again. New game will begin in {{remainSeconds}}.</p>
+
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div>
+        <!-- Modal -->
+        <div class="modal-item" id="times-up" tabindex="-1" role="dialog" ng-class="checkState('timeup')">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-info">
+                <div class="icon"><img src="img/time-up-icon.png" width="35" height="51" alt=""></div>
+                <p class="title"> <span>Time's up!</span> A new game is starting in <span class="rem-time">{{remainSeconds}}</span> </p>
+              </div>
+              <div class="modal-footer">
+                <ul class="buttons">
+                  <li class="full"><a href="#" ng-click="goTo('menu')">Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-item" id="leave-the-game" tabindex="-1" role="dialog" ng-class="checkState('gohome')">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-info">
+                <div class="icon"><img src="img/quit-icon.png" width="39" height="40" alt=""></div>
+                <p class="title"> <span>Are you sure...</span> you want to leave the game? </p>
+              </div>
+              <div class="modal-footer">
+                <ul class="buttons">
+                  <li class="first"><a ng-click="cancelGoHome()">Cancel</a></li>
+                  <li><a class="active" ng-click="goTo('menu')">Yes</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-item" id="match" tabindex="-1" role="dialog" aria-labelledby="matchLabel" ng-class="checkState('match')" ng-if="gameState == 'match' && !poked">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-info">
+                <div class="icon"><img src="img/boom-icon.png" width="35" height="45" alt=""></div>
+                <p class="title"> <span>Booooom!</span> Get ready to talk </p>
+                <div class="cant-talk">Can't talk? <a ng-click="pokeLater()">Poke later</a></div>
+              </div>
+              <div class="modal-footer">
+                <div class="time">{{secondsRemain}} Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vmodal vmodal-container" ng-if="gameState == 'match' && !poked">
+            <div class="vmodal-header">
+                <div class="lightning"></div>
+                <h2 class="heading">Booooom!</h2>
+                Get ready to talk
+            </div>
+            <div class="vmodal-content" align="center">
+                Call will start in <span class="emp">{{secondsRemain}} seconds</span>
+            </div>
+            <div class="vmodal-footer">
+                <div class="row">
+                    <div class="col-xs-12 send-full" ng-click="pokeLater()">Poke
+                    later</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-item" id="wait" tabindex="-1" role="dialog" aria-labelledby="waitLabel" ng-class="checkState('match')" ng-if="gameState == 'match' && poked">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-info">
+                <div class="icon"><img src="img/clock-icon.png" width="37" height="37" alt=""></div>
+                <p class="title"> <span>Ah no wait...</span> {{acceptedName()}} can't speak now </p>
+                <div class="cant-talk">You have 24 hours to Poke {{acceptedGender()}}!</div>
+              </div>
+              <div class="modal-footer">
+                <ul class="buttons">
+                  <li class="first"><a ng-click="goTo('menu')">Play</a></li>
+                  <li><a ng-click="goTo('pocket')">Pocket</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vmodal vmodal-container" ng-if="gameState == 'match' && poked">
+            <div class="vmodal-header">
+                <div class="lightning"></div>
+                <h2 class="heading">Speak later!</h2>
+                The other person will poke you to speak later
+            </div>
+            <div class="vmodal-content" align="center">
+                Look out for a notification
+            </div>
+            <div class="vmodal-footer">
+                <div class="row">
+                    <div class="col-xs-12 send-full" ng-click="okay()">Okay</div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" role="dialog" id="time-is-up">
+          <div class="modal-dialog" >
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="icon-head">
+                  <div class="info-ticker"></div>
+                </div>
+                <div class="message">
+                  <h2>OH NO</h2>
+                </div>
+                <div class="detailed-report-block">
+                  <p>You ran out of time before making a decision! Please try again. New game will begin in {{remainSeconds}}.</p>
+
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div>
+    </div>
+  </div>
+</ion-view>

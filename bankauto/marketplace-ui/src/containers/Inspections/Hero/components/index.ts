@@ -1,0 +1,1 @@
+export { InfoWrapper } from './InfoWrapper';

@@ -1,0 +1,18 @@
+ha_article_search:
+    path:  /{term}
+    defaults:
+        _controller: AppBundle:Article:search
+        p: 1
+    methods:  [GET]
+    requirements:
+        p: \d+
+    condition: "request.headers.get('Pagination') == false"
+
+ha_article_search_pagination:
+    path:  /{term}
+    defaults:
+        _controller: AppBundle:Article:searchPagination
+    methods:  [GET]
+    requirements:
+        p: \d+
+    condition: "request.headers.get('Pagination')"

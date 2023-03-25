@@ -1,0 +1,30 @@
+.link {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 11px;
+  color: $brand-blue;
+  text-decoration: none;
+}
+
+.link_add {
+  font-size: 15px;
+  line-height: 16px;
+  color: $brand-green;
+}
+
+.nolink {
+  text-decoration: none;
+  display: block;
+}
+
+.nolink-inline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link_normal {
+  line-height: normal;
+  font-size: 15px;
+}

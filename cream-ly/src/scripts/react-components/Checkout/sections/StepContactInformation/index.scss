@@ -1,0 +1,81 @@
+@import "../../../../../styles/tools/mixins.scss";
+
+.StepContactInformation {
+
+		@include media-query($small) {
+			select, input {font-size: 0.9em;}
+		}
+	
+		.top {
+			.title {
+				order:0;
+				max-width: 50%;
+				flex: 0 0 50%;
+
+				@include media-query($small) {
+					order:1;
+					max-width: 100%;
+					flex: 0 0 100%;
+				}
+			}
+			.loginLink {
+				order:1;
+				
+				text-align: right;
+				margin-top:auto;
+				margin-bottom:auto;
+				max-width: 50%;
+				flex: 0 0 50%;
+
+				@include media-query($small) {
+					order:0;
+					max-width: 100%;
+					flex: 0 0 100%;
+					
+					text-align: left;
+					@include spacingBottom();
+				}
+			}
+		}
+		
+		.checkbox-wrapper {
+			width: 4px;
+			margin-left: 16px;
+		}
+	
+		.field.row {
+			//@include spacingBottomSmall();
+			margin-bottom: 10px;
+			
+				.errors {
+				 color: var(--rose);
+				 border:1px solid var(--rose);
+			 }
+		 
+			 select {
+				 outline: none !important;
+				 background-image: url('./ico-select.svg');
+			 }
+
+			 &.name {
+			
+			 }
+		}
+	 
+		 div.error {
+			 margin-bottom: 5px;
+			// padding-left:15px;
+			 color: var(--rose)
+		 }
+		 
+	  
+        
+	/* .list-inline {
+		margin-bottom: 15px;
+	}
+	address.address {
+		margin: 0;
+	} */
+}
+    
+   

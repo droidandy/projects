@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%; height: 100%">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Content-Security-Policy" content="
+default-src 'self' data: gap:
+    *;
+script-src 'self' 'unsafe-inline' 'unsafe-eval'
+    *;
+style-src 'self' 'unsafe-inline' 'unsafe-eval'
+    *;
+media-src 'self' 'unsafe-inline' 'unsafe-eval'
+    *;
+img-src 'self' 'unsafe-inline' 'unsafe-eval'
+    *;
+">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://apis.google.com/js/platform.js"></script>
+</head>
+<body class="yt-sub">
+
+<div class="yt-sub__bg"></div>
+<div class="yt-sub__darker"></div>
+
+<div class="yt-sub__container">
+    <div id="yt-sub-container" data-channel="FineArtEBooks" data-layout="full" data-theme="dark" data-count="default"></div>
+</div>
+
+<script>
+    (function() { "use strict";
+        var lang = window.location.href.split("?")[1].split("=")[1];
+        function addLayer(LN) {
+            try {
+                setTimeout(function() {
+                    try {
+                        var iframe = document.querySelector(".yt-sub__container iframe");
+                        console.log(iframe);
+                        var subButton = (iframe.contentDocument || iframe.contentWindow.document).querySelector(".yt-uix-subscription-button");
+                        console.log(subButton);
+                        if(subButton.dataset.isSubscribed) {
+                            console.log("Subscribed");
+                            var parent = document.body;
+                            var layer = document.createElement("div");
+                            var size = parent.getBoundingClientRect();
+                            console.log(parent);
+                            console.log(size);
+                            layer.style.width = size.width + "px";
+                            layer.style.height = size.height + "px";
+                            layer.style.position = "absolute";
+                            layer.style.left = size.left + "px";
+                            layer.style.top = size.top + "px";
+                            layer.style.zIndex = 9999;
+                            layer.id = "redirect-layer";
+                            var urlEN = "https://www.youtube.com/user/fineartebooks";
+                            var urlES = "http://www.youtube.com/user/artedivierte";
+                            var url = LN === "en" ? urlEN : urlES;
+                            layer.addEventListener("click", function() { window.open(url, '_system', 'location=no') });
+                            document.body.appendChild(layer);
+                        }
+                    } catch(e) {
+                        alert(e);
+                    }
+                }, 1000);
+            } catch(e) {
+                alert(JSON.stringify(e));
+            }
+        }
+
+        function renderYtBtn(id, LN) {
+            try {
+                var options = {
+                    'channel': LN === "en" ? "FineArtEBooks" : "artedivierte",
+                    'layout': 'full',
+                    'theme': "dark",
+                    'count': "default"
+                };
+                var container = document.getElementById(id);
+                gapi.ytsubscribe.render(container, options);
+            } catch(e) {
+                alert(e);
+            }
+        }
+
+        renderYtBtn("yt-sub-container", lang);
+        setTimeout(function() { addLayer(lang) }, 200);
+    }());
+</script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+{
+  "listingSummary": {
+    "listingId": "a2e47288-0b75-4f5c-be12-3e8088003252",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-04-28",
+    "photoCount": 26,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 379900.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "5937 West 37th Place",
+      "city": "Kennewick",
+      "district": "Benton County",
+      "stateProvince": "Washington",
+      "stateProvinceCode": "WA",
+      "postalCode": "99338",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 46.176593,
+      "longitude": -119.201713,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "5937 W 37th Pl, Kennewick, WA 99338"
+    },
+    "mlsNumbers": [
+      "229204"
+    ],
+    "RFGListingId": "SJRY3C",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/sjry3c",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "2 Story",
+    "propertyName": "Family Home in Sage Crest!",
+    "totalBath": 3,
+    "lotSize": "0.25 AC",
+    "buildingArea": "2651 Sq. Ft.",
+    "noOfBedrooms": 4,
+    "squareFootage": 2651.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/A9F6988C-23D9-415C-9170-83CE92274FD8",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-06-27T22:15:35.850",
+    "agents": [
+      {
+        "id": "5ff25d67-0dc9-4e9b-a3f4-4aa1d6dc540f",
+        "name": "Dustin Chiesa",
+        "firstName": "Dustin",
+        "lastName": "Chiesa",
+        "gender": "Male",
+        "defaultPhotoURL": "//openapi.azureedge.net/5751B525-7AF3-4481-961B-CCEE8849DCB8",
+        "emailAddress": "dustinc@rcsothebysrealty.com",
+        "isPrimary": true,
+        "office": {
+          "officeId": "49bb8682-5a96-42c8-be20-52c0743aa663",
+          "RFGOfficeId": "0001",
+          "companyId": "a1a6dcc8-8bd5-47a8-8403-fe92571b2e93",
+          "companyName": "Retter & Company",
+          "RFGCompanyId": "800396",
+          "brandCode": "SIR",
+          "name": "Retter & Company Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "329 North Kellogg St.",
+            "city": "Kennewick",
+            "district": "benton",
+            "stateProvince": "Washington",
+            "stateProvinceCode": "WA",
+            "postalCode": "99336",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 46.21361,
+            "longitude": -119.20174,
+            "formattedAddress": "329 N Kellogg St, Kennewick, WA 99336"
+          },
+          "phoneNumber": "5097838811",
+          "emailAddress": "kelli.proctor@sothebysrealty.com"
+        }
+      },
+      {
+        "id": "5ea15178-7e99-40c5-856d-cf5fe280b1d1",
+        "name": "Amy Mace",
+        "firstName": "Amy",
+        "lastName": "Mace",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/3AB455B9-BA7C-4510-95B1-B9E7E8CB539D",
+        "emailAddress": "amymace@rcsothebysrealty.com",
+        "isPrimary": false,
+        "office": {
+          "officeId": "49bb8682-5a96-42c8-be20-52c0743aa663",
+          "RFGOfficeId": "0001",
+          "companyId": "a1a6dcc8-8bd5-47a8-8403-fe92571b2e93",
+          "companyName": "Retter & Company",
+          "RFGCompanyId": "800396",
+          "brandCode": "SIR",
+          "name": "Retter & Company Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "329 North Kellogg St.",
+            "city": "Kennewick",
+            "district": "benton",
+            "stateProvince": "Washington",
+            "stateProvinceCode": "WA",
+            "postalCode": "99336",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 46.21361,
+            "longitude": -119.20174,
+            "formattedAddress": "329 N Kellogg St, Kennewick, WA 99336"
+          },
+          "phoneNumber": "5097838811",
+          "emailAddress": "kelli.proctor@sothebysrealty.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 2,
+  "halfBath": 1,
+  "quarterBath": 0,
+  "threeQuarterBath": 0,
+  "yearBuilt": "2010",
+  "providerKey": "a2e47288-0b75-4f5c-be12-3e8088003252",
+  "propertyFeatures": [
+    {
+      "groupName": "Roof",
+      "description": "Composition Shingle"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Tile"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Microwave"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range / Oven"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Laminate"
+    },
+    {
+      "groupName": "General",
+      "description": "Ceiling Fan(s)"
+    },
+    {
+      "groupName": "Garage Count",
+      "description": "3 Car Garage"
+    },
+    {
+      "groupName": "Fireplace Count",
+      "description": "1 Fireplace"
+    },
+    {
+      "groupName": "Basement",
+      "description": "None"
+    },
+    {
+      "groupName": "Lot Size",
+      "description": "Under 1/2 Acre"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "Central A/C"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Wall to Wall Carpet"
+    },
+    {
+      "groupName": "Location",
+      "description": "Cul-de-sac"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Deck"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Attached Garage"
+    },
+    {
+      "groupName": "Fencing",
+      "description": "Partially Fenced"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Garbage Disposal"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Ready to enjoy your summer evenings by this amazing outdoor fire pit and incredible views? Come check out this great Sullivan Rowell resale home in Sage Crest. Pride in ownership shows from the moment you walk through the front door. Entry has TALL ceilings and huge windows allowing tons of natural light in the family room. Kitchen & nook opens up to the family room making it ideal for entertaining friends and family. One bedroom on main level with 1/2 bath. Brightly lit stairs leads to large master suite with tiled surround garden tub, separate shower and walk in closet. Two additional bedrooms on upper level with a bonus room over the garage connected to one of the rooms. If inside entertaining isn't for you then step outside to this amazing backyard with professional landscaping and automatic gas fire pit!! Call your favorite realtor today to see this beauty!",
+      "htmlRemark": "<p>Ready to enjoy your summer evenings by this amazing outdoor fire pit and incredible views? Come check out this great Sullivan Rowell resale home in Sage Crest. Pride in ownership shows from the moment you walk through the front door. Entry has TALL ceilings and huge windows allowing tons of natural light in the family room. Kitchen &amp; nook opens up to the family room making it ideal for entertaining friends and family. One bedroom on main level with 1/2 bath. Brightly lit stairs leads to large master suite with tiled surround garden tub, separate shower and walk in closet. Two additional bedrooms on upper level with a bonus room over the garage connected to one of the rooms. If inside entertaining isn't for you then step outside to this amazing backyard with professional landscaping and automatic gas fire pit!! Call your favorite realtor today to see this beauty!<br></p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/sjry3c",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "60636757-A788-4BA7-9BB8-016B4E11E779",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/60636757-A788-4BA7-9BB8-016B4E11E779",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (1 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4916,
+      "width": 7362,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "FFCFA48D-CAD4-479B-B240-05532DDE391B",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/FFCFA48D-CAD4-479B-B240-05532DDE391B",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (10 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4349,
+      "width": 6509,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "CD74E3BD-4AA1-4053-BA96-08222F38B08C",
+      "sequenceNumber": 20,
+      "url": "//openapi.azureedge.net/CD74E3BD-4AA1-4053-BA96-08222F38B08C",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (24 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "D65431FD-ADEA-45B0-9DEE-0B2D6B7AF730",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/D65431FD-ADEA-45B0-9DEE-0B2D6B7AF730",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (15 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4812,
+      "width": 7210,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "01D2BB5C-67B9-41EC-8C73-0C0C275E9158",
+      "sequenceNumber": 19,
+      "url": "//openapi.azureedge.net/01D2BB5C-67B9-41EC-8C73-0C0C275E9158",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (20 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "D3047F60-B22A-409B-8B45-167C255652D5",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/D3047F60-B22A-409B-8B45-167C255652D5",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (6 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4859,
+      "width": 7281,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "FC70571A-147F-4B7A-9B2B-176784293A4C",
+      "sequenceNumber": 26,
+      "url": "//openapi.azureedge.net/FC70571A-147F-4B7A-9B2B-176784293A4C",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (27 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "A957C0F7-064D-4024-8773-1931BE917484",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/A957C0F7-064D-4024-8773-1931BE917484",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (12 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4872,
+      "width": 7301,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "5A464B6C-4281-4878-AE98-42A8B1BEE0AE",
+      "sequenceNumber": 23,
+      "url": "//openapi.azureedge.net/5A464B6C-4281-4878-AE98-42A8B1BEE0AE",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (22 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4913,
+      "width": 7362,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "7C4A6F64-C136-4FD2-9C52-48DBF8617E9E",
+      "sequenceNumber": 25,
+      "url": "//openapi.azureedge.net/7C4A6F64-C136-4FD2-9C52-48DBF8617E9E",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (21 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "200EC777-182F-485C-8282-535E288C8182",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/200EC777-182F-485C-8282-535E288C8182",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (16 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4827,
+      "width": 7229,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "52A8C6E0-32FD-413A-9B06-6271F5B19D13",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/52A8C6E0-32FD-413A-9B06-6271F5B19D13",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (19 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "A9F6988C-23D9-415C-9170-83CE92274FD8",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/A9F6988C-23D9-415C-9170-83CE92274FD8",
+      "isDefault": true,
+      "caption": "5937 w 37th pl (26 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 3571,
+      "width": 5351,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "68BCC9CF-56E5-4C0C-BB26-862A4E9AE6FD",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/68BCC9CF-56E5-4C0C-BB26-862A4E9AE6FD",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (18 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4915,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "08BEE333-BFC9-46D3-ACD6-8880248BC868",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/08BEE333-BFC9-46D3-ACD6-8880248BC868",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (2 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "3BFD24D7-3F08-47A5-8269-8EB7890C798F",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/3BFD24D7-3F08-47A5-8269-8EB7890C798F",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (17 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4915,
+      "width": 7363,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "F05D95B3-3FE3-4AF8-A22D-A520377C6F23",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/F05D95B3-3FE3-4AF8-A22D-A520377C6F23",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (7 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "7D2FB072-1FA6-4BEC-8BED-B4F9BEF2322C",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/7D2FB072-1FA6-4BEC-8BED-B4F9BEF2322C",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (5 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4928,
+      "width": 7387,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "001C8868-5597-4497-95C5-B73DC1F5234A",
+      "sequenceNumber": 1,
+      "url": "https://my.matterport.com/show/?m=ZMHNP4QjT43&mls=1",
+      "isDefault": true,
+      "caption": "Virtual Tour",
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "4BB207CF-D51B-4447-8E11-BEA886D3231C",
+      "sequenceNumber": 24,
+      "url": "//openapi.azureedge.net/4BB207CF-D51B-4447-8E11-BEA886D3231C",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (28 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "1A6AC34D-5DB1-43EE-85CD-C1E6358E7AAD",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/1A6AC34D-5DB1-43EE-85CD-C1E6358E7AAD",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (9 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "D1726224-019A-4D71-9B14-C6860F44DDE8",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/D1726224-019A-4D71-9B14-C6860F44DDE8",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (13 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4922,
+      "width": 7368,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "D89B6EFB-AE51-45C8-B6B2-CD3DFE37FD0A",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/D89B6EFB-AE51-45C8-B6B2-CD3DFE37FD0A",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (3 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "9947DDBB-B72C-493F-941E-CDC7D70943C9",
+      "sequenceNumber": 22,
+      "url": "//openapi.azureedge.net/9947DDBB-B72C-493F-941E-CDC7D70943C9",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (23 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "03154DF1-B34D-4119-B9CB-DAEDD7153B1F",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/03154DF1-B34D-4119-B9CB-DAEDD7153B1F",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (14 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "52770400-8852-44F9-A8A8-E78885ACDA98",
+      "sequenceNumber": 21,
+      "url": "//openapi.azureedge.net/52770400-8852-44F9-A8A8-E78885ACDA98",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (25 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4912,
+      "width": 7360,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    },
+    {
+      "mediaID": "82460EC7-FE5F-44CB-B355-F5CA36432017",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/82460EC7-FE5F-44CB-B355-F5CA36432017",
+      "isDefault": false,
+      "caption": "5937 w 37th pl (8 of 28)",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 4633,
+      "width": 6947,
+      "lastUpdateOn": "2018-05-10T21:33:09.650"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "229204",
+      "isPrimary": true
+    }
+  ]
+}

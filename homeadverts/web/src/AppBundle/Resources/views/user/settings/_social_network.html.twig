@@ -1,0 +1,63 @@
+<div class="group-item">
+    <div class="name">
+        {% if attribute(app.user, network.name ~ "AccessToken") %}
+            <button data-href="{{path("ha_user_settings_social_disconnect", {"service": network.name}) }}"
+               class="
+               --{{ network.name }}
+               --disconnect
+               social-button
+               mdl-button
+               mdl-js-button
+               mdl-js-ripple-effect"
+            >
+                <span class="fa {{ network.icon }}"></span>
+                    Disconnect from {{ network.title }}
+            </button>
+        {% else %}
+            <a href="{{ path("hwi_oauth_service_redirect", {"service": network.name}) }}"
+               class="
+               --{{ network.name }}
+               social-button
+               mdl-button
+               mdl-js-button
+               mdl-js-ripple-effect"
+            >
+                <span class="fa {{ network.icon }}"></span>
+                    Connect to {{ network.title }}
+            </a>
+        {% endif %}
+    </div>
+
+    {% if network.is_sharable %}
+        <div class="settings-action">
+            <span class="onoff">On</span>
+            <div class="switch">
+                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="{{ network.name }}-switch">
+                    <input type="checkbox"
+                           id="{{ network.name }}-switch"
+                           name="{{ app.user.autoshareKey(network.name) }}"
+                           {% if (app.user.autoshareEnabled(network.name)) %}
+                               checked
+                           {% endif %}
+                           {% if not (attribute(app.user, network.name ~ "AccessToken")) %}
+                               disabled
+                           {% endif %}
+                           class="mdl-switch__input">
+                    <span class="mdl-switch__label"></span>
+                </label>
+            </div>
+            <span class="onoff">Off</span>
+
+            <div class="comment">
+                Autoshare
+            </div>
+        </div>
+    {% else %}
+        <div class="settings-action">
+
+            <div class="comment">
+                Follow Only
+            </div>
+        </div>
+    {% endif %}
+</div>

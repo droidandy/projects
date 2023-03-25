@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://publicapi.scrum27.gett.io/v1/business/rides/593/receipt?business_id=UK-3950
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.1 (darwin17.6.0 x86_64) ruby/2.4.0p0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer 7a9c66e860f08f3b8379a941248a455cf688e6db52abf809318dc304fab3e548
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin,Accept,Content-Type,Authorization
+      Access-Control-Allow-Origin:
+      - ''
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 21 Aug 2018 17:16:29 GMT
+      X-Rate-Limit-Limit:
+      - '1000000'
+      X-Rate-Limit-Remaining:
+      - '999989'
+      X-Rate-Limit-Reset:
+      - '2018-08-21T17:16:45Z'
+      X-Request-Id:
+      - 042bb77b7fffdca22663363308dd1e13
+      - 042bb77b7fffdca22663363308dd1e13
+      Content-Length:
+      - '238'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ride_id":"593","charges":[{"name":"Sub Total","description":"","amount":0,"type":"subtotal"},{"name":"Total","description":"","amount":0,"type":"total"}],"currency_code":"GBP","duration":"00:00:00","distance":0,"distance_label":"miles"}'
+    http_version: 
+  recorded_at: Tue, 21 Aug 2018 17:16:29 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,194 @@
+@import './variables';
+
+.ant-btn {
+  min-width: 120px;
+
+  &:hover {
+    color: $btn-secondary-bg;
+    border-color: $dark-navy-blue;
+  }
+
+  &:focus, &:active {
+    color: $btn-secondary-bg;
+    border-color: $btn-secondary-bg;
+    box-shadow: inset 0 0 2px $alt-navy-blue;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+  }
+
+  &.ant-btn-primary {
+    &:hover {
+      color: #fff;
+      background: $btn-primary-bg-hover;
+      border-color: $btn-primary-bg-hover;
+    }
+
+    &:focus, &:active {
+      color: #fff;
+      background: $btn-primary-bg-hover;
+      border-color: $btn-primary-outline;
+    }
+
+    &[disabled] {
+      color: #fff;
+      background: $blue;
+      border-color: $blue;
+    }
+  }
+
+  &.ant-btn-secondary {
+    color: #fff;
+    background: $btn-secondary-bg;
+    border-color: $btn-secondary-bg;
+
+    &:hover {
+      color: #fff;
+      background: $btn-secondary-bg-hover;
+      border-color: $btn-secondary-bg-hover;
+    }
+
+    &:focus, &:active {
+      color: #fff;
+      background: $btn-secondary-bg-hover;
+      border-color: $btn-secondary-bg-outline;
+    }
+
+    &[disabled] {
+      color: #fff;
+      background: $btn-secondary-bg;
+      border-color: $btn-secondary-bg;
+    }
+  }
+
+  &.ant-btn-danger {
+    &:hover {
+      color: #fff;
+      background: $red;
+      border-color: $red;
+    }
+
+    &:focus, &:active {
+      color: #fff;
+      background: $btn-danger-bg;
+      border-color: $btn-danger-bg-outline;
+    }
+
+    &[disabled] {
+      color: #fff;
+      background: $btn-danger-bg;
+      border-color: $btn-danger-bg;
+    }
+  }
+
+  &.width-auto {
+    min-width: auto;
+  }
+}
+
+.btn-orange, .btn-orange:hover, .btn-orange:focus {
+  background: $orange;
+  border-color: $orange;
+  color: #fff;
+}
+
+.btn-blue, .btn-blue:hover, .btn-orange:focus {
+  background: $blue;
+  border-color: $blue;
+  color: #fff;
+}
+
+.btn-green, .btn-green:hover, .btn-green:focus {
+  background: $green;
+  border-color: $green;
+  color: #fff;
+}
+
+.table-expandable tr:not(.ant-table-expanded-row) {
+  cursor: pointer;
+}
+
+.ant-table-body {
+  .ant-table-row-expand-icon {
+    display: none;
+  }
+
+  .ant-table-tbody > tr:hover > td {
+    background: #ebf4fa;
+  }
+}
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  padding: 6px 4px;
+}
+
+.ant-table-thead > tr > th {
+  padding: 12px 4px;
+  white-space: nowrap;
+}
+
+.ant-table-thead,
+.ant-table-tbody {
+  > tr > {
+    .ant-table-row-expand-icon-cell,
+    .ant-table-expand-icon-th {
+      padding: 0;
+      width: 0;
+    }
+  }
+  > .ant-table-expanded-row > td:first-child {
+    padding: 0;
+  }
+}
+
+.ant-table-wrapper.fixed .ant-table .ant-table-body > table {
+  table-layout: fixed;
+}
+
+.ant-modal-header {
+  background: $navy-blue;
+
+  .ant-modal-title {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.ant-modal-footer {
+  display: flex;
+  justify-content: space-between;
+  background: $sand;
+}
+
+.with-icon {
+  input,
+  .ant-select-selection__placeholder,
+  .ant-select-selection-selected-value {
+    padding-left: 50px;
+  }
+
+  .ant-select-selection__rendered {
+    margin-left: 0;
+  }
+
+  .icon {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    transform: translateY(50%);
+    z-index: 1;
+  }
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.recharts-responsive-container {
+  overflow: hidden;
+}

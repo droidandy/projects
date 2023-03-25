@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121.25 9.97" width="121" height="10" preserveAspectRatio="xMinYMid">
+  <defs>
+    <style>.cls-1{fill:none;stroke:#298499;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4
+      8;}.cls-2{fill:#298499;}
+    </style>
+  </defs>
+  <title>brokers-arrow-right</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="bb3">
+      <line class="cls-1" x1="0.5" y1="4.99" x2="114.07" y2="4.99"/>
+      <polygon class="cls-2" points="112.61 9.97 121.25 4.99 112.61 0 112.61 9.97"/>
+    </g>
+  </g>
+</svg>

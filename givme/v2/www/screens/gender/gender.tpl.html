@@ -1,0 +1,18 @@
+<ion-view on-finish-render="ngRepeatFinished">
+    <div class="modal-item show" id="sex-selection" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body modal-info">
+              <div class="icon"><img src="img/message-sent-icon.png" width="63" height="54" alt=""></div>
+              <p class="title"> <span>Before we start</span>Can you tell us your gender?</p>
+            </div>
+            <div class="modal-footer">
+              <ul class="buttons">
+                <li class="first"><a ng-click="chooseGender('m')">Male</a></li>
+                <li><a ng-click="chooseGender('f')">Female</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+</ion-view>

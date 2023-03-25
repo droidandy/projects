@@ -1,0 +1,9 @@
+ha_pusher_auth_presence:
+    path:  /authPresence
+    defaults: { _controller: AppBundle:Api\User\Pusher:authPresence }
+    methods:  [POST]
+
+ha_pusher_auth_online:
+    path:  /authOnline
+    defaults: { _controller: AppBundle:Api\User\Pusher:authOnline }
+    methods:  [POST]

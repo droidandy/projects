@@ -1,0 +1,90 @@
+@import "../variables-theme";
+
+.brokerage {
+  .search-brokerage-form {
+    width: 600px;
+  }
+
+  .info-action-buttons {
+    float: right;
+  }
+
+  .ui.checkbox {
+    margin: 0;
+  }
+
+  .broker-token {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .select-form {
+    width: 100%;
+    @media only screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+    .ui.form {
+      border: $TABLE_BORDER;
+      padding: 25px;
+      display: flex;
+      justify-content: center;
+
+      .field {
+        .ui.dropdown {
+          margin-right: 30px;
+        }
+
+        &:last-child {
+          align-self: flex-end;
+          .ui.button {
+            height: 35px;
+          }
+        }
+
+        @media only screen and (max-width: 767px) {
+          & {
+            width: 100%;
+
+            .ui.dropdown {
+              width: 100%;
+              margin-bottom: 20px;
+            }
+
+            &:last-child {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.unsaved-changes-modal {
+  padding: 40px;
+  .content {
+    padding: 10px 0!important;
+
+    .presentation-options-header {
+      margin-top: 35px;
+
+      .note {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    }
+
+    .ui.form .inline.fields {
+      &.buttons {
+        float: right;
+        margin-top: 80px;
+
+        .ui.button {
+          float: right;
+          width: 200px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.PreferencesForm {
+  width: 415px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+  background: #fff;
+  padding: 20px 40px;
+
+  box-shadow: 0px 0px 15px rgba(102, 99, 108, 0.25);
+
+  .section-header {
+    margin-bottom: 0;
+    text-align: left;
+    padding: 20px 0 30px 0;
+  }
+
+  @include media-query($small) {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .close {
+    position: absolute;
+    right: 40px;
+    top: 38px;
+    cursor: pointer;
+  }
+  select {
+    outline: none !important;
+    background-image: url("./ico-select.svg");
+  }
+  .regionByDeliveryInfo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+
+    /* Black Pearl */
+
+    color: var(--purplish-grey);
+    @include spacingBottomMedium;
+  }
+
+  .language {
+    .label {
+      &:before {
+        background-image: url(./lang.svg);
+      }
+    }
+  }
+
+  .currency {
+    .label {
+      &:before {
+        background-image: url(./currency.svg);
+      }
+    }
+  }
+
+  .region {
+    .label {
+      &:before {
+        background-image: url(./region.svg);
+      }
+    }
+  }
+
+
+  .line {
+    display: flex;
+    flex-direction: column;
+    @include spacingBottomMedium;
+
+    .label {
+      position: relative;
+      // text-transform: uppercase;
+      // font-size: 16px;
+      // font-weight: bold;
+      // position: relative;
+      font-family: var(--font-heading);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      /* identical to box height */
+
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding-bottom: 8px;
+      /* Black Pearl */
+
+      color: var(--purplish-grey);
+
+      &:before {
+        content: '';
+        background-size: contain;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        left: -25px;
+      }
+    }
+    .value {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 15px;
+
+      color: var(--purplish-grey);
+    }
+  }
+}

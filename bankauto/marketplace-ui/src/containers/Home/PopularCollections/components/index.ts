@@ -1,0 +1,1 @@
+export { PopularCollectionsItem } from './PopularCollectionItem';

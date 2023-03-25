@@ -1,0 +1,140 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.carey.com/CSIOTAProxy_v2/CareyReservationService
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.opentravel.org/OTA/2003/05"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:OTA_GroundAvailRQ><tns:POS><tns:Source><tns:RequestorID
+        MessagePassword="carey123" ID="testarranger@testnone.com" Type="TA"></tns:RequestorID><tns:BookingChannel
+        Type="TA"><tns:CompanyName Code="3dfb7b39fa5615fc105f62cf7dbc9bb0" CompanyShortName="PM54006"
+        CodeContext="54006">CSI - Gett</tns:CompanyName></tns:BookingChannel></tns:Source></tns:POS><tns:Service><tns:Pickup
+        DateTime="2018-08-22T17:59:25"><tns:Address Latitude="40.6892494" Longitude="-74.04450039999999"><tns:AddressLine>New
+        York</tns:AddressLine><tns:CityName>New York</tns:CityName><tns:PostalCode>10004</tns:PostalCode><tns:CountryName
+        Code="US"></tns:CountryName></tns:Address></tns:Pickup></tns:Service><tns:ServiceType
+        Code="AsDirected" Description="Premium"></tns:ServiceType><tns:VehiclePrefs><tns:Type
+        Code="LS03"></tns:Type></tns:VehiclePrefs><tns:VehiclePrefs><tns:Type Code="ES03"></tns:Type></tns:VehiclePrefs><tns:VehiclePrefs><tns:Type
+        Code="SU04"></tns:Type></tns:VehiclePrefs><tns:RateQualifier AccountID="WA831732"></tns:RateQualifier></tns:OTA_GroundAvailRQ></env:Body></env:Envelope>
+    headers:
+      App-Id:
+      - 89e6c8c7
+      App-Key:
+      - 3dfb7b39fa5615fc105f62cf7dbc9bb0
+      X-Soap-Method:
+      - RateInquiry
+      Soapaction:
+      - '"rateInquiry"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '1339'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 22 Aug 2018 19:56:45 GMT
+      Server:
+      - JBoss-EAP/7
+      X-Powered-By:
+      - Undertow/1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:OTA_GroundAvailRS
+        xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:ns2="http://www.opentravel.org/OTA/2003/05/alpha"
+        EchoToken="1" PrimaryLangID="15349678045N3sGqPohm" TimeStamp="2018-08-22T15:56:44Z"><ns2:Warnings><ns2:Warning>CAREY
+        AUTHORIZED ACCESS ONLY * UNAUTHORIZED ACCESS TO THIS COMPUTER SYSTEM IS PROHIBITED
+        * STOP IMMEDIATELY IF YOU ARE NOT AUTHORIZED TO USE THIS SYSTEM * THIS SYSTEM
+        IS THE PROPERTY OF CAREY INTERNATIONAL, INC.</ns2:Warning></ns2:Warnings><ns2:GroundServices><ns2:GroundService><ns2:Service
+        DisabilityVehicleInd="false" Notes="AsDirected"><ns2:ServiceLevel Code="Premium"/><ns2:VehicleMakeModel
+        Name="ES03"/></ns2:Service><ns2:Shuttle><ns2:Vehicle DisabilityInd="false"><ns2:Type
+        Description="ES03">Executive Sedan</ns2:Type><ns2:VehicleSize MaxBaggageCapacity="4"
+        MaxPassengerCapacity="3"/></ns2:Vehicle></ns2:Shuttle><ns2:RateQualifier AccountID="WA831732"
+        AccountName="TestAccount"/><ns2:ServiceCharges/><ns2:TotalCharge RateTotalAmount="187.00"/><ns2:Reference><ns2:TPA_Extensions><ns2:ChargeDetails><ns2:Charges
+        BillingType="HOURLY" ReadBack="USD 84.94/hr + Incidentals + Taxes and Government
+        Fees USD 8.56/hr"><ns2:Items><ns2:ItemFixed ReadBack="$ 0.00" SequenceNumber="2"><ns2:ItemName>Fuel
+        Surcharge</ns2:ItemName><ns2:ItemDescription>Fuel Surcharge</ns2:ItemDescription><ns2:ItemPrice
+        Currency="USD">0.00</ns2:ItemPrice></ns2:ItemFixed><ns2:ItemVariable ReadBack="$
+        62.00/hr" SequenceNumber="0"><ns2:ItemName>Base</ns2:ItemName><ns2:ItemDescription>Garage
+        to Garage</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">62.00</ns2:ItemUnitPrice><ns2:ItemUnitMinimum Unit="Hour">2</ns2:ItemUnitMinimum></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 12.40/hr" SequenceNumber="3"><ns2:ItemName>Gratuity</ns2:ItemName><ns2:ItemDescription>Suggested
+        Gratuity</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">12.40</ns2:ItemUnitPrice></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 10.54/hr" SequenceNumber="4"><ns2:ItemName>STC</ns2:ItemName><ns2:ItemDescription>STC</ns2:ItemDescription><ns2:ItemUnit
+        Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice Currency="USD">10.54</ns2:ItemUnitPrice></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 6.44/hr" SequenceNumber="5"><ns2:ItemName>NY Sales Tax</ns2:ItemName><ns2:ItemDescription>NY
+        Sales Tax</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">6.44</ns2:ItemUnitPrice></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 2.12/hr" SequenceNumber="6"><ns2:ItemName>NY State Surcharge</ns2:ItemName><ns2:ItemDescription>NY
+        State Surcharge</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">2.12</ns2:ItemUnitPrice></ns2:ItemVariable></ns2:Items></ns2:Charges><ns2:AdditionalInfo/></ns2:ChargeDetails><ns2:AdditionalInfo><ns2:DisplayMessage
+        DisplayCode="P" Order="0">A minimum of 2.0 hours will be billed.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="16">STC is a surcharge based upon various overhead
+        expense items, some of which may not relate to the specific trip. The STC
+        is always calculated as a flat percentage of the base rate.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="18">The entire amount of all collected gratuities is
+        paid to your professional chauffeur. For your convenience, a suggested gratuity,
+        which is a percentage of the Base Rate, has been added to your bill. The amount
+        of any gratuity you pay is at your discretion.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="20">Estimate includes surcharge, fuel and airport fee.
+        Wait time, tolls, parking and local taxes that cannot be calculated prior
+        to service may apply and are excluded.  Additional service may change rate.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="24">Where hourly rates apply billing is garage to garage.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="26">Taxes and government fees include taxes imposed
+        by all levels of taxing authorities and government fees and surcharges.</ns2:DisplayMessage></ns2:AdditionalInfo><ns2:Notice>Changes
+        or cancellations must be made at least 2 hours prior to scheduled pick up
+        time to avoid fees</ns2:Notice><ns2:GarageToGarageEstimate>A minimum of 2.0
+        hours will be billed.</ns2:GarageToGarageEstimate><ns2:SVCCity svcCityId="WA_GC_89408"
+        svcType="Premium"/><ns2:TotalAmount Currency="USD">$ 93.50 /hr</ns2:TotalAmount></ns2:TPA_Extensions></ns2:Reference></ns2:GroundService><ns2:GroundService><ns2:Service
+        DisabilityVehicleInd="false" Notes="AsDirected"><ns2:ServiceLevel Code="Premium"/><ns2:VehicleMakeModel
+        Name="SU04"/></ns2:Service><ns2:Shuttle><ns2:Vehicle DisabilityInd="false"><ns2:Type
+        Description="SU04">Sport Utility Vehicle</ns2:Type><ns2:VehicleSize MaxBaggageCapacity="5"
+        MaxPassengerCapacity="6"/></ns2:Vehicle></ns2:Shuttle><ns2:RateQualifier AccountID="WA831732"
+        AccountName="TestAccount"/><ns2:ServiceCharges/><ns2:TotalCharge RateTotalAmount="247.34"/><ns2:Reference><ns2:TPA_Extensions><ns2:ChargeDetails><ns2:Charges
+        BillingType="HOURLY" ReadBack="USD 112.34/hr + Incidentals + Taxes and Government
+        Fees USD 11.33/hr"><ns2:Items><ns2:ItemFixed ReadBack="$ 0.00" SequenceNumber="2"><ns2:ItemName>Fuel
+        Surcharge</ns2:ItemName><ns2:ItemDescription>Fuel Surcharge</ns2:ItemDescription><ns2:ItemPrice
+        Currency="USD">0.00</ns2:ItemPrice></ns2:ItemFixed><ns2:ItemVariable ReadBack="$
+        82.00/hr" SequenceNumber="0"><ns2:ItemName>Base</ns2:ItemName><ns2:ItemDescription>Garage
+        to Garage</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">82.00</ns2:ItemUnitPrice><ns2:ItemUnitMinimum Unit="Hour">2</ns2:ItemUnitMinimum></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 16.40/hr" SequenceNumber="3"><ns2:ItemName>Gratuity</ns2:ItemName><ns2:ItemDescription>Suggested
+        Gratuity</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">16.40</ns2:ItemUnitPrice></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 13.94/hr" SequenceNumber="4"><ns2:ItemName>STC</ns2:ItemName><ns2:ItemDescription>STC</ns2:ItemDescription><ns2:ItemUnit
+        Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice Currency="USD">13.94</ns2:ItemUnitPrice></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 8.52/hr" SequenceNumber="5"><ns2:ItemName>NY Sales Tax</ns2:ItemName><ns2:ItemDescription>NY
+        Sales Tax</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">8.52</ns2:ItemUnitPrice></ns2:ItemVariable><ns2:ItemVariable
+        ReadBack="$ 2.81/hr" SequenceNumber="6"><ns2:ItemName>NY State Surcharge</ns2:ItemName><ns2:ItemDescription>NY
+        State Surcharge</ns2:ItemDescription><ns2:ItemUnit Unit="hr">1</ns2:ItemUnit><ns2:ItemUnitPrice
+        Currency="USD">2.81</ns2:ItemUnitPrice></ns2:ItemVariable></ns2:Items></ns2:Charges><ns2:AdditionalInfo/></ns2:ChargeDetails><ns2:AdditionalInfo><ns2:DisplayMessage
+        DisplayCode="P" Order="0">A minimum of 2.0 hours will be billed.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="16">STC is a surcharge based upon various overhead
+        expense items, some of which may not relate to the specific trip. The STC
+        is always calculated as a flat percentage of the base rate.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="18">The entire amount of all collected gratuities is
+        paid to your professional chauffeur. For your convenience, a suggested gratuity,
+        which is a percentage of the Base Rate, has been added to your bill. The amount
+        of any gratuity you pay is at your discretion.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="20">Estimate includes surcharge, fuel and airport fee.
+        Wait time, tolls, parking and local taxes that cannot be calculated prior
+        to service may apply and are excluded.  Additional service may change rate.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="24">Where hourly rates apply billing is garage to garage.</ns2:DisplayMessage><ns2:DisplayMessage
+        DisplayCode="P" Order="26">Taxes and government fees include taxes imposed
+        by all levels of taxing authorities and government fees and surcharges.</ns2:DisplayMessage></ns2:AdditionalInfo><ns2:Notice>Changes
+        or cancellations must be made at least 2 hours prior to scheduled pick up
+        time to avoid fees</ns2:Notice><ns2:GarageToGarageEstimate>A minimum of 2.0
+        hours will be billed.</ns2:GarageToGarageEstimate><ns2:SVCCity svcCityId="WA_GC_89408"
+        svcType="Premium"/><ns2:TotalAmount Currency="USD">$ 123.67 /hr</ns2:TotalAmount></ns2:TPA_Extensions></ns2:Reference></ns2:GroundService></ns2:GroundServices><ns2:TPA_Extensions/></ns2:OTA_GroundAvailRS></S:Body></S:Envelope>
+    http_version:
+  recorded_at: Wed, 22 Aug 2018 19:56:45 GMT
+recorded_with: VCR 4.0.0

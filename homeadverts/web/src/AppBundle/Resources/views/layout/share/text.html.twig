@@ -1,0 +1,13 @@
+{% macro mail_to(domain) %}
+{% trans %}email.emailto.body.hello{% endtrans %}%0D%0A%0D%0A
+
+
+{% trans with {"%domain%":domain}%}email.emailto.body.found-on{% endtrans %}%0D%0A%0D%0A
+
+
+{{ app.request.getUri() }}
+{% endmacro %}
+
+{% macro mail_to_subject(domain) %}
+	{{ domain }}: {% trans %}email.emailto.subject{% endtrans %}
+{% endmacro %}

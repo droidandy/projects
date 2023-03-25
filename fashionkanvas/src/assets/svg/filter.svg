@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Icon / Filter / Rasp</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-Filter-/-Rasp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M5,3.5 L5,9.5" id="Line-35" stroke="#FF6969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M5,14.4792027 L5,20.5" id="Line-34" stroke="#FF6969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12,3.5 L12,13.5124922" id="Line-33" stroke="#FF6969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M12,18.4384472 L12,20.5" id="Line-32" stroke="#FF6969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M19,3.5 L19,6.5" id="Line-31" stroke="#FF6969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M19,11.4861218 L19,20.5" id="Line-30" stroke="#FF6969" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <circle id="Line-29" stroke="#FF6969" stroke-width="1.5" cx="12" cy="16" r="2.25"></circle>
+        <circle id="Line-28" stroke="#FF6969" stroke-width="1.5" cx="19" cy="9" r="2.25"></circle>
+        <circle id="Line-27" stroke="#FF6969" stroke-width="1.5" cx="5" cy="12" r="2.25"></circle>
+    </g>
+</svg>

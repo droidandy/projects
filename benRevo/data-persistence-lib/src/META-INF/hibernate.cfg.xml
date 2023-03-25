@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+      <property name="hibernate.current_session_context_class">thread</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+      <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+      <property name="hibernate.connection.url">${env.db_url}</property>
+      <property name="hibernate.connection.username">${env.db_username}</property>
+      <property name="hibernate.connection.password">${env.db_password}</property>
+
+      <!-- List of XML mapping files -->
+      <mapping class="com.benrevo.data.persistence.entities.Benefit"/>
+      <mapping class="com.benrevo.data.persistence.entities.BenefitName"/>
+      <mapping class="com.benrevo.data.persistence.entities.Broker"/>
+      <mapping class="com.benrevo.data.persistence.entities.Carrier"/>
+      <mapping class="com.benrevo.data.persistence.entities.Client"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientPlan"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientFileUpload"/>
+      <mapping class="com.benrevo.data.persistence.entities.Network"/>
+      <mapping class="com.benrevo.data.persistence.entities.Plan"/>
+      <mapping class="com.benrevo.data.persistence.entities.PlanHistory"/>
+      <mapping class="com.benrevo.data.persistence.entities.PlanNameByNetwork"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpCarrier"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuote"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteVersion"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteNetwork"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteNetworkPlan"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteOption"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteOptionNetwork"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpStatus"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpSubmission"/>
+      <mapping class="com.benrevo.data.persistence.entities.Timeline"/>
+      <mapping class="com.benrevo.data.persistence.entities.User"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientTeam"/>
+      <mapping class="com.benrevo.data.persistence.entities.CarrierHistory"/>
+      <mapping class="com.benrevo.data.persistence.entities.RFP"/>
+      <mapping class="com.benrevo.data.persistence.entities.Option"/>
+      <mapping class="com.benrevo.data.persistence.entities.Rider"/>
+      <mapping class="com.benrevo.data.persistence.entities.RiderMeta"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteNetworkCombination"/>
+      <mapping class="com.benrevo.data.persistence.entities.NetworkMedicalGroup"/>
+      <mapping class="com.benrevo.data.persistence.entities.MedicalGroup"/>
+      <mapping class="com.benrevo.data.persistence.entities.AdministrativeFee"/>
+      <mapping class="com.benrevo.data.persistence.entities.ExtProduct"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientExtProduct"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientRfpProduct"/>
+      <mapping class="com.benrevo.data.persistence.entities.BrokerConfig"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientExtProduct"/>     
+      <mapping class="com.benrevo.data.persistence.entities.ClientRfpProduct"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.AncillaryPlan"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.AncillaryClass"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.LifeClass"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.StdClass"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.LtdClass"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.AncillaryRate"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.VoluntaryRate"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.BasicRate"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.AncillaryRateAge"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.RfpToAncillaryPlan"/>
+      <mapping class="com.benrevo.data.persistence.entities.ClientAttribute"/>
+      <mapping class="com.benrevo.data.persistence.entities.Document"/>
+      <mapping class="com.benrevo.data.persistence.entities.DocumentAttribute"/>
+      <mapping class="com.benrevo.data.persistence.entities.Access"/>   
+      <mapping class="com.benrevo.data.persistence.entities.Person"/> 
+      <mapping class="com.benrevo.data.persistence.entities.BrokerPersonRelation"/> 
+      <mapping class="com.benrevo.data.persistence.entities.ClientPersonRelation"/> 
+      <mapping class="com.benrevo.data.persistence.entities.Program"/> 
+      <mapping class="com.benrevo.data.persistence.entities.RFPAttribute"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteAttribute"/>
+      <mapping class="com.benrevo.data.persistence.entities.QuotePlanAttribute"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.RfpQuoteAncillaryOption"/>
+      <mapping class="com.benrevo.data.persistence.entities.ancillary.RfpQuoteAncillaryPlan"/>
+      <mapping class="com.benrevo.data.persistence.entities.PresentationOption"/>
+      <mapping class="com.benrevo.data.persistence.entities.RfpQuoteDisclaimer"/>
+   </session-factory>
+</hibernate-configuration>

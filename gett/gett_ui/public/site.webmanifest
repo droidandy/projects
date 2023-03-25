@@ -1,0 +1,19 @@
+{
+    "name": "Gett Business Solutions",
+    "short_name": "Gett Business Solutions",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=PY4l",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=PY4l",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "standalone"
+}

@@ -1,0 +1,52 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="pocket-head">
+    <div class="holder header">
+      <ion-nav-back-button class="button-clear header__back" transitiontype="slide" direction="right" go-native>
+        <img src="img/back-chevron.png" alt=""> Back
+      </ion-nav-back-button>
+      <!-- <div class="header__back" ui-sref="menu" go-native>Back</div> -->
+      <ion-nav-title class="header__heading title-center">
+        <span>Change</span>
+      </ion-nav-title>
+    </div>
+  </ion-nav-bar>
+  <ion-content scroll="" class="passcode">
+    <div class="settings">
+      <div class="label-title label-title--first">Current Passcode:</div>
+      <div class="row">
+        <div class="col-xs-12 selection selection--shorter">
+          <ion-list>
+            <li class="item add-more">
+              <input type="password" name="new-ice-breaker" ng-model="data.currentPasscode" placeholder="Add new...">
+            </li>
+          </ion-list>
+        </div>
+      </div>
+
+      <div class="label-title label-title">New Passcode:</div>
+      <div class="row">
+        <div class="col-xs-12 selection selection--shorter">
+          <ion-list>
+            <li class="item add-more">
+              <input type="password" name="new-ice-breaker" ng-model="data.newPasscode" placeholder="Add new...">
+            </li>
+          </ion-list>
+        </div>
+      </div>
+
+      <div class="label-title label-title">Confirm Passcode:</div>
+      <div class="row">
+        <div class="col-xs-12 selection selection--shorter">
+          <ion-list>
+            <li class="item add-more">
+              <input type="password" name="new-ice-breaker" ng-model="data.confirmPasscode" placeholder="Add new...">
+            </li>
+          </ion-list>
+        </div>
+      </div>
+      <ul class="bad-things">
+        <li class="text-center log-out"><a href="" class="active" ng-click="confirmPasscode()">Change</a></li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

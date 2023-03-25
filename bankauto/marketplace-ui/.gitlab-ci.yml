@@ -1,0 +1,18 @@
+include:
+  - project: cde106/devcloud/dat/ci
+    ref: '0.0.2'
+    file: .common.ci.yaml
+
+variables:
+  K8S_NAMESPACE: 'marketplace'
+  SERVICE_NAME: 'marketplace-ui'
+  ADDITIONAL_IMAGE: "nginx"
+
+create nginx:
+  extends: .additional_image # Наследование от джобы сборки
+  variables:
+    CONTEXT:  ".rgs/docker/nginx" # Можно передать контекст сборки, чтобы было удобно копировать файлы внутрь образа.
+    DOCKERFILE_PATH:  ".rgs/docker/nginx/Dockerfile"
+    IMAGE_NAME: "nginx" # Если не будет указан - всё сломается = )
+  except:
+    - tags

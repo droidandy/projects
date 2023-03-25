@@ -1,0 +1,178 @@
+source 'https://rubygems.org'
+
+# by default :github source generates `git://github.com` url, but it is insecure
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+gem 'rails', '~> 5.0.2'
+
+gem 'pg', '~> 0.20'
+gem 'tiny_tds'
+
+gem 'jbuilder', '~> 2.5'
+gem 'puma', '~> 3.0'
+
+gem 'haml-rails'
+
+# replacement for active-record
+gem 'sequel', '~> 5.0'
+gem 'sequel-rails', '~> 1.0'
+gem 'sequel_postgresql_triggers'
+gem 'sequel_secure_password'
+
+# for ENV-based app configuration. it has to go before 'config' gem for the
+# latter to pick up ENV values
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+gem 'config', '>= 1.5.1' # rubocop:disable Bundler/OrderedGems
+gem 'hashie'
+
+gem 'jwt'
+gem 'request_store'
+
+gem 'sidekiq'
+gem 'sidekiq-scheduler'
+gem 'sidekiq-unique-jobs'
+
+# param-based dataset generation
+gem 'parascope', '~> 1.2.0'
+
+# file uploading
+gem 'carrierwave'
+gem 'carrierwave-base64', '~> 2.6.1'
+gem 'carrierwave-sequel', require: 'carrierwave/sequel'
+gem 'ffi-geos'
+gem 'fog-aws'
+gem 'rmagick'
+
+# SOAP client
+gem 'savon', '~> 2.12.0'
+# REST client
+gem 'rest-client'
+# DSL for hash transformation
+gem 'hash_mapper'
+# Distance calculations
+gem 'geokit'
+# Geospatial library
+gem 'rgeo'
+# Track exceptions
+gem 'airbrake', '~> 6.1'
+# Email calendar events
+gem 'icalendar'
+# SFTP Client
+gem 'net-sftp'
+
+# Postcodes api
+gem 'postcodes_io', '~> 0.3.0'
+
+gem 'sass-rails'
+
+# PDF generator
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
+# PNG/JPEG generator
+gem 'imgkit'
+gem 'wkhtmltoimage-binary'
+
+# Working with zip arhives
+gem 'rubyzip'
+
+# Google static maps images
+# FYI: current version 1.2.5 doesn't support encoded polylines
+# use 1.2.6 repo until MR brentsowers1/googlestaticmap#24 with this feature will be merged
+gem 'googlestaticmap', github: "anplug/googlestaticmap", branch: "master"
+
+# Recurrence library
+gem 'ice_cube'
+
+gem 'timezone_finder'
+
+# External API
+gem 'rswag-api'
+gem 'rswag-ui'
+
+# GoCardless
+gem 'gocardless_pro'
+
+# Firebase Cloud Messaging
+gem 'fcm'
+
+# Country info (like currency code)
+gem 'countries'
+gem 'phone'
+
+# Currencies info
+gem 'money'
+
+gem 'redis'
+
+gem 'pry'
+gem 'pry-nav'
+gem 'pry-rails'
+gem 'pry-remote'
+
+group :production, :dev, :staging do
+  gem 'newrelic_rpm'
+end
+
+group :development, :test, :test_features do
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'foreman'
+  gem 'letter_opener'
+  gem 'rubocop', '~> 0.55.0', require: false
+  gem 'sequel-annotate'
+
+  gem 'vcr'
+end
+
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'web-console', '>= 3.3.0'
+
+  gem 'listen', '~> 3.0.5'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-commands-rspec'
+  gem 'spring-commands-rubocop'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+
+  # Use Capistrano for deployment
+  gem 'capistrano'
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-nvm', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rvm'
+  gem 'capistrano-sidekiq'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma" # rubygems version is outdated
+end
+
+group :test, :test_features do
+  gem 'database_cleaner'
+  gem 'parallel_tests'
+  gem 'rspec-rails'
+  gem 'rspec_junit_formatter'
+  gem 'rswag-specs'
+  gem 'timecop'
+end
+
+group :test do
+  gem 'colorize', require: false
+  gem 'rspec-its'
+  gem 'rspec-sidekiq'
+  gem 'rspec_sequel_matchers'
+  gem 'simplecov', require: false
+  gem 'webmock'
+end
+
+group :test_features do
+  gem 'browsermob-proxy'
+  gem 'capybara'
+  gem 'capybara-screenshot'
+  gem 'rspec-retry'
+  gem 'selenium-webdriver'
+  gem 'site_prism'
+end

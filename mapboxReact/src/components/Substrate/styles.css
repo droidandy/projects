@@ -1,0 +1,13 @@
+.substrate_container {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 25px;
+
+}
+.substrate_container_title {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}

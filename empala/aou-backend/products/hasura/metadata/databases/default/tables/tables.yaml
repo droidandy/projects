@@ -1,0 +1,5 @@
+- "!include instruments_feed.yaml"
+- "!include marketdata_stock_prices_daily.yaml"
+- "!include marketdata_view_stock_prices_daily.yaml"
+- "!include marketdata_view_stock_prices_monthly.yaml"
+- "!include marketdata_view_stock_prices_weekly.yaml"

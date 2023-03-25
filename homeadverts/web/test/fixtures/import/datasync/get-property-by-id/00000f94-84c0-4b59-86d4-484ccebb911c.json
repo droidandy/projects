@@ -1,0 +1,455 @@
+{
+  "listingSummary": {
+    "listingId": "00000f94-84c0-4b59-86d4-484ccebb911c",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-03-30",
+    "photoCount": 16,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 775000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "9123  Strada Pl 7306",
+      "city": "Naples",
+      "district": "Collier County",
+      "stateProvince": "Florida",
+      "stateProvinceCode": "FL",
+      "postalCode": "34108",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 26.25335,
+      "longitude": -81.79805,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "9123 Strada Pl, Naples, FL 34108"
+    },
+    "geographicRegions": [
+      {
+        "type": "Neighbourhood",
+        "name": "MERCATO"
+      }
+    ],
+    "mlsNumbers": [
+      "218024237"
+    ],
+    "RFGListingId": "FL29XY",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/fl29xy",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Condominium",
+    "propertyStyle": "Other Style",
+    "propertyUse": "Other Residential",
+    "propertyName": "9123 Strada Pl , 7306, Naples, FL 34108",
+    "totalBath": 2,
+    "buildingArea": "1475 Sq. Ft.",
+    "noOfBedrooms": 2,
+    "squareFootage": 1475.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/22EE96A9-1398-455E-B483-650567C50496",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-07-20T17:40:30.083",
+    "agents": [
+      {
+        "id": "b20900ed-6c53-43fe-868c-55226cf68509",
+        "name": "Susan Gardner",
+        "firstName": "Susan",
+        "lastName": "Gardner",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/644CBA5F-2D23-4375-ACF8-656FC67DF352",
+        "emailAddress": "susan.gardner@premiersir.com",
+        "leadEmailAddress": "800307.lead.4021274@leads.leadrouter.com",
+        "isPrimary": true,
+        "office": {
+          "officeId": "4afab1f9-4946-44e7-9813-23e7ea5f0451",
+          "RFGOfficeId": "0010",
+          "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+          "companyName": "Premier",
+          "RFGCompanyId": "800307",
+          "brandCode": "SIR",
+          "name": "Premier Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "9123 Strada Place, Suite 7125",
+            "city": "Naples",
+            "district": "Collier",
+            "stateProvince": "Florida",
+            "stateProvinceCode": "FL",
+            "postalCode": "34108",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 26.25309,
+            "longitude": -81.79741,
+            "formattedAddress": "9123 Strada Pl, Naples, FL 34108"
+          },
+          "phoneNumber": "2395949400",
+          "emailAddress": "REFERRALS@PREMIERSIR.COM"
+        }
+      },
+      {
+        "id": "060867bf-ab80-4291-a60c-62afdf28fb7c",
+        "name": "Amelia Russell Hoyt",
+        "firstName": "Amelia",
+        "lastName": "Russell Hoyt",
+        "gender": "Female",
+        "defaultPhotoURL": "//openapi.azureedge.net/3C154EBA-0CA3-46A1-996F-94C9B63C71A9",
+        "emailAddress": "amelia.hoyt@premiersir.com",
+        "leadEmailAddress": "800307.lead.4028472@leads.leadrouter.com",
+        "isPrimary": false,
+        "office": {
+          "officeId": "4afab1f9-4946-44e7-9813-23e7ea5f0451",
+          "RFGOfficeId": "0010",
+          "companyId": "5cafad86-3a25-4fdd-9a60-ddbc7935bea3",
+          "companyName": "Premier",
+          "RFGCompanyId": "800307",
+          "brandCode": "SIR",
+          "name": "Premier Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "9123 Strada Place, Suite 7125",
+            "city": "Naples",
+            "district": "Collier",
+            "stateProvince": "Florida",
+            "stateProvinceCode": "FL",
+            "postalCode": "34108",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 26.25309,
+            "longitude": -81.79741,
+            "formattedAddress": "9123 Strada Pl, Naples, FL 34108"
+          },
+          "phoneNumber": "2395949400",
+          "emailAddress": "REFERRALS@PREMIERSIR.COM"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 2,
+  "halfBath": 0,
+  "levels": 0,
+  "yearBuilt": "2008",
+  "taxRollNumber": "0",
+  "providerKey": "00000f94-84c0-4b59-86d4-484ccebb911c",
+  "propertyFeatures": [
+    {
+      "groupName": "Garage Count",
+      "description": "2 Car Garage"
+    },
+    {
+      "groupName": "General",
+      "description": "Elevator"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "Central A/C - Electric"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Stucco"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Exercise Area"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Sewer",
+      "description": "City"
+    },
+    {
+      "groupName": "Roof",
+      "description": "Cement Tiles"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Other"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Attached Garage"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "BBQ"
+    },
+    {
+      "groupName": "General",
+      "description": "Clubhouse"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Directions",
+      "languageCode": "en",
+      "remark": "Located in the Mercato at the corner of Vanderbilt Beach Rd. and US 41.",
+      "htmlRemark": " Located in the Mercato at the corner of Vanderbilt Beach Rd. and US 41."
+    },
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Professionally decorated by Clive Daniel, this 2 bedroom, 2 bath is located in a cosmopolitan mixed-use community of luxury condos, popular restaurants, shops, a 12-screen movie theater and Whole Foods. Relax and entertain on the rooftop amenity deck which boasts a sparkling 52-foot heated pool with waterfall, a hydrotherapy spa, a fitness center and clubhouse with full catering kitchen and billiard table. Each owner is provided with 2 parking spaces in the owners gated garage, and a climate controlled storage space on their same floor. Vanderbilt beach is just 1.5 miles from your door.",
+      "htmlRemark": " Professionally decorated by Clive Daniel, this 2 bedroom, 2 bath is located in a cosmopolitan mixed-use community of luxury condos, popular restaurants, shops, a 12-screen movie theater and Whole Foods. Relax and entertain on the rooftop amenity deck which boasts a sparkling 52-foot heated pool with waterfall, a hydrotherapy spa, a fitness center and clubhouse with full catering kitchen and billiard table. Each owner is provided with 2 parking spaces in the owners gated garage, and a climate controlled storage space on their same floor. Vanderbilt beach is just 1.5 miles from your door."
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/fl29xy",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "14FC8668-6FB6-452A-962E-1C18CD3305CB",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/14FC8668-6FB6-452A-962E-1C18CD3305CB",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "BEF4B351-2AF7-4605-9E57-4BF06C1211A1",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/BEF4B351-2AF7-4605-9E57-4BF06C1211A1",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "6838D218-2ABD-45F3-9039-5C75C9501071",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/6838D218-2ABD-45F3-9039-5C75C9501071",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "22EE96A9-1398-455E-B483-650567C50496",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/22EE96A9-1398-455E-B483-650567C50496",
+      "isDefault": true,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "6C86D275-95C6-4F88-B5CC-7797D610C68F",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/6C86D275-95C6-4F88-B5CC-7797D610C68F",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "78E07B8F-2B77-4580-9962-7C01F40D4B77",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/78E07B8F-2B77-4580-9962-7C01F40D4B77",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "B75D6BF2-1D94-47EC-A092-911969529E46",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/B75D6BF2-1D94-47EC-A092-911969529E46",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "30A98130-C388-4557-94EC-B5DF6BE2BFC7",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/30A98130-C388-4557-94EC-B5DF6BE2BFC7",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "D107158E-C3C5-41D9-B14C-C10678EC0BE8",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/D107158E-C3C5-41D9-B14C-C10678EC0BE8",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "F3C5759A-5A5F-4554-9B86-C2A17006E201",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/F3C5759A-5A5F-4554-9B86-C2A17006E201",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "E3740ACE-12A7-42B2-B248-CD8FBBCDF877",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/E3740ACE-12A7-42B2-B248-CD8FBBCDF877",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "DCCC03DE-1482-4895-BB0C-DE329069BE35",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/DCCC03DE-1482-4895-BB0C-DE329069BE35",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "B3CB42DB-3D51-4D59-A503-E26FC821AAB6",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/B3CB42DB-3D51-4D59-A503-E26FC821AAB6",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "3C805B7A-431B-4BE9-9E1B-E281D181EA92",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/3C805B7A-431B-4BE9-9E1B-E281D181EA92",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "3771B7E5-E591-4DA5-BA1E-E2B341FD75DA",
+      "sequenceNumber": 1,
+      "url": "https://tours.napleskenny.com/public/vtour/display/994853?idx=1",
+      "isDefault": true,
+      "shortDescription": "Virtual Tour for MLS #: 29825",
+      "htmlDescription": "Virtual Tour for MLS #: 29825",
+      "format": "URL",
+      "category": "Virtual Tour",
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "633D3E44-3E83-4005-A68B-E67A211928F7",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/633D3E44-3E83-4005-A68B-E67A211928F7",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    },
+    {
+      "mediaID": "E3FC4E94-0FAD-466E-A9A2-F5FDA853E92D",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/E3FC4E94-0FAD-466E-A9A2-F5FDA853E92D",
+      "isDefault": false,
+      "caption": ".",
+      "shortDescription": ".",
+      "htmlDescription": ".",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-04-13T12:26:25.577"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "218024237",
+      "isPrimary": true
+    }
+  ]
+}

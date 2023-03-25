@@ -1,0 +1,335 @@
+{
+  "listingSummary": {
+    "listingId": "000b8b54-ccf5-4a2f-9e68-0d837c70698c",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2014-11-13",
+    "photoCount": 10,
+    "videoCount": 0,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 129000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "Lot 59 Hidden Valley",
+      "city": "Glenwood Springs",
+      "district": "Garfield",
+      "stateProvince": "Colorado",
+      "stateProvinceCode": "CO",
+      "postalCode": "81601",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 39.4610595703125,
+      "longitude": -107.311660766602,
+      "geoCodeConfidenceLevel": "Medium",
+      "formattedAddress": "Hidden Valley Dr, Glenwood Springs, CO 81601"
+    },
+    "mlsNumbers": [
+      "136787"
+    ],
+    "RFGListingId": "7W6JBW",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/7w6jbw",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Residential Lot",
+    "propertyStyle": "Not Applicable",
+    "propertyName": "Lot 59 Springridge Reserve",
+    "lotSize": "2.08 AC",
+    "defaultPhotoURL": "//openapi.azureedge.net/37DAD8F7-4D91-454F-B8E5-A91AEB218819",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2017-12-20T05:12:12.110",
+    "agents": [
+      {
+        "id": "2c317472-99e3-40de-8045-563f286a4e1f",
+        "name": "Sean de Moraes",
+        "firstName": "Sean",
+        "lastName": "de Moraes",
+        "defaultPhotoURL": "//openapi.azureedge.net/F0221D87-4060-4332-B90C-72158441448A",
+        "emailAddress": "seand@sopris.net",
+        "leadEmailAddress": "800262.lead.4014897@leads.leadrouter.com",
+        "businessPhone": "9709486926",
+        "mobilePhone": "9709486926",
+        "isPrimary": true,
+        "office": {
+          "officeId": "6d59c6f8-b519-483d-b970-b524d42d1406",
+          "RFGOfficeId": "0017",
+          "companyId": "99d5ee37-c916-4f4a-9c15-2f3344d44c6d",
+          "companyName": "Aspen Snowmass",
+          "RFGCompanyId": "800262",
+          "brandCode": "SIR",
+          "name": "Roaring Fork Sotheby's International Realty",
+          "type": "Branch office",
+          "officeAddress": {
+            "streetAddress": "214 Eighth Street Suite 100",
+            "city": "Glenwood Springs",
+            "district": "Garfield",
+            "stateProvince": "Colorado",
+            "stateProvinceCode": "CO",
+            "postalCode": "81601",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 39.5455360412598,
+            "longitude": -107.32600402832,
+            "formattedAddress": "214 8th St, Glenwood Springs, CO 81601"
+          },
+          "phoneNumber": "9703663511",
+          "emailAddress": "info@aspenshowmasssir.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "providerKey": "000b8b54-ccf5-4a2f-9e68-0d837c70698c",
+  "propertyFeatures": [
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Skiing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Jogging / Biking Path"
+    },
+    {
+      "groupName": "Property Description",
+      "description": "Acreage"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Vacation / Second Home"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hunting"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Amenities",
+      "description": "Ski Resort"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Biking"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Climbing"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Hiking"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Snowmobiling"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "New Development"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "NewHomes"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Skiing"
+    },
+    {
+      "groupName": "Area Description",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Views",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Hiking"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Mountain"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Country Living"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Hunting"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Skiing"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Ski"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "Welcome to Springridge Reserve, a community where the wildlife roam freely, views are cherished and ownership is treasured. Whether you explore Springridge Reserve by car, bike, or on foot, you&rsquo;ll immediately notice a difference in how it is designed. The lots range from 1 to 7 acres and all 81 of them have been positioned to take in either views or privacy, and in many cases, both. There are over 300 acres of designated open spaces naturally serve as gathering grounds for neighbors, kids, and pets. Located 1/2 between Glenwood and Sunlight Ski and 10 minutes to Carbondale in the coveted Four Mile area. Come see for yourself, and you&rsquo;ll discover why so many others have chosen to call Springridge Reserve home.",
+      "htmlRemark": "<span class=\"data_text\">Welcome to Springridge Reserve, a community where the wildlife roam freely, views are cherished and ownership is treasured. Whether you explore Springridge Reserve by car, bike, or on foot, you&rsquo;ll immediately notice a difference in how it is designed. The lots range from 1 to 7 acres and all 81 of them have been positioned to take in either views or privacy, and in many cases, both.&nbsp; There are over 300 acres of designated open spaces naturally serve as gathering grounds for neighbors, kids, and pets. Located 1/2 between Glenwood and Sunlight Ski and 10 minutes to Carbondale in the coveted Four Mile area. Come see for yourself, and you&rsquo;ll discover why so many others have chosen to call Springridge Reserve home.</span>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/7w6jbw",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "4AE9F063-4BF4-4DA2-A2F1-2B8BC2D307E6",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/4AE9F063-4BF4-4DA2-A2F1-2B8BC2D307E6",
+      "isDefault": false,
+      "caption": "Lots",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "B3B11B72-BB2D-4383-A98C-2F3E78B3CE28",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/B3B11B72-BB2D-4383-A98C-2F3E78B3CE28",
+      "isDefault": false,
+      "caption": "Springridge Reserve Entrance",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "AC84547E-C20B-4582-88FC-38B86AC7E341",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/AC84547E-C20B-4582-88FC-38B86AC7E341",
+      "isDefault": false,
+      "caption": "Lots",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "3D50E025-1149-40B7-87B9-57A4E41623DA",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/3D50E025-1149-40B7-87B9-57A4E41623DA",
+      "isDefault": false,
+      "caption": "Lots",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "68CAE640-356E-41C4-90EE-A80C7D9CCC2B",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/68CAE640-356E-41C4-90EE-A80C7D9CCC2B",
+      "isDefault": false,
+      "caption": "Views",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "37DAD8F7-4D91-454F-B8E5-A91AEB218819",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/37DAD8F7-4D91-454F-B8E5-A91AEB218819",
+      "isDefault": true,
+      "caption": "Lot 59 Springridge Reserve",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "B68E2175-E3B1-4EF6-9BEA-B430A9AB558D",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/B68E2175-E3B1-4EF6-9BEA-B430A9AB558D",
+      "isDefault": false,
+      "caption": "Lots",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "FB962DF0-EAEE-4351-8142-E7EE8AEE0AC5",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/FB962DF0-EAEE-4351-8142-E7EE8AEE0AC5",
+      "isDefault": false,
+      "caption": "Views",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "F786E6A3-D486-424A-A9EE-FE9003C680FB",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/F786E6A3-D486-424A-A9EE-FE9003C680FB",
+      "isDefault": false,
+      "caption": "Springridge Reserve Entrance",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    },
+    {
+      "mediaID": "D6B5CD2A-F01B-4009-999B-FF51D1E74E65",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/D6B5CD2A-F01B-4009-999B-FF51D1E74E65",
+      "isDefault": false,
+      "caption": "Mt. Sopris",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 2848,
+      "width": 4272,
+      "lastUpdateOn": "2017-12-09T15:00:54.250"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "136787",
+      "isPrimary": true
+    }
+  ]
+}

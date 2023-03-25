@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "clientName": "Atom Biotech TEST",
+  "brokerId": 10,
+  "employeeCount": 65,
+  "participatingEmployees": 160,
+  "sicCode": "35456",
+  "address": "123 some address",
+  "addressComplementary": "unit 1290",
+  "city": "San Diego",
+  "state": "CA",
+  "zip": "92101",
+  "minimumHours": 35,
+  "effectiveDate": "05/01/2017",
+  "dueDate": "05/01/2017",
+  "lastVisited": "03/25/2017",
+  "clientState": "RFP_SUBMITTED",
+  "membersCount": 180,
+  "retireesCount": 0,
+  "outToBidReason": "Looking for something that is more competitive",
+  "members": ["JSmith", "KNash", "KFrank"]
+}

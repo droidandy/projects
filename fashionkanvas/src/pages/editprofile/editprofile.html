@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title *ngIf="user">{{ 'EDITPROFILE' | translate }}</ion-title>
+    <!-- <ion-buttons end (click)="addPhoto()">
+      <button ion-button ><ion-icon name="add" class="plus"></ion-icon></button>
+    </ion-buttons> -->
+    <ion-buttons end (click)="updateProfile()">
+      <button ion-button >SAVE</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <div *ngIf="user">
+    <ion-row class="profile_pic" (click)="setPhoto()">
+      <img-loader *ngIf="user.img!='http://placehold.it/80X80'&&user.img!=''" src="{{user.img}}" tappable useImg  style="width: 100%;"></img-loader>
+      <img-loader *ngIf="user.img=='http://placehold.it/80X80'||user.img==''" src="assets/images/default-image.png" tappable useImg  style="width: 100%;"></img-loader>
+      <span><ion-icon name="md-add-circle"></ion-icon></span>
+    </ion-row>
+
+
+
+
+
+
+
+
+      <ion-item>
+        <ion-label floating>{{ 'FIRSTNAME' | translate }}</ion-label>
+        <ion-input type="text"  [(ngModel)]="user.username"autocomplete="true" spellcheck="true" autocorrect="on" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'LASTNAME' | translate }}</ion-label>
+        <ion-input type="text"  [(ngModel)]="user.name" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'ROLE' | translate }}</ion-label>
+        <!-- <ion-input type="text"  [(ngModel)]="user.role" disabled (click)="setRole()"></ion-input> -->
+        <ion-select [(ngModel)]="selectRole" (ionChange)="onChangeRole()">
+          <ion-option value="{{data.name}}" *ngFor="let data of roleList">{{data.name}}</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'CITY' | translate }}</ion-label>
+        <ion-input type="text"  [(ngModel)]="user.city" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'EMAIL' | translate }}</ion-label>
+        <ion-input type="email"  [(ngModel)]="user.email" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+      </ion-item>
+
+      <!-- <button ion-button class="updatebtn" block tappable (click)="updateProfile()">UPDATE</button> -->
+      <!-- <ion-item>
+        <ion-label>Show Online</ion-label>
+        <ion-toggle item-right [(ngModel)]="showOnline" (ionChange)="changeStatus()"></ion-toggle>
+      </ion-item> -->
+      <!-- <ion-item>
+        <ion-label>{{ 'ENABLENOTIFICATION' | translate }}</ion-label>
+        <ion-toggle item-right [(ngModel)]="isPushEnabled" [disabled]="isBrowser" (ionChange)="changeNotification()"></ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'LANGUAGE' | translate }}</ion-label>
+        <ion-select [(ngModel)]="language" (ionChange)="onSelectChange(language)">
+          <ion-option value="en">English</ion-option>
+          <ion-option value="es">Spanish</ion-option>
+        </ion-select>
+      </ion-item> -->
+
+      <!-- <ion-item (click)="openBlockList()">
+        <ion-label floating>Blocked List</ion-label>
+        <ion-input type="text"  [(ngModel)]="user.username"></ion-input>
+      </ion-item> -->
+      <!-- <ion-list class="blocklists" (click)="openBlockList()">
+        <button ion-item>
+          {{ 'BLOCKEDLIST' | translate }}
+        </button>
+      </ion-list>
+      <ion-list class="blocklists" (click)="logOut()">
+        <button ion-item>
+          {{ 'LOGOUT' | translate }}
+        </button>
+      </ion-list> -->
+
+
+      <!-- <ion-row class="add_images" *ngFor="let image of imagesList let i=index;">
+
+        <img-loader src="{{image.img}}" useImg  class="big_img"></img-loader>
+        <ion-col (click)="presentActionSheet(image,i)">
+          <ion-icon name="ios-more"></ion-icon>
+        </ion-col>
+      </ion-row> -->
+      <!-- <div>
+        <button ion-button class="loginbtn" block tappable (click)="addPhoto()">{{ 'ADDPICTURE' | translate }}</button>
+      </div> -->
+
+    </div>
+
+  <!-- User Info -->
+  <!-- <div *ngIf="user">
+
+    <div class="top">
+        <img src="{{user.img}}" tappable (click)="enlargeImage(user.img)">
+        <h3>{{user.name}}</h3>
+        <p>@{{user.username}}</p>
+        <p>{{user.description}}</p>
+    </div>
+    <div class="center">
+
+      <div *ngIf="friendRequests && friendRequests.indexOf(user.$key) > -1">
+        <p class="info">Sent you a friend request.</p>
+        <button ion-button icon-only class="danger" tappable (click)="rejectFriendRequest()"><ion-icon name="md-close"></ion-icon></button>
+        <button ion-button icon-only class="success" tappable (click)="acceptFriendRequest()"><ion-icon name="md-checkmark"></ion-icon></button>
+      </div>
+      <div *ngIf="requestsSent && requestsSent.indexOf(user.$key) > -1">
+        <p class="info">Friend request sent.</p>
+        <button ion-button class="dark" tappable (click)="cancelFriendRequest()">Cancel Friend Request</button>
+      </div>
+      <div *ngIf="canAdd()">
+        <p class="info">You are not yet friends.</p>
+        <button ion-button class="primary" tappable (click)="sendFriendRequest()">Send Friend Request</button>
+      </div>
+      <div *ngIf="friends && friends.indexOf(user.$key) > -1">
+        <p class="info">You are already friends.</p>
+        <button ion-button class="primary" tappable (click)="sendMessage()">Send Message</button>
+        <button ion-button class="danger" tappable (click)="block()">Block User</button>
+      </div>
+    </div>
+  </div> -->
+</ion-content>

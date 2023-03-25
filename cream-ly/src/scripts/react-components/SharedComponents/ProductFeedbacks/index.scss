@@ -1,0 +1,79 @@
+@import "../../../../styles/tools/mixins.scss";
+
+.ProductFeedback {
+  @include media-query($small) {
+    padding: 20px;
+  }
+  .section-header {
+    margin-top: 10px;
+    @include spacingBottomSmall;
+
+    padding-bottom: 0;
+  }
+  @include spacingBottom;
+
+  .bubbles {
+    text-align: center;
+    margin: auto;
+
+    .talk-bubble {
+      padding: 10px 10px 10px 30px;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: pre-line;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      max-width: 450px;
+      min-height: 70px;
+      background-color: rgb(239, 239, 239);
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+
+      div {
+        padding: 1em;
+        text-align: left;
+        line-height: 1.5em;
+
+        div.br {
+          padding: 0;
+          height: 10px;
+          display: block;
+        }
+      }
+      p {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+    }
+    .talk-bubble.right-in:after {
+      content: " ";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: auto;
+      right: -20px;
+      top: 30px;
+      bottom: auto;
+      border: 12px solid;
+      border-color: rgb(239, 239, 239) transparent transparent
+        rgb(239, 239, 239);
+    }
+    .talk-bubble.left-in:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -20px;
+      right: auto;
+      top: 30px;
+      bottom: auto;
+      border: 12px solid;
+      border-color: rgb(239, 239, 239) rgb(239, 239, 239) transparent
+        transparent;
+    }
+  }
+}

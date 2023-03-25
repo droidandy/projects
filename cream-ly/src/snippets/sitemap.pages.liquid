@@ -1,0 +1,19 @@
+{%- liquid
+
+assign pages = "products, quiz, about, faq" | split: ", " 
+assign ruOnlyPage = "videos" | split: ", " 
+
+for page in pages
+	assign url = "/pages/" | append: page
+	render 'sitemap.url', url: url, host:host, lang:lang
+endfor 
+
+if lang == "ru"
+	for page in ruOnlyPage
+    	assign url = "/pages/" | append: page
+		render 'sitemap.url', url: url, host:host, lang:lang
+	endfor
+endif
+
+
+-%}

@@ -1,0 +1,10 @@
+export { ReactComponent as CarIcon } from '@marketplace/ui-kit/icons/icon-car.svg';
+export { ReactComponent as DriveIcon } from '@marketplace/ui-kit/icons/icon-drive.svg';
+export { ReactComponent as EngineIcon } from '@marketplace/ui-kit/icons/icon-engine.svg';
+export { ReactComponent as TransmissionIcon } from '@marketplace/ui-kit/icons/icon-transmission.svg';
+export { ReactComponent as VinIcon } from './vin.svg';
+export { ReactComponent as MileageIcon } from './mileage.svg';
+export { ReactComponent as CalendarIcon } from './calendar.svg';
+export { ReactComponent as UsersIcon } from './users.svg';
+export { ReactComponent as PtsIcon } from './pts.svg';
+export { ReactComponent as ColorIcon } from './color.svg';

@@ -1,0 +1,55 @@
+{% if ((is_current_user(article.author) or is_granted('ROLE_ADMIN'))) %}
+    {% set slots = {
+        cover: "Cover",
+        featured: "Featured",
+        collection: "Jumbo",
+
+        recommended: "Recommended",
+    } %}
+    {% set menuId = article.id~random(999999999) %}
+    <div class="article-actions">
+        <div class="edit-actions {% if is_granted('ROLE_ADMIN') %}--admin{% endif %}"
+             data-url-tag-add="{{ path('ha_admin_article_tag_add', {token:article.token}) }}"
+             data-url-tag-remove="{{ path('ha_admin_article_tag_remove', {token:article.token}) }}"
+        >
+            <button id="edit-menu-{{ menuId }}"
+                    class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+            </button>
+
+            <ul class="mdl-menu mdl-menu--{{ menuDirection is defined ? menuDirection : 'bottom-right' }} mdl-js-menu mdl-js-ripple-effect"
+                for="edit-menu-{{ menuId }}">
+
+                {% if is_granted('ROLE_ADMIN') %}
+                    {% for key,name in slots %}
+                        <li data-tag="{{ key }}"
+                            class="action-tag mdl-menu__item
+                                {% if article.hasTag(key) %}
+                                    checked
+                                {% endif %}
+                                {% if loop.last and is_current_user(article.author) %}
+                                    mdl-menu__item--full-bleed-divider
+                                {% endif %}
+                                ">
+                            {{ name }} <i class="material-icons">check</i>
+                        </li>
+                    {% endfor %}
+                {% endif %}
+
+                {% if is_current_user(article.author) %}
+                    <li class="mdl-menu__item">
+                        <a href="{{ path('ha_article_edit', {token:article.token}) }}">
+                            Edit
+                        </a>
+                    </li>
+                    <li class="mdl-menu__item">
+                        <a class="action-delete" href="{{ path('ha_article_delete', {token:article.token}) }}">
+                            Delete
+                        </a>
+                    </li>
+                {% endif %}
+
+            </ul>
+        </div>
+    </div>
+{% endif %}

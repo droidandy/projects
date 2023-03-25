@@ -1,0 +1,13 @@
+{% if cover %}
+    <li class="advertisement">
+        <div class="recommended-editorials --fullheight">
+            {% include 'AppBundle:article/card:_covers.html.twig' %}
+        </div>
+    </li>
+{% else %}
+    <li class="wide-line">
+        <div class="row">
+            <div class="items-collection-separator"></div>
+        </div>
+    </li>
+{% endif %}

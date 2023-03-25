@@ -1,0 +1,31 @@
+name: "Node Set up"
+on:
+  workflow_call:
+jobs:
+  npm_install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "12"
+
+      - name: Cache dependencies
+        id: cache
+        uses: actions/cache@v2
+        with:
+          # reuse cache tricks from https://www.voorhoede.nl/en/blog/super-fast-npm-install-on-github-actions/
+          #  path: ./node_modules
+          #  key: modules-${{ hashFiles('package-lock.json') }}
+          path: | 
+            ~/.npm
+            ./node_modules
+          key: npm-${{ hashFiles('package-lock.json') }}
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        #run: npm ci --ignore-scripts
+        #run npm install --prefer-offline --no-audit --quiet
+        run: npm ci

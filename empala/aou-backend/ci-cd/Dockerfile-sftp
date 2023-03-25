@@ -1,0 +1,3 @@
+FROM atmoz/sftp:alpine-3.7
+
+ENTRYPOINT [ "/bin/bash", "-c", "mkdir -p /home/test/.ssh/keys && echo \"${APEX_EXTRACTS_MOCK_SFTP_PUBLIC_KEY}\" > /home/test/.ssh/keys/test_key_rsa.pub && /entrypoint test::::download" ]

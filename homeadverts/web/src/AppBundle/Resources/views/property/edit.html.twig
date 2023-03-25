@@ -1,0 +1,42 @@
+{% if (app.user) and is_granted('ROLE_USER') and property.isUserAllowedToEdit(app.user) %}
+
+    {% set menuId = property.id~random(999999999) %}
+
+    <div class="article-actions">
+        <div class="edit-actions">
+            <button id="edit-menu-{{ menuId }}"
+                    class="mdl-button mdl-js-button mdl-button--icon">
+                <i class="material-icons">more_vert</i>
+            </button>
+
+            <ul class="mdl-menu
+                mdl-menu--bottom-right
+                mdl-js-menu
+                mdl-js-ripple-effect"
+                for="edit-menu-{{ menuId }}">
+
+                {% if is_granted('ROLE_ADMIN') %}
+                    <li class="action-featured mdl-menu__item
+                        {% if property.featured %}checked{% endif %}"
+                        data-id="{{ property.id }}"
+                        data-add-url="{{ path('property_featured_add', { 'id': property.id}) }}"
+                        data-remove-url="{{ path('property_featured_remove', { 'id': property.id}) }}"
+                    >
+                        Featured <i class="material-icons">check</i>
+                    </li>
+                {% endif %}
+
+                {% if photo is defined %}
+                    <li class="action-primary-photo mdl-menu__item
+                       {% if property.isPhotoPrimary(photo) %}checked{% endif %}"
+                        data-photo-hash="{{ photo.hash }}"
+                        data-property-id="{{ property.id }}"
+                        data-set-url="{{ path('property_primary_photo') }}"
+                    >
+                        Primary <i class="material-icons">check</i>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+{% endif %}

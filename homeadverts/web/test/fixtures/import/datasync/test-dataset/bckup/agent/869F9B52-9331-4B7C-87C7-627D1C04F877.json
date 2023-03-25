@@ -1,0 +1,127 @@
+{
+    "agentSummary": {
+        "id": "869f9b52-9331-4b7c-87c7-627d1c04f877",
+        "isAgent": true,
+        "name": "Kaye Cawili",
+        "firstName": "Kaye",
+        "lastName": "Cawili",
+        "middleName": "Ansay",
+        "gender": "Female",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/10228F2E-668F-4493-99FF-76B4D4C19D1F",
+        "emailAddress": "kaye.cawili@list-gr.com",
+        "businessPhone": "5560554",
+        "mobilePhone": "09171270554",
+        "specialty": "Residential",
+        "office": {
+            "officeId": "cf12d208-0f34-4860-a230-2553d4c1ac68",
+            "RFGOfficeId": "0001",
+            "companyId": "0643479d-13d0-4950-b599-7ced6235387d",
+            "companyName": "List Sotheby's International Realty ",
+            "RFGCompanyId": "820102",
+            "brandCode": "SIR",
+            "name": "List Sotheby's International Realty ",
+            "type": "Main office",
+            "officeAddress": {
+                "streetAddress": "Unit 802 Eco Tower, 32nd Street Corner 9th Avenue",
+                "city": "Taguig",
+                "district": "Fourth District NCR",
+                "postalCode": "1634",
+                "country": "Philippines",
+                "countryCode": "PH",
+                "latitude": 14.55359,
+                "longitude": 121.05026,
+                "formattedAddress": "32nd St, Taguig City, Philippines"
+            },
+            "phoneNumber": "+632 556 0554"
+        }
+    },
+    "personId": "1a899dda-8109-4233-90d7-9fdce6bb788f",
+    "lastUpdateOn": "2018-05-29T15:14:56.490",
+    "areasOfSpecialization": [
+        "Retirement Communities"
+    ],
+    "designations": [
+        "Accredited Buyer Representative",
+        "Accredited Seller Representation",
+        "Broker"
+    ],
+    "roles": [
+        {
+            "office": {
+                "officeId": "cf12d208-0f34-4860-a230-2553d4c1ac68",
+                "RFGOfficeId": "0001",
+                "companyId": "0643479d-13d0-4950-b599-7ced6235387d",
+                "companyName": "List Sotheby's International Realty ",
+                "RFGCompanyId": "820102",
+                "brandCode": "SIR",
+                "name": "List Sotheby's International Realty ",
+                "type": "Main office",
+                "officeAddress": {
+                    "streetAddress": "Unit 802 Eco Tower, 32nd Street Corner 9th Avenue",
+                    "city": "Taguig",
+                    "district": "Fourth District NCR",
+                    "postalCode": "1634",
+                    "country": "Philippines",
+                    "countryCode": "PH",
+                    "latitude": 14.55359,
+                    "longitude": 121.05026,
+                    "formattedAddress": "32nd St, Taguig City, Philippines"
+                },
+                "phoneNumber": "+632 556 0554"
+            },
+            "role": "Broker",
+            "isFullTime": false,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Personal",
+            "address": "kaye.cawili@listsir.ph"
+        },
+        {
+            "type": "Vanity",
+            "address": "kayemarisse.cawili@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        },
+        {
+            "code": "tgl",
+            "name": "Tagalog"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "9A37680D-571C-4580-86F6-52184D2E9A56",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/9A37680D-571C-4580-86F6-52184D2E9A56",
+            "isDefault": false,
+            "caption": "Profile_Kaye",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:43:03.203"
+        },
+        {
+            "mediaID": "10228F2E-668F-4493-99FF-76B4D4C19D1F",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/10228F2E-668F-4493-99FF-76B4D4C19D1F",
+            "isDefault": true,
+            "caption": "Profile_Kaye2",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2017-12-09T14:43:03.203"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Google+",
+            "url": "https:\/\/plus.google.com\/115048965397136553187",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "isTeamMember": false
+}

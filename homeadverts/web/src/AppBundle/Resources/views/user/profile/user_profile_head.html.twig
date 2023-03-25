@@ -1,0 +1,60 @@
+{% set bio = user.getBio() %}
+
+<div class="user-info --full-details --background {% if app.user == user%}--edit-profile{% endif %}">
+
+    {% if is_current_user(user) %}
+        {% include 'AppBundle:user/settings:background.html.twig' %}
+        {% include 'AppBundle:user/settings:image.html.twig' %}
+    {% else %}
+        <div class="background cover"
+             style="background: url({{ user.getBackgroundImage() }})">
+        </div>
+        {% include 'AppBundle:user/profile:image.html.twig' %}
+    {% endif %}
+
+    <div class="details">
+        {% if is_current_user(user) %}
+            <form action="{{ path('ha_user_settings_bio') }}" method="post">
+
+                <div class="username edit-field">
+                    <input type="text"
+                           name="name"
+                           required="required"
+                           class="data-input"
+                           value="{{ user.name|e('html_attr') }}"
+                           readonly="readonly"
+                    />
+                </div>
+
+                {% include 'AppBundle:user/profile:company.html.twig' %}
+
+                {% if (user.address.country) %}
+                    <span class="address">
+                        {{ user.address|full_address }}
+                    </span>
+                {% endif %}
+
+                {% include 'AppBundle:user/profile:follow_button.html.twig' %}
+
+                <div class="about edit-field --folded {% if not bio %}--empty{% endif %}">
+                    <textarea name="bio"
+                              required="required"
+                              class="data-input"
+                              readonly="readonly">{{ bio }}</textarea>
+                    <div class="empty">Click to add bio</div>
+                    <i class="trigger material-icons">keyboard_arrow_up</i>
+                </div>
+            </form>
+        {% else %}
+            {% include 'AppBundle:user/profile:user_details.html.twig' %}
+        {% endif %}
+    </div>
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') and not is_granted('ROLE_WRITER') %}
+        {% include 'AppBundle:user:upgrade.html.twig' %}
+    {% endif %}
+
+    <div class="details">
+        {% include 'AppBundle:user/profile:user_actions.html.twig' %}
+    </div>
+</div>

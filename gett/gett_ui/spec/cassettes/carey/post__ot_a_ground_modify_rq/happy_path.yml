@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.carey.com/CSIOTAProxy_v2/CareyReservationService
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://www.opentravel.org/OTA/2003/05"
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"><env:Body><tns:OTA_GroundModifyRQ
+        Version="1" SequenceNmbr="15496909820339876502"><tns:POS><tns:Source><tns:RequestorID
+        MessagePassword="carey123" ID="carey_integrations@gett.com" Type="TA"></tns:RequestorID><tns:BookingChannel
+        Type="TA"><tns:CompanyName Code="3dfb7b39fa5615fc105f62cf7dbc9bb0" CompanyShortName="PM54006"
+        CodeContext="54006">CSI - Gett</tns:CompanyName></tns:BookingChannel></tns:Source></tns:POS><tns:Reservation><tns:ReferenceID
+        ID="WA10706729-1"></tns:ReferenceID><tns:Service><tns:ServiceLevel Code="Point-To-Point"
+        Description="Premium"></tns:ServiceLevel><tns:VehicleType Code="ES03"></tns:VehicleType><tns:Locations><tns:Pickup
+        DateTime="2019-02-09T02:47:00"><tns:Address Latitude="40.7665657" Longitude="-73.973213"><tns:AddressLine>817
+        5th Ave, New York, NY 1006</tns:AddressLine><tns:CityName>New York City</tns:CityName><tns:PostalCode>10065</tns:PostalCode><tns:CountryName
+        Code="US"></tns:CountryName></tns:Address></tns:Pickup><tns:Dropoff><tns:Address
+        Latitude="40.7676656" Longitude="-73.9724121"><tns:AddressLine>834 5th Ave,
+        New York, NY 1006</tns:AddressLine><tns:CityName>New York City</tns:CityName><tns:PostalCode>10065</tns:PostalCode><tns:CountryName
+        Code="US"></tns:CountryName></tns:Address></tns:Dropoff></tns:Locations></tns:Service><tns:Passenger><tns:Primary><tns:PersonName><tns:GivenName>Shakira</tns:GivenName><tns:Surname>Rau</tns:Surname></tns:PersonName><tns:Telephone
+        PhoneNumber="729905029" PhoneUseType="1" CountryAccessCode="44"></tns:Telephone><tns:Email>dorris@fisherhand.biz</tns:Email></tns:Primary></tns:Passenger><tns:RateQualifier
+        AccountID="WA834118"><tns:SpecialInputs Name="OT Order ID" Value="100088"></tns:SpecialInputs></tns:RateQualifier></tns:Reservation></tns:OTA_GroundModifyRQ></env:Body></env:Envelope>
+    headers:
+      App-Id:
+      - 89e6c8c7
+      App-Key:
+      - 3dfb7b39fa5615fc105f62cf7dbc9bb0
+      X-Soap-Method:
+      - modifyReservation
+      Soapaction:
+      - '"modifyReservation"'
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Content-Length:
+      - '2033'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 09 Feb 2019 05:43:03 GMT
+      Server:
+      - JBoss-EAP/7
+      X-Powered-By:
+      - Undertow/1
+      Content-Type:
+      - text/xml;charset=utf-8
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version=''1.0'' encoding=''UTF-8''?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><OTA_GroundBookRS
+        xmlns="http://www.opentravel.org/OTA/2003/05" xmlns:ns2="http://www.opentravel.org/OTA/2003/05/alpha"
+        PrimaryLangID="15496909820QNkwh64PC"></OTA_GroundBookRS></S:Body></S:Envelope>'
+    http_version:
+  recorded_at: Sat, 09 Feb 2019 05:43:03 GMT
+recorded_with: VCR 4.0.0

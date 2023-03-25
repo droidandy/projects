@@ -1,0 +1,17 @@
+.text-danger {
+    color: #cc3e4a;
+}
+
+.text-success {
+    color: #84b547;
+}
+
+.grey {
+    color: #5c5c5c;
+    font-weight: bold;
+}
+
+.padding{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}

@@ -1,0 +1,43 @@
+replicaCount: 1
+
+image:
+  repository: registry.gitlab.apphud.com/apphud/frontend
+  tag: test1
+imagePullSecret: apphud-read-registry
+
+# pod label app=environment for gitlab terminal, need to rewrite for each environment
+environment: development
+
+resources:
+  limits:
+   cpu: 200m
+   memory: 128Mi
+  requests:
+   cpu: 30m
+   memory: 32Mi
+
+# annotations for pods
+annotations: {}
+
+configMap: {}
+
+secret: {}
+
+customConfigMap: ""
+
+customSecret: ""
+
+ingress:
+  enabled: true
+  port: 80
+  tls:
+  - secretName: app.appfist.com-tls
+    hosts:
+      - app.appfist.com
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    # ingress.kubernetes.io/ssl-redirect: "true"
+    # nginx.ingress.kubernetes.io/custom-http-errors: "429"
+    # nginx.ingress.kubernetes.io/default-backend: apphud-frontend-staging
+  hosts:
+    - app.appfist.com

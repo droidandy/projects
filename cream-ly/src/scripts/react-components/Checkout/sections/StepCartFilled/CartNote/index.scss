@@ -1,0 +1,20 @@
+@import "../../../../../../styles/tools/mixins.scss";
+
+.CartNote {
+  label {
+    font-family: var(--font-heading);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @include media-query($small) {
+      @include spacingBottomSmall();
+    }
+  }
+
+  textarea {
+    font: inherit;
+    height: 50px;
+    width: 100%;
+  }
+}

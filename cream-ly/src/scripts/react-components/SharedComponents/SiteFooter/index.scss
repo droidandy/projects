@@ -1,0 +1,204 @@
+.site-footer {
+  background: url("./footer.png") center bottom #66636c no-repeat;
+  background-size: 150% auto;
+  padding: 23px 0 20px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  line-height: normal;
+  margin-bottom: 0;
+
+  a {
+    color: #fff;
+  }
+
+  .payments {
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5px;
+    max-width: 260px;
+    margin: 0 auto;
+
+    img {
+      margin: 17px 7px 0;
+
+      &.visa {
+        content: url("./footer_pay_visa.svg");
+      }
+      &.mastercard {
+        content: url("./footer_pay_mastercard.svg");
+      }
+      &.paypal {
+        content: url("./footer_pay_paypal.svg");
+      }
+      &.ideal {
+        content: url("./footer_pay_ideal.svg");
+      }
+      &.amex {
+        content: url("./footer_pay_amex.svg");
+      }
+      &.applepay {
+        content: url("./footer_pay_applepay.svg");
+      }
+    }
+  }
+
+  &[data-host="creamly.by"] {
+    .paypal {
+      display: none;
+    }
+    .amex {
+      display: none;
+    }
+    .applepay {
+      display: none;
+    }
+    .ideal {
+      display: none;
+    }
+  }
+  &[data-host="creamly.co.uk"] {
+    .ideal {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    background-size: 300% auto;
+  }
+
+  .delivery span.bg {
+    position: relative;
+    display: inline-block;
+  }
+
+  .payments img {
+    margin: 17px 7px 0;
+  }
+  .share {
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding-top: 60px;
+
+    a {
+      margin: 0 11px;
+    }
+    img {
+      width: 26px;
+      height: auto;
+
+      &.instagram {
+        content: url("./icon_social_instagram.svg");
+      }
+      &.facebook {
+        content: url("./icon_social_facebook.svg");
+      }
+      &.telegram {
+        content: url("./icon_social_telegram.svg");
+      }
+    }
+  }
+
+  nav ul {
+    margin: 25px auto 0;
+    padding: 0;
+    list-style-type: none;
+    max-width: 960px;
+    flex-wrap: wrap;
+  }
+  nav li {
+    margin: 0;
+    padding: 20px 10px 0;
+  }
+  nav li a {
+    display: flex;
+    line-height: 30px;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .made {
+    font-family: "Allura", "Marck Script", cursive;
+    font-size: 25px;
+    padding-top: 22px;
+    text-align: center;
+  }
+  .made span {
+    display: inline-block;
+    margin: 0 4px;
+    line-height: 34px;
+  }
+  .copy {
+    text-align: center;
+    line-height: 28px;
+  }
+  .legal {
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .delivery {
+      text-align: center;
+    }
+    .payments {
+      max-width: 100%;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    nav li {
+      position: relative;
+      flex-grow: 1;
+      padding-top: 0;
+    }
+    nav li:after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 18px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+      right: 0;
+    }
+    nav li:last-child:after {
+      display: none;
+    }
+    nav li a {
+      line-height: 40px;
+      font-size: 14px;
+    }
+    .share {
+      padding-top: 40px;
+    }
+    .share img {
+      width: 36px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .delivery {
+      text-align: left;
+    }
+    .payments {
+      justify-content: flex-end;
+      padding-top: 0;
+      margin: 0;
+    }
+    .payments img {
+      margin: 0 0 0 20px;
+    }
+    .share img {
+      width: 26px;
+    }
+  }
+}

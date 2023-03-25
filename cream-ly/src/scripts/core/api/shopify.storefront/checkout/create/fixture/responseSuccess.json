@@ -1,0 +1,10 @@
+{
+  "data": {
+    "checkoutCreate": {
+      "checkout": {
+        "id": "fixtureId"
+      },
+      "checkoutUserErrors": []
+    }
+  }
+}

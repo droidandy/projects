@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="165" height="73" viewBox="0 0 165 73">
+    <g fill="none" fill-rule="evenodd">
+        <g font-family="OpenSans, Open Sans">
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -6)">
+                <tspan x="157" y="57">+</tspan>
+            </text>
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -6)">
+                <tspan x="112" y="15">+</tspan>
+            </text>
+            <text fill="#09C" font-size="18" opacity=".57" transform="translate(0 -6)">
+                <tspan x="0" y="55">+</tspan>
+            </text>
+            <text fill="#21BDC3" font-size="16" opacity=".292" transform="translate(0 -6)">
+                <tspan x="134" y="35">+</tspan>
+            </text>
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -6)">
+                <tspan x="42" y="24">+</tspan>
+            </text>
+            <text fill="#3A444D" font-size="14" opacity=".304" transform="translate(0 -6)">
+                <tspan x="24" y="80">+</tspan>
+            </text>
+        </g>
+        <g stroke="#AAAFB2">
+            <path d="M111 47.9V83H60V29h28.184"/>
+            <path d="M90.096 63.37L80 71l1.632-12.464L96.537 33 105 37.834zM107.428 33L99 28.275l2.92-4.912c1.344-2.26 4.32-3.034 6.647-1.73 2.327 1.306 3.124 4.196 1.78 6.456L107.428 33z"/>
+        </g>
+    </g>
+</svg>

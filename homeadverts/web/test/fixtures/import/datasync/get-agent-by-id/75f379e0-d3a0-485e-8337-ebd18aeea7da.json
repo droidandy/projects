@@ -1,0 +1,120 @@
+{
+    "agentSummary": {
+        "id": "75f379e0-d3a0-485e-8337-ebd18aeea7da",
+        "isAgent": true,
+        "name": "Larry Garguilo",
+        "firstName": "Larry",
+        "lastName": "Garguilo",
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/41227EE3-ACA1-4B77-B9E8-45FC4B02EED9",
+        "emailAddress": "lgarguilo@wpsir.com",
+        "leadEmailAddress": "800024.lead.4028357@leads.leadrouter.com",
+        "businessPhone": "+1 8608686909",
+        "office": {
+            "officeId": "5f085ced-adb2-4ecc-9e90-03873627a321",
+            "RFGOfficeId": "0045",
+            "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+            "companyName": "William Pitt",
+            "RFGCompanyId": "800024",
+            "brandCode": "SIR",
+            "name": "William Pitt Sotheby's International Realty",
+            "type": "Branch office",
+            "officeAddress": {
+                "streetAddress": "6 Green Hill Road",
+                "city": "Washington",
+                "district": "Litchfield",
+                "stateProvince": "Connecticut",
+                "stateProvinceCode": "CT",
+                "postalCode": "06793",
+                "country": "United States",
+                "countryCode": "US",
+                "latitude": 41.64044,
+                "longitude": -73.31805,
+                "formattedAddress": "6 Green Hill Rd, Washington, CT 06793"
+            },
+            "phoneNumber": "8608686600",
+            "emailAddress": "wps.leads@mrtsystems.com"
+        }
+    },
+    "personId": "9059e047-fe9f-44b2-a6a2-dc87c6d1ce93",
+    "lastUpdateOn": "2018-07-31T17:30:18.537",
+    "roles": [
+        {
+            "office": {
+                "officeId": "5f085ced-adb2-4ecc-9e90-03873627a321",
+                "RFGOfficeId": "0045",
+                "companyId": "9c3f060c-b749-4527-a97d-3f0b4ddab1fa",
+                "companyName": "William Pitt",
+                "RFGCompanyId": "800024",
+                "brandCode": "SIR",
+                "name": "William Pitt Sotheby's International Realty",
+                "type": "Branch office",
+                "officeAddress": {
+                    "streetAddress": "6 Green Hill Road",
+                    "city": "Washington",
+                    "district": "Litchfield",
+                    "stateProvince": "Connecticut",
+                    "stateProvinceCode": "CT",
+                    "postalCode": "06793",
+                    "country": "United States",
+                    "countryCode": "US",
+                    "latitude": 41.64044,
+                    "longitude": -73.31805,
+                    "formattedAddress": "6 Green Hill Rd, Washington, CT 06793"
+                },
+                "phoneNumber": "8608686600",
+                "emailAddress": "wps.leads@mrtsystems.com"
+            },
+            "role": "Sales Associate",
+            "isFullTime": true,
+            "isProducingRole": true
+        }
+    ],
+    "addlEmails": [
+        {
+            "type": "Vanity",
+            "address": "lawrence.garguilo@sothebysrealty.com"
+        }
+    ],
+    "languagesSpoken": [
+        {
+            "code": "eng",
+            "name": "English"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "41227EE3-ACA1-4B77-B9E8-45FC4B02EED9",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/41227EE3-ACA1-4B77-B9E8-45FC4B02EED9",
+            "isDefault": true,
+            "caption": "Larry Garguilo",
+            "htmlDescription": "Larry",
+            "format": "Image",
+            "category": "Person Photo",
+            "lastUpdateOn": "2018-07-31T17:30:18.473"
+        }
+    ],
+    "addlPhones": [
+        {
+            "type": "Sothebysrealty.com 800",
+            "number": "8609213464"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Personal Profile",
+            "languageCode": "en",
+            "remark": "Larry Garguilo was born and raised in Brooklyn living in both Red Hook and Park Slope while being lucky enough to spend his summers on Rogers Lake in Old Lyme Ct. His family can make a unsubstantiated claim to being one of the first weekenders in Connecticut. These summers in Connecticut convinced him that that this was where he wanted to live and he has spent most of the last 40 years in Connecticut living in Kent and Roxbury.Larry has been involved in real estate since the late 80's when he had held his license at George Davis Realty in New Preston. He also has a working knowledge of the development process as he has purchased raw land and gone through the subdivision and construction process while overseeing the building of two homes in Litchfield County. He has also gained valuable knowledge being \"married\" to real estate over the last 25 years as his wife Bonnie is a top agent at Litchfield Hills Sotheby's Intl. Realty in Washington Depot.Larry has worked for nearly 40 years as an IT professional. The last 15 years were spent with Honeywell as a Program Manager and Project Lead. He has worked on projects in Canada, Mexico and the US with worldwide support. While at Honeywell he worked on a number of Habitat for Humanity projects and is currently involved in the local chapter.",
+            "htmlRemark": "Larry Garguilo was born and raised in Brooklyn living in both Red Hook and Park Slope while being lucky enough to spend his summers on Rogers Lake in Old Lyme Ct. His family can make a unsubstantiated claim to being one of the first weekenders in Connecticut. These summers in Connecticut convinced him that that this was where he wanted to live and he has spent most of the last 40 years in Connecticut living in Kent and Roxbury.Larry has been involved in real estate since the late 80's when he had held his license at George Davis Realty in New Preston. He also has a working knowledge of the development process as he has purchased raw land and gone through the subdivision and construction process while overseeing the building of two homes in Litchfield County. He has also gained valuable knowledge being \"married\" to real estate over the last 25 years as his wife Bonnie is a top agent at Litchfield Hills Sotheby's Intl. Realty in Washington Depot.Larry has worked for nearly 40 years as an IT professional. The last 15 years were spent with Honeywell as a Program Manager and Project Lead. He has worked on projects in Canada, Mexico and the US with worldwide support. While at Honeywell he worked on a number of Habitat for Humanity projects and is currently involved in the local chapter. &lt;BR\/&gt;&lt;BR\/&gt;"
+        }
+    ],
+    "isTeamMember": false,
+    "licenseInfo": [
+        {
+            "type": "SA",
+            "stateCode": "CT",
+            "number": "RES.079640",
+            "issuedOn": "2015-01-01"
+        }
+    ]
+}

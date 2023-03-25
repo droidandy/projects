@@ -1,0 +1,48 @@
+{
+  "name": "aou-backend",
+  "version": "1.0.0",
+  "description": "aou-backend",
+  "author": "",
+  "scripts": {
+    "postinstall": "husky install",
+    "lint": "eslint -c .eslintrc.js --ext .js,.ts ./products",
+    "format": "eslint --fix -c .eslintrc.js --ext .js,.ts ./products",
+    "prettier": "prettier --write --ignore-unknown \"products/**/*{.js,.ts}\"",
+    "k3d:create": "ts-node k3d-tilt-exec.ts k3d:create",
+    "k3d:delete": "ts-node k3d-tilt-exec.ts k3d:delete",
+    "k3d:start": "ts-node k3d-tilt-exec.ts k3d:start",
+    "k3d:stop": "ts-node k3d-tilt-exec.ts k3d:stop",
+    "tilt:up": "ts-node k3d-tilt-exec.ts tilt:up",
+    "tilt:down": "ts-node k3d-tilt-exec.ts tilt:down"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.7.0",
+    "acorn": "^8.6.0",
+    "acorn-jsx": "^5.3.2",
+    "ajv-errors": "^3.0.0",
+    "ansi-regex": "^6.0.1",
+    "ansi-styles": "^6.1.0",
+    "array-includes": "^3.1.4",
+    "array-union": "^3.0.1",
+    "array.prototype.flat": "^1.2.5",
+    "brace-expansion": "^2.0.1",
+    "braces": "^3.0.2",
+    "child_process": "^1.0.2",
+    "enquirer": "^2.3.6",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-typescript": "^16.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "husky": "^7.0.4",
+    "js-yaml": "^4.1.0",
+    "lerna": "^4.0.0",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.4",
+    "ts-node": "^10.4.0"
+  },
+  "engines": {
+    "node": ">= 10.x.x"
+  }
+}

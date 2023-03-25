@@ -1,0 +1,121 @@
+@import "../../variables";
+@import "../../variables-theme";
+
+.comparison-page {
+  .compare-networks-header {
+    font-size: 36px;
+    font-weight: 100;
+  }
+  td {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .header-row {
+    td {
+      padding: 0 !important;
+      img {
+        height: 57px;
+        margin: 0 auto;
+      }
+    }
+  }
+  .first-body-row{
+    background: $PRESENTATION_FIRST_ROW_COLOR;
+    font-size: 10px;
+    td {
+      height: 28px !important;
+      padding: 0 14px 0 14px !important;
+    }
+    &td:first-child {
+      padding-left: 63px;
+    }
+  }
+  .full-body-row{
+    background: $PRESENTATION_FULL_ROW_COLOR;
+    &.fix-height {
+      height: 61px;
+    }
+  }
+  .narrow-body-row{
+    background: $PRESENTATION_NARROW_ROW_COLOR;
+  }
+  .snarrow-body-row{
+    background: $PRESENTATION_SNARROW_ROW_COLOR;
+  }
+  .other-body-row{
+    background: $PRESENTATION_OTHER_ROW_COLOR;
+  }
+  .round{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    float: left;
+    margin: 5px 20px 5px 20px;
+
+    &.full {
+      background: $PRESENTATION_FULL_ROUND_COLOR;
+    }
+    &.narrow {
+      background: $PRESENTATION_NARROW_ROUND_COLOR;
+    }
+    &.snarrow {
+      background: $PRESENTATION_SNARROW_ROUND_COLOR;
+    }
+    &.other {
+      background: $VIOLET_COLOR;
+    }
+  }
+
+  .comparison-table {
+    margin-top: 20px;
+    padding: 0 15px;
+
+    .searchButton {
+      height: 35px !important;
+      padding-top: 0.6rem !important;
+      border: 1px solid #bdc0c2;
+    }
+
+    thead {
+      th {
+        font-size: 13px;
+      }
+    }
+
+    .template-table {
+      border-right: none
+    }
+
+    .row-with-horizontal-scroll, .row-fixed {
+      padding: 0 !important;
+      background: #fff;
+      border-radius: 0;
+
+      .compare-table {
+        width: 2000px;
+      }
+
+      table tr td {
+        width: 250px;
+      }
+    }
+
+    .row-fixed {
+      overflow: hidden;
+      width: 450px !important;
+      float: left;
+      table tr>td:nth-child(1){
+        width: 200px;
+      }
+    }
+
+    .row-with-horizontal-scroll{
+      border-left: $PRESENTATION_TABLE_COMPARISON_BORDER;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      width: calc(100% - 450px) !important;
+      float: left;
+      padding: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gett Business Solutions</string>
+    <string name="default_notification_channel_id">oteApp</string>
+</resources>

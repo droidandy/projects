@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="39px" viewBox="0 0 48 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>6D0199F2-0DB5-4B6D-9A65-7108FC8316AE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0.5787 0.421 47.5787 0.421 47.5787 39.4209 0.5787 39.4209"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets_homepage" transform="translate(-115.000000, -295.000000)">
+            <g id="icon" transform="translate(115.000000, 294.000000)">
+                <g id="Group-5">
+                    <polyline id="Stroke-1" stroke="#298499" stroke-width="1.158" points="7.5787 29.4998 18.5787 15.4998 30.5787 25.4998 45.5787 4.9998"></polyline>
+                    <g id="Group-4" transform="translate(0.000000, 0.578900)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-3"></g>
+                        <polyline id="Stroke-2" stroke="#298499" stroke-width="1.158" mask="url(#mask-2)" points="0.5787 0.4209 0.5787 39.4209 47.5787 39.4209"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

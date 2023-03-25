@@ -1,0 +1,13 @@
+.prequoted-summary {
+  .error-link {
+    span {
+      display: inline-block;
+      width: 150px;
+      text-transform: capitalize;
+    }
+
+    a {
+      font-weight: 400;
+    }
+  }
+}

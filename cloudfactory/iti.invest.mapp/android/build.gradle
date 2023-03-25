@@ -1,0 +1,60 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        // call google() firstly, because google-play-services-basement error
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath('com.android.tools.build:gradle:4.1.2')
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.google.gms:google-services:4.3.8'
+        // https://firebase.google.com/docs/crashlytics/upgrade-sdk?platform=android&authuser=0
+        classpath 'com.google.firebase:firebase-crashlytics-gradle:2.7.0'
+        // https://firebase.google.com/docs/app-distribution/android/distribute-gradle
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:2.1.2'
+    }
+}
+
+allprojects {
+    repositories {
+        // call google() firstly, because google-play-services-basement error
+        google()
+        mavenCentral()
+        mavenLocal()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url("$rootDir/../node_modules/react-native/android")
+        }
+
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+    }
+}
+
+ext {
+    buildToolsVersion = "30.0.2"
+    minSdkVersion = 21
+    compileSdkVersion = 30
+    targetSdkVersion = 30
+    ndkVersion = "21.4.7075529"
+
+    supportLibVersion = "28.0.3"
+    googlePlayServicesVersion = '17.0.0'
+    firebaseMessagingVersion = '22.0.0'
+    androidMapsUtilsVersion = '1.2.1'
+}
+subprojects { subproject ->
+    afterEvaluate{
+        if((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion rootProject.ext.compileSdkVersion
+                buildToolsVersion rootProject.ext.buildToolsVersion
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+export { OsagoText } from './OsagoText';

@@ -1,0 +1,352 @@
+.setup-page {
+  .alternatives-scrollbar {
+    overflow-x: auto;
+    margin-top: -20px;
+    padding-top: 25px;
+    // margin-right: 10px;
+
+    .ps__scrollbar-x-rail {
+      top: 3px;
+      bottom: 0;
+      opacity: 1;
+      background-color: transparent !important;
+
+      .ps__scrollbar-x {
+        height: 10px !important;
+      }
+    }
+    .ps__rail-x {
+      background-color: #eee;
+      opacity: 0.9;
+    }
+  }
+
+  h2.ui.header.presentation-options-header {
+    font-size: 30px;
+  }
+  .instructions {
+    margin-top: 20px;
+    font-size: 14px;
+
+    .instructions-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .row {
+      margin-bottom: -10px;
+    }
+  }
+
+  .top {
+    border-top: 1px solid $HEADER_SUB_COLOR2;
+    margin-top: 30px;
+    height: 50px;
+    @media screen and (max-width: 750px) {
+      height: auto;
+    }
+
+    overflow: hidden;
+
+    .top-left {
+      float: left;
+      padding-top: 5px;
+      line-height: 18px;
+
+      .toggle-title {
+        display: inline-block;
+        text-align: left;
+        width: 90px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+
+      .toggle-button {
+        margin-top: 2px;
+      }
+    }
+
+    .top-right {
+      float: right;
+      @media screen and (min-width: 1200px) {
+        padding-right: 15px;
+      }
+      @media screen and (min-width: 750px) {
+        padding-right: 0;
+      }
+
+      margin-top: 10px;
+
+      .ui.button {
+        width: 30px;
+        height: 30px;
+        padding: 8px 6px !important;
+        font-size: 14px !important;
+        line-height: 8px !important;
+        font-weight: 100;
+      }
+
+      .add-button {
+        padding: 0 !important;
+        background: $LINK_COLOR url("../img/svg/plus-icon.svg") no-repeat center;
+
+        &:hover {
+          background-color: $LINK_COLOR_HOVER;
+        }
+      }
+
+      & > div {
+        float: left;
+        margin-right: 30px;
+
+        & > span {
+          margin-right: 10px;
+          font-weight: 700;
+        }
+
+        a.ui.button {
+          i.icon:not(.button) {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .alternatives-scrolling {
+    border-top: 1px solid $HEADER_SUB_COLOR2;
+    display: inline-block;
+    width: 960px;
+    padding: 0 0 70px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+
+    .alternatives-inner {
+      transition: 500ms;
+    }
+
+
+    .setup-page-column {
+      width: 230px;
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+
+      &:not(:last-child) {
+        border-right: 1px solid $HEADER_SUB_COLOR3;
+      }
+
+      .setup-page-column-title {
+        font-size: 24px;
+        font-family: $SECOND_FONT;
+        color: $LINK_COLOR;
+        height: 100px;
+        padding-top: 20px;
+        position: relative;
+      }
+
+      .option-total {
+        font-size: 16px;
+        font-weight: 600;
+
+        & > .row {
+          margin: 0;
+          padding: 0;
+
+          & > .column {
+            padding: 0 10px;
+          }
+        }
+      }
+
+      .remove-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 14px;
+        height: 13px;
+        cursor: pointer;
+        z-index: 111;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .column-option {
+        padding: 10px 15px 15px 15px;
+        border-top: 1px solid $HEADER_SUB_COLOR3;
+
+        .option-card {
+          margin: 0;
+          background-color: #ffffff;
+          height: 140px;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.29);
+          border-radius: 8px;
+
+          .content {
+            position: relative;
+
+            .carrier-logo {
+              position: absolute;
+              top: 10px;
+              left: 0;
+              right: 0;
+              width: 90%;
+              margin: auto;
+            }
+
+            .option-total {
+              position: absolute;
+              top: 105px;
+              width: 100%;
+            }
+
+            .ui.dropdown {
+              margin-top: 40px;
+              background-color: #ffffff;
+              width: 100%;
+            }
+
+            .no-renewal {
+              margin-top: 40px;
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .setup-page-column-discounts {
+        border-top: 1px solid $HEADER_SUB_COLOR3;
+        padding: 15px;
+        min-height: 141px;
+        height: auto;
+
+        .ui.dropdown {
+          background-color: #ffffff;
+          width: 100%;
+          min-width: 0;
+          text-transform: capitalize;
+          padding: 3px;
+          padding-left: 6px;
+
+          .menu {
+            .item {
+              text-transform: capitalize;
+            }
+          }
+        }
+
+        .discounts-products {
+          &:not(:first-child) {
+            padding-top: 0;
+          }
+
+          .column:first-child {
+            padding-right: 0;
+          }
+        }
+
+        .discounts-actions {
+          margin-top: -20px;
+        }
+      }
+
+      .setup-page-column-total {
+        border-top: 1px solid $HEADER_SUB_COLOR2;
+        border-bottom: 1px solid $HEADER_SUB_COLOR2;
+        padding: 10px 0;
+
+        .option-total {
+          margin: 5px 0 10px 0;
+        }
+      }
+
+      &:first-child {
+        .column-option {
+          padding: 10px 15px 15px 0;
+        }
+      }
+    }
+
+    .option-title {
+      text-transform: uppercase;
+      height: 25px;
+      line-height: 25px;
+      text-align: left;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      color: $HEADER_SUB_COLOR2;
+      margin-bottom: 10px;
+
+      .ui.image {
+        position: relative;
+        bottom: 3px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .blank-block {
+    // background: $BACKGROUND_COLOR url("../img/svg/setup-presentation-bg.svg") no-repeat center;
+    background-color: $BACKGROUND_COLOR;
+    background-image: url("../img/svg/setup-presentation-bg.svg");
+    background-size: cover;
+    width: 459px;
+    height: 139px;
+    position: absolute;
+    bottom: 245px;
+    z-index: 1111;
+
+    @media screen and (max-width: 1000px) {
+      bottom: 86px;
+    }
+
+    .blank-block-title {
+      float: right;
+      padding: 20px 15px;
+
+      .arrow {
+        background: url("../img/svg/setup-presentation-arrow.svg") no-repeat center;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .alternatives-scrolling {
+      min-width: 720px;
+      width: 720px;
+      .setup-page-column {
+        width: 230px;
+      }
+    }
+  }
+  @media screen and (max-width: 995px) {
+    .alternatives-scrolling {
+      min-width: 720px;
+      width: 720px;
+      .setup-page-column {
+        width: 230px;
+      }
+    }
+  }
+
+  .footer {
+    margin-bottom: 60px;
+    border-top: 1px solid $HEADER_SUB_COLOR2;
+    padding-top: 25px;
+
+    .ui.button {
+      float: right;
+      min-width: 300px;
+    }
+  }
+}

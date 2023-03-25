@@ -1,0 +1,443 @@
+{
+    "listingSummary": {
+        "listingId": "abbc0f1b-15a6-41e5-a7c7-fef282c40e20",
+        "isActive": true,
+        "isPending": false,
+        "listingType": "ForSale",
+        "listedOn": "2018-05-16",
+        "photoCount": 22,
+        "videoCount": 0,
+        "listPrice": {
+            "currencyCode": "USD",
+            "amount": 325000,
+            "isPriceUponRequest": false,
+            "isHideListPrice": false
+        },
+        "propertyAddress": {
+            "streetAddress": "79 Gate Ridge Road 79",
+            "city": "Fairfield",
+            "district": "Fairfield",
+            "stateProvince": "Connecticut",
+            "stateProvinceCode": "CT",
+            "postalCode": "06825",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 41.203768,
+            "longitude": -73.246312,
+            "geoCodeConfidenceLevel": "High",
+            "formattedAddress": "79 Gate Ridge Rd, Fairfield, CT 06825"
+        },
+        "geographicRegions": [
+            {
+                "type": "ContinentRegion",
+                "name": "North America"
+            },
+            {
+                "type": "Neighbourhood",
+                "name": "Stratfield"
+            }
+        ],
+        "mlsNumbers": [
+            "170084593"
+        ],
+        "RFGListingId": "ZS4Z28",
+        "isNewConstruction": false,
+        "listingURL": "https:\/\/www.sothebysrealty.com\/id\/zs4z28",
+        "isCallToShow": false,
+        "isForAuction": false,
+        "isByAppointmentOnly": false,
+        "propertyCategory": "Residential",
+        "propertyType": "Condominium",
+        "propertyStyle": "Other Style",
+        "propertyName": "Easy Living Condo - Woodfield Village",
+        "totalBath": 2,
+        "buildingArea": "1384 Sq. Ft.",
+        "noOfBedrooms": 2,
+        "squareFootage": 1384,
+        "defaultPhotoURL": "\/\/openapi.azureedge.net\/0DEE60E8-3EDA-4D3F-AF33-85B6B9C8439E",
+        "isForeClosure": false,
+        "isShortSale": false,
+        "lastUpdateOn": "2018-07-30T12:50:06.620",
+        "agents": [
+            {
+                "id": "b5e59077-6655-445f-aecb-afca43545a8c",
+                "name": "Rosemary   Low",
+                "firstName": "Rosemary",
+                "lastName": "Low",
+                "gender": "Female",
+                "defaultPhotoURL": "\/\/openapi.azureedge.net\/CDCDA38C-AE31-48D9-AD4B-2512CBFB27AF",
+                "emailAddress": "Rosemary.Low@sothebyshomes.com",
+                "leadEmailAddress": "800024.lead.4020348@leads.leadrouter.com",
+                "businessPhone": "3236605885",
+                "isPrimary": true,
+                "office": {
+                    "officeId": "0a8a7a76-3c6d-43b9-b5d2-b572ed9a2c3a",
+                    "RFGOfficeId": "0015",
+                    "companyId": "88635aa0-3105-4ca5-ab85-fc48586f088b",
+                    "companyName": "NRT Sotheby's International Realty",
+                    "RFGCompanyId": "901195",
+                    "brandCode": "SIR",
+                    "name": "Sotheby's International Realty - Los Feliz Brokerage",
+                    "type": "Branch office",
+                    "officeAddress": {
+                        "streetAddress": "1801  North Hillhurst Avenue ",
+                        "city": "Los Angeles",
+                        "district": "Los Angeles County",
+                        "stateProvince": "California",
+                        "stateProvinceCode": "CA",
+                        "postalCode": "90027",
+                        "country": "United States",
+                        "countryCode": "US",
+                        "latitude": 34.104058,
+                        "longitude": -118.287781,
+                        "formattedAddress": "1801 Hillhurst Ave, Los Angeles, CA 90027"
+                    },
+                    "phoneNumber": "323.665.1700",
+                    "emailAddress": "ALLSIRLosFelizEmployees@sothebyshomes.com"
+                }
+            }
+        ],
+        "isShowAddressOnInternet": true
+    },
+    "fullBath": 2,
+    "yearBuilt": "1986",
+    "providerKey": "abbc0f1b-15a6-41e5-a7c7-fef282c40e20",
+    "propertyFeatures": [
+        {
+            "groupName": "Interior",
+            "description": "Vaulted Ceilings"
+        },
+        {
+            "groupName": "Interior",
+            "description": "Walk-in Closet"
+        },
+        {
+            "groupName": "Area Amenities",
+            "description": "Golf"
+        },
+        {
+            "groupName": "Cooling",
+            "description": "Zoned A\/C"
+        },
+        {
+            "groupName": "Special Program",
+            "description": "QC Approved Listing"
+        },
+        {
+            "groupName": "Exterior Living Space",
+            "description": "Deck"
+        }
+    ],
+    "remarks": [
+        {
+            "type": "Property Description",
+            "languageCode": "en",
+            "remark": "Best value in the complex! Sunny and quiet second floor Blackford end unit ranch in desirable Woodfield Village. Living room features tree top views, vaulted ceiling, fireplace & opens to large dining room. Large, freshly painted eat-in kitchen includes pantry, many cabinets & desk area. Large master suite, also freshly painted, with a walk-in closet, crown molding and full bath including vanity with double sinks, whirlpool & shower. Second bedroom features crown molding, walk-in closet and bath right outside. Both bedrooms have sliders leading to balcony. Laundry on main floor, large unfinished 624 sq ft basement with window, new furnace\/AC & one car detached garage. Beautifully maintained and landscaped community featuring rolling hills, stone walls, specimen trees and flourishing gardens. Live the vacation lifestyle with pool, tennis & club house!",
+            "htmlRemark": "Best value in the complex! Sunny and quiet second floor Blackford end unit ranch in desirable Woodfield Village. Living room features tree top views, vaulted ceiling, fireplace & opens to large dining room. Large, freshly painted eat-in kitchen includes pantry, many cabinets & desk area. Large master suite, also freshly painted, with a walk-in closet, crown molding and full bath including vanity with double sinks, whirlpool & shower. Second bedroom features crown molding, walk-in closet and bath right outside. Both bedrooms have sliders leading to balcony. Laundry on main floor, large unfinished 624 sq ft basement with window, new furnace\/AC & one car detached garage. Beautifully maintained and landscaped community featuring rolling hills, stone walls, specimen trees and flourishing gardens. Live the vacation lifestyle with pool, tennis & club house!\n<br>\n"
+        }
+    ],
+    "webSites": [
+        {
+            "type": "Landing Page URL",
+            "name": "Landing Page URL",
+            "url": "https:\/\/www.sothebysrealty.com\/id\/zs4z28",
+            "contentLanguageCode": "en"
+        }
+    ],
+    "media": [
+        {
+            "mediaID": "091B602A-C8D0-4D85-84B8-10E550B9EF07",
+            "sequenceNumber": 17,
+            "url": "\/\/openapi.azureedge.net\/091B602A-C8D0-4D85-84B8-10E550B9EF07",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #18",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "E8A3A5AC-40B4-4372-9FD5-13D04FB66FD4",
+            "sequenceNumber": 5,
+            "url": "\/\/openapi.azureedge.net\/E8A3A5AC-40B4-4372-9FD5-13D04FB66FD4",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #5",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "FC555510-87D4-4F54-8088-3EBC03CF60CF",
+            "sequenceNumber": 8,
+            "url": "\/\/openapi.azureedge.net\/FC555510-87D4-4F54-8088-3EBC03CF60CF",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #8",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2342,
+            "width": 3513,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "73DA6696-99DD-45E8-90E8-3ECF90F5B551",
+            "sequenceNumber": 22,
+            "url": "\/\/openapi.azureedge.net\/73DA6696-99DD-45E8-90E8-3ECF90F5B551",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #23",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2599,
+            "width": 3300,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "7F18E5C7-4C36-4937-A8EC-477170E58E97",
+            "sequenceNumber": 21,
+            "url": "\/\/openapi.azureedge.net\/7F18E5C7-4C36-4937-A8EC-477170E58E97",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #22",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2599,
+            "width": 3300,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "7CC44710-3A3D-44A9-B4C9-48064FE4D7AC",
+            "sequenceNumber": 14,
+            "url": "\/\/openapi.azureedge.net\/7CC44710-3A3D-44A9-B4C9-48064FE4D7AC",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #14",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "3781209E-F742-47AC-89E9-4863A7908B63",
+            "sequenceNumber": 10,
+            "url": "\/\/openapi.azureedge.net\/3781209E-F742-47AC-89E9-4863A7908B63",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #10",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "1A3E9C94-68AC-4592-8A42-54F81D08C854",
+            "sequenceNumber": 12,
+            "url": "\/\/openapi.azureedge.net\/1A3E9C94-68AC-4592-8A42-54F81D08C854",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #12",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "3FA13CE7-9533-4EE0-9D17-5FDC844C7BF5",
+            "sequenceNumber": 18,
+            "url": "\/\/openapi.azureedge.net\/3FA13CE7-9533-4EE0-9D17-5FDC844C7BF5",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #19",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2374,
+            "width": 3561,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "76981F68-8C48-433A-9E70-692643EDA5E2",
+            "sequenceNumber": 7,
+            "url": "\/\/openapi.azureedge.net\/76981F68-8C48-433A-9E70-692643EDA5E2",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #7",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2327,
+            "width": 3491,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "3EC5F3CA-4FBC-4209-966A-6A2F641083CA",
+            "sequenceNumber": 1,
+            "url": "https:\/\/www.williampitt.com\/search\/real-estate-sales\/79-gate-ridge-road-fairfield-ct-06825-170084593-1924559\/",
+            "isDefault": true,
+            "caption": "Listing Link",
+            "format": "URL",
+            "category": "Local Listing Link",
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "201E1864-047B-421E-BB6B-72A37E2A4268",
+            "sequenceNumber": 9,
+            "url": "\/\/openapi.azureedge.net\/201E1864-047B-421E-BB6B-72A37E2A4268",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #9",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "2BB753A0-981E-4CC1-A2BA-779488ACAA68",
+            "sequenceNumber": 6,
+            "url": "\/\/openapi.azureedge.net\/2BB753A0-981E-4CC1-A2BA-779488ACAA68",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #6",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2345,
+            "width": 3518,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "C80755D6-9E4D-4439-9179-77BD6FF5D0E2",
+            "sequenceNumber": 20,
+            "url": "\/\/openapi.azureedge.net\/C80755D6-9E4D-4439-9179-77BD6FF5D0E2",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #21",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "EBEFCF8B-89E5-4D89-8E41-7EEC3601FA26",
+            "sequenceNumber": 3,
+            "url": "\/\/openapi.azureedge.net\/EBEFCF8B-89E5-4D89-8E41-7EEC3601FA26",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #3",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3648,
+            "width": 5472,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "0DEE60E8-3EDA-4D3F-AF33-85B6B9C8439E",
+            "sequenceNumber": 1,
+            "url": "\/\/openapi.azureedge.net\/0DEE60E8-3EDA-4D3F-AF33-85B6B9C8439E",
+            "isDefault": true,
+            "caption": "Easy Living Condo - Woodfield Village Photo #1",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2352,
+            "width": 3528,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "26369FB7-246B-41E6-B9D3-8F6EE9A10610",
+            "sequenceNumber": 19,
+            "url": "\/\/openapi.azureedge.net\/26369FB7-246B-41E6-B9D3-8F6EE9A10610",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #20",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2353,
+            "width": 3530,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "6F3B4E81-7D90-491C-BB6C-901161773959",
+            "sequenceNumber": 13,
+            "url": "\/\/openapi.azureedge.net\/6F3B4E81-7D90-491C-BB6C-901161773959",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #13",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "F84FD1E5-B8F6-4923-A7AB-977F15297394",
+            "sequenceNumber": 4,
+            "url": "\/\/openapi.azureedge.net\/F84FD1E5-B8F6-4923-A7AB-977F15297394",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #4",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "B276760D-186D-44E9-B6D9-AAF0F9490908",
+            "sequenceNumber": 2,
+            "url": "\/\/openapi.azureedge.net\/B276760D-186D-44E9-B6D9-AAF0F9490908",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #2",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 3648,
+            "width": 5472,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "7D399D26-9778-4034-83E1-B990468D18C3",
+            "sequenceNumber": 11,
+            "url": "\/\/openapi.azureedge.net\/7D399D26-9778-4034-83E1-B990468D18C3",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #11",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "83269E57-E4C9-4C28-82A9-C56BCDF2490A",
+            "sequenceNumber": 15,
+            "url": "\/\/openapi.azureedge.net\/83269E57-E4C9-4C28-82A9-C56BCDF2490A",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #16",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2363,
+            "width": 3545,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        },
+        {
+            "mediaID": "66920A7A-6D72-45DF-B174-F92080EE3DF5",
+            "sequenceNumber": 16,
+            "url": "\/\/openapi.azureedge.net\/66920A7A-6D72-45DF-B174-F92080EE3DF5",
+            "isDefault": false,
+            "caption": "Easy Living Condo - Woodfield Village Photo #17",
+            "format": "Image",
+            "category": "Listing Photo",
+            "height": 2400,
+            "width": 3600,
+            "lastUpdateOn": "2018-05-19T02:20:41.790"
+        }
+    ],
+    "schools": [
+        {
+            "type": "Primary School",
+            "name": "N. Stratfield"
+        },
+        {
+            "type": "Secondary School",
+            "name": "Ffld Woods"
+        },
+        {
+            "type": "High School",
+            "name": "Ffld Warde"
+        }
+    ],
+    "mlsInformation": [
+        {
+            "number": "170084593",
+            "isPrimary": true
+        }
+    ]
+}

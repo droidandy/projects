@@ -1,0 +1,10 @@
+ha_billing_card_update:
+    path: /card-update
+    defaults:
+        _controller: AppBundle:Api\User\Billing:cardUpdate
+        methods:  [POST]
+
+ha_billing_user_downgrade:
+    path: /user-downgrade
+    defaults: { _controller: AppBundle:Api\User\Billing:userDowngrade }
+    methods:  [POST]

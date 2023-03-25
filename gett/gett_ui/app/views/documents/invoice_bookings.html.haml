@@ -1,0 +1,94 @@
+.invoice-content
+  .content-container
+    %table
+      %thead
+        %tr.tableHeadTop
+          %th{colspan: '13'}
+        %tr.tableHeadRow
+          %th.tableHead
+            Order ID
+          %th.tableHead
+            Date & time
+          %th.tableHead
+            References
+          %th.tableHead
+            Passenger
+          %th.tableHead
+            Addresses
+            .notice
+              Pick up, Destination, add. stops
+          %th.tableHead
+            Ride cost
+            .notice
+              VATable
+          %th.tableHead
+            Ride cost
+            .notice
+              non-VATable
+          %th.tableHead
+            Extras
+            .notice
+              VATable
+          %th.tableHead
+            Extras
+            .notice
+              non-VATable
+          %th.tableHead
+            Total fees
+            .notice
+              VATable
+          %th.tableHead
+            Total
+            .notice
+              excl/VAT
+          %th.tableHead
+            VAT
+          %th.tableHead
+            Total
+      %tbody
+        - @bookings.each do |booking|
+          %tr
+            %td= booking.order_id
+            %td
+              = booking.scheduled_at_date
+              %br
+              = booking.scheduled_at_time
+            %td.ref= booking.references
+            %td= booking.passenger_name
+            %td.addr= booking.waypoints.join(" #{document_image_tag('pdf/arrow.png')} ").html_safe
+            %td £#{format_cents(booking.vatable_ride_fees)}
+            %td £#{format_cents(booking.non_vatable_ride_fees)}
+            %td £#{format_cents(booking.vatable_extra_fees)}
+            %td £#{format_cents(booking.non_vatable_extra_fees)}
+            %td £#{format_cents(booking.service_fees)}
+            %td £#{format_cents(booking.total_excl_vat)}
+            %td £#{format_cents(booking.vat)}
+            %td.last.bold-text £#{format_cents(booking.total_cost)}
+
+  .notes
+    %table
+      %tr
+        %td
+          .note
+            %b *Ride Cost (VATable)
+            %span– Base fare/Meter for UK PHV jobs, including cancellation fees
+      %tr
+        %td
+          .note
+            %b *Ride Cost (non-VATable)
+            %span– Base fare/Meter for Gett Black Cab and International Jobs, including cancellation fees
+      %tr
+        %td
+          .note
+            %b *Extras (VATable)
+            %span– Waiting time, Gratuity any other extras such as airport parking for UK PHV jobs
+      %tr
+        %td
+          .note
+            %b *Extras (non-VATable)
+            %span– Waiting time, Gratuity any other extras such as airport parking for Gett Black Cab and International Jobs
+      %tr
+        %td
+          .note
+            %b *Fees (VATable)
+            %span– Any Gett & One Transport booking fees, handling fees, & international booking fees

@@ -1,0 +1,31 @@
+@import "../../../../styles/tools/mixins.scss";
+.componentConsultationPromo {
+    @include spacingBottom;
+    @include defaultText;
+    .section-sub-header {
+        h2 {
+            font-family: var(--font-heading);
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--black-pearl);
+            margin-bottom: 0;
+            @include media-query($small) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+      }
+    .description {
+        text-align: center;
+        @include spacingBottomSmall;
+    }
+    .description2 {
+        text-align: center;
+        @include spacingBottomMedium;
+    }
+
+}

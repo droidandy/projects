@@ -1,0 +1,31 @@
+hwi_oauth_connect:
+    resource: "@HWIOAuthBundle/Resources/config/routing/connect.xml"
+    prefix:   /connect
+
+hwi_oauth_connect_service:
+    defaults: { _controller: AppBundle:User\Oauth:connectService }
+    path:  /connect/service/{service}
+
+hwi_oauth_service_redirect:
+    defaults: { _controller: AppBundle:User\Oauth:redirectToService }
+    path:  /redirect/service/{service}
+
+facebook_login:
+    path: /login/check-facebook
+
+google_login:
+    path: /login/check-google
+
+twitter_login:
+    path: /login/check-twitter
+
+linkedin_login:
+    path: /login/check-linkedin
+
+oauth_complete:
+    path:  /oauth/complete
+    defaults: { _controller: AppBundle:User\Oauth:complete }
+
+oauth_failure:
+    path:  /oauth/failure
+    defaults: { _controller: AppBundle:User\Oauth:failure }

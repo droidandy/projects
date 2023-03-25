@@ -1,0 +1,96 @@
+fragment CartItem on CartItemModel {
+    id
+    productId
+    quantity
+}
+
+fragment CartItemWithProduct on CartItemModel {
+    id
+    productId
+    price
+    oldPrice
+    product {
+        ...ListProduct
+    }
+    quantity
+}
+
+fragment Cart on CartModel {
+    id
+    items {
+        ...CartItem
+    }
+    price
+    quantity
+}
+
+fragment CartWithProducts on CartModel{
+    id
+    items {
+        ...CartItemWithProduct
+    }
+    price
+    quantity
+    gifts {
+        ...ListProduct
+    }
+    coupons {
+        id
+        active
+        discountActive
+        statusText
+        discountName
+    }
+}
+
+query GetCart  {
+    cart {
+        ...Cart
+    }
+
+}
+
+query GetCartWithProducts {
+    cart {
+        ...CartWithProducts
+    }
+}
+
+
+mutation AddToCart($productId: Int!, $quantity: Int!) {
+    updateCart(
+        editAction: ADD_PRODUCT
+        productId: $productId
+        quantity: $quantity
+    ) {
+        ...Cart
+    }
+}
+
+mutation UpdateCart(
+    $quantity: Int
+    $productId: Int!
+    $editAction: EditCartAction!
+) {
+    updateCart(
+        quantity: $quantity
+        productId: $productId
+        editAction: $editAction
+    ) {
+        ...CartWithProducts
+    }
+}
+
+
+mutation addPromoCode($coupon: String!) {
+    addPromoCode(coupon: $coupon) {
+        ...CartWithProducts
+    }
+}
+
+
+mutation deletePromoCode($coupon: String!) {
+    deletePromoCode(coupon: $coupon) {
+        ...CartWithProducts
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<style type="text/css">
+        a {text-decoration: none; color:#277AC2; }
+        td,th {border:none}
+        .backgroundImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/approval_email_hero_1x.png);
+            background-repeat: no-repeat;
+            width: 800px;
+            height: 225px;
+        }
+        .poweredByBenrevoLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo1x_20.png);
+            background-repeat: no-repeat;
+            width: 181px;
+            height: 37px;
+        }
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+            .backgroundImage {
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/approval_email_hero_2x.png);
+                background-size: 800px 225px;
+            }
+            .poweredByBenrevoLogoImage{
+                background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo2x_20_20.png);
+                background-size: 181px 37px;
+            }
+        }
+	</style>
+    </head>
+    <body style="background:#f8f9fb; margin:0px;padding:0px; font-family:Arial;">
+        <table style="margin:auto;" width="800" cellspacing='0'>
+            <tr>
+                <td style="width:100%;text-align:right;float:left;">
+                    <img alt="UnitedHealthcare" src="https://s3-us-west-2.amazonaws.com/benrevo-static-uhc/logo.jpg"/>
+                </td>
+            </tr>
+        </table>
+	<table bgcolor="#fff" style="margin:auto; border:1px solid #d3d3d3;" width="800" cellspacing='0' cellpadding='0'>
+            <tr>
+                <td align='center' >
+                <p style="font-size:18pt;  color:#515151;" >
+                    <strong>Access to $!brokerage_name has been approved</strong>
+                </p>
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <div class="backgroundImage"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right:30px;"><br/>
+                    <table bgcolor="#fff" style="margin:auto;border-spacing: 10px 0;padding:0px 0px; color:#666666;" width="600" >
+                        <tr>
+                            <td>
+                                <p>Hello $!agent_name,</p>
+
+                                <p>You have been approved to partner with $!brokerage_name to work on clients through the Quote UHC platform. You may sign in with your email and password to get started. </p>
+
+								<p><a href="https://quote.benrevo.com/uhc">https://quote.benrevo.com/uhc</a></p>
+
+								<p>If you have any questions, please feel free to reach out to your UHC sales team.</p>
+
+								<p>Thank you,
+								<br/>UnitedHealthcare</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <div class="poweredByBenrevoLogoImage"></div>
+                    <br/><br/>
+                </td>
+            </tr>
+        </table>
+	<br/><br/>
+
+    </body>
+</html>

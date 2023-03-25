@@ -1,0 +1,274 @@
+{
+ "request": {
+  "airline": {
+   "requestedCode": "VTE",
+   "fsCode": "VTE"
+  },
+  "flight": {
+   "requested": "207",
+   "interpreted": "207"
+  },
+  "date": {
+   "year": "2017",
+   "month": "9",
+   "day": "8",
+   "interpreted": "2017-09-08"
+  },
+  "utc": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "airport": {},
+  "codeType": {},
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flight/status/VTE/207/arr/2017/9/8"
+ },
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "VTE",
+    "iata": "LF",
+    "icao": "VTE",
+    "name": "Contour Aviation",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "OPF",
+    "iata": "OPF",
+    "icao": "KOPF",
+    "faa": "OPF",
+    "name": "Opa-locka Executive Airport",
+    "city": "Miami",
+    "cityCode": "MIA",
+    "stateCode": "FL",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "FLZ074",
+    "localTime": "2017-09-08T06:47:46.084",
+    "utcOffsetHours": -4,
+    "latitude": 25.90856,
+    "longitude": -80.274424,
+    "elevationFeet": 6,
+    "classification": 4,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/OPF?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/OPF?codeType=fs"
+   },
+   {
+    "fs": "HPN",
+    "iata": "HPN",
+    "icao": "KHPN",
+    "faa": "HPN",
+    "name": "Westchester County Airport",
+    "street1": "240 Airport Road, Suite 202",
+    "city": "Westchester County",
+    "cityCode": "HPN",
+    "stateCode": "NY",
+    "postalCode": "10604",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "NYZ070",
+    "localTime": "2017-09-08T06:47:46.085",
+    "utcOffsetHours": -4,
+    "latitude": 41.068674,
+    "longitude": -73.703889,
+    "elevationFeet": 439,
+    "classification": 3,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/HPN?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/HPN?codeType=fs"
+   },
+   {
+    "fs": "TEB",
+    "iata": "TEB",
+    "icao": "KTEB",
+    "faa": "TEB",
+    "name": "Teterboro Airport",
+    "city": "Teterboro",
+    "cityCode": "TEB",
+    "stateCode": "NJ",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/New_York",
+    "weatherZone": "NJZ003",
+    "localTime": "2017-09-08T06:47:46.084",
+    "utcOffsetHours": -4,
+    "latitude": 40.849722,
+    "longitude": -74.062222,
+    "elevationFeet": 9,
+    "classification": 2,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/TEB?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/TEB?codeType=fs"
+   },
+   {
+    "fs": "MQY",
+    "iata": "MQY",
+    "icao": "KMQY",
+    "faa": "MQY",
+    "name": "Smyrna Airport",
+    "city": "Smyrna",
+    "cityCode": "MQY",
+    "stateCode": "TN",
+    "countryCode": "US",
+    "countryName": "United States",
+    "regionName": "North America",
+    "timeZoneRegionName": "America/Chicago",
+    "localTime": "2017-09-08T05:47:46.085",
+    "utcOffsetHours": -5,
+    "latitude": 36.006745,
+    "longitude": -86.510593,
+    "elevationFeet": 518,
+    "classification": 4,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MQY?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MQY?codeType=fs"
+   }
+  ],
+  "equipments": [
+   {
+    "iata": "CR2",
+    "name": "Canadair (Bombardier) Regional Jet 200",
+    "turboProp": false,
+    "jet": true,
+    "widebody": false,
+    "regional": true
+   }
+  ]
+ },
+ "flightStatuses": [
+  {
+   "flightId": 932963428,
+   "carrierFsCode": "VTE",
+   "flightNumber": "207",
+   "departureAirportFsCode": "OPF",
+   "arrivalAirportFsCode": "TEB",
+   "departureDate": {
+    "dateLocal": "2017-09-07T17:23:00.000",
+    "dateUtc": "2017-09-07T21:23:00.000Z"
+   },
+   "arrivalDate": {
+    "dateLocal": "2017-09-08T00:19:00.000",
+    "dateUtc": "2017-09-08T04:19:00.000Z"
+   },
+   "status": "R",
+   "operationalTimes": {
+    "scheduledGateDeparture": {
+     "dateLocal": "2017-09-07T17:23:00.000",
+     "dateUtc": "2017-09-07T21:23:00.000Z"
+    },
+    "flightPlanPlannedDeparture": {
+     "dateLocal": "2017-09-07T22:03:00.000",
+     "dateUtc": "2017-09-08T02:03:00.000Z"
+    },
+    "flightPlanPlannedArrival": {
+     "dateLocal": "2017-09-08T00:19:00.000",
+     "dateUtc": "2017-09-08T04:19:00.000Z"
+    }
+   },
+   "flightDurations": {
+    "scheduledAirMinutes": 136,
+    "scheduledTaxiOutMinutes": 280
+   },
+   "flightEquipment": {
+    "actualEquipmentIataCode": "CR2",
+    "tailNumber": "N207RW"
+   }
+  },
+  {
+   "flightId": 933068920,
+   "carrierFsCode": "VTE",
+   "flightNumber": "207",
+   "departureAirportFsCode": "OPF",
+   "arrivalAirportFsCode": "MQY",
+   "divertedAirportFsCode": "HPN",
+   "departureDate": {
+    "dateLocal": "2017-09-08T05:00:00.000",
+    "dateUtc": "2017-09-08T09:00:00.000Z"
+   },
+   "arrivalDate": {
+    "dateLocal": "2017-09-08T06:00:00.000",
+    "dateUtc": "2017-09-08T11:00:00.000Z"
+   },
+   "status": "R",
+   "operationalTimes": {
+    "scheduledGateDeparture": {
+     "dateLocal": "2017-09-08T05:00:00.000",
+     "dateUtc": "2017-09-08T09:00:00.000Z"
+    },
+    "flightPlanPlannedDeparture": {
+     "dateLocal": "2017-09-08T05:10:00.000",
+     "dateUtc": "2017-09-08T09:10:00.000Z"
+    },
+    "estimatedRunwayDeparture": {
+     "dateLocal": "2017-09-08T05:23:00.000",
+     "dateUtc": "2017-09-08T09:23:00.000Z"
+    },
+    "actualRunwayDeparture": {
+     "dateLocal": "2017-09-08T05:23:00.000",
+     "dateUtc": "2017-09-08T09:23:00.000Z"
+    },
+    "flightPlanPlannedArrival": {
+     "dateLocal": "2017-09-08T06:00:00.000",
+     "dateUtc": "2017-09-08T11:00:00.000Z"
+    },
+    "estimatedRunwayArrival": {
+     "dateLocal": "2017-09-08T06:58:00.000",
+     "dateUtc": "2017-09-08T10:58:00.000Z"
+    }
+   },
+   "delays": {
+    "departureRunwayDelayMinutes": 13
+   },
+   "flightDurations": {
+    "scheduledAirMinutes": 110,
+    "scheduledTaxiOutMinutes": 10
+   },
+   "flightEquipment": {
+    "actualEquipmentIataCode": "CR2",
+    "tailNumber": "N207RW"
+   }
+  },
+  {
+   "flightId": 933071054,
+   "carrierFsCode": "VTE",
+   "flightNumber": "207",
+   "departureAirportFsCode": "MQY",
+   "arrivalAirportFsCode": "TEB",
+   "departureDate": {
+    "dateLocal": "2017-09-08T06:30:00.000",
+    "dateUtc": "2017-09-08T11:30:00.000Z"
+   },
+   "arrivalDate": {
+    "dateLocal": "2017-09-08T09:17:00.000",
+    "dateUtc": "2017-09-08T13:17:00.000Z"
+   },
+   "status": "S",
+   "operationalTimes": {
+    "scheduledGateDeparture": {
+     "dateLocal": "2017-09-08T06:30:00.000",
+     "dateUtc": "2017-09-08T11:30:00.000Z"
+    },
+    "estimatedRunwayDeparture": {
+     "dateLocal": "2017-09-08T06:40:00.000",
+     "dateUtc": "2017-09-08T11:40:00.000Z"
+    },
+    "estimatedRunwayArrival": {
+     "dateLocal": "2017-09-08T09:17:00.000",
+     "dateUtc": "2017-09-08T13:17:00.000Z"
+    }
+   },
+   "flightEquipment": {
+    "actualEquipmentIataCode": "CR2",
+    "tailNumber": "N207RW"
+   }
+  }
+ ]
+}

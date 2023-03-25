@@ -1,0 +1,155 @@
+page-group {
+  .chatbox p {
+		margin: 0;
+		text-align: left;
+	}
+  .left .item-inner
+	{
+	    // background: $chat-left-bg;
+			background: #f1f1f1;
+			border-radius: 15px;
+			padding: 10px!important;
+	}
+	.right .item-inner
+	{
+			border-radius: 15px;
+			padding: 10px!important;
+	}
+	.left .item-inner .label
+	{
+		padding: 0!important;
+		white-space: normal;
+		color:#000!important;
+		margin: 0!important;
+	}
+
+	.right .item-inner .label
+	{
+		padding: 0!important;
+		white-space: normal;
+		color:#000!important;
+		margin: 0!important;
+	}
+
+	.left .item-inner .label p
+	{
+		color:#000!important;
+	}
+
+	.right .item-inner .label p
+	{
+		color:#fff!important;
+	}
+
+	.item-left{
+	      padding: 0;
+	}
+
+	.left .item
+	{
+		padding-left: 0!important;
+	}
+
+	ion-avatar
+	{
+		    margin-right: 5px!important;
+	}
+.left p
+{
+  color: #000;
+}
+
+.chatbox
+{
+      max-width: 85%!important;
+}
+
+	.chatbox ion-avatar
+	{
+		width: 40px;
+	height: 40px;
+	float: left;
+	}
+
+  .left .chatbox_left {
+    max-width: 79%!important;
+}
+
+		.chatbox ion-avatar img{
+			width: 40px;
+		height: 40px;
+		float: left;
+		border-radius: 100%;
+		}
+
+  .seperate
+  {
+    width:100%;
+    float: left;
+  }
+
+
+  	.footer .item-inner
+  	{
+  		    background: #f1f1f1;
+  				height: 35px;
+  		    min-height: 35px;
+  				border: none;
+  				border-radius: 30px;
+  	}
+
+  	.footer .input-wrapper
+  	{
+  		height: 30px;
+  	}
+
+  	.footer .bottom_bar {
+  		padding: 7px;
+      // padding-top: 6.5px;
+  	}
+
+  	.footer .text-input
+  	{
+  		padding: 8px;
+  		margin: 0;
+  		height: 30px;
+  		resize: none;
+  	}
+
+  	.footer .item-button
+  	{
+  		    margin-top: 4px;
+  	}
+
+  	.sent{
+  		margin: 0!important;
+      margin-top: 4px!important;
+      background: #666;
+      border-radius: 50px;
+  		height: 26px!important;
+      width: 26px;
+  	}
+
+  	.sent .icon{
+  		font-size: 19px!important;
+  		color: #fff;
+  	}
+
+  	.attachment{
+  		    margin-right: 5px;
+  	}
+    ion-textarea{
+      font-size: 12px;
+      resize: both;
+    }
+
+    .back-button-text
+    {
+      display:none;
+    }
+
+    .back-button-icon
+    {
+          color: #f66565;
+    }
+}

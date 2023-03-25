@@ -1,0 +1,88 @@
+{% extends 'AppBundle:layout:root.html.twig' %}
+
+{% set articlesTotal = app.user|published_article_count %}
+{% set propertiesTotal = app.user.propertyForSaleCount %}
+{% set tablePageLength = 5 %}
+
+{% block body %}
+
+    <div class="one-column">
+        <p class="headline --separator --user-settings">
+        <span class="heading">
+            Statistics
+        </span>
+            <span class="sub-heading --small">
+            Select
+                {% if type == 'article' %}
+                    story
+                {% endif %}
+                {% if type == 'property' %}
+                    listing
+                {% endif %}
+                below to view last 30 days of activity in chart.<br>
+            For individual activity, click item from the list below.
+        </span>
+        </p>
+        <div class="information-centered">
+            <div class="inline-actions">
+                <ul>
+                    <li>
+                        <a href="{{ path('ha_statistics_details_article') }}"
+                           {% if type == 'article' %}class="--active"{% endif %}
+                        >
+                            Stories ({{ articlesTotal }})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ path('ha_statistics_details_property') }}"
+                           {% if type == 'property' %}class="--active"{% endif %}
+                        >
+                            Listings ({{ propertiesTotal }})
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="statistics">
+                {% if collection %}
+                    {% if type == 'article' %}
+                        {% set article = collection|first %}
+
+                        <p class="stats-title">
+                            <a href="{{ path('ha_article_details', {token: article.token, slug: article.slug}) }}">
+                                {{ article.title }}
+                            </a>
+                        </p>
+
+                        {% include 'AppBundle:statistics/details:chart.html.twig' %}
+                        {% include 'AppBundle:statistics/details:articles.html.twig' %}
+                    {% endif %}
+
+                    {% if type == 'property' %}
+                        <h2>{{ collection|first.getTitle() }}</h2>
+
+                        {% include 'AppBundle:statistics/details:chart.html.twig' %}
+                        {% include 'AppBundle:statistics/details:properties.html.twig' %}
+                    {% endif %}
+                {% else %}
+                    <p class="empty">No data</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+{% block body_before_close %}
+    <script src="{{ asset('bower_components/amcharts3/amcharts/amcharts.js') }}"></script>
+    <script src="{{ asset('bower_components/amcharts3/amcharts/serial.js') }}"></script>
+
+    <script src="{{ asset('app/js/statistics/chartSettings.js') }}"></script>
+    <script src="{{ asset('app/js/statistics/chart.js') }}"></script>
+    <script src="{{ asset('app/js/statistics/grid.js') }}"></script>
+{% endblock %}

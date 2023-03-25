@@ -1,0 +1,18 @@
+@startuml
+
+/' Refference: http://plantuml.com/guide '/
+/' Online Editor: https://plantuml-editor.kkeisuke.com/ '/
+
+participant ComponentCheckout
+note left of ComponentCheckout #aqua
+This is displayed left 
+of ComponentCheckout.
+end note
+participant ShopifyCart
+participant ShopifyStorefront
+
+
+autonumber
+ShopifyCart -> ComponentCheckout : Authentication Request
+ShopifyCart <- ComponentCheckout : Authentication Response
+@enduml

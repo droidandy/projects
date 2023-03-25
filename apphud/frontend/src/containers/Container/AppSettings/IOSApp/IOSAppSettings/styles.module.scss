@@ -1,0 +1,89 @@
+.settings {
+  & .small-program {
+    margin-top: 52px;
+    margin-bottom: 320px;
+    box-sizing: border-box;
+  }
+
+  & .group-picker {
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    position: relative;
+
+    & > span {
+      position: absolute;
+      top: 35px;
+      right: -27px;
+      cursor: pointer;
+    }
+
+    label {
+      margin-bottom: 5px;
+      box-sizing: border-box;
+      font-size: 15px;
+      line-height: 23px;
+      font-weight: 400;
+      display: block;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: 400;
+      margin-top: 5px;
+
+      a {
+        color: #0085ff;
+        text-decoration: none;
+      }
+    }
+
+    & :global(.DateInput) {
+      width: 100% !important;
+      text-align: left !important;
+    }
+
+    & :global(.DateInput_input) {
+      background: #edf3f8 !important;
+      color: #1a344b !important;
+      border-radius: 8px !important;
+      font-family: Ubuntu !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px !important;
+      padding: 7.5px !important;
+      border: 1px solid white !important;
+      box-sizing: border-box;
+      width: 100% !important;
+      text-align: left !important;
+      text-transform: initial;
+      height: 34px !important;
+    }
+
+    & :global(.DateInput_input__disabled) {
+      cursor: default !important;
+    }
+  }
+}
+
+.icon {
+  margin-left: 6px;
+}
+
+.message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  color: #97ADC6;
+  margin: 5px 0px;
+}
+
+.tip {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #1A344B;
+  margin: 5px 0px;
+}

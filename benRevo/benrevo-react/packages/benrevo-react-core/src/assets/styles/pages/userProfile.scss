@@ -1,0 +1,209 @@
+@import '../variables-theme';
+
+.ui.grid.anthem-user-profile {
+  .profile-top {
+    background: url("../img/svg/profile_img_2.svg") no-repeat top center;
+    background-size: cover;
+    height: 175px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media only screen and (max-width: 767px) {
+      &.wide.column {
+        margin-top: 15px !important;
+      }
+    }
+
+    .profile-header {
+      font-size: 16px;
+
+      .ui.header {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      p {
+        margin-top: -10px;
+        font-weight: 200;
+      }
+    }
+  }
+
+  .profile-bottom {
+    max-width: 530px;
+    margin: 30px auto !important;
+
+    @media only screen and (max-width: 767px) {
+      &.wide.column {
+        margin: 45px auto !important;
+      }
+    }
+
+    .ui.form {
+      .field {
+        margin: 0 auto 15px;
+      }
+
+      @media only screen and (max-width: 550px) {
+        & {
+          margin-top: 150px;
+        }
+      }
+
+      .sign-up-policy {
+        margin-left: 15px;
+        text-align: left;
+        margin-top: 0 !important;
+
+        label {
+          padding-left: 20px !important;
+        }
+      }
+    }
+
+    .field-button {
+      padding: 0 16px 15px 16px;
+
+      .form-home-button {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px 50px;
+      }
+    }
+  }
+
+  .profile-hint {
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 130px;
+  }
+
+  .clear-value-logo-circle {
+    left: 75%;
+    top: 90px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    .clear-value-logo-circle {
+      left: 50%;
+      right: 0;
+      margin: auto 0;
+      top: 190px;
+      margin-left: -75px;
+    }
+  }
+}
+
+.ui.grid.uhc-user-profile {
+  background: url("../img/svg/profile_img.svg") no-repeat top center;
+  background-size: 500px auto;
+  padding-top: 200px;
+
+  .benrevo-logo {
+    width: 60px;
+    position: absolute;
+    left: 50%;
+    top: -75px;
+    margin: 0 auto 0 200px;
+
+    img {
+      width: 100%
+    }
+
+    .powered {
+      font-size: 9px;
+      text-align: left;
+    }
+
+    @media only screen and (max-width: 767px) {
+      & {
+        top: -60px;
+      }
+    }
+
+    @media only screen and (max-width: 550px) {
+      & {
+        top: -60px;
+        left: auto;
+        right: 20px;
+        margin: auto;
+      }
+    }
+  }
+
+  .profile-header {
+    color: $RFP_HEADING_COLOR;
+    margin-bottom: 70px;
+
+    h1 {
+      font-weight: normal;
+      font-size: 36px;
+      color: $RFP_HEADING_COLOR;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .ui.form {
+   .field {
+     margin: 0 auto 20px;
+   }
+
+    .sign-up-policy {
+      margin-left: 15px;
+      text-align: left;
+      margin-top: -5px !important;
+
+      label {
+        padding-left: 20px !important;
+      }
+    }
+  }
+
+  .field-button {
+    padding: 0 16px 15px 16px;
+    margin-bottom: 130px;
+
+    .form-home-button {
+      width: 100%;
+    }
+  }
+
+  .ui.input input[type="text"] {
+    min-width: 260px;
+  }
+}
+
+.profile-eula.ui.modal {
+  & > .content {
+    padding-top: 30px;
+
+    .ui.header {
+      text-align: center;
+      font-weight: 200;
+      margin-top: -10px;
+      font-size: 20px;
+    }
+
+    .eula-important {
+      font-weight: 600;
+    }
+
+    p {
+      b {
+        span {
+          display: inline-block;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+

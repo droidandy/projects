@@ -1,0 +1,64 @@
+services:
+    ha.article.subtitle_extractor:
+        class: AppBundle\Service\Article\Processor\HeadTextSubtitleExtractor
+
+    ha.article.thumb_strategy:
+        class: AppBundle\Service\Article\Image\ThumbStrategy
+
+    ha.article.preview_processor:
+        class: AppBundle\Service\Article\Processor\PreviewProcessor
+        arguments:
+            - @ha.article.subtitle_extractor
+
+    ha.article.slug_processor:
+        class: AppBundle\Service\Article\Processor\SlugProcessor
+        arguments:
+            - @ha.slugifier
+
+    ha.article.image_processor:
+        class: AppBundle\Service\Article\Processor\ImageProcessor
+        arguments:
+            - @em
+
+    ha.article.thumb_processor:
+        class: AppBundle\Service\Article\Processor\ThumbProcessor
+        arguments:
+            - @ha.article.thumb_strategy
+            - @redis_client
+
+    ha.article.timestamp_processor:
+        class: AppBundle\Service\Article\Processor\TimestampProcessor
+        arguments:
+            - @em
+
+    ha.article.draft_processor:
+        class: AppBundle\Service\Article\Processor\ChainProcessor
+        arguments:
+            -
+                - "@ha.article.image_processor"
+                - "@ha.article.thumb_processor"
+                - "@ha.article.timestamp_processor"
+
+    ha.article.published_processor:
+        class: AppBundle\Service\Article\Processor\ChainProcessor
+        arguments:
+            -
+                - "@ha.article.preview_processor"
+                - "@ha.article.slug_processor"
+                - "@ha.article.image_processor"
+                - "@ha.article.thumb_processor"
+                - "@ha.article.timestamp_processor"
+
+    ha.article.publisher:
+        class: AppBundle\Service\Article\Publisher\Publisher
+        arguments:
+            -
+                - "@ha.publisher.channel.facebook"
+                - "@ha.publisher.channel.twitter"
+                - "@ha.publisher.channel.linkedin"
+
+    ha.article.processor:
+        class: AppBundle\Service\Article\Processor\StateAwareChainProcessor
+        arguments:
+            -   draft: "@ha.article.draft_processor"
+                published: "@ha.article.published_processor"

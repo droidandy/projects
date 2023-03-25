@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BenRevo</title>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .maintble {
+          max-width: 800px;
+          width:100%;
+          margin:0 auto;
+          border:none;
+      }
+      a {
+        text-decoration: none !important;
+        color: #000;
+      }
+      td {
+        padding: 4px 0;
+      }
+      .icon {
+        width: 54px;
+        height: 42px;
+      }
+      #section-text {
+        margin-top: 18.3px;
+        padding-left: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        color: #333;
+        width: 230px;
+      }
+      #logo {
+        width: 200px;
+        height: 47px;
+      }
+
+      .main-table td {
+        font-size: 16px;
+        color: #000;
+      }
+      tr.trBorder td{
+        border-bottom: 1px solid #ccc;
+      }
+      tr.trMainBorder td{
+        border-bottom: 1px solid #999;
+      }
+      .name {
+        font-weight: bold;
+      }
+
+      .centered {
+        text-align: center;
+      }
+
+      .centered td:first-child {
+        text-align: left;
+        padding-left: 10px;
+      }
+
+      .centered td {
+        text-align: center;
+      }
+
+      .header-text {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+        color: #333;
+      }
+      tr .table-header {
+        background-color: #e1f1f8;
+        height: 18px;
+        border-bottom: none !important;
+        color: #898680;
+      }
+
+      .table-header > td {
+        padding: 0;
+      }
+
+      .footer-table {
+        font-size: 8px;
+        color: #000;
+        margin-top: 130px;
+      }
+
+      .border-left {
+        border-left: solid 0.3px #ccc;
+      }
+
+      .greyColor{
+        color: #666666 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="maintble" border="0">
+      <tr>
+          <td>
+            <table style="width: 100%; table-layout: fixed;">
+              <tr>
+                <td style="width: 54px;"><img src="$!{product_logo}" class="icon"></img></td>
+                <td id="section-text">$!{full_product_name}</td>
+                <td></td>
+                #if($StringUtils.isNotBlank($!brokerage_logo))
+                  <td style="text-align: right;"><img id="logo" src="$!{brokerage_logo}"/></td>
+                #end
+              </tr>
+            </table>
+          </td>
+      </tr>
+
+      <tr>
+          <td>
+            <table class="main-table">
+              <tr class="trMainBorder">
+                <td class="header-text">COVERAGE</td>
+                <td></td>
+              </tr>
+              <tr class="table-header trBorder">
+                <td class="greyColor"><div style="background: #e1f1f8 !important;">CLASS</div></td>
+                <td class="greyColor"><div style="background: #e1f1f8 !important;">NAME</div></td>
+              </tr>
+              #foreach($c in ${plan.getClasses()})
+                <tr class="trBorder">
+                  <td>Class $foreach.count</td>
+                  <td>$!{c.name}</td>
+                </tr>
+              #end
+            </table>
+          </td>
+      </tr>
+
+      <tr><td><p></p></td></tr>
+      <tr>
+          <td>
+            <table class="main-table">
+              <tr>
+                <td class="header-text" colspan="8">$!{rate_text}</td>
+              </tr>
+              <tr class="table-header trBorder">
+                <td colspan="2"><div style="background: #e1f1f8 !important;">&nbsp;</div></td>
+                <td class="centered greyColor" colspan="3"><div style="background: #e1f1f8 !important;">CURRENT RATES</div></td>
+                <td class="centered greyColor" colspan="3"><div style="background: #e1f1f8 !important;">RENEWAL RATES</div></td>
+              </tr>
+              <tr class="trBorder">
+                <td colspan="2">Voluntary Life</td>
+                <td class="centered border-left">Employee</td>
+                <td class="centered border-left">Employee Tobacco</td>
+                <td class="centered border-left">Spouse</td>
+                <td class="centered border-left">Employee</td>
+                <td class="centered border-left">Employee Tobacco</td>
+                <td class="centered border-left">Spouse</td>
+              </tr>
+
+              #foreach($c in ${plan.getRates().getAges()})
+                <tr class="centered trBorder">
+                  <td colspan="2">Age $!{c.from} to $!{c.to}</td>
+                  <td class="border-left">#if(${c.currentEmp}) $$DecimalFormat.format(${c.currentEmp}) #else - #end</td>
+                  <td class="border-left">#if(${c.currentEmpTobacco}) $$DecimalFormat.format(${c.currentEmpTobacco}) #else - #end</td>
+                  <td class="border-left">#if(${c.currentSpouse}) $$DecimalFormat.format(${c.currentSpouse}) #else - #end</td>
+                  <td class="border-left">#if(${c.renewalEmp}) $$DecimalFormat.format(${c.renewalEmp}) #else - #end</td>
+                  <td class="border-left">#if(${c.renewalEmpTobacco}) $$DecimalFormat.format(${c.renewalEmpTobacco}) #else - #end</td>
+                  <td class="border-left">#if(${c.renewalSpouse}) $$DecimalFormat.format(${c.renewalSpouse}) #else - #end</td>
+                </tr>
+              #end
+              <tr class="trBorder">
+                <td colspan="2">Vol Child Life</td>
+                <td colspan="3" class="centered border-left">#if(${plan.getRates().rateChildLife}) $$DecimalFormat.format(${plan.getRates().rateChildLife}) #else - #end</td>
+                <td colspan="3" class="centered border-left"> - </td>
+              </tr>
+              <tr class="trBorder">
+                <td colspan="2">Vol Employee AD&amp;D</td>
+                <td colspan="3" class="centered border-left">#if(${plan.getRates().rateEmpADD}) $$DecimalFormat.format(${plan.getRates().rateEmpADD}) #else - #end</td>
+                <td colspan="3" class="centered border-left"> - </td>
+              </tr>
+              <tr class="trBorder">
+                <td colspan="2">Vol Spouse AD&amp;D</td>
+                <td colspan="3" class="centered border-left">#if(${plan.getRates().rateSpouseADD}) $$DecimalFormat.format(${plan.getRates().rateSpouseADD}) #else - #end</td>
+                <td colspan="3" class="centered border-left"> - </td>
+              </tr>
+              <tr class="trBorder">
+                <td colspan="2">Vol Child AD&amp;D</td>
+                <td colspan="3" class="centered border-left">#if(${plan.getRates().rateChildADD}) $$DecimalFormat.format(${plan.getRates().rateChildADD}) #else - #end</td>
+                <td colspan="3" class="centered border-left"> - </td>
+              </tr>
+            </table>
+          </td>
+      </tr>
+
+      <tr><td><p></p></td></tr>
+      <tr>
+          <td>
+            <table class="main-table">
+              <tr class="trMainBorder">
+                <td class="header-text" colspan="4">CARRIER HISTORY</td>
+              </tr>
+              <tr class="table-header">
+                <td class="greyColor"><div style="background: #e1f1f8 !important;">CARRIER</div></td>
+                <td class="greyColor"><div style="background: #e1f1f8 !important;">YEARS</div></td>
+                <td colspan="2"></td>
+              </tr>
+              #if(${carrier_history.size()} == 0)
+                <tr>
+                  <td class="centered" colspan="3">No carrier history</td>
+               </tr>
+              #else
+                #foreach($history in ${carrier_history})
+                    <tr class="trBorder">
+                        <td>$history.name (#if($history.current)Current#{else}Previous#end)</td>
+                        <td>$history.years</td>
+                        <td colspan="2"></td>
+                    </tr>
+                #end
+              #end
+            </table>
+          </td>
+      </tr>
+
+      <tr><td><p></p></td></tr>
+      <tr>
+          <td>
+            <table class="main-table">
+              <tr class="trMainBorder">
+                <td class="header-text" colspan="4">ADDITIONAL INFO</td>
+              </tr>
+              <tr class="trBorder">
+                <td>Broker of Record</td>
+                <td>$!{broker_of_record}</td>
+                <td colspan="2"></td>
+              </tr>
+              <tr class="trBorder">
+                <td>Commissions</td>
+                <td>$!{commissions}</td>
+                <td colspan="2"></td>
+              </tr>
+              <tr class="trBorder">
+                <td>Additional Requests</td>
+                <td>$!{additional_requests}</td>
+                <td></td>
+              </tr>
+            </table>
+          </td>
+      </tr>
+    </table>
+  </body>
+</html>

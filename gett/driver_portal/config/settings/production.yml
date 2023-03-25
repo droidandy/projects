@@ -1,0 +1,4 @@
+sync_drivers:
+  sample_pages: 1_000_000
+sync_statements:
+  sample_pages: 1_000_000

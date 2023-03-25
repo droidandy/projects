@@ -1,0 +1,8 @@
+parameters:
+    notification_messages:
+      11: 'likes your story'
+      12: 'has commented on your story'
+
+      21: 'likes your listing'
+
+      31: 'is now following you'

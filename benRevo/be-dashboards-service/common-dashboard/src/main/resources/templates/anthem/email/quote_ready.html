@@ -1,0 +1,208 @@
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<style type="text/css">
+        a {text-decoration: none; color:white; }
+        td,th {border:none}
+
+        .anthemLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/anthemlogo1x_02.png);
+            background-repeat: no-repeat;
+            width: 183px;
+            height: 60px;
+            background-color: #f3f3f3;
+            margin-top: 10px;
+        }
+
+        .poweredByBenrevoLogoImage{
+            background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo1x_20.png);
+            background-repeat: no-repeat;
+            width: 181px;
+            height: 37px;
+        }
+
+        .medicalIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/medical-icon.png) ;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 30px;    
+        }
+
+        .dentalIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/dental-icon.png) ;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 30px;    
+        }
+
+        .visionIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/vision-icon.png) ;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 24px;    
+        }
+
+        .savingsIcon{
+            background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/savings-icon.png) ;
+            background-repeat: no-repeat;
+            width: 23px;
+            height: 30px;    
+        }
+
+
+        .arc {
+          width: 700px;
+          height: 278px;
+	  vertical-align:middle;
+          text-align:center;
+          background: radial-gradient(140px 40px at 350px 65px, transparent 700px, #FFFFFF 701px), linear-gradient(to bottom, #3785b7, #11a1cb 28%, #80d9d0 86%, #9fd8d1) ;
+          background-repeat: no-repeat;
+          color: white;
+
+        }
+
+        .button {
+            width: 272px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #0099cc;
+            text-align : center;
+            margin:auto;
+        }
+
+        p {
+            margin: 24px;
+        }
+
+        tr.product_border td { 
+		    border-top: solid 1px rgba(214, 217, 219, 0.59);
+        }
+
+        @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+        only screen and (-moz-min-device-pixel-ratio: 1.5),
+        only screen and (-o-min-device-pixel-ratio: 3/2),
+        only screen and (min-device-pixel-ratio: 1.5) {
+          .anthemLogoImage{
+              background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/anthemlogo2x_03_03_02.png);
+              background-repeat: no-repeat;
+              background-size: 183px 60px;
+          }
+          .poweredByBenrevoLogoImage{
+              background-image: url(https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/benrevologo2x_20_20.png);
+              background-repeat: no-repeat;
+              background-size: 181px 37px;
+          }
+          .medicalIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/medical-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 25px 30px;
+          }
+          .dentalIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/dental-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 25px 30px;
+          }
+          .visionIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/vision-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 35px 24px;
+          }
+          .savingsIcon{
+              background-image: url(https://s3.amazonaws.com/benrevo-global-static/BrokerApp_Presentation/savings-icon2x.png) ;
+              background-repeat: no-repeat;
+              background-size: 23px 30px;
+          }
+        }
+	</style>
+    </head>
+    <body style="background-color: #f3f3f3; margin:0px;padding:0px; font-family: Arial; font-size: 15px;">
+        <table style="margin:auto; background-color: white;" width="700" cellspacing='0'  cellpadding='0'>
+            <tr style="background-color: #f3f3f3;">
+                <td align='center'>
+                    <div class="anthemLogoImage"></div>
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <div class="arc">
+                      <div style="height: 238px;">
+                      <table width="100%" cellspacing='0'>
+                        <tr>
+                            <td align='center'><br/>
+            			<p style="font-size: 36px;">Your quote is ready</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align='center'>
+            			<span style="font-size: 20px;">$!client_name</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align='center'>
+            			<p style="font-size: 15px; width: 580px;">Thank you for the opportunity to provide a quote for your client, $!client_name, effective for $!effective_date. 
+I've included our $!proposals rates for your review.</p>
+                            </td>
+                        </tr>
+                      </table>
+                      </div>
+                      <table class="button"><tr><td align="center" >
+                          <a href="https://quote.benrevo.com/anthem/" target="_blank" style="color: white;" > Start by reviewing your quote </a>
+                      </td></tr></table>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><br/><br/>
+                    <table bgcolor="#fff" cellpadding="10" style="margin:auto; border-spacing: 0px 0; padding:0px 0px; color:#666666;" width="100%" border='0' >
+                        <tr>   
+                            <td style="padding-left: 50px;" width="12%" align='center' valign="middle"><div class="medicalIcon" ></div> </td>
+                            <td width="12%" align='left' valign="middle"> <b>Medical</b> </td>
+                            <td>
+                            $!medical_notes
+                            </td>                        
+                        </tr> 
+                        <tr class="product_border">   
+                            <td style="padding-left: 50px;" width="12%" align='center' valign="middle"><div class="dentalIcon" ></div> </td>
+                            <td width="12%" align='left' valign="middle"> <b>Dental</b> </td>
+                            <td>
+                            $!dental_notes
+                            </td>                        
+                        </tr> 
+                        <tr class="product_border">
+                            <td style="padding-left: 50px;" width="12%" align='center' valign="middle" ><div class="visionIcon" ></div> </td>
+                            <td width="12%" align='left' valign="middle"> <b>Vision</b> </td>
+                            <td>
+                            $!vision_notes  
+                            </td>                        
+                        </tr> 
+                        <tr>
+                            <td colspan='3' align ='center' style="border-top: solid 1px #0099cc;"><br/>
+                            <div class="savingsIcon" ></div> 
+                            <p style="color : #0099cc;" >Wrap our products together and wrap up the savings!</p>
+                            <p><b>Save up to 4%</b> on the health premium by adding employer-sponsored Dental,<br/> Vision, Life and Disability. Here is how the savings can add up:</p>
+                            <b>Health + Dental - 1%<br/></b>
+                            <b>Health + Vision - 1%<br/></b>
+                            <b>Health + Life - 1%<br/></b>
+                            <b>Health + LTD - 0.5%<br/></b>
+                            <b>Health + STD - 0.5%<br/></b>
+                            <p>Potential Annual Savings:  <span style="color : #0099cc;" >$!projected_bundle_discount</span></p>
+                            <p>As always, we appreciate your partnership and look forward to working with you <br/> further on this opportunity</p>
+                            </td>
+                            </tr> 
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align='center'>
+                    <div class="poweredByBenrevoLogoImage"></div>
+                    <br/><br/>
+                </td>
+            </tr>
+        </table>
+	<br/><br/>
+    </body>
+</html>

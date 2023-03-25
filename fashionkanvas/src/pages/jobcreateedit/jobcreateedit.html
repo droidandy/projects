@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title *ngIf="isEdit==false">{{ 'CREATEAJOB' | translate }}</ion-title>
+    <ion-title *ngIf="isEdit">{{ 'EDITJOB' | translate }}</ion-title>
+    <ion-buttons end (click)="createJob(true)">
+      <button ion-button>{{ 'POST' | translate }}</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+
+  <div class="job_create">
+    <ion-row class="profile_pic" (click)="setJobPhoto()">
+      <span>
+        <img-loader src="{{jobCreate.img}}" *ngIf="jobCreate.img != ''" tappable useImg  ></img-loader>
+        <img-loader src="assets/images/set.png" *ngIf="jobCreate.img == ''" tappable useImg  ></img-loader>
+      </span>
+      <span><ion-icon name="md-add-circle"></ion-icon></span>
+    </ion-row>
+
+    <h4>{{ 'LOGOORPICTURE' | translate }}.</h4>
+
+    <ion-row class="profile_top_img">
+      <h2>{{ 'GENERAL' | translate }}</h2>
+      <ion-item>
+        <ion-label floating>{{ 'JOBTITLE' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="jobCreate.title" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>{{ 'LOCATION' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="jobCreate.location" autocomplete="true" spellcheck="true" autocorrect="on"></ion-input>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="role">
+      <h2>{{ 'ROLE' | translate }}</h2>
+      <ion-item *ngFor="let data of roleList">
+        <span class="selectbox" [ngClass]="{'selectbox_active': jobCreate.role==data.name}" (click)="selectRole(data.name)"></span>
+        <span (click)="selectRole(data.name)">{{data.name}}</span>
+      </ion-item>
+    </ion-row>
+
+
+    <ion-row class="role">
+      <h2>{{ 'DESCRIPTION' | translate }}</h2>
+      <ion-item>
+        <ion-textarea [(ngModel)]="jobCreate.description" placeholder="Write a description" rows="2"></ion-textarea>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="role">
+      <h2>{{ 'TYPE' | translate }}</h2>
+      <ion-item (click)="selectTypeJob('permanent')">
+        <span class="selectbox" [ngClass]="{'selectbox_active': jobCreate.typeJob=='permanent'}"></span>
+        <span >{{ 'PERMANENT' | translate }}</span>
+      </ion-item>
+      <ion-item (click)="selectTypeJob('fixedterm')">
+        <span class="selectbox" [ngClass]="{'selectbox_active': jobCreate.typeJob=='fixedterm'}"></span>
+        <span >{{ 'FIXEDTERM' | translate }}</span>
+      </ion-item>
+    </ion-row>
+
+    <ion-row class="date">
+      <h2>{{ 'DATEDURATION' | translate }}</h2>
+      <ion-item>
+         <ion-datetime placeholder="{{ 'STARTDATE' | translate }}" [min]="todayDate" [(ngModel)]="jobCreate.date"></ion-datetime>
+      </ion-item>
+      <ion-item>
+         <ion-datetime  minuteValues="0,30" displayFormat="h:mm A" [(ngModel)]="jobCreate.duration" pickerFormat="h mm A"  placeholder="{{ 'DURATION' | translate }}"></ion-datetime>
+      </ion-item>
+    </ion-row>
+
+
+    <ion-row class="date">
+      <h2>{{ 'RATE' | translate }}</h2>
+      <ion-item>
+        <ion-label floating>{{ 'AMOUNT' | translate }}</ion-label>
+        <ion-input type="number" [(ngModel)]="jobCreate.amount"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'CURRENCY' | translate }}</ion-label>
+        <ion-select [(ngModel)]="jobCreate.currency">
+          <ion-option value="usd">USD</ion-option>
+          <ion-option value="euro">EURO</ion-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>{{ 'PERIODICAL' | translate }}</ion-label>
+        <ion-select [(ngModel)]="jobCreate.periodical">
+          <ion-option value="day">{{ 'DAY' | translate }}</ion-option>
+          <ion-option value="month">{{ 'MONTH' | translate }}</ion-option>
+          <ion-option value="year">{{ 'YEAR' | translate }}</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-row>
+
+
+    <ion-row class="date">
+      <h2>{{ 'WHOHIRING' | translate }}?</h2>
+      <ion-item>
+        <ion-label floating>{{ 'AGENCY' | translate }}</ion-label>
+        <ion-input type="text" [(ngModel)]="jobCreate.hiring"></ion-input>
+      </ion-item>
+
+    </ion-row>
+
+
+      <div style="margin-top:20px;" (click)="createJob(false)">
+        <button ion-button  block tappable>{{ 'SAVE' | translate }}</button>
+      </div>
+
+    </div>
+
+</ion-content>

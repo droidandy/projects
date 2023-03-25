@@ -1,0 +1,3162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Widgets Project</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto"/>
+	<!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/> -->
+	<style type="text/css">
+
+		/* cxw-2608: Adding only required bootstrap styles */
+		html{
+			-webkit-tap-highlight-color: rgba(0,0,0,0);
+			font-size: 10px;
+		}
+		*, :after, :before{
+			box-sizing: border-box;
+		}
+		body{
+			margin: 0;
+			font-size: 14px;
+			line-height: 1.42857143;
+			color: #333;
+		}
+		table{
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+		td, th{
+			padding: 0;
+		}
+		.h1, .h2, .h3, h1, h2, h3{
+			margin-bottom: 10px;
+		}
+		fieldset{
+			min-width: 0;
+		}
+		legend{
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			border: 0;
+		}
+		input[type=checkbox], input[type=radio]{
+			margin: 4px 0 0;
+		}
+		label{
+			font-weight: 700;
+			max-width: 100%;
+		}
+		textarea{
+			overflow: auto;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:focus, a:hover{
+			color: #23527c;
+    		text-decoration: underline;
+		}
+		.btn-primary{
+			color: #fff;
+		}
+		button, html input[type=button], input[type=reset], input[type=submit]{
+			-webkit-appearance: button;
+		}
+		button, input, select, textarea{
+			font-family: inherit;
+			line-height: inherit;
+		}
+		.cx-widget{
+			font-size: 16px;
+		}
+
+		body {
+
+			background-color: #f2f2f2;
+		}
+
+		footer {
+			clear: both;
+			position: relative;
+			z-index: 10;
+			background-color: #5d3e5d;
+			color: white;
+			text-align: center;
+			line-height: 26px;
+			border-radius: 6px;
+		}
+
+		#search label{
+			margin-top: 22px;
+		}
+
+		#callback label{
+			padding: 6px 0;
+		}
+
+		legend{
+
+			border-bottom: none;
+		}
+
+		input{
+
+			line-height: normal;
+			font-size: 12px;
+			font-weight: normal;
+		}
+
+		fieldset{
+
+			padding: 0px 10px!important;
+		}
+
+		h3{
+			font-size: 18px;
+			line-height: inherit;
+			font-weight: bold;
+			margin-top: 0px;
+		}
+
+		textarea{
+
+			font-size: 12px;
+			font-weight: normal;
+		}
+
+		.btn-primary{
+
+			background-color: #5d3e5d;
+			border-color: #5d3e5d;
+		}
+
+		a {
+
+			color: #5d3e5d;
+		}
+
+		.btn-primary:hover, .btn-primary:focus {
+			box-shadow: 0px 4px 8px #5d3e5d;
+			background-color: #5d3e5d;
+			border-color: #5d3e5d;
+		}
+
+		.launcher-font {
+			font-weight: bolder;
+			font-size: 14px;
+			color: #5d3e5d;
+			padding-left: 9px;
+		}
+
+		.control-instrumentation{
+			width: 470px;
+		}
+		.align-tr {
+			float:left;
+			padding: 8px 16px;
+		}
+		.center {
+			margin: auto;
+			border: 1px solid #5d3e5d;
+			padding: 10px;
+			border-radius: 6px;
+		}
+		.align-right {
+			float: right;
+		}
+		.heading {
+			color: white;
+			background-color: #5d3e5d;
+			line-height: 48px;
+		}
+
+		.heading .title {
+
+			margin: 0px;
+		}
+
+		h3.toggle:hover{
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		.toggleConfig{
+			display: none;
+		}
+		.form-style-3{
+			width: 600px;
+		}
+		.form-style-3 label{
+			display:block;
+			margin-bottom: 10px;
+			margin-top: 3px;
+			color: #5d3e5d;
+		}
+		.form-style-3 label > span{
+			float: left;
+			text-align: left;
+			border-radius: 3px;
+			width: 168px;
+			color: #5d3e5d;
+			font-weight: normal;
+			font-size: 13px;
+			margin-right: 30px;
+			margin-left: 2px;
+		}
+		.form-style-3 fieldset, fieldset{
+			border-radius: 6px;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			margin: 0px 0px 10px 0px;
+			border: 1px solid #5d3e5d;
+			padding: 10px;
+			background: #f2f2f2;
+		}
+		.form-style-3 fieldset legend, fieldset legend{
+			color: #5d3e5d;
+			border-top: 1px solid #5d3e5d;
+			border-left: 1px solid #5d3e5d;
+			border-right: 1px solid #5d3e5d;
+			border-radius: 5px 5px 0px 0px;
+			-webkit-border-radius: 5px 5px 0px 0px;
+			-moz-border-radius: 5px 5px 0px 0px;
+			background: #f2f2f2;
+			padding: 3px 8px 3px 8px;
+			font-weight: bolder;
+			font-size: 14px;
+		}
+		.form-style-3 textarea{
+			width:250px;
+			height:100px;
+		}
+		.instrumentationTextarea{
+			width: 96%!important;
+			height: 448px!important;
+		}
+		.config-textarea{
+
+			width: 96%!important;
+			height: 176px!important;
+			margin-top: 12px;
+		}
+		.form-style-3 input[type=text],
+		.form-style-3 input[type=date],
+		.form-style-3 input[type=datetime],
+		.form-style-3 input[type=number],
+		.form-style-3 input[type=search],
+		.form-style-3 input[type=time],
+		.form-style-3 input[type=url],
+		.form-style-3 input[type=email],
+		.form-style-3 select,
+		.form-style-3 textarea, .instrumentationTextarea{
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border: 1px solid #5d3e5d;
+			color: #4E5252;
+			outline: none;
+			padding: 5px 8px 5px 8px;
+			width:50%;
+		}
+		.form-style-3  input[type=submit],
+		.form-style-3  input[type=button]{
+			padding: 5px 15px 5px 15px;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			cursor: pointer;
+		}
+		.required{
+			font-weight:normal;
+		}
+
+		.widgets-launch-font {
+			font-family: Roboto;
+		}
+
+		.form-style-3 .error{
+			border: 1px solid red;
+		}
+
+		.remove {
+			display: none;
+		}
+
+		.desc {
+
+			float: none!important;
+		}
+
+		.input-lazy-loading {
+
+			margin: 16px auto 16px auto;
+			width: auto;
+			text-align: center;
+		}
+
+		#toast {
+			visibility: hidden;
+			min-width: 250px;
+			color: #fff;
+			text-align: center;
+			border-radius: 2px;
+			padding: 12px;
+			position: fixed;
+			z-index: 1;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			bottom: 20px;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			border-radius: 3px;
+			background-position: 15px center;
+			background-repeat: no-repeat;
+			-moz-box-shadow: 0 0 12px #999;
+			-webkit-box-shadow: 0 0 12px #999;
+			box-shadow: 0 0 12px #999;
+			opacity: .9;
+		}
+
+		#toast.show {
+			visibility: visible;
+			-webkit-animation: fadein 0.5s, fadeout 0.5s 6.5s;
+			animation: fadein 0.5s, fadeout 0.5s 6.5s;
+		}
+
+		#toast.info {
+
+			background-color: #2f96b4;
+		}
+
+		#toast.warn{
+
+			background-color: #f89406;
+		}
+
+		#toast.error {
+
+			background-color: #bd362f;
+		}
+
+		#toast.success {
+
+			background-color: #51a351;
+		}
+
+		/* Tabbing */
+
+		.tablink {
+			position: relative;
+			background-color: #5d3e5d;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			font-size: 17px;
+			width: 33%;
+			margin: 1px 1px 0 0;
+			float: left;
+			color: white;
+			left: 8px;
+		}
+
+		.tabcontent {
+			display: none;
+			background-color: #f2f2f2;
+			padding: 78px 20px;
+			height: 100%;
+		}
+
+		.stickyNavBar {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		@-webkit-keyframes fadein {
+			from {bottom: 0; opacity: 0;}
+			to {bottom: 20px; opacity: 0.9;}
+		}
+
+		@keyframes fadein {
+			from {bottom: 0; opacity: 0;}
+			to {bottom: 20px; opacity: 0.9;}
+		}
+
+		@-webkit-keyframes fadeout {
+			from {bottom: 20px; opacity: 0.9;}
+			to {bottom: 0; opacity: 0;}
+		}
+
+		@keyframes fadeout {
+			from {bottom: 20px; opacity: 0.9;}
+			to {bottom: 0; opacity: 0;}
+		}
+
+		.cx-widget.ow-modal {
+
+			top: 112px;
+		}
+
+	</style>
+
+	<script>
+
+		var sActiveTab = "",
+			ndActiveTab = "",
+
+			aTabs = ["PureEngage", "PureEngageCloud", "PureCloud"],
+
+			launcher = {
+
+				removeByValue: function(val){
+
+					for(var i=0; i<window._genesys.widgets.main.preload.length; i++) {
+						if(window._genesys.widgets.main.preload[i] == val) {
+							window._genesys.widgets.main.preload.splice(i, 1);
+							break;
+						}
+					}
+				},
+
+				convertToArray: function(values){
+
+					return values.split(",");
+				},
+
+				getActiveTab: function () {
+
+					ndActiveTab = document.getElementById(sActiveTab);
+				},
+
+				removeDuplicates: function (dupArr) {
+
+					var filteredArr = [];
+					for (var i = 0; i < dupArr.length; i++) {
+						if (filteredArr.indexOf(dupArr[i]) === -1 && dupArr[i] !== '') {
+							filteredArr.push(dupArr[i]);
+						}
+					}
+
+					return filteredArr;
+				},
+
+				showConfigData: function(){
+					// remote script has loaded, this is to show the config script on text area of launcher
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("textarea[name='configData']").disabled = false;
+					ndActiveTab.querySelector("textarea[name='configData']").value = "window._genesys.widgets = " + JSON.stringify(window._genesys.widgets, undefined, 6).replace(/\"([^(\")"]+)\":/g,"$1:")+";";
+				},
+
+				lazyLoad: function () {
+
+					var s = document.createElement('script');
+					s.setAttribute( 'src', 'cxbus.min.js' );
+					s.setAttribute('onload', "javascript:CXBus.configure({debug:false,pluginsPath:'plugins/'}); CXBus.loadPlugin('widgets-core');");
+					document.body.appendChild( s );
+
+					launcher.showConfigData();
+				},
+
+				invoke: function() {
+
+					// CX-Widget Instrumentation Script
+
+					(function(o){
+						var d = o.location;
+						var f = function(){
+							o.aTags = o.aTags || [];
+							for(var i=0;i<o.aTags.length;i++){
+								var oTag = o.aTags[i];
+								var fs = d.getElementsByTagName(oTag.type)[0], e;
+								if(d.getElementById(oTag.id)) return; e = d.createElement(oTag.type); e.id = oTag.id;
+								if(oTag.type == "script"){
+									e.src = oTag.path;
+								}else{
+									e.type = 'text/css';e.rel = 'stylesheet';e.href = oTag.path;
+								}
+								fs.parentNode.insertBefore(e, fs);
+							}
+						},ol = window.onload,showConfigData = function(){
+							// remote script has loaded, this is to show the config script on text area of launcher
+							launcher.getActiveTab();
+
+							ndActiveTab.querySelector("textarea[name='configData']").disabled = false;
+							ndActiveTab.querySelector("textarea[name='configData']").value = "window._genesys.widgets = " + JSON.stringify(window._genesys.widgets, undefined, 6).replace(/\"([^(\")"]+)\":/g,"$1:")+";";
+						};
+						if(o.onload){
+							typeof window.onload != "function"?window.onload=f:window.onload=function(){
+								ol();
+								f();
+								showConfigData();
+							}
+						}else {
+							f();showConfigData();
+						};
+					})({
+						location: document,
+						onload: false,
+						aTags: [
+							{type:"script", id:"genesys-widgets-script", path:"widgets.min.js"},
+							{type:"link", id:"genesys-widgets-styles", path:"widgets.min.css"}
+						]
+					});
+				},
+				mergeObjects: function merge(current, update) {
+
+					Object.keys(update).forEach(function(key) {
+						// if update[key] exist, and it's not a string or array, then deep merge
+						if (current.hasOwnProperty(key) && typeof current[key] === 'object' && !(current[key] instanceof Array)) {
+							merge(current[key], update[key]);
+						}
+
+						// if update[key] exist, and its an array, then concat
+						else if (Array.isArray(current[key]) && Array.isArray(update[key])) {
+							current[key] = current[key].concat(update[key]);
+						}
+
+						// if update[key] doesn't exist in current, then assign/overwrite current[key] to update[key]
+						else {
+							current[key] = update[key];
+						}
+					});
+					return current;
+				},
+				addAdditionalConfig: function(addConfigJson, globalConfig){
+					var temp= {};
+					temp = launcher.mergeObjects(globalConfig, addConfigJson);
+					return temp;
+				},
+
+				setConfigObject: function(mainConfig,aMainConfigPreload,mainAdditionalConfigJson, webchat, oCobrowse, cobrowseAdditionalConfigJson, gwe, gweAdditionalConfigJson, webChatUserDataJson, webChatAdditionalConfigJson, sendMessageUserDataJson, sendMessage, sendmessageAdditionalConfigJson, knowledgecenter, kcAdditionalConfigJson, stats, statsAdditionalConfigJson, channelselector, callus, callusAdditionalConfigJson, callback, callbackAdditionalConfigJson, sidebar, sidebarAdditionalConfigJson, clicktocall, clickToCallUserData, clickToCallCustomFormJSON, callbackCustomFormJSON, clickToCallAdditionalConfigJson){
+
+					if(!window._genesys)window._genesys = {};
+					if(!window._gt)window._gt = [];
+
+					//intialize widgets config object
+
+					window._genesys.widgets = {
+
+						onReady: function(CXBus){
+
+							CXBus.subscribe("SideBar.opened", function () {
+
+								CXBus.command("WebChat.hideChatButton");
+								CXBus.command("SendMessage.hideSendMessageButton");
+							});
+						},
+						main: {
+
+							debug: true,
+							theme: "dark",
+							//i18n: "widgets-en.i18n.json",
+							lang: "en",
+							customStylesheetID: "genesys_widgets_custom",
+							preload: [
+								/*"webchatservice",
+								"clicktocallservice",
+								"callbackservice",
+								"sendmessageservice",
+								"knowledgecenterservice",
+								"chatdeflection",
+								"statsservice",
+								"sidebar",
+								"gwe",
+								"cobrowse",
+								"search",
+								"clicktocall"*/
+							]
+						}
+					};
+
+					if (toggler.mainConfigEnable) {
+						window._genesys.widgets.main = mainConfig;
+						// eliminating preload undefined console error while lazy loading
+						if (aMainConfigPreload) { 
+							window._genesys.widgets.main.preload = aMainConfigPreload; }
+						else { window._genesys.widgets.main.preload = []; }
+
+						if (mainAdditionalConfigJson) {
+
+							window._genesys.widgets.main = launcher.addAdditionalConfig(mainAdditionalConfigJson, window._genesys.widgets.main);
+						}
+
+					}
+
+					if(toggler.chatEnable && (webchat.dataURL||webchat.transport.dataURL)){
+						window._genesys.widgets.webchat = webchat;
+						window._genesys.widgets.webchat.chatButton.enabled = true;
+
+						if(webChatUserDataJson)window._genesys.widgets.webchat.userData = webChatUserDataJson;
+
+						if(webChatAdditionalConfigJson) {
+
+							window._genesys.widgets.webchat= launcher.addAdditionalConfig(webChatAdditionalConfigJson, window._genesys.widgets.webchat);
+						}
+
+					}else{
+
+						delete window._genesys.widgets.webchat;
+					}
+
+					if(oCobrowse.url && oCobrowse.src && toggler.cobrowseEnable){
+
+						if(ndActiveTab.querySelector('input[name="cobrowseApikey"]').value.length > 0){
+
+							oCobrowse.apikey = ndActiveTab.querySelector('input[name="cobrowseApikey"]').value
+						}
+
+						window._genesys.widgets.cobrowse = oCobrowse;
+
+						if(cobrowseAdditionalConfigJson) {
+							window._genesys.widgets.cobrowse= launcher.addAdditionalConfig(cobrowseAdditionalConfigJson, window._genesys.widgets.cobrowse);
+						}
+
+					}else{
+
+						delete window._genesys.widgets.cobrowse;
+					}
+
+
+					if( (gwe.httpEndpoint || gwe.httpsEndpoint) && gwe.dslResource && document.getElementsByName('enableGWE')[0].checked){
+
+						window._genesys.widgets.gwe = gwe;
+
+						if(gweAdditionalConfigJson) {
+
+							window._genesys.widgets.gwe= launcher.addAdditionalConfig(gweAdditionalConfigJson, window._genesys.widgets.gwe);
+						}
+
+						if(!gwe.httpEndpoint){
+
+							delete window._genesys.widgets.gwe.httpEndpoint;
+						}
+
+						if(!gwe.httpsEndpoint){
+
+							delete window._genesys.widgets.gwe.httpsEndpoint;
+						}
+
+					}else{
+
+						delete window._genesys.widgets.gwe;
+					}
+
+
+					if(sendMessage.dataURL && toggler.sendMessageEnable){
+
+						window._genesys.widgets.sendmessage = sendMessage;
+
+						if(sendMessageUserDataJson)window._genesys.widgets.sendmessage.userData = sendMessageUserDataJson;
+
+						if(sendmessageAdditionalConfigJson) {
+
+							window._genesys.widgets.sendmessage= launcher.addAdditionalConfig(sendmessageAdditionalConfigJson, window._genesys.widgets.sendmessage);
+						}
+
+					}else{
+
+						delete window._genesys.widgets.sendmessage;
+					}
+
+					if(toggler.kcEnable){
+
+						window._genesys.widgets.knowledgecenter = knowledgecenter;
+
+						if(kcAdditionalConfigJson) {
+
+							window._genesys.widgets.knowledgecenter= launcher.addAdditionalConfig(kcAdditionalConfigJson, window._genesys.widgets.knowledgecenter);
+						}
+
+					}else{
+
+						delete window._genesys.widgets.knowledgecenter;
+					}
+
+					if(toggler.liveAssistEnable){
+
+						window._genesys.widgets.stats = stats;
+						window._genesys.widgets.channelselector = channelselector;
+
+						if(statsAdditionalConfigJson) {
+							window._genesys.widgets.stats= launcher.addAdditionalConfig(statsAdditionalConfigJson, window._genesys.widgets.stats);
+						}
+
+					}else{
+
+						delete window._genesys.widgets.stats;
+						delete window._genesys.widgets.channelselector;
+					}
+
+					if(toggler.callUsEnable && launcherForm.callUsValid()){
+
+						if(callus){
+
+							window._genesys.widgets.callus = callus;
+
+							if(callusAdditionalConfigJson) {
+
+								window._genesys.widgets.callus= launcher.addAdditionalConfig(callusAdditionalConfigJson, window._genesys.widgets.callus);
+							}
+						}
+
+					}else{
+
+						delete window._genesys.widgets.callus;
+					}
+
+					if(toggler.callbackEnable && launcherForm.callbackValid()){
+
+						if(callback){
+
+							window._genesys.widgets.callback = callback;
+
+							if(callbackCustomFormJSON) window._genesys.widgets.callback.form = callbackCustomFormJSON;
+
+							if(callbackAdditionalConfigJson) {
+
+								window._genesys.widgets.callback= launcher.addAdditionalConfig(callbackAdditionalConfigJson, window._genesys.widgets.callback);
+							}
+						}
+
+					}else{
+
+						delete window._genesys.widgets.callback;
+					}
+
+					if(toggler.clickToCallEnable && launcherForm.clickToCallValid()){
+
+						if(clicktocall){
+
+							window._genesys.widgets.clicktocall = clicktocall;
+
+							if(clickToCallUserData) window._genesys.widgets.clicktocall.userData = clickToCallUserData;
+							if(clickToCallCustomFormJSON) window._genesys.widgets.clicktocall.formJSON = clickToCallCustomFormJSON;
+
+							if(clickToCallAdditionalConfigJson) {
+
+								window._genesys.widgets.clicktocall= launcher.addAdditionalConfig(clickToCallAdditionalConfigJson, window._genesys.widgets.clicktocall);
+							}
+						}
+					}else {
+
+						delete window._genesys.widgets.clicktocall;
+					}
+
+					if(toggler.sidebarEnable){
+
+						window._genesys.widgets.sidebar = sidebar;
+
+						if(sidebarAdditionalConfigJson) {
+							window._genesys.widgets.sidebar= launcher.addAdditionalConfig(sidebarAdditionalConfigJson, window._genesys.widgets.sidebar);
+						}
+						//window._genesys.widgets.main.plugins.push('sidebar');
+
+					}else {
+
+						delete window._genesys.widgets.sidebar;
+						//launcher.removeByValue('sidebar');
+					}
+				}
+			},
+
+
+			toggler = {
+
+				chatEnable: false,
+				cobrowseEnable : false,
+				gweEnable : false,
+				sendMessageEnable : false,
+				kcEnable : false,
+				liveAssistEnable : false,
+				callUsEnable : false,
+				callbackEnable : false,
+				clickToCallEnable : false,
+				sidebarEnable : false,
+				webchatCometDEnabled : false,
+				asyncWebChatEnabled : false,
+				lazyLoading: false,
+				mainConfigEnable :false,
+
+				showScript: function(classname){
+
+					launcher.getActiveTab();
+
+					var e = ndActiveTab.querySelector("."+classname);
+					if(e.style.display == 'block')
+						e.style.display = 'none';
+					else
+						e.style.display = 'block';
+				},
+
+				enableChat: function(element){
+
+					element.checked = !element.checked;
+
+					launcher.getActiveTab();
+
+					var ndTransportType = ndActiveTab.querySelector("input[name='WebchatTransportType']"),
+						ndTransportEp = ndActiveTab.querySelector("input[name='webchatTransportEndPoint']"),
+						ndTransportOrgGuid = ndActiveTab.querySelector("input[name='webchatTransportOrgGuid']"),
+						ndTransportQName = ndActiveTab.querySelector("input[name='webchatTransportQueueName']");
+
+					ndActiveTab.querySelector("input[name='WebchatURL']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='webchatAjaxTimeout']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='webchatAPIKey']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='proactiveEnabled']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='uploadsEnabled']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='webchatUserData']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='webchatAdditionalConfig']").disabled = element.checked;
+
+					if(ndTransportType) ndTransportType.disabled = element.checked;
+					if(ndTransportEp) ndTransportEp.disabled = element.checked;
+					if(ndTransportOrgGuid) ndTransportOrgGuid.disabled = element.checked;
+					if(ndTransportQName) ndTransportQName.disabled = element.checked;
+
+					element.checked = !element.checked;
+					this.chatEnable = element.checked;
+				},
+
+				enableCobrowse: function(element){
+
+					element.checked = !element.checked;
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("input[name='cobrowseSrc']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='cobrowseUrl']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='cobrowseApikey']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='cobrowseWebSockets']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='cobrowseAdditionalConfig']").disabled = element.checked;
+					element.checked = !element.checked;
+					this.cobrowseEnable = element.checked;
+				},
+
+				enableGWE: function(element){
+
+					element.checked = !element.checked;
+					document.getElementsByName('gweHttpEp')[0].disabled = element.checked;
+					document.getElementsByName('gweHttpsEp')[0].disabled = element.checked;
+					document.getElementsByName('gweDslResource')[0].disabled = element.checked;
+					document.getElementsByName('gweDebug')[0].disabled = element.checked;
+					document.getElementsByName('gweAdditionalConfig')[0].disabled = element.checked;
+					element.checked = !element.checked;
+					this.gweEnable = element.checked;
+				},
+
+				enableSendMessage: function(element){
+
+					element.checked = !element.checked;
+					document.getElementsByName('sendMessageURL')[0].disabled = element.checked;
+					document.getElementsByName('sendMessageAPIKey')[0].disabled = element.checked;
+					document.getElementsByName('sendMessageUserData')[0].disabled = element.checked;
+					document.getElementsByName('sendmessageAdditionalConfig')[0].disabled = element.checked;
+					element.checked = !element.checked;
+					this.sendMessageEnable = element.checked;
+				},
+
+				enableKC: function(element){
+
+					element.checked = !element.checked;
+					document.getElementsByName('kcURL')[0].disabled = element.checked;
+					document.getElementsByName('kcKnowledgeBases')[0].disabled = element.checked;
+					document.getElementsByName('kcApiVersion')[0].disabled = element.checked;
+					document.getElementsByName('kcTenantId')[0].disabled = element.checked;
+					document.getElementsByName('kcLang')[0].disabled = element.checked;
+					document.getElementsByName('kcMedia')[0].disabled = element.checked;
+					document.getElementsByName('kcMaxSearchResults')[0].disabled = element.checked;
+					document.getElementsByName('kcApiClientId')[0].disabled = element.checked;
+					document.getElementsByName('kcApiClientMediaType')[0].disabled = element.checked;
+					document.getElementsByName('kcEnableHTML')[0].disabled = element.checked;
+					document.getElementsByName('kcDeflectionAgentTranscript')[0].disabled = element.checked;
+					document.getElementsByName('kcDeflectionEnabled')[0].disabled = element.checked;
+					document.getElementsByName('kcDeflectionWorkspaceEnabled')[0].disabled = element.checked;
+					document.getElementsByName('kcDeflectionReportingEnabled')[0].disabled = element.checked;
+					document.getElementsByName('kcDeflectionAgentTranscript')[0].disabled = element.checked;
+					document.getElementsByName('kcSearchButtonEnabled')[0].disabled = element.checked;
+					document.getElementsByName('kcApiKey')[0].disabled = element.checked;
+					document.getElementsByName('kcAdditionalConfig')[0].disabled = element.checked;
+
+					element.checked = !element.checked;
+					this.kcEnable = element.checked;
+				},
+
+				enableLiveAssist: function(element){
+
+					element.checked = !element.checked;
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("input[name='statsURL']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='statsAPIKey']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='statsAPIVersion']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='statsAPIMode']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='vqname_chat']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='vqname_callus']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='vqname_callback']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='statsAdditionalConfig']").disabled = element.checked;
+					element.checked = !element.checked;
+					this.liveAssistEnable = element.checked;
+				},
+
+				enableWebChatCometD: function (element) {
+
+					if(element.checked) {
+
+						document.getElementsByClassName('webchat-cometD-section')[0].classList.remove("remove");
+					}else{
+
+						document.getElementsByClassName('webchat-cometD-section')[0].classList.add("remove");
+					}
+					this.webchatCometDEnabled = element.checked;
+				},
+
+				enableAsyncWebChat: function (element) {
+
+					launcher.getActiveTab();
+
+					if(element.checked) {
+
+						ndActiveTab.querySelector(".webchat-async-section").classList.remove("remove");
+					}else{
+
+						ndActiveTab.querySelector(".webchat-async-section").classList.add("remove");
+					}
+
+					this.asyncWebChatEnabled = element.checked;
+				},
+
+				enableLazyLoading: function (element) {
+
+					this.lazyLoading = element.checked;
+				},
+
+				enableCallUs: function(element){
+
+					element.checked = !element.checked;
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("textarea[name='callUsConfig']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='callusAdditionalConfig']").disabled = element.checked;
+					element.checked = !element.checked;
+					this.callUsEnable = element.checked;
+				},
+
+				enableCallback: function(element){
+
+					element.checked = !element.checked;
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("input[name='callbackURL']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackAPIKey']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackDirection']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackImmediateDisable']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackScheduleDisable']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackEWT']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackQueueName']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackThresholdEWT']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackEWTRefreshInterval']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackImmediateEWTMinThreshold']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='callbackImmediateEWTMaxThreshold']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='callbackFormJSON']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='callbackAdditionalConfig']").disabled = element.checked;
+					element.checked = !element.checked;
+					this.callbackEnable = element.checked;
+				},
+
+				enableClickToCall: function(element){
+
+					element.checked = !element.checked;
+					document.getElementsByName('clickToCallURL')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallAPIKey')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallProvideAccessCode')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallAutoDialAccessCode')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallEWT')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallQueueName')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallThresholdEWT')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallUserData')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallFormJSON')[0].disabled = element.checked;
+					document.getElementsByName('clickToCallAdditionalConfig')[0].disabled = element.checked;
+					element.checked = !element.checked;
+					this.clickToCallEnable = element.checked;
+				},
+
+				enableSidebar: function(element, tabId){
+
+					element.checked = !element.checked;
+					document.querySelector("#"+tabId + " input[name='sidebarPosition']").disabled = element.checked;
+					document.querySelector("#"+tabId + " textarea[name='sidebarChannelConfig']").disabled = element.checked;
+					document.querySelector("#"+tabId + " textarea[name='sidebarAdditionalConfig']").disabled = element.checked;
+					element.checked = !element.checked;
+					this.sidebarEnable = element.checked;
+				},
+				enableMainConfig: function(element){
+					element.checked = !element.checked;
+					launcher.getActiveTab();
+					ndActiveTab.querySelector("input[name='debug']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='theme']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='i18n']").disabled = element.checked;
+					ndActiveTab.querySelector("input[name='lang']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='preload']").disabled = element.checked;
+					ndActiveTab.querySelector("textarea[name='mainAdditionalConfig']").disabled = element.checked;
+					element.checked = !element.checked;
+					this.mainConfigEnable = element.checked;
+				},
+			},
+
+			
+
+			launcherForm = {
+
+				checkElementValidity: function (sElementName) {
+
+					launcher.getActiveTab();
+
+					var ndElement = ndActiveTab.querySelector(sElementName);
+
+					if(ndElement.value){
+
+						ndElement.classList.remove('error');
+						return true;
+
+					}else{
+
+						ndElement.className += ' ' + 'error';
+						return false;
+					}
+				},
+
+				deleteSessionData: function () {
+
+					window.localStorage.removeItem("LauncherWebChatSessionData");
+				},
+
+				cobrowseValid: function(){
+
+					if(toggler.cobrowseEnable){
+
+						launcher.getActiveTab();
+
+						if(ndActiveTab.querySelector("input[name='cobrowseSrc']").validity.valid
+							&& ndActiveTab.querySelector("input[name='cobrowseUrl']").validity.valid){
+
+							return true;
+						}else{
+
+							return false;
+						}
+					}
+
+					return true;
+				},
+
+				chatValid: function(){
+
+					if(toggler.chatEnable){
+
+						launcher.getActiveTab();
+
+						switch (sActiveTab){
+
+							case aTabs[1]:
+
+								break;
+
+							case aTabs[2]:
+								break;
+
+							default:
+
+								if(ndActiveTab.querySelector("input[name='WebchatURL']").validity.valid
+									&& document.getElementsByName('gweHttpEp')[0].validity.valid
+									&& document.getElementsByName('gweHttpsEp')[0].validity.valid){
+
+									return true;
+
+								}else if(toggler.webchatCometDEnabled){
+
+									this.checkElementValidity('cometWebChatDConfiguration');
+
+								}else if(toggler.asyncWebChatEnabled){
+
+									this.checkElementValidity('asyncWebChatDConfiguration');
+
+								}else{
+
+									return false;
+								}
+						}
+
+					}
+
+					return true;
+				},
+
+				sendMessageValid: function(){
+
+					if(toggler.sendMessageEnable){
+
+						if(document.getElementsByName('sendMessageURL')[0].validity.valid){
+
+							return true;
+						}else{
+
+							return false;
+						}
+					}
+
+					return true;
+				},
+
+				callbackValid: function(){
+
+					if(toggler.callbackEnable){
+
+						launcher.getActiveTab();
+
+						if(ndActiveTab.querySelector("input[name='callbackURL']").validity.valid){
+
+							return true;
+						}else{
+
+							return false;
+						}
+					}
+
+					return true;
+				},
+
+				clickToCallValid: function () {
+
+					if(toggler.clickToCallEnable){
+
+						if(document.getElementsByName('clickToCallURL')[0].validity.valid){
+
+							return true;
+						}else{
+							return false;
+						}
+					}
+
+					return true;
+				},
+
+				callUsValid: function(){
+
+					launcher.getActiveTab();
+
+					var ndElement = ndActiveTab.querySelector("textarea[name='callUsConfig']");
+
+					if(toggler.callUsEnable){
+
+						if(ndElement.value){
+
+							ndElement.classList.remove('error');
+
+							return true;
+
+						}else{
+
+							ndElement.className += ' ' + 'error';
+
+							return false;
+						}
+					}
+				},
+
+				kcValid: function(){
+
+					if(toggler.enableKC){
+
+					}
+
+					return true;
+				},
+
+				sidebarValid: function(){
+
+					var ndElement = ndActiveTab.querySelector("textarea[name='sidebarChannelConfig']");
+
+					if(toggler.sidebarEnable){
+
+						if(ndElement.value){
+
+							ndElement.classList.remove('error');
+							return true;
+
+						}else{
+
+							ndElement.className += ' ' + 'error';
+							return false;
+						}
+					}
+				},
+
+				statsValid: function(){
+
+					launcher.getActiveTab();
+
+					if(toggler.liveAssistEnable){
+
+						if(ndActiveTab.querySelector("input[name='statsURL']").validity.valid){
+
+							return true;
+						}else{
+
+							return false;
+						}
+					}
+
+					return true;
+				},
+
+				handleErrors: function(){
+
+					var aPluginsList=[
+						'mainAdditionalConfig',
+						'webchatUserData',
+						'webchatAdditionalConfig',
+						'sendMessageUserData',
+						'cometWebChatDConfiguration',
+						'asyncWebChatDConfiguration',
+						'sidebarAdditionalConfig',
+						'statsAdditionalConfig',
+						'cobrowseAdditionalConfig',
+						'gweAdditionalConfig',
+						'sendmessageAdditionalConfig',
+						'callusAdditionalConfig',
+						'callbackAdditionalConfig',
+						'kcAdditionalConfig',
+						'clickToCallAdditionalConfig'
+					];
+
+					if(!ndActiveTab) ndActiveTab = document.getElementById(sActiveTab || 'PureEngage');
+
+					for(var i in aPluginsList) {
+
+						ndActiveTab.querySelector(aPluginsList[i]) && ndActiveTab.querySelector(aPluginsList[i])[0].addEventListener("keydown", function(event){
+
+							event.target.classList.remove("error");
+						});
+					}
+
+				},
+
+				prettyJson: function(uglyJson){
+
+					var prettyJson = JSON.stringify(uglyJson, undefined, 4);
+
+					return prettyJson;
+				},
+
+				showCallUsConfig: function(){
+
+					var mockConfig = {
+
+						contacts: [
+
+							{
+								displayName: "Payments",
+								i18n: "Number001",
+								number: "1 202 555 0162"
+							},
+							{
+								displayName: "Local",
+								i18n: "Number002",
+								number: "202 555 0134"
+							},
+							{
+								displayName: "International",
+								i18n: "Number003",
+								number: "0647 555 0131"
+							}
+						],
+
+						hours: [
+
+							"8am - 8pm Mon - Fri",
+							"10am - 6pm Sat - Sun"
+						]
+					};
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("textarea[name='callUsConfig']").value = launcherForm.prettyJson(mockConfig);
+				},
+
+				showSidebarConfig: function(tabId){
+
+					var mockConfig = {};
+
+					if(tabId == "PureEngageCloudForm"){
+
+						mockConfig = "{\n\tchannels: [\n\t\t{\n\t\t\tname: 'ChannelSelector',\n\t\t\tclickCommand: 'ChannelSelector.open',\n\t\t\treadyEvent: 'ChannelSelector.ready',\n\t\t\tclickOptions: {},\n\t\t\tdisplayName: 'Live Assist',\n\t\t\tdisplayTitle: 'Get live help',\n\t\t\ticon: 'agent'\n\t\t}\n\t]\n}";
+
+					}else if(tabId == "PureCloudForm") {
+
+						mockConfig = "{\n\tchannels: [\n\t\t{\n\t\t\tname: 'WebChat',\n\t\t\tclickCommand: 'WebChat.open',\n\t\t\treadyEvent: 'WebChat.ready',\n\t\t\tclickOptions: {},\n\t\t\tdisplayName: 'Web Chat',\n\t\t\tdisplayTitle: 'Web Chat',\n\t\t\ticon: 'chat'\n\t\t}\n\t]\n}";
+
+					}else{
+
+						mockConfig = "{\n\tchannels: [\n\t\t{\n\t\t\tname: 'ChannelSelector',\n\t\t\tclickCommand: 'ChannelSelector.open',\n\t\t\treadyEvent: 'ChannelSelector.ready',\n\t\t\tclickOptions: {},\n\t\t\tdisplayName: 'Live Assist',\n\t\t\tdisplayTitle: 'Get live help',\n\t\t\ticon: 'agent'\n\t\t},\n\t\t{\n\t\t\tname: 'Search',\n\t\t\tclickCommand: 'Search.open',\n\t\t\tclickOptions: {},\n\t\t\treadyEvent: 'Search.ready',\n\t\t\tdisplayName: 'Search',\n\t\t\tdisplayTitle: 'Search',\n\t\t\ticon: 'knowledge-center',\n\t\t\tonClick: function ($, CXBus, Common) {\n\t\t\t\t_genesys.widgets.bus.command('Search.open');\n\t\t\t}\n\t\t}\n\t]\n}";
+					}
+
+					document.querySelector("#"+tabId + " textarea[name='sidebarChannelConfig']").value = mockConfig;
+				},
+
+				showWebChatCometDConfig: function () {
+
+					var mockConfig = "{\n\tenabled: true, \n\tcometURL: 'http://172.24.135.142:8020/genesys/cometd', \n\tchannel: '/service/chatV2/customer-support', \n\tapiURL: 'http://172.24.135.142:8020/genesys/2/chat-ntf', \n\twebsocketEnabled: true \n}";
+					document.getElementsByName('cometWebChatDConfiguration')[0].value = mockConfig;
+				},
+
+				showAsyncWebChatConfiguration: function () {
+
+					/*var mockAsyncConfig = {
+
+                        enabled: true,
+                        newMessageRestoreState: 'full',
+                        setSessionData: "function (open, Cookie, CookieOptions) { return Cookie.get('customer-session-cookie');}",
+                        getSessionData: "function (sessionData, Cookie, CookieOptions) { Cookie.set('customer-session-cookie', JSON.stringify(sessionData), CookieOptions);}"
+                    };*/
+
+					var mockAsyncConfig = "{\n\tenabled: true, \n\tnewMessageRestoreState: 'full', \n\tsetSessionData: function (open, Cookie, CookieOptions) { \n\t\t return window.localStorage.getItem(\"LauncherWebChatSessionData\"); \n\t}, \n\tgetSessionData: function (sessionData, Cookie, CookieOptions) { \n\t\twindow.localStorage.setItem(\"LauncherWebChatSessionData\", JSON.stringify(sessionData)); \n\t} \n}";
+
+					launcher.getActiveTab();
+
+					ndActiveTab.querySelector("textarea[name='asyncWebChatDConfiguration']").value = mockAsyncConfig;
+				},
+
+				showSidebarMinimumConfig: function (tabId) {
+
+					var mockSidebarMinimumConfig = {
+
+						channels: [
+
+							{name: "WebChat"}
+						]
+					};
+
+					if(tabId == "PureEngageForm"){
+
+						mockSidebarMinimumConfig.channels.push({name: "SendMessage"}, {name: "ChannelSelector"});
+					}
+
+					if(tabId == "PureEngageCloudForm"){
+
+						mockSidebarMinimumConfig.channels.push({name: "ChannelSelector"});
+					}
+
+					document.querySelector("#"+tabId+" textarea[name='sidebarChannelConfig']").value = launcherForm.prettyJson(mockSidebarMinimumConfig);
+				},
+
+				setKCValues: function(){
+
+					var mockConfig = {
+
+						host: 'http://localhost:9092/gks-server/api',
+						knowledgebases: [],
+						apiVersion: 'v2',
+						lang: 'en',
+						media: 'all',
+						maxSearchResults: 3,
+						apiClientId: 'gwidget',
+						apiClientMediaType: 'selfservice',
+						deflection: {
+							enabled: true,
+							agentTranscript: 'readable',
+							workspace: {
+								enabled: true,
+								sessionKey: 'gks_session',
+								languageKey: 'gks_lang',
+								questionKey: 'gks_question'
+							},
+							reporting : {
+								enabled: true
+							}
+						},
+						search: {
+							SearchButton : {
+								enabled: false
+							}
+						}
+					};
+
+					document.getElementsByName('kcURL')[0].value = mockConfig.host;
+					document.getElementsByName('kcKnowledgeBases')[0].value = mockConfig.knowledgebases;
+					document.getElementsByName('kcApiVersion')[0].value = mockConfig.apiVersion;
+					document.getElementsByName('kcLang')[0].value = mockConfig.lang;
+					document.getElementsByName('kcMedia')[0].value = mockConfig.media;
+					document.getElementsByName('kcMaxSearchResults')[0].value = mockConfig.maxSearchResults;
+					document.getElementsByName('kcApiClientId')[0].value = mockConfig.apiClientId;
+					document.getElementsByName('kcApiClientMediaType')[0].value = mockConfig.apiClientMediaType;
+					document.getElementsByName('kcEnableHTML')[0].value = mockConfig.enableHTML;
+					document.getElementsByName('kcDeflectionEnabled')[0].value = mockConfig.deflection.enabled;
+					document.getElementsByName('kcDeflectionAgentTranscript')[0].value = mockConfig.deflection.agentTranscript;
+					document.getElementsByName('kcDeflectionWorkspaceEnabled')[0].value = mockConfig.deflection.workspace.enabled;
+					document.getElementsByName('kcDeflectionReportingEnabled')[0].value = mockConfig.deflection.reporting.enabled;
+					document.getElementsByName('kcSearchButtonEnabled')[0].value = mockConfig.search.SearchButton.enabled;
+					document.getElementsByName('kcApiKey')[0].value = mockConfig.apikey || '';
+				}
+			},
+
+			getCookie = function(cname){
+
+				var name = cname + "=";
+				var ca = document.cookie.split(';');
+				for(var i=0; i<ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0)==' ') c = c.substring(1);
+					if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+				}
+				return "";
+			};
+
+		checkV3Conditions = function(){
+
+			launcher.getActiveTab();
+
+			if(ndActiveTab.querySelector("input[name='callbackAPIVersion']").value.trim() == "v3"){
+				ndActiveTab.querySelector("input[name='callbackServiceName']").disabled = false;
+			}else{
+				ndActiveTab.querySelector("input[name='callbackServiceName']").disabled = true;
+			}
+		};
+
+		function launchCXWidget(tabId){
+
+			ndActiveTab = document.getElementById(tabId);
+
+			try{
+
+				var ndGweHttpEp = ndActiveTab.querySelector("input[name='gweHttpEp']"),
+					ndGweHttpsEp = ndActiveTab.querySelector("input[name='gweHttpsEp']"),
+					ndGweDslResource = ndActiveTab.querySelector("input[name='gweDslResource']"),
+					ndGweDebug = ndActiveTab.querySelector("input[name='gweDebug']"),
+					ndGweAdditionalConfig = ndActiveTab.querySelector("textarea[name='gweAdditionalConfig']"),
+					ndSendMessageURL = ndActiveTab.querySelector("input[name='sendMessageURL']"),
+					ndSendMessageAPIKey = ndActiveTab.querySelector("input[name='sendMessageAPIKey']"),
+					ndSendmessageAdditionalConfig = ndActiveTab.querySelector("textarea[name='sendmessageAdditionalConfig']"),
+					ndSendMessageUserData = ndActiveTab.querySelector("textarea[name='sendMessageUserData']"),
+					ndCobrowseWS = ndActiveTab.querySelector("input[name='cobrowseWebSockets']"),
+					ndCobrowseSrc = ndActiveTab.querySelector("input[name='cobrowseSrc']"),
+					ndCobrowseAddl = ndActiveTab.querySelector("textarea[name='cobrowseAdditionalConfig']"),
+					ndCobrowseUrl = ndActiveTab.querySelector("input[name='cobrowseUrl']"),
+					ndStatsURL = ndActiveTab.querySelector("input[name='statsURL']"),
+					ndStatsAPIKey = ndActiveTab.querySelector("input[name='statsAPIKey']"),
+					ndStatsAPIVersion = ndActiveTab.querySelector("input[name='statsAPIVersion']"),
+					ndStatsAddl = ndActiveTab.querySelector("textarea[name='statsAdditionalConfig']"),
+					ndStatsMode = ndActiveTab.querySelector("input[name='statsAPIMode']"),
+					ndChannelSelectorChatVQ = ndActiveTab.querySelector("input[name='vqname_chat']"),
+					ndCallUsVQ = ndActiveTab.querySelector("input[name='vqname_callus']"),
+					ndMainAdditionalConfig = ndActiveTab.querySelector("textarea[name='mainAdditionalConfig']"),
+
+					ndMainConfigPreload = ndActiveTab.querySelector("textarea[name='preload']"),
+					//ClickToCall nd form controls
+					ndClickToCallURL = ndActiveTab.querySelector("input[name='clickToCallURL']"),
+					ndClickToCallAPIKey = ndActiveTab.querySelector("input[name='clickToCallAPIKey']"),
+					ndClickToCallAccessCode = ndActiveTab.querySelector("input[name='clickToCallProvideAccessCode']"),
+					ndClickToCallAutoDialAccessCode = ndActiveTab.querySelector("input[name='clickToCallAutoDialAccessCode']"),
+					ndClickToCallEWT = ndActiveTab.querySelector("input[name='clickToCallEWT']"),
+					ndClickToCallQueueName = ndActiveTab.querySelector("input[name='clickToCallQueueName']"),
+					ndClickToCallThresholdEWT = ndActiveTab.querySelector("input[name='clickToCallThresholdEWT']"),
+					ndClickToCallUserData = ndActiveTab.querySelector("textarea[name='clickToCallUserData']"),
+					ndClickToCallFormJSON = ndActiveTab.querySelector("textarea[name='clickToCallFormJSON']"),
+					ndClickToCallAdditionalConfig = ndActiveTab.querySelector("textarea[name='clickToCallAdditionalConfig']");
+
+				//Read all form data
+				var webchatAjaxTimeout = parseInt(ndActiveTab.querySelector("input[name='webchatAjaxTimeout']").value),										
+					mainConfig= {
+									debug:	ndActiveTab.querySelector("input[name='debug']").checked,
+									theme:	ndActiveTab.querySelector("input[name='theme']").value,
+									i18n:	ndActiveTab.querySelector("input[name='i18n']").value,
+									lang:	ndActiveTab.querySelector("input[name='lang']").value
+								},
+					mainAdditionalConfigString = ndMainAdditionalConfig ? ndMainAdditionalConfig.value : '',
+					mainConfigPreloadString = ndMainConfigPreload ? ndMainConfigPreload.value:'',	
+						
+					webchat = {
+
+						userData:   {},
+						emojis: true,
+						cometD: {
+							enabled: false
+						},
+						autoInvite: {
+
+							enabled: true,
+							timeToInviteSeconds: 5,
+							inviteTimeoutSeconds: 30
+						},
+						chatButton: {
+
+							enabled: false,
+							openDelay: 1000,
+							//template: "", // override chat button HTML
+							effectDuration: 300,
+							hideDuringInvite: true
+						}
+					},
+
+					proactiveEnabled =  ndActiveTab.querySelector("input[name='proactiveEnabled']").checked,
+
+					uploadsEnabled = ndActiveTab.querySelector("input[name='uploadsEnabled']").checked,
+
+					oWebChatCometD = false,
+
+					oWebChatAsync = false,
+
+					oCobrowse = {
+						disableWebSockets: ndCobrowseWS ? ndCobrowseWS.checked : '',
+						src : ndCobrowseSrc ? ndCobrowseSrc.value : '',
+						url : ndCobrowseUrl ? ndCobrowseUrl.value : ''
+					},
+
+					cobrowseAdditionalConfigString = ndCobrowseAddl ? ndCobrowseAddl.value : '',
+
+					gwe = {
+						httpEndpoint : ndGweHttpEp ? ndGweHttpEp.value : '',
+						httpsEndpoint : ndGweHttpsEp ? ndGweHttpsEp.value : '',
+						dslResource : ndGweDslResource ? ndGweDslResource.value : '',
+						debug : ndGweDebug ? ndGweDebug.checked : ''
+					},
+					gweAdditionalConfigString = ndGweAdditionalConfig ? ndGweAdditionalConfig.value : '',
+
+					webChatUserDataString = ndActiveTab.querySelector("textarea[name='webchatUserData']").value,
+
+					webchatAdditionalConfigString = ndActiveTab.querySelector("textarea[name='webchatAdditionalConfig']").value,
+					sendMessageUserDataString = ndSendMessageUserData ? ndSendMessageUserData.value : '',
+
+					sendMessage = {
+						dataURL : ndSendMessageURL ? ndSendMessageURL.value : '',
+						apikey : ndSendMessageAPIKey ? ndSendMessageAPIKey.value : '',
+						SendMessageButton : {
+							enabled: true
+						}
+					},
+
+					sendmessageAdditionalConfigString = ndSendmessageAdditionalConfig ? ndSendmessageAdditionalConfig.value : '',
+
+					stats = {
+
+						ewt : {
+
+							dataURL: ndStatsURL ? ndStatsURL.value: '',
+							apikey : ndStatsAPIKey ? ndStatsAPIKey.value: '',
+							apiVersion : ndStatsAPIVersion ? ndStatsAPIVersion.value: '',
+							mode : ndStatsMode ? ndStatsMode.value: ''
+						}
+					},
+
+					statsAdditionalConfigString = ndStatsAddl ? ndStatsAddl.value : '',
+
+					channelselector = {
+
+						ewtRefreshInterval: 10,
+
+						channels: [
+							{
+								enable: true,
+								name: "CoBrowse",
+								clickCommand: "CoBrowse.open",
+								readyEvent:"CoBrowse.ready",
+								displayName: "Co-browse",
+								i18n: "CobrowseTitle",
+								icon: "cobrowse",
+								html: ""
+							}]
+					},
+
+					callus = ndActiveTab.querySelector("textarea[name='callUsConfig']").value,
+					callusAdditionalConfigString = ndActiveTab.querySelector("textarea[name='callusAdditionalConfig']").value,
+
+					callback = {
+
+						dataURL: ndActiveTab.querySelector("input[name='callbackURL']").value,
+						apiVersion: ndActiveTab.querySelector("input[name='callbackAPIVersion']").value,
+						callDirection: ndActiveTab.querySelector("input[name='callbackDirection']").value || 'USERTERMINATED',
+						immediateCallback: !ndActiveTab.querySelector("input[name='callbackImmediateDisable']").checked,
+						scheduledCallback: !ndActiveTab.querySelector("input[name='callbackScheduleDisable']").checked,
+						serviceName: ndActiveTab.querySelector("input[name='callbackServiceName']").value,
+						ewt: {
+							display: !ndActiveTab.querySelector("input[name='callbackEWT']").checked,
+							queue: ndActiveTab.querySelector("input[name='callbackQueueName']").value,
+							threshold: parseInt(ndActiveTab.querySelector("input[name='callbackThresholdEWT']").value) || '',
+							refreshInterval: parseInt(ndActiveTab.querySelector("input[name='callbackEWTRefreshInterval']").value) || '',
+							immediateCallback: {
+								thresholdMin: parseInt(ndActiveTab.querySelector("input[name='callbackImmediateEWTMinThreshold']").value),
+								thresholdMax: parseInt(ndActiveTab.querySelector("input[name='callbackImmediateEWTMaxThreshold']").value)
+							}
+						},
+						countryCodes: true,
+						apikey : ndActiveTab.querySelector("input[name='callbackAPIKey']").value
+					},
+
+					callbackCustomFormJSONDataString = ndActiveTab.querySelector("textarea[name='callbackFormJSON']").value,
+
+					callbackAdditionalConfigString = ndActiveTab.querySelector("textarea[name='callbackAdditionalConfig']").value,
+
+					clicktocall = {
+						dataURL: ndClickToCallURL ? ndClickToCallURL.value:'',
+						apikey: ndClickToCallAPIKey ? ndClickToCallAPIKey.value:'',
+						provideAccessCode: ndClickToCallAccessCode ? !ndClickToCallAccessCode.checked:'',
+						autoDialAccessCode: ndClickToCallAutoDialAccessCode ? !ndClickToCallAutoDialAccessCode.checked:'',
+						ewt: {
+							display: ndClickToCallEWT ? !ndClickToCallEWT.checked:'',
+							queue: ndClickToCallQueueName ? ndClickToCallQueueName.value:'',
+							threshold: ndClickToCallThresholdEWT ? parseInt(ndClickToCallThresholdEWT.value):''
+						},
+					},
+					
+					clickToCallUserDataString = ndClickToCallUserData ? ndClickToCallUserData.value:'',
+					clickToCallCustomFormJSONDataString = ndClickToCallFormJSON ? ndClickToCallFormJSON.value:'',
+					clickToCallAdditionalConfigString = ndClickToCallAdditionalConfig ? ndClickToCallAdditionalConfig.value:'',
+
+					knowledgeCenter = {
+						host : document.getElementsByName('kcURL')[0].value,
+						tenantId: document.getElementsByName('kcTenantId')[0].value ? document.getElementsByName('kcTenantId')[0].value : undefined,
+						knowledgebases : document.getElementsByName('kcKnowledgeBases')[0].value ? launcher.convertToArray(document.getElementsByName('kcKnowledgeBases')[0].value) : [],
+						apiVersion: document.getElementsByName('kcApiVersion')[0].value || 'v2',
+						apikey: document.getElementsByName('kcApiKey')[0].value || undefined,
+						lang: document.getElementsByName('kcLang')[0].value || 'en',
+						media: document.getElementsByName('kcMedia')[0].value || 'all',
+						maxSearchResults: parseInt(document.getElementsByName('kcMaxSearchResults')[0].value) || 3,
+						apiClientId: document.getElementsByName('kcApiClientId')[0].value || 'gwidget',
+						apiClientMediaType: document.getElementsByName('kcApiClientMediaType')[0].value || 'selfservice',
+						enableHTML: document.getElementsByName('kcEnableHTML')[0].checked,
+						deflection: {
+							enabled : document.getElementsByName('kcDeflectionEnabled')[0].checked,
+							agentTranscript: document.getElementsByName('kcDeflectionAgentTranscript')[0].value || 'readable',
+							workspace: {
+								enabled: document.getElementsByName('kcDeflectionWorkspaceEnabled')[0].checked
+							},
+							reporting : {
+								enabled: document.getElementsByName('kcDeflectionReportingEnabled')[0].checked
+							}
+
+						},
+						search : {
+							SearchButton: {
+								enabled: document.getElementsByName('kcSearchButtonEnabled')[0].checked
+							}
+						}
+					},
+
+					kcAdditionalConfigString = document.getElementsByName('kcAdditionalConfig')[0].value,
+
+					sidebar = {
+						showOnStartup: !ndActiveTab.querySelector("input[name='showOnStartup']").checked,
+						position: ndActiveTab.querySelector("input[name='sidebarPosition']").value || 'right',
+						expandOnHover: !ndActiveTab.querySelector("input[name='expandOnHover']").checked,
+					},
+
+					sidebarAdditionalConfigString = ndActiveTab.querySelector("textarea[name='sidebarAdditionalConfig']").value,
+
+					channels = ndActiveTab.querySelector("textarea[name='sidebarChannelConfig']").value;
+
+				webchat.autoInvite.enabled = proactiveEnabled;
+				webchat.uploadsEnabled = uploadsEnabled;
+
+				if(toggler.webchatCometDEnabled){
+
+					oWebChatCometD = document.getElementsByName('cometWebChatDConfiguration')[0].value;
+					eval('oWebChatCometD='+oWebChatCometD);
+				}
+
+				if(toggler.asyncWebChatEnabled){
+
+					var ndAsyncConfig = ndActiveTab.querySelector("textarea[name='asyncWebChatDConfiguration']");
+
+					if(ndAsyncConfig) {
+
+						oWebChatAsync = ndAsyncConfig.value;
+						eval('oWebChatAsync='+oWebChatAsync);
+					}
+				}
+
+				//oWebChatCometD = JSON.parse(JSON.stringify(document.getElementsByName('cometWebChatDConfiguration')[0].value));
+
+				if(sActiveTab == "PureEngageCloud"){
+
+					webchat.enableCustomHeader = true;
+
+					var ndStream = document.getElementsByName('webchatTransportStream')[0];
+
+					webchat.transport = {
+
+						dataURL: ndActiveTab.querySelector("input[name='WebchatURL']").value,
+						type: ndActiveTab.querySelector("input[name='WebchatTransportType']").value,
+						endpoint: ndActiveTab.querySelector("input[name='webchatTransportEndPoint']").value,
+						headers: {
+
+							"x-api-key": ndActiveTab.querySelector("input[name='webchatAPIKey']").value
+						}
+					}
+
+					if(ndStream.value) webchat.transport.stream = ndStream.value;
+
+				}else if(sActiveTab == "PureCloud"){
+
+					webchat.enableCustomHeader = true;
+
+					webchat.transport = {
+
+						dataURL: ndActiveTab.querySelector("input[name='WebchatURL']").value,
+						type: ndActiveTab.querySelector("input[name='WebchatTransportType']").value,
+						deploymentKey: ndActiveTab.querySelector("input[name='webchatAPIKey']").value,
+						orgGuid: ndActiveTab.querySelector("input[name='webchatTransportOrgGuid']").value
+					};
+
+					if(!webchat.transport.interactionData) webchat.transport.interactionData = {
+
+						routing: {}
+					};
+
+					webchat.transport.interactionData.routing.targetAddress = ndActiveTab.querySelector("input[name='webchatTransportQueueName']").value;
+
+				}else{
+
+					webchat.dataURL = ndActiveTab.querySelector("input[name='WebchatURL']").value;
+					webchat.apikey = ndActiveTab.querySelector("input[name='webchatAPIKey']").value;
+				}
+
+				if(oWebChatCometD) webchat.cometD = oWebChatCometD;
+
+				if(oWebChatAsync) {
+
+					eval("oWebChatAsync.setSessionData = "+oWebChatAsync.setSessionData);
+
+					eval("oWebChatAsync.getSessionData = "+oWebChatAsync.getSessionData);
+
+					if(sActiveTab == "PureEngageCloud"){
+
+						webchat.transport.async = oWebChatAsync;
+
+					}else {
+
+						webchat.async = oWebChatAsync;
+					}
+				}
+
+				if(webchatAjaxTimeout) webchat.ajaxTimeout = webchatAjaxTimeout;
+
+				if(webchatAdditionalConfigString && launcherForm.chatValid())eval('webchatAdditionalConfigString='+webchatAdditionalConfigString);
+
+				if(webChatUserDataString && launcherForm.chatValid())eval('webChatUserDataString='+webChatUserDataString);
+
+				if(sendMessageUserDataString && launcherForm.sendMessageValid())eval('sendMessageUserDataString='+sendMessageUserDataString);
+
+				if(sendmessageAdditionalConfigString && launcherForm.sendMessageValid())eval('sendmessageAdditionalConfigString='+sendmessageAdditionalConfigString);
+
+				if(callus && launcherForm.callUsValid())eval('callus='+callus);
+
+				if(callusAdditionalConfigString && launcherForm.callUsValid())eval('callusAdditionalConfigString='+callusAdditionalConfigString);
+
+				if(clickToCallUserDataString && launcherForm.clickToCallValid())eval('clickToCallUserDataString='+clickToCallUserDataString);
+
+				if(clickToCallCustomFormJSONDataString && launcherForm.clickToCallValid())eval('clickToCallCustomFormJSONDataString='+clickToCallCustomFormJSONDataString);
+
+				if(clickToCallAdditionalConfigString && launcherForm.clickToCallValid())eval('clickToCallAdditionalConfigString='+clickToCallAdditionalConfigString);
+
+				if(callbackCustomFormJSONDataString && launcherForm.callbackValid)eval('callbackCustomFormJSONDataString='+callbackCustomFormJSONDataString);
+
+				if(callbackAdditionalConfigString && launcherForm.callbackValid)eval('callbackAdditionalConfigString='+callbackAdditionalConfigString);
+
+
+				if(toggler.sidebarEnable && launcherForm.sidebarValid()){
+
+					eval('channels='+channels);
+					sidebar["channels"] = channels.channels;
+
+					if(sidebarAdditionalConfigString)eval('sidebarAdditionalConfigString='+sidebarAdditionalConfigString);
+				}
+
+				if(toggler.callbackEnable) {
+
+					channelselector.channels.push({
+						enable: true,
+						clickCommand: "Callback.open",
+						readyEvent:"Callback.ready",
+						displayName: "Receive a Call",
+						i18n: "CallbackTitle",
+						icon: "call-incoming",
+						html: "",
+
+						ewt: {
+
+							display: true,
+							queue: ndActiveTab.querySelector("input[name='vqname_callback']").value,
+							availabilityThresholdMin: 300,
+							availabilityThresholdMax: 3600,
+							hideChannelWhenThresholdMax: false
+						}
+					});
+				}
+
+				if(toggler.callUsEnable) {
+
+					channelselector.channels.push({
+						enable: true,
+						clickCommand: "CallUs.open",
+						readyEvent:"CallUs.ready", //optional
+						displayName: "Call Us",
+						i10n: "CallusTitle", // optional. overrides displayName
+						icon: "call-outgoing", // select from one of genesys widgets icons by specifying icon CSS selector
+						//html: "<img src='http://placehold.it/100x100'>", // overrides icon section of channel block
+
+						ewt: {
+
+							display: true,
+							queue: ndCallUsVQ ? ndCallUsVQ.value: '',
+							availabilityThresholdMin: 300,
+							availabilityThresholdMax: 3600,
+							hideChannelWhenThresholdMax: false
+						}
+					});
+				}
+
+				if(toggler.chatEnable) {
+
+					channelselector.channels.push({
+						enable: true,
+						clickCommand: "WebChat.open",
+						readyEvent:"WebChat.ready",
+						displayName: "Web Chat",
+						i10n: "ChatTitle",
+						icon: "chat",
+						html: "",
+
+						ewt: {
+
+							display: true,
+							queue: ndChannelSelectorChatVQ ? ndChannelSelectorChatVQ.value : '',
+							availabilityThresholdMin: 300,
+							availabilityThresholdMax: 3600,
+							hideChannelWhenThresholdMax: false
+						}
+					});
+				}
+
+				if(toggler.sendMessageEnable) {
+
+					channelselector.channels.push({
+						enable: true,
+						clickCommand: "SendMessage.open",
+						readyEvent:"SendMessage.ready",
+						displayName: "Send Message",
+						i10n: "EmailTitle",
+						icon: "email",
+						html: ""
+					});
+				}
+
+				if(toggler.kcEnable) {
+
+					channelselector.channels.push({
+						enable: true,
+						clickCommand: 'Search.open',
+						readyEvent: 'Search.ready',
+						displayName: 'Search',
+						i18n: 'knowledgecenter.Title',
+						icon: 'knowledge-center'
+					});
+				}
+
+				if(toggler.liveAssistEnable && launcherForm.statsValid()) {
+					if(statsAdditionalConfigString)eval('statsAdditionalConfigString='+statsAdditionalConfigString);
+				}
+
+				if(kcAdditionalConfigString && launcherForm.kcValid())eval('kcAdditionalConfigString='+kcAdditionalConfigString);
+
+				if(cobrowseAdditionalConfigString && launcherForm.cobrowseValid())eval('cobrowseAdditionalConfigString='+cobrowseAdditionalConfigString);
+
+				if(gweAdditionalConfigString)eval('gweAdditionalConfigString='+gweAdditionalConfigString);
+
+				if (toggler.mainConfigEnable) {
+					//for preload and additional string text areas
+					if (mainConfigPreloadString) {
+						eval('mainConfigPreloadString=' + mainConfigPreloadString);
+						//to eliminate the duplicate plugin names in preload array if any 
+						var mainConfigPreloadArr = launcher.removeDuplicates(mainConfigPreloadString);
+					}
+
+					if (mainAdditionalConfigString) eval('mainAdditionalConfigString=' + mainAdditionalConfigString);
+				}
+
+				if(
+					(toggler.mainConfigEnable) || (toggler.chatEnable && launcherForm.chatValid() && launcherForm.cobrowseValid()) ||
+					(toggler.sendMessageEnable && launcherForm.sendMessageValid()) ||
+					(toggler.callbackEnable && launcherForm.callbackValid()) ||
+					(toggler.clickToCallEnable && launcherForm.clickToCallValid()) ||
+					(toggler.liveAssistEnable && launcherForm.statsValid()) ||
+					(toggler.enableKC && launcherForm.kcValid()) ||
+					(toggler.callUsEnable && launcherForm.callUsValid()) ||
+					(toggler.sidebarEnable && launcherForm.sidebarValid())){
+
+					launcher.setConfigObject(mainConfig,mainConfigPreloadArr,mainAdditionalConfigString, webchat, oCobrowse, cobrowseAdditionalConfigString, gwe, gweAdditionalConfigString, webChatUserDataString, webchatAdditionalConfigString, sendMessageUserDataString, sendMessage, sendmessageAdditionalConfigString, knowledgeCenter, kcAdditionalConfigString, stats, statsAdditionalConfigString, channelselector, callus, callusAdditionalConfigString, callback, callbackAdditionalConfigString, sidebar, sidebarAdditionalConfigString, clicktocall, clickToCallUserDataString, clickToCallCustomFormJSONDataString, callbackCustomFormJSONDataString, clickToCallAdditionalConfigString);
+
+					if(typeof(Storage) !== "undefined") {
+
+						localStorage.setItem('configData', JSON.stringify(window._genesys.widgets));
+						localStorage.setItem('mainConfigEnable',toggler.mainConfigEnable);
+						localStorage.setItem('chatEnable', toggler.chatEnable);
+						localStorage.setItem('cobrowseEnable', toggler.cobrowseEnable);
+						localStorage.setItem('gweEnable', toggler.gweEnable);
+						localStorage.setItem('sendMessageEnable', toggler.sendMessageEnable);
+						localStorage.setItem('kcEnable', toggler.enableKC);
+						localStorage.setItem('liveAssistEnable', toggler.liveAssistEnable);
+						localStorage.setItem('callUsEnable', toggler.callUsEnable);
+						localStorage.setItem('callbackEnable', toggler.callbackEnable);
+						localStorage.setItem('clickToCallEnable', toggler.clickToCallEnable);
+						localStorage.setItem('sidebarEnable', toggler.sidebarEnable);
+						localStorage.setItem('webchatCometDEnabled', toggler.webchatCometDEnabled);
+
+						//console.log(localStorage.getItem('configData'));
+					} else {
+						// Sorry! No Web Storage support..
+					}
+
+					if(callus) ndActiveTab.querySelector("textarea[name='callUsConfig']").value = launcherForm.prettyJson(callus);
+
+					if(toggler.lazyLoading){
+
+					//to check whether sidebar is already mentioned in the preload array before
+
+						if(window._genesys.widgets.main.preload.indexOf('sidebar') === -1) window._genesys.widgets.main.preload.push('sidebar');
+						
+						if(!window._genesys.widgets.sidebar){
+
+							window._genesys.widgets.sidebar = {
+
+								channels: [
+
+									{name: "WebChat"},
+									{name: "SendMessage"},
+									{name: "ChannelSelector"},
+									{name: "Callback"},
+									{name: "Offers"},
+									{name: "ClickToCall"}
+								]
+							};
+
+							showToastMessage('Enabled all the sidebar channels since no configuration is provided for sidebar.', 'warn');
+						}
+
+						launcher.lazyLoad();
+
+					}else {
+
+						launcher.invoke();
+					}
+				}
+			}catch (e) {
+
+				if(webChatUserDataString){
+
+					ndActiveTab.querySelector("textarea[name='webchatUserData']").classList.add("error");
+				}
+
+				if(webchatAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='webchatAdditionalConfig']").classList.add("error");
+				}
+
+				if(sendMessageUserDataString){
+
+					ndActiveTab.querySelector("textarea[name='sendMessageUserData']").classList.add("error");
+				}
+
+				if(callus){
+
+					ndActiveTab.querySelector("textarea[name='callUsConfig']").classList.add("error");
+				}
+
+				if(oWebChatCometD){
+
+					ndActiveTab.querySelector("textarea[name='cometWebChatDConfiguration']").classList.add("error");
+				}
+
+				if(oWebChatAsync){
+
+					ndActiveTab.querySelector("textarea[name='asyncWebChatDConfiguration']").classList.add("error");
+				}
+
+				if(clickToCallUserDataString){
+
+					ndActiveTab.querySelector("textarea[name='clickToCallUserData']").classList.add("error");
+				}
+
+				if(clickToCallCustomFormJSONDataString){
+
+					ndActiveTab.querySelector("textarea[name='clickToCallFormJSON']").classList.add("error");
+				}
+
+				if(callbackCustomFormJSONDataString){
+
+					ndActiveTab.querySelector("textarea[name='callbackFormJSON']").classList.add("error");
+				}
+
+				if(sidebarAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='sidebarAdditionalConfig']").classList.add("error");
+				}
+
+				if(statsAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='statsAdditionalConfig']").classList.add("error");
+				}
+
+				if(cobrowseAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='cobrowseAdditionalConfig']").classList.add("error");
+				}
+
+				if(gweAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='gweAdditionalConfig']").classList.add("error");
+				}
+
+				if(sendmessageAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='sendmessageAdditionalConfig']").classList.add("error");
+				}
+
+				if(callbackAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='callbackAdditionalConfig']").classList.add("error");
+				}
+
+				if(callusAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='callusAdditionalConfig']").classList.add("error");
+				}
+
+				if(kcAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='kcAdditionalConfig']").classList.add("error");
+				}
+
+				if(clickToCallAdditionalConfigString){
+
+					ndActiveTab.querySelector("textarea[name='clickToCallAdditionalConfig']").classList.add("error");
+				}
+				if (mainAdditionalConfigString) {
+
+					ndActiveTab.querySelector("textarea[name='mainAdditionalConfig']").classList.add("error");
+				}
+				if (mainConfigPreloadString) {
+
+					ndActiveTab.querySelector("textarea[name='preload']").classList.add("error");
+				}
+				console.error(e);
+			}
+		}
+
+		function clearForm(){
+
+			if((localStorage.getItem('configData') != null) && confirm('Are you sure to clear data (Any active session may be lost on refresh)?')){
+				document.getElementById("PureEngageForm").reset();
+				document.getElementById("PureEngageCloudForm").reset();
+				document.getElementById("PureCloudForm").reset();
+				localStorage.removeItem('configData');
+				localStorage.removeItem('chatEnable');
+				localStorage.removeItem('cobrowseEnable');
+				localStorage.removeItem('gweEnable');
+				localStorage.removeItem('sendMessageEnable');
+				localStorage.removeItem('kcEnable');
+				localStorage.removeItem('liveAssistEnable');
+				localStorage.removeItem('callUsEnable');
+				localStorage.removeItem('callbackEnable');
+				localStorage.removeItem('clickToCallEnable');
+				localStorage.removeItem('sidebarEnable');
+				localStorage.removeItem('mainConfigEnable');
+				localStorage.removeItem('webchatCometDEnabled');
+			}
+		}
+
+		window.addEventListener('load', launcherForm.handleErrors, false);
+
+		//If cookie present injecting widgets to launch existing chat session
+
+		if(getCookie('_genesys.widgets.webchat.state.ping').length > 0){
+
+			window.onload = function(e){
+
+				if(!window._genesys)window._genesys = {};
+				if(!window._gt)window._gt = [];
+
+				window._genesys.widgets =  JSON.parse(localStorage.getItem('configData'));
+
+				document.getElementsByName("WebchatURL")[0].value = window._genesys.widgets.webchat.dataURL;
+				document.getElementsByName("webchatAjaxTimeout")[0].value = window._genesys.widgets.webchat.ajaxTimeout;
+				document.getElementsByName("webchatAPIKey")[0].value = window._genesys.widgets.webchat.apikey;
+				document.getElementsByName('proactiveEnabled')[0].checked = window._genesys.widgets.webchat.autoInvite.enabled;
+				document.getElementsByName('uploadsEnabled')[0].checked = window._genesys.widgets.webchat.uploadsEnabled;
+				document.getElementsByName("webchatUserData")[0].value = (isEmpty(window._genesys.widgets.webchat.userData))? '': JSON.stringify(window._genesys.widgets.webchat.userData);
+
+				if(JSON.parse(localStorage.getItem('cobrowseEnable'))){
+					document.getElementsByName('enableCobrowse')[0].checked = true;
+					toggler.enableCobrowse(document.getElementsByName('enableCobrowse')[0]);
+					document.getElementsByName("cobrowseApikey")[0].value = window._genesys.widgets.cobrowse.apikey||'';
+					document.getElementsByName("cobrowseSrc")[0].value = window._genesys.widgets.cobrowse.src;
+					document.getElementsByName("cobrowseUrl")[0].value = window._genesys.widgets.cobrowse.url;
+					document.getElementsByName('cobrowseWebSockets')[0].checked = window._genesys.widgets.cobrowse.disableWebSockets;
+				}
+
+				if(JSON.parse(localStorage.getItem('gweEnable'))){
+					document.getElementsByName('enableGWE')[0].checked = true;
+					toggler.enableGWE(document.getElementsByName('enableGWE')[0]);
+					document.getElementsByName("gweHttpEp")[0].value = window._genesys.widgets.gwe.httpEndpoint||'';
+					document.getElementsByName("gweHttpsEp")[0].value = window._genesys.widgets.gwe.httpsEndpoint||'';
+					document.getElementsByName("gweDslResource")[0].value = window._genesys.widgets.gwe.dslResource;
+					document.getElementsByName('gweDebug')[0].checked = window._genesys.widgets.gwe.debug;
+				}
+
+				if(JSON.parse(localStorage.getItem('sendMessageEnable'))){
+
+					document.getElementsByName('enableSendMessage')[0].checked = true;
+					toggler.enableSendMessage(document.getElementsByName('enableSendMessage')[0]);
+					document.getElementsByName("sendMessageURL")[0].value = window._genesys.widgets.sendmessage.dataURL||'';
+					document.getElementsByName("sendMessageAPIKey")[0].value = window._genesys.widgets.sendmessage.apikey||'';
+				}
+
+				if(JSON.parse(localStorage.getItem('callUsEnable'))){
+
+					document.getElementsByName('callUsFieldSet')[0].checked = true;
+					toggler.enableCallUs(document.getElementsByName('callUsFieldSet')[0]);
+					document.getElementsByName("callUsConfig")[0].value = window._genesys.widgets.callus||'';
+				}
+
+				launcher.invoke();
+			}
+		}
+
+		function isEmpty(obj) {
+			return Object.keys(obj).length === 0;
+		}
+
+		function toggle(id) {
+
+			var ele = document.querySelectorAll("#" + id + ".label-list")[0];
+			if(ele.style.display == "block") {
+				ele.style.display = "none";
+			}
+			else {
+				ele.style.display = "block";
+			}
+		}
+
+		function showToastMessage(sMessage, sType) {
+
+			if(sMessage) {
+
+				var x = document.getElementById("toast");
+				x.classList.add(sType);
+				x.innerText = sMessage;
+				x.classList.add("show");
+
+				setTimeout(function () {
+					x.className = x.className.replace("show", "");
+				}, 7000);
+			}
+		}
+
+		function openTab(tabName, activeTab) {
+
+			var i, tabcontent, tablinks;
+
+			sActiveTab = tabName;
+			tabcontent = document.getElementsByClassName("tabcontent");
+
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+				tablinks[i].style.color = "white";
+			}
+
+			document.getElementById(tabName).style.display = "block";
+			activeTab.style.backgroundColor = "#f2f2f2";
+			activeTab.style.color = "#5d3e5d";
+		}
+
+		window.onload = function () {
+
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+		}
+
+		
+
+	</script>
+</head>
+
+<body class="widgets-launch-font">
+<div id="toast"></div>
+<center>
+	<div class="heading">
+		<h3 class="title">Genesys Widgets Sample Page (v9.0.017.00)</h3>
+	</div>
+	<div class="stickyNavBar">
+		<button id="defaultOpen" class="tablink" onclick="openTab('PureEngage', this)">PureEngage</button>
+		<button class="tablink" onclick="openTab('PureEngageCloud', this)">PureEngageCloud</button>
+		<button class="tablink" onclick="openTab('PureCloud', this)">PureCloud</button>
+	</div>
+	<div id="PureEngage" class="tabcontent">
+		<table>
+			<tbody>
+			<tr class="align-tr">
+				<td>
+					<div class="form-style-3 center">
+
+						<div class="heading">
+							<center><h3>Enter below details to launch</h3></center>
+						</div>
+						<form id="PureEngageForm" onsubmit="return false">
+							
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableMainConfig"
+										onchange="toggler.enableMainConfig(this)" onclick="toggle('mainconfig');">
+									Main
+								</legend>
+							
+								<div id="mainconfig" class="label-list" style="display: none;">
+									<label for="debug">
+										<span>Debug</span>
+										<input type="checkbox" class="input-field" name="debug" checked />
+									</label>
+									<label for="theme"><br /><span>Theme </span><input type="text" class="input-field" placeholder="theme"
+											name="theme" value="dark"></label>
+									<label for="i18n"><span>i18n </span><input type="text" class="input-field" placeholder="path to i18n file" name="i18n"
+											value=""></label>
+									<label for="lang"><span>lang</span><input type="text" placeholder="lang" class="input-field" name="lang"
+											value="en"></label>
+									<label for="preload">
+										<span>Preload <br>(Note: Applicable only when lazy loading Widgets.)</span>						
+										<textarea name="preload" class="textarea-field"
+											placeholder='preload the plugins if needed Ex: ["sidebar","chatdeflection"]'></textarea>
+									</label>
+									<label for="mainAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="mainAdditionalConfig" class="textarea-field"
+											placeholder='additional config options to add if needed Ex: {position: "left", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableSidebar" onchange="toggler.enableSidebar(this, 'PureEngageForm')" onclick="toggle('sidebar');">
+									Sidebar
+								</legend>
+								<div id="sidebar" class="label-list" style="display: none;">
+									<label for="sidebarPosition">
+										<span>Position</span></label>
+									<input type="text" class="input-field" name="sidebarPosition" placeholder="right / left [Default value is right]" disabled />
+									</label>
+
+									<label for="showOnStartup"><br/><span>Don't show on startup</span><input type="checkbox" class="input-field" name="showOnStartup"></label>
+									<label for="expandOnHover"><span>Don't expand on hover</span><input type="checkbox" class="input-field" name="expandOnHover"></label>
+
+									<label for="sidebarChannelConfig">
+										<br/>
+										<span class="desc">
+														Please provide channel configuration data
+														<span class="required">*</span>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showSidebarConfig('PureEngageForm')">Edit/Use Full Channel Sample config</a>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showSidebarMinimumConfig('PureEngageForm')">Edit/Use Min Channel Sample config</a>
+													</span>
+										<textarea name="sidebarChannelConfig" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="sidebarAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="sidebarAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {position: "left", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableLiveAssist" onchange="toggler.enableLiveAssist(this)" onclick="toggle('liveassist')">
+									Enable Live Assist (EWT) / Stats Config
+								</legend>
+								<div id="liveassist" class="label-list" style="display: none;">
+									<label for="statsURL"><span>stats URL </span><input type="url" class="input-field" name="statsURL" value="" disabled/></label>
+									<label for="statsAPIKey"><span>API Key </span><input type="text" class="input-field" name="statsAPIKey" value="" placeholder="Used for Apigee service only" disabled/></label>
+									<label for="statsAPIVersion"><span>API Version </span><input type="text" class="input-field" name="statsAPIVersion" value="" placeholder="EWT api version"/></label>
+									<label for="statsAPIMode"><span>API Mode </span><input type="text" class="input-field" name="statsAPIMode" value="" placeholder="EWT api mode, based on api version"/></label>
+									<label for="vqname_chat"><span>Chat VQ Name </span><input type="text" class="input-field" name="vqname_chat" value="" disabled/></label>
+									<label for="vqname_callus"><span>CallUs VQ Name </span><input type="text" class="input-field" name="vqname_callus" value="" disabled/></label>
+									<label for="vqname_callback"><span>CallBack VQ Name </span><input type="text" class="input-field" name="vqname_callback" value="" disabled/></label>
+									<label for="statsAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="statsAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {ewt:{apiVersion:"v2"}, ...}'></textarea>
+									</label>
+
+								</div>
+							</fieldset>
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableChat" onchange="toggler.enableChat(this)" onclick="toggle('webchat')">
+									Webchat
+								</legend>
+								<div id="webchat" class="label-list" style="display: none;">
+									<label for="WebchatURL"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="WebchatURL" required value="" disabled/></label>
+									<label for="webchatAjaxTimeout"><span>Ajax Timeout (milliseconds)</span></span><input type="number" class="input-field" name="webchatAjaxTimeout" value=""/></label>
+									<label for="webchatAPIKey"><span>API Key </span><input type="text" class="input-field" name="webchatAPIKey" value="" placeholder="Used for Apigee service only"/></label>
+									<label for="proactiveEnabled"><span>AutoInvite</span><input type="checkbox" class="input-field" name="proactiveEnabled"> Enable Chat Invite</label>
+									<label for="uploadsEnabled"><span>Uploads Enabled</span><input type="checkbox" class="input-field" name="uploadsEnabled"> Enable File Transfer</label>
+									<label for="cometDEnabled"><span>CometD</span><input type="checkbox" onchange="toggler.enableWebChatCometD(this)" class="input-field" name="cometDEnabled"> Enable CometD</label>
+									<div class="webchat-cometD-section remove">
+										<label style="float: right; margin: 0 20px" for="cometWebChatDConfiguration">
+											<a href="javascript:void(0)" onclick="launcherForm.showWebChatCometDConfig()">Use/Edit CometD Sample config</a>
+										</label>
+										<textarea name="cometWebChatDConfiguration" class="config-textarea" style="margin: 0;" placeholder='To use sample config, click on "Use/Edit CometD Sample config" link above.'></textarea>
+										<br/><br/>
+									</div>
+									<label for="webchatUserData">
+										<span>UserData </span>
+										<textarea name="webchatUserData" class="textarea-field" placeholder='additional properties to send if needed Ex: {skillName: "shoes", ...}'></textarea>
+									</label>
+									<label for="webchatAdditionalConfig">
+										<span>Additional Configuration Options <br>(will be merged into webchat configuration)</span>
+										<textarea name="webchatAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {emojis: false, ...}'></textarea>
+									</label>
+									<label for="asyncChatEnabled"><span>Async Chat</span><input type="checkbox" onchange="toggler.enableAsyncWebChat(this)" class="input-field" name="asyncChatEnabled"> Enable Async WebChat</label>
+									<div class="webchat-async-section remove">
+										<label style="float: right; margin: 0 20px" for="asyncWebChatDConfiguration">
+											<a href="javascript:void(0)" onclick="launcherForm.showAsyncWebChatConfiguration()">Use/Edit Async WebChat Sample config</a>
+										</label>
+										<textarea name="asyncWebChatDConfiguration" class="config-textarea" style="margin: 0;" placeholder="To use sample config, click on above link 'Use/Edit Async WebChat Sample config'. Note: This sample config uses browser's window.localstorage"></textarea>
+										<br/><br/>
+										<a href="javascript:void(0)" onclick="launcherForm.deleteSessionData()">Click here to delete the session data stored in the window.localstorage (if sample config is used)</a>
+										<br/><br/>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableCobrowse" onchange="toggler.enableCobrowse(this)" onclick="toggle('cobrowse');">
+									Co-browse
+								</legend>
+								<div id="cobrowse" class='label-list' style="display: none;">
+									<label for="cobrowseWebSockets"><span>WebSockets</span><input type="checkbox" class="input-field" name="cobrowseWebSockets" disabled>disable</label>
+									<label for="cobrowseApikey"><span>API Key</span><input type="text" class="input-field" name="cobrowseApikey" value="" placeholder="Used for Apigee service only" disabled/></label>
+									<label for="cobrowseSrc"><span>Src <span class="required">*</span></span><input type="url" class="input-field" name="cobrowseSrc" required value="" disabled/></label>
+									<label for="cobrowseUrl"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="cobrowseUrl" required value="" disabled/></label>
+									<label for="cobrowseAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="cobrowseAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apikey: "hgjjcjxncjjh734736bxjn", ...}'></textarea>
+									</label>
+								</div>
+
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableGWE" onchange="toggler.enableGWE(this)" onclick="toggle('gwe');">
+									GWE
+								</legend>
+								<div id="gwe" class="label-list" style="display: none;">
+									<label for="gweHttpEp"><span>HttpEndpoint </span><input type="url" class="input-field" name="gweHttpEp" value="" disabled/></label>
+									<label for="gweHttpsEp"><span>HttpsEndpoint </span><input type="url" class="input-field" name="gweHttpsEp" value="" disabled/></label>
+									<label for="gweDslResource"><span>DslResource <span class="required">*</span></span><input type="text" class="input-field" name="gweDslResource" required value="" disabled/></label>
+									<label for="gweDebug"><span>Debug</span><input type="checkbox" class="input-field" name="gweDebug" disabled>Enable </label>
+									<label for="gweAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="gweAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {smartInvite: true, ...}'></textarea>
+									</label>
+								</div>
+
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableSendMessage" onchange="toggler.enableSendMessage(this)" onclick="toggle('sendmessage');">
+									Send Message
+								</legend>
+								<div id="sendmessage" class="label-list" style="display: none;">
+									<label for="sendMessageURL"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="sendMessageURL" value="" disabled required/></label>
+									<label for="sendMessageAPIKey"><span>API Key </span><input type="text" class="input-field" name="sendMessageAPIKey" value="" placeholder="Used for Apigee service only" disabled/></label>
+									<label for="sendMessageUserData">
+										<span>UserData </span>
+										<textarea name="sendMessageUserData" class="textarea-field" placeholder='additional properties to send if needed Ex: {skillName: "shoes", ...}'></textarea>
+									</label>
+									<label for="sendmessageAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="sendmessageAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {uploadsEnabled: true, ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="callUsFieldSet" onchange="toggler.enableCallUs(this)" onclick="toggle('callus');">
+									Call Us
+								</legend>
+								<div id="callus" class="label-list" style="display: none;">
+									<label for="callUsConfig">
+													<span class="desc">
+														Please provide the entire configuration data
+														<span class="required">*</span>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showCallUsConfig()">Edit/Use Sample config</a>
+													</span>
+										<textarea name="callUsConfig" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="callusAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="callusAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {hours:["11am - 5pm Sun"], ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableCallback" onchange="toggler.enableCallback(this)" onclick="toggle('callback');">
+									Callback
+								</legend>
+								<div id="callback" class="label-list" style="display: none;">
+									<label for="callbackURL">
+										<span>URL <span class="required">*</span></span>
+										<input type="url" class="input-field" name="callbackURL" value="" required disabled/>
+									</label>
+									<label for="callbackAPIVersion">
+										<span>API Version </span>
+										<input type="text" class="input-field" name="callbackAPIVersion" value="" onkeyup="checkV3Conditions()" placeholder="Accepted values: v1, v3"/>
+									</label>
+									<label for="callbackAPIKey">
+										<span>API Key </span>
+										<input type="text" class="input-field" name="callbackAPIKey" value="" placeholder="Used for Apigee service only"/>
+									</label>
+									<label for="callbackImmediateDisable">
+										<span>Disable Immediate Callback</span>
+										<input type="checkbox" class="input-field" name="callbackImmediateDisable" disabled/>
+									</label>
+									<label for="callbackScheduleDisable">
+										<span>Disable Callback Schedule</span>
+										<input type="checkbox" class="input-field" name="callbackScheduleDisable" disabled/>
+									</label>
+									<label for="callbackServiceName">
+										<span>Service name </span>
+										<input type="text" class="input-field" name="callbackServiceName" value="" placeholder="Needs API Version 'v3'" disabled/>
+									</label>
+									<label for="callbackDirection">
+										<span>Call Direction</span>
+										<input type="text" class="input-field" name="callbackDirection" value="" placeholder="USERTERMINATED"/>
+									</label>
+									<label for="callbackEWT">
+										<span>Don't Display EWT </span>
+										<input type="checkbox" class="input-field" name="callbackEWT" disabled/>  (EWT is displayed by default).
+									</label>
+									<label for="callbackQueueName">
+										<span>EWT Queue Name</span>
+										<input type="text" class="input-field" name="callbackQueueName" value="" disabled placeholder="If EWT is enabled"/>
+									</label>
+									<label for="callbackThresholdEWT">
+										<span>EWT Threshold </span>
+										<input type="number" class="input-field" name="callbackThresholdEWT" value="" disabled placeholder="Default is 30 seconds"/>
+									</label>
+									<label for="callbackEWTRefreshInterval">
+										<span>EWT Refresh Interval </span>
+										<input type="number" class="input-field" name="callbackEWTRefreshInterval" value="" disabled placeholder="Default is 10 seconds"/>
+									</label>
+									<label for="callbackImmediateEWTMinThreshold" style="">
+										<span>Immediate Callback EWT Minimum Threshold </span>
+										<input type="number" class="input-field" name="callbackImmediateEWTMinThreshold" value="" disabled/>
+									</label>
+									<label for="callbackImmediateEWTMaxThreshold">
+										<span>Immediate Callback EWT Maximum Threshold </span>
+										<input type="number" class="input-field" name="callbackImmediateEWTMaxThreshold" value="" disabled/>
+									</label>
+									<label for="callbackFormJSON">
+										<span>Custom Form JSON </span>
+										<textarea name="callbackFormJSON" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="callbackAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="callbackAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apiVersion: "v1", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableKC" onchange="toggler.enableKC(this)" onclick="toggle('search');">
+									Knowledge Center/Search
+								</legend>
+								<div id="search" class="label-list" style="display: none;">
+									<a href="javascript:void(0)" class="remove align-right"
+									   onclick="launcherForm.setKCValues()">Use Sample config</a>
+									<label for="kcURL">
+										<span>Knowledge Center Server Load Balancer URL <span class="required">*</span></span>
+										<input type="url" class="input-field" name="kcURL" value="" required disabled placeholder="enter data URL"/>
+									</label>
+									<label for="kcApiVersion">
+										<span>API Version</span>
+										<input type="text" class="input-field" name="kcApiVersion" value="v2" disabled placeholder="v2 or v1"/>
+									</label>
+									<label for="kcTenantId">
+										<span>Tenant Id</span>
+										<input type="text" class="input-field" name="kcTenantId" value="" disabled placeholder="tenant ID in multitenant environments"/>
+									</label>
+									<label for="kcKnowledgeBases">
+										<span>Knowledge Bases</span>
+										<input type="text" class="input-field" name="kcKnowledgeBases" value="" disabled placeholder="enter comma-separated values"/>
+									</label>
+									<label for="kcLang">
+										<span>Language code (eg. en, en_EN)</span>
+										<input type="text" class="input-field" name="kcLang" value="en" disabled placeholder="enter language like 'en'"/>
+									</label>
+									<label for="kcMedia">
+										<span>Media Filter</span>
+										<input type="text" class="input-field" name="kcMedia" value="all" disabled placeholder="enter a media like 'all', 'chat'"/>
+									</label>
+									<label for="kcMaxSearchResults">
+										<span>Max Search Results</span>
+										<input type="number" class="input-field" name="kcMaxSearchResults" value="3" disabled placeholder="number of documents in result of search"/>
+									</label>
+									<label for="kcApiClientId">
+										<span>API Client ID (for reporting)</span>
+										<input type="text" class="input-field" name="kcApiClientId" value="gwidget" disabled placeholder="string. used as label of the client that is sending requests. to be used in reporting"/>
+									</label>
+									<label for="kcApiClientMediaType">
+										<span>API Client Media Type (for reporting)</span>
+										<input type="text" class="input-field" name="kcApiClientMediaType" value="selfservice" disabled placeholder="string. one of configured media type that search in widgets to be associated with. to be used in reporting."/>
+									</label>
+									<label for="kcEnableHTML">
+										<span>HTML output format: Enable</span>
+										<input type="checkbox" class="input-field" name="kcEnableHTML" disabled/>
+									</label>
+									<label for="kcDeflectionAgentTranscript">
+										<span>Deflection: Communication mode for agent transcript</span>
+										<input type="text" class="input-field" name="kcDeflectionAgentTranscript" value="readable" disabled placeholder="one of: readable, none. defines the messages added to transcript for agent"/>
+									</label>
+									<label for="kcDeflectionEnabled">
+										<span>Deflection: Enable</span>
+										<input type="checkbox" class="input-field" name="kcDeflectionEnabled" disabled/>
+									</label>
+									<label for="kcDeflectionWorkspaceEnabled">
+										<span>Deflection: Enable context for Workspace</span>
+										<input type="checkbox" class="input-field" name="kcDeflectionWorkspaceEnabled" disabled/>
+									</label>
+									<label for="kcDeflectionReportingEnabled">
+										<span>Deflection: Enable reporting user data</span>
+										<input type="checkbox" class="input-field" name="kcDeflectionReportingEnabled" disabled/>
+									</label>
+									<label for="kcSearchButtonEnabled">
+										<span>Search: enable button</span>
+										<input type="checkbox" class="input-field" name="kcSearchButtonEnabled" disabled/>
+									</label>
+									<label for="kcApiKey">
+										<span>API Key </span>
+										<input type="text" class="input-field" name="kcApiKey" value="" placeholder="Used for API Gateway service only"/>
+									</label>
+									<label for="kcAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="kcAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apiVersion: "v1", ...}'></textarea>
+									</label>
+
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableClickToCall" onchange="toggler.enableClickToCall(this)" onclick="toggle('clicktocall');">
+									ClickToCall
+								</legend>
+								<div id="clicktocall" class="label-list" style="display: none;">
+									<label for="clickToCallURL">
+										<span>URL <span class="required">*</span></span>
+										<input type="url" class="input-field" name="clickToCallURL" value="" required disabled/>
+									</label>
+									<label for="clickToCallAPIKey">
+										<span>API Key </span>
+										<input type="text" class="input-field" name="clickToCallAPIKey" value="" placeholder="Used for Apigee service only"/>
+									</label>
+									<label for="clickToCallProvideAccessCode">
+										<span>Don't ProvideAccessCode</span>
+										<input type="checkbox" class="input-field" name="clickToCallProvideAccessCode" disabled/>
+									</label>
+									<label for="clickToCallAutoDialAccessCode">
+										<span>Don't AutoDialAccessCode </span>
+										<input type="checkbox" class="input-field" name="clickToCallAutoDialAccessCode" disabled/>
+									</label>
+									<label for="clickToCallEWT">
+										<span>Don't Display EWT </span>
+										<input type="checkbox" class="input-field" name="clickToCallEWT" disabled/>
+									</label>
+									<label for="clickToCallQueueName">
+										<span>EWT Queue Name</span>
+										<input type="text" class="input-field" name="clickToCallQueueName" value="" disabled placeholder="If EWT is enabled"/>
+									</label>
+									<label for="clickToCallThresholdEWT">
+										<span>EWT Threshold </span>
+										<input type="number" class="input-field" name="clickToCallThresholdEWT" value="" disabled placeholder="Default is 30 seconds"/>
+									</label>
+									<label for="clickToCallUserData">
+										<span>UserData </span>
+										<textarea name="clickToCallUserData" class="textarea-field" placeholder='additional properties to send if needed Ex: {skillName: "shoes", ...}'></textarea>
+									</label>
+									<label for="clickToCallFormJSON">
+										<span>Custom Form JSON </span>
+										<textarea name="clickToCallFormJSON" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="clickToCallAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="clickToCallAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {enableCountdown : true, ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<div class="field-box input-lazy-loading">
+								<input type="checkbox" class="input-field" name="enableLazyLoading" onchange="toggler.enableLazyLoading(this)">
+								Enable Lazy loading
+							</div>
+
+							<center>
+								<input type="submit" id="PureEngageLaunch" class="btn-primary" value="Launch" onclick="launchCXWidget('PureEngage')" />
+								<input type="button" id="PureEngageClear" class="btn-primary" value="Clear" onclick="clearForm()" />
+							</center>
+						</form>
+					</div>
+				</td>
+			</tr>
+			<tr  class="align-tr">
+				<td>
+					<div class="control-instrumentation form-style-3 center">
+						<div class="heading">
+							<center><h3 class="toggle" onclick="toggler.showScript('toggleConfig')">Need Configuration script?</h3></center>
+						</div>
+						<div class="toggleConfig">
+							<center><label>copy the below configuration script to replace in index.html </label></center>
+							<textarea disabled name="configData" class="textarea-field instrumentationTextarea"></textarea>
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="PureEngageCloud" class="tabcontent">
+		<table>
+			<tbody>
+			<tr class="align-tr">
+				<td>
+					<div class="form-style-3 center">
+
+						<div class="heading">
+							<center><h3>Enter below details to launch</h3></center>
+						</div>
+						<form id="PureEngageCloudForm" onsubmit="return false">
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableMainConfig"
+										onchange="toggler.enableMainConfig(this)" onclick="toggle('mainconfig-pure-engage-cloud');">
+									Main
+								</legend>
+							
+								<div id="mainconfig-pure-engage-cloud" class="label-list" style="display: none;">
+									<label for="debug">
+										<span>Debug</span>
+										<input type="checkbox" class="input-field" name="debug" checked />
+									</label>
+									<label for="theme"><br /><span>Theme </span><input type="text" class="input-field" placeholder="theme"
+											name="theme" value="dark"></label>
+									<label for="i18n"><span>i18n </span><input type="text" class="input-field" placeholder="path to i18n file" name="i18n"
+											value=""></label>
+									<label for="lang"><span>lang</span><input type="text" placeholder="lang" class="input-field" name="lang"
+											value="en"></label>
+									<label for="preload">
+										<span>Preload <br>(Note: Applicable only when lazy loading Widgets.)</span>		
+										<textarea name="preload" class="textarea-field"
+											placeholder='preload the plugins if needed Ex: ["sidebar","chatdeflection"]'></textarea>
+									</label>
+									<label for="mainAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="mainAdditionalConfig" class="textarea-field"
+											placeholder='additional config options to add if needed Ex: {position: "left", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableSidebar" onchange="toggler.enableSidebar(this, 'PureEngageCloudForm')" onclick="toggle('sidebar-pure-engage-cloud');">
+									Sidebar
+								</legend>
+								<div id="sidebar-pure-engage-cloud" class="label-list" style="display: none;">
+									<label for="sidebarPosition">
+										<span>Position</span></label>
+									<input type="text" class="input-field" name="sidebarPosition" placeholder="right / left [Default value is right]" disabled />
+									</label>
+
+									<label for="showOnStartup"><br/><span>Don't show on startup</span><input type="checkbox" class="input-field" name="showOnStartup"></label>
+									<label for="expandOnHover"><span>Don't expand on hover</span><input type="checkbox" class="input-field" name="expandOnHover"></label>
+
+									<label for="sidebarChannelConfig">
+										<br/>
+										<span class="desc">
+														Please provide channel configuration data
+														<span class="required">*</span>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showSidebarConfig('PureEngageCloudForm')">Edit/Use Full Channel Sample config</a>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showSidebarMinimumConfig('PureEngageCloudForm')">Edit/Use Min Channel Sample config</a>
+													</span>
+										<textarea name="sidebarChannelConfig" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="sidebarAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="sidebarAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {position: "left", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableLiveAssist" onchange="toggler.enableLiveAssist(this)" onclick="toggle('liveassist-pure-engage-cloud')">
+									Enable Live Assist (EWT) / Stats Config
+								</legend>
+								<div id="liveassist-pure-engage-cloud" class="label-list" style="display: none;">
+									<label for="statsURL"><span>stats URL </span><input type="url" class="input-field" name="statsURL" value="" disabled/></label>
+									<label for="statsAPIKey"><span>API Key </span><input type="text" class="input-field" name="statsAPIKey" value="" placeholder="Used for Apigee service only" disabled/></label>
+									<label for="statsAPIVersion"><span>API Version </span><input type="text" class="input-field" name="statsAPIVersion" value="" placeholder="EWT api version"/></label>
+									<label for="statsAPIMode"><span>API Mode </span><input type="text" class="input-field" name="statsAPIMode" value="" placeholder="EWT api mode, based on api version"/></label>
+									<label for="vqname_chat"><span>Chat VQ Name </span><input type="text" class="input-field" name="vqname_chat" value="" disabled/></label>
+									<label for="vqname_callus"><span>CallUs VQ Name </span><input type="text" class="input-field" name="vqname_callus" value="" disabled/></label>
+									<label for="vqname_callback"><span>CallBack VQ Name </span><input type="text" class="input-field" name="vqname_callback" value="" disabled/></label>
+									<label for="statsAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="statsAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {ewt:{apiVersion:"v2"}, ...}'></textarea>
+									</label>
+
+								</div>
+							</fieldset>
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableChat" onchange="toggler.enableChat(this)" onclick="toggle('webchat-pure-engage-cloud')">
+									Webchat [with Transport only *]
+								</legend>
+								<div id="webchat-pure-engage-cloud" class="label-list" style="display: none;">
+									<label for="WebchatURL"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="WebchatURL" required value="" disabled/></label>
+									<label for="WebchatTransportType"><span>Transport Type <span class="required">*</span></span><input type="text" class="input-field" name="WebchatTransportType" required value="pureengage-v3-rest" disabled/></label>
+									<label for="webchatAPIKey"><span>Transport X-API-Key <span class="required">*</span></span><input type="text" class="input-field" name="webchatAPIKey" value="" required disabled/></label>
+									<label for="webchatTransportEndPoint"><span>Transport End Point <span class="required">*</span></span><input type="text" class="input-field" name="webchatTransportEndPoint" required value="" disabled/></label>
+									<label for="webchatTransportStream">
+										<span>Transport Stream </span>
+										<select name="webchatTransportStream">
+											<option value=""></option>
+											<option value="dev">dev</option>
+											<option value="uat">uat</option>
+											<option value="qa">qa</option>
+										</select>
+									</label>
+									<label for="webchatAjaxTimeout"><span>Ajax Timeout (milliseconds)</span></span><input type="number" class="input-field" name="webchatAjaxTimeout" value=""/></label>
+									<label for="proactiveEnabled"><span>AutoInvite</span><input type="checkbox" class="input-field" name="proactiveEnabled"> Enable Chat Invite</label>
+									<label for="uploadsEnabled"><span>Uploads Enabled</span><input type="checkbox" class="input-field" name="uploadsEnabled" checked> Enable File Transfer</label>
+									<label for="webchatUserData">
+										<span>UserData </span>
+										<textarea name="webchatUserData" class="textarea-field" placeholder='additional properties to send if needed Ex: {skillName: "shoes", ...}'></textarea>
+									</label>
+									<label for="webchatAdditionalConfig">
+										<span>Additional Configuration Options <br>(will be merged into webchat configuration)</span>
+										<textarea name="webchatAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {emojis: false, ...}'></textarea>
+									</label>
+									<label for="asyncChatEnabled"><span>Async Chat</span><input type="checkbox" onchange="toggler.enableAsyncWebChat(this)" class="input-field" name="asyncChatEnabled"> Enable Async WebChat</label>
+									<div class="webchat-async-section remove">
+										<label style="float: right; margin: 0 20px" for="asyncWebChatDConfiguration">
+											<a href="javascript:void(0)" onclick="launcherForm.showAsyncWebChatConfiguration()">Use/Edit Async WebChat Sample config</a>
+										</label>
+										<textarea name="asyncWebChatDConfiguration" class="config-textarea" style="margin: 0;" placeholder="To use sample config, click on above link 'Use/Edit Async WebChat Sample config'. Note: This sample config uses browser's window.localstorage"></textarea>
+										<br/><br/>
+										<a href="javascript:void(0)" onclick="launcherForm.deleteSessionData()">Click here to delete the session data stored in the window.localstorage (if sample config is used)</a>
+										<br/><br/>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableCobrowse" onchange="toggler.enableCobrowse(this)" onclick="toggle('cobrowse-pure-engage-cloud');">
+									Co-browse
+								</legend>
+								<div id="cobrowse-pure-engage-cloud" class='label-list' style="display: none;">
+									<label for="cobrowseWebSockets"><span>WebSockets</span><input type="checkbox" class="input-field" name="cobrowseWebSockets" disabled>disable</label>
+									<label for="cobrowseApikey"><span>API Key</span><input type="text" class="input-field" name="cobrowseApikey" value="" placeholder="Used for Apigee service only" disabled/></label>
+									<label for="cobrowseSrc"><span>Src <span class="required">*</span></span><input type="url" class="input-field" name="cobrowseSrc" required value="" disabled/></label>
+									<label for="cobrowseUrl"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="cobrowseUrl" required value="" disabled/></label>
+									<label for="cobrowseAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="cobrowseAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apikey: "hgjjcjxncjjh734736bxjn", ...}'></textarea>
+									</label>
+								</div>
+
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="callUsFieldSet" onchange="toggler.enableCallUs(this)" onclick="toggle('callus-pure-engage-cloud');">
+									Call Us
+								</legend>
+								<div id="callus-pure-engage-cloud" class="label-list" style="display: none;">
+									<label for="callUsConfig">
+													<span class="desc">
+														Please provide the entire configuration data
+														<span class="required">*</span>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showCallUsConfig()">Edit/Use Sample config</a>
+													</span>
+										<textarea name="callUsConfig" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="callusAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="callusAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {hours:["11am - 5pm Sun"], ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableCallback" onchange="toggler.enableCallback(this)" onclick="toggle('callback-pure-engage-cloud');">
+									Callback
+								</legend>
+								<div id="callback-pure-engage-cloud" class="label-list" style="display: none;">
+									<label for="callbackURL">
+										<span>URL <span class="required">*</span></span>
+										<input type="url" class="input-field" name="callbackURL" value="" required disabled/>
+									</label>
+									<label for="callbackAPIVersion">
+										<span>API Version </span>
+										<input type="text" class="input-field" name="callbackAPIVersion" value="" onkeyup="checkV3Conditions()" placeholder="Accepted values: v1, v3"/>
+									</label>
+									<label for="callbackAPIKey">
+										<span>API Key </span>
+										<input type="text" class="input-field" name="callbackAPIKey" value="" placeholder="Used for Apigee service only"/>
+									</label>
+									<label for="callbackImmediateDisable">
+										<span>Disable Immediate Callback</span>
+										<input type="checkbox" class="input-field" name="callbackImmediateDisable" disabled/>
+									</label>
+									<label for="callbackScheduleDisable">
+										<span>Disable Callback Schedule</span>
+										<input type="checkbox" class="input-field" name="callbackScheduleDisable" disabled/>
+									</label>
+									<label for="callbackServiceName">
+										<span>Service name </span>
+										<input type="text" class="input-field" name="callbackServiceName" value="" placeholder="Needs API Version 'v3'" disabled/>
+									</label>
+									<label for="callbackDirection">
+										<span>Call Direction</span>
+										<input type="text" class="input-field" name="callbackDirection" value="" placeholder="USERTERMINATED"/>
+									</label>
+									<label for="callbackEWT">
+										<span>Don't Display EWT </span>
+										<input type="checkbox" class="input-field" name="callbackEWT" disabled/>  (EWT is displayed by default).
+									</label>
+									<label for="callbackQueueName">
+										<span>EWT Queue Name</span>
+										<input type="text" class="input-field" name="callbackQueueName" value="" disabled placeholder="If EWT is enabled"/>
+									</label>
+									<label for="callbackThresholdEWT">
+										<span>EWT Threshold </span>
+										<input type="number" class="input-field" name="callbackThresholdEWT" value="" disabled placeholder="Default is 30 seconds"/>
+									</label>
+									<label for="callbackEWTRefreshInterval">
+										<span>EWT Refresh Interval </span>
+										<input type="number" class="input-field" name="callbackEWTRefreshInterval" value="" disabled placeholder="Default is 10 seconds"/>
+									</label>
+									<label for="callbackImmediateEWTMinThreshold" style="">
+										<span>Immediate Callback EWT Minimum Threshold </span>
+										<input type="number" class="input-field" name="callbackImmediateEWTMinThreshold" value="" disabled/>
+									</label>
+									<label for="callbackImmediateEWTMaxThreshold">
+										<span>Immediate Callback EWT Maximum Threshold </span>
+										<input type="number" class="input-field" name="callbackImmediateEWTMaxThreshold" value="" disabled/>
+									</label>
+									<label for="callbackFormJSON">
+										<span>Custom Form JSON </span>
+										<textarea name="callbackFormJSON" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="callbackAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="callbackAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apiVersion: "v1", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<div class="field-box input-lazy-loading">
+								<input type="checkbox" class="input-field" name="enableLazyLoading" onchange="toggler.enableLazyLoading(this)">
+								Enable Lazy loading
+							</div>
+
+							<center>
+								<input type="submit" id="PECloudLaunch" class="btn-primary" value="Launch" onclick="launchCXWidget('PureEngageCloud')" />
+								<input type="button" id="PECloudClear" class="btn-primary" value="Clear" onclick="clearForm()" />
+							</center>
+						</form>
+					</div>
+				</td>
+			</tr>
+			<tr  class="align-tr">
+				<td>
+					<div class="control-instrumentation form-style-3 center">
+						<div class="heading">
+							<center><h3 class="toggle" onclick="toggler.showScript('toggleConfig')">Need Configuration script?</h3></center>
+						</div>
+						<div class="toggleConfig">
+							<center><label>copy the below configuration script to replace in index.html </label></center>
+							<textarea disabled name="configData" class="textarea-field instrumentationTextarea"></textarea>
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<div id="PureCloud" class="tabcontent">
+		<table>
+			<tbody>
+			<tr class="align-tr">
+				<td>
+					<div class="form-style-3 center">
+
+						<div class="heading">
+							<center><h3>Enter below details to launch</h3></center>
+						</div>
+						<form id="PureCloudForm" onsubmit="return false">
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableMainConfig"
+										onchange="toggler.enableMainConfig(this)" onclick="toggle('mainconfig-pure-cloud');">
+									Main
+								</legend>
+							
+								<div id="mainconfig-pure-cloud" class="label-list" style="display: none;">
+									<label for="debug">
+										<span>Debug</span>
+										<input type="checkbox" class="input-field" name="debug" checked />
+									</label>
+									<label for="theme"><br /><span>Theme </span><input type="text" class="input-field" placeholder="theme"
+											name="theme" value="dark"></label>
+									<label for="i18n"><span>i18n </span><input type="text" class="input-field" placeholder="path to i18n file" name="i18n"
+											value=""></label>
+									<label for="lang"><span>lang</span><input type="text" placeholder="lang" class="input-field" name="lang"
+											value="en"></label>
+									<label for="preload">
+										<span>Preload <br>(Note: Applicable only when lazy loading Widgets.)</span>		
+										<textarea name="preload" class="textarea-field"
+											placeholder='preload the plugins if needed Ex: ["sidebar","chatdeflection"]'></textarea>
+									</label>
+									<label for="mainAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="mainAdditionalConfig" class="textarea-field"
+											placeholder='additional config options to add if needed Ex: {position: "left", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableSidebar" onchange="toggler.enableSidebar(this, 'PureCloudForm')" onclick="toggle('sidebar-pure-cloud');">
+									Sidebar
+								</legend>
+								<div id="sidebar-pure-cloud" class="label-list" style="display: none;">
+									<label for="sidebarPosition">
+										<span>Position</span></label>
+									<input type="text" class="input-field" name="sidebarPosition" placeholder="right / left [Default value is right]" disabled />
+									</label>
+
+									<label for="showOnStartup"><br/><span>Don't show on startup</span><input type="checkbox" class="input-field" name="showOnStartup"></label>
+									<label for="expandOnHover"><span>Don't expand on hover</span><input type="checkbox" class="input-field" name="expandOnHover"></label>
+
+									<label for="sidebarChannelConfig">
+										<br/>
+										<span class="desc">
+														Please provide channel configuration data
+														<span class="required">*</span>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showSidebarConfig('PureCloudForm')">Edit/Use Full Channel Sample config</a>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showSidebarMinimumConfig('PureCloudForm')">Edit/Use Min Channel Sample config</a>
+													</span>
+										<textarea name="sidebarChannelConfig" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="sidebarAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="sidebarAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {position: "left", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableChat" onchange="toggler.enableChat(this)" onclick="toggle('webchat-pure-cloud')">
+									Webchat [with Transport only *]
+								</legend>
+								<div id="webchat-pure-cloud" class="label-list" style="display: none;">
+									<label for="WebchatURL"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="WebchatURL" required value="" disabled/></label>
+									<label for="WebchatTransportType"><span>Transport Type <span class="required">*</span></span><input type="text" class="input-field" name="WebchatTransportType" required value="purecloud-v2-sockets" disabled/></label>
+									<label for="webchatAPIKey"><span>Deployment Key <span class="required">*</span></span><input type="text" class="input-field" name="webchatAPIKey" value="" required disabled/></label>
+									<label for="webchatTransportOrgGuid"><span>Org GUID <span class="required">*</span></span><input type="text" class="input-field" name="webchatTransportOrgGuid" required value="" disabled/></label>
+									<label for="webchatTransportQueueName"><span>Queue Name <span class="required">*</span></span><input type="text" class="input-field" name="webchatTransportQueueName" required value="" disabled/></label>
+									<label for="webchatAjaxTimeout"><span>Ajax Timeout (milliseconds)</span></span><input type="number" class="input-field" name="webchatAjaxTimeout" value=""/></label>
+									<label for="proactiveEnabled"><span>AutoInvite</span><input type="checkbox" class="input-field" name="proactiveEnabled"> Enable Chat Invite</label>
+									<label for="uploadsEnabled"><span>Uploads Enabled</span><input type="checkbox" class="input-field" name="uploadsEnabled"> Enable File Transfer</label>
+									<label for="webchatUserData">
+										<span>UserData </span>
+										<textarea name="webchatUserData" class="textarea-field" placeholder='additional properties to send if needed Ex: {skillName: "shoes", ...}'></textarea>
+									</label>
+									<label for="webchatAdditionalConfig">
+										<span>Additional Configuration Options <br>(will be merged into webchat configuration) </span>
+										<textarea name="webchatAdditionalConfig" class="textarea-field" placeholder='{transport: { interactionData: { routing: { language: "en-us", ... } } } }'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box remove">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableCobrowse" onchange="toggler.enableCobrowse(this)" onclick="toggle('cobrowse-pure-cloud');">
+									Co-browse
+								</legend>
+								<div id="cobrowse-pure-cloud" class='label-list' style="display: none;">
+									<label for="cobrowseWebSockets"><span>WebSockets</span><input type="checkbox" class="input-field" name="cobrowseWebSockets" disabled>disable</label>
+									<label for="cobrowseApikey"><span>API Key</span><input type="text" class="input-field" name="cobrowseApikey" value="" placeholder="Used for Apigee service only" disabled/></label>
+									<label for="cobrowseSrc"><span>Src <span class="required">*</span></span><input type="url" class="input-field" name="cobrowseSrc" required value="" disabled/></label>
+									<label for="cobrowseUrl"><span>URL <span class="required">*</span></span><input type="url" class="input-field" name="cobrowseUrl" required value="" disabled/></label>
+									<label for="cobrowseAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="cobrowseAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apikey: "hgjjcjxncjjh734736bxjn", ...}'></textarea>
+									</label>
+								</div>
+
+							</fieldset>
+
+							<fieldset class="field-box">
+								<legend>
+									<input type="checkbox" class="input-field" name="callUsFieldSet" onchange="toggler.enableCallUs(this)" onclick="toggle('callus-pure-cloud');">
+									Call Us
+								</legend>
+								<div id="callus-pure-cloud" class="label-list" style="display: none;">
+									<label for="callUsConfig">
+													<span class="desc">
+														Please provide the entire configuration data
+														<span class="required">*</span>
+														<a href="javascript:void(0)" class="align-right" onclick="launcherForm.showCallUsConfig()">Edit/Use Sample config</a>
+													</span>
+										<textarea name="callUsConfig" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="callusAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="callusAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {hours:["11am - 5pm Sun"], ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<fieldset class="field-box remove">
+								<legend>
+									<input type="checkbox" class="input-field" name="enableCallback" onchange="toggler.enableCallback(this)" onclick="toggle('callback-pure-cloud');">
+									Callback
+								</legend>
+								<div id="callback-pure-cloud" class="label-list" style="display: none;">
+									<label for="callbackURL">
+										<span>URL <span class="required">*</span></span>
+										<input type="url" class="input-field" name="callbackURL" value="" required disabled/>
+									</label>
+									<label for="callbackAPIVersion">
+										<span>API Version </span>
+										<input type="text" class="input-field" name="callbackAPIVersion" value="" onkeyup="checkV3Conditions()" placeholder="Accepted values: v1, v3"/>
+									</label>
+									<label for="callbackAPIKey">
+										<span>API Key </span>
+										<input type="text" class="input-field" name="callbackAPIKey" value="" placeholder="Used for Apigee service only"/>
+									</label>
+									<label for="callbackImmediateDisable">
+										<span>Disable Immediate Callback</span>
+										<input type="checkbox" class="input-field" name="callbackImmediateDisable" disabled/>
+									</label>
+									<label for="callbackScheduleDisable">
+										<span>Disable Callback Schedule</span>
+										<input type="checkbox" class="input-field" name="callbackScheduleDisable" disabled/>
+									</label>
+									<label for="callbackServiceName">
+										<span>Service name </span>
+										<input type="text" class="input-field" name="callbackServiceName" value="" placeholder="Needs API Version 'v3'" disabled/>
+									</label>
+									<label for="callbackDirection">
+										<span>Call Direction</span>
+										<input type="text" class="input-field" name="callbackDirection" value="" placeholder="USERTERMINATED"/>
+									</label>
+									<label for="callbackEWT">
+										<span>Don't Display EWT </span>
+										<input type="checkbox" class="input-field" name="callbackEWT" disabled/>  (EWT is displayed by default).
+									</label>
+									<label for="callbackQueueName">
+										<span>EWT Queue Name</span>
+										<input type="text" class="input-field" name="callbackQueueName" value="" disabled placeholder="If EWT is enabled"/>
+									</label>
+									<label for="callbackThresholdEWT">
+										<span>EWT Threshold </span>
+										<input type="number" class="input-field" name="callbackThresholdEWT" value="" disabled placeholder="Default is 30 seconds"/>
+									</label>
+									<label for="callbackEWTRefreshInterval">
+										<span>EWT Refresh Interval </span>
+										<input type="number" class="input-field" name="callbackEWTRefreshInterval" value="" disabled placeholder="Default is 10 seconds"/>
+									</label>
+									<label for="callbackImmediateEWTMinThreshold" style="">
+										<span>Immediate Callback EWT Minimum Threshold </span>
+										<input type="number" class="input-field" name="callbackImmediateEWTMinThreshold" value="" disabled/>
+									</label>
+									<label for="callbackImmediateEWTMaxThreshold">
+										<span>Immediate Callback EWT Maximum Threshold </span>
+										<input type="number" class="input-field" name="callbackImmediateEWTMaxThreshold" value="" disabled/>
+									</label>
+									<label for="callbackFormJSON">
+										<span>Custom Form JSON </span>
+										<textarea name="callbackFormJSON" class="config-textarea" disabled></textarea>
+									</label>
+									<label for="callbackAdditionalConfig">
+										<span>Additional Configuration Options </span>
+										<textarea name="callbackAdditionalConfig" class="textarea-field" placeholder='additional config options to add if needed Ex: {apiVersion: "v1", ...}'></textarea>
+									</label>
+								</div>
+							</fieldset>
+
+							<div class="field-box input-lazy-loading">
+								<input type="checkbox" class="input-field" name="enableLazyLoading" onchange="toggler.enableLazyLoading(this)">
+								Enable Lazy loading
+							</div>
+
+							<center>
+								<input type="submit" id="PureCloudLaunch" class="btn-primary" value="Launch" onclick="launchCXWidget('PureCloud')" />
+								<input type="button" id="PureCloudClear" class="btn-primary" value="Clear" onclick="clearForm()" />
+							</center>
+						</form>
+					</div>
+				</td>
+			</tr>
+			<tr  class="align-tr">
+				<td>
+					<div class="control-instrumentation form-style-3 center">
+						<div class="heading">
+							<center><h3 class="toggle" onclick="toggler.showScript('toggleConfig')">Need Configuration script?</h3></center>
+						</div>
+						<div class="toggleConfig">
+							<center><label>copy the below configuration script to replace in index.html </label></center>
+							<textarea disabled name="configData" class="textarea-field instrumentationTextarea"></textarea>
+						</div>
+					</div>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</center>
+</body>
+
+<footer></footer>
+</html>

@@ -1,0 +1,81 @@
+#notifications {
+  .content {
+    .section-heading {
+      margin: 20px 0 10px 30px;
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .item-location {
+      .name {
+        text-align: left;
+        color: #424242;
+        font-weight: 700;
+        font-size: 13px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .item-notification {
+      .profile-block-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        float: left;
+      }
+      .details {
+        cursor: default;
+        margin-left: 50px;
+        line-height: 1.4;
+        font-size: 12px;
+
+        .username {
+          color: #757575;
+          font-weight: 700;
+          font-size: 13px;
+        }
+        .type {
+          color: #9e9e9e;
+          font-weight: 600;
+        }
+        .title {
+          font-weight: 600;
+          display: block;
+          margin-top: 4px;
+          color: #424242;
+          cursor: pointer;
+          text-decoration: none;
+
+          @include transition(color 0.3s);
+          &:hover {
+            color: #212121;
+          }
+        }
+
+        footer {
+          margin-top: 4px;
+          font-size: 11px;
+          font-weight: 600;
+
+          .date {
+            color: #9e9e9e;
+          }
+          .action {
+            cursor: pointer;
+            color: #424242;
+          }
+        }
+      }
+    }
+    .empty {
+      padding: 15px 30px;
+      text-align: left;
+      font-size: 14px;
+      color: #9e9e9e;
+    }
+  }
+}

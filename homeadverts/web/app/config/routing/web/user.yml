@@ -1,0 +1,15 @@
+user_profile:
+  prefix: /
+  resource: "@AppBundle/Resources/config/routing/user/user_profile.yml"
+
+user_search:
+  prefix: /search
+  resource: "@AppBundle/Resources/config/routing/user/user_search.yml"
+
+user_settings:
+  prefix: /settings
+  resource: "@AppBundle/Resources/config/routing/user/user.yml"
+
+user_billing:
+  prefix: /billing
+  resource: "@AppBundle/Resources/config/routing/user/user_billing.yml"

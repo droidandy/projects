@@ -1,0 +1,30 @@
+services:
+    ha.article.article_es_mapping:
+        class: AppBundle\Elastic\Article\Mapping\ArticleMapping
+        factory: [@ha.es.mapping_factory, 'get']
+        arguments: [ 'article' ]
+        public: false
+
+    ha.article.service:
+        class: AppBundle\Service\Article\ArticleService
+        arguments:
+            - '@em'
+            - '@ha_article.property_importer'
+            - '@ha.article.page_importer'
+            - '@validator'
+            - '@ha.article.processor'
+            - '@ha.article.draft_processor'
+
+    ha_article.media:
+        class: AppBundle\Service\Article\ArticleMedia
+        arguments:
+            - @ha.file_storage
+            - @ha.image_helper
+            - @liip_imagine.cache.manager
+
+    ha_article.generator:
+        class: AppBundle\Service\Article\ArticleGenerator
+        arguments:
+            - @ha.article.service
+            - @property_repo
+            - @article_repo

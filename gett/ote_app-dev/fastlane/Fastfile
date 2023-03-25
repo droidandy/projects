@@ -1,0 +1,221 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+build_change_log = ""
+build_name = ""
+handled_error = "handled_error"
+
+private_lane :checks do
+  #ensure_git_status_clean
+  #ensure_git_branch(branch: "dev")
+  git_pull
+  sh("yarn")
+  cocoapods(podfile: "./ios")
+end
+
+lane :tests do
+  test_ios
+  test_android
+end
+
+lane :test_ios do
+  begin
+    sh("yarn run detox-build-ios")
+    sh("open -a Simulator")
+    sh("yarn run test:e2e:ios")
+  rescue => error
+    puts error.message.length
+    send_error_to_slack(message: "Error while testing ios build", error: error)
+  end
+end
+
+lane :test_android do
+  begin
+    sh("yarn run detox-build-android")
+    sh("yarn run test:e2e:android")
+  rescue => error
+    send_error_to_slack(message: "Error while testing android build", error: error)
+  end
+end
+
+private_lane :builds do |options|
+  begin
+    checks
+    #tests
+    build_ios(options)
+    build_android(options)
+    after_builds(options)
+  rescue => error
+    send_error_to_slack(message: "Common Error", error: error)
+  end
+end
+
+lane :dev_builds do
+  builds(type: 'dev')
+end
+
+lane :prod_builds do
+  builds(type: 'prod')
+end
+
+lane :stage_builds do
+  builds(type: 'stage')
+end
+
+lane :after_builds do |options|
+  get_build_name(options)
+  get_changelog
+  add_commit
+  generate_tag
+  push_to_git_remote
+  send_result_to_slack
+  upload_apk_to_slack
+end
+
+private_lane :get_build_name do |options|
+  name = get_info_plist_value(path: "./ios/oteApp/Info.plist", key: "CFBundleShortVersionString")
+  version = get_info_plist_value(path: "./ios/oteApp/Info.plist", key: "CFBundleVersion")
+  build_name = "v#{name}(#{version})#{options[:type] == 'dev' ? '' : '_' + options[:type]}"
+end
+
+private_lane :get_changelog do
+  full_log = changelog_from_git_commits(pretty: "- %s", merge_commit_filtering: "exclude_merges", quiet: true)
+  change_log = full_log.split("\n")
+  build_change_log = change_log.join("\n")
+end
+
+private_lane :add_commit do
+  git_add(path: ".")
+  git_commit(path: ".", message: "builds #{build_name}")
+end
+
+private_lane :generate_tag do
+  add_git_tag(tag: build_name, message: build_change_log)
+end
+
+private_lane :send_result_to_slack do
+ slack(
+   pretext: "@here\n*New builds are available for testing:*\n#{build_name}",
+   payload: { "Change Log" => build_change_log },
+   attachment_properties: { ts: Time.new.to_i },
+   link_names: true
+ )
+end
+
+private_lane :send_error_to_slack do |options|
+  unless options[:error].message.include?(handled_error)
+    UI.error "Sending error to slack"
+    slack(
+      pretext: "@here *#{options[:message]}}*",
+      message: options[:error].message[0, 1000],
+      attachment_properties: { "color": "danger", ts: Time.new.to_i },
+      default_payloads: [],
+      link_names: true
+    )
+    UI.user_error!(handled_error)
+  else
+    UI.user_error!(options[:error])
+  end
+end
+
+private_lane :before_build_android do
+  bump_android_version_code
+end
+
+private_lane :build_android do |options|
+  begin
+    before_build_android
+    gradle(task: "clean assemble#{options[:type].capitalize}Release", flags: "-q", project_dir: "./android")
+  rescue => error
+    send_error_to_slack(message: "Error while building android build", error: error)
+  end
+end
+
+lane :build_android_dev do
+  build_android(type: 'dev')
+end
+
+lane :build_android_prod do
+  build_android(type: 'prod')
+end
+
+lane :build_android_stage do
+  build_android(type: 'stage')
+end
+
+private_lane :bump_android_version_code do
+  gradle_path = '../android/app/build.gradle'
+  reg = /versionPatch = (\d+)/
+
+  gradle_file = File.read(gradle_path)
+  versionPatch = gradle_file[reg, 1].to_i
+
+  gradle_file[reg, 1] = (versionPatch + 1).to_s
+
+  f = File.new(gradle_path, 'w')
+  f.write(gradle_file)
+  f.close
+end
+
+private_lane :upload_apk_to_slack do
+  apk_search_path = File.join("../android", '**', 'build', 'outputs', 'apk', '*.apk')
+  file_path = File.expand_path(Dir[apk_search_path].first)
+  file_name = file_path.gsub(/\/.*\//, "")
+  UI.header "Uploading \"" + file_name + "\" to Slack"
+  res = sh("curl https://slack.com/api/files.upload -F token=\"" + ENV["SLACK_TOKEN"] + "\" -F channels=\"#fastlane_test\" -F title=\"" + file_name + "\" -F filename=\"" + file_name + "\" -F file=@\"" + file_path + "\"", log: false)
+  data = res.split("\n").last
+  json = JSON.parse(data)
+  send_error_to_slack(message: "Error while sending apk file", error: data) unless json['ok']
+end
+
+private_lane :before_build_ios do
+  clear_derived_data
+  increment_build_number(xcodeproj: "./ios/oteApp.xcodeproj")
+end
+
+private_lane :build_ios do |options|
+  begin
+    before_build_ios
+    gym(scheme: "oteApp_#{options[:type]}", workspace: "./ios/oteApp.xcworkspace", output_directory: "./ios/build", silent: true)
+  rescue => error
+    puts error
+    send_error_to_slack(message: "Error while building ios #{options[:type]} build", error: error)
+  end
+  upload_ios_build
+end
+
+private_lane :upload_ios_build do
+  begin
+    pilot(ipa: "./ios/build/oteApp.ipa", username: ENV["APPLE_ID_USERNAME"], itc_provider: ENV["ITC_PROVIDER"], skip_waiting_for_build_processing: true)
+  rescue => error
+    send_error_to_slack(message: "Error while sending ios build", error: error)
+  end
+end
+
+lane :build_ios_dev do
+  build_ios(type: 'dev')
+end
+
+lane :build_ios_prod do
+  build_ios(type: 'prod')
+end
+
+lane :build_ios_stage do
+  build_ios(type: 'stage')
+end
+
+lane :reset_ios_build_number do
+  increment_build_number(xcodeproj: "./ios/oteApp.xcodeproj", build_number: 1)
+end

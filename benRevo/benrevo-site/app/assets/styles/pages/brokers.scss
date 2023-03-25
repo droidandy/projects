@@ -1,0 +1,435 @@
+@import "../variables-theme";
+
+.app-brokers {
+  .ui.modal.visible.active {
+    border-radius: 0;
+  }
+
+  .ui.button {
+    background-color: #0099cc;
+    &:hover, &:active, &:focus {
+      background-color: #0088cc;
+      color: #ffffff;
+    }
+  }
+
+  & > .top {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(135deg, #fcfcfc 0, #fcfcfc 30%, rgba(0, 0, 0, 0) 30%),
+                linear-gradient(135deg, #f5f6f7  30%, rgba(241, 240, 240, 0.84) 42%, rgba(189, 190, 190, 0.6));
+    padding-top: 63px;
+    @media only screen and (max-width: 991px) {
+      padding-top: 0;
+      height: 800px;
+      background: linear-gradient(140deg, #fff 0, #fff 50%, rgba(0, 0, 0, 0) 50%),
+                  linear-gradient(140deg, #fbfcfd  50%, rgba(241, 240, 240, 0.84) 55%, rgba(189, 190, 190, 0.6));
+    }
+    @media only screen and (max-width: 767px) {
+      height: 100%;
+    }
+
+    .ui.grid {
+      padding-top: 90px;
+
+      .row {
+        padding: 0;
+
+        .ui.image {
+          max-width: 1340px;
+          height: 520px;
+          position: absolute;
+          right: -15rem;
+          @media only screen and (max-width: 1200px) {
+            height: 400px;
+          }
+          @media only screen and (max-width: 991px) {
+            position: relative;
+            right: 0;
+            margin: 0 auto;
+            width: 80%;
+            max-width: 750px;
+            height: auto;
+          }
+          @media only screen and (min-width: 1600px) {
+            right: 0;
+          }
+        }
+
+        .left-top {
+          height: 400px;
+          font-size: 3rem;
+          font-weight: bold;
+          line-height: 1.31;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+
+          @media only screen and (max-width: 991px) {
+            text-align: center;
+            height: 300px;
+          }
+
+          @media only screen and (max-width: 767px) {
+            font-size: 28px;
+          }
+
+          .broker-page-header {
+            color: #0099cc;
+          }
+
+          .broker-page-description {
+            color: #3a444d;
+          }
+
+          .ui.button {
+            line-height: 17px;
+            margin-top: 5%;
+            @media only screen and (max-width: 767px) {
+              height: 40px;
+              width: 200px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & > .software-row {
+    &.ui.grid {
+      & > .row.home-row {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 100px;
+        padding-top: 90px;
+
+        @media only screen and (max-width: 767px) {
+          padding-top: 12px;
+          &.gray {
+            padding-bottom: 70px;
+          }
+        }
+      }
+      .row {
+        .software-row-header {
+          width: 850px;
+          margin-bottom: 52px;
+          font-size: 24px;
+          line-height: 35px;
+          color: #3a444d;
+          @media only screen and (max-width: 1200px) {
+            width: 80%;
+          }
+          @media only screen and (max-width: 767px) {
+            font-size: 16px;
+            line-height: 20px;
+            margin: 2rem 0;
+            margin-bottom: 0;
+          }
+        }
+        .effeciency-two {
+          margin-top: 95px;
+        }
+
+        .one.wide.computer.sixteen.wide.tablet.column.efficiency-spacing {
+          margin: 0 18px;
+        }
+
+        .ui.image {
+          &.efficiency-image {
+            min-width: 530px;
+            box-shadow: 10px 10px 100px rgb(189, 190, 190);
+            @media only screen and (max-width: 991px) {
+              margin-top: 5%;
+            }
+            @media only screen and (max-width: 767px) {
+              min-width: 80%;
+            }
+            cursor: pointer;
+            &:hover {
+              border: 1px solid #22bdc2;
+            }
+          }
+        }
+
+        &.quote-row {
+          height: 450px;
+          background-image: url('../img/broker-user@2x.png');
+          background-size: 100%;
+          background-position: 0 25%;
+          padding: 0;
+          @media only screen and (max-width: 767px) {
+            display: none;
+          }
+          .blend-background {
+            position: absolute;
+            background-image: linear-gradient(#3a444d, #3a444d);
+            opacity: 0.48;
+            background-blend-mode: multiply;
+            width: 100%;
+            height: 100%;
+          }
+          .quote-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            p {
+              text-align: center;
+              margin: 0 auto;
+              color: #fff;
+              width: 818px;
+              @media only screen and (max-width: 850px) {
+                width: 500px;
+              }
+              &.quote-text {
+                font-size: 28px;
+                margin-bottom: 30px;
+                padding-top: 30px;
+                .quote {
+                  display: inline-block;
+                  width: 46px;
+                  font-family: ArialNarrow;
+                  font-size: 80px;
+                  text-align: center;
+                  color: #4dcacf;
+                  line-height: 0;
+                }
+                .right-quote {
+                  transform: rotate(-180deg);
+                }
+                .left-quote {
+                  position: relative;
+                  top: 30px;
+                }
+              }
+            }
+          }
+        }
+
+        &.simplify-row {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 461px;
+          padding-top: 44px;
+          .left-simplify {
+            height: 380px;
+            @media only screen and (max-width: 991px) {
+              display: block;
+              height: 100%;
+              margin: 0 auto 4rem auto;
+              width: 80%;
+            }
+          }
+          .card-image {
+            width: 542px;
+            display: block;
+            min-width: 452px;
+            overflow: hidden;
+            z-index: 2;
+            @media only screen and (max-width: 490px) {
+              min-width: 300px;
+            }
+          }
+          @media only screen and (max-width: 991px) {
+            display: block;
+            height: 100%;
+          }
+        }
+
+        &.slideshow-row {
+          height: 100%;
+          min-height: 600px;
+          &.background1 {
+            background: linear-gradient(135deg, #0099cc 0, #0099cc 30%, rgba(0, 0, 0, 0) 30%),
+                        linear-gradient(135deg, #b2dcea 30%, #3dacd1 50%, #0099cc 79%, #0099cc);
+            @media only screen and (max-width: 991px) {
+              background: linear-gradient(135deg, #0099cc 0, #0099cc 50%, rgba(0, 0, 0, 0) 50%),
+                          linear-gradient(135deg, #b2dcea 50%, #3dacd1 80%, #0099cc 90%, #0099cc);
+            }
+          }
+          &.background2 {
+            background: linear-gradient(135deg, #3dbb81 0, #3dbb81 30%, rgba(0, 0, 0, 0) 30%),
+                        linear-gradient(135deg, #b1e4cd  30%, #64c99a 50%, #49bf89 79%, #3dbb81);
+            @media only screen and (max-width: 991px) {
+              background: linear-gradient(135deg, #3dbb81 0, #3dbb81 50%, rgba(0, 0, 0, 0) 50%),
+                          linear-gradient(135deg, #b1e4cd 50%, #64c99a 80%, #49bf89 90%, #3dbb81);
+            }
+          }
+          &.background3 {
+            background: linear-gradient(135deg, #21bdc3 0, #21bdc3 30%, rgba(0, 0, 0, 0) 30%),
+                        linear-gradient(135deg, #a6e5e7  30%, #21bdc3 50%, #21bdc3 79%, #21bdc3);
+            @media only screen and (max-width: 991px) {
+              background: linear-gradient(135deg, #21bdc3 0, #21bdc3 50%, rgba(0, 0, 0, 0) 50%),
+                          linear-gradient(135deg, #a6e5e7 50%, #21bdc3 80%, #21bdc3 90%, #21bdc3);
+            }
+          }
+          // background-image: url('../img/blue-slit-bg.svg');
+          background-size: 100%;
+          display: flex;
+          align-items: center;
+          .ipad-image {
+            width: 100%;
+          }
+          @media only screen and (max-width: 991px) {
+            display: block;
+          }
+          p {
+            color: #fff;
+            width: 360px;
+            text-align: left;
+            @media only screen and (max-width: 991px) {
+              width: 80%;
+              text-align: center;
+              margin: 20px auto;
+            }
+            &.header-text {
+              font-size: 22px;
+              font-weight: bold;
+            }
+          }
+
+          .slider {
+            position: absolute !important;
+            top: 11%;
+            left: 15%;
+            height: 100% !important;
+            @media only screen and (max-width: 490px) {
+              top: 12%;
+            }
+            .slider-frame {
+              cursor: auto;
+              height: 90% !important;
+              @media only screen and (max-width: 991px) {
+                height: 80% !important;
+              }
+            }
+            .slider-control-bottomcenter {
+              position: relative !important;
+              white-space: nowrap;
+              ul li button {
+                color: #fff !important;
+              }
+            }
+            .slideshow-img {
+              width: 100%;
+            }
+            .slider-slide {
+              @media only screen and (max-width: 991px) {
+                min-width: 10%;
+              }
+            }
+          }
+        }
+
+        &.solution-row {
+          height: 100%;
+
+          .broker-data-container {
+            margin: 0 auto;
+            padding-left: 0px;
+            width: 350px;
+            margin-top: 30px;
+          }
+
+          .solution-paragraph {
+            margin: 15px 0 60px 0;
+          }
+
+          .solution {
+            color: $SECOND_COLOR;
+            margin-top: 30px;
+            margin-left: 35px;
+
+            .solution-item {
+             // background: url(../img/brokers-arrow-right.svg) no-repeat center right;
+              background-position-y: 30px;
+              position: relative;
+
+              .solution-index {
+                width: 65px;
+                height: 65px;
+                border: 2px solid $SECOND_COLOR;
+                text-align: center;
+                line-height: 60px;
+                border-radius: 100px;
+                font-size: 30px;
+                background-color: #ffffff;
+                margin: 0 0 10px 35px;
+                position: relative;
+                z-index: 22;
+              }
+
+              span {
+                font-size: 14px;
+                max-width: 140px;
+                display: inline-block;
+                text-align: center;
+                background-color: #ffffff;
+              }
+
+              .ui.image.solution-arrow-right {
+                position: absolute;
+                top: 25%;
+                right: -35px;
+                z-index: -1;
+              }
+
+              .ui.image.solution-arrow-down {
+                display: none;
+              }
+
+              @media only screen and (max-width: 991px) {
+                & {
+                  text-align: center !important;
+                  .solution-index {
+                    margin: 0 auto 10px;
+                  }
+
+                  span {
+                    height: 70px;
+                  }
+
+                  .ui.image.solution-arrow-right {
+                    width: 100px;
+                    top: 20%;
+                    right: -15px;
+                  }
+                }
+              }
+
+              @media only screen and (max-width: 767px) {
+                .ui.image.solution-arrow-right {
+                  display: none;
+                }
+
+                .ui.image.solution-arrow-down {
+                  display: block;
+                  position: absolute;
+                  bottom: 0;
+                  right: 50%;
+                  margin-right: -5px;
+                  z-index: -1;
+                }
+
+                span {
+                  height: auto;
+                  &:not(:last-child) {
+                    padding-bottom: 5px;
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

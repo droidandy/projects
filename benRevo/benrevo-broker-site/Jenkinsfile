@@ -1,0 +1,228 @@
+#!groovy
+pipeline {
+  options {
+    disableConcurrentBuilds()
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+  }
+  agent {
+    node {
+      label 'buildfarm'
+    }
+  }
+  tools {
+    nodejs 'NodeJs'
+  }
+  environment {
+    DEV_TOKEN_SECRET = credentials('AWS_DEV_ACCESS_SECRET')
+    DEV_MIXPANEL_KEY = credentials('DEV_MIXPANEL_KEY')
+
+    PROD_MIXPANEL_KEY = credentials('PROD_MIXPANEL_KEY')
+    PROD_TOKEN_SECRET = credentials('PROD_AWS_ACCESS_SECRET')
+
+    AUTH0_CLIENT_ID = 'nnqJ63G1vUF1UtH3c51J2JiU0ARR1axk'
+    AUTH0_DOMAIN = 'login.benrevo.com'
+    AUTH0_DOMAIN_LOGIN = 'https://login.auth0.com/api/v2'
+
+    DEV_BENREVO_API_PATH = 'https://dev-api-app.benrevo.com'
+    STAGE_BENREVO_API_PATH = 'https://stage-api-app.benrevo.com'
+    PROD_BENREVO_API_PATH = 'https://api-app.benrevo.com'
+
+    DEV_TOKEN_ID = 'AKIAIEV2Q2CEUNPABDKA'
+    PROD_TOKEN_ID = 'AKIAJ6XKUDVFMYBEV2GQ'
+
+    COVERALLS_REPO_TOKEN = credentials('BROKER_APP_SITE_COVERALLS_REPO_TOKEN')
+    COVERALLS_SERVICE_NAME = 'Jenkins'
+
+    NPM_TOKEN = credentials('NPM_TOKEN')
+    NODE_OPTIONS = "--max-old-space-size=2048"
+  }
+  stages {
+    stage('Setup') {
+      steps {
+        ws("${BUILD_TAG}") {
+          wrap([$class: 'BuildUser']) {
+            slackSend message: "Starting build: ${env.JOB_NAME} ${env.BUILD_DISPLAY_NAME} caused by ${env.BUILD_USER_ID}."
+          }
+          checkout(
+            [
+              $class: 'GitSCM',
+              branches: [[name: '${BRANCH_NAME}']],
+              doGenerateSubmoduleConfigurations: false,
+              extensions: [],
+              submoduleCfg: [],
+              userRemoteConfigs: [[
+                credentialsId: '81e0269c-8b0b-4eeb-97f2-03da4cb75100',
+                url: 'https://github.com/BenRevo/benrevo-broker-site.git'
+              ]]
+            ]
+          )
+        sh '''
+npm install
+          '''
+        }
+      }
+    }
+    stage('Test') {
+      steps {
+        ws("${BUILD_TAG}") {
+          sh '''
+npm test
+          '''
+        }
+      }
+    }
+    stage('Build') {
+      steps {
+        ws("${BUILD_TAG}") {
+          sh '''
+#!/bin/bash -xe
+
+export AUTH0_CLIENT_ID=$AUTH0_CLIENT_ID
+export AUTH0_DOMAIN=$AUTH0_DOMAIN
+export AUTH0_DOMAIN_LOGIN=$AUTH0_DOMAIN_LOGIN
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export MIXPANEL_KEY=$DEV_MIXPANEL_KEY
+    export BENREVO_API_PATH=$DEV_BENREVO_API_PATH
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export MIXPANEL_KEY=$DEV_MIXPANEL_KEY
+    export BENREVO_API_PATH=$STAGE_BENREVO_API_PATH
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export MIXPANEL_KEY=$PROD_MIXPANEL_KEY
+    export BENREVO_API_PATH=$PROD_BENREVO_API_PATH
+fi
+
+export PATH=$PATH:$HOME/.local/bin
+npm run build
+          '''
+        }
+      }
+    }
+    stage('Dockerize') {
+      steps {
+        ws("${BUILD_TAG}") {
+          sh '''
+#!/bin/bash -xe
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export DOCKER_BUILD_NAME="dev-benrevo-broker-fe"
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-west-2.amazonaws.com/dev-benrevo-broker-fe:latest"
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_DEPLOY_NAME="dev-benrevo-broker-fe"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="dev"
+    export NPM_TOKEN=$NPM_TOKEN
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export DOCKER_BUILD_NAME="fe-broker-stage"
+    export DOCKER_TAG_NAME="434704177489.dkr.ecr.us-east-1.amazonaws.com/fe-broker-stage:latest"
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-broker-stage"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="stage"
+    export NPM_TOKEN=$NPM_TOKEN
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export DOCKER_BUILD_NAME="prod-benrevo-broker-fe"
+    export DOCKER_TAG_NAME="871243115801.dkr.ecr.us-west-2.amazonaws.com/prod-benrevo-broker-fe:latest"
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_DEPLOY_NAME="prod-benrevo-broker-fe"
+    export AWS_ACCESS_KEY_ID=$PROD_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$PROD_TOKEN_SECRET
+    export DEPLOY_FILE_PATH="prod"
+    export NPM_TOKEN=$NPM_TOKEN
+fi
+
+export PATH=$PATH:$HOME/.local/bin
+
+if [ "$(aws sts get-caller-identity | grep -c 'UserId')" -eq 1 ]
+then
+    echo "##### Successful authorization from AWS"
+fi
+
+mkdir -p ./.elasticbeanstalk/
+mkdir -p ./.ebextensions/
+
+cp ./internals/deploy/01_nginx.config ./.ebextensions/01_nginx.config
+cp ./internals/deploy/$DEPLOY_FILE_PATH/config.yml ./.elasticbeanstalk/config.yml
+cp ./internals/deploy/$DEPLOY_FILE_PATH/Dockerrun.aws.json ./Dockerrun.aws.json
+
+docker build -t $DOCKER_BUILD_NAME --build-arg NPM_TOKEN=$NPM_TOKEN .
+
+docker tag $DOCKER_BUILD_NAME:latest $DOCKER_TAG_NAME
+eval $(aws ecr get-login --no-include-email --region "${AWS_REGION_NAME}")
+docker push $DOCKER_TAG_NAME
+          '''
+        }
+      }
+    }
+    stage('Deploy') {
+      steps {
+        ws("${BUILD_TAG}") {
+          sh '''
+#!/bin/bash -xe
+
+if [ "${GIT_BRANCH}" = "develop" ]
+then
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_DEPLOY_NAME="dev-benrevo-broker-fe"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+fi
+
+if [ "${GIT_BRANCH}" = "stage" ]
+then
+    export AWS_REGION_NAME="us-east-1"
+    export AWS_DEPLOY_NAME="fe-broker-stage"
+    export AWS_ACCESS_KEY_ID=$DEV_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$DEV_TOKEN_SECRET
+fi
+
+if [ "${GIT_BRANCH}" = "master" ]
+then
+    export AWS_REGION_NAME="us-west-2"
+    export AWS_DEPLOY_NAME="prod-benrevo-broker-fe"
+    export AWS_ACCESS_KEY_ID=$PROD_TOKEN_ID
+    export AWS_SECRET_ACCESS_KEY=$PROD_TOKEN_SECRET
+fi
+
+if [ "$(aws sts get-caller-identity | grep -c 'UserId')" -eq 1 ]
+then
+    echo "##### Successful authorization from AWS"
+fi
+
+eb deploy $AWS_DEPLOY_NAME --label "$BUILD_TAG" --verbose --staged --timeout 30
+          '''
+        }
+      }
+    }
+  }
+  post {
+    failure {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "danger", message: "Build failed: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}. Build results: ${RUN_DISPLAY_URL}"
+        emailext body: '${JOB_NAME} ${BUILD_DISPLAY_NAME} - failed: Check console output at ${RUN_DISPLAY_URL} to view the results.', recipientProviders: [[$class: 'CulpritsRecipientProvider']], subject: 'Build failed: ${JOB_NAME} ${BUILD_DISPLAY_NAME}'
+      }
+    }
+    success {
+      wrap([$class: 'BuildUser']) {
+        slackSend color: "good", message: "Build success: ${JOB_NAME} ${BUILD_DISPLAY_NAME} caused by ${env.CHANGE_AUTHOR}. Build results: ${RUN_DISPLAY_URL}"
+        emailext body: '${JOB_NAME} ${BUILD_DISPLAY_NAME} - success: Check console output at ${RUN_DISPLAY_URL} to view the results.', recipientProviders: [[$class: 'CulpritsRecipientProvider']], subject: 'Build success: ${JOB_NAME} ${BUILD_DISPLAY_NAME}'
+      }
+    }
+  }
+}

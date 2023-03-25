@@ -1,0 +1,61 @@
+{
+  "masterPicture": "src/assets/images/favicon-ot.png",
+  "iconsPath": "/",
+  "design": {
+    "ios": {
+      "pictureAspect": "backgroundAndMargin",
+      "backgroundColor": "#004aab",
+      "margin": "4%",
+      "assets": {
+        "ios6AndPriorIcons": false,
+        "ios7AndLaterIcons": false,
+        "precomposedIcons": false,
+        "declareOnlyDefaultIcon": true
+      }
+    },
+    "desktopBrowser": {},
+    "windows": {
+      "pictureAspect": "noChange",
+      "backgroundColor": "#2b5797",
+      "onConflict": "override",
+      "assets": {
+        "windows80Ie10Tile": true,
+        "windows10Ie11EdgeTiles": {
+          "small": true,
+          "medium": true,
+          "big": false,
+          "rectangle": false
+        }
+      }
+    },
+    "androidChrome": {
+      "pictureAspect": "noChange",
+      "themeColor": "#ffffff",
+      "manifest": {
+        "name": "One Transport",
+        "display": "standalone",
+        "orientation": "notSet",
+        "onConflict": "override",
+        "declared": true
+      },
+      "assets": {
+        "legacyIcon": false,
+        "lowResolutionIcons": false
+      }
+    },
+    "safariPinnedTab": {
+      "pictureAspect": "blackAndWhite",
+      "threshold": 78.4375,
+      "themeColor": "#333333"
+    }
+  },
+  "settings": {
+    "compression": 2,
+    "scalingAlgorithm": "Mitchell",
+    "errorOnImageTooSmall": false
+  },
+  "versioning": {
+    "paramName": "v",
+    "paramValue": "PY4e"
+  }
+}

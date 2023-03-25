@@ -1,0 +1,41 @@
+ha_user_get_feed:
+    path: /{id}/feed
+    defaults:
+        _controller: AppBundle:Api\User\User:feed
+        p: 0
+    methods:  [GET]
+    
+ha_user_follow:
+    path: /{id}/follow
+    defaults: { _controller: AppBundle:Api\User\User:followUser }
+    methods:  [POST]
+
+ha_user_unfollow:
+    path: /{id}/follow
+    defaults: { _controller: AppBundle:Api\User\User:unFollowUser }
+    methods:  [DELETE]
+
+ha_user_login:
+    path: /login
+    defaults: { _controller: AppBundle:Api\User\User:login }
+    methods:  [POST]
+
+ha_user_me:
+    path: /me
+    defaults: { _controller: AppBundle:Api\User\User:me }
+    methods:  [GET]
+    
+ha_user_password_new:
+    path: /password-new
+    defaults: { _controller: AppBundle:Api\User\User:newPassword }
+    methods:  [POST]
+
+ha_user_post:
+    path: /
+    defaults: { _controller: AppBundle:Api\User\User:post }
+    methods:  [POST]
+
+ha_user_get:
+    path: /{id}
+    defaults: { _controller: AppBundle:Api\User\User:get }
+    methods:  [GET]

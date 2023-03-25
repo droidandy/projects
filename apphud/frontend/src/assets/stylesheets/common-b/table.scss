@@ -1,0 +1,309 @@
+.container-table {
+  padding-top: 30px;
+  tr th.container-table__clickable {
+    cursor: pointer;
+    svg {
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+    span {
+      vertical-align: middle;
+    }
+    &:hover {
+      color: $brand-blue;
+    }
+    &_active {
+      color: $brand-blue;
+      svg path {
+        fill: #0085ff;
+      }
+    }
+  }
+}
+
+.container-table_ps {
+  padding-bottom: 100px;
+}
+
+.container-table__column-info {
+  margin-top: 5px;
+}
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  background: #c850c0;
+  background: -webkit-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -o-linear-gradient(45deg, #4158d0, #c850c0);
+  background: -moz-linear-gradient(45deg, #4158d0, #c850c0);
+  background: linear-gradient(45deg, #4158d0, #c850c0);
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.wrap-table100 {
+  width: 1170px;
+}
+
+.container-table__column-item {
+  margin-top: 15px;
+  &:first-child {
+    margin-top: 0;
+  }
+  svg {
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+}
+
+.container-table__column-item__group-name {
+  font-size: 13px;
+}
+
+.table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  // border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+.table th {
+  padding-left: 8px;
+  vertical-align: middle;
+}
+.table td {
+  padding: 15px;
+  padding-left: 8px;
+}
+.table thead tr {
+  height: 40px;
+  background: $brand-light-blue;
+}
+.table tbody tr {
+  height: 40px;
+}
+.table tbody tr:last-child {
+  border: 0;
+}
+.table td,
+.table th {
+  text-align: left;
+}
+.table td.l,
+.table th.l {
+  text-align: right;
+}
+.table td.c,
+.table th.c {
+  text-align: center;
+}
+.table td.r,
+.table th.r {
+  text-align: center;
+}
+
+.table100-head th {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: $brand-black;
+}
+
+.table {
+  tbody tr {
+    // background-color: $brand-light-blue;
+    border-bottom: 1px solid $brand-light-blue;
+  }
+
+  tbody tr {
+    font-family: Ubuntu;
+    font-size: 15px;
+    color: $brand-black;
+    line-height: 1.2;
+    font-weight: unset;
+  }
+
+  tbody tr:hover {
+    background-color: $brand-light-blue;
+    cursor: pointer;
+  }
+}
+
+.c-c__b-c__box-content__table_props {
+  tbody tr:hover {
+    cursor: default;
+  }
+}
+
+.table_nopointer {
+  tbody tr:hover {
+    cursor: default;
+  }
+}
+
+.column1 {
+  width: 260px;
+  padding-left: 15px;
+}
+
+.column-value {
+  max-width: 237px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.column-value_100 {
+  max-width: 100%;
+}
+
+.column1 {
+  width: 260px;
+  padding-left: 15px;
+}
+
+.column2 {
+  width: 160px;
+}
+
+.column3 {
+  width: 245px;
+}
+
+.column4 {
+  width: 110px;
+}
+
+.column5 {
+  width: 7%;
+  padding-left: 15px;
+}
+
+.column5_center {
+  text-align: center !important;
+}
+
+.column5_th {
+  width: 120px;
+  padding-right: 15px;
+}
+
+.column6 {
+  width: 222px;
+  padding-right: 62px;
+}
+
+.column1_integrations {
+  width: 160px;
+  padding-left: 15px;
+}
+
+.column-long {
+  width: 260px;
+}
+
+.table_log {
+  td {
+    vertical-align: top;
+  }
+}
+
+.user-feed__item-log__modal {
+  max-height: 690px;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: 992px) {
+  .table {
+    display: block;
+  }
+  .table > *,
+  .table tr,
+  .table td,
+  .table th {
+    display: block;
+  }
+  .table thead {
+    display: none;
+  }
+  .table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  .table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 24px;
+  }
+  .table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  .table tbody tr td:before {
+    font-family: Ubuntu;
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  .table tbody tr td:nth-child(1):before {
+    content: "Date";
+  }
+  .table tbody tr td:nth-child(2):before {
+    content: "Order ID";
+  }
+  .table tbody tr td:nth-child(3):before {
+    content: "Name";
+  }
+  .table tbody tr td:nth-child(4):before {
+    content: "Price";
+  }
+  .table tbody tr td:nth-child(5):before {
+    content: "Quantity";
+  }
+  .table tbody tr td:nth-child(6):before {
+    content: "Total";
+    tbody tr {
+      font-size: 15px;
+    }
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+}

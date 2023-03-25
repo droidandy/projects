@@ -1,0 +1,12 @@
+{
+  "created_at": {
+    "type": "string",
+    "format": "date-time"
+  },
+  "comment": {
+    "type": "string"
+  },
+  "user_name": {
+    "type": "string"
+  }
+}

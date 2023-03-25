@@ -1,0 +1,268 @@
+services:
+    ha.import.comparison_strategy:
+        class: AppBundle\Import\Media\LHToSIRMigrationPhotoComparisonStrategy
+    
+    ha.import.http_client:
+        class: Guzzle\Http\Client
+    
+    ha.import.photo_downloader:
+        class: AppBundle\Import\Media\PhotoDownloader
+        arguments:
+            - @ha.import.http_client
+            - @filesystem
+            - @monolog.logger.import
+            - '%kernel.root_dir%'
+            - '@=parameter("kernel.environment") == "test"'
+    
+    
+    ha.import.photo_manager:
+        class: AppBundle\Import\Media\PhotoManager
+        arguments:
+            - @ha.import.photo_storage
+            - @ha.import.photo_downloader
+            - @ha.import.hasher
+            - %media_tmp%
+    
+    ha.import.avatar_manager:
+        class: AppBundle\Import\Media\AvatarManager
+        arguments:
+            - @ha.import.avatar_storage
+            - @ha.import.photo_downloader
+            - %media_tmp%
+    
+    ha.import.image_cleaner:
+        class: AppBundle\Import\Media\ImageCleaner
+        arguments:
+            - '@db'
+            - '@redis_client'
+    
+    ha.import.email_sorter:
+        class: AppBundle\Import\Email\EmailSorter
+    
+    ha.import.email_in_use_list:
+        class: AppBundle\Import\Email\MysqlEmailsInUseList
+        arguments:
+            - '@db'
+            - '@fos_user.util.email_canonicalizer'
+    
+    ha.import.redis_email_in_use_list:
+        class: AppBundle\Import\Email\RedisEmailsInUseList
+        arguments:
+            - '@snc_redis.default_client'
+            - '@user_repo'
+            - '@fos_user.util.email_canonicalizer'
+            - '@?ha.import.import_context'
+    
+    ha.import.company_generic_populator:
+        class: AppBundle\Import\User\Populator\Company\GenericPopulator
+    
+    ha.import.company_email_populator:
+        class: AppBundle\Import\User\Populator\Company\EmailPopulator
+        arguments:
+            - '@ha.import.email_in_use_list'
+            - '@ha.import.import_context'
+            - '@ha.lock'
+
+    ha.import.company_hierarchy_populator:
+        class: AppBundle\Import\User\Populator\Company\HierarchyPopulator
+        arguments:
+            - '@em'
+            - '@relation_repo'
+            - '@user_repo'
+            - '@ha.user.relation_manager'
+    
+    ha.import.office_generic_populator:
+        class: AppBundle\Import\User\Populator\Office\GenericPopulator
+    
+    ha.import.office_email_populator:
+        class: AppBundle\Import\User\Populator\Office\EmailPopulator
+        arguments:
+            - '@ha.import.email_in_use_list'
+            - '@ha.import.import_context'
+            - '@ha.lock'
+
+    ha.import.office_hierarchy_populator:
+        class: AppBundle\Import\User\Populator\Office\HierarchyPopulator
+        arguments:
+            - '@em'
+            - '@user_repo'
+            - '@ha.import.queue_adapter'
+            - '@ha.user.relation_manager'
+            - '@ha.import.import_context'
+    
+    ha.import.user_generic_populator:
+        class: AppBundle\Import\User\Populator\User\GenericPopulator
+
+    ha.import.user_email_populator:
+        class: AppBundle\Import\User\Populator\User\EmailPopulator
+        arguments:
+            - '@fos_user.util.email_canonicalizer'
+            - '@ha.import.email_sorter'
+            - '@ha.import.email_in_use_list'
+            - '@ha.import.import_context'
+            - '@ha.lock'
+
+    ha.import.user_hierarchy_populator:
+        class: AppBundle\Import\User\Populator\User\HierarchyPopulator
+        arguments:
+            - '@em'
+            - '@user_repo'
+            - '@ha.import.queue_adapter'
+            - '@ha.user.relation_manager'
+            - '@ha.import.import_context'
+
+    ha.import.user_photo_populator:
+        class: AppBundle\Import\User\Populator\PhotoPopulator
+        arguments:
+            - '@ha.import.avatar_manager'
+    
+    ha.import.user_address_populator:
+        class: AppBundle\Import\User\Populator\AddressPopulator
+        arguments:
+            - '@address_geocoder'
+            - '@ha.geo.location_unfolder'
+    
+    ha.import.user_initial_settings_populator:
+        class: AppBundle\Import\User\Populator\InitialSettingsPopulator
+        arguments:
+            - '@user_repo'
+    
+    ha.import.user_source_ref_populator:
+        class: AppBundle\Import\User\Populator\SourceRefPopulator
+    
+    ha.import.user_enquiry_populator:
+        class: AppBundle\Import\User\Populator\EnquiryPopulator
+        arguments:
+            - '@ha.import.import_context'
+    
+    ha.import.user_transformer:
+        class: AppBundle\Import\User\NormalizedToDBUserTransformer
+        arguments:
+            -   user:
+                    - '@ha.import.user_generic_populator'
+                    - '@ha.import.user_address_populator'
+                    - '@ha.import.user_email_populator'
+                    - '@ha.import.user_initial_settings_populator'
+                    - '@ha.import.user_source_ref_populator'
+                    - '@ha.import.user_photo_populator'
+                    - '@ha.import.user_enquiry_populator'
+                    - '@ha.import.user_hierarchy_populator'
+                company:
+                    - '@ha.import.company_generic_populator'
+                    - '@ha.import.company_email_populator'
+                    #                    - '@ha.import.user_address_populator'
+                    - '@ha.import.user_initial_settings_populator'
+                    - '@ha.import.user_source_ref_populator'
+                    - '@ha.import.company_hierarchy_populator'
+                office:
+                    - '@ha.import.office_generic_populator'
+                    - '@ha.import.office_email_populator'
+                    - '@ha.import.user_address_populator'
+                    - '@ha.import.user_initial_settings_populator'
+                    - '@ha.import.user_source_ref_populator'
+                    - '@ha.import.user_photo_populator'
+                    - '@ha.import.office_hierarchy_populator'
+    
+    ha.import.model_hasher:
+        class: AppBundle\Import\User\Hasher
+    
+    ha.import.user_up_to_date_checker:
+        class: AppBundle\Import\User\HashUpToDateChecker
+        arguments:
+            - '@user_repo'
+            - '@ha.import.model_hasher'
+    
+    ha.import.user_skip_strategy:
+        class: AppBundle\Import\User\SkipStrategy
+        arguments:
+            - '@ha.import.user_up_to_date_checker'
+            - '@ha.import.import_context'
+    
+    ha.import.import_user_tracker:
+        class: AppBundle\Import\User\Populator\ImportUserTracker
+        arguments:
+            - '@em'
+            - '@ha.import.import_context'
+            - '@ha.import.model_hasher'
+    
+    ha.import.user_fingerprint_strategy:
+        class: AppBundle\Import\User\FingerprintStrategy
+        arguments:
+            - '@user_repo'
+    
+    ha.import.user_entity_matcher:
+        class: AppBundle\Import\User\EntityMatcher
+        arguments:
+            - '@user_repo'
+            - '@ha.import.user_fingerprint_strategy'
+            - '@monolog.logger.import'
+    
+    ha.import.source_ref_id_user_map:
+        class: AppBundle\Import\User\RedisSourceRefIdMap
+        arguments:
+            - 'user'
+            - @snc_redis.default_client
+    
+    ha.import.event_dispatcher:
+        class: Symfony\Component\EventDispatcher\EventDispatcher
+        calls:
+            - [addSubscriber, ['@ha.import.execution_time_listener']]
+            - [addSubscriber, ['@ha.import.email_notificator_listener']]
+            - [addSubscriber, ['@app.import.ledger_subscriber']]
+    
+    ha.import.source_ref_user_registry:
+        class: AppBundle\Import\User\SourceRefUserRegistry
+        arguments:
+            - @em
+            - @user_repo
+            - @ha.import.source_ref_id_user_map
+    
+    
+    ha.import.import_job_tracker:
+        class: AppBundle\Import\Queue\ImportJobTracker
+        arguments:
+            - @ha.import.import_context
+            - @import_job_repo
+            - @em
+            - @ha.import.import_job_completeness_strategy
+            - @ha.import.event_dispatcher
+            - @ha.lock
+            - @monolog.logger.import
+    
+    ha.import.import_context:
+        synthetic: true
+    
+    ha.import.links_to_user_resolver:
+        class: AppBundle\Import\User\SimplifiedLinksToUserResolver
+        arguments:
+            - '@property_repo'
+            - '@user_repo'
+            - '@ha.user.relation_manager'
+            - '@ha.user.count_resolver'
+    
+    ha.import.import_context_factory:
+        class: AppBundle\Import\Queue\ImportContextFactory
+        arguments:
+            - '@import_job_repo'
+            - '@service_container'
+
+    ha.import.execution_time_tracker:
+        class: AppBundle\Import\Job\ExecutionTimeTracker
+        arguments:
+            - '@snc_redis.default_client'
+
+    ha.user.count_resolver:
+        class: AppBundle\Import\User\CountResolver
+        arguments:
+            - '@user_repo'
+            - '@property_repo'
+            - '@article_repo'
+            - '@ha.user.user_es_mapping'
+            - '@em'
+            - '@monolog.logger.import'
+
+    app.ledger_service:
+        class: AppBundle\Service\Import\LedgerService
+        arguments:
+            - '@em'
+            - '@ha.import.datasync_client'

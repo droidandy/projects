@@ -1,0 +1,144 @@
+@import "./variables";
+@import "./variables-theme";
+
+h1.ui.header.page-heading {
+  font-size: 28px;
+  color: #606060;
+  font-weight: 200;
+  margin: 20px 0 5px 0
+}
+
+h2.ui.header.sub-heading {
+  font-size: 16px;
+  color: $RFP_NAVIGATION_ITEM_COLOR;
+  font-weight: 200;
+  margin: 0 0 10px 0;
+}
+
+h1.ui.header.rfpPageHeading {
+  font-size: 28px;
+  color: $RFP_HEADING_COLOR;
+  font-weight: 200;
+  margin: 20px 0 5px 0;
+  text-transform: capitalize;
+}
+h2.ui.header.rfpPageSubHeading {
+  font-size: 16px;
+  color: $RFP_NAVIGATION_ITEM_COLOR;
+  font-weight: 200;
+  margin: 0 0 10px 0;
+}
+
+h3.ui.header.rfpPageSectionHeading {
+  @include sectionHeading($RFP_NAVIGATION_ITEM_COLOR, 600);
+  margin-bottom: 5px;
+}
+h3.ui.header.rfpPageTopSectionHeading {
+  @include sectionHeading($RFP_HEADING_COLOR, bold);
+  margin-bottom: 5px;
+}
+h3.ui.header.rfpPageSubSectionHeading {
+  @include sectionHeading($RFP_NAVIGATION_ITEM_COLOR, 200);
+  font-size: 11px;
+  font-style: italic;
+  margin-top: 0;
+  &.minHeight {
+    min-height: 28px;
+  }
+}
+h3.ui.header.rfpPageItemHeading {
+  @include sectionHeading($RFP_NAVIGATION_ITEM_COLOR, 200);
+  font-size: 11px;
+  font-style: italic;
+}
+h3.ui.header.rfpPageFormSetHeading, .rfpLabel {
+  font-size: 14px;
+  color: $RFP_HEADING_COLOR;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.rfpPageFormSetHeadingBlue {
+  color: $ELEM_ACTIVE_COLOR;
+}
+
+.rfpPageFormSetHeading.minHeightFix{
+  @media screen and (max-width: 945px) and (min-width: 768px) {
+    min-height: 36px !important;
+  }
+  @media screen and (min-width: 945px) {
+    min-height: 20px !important;
+  }
+}
+
+.rfpPageFormSetHeading.minHeightFix2{
+  @media screen and (max-width: 1200px) {
+    min-height: 36px !important;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 36px !important;
+  }
+}
+.clientName {
+  cursor: default !important;
+}
+
+.ui.modal.feedback-modal {
+  padding: 20px;
+  font-family: 'Open Sans';
+  color: #3a444e;
+
+  .close {
+    @include lineCloseButton();
+    font-size: 28px;
+    top: 10px;
+    right: 10px;
+  }
+  .content {
+    padding: 1rem, 0;
+  }
+  .buttons {
+    text-align: right;
+    .ui.button.primary {
+      width: 150px;
+    }
+
+    .cancel-button {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .additional-info {
+    font-size: 9px;
+    color: rgb(117, 117, 117);
+  }
+
+  .feedback-image {
+    background-image: url(../img/svg/feedback_icon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45px;
+    width: 45px;
+    margin: 0 auto;
+  }
+
+  .feedback-header {
+    font-weight: 600;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .feedback-section {
+    margin-top: 25px;
+  }
+}

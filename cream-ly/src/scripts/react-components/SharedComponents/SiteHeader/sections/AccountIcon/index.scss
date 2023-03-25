@@ -1,0 +1,28 @@
+@import "../../../../../../styles/tools/mixins.scss";
+
+.ComponentAccountIcon {
+  color: var(--purplish-grey);
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+
+  svg {
+    @include media-query($medium-down) {
+      height: 17px;
+    }
+  }
+
+  &.loggedIn {
+    svg {
+      path {
+        fill: var(--lavender);
+      }
+    }
+  }
+
+  &:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+}

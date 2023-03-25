@@ -1,0 +1,190 @@
+{
+  "project_info": {
+    "project_number": "660519547122",
+    "project_id": "expoinvest-mapp",
+    "storage_bucket": "expoinvest-mapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660519547122:android:8b84002cd57dd89f2d206b",
+        "android_client_info": {
+          "package_name": "expo.invest.mapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_kqsXs-xqjeEICVKZxrPj_IvLu082hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660519547122-e8orgpjodvlmc6nbb86b07led0fn48eb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "expo.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660519547122:android:a18a70a2f81753f82d206b",
+        "android_client_info": {
+          "package_name": "expo.invest.mapp.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_kqsXs-xqjeEICVKZxrPj_IvLu082hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660519547122-e8orgpjodvlmc6nbb86b07led0fn48eb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "expo.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660519547122:android:48cce92e88298b942d206b",
+        "android_client_info": {
+          "package_name": "expo.invest.mapp.preproduction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_kqsXs-xqjeEICVKZxrPj_IvLu082hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660519547122-e8orgpjodvlmc6nbb86b07led0fn48eb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "expo.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660519547122:android:2cd83021a6be02482d206b",
+        "android_client_info": {
+          "package_name": "expo.invest.mapp.preview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_kqsXs-xqjeEICVKZxrPj_IvLu082hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660519547122-e8orgpjodvlmc6nbb86b07led0fn48eb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "expo.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660519547122:android:b939eef54ab7d0fb2d206b",
+        "android_client_info": {
+          "package_name": "expo.invest.mapp.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW_kqsXs-xqjeEICVKZxrPj_IvLu082hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660519547122-ur56sbtof9spt3u7lbafvkbqld1hpn7j.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660519547122-e8orgpjodvlmc6nbb86b07led0fn48eb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "expo.invest.mapp.development"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

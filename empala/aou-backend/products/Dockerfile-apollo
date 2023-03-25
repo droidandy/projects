@@ -1,0 +1,22 @@
+FROM node:lts-alpine
+
+ENV NODE_ENV=production
+ENV NODE_PATH=../utils/node_modules
+ENV DB_HOST=postgres_local
+ENV DB_PORT=5432
+ENV DB_NAME=aou-local
+ENV DB_USER=postgres
+ENV DB_MAX_PING_ATTEMPTS=30
+
+# Copy source
+COPY ./core-be /core-be
+COPY ./utils /utils
+
+# Working directory
+WORKDIR /core-be
+
+# Install dependencies, build and cleanup
+RUN apk --update add --no-cache postgresql-client && cd /utils && npm ci --unsafe-perm && cd /core-be && npm ci --unsafe-perm && npm run build && npm prune
+
+# Start server
+CMD /utils/wait-for-postgresql.sh $DB_HOST $DB_PORT $DB_NAME $DB_USER $DB_MAX_PING_ATTEMPTS && npm start

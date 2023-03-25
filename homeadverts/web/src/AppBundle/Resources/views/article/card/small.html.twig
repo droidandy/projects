@@ -1,0 +1,32 @@
+<article class="story-card teaser" data-id="{{ article.id }}">
+    {% include 'AppBundle:article/actions:admin.html.twig' %}
+
+    <a href="{{ path('ha_article_details', {token: article.token, slug: article.slug}) }}">
+        <div class="cover-image cover"
+             style="background-image: url({{ article|article_image('article_small') }})">
+            <span class="fullscreen">
+                <i class="material-icons">photo_library</i>
+            </span>
+        </div>
+        <div class="preloader-collection">
+            <div class="spinner"></div>
+        </div>
+    </a>
+    <header>
+        <a href="{{ path('ha_article_details', {token: article.token, slug: article.slug}) }}"
+           class="heading">
+            {{ article.title|raw }}
+        </a>
+        <p class="short-details">
+            {{ article.intro() }}
+        </p>
+
+        <div class="user-info --footer">
+            {% include 'AppBundle:user/profile:info.html.twig' with {user: article.author} %}
+        </div>
+    </header>
+    <div class="item-navigation">
+        {% include 'AppBundle:article/actions:navigation.html.twig' %}
+    </div>
+    {% include 'AppBundle:article/carousel:modal.html.twig' %}
+</article>

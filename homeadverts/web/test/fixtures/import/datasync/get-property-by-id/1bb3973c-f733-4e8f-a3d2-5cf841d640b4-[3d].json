@@ -1,0 +1,849 @@
+{
+  "listingSummary": {
+    "listingId": "1bb3973c-f733-4e8f-a3d2-5cf841d640b4",
+    "isActive": true,
+    "isPending": false,
+    "listingType": "ForSale",
+    "listedOn": "2018-03-16",
+    "photoCount": 36,
+    "videoCount": 1,
+    "listPrice": {
+      "currencyCode": "USD",
+      "amount": 3275000.0,
+      "isPriceUponRequest": false,
+      "isHideListPrice": false
+    },
+    "propertyAddress": {
+      "streetAddress": "4 Lighthouse Watch",
+      "city": "York",
+      "district": "York County",
+      "stateProvince": "Maine",
+      "stateProvinceCode": "ME",
+      "postalCode": "03909",
+      "country": "United States",
+      "countryCode": "US",
+      "latitude": 43.16973,
+      "longitude": -70.59474,
+      "geoCodeConfidenceLevel": "High",
+      "formattedAddress": "4 Lighthouse Watch, York, ME 03909"
+    },
+    "mlsNumbers": [
+      "1341696"
+    ],
+    "RFGListingId": "YV3E6Y",
+    "isNewConstruction": false,
+    "listingURL": "https://www.sothebysrealty.com/id/yv3e6y",
+    "isCallToShow": false,
+    "isForAuction": false,
+    "isByAppointmentOnly": false,
+    "propertyCategory": "Residential",
+    "propertyType": "Single Family Detached",
+    "propertyStyle": "Other Style",
+    "propertyName": "Grand Oceanfront Home at Lighthouse Watch",
+    "totalBath": 8,
+    "lotSize": "0.43 AC",
+    "buildingArea": "7211 Sq. Ft.",
+    "noOfBedrooms": 5,
+    "squareFootage": 7211.0,
+    "defaultPhotoURL": "//openapi.azureedge.net/F86DF5E3-EE78-4782-B2BC-E7AB4ED4AF0F",
+    "isForeClosure": false,
+    "isShortSale": false,
+    "lastUpdateOn": "2018-06-11T13:55:21.410",
+    "agents": [
+      {
+        "id": "301b3656-f700-4f04-bd8a-83a16ae3b507",
+        "name": "Anne Erwin Sotheby's International Realty ",
+        "firstName": "Anne Erwin",
+        "lastName": "Sotheby's International Realty",
+        "defaultPhotoURL": "//openapi.azureedge.net/D00DEC9E-BCB4-4404-BC45-8147CF8D705B",
+        "emailAddress": "realestate@anneerwin.com",
+        "businessPhone": "+1 2073636640",
+        "isPrimary": true,
+        "office": {
+          "officeId": "9d67bd50-5bae-4187-b151-8079d62ac4f7",
+          "RFGOfficeId": "0001",
+          "companyId": "e5854733-030c-47b2-b13a-1a5a9767d69a",
+          "companyName": "Anne Erwin",
+          "RFGCompanyId": "800008",
+          "brandCode": "SIR",
+          "name": "Anne Erwin Sotheby's International Realty",
+          "type": "Main office",
+          "officeAddress": {
+            "streetAddress": "31 Long Sands Road",
+            "city": "York",
+            "district": "York",
+            "stateProvince": "Maine",
+            "stateProvinceCode": "ME",
+            "postalCode": "03909",
+            "country": "United States",
+            "countryCode": "US",
+            "latitude": 43.144612,
+            "longitude": -70.648929,
+            "formattedAddress": "31 Long Sands Rd, York, ME 03909"
+          },
+          "phoneNumber": "2073636640",
+          "emailAddress": "RealEstate@AnneErwin.com"
+        }
+      }
+    ],
+    "isShowAddressOnInternet": true
+  },
+  "fullBath": 5,
+  "halfBath": 3,
+  "levels": 2,
+  "yearBuilt": "2003",
+  "totalRooms": 12,
+  "zoning": "Res-5",
+  "providerKey": "1bb3973c-f733-4e8f-a3d2-5cf841d640b4",
+  "propertyFeatures": [
+    {
+      "groupName": "Appliances",
+      "description": "Refrigerator"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Tile"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Wood Siding"
+    },
+    {
+      "groupName": "Other",
+      "description": "Association Fee"
+    },
+    {
+      "groupName": "General",
+      "description": "Security System"
+    },
+    {
+      "groupName": "Location",
+      "description": "Ocean Front"
+    },
+    {
+      "groupName": "Views",
+      "description": "Water"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Level"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Dishwasher"
+    },
+    {
+      "groupName": "Exterior",
+      "description": "Underground Lawn Sprinkler"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Walk-in Closet"
+    },
+    {
+      "groupName": "Roof",
+      "description": "Fiberglass"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Gas"
+    },
+    {
+      "groupName": "Appliances",
+      "description": "Range / Oven"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Fireplace in Master BR"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Pool"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Breakfast Bar"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Views",
+      "description": "Ocean"
+    },
+    {
+      "groupName": "Location",
+      "description": "Ocean / Beach"
+    },
+    {
+      "groupName": "Lot Description",
+      "description": "Open"
+    },
+    {
+      "groupName": "Exterior Description",
+      "description": "Wood Frame"
+    },
+    {
+      "groupName": "Fireplace Description",
+      "description": "Wood Burning"
+    },
+    {
+      "groupName": "Flooring",
+      "description": "Mixed"
+    },
+    {
+      "groupName": "Area Amenities",
+      "description": "Area Boat Dock"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Eat-in Kitchen"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Other"
+    },
+    {
+      "groupName": "Special Market",
+      "description": "Vacation / Second Home"
+    },
+    {
+      "groupName": "Rooms",
+      "description": "Library"
+    },
+    {
+      "groupName": "Cooling",
+      "description": "Central A/C"
+    },
+    {
+      "groupName": "Interior",
+      "description": "Cathedral Ceilings"
+    },
+    {
+      "groupName": "Heating - Fuel Type",
+      "description": "Oil"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Porch"
+    },
+    {
+      "groupName": "Body of Water",
+      "description": "Ocean"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Multi-Zone Heat"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "QC Approved Listing"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Deck"
+    },
+    {
+      "groupName": "Garage Description",
+      "description": "Attached Garage"
+    },
+    {
+      "groupName": "Heating Type",
+      "description": "Radiant Floor"
+    },
+    {
+      "groupName": "Kitchen Features",
+      "description": "Center Island"
+    },
+    {
+      "groupName": "Road Type",
+      "description": "Private Road"
+    },
+    {
+      "groupName": "Location",
+      "description": "Waterfront"
+    },
+    {
+      "groupName": "Exterior Living Space",
+      "description": "Patio"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "Video QC Approved Listing"
+    },
+    {
+      "groupName": "Special Program",
+      "description": "eGallery Listing"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Outdoor Activities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Ocean / Beach"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Aquatic Activities"
+    },
+    {
+      "groupName": "Lifestyles",
+      "description": "Waterfront"
+    }
+  ],
+  "remarks": [
+    {
+      "type": "Property Description",
+      "languageCode": "en",
+      "remark": "No other home demands dramatic sunrises and ocean views quite like Lighthouse Watch. Perched at the edge of the sea, in a community of other exclusive homes, this custom designed home reflects the brilliance of the deep ocean in every finely tuned detail. Rich Honduras mahogany lines the floors, and oversized crown molding contours the 10-foot-tall ceilings, setting the stage for the reflections of the waves to dance upon your walls from the ocean views in every room. Luxury washes over each visitor from the second they enter through the double mahogany doors and step in the grand foyer. With 3-levels of living space, you will find everything you want and more. A state of the art kitchen is perfect for any home chef, with a marble island, high-end appliances and a separate breakfast nook. The master is just one of four en-suites, and features an office, and dressing areas, a walk-in closet, and a fireplace to warm up by after a romantic evening of watching the sunset on your own private deck. The garden level is home to an oversized laundry room, with additional space to finish and make completely your own. Already unrivaled, the only thing this home is without are the new memories and experiences created by you and your loved ones.",
+      "htmlRemark": "<p>No other home demands dramatic sunrises and ocean views quite like Lighthouse Watch. Perched at the edge of the sea, in a community of other exclusive homes, this custom designed home reflects the brilliance of the deep ocean in every finely tuned detail.&nbsp; Rich Honduras mahogany lines the floors, and oversized crown molding contours the 10-foot-tall ceilings, setting the stage for the reflections of the waves to dance upon your walls from the ocean views in every room. Luxury washes over each visitor from the second they enter through the double mahogany doors and step in the grand foyer.&nbsp; With 3-levels of living space, you will find everything you want and more. A state of the art kitchen is perfect for any home chef, with a marble island, high-end appliances and a separate breakfast nook. The master is just one of four en-suites, and features an office, and dressing areas, a walk-in closet, and a fireplace to warm up by after a romantic evening of watching the sunset on your own private deck. The garden level is home to an oversized laundry room, with additional space to finish and make completely your own. Already unrivaled, the only thing this home is without are the new memories and experiences created by you and your loved ones.<br></p>"
+    }
+  ],
+  "webSites": [
+    {
+      "type": "Landing Page URL",
+      "name": "Landing Page URL",
+      "url": "https://www.sothebysrealty.com/id/yv3e6y",
+      "contentLanguageCode": "en"
+    }
+  ],
+  "media": [
+    {
+      "mediaID": "471FDDEF-6F1F-4C83-86B1-05895EAD48FA",
+      "sequenceNumber": 6,
+      "url": "//openapi.azureedge.net/471FDDEF-6F1F-4C83-86B1-05895EAD48FA",
+      "isDefault": false,
+      "caption": "04-aerial",
+      "shortDescription": "Constructed in 2003 this custom designed home features approx. 4,812 sq. ft. of above ground living space, with an additional 2,399 sq. ft. of finely finished living space below grade level.",
+      "htmlDescription": "<p>Constructed in 2003 this custom designed home features approx. 4,812 sq. ft. of above ground living space, with an additional 2,399 sq. ft. of finely finished living space below grade level.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "88D90332-D041-418A-9DA0-0AD4AF0ADDF9",
+      "sequenceNumber": 17,
+      "url": "//openapi.azureedge.net/88D90332-D041-418A-9DA0-0AD4AF0ADDF9",
+      "isDefault": false,
+      "caption": "16-kitchen",
+      "shortDescription": "High end appliances",
+      "htmlDescription": "<p>High end appliances</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "2A6FED90-823C-418C-BCFD-121FD0979286",
+      "sequenceNumber": 22,
+      "url": "//openapi.azureedge.net/2A6FED90-823C-418C-BCFD-121FD0979286",
+      "isDefault": false,
+      "caption": "21-suitebath",
+      "shortDescription": "Bold ocean views from the private first floor bedroom suite",
+      "htmlDescription": "<p>Bold ocean views from the private first floor bedroom suite</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "A90323FE-8CED-4BEC-827D-130C030E6743",
+      "sequenceNumber": 32,
+      "url": "//openapi.azureedge.net/A90323FE-8CED-4BEC-827D-130C030E6743",
+      "isDefault": false,
+      "caption": "31-bunkroom",
+      "shortDescription": "Bunk room on the garden level",
+      "htmlDescription": "<p>Bunk room on the garden level</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "B9CAB72C-DCCA-4247-BC7D-1A2C9CFF3BF3",
+      "sequenceNumber": 5,
+      "url": "//openapi.azureedge.net/B9CAB72C-DCCA-4247-BC7D-1A2C9CFF3BF3",
+      "isDefault": false,
+      "caption": "03-neighborhood",
+      "shortDescription": "A community of only seven homes offering low maintenance grounds",
+      "htmlDescription": "<p>A community of only seven homes offering low maintenance grounds<br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "D618B821-BA6E-4F17-963B-1BFC9C2CA124",
+      "sequenceNumber": 27,
+      "url": "//openapi.azureedge.net/D618B821-BA6E-4F17-963B-1BFC9C2CA124",
+      "isDefault": false,
+      "caption": "26-guestbdrm",
+      "shortDescription": "Bedroom",
+      "htmlDescription": "<p>Bedroom</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "462D05E5-91C1-4628-BE96-20AA392E5F28",
+      "sequenceNumber": 15,
+      "url": "//openapi.azureedge.net/462D05E5-91C1-4628-BE96-20AA392E5F28",
+      "isDefault": false,
+      "caption": "14-coveredporch",
+      "shortDescription": "A slider leads from the kitchen to the covered porch",
+      "htmlDescription": "<p>A slider leads from the kitchen to the covered porch<br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "BC659A41-D8D8-4405-962E-23D299C20AE1",
+      "sequenceNumber": 20,
+      "url": "//openapi.azureedge.net/BC659A41-D8D8-4405-962E-23D299C20AE1",
+      "isDefault": false,
+      "caption": "19-library",
+      "shortDescription": "Mahogany built-in bookcases, 20' high ceilings, Rumford fireplace with granite surround and custom iron fireplace screen",
+      "htmlDescription": "<p>Mahogany built-in bookcases, 20' high ceilings, Rumford fireplace with granite surround and custom iron fireplace screen<br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "F2B02D7A-1D44-4DE6-8A33-2505047087E9",
+      "sequenceNumber": 29,
+      "url": "//openapi.azureedge.net/F2B02D7A-1D44-4DE6-8A33-2505047087E9",
+      "isDefault": false,
+      "caption": "28-guestbath",
+      "shortDescription": "One of the five full baths, all en-suite. Here a private porch, perfect for drying off post shower.",
+      "htmlDescription": "<p>One of the five full baths, all en-suite. Here a private porch, perfect for drying off post shower.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "B5856557-426F-4058-85F0-296248A285BB",
+      "sequenceNumber": 33,
+      "url": "//openapi.azureedge.net/B5856557-426F-4058-85F0-296248A285BB",
+      "isDefault": false,
+      "caption": "32-view",
+      "shortDescription": "Cape Neddick offers dramatic rocky coastline, ideal for exploring the tide pools.",
+      "htmlDescription": "<p>Cape Neddick offers dramatic rocky coastline, ideal for exploring the tide pools.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "91A89277-9070-46D1-B5B9-2A538C547B10",
+      "sequenceNumber": 18,
+      "url": "//openapi.azureedge.net/91A89277-9070-46D1-B5B9-2A538C547B10",
+      "isDefault": false,
+      "caption": "17-kitchendetail",
+      "shortDescription": "Kitchen island finish detail",
+      "htmlDescription": "<p>Kitchen island finish detail</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "681F15A6-8F43-455D-B873-2C3F02833FC7",
+      "sequenceNumber": 7,
+      "url": "//openapi.azureedge.net/681F15A6-8F43-455D-B873-2C3F02833FC7",
+      "isDefault": false,
+      "caption": "06-rear",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "4FE69ADF-A0F9-48EA-837E-2E75B3C59A9B",
+      "sequenceNumber": 3,
+      "url": "//openapi.azureedge.net/4FE69ADF-A0F9-48EA-837E-2E75B3C59A9B",
+      "isDefault": false,
+      "caption": "01-exterior",
+      "shortDescription": "LHW offers on of the most spectacular vistas on the Maine Coast",
+      "htmlDescription": "<p>LHW offers on of the most spectacular vistas on the Maine Coast</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "6CB41DF5-BAAB-4FA8-854A-34C1D30E0E04",
+      "sequenceNumber": 9,
+      "url": "//openapi.azureedge.net/6CB41DF5-BAAB-4FA8-854A-34C1D30E0E04",
+      "isDefault": false,
+      "caption": "08-foyer",
+      "shortDescription": "Double mahogany doors",
+      "htmlDescription": "<p>Double mahogany doors</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "3F522F3E-075D-41AF-A8E6-35056DA11760",
+      "sequenceNumber": 19,
+      "url": "//openapi.azureedge.net/3F522F3E-075D-41AF-A8E6-35056DA11760",
+      "isDefault": false,
+      "caption": "18-hallway",
+      "shortDescription": "Custom stairway",
+      "htmlDescription": "<p>Custom stairway</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "60D8FFAD-F472-4F98-9400-3B5936EABAB5",
+      "sequenceNumber": 28,
+      "url": "//openapi.azureedge.net/60D8FFAD-F472-4F98-9400-3B5936EABAB5",
+      "isDefault": false,
+      "caption": "27-guestsuite",
+      "shortDescription": "Guest suite with built-in storage and drawers.",
+      "htmlDescription": "<p>Guest suite with built-in storage and drawers.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "2CCC85A3-8476-49D2-A0CD-3D9CBE5DF920",
+      "sequenceNumber": 14,
+      "url": "//openapi.azureedge.net/2CCC85A3-8476-49D2-A0CD-3D9CBE5DF920",
+      "isDefault": false,
+      "caption": "13-kitchen",
+      "shortDescription": "Impeccably designed with a Carrera marble-topped center island.",
+      "htmlDescription": "<p>Impeccably designed with a Carrera marble-topped center island.<br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "FA55379C-94DE-4C55-8FB9-4F494349B47B",
+      "sequenceNumber": 13,
+      "url": "//openapi.azureedge.net/FA55379C-94DE-4C55-8FB9-4F494349B47B",
+      "isDefault": false,
+      "caption": "12-dining",
+      "shortDescription": "Mahogany flooring and a bay window",
+      "htmlDescription": "<p>Mahogany flooring and a bay window</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "9E984082-A2C3-40C5-A3D7-52E28B791903",
+      "sequenceNumber": 30,
+      "url": "//openapi.azureedge.net/9E984082-A2C3-40C5-A3D7-52E28B791903",
+      "isDefault": false,
+      "caption": "29-guestsuitelower",
+      "shortDescription": "The garden level bedroom suite",
+      "htmlDescription": "<p>The garden level bedroom suite</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "2A306B90-0F9B-4E05-B6CF-6131C655D492",
+      "sequenceNumber": 11,
+      "url": "//openapi.azureedge.net/2A306B90-0F9B-4E05-B6CF-6131C655D492",
+      "isDefault": false,
+      "caption": "10-living",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "13C290A3-2232-499D-A584-6A75A8CBD799",
+      "sequenceNumber": 16,
+      "url": "//openapi.azureedge.net/13C290A3-2232-499D-A584-6A75A8CBD799",
+      "isDefault": false,
+      "caption": "15-kitchen",
+      "shortDescription": "Informal breakfast area, along with a lunch bar at the kitchen island.",
+      "htmlDescription": "<p>Informal breakfast area, along with a lunch bar at the kitchen island.</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "679FB918-F4BA-4287-8891-7131DDAD61F9",
+      "sequenceNumber": 4,
+      "url": "//openapi.azureedge.net/679FB918-F4BA-4287-8891-7131DDAD61F9",
+      "isDefault": false,
+      "caption": "02-front",
+      "shortDescription": "Perched at the ocean's edge with breathtaking sunrises",
+      "htmlDescription": "<p>Perched at the ocean's edge with breathtaking sunrises</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "2390F133-0275-4074-A893-76EA3D1FC515",
+      "sequenceNumber": 21,
+      "url": "//openapi.azureedge.net/2390F133-0275-4074-A893-76EA3D1FC515",
+      "isDefault": false,
+      "caption": "20-firstfloorbedrm",
+      "shortDescription": "Gas fireplace with custom mantel. Not pictured is a French door leading to a private porch.",
+      "htmlDescription": "<p>Gas fireplace with custom mantel. Not pictured is a French door leading to a private porch.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "00652ECC-3966-4FE3-BAE5-783A78008AA1",
+      "sequenceNumber": 1,
+      "url": "https://my.matterport.com/show/?m=aUBC92zK5oY",
+      "isDefault": true,
+      "format": "3D Video",
+      "category": "3D Video",
+      "lastUpdateOn": "2017-05-08T20:16:53.863"
+    },
+    {
+      "mediaID": "3CCEE6DC-58F4-434F-B7A6-7D14D2814D9A",
+      "sequenceNumber": 10,
+      "url": "//openapi.azureedge.net/3CCEE6DC-58F4-434F-B7A6-7D14D2814D9A",
+      "isDefault": false,
+      "caption": "9-living",
+      "shortDescription": "A triple sliding door separates you from a covered porch. Rumford fireplace with granite surround.",
+      "htmlDescription": "<p>A triple sliding door separates you from a covered porch. Rumford fireplace with granite surround.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "9F6F7AC2-C8BA-43CF-99B3-8410D1B718E3",
+      "sequenceNumber": 25,
+      "url": "//openapi.azureedge.net/9F6F7AC2-C8BA-43CF-99B3-8410D1B718E3",
+      "isDefault": false,
+      "caption": "24-masterdeck",
+      "shortDescription": "Porch off of the master bedroom",
+      "htmlDescription": "<p>Porch off of the master bedroom</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "6E6349CC-685F-4380-814C-8F4DD40C39AC",
+      "sequenceNumber": 23,
+      "url": "//openapi.azureedge.net/6E6349CC-685F-4380-814C-8F4DD40C39AC",
+      "isDefault": false,
+      "caption": "22-secondfloorlanding",
+      "shortDescription": "Second floor lounging area",
+      "htmlDescription": "<p>Second floor lounging area</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "5E7DF116-A384-43E7-91AC-9D1C4AA4162F",
+      "sequenceNumber": 26,
+      "url": "//openapi.azureedge.net/5E7DF116-A384-43E7-91AC-9D1C4AA4162F",
+      "isDefault": false,
+      "caption": "25-masteroffice",
+      "shortDescription": "This study is adjacent to the master bedroom, each having a gas fireplace and custom finish detail throughout.",
+      "htmlDescription": "<p>This study is adjacent to the master bedroom, each having a gas fireplace and custom finish detail throughout.</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "4BB0D752-7853-4223-B914-9D50DF6BE87D",
+      "sequenceNumber": 24,
+      "url": "//openapi.azureedge.net/4BB0D752-7853-4223-B914-9D50DF6BE87D",
+      "isDefault": false,
+      "caption": "23-master",
+      "shortDescription": "The master suite enjoys a private sunning deck and a gas fireplace",
+      "htmlDescription": "<p>The master suite enjoys a private sunning deck and a gas fireplace</p><div><br></div>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "A5642685-459E-4FFE-B377-A352B4ED4CB2",
+      "sequenceNumber": 34,
+      "url": "//openapi.azureedge.net/A5642685-459E-4FFE-B377-A352B4ED4CB2",
+      "isDefault": false,
+      "caption": "33-lowerlevel",
+      "shortDescription": "The garden level offers triple sliders to the outside lawn area",
+      "htmlDescription": "The garden level offers triple sliders to the outside lawn area",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "7D2ECA42-3FAF-4B11-9D69-A7773991A931",
+      "sequenceNumber": 2,
+      "url": "//openapi.azureedge.net/7D2ECA42-3FAF-4B11-9D69-A7773991A931",
+      "isDefault": false,
+      "caption": "01",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "28EB344C-EB89-4F88-B978-BD8D6D9FC8A9",
+      "sequenceNumber": 8,
+      "url": "//openapi.azureedge.net/28EB344C-EB89-4F88-B978-BD8D6D9FC8A9",
+      "isDefault": false,
+      "caption": "07-entry",
+      "shortDescription": "Custom wrought iron gates greet you to the private courtyard.",
+      "htmlDescription": "<p>Custom wrought iron gates greet you to the private courtyard.<br></p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "7178DD75-AD78-4B57-85FE-C0F35E78769B",
+      "sequenceNumber": 36,
+      "url": "//openapi.azureedge.net/7178DD75-AD78-4B57-85FE-C0F35E78769B",
+      "isDefault": false,
+      "caption": "35-LH",
+      "shortDescription": "The Nubble Lighthouse",
+      "htmlDescription": "<p>The Nubble Lighthouse</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "7BA524A1-8500-4E0F-9E6C-C845E6A16EB5",
+      "sequenceNumber": 12,
+      "url": "//openapi.azureedge.net/7BA524A1-8500-4E0F-9E6C-C845E6A16EB5",
+      "isDefault": false,
+      "caption": "11-porch",
+      "shortDescription": "Dramatic porches, six in total.",
+      "htmlDescription": "<p>Dramatic porches, six in total.</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "8A803940-C7C1-402F-B096-C9633467D380",
+      "sequenceNumber": 1,
+      "url": "https://players.brightcove.net/5699924528001/default_default/index.html?videoId=5786736130001",
+      "isDefault": true,
+      "format": "Video",
+      "category": "Property Video",
+      "lastUpdateOn": "2018-05-22T03:54:59.003"
+    },
+    {
+      "mediaID": "AA4D1068-7B3B-4D06-B990-D1D7B27A23E8",
+      "sequenceNumber": 35,
+      "url": "//openapi.azureedge.net/AA4D1068-7B3B-4D06-B990-D1D7B27A23E8",
+      "isDefault": false,
+      "caption": "34-LHW",
+      "shortDescription": "At the waters-edge",
+      "htmlDescription": "<p>At the waters-edge</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "92D391AF-D87C-4BE9-9721-D24C8FF3468D",
+      "sequenceNumber": 31,
+      "url": "//openapi.azureedge.net/92D391AF-D87C-4BE9-9721-D24C8FF3468D",
+      "isDefault": false,
+      "caption": "30-gameroom",
+      "shortDescription": "Garden level game room",
+      "htmlDescription": "<p>Garden level game room</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    },
+    {
+      "mediaID": "F2C5DC28-BAA9-4A53-96B9-E609688C8F91",
+      "sequenceNumber": 1,
+      "url": "http://anneerwin.com/listing/1341696",
+      "isDefault": true,
+      "format": "URL",
+      "category": "Local Listing Link",
+      "lastUpdateOn": "2018-03-16T18:40:51.390"
+    },
+    {
+      "mediaID": "F86DF5E3-EE78-4782-B2BC-E7AB4ED4AF0F",
+      "sequenceNumber": 1,
+      "url": "//openapi.azureedge.net/F86DF5E3-EE78-4782-B2BC-E7AB4ED4AF0F",
+      "isDefault": true,
+      "caption": "05-aerial",
+      "shortDescription": "Dramatic rocky coastline",
+      "htmlDescription": "<p>Dramatic rocky coastline</p>",
+      "format": "Image",
+      "category": "Listing Photo",
+      "height": 1200,
+      "width": 1800,
+      "lastUpdateOn": "2018-06-11T13:55:21.583"
+    }
+  ],
+  "mlsInformation": [
+    {
+      "number": "1341696",
+      "isPrimary": true
+    }
+  ]
+}

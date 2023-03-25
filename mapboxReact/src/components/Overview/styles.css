@@ -1,0 +1,49 @@
+.root {
+    display: block;
+    padding: 15px;
+    margin: * * 20px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    line-height: 1.4;
+    &_compact {
+        composes: root;
+    }
+}
+.sub_container_header {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+.list_column {
+    display: flex;
+    flex-direction: column;
+}
+.list_column_highcharts {
+    width: 200px;
+    height: 200px;
+}
+.returning_subscribers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.users_container_empty {
+    padding: 15px;
+    margin-bottom: 25px;
+
+}
+.inline_items{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 10px;
+}
+.row_items {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}

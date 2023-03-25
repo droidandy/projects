@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="203" height="453" viewBox="0 0 203 453">
+    <defs>
+        <path id="a" d="M1650 305h192a4 4 0 0 1 4 4v442a4 4 0 0 1-4 4h-192a4 4 0 0 1-4-4V309a4 4 0 0 1 4-4z"/>
+        <mask id="b" width="202" height="452" x="-1" y="-1">
+            <path fill="#fff" d="M1645 304h202v452h-202z"/>
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <use fill="none" fill-rule="evenodd" stroke="#AAAFB2" stroke-dasharray="1,2,3,10" stroke-linecap="square" stroke-width="2" mask="url(#b)" transform="translate(-1645 -304)" xlink:href="#a"/>
+</svg>

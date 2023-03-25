@@ -1,0 +1,18 @@
+@import "../../../../../../../styles/tools/mixins.scss";
+
+.AddCompany {
+
+    .button {
+        @include defaultText;
+        display: flex;
+        align-items: center;
+        //color: var(--rosemary);
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .plus {
+        font-size: 25px;
+        padding-right: 10px;
+    }
+}

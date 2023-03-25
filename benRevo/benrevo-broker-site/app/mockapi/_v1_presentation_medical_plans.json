@@ -1,0 +1,687 @@
+{
+  "optionName":"Option 1",
+  "plans":[
+    {
+      "name":"BLUE SHIELD HMO PLAN (Access + HMO)",
+      "type":"current",
+      "selected":false,
+      "carrier":"Blue Shield",
+      "census": [],
+      "benefits":[
+        {
+          "name":"Deductible-Individual",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },
+        {
+          "name":"OOPM-individual",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "OOPM"
+        },
+        {
+          "name":"PCP",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "OOPM"
+        },
+        {
+          "name":"Advanced Radiology",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Emergency Room",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "name":"Ambulance",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INPATIENT_HOSPITAL"
+        }
+      ],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"42200.0",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"0.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"320.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Spouse",
+          "value":"700.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Child",
+          "value":"1200.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Family",
+          "value":"2000.0",
+          "type":"PERCENT"
+        }
+      ],
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Family Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 1",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 2",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 3",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 4",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Mail Order",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        }
+      ],
+      "total":42200.0,
+      "percentDifference":0.0
+    },
+    {
+      "rfpQuoteNetworkPlanId":3,
+      "name":"T-Premier HMO 10/100%",
+      "type":"matchPlan",
+      "selected":false,
+      "carrier":"Anthem Blue Cross",
+      "census": [],
+      "benefits":[
+        {
+          "name":"Deductible-Individual",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },
+        {
+          "name":"OOPM-individual",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "OOPM"
+        },
+        {
+          "name":"PCP",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "OOPM"
+        },
+        {
+          "name":"Advanced Radiology",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Emergency Room",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "name":"Ambulance",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INPATIENT_HOSPITAL"
+        }
+      ],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"45157.797",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"7.0",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"100",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Spouse",
+          "value":"50",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Child",
+          "value":"70",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Family",
+          "value":"56",
+          "type":"PERCENT"
+        }
+      ],
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Family Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 1",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 2",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 3",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 4",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Mail Order",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        }
+      ],
+      "total":45157.797,
+      "percentDifference":7.0
+    },
+    {
+      "rfpQuoteNetworkPlanId":4,
+      "name":"T-Premier HMO 15/100%",
+      "type":"alternative",
+      "selected":false,
+      "carrier":"Anthem Blue Cross",
+      "census": [],
+      "benefits":[
+        {
+          "name":"Advanced Radiology",
+          "valueIn":"1",
+          "valueOut":"2",
+          "type":"DOLLAR",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Emergency Room",
+          "value":"2",
+          "type":"PERCENT",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "name":"Ambulance",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        }],
+      "cost":[
+        {"name":"Monthly cost",
+          "value":"45070.5",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"6.8",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"2773.6",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Spouse",
+          "value":"-67730.42",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Child",
+          "value":"-34197.94",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Family",
+          "value":"2149.52",
+          "type":"PERCENT"
+        }],
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Family Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 1",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 2",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 3",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 4",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Mail Order",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        }
+      ],
+      "total":45070.5,
+      "percentDifference":6.8
+    },
+    {
+      "rfpQuoteNetworkPlanId":5,
+      "name":"T-Clsc HMO 20/250A/125OP",
+      "type":"alternative",
+      "selected":true,
+      "carrier":"Anthem Blue Cross",
+      "benefits":[
+        {
+          "name":"Deductible-Individual",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },
+        {
+          "name":"OOPM-individual",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "OOPM"
+        },
+        {
+          "name":"PCP",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "OOPM"
+        },
+        {
+          "name":"Advanced Radiology",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Emergency Room",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "name":"Ambulance",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INPATIENT_HOSPITAL"
+        }
+      ],
+      "cost":[
+        {
+          "name":"Monthly cost",
+          "value":"44088.297",
+          "type":"DOLLAR"
+        },{
+          "name":"% change from current",
+          "value":"4.5",
+          "type":"PERCENT"
+        },{
+          "name":"Employee Rate",
+          "value":"",
+          "type":"STRING"
+        },{
+          "name":"Employee",
+          "value":"2713.12",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Spouse",
+          "value":"-66254.57",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Child",
+          "value":"-33452.66",
+          "type":"PERCENT"
+        },{
+          "name":"Employee + Family",
+          "value":"2102.68",
+          "type":"PERCENT"
+        }
+      ],
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Family Deductible",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 1",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 2",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 3",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 4",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Mail Order",
+          "valueIn":"b3 in",
+          "valueOut":"b3 out",
+          "typeIn":"STRING",
+          "typeOut":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        }
+      ],
+      "total":44088.297,
+      "percentDifference":4.5
+    }
+  ],
+  "rx":[
+    {
+      "name":"BLUE SHIELD HMO PLAN (Access + HMO) RX",
+      "type":"current",
+      "carrier":"Blue Shield",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"100",
+          "type":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Family Deductible",
+          "value":"101",
+          "type":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 1",
+          "value":"102",
+          "type":"DOLLAR",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 2",
+          "value":"103",
+          "type":"DOLLAR",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 3",
+          "value":"104",
+          "type":"DOLLAR",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"TIER 4",
+          "value":"105",
+          "type":"DOLLAR",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        },{
+          "name":"Mail Order",
+          "value":"106",
+          "type":"STRING",
+          "sysName": "INDIVIDUAL_DEDUCTIBLE"
+        }
+      ]
+    },{
+      "name":"T-Premier HMO 10/100% RX",
+      "type":"matchPlan",
+      "carrier":"Anthem Blue Cross",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"3",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"4",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"5",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"6",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"7",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"8",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"9",
+          "type":"STRING"
+        }
+      ]
+    },{
+      "name":"T-Premier HMO 15/100% RX",
+      "type":"alternative",
+      "carrier":"Anthem Blue Cross",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"4",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"5",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"6",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"7",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"8",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"9",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"10",
+          "type":"STRING"
+        }
+      ]
+    },{
+      "name":"T-Clsc HMO 20/250A/125OP RX",
+      "type":"alternative",
+      "carrier":"Anthem Blue Cross",
+      "rx":[
+        {
+          "name":"Ind. Deductible",
+          "value":"5",
+          "type":"STRING"
+        },{
+          "name":"Family Deductible",
+          "value":"6",
+          "type":"STRING"
+        },{
+          "name":"TIER 1",
+          "value":"7",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 2",
+          "value":"8",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 3",
+          "value":"9",
+          "type":"DOLLAR"
+        },{
+          "name":"TIER 4",
+          "value":"10",
+          "type":"DOLLAR"
+        },{
+          "name":"Mail Order",
+          "value":"11",
+          "type":"STRING"
+        }
+      ]
+    }
+  ]
+}

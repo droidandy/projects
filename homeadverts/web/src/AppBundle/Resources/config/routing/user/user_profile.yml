@@ -1,0 +1,178 @@
+ha_user_agents:
+    path: /{id}/{slug}/agents
+    defaults:
+        _controller: AppBundle:User\Profile:users
+        p: 1
+        user_type: agent
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_agents_pagination:
+    path: /{id}/{slug}/agents
+    defaults:
+        _controller: AppBundle:User\Profile:usersPagination
+        p: 1
+        user_type: agent
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_affiliates:
+    path: /{id}/{slug}/affiliates
+    defaults:
+        _controller: AppBundle:User\Profile:users
+        p: 1
+        user_type: brokerage
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_affiliates_pagination:
+    path: /{id}/{slug}/affiliates
+    defaults:
+        _controller: AppBundle:User\Profile:usersPagination
+        p: 1
+        user_type: brokerage
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_articles:
+    path: /{id}/{slug}/stories
+    defaults:
+        _controller: AppBundle:User\Profile:articles
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_articles_pagination:
+    path: /{id}/{slug}/stories
+    defaults:
+        _controller: AppBundle:User\Profile:articlesPagination
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_followers:
+    path: /{id}/{slug}/followers
+    defaults:
+        _controller: AppBundle:User\Profile:followers
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_followers_pagination:
+    path: /{id}/{slug}/followers
+    defaults:
+        _controller: AppBundle:User\Profile:followers
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_followings:
+    path: /{id}/{slug}/followings
+    defaults:
+        _controller: AppBundle:User\Profile:followings
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_followings_pagination:
+    path: /{id}/{slug}/followings
+    defaults:
+        _controller: AppBundle:User\Profile:followings
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_likes:
+    path: /{id}/{slug}/likes
+    defaults:
+        _controller: AppBundle:User\Profile:likes
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_likes_pagination:
+    path: /{id}/{slug}/likes
+    defaults:
+        _controller: AppBundle:User\Profile:likes
+        p: 1
+    methods: [GET]
+    requirements:
+        id: \d+
+        slug: "[0-9a-zA-Z-]+"
+    condition: "request.headers.get('Pagination')"
+
+ha_user_properties:
+    path:  /{id}/{slug}/properties/{market}
+    defaults:
+        _controller: AppBundle:User\Profile:properties
+        market: 'for-sale'
+        p: 1
+    methods:  [GET]
+    requirements:
+      id: \d+
+    condition: "request.headers.get('Pagination') == false"
+
+ha_user_properties_pagination:
+    path:  /{id}/{slug}/properties/{market}
+    defaults:
+        _controller: AppBundle:User\Profile:propertiesPagination
+        market: 'for-sale'
+        p: 1
+    methods:  [GET]
+    requirements:
+      id: \d+
+    condition: "request.headers.get('Pagination')"
+
+ha_user_id:
+    path:  /{id}
+    defaults:
+      _controller: AppBundle:User\Profile:redirect
+    methods:  [GET]
+    
+ha_user_profile:
+    path:  /{id}/{slug}
+    defaults:
+      _controller: AppBundle:User\Profile:redirect
+    methods:  [GET]
+
+ha_user_profile_social_redirect:
+    path:  /redirect/{id}/{networkName}
+    defaults:
+      _controller: AppBundle:User\Profile:socialProfileRedirect
+    methods:  [GET]
+    requirements:
+      id: \d+
+      slug: "[0-9a-zA-Z\-]+"

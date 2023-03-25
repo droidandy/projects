@@ -1,0 +1,381 @@
+.button {
+  display: inline-block;
+  font-weight: 400;
+  line-height: $font_size_l;
+  text-align: center;
+  padding: 0 18px;
+  text-transform: uppercase;
+  @extend %hover-transition;
+  @include border-radius(1px);
+
+  .fa {
+    vertical-align: middle;
+  }
+  .fa-clock-o {
+    display: inline;
+  }
+  .fa-heart-o {
+    display: inline;
+  }
+  .fa-clock-o,
+  .fa-heart-o {
+    font-size: 17px;
+    line-height: $font_size_s2;
+  }
+  .fa-times {
+    background: #fff;
+    color: #666;
+    font-size: 32px;
+    line-height: 32px;
+    display: inline;
+    padding-left: 11px;
+  }
+  .fa {
+    color: #666;
+    font-size: 16px;
+    line-height: 35px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    @include border-radius(50%);
+  }
+}
+
+.button-select,
+.default {
+  color: #565a5c;
+  background-color: $color_5;
+  display: inline-block;
+  line-height: 34px;
+  border: 1px solid #d9d9d9;
+  padding: 0 12px;
+  &.selected,
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  .fa-caret-down {
+    padding-left: 5px;
+    display: inline-block;
+    color: #565a5c;
+    vertical-align: top;
+  }
+  .required & {
+    @extend %input-error;
+  }
+}
+
+.button-select {
+  padding: 0 40px 0 10px;
+  text-align: left;
+  position: relative;
+  .fa-caret-down {
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+  select {
+    @include opacity(0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent;
+    font-size: $font_size_s2;
+    cursor: pointer;
+    z-index: 2;
+    width: 100%;
+  }
+}
+
+.setting-button {
+  color: #565a5c;
+  background-color: $color_5;
+  display: inline-block;
+  line-height: 34px;
+  border: 1px solid #d9d9d9;
+  padding: 0 8px;
+  &.selected,
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  .fa {
+    color: #565a5c;
+  }
+  .fa-cog {
+    font-size: 22px;
+    padding-right: 3px;
+    vertical-align: middle;
+  }
+  .fa-caret-down {
+    display: inline-block;
+    padding-left: 3px;
+    vertical-align: top;
+  }
+}
+
+.transparent {
+  background-color: transparent;
+  color: #eee;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  padding: 0 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.title-button {
+  h3 {
+    float: left;
+  }
+  > .button {
+    float: right;
+    margin-bottom: $font_size_m;
+    margin-top: -12px;
+  }
+  > .field-content,
+  > .button + * {
+    clear: both;
+  }
+}
+
+.form-email-message {
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #d3d3d3;
+  .highlighted & {
+    border-color: #555;
+  }
+  padding-top: 10px;
+  .button {
+    margin-top: 0;
+  }
+  .row {
+    padding: 0;
+  }
+}
+
+.reset-block {
+  padding: 24px 0;
+  .button {
+    float: none;
+    margin-top: 0;
+  }
+}
+
+.field {
+  width: 100%;
+  padding-bottom: 19px;
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  input {
+    margin-top: 10px;
+  }
+  .form-email-message & {
+    padding-bottom: 0;
+    padding-top: 13px;
+    input {
+      margin-top: 0;
+    }
+  }
+}
+
+.check-field {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d3d3d3;
+  margin-top: 4px;
+  input {
+    position: absolute;
+    top: $font_size_s2;
+    left: 20px;
+  }
+  label {
+    padding-left: $font_size_l;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+  }
+}
+
+.check-button-field {
+  position: relative;
+  padding-left: 24px;
+  padding-right: 102px;
+  label {
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding-top: 8px;
+  }
+  input {
+    position: absolute;
+    top: $font_size_s1;
+    left: 0px;
+  }
+  .button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0;
+  }
+}
+
+// Forms
+
+input {
+  &[type=password],
+  &[type=email],
+  &[type=text],
+  &[type=tel],
+  &[type=url],
+  &[type=color],
+  &[type=date],
+  &[type=datetime],
+  &[type=datetime-local],
+  &[type=file],
+  &[type=image],
+  &[type=month],
+  &[type=number] {
+    color: #565a5c;
+    box-shadow: none !important;
+    .field &,
+    .archive-subscribe &,
+    .signup-block & {
+      @extend %input-style;
+    }
+    .required & {
+      @extend %input-error;
+    }
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  outline: none;
+}
+
+.textarea {
+  .form-email-message & {
+    padding-top: 15px;
+  }
+}
+
+textarea {
+  color: #565a5c;
+  //white-space: pre;
+  box-shadow: none !important;
+  resize: vertical;
+  overflow: auto;
+  width: 100%;
+  .textarea & {
+    @extend %textarea-style;
+    height: 150px;
+  }
+  .textarea-description & {
+    line-height: $font_size_m;
+    color: #565a5c;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .required & {
+    @extend %input-error;
+  }
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password],
+input[type=search],
+button {
+  -webkit-appearance: none;
+}
+
+.multipart-tel {
+  .country-code {
+    width: 100px;
+    float: left;
+    .button-select {
+      border-width: 1px;
+    }
+  }
+  .phone-numbers {
+    float: left;
+    margin-left: 10px;
+    width: calc(100% - 110px);
+  }
+}
+
+button[disabled],
+button[type="disabled"] {
+  cursor: no-drop;
+  opacity: 0.3;
+}
+
+.checkbox {
+  position: relative;
+  line-height: 21px;
+  .field-group & {
+    padding-top: $font_size_s2;
+  }
+  @media screen and (min-width: 860px) {
+    display: inline;
+    line-height: $font_size_l;
+  }
+  label {
+    padding-left: 24px;
+    cursor: pointer;
+    line-height: 24px;
+    .field-group & {
+      width: auto;
+      font-weight: 600;
+    }
+  }
+  input[type=checkbox] {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: auto;
+    .field-group & {
+      margin-top: 18px;
+      @media screen and (min-width: 860px) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.loading {
+  a {
+    color: #565a5c;
+    display: block;
+    border: 1px solid #a7a7a7;
+    text-align: center;
+    &:hover {
+      border-color: #cd3f2f;
+      text-decoration: none;
+      color: #565a5c;
+    }
+  }
+}

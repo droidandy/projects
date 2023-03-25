@@ -1,0 +1,29 @@
+---
+log:
+  level: LOG_LEVEL
+idleTimeLimitSec: IDLE_TIME_LIMIT_SEC
+morningStar:
+  IPWhitelist: MORNING_STAR_IP_WHITELIST
+  user: MORNING_STAR_USER
+  password: MORNING_STAR_PASSWORD
+  defaultTimezone: MORNING_STAR_DEFAULT_TIMEZONE
+  protocol: MORNING_STAR_PROTOCOL
+  host: MORNING_STAR_HOST
+  quotas:
+    symbolsInRequest: MORNING_STAR_QUOTAS_SYMBOLS_IN_REQUEST
+    requestsPerSecond: MORNING_STAR_QUOTAS_REQUESTS_PER_SECOND
+    symbolsPerSecond: MORNING_STAR_QUOTAS_SYMBOLS_PER_SECOND
+  loadPriceFrom: MORNING_STAR_LOAD_PRICE_FROM
+bullmq:
+  attempts: BULLMQ_ATTEMPTS
+  backoff:
+    type: BULLMQ_BACKOFF_TYPE
+    delay: BULLMQ_BACKOFF_DELAY
+  concurrency: BULLMQ_CONCURRENCY
+  cleanOnStart: BULLMQ_CLEAN_ON_START
+  redis:
+    host: BULLMQ_REDIS_HOST
+    port: BULLMQ_REDIS_PGPORT
+  arena:
+    host: BULLMQ_ARENA_HOST
+    port: BULLMQ_ARENA_PORT

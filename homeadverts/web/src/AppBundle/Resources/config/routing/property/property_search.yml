@@ -1,0 +1,65 @@
+search_no_location:
+    path:  /{market}/no-result/{term}
+    defaults: { _controller: AppBundle:PropertySearch:noLocation }
+    methods:  [GET]
+    requirements:
+      market: "for\-sale|to\-rent"
+
+search_term:
+    path:  /{market}/term/{term}
+    defaults: { _controller: AppBundle:PropertySearch:term }
+    methods:  [GET]
+    requirements:
+      market: "for\-sale|to\-rent"
+
+search_results_json:
+    path:  /{market}/{id}/{slug}.json
+    defaults:
+        _controller: AppBundle:PropertySearch:resultsJson
+        geo_strategy: place_id
+    methods:  [GET]
+    requirements:
+        market: "for\-sale|to\-rent"
+        id: \d+
+
+search_results:
+    path:  /{market}/{id}/{slug}
+    defaults:
+        _controller: AppBundle:PropertySearch:results
+        p: 1
+        geo_strategy: place_id
+    methods:  [GET]
+    requirements:
+        market: "for\-sale|to\-rent"
+        id: \d+
+        slug: "[0-9a-z\-]+"
+    condition: "request.headers.get('Pagination') == false"
+
+search_results_pagination:
+    path:  /{market}/{id}/{slug}
+    defaults:
+        _controller: AppBundle:PropertySearch:resultsPagination
+        p: 1
+        geo_strategy: place_id
+    methods:  [GET]
+    requirements:
+        market: "for\-sale|to\-rent"
+        id: \d+
+        slug: "[0-9a-z\-]+"
+    condition: "request.headers.get('Pagination')"
+
+search_refine:
+    path:  /{market}/{id}/{slug}
+    defaults: { _controller: AppBundle:PropertySearch:refine, market: 'for-sale' }
+    methods:  [POST]
+    requirements:
+        market: "for\-sale|to\-rent"
+        id: \d+
+        slug: "[0-9a-z\-]+"
+
+market_refine:
+    path:  /{market}
+    defaults: { _controller: AppBundle:PropertySearch:refineMarket }
+    methods:  [POST]
+    requirements:
+        market: "for\-sale|to\-rent"

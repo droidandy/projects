@@ -1,0 +1,12 @@
+bazinga_geocoder:
+    providers:
+        cache:
+            adapter:              geocoder_cache_adapter
+            provider:             google_maps_country
+            locale:               ~
+            lifetime:             86400
+        google_maps:
+            api_key:              %google.api_key%
+            locale:               ~
+            region:               ~
+            use_ssl:              true

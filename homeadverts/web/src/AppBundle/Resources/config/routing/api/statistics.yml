@@ -1,0 +1,17 @@
+ha_statistics_event_display_post:
+    path:  /event/display/
+    defaults:
+      _controller: AppBundle:Api\Statistics:postDisplayEvent
+    methods:  [POST]
+
+ha_statistics_property_get:
+    path:  /property/{id}
+    defaults:
+      _controller: AppBundle:Api\Statistics:getPropertyStatistics
+    methods:  [GET]
+
+ha_statistics_article_get:
+    path:  /article/{id}
+    defaults:
+      _controller: AppBundle:Api\Statistics:getArticleStatistics
+    methods:  [GET]

@@ -1,0 +1,54 @@
+.agent-registration .field-group {
+  border: none;
+  label {
+    width: 38%;
+  }
+  input {
+    width: 62%;
+    float: right;
+    margin-top: 1px;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      float: inherit;
+    }
+  }
+  .button-select {
+    margin-top: 0;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+
+      input {
+        margin: 0;
+      }
+    }
+  }
+  .group-message {
+    display: none;
+  }
+  .error, .group-message.error {
+    display: block;
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+.register-block {
+  input {
+    width: 100%;
+  }
+  .divide {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  form.agent-registration {
+    .field-group input#agent_registration_phone_telNumber {
+      float: left;
+      position: relative;
+      right: 0%;
+      top: 5px;
+    }
+  }
+}

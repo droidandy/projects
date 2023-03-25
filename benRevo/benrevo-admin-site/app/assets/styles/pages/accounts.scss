@@ -1,0 +1,96 @@
+@import "../variables-theme";
+
+.accounts {
+  .requests {
+    .gridSegment {
+      padding-bottom: 100px !important;
+    }
+  }
+
+  .back {
+    margin-bottom: 20px;
+    display: block;
+    margin-top: -20px;
+  }
+
+  .header-main {
+    .meta-info {
+      width: 100%;
+      margin: 25px 0 0;
+
+      & + .divider {
+        margin-top: 10px;
+      }
+      & > div {
+       &:first-child {
+         margin-bottom: 5px;
+       }
+
+        span {
+          font-size: 13px;
+          color: $TABLE_HEADER_COLOR;
+          display: inline-block;
+          width: 40px;
+        }
+      }
+    }
+  }
+
+  .column-header {
+    font-size: 13px;
+    color: $TABLE_HEADER_COLOR;
+    display: inline-block;
+  }
+
+  .button-cell {
+    .ui.loader {
+      margin-bottom: 3px;
+    }
+  }
+
+  .ui.table.data-table {
+    td {
+      padding: 20px 0;
+      .ui.radio {
+        float: left;
+        height: 120px;
+        margin-right: 25px;
+        margin-left: 20px;
+        margin-top: 5px;
+
+        label {
+          &:before {
+            width: 25px;
+            height: 25px;
+          }
+
+          &:after {
+            width: 37px;
+            height: 37px;
+            left: -6px;
+            top: -6px;
+          }
+        }
+      }
+
+      .ui.dropdown {
+        margin-bottom: 20px;
+      }
+
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .ui.checkbox {
+    margin: 0;
+  }
+}
+
+.ui.modal.account-details-edit {
+  padding: 30px 35px;
+  .close {
+    @include lineCloseButton();
+  }
+}

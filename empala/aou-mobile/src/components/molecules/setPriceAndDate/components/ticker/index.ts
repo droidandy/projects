@@ -1,0 +1,1 @@
+export { TickerComponent } from './TickerComponent';

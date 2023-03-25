@@ -1,0 +1,70 @@
+module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
+  },
+  plugins: [
+    'react',
+    'react-native',
+    'react-hooks',
+    'import',
+    'styled-components-a11y',
+    'jsx-a11y',
+    '@typescript-eslint',
+  ],
+  extends: [
+    'airbnb-typescript',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:styled-components-a11y/recommended',
+  ],
+  overrides: [
+    {
+      files: ['*.graphql'],
+      parser: '@graphql-eslint/eslint-plugin',
+      plugins: ['@graphql-eslint'],
+    },
+  ],
+  rules: {
+    quotes: [2, 'single', { avoidEscape: true }],
+    'brace-style': ['error'],
+    'max-len': ['error', { code: 120 }],
+    'import/no-unresolved': 'off',
+    'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
+    'no-console': 'error',
+    'react/prop-types': 'off',
+    'react/require-default-props': 'off',
+    'react/display-name': [0],
+    'import/order': [
+      'error',
+      {
+        alphabetize: { order: 'asc' },
+        'newlines-between': 'always',
+      },
+    ],
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: false,
+        variables: false,
+      },
+    ],
+    '@typescript-eslint/no-unused-expressions': [2, { allowShortCircuit: true, allowTernary: true, }],
+    'react/jsx-props-no-spreading': [1, {
+      "custom": "ignore",
+    }],
+    'no-underscore-dangle': 'off',
+  },
+  ignorePatterns: ['node_modules/'],
+};

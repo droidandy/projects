@@ -1,0 +1,15 @@
+mutation AddPushToken ($token: String!) {
+    addPushToken(token: $token)
+}
+mutation UpdateNotificationsSettings ($status: Boolean!, $stocks: Boolean!) {
+    updateNotifications(status: $status, stocks: $stocks) {
+        status
+        stocks
+    }
+}
+query GetNotificationSettings {
+    notification {
+        status
+        stocks
+    }
+}

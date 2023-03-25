@@ -1,0 +1,388 @@
+@import "../variables-theme";
+
+.plan-table-type {
+  font-size: 24px;
+  color: $HEADER_COLOR;
+  font-weight: 100;
+  line-height: 24px;
+}
+
+.plans {
+  .dimmer {
+    padding: 30px;
+  }
+
+  .carrier-dropdown {
+    .ui.selection.dropdown {
+      min-width: 0;
+    }
+  }
+
+  .static-plan-data {
+    margin-top: 25px;
+  }
+
+  .plans-files {
+    .table-row {
+      min-height: 120px;
+      .date-picker-container {
+        div {
+          width: 100%;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+
+    .client-team-remove {
+      cursor: pointer;
+      float: left;
+      margin-top: 10px;
+      height: fit-content;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+
+  .add-plan-table {
+    width: 100%;
+    margin-top: 1rem;
+
+    &.dimmer {
+      margin-top: 5rem
+    }
+
+    .plan-table-type {
+      font-size: 24px;
+      color: $HEADER_COLOR;
+      font-weight: 100;
+      line-height: 24px;
+    }
+
+    .plan-input-row{
+      padding: 7px 0;
+    }
+
+    .plan-form-input {
+      &.error input{
+        border-color: $ERROR_COLOR;
+        background: $ERROR__BACKGROUND_COLOR;
+      }
+    }
+
+    .label-column {
+      text-align: right;
+      padding: .67857143em 1em;
+      &.network{
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .plans-submit {
+    .plans-summary {
+      .data-table {
+        .data-table-body {
+          td {
+            height: 110px !important;
+          }
+        }
+      }
+    }
+
+    .data-table {
+      .data-table-body {
+        td {
+          &:first-child {
+            text-transform: capitalize;
+          }
+          a {
+            cursor: pointer;
+          }
+
+          .ui.button {
+            width: 160px;
+            float: right;
+
+            &.medium {
+              width: 160px;
+            }
+
+            &.big {
+              width: 200px;
+            }
+
+            &.quote-delete-button {
+              width: 20px;
+              height: 20px;
+            }
+
+            @media only screen and (max-width: 767px) {
+              & {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .drop-zone:first-child {
+        margin-top: 5px;
+      }
+
+      .buttons-list {
+        & button:not(:last-child) {
+          margin-bottom: 5px;
+        }
+        & button.ui.button.medium {
+          float: none;
+        }
+      }
+    }
+
+    .ui.button.primary.big.upload-separate {
+      width: 70%;
+      @media only screen and (max-width: 767px) {
+        & {
+          width: 100%;
+        }
+      }
+    }
+
+    .drop-zone {
+      &.active {
+        .ui.button.primary {
+          background-color: $LINK_HOVER_COLOR;
+        }
+
+        .ui.button.primary.grey {
+          background-color: $SUB_MENU_HEADING_COLOR;
+        }
+      }
+      &.reject {
+        .ui.button.primary {
+          background-color: $BUTTON_TOGGLE_ATIVE_COLOR;
+        }
+      }
+    }
+
+    .email-to {
+      color: $DARK_COLOR;
+      font-weight: 600;
+    }
+
+    .toggle-button-blue.option-button-group {
+      margin-top: 10px;
+      button {
+        font-size: 12px;
+        min-height: 45px;
+        width: 150px;
+      }
+    }
+  }
+
+  .plan-divider {
+    background: $INPUT_BORDER_COLOR;
+    height: 1px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ui.grid>.row.lower-divider {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+
+  .plans-history {
+    padding-top: 25px;
+    border-top: $INPUT_BORDER;
+
+    .title {
+      color: $SUB_NAVIGATION_BOLD_COLOR;
+      text-transform: uppercase;
+    }
+
+    .history-item {
+      color: $SUB_NAV_ITEM_COLOR;
+      font-size: 12px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+  }
+}
+
+.plans-review-tabs .ui.stackable.grid.gridSegment {
+  width: 100%;
+}
+
+.plans-review.section-wrap {
+  margin-top: 5px !important;
+
+  .ui.stackable.grid.gridSegment {
+    margin-bottom: 20px;
+  }
+
+
+  .back.ui.button {
+    width: 160px;
+    margin-bottom: 15px;
+    line-height: 15px;
+  }
+
+  .header-main {
+    .ui.header {
+      text-transform: capitalize;
+    }
+  }
+
+  .review-item {
+    margin-bottom: 25px;
+    .review-item-row {
+      margin-top: -15px;
+    }
+  }
+}
+
+.ui.small.button.reset-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  border: 0;
+  width: 200px;
+}
+
+.ui.breadcrumb.client-status-breadcrumb {
+  margin-top: 1rem;
+
+  .ui.green.button {
+    cursor: default;
+    &:hover {
+      background-color: #21ba45;
+    }
+  }
+}
+
+.ui.input.number-input {
+  width: 75px;
+}
+
+.ui.modal.status-modal {
+  padding-top: 30px;
+
+  .details {
+    text-align: center;
+  }
+
+  .buttons {
+    text-align: right;
+    margin-top: 10px;
+    .ui.button.primary {
+      width: 150px;
+    }
+
+    .cancel-button {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: $DARK_COLOR;
+    font-weight: 600;
+
+    &:hover {
+      color: $DARK_COLOR;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.ui.modal.quote-delete {
+  padding: 20px 20px 20px;
+
+  .extra-check-form {
+    margin-top: 20px;
+
+    .buttons-centered {
+      text-align: right;
+      margin-top: 10px;
+      .ui.button.primary {
+        width: 150px;
+      }
+
+      .cancel-button {
+        margin-right: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.ui.modal.summary-modal {
+  padding: 30px 40px 60px;
+
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    color: $DARK_COLOR;
+    font-weight: 600;
+
+    &:hover {
+      color: $DARK_COLOR;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .ui.header {
+    text-transform: capitalize;
+  }
+
+  textarea {
+    margin: 20px 0;
+    height: 300px;
+  }
+
+  .buttons {
+    text-align: right;
+    .ui.button.primary {
+      width: 150px;
+    }
+
+    .cancel-button {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .modal-row {
+    padding: 14px 0px;
+  }
+}
+
+.use-plan {
+  padding-top: 4px !important;
+  vertical-align: middle !important;
+  margin-left: -3px !important;
+}

@@ -1,0 +1,11 @@
+mutation deleteUserHunches($deleteUserHunchesHunchIds: [ID!]!) {
+    deleteUserHunches(hunchIds: $deleteUserHunchesHunchIds) {
+        ... on DeleteSuccess {
+            deleteIds
+        }
+        ... on DeleteInvalidInputError {
+            message
+            errorCode
+        }
+    }
+}

@@ -1,0 +1,42 @@
+hwi_oauth:
+    firewall_name: main
+    connect:
+        confirmation: false
+    resource_owners:
+        facebook:
+            type:           facebook
+            client_id:      %oauth.facebook.id%
+            client_secret:  %oauth.facebook.secret%
+            scope:          "email, public_profile"
+
+            infos_url:     "https://graph.facebook.com/me?fields=id,name,email,picture.type(large)"
+            paths:
+                email:          email
+                profilepicture: picture.data.url
+        twitter:
+            type:           twitter
+            client_id:      %oauth.twitter.id%
+            client_secret:  %oauth.twitter.secret%
+            infos_url:      "https://api.twitter.com/1.1/account/verify_credentials.json?include_email=true"
+            paths:
+                email: email
+        google:
+            type:           google
+            client_id:      %oauth.google.id%
+            client_secret:  %oauth.google.secret%
+            scope:          "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile"
+        linkedin:
+            type:           linkedin
+            client_id:      %oauth.linkedin.id%
+            client_secret:  %oauth.linkedin.secret%
+            scope:          "r_emailaddress w_share"
+
+parameters:
+  oauth.twitter.id: %twitter_app_id%
+  oauth.twitter.secret: %twitter_app_secret%
+  oauth.google.id: %google_app_id%
+  oauth.google.secret: %google_app_secret%
+  oauth.facebook.id: %facebook_app_id%
+  oauth.facebook.secret: %facebook_app_secret%
+  oauth.linkedin.id: %linkedin_app_id%
+  oauth.linkedin.secret: %linkedin_app_secret%

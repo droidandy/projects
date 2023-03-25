@@ -1,0 +1,18 @@
+ha_account_settings:
+    path: /edit/
+    defaults: { _controller: AppBundle:User\ProfileSettings:edit}
+
+ha_account_photo:
+    path: /edit/photo
+    defaults: { _controller: AppBundle:User\ProfileSettings:profileImagePost }
+    methods:  [POST]
+
+ha_account_background:
+    path: /edit/background
+    defaults: { _controller: AppBundle:User\ProfileSettings:BackgroundImagePost }
+    methods:  [POST]
+
+ha_user_terminate_by_token:
+    path: /terminate/{token}
+    defaults:
+      _controller: AppBundle:User\User:terminateByToken

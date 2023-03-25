@@ -1,0 +1,12 @@
+import { APPLICATION_VEHICLE_STATUS } from '@marketplace/ui-kit/types';
+
+export const checkIsApplicationReadOnly = (
+  vehicleStatus: APPLICATION_VEHICLE_STATUS = APPLICATION_VEHICLE_STATUS.DRAFT,
+) => {
+  return [
+    APPLICATION_VEHICLE_STATUS.DELIVERY,
+    APPLICATION_VEHICLE_STATUS.SUCCESS,
+    APPLICATION_VEHICLE_STATUS.CANCEL,
+    APPLICATION_VEHICLE_STATUS.EXPIRED,
+  ].includes(vehicleStatus);
+};

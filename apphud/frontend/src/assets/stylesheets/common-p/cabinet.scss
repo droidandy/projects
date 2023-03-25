@@ -1,0 +1,383 @@
+.left-bar {
+  position: fixed;
+  background-color: $brand-black;
+  height: 100%;
+  width: 175px;
+  padding: 30px 0;
+  z-index: 2;
+}
+
+.left-bar_disabled {
+  a {
+    color: #97adc6;
+    svg {
+      path {
+        fill: #97adc6;
+      }
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.left-bar__title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: normal;
+
+  color: #3751ff;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.left-bar__nav-item {
+  display: block;
+  &:hover {
+    background-color: #131d25;
+  }
+}
+
+.left-bar__nav-item__link {
+  padding: 13px 10px;
+  display: block;
+  text-decoration: none;
+  color: $brand-white;
+  font-weight: bold;
+  svg,
+  span {
+    vertical-align: middle;
+  }
+  span {
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: -1px;
+  }
+  .dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #FF5C00;
+    border-radius: 6px;
+  }
+}
+
+.left-bar__nav-item__link_active {
+  background-color: $brand-blue;
+  color: $brand-white;
+  svg path {
+    fill: $brand-white;
+  }
+}
+
+.left-bar__nav-item__label {
+  color: $brand-black;
+  float: right;
+  padding: 3px 5px;
+  background: $brand-silver;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.left-bar__nav-item__link_active {
+  .left-bar__nav-item__label {
+    background: $brand-disabled-blue;
+    color: $brand-blue;
+  }
+}
+
+.left-bar__warning {
+  background: #000000;
+  border-radius: 8px;
+  max-width: 155px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.left-bar__warning-wrapper {
+  padding: 12px;
+}
+
+.left-bar__warning-item {
+  color: $brand-white;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 11px;
+}
+
+.left-bar__warning-title {
+  color: $brand-white;
+  span,
+  svg {
+    vertical-align: middle;
+  }
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.container {
+  margin-left: 175px;
+  height: 100%;
+}
+
+.container-content__wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  table-layout: fixed;
+  padding-top: 30px;
+
+  .container-content {
+    display: table-cell;
+    vertical-align: top;
+    width: 80%;
+  }
+
+  .left-subbar {
+    border-radius: 0px 8px 0px 0px;
+    background-color: $brand-light-blue;
+    display: table-cell;
+    vertical-align: top;
+    width: 15%;
+    padding-top: 20px;
+    &_no_label {
+      padding-top: 0;
+      overflow: auto;
+    }
+  }
+
+  .container-content__blue-header {
+    padding-top: 0;
+  }
+}
+
+.left-subbar__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 10px 12px 30px;
+  display: flex;
+  align-items: center;
+  color: #1a344b;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #e4edf4;
+  }
+}
+
+.left-subbar__item_active {
+  background-color: #97adc6;
+  color: white;
+  &:hover {
+    background-color: #97adc6;
+  }
+}
+
+.left-subbar__item_category {
+  color: #97adc6;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  &_indent-top {
+    margin-top: 25px;
+  }
+}
+
+.container-content {
+  margin-top: 34px;
+  padding-right: 15px;
+}
+
+.container-content__white {
+  padding-left: 30px;
+}
+
+.container-title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: $brand-black;
+  margin-bottom: 23px;
+  display: inline-block;
+
+  .custom-select {
+    font-size: 28px;
+  }
+
+  .tip-icon {
+    margin-left: 11px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.container-title_withdescription {
+  margin-bottom: 0;
+}
+
+.container-description {
+  margin-top: 5px;
+  line-height: 17px;
+  display: block;
+}
+
+.container-content__blue {
+  padding-right: 0;
+  padding-bottom: 40px;
+  overflow: hidden;
+  background: $brand-light-blue;
+  margin: 0;
+  height: auto;
+  min-height: 100%;
+}
+
+.container-content__blue-header {
+  padding: 30px;
+  background: $brand-white;
+  // border-bottom: 1px solid #E0E8EE;
+}
+
+.container-content__blue-header_menu {
+  box-shadow: inset 0px -2px 0px -1px $brand-disabled-blue;
+}
+
+.container-content__blue-header_pr15 {
+  padding-right: 15px;
+}
+
+.container-content_pb150 {
+  padding-bottom: 150px;
+}
+
+.container-content__blue-content {
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.container-top__panel {
+  padding: 10px 16px 10px 30px;
+  background: $brand-white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-top__panel_active {
+  background-color: $brand-light-orange;
+}
+
+.container-top__panel-left {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-right: 30px;
+  }
+}
+
+.container-top__panel-left__switcher {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 42px;
+  margin-top: 1px;
+}
+
+.container-top__panel-add__link {
+  display: inline-block;
+  vertical-align: middle;
+  span,
+  svg {
+    vertical-align: middle;
+  }
+  span {
+    margin-left: 6px;
+  }
+  cursor: pointer;
+}
+
+.container-top__panel-link {
+  font-size: 15px;
+  line-height: 17px;
+  margin-right: 40px;
+}
+
+.container-top__panel-link_alarm {
+  margin-right: 20px;
+  position: relative;
+}
+
+.container-top__panel-link_alarm-badge {
+  width: 24px;
+  height: 24px;
+  color: white;
+  line-height: 17px;
+  background-color: $brand-red;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  line-height: 23px;
+  vertical-align: middle;
+}
+
+.container-top__panel-link_alarm-badge_small {
+  font-size: 12px;
+}
+
+.container-top__panel-avatar {
+  width: 30px;
+  height: 30px;
+  background: $brand-light-blue;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-image: url(../../images/avatar.png);
+  background-color: $brand-light-blue;
+}
+
+.container-top__panel-avatar,
+.container-top__panel-link {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#headway-icon {
+  position: relative;
+  svg {
+    vertical-align: middle;
+  }
+}
+
+#HW_badge_cont {
+  opacity: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}

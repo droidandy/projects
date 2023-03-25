@@ -1,0 +1,26 @@
+{% set bio = user.getBio() %}
+
+{% include 'AppBundle:user/profile:username.html.twig' %}
+{% include 'AppBundle:user/profile:company.html.twig' %}
+
+{% if (user.address.country) %}
+    <span class="address">
+        {{ user.address|full_address }}
+    </span>
+{% endif %}
+
+{% if not is_current_user(user) %}
+    {% include 'AppBundle:user/profile:action_buttons.html.twig'%}
+{% endif %}
+
+{% if bio %}
+    <div class="about {% if bio|length > 200 %}--folded{% endif %}">
+        <span>{{ bio|raw|nl2br }}</span>
+
+        {% if bio|length > 200 %}
+            <i class="trigger material-icons">keyboard_arrow_up</i>
+        {% endif %}
+    </div>
+{% else %}
+    <br/>
+{% endif %}

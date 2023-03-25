@@ -1,0 +1,1 @@
+export { TabsWrapper } from './TabsWrapper';

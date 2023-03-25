@@ -1,0 +1,40 @@
+.colorpicker-popup {
+  position: absolute;
+  z-index: 1;
+}
+
+.colorpicker-label {
+  background-color: $brand-light-blue;
+  border-radius: 8px;
+  padding: 9px 10px;
+}
+
+.colorpicker-label__swatch {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.24);
+}
+
+.colorpicker-label__value {
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 17px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.colorpicker-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}

@@ -1,0 +1,67 @@
+
+
+<ion-header>
+  <ion-navbar color="white">
+    <ion-title>{{ 'SETTINGS' | translate }}</ion-title>
+    <!-- <ion-buttons end>
+      <button ion-button >SAVE</button>
+    </ion-buttons> -->
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-row class="first_half">
+    <h2>{{ 'LINKEDACCOUNT' | translate }}</h2>
+    <ion-col>Instagram</ion-col>
+    <ion-col class="connect" (click)="connectInstagram()" *ngIf="instagramImageList.length==0">{{ 'CONNECT' | translate }}</ion-col>
+    <ion-col class="connect"  *ngIf="instagramImageList.length>0">{{ 'CONNECTED' | translate }}</ion-col>
+  </ion-row>
+
+  <ion-row class="first_half">
+    <h2>{{ 'GENERAL' | translate }}</h2>
+      <ion-row style="width:100%; float:left;">
+          <ion-label>Enable Notifications</ion-label>
+          <ion-toggle [(ngModel)]="isPushEnabled" [disabled]="isBrowser" (ionChange)="changeNotification()"></ion-toggle>
+      </ion-row>
+      <ion-row style="width:100%; float:left;">
+        <ion-label>{{ 'LANGUAGE' | translate }}</ion-label>
+        <ion-select [(ngModel)]="language" (ionChange)="onSelectChange(language)">
+          <ion-option value="en">English</ion-option>
+          <ion-option value="es">Spanish</ion-option>
+        </ion-select>
+      </ion-row>
+      <ion-row style="width:100%; float:left;" (click)="openBlockList()">
+        <ion-col>{{ 'BLOCKEDLIST' | translate }}</ion-col>
+        <ion-col class="connect"><ion-icon name="ios-arrow-forward"></ion-icon></ion-col>
+      </ion-row>
+      <ion-row style="width:100%; float:left;" (click)="logOut()">
+        <ion-col>{{ 'LOGOUT' | translate }}</ion-col>
+      </ion-row>
+  </ion-row>
+
+  <ion-row class="second_half">
+    <h2>{{ 'HELPIMPROVE' | translate }}</h2>
+    <p>{{ 'HELPIMPROVETEXT' | translate }}.</p>
+    <p>
+      <span>{{ 'MANYTHANKS' | translate }},</span>
+      <span>The Fashion Kanvas team</span>
+    </p>
+    <div class="second_button" (click)="openMail()">
+      <button ion-button class="loginbtn" block tappable>{{ 'DROPUSANEMAIL' | translate }}</button>
+    </div>
+    <div class="second_button" (click)="openAppStore()">
+      <button ion-button class="loginbtn" block tappable>{{ 'RATEUSAPPSTORE' | translate }}</button>
+    </div>
+
+    <div class="social_icons">
+      <img-loader src="assets/imgs/fb.png" useImg  ></img-loader>
+      <img-loader src="assets/imgs/tw.png" useImg  ></img-loader>
+      <img-loader src="assets/imgs/insta.png" useImg  ></img-loader>
+    </div>
+  </ion-row>
+
+
+
+</ion-content>

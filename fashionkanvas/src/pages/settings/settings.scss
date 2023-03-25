@@ -1,0 +1,95 @@
+page-settings {
+
+  .back-button-icon
+  {
+    color:#f66565;
+  }
+
+  .back-button-text
+  {
+    display: none;
+  }
+
+  .bar-buttons .button-inner
+  {
+    color: #f66565;
+  }
+
+  .first_half
+  {
+    padding: 30px;
+  }
+
+  .first_half h2
+  {
+    margin:0;
+    width:100%;
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  .connect,.select-text
+  {
+    color: #f66565;
+    text-align: right;
+  }
+
+  .first_half .col
+  {
+    padding: 15px 0!important;
+  }
+
+  .select .button-inner,.select button
+  {
+    height: 0px!important;
+  }
+
+  .second_half
+  {
+    background: #ffdbdb;
+    padding: 40px;
+  }
+
+  .second_half h2
+  {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 0 0 20px 0 !important;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .second_half p
+  {
+    line-height: 21px;
+    width: 100%;
+    float: left;
+  }
+  .second_half p span
+  {
+    width: 100%;
+    float: left;
+  }
+
+  .second_button
+  {
+    width: 100%;
+    float: left;
+  }
+
+  .social_icons
+  {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social_icons img
+  {
+    max-width: 25px!important;
+    margin: 0 10px;
+  }
+
+}

@@ -1,0 +1,384 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+"ÐÐ°Ð½Ð½ÐµÑÑ Ð½Ð° Ð³Ð»Ð°Ð²Ð½Ð¾Ð¹"
+type BannerModel {
+    "Ð¡ÑÑÐ»ÐºÐ° Ð²Ð½ÑÑÑÐ¸ Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ"
+    appLink: String
+    "Id ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸"
+    id: Int!
+    "Ð¡ÑÑÐ»ÐºÐ° Ð´Ð»Ñ Ð¿ÐµÑÐµÐ°Ð´ÑÐµÑÐ°ÑÐ¸Ð¸"
+    link: String!
+    location: String!
+    name: String!
+    "Ð¡ÑÑÐ»ÐºÐ° Ð½Ð° ÐºÐ°ÑÑÐ¸Ð½ÐºÑ Ñ Ð±Ð°Ð½Ð½ÐµÑÐ¾Ð¼"
+    preview: String!
+}
+
+"Ð¿Ð¾Ð·Ð¸ÑÐ¸Ñ Ð² ÐºÐ¾ÑÐ·Ð¸Ð½Ðµ"
+type CartItemModel {
+    id: Int!
+    oldPrice: Float!
+    price: Float!
+    "Ð¢Ð¾Ð²Ð°Ñ"
+    product: ProductModel!
+    productId: Int!
+    quantity: Int!
+}
+
+"ÐÐ¾Ð·Ð¸ÑÐ¸Ñ ÐºÐ¾ÑÑÐ¸Ð½Ñ Ð¸Ð»Ð¸ Ð·Ð°ÐºÐ°Ð·Ð° id => ÐºÐ¾Ð»Ð¸ÑÐµÑÑÐ²Ð¾"
+type CartModel {
+    coupon: String!
+    coupons: [CouponListItem!]!
+    "ÐÐ¾Ð´Ð°ÑÐºÐ¸"
+    gifts: [ProductModel!]!
+    id: Int!
+    items: [CartItemModel!]!
+    "Ð¾Ð±ÑÐ°Ñ ÑÑÐ¼Ð¼Ð° Ð·Ð°ÐºÐ°Ð·Ð°"
+    price: Float!
+    "id ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+    productIds: [Int!]!
+    "Ð¾Ð±ÑÐ°Ñ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+    quantity: Float!
+}
+
+"ÐÐ°ÑÐµÐ³Ð¾ÑÐ¸Ñ ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+type CategoryModel {
+    "Id ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸"
+    id: Int!
+    "ÐÐ°ÑÑÐ¸Ð½ÐºÐ° ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸"
+    image: String
+    "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸ ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+    name: String!
+}
+
+"Ð³ÐµÐ¾ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ"
+type CityModel {
+    "ÐÐ¾Ð´ Ð³Ð¾ÑÐ¾Ð´Ð°"
+    code: String
+    "Id Ð³Ð¾ÑÐ¾Ð´Ð°"
+    id: Int!
+    "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ð³Ð¾ÑÐ¾Ð´Ð°"
+    name: String!
+    "Id ÑÐºÐ»Ð°Ð´Ð°"
+    storageId: Int!
+    "ÐÐ°Ð³Ð¾Ð»Ð¾Ð²Ð¾Ðº ÑÐºÐ»Ð°Ð´Ð°"
+    storeTitle: String
+}
+
+type CouponListItem {
+    active: Boolean!
+    discountActive: Boolean!
+    discountName: String!
+    id: ID!
+    statusText: String!
+}
+
+"Ð³ÐµÐ¾ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ"
+type GeoCoordsModel {
+    id: Int!
+    "Ð´Ð¾Ð»Ð³Ð¾ÑÐ°"
+    latitude: Float!
+    "ÑÐ¸ÑÐ¾ÑÐ°"
+    longitude: Float!
+}
+
+type Mutation {
+    "ÐÐ¾Ð±Ð°Ð²Ð¸ÑÑ Ð¿ÑÐ¾Ð¼Ð¾ÐºÐ¾Ð´"
+    addPromoCode(coupon: String!): CartModel!
+    "ÐÐ¾Ð±Ð°Ð²Ð»ÐµÐ½Ð¸Ðµ push ÑÐ¾ÐºÐµÐ½Ð°"
+    addPushToken(token: String!): Boolean!
+    "ÐÑÐ¼ÐµÐ½Ð° Ð·Ð°ÐºÐ°Ð·Ð°"
+    cancelOrder(message: String, orderId: Int!): Float!
+    changeCity(newCityId: Int!): Boolean!
+    createForgotToken(data: ForgotTokenInputModel!): Int!
+    "Ð¡Ð¾Ð·Ð´Ð°Ð½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°"
+    createOrder(pharmacyId: Int!): Int!
+    "Ð£Ð´Ð°Ð»Ð¸ÑÑ Ð¿ÑÐ¾Ð¼Ð¾ÐºÐ¾Ð´"
+    deletePromoCode(coupon: String!): CartModel!
+    "Ð ÐµÐ´Ð°ÐºÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ ÑÐ¿Ð¸ÑÐ¾ÐºÐ° Ð¸Ð·Ð±ÑÐ°Ð½Ð½ÑÑ Ð°Ð¿ÑÐµÐº"
+    editFavoritesPharmacy(action: EditFavoritesProductsActions!, pharmacyId: Int): [Int!]!
+    "Ð ÐµÐ´Ð°ÐºÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ ÑÐ¿Ð¸ÑÐ¾ÐºÐ° Ð¸Ð·Ð±ÑÐ°Ð½Ð½ÑÑ ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+    editFavoritesProducts(action: EditFavoritesProductsActions!, productId: Int): [Int!]!
+    login(data: LoginInputModel!): String!
+    "ÐÐ¾Ð²ÑÐ¾Ñ Ð·Ð°ÐºÐ°Ð·Ð°"
+    reOrder(orderId: Int!): Int!
+    register(data: RegisterInputModel!): String!
+    resetPassword(data: ResetPasswordInputModel!): Int!
+    setUserPhoto(photo: String): String!
+    toggleProductInWishlist(
+        "Id ÑÐ¾Ð²Ð°ÑÐ°"
+        id: Int!
+    ): ProductModel!
+    "ÐÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÐºÐ¾ÑÐ·Ð¸Ð½Ñ"
+    updateCart(editAction: EditCartAction!, productId: Int!, quantity: Int): CartModel!
+    updateCityByLocation(latitude: Float!, longitude: Float!): UserModel!
+    "ÐÐ±Ð½Ð¾Ð²Ð»ÐµÐ½Ð¸Ðµ ÑÑÐ°ÑÑÑÐ¾Ð² ÑÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ð¹"
+    updateNotifications(status: Boolean!, stocks: Boolean!): NotificationModel!
+    updateUserData(data: UpdateUserDataInputModel!): Int!
+}
+
+"Ð¡ÑÐ°ÑÑÑÑ ÑÐ²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ð¹"
+type NotificationModel {
+    "Ð¡ÑÐ°ÑÑÑ Ð·Ð°ÐºÐ°Ð·Ð°"
+    status: Boolean!
+    "ÐÐºÑÐ¸Ñ"
+    stocks: Boolean!
+}
+
+"ÐÐ°ÐºÐ°Ð·"
+type OrderModel {
+    "ÑÐ¾ÑÐ¼Ð°ÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð½Ð°Ñ Ð¸ÑÐ¾Ð³Ð¾Ð²Ð°Ñ ÑÐµÐ½Ð°"
+    basket: [CartItemModel!]!
+    "Ð²Ð°Ð»ÑÑÐ°"
+    currency: String!
+    "Ð´Ð°ÑÐ° Ð¸ Ð²ÑÐµÐ¼Ñ Ð·Ð°ÐºÐ°Ð·Ð°"
+    dateInsert: String!
+    "id Ð·Ð°ÐºÐ°Ð·Ð°"
+    id: Int!
+    "ÑÐ»Ð°Ð³ Ð¾ÑÐ¼ÐµÐ½Ñ Ð·Ð°ÐºÐ°Ð·Ð°"
+    isPossibleCancel: Boolean!
+    "Ð¿Ð¾Ð»Ð½Ð°Ñ ÑÑÐ¾Ð¸Ð¼Ð¾ÑÑÑ Ð·Ð°ÐºÐ°Ð·Ð°"
+    price: Float!
+    "ÑÐ¾ÑÐ¼Ð°ÑÐ¸ÑÐ¾Ð²Ð°Ð½Ð½Ð°Ñ Ð¸ÑÐ¾Ð³Ð¾Ð²Ð°Ñ ÑÐµÐ½Ð°"
+    priceFormat: String!
+    "ÑÐ²ÐµÑ ÑÑÐ°ÑÑÑÐ°"
+    statusColor: String!
+    "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÑÐ°ÑÑÑÐ°"
+    statusName: String!
+    "id ÑÐ·ÐµÑÐ°"
+    userId: Float!
+}
+
+"ÐÐ°ÐºÐ°Ð·"
+type OrdersModel {
+    "Ð²ÑÐµÐ³Ð¾ ÑÑÑÐ°Ð½Ð¸Ñ Ð·Ð°ÐºÐ°Ð·Ð¾Ð²"
+    allPage: Float!
+    "Ð·Ð°ÐºÐ°Ð·Ñ"
+    orders: [OrderModel!]!
+}
+
+"ÐÐ¿ÑÐµÐºÐ°"
+type PharmacyModel {
+    address: String!
+    city: String!
+    "ÐÐµÐ¾ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ"
+    coordinate: GeoCoordsModel
+    description: String!
+    id: Int!
+    latitude: String!
+    longitude: String!
+    metro: String!
+    metroTime: String!
+    phone: String!
+    schedule: String!
+    sort: Float!
+    store: Float!
+    title: String!
+    workFriday: String!
+    workMonday: String!
+    workSaturday: String!
+    workSunday: String!
+    workThursday: String!
+    workTuesday: String!
+    workWednesda: String!
+    "id Ð°Ð¿ÑÐµÐºÐ¸"
+    xmlId: ID!
+}
+
+"Ð¢Ð¾Ð²Ð°Ñ (Ð¿ÑÐµÐ¿Ð°ÑÐ°Ñ)"
+type ProductModel {
+    "ÐÐµÐ¹ÑÑÐ²ÑÑÑÐ¸Ðµ Ð²ÐµÑÐµÑÑÐ²Ð°"
+    activeIngredients: String
+    "ÐÐ¿Ð¸ÑÐ°Ð½Ð¸Ðµ"
+    description: String
+    "ÐÑÐ½Ð¾ÑÐ¸ÑÐµÐ»ÑÐ½ÑÐ¹ Ð¿ÑÑÑ Ð½Ð° ÑÐ°Ð¹ÑÐµ"
+    detailPageUrl: String!
+    expirationDate: String!
+    "Ð¤Ð¾ÑÐ¼Ð° Ð²ÑÐ¿ÑÑÐºÐ°"
+    form: String
+    "Id ÑÐ¾Ð²Ð°ÑÐ°"
+    id: Int!
+    inWishlist: Boolean!
+    "ÐÑÐ¾Ð¸Ð·Ð²Ð¾Ð´Ð¸ÑÐµÐ»Ñ"
+    manufacturer: String
+    "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑÐ¾Ð²Ð°ÑÐ°"
+    name: String
+    "ÐÑÐ¶ÐµÐ½ ÑÐµÑÐµÐ¿Ñ"
+    needReceipt: Boolean!
+    "Ð¡ÑÐ°ÑÐ°Ñ ÑÐµÐ½Ð°"
+    oldPrice: Float!
+    "ÐÐ¾Ð»ÑÑÐ°Ñ ÐºÐ°ÑÑÐ¸Ð½ÐºÐ°"
+    picture: String
+    "ÐÐ°Ð»ÐµÐ½ÑÐºÐ°Ñ ÐºÐ°ÑÑÐ¸Ð½ÐºÐ°"
+    preview: String
+    "Ð¦ÐµÐ½Ð°"
+    price: Float!
+    "ÐÐºÑÐ¸Ñ"
+    promotional: Boolean!
+    "ÐÐ°Ð»Ð¸ÑÐ¸Ðµ ÑÐ¾Ð²Ð°ÑÐ° Ð² Ð°Ð¿ÑÐµÐºÐµ"
+    quantity: Float!
+    "ÐÑÑÐ¸ÐºÑÐ» ÑÐ¾Ð²Ð°ÑÐ°"
+    vendorCode: String
+}
+
+"ÐÐºÑÐ¸Ð¸"
+type PromoActionModel {
+    detailText: String!
+    "Id Ð°ÐºÑÐ¸Ð¸"
+    id: Int!
+    name: String!
+    "Ð¡ÑÑÐ»ÐºÐ° Ð½Ð° ÐºÐ°ÑÑÐ¸Ð½ÐºÑ Ñ Ð±Ð°Ð½Ð½ÐµÑÐ¾Ð¼"
+    preview: String!
+    previewText: String!
+    products: [ProductModel!]!
+}
+
+type Query {
+    "ÐÐ°Ð½Ð½ÐµÑÑ Ð½Ð° Ð³Ð»Ð°Ð²Ð½ÑÑ"
+    banners: [BannerModel!]!
+    "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑÐ¾Ð²Ð°ÑÐ¾Ð² Ð² ÐºÐ¾ÑÐ·Ð¸Ð½Ðµ"
+    cart: CartModel!
+    "ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸"
+    categories(id: Int): [CategoryModel!]!
+    "ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ñ Ð¿Ð¾ Id"
+    category(id: Int!): CategoryModel!
+    "ÐÐ¾Ð»ÑÑÐµÐ½Ð¸Ðµ Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ð¸ Ð¿Ð¾ Ð³Ð¾ÑÐ¾Ð´Ñ"
+    cities: [CityModel!]!
+    "ÐÐ¾Ð»ÑÑÐµÐ½Ð¸Ðµ Ð¸Ð½ÑÐ¾ÑÐ¼Ð°ÑÐ¸Ð¸ Ð¿Ð¾ Ð³Ð¾ÑÐ¾Ð´Ñ"
+    city(latitude: Float!, longitude: Float!): CityModel!
+    "Ð£Ð²ÐµÐ´Ð¾Ð¼Ð»ÐµÐ½Ð¸Ñ"
+    notification: NotificationModel!
+    "ÐÐ°ÐºÐ°Ð·"
+    order(orderId: Int!): OrderModel!
+    "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð·Ð°ÐºÐ°Ð·Ð¾Ð²"
+    orders(limit: Int!, page: Int!): OrdersModel!
+    "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð°Ð¿ÑÐµÐº"
+    pharmacies: [PharmacyModel!]!
+    "ÑÐ¾Ð²Ð°Ñ Ð¿Ð¾ Id"
+    product(id: Int!): ProductModel!
+    "ÑÐ¿Ð¸ÑÐ¾Ðº ÑÐ¾Ð²Ð°ÑÐ¾Ð² ÐºÐ°ÑÐµÐ³Ð¾ÑÐ¸Ð¸"
+    products(categoryId: Int!): [ProductModel!]!
+    "ÐÐºÑÐ¸Ð¸"
+    promoActions: [PromoActionModel!]!
+    "Ð¡Ð¿Ð¸ÑÐ¾Ðº ÑÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð¾Ð²Ð°Ð½Ð½ÑÑ ÑÐ¾Ð²Ð°ÑÐ¾Ð² (Ð³Ð»Ð°Ð²Ð½Ð°Ñ)"
+    recommended: [ProductModel!]!
+    "Ð¿Ð¾Ð¸ÑÐº ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+    search(
+        "ÐºÐ¾Ð»-Ð²Ð¾ Ð·Ð°Ð¿Ð¸ÑÐµÐ¹ Ð½Ð° ÑÑÑÐ°Ð½Ð¸ÑÐµ"
+        limit: Int!,
+        "ÑÐµÐºÑÑÐ°Ñ ÑÑÑÐ°Ð½Ð¸ÑÐ°"
+        page: Int!,
+        "Ð·Ð°Ð¿ÑÐ¾Ñ"
+        query: String
+    ): SearchModel!
+    user: UserModel!
+}
+
+"Ð¢Ð¾Ð²Ð°ÑÑ Ð² Ð¿Ð¾Ð¸ÑÐºÐµ"
+type SearchModel {
+    "ÑÐ¾Ð²Ð°ÑÑ"
+    allPage: Float
+    "ÑÐ¾Ð²Ð°ÑÑ"
+    products: [ProductModel!]!
+}
+
+"ÐÐ¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ"
+type UserModel {
+    "ÐÐ¾ÑÐ¾Ð´ Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ"
+    city: CityModel!
+    "ÐÐ¾ÑÐ¾Ð´ Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ Ð²ÑÐ±ÑÐ°Ð½?"
+    citySelected: Boolean!
+    "Email"
+    email: String!
+    favoritePharmacies: [PharmacyModel!]!
+    "Ð¡Ð¿Ð¸ÑÐ¾Ðº id Ð¸Ð·Ð±ÑÐ°Ð½Ð½ÑÑ Ð°Ð¿ÑÐµÐº"
+    favoritePharmaciesIds: [Int!]!
+    favoriteProducts: [ProductModel!]!
+    "Ð¡Ð¿Ð¸ÑÐ¾Ðº id Ð¸Ð·Ð±ÑÐ°Ð½Ð½ÑÑ ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+    favoriteProductsIds: [Int!]!
+    "id Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ"
+    id: Int!
+    "ÐÑÑÐµÑÑÐ²Ð¾"
+    lastName: String
+    "ÐÐ¾Ð³Ð¸Ð½"
+    login: String!
+    "ÐÐ¼Ñ"
+    name: String
+    "ÐÐ°ÑÐ° ÑÐ¾Ð¶Ð´ÐµÐ½Ð¸Ñ"
+    personalBirthday: String
+    "ÐÐ¾Ð»"
+    personalGender: String
+    "ÐÐ¾Ð¼ÐµÑ ÑÐµÐ»ÐµÑÐ¾Ð½Ð°"
+    personalPhone: String
+    "Ð¡ÑÑÐ»ÐºÐ° Ð½Ð° ÑÐ¾ÑÐ¾"
+    personalPhoto: String
+    "Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ"
+    secondName: String
+}
+
+"ÐÐµÐ¹ÑÑÐ²Ð¸Ñ Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÐºÐ¾ÑÐ·Ð¸Ð½Ñ"
+enum EditCartAction {
+    ADD_PRODUCT
+    DELETE_PRODUCT
+    UPDATE_QUANTITY
+}
+
+"ÐÐµÐ¹ÑÑÐ²Ð¸Ñ Ñ ÑÐ¿Ð¸ÑÐ¾ÐºÐ¼ Ð¸Ð·Ð±ÑÐ°Ð½Ð½ÑÑ ÑÐ¾Ð²Ð°ÑÐ¾Ð²"
+enum EditFavoritesProductsActions {
+    ADD
+    DELETE
+    DELETE_ALL
+}
+
+"ÐÐ¾Ð» Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»Ñ"
+enum Sex {
+    FEMALE
+    MALE
+}
+
+input ForgotTokenInputModel {
+    login: String!
+}
+
+input LoginInputModel {
+    emailOrPhone: String!
+    password: String!
+}
+
+input RegisterInputModel {
+    email: String!
+    name: String!
+    password: String!
+    personal_phone: String!
+}
+
+input ResetPasswordInputModel {
+    login: String!
+    password: String!
+    token: String!
+}
+
+input UpdateUserDataInputModel {
+    email: String!
+    last_name: String
+    login: String!
+    name: String
+    password: String
+    personal_birthday: DateTime
+    personal_gender: Sex
+    personal_phone: String
+    second_name: String
+}
+
+input UserInputModel {
+    userId: Float!
+}
+
+
+"The javascript `Date` as string. Type represents date and time as the ISO Date string."
+scalar DateTime

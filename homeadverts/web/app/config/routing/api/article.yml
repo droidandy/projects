@@ -1,0 +1,11 @@
+_api_article:
+    prefix: /
+    resource: "@AppBundle/Resources/config/routing/api/article/article.yml"
+
+_api_article_like:
+    prefix: /
+    resource: "@AppBundle/Resources/config/routing/api/article/article_like.yml"
+
+_api_article_edit:
+    prefix: /edit
+    resource: "@AppBundle/Resources/config/routing/api/article/article_edit.yml"

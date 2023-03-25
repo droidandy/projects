@@ -1,0 +1,41 @@
+<div id="tags-to-follow"
+     data-url="{{ path('ha_tag_select') }}"
+     data-followed-tags-count="{{ app.user.getTagsFollowedCount() }}"
+     data-heading="Tag of Interests"
+     class="__user"
+>
+    <div class="section-heading">
+        Select at least <strong>three</strong> tags to get your personal feed started.<br/>
+        <br/>
+        <button
+                class="update-followings black mdl-button mdl-js-button mdl-js-ripple-effect"
+                {% if app.user.getTagsFollowedCount() < 3 %}
+                    disabled
+                {% endif %}
+        >
+            Update Interests
+        </button>
+    </div>
+
+    <div class="content">
+        {% for t in top_rated_tags() %}
+            <div class="mdl-navigation__link tag-item">
+                <label class="follow-tag mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect"
+                       for="follow-tag-{{ t.tag.id }}">
+                    <div class="select-tag">
+                        <input type="checkbox"
+                               id="follow-tag-{{ t.tag.id }}"
+                               data-id="{{ t.tag.id }}"
+                                {% if app.user.isTagFollowed(t.tag) %}
+                                    checked
+                                {% endif %}
+                               class="mdl-checkbox__input">
+                    </div>
+                    <span class="mdl-checkbox__label">
+                        {{ t.tag.displayName }} <span>x {{ t.rank }}</span>
+                    </span>
+                </label>
+            </div>
+        {% endfor %}
+    </div>
+</div>

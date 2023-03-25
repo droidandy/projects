@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>BenRevo</title>
+    <style type="text/css">
+
+       body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+        }
+        .bodyNoBg {
+            background: none;
+        }
+        /* headings */
+        h1, h2, h3, h4, h5, h6 {
+            color: #090b3c;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        h4 {
+            font-size: 26px;
+        }
+        h5 {
+            font-size: 24px;
+        }
+        h6 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+            color: #676767;
+            margin-bottom: 10px;
+        }
+        div {
+            font-size: 12px;
+            color: #333;
+        }
+        .clearfix:after {
+            /*content: ".";
+            display: block;*/
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: auto;
+        }
+        .clearfix {
+            /*	display: inline-block;
+            */}
+        html[xmlns] .clearfix {
+            display: block;
+        }
+        * html .clearfix {
+            height: 1%;
+        }
+        .wrapper {
+            margin: auto;
+            max-width: 1100px;
+            width: 100%;
+        }
+        .floatRt {
+        }
+        .floatLft {
+        }
+        .clearBoth {
+            clear: both !important;
+        }
+        .noBorder {
+            border: 0px !important;
+        }
+        .noMargin {
+            margin: 0px !important;
+        }
+        /*********** custom *************/
+
+        .pageleft {
+            width: 15%;
+        }
+        .pageRt {
+
+            width: 77%;
+        }
+        .logo {
+
+            margin: 33px 0 91px;
+        }
+        .hdrRt {
+            width: 77%;
+            margin: 90px 0 0px 0;
+        }
+        /*****************  *************/
+
+
+        table tr td {
+            border-collapse: collapse;
+        }
+        .maintble {
+            max-width: 800px;
+            width:100%;
+            margin:0 auto;
+            border:none;
+        }
+        .maintble tr td {
+            color: #676766;
+            font-family: "OpenSansRegular_0";
+            font-size: 14px;
+        }
+        .hdtxtleft {
+            width:100%;
+        }
+        .maintble .hdrRt {
+            width:100%;
+            text-align:left;
+            margin:130px 0 0;
+        }
+        .rtmaintble {
+            border:none;
+        }
+        .rtmaintble tr td {
+            padding:10px 15px;
+            border:0;
+            border-bottom:1px solid #afb0af;
+        }
+        .tblbdr {
+            width:100%;
+        }
+        .tblbdrmain {
+            width:100% !important;
+        }
+
+        .rtmaintble tr.tblbdrmain {
+            width:100%;
+        }
+        .rtmaintble tr.tblbdrmain > td.tblbdr > {
+            width:100%;
+        }
+        .tablebordered tr {
+            border:0;
+        }
+        .tablebordered tr td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            width: 50%;
+        }
+        .tablebordered {
+            border:0;
+			padding-bottom:27px;
+            margin:0 0 10px 0;
+        }
+        .issueto {
+            width: 100%;
+        }
+        .issueto h2 {
+            width: 100%;
+            font-family: 'OpenSansBold';
+            font-size: 18px;
+            color: #999a99;
+            border-bottom: 4px solid #7d7e7e;
+            padding: 0 0 9px 0;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        .hdrRt h1 {
+            font-size: 42px;
+            color: #11b4dd;
+            letter-spacing: 3px;
+            font-family: 'OpenSansBold';
+        }
+
+        .productMed {
+            width: 100%;
+            border-bottom: 4px solid #7d7e7e;
+        }
+        .productMed h2 {
+            font-family: 'OpenSansBold';
+            font-size: 18px;
+            color: #999a99;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-align: left;
+            border-bottom: 4px solid #7d7e7e;
+            padding-bottom: 10px;
+        }
+        .productMed h2 span {
+            color: #676766;
+        }
+
+        .rightpannel {
+            width:77%;
+            margin-left:5%;
+
+        }
+
+    </style>
+</head>
+
+<body>
+<table class="maintble">
+    <tr>
+        <td class="rightpannel">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr><td>
+			    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			        <tr>
+			             <td>
+			             	<img src="https://s3-us-west-2.amazonaws.com/benrevo-prod-global-static/carrier/anthem/email/anthem-logo.png" alt="Anthem Blue Cross" />
+			             </td>
+                		 <td style="text-align:right;"><h5>Anthem OE Meetings &amp;<br/> Packet Request Form</h5></td>
+			        </tr>
+			    </table>
+		    </td></tr>
+        	<br></br>
+        	<tr><td>
+			    <table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+			        <tr>
+			            <td>Are Open Enrollment meetings planned?</td>
+			            <td>$!are_open_enrollment_meetings_planned</td>
+			        </tr>
+			        <tr>
+			            <td>How many meetings?</td>
+			            <td>$!meetings_planned_count</td>
+			        </tr>
+			    </table>
+		    </td></tr>
+		    <tr><td>
+			    <table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+			        <tr>
+			            <td>Does the group want enrollment packets?</td>
+			            <td>$!does_the_group_want_enrollment_packets</td>
+			        </tr>
+			        <tr>
+			            <td>English:</td>
+			            <td>$!english_enrollment_packets_required</td>
+			        </tr>
+			        <tr>
+			            <td>Spanish:</td>
+			            <td>$!spanish_enrollment_packets_required</td>
+			        </tr>
+			    </table>
+		    </td></tr>
+		    #if($meeting_date_1 && $meetings_planned_count && ${meetings_planned_count} >= 1)
+		    <tr><td>
+		    	<table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+		            <tr>
+		                <td><b>Meeting #1</b></td>
+		                <td>&nbsp;</td>
+		            </tr>
+		            <tr>
+		                <td>Date:</td>
+		                <td>$!meeting_date_1</td>
+		            </tr>
+		            <tr>
+		                <td>Address:</td>
+		                <td>$!meeting_address_1</td>
+		            </tr>
+		            <tr>
+		                <td>Estimated Attendance:</td>
+		                <td>$!meeting_estimated_attendance_1</td>
+		            </tr>
+		            <tr>
+		                <td>Anthem representative needed?</td>
+		                <td>$!meeting_anthem_representation_needed_1</td>
+		            </tr>
+		            <tr>
+		                <td>Spanish required?</td>
+		                <td>$!meeting_spanish_required_1</td>
+		            </tr>
+		            <tr>
+		                <td>How many ENGLISH packets are required?</td>
+		                <td>$!meeting_english_enrollment_packets_required_1</td>
+		            </tr>
+		            <tr>
+		                <td>How many SPANISH packets are required?</td>
+		                <td>$!meeting_spanish_enrollment_packets_required_1</td>
+		            </tr>
+		            <tr>
+		                <td>Special instructions for day of OE meeting:</td>
+		                <td>$!meeting_special_instructions_1</td>
+		            </tr>
+		        </table>
+		    </td></tr>
+			#end
+		    #if($meeting_date_2 && $meetings_planned_count && ${meetings_planned_count} >= 2)
+		    <tr><td>
+		    	<table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+		            <tr>
+		                <td><b>Meeting #2</b></td>
+		                <td>&nbsp;</td>
+		            </tr>
+		            <tr>
+		                <td>Date:</td>
+		                <td>$!meeting_date_2</td>
+		            </tr>
+		            <tr>
+		                <td>Address:</td>
+		                <td>$!meeting_address_2</td>
+		            </tr>
+		            <tr>
+		                <td>Estimated Attendance:</td>
+		                <td>$!meeting_estimated_attendance_2</td>
+		            </tr>
+		            <tr>
+		                <td>Anthem representative needed?</td>
+		                <td>$!meeting_anthem_representation_needed_2</td>
+		            </tr>
+		            <tr>
+		                <td>Spanish required?</td>
+		                <td>$!meeting_spanish_required_2</td>
+		            </tr>
+		            <tr>
+		                <td>How many ENGLISH packets are required?</td>
+		                <td>$!meeting_english_enrollment_packets_required_2</td>
+		            </tr>
+		            <tr>
+		                <td>How many SPANISH packets are required?</td>
+		                <td>$!meeting_spanish_enrollment_packets_required_2</td>
+		            </tr>
+		            <tr>
+		                <td>Special instructions for day of OE meeting:</td>
+		                <td>$!meeting_special_instructions_2</td>
+		            </tr>
+		        </table>
+		    </td></tr>
+		    #end
+		    #if($meeting_date_3 && $meetings_planned_count && $meetings_planned_count >= 3)
+		    <tr><td>
+		    	<table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+		            <tr>
+		                <td><b>Meeting #3</b></td>
+		                <td>&nbsp;</td>
+		            </tr>
+		            <tr>
+		                <td>Date:</td>
+		                <td>$!meeting_date_3</td>
+		            </tr>
+		            <tr>
+		                <td>Address:</td>
+		                <td>$!meeting_address_3</td>
+		            </tr>
+		            <tr>
+		                <td>Estimated Attendance:</td>
+		                <td>$!meeting_estimated_attendance_3</td>
+		            </tr>
+		            <tr>
+		                <td>Anthem representative needed?</td>
+		                <td>$!meeting_anthem_representation_needed_3</td>
+		            </tr>
+		            <tr>
+		                <td>Spanish required?</td>
+		                <td>$!meeting_spanish_required_3</td>
+		            </tr>
+		            <tr>
+		                <td>How many ENGLISH packets are required?</td>
+		                <td>$!meeting_english_enrollment_packets_required_3</td>
+		            </tr>
+		            <tr>
+		                <td>How many SPANISH packets are required?</td>
+		                <td>$!meeting_spanish_enrollment_packets_required_3</td>
+		            </tr>
+		            <tr>
+		                <td>Special instructions for day of OE meeting:</td>
+		                <td>$!meeting_special_instructions_3</td>
+		            </tr>
+		        </table>
+		    </td></tr>
+		    #end
+		    #if($meeting_date_4 && $meetings_planned_count && $meetings_planned_count >= 4)
+		    <tr><td>
+		    	<table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+		            <tr>
+		                <td><b>Meeting #4</b></td>
+		                <td>&nbsp;</td>
+		            </tr>
+		            <tr>
+		                <td>Date:</td>
+		                <td>$!meeting_date_4</td>
+		            </tr>
+		            <tr>
+		                <td>Address:</td>
+		                <td>$!meeting_address_4</td>
+		            </tr>
+		            <tr>
+		                <td>Estimated Attendance:</td>
+		                <td>$!meeting_estimated_attendance_4</td>
+		            </tr>
+		            <tr>
+		                <td>Anthem representative needed?</td>
+		                <td>$!meeting_anthem_representation_needed_4</td>
+		            </tr>
+		            <tr>
+		                <td>Spanish required?</td>
+		                <td>$!meeting_spanish_required_4</td>
+		            </tr>
+		            <tr>
+		                <td>How many ENGLISH packets are required?</td>
+		                <td>$!meeting_english_enrollment_packets_required_4</td>
+		            </tr>
+		            <tr>
+		                <td>How many SPANISH packets are required?</td>
+		                <td>$!meeting_spanish_enrollment_packets_required_4</td>
+		            </tr>
+		            <tr>
+		                <td>Special instructions for day of OE meeting:</td>
+		                <td>$!meeting_special_instructions_4</td>
+		            </tr>
+		        </table>
+		    </td></tr>
+		    #end
+		    #if($meeting_date_5 && $meetings_planned_count && $meetings_planned_count >= 5)
+		    <tr><td>
+		    	<table class="tablebordered" width="100%" border="1" cellspacing="0" cellpadding="0">
+		            <tr>
+		                <td><b>Meeting #5</b></td>
+		                <td>&nbsp;</td>
+		            </tr>
+		            <tr>
+		                <td>Date:</td>
+		                <td>$!meeting_date_5</td>
+		            </tr>
+		            <tr>
+		                <td>Address:</td>
+		                <td>$!meeting_address_5</td>
+		            </tr>
+		            <tr>
+		                <td>Estimated Attendance:</td>
+		                <td>$!meeting_estimated_attendance_5</td>
+		            </tr>
+		            <tr>
+		                <td>Anthem representative needed?</td>
+		                <td>$!meeting_anthem_representation_needed_5</td>
+		            </tr>
+		            <tr>
+		                <td>Spanish required?</td>
+		                <td>$!meeting_spanish_required_5</td>
+		            </tr>
+		            <tr>
+		                <td>How many ENGLISH packets are required?</td>
+		                <td>$!meeting_english_enrollment_packets_required_5</td>
+		            </tr>
+		            <tr>
+		                <td>How many SPANISH packets are required?</td>
+		                <td>$!meeting_spanish_enrollment_packets_required_5</td>
+		            </tr>
+		            <tr>
+		                <td>Special instructions for day of OE meeting:</td>
+		                <td>$!meeting_special_instructions_5</td>
+		            </tr>
+		        </table>
+		    </td></tr>
+		    #end
+		   </table>
+    	</td>
+    </tr>
+</table>
+</body>
+</html>

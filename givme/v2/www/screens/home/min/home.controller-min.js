@@ -1,0 +1,1 @@
+"use strict";function HomeCtrl(o,t,l,r){r(function(){o.loading="loading"},10),t.localStorage.clear(),t.localStorage.firstStart?r(function(){l.go("login")},3e3):(t.localStorage.firstStart="true",r(function(){l.go("tutorial1")},3e3)),o.loading=""}angular.module("givmeApp.controllers").controller("HomeCtrl",["$scope","$window","$state","$timeout",HomeCtrl]);
