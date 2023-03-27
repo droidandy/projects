@@ -1,9 +1,0 @@
-sync_drivers:
-  sample_pages: 3
-
-default_url_options:
-  host: http://localhost:3001
-
-smtp_settings:
-  address: localhost
-  port: 1025

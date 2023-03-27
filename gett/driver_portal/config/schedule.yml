@@ -1,9 +1,0 @@
-sync_drivers:
-  cron: "*/5 * * * *"
-  klass: "SyncDriversJob"
-  active_job: true
-
-gather_statistics:
-  cron: "5 0 * * *"
-  klass: "GatherStatisticsJob"
-  active_job: true

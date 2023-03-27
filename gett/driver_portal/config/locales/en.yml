@@ -1,5 +1,0 @@
-en:
-  hello: "Hello world"
-  errors:
-    invalid_email_or_password: Your email/password combination is invalid. Please try again or click Forgot password to reset it.
-    account_deactivated: Your account is deactivated. Please contact us for details.

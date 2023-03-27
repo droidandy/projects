@@ -1,9 +1,0 @@
-function FindProxyForURL(url, host)
-{
-    if (url.substring(0, 3) === "ws:" || url.substring(0, 4) === "wss:" || url.match(/faye/))  {
-        return "DIRECT";
-    }
-    else {
-        return "PROXY __ADDRESS__";
-    }
-}

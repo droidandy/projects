@@ -1,2 +1,0 @@
-class CommentPolicy < ApplicationPolicy
-end

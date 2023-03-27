@@ -1,7 +1,0 @@
-.companySelector {
-  :global {
-    .ant-select-selection__placeholder {
-      display: block !important;
-    }
-  }
-}

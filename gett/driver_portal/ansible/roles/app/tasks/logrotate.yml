@@ -1,7 +1,0 @@
-- name: Configure logrotate for the app
-  template:
-    src: logrotate.j2
-    dest: /etc/logrotate.d/{{application_name}}
-    group: root
-    owner: root
-    mode: 0640

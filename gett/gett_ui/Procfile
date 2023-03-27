@@ -1,3 +1,0 @@
-web: rails s -p 3000
-sidekiq: bundle exec sidekiq -e development
-faye: node ui/faye/index.js

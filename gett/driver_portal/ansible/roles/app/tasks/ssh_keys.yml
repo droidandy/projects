@@ -1,6 +1,0 @@
-- name: ensure SSH key is generated
-  command: ssh-keygen -t rsa -f ~/.ssh/id_rsa -N ''
-  args:
-    creates: ~/.ssh/id_rsa
-  become: true
-  become_user: "{{ application_user }}"

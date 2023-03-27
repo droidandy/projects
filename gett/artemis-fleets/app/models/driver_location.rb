@@ -1,2 +1,0 @@
-class DriverLocation < ApplicationRecord
-end

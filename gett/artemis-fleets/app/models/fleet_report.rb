@@ -1,2 +1,0 @@
-class FleetReport < ApplicationRecord
-end

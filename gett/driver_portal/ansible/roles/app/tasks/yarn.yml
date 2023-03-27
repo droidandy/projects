@@ -1,6 +1,0 @@
-- name: Install "yarn" package.
-  npm:
-    name: yarn
-    global: yes
-    state: latest
-    production: yes
